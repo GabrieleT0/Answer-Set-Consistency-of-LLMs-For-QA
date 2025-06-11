@@ -8,8 +8,8 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 column_name = 'ql1'
 
-input_filename = 'equal_filtered.tsv'
-tsv_file = os.path.join(here,f'../data/{input_filename}')
+input_filename = 'equal-wiki.tsv'
+tsv_file = os.path.join(here,f'../data/Dataset/{input_filename}')
 llm_model = 'gpt-4.1-nano'
 output_filename = os.path.join(here,f'../data/answers/{column_name}_equal_answers_' + llm_model + '.json')
 
@@ -30,8 +30,6 @@ for index, question in enumerate(questions):
     gemini_response = llms.execute_on_openAI_model(openAI_model='gpt-4.1-nano')
     converted_response = utils.convert_response_to_set(gemini_response)
     answers[index] = converted_response
-    
-    break
 
 
 
