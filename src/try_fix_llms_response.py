@@ -144,7 +144,10 @@ def minus_test(llm_model, language='en'):
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
-        reader = csv.DictReader(tsvfile, delimiter=';')
+        if language == 'en':
+            reader = csv.DictReader(tsvfile, delimiter=';')
+        else:
+            reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
             questions.append((row['ql1'],row['ql2'],row['ql3']))
 
