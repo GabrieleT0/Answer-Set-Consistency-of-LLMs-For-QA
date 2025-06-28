@@ -24,11 +24,25 @@ class PromptLLMS:
         self.q2 = q2
         self.q3 = q3
 
-    def execute_on_gemini(self):
-        gemini = ChatGoogleGenerativeAI(model="gemini-1.5-pro", google_api_key=gemini_key,max_tokens=None, temperature=0.1)
+    def execute_on_gemini(self,model="gemini-2.5-pro"):
+        gemini = ChatGoogleGenerativeAI(model=model, google_api_key=gemini_key,max_tokens=None, temperature=0.1)
         chain = self.prompt_template | gemini
 
         result =  chain.invoke({"question": self.question})
+        return result.content
+    
+    def execute_on_gemini_two_question(self,model="gemini-2.5-pro"):
+        gemini = ChatGoogleGenerativeAI(model=model, google_api_key=gemini_key,max_tokens=None, temperature=0.1)
+        chain = self.prompt_template | gemini
+
+        result =  chain.invoke({"q1": self.question1, "q2": self.question2})
+        return result.content
+
+    def execute_on_gemini_three_question(self,model="gemini-2.5-pro"):
+        gemini = ChatGoogleGenerativeAI(model=model, google_api_key=gemini_key,max_tokens=None, temperature=0.1)
+        chain = self.prompt_template | gemini
+
+        result =  chain.invoke({"q1": self.q1, "q2": self.q2, "q3": self.q3})
         return result.content
     
     def execute_on_openAI_model(self,openAI_model):
