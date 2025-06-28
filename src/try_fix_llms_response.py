@@ -7,6 +7,7 @@ import csv
 import utils
 import json
 
+here = os.path.dirname(os.path.abspath(__file__))
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
@@ -33,9 +34,7 @@ def equal_test(llm_model,language='en'):
     fix_template_equal = PROMPTS[language]['equal_fix']
 
     # File and config paths
-    here = os.path.dirname(os.path.abspath(__file__))
-    input_filename = 'equal-wiki.tsv'
-    tsv_file = os.path.join(here, f'../data/Dataset/en/{input_filename}')
+    tsv_file = questions = utils.get_dataset_path('equal-wiki.tsv', language)
 
     # Read questions
     questions = []
@@ -86,8 +85,7 @@ def sup_sub_test(llm_model, language='en'):
 
     # File and config paths
     here = os.path.dirname(os.path.abspath(__file__))
-    input_filename = 'subsetOf-wiki.tsv'
-    tsv_file = os.path.join(here, f'../data/Dataset/en/{input_filename}')
+    tsv_file = utils.get_dataset_path('subsetOf-wiki.tsv', language)
 
     # Read questions
     questions = []
@@ -140,8 +138,7 @@ def minus_test(llm_model, language='en'):
 
     # File and config paths
     here = os.path.dirname(os.path.abspath(__file__))
-    input_filename = 'minus-set.tsv'
-    tsv_file = os.path.join(here, f'../data/Dataset/en/{input_filename}')
+    tsv_file = utils.get_dataset_path('minus-set.tsv', language)
 
     # Read questions
     questions = []

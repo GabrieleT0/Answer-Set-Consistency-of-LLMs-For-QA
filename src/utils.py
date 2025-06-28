@@ -1,3 +1,5 @@
+import os
+
 def convert_response_to_set(response):
     """
     Convert the response from LLM.
@@ -51,3 +53,7 @@ def is_minus(set1,set2,set3):
     set2 = set(set2)
     set3 = set(set3)
     return set1.difference(set2) == set3
+
+def get_dataset_path(filename, language='en'):
+    here = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(here, f'../data/Dataset/{language}/{filename}')
