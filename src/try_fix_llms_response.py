@@ -64,6 +64,7 @@ def equal_test(llm_model,language='en'):
         answers_ql1[index] = answer1
         answers_ql2[index] = answer3
 
+        print(f"Index: {index} Question 1: {question[0]} Question 2: {question[0]}")
         print(f"Answer 1: {answer1} Answer 2: {answer2} Jaccard Similarity: {jaccard_similarity} Answer 3: {answer3}")
     
     if language == 'es':
@@ -198,15 +199,15 @@ for language in languages:
 
         # Run logical equivalence test
         print(f"Processing model: {llm_model}")
-        equal_test(llm_model)
+        equal_test(llm_model, language)
         print(f"Finished processing model: {llm_model}\n")
 
         # Run subset/superset test
         print(f"Processing model: {llm_model}")
-        sup_sub_test(llm_model)
+        sup_sub_test(llm_model, language)
         print(f"Finished processing model: {llm_model}\n")
 
         # Run minus test
         print(f"Processing model: {llm_model}")
-        minus_test(llm_model)
+        minus_test(llm_model, language)
         print(f"Finished processing model: {llm_model}\n")
