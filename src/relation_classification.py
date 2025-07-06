@@ -9,7 +9,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 
 PROMPTS_MINUS = {
     'en': '''
-            I prompt you three questions q1, q2, q3 you need to identify the logical relation of the concept between q1-q2 and q3
+            I prompt you with three questions q1, q2, q3. You need to identify which of the following logical relations holds between the sets of answers for q1, q2 and q3:
 
             - Equivalence  
             - Containment  
@@ -24,10 +24,10 @@ PROMPTS_MINUS = {
             q2: {q2}  
             q3: {q3}  
 
-            Return only the logical relation between the three questions. Do not include any additional explanation.
+            Return only the logical relation between the three questions. Return only the first relation that holds. Do not include any additional explanation.
         ''',
     'es': '''
-            Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3
+            Te planteo tres preguntas, q1, q2 y q3. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1, q2, q3:
 
             - Equivalencia
             - Contención
@@ -42,19 +42,19 @@ PROMPTS_MINUS = {
             q2: {q2}
             q3: {q3}
 
-            Devuélveme solo la relación lógica entre las tres preguntas; no añadas ningún otro texto.
+            Devuélveme solo la relación lógica entre las tres preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
         '''
     }
 
 PROMPTS = {
     'en': '''
-            I prompt you two questions q1 and q2 you need to identify the logical relation of the concept between q1 and q2
+            I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
 
             - Equivalence  
             - Containment  
             - Disjoint  
             - Overlap  
-            - Minus  
+            - Complement  
             - Unknown
 
             These are the two questions:
@@ -62,16 +62,16 @@ PROMPTS = {
             q1: {q1}  
             q2: {q2}  
 
-            Return only the logical relation between the three questions. Do not include any additional explanation.
+            Return only the logical relation between the two questions. Return only the first relation that holds. Do not include any additional explanation.
         ''',
     'es': '''
-            Te planteo dos preguntas, q1 y q2. Debes identificar la relación lógica del concepto entre q1 y q2
+            Te planteo dos preguntas, q1, q2. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1 y q2:
 
             - Equivalencia
             - Contención
             - Disjunto
             - Solapamiento
-            - Resta
+            - Complemento
             - Desconocido
 
             Estas son las dos preguntas:
@@ -79,7 +79,7 @@ PROMPTS = {
             q1: {q1}
             q2: {q2}
 
-            Devuélveme solo la relación lógica entre las tres preguntas; no añadas ningún otro texto.
+            Devuélveme solo la relación lógica entre las dos preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
         '''
     }
 
