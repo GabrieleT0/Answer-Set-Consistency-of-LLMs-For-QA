@@ -11,20 +11,20 @@ PROMPTS = {
     "standard": {
         "en": '''{question} \n
                 If you can't answer, return 'idk'. \n
-                Return me the answer as a list separated by commas, don't add any other text.''',
+                Return me all answers as a list separated by commas; don' add any other text.''',
         "es": '''{question} \n
                 Si no puedes responder, devuelve "no sé". \n
-                Devuélveme solo la relación lógica entre las tres preguntas, no añadas ningún otro texto.'''
+                Devuélveme la respuesta en forma de lista separada por comas; no añadas ningún otro texto.'''
     },
     "wikidata": {
         "en": '''{question} \n
             Just use Wikidata as a source to answer my question. \n
             If you can't answer, return 'idk'. \n
-            Return me the answer as a list separated by commas, don't add any other text.''',
+            Return me all answers as a list separated by commas; don' add any other text.''',
         "es": '''{question} \n
             Utiliza Wikidata como fuente para responder a mi pregunta. \n
             Si no puedes responder, devuelve "no sé". \n
-            Devuélveme solo la relación lógica entre las tres preguntas; no añadas ningún otro texto.'''
+            Devuélveme la respuesta en forma de lista separada por commas; no añadas ningún otro texto.'''
     }
 }
 
