@@ -13,15 +13,15 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS = {
     'en': {
-        'template': """\nIf you cannot answer, return \"idk\".\nReturn me the answer as a list separated by commas, don't add any other text""",
-        'equal_fix': """Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.\nCorrect the answer to the second question and return me the answer as a list separated by commas, don't add any other text.""",
-        'sup_sub_fix': """Pay attention, the first question I asked is a larger question than the second question, the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first.\nCorrect the answer to the second question and return the answer to me as a comma-separated list, without adding more text.""",
-        'minus_fix': """Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.\nSo the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question."""
+        'template': """\nIf you cannot answer, return \"idk\".\nReturn me all answers as a list separated by comas; don' add any other text.""",
+        'equal_fix': """Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.\nCorrect the answer to the second question and return me all answers as a list separated by comas; don' add any other text.""",
+        'sup_sub_fix': """Pay attention, the first question I asked is a more general question than the second question, so the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first. Correct the answer to the second question and return me all answers as a list separated by comas; don' add any other text""",
+        'minus_fix': """Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.\nSo the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question. Correct the answer to the third question and return me all answers as a list separated by comas; don' add any other text."""
     },
     'es': {
         'template': """\nSi no puedes responder, devuelve \"idk\".\nDevuélveme la respuesta como una lista separada por comas, sin añadir ningún otro texto""",
-        'equal_fix': """Presta atención, las dos preguntas que te hice antes son lógicamente equivalentes, pero me diste respuestas diferentes.\nCorrige la respuesta a la segunda pregunta y devuélvemela como una lista separada por comas, sin añadir ningún otro texto.""",
-        'sup_sub_fix': """Presta atención, la primera pregunta que te hice es más general que la segunda, la respuesta de la segunda debe ser un subconjunto de la primera, pero no lo es.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
+        'equal_fix': """Presta atención, las dos preguntas que te hice antes son lógicamente equivalentes, pero me diste respuestas diferentes.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
+        'sup_sub_fix': """Presta atención, la primera pregunta que te hice es más general que la segunda, la respuesta de la segunda debe tal que cada respuesta a la segunda pregunta deba ser una respuesta a la primera pregunta.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
         'minus_fix': """Presta atención, te hice 3 preguntas diferentes. La tercera debe contener los elementos de la primera respuesta excluyendo los de la segunda.\nLa respuesta a la tercera pregunta debe contener los resultados que están en la primera pero no en la segunda."""
     }
 }
