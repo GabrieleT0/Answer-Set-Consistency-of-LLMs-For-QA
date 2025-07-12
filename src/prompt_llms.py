@@ -15,7 +15,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 gemini_key = os.getenv('GOOGLE_AI')
 
 class PromptLLMS:
-    def __init__(self, prompt_template, question, question1=None, question2=None, q1=None, q2=None, q3=None):
+    def __init__(self, prompt_template, question=None, question1=None, question2=None, q1=None, q2=None, q3=None):
         self.prompt_template = prompt_template
         self.question = question
         self.question1 = question1

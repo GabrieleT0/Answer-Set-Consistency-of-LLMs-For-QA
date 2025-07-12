@@ -1,4 +1,6 @@
 import os
+import re
+import csv
 
 def convert_response_to_set(response):
     """
@@ -57,3 +59,40 @@ def is_minus(set1,set2,set3):
 def get_dataset_path(filename, language='en'):
     here = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(here, f'../data/Dataset/{language}/{filename}')
+
+def parse_questions_for_tsv(text, minus = False, input_q1 = False, input_q2 = False):
+    lines = [line.strip() for line in text.strip().split("\n") if line.strip()]
+    parsed = []
+
+    for line in lines:
+        match = re.match(r'^(\d+)\.\s+(.*)', line)
+        if not match:
+            continue
+        questions_str = match.group(2)
+        
+        if not minus:
+            variants = [q.strip() for q in questions_str.split('|') if q.strip()]
+        
+            q1 = variants[0] if len(variants) > 0 else ""
+            q2 = variants[1] if len(variants) > 1 else ""
+            parsed.append((q2, q1))
+        else:
+            questions_str = questions_str.replace('Question C:', '').strip()
+            parsed.append((input_q1, input_q2, questions_str))
+
+    return parsed
+
+def save_to_tsv(parsed_data, filename="questions.tsv", minus = False):
+    file_exists = os.path.exists(filename)
+    is_empty = not file_exists or os.stat(filename).st_size == 0
+
+    with open(filename, "a", newline='', encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter="\t")
+        if not minus:
+            if is_empty:
+                writer.writerow(["ql1", "ql2"])
+        else:
+            if is_empty:
+                writer.writerow(["ql1", "ql2", "ql3"])
+
+        writer.writerows(parsed_data)
