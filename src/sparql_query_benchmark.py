@@ -10,13 +10,13 @@ here = os.path.dirname(os.path.abspath(__file__))
 endpoint_url = "https://query.wikidata.org/sparql"
 PROMPTS = {
     "en": '''{question} \n
-            Give me the SPARQL query to run on Wikidata to answer my question. Use the ?sbj variable in the query to retrieve only the triple's subject.\n
+            Give me the SPARQL query to run on Wikidata to answer my question.\n
             If you can't answer, return 'idk'. \n
             Return me only the SPARQL query; do not add any other text.''',
     "es": '''{question} \n
-            Dame la query SPARQL a ejecutar en Wikidata para responder a mi pregunta. Utilice la variable ?sbj en la query para recuperar sólo el asunto de la triple." \n
+            Dame la query SPARQL a ejecutar en Wikidata para responder a mi pregunta." \n
             Si no puedes responder, devuelve 'no sé'. \n
-            Devuélveme sólo la query SPARQL; no añadas ningún otro texto.'''
+            Devuélveme solo la query SPARQL; no añadas ningún otro texto.'''
 }
 
 columns_map = {
@@ -69,7 +69,8 @@ def run_benchmark():
                         results = sparql.query().convert()
                         results_list = []
                         for result in results["results"]["bindings"]:
-                            results_list.append(result["sbj"]["value"])
+                            first_var = list(result.keys())[0]
+                            results_list.append(result[first_var]["value"])
                         answers[index] = results_list
 
                         print(f"Question {index + 1}: {question}")

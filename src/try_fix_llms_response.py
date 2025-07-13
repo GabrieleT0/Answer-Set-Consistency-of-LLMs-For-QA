@@ -21,7 +21,7 @@ PROMPTS = {
     'es': {
         'template': """\nSi no puedes responder, devuelve \"idk\".\nDevuélveme la respuesta como una lista separada por comas, sin añadir ningún otro texto""",
         'equal_fix': """Presta atención, las dos preguntas que te hice antes son lógicamente equivalentes, pero me diste respuestas diferentes.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
-        'sup_sub_fix': """Presta atención, la primera pregunta que te hice es más general que la segunda, la respuesta de la segunda debe tal que cada respuesta a la segunda pregunta deba ser una respuesta a la primera pregunta.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
+        'sup_sub_fix': """Presta atención, la primera pregunta que te hice es más general que la segunda tal que cada respuesta a la segunda pregunta deba ser una respuesta a la primera pregunta.\nCorrige la respuesta a la segunda pregunta y devuélvela como una lista separada por comas, sin añadir más texto.""",
         'minus_fix': """Presta atención, te hice 3 preguntas diferentes. La tercera debe contener los elementos de la primera respuesta excluyendo los de la segunda.\nLa respuesta a la tercera pregunta debe contener los resultados que están en la primera pero no en la segunda."""
     }
 }
