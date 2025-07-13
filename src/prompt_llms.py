@@ -65,3 +65,11 @@ class PromptLLMS:
 
         result =  chain.invoke({"q1": self.q1, "q2": self.q2, "q3": self.q3})
         return result.content
+
+def return_chat_model(model_name):
+    if 'gpt' in model_name:
+        return ChatOpenAI(model=model_name, openai_api_key=openai_api_key, temperature=0.1)
+    elif 'gemini' in model_name:
+        return ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key, max_tokens=None, temperature=0.1)
+    else:
+        raise ValueError(f"Model {model_name} is not supported.")

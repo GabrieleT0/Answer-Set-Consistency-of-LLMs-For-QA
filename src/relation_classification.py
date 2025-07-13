@@ -4,8 +4,15 @@ import os
 import csv
 import utils
 import json
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import ConversationChain
+from langchain.memory import ConversationBufferMemory
+from dotenv import load_dotenv
+import prompt_llms
 
 here = os.path.dirname(os.path.abspath(__file__))
+load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS_MINUS = {
     'en': '''
@@ -82,6 +89,12 @@ PROMPTS = {
             Devuélveme solo la relación lógica entre las dos preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
         '''
     }
+
+PROMPTS_DIRECTION = {
+    "en" : '''Now Answer only 'a' or 'b': a) the results of q1 are contained in q2 b) the results of q2 are contained in q1.
+        ''',
+    "es" : ''' Ahora Responde solo 'a' o 'b': a) los resultados de q1 están contenidos en q2 b) los resultados de q2 están contenidos en q1. '''
+}
 
 llm_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14','gemini-2.5-pro']
 languages = ['en', 'es']
@@ -176,6 +189,7 @@ def equivalence_test(llm_model, language):
         json.dump(answers, f, ensure_ascii=False, indent=4)
 
 def sup_sub_test(llm_model, language):
+    chat = prompt_llms.return_chat_model(llm_model)
     input_filename = 'subsetOf-wiki.tsv'
     tsv_file = utils.get_dataset_path(input_filename, language)
     prompt = PROMPTS[language]
@@ -189,27 +203,31 @@ def sup_sub_test(llm_model, language):
 
     answers = {}
     for index, (q1, q2) in enumerate(question_pairs):
-        prompt = PromptTemplate(
-            input_variables=["q1", "q2"],
-            template=prompt
+        memory = ConversationBufferMemory()
+        conversation = ConversationChain(
+            llm=chat,
+            memory=memory
         )
-        llms = PromptLLMS(prompt, q1, q2)
-        if 'gemini' in llm_model:
-            llm_response = llms.execute_on_gemini_two_question(llm_model)
+        relation_predicted = conversation.predict(input=PROMPTS[language].format(q1=q2, q2=q1))
+        relation_predicted = relation_predicted.strip().lower()
+        print(f"Relation predicted: {relation_predicted}")
+        if relation_predicted == 'containment' or relation_predicted == 'contención':
+            converted_response = 0.5 # If correctly predict the containment relation, we set the response to 0.5
+            direction = conversation.predict(input=PROMPTS_DIRECTION[language])
+            if direction.strip().lower() == 'b':
+                converted_response += 0.5 # If p
         else:
-            llm_response = llms.execute_on_openAI_two_qeustions(llm_model)
+            converted_response = 0
         if language == 'en':
-            real_relation = real_relations_en[input_filename]
             output_prefix = ''
         else:
-            real_relation = real_relations_es[input_filename]
             output_prefix = '*'
-        converted_response = utils.convert_response_to_set_class(llm_response, real_relation)
 
         answers[index] = converted_response
-
-        print(f"Question {index + 1}: {q1} | {q2}")
-        print(f"LLM Response: {llm_response}")
+        
+        print(f"Question {index + 1}: q1: {q2} | q2: {q1}")
+        print(f"LLM relation: {relation_predicted}, LLM direction: {direction.strip().lower()}")
+        
     output_filename = os.path.join(here, f'../data/answers/zero-shot/relation-classification/{output_prefix}Containment_{llm_model}.json')
     
     with open(output_filename, 'w', encoding='utf-8') as f:
@@ -231,3 +249,5 @@ for language in languages:
         print(f"Processing model: {llm_model} for language: {language}")
         minus_test(llm_model, language)
         print(f"Finished processing model: {llm_model} for language: {language}\n")
+
+        break
