@@ -8,7 +8,7 @@ def convert_response_to_set(response):
     """
     if response == 'idk':
         return []
-    response = response.split(',')
+    response = response.split('|')
     response = [item.strip() for item in response if item.strip()]
     
     return response
@@ -19,7 +19,7 @@ def convert_response_to_set_es(response):
     """
     if response == 'no sé':
         return []
-    response = response.split(',')
+    response = response.split('|')
     response = [item.strip() for item in response if item.strip()]
     
     return response

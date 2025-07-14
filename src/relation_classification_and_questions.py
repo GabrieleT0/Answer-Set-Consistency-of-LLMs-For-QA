@@ -13,7 +13,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS = {
     'en': {
-        'template': """\nIf you cannot answer, return \"idk\".\nReturn me all answers as a list separated by comas; don' add any other text.""",
+        'template': """\nIf you cannot answer, return \"idk\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
         'template_classification': """
                     I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
 
@@ -34,7 +34,7 @@ PROMPTS = {
         'hint_prompt': """Remember that {relation} holds between the answers for this question and the previous question.""",
     },
     'es': {
-        'template': """\nSi no puedes responder, devuelve \"idk\".\nDevuélveme la respuesta como una lista separada por comas, sin añadir ningún otro texto""",
+        'template': """\nSi no puedes responder, devuelve \"idk\".\nDevuélveme la respuesta como una lista separada por el símbolo '|', sin añadir ningún otro texto""",
         'template_classification': """
             Te planteo dos preguntas, q1, q2. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1 y q2:
 
