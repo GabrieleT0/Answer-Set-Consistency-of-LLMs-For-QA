@@ -72,7 +72,7 @@ def run_benchmark(prompt_type='standard'):
                             else llms.execute_on_openAI_model(openAI_model=llm_model)
                         )
                         if language == 'en':
-                            converted_response = utils.convert_response_to_set_class(llm_response)
+                            converted_response = utils.convert_response_to_set(llm_response)
                         else:
                             converted_response = utils.convert_response_to_set_es(llm_response)
                         answers[index] = converted_response
