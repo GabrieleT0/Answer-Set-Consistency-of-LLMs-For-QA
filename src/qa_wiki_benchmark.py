@@ -71,7 +71,10 @@ def run_benchmark(prompt_type='standard'):
                             if 'gemini' in llm_model
                             else llms.execute_on_openAI_model(openAI_model=llm_model)
                         )
-                        converted_response = utils.convert_response_to_set_es(llm_response)
+                        if language == 'en':
+                            converted_response = utils.convert_response_to_set_class(llm_response)
+                        else:
+                            converted_response = utils.convert_response_to_set_es(llm_response)
                         answers[index] = converted_response
 
                         print(f"Question {index + 1}: {question}")
