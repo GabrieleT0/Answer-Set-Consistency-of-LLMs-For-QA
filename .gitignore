@@ -2,4 +2,4 @@ __pycache__
 *.pyc
 .*
 !.gitignore
-# src/question_pipeline/config.json
+src/question_pipeline/config.json
