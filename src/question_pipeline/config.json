@@ -1,11 +1,8 @@
 {
-    "debug": false,
-    "model_name": "gpt-4.1-mini",
-    "api_version": "2025-01-01-preview",
-    "prompt_path": "prompts.yaml",
-    "input_path": "/Users/xianhaoliu/Downloads/train",
-    "output_path": "/Users/xianhaoliu/Downloads/agent_workflow_results_4000+",
-    "ENDPOINT_URL":"Your Azure OpenAI endpoint URL",
-    "API_KEY":"Your Azure OpenAI API key"
-  }
-  
+  "debug": false,
+  "model_name": "gpt-4.1-mini",
+  "api_version": "2025-01-01-preview",
+  "prompt_path": "prompts.yaml",
+  "input_path": "/Users/xianhaoliu/Downloads/train",
+  "output_path": "/Users/xianhaoliu/Downloads/agent_workflow_results_4000+"
+}
