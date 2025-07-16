@@ -23,6 +23,7 @@ Agent2_GenerateQ2:
 Agent3_GenerateQ3Q4:
   en: |
     Given the original question below, generate Q3 and Q4 to ensure:
+    - Q3 and Q4 are objective,
     - answer set of Q1 equal to union of answer set of Q3 and Q4,
     - answer set of Q3 disjoint from Q4,
     - answer set of Q3 and Q4 subset of Q1 (more restrictive).
@@ -46,6 +47,7 @@ Agent4_ValidateAll:
     1. Check if Q2 is equivalent to Q1.
     2. Check if Q3 is a more restrictive version of Q1.
     3. Check if the union of Q3 and Q4 covers Q1 (Q1 = Q3 + Q4).
+    4. Check all Q1~Q4 are objective questions.
 
     If everything is correct, answer only:
     "Yes"
