@@ -7,6 +7,7 @@ import csv
 import utils
 import json
 import time
+import prompt_llms
 
 here = os.path.dirname(os.path.abspath(__file__))
 load_dotenv()
@@ -119,7 +120,7 @@ logical_relations = {
 datasets = ['spinach.tsv']
 
 def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None):
-    chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
+    chat = prompt_llms.return_chat_model(llm_model)
     tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
     
     # Read questions
@@ -199,7 +200,7 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
 
 def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None):
-    chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
+    chat = prompt_llms.return_chat_model(llm_model)
     tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
 
     # Read questions

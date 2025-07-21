@@ -125,11 +125,8 @@ def minus_test(llm_model, language):
             input_variables=["q1", "q2", "q3"],
             template=prompt
         )
-        llms = PromptLLMS(prompt_template, q1, q2, q3)
-        if 'gemini' in llm_model:
-            llm_response = llms.execute_on_gemini_three_question(llm_model)
-        else:
-            llm_response = llms.execute_on_openAI_three_questions(llm_model)
+        llms = PromptLLMS(llm_model,prompt_template, q1, q2, q3)
+        llm_response = llms.execute_three_question()
         if language == 'en':
             real_relation = real_relations_en[input_filename]
             output_prefix = ''
@@ -166,11 +163,8 @@ def equivalence_test(llm_model, language):
             input_variables=["q1", "q2"],
             template=prompt
         )
-        llms = PromptLLMS(prompt_template, q1, q2)
-        if 'gemini' in llm_model:
-            llm_response = llms.execute_on_gemini_two_question(llm_model)
-        else:
-            llm_response = llms.execute_on_openAI_two_qeustions(llm_model)
+        llms = PromptLLMS(llm_model, prompt_template, q1, q2)
+        llm_response = llms.execute_two_question()
         if language == 'en':
             real_relation = real_relations_en[input_filename]
             output_prefix = ''

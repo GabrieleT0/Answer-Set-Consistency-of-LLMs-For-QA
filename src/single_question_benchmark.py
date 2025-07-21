@@ -68,12 +68,8 @@ def run_benchmark(prompt_type='standard'):
                             input_variables=["question"],
                             template=PROMPTS[prompt_type][language]
                         )
-                        llms = PromptLLMS(prompt, question)
-                        llm_response = (
-                            llms.execute_on_gemini(model=llm_model)
-                            if 'gemini' in llm_model
-                            else llms.execute_on_openAI_model(openAI_model=llm_model)
-                        )
+                        llms = PromptLLMS(model=llm_model, prompt_template=prompt, question=question)
+                        llm_response = llms.execute_single_question()
                         if language == 'en':
                             converted_response = utils.convert_response_to_set(llm_response)
                         else:
