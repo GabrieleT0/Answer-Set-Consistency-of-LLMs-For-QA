@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import csv
 import utils
 import json
+import time
 
 here = os.path.dirname(os.path.abspath(__file__))
 load_dotenv()
@@ -13,7 +14,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS = {
     'en': {
-        'template': """\nIf you cannot answer, return \"idk\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
+        'template': """\nIf you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
         'template_classification': """
                     I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
 
@@ -100,8 +101,8 @@ dataset_map = {
     'minus-set.tsv': 'minus'
 }
 
-llm_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14']
-languages = ['en', 'es']
+llm_models = ['gpt-4.1-2025-04-14']
+languages = ['en']
 logical_relations = {
     'en': {
         'Equivalence': 'equal-wiki.tsv',
@@ -115,106 +116,175 @@ logical_relations = {
     }
 }
 
-def run_banchmark(llm_model, language, test_type, use_hint=False):
+datasets = ['spinach.tsv']
+
+def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None):
     chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
-    tsv_file = os.path.join(here, f'../data/Dataset/{language}/{logical_relations[language][test_type]}')
+    tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
+    
+    # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['ql2'],row['ql1']))
-    answers_ql1 = {}
-    answers_ql2 = {}
-    for index, question in enumerate(questions):
+            if logical_relation == 'Equivalence':
+                questions.append((row['Q1'], row['Q2']))
+            elif logical_relation == 'Containment':
+                questions.append((row['Q1'], row['Q3']))
+
+    if end_index is None or end_index > len(questions):
+        end_index = len(questions)
+
+    output_prefix = '*' if language == 'es' else ''
+    folder_name = 'equal' if logical_relation == 'Equivalence' else 'sup-sub'
+
+    base_output_dir = os.path.join(here, f'../data/answers/rel_classification_and_questions/{dataset.split(".")[0]}/{folder_name}')
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
+    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
+
+    # Load previous answers
+    def load_json(path):
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    answers_ql1 = load_json(q1_path)
+    answers_ql2 = load_json(q2_path)
+
+    for index in range(start_index, end_index):
+        if str(index) in answers_ql1:
+            continue  # Skip already processed
+
+        question = questions[index]
         memory = ConversationBufferMemory()
-        conversation = ConversationChain(
-            llm=chat,
-            memory=memory
-        )
-        relation_predicted = conversation.predict(input=PROMPTS[language]['template_classification'].format(q1=question[0], q2=question[1]))
-        relation_predicted = relation_predicted.strip().lower()
+        conversation = ConversationChain(llm=chat, memory=memory)
+
+        # Classification prediction
+        relation_predicted = conversation.predict(input=PROMPTS[language]['template_classification'].format(q1=question[0], q2=question[1])).strip().lower()
+
+        # Answer generation
         answer1 = conversation.predict(input=question[0] + PROMPTS[language]['template'])
 
         if use_hint:
-            answer2 = conversation.predict(input=question[1] + PROMPTS[language]['hint_prompt'].format(relation=test_type) + PROMPTS[language]['template'])
+            answer2 = conversation.predict(
+                input=question[1] + PROMPTS[language]['hint_prompt'].format(relation=logical_relation) + PROMPTS[language]['template']
+            )
         else:
             answer2 = conversation.predict(input=question[1] + PROMPTS[language]['template'])
 
+        print("\nOriginal answers:", answer1, answer2)
+
+        # Convert answers
         answer1 = utils.convert_response_to_set(answer1)
         answer2 = utils.convert_response_to_set(answer2)
 
-        answers_ql1[index] = answer1
-        answers_ql2[index] = answer2
+        # Store
+        answers_ql1[str(index)] = list(answer1)
+        answers_ql2[str(index)] = list(answer2)
 
-    if language == 'es':
-        output_prefix = '*'
-    else:
-        output_prefix = ''
+        # Write to files
+        with open(q1_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+                
 
-    test_type = logical_relations[language][test_type]
+        with open(q2_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/rel_classification_and_questions/{test_type}/{output_prefix}ql1_{test_type}_answers_classAndAnswer_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
-        json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+        print(f"Index: {index} Question 1: {question[0]} Question 2: {question[1]}")
+        print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted}\n")
+        time.sleep(1.5)
 
-    with open(os.path.join(here, f'../data/answers/rel_classification_and_questions/{test_type}/{output_prefix}ql2_{test_type}_answers_classAndAnswer_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
-        json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-def run_minus_benchmark(llm_model, language, test_type, use_hint=False):
+def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None):
     chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
-    tsv_file = os.path.join(here, f'../data/Dataset/{language}/{logical_relations[language][test_type]}')
+    tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
+
+    # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['ql2'],row['ql1'], row['ql3']))
-    answers_ql1 = {}
-    answers_ql2 = {}
-    answers_ql3 = {}
-    for index, question in enumerate(questions):
+            questions.append((row['Q1'], row['Q3'], row['Q4']))
+
+    if end_index is None or end_index > len(questions):
+        end_index = len(questions)
+
+    output_prefix = '*' if language == 'es' else ''
+    test_type_name = logical_relations[language][test_type]
+    base_output_dir = os.path.join(here, f'../data/answers/rel_classification_and_questions/{dataset.split(".")[0]}/minus')
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_minus_answers_classAndAnswer_{llm_model}.json')
+    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_classAndAnswer_{llm_model}.json')
+    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_classAndAnswer_{llm_model}.json')
+
+    def load_json(path):
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    answers_ql1 = load_json(q1_path)
+    answers_ql2 = load_json(q2_path)
+    answers_ql3 = load_json(q3_path)
+
+    for index in range(start_index, end_index):
+        if str(index) in answers_ql1:
+            continue  # Skip already processed
+
+        question = questions[index]
         memory = ConversationBufferMemory()
-        conversation = ConversationChain(
-            llm=chat,
-            memory=memory
-        )
-        relation_predicted = conversation.predict(input=PROMPTS[language]['template_classification'].format(q1=question[0], q2=question[1], q3=question[2]))
-        relation_predicted = relation_predicted.strip().lower()
+        conversation = ConversationChain(llm=chat, memory=memory)
+
+        relation_predicted = conversation.predict(
+            input=PROMPTS[language]['template_classification'].format(q1=question[0], q2=question[1], q3=question[2])
+        ).strip().lower()
+
         answer1 = conversation.predict(input=question[0] + PROMPTS[language]['template'])
         answer2 = conversation.predict(input=question[1] + PROMPTS[language]['template'])
 
         if use_hint:
-            answer3 = conversation.predict(input=question[2] + PROMPTS[language]['hint_prompt'].format(relation=test_type) + PROMPTS[language]['template'])
+            answer3 = conversation.predict(
+                input=question[2] + PROMPTS[language]['hint_prompt'].format(relation=test_type) + PROMPTS[language]['template']
+            )
         else:
             answer3 = conversation.predict(input=question[2] + PROMPTS[language]['template'])
 
+        print("\nOriginal answers:", answer1, answer2, answer3)
+
+        # Convert
         answer1 = utils.convert_response_to_set(answer1)
         answer2 = utils.convert_response_to_set(answer2)
         answer3 = utils.convert_response_to_set(answer3)
 
-        answers_ql1[index] = answer1
-        answers_ql2[index] = answer2
-        answers_ql3[index] = answer3
+        # Save
+        answers_ql1[str(index)] = list(answer1)
+        answers_ql2[str(index)] = list(answer2)
+        answers_ql3[str(index)] = list(answer3)
 
-    if language == 'es':
-        output_prefix = '*'
-    else:
-        output_prefix = ''
+        # Write after each question
+        with open(q1_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+        with open(q2_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
+        with open(q3_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
 
-    test_type = logical_relations[language][test_type]
+        print(f"\nIndex: {index} Question 1: {question[0]} Question 2: {question[1]} Question 3: {question[2]}")
+        print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted} Answer 3: {answer3}\n")
+        time.sleep(1.5)
 
-    with open(os.path.join(here, f'../data/answers/rel_classification_and_questions/minus/{output_prefix}ql1_minus_answers_classAndAnswer_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
-        json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
-
-    with open(os.path.join(here, f'../data/answers/rel_classification_and_questions/minus/{output_prefix}ql2_minus_answers_classAndAnswer_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
-        json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
-
-    with open(os.path.join(here, f'../data/answers/rel_classification_and_questions/minus/{output_prefix}ql3_minus_answers_classAndAnswer_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
-        json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
-
+relations = ['Containment', 'Minus']
 for language in languages:
     for llm_model in llm_models:
-        for relation in logical_relations[language].keys():
-            print(f"Processing model: {llm_model} for relation: {relation} in language: {language}")
-            if relation == 'Minus' or relation == 'Resta':
-                run_minus_benchmark(llm_model, language, relation)
-            else:
-                run_banchmark(llm_model, language, relation)
+        for dataset in datasets:
+            for relation in relations:
+                print(f"Processing model: {llm_model} for relation: {relation} in language: {language}")
+                if relation == 'Minus' or relation == 'Resta':
+                    run_minus_benchmark(llm_model, language, relation, dataset)
+                else:
+                    run_benchmark(llm_model, language, relation, dataset, start_index=45)   
+                

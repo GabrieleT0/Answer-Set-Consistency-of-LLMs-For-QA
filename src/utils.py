@@ -75,7 +75,9 @@ def parse_questions_for_tsv(text, minus = False, input_q1 = False, input_q2 = Fa
         
             q1 = variants[0] if len(variants) > 0 else ""
             q2 = variants[1] if len(variants) > 1 else ""
-            parsed.append((q2, q1))
+            sparql_1 = variants[2] if len(variants) > 2 else ""
+            sparql_2 = variants[3] if len(variants) > 3 else ""
+            parsed.append((q2, q1, sparql_2, sparql_1))
         else:
             questions_str = questions_str.replace('Question C:', '').strip()
             parsed.append((input_q1, input_q2, questions_str))

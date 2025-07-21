@@ -3,91 +3,62 @@ from prompt_llms import PromptLLMS
 import os
 import csv
 import utils
-import json
 
 here = os.path.dirname(os.path.abspath(__file__))
 PROMPTS = {
-    "en" : { "equivalence" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, every pairs of questions must be semantically equivalent \
-                        "and the answer to every questions that you formulate must be a list of values, not an ordered list, not a paragraph of text, not a boolean value and not a single number.
-                        This is an example of a possible pair of questions: 1. How many regions of France are there? | How many regions does France have?
-                        Follow the following format to return the questions: 1. Question1 | Equivalent_Question1
-                        Do not add any other kind of text except questions
-                        ''',
-            "subset-superset" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, in every pair of questions, the first question must be broader than the second i.e. the answer of the second question must be a subset of the answer of the first \
-                                and the answer to every questions that you formulate must be a list of values, not an ordered list, not a paragraph of text, not a boolean value and not a single number. \
-                                This is an example of a possible pair of questions: 1. What countries are in the EU? | What countries are in the western EU?
-                                Follow the following format to return the questions: 1. Broader_Question | Subset_Question
-                                Do not add any other kind of text except questions
-                                '''
-    }
-}
-
-PROMPTS_MINUS = {
-    "en" : '''I prompt to you two questions: question A and question B. A containment relationship hold between the answer of these question, specifically, the responses at the question B is contained in the responses at the question A.\
-                Your task now it to generate a question C in a way in which the relationship between the resonses at the three qustions is A-B=C. 
-                The answer to the question C must be a list of values, not an ordered list, not a paragraph of text, not a boolean value and not a single number.
-                This is an example: question A) Which movies star Uma Thurman? question B) Which science fiction movies star Uma Thurman? question C) Which movies star Uma Thurman excluding those science fiction movies star Uma Thurman?
-                Follow the following format to return the questions: 1. Question C
-                Give me only the question C, do not add any other kind of text.
-                Question A: {q1}
-                Question B: {q2}
-                '''
-}   
+    "equivalence" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, every pair of questions must be semantically equivalent. \
+                    The answer to every question that you formulate must be a list of values — not an ordered list, not a paragraph of text, not a boolean value, and not a single number. \
+                    The answer to the questions must be available in Wikidata, and give me also the SPARQL query to retrieve the answer. \
+                    This is an example of a possible pair of questions: \
+                    1. How many regions of France are there? | How many regions does France have? | SELECT ?region ?regionLabel WHERE {{{{ ?region wdt:P31 wd:Q36784; wdt:P17 wd:Q142. SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}} }}}} ORDER BY ?regionLabel \
+                    Follow the following format to return the questions: \
+                    1. Question1 | Equivalent_Question1 | SPARQL_query \
+                    Do not add any other kind of text except questions.''',
+                    
+    "subset-superset" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, in every pair of questions, the first question must be broader than the second i.e. the answer of the second question must be a subset of the answer of the first \
+                             and the answer to every questions that you formulate must be a list of values, not an ordered list, not a paragraph of text, not a boolean value and not a single number. \
+                             The answer to the questions must be available in Wikidata, and give me also the SPARQL query to retrieve the answer.
+                             This is an example of a possible pair of questions: 1. What countries are in the EU? | What countries are in the western EU? | SELECT ?country ?countryLabel WHERE {{{{?country wdt:P463 wd:Q458.  # member of European Union SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}} ORDER BY ?countryLabel | SELECT ?country ?countryLabel WHERE {{{{ ?country wdt:P463 wd:Q458;  wdt:P30 wd:Q46; wdt:P17 ?sovereign. ?country wdt:P276 ?region. ?region wdt:P279* wd:Q27468. SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}}
+                             Follow the following format to return the questions: 1. Broader_Question | Subset_Question | SPARQL_query_Broader_Question | SPARQL_query_Subset_Question
+                             Do not add any other kind of text except questions''',
+} 
 
 languages = ["en"]
-llm_model = "gemini-2.5-pro"
+llm_model = "gpt-4.1-2025-04-14"
 output_map = {
     'equivalence' : 'equal-syntetic.tsv',
     'subset-superset' : 'sup-sub_syntetic.tsv',
     'minus' : 'minus_syntetic.tsv'
 }
-number_of_questions_to_generate = 20
+number_of_questions_to_generate = 51
 
-def generate_syntetic_questions():
+def generate_syntetic_questions(logical_relationship):
+    print(f"Generating syntetic questions for {logical_relationship} experiment using {llm_model} in en.")
+    tsv_output = os.path.join(here, f'../data/Dataset/en/{output_map[logical_relationship]}')
+    prompt = PromptTemplate(
+        input_variables=["question"],
+        template=PROMPTS[logical_relationship].format(number_of_questions_to_generate=number_of_questions_to_generate)
+    )
+    llms = PromptLLMS(prompt, PROMPTS[logical_relationship])
+    llm_response = (
+        llms.execute_on_gemini(model=llm_model)
+        if 'gemini' in llm_model
+        else llms.execute_on_openAI_model(openAI_model=llm_model)
+    )
+    print(f"LLM response: {llm_response}")
+    parsed = utils.parse_questions_for_tsv(llm_response)
+    
+    file_exists = os.path.exists(tsv_output)
+    is_empty = not file_exists or os.stat(tsv_output).st_size == 0
 
-    for language in languages:
-        for key in PROMPTS[language]:
-            print(f"Generating syntetic questions for {key} experiment using {llm_model} in {language}.")
-            tsv_output = os.path.join(here, f'../data/Dataset/{language}/{output_map[key]}')
-            prompt = PromptTemplate(
-                input_variables=["question"],
-                template=PROMPTS[language][key].format(number_of_questions_to_generate=number_of_questions_to_generate)
-            )
-            llms = PromptLLMS(prompt, PROMPTS[language][key])
-            llm_response = (
-                llms.execute_on_gemini(model=llm_model)
-                if 'gemini' in llm_model
-                else llms.execute_on_openAI_model(openAI_model=llm_model)
-            )
-            print(f"LLM response: {llm_response}")
-            parsed = utils.parse_questions_for_tsv(llm_response)
-            utils.save_to_tsv(parsed, tsv_output)
+    with open(tsv_output, "a", newline='', encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter="\t")
+        if is_empty:
+            if logical_relationship == 'equivalence':
+                writer.writerow(["ql1", "ql2", "sparql_ql1"])
+            else:
+                writer.writerow(["ql1", "ql2", "sparql_ql1", "sparql_ql2"])
 
-def generate_syntetic_questions_minus():
+        writer.writerows(parsed)
 
-    for language in languages:
-        tsv_file_input = os.path.join(here, f'../data/Dataset/{language}/sup-sub_syntetic.tsv')
-        question_pairs = []
-        with open(tsv_file_input, newline='', encoding='utf-8') as tsvfile:
-            reader = csv.DictReader(tsvfile, delimiter='\t')
-            for row in reader:
-                question_pairs.append((row['ql1'], row['ql2']))
-
-        for index, (q1, q2) in enumerate(question_pairs):
-            prompt_template = PromptTemplate(
-            input_variables=["q1", "q2"],
-            template=PROMPTS_MINUS[language]
-            )
-            llms = PromptLLMS(prompt_template, question1=q2,question2=q1)
-
-            llm_response = (
-                llms.execute_on_gemini_two_question(model=llm_model)
-                if 'gemini' in llm_model
-                else llms.execute_on_gemini_two_question(openAI_model=llm_model)
-            )
-            parsed = utils.parse_questions_for_tsv(llm_response, input_q1=q1, input_q2=q2, minus=True)
-            utils.save_to_tsv(parsed, output_map['minus'], minus=True)
-
-
-generate_syntetic_questions()
-generate_syntetic_questions_minus()
+generate_syntetic_questions('subset-superset')

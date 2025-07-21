@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 import csv
 import utils
 import json
+import time
+import prompt_llms
 
 here = os.path.dirname(os.path.abspath(__file__))
 load_dotenv()
@@ -13,10 +15,10 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS = {
     'en': {
-        'template': """\nIf you cannot answer, return \"idk\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
-        'equal_fix': """Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.\nCorrect the answer to the second question and return me all answers as a list separated by the symbol '|' don't add any other text.""",
-        'sup_sub_fix': """Pay attention, the first question I asked is a more general question than the second question, so the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first. Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don' add any other text""",
-        'minus_fix': """Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.\nSo the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question. Correct the answer to the third question and return me all answers as a list separated by the symbol '|' don' add any other text."""
+        'template': """\nIf you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
+        'equal_fix': """Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\nCorrect the answer to the second question and return me all answers as a list separated by the symbol '|' don't add any other text.""",
+        'sup_sub_fix': """Pay attention, the first question I asked is a more general question than the second question, so the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first.\n In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\n Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don' add any other text""",
+        'minus_fix': """Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.\nSo the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question.\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".Correct the answer to the third question and return me all answers as a list separated by the symbol '|' don' add any other text."""
     },
     'es': {
         'template': """\nSi no puedes responder, devuelve \"idk\".\nDevuélveme la respuesta como una lista separada por el símbolo '|' sin añadir ningún otro texto""",
@@ -27,21 +29,21 @@ PROMPTS = {
 }
 
 
-def equal_test(llm_model,language='en'):
-    chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
+def equal_test(llm_model, dataset_name, language='en'):
+    chat = prompt_llms.return_chat_model(llm_model)
 
     template = PROMPTS[language]['template']
     fix_template_equal = PROMPTS[language]['equal_fix']
 
     # File and config paths
-    tsv_file = questions = utils.get_dataset_path('equal-wiki.tsv', language)
+    tsv_file = questions = utils.get_dataset_path(dataset_name, language)
 
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['ql1'],row['ql2']))
+            questions.append((row['Q1'],row['Q2']))
 
     answers_ql1 = {}
     answers_ql2 = {}
@@ -72,28 +74,28 @@ def equal_test(llm_model,language='en'):
     else:
         output_prefix = ''
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/equal/{output_prefix}ql1_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/equal/{output_prefix}Q1_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/equal/{output_prefix}ql2_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/equal/{output_prefix}Q2_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-def sup_sub_test(llm_model, language='en'):
-    chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
+def sup_sub_test(llm_model, dataset_name, language='en'):
+    chat = prompt_llms.return_chat_model(llm_model)
 
     template = PROMPTS[language]['template']
     fix_template_sup_sub = PROMPTS[language]['sup_sub_fix']
 
     # File and config paths
     here = os.path.dirname(os.path.abspath(__file__))
-    tsv_file = utils.get_dataset_path('subsetOf-wiki.tsv', language)
+    tsv_file = questions = utils.get_dataset_path(dataset_name, language)
 
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['ql1'],row['ql2']))
+            questions.append((row['Q1'],row['Q3']))
 
     answers_ql1 = {}
     answers_ql2 = {}
@@ -103,9 +105,9 @@ def sup_sub_test(llm_model, language='en'):
             llm=chat,
             memory=memory
         )
-        answer1 = conversation.predict(input=question[1] + template)
+        answer1 = conversation.predict(input=question[0] + template)
         answer1 = utils.convert_response_to_set(answer1)
-        answer2 = conversation.predict(input=question[0] + template)
+        answer2 = conversation.predict(input=question[1] + template)
         answer2 = utils.convert_response_to_set(answer2)
         is_subset = utils.is_subset(answer2, answer1)
         jaccard_similarity = utils.jaccard_similarity(answer1, answer2)
@@ -117,7 +119,7 @@ def sup_sub_test(llm_model, language='en'):
         answers_ql1[index] = answer1
         answers_ql2[index] = answer3
         
-        print(f"Index: {index} Question 1: {question[1]} Question 2: {question[0]}")
+        print(f"Index: {index} Question 1: {question[0]} Question 2: {question[1]}")
         print(f"Answer 1: {answer1} Answer 2: {answer2} isSubset: {is_subset} JaccardSimilarity: {jaccard_similarity} Answer 3: {answer3}")
         
     if language == 'es':
@@ -125,92 +127,124 @@ def sup_sub_test(llm_model, language='en'):
     else:
         output_prefix = ''
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/sup-sub/{output_prefix}ql1_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/sup-sub/{output_prefix}Q1_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/sup-sub/{output_prefix}ql2_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/sup-sub/{output_prefix}Q2_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-def minus_test(llm_model, language='en'):
-    chat = ChatOpenAI(model_name=llm_model, openai_api_key=openai_api_key, temperature=0.0)
+def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=None):
+    chat = prompt_llms.return_chat_model(llm_model)
 
     template = PROMPTS[language]['template']
     fix_template_minus = PROMPTS[language]['minus_fix']
 
     # File and config paths
     here = os.path.dirname(os.path.abspath(__file__))
-    tsv_file = utils.get_dataset_path('minus-set.tsv', language)
+    tsv_file = utils.get_dataset_path(dataset_name, language)
 
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
-        if language == 'en':
-            reader = csv.DictReader(tsvfile, delimiter=';')
-        else:
-            reader = csv.DictReader(tsvfile, delimiter='\t')
+        reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['ql1'],row['ql2'],row['ql3']))
+            questions.append((row['Q1'], row['Q3'], row['Q4']))
 
-    answers_ql1 = {}
-    answers_ql2 = {}
-    answers_ql3 = {}
-    for index, question in enumerate(questions):
+    # Limit the processing range
+    if end_index is None or end_index > len(questions):
+        end_index = len(questions)
+
+    # Setup output directory and file paths
+    output_prefix = '*' if language == 'es' else ''
+    base_output_dir = os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/minus')
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_minus_answers_fixing_{llm_model}.json')
+    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_fixing_{llm_model}.json')
+    q4_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_fixing_{llm_model}.json')
+
+    # Load existing partial results if present
+    def load_json(path):
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    answers_ql1 = load_json(q1_path)
+    answers_ql2 = load_json(q3_path)
+    answers_ql3 = load_json(q4_path)
+
+    for index in range(start_index, end_index):
+        if str(index) in answers_ql1:
+            continue  # Skip already processed entries
+
+        question = questions[index]
         memory = ConversationBufferMemory()
-        conversation = ConversationChain(
-            llm=chat,
-            memory=memory
-        )
-        answer1 = conversation.predict(input=question[1] + template)
-        answer1 = utils.convert_response_to_set(answer1)
-        answer2 = conversation.predict(input=question[0] + template)
-        answer2 = utils.convert_response_to_set(answer2)
-        answer3 = conversation.predict(input=question[2] + template)
-        answer3 = utils.convert_response_to_set(answer3)
+        conversation = ConversationChain(llm=chat, memory=memory)
+
+        answer1 = utils.convert_response_to_set(conversation.predict(input=question[0] + template))
+        answer2 = utils.convert_response_to_set(conversation.predict(input=question[1] + template))
+        answer3 = utils.convert_response_to_set(conversation.predict(input=question[2] + template))
+
         is_minus = utils.is_minus(answer1, answer2, answer3)
+
         if not is_minus or len(answer3) == 0:
-            answer4 = conversation.predict(input=fix_template_minus)
-            answer4 = utils.convert_response_to_set(answer4)
+            answer4 = utils.convert_response_to_set(conversation.predict(input=fix_template_minus))
         else:
             answer4 = answer3
-        answers_ql1[index] = answer1
-        answers_ql2[index] = answer2
-        answers_ql3[index] = answer4
 
-        print(f"Index: {index} Question 1: {question[1]} Question 2: {question[0]} Question 3: {question[2]}")
-        print(f"Answer 1: {answer1} Answer 2: {answer2} Answer 3: {answer3} isMinus: {is_minus} Answer 4: {answer4}")
+        # Save to dict
+        answers_ql1[str(index)] = list(answer1)
+        answers_ql2[str(index)] = list(answer2)
+        answers_ql3[str(index)] = list(answer4)
+
+        # Write to files immediately
+        with open(q1_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+
+        with open(q3_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
+
+        with open(q4_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
+
+        print(f"Index: {index} Q1: {question[0]} Q2: {question[1]} Q3: {question[2]}")
+        print(f"A1: {answer1} A2: {answer2} A3: {answer3} isMinus: {is_minus} Final: {answer4}")
+        time.sleep(2)
+        
 
     if language == 'es':
         output_prefix = '*'
     else:
         output_prefix = ''
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/minus/{output_prefix}ql1_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q1_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
-    
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/minus/{output_prefix}ql2_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q3_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
-    
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/minus/{output_prefix}ql3_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q4_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
 
 
-llm_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14']
-languages = ['en', 'es']
-
+llm_models = ['gpt-4.1-2025-04-14']
+languages = ['en']
+datasets = ['spinach.tsv']
 for language in languages:
     for llm_model in llm_models:
+        for dataset_name in datasets:
+            # Run logical equivalence test
+            print(f"Processing model: {llm_model}")
+            #equal_test(llm_model, dataset_name, language)
+            print(f"Finished processing model: {llm_model}\n")
 
-        # Run logical equivalence test
-        print(f"Processing model: {llm_model}")
-        equal_test(llm_model, language)
-        print(f"Finished processing model: {llm_model}\n")
+            # Run subset/superset test
+            print(f"Processing model: {llm_model}")
+            #sup_sub_test(llm_model, dataset_name, language)
+            print(f"Finished processing model: {llm_model}\n")
 
-        # Run subset/superset test
-        print(f"Processing model: {llm_model}")
-        sup_sub_test(llm_model, language)
-        print(f"Finished processing model: {llm_model}\n")
-
-        # Run minus test
-        print(f"Processing model: {llm_model}")
-        minus_test(llm_model, language)
-        print(f"Finished processing model: {llm_model}\n")
+            # Run minus test
+            print(f"Processing model: {llm_model}")
+            minus_test(llm_model, dataset_name, language)
+            print(f"Finished processing model: {llm_model}\n")
