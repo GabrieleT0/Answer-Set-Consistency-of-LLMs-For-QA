@@ -1,0 +1,78 @@
+Agent1_FilterQ1:
+  en: |
+    Evaluate whether the following question meets all of the following criteria for acceptable answer types:
+
+    1. Returns a limited number of distinct answers (between 2 to 50).
+    2. Does **not** return a binary answer (e.g., "yes" or "no").
+    3. Does **not** return a single specific value (e.g., a date, name, or number).
+    4. Does **not** require multiple answer dimensions (e.g., combining "what" and "where" in the same question).
+
+    Question: "{question}"
+
+    Answer only with "Yes" or "No – [brief reason]".
+
+Agent2_GenerateQ2:
+  en: |
+    You are a rephrasing expert. Generate question Q2 which means exactly the same thing as the original question but uses different syntax wording.
+
+    Original Question: "{question}"
+
+    Format your response as:
+    Q2: ...
+
+Agent3_GenerateQ3Q4:
+  en: |
+    Given the original question below, generate Q3 and Q4 to ensure:
+    - Q3 and Q4 are objective,
+    - answer set of Q1 equal to union of answer set of Q3 and Q4,
+    - answer set of Q3 disjoint from Q4,
+    - answer set of Q3 and Q4 subset of Q1 (more restrictive).
+
+    Original Question: "{question}"
+
+    Format your response as:
+    Q3: ...
+    Q4: ...
+
+Agent4_ValidateAll:
+  en: |
+    You are reviewing four related questions.
+
+    Q1: {q1}
+    Q2: {q2}
+    Q3: {q3}
+    Q4: {q4}
+
+    Tasks:
+    1. Check if Q2 is equivalent to Q1.
+    2. Check if Q3 is a more restrictive version of Q1.
+    3. Check if the union of Q3 and Q4 covers Q1 (Q1 = Q3 + Q4).
+    4. Check all Q1~Q4 are objective questions.
+
+    If everything is correct, answer only:
+    "Yes"
+
+    If not, return a corrected version in this format:
+    Corrected Q1: ...
+    Corrected Q2: ...
+    Corrected Q3: ...
+    Corrected Q4: ...
+
+Agent4_ValidateAll-old:
+  en: |
+    You are reviewing four related questions.
+
+    Q1: {q1}
+    Q2: {q2}
+    Q3: {q3}
+    Q4: {q4}
+
+    Check:
+    - Is Q2 equivalent to Q1?
+    - Is Q3 and Q4 more restrictive than Q1?
+    - Is answer set of Q1 equal to the union of answer set of Q3 and Q4?
+
+    Answer only:
+    "Yes"
+    OR
+    "No – no any other text".

@@ -2,4 +2,7 @@ __pycache__
 *.pyc
 .*
 !.gitignore
+# Ignore a specific config file in your pipeline
+src/question_pipeline/config.json
+
 data/batch_api
