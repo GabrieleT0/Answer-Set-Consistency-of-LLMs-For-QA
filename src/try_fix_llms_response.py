@@ -241,10 +241,10 @@ for language in languages:
 
             # Run subset/superset test
             print(f"Processing model: {llm_model}")
-            #sup_sub_test(llm_model, dataset_name, language)
+            sup_sub_test(llm_model, dataset_name, language)
             print(f"Finished processing model: {llm_model}\n")
 
             # Run minus test
             print(f"Processing model: {llm_model}")
-            minus_test(llm_model, dataset_name, language)
+            #minus_test(llm_model, dataset_name, language)
             print(f"Finished processing model: {llm_model}\n")

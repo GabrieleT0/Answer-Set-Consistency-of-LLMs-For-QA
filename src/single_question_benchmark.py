@@ -44,7 +44,7 @@ logical_relations_map = {
     'Q4': 'minus',
 }
 languages = ['en']
-llm_models = ['gpt-4.1-2025-04-14']
+llm_models = ['gemini-2.5-pro']
 datasets = ['spinach.tsv']
 
 

@@ -278,7 +278,7 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
         print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted} Answer 3: {answer3}\n")
         time.sleep(1.5)
 
-relations = ['Containment', 'Minus']
+relations = ['Minus']
 for language in languages:
     for llm_model in llm_models:
         for dataset in datasets:

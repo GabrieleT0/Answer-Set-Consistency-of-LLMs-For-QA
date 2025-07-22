@@ -25,19 +25,19 @@ class PromptLLMS:
         self.q2 = q2
         self.q3 = q3
 
-    def execute_single_question(self,chat):
+    def execute_single_question(self):
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"question": self.question})
         return result.content
 
-    def execute_two_question(self,chat):
+    def execute_two_question(self):
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"q1": self.question1, "q2": self.question2})
         return result.content
 
-    def execute_three_question(self,chat):
+    def execute_three_question(self):
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"q1": self.q1, "q2": self.q2, "q3": self.q3})
