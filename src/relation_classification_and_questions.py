@@ -241,18 +241,18 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
         conversation = ConversationChain(llm=chat, memory=memory)
 
         relation_predicted = conversation.predict(
-            input=PROMPTS[language]['template_classification'].format(q1=question[0], q2=question[1], q3=question[2])
+            input=PROMPTS_MINUS[language]['template_classification'].format(q1=question[0], q2=question[1], q3=question[2])
         ).strip().lower()
 
-        answer1 = conversation.predict(input=question[0] + PROMPTS[language]['template'])
-        answer2 = conversation.predict(input=question[1] + PROMPTS[language]['template'])
+        answer1 = conversation.predict(input=question[0] + PROMPTS_MINUS[language]['template'])
+        answer2 = conversation.predict(input=question[1] + PROMPTS_MINUS[language]['template'])
 
         if use_hint:
             answer3 = conversation.predict(
-                input=question[2] + PROMPTS[language]['hint_prompt'].format(relation=test_type) + PROMPTS[language]['template']
+                input=question[2] + PROMPTS_MINUS[language]['hint_prompt'].format(relation=test_type) + PROMPTS_MINUS[language]['template']
             )
         else:
-            answer3 = conversation.predict(input=question[2] + PROMPTS[language]['template'])
+            answer3 = conversation.predict(input=question[2] + PROMPTS_MINUS[language]['template'])
 
         print("\nOriginal answers:", answer1, answer2, answer3)
 
