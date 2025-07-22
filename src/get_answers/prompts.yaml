@@ -1,0 +1,37 @@
+standard:
+  en: |
+    {question}
+    If you can't answer, return 'idk'.
+    Return me all answers as a list separated by the symbol '|' don't add any other text.
+  es: |
+    {question}
+    Si no puedes responder, devuelve "no sé".
+    Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.
+
+wikidata:
+  en: |
+    {question}
+    Just use Wikidata as a source to answer my question.
+    If you can't answer, return 'idk'.
+    Return me all answers as a list separated by '|' don't add any other text.
+  es: |
+    {question}
+    Utiliza Wikidata como fuente para responder a mi pregunta.
+    Si no puedes responder, devuelve "no sé".
+    Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.
+
+follow_up:
+  en:
+    template: |
+      If you cannot answer, return "idk".
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      Return me all answers as a list separated by the symbol '|' don’t add any other text.
+    equal_fix: |
+      Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.
+      Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don’t add any other text.
+    sup_sub_fix: |
+      Pay attention, the first question I asked is more general than the second question, so the answer of the second question must be a subset of the answer of the first.
+      Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don’t add any other text.
+    minus_fix: |
+      Pay attention, I asked you 3 different questions. The third should contain the elements of the first answer excluding the second.
+      Correct the answer to the third question and return me all answers as a list separated by the symbol '|' don’t add any other text.

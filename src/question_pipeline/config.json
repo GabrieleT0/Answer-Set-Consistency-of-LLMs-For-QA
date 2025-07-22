@@ -4,4 +4,5 @@
   "api_version": "2025-01-01-preview",
   "prompt_path": "prompts.yaml",
   "input_path": "../../data/Spinach",
-  "output_path": "../../data/Spinach/spinach_output"}
+  "output_path": "../../data/Spinach/spinach_output"
+}
