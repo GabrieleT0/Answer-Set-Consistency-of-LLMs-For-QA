@@ -3,12 +3,13 @@ import csv
 import json
 from langchain_core.prompts import PromptTemplate
 from llms import PromptLLMS
-import util 
+import src.get_answers.utils as utils 
 import yaml
+
+root_dir = os.path.dirname(os.path.abspath(__name__))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROMPT_PATH = os.path.join(HERE, "prompts.yaml")
-root_dir = os.path.dirname(os.path.abspath(__name__))
 
 with open(PROMPT_PATH, "r", encoding="utf-8") as f:
     PROMPTS = yaml.safe_load(f)
@@ -35,9 +36,9 @@ def process_question(question, llm_model, prompt_template, language):
         llms = PromptLLMS(model=llm_model, prompt_template=prompt_template, question=question)
         response = llms.execute_single_question()
         if language == 'en':
-            return util.convert_response_to_set(response)
+            return utils.convert_response_to_set(response)
         else:
-            return util.convert_response_to_set_es(response)
+            return utils.convert_response_to_set_es(response)
     except ValueError as e:
         print(f"⚠️ Azure content filter triggered for question: {question}")
         print(f"Error: {e}")

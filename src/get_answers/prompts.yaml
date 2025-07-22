@@ -20,7 +20,7 @@ wikidata:
     Si no puedes responder, devuelve "no sé".
     Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.
 
-follow_up:
+fix:
   en:
     template: |
       If you cannot answer, return "idk".
@@ -35,3 +35,87 @@ follow_up:
     minus_fix: |
       Pay attention, I asked you 3 different questions. The third should contain the elements of the first answer excluding the second.
       Correct the answer to the third question and return me all answers as a list separated by the symbol '|' don’t add any other text.
+
+relation_classification:
+  en:
+    template: |
+      If you cannot answer, return "idk".
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      Return me all answers as a list separated by the symbol '|' don' add any other text.
+    template_classification: |
+      I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
+
+      - Equivalence 
+      - Containment 
+      - Disjoint 
+      - Overlap 
+      - Complement
+      - Unknown
+
+      These are the two questions:
+
+      q1: {q1}
+      q2: {q2}
+
+      Return only the logical relation between the two questions. Return only the first relation that holds. Do not include any additional explanation.
+    hint_prompt: "Remember that {relation} holds between the answers for this question and the previous question."
+
+  es:
+    template: |
+      Si no puedes responder, devuelve "idk".
+      Devuélveme la respuesta como una lista separada por el símbolo '|', sin añadir ningún otro texto
+    template_classification: |
+      Te planteo dos preguntas, q1, q2. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1 y q2:
+
+      - Equivalencia
+      - Contención
+      - Disjunto
+      - Solapamiento
+      - Complemento
+      - Desconocido
+
+      Estas son las dos preguntas:
+
+      q1: {q1}
+      q2: {q2}
+
+      Devuélveme solo la relación lógica entre las dos preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
+    hint_prompt: "Recuerda que {relation} se mantiene entre las respuestas de esta pregunta y la anterior."
+
+relation_classification_minus:
+  en:
+    template_classification: |
+      I prompt you three questions q1, q2, q3 you need to identify the logical relation of the concept between q1-q2 and q3
+
+      - Equivalence  
+      - Containment  
+      - Disjoint  
+      - Overlap  
+      - Minus  
+      - Unknown
+
+      These are the three questions:
+
+      q1: {q1}  
+      q2: {q2}  
+      q3: {q3}  
+
+      Return only the logical relation between the three questions. Return only the first relation that holds. Do not include any additional explanation.
+
+  es: |
+    Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3
+
+    - Equivalencia
+    - Contención
+    - Disjunto
+    - Solapamiento
+    - Resta
+    - Desconocido
+
+    Estas son las tres preguntas:
+
+    q1: {q1}
+    q2: {q2}
+    q3: {q3}
+
+    Devuélveme solo la relación lógica entre las tres preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.

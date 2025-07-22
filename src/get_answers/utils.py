@@ -57,8 +57,8 @@ def is_minus(set1,set2,set3):
     return set1.difference(set2) == set3
 
 def get_dataset_path(filename, language='en'):
-    here = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(here, f'../data/Dataset/{language}/{filename}')
+    root_dir = os.path.dirname(os.path.abspath(__name__))
+    return os.path.join(root_dir, f'/data/Dataset/{language}/{filename}')
 
 def parse_questions_for_tsv(text, minus = False, input_q1 = False, input_q2 = False):
     lines = [line.strip() for line in text.strip().split("\n") if line.strip()]
