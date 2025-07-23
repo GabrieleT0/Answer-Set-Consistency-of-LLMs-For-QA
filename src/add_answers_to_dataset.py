@@ -29,13 +29,14 @@ def add_answers_to_spinach(llm_model,task_type):
     with open('../data/Dataset/en/spinach.tsv', "r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter='\t')
         question_rows = list(reader)
-        fieldnames = reader.fieldnames + [k + 'Ans' for k in columns_map.keys()]
+        fieldnames = reader.fieldnames + [k + 'Ans' for k in columns_map.keys()] + ['Q3Ans']
 
     # Add answers to each row
     for index, row in enumerate(question_rows):
         for key in columns_map:
             if key == 'Q2S':
                 ans_list = all_answers['Q3'].get(str(index), [])
+                row['Q3' + 'Ans'] = ans_list[0] if ans_list else ""
             else:
                 ans_list = all_answers[key].get(str(index), [])
                 row[key + 'Ans'] = ans_list[0] if ans_list else ""
