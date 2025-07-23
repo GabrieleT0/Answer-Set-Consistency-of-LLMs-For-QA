@@ -187,24 +187,6 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
 
 if __name__ == "__main__":
 
-    # dataset_map = {
-    #     'equal-wiki.tsv': 'equal',
-    #     'subsetOf-wiki.tsv': 'sup-sub',
-    #     'minus-set.tsv': 'minus'
-    # }
-
-    # logical_relations = {
-    #     'en': {
-    #         'Equivalence': 'equal-wiki.tsv',
-    #         'Containment': 'subsetOf-wiki.tsv',
-    #         'Minus': 'minus-set.tsv',
-    #     },
-    #     'es': {
-    #         'Equivalencia': 'equal-wiki.tsv',
-    #         'Contención': 'subsetOf-wiki.tsv',
-    #         'Resta': 'minus-set.tsv',
-    #     }
-    # }
     llm_models = ['gpt-4o']
     languages = ['en']
     datasets = ['spinach.tsv']
@@ -217,5 +199,5 @@ if __name__ == "__main__":
                     if relation == 'Minus' or relation == 'Resta':
                         run_minus_benchmark(llm_model, language, relation, dataset)
                     else:
-                        run_benchmark(llm_model, language, relation, dataset, start_index=45)   
+                        run_benchmark(llm_model, language, relation, dataset)   
                     

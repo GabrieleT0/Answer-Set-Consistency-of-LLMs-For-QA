@@ -146,7 +146,7 @@ def _save_json(data, dataset_name, relation, column, llm_model, language):
 
 
 if __name__ == "__main__":
-    llm_models = ['gpt-4o']
+    llm_models = ['o3']
     languages = ['en']
     datasets = ['spinach.tsv']
 

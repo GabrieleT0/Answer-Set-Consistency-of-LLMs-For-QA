@@ -19,9 +19,9 @@ gemini_key = os.getenv('GOOGLE_AI')
 
 azure_openai_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
-azure_api_version= os.getenv('AZURE_API_VERSION', '2025-01-01-preview')
+azure_api_version= os.getenv('AZURE_API_VERSION', '2023-06-01-preview')
 
-azure_models = ["gpt-4o"]
+azure_models = ["gpt-4o","o3","o1"]
 openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']
 gemini_models = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.5-ultra']
 
@@ -63,11 +63,9 @@ def return_chat_model(model_name, temperature=0.1):
     elif model_name in azure_models:
         return AzureChatOpenAI(
                 azure_deployment=model_name,  # or your deployment
-                api_version="2023-06-01-preview",  # or your api version
-                temperature=0,
+                api_version=azure_api_version,  # or your api version
                 max_tokens=None,
                 timeout=None,
-                max_retries=2,
                 # other params...
             )
     else:
