@@ -1,6 +1,14 @@
 import csv
 import json
 
+def jaccard_similarity(set1, set2):
+    """Calculate the Jaccard similarity between two sets."""
+    intersection = len(set1.intersection(set2))
+    union = len(set1.union(set2))
+    if union == 0:
+        return 0.0
+    return intersection / union
+
 def add_answers_to_spinach(llm_model,task_type):
     columns_map = {
         'Q1': 'equal',
@@ -34,12 +42,33 @@ def add_answers_to_spinach(llm_model,task_type):
     # Add answers to each row
     for index, row in enumerate(question_rows):
         for key in columns_map:
-            if key == 'Q2S':
+            if key == 'Q1':
+                q1_ans_list = all_answers['Q1'].get(str(index), [])
+                q2_ans_list = all_answers['Q2'].get(str(index), [])
+                set_a = set(q1_ans_list)
+                set_b = set(q2_ans_list)
+                sim = jaccard_similarity(set_a, set_b)
+                if sim != 1.0:
+                    row['Q1Ans'] = q1_ans_list if q1_ans_list else ""
+                    row['Q2Ans'] = q2_ans_list if q2_ans_list else ""
+            elif key == 'Q2S':
                 ans_list = all_answers['Q3'].get(str(index), [])
-                row['Q3' + 'Ans'] = ans_list if ans_list else ""
-            else:
-                ans_list = all_answers[key].get(str(index), [])
-                row[key + 'Ans'] = ans_list if ans_list else ""
+                q1_ans_list = all_answers['Q1'].get(str(index), [])
+                set_a = set(q1_ans_list)
+                set_b = set(ans_list)
+                if not set_b.issubset(set_a):
+                    row['Q3Ans'] = ans_list if ans_list else ""
+            elif key == 'Q4':
+                q1_ans_list = all_answers['Q1'].get(str(index), [])
+                q3_ans_list = all_answers['Q3'].get(str(index), [])
+                q4_ans_list = all_answers['Q4'].get(str(index), [])
+                set_a = set(q1_ans_list)
+                set_b = set(q3_ans_list)
+                q4 = set(q4_ans_list)
+                set_c =  set_a - set_b
+                sim = jaccard_similarity(set_c, q4)
+                if sim != 1.0:
+                    row['Q4Ans'] = q4_ans_list if q4_ans_list else ""
 
     # Write final merged TSV
     with open(f"../data/answers/{task_type}/spinach/spinach_answers_{task_type}_{llm_model}.tsv", "w", newline='', encoding="utf-8") as f:
