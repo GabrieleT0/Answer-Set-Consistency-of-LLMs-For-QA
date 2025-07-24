@@ -9,23 +9,35 @@ from langchain.memory import ConversationBufferMemory
 import utils
 import llms
 import yaml
+import datetime
 
-# Setup logging
-import logging
+# Create a log directory if it doesn't exist
+log_dir = os.path.join(os.path.dirname(__file__), "logs")
+os.makedirs(log_dir, exist_ok=True)
 
+# Log file path (e.g., logs/run_2025-07-17_15-30.log)
+log_filename = datetime.datetime.now().strftime("try_fix_llm_response_%Y-%m-%d_%H-%M.log")
+log_path = os.path.join(log_dir, log_filename)
+
+# Set up logging
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),  # Output to console
+        logging.FileHandler(log_path, encoding='utf-8')  # Save to file
+    ]
 )
 
-# Suppress OpenAI + HTTPX logs
-logging.getLogger("httpx").setLevel(logging.WARNING)
-logging.getLogger("openai").setLevel(logging.WARNING)
-logging.getLogger("langchain_core").setLevel(logging.WARNING)
+# Mute all other libraries except your custom logger
+for name in logging.root.manager.loggerDict:
+    if name not in ["try_fix_llm_response"]:  # your custom logger name
+        logging.getLogger(name).setLevel(logging.WARNING)
 
-logger = logging.getLogger("followup_fixer")
-logger.setLevel(logging.INFO)
 
+logger = logging.getLogger("try_fix_llm_response")
+
+# Load environment variables
 load_dotenv()
 
 root_dir = os.path.dirname(os.path.abspath(__name__))
@@ -44,9 +56,14 @@ def equal_test(llm_model, dataset_name, language='en'):
     tsv_path = root_dir + f'/data/Dataset/{language}/{dataset_name}'
     questions = [(row['Q1'], row['Q2']) for row in csv.DictReader(open(tsv_path, encoding='utf-8'), delimiter='\t')]
 
-    results_q1, results_q2 = {}, {}
+    # results_q1, results_q2 = {}, {}
+    results_q1 = load_answers(dataset_name, 'equal', 'Q1', llm_model, language)
+    results_q2 = load_answers(dataset_name, 'equal', 'Q2', llm_model, language)
 
     for i, (q1, q2) in enumerate(questions):
+        if str(i) in results_q1 and str(i) in results_q2:
+            continue  # Skip already processed
+        logger.info(f"Processing question {i}: {q1} | {q2}")
         convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
         try:
             a1 = utils.convert_response_to_set(convo.predict(input=q1 + "\n" + template))
@@ -60,9 +77,12 @@ def equal_test(llm_model, dataset_name, language='en'):
 
         results_q1[str(i)] = list(a1)
         results_q2[str(i)] = list(a2)
+        if i % 10 == 0:
+                save_answers(results_q1, dataset_name, 'equal', 'Q1', llm_model, language)
+                save_answers(results_q2, dataset_name, 'equal', 'Q2', llm_model, language)
 
-    _save_json(results_q1, dataset_name, 'equal', 'Q1', llm_model, language)
-    _save_json(results_q2, dataset_name, 'equal', 'Q2', llm_model, language)
+    save_answers(results_q1, dataset_name, 'equal', 'Q1', llm_model, language)
+    save_answers(results_q2, dataset_name, 'equal', 'Q2', llm_model, language)
 
 
 def sup_sub_test(llm_model, dataset_name, language='en'):
@@ -73,9 +93,15 @@ def sup_sub_test(llm_model, dataset_name, language='en'):
     tsv_path = root_dir + f'/data/Dataset/{language}/{dataset_name}'
     questions = [(row['Q1'], row['Q3']) for row in csv.DictReader(open(tsv_path, encoding='utf-8'), delimiter='\t')]
 
-    results_q1, results_q3 = {}, {}
+    # results_q1, results_q3 = {}, {}
+    results_q1 = load_answers(dataset_name, 'sup-sub', 'Q1', llm_model, language)
+    results_q3 = load_answers(dataset_name, 'sup-sub', 'Q3', llm_model, language)
+
 
     for i, (q1, q3) in enumerate(questions):
+        if str(i) in results_q1 and str(i) in results_q3:
+            continue  # Skip already processed
+        logger.info(f"Processing question {i}: {q1} | {q3}")
         convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
         try:
             a1 = utils.convert_response_to_set(convo.predict(input=q1 + "\n" + template))
@@ -89,9 +115,12 @@ def sup_sub_test(llm_model, dataset_name, language='en'):
 
         results_q1[str(i)] = list(a1)
         results_q3[str(i)] = list(a3)
+        if i % 10 == 0:
+            save_answers(results_q1, dataset_name, 'sup-sub', 'Q1', llm_model, language)
+            save_answers(results_q3, dataset_name, 'sup-sub', 'Q3', llm_model, language)
 
-    _save_json(results_q1, dataset_name, 'sup-sub', 'Q1', llm_model, language)
-    _save_json(results_q3, dataset_name, 'sup-sub', 'Q3', llm_model, language)
+    save_answers(results_q1, dataset_name, 'sup-sub', 'Q1', llm_model, language)
+    save_answers(results_q3, dataset_name, 'sup-sub', 'Q3', llm_model, language)
 
 
 def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=None):
@@ -105,9 +134,15 @@ def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=
     if end_index is None or end_index > len(questions):
         end_index = len(questions)
 
-    results_q1, results_q3, results_q4 = {}, {}, {}
-
+    # results_q1, results_q3, results_q4 = {}, {}, {}
+    results_q1 = load_answers(dataset_name, 'minus', 'Q1', llm_model, language)
+    results_q3 = load_answers(dataset_name, 'minus', 'Q3', llm_model, language)
+    results_q4 = load_answers(dataset_name, 'minus', 'Q4', llm_model, language)
+    
     for i in range(start_index, end_index):
+        if str(i) in results_q1 and str(i) in results_q3 and str(i) in results_q4:
+            continue
+        logger.info(f"Processing question {i}: {questions[i]}")
         q1, q3, q4 = questions[i]
         convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
         try:
@@ -128,13 +163,17 @@ def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=
 
         logger.info(f"[Minus {i}] is_minus: {utils.is_minus(a1, a2, a3)}")
         time.sleep(2)
+        if i % 10 == 0:
+            save_answers(results_q1, dataset_name, 'minus', 'Q1', llm_model, language)
+            save_answers(results_q3, dataset_name, 'minus', 'Q3', llm_model, language)
+            save_answers(results_q4, dataset_name, 'minus', 'Q4', llm_model, language)
 
-    _save_json(results_q1, dataset_name, 'minus', 'Q1', llm_model, language)
-    _save_json(results_q3, dataset_name, 'minus', 'Q3', llm_model, language)
-    _save_json(results_q4, dataset_name, 'minus', 'Q4', llm_model, language)
+    save_answers(results_q1, dataset_name, 'minus', 'Q1', llm_model, language)
+    save_answers(results_q3, dataset_name, 'minus', 'Q3', llm_model, language)
+    save_answers(results_q4, dataset_name, 'minus', 'Q4', llm_model, language)
 
 
-def _save_json(data, dataset_name, relation, column, llm_model, language):
+def save_answers(data, dataset_name, relation, column, llm_model, language):
     prefix = '*' if language == 'es' else ''
     base_dir = os.path.join(root_dir, f'data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/{relation}')
     os.makedirs(base_dir, exist_ok=True)
@@ -143,6 +182,17 @@ def _save_json(data, dataset_name, relation, column, llm_model, language):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     logger.info(f"Saved file: {path}")
+
+def load_answers(dataset_name, relation, column, llm_model, language):
+    prefix = '*' if language == 'es' else ''
+    base_dir = os.path.join(root_dir, f'data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/{relation}')
+    filename = f"{prefix}{column}_{relation}_answers_fixing_{llm_model}.json"
+    path = os.path.join(base_dir, filename)
+
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
 
 
 if __name__ == "__main__":

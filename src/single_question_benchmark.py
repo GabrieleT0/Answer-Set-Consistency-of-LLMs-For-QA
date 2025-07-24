@@ -83,7 +83,7 @@ def run_benchmark(prompt_type='standard'):
                     suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
                     output_filename = os.path.join(
                         here,
-                        f'../data/answers/{dataset.split(".")[0]}/zero-shot/{logical_relations_map[column]}/{lang_prefix}{column}_{logical_relations_map[column]}{suffix}'
+                        f'../data/answers/zero-shot/{dataset.split(".")[0]}/{logical_relations_map[column]}/{lang_prefix}{column}_{logical_relations_map[column]}{suffix}'
                     )
                     with open(output_filename, 'w', encoding='utf-8') as f:
                         json.dump(answers, f, ensure_ascii=False, indent=4)
