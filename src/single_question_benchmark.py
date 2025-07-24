@@ -11,8 +11,9 @@ here = os.path.dirname(os.path.abspath(__file__))
 PROMPTS = {
     "standard": {
         "en": '''{question} \n
-                If you can't answer, return 'idk'. \n
-                Return me all answers as a list separated by the symbol '|' don't add any other text.''',
+                If you can't answer, return 'idk'.
+                If the question has no answer, return 'no answer'.
+                Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.''',
         "es": '''{question} \n
                 Si no puedes responder, devuelve "no sé". \n
                 Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.'''
@@ -21,7 +22,8 @@ PROMPTS = {
         "en": '''{question} \n
             Just use Wikidata as a source to answer my question. \n
             If you can't answer, return 'idk'. \n
-            Return me all answers as a list separated by '|' don't add any other text.''',
+            If the question has no answer, return 'no answer'. \n
+            Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.''',
         "es": '''{question} \n
             Utiliza Wikidata como fuente para responder a mi pregunta. \n
             Si no puedes responder, devuelve "no sé". \n
