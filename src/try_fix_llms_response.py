@@ -29,58 +29,83 @@ PROMPTS = {
 }
 
 
-def equal_test(llm_model, dataset_name, language='en'):
+def equal_test(llm_model, dataset_name, language='en', start_index=0, end_index=None):
     chat = prompt_llms.return_chat_model(llm_model)
 
     template = PROMPTS[language]['template']
     fix_template_equal = PROMPTS[language]['equal_fix']
 
     # File and config paths
-    tsv_file = questions = utils.get_dataset_path(dataset_name, language)
+    here = os.path.dirname(os.path.abspath(__file__))
+    tsv_file = utils.get_dataset_path(dataset_name, language)
 
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['Q1'],row['Q2']))
+            questions.append((row['Q1'], row['Q2']))
 
-    answers_ql1 = {}
-    answers_ql2 = {}
-    for index, question in enumerate(questions):
+    # Limit processing range
+    if end_index is None or end_index > len(questions):
+        end_index = len(questions)
+
+    # Setup output directory and file paths
+    output_prefix = '*' if language == 'es' else ''
+    base_output_dir = os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/equal')
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_equal_answers_fixing_{llm_model}.json')
+    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_equal_answers_fixing_{llm_model}.json')
+
+    # Load existing results
+    def load_json(path):
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    answers_ql1 = load_json(q1_path)
+    answers_ql2 = load_json(q2_path)
+
+    for index in range(start_index, end_index):
+        if str(index) in answers_ql1:
+            continue  # Skip already processed
+
+        question = questions[index]
         memory = ConversationBufferMemory()
-        conversation = ConversationChain(
-            llm=chat,
-            memory=memory
-        )
-        answer1 = conversation.predict(input=question[0] + template)
-        answer1 = utils.convert_response_to_set(answer1)
-        answer2 = conversation.predict(input=question[1] + template)
-        answer2 = utils.convert_response_to_set(answer2)
+        conversation = ConversationChain(llm=chat, memory=memory)
+
+        answer1 = utils.convert_response_to_set(conversation.predict(input=question[0] + template))
+        answer2 = utils.convert_response_to_set(conversation.predict(input=question[1] + template))
+
         jaccard_similarity = utils.jaccard_similarity(answer1, answer2)
-        if jaccard_similarity < 1:
-            answer3 = conversation.predict(input=fix_template_equal)
-            answer3 = utils.convert_response_to_set(answer3)
+
+        if jaccard_similarity < 1 or len(answer2) == 0:
+            answer3 = utils.convert_response_to_set(conversation.predict(input=fix_template_equal))
         else:
             answer3 = answer2
-        answers_ql1[index] = answer1
-        answers_ql2[index] = answer3
 
-        print(f"Index: {index} Question 1: {question[0]} Question 2: {question[0]}")
-        print(f"Answer 1: {answer1} Answer 2: {answer2} Jaccard Similarity: {jaccard_similarity} Answer 3: {answer3}")
-    
-    if language == 'es':
-        output_prefix = '*'
-    else:
-        output_prefix = ''
+        # Save results
+        answers_ql1[str(index)] = list(answer1)
+        answers_ql2[str(index)] = list(answer3)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/equal/{output_prefix}Q1_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+        # Write incrementally
+        with open(q1_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+        with open(q2_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
+
+        print(f"Index: {index} Q1: {question[0]} Q2: {question[1]}")
+        print(f"A1: {answer1} A2: {answer2} Jaccard: {jaccard_similarity} Final: {answer3}")
+
+    # Final write
+    with open(q1_path, 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
-
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/equal/{output_prefix}Q2_equal_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(q2_path, 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-def sup_sub_test(llm_model, dataset_name, language='en'):
+def sup_sub_test(llm_model, dataset_name, language='en', start_index=0, end_index=None):
     chat = prompt_llms.return_chat_model(llm_model)
 
     template = PROMPTS[language]['template']
@@ -88,49 +113,74 @@ def sup_sub_test(llm_model, dataset_name, language='en'):
 
     # File and config paths
     here = os.path.dirname(os.path.abspath(__file__))
-    tsv_file = questions = utils.get_dataset_path(dataset_name, language)
+    tsv_file = utils.get_dataset_path(dataset_name, language)
 
     # Read questions
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
-            questions.append((row['Q1'],row['Q3']))
+            questions.append((row['Q1'], row['Q3']))
 
-    answers_ql1 = {}
-    answers_ql2 = {}
-    for index, question in enumerate(questions):
+    # Limit the processing range
+    if end_index is None or end_index > len(questions):
+        end_index = len(questions)
+
+    # Setup output directory and file paths
+    output_prefix = '*' if language == 'es' else ''
+    base_output_dir = os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/sup-sub')
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_sup-sub_answers_fixing_{llm_model}.json')
+    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q3_sup-sub_answers_fixing_{llm_model}.json')
+
+    # Load existing partial results if present
+    def load_json(path):
+        if os.path.exists(path):
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+
+    answers_ql1 = load_json(q1_path)
+    answers_ql2 = load_json(q3_path)
+
+    for index in range(start_index, end_index):
+        if str(index) in answers_ql1:
+            continue  # Skip already processed entries
+
+        question = questions[index]
         memory = ConversationBufferMemory()
-        conversation = ConversationChain(
-            llm=chat,
-            memory=memory
-        )
-        answer1 = conversation.predict(input=question[0] + template)
-        answer1 = utils.convert_response_to_set(answer1)
-        answer2 = conversation.predict(input=question[1] + template)
-        answer2 = utils.convert_response_to_set(answer2)
+        conversation = ConversationChain(llm=chat, memory=memory)
+
+        answer1 = utils.convert_response_to_set(conversation.predict(input=question[0] + template))
+        answer2 = utils.convert_response_to_set(conversation.predict(input=question[1] + template))
         is_subset = utils.is_subset(answer2, answer1)
         jaccard_similarity = utils.jaccard_similarity(answer1, answer2)
+
         if not is_subset or len(answer2) == 0:
-            answer3 = conversation.predict(input=fix_template_sup_sub)
-            answer3 = utils.convert_response_to_set(answer3)
+            answer3 = utils.convert_response_to_set(conversation.predict(input=fix_template_sup_sub))
         else:
             answer3 = answer2
-        answers_ql1[index] = answer1
-        answers_ql2[index] = answer3
-        
-        print(f"Index: {index} Question 1: {question[0]} Question 2: {question[1]}")
-        print(f"Answer 1: {answer1} Answer 2: {answer2} isSubset: {is_subset} JaccardSimilarity: {jaccard_similarity} Answer 3: {answer3}")
-        
-    if language == 'es':
-        output_prefix = '*'
-    else:
-        output_prefix = ''
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/sup-sub/{output_prefix}Q1_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+        # Save to dicts
+        answers_ql1[str(index)] = list(answer1)
+        answers_ql2[str(index)] = list(answer3)
+
+        # Write to files immediately
+        with open(q1_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
+
+        with open(q3_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
+
+        print(f"Index: {index} Q1: {question[0]} Q3: {question[1]}")
+        print(f"A1: {answer1} A3: {answer2} isSubset: {is_subset} Jaccard: {jaccard_similarity} Final: {answer3}")
+
+    # Final write
+    with open(q1_path, 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/sup-sub/{output_prefix}Q3_sup-sub_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(q3_path, 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
 def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=None):
@@ -210,7 +260,6 @@ def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=
 
         print(f"Index: {index} Q1: {question[0]} Q2: {question[1]} Q3: {question[2]}")
         print(f"A1: {answer1} A2: {answer2} A3: {answer3} isMinus: {is_minus} Final: {answer4}")
-        time.sleep(2)
         
 
     if language == 'es':
