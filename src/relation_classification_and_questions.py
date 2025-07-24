@@ -130,8 +130,12 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
         for row in reader:
             if logical_relation == 'Equivalence':
                 questions.append((row['Q1'], row['Q2']))
+                q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
+                q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
             elif logical_relation == 'Containment':
                 questions.append((row['Q1'], row['Q3']))
+                q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
+                q2_path = os.path.join(base_output_dir, f'{output_prefix}Q3_{folder_name}_answers_classAndAnswer_{llm_model}.json')
 
     if end_index is None or end_index > len(questions):
         end_index = len(questions)
@@ -141,10 +145,7 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
     base_output_dir = os.path.join(here, f'../data/answers/rel_classification_and_questions/{dataset.split(".")[0]}/{folder_name}')
     os.makedirs(base_output_dir, exist_ok=True)
-
-    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
-    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
-
+        
     # Load previous answers
     def load_json(path):
         if os.path.exists(path):
