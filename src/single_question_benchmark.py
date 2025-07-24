@@ -4,7 +4,8 @@ import os
 import csv
 import utils
 import json
-
+from gemini_rate_limiter import GeminiRateLimiter
+import gemini_rate_limiter
 here = os.path.dirname(os.path.abspath(__file__))
 
 PROMPTS = {
@@ -33,7 +34,6 @@ columns_map = {
     'spinach.tsv': ['Q1', 'Q2','Q3','Q4'],
 }
 languages = ['en']
-llm_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']
 columns_map = {
     'spinach.tsv': ['Q1', 'Q2','Q3','Q4'],
 }
@@ -44,16 +44,19 @@ logical_relations_map = {
     'Q4': 'minus',
 }
 languages = ['en']
-llm_models = ['gpt-4.1-2025-04-14']
+llm_models = ['gemini-2.5-pro']
 datasets = ['spinach.tsv']
 
+# Initialize rate limiter for Gemini models
+rate_limiter = GeminiRateLimiter(rpm=5, tpm=250_000, rpd=100)
 
-def run_benchmark(prompt_type='standard'):
+def run_benchmark(prompt_type='standard', start_index=0, end_index=None):
     for language in languages:
         for llm_model in llm_models:
             for dataset in datasets:
                 print(f"Processing dataset: {dataset} for model: {llm_model} and language: {language}")
                 tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
+
                 for column in columns_map[dataset]:
                     print(f"Processing column: {column}")
                     questions = []
@@ -62,31 +65,64 @@ def run_benchmark(prompt_type='standard'):
                         for row in reader:
                             questions.append(row[column])
 
-                    answers = {}
-                    for index, question in enumerate(questions):
+                    # Set output path
+                    lang_prefix = '' if language == 'en' else '*'
+                    suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
+                    output_dir = os.path.join(here, f'../data/answers/zero-shot/{dataset.split(".")[0]}/{logical_relations_map[column]}')
+                    os.makedirs(output_dir, exist_ok=True)
+                    output_filename = os.path.join(output_dir, f'{lang_prefix}{column}_{logical_relations_map[column]}{suffix}')
+
+                    # Load previously saved answers
+                    if os.path.exists(output_filename):
+                        with open(output_filename, 'r', encoding='utf-8') as f:
+                            answers = json.load(f)
+                    else:
+                        answers = {}
+
+                    # Adjust end_index
+                    if end_index is None or end_index > len(questions):
+                        end_index = len(questions)
+
+                    for index in range(start_index, end_index):
+                        if str(index) in answers:
+                            continue  # Skip already processed
+
+                        question = questions[index]
                         prompt = PromptTemplate(
                             input_variables=["question"],
                             template=PROMPTS[prompt_type][language]
                         )
+
+                        # Needed only for Gemini models to avoid rate limiting issues
+                        if 'gemini' in llm_model:
+                            estimated_tokens = gemini_rate_limiter.estimate_token_count(question, PROMPTS[prompt_type][language])
+                            rate_limiter.wait_if_needed(estimated_tokens)
+
                         llms = PromptLLMS(model=llm_model, prompt_template=prompt, question=question)
                         llm_response = llms.execute_single_question()
+
                         if language == 'en':
                             converted_response = utils.convert_response_to_set(llm_response)
                         else:
                             converted_response = utils.convert_response_to_set_es(llm_response)
-                        answers[index] = converted_response
+
+                        answers[str(index)] = converted_response
+
+                        # Needed only for Gemini models to avoid rate limiting issues
+                        if 'gemini' in llm_model:
+                            rate_limiter.register_request(estimated_tokens)
+
+                        # Save incrementally
+                        with open(output_filename, 'w', encoding='utf-8') as f:
+                            json.dump(answers, f, ensure_ascii=False, indent=4)
 
                         print(f"Question {index + 1}: {question}")
                         print(f"LLM Response: {llm_response}")
 
-                    lang_prefix = '' if language == 'en' else '*'
-                    suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
-                    output_filename = os.path.join(
-                        here,
-                        f'../data/answers/zero-shot/{dataset.split(".")[0]}/{logical_relations_map[column]}/{lang_prefix}{column}_{logical_relations_map[column]}{suffix}'
-                    )
+                    # Final save to ensure consistency
                     with open(output_filename, 'w', encoding='utf-8') as f:
                         json.dump(answers, f, ensure_ascii=False, indent=4)
+
 
 # Run standard benchmark
 run_benchmark(prompt_type='standard')
