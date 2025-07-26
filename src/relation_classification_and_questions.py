@@ -15,7 +15,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 PROMPTS = {
     'en': {
-        'template': """\nIf you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.""",
+        'template': """\nIf you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".\nIf the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).\nPlease, Return me an exhaustive list separated by the symbol '|' don't add any other text.""",
         'template_classification': """
                     I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
 

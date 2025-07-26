@@ -13,6 +13,8 @@ PROMPTS = {
         "en": '''{question} \n
                 If you can't answer, return 'idk'.
                 If the question has no answer, return 'no answer'.
+                In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+                If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
                 Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.''',
         "es": '''{question} \n
                 Si no puedes responder, devuelve "no sé". \n
