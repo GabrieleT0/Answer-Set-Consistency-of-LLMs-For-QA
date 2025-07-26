@@ -110,9 +110,9 @@ output_map = {
     'sup-sub' : 'Containment',
     'minus' : 'minus'
 }
-datasets = ['spinach.tsv']
+datasets = ['qawiki.tsv']
 
-def submit_equvalence_job(language, model,logical_relation, dataset):
+def submit_equivalence_job(language, model,logical_relation, dataset):
     client = OpenAI(api_key=openai_api_key)
     question_pairs = []
     tsv_file_input = os.path.join(here, f'../data/Dataset/en/{dataset}')
@@ -345,9 +345,18 @@ for language in languages:
             #job_id = submit_containment_job(language, llm_model, 'containment', dataset)
             #convert_response(job_id, f'../data/batch_api/gpt_results_classification_{language}_{llm_model}_sup-sub.json', language, llm_model, 'sup-sub')
 
-batch = 'batch_687a338bee24819096fd5f39299afd77'
+batch = 'batch_6884ca81c42c8190a629eb8076e892e1'
 language = 'en'
-model = 'gpt-4.1'
-real_relation = 'Containment'
-gpt_results = f'../data/batch_api/gpt_results_classification_en_{model}_{real_relation}.json'
-convert_response(batch, gpt_results, language, model, 'spinach.tsv',real_relation)
+llm_models = ['gpt-4.1-2025-04-14']
+real_relation = 'Minus'  # Options:
+# - Equivalence
+# - Containment
+# - Minus  
+#convert_response(batch, gpt_results, language, model, 'spinach.tsv',real_relation)
+for model in llm_models:
+    gpt_results = f'../data/batch_api/gpt_results_classification_en_{model}_{real_relation}.json'
+    #submit_equivalence_job(language, model, 'equal', 'qawiki.tsv')
+    #submit_containment_job(language, model, 'containment', 'qawiki.tsv')
+    #submit_minus_job(language, model, 'qawiki.tsv', 'minus')
+model = 'gpt-4.1-2025-04-14'
+convert_response(batch, gpt_results, language, model, 'qawiki.tsv',real_relation)
