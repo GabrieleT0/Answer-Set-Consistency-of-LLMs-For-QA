@@ -3,6 +3,7 @@
         "Monty Python's Flying Circus",
         "Fawlty Towers",
         "The Frost Report",
+        "At Last the 1948 Show",
         "Ripping Yarns"
     ],
     "1": [
@@ -13,18 +14,19 @@
     ],
     "2": [
         "John F. Kennedy",
-        "Bill Clinton"
+        "Dwight D. Eisenhower",
+        "Ronald Reagan"
     ],
     "3": [
         "Real Madrid Club de Fútbol",
-        "Fútbol Club Barcelona"
+        "Fútbol Club Barcelona",
+        "Club Atlético de Madrid"
     ],
     "4": [
-        "Proximus",
-        "Orange Belgium",
-        "Telenet"
+        "Belgacom",
+        "Proximus Group"
     ],
-    "5": [],
+    "5": "idk",
     "6": [
         "Bhutan",
         "Nepal"
@@ -33,7 +35,8 @@
         "Netflix",
         "Crunchyroll",
         "Hulu",
-        "Funimation"
+        "Funimation",
+        "Amazon Prime Video"
     ],
     "8": [
         "Germany",
@@ -49,10 +52,12 @@
         "songwriter"
     ],
     "10": [
-        "Star Wars: Episode Four - A New Hope",
-        "Star Wars: Episode Five - The Empire Strikes Back",
-        "Star Wars: Episode Six - Return of the Jedi",
-        "Star Wars: Episode One - The Phantom Menace"
+        "Star Wars 4: A New Hope",
+        "Star Wars 5: The Empire Strikes Back",
+        "Star Wars 6: Return of the Jedi",
+        "Star Wars 1: The Phantom Menace",
+        "Star Wars 2: Attack of the Clones",
+        "Star Wars 3: Revenge of the Sith"
     ],
     "11": [
         "trumpet",
@@ -65,15 +70,15 @@
         "Brit Marling"
     ],
     "14": [
-        "Jal Pari",
         "Doorie",
         "Meri Kahani",
         "Tera Hone Laga Hoon",
-        "Meri Kahani (Revisited)"
+        "Jal Pari",
+        "Meri Kahani 2"
     ],
     "15": [
         "John Quincy Adams",
-        "George Herbert Walker Bush"
+        "George W. Bush"
     ],
     "16": [
         "Analytical Cubism",
@@ -91,7 +96,9 @@
     ],
     "20": [
         "Noémie Merlant",
-        "Adèle Haenel"
+        "Adèle Haenel",
+        "Luàna Bajrami",
+        "Valeria Golino"
     ],
     "21": [
         "Austria",
@@ -109,19 +116,24 @@
         "Burkina Faso"
     ],
     "24": [
+        "Marathon",
+        "Marathon 2: Durandal",
+        "Marathon Infinity",
         "Halo: Combat Evolved",
         "Halo 2",
         "Halo 3",
         "Halo 3: ODST",
-        "Halo: Reach",
-        "Destiny",
-        "Destiny 2"
+        "Halo: Reach"
     ],
     "25": [
         "Orrin Hatch",
         "Bob Bennett",
         "Mike Lee",
-        "Mitt Romney"
+        "Wallace F. Bennett",
+        "William H. King",
+        "Arthur V. Watkins",
+        "E. B. Erwin",
+        "Frank J. Cannon"
     ],
     "26": [
         "Mark Kirk"
@@ -143,7 +155,9 @@
         "Montenegro",
         "Albania",
         "Greece",
-        "Turkey"
+        "Turkey",
+        "Cyprus",
+        "Malta"
     ],
     "29": [
         "Phoenix",
@@ -161,15 +175,25 @@
     ],
     "30": [
         "Natsu Dragneel in Fairy Tail",
-        "Meliodas in The Seven Deadly Sins",
         "Ling Yao in Fullmetal Alchemist: Brotherhood",
-        "Gohan in Dragon Ball Z Kai",
+        "Meliodas in The Seven Deadly Sins",
+        "Conan Edogawa in Detective Conan (English dub)",
         "Death the Kid in Soul Eater",
-        "Italy in Hetalia: Axis Powers",
-        "Kyo Sohma in Fruits Basket",
-        "Takuya Kanbara in Digimon Frontier",
-        "Hideki Motosuwa in Chobits",
-        "Kyo Sohma in Fruits Basket"
+        "Gohan in Dragon Ball Z Kai",
+        "T.K. Takaishi in Digimon Adventure tri.",
+        "Kyo Sohma in Fruits Basket (2001)",
+        "Allen Walker in D.Gray-man",
+        "Riku in Kingdom Hearts video game series",
+        "Tatewaki Kuno in Ranma 1/2 (English dub)",
+        "Yusei Fudo in Yu-Gi-Oh! 5D's",
+        "Kou Mabuchi in Blue Spring Ride",
+        "Yuu Nishinoya in Haikyuu!!",
+        "Karma Akabane in Assassination Classroom",
+        "Yuki Sohma in Fruits Basket (2019)",
+        "Kazuya Kujo in Gantz",
+        "Kyo Sohma in Fruits Basket (2019)",
+        "Kaito Kuroba in Magic Kaito 1412",
+        "Yuu Nishinoya in Haikyuu!!"
     ],
     "31": [
         "Niandra LaDes and Usually Just a T-Shirt",
@@ -180,19 +204,31 @@
         "Inside of Emptiness",
         "A Sphere in the Heart of Silence",
         "Curtains",
-        "The Empyrean"
+        "The Empyrean",
+        "Enclosure",
+        "Maya"
     ],
     "32": [
         "Cockney",
         "Estuary English",
-        "Geordie",
-        "Scouse",
-        "Brummie",
-        "West Country",
-        "Mancunian",
-        "Yorkshire",
         "Received Pronunciation",
-        "Cornish English"
+        "West Country English",
+        "Scouse",
+        "Geordie",
+        "Mancunian",
+        "Brummie",
+        "Yorkshire English",
+        "East Midlands English",
+        "West Midlands English",
+        "Northern English",
+        "Southern English",
+        "Cornish English",
+        "Kentish",
+        "Cumbrian",
+        "Lancashire English",
+        "Norfolk English",
+        "Suffolk English",
+        "Surrey English"
     ],
     "33": [
         "United States of America",
@@ -227,7 +263,8 @@
     "39": [
         "Dwight D. Eisenhower",
         "John F. Kennedy",
-        "Lyndon B. Johnson"
+        "Lyndon B. Johnson",
+        "Richard Nixon"
     ],
     "40": [
         "Belgium",
@@ -243,17 +280,20 @@
     ],
     "41": [
         "Pontus Alv",
-        "Fredrik Ekdahl",
-        "Oscar Candon"
+        "Oscar Candon",
+        "Fredrik Ekdahl"
     ],
     "42": [
         "Mark Richards",
         "Tom Carroll",
-        "Layne Beachley"
+        "Mick Fanning",
+        "Stephanie Gilmore"
     ],
     "43": [
         "Parker Solar Probe",
-        "Solar and Heliospheric Observatory"
+        "Solar and Heliospheric Observatory",
+        "Solar Terrestrial Relations Observatory A",
+        "Solar Terrestrial Relations Observatory B"
     ],
     "44": [
         "Berlin",
@@ -315,8 +355,9 @@
         "Ingolstadt",
         "Würzburg",
         "Fürth",
+        "Wolfsburg",
         "Offenbach",
-        "Ulm",
+        "Ulmer",
         "Heilbronn",
         "Pforzheim",
         "Göttingen",
@@ -345,86 +386,75 @@
         "Lünen",
         "Flensburg",
         "Ratingen",
+        "Düren",
+        "Velbert",
         "Tübingen",
         "Villingen-Schwenningen",
         "Konstanz",
         "Dessau-Roßlau",
         "Neumünster",
-        "Velbert",
-        "Gladbeck",
-        "Dorsten",
+        "Norderstedt",
+        "Delmenhorst",
         "Ravensburg",
         "Ludwigsburg",
         "Hanau",
-        "Troisdorf",
-        "Sindelfingen",
-        "Düren",
-        "Worms",
-        "Neubrandenburg",
         "Bayreuth",
-        "Landshut",
-        "Aschaffenburg",
-        "Langenfeld",
-        "Wilhelmshaven",
-        "Offenburg",
-        "Gießen",
-        "Friedrichshafen",
         "Celle",
-        "Marburg",
-        "Neunkirchen",
-        "Velbert",
-        "Gotha",
+        "Gießen",
+        "Weimar",
+        "Görlitz",
+        "Worms",
         "Herten",
         "Castrop-Rauxel",
-        "Lippstadt",
-        "Bad Homburg",
-        "Langen",
-        "Rosenheim",
-        "Sindelfingen",
+        "Minden",
+        "Langenfeld",
+        "Dormagen",
         "Grevenbroich",
-        "Dinslaken",
+        "Neubrandenburg",
+        "Bad Homburg",
+        "Friedrichshafen",
+        "Landshut",
+        "Sindelfingen",
+        "Euskirchen",
+        "Lippstadt",
+        "Rosenheim",
+        "Langen",
+        "Sankt Augustin",
+        "Viersen",
+        "Offenburg",
+        "Frechen",
+        "Bad Kreuznach",
+        "Kempten",
+        "Wetzlar",
+        "Lörrach",
+        "Neuwied",
+        "Gummersbach",
+        "Rheine",
+        "Schwäbisch Gmünd",
+        "Dachau",
+        "Bad Salzuflen",
+        "Waldshut-Tiengen",
+        "Ludwigshafen am Rhein",
         "Marl",
+        "Hürth",
+        "Langenhagen",
+        "Pulheim",
+        "Kaiserslautern",
         "Bamberg",
-        "Lünen",
+        "Kleve",
+        "Lemgo",
         "Witten",
-        "Neubrandenburg",
-        "Dessau-Roßlau",
-        "Neumünster",
-        "Velbert",
-        "Gladbeck",
-        "Dorsten",
-        "Ravensburg",
-        "Ludwigsburg",
-        "Hanau",
-        "Troisdorf",
+        "Greifswald",
+        "Neustadt an der Weinstraße",
+        "Suhl",
+        "Ludwigsfelde",
+        "Rüsselsheim",
+        "Schwabach",
         "Sindelfingen",
-        "Düren",
-        "Worms",
-        "Neubrandenburg",
-        "Bayreuth",
-        "Landshut",
-        "Aschaffenburg",
-        "Langenfeld",
-        "Wilhelmshaven",
-        "Offenburg",
-        "Gießen",
-        "Friedrichshafen",
-        "Celle",
-        "Marburg",
-        "Neunkirchen",
-        "Velbert",
-        "Gotha",
-        "Herten",
-        "Castrop-Rauxel",
-        "Lippstadt",
-        "Bad Homburg",
-        "Langen",
-        "Rosenheim",
-        "Sindelfingen",
-        "Grevenbroich",
-        "Dinslaken",
-        "Marl",
-        "Bamberg"
+        "Teltow",
+        "Völklingen",
+        "Witten",
+        "Zweibrücken"
     ],
     "45": [
         "Mars 3",
@@ -445,28 +475,45 @@
         "Zhai Zhigang",
         "Liu Boming",
         "Zhang Xiaoguang",
-        "Zhang Wei",
+        "Zhang Jianping",
         "Wang Yaping",
         "Liu Yang",
         "Chen Dong",
         "Zhai Zhigang",
-        "Tang Hongbo",
-        "Nie Haisheng",
         "Liu Boming",
-        "Zhang Lu",
-        "Wang Yaping",
-        "Ye Guangfu",
-        "Zhang Lu",
-        "Liu Yang",
-        "Chen Dong",
-        "Liu Yang",
-        "Zhang Lu",
-        "Ye Guangfu",
         "Tang Hongbo",
         "Nie Haisheng",
+        "Liu Yang",
+        "Wang Yaping",
+        "Zhang Lu",
+        "Ye Guangfu",
+        "Zhang Xiaoguang",
+        "Jing Haipeng",
+        "Chen Dong",
         "Liu Boming",
         "Zhai Zhigang",
-        "Wang Yaping"
+        "Tang Hongbo",
+        "Nie Haisheng",
+        "Liu Yang",
+        "Wang Yaping",
+        "Zhang Lu",
+        "Ye Guangfu",
+        "Jing Haipeng",
+        "Liu Yang",
+        "Wang Yaping",
+        "Zhang Lu",
+        "Ye Guangfu",
+        "Jing Haipeng",
+        "Chen Dong",
+        "Tang Hongbo",
+        "Nie Haisheng",
+        "Liu Yang",
+        "Wang Yaping",
+        "Zhang Lu",
+        "Ye Guangfu",
+        "Jing Haipeng",
+        "Chen Dong",
+        "Tang Hongbo"
     ],
     "47": [
         "Indonesia",
@@ -474,27 +521,34 @@
         "United States of America",
         "Russia",
         "Chile",
-        "Mexico",
         "Philippines",
+        "Mexico",
         "Italy"
     ],
     "48": [
         "Michael Collins"
     ],
     "49": [
-        "I Don't Wanna Be Learned/I Don't Wanna Be Tamed",
-        "I Don't Wanna Walk Around With You",
-        "I Can't Be",
+        "I Don't Wanna Be Learned/I Don't Wanna Grow Up",
+        "I Want You Around",
+        "I Just Want to Have Something to Do",
+        "I Don't Care",
+        "I Can't Make It on Time",
+        "I Don't Wanna Walk Around with You",
         "I Don't Wanna Go Down to the Basement",
         "I Don't Wanna Live This Life (Anymore)",
-        "I Don't Wanna Grow Up",
-        "I Don't Wanna Walk Around With You",
-        "I Don't Wanna Be Learned",
-        "I Don't Wanna Be Tamed",
-        "I Don't Wanna Go Down to the Basement",
-        "I Don't Wanna Live This Life (Anymore)",
-        "I Don't Wanna Grow Up",
-        "I Don't Wanna Walk Around With You"
+        "I Don't Wanna Be a Loser",
+        "I Don't Wanna Be a Drag",
+        "I Don't Wanna Be a Punk",
+        "I Don't Wanna Be a Rock 'n' Roll Star",
+        "I Don't Wanna Be a Soldier",
+        "I Don't Wanna Be a Hero",
+        "I Don't Wanna Be a Clown",
+        "I Don't Wanna Be a Loser",
+        "I Don't Wanna Be a Loser",
+        "I Don't Wanna Be a Loser",
+        "I Don't Wanna Be a Loser",
+        "I Don't Wanna Be a Loser"
     ],
     "50": [
         "Ségolène Royal"
@@ -504,11 +558,17 @@
         "Ikiru",
         "Seven Samurai",
         "Throne of Blood",
-        "The Hidden Fortress",
+        "The Lower Depths",
         "Red Beard",
+        "Dersu Uzala",
         "Ran",
         "Kagemusha",
-        "Dersu Uzala"
+        "High and Low",
+        "The Bad Sleep Well",
+        "Stray Dog",
+        "Scandal",
+        "The Idiot",
+        "Dreams"
     ],
     "52": [
         "Texel",
@@ -519,8 +579,8 @@
     ],
     "53": [
         "Islam",
-        "Christianity",
-        "Catholicism",
+        "Protestant Christianity",
+        "Roman Catholic Christianity",
         "Hinduism",
         "Buddhism",
         "Confucianism"
@@ -542,7 +602,9 @@
     "55": [
         "Germany",
         "Austria",
-        "Liechtenstein"
+        "Liechtenstein",
+        "Luxembourg",
+        "Switzerland"
     ],
     "56": [
         "Orlando Magic",
@@ -553,7 +615,9 @@
         "Boston Celtics"
     ],
     "57": [
-        "Belarus"
+        "Estonia",
+        "Latvia",
+        "Lithuania"
     ],
     "58": [
         "New Hampshire",
@@ -591,26 +655,26 @@
         "Venezuela"
     ],
     "62": [
-        "Swiss Federal Polytechnic School",
+        "Swiss Federal Polytechnic School (now known as the Swiss Federal Institute of Technology Zurich)",
         "University of Zurich",
         "Charles University in Prague",
         "Swiss Federal Institute of Technology Zurich",
-        "Prussian Academy of Sciences",
-        "University of Berlin",
-        "Institute for Advanced Study"
+        "University of Berlin (Humboldt University of Berlin)",
+        "Institute for Advanced Study in Princeton"
     ],
     "63": [
         "The Outer Limits",
         "The X-Files",
         "Friends",
-        "The Drew Carey Show",
         "CSI: Crime Scene Investigation",
-        "Two and a Half Men"
+        "Criminal Minds",
+        "Two and a Half Men",
+        "The Mentalist",
+        "Private Practice"
     ],
     "64": [
-        "Portugal",
         "Andorra",
-        "Gibraltar",
+        "Portugal",
         "Morocco"
     ],
     "65": [
@@ -621,26 +685,35 @@
         "The Marvelous Mrs. Maisel",
         "Broad City",
         "Unbreakable Kimmy Schmidt",
-        "The Cosby Show",
         "Sex and the City",
-        "Louie"
+        "The Cosby Show",
+        "Mad About You",
+        "Louie",
+        "The Odd Couple",
+        "Will & Grace",
+        "The King of Queens",
+        "Two Broke Girls",
+        "The Mindy Project",
+        "Girls",
+        "Mr. Mayor",
+        "The Unbreakable Kimmy Schmidt",
+        "The Good Fight"
     ],
     "66": [
         "Juice",
         "Poetic Justice",
         "Above the Rim",
-        "Gridlock'd"
+        "Gridlock'd",
+        "Gang Related"
     ],
     "67": [
+        "Lyle Talbot",
         "Gene Hackman",
-        "Kevin Spacey",
-        "Michael Rosenbaum",
         "John Shea",
-        "Clancy Brown",
+        "Michael Rosenbaum",
+        "Kevin Spacey",
         "Jesse Eisenberg",
-        "Mark Rolston",
-        "James Marsters",
-        "Terry O'Quinn"
+        "Jon Cryer"
     ],
     "68": [
         "Mary I",
@@ -649,42 +722,41 @@
     ],
     "69": [
         "Australia",
-        "New Zealand",
         "Fiji",
-        "Papua New Guinea",
-        "Solomon Islands",
-        "Vanuatu",
-        "Samoa",
-        "Tonga",
-        "Micronesia",
-        "Palau",
-        "Marshall Islands",
         "Kiribati",
+        "Marshall Islands",
+        "Micronesia",
+        "Nauru",
+        "New Zealand",
+        "Palau",
+        "Papua New Guinea",
+        "Samoa",
+        "Solomon Islands",
+        "Tonga",
         "Tuvalu",
-        "Nauru"
+        "Vanuatu"
     ],
     "70": [
         "California",
         "Nevada"
     ],
     "71": [
-        "Manchester City Football Club",
-        "Aston Villa Football Club",
-        "Stoke City Football Club"
+        "Manchester City",
+        "Aston Villa",
+        "Stoke City"
     ],
     "72": [
         "Lauren Conrad",
         "Kristin Cavallari",
-        "Jayde Nicole",
         "Aubrey O'Day",
+        "Jayde Nicole",
         "Kaitlynn Carter"
     ],
     "73": [
         "Mexico"
     ],
     "74": [
-        "Holes",
-        "Sideways Stories from Wayside School"
+        "Holes"
     ],
     "75": [
         "Kentucky",
@@ -714,8 +786,8 @@
         "Zeus",
         "Poseidon",
         "Hades",
-        "Hestia",
-        "Hera"
+        "Hades",
+        "Hades"
     ],
     "80": [
         "John Fetterman",
@@ -737,31 +809,30 @@
         "Netherlands"
     ],
     "83": [
-        "Solemnity of Mary, Mother of God",
-        "Epiphany",
-        "Ascension of Jesus",
-        "Solemnity of the Body and Blood of Christ",
-        "Assumption of the Blessed Virgin Mary",
-        "All Saints' Day",
-        "Immaculate Conception of the Blessed Virgin Mary",
-        "Christmas"
+        "Solemnity of Mary, Mother of God on January 1",
+        "Ascension of Jesus Christ (date varies, typically 40 days after Easter Sunday)",
+        "Assumption of the Blessed Virgin Mary on August 15",
+        "All Saints' Day on November 1",
+        "Immaculate Conception of the Blessed Virgin Mary on December 8",
+        "Christmas, the Nativity of Jesus Christ on December 25"
     ],
     "84": [
-        "Niger"
+        "Niger",
+        "Nigeria"
     ],
     "85": [
         "Oliver Marmol",
-        "Ron Roenicke",
-        "Jose Oquendo",
         "Mike Shildt",
+        "Derek Lilliquist",
+        "Ronny Cedeno",
+        "Jose Oquendo",
+        "Alfredo Simon",
         "Chris Maloney",
-        "Alonzo Powell",
         "Mark Budzinski",
         "John Mabry",
         "Mike Maddux",
-        "Derek Lilliquist",
         "Willie McGee",
-        "Gary LaRocque",
+        "Jose Oquendo",
         "Chris Maloney"
     ],
     "86": [
@@ -778,7 +849,6 @@
     "88": [
         "Peter Griffin",
         "Stewie Griffin",
-        "Brian Griffin",
         "Glenn Quagmire",
         "Cleveland Brown"
     ],
@@ -788,11 +858,9 @@
     ],
     "90": [
         "Bachelor of Arts in English",
-        "Bachelor of Science in Business Administration"
+        "Bachelor of Science in General Management"
     ],
-    "91": [
-        "Newark"
-    ],
+    "91": [],
     "92": [
         "Jean Dujardin",
         "Marion Cotillard"
@@ -801,261 +869,185 @@
         "Advanced Squad Leader",
         "Combat Commander: Europe",
         "Europe Engulfed",
+        "Fire in the Lake",
+        "For the People",
+        "Guns of August",
+        "Labyrinth: The War on Terror",
+        "Lock 'n Load Tactical",
+        "Paths of Glory",
         "The Operational Art of War",
-        "World at War",
-        "ASL Starter Kit",
-        "Panzer Leader",
-        "Conflict of Heroes: Awakening the Bear",
-        "The U.S. Civil War",
-        "A Victory Lost"
+        "Twilight Struggle",
+        "World at War"
     ],
     "94": [
-        "Queen Victoria of the United Kingdom of Great Britain and Ireland",
-        "Queen Elizabeth II of the United Kingdom of Great Britain and Northern Ireland",
-        "Queen Mary of the United Kingdom of Great Britain and Ireland",
-        "Queen Alexandra of the United Kingdom of Great Britain and Ireland"
+        "Queen Victoria of the United Kingdom",
+        "Queen Elizabeth II of the United Kingdom",
+        "Queen Mary of the United Kingdom",
+        "Queen Alexandra of the United Kingdom",
+        "Queen Charlotte of the United Kingdom",
+        "Queen Anne of Great Britain"
     ],
     "95": [
         "International Council of Scientific Unions",
-        "International Organization for Standardization"
+        "International Union for Conservation of Nature"
     ],
     "96": [
         "Alan Shepard",
         "Edgar Mitchell"
     ],
     "97": [
-        "Vostok 1",
-        "Vostok 2",
-        "Vostok 3",
-        "Vostok 4",
-        "Vostok 5",
-        "Vostok 6",
-        "Voskhod 1",
-        "Voskhod 2",
-        "Soyuz 1",
-        "Soyuz 3",
-        "Soyuz 4",
-        "Soyuz 5",
-        "Soyuz 6",
-        "Soyuz 7",
-        "Soyuz 8",
-        "Soyuz 9",
-        "Soyuz 10",
-        "Soyuz 11",
-        "Soyuz 12",
-        "Soyuz 13",
-        "Soyuz 14",
-        "Soyuz 15",
-        "Soyuz 16",
-        "Soyuz 17",
-        "Soyuz 18",
-        "Soyuz 19",
-        "Soyuz 20",
-        "Soyuz 21",
-        "Soyuz 22",
-        "Soyuz 23",
-        "Soyuz 24",
-        "Soyuz 25",
-        "Soyuz 26",
-        "Soyuz 27",
-        "Soyuz 28",
-        "Soyuz 29",
-        "Soyuz 30",
-        "Soyuz 31",
-        "Soyuz 32",
-        "Soyuz 33",
-        "Soyuz 34",
-        "Soyuz 35",
-        "Soyuz 36",
-        "Soyuz 37",
-        "Soyuz 38",
-        "Soyuz 39",
-        "Soyuz 40",
-        "Soyuz T-1",
-        "Soyuz T-2",
-        "Soyuz T-3",
-        "Soyuz T-4",
-        "Soyuz T-5",
-        "Soyuz T-6",
-        "Soyuz T-7",
-        "Soyuz T-8",
-        "Soyuz T-9",
-        "Soyuz T-10-1",
-        "Soyuz T-10",
-        "Soyuz T-11",
-        "Soyuz T-12",
-        "Soyuz T-13",
-        "Soyuz T-14",
-        "Soyuz T-15",
-        "Soyuz TM-1",
-        "Soyuz TM-2",
-        "Soyuz TM-3",
-        "Soyuz TM-4",
-        "Soyuz TM-5",
-        "Soyuz TM-6",
-        "Soyuz TM-7",
-        "Soyuz TM-8",
-        "Soyuz TM-9",
-        "Soyuz TM-10",
-        "Soyuz TM-11",
-        "Soyuz TM-12",
-        "Soyuz TM-13",
-        "Soyuz TM-14",
-        "Soyuz TM-15",
-        "Soyuz TM-16",
-        "Soyuz TM-17",
-        "Soyuz TM-18",
-        "Soyuz TM-19",
-        "Soyuz TM-20",
-        "Soyuz TM-21",
-        "Soyuz TM-22",
-        "Soyuz TM-23",
-        "Soyuz TM-24",
-        "Soyuz TM-25",
-        "Soyuz TM-26",
-        "Soyuz TM-27",
-        "Soyuz TM-28",
-        "Soyuz TM-29",
-        "Soyuz TM-30",
-        "Soyuz TM-31"
-    ],
-    "98": [
         "Arizona",
         "Colorado",
         "Idaho",
-        "Nevada",
         "Wyoming"
     ],
-    "99": [
+    "98": [
         "Indiana",
         "Wisconsin",
-        "Michigan"
+        "Iowa",
+        "Missouri"
     ],
-    "100": [
+    "99": [
         "Alexander Popov",
         "Yana Klochkova",
-        "Nikolay Skvortsov",
-        "Natalya Sutyagina"
+        "Natalia Ishchenko",
+        "Evgeny Rylov",
+        "Daria Ustinova"
     ],
-    "101": [
+    "100": [
         "Bill Clinton"
     ],
-    "102": [
+    "101": [
         "Bayern Munich",
         "Borussia Dortmund",
         "Borussia Monchengladbach",
-        "Hamburger SV",
         "Werder Bremen",
+        "Hamburger SV",
         "VfB Stuttgart",
-        "1. FC Koln",
-        "Eintracht Braunschweig",
-        "1. FC Nurnberg",
         "1. FC Kaiserslautern",
+        "Eintracht Braunschweig",
+        "1. FC Koln",
+        "1. FC Nurnberg",
+        "Schalke 04",
         "VfL Wolfsburg"
     ],
-    "103": [
-        "River Havel",
-        "River Schwentine",
-        "River Elde",
-        "River Alster",
-        "River Isar",
-        "River Lech",
-        "River Inn"
+    "102": [
+        "River Ammer flows into Ammersee",
+        "River Alz flows into Chiemsee",
+        "River Isar flows into Lake Starnberg",
+        "River Lech flows into Lake Forggensee",
+        "River Iller flows into Lake Constance",
+        "River Elde flows into Lake Schwerin",
+        "River Havel flows into Lake Tegel",
+        "River Spree flows into Lake Müggelsee",
+        "River Saale flows into Lake Saale",
+        "River Inn flows into Lake Chiemsee"
     ],
-    "104": [
+    "103": [
         "Honshu",
         "Hokkaido",
         "Kyushu",
         "Shikoku"
     ],
-    "105": [
+    "104": [
         "Arsenal Football Club",
         "Chelsea Football Club",
         "Crystal Palace Football Club",
         "Tottenham Hotspur Football Club",
         "West Ham United Football Club"
     ],
-    "106": [
+    "105": [
         "Cleopatra",
         "The Taming of the Shrew",
         "The Sandpiper",
         "Who's Afraid of Virginia Woolf?"
     ],
-    "107": [
+    "106": [
         "Music from the Edge of Heaven by Wham!",
         "The Final by Wham!"
     ],
-    "108": [
+    "107": [
         "International Women's Day",
         "Saint David's Day",
-        "Mother's Day",
-        "Walpurgis Night"
+        "Mother's Day (Sweden)",
+        "Walpurgis Night",
+        "Easter Sunday",
+        "Easter Monday"
     ],
-    "109": [
+    "108": [
         "On the Town",
         "Wonderful Town",
         "Candide",
         "West Side Story"
     ],
-    "110": [
+    "109": [
         "Orhan Pamuk",
         "Elif Shafak",
         "Ahmet Hamdi Tanpinar",
-        "Yasar Kemal"
+        "Yasar Kemal",
+        "Nazim Hikmet",
+        "Attila Ilhan",
+        "Sezai Karakoc",
+        "Adalet Agaoglu",
+        "Oktay Rifat",
+        "Fazil Husnu Daglarca"
     ],
-    "111": [
+    "110": [
         "Parkway Drive",
         "I Killed the Prom Queen",
         "The Amity Affliction",
         "Confession",
         "In Hearts Wake",
-        "Northlane"
+        "Northlane",
+        "The Red Shore",
+        "Carpathian",
+        "The Getaway Plan",
+        "Antagonist A.D."
     ],
-    "112": [
+    "111": [
         "Binge Eating Disorder",
         "Bulimia Nervosa",
-        "Other Specified Feeding or Eating Disorder with binge eating"
+        "Other Specified Feeding or Eating Disorder with Binge Eating",
+        "Anorexia Nervosa Binge-Eating/Purging Type"
     ],
-    "113": [
+    "112": [
         "Colorado",
         "Montana",
         "New Mexico",
         "Utah",
         "Wyoming"
     ],
+    "113": [],
     "114": [
-        "Bungalow 2"
-    ],
-    "115": [
         "Ruby",
-        "Python",
         "PHP",
+        "Python",
         "JavaScript",
         "Lua",
         "Tcl"
     ],
-    "116": [
+    "115": [
+        "Aeroflot",
         "Air France",
         "Alitalia",
         "Czech Airlines",
         "KLM Royal Dutch Airlines",
-        "Aeroflot Russian Airlines",
-        "TAROM",
-        "Saudia"
+        "TAROM"
     ],
-    "117": [
+    "116": [
         "Looking for Alaska",
         "An Abundance of Katherines",
         "Paper Towns",
         "Turtles All the Way Down",
         "Let It Snow: Three Holiday Romances"
     ],
-    "118": [
+    "117": [
         "Play Misty for Me",
         "High Plains Drifter",
         "The Outlaw Josey Wales",
+        "Bronco Billy",
         "Pale Rider",
-        "Bird",
+        "Heartbreak Ridge",
         "Unforgiven",
         "The Bridges of Madison County",
         "Absolute Power",
@@ -1066,39 +1058,34 @@
         "Million Dollar Baby",
         "Flags of Our Fathers",
         "Letters from Iwo Jima",
+        "Changeling",
         "Gran Torino",
         "Invictus",
         "Hereafter",
         "J. Edgar",
         "American Sniper",
         "Sully",
+        "The 15:17 to Paris",
         "The Mule",
         "Richard Jewell",
         "Cry Macho"
     ],
-    "119": [
+    "118": [
         "Alec Baldwin",
         "Daniel Baldwin",
         "William Baldwin",
         "Stephen Baldwin"
     ],
-    "120": [
+    "119": [
         "Canterbury Cathedral",
         "Rochester Cathedral",
-        "All Saints Church, Maidstone",
-        "St. Mary the Virgin Church, Dover"
+        "St. Mary the Virgin Church, Aylesford",
+        "St. Dunstan's Church, Canterbury",
+        "St. Laurence Church, Ramsgate",
+        "St. George's Church, Trotton"
     ],
+    "120": [],
     "121": [
-        "Benin",
-        "Burkina Faso",
-        "Cote d'Ivoire",
-        "Guinea-Bissau",
-        "Mali",
-        "Niger",
-        "Senegal",
-        "Togo"
-    ],
-    "122": [
         "Heckler & Koch G3",
         "Heckler & Koch MP5",
         "Heckler & Koch USP",
@@ -1108,46 +1095,61 @@
         "Heckler & Koch P30",
         "Heckler & Koch HK45",
         "Heckler & Koch MP7",
-        "Heckler & Koch SL8"
+        "Heckler & Koch HK33",
+        "Heckler & Koch SL8",
+        "Heckler & Koch HK417",
+        "Heckler & Koch PSG1",
+        "Heckler & Koch HK53",
+        "Heckler & Koch HK94",
+        "Heckler & Koch HK69",
+        "Heckler & Koch HK79",
+        "Heckler & Koch HK93",
+        "Heckler & Koch HK4",
+        "Heckler & Koch HK32"
     ],
-    "123": [
+    "122": [
         "Laurel and Hardy series",
         "Our Gang series",
         "Topper",
-        "The Music Box",
         "Way Out West",
+        "The Music Box",
         "Babes in Toyland",
         "Pack Up Your Troubles",
         "The Freshman",
         "The Boy Friends series",
-        "The Taxi Boys series"
+        "The Taxi Boys series",
+        "The Hal Roach Comedy Shorts",
+        "The Little Rascals"
+    ],
+    "123": [
+        "Louis Armstrong",
+        "Wynton Marsalis"
     ],
     "124": [
-        "Louis Armstrong"
-    ],
-    "125": [
+        "Sigmund Freud",
         "Gustav Klimt",
         "Arnold Schoenberg",
         "Alfred Döblin"
     ],
-    "126": [
+    "125": [
         "Jurassic Park",
         "Saving Private Ryan",
         "War of the Worlds",
-        "Minority Report"
+        "Indiana Jones and the Kingdom of the Crystal Skull",
+        "Minority Report",
+        "Catch Me If You Can",
+        "Artificial Intelligence: A.I.",
+        "Munich",
+        "The Lost World: Jurassic Park",
+        "Amistad",
+        "Schindler's List",
+        "Hook",
+        "Indiana Jones and the Last Crusade"
+    ],
+    "126": [
+        "Working Line German Shepherd"
     ],
     "127": [
-        "Schutzhund",
-        "Mondioring",
-        "French Ring",
-        "Obedience",
-        "Tracking",
-        "Search and Rescue",
-        "Police Work",
-        "Military Work",
-        "Herding"
-    ],
-    "128": [
         "Tribhuvan International Airport",
         "Bharatpur Airport",
         "Biratnagar Airport",
@@ -1155,167 +1157,128 @@
         "Gautam Buddha Airport",
         "Janakpur Airport",
         "Jomsom Airport",
+        "Lukla Airport",
         "Nepalgunj Airport",
         "Pokhara Airport",
         "Simara Airport",
         "Tumlingtar Airport"
     ],
-    "129": [
+    "128": [
         "Pulitzer Prize for General Non-Fiction",
         "American Psychological Association's Distinguished Scientific Contributions Award",
-        "American Association for Artificial Intelligence's Classic Paper Award"
+        "American Association for Artificial Intelligence Classic Paper Award"
     ],
-    "130": [
-        "Launch Complex 39A",
-        "Launch Complex 39B",
-        "Launch Complex 34",
-        "Launch Complex 37B",
-        "Launch Complex 40",
-        "Launch Complex 41",
-        "Launch Complex 46",
-        "Launch Complex 48",
-        "Launch Complex 17",
-        "Launch Complex 26",
-        "Launch Complex 30",
-        "Launch Complex 31",
-        "Launch Complex 32",
-        "Launch Complex 33",
-        "Launch Complex 34",
-        "Launch Complex 36",
-        "Launch Complex 37",
-        "Launch Complex 39",
-        "Launch Complex 48",
-        "Launch Complex 49",
-        "Launch Complex 50",
-        "Launch Complex 51",
-        "Launch Complex 52",
-        "Launch Complex 53",
-        "Launch Complex 54",
-        "Launch Complex 55",
-        "Launch Complex 56",
-        "Launch Complex 57",
-        "Launch Complex 58",
-        "Launch Complex 59",
-        "Launch Complex 60",
-        "Launch Complex 61",
-        "Launch Complex 62",
-        "Launch Complex 63",
-        "Launch Complex 64",
-        "Launch Complex 65",
-        "Launch Complex 66",
-        "Launch Complex 67",
-        "Launch Complex 68",
-        "Launch Complex 69",
-        "Launch Complex 70",
-        "Launch Complex 71",
-        "Launch Complex 72",
-        "Launch Complex 73",
-        "Launch Complex 74",
-        "Launch Complex 75",
-        "Launch Complex 76",
-        "Launch Complex 77",
-        "Launch Complex 78",
-        "Launch Complex 79",
-        "Launch Complex 80",
-        "Launch Complex 81",
-        "Launch Complex 82",
-        "Launch Complex 83",
-        "Launch Complex 84",
-        "Launch Complex 85",
-        "Launch Complex 86",
-        "Launch Complex 87",
-        "Launch Complex 88",
-        "Launch Complex 89",
-        "Launch Complex 90",
-        "Launch Complex 91",
-        "Launch Complex 92",
-        "Launch Complex 93",
-        "Launch Complex 94",
-        "Launch Complex 95",
-        "Launch Complex 96",
-        "Launch Complex 97",
-        "Launch Complex 98",
-        "Launch Complex 99"
-    ],
-    "131": [
+    "129": [
         "The Lion King",
         "Aida",
         "Billy Elliot the Musical",
         "Lestat",
-        "The Devil Wears Prada"
+        "The Devil Wears Prada",
+        "Gnomeo & Juliet"
+    ],
+    "130": [],
+    "131": [
+        "Lenovo",
+        "BOE Technology Group"
     ],
     "132": [
-        "Griffon Hoverwork",
-        "Neoteric Hovercraft",
-        "Hovercraft Development",
-        "Universal Hovercraft"
-    ],
-    "133": [
-        "Lenovo"
-    ],
-    "134": [
         "Mark Thatcher",
         "Carol Thatcher"
     ],
-    "135": [
+    "133": [
         "Albert Johnson",
         "Keith Edward Elam"
     ],
-    "136": [
+    "134": [
         "Roger Waters",
         "David Gilmour"
     ],
-    "137": [
-        "The Suite Life of Zack and Cody",
-        "Hannah Montana",
+    "135": [
         "Lizzie McGuire",
         "That's So Raven",
         "Kim Possible",
-        "Phineas and Ferb",
+        "The Suite Life of Zack and Cody",
+        "Hannah Montana",
+        "Wizards of Waverly Place",
+        "The Proud Family",
+        "Even Stevens",
+        "Phil of the Future",
+        "Recess",
+        "DuckTales",
+        "Gargoyles",
+        "Darkwing Duck",
+        "The New Mickey Mouse Club",
         "Good Luck Charlie",
-        "Wizards of Waverly Place"
+        "Jessie",
+        "Shake It Up",
+        "Austin & Ally",
+        "Dog with a Blog",
+        "Liv and Maddie",
+        "Girl Meets World",
+        "Bunk'd",
+        "Raven's Home",
+        "Andi Mack",
+        "Stuck in the Middle",
+        "K.C. Undercover",
+        "Bizaardvark",
+        "Coop & Cami Ask the World",
+        "Sydney to the Max",
+        "Gabby Duran & the Unsittables",
+        "Secrets of Sulphur Springs"
     ],
-    "138": [
+    "136": [
         "Visions of Cody",
         "Book of Dreams",
-        "Big Sur"
+        "Big Sur",
+        "Satori in Paris"
     ],
-    "139": [
+    "137": [
         "Pretty Woman"
     ],
-    "140": [],
-    "141": [
+    "138": [],
+    "139": [
         "Arnold Schwarzenegger",
         "Austin O'Brien",
         "Charles Dance",
         "F. Murray Abraham",
-        "Robert Prosky"
+        "Robert Prosky",
+        "Art Carney",
+        "Frank McRae",
+        "Anthony Quinn",
+        "Tom Noonan",
+        "Grant Heslov"
     ],
-    "142": [
-        "The Carol Burnett Show",
+    "140": [
+        "Saturday Night Live",
         "The Mary Tyler Moore Show",
-        "Sanford and Son"
+        "Sanford and Son",
+        "All in the Family",
+        "M*A*S*H",
+        "The Bob Newhart Show",
+        "The Flip Wilson Show"
     ],
-    "143": [
-        "Rachel Stevens"
-    ],
-    "144": [
+    "141": [
         "Santa Catalina Airport",
         "San Clemente Island Airport",
-        "Angel Island Airport"
+        "Santa Rosa Island Airport",
+        "Anacapa Island Airport",
+        "Santa Barbara Island Airport",
+        "San Nicolas Island Airport",
+        "San Miguel Island Airport",
+        "Santa Cruz Island Airport"
     ],
-    "145": [
-        "King George the First",
-        "King George the Second",
-        "King George the Third",
-        "King George the Fourth",
-        "King William the Fourth",
+    "142": [
+        "King George I",
+        "King George II",
+        "King George III",
+        "King George IV",
+        "King William IV",
         "Queen Victoria",
-        "King Edward the Seventh",
-        "King George the Fifth",
-        "King George the Sixth"
+        "King Edward VII",
+        "King George V",
+        "King George VI"
     ],
-    "146": [
+    "143": [
         "Rabindranath Tagore",
         "Yasunari Kawabata",
         "Kenzaburo Oe",
@@ -1323,28 +1286,43 @@
         "Mo Yan",
         "Kazuo Ishiguro"
     ],
-    "147": [
+    "144": [
         "Johnny Flynn",
         "Daniel Ings",
         "Joshua McGuire"
     ],
-    "148": [
+    "145": [
         "River Thames",
         "River Humber",
         "River Tyne",
         "River Tees",
+        "River Wear",
         "River Tweed",
         "River Forth",
         "River Dee",
-        "River Wear"
+        "River Don",
+        "River Ouse",
+        "River Yare",
+        "River Waveney",
+        "River Orwell",
+        "River Stour",
+        "River Crouch",
+        "River Medway",
+        "River Alde",
+        "River Blyth",
+        "River Witham",
+        "River Ancholme"
     ],
-    "149": [
+    "146": [
         "Krombacher Brauerei",
         "Warsteiner Brauerei",
         "Veltins Brauerei",
         "Brauerei C. & A. Veltins",
         "Brauerei Königshof",
         "Brauerei Hannen",
-        "Brauerei Bolten"
+        "Brauerei Bolten",
+        "Brauerei Gaffel Becker & Co",
+        "Brauerei Früh",
+        "Brauerei Schumacher"
     ]
 }

@@ -46,8 +46,14 @@ PROMPTS = {
                 If you can't answer, return the json object in the following format:
                 {
                     "answer": 'idk'
-        }
-         In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+                }
+                If the answer is an empty list, return the json object in the following format:
+                {
+                    "answer": []
+                }
+            In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+            If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+            Return an exhaustive list.
         ''',
         "es": '''Te haré una pregunta con una lista de valores como respuesta Utiliza Wikidata como fuente para responder a mi pregunta. Devuélveme la respuesta como un objeto JSON que contenga la lista de valores en el siguiente formato:
                 {
@@ -61,7 +67,7 @@ PROMPTS = {
 }
 
 columns_map = {
-    'spinach.tsv': ['Q1', 'Q2','Q3','Q4'],
+    'qawiki.tsv': ['Q1', 'Q2','Q3','Q4'],
 }
 
 logical_relations_map = {
@@ -72,8 +78,8 @@ logical_relations_map = {
 }
 
 languages = ['en']
-llm_models = ['gpt-4.1-2025-04-14']
-datasets = ['spinach.tsv']
+llm_models = ['gpt-4.1-mini-2025-04-14']#,'gpt-4.1-2025-04-14']
+datasets = ['qawiki.tsv']
 
 
 def submit_job(language, model, logical_relation, column,type,dataset):
@@ -94,7 +100,7 @@ def submit_job(language, model, logical_relation, column,type,dataset):
             "url": "/v1/chat/completions",
             "body": {
                 "model": model,
-                "temperature": 0.1,
+                "temperature": 0.0,
                 "response_format": { 
                     "type": "json_object"
                 },
@@ -153,7 +159,6 @@ def convert_response(job_id,result_path,language, model, logical_relation, colum
     json_results = []
     for result in results:
         json_response = result['response']['body']['choices'][0]['message']['content']
-        print(json_response)
         json_results.append((result['custom_id'],json.loads(json_response)))
     
     with open(os.path.join(here,f'../data/batch_api/gpt_results_{language}_{model}_{logical_relation}_{column}_{type}.json'), "w", encoding="utf-8") as file:
@@ -162,16 +167,19 @@ def convert_response(job_id,result_path,language, model, logical_relation, colum
     output_json = {}
     for result in json_results:
         if result[1]['answer'] == 'idk' or result[1]['answer'] == 'no sé':
+            output_json[result[0].split('-')[1]] = 'idk'
+        elif result[1]['answer'] == []:
             output_json[result[0].split('-')[1]] = []
         else:
             output_json[result[0].split('-')[1]] = result[1]['answer']
+
 
     if language == 'en':
         asterix = ''
     else:
         asterix = '*'
 
-    construct_output_path = os.path.join(here, f'../data/answers/zero-shot/{dataset.split(".")[0]}/{logical_relation}/{asterix}{column}_{logical_relation}_answers_{model}_{type}_{dataset.split(".")[0]}.json')
+    construct_output_path = os.path.join(here, f'../data/answers/zero-shot/{dataset.split(".")[0]}/{logical_relation}/{asterix}{column}_{logical_relation}_answers_{model}_{type}.json')
     with open(construct_output_path, "w", encoding="utf-8") as file:
         json.dump(output_json, file, indent=4, ensure_ascii=False)
 
@@ -185,19 +193,21 @@ def convert_response(job_id,result_path,language, model, logical_relation, colum
 #                 print(f"Submitted job {job_id} for {language}, {model}, { logical_relations_map[column]}, {column}, {type}, {dataset}")                 
 
 batch_map = {
-    #'Q1': 'batch_687a128978a081908531fdc4438e7aa3',
-    #'Q2': 'batch_687a128b78848190b51c50cddf539a96',
-    'Q3': 'batch_687a128d11d48190980875781c50bd9c',
-    #'Q4': 'batch_687a128e9c548190976464ed6f3e0da6'
+    'Q1': 'batch_6884c7a63aa08190b187954586e5a64d',
+    'Q2': 'batch_6884c7a844a88190b2422dc44dc0af63',
+    'Q3': 'batch_6884c7ab3d708190829af921df05f2ea',
+    'Q4': 'batch_6884c7ad60dc8190b45d2fb9ad13e8eb'
 }
 
 for language in languages:
     for model in llm_models:
         for dataset in datasets:
             for column in columns_map[dataset]: 
-                type = 'standard'           
+                #type = 'standard'
+                type = 'wikidata'           
                 result_path = f'../data/batch_api/batch_job_results_{language}_{model}_{logical_relations_map[column]}_{column}_{type}_{dataset}.jsonl'
                 try:
+                    #submit_job(language, model, logical_relations_map[column], column, type, dataset)
                     convert_response(batch_map[column], result_path, language, model, logical_relations_map[column], column, type)
                 except Exception as e:
                     print(f"Error processing {column} for {language}, {model}, {dataset}: {e}")
