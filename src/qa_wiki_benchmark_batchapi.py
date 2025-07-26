@@ -20,7 +20,13 @@ PROMPTS = {
                 {
                     "answer": 'idk'
                 }
+                If the answer is an empty list, return the json object in the following format:
+                {
+                    "answer": []
+                }
                 In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+                If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+                Return an exhaustive list.
                 ''',
         "es": '''Te haré una pregunta con una lista de valores como respuesta. Devuélveme la respuesta como un objeto JSON que contenga la lista de valores en el siguiente formato:
                 {

@@ -44,7 +44,7 @@ class PromptLLMS:
         return result.content
 
 
-def return_chat_model(model_name, temperature=0.1):
+def return_chat_model(model_name, temperature=0.0):
     if 'gpt' in model_name:
         return ChatOpenAI(model=model_name, openai_api_key=openai_api_key, temperature=temperature)
     elif 'gemini' in model_name:
