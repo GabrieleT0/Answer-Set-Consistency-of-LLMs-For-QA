@@ -2,10 +2,7 @@ standard:
   en: |
     {question}
     If you can't answer, return 'idk'.
-    If the question has no answer, return 'no answer'.
-    In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
-    If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
-    Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+    Return me all answers as a list separated by the symbol '|' don't add any other text.
   es: |
     {question}
     Si no puedes responder, devuelve "no sé".
@@ -13,11 +10,10 @@ standard:
 
 wikidata:
   en: |
-    {question} \n
-    Just use Wikidata as a source to answer my question. \n
-    If you can't answer, return 'idk'. \n
-    If the question has no answer, return 'no answer'. \n
-    Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+    {question}
+    Just use Wikidata as a source to answer my question.
+    If you can't answer, return 'idk'.
+    Return me all answers as a list separated by '|' don't add any other text.
   es: |
     {question}
     Utiliza Wikidata como fuente para responder a mi pregunta.
@@ -28,27 +24,18 @@ fix:
   en:
     template: |
       If you cannot answer, return "idk".
-      If the question has no answer, return 'no answer'.
       In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
-      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
-      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text. 
+      Return me all answers as a list separated by the symbol '|' don’t add any other text.
     equal_fix: |
-     Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.
-     In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
-     If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
-     Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+      Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.
+      Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don’t add any other text.
     sup_sub_fix: |
-      Pay attention, the first question I asked is a more general question than the second question, so the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first.
-      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
-      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
-      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+      Pay attention, the first question I asked is more general than the second question, so the answer of the second question must be a subset of the answer of the first.
+      Correct the answer to the second question and return me all answers as a list separated by the symbol '|' don’t add any other text.
     minus_fix: |
-      Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.
-      So the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question.
-      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
-      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
-      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
-    
+      Pay attention, I asked you 3 different questions. The third should contain the elements of the first answer excluding the second.
+      Correct the answer to the third question and return me all answers as a list separated by the symbol '|' don’t add any other text.
+
 relation_classification:
   en:
     template: |
