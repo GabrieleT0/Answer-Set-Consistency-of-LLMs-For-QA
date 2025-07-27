@@ -13,7 +13,7 @@ log_dir = os.path.join(os.path.dirname(__file__), "logs")
 os.makedirs(log_dir, exist_ok=True)
 
 # Log file path (e.g., logs/run_2025-07-17_15-30.log)
-log_filename = datetime.datetime.now().strftime("single_question_benchmark%Y-%m-%d_%H-%M.log")
+log_filename = datetime.datetime.now().strftime("single_question_benchmark_%Y-%m-%d_%H-%M.log")
 log_path = os.path.join(log_dir, log_filename)
 
 # Set up logging

@@ -2,16 +2,51 @@ import os
 import json
 import pandas as pd
 from utils import jaccard_similarity
+import datetime
 
 
-def load_questions(file_path: str) -> pd.DataFrame:
+def load_question(file_path: str) -> pd.DataFrame:
     df = pd.read_csv(file_path, sep="\t", encoding="utf-8")
-    df["type"] = df["type"].apply(lambda x: str(x) if not pd.isna(x) else "0")
+    # df["type"] = df["type"].apply(lambda x: str(x) if not pd.isna(x) else "0")
     return df
 
+def load_all_questions(root_dir, datasets, languages):
+    """
+    Load and merge question files from multiple datasets and languages.
 
-def load_answers(folder: str, datasets, llms, actions, tasks, questions) -> pd.DataFrame:
-    df_answers = pd.DataFrame(columns=["Q_ID", "Q_serie", "action", "task", "dataset", "llm"])
+    Args:
+        root_dir (str): Base directory containing the question files.
+        datasets (list): List of dataset names.
+        languages (list): List of language codes.
+        load_questions_fn (Callable): Function to load a TSV file into a DataFrame.
+
+    Returns:
+        pd.DataFrame: Merged DataFrame with original index stored as 'q_index',
+                      and columns 'dataset' and 'lang' added.
+    """
+    all_dfs = []
+
+    for dataset in datasets:
+        for lang in languages:
+            question_path = os.path.join(root_dir, "data", "Dataset", lang, f"{dataset}.tsv")
+            if not os.path.exists(question_path):
+                print(f"File not found: {question_path}")
+                continue
+
+            df = load_question(question_path)
+            df = df.copy()
+            df["q_index"] = df.index
+            df["dataset"] = dataset
+            df["lang"] = lang
+
+            all_dfs.append(df)
+
+    return pd.concat(all_dfs, ignore_index=True) if all_dfs else pd.DataFrame()
+
+
+
+def load_answers(folder: str, datasets, llms, actions, tasks, languages, questions) -> pd.DataFrame:
+    df_answers = pd.DataFrame(columns=["Q_ID", "Q_serie", "action", "task", "dataset", "lang","llm"])
 
     json_files = [
         os.path.join(root, file)
@@ -27,6 +62,7 @@ def load_answers(folder: str, datasets, llms, actions, tasks, questions) -> pd.D
         action = next((a for a in actions if a in elements), "zero-shot")
         task = next((t for t in tasks if t in elements), None)
         dataset = next((d for d in datasets if d in elements), None)
+        lang = next((l for l in languages if l in elements), None)
         llm = next((l for l in llms if l in elements), None)
 
         if all([question, action, task, dataset, llm]):
@@ -38,16 +74,29 @@ def load_answers(folder: str, datasets, llms, actions, tasks, questions) -> pd.D
             df["task"] = task
             df["dataset"] = dataset
             df["llm"] = llm
+            df["lang"] = lang
             df_answers = pd.concat([df_answers, df], ignore_index=True)
 
     return df_answers
 
-
 def enrich_answers(df_answers, df_questions):
+
+    # df_answers["Question"] = df_answers.apply(
+    #     lambda x: df_questions.at[int(x["Q_ID"]), x["Q_serie"]] if int(x["Q_ID"]) in df_questions["q_index"] else None,
+    #     axis=1
+    # )
     df_answers["Question"] = df_answers.apply(
-        lambda x: df_questions.at[int(x["Q_ID"]), x["Q_serie"]] if int(x["Q_ID"]) in df_questions.index else None,
+        lambda x: df_questions.loc[
+            (df_questions["q_index"] == int(x["Q_ID"])) &
+            (df_questions["dataset"] == x["dataset"])
+        ][x["Q_serie"]].values[0]
+        if not df_questions.loc[
+            (df_questions["q_index"] == int(x["Q_ID"])) &
+            (df_questions["dataset"] == x["dataset"]) 
+        ].empty else None,
         axis=1
     )
+
 
     group_keys = ["Q_ID", "Q_serie", "action", "dataset", "llm"]
     df_answers["Answer_serie"] = (
@@ -61,6 +110,7 @@ def enrich_answers(df_answers, df_questions):
 
     df_answers.reset_index(drop=True, inplace=True)
     return df_answers
+
 
 
 def analysis(df):
@@ -147,15 +197,20 @@ def summary(df_analysis):
 
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
-    question_path = root_dir + "/data/Dataset/en/spinach.tsv"
-    df_questions = load_questions(question_path)
+    datasets=["spinach", "qawiki"]
+    llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 'gpt-4o', "o3"]
+    actions = ["fixing", "classification", "wikidata"]
+    tasks = ['equal', 'sup-sub', "minus"]
+    languages = ['en']
 
+    df_questions = load_all_questions(root_dir, datasets, languages)
     df_answers = load_answers(
         folder=root_dir + "/data/answers/",
-        datasets=["spinach"],
-        llms=['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 'gpt-4o', "o3"],
-        actions=["fixing", "classification", "wikidata"],
-        tasks=['equal', 'sup-sub', "minus"],
+        datasets = datasets,
+        llms=llms,
+        actions=actions,
+        tasks=tasks,
+        languages=languages,
         questions=["Q1", "Q2", "Q3", "Q4"]
     )
 
@@ -168,14 +223,18 @@ if __name__ == "__main__":
     os.makedirs(output_folder, exist_ok=True)
 
     # Save results
-    df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
-    df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
+    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.csv")
+    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.csv")
+    df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
+    df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
 
     print("✅ Analysis and summary saved to:", output_folder)
 
     # Optional: Save as Parquet (if needed)
     try:
-        df_analysis.to_parquet(os.path.join(output_folder, "analysis.parquet"), index=False)
-        df_summary.to_parquet(os.path.join(output_folder, "summary.parquet"), index=False)
+        analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.parquet")
+        summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.parquet")
+        df_analysis.to_parquet(os.path.join(output_folder, analysis_file_format), index=False)
+        df_summary.to_parquet(os.path.join(output_folder, summary_file_format), index=False)
     except ImportError:
         print("⚠️ Skipped Parquet export — install `pyarrow` or `fastparquet` to enable it.")
