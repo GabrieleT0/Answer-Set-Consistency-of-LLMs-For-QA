@@ -32,11 +32,11 @@ logging.basicConfig(
 
 # Mute all other libraries except your custom logger
 for name in logging.root.manager.loggerDict:
-    if name not in ["try_fix_llm_response"]:  # your custom logger name
+    if name not in ["relation_classification_and_question_"]:  # your custom logger name
         logging.getLogger(name).setLevel(logging.WARNING)
 
 
-logger = logging.getLogger("try_fix_llm_response")
+logger = logging.getLogger("try_frelation_classification_and_question_ix_llm_response")
 
 
 
@@ -217,7 +217,8 @@ if __name__ == "__main__":
 
     llm_models = ['gpt-4o',"o3"]
     languages = ['en']
-    datasets = ['spinach.tsv']
+    # datasets = ['spinach.tsv','qawiki.tsv']
+    datasets = ['qawiki.tsv']
     relations = ['Containment', 'Minus']
     for language in languages:
         for llm_model in llm_models:

@@ -1,0 +1,417 @@
+2025-07-26 16:27:10,450 - INFO - Processing dataset: qawiki.tsv for model: o3 and language: en
+2025-07-26 16:27:10,450 - INFO - Processing column: Q1
+2025-07-26 16:27:15,446 - INFO - ⚠️ Azure content filter triggered for question: Who are Elon Musk's ex-spouses?
+2025-07-26 16:27:15,447 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-26 16:27:15,447 - INFO - Skipping question 143 due to content filter.
+2025-07-26 16:27:15,449 - INFO - Saved answers
+2025-07-26 16:27:15,449 - INFO - Processing column: Q2
+2025-07-26 16:27:19,454 - INFO - ⚠️ Azure content filter triggered for question: Who are Elon Musk's past spouses?
+2025-07-26 16:27:19,455 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-26 16:27:19,455 - INFO - Skipping question 143 due to content filter.
+2025-07-26 16:27:19,457 - INFO - Saved answers
+2025-07-26 16:27:19,457 - INFO - Processing column: Q3
+2025-07-26 16:27:38,380 - INFO - ⚠️ Azure content filter triggered for question: What chocolate bars are made by Nestlé and contain nuts?
+2025-07-26 16:27:38,380 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-26 16:27:38,380 - INFO - Skipping question 17 due to content filter.
+2025-07-26 16:27:57,012 - INFO - Question 102: Which mountains first ascended in the last eighty years are plutons?
+2025-07-26 16:27:57,012 - INFO - LLM Response: ['no answer']
+2025-07-26 16:28:19,911 - INFO - Question 103: Which movies based on works written by Philip K. Dick feature androids?
+2025-07-26 16:28:19,911 - INFO - LLM Response: ['Blade Runner', 'Blade Runner 2049']
+2025-07-26 16:28:48,296 - INFO - Question 104: Which movies directed by Chloé Zhao are not MPAA-rated R and participated in Cannes?
+2025-07-26 16:28:48,296 - INFO - LLM Response: ['Songs My Brothers Taught Me']
+2025-07-26 16:29:12,537 - INFO - Question 105: Which science fiction movies star Uma Thurman?
+2025-07-26 16:29:12,538 - INFO - LLM Response: ['Batman & Robin', 'Gattaca', 'Paycheck', 'My Super Ex-Girlfriend', 'The Avengers']
+2025-07-26 16:29:47,694 - INFO - Question 106: Which documentary movies were filmed in Yemen?
+2025-07-26 16:29:47,695 - INFO - LLM Response: ['Karama Has No Walls', 'The Mulberry House', 'The Reluctant Revolutionary', 'The Oath', 'Yemeniettes', 'Socotra: The Hidden Land', 'Socotra, la isla de los genios']
+2025-07-26 16:30:01,289 - INFO - Question 107: Which rock musical groups formed the same year as Soda Stereo?
+2025-07-26 16:30:01,290 - INFO - LLM Response: []
+2025-07-26 16:30:07,746 - INFO - Question 108: Which Nordic musicians are from Sweden?
+2025-07-26 16:30:07,746 - INFO - LLM Response: []
+2025-07-26 16:30:12,715 - INFO - Question 109: Which official languages of the European Union are not Indo-European?
+2025-07-26 16:30:12,715 - INFO - LLM Response: ['Estonian', 'Finnish', 'Hungarian', 'Maltese']
+2025-07-26 16:30:31,398 - INFO - Question 110: Which New Zealand cyclists taller than 180cm participated in the 2000 Summer Olympics?
+2025-07-26 16:30:31,398 - INFO - LLM Response: ['Scott Guyton', 'Glen Thomson']
+2025-07-26 16:31:15,627 - INFO - Question 111: Which non-human primates have been sent into space?
+2025-07-26 16:31:15,627 - INFO - LLM Response: ['Albert I', 'Albert II', 'Albert III', 'Albert IV', 'Albert V', 'Yorick', 'Gordo', 'Able', 'Baker', 'Sam', 'Miss Sam', 'Ham', 'Enos', 'Bonny', 'Goliath', 'Abrek', 'Bion', 'Verny', 'Gordy', 'Dryoma', 'Yerosha', 'Zhanya', 'Zhulik', 'Krosh', 'Ivasha', 'Lapik', 'Multik', 'Martine', 'Pierrette', 'Aftab', 'Fargam']
+2025-07-26 16:31:26,812 - INFO - Question 112: Which online streamers who studied at the University of Waterloo live in Vancouver?
+2025-07-26 16:31:26,812 - INFO - LLM Response: []
+2025-07-26 16:31:46,261 - INFO - Question 113: Which stolen paintings by Camille Pissarro were held at some point in Alte Nationalgalerie?
+2025-07-26 16:31:46,262 - INFO - LLM Response: []
+2025-07-26 16:32:09,699 - INFO - Question 114: Which parks in Perth are State Registered Places?
+2025-07-26 16:32:09,699 - INFO - LLM Response: ['Kings Park', 'Hyde Park, Perth', 'Queens Gardens, Perth', 'Stirling Gardens', 'Supreme Court Gardens', 'Harold Boas Gardens']
+2025-07-26 16:32:17,806 - INFO - Question 115: Which people had an element named after them during their lifetime?
+2025-07-26 16:32:17,807 - INFO - LLM Response: ['Glenn T. Seaborg', 'Yuri Oganessian']
+2025-07-26 16:32:23,212 - INFO - Question 116: Which Generation VIII Pokémon are fire and bug types?
+2025-07-26 16:32:23,213 - INFO - LLM Response: ['Sizzlipede', 'Centiskorch']
+2025-07-26 16:32:29,848 - INFO - Question 117: Which political parties that Abraham Lincoln was a member of still exist today?
+2025-07-26 16:32:29,848 - INFO - LLM Response: ['Republican Party (United States)']
+2025-07-26 16:33:04,378 - INFO - Question 118: Which polygonal numbers less than or equals 40 are also pronic?
+2025-07-26 16:33:04,378 - INFO - LLM Response: ['6', '12']
+2025-07-26 16:33:24,284 - INFO - Question 119: Which popes were married before ordination?
+2025-07-26 16:33:24,284 - INFO - LLM Response: ['Saint Peter', 'Felix III', 'Hormisdas', 'Adrian II', 'John XVII', 'Clement IV']
+2025-07-26 16:33:45,638 - INFO - Question 120: Which relational database management systems are open source and written in C or its variants?
+2025-07-26 16:33:45,638 - INFO - LLM Response: ['PostgreSQL', 'MySQL', 'MariaDB', 'SQLite', 'Firebird', 'Ingres', 'MonetDB', 'CUBRID', 'Drizzle', 'Percona Server for MySQL', 'OpenLink Virtuoso', 'YugabyteDB', 'openGauss', 'Greenplum']
+2025-07-26 16:34:13,074 - INFO - Question 121: Which European rugby union teams have had Chilean players?
+2025-07-26 16:34:13,075 - INFO - LLM Response: ['Aviron Bayonnais', 'Section Paloise', 'Soyaux Angoulême XV Charente', 'I Cavalieri Prato', 'Stade domontois', 'Rugby Roma Olimpic', "L'Aquila Rugby"]
+2025-07-26 16:35:38,575 - INFO - Question 122: Who was the last saint to die by crucifixion?
+2025-07-26 16:35:38,575 - INFO - LLM Response: ['Paul Miki']
+2025-07-26 16:36:12,507 - INFO - Question 123: Which Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-07-26 16:36:12,508 - INFO - LLM Response: ['Justina of Padua', 'Pope Mark', 'Sergius', 'Bacchus', 'Osyth']
+2025-07-26 16:36:30,814 - INFO - Question 124: Which saints with their feast day on June 15th are considered martyrs?
+2025-07-26 16:36:30,815 - INFO - LLM Response: ['Saint Vitus', 'Saint Modestus', 'Saint Crescentia']
+2025-07-26 16:37:16,648 - INFO - Question 125: Which Italian sauces are named after Italian cities?
+2025-07-26 16:37:16,648 - INFO - LLM Response: ['Bolognese sauce', 'Neapolitan sauce', 'Neapolitan ragù', 'Amatriciana sauce', 'Genovese sauce', 'Pesto alla genovese', 'Pesto alla trapanese', 'Pesto pantesco', 'Mostarda di Cremona']
+2025-07-26 16:37:40,142 - INFO - Question 126: Which Italian sauces contain both onion and garlic?
+2025-07-26 16:37:40,142 - INFO - LLM Response: ['Marinara sauce', 'Neapolitan sauce']
+2025-07-26 16:37:50,633 - INFO - Question 127: Which 1990s science fiction movies star Uma Thurman?
+2025-07-26 16:37:50,634 - INFO - LLM Response: ['Gattaca']
+2025-07-26 16:38:30,627 - INFO - Question 128: Which documentary series or movies were directed by alumni of the University of Bergen?
+2025-07-26 16:38:30,628 - INFO - LLM Response: ['Cool & Crazy', 'Ice Kiss', 'Brothers (2015 film)', 'Generation Utøya']
+2025-07-26 16:38:40,700 - INFO - Question 129: Which female Simpsons characters were not born in Springfield?
+2025-07-26 16:38:40,701 - INFO - LLM Response: []
+2025-07-26 16:39:10,511 - INFO - Question 130: Which smartphones made by Chinese companies headquartered in Dongguan use ColorOS?
+2025-07-26 16:39:10,511 - INFO - LLM Response: []
+2025-07-26 16:39:16,827 - INFO - Question 131: Which species endemic to Chile are endangered?
+2025-07-26 16:39:16,828 - INFO - LLM Response: []
+2025-07-26 16:39:47,671 - INFO - Question 132: Which telescopes are based in Chile?
+2025-07-26 16:39:47,671 - INFO - LLM Response: ['Atacama Cosmology Telescope', 'Atacama Large Millimeter Array', 'Atacama Pathfinder Experiment', 'Atacama Submillimeter Telescope Experiment', 'University of Tokyo Atacama Observatory', 'CCAT-prime', 'Simons Observatory', 'Very Large Telescope', 'VLT Survey Telescope', 'Visible and Infrared Survey Telescope for Astronomy', 'SPECULOOS Southern Observatory', 'Extremely Large Telescope', 'Gemini South Telescope', 'Victor M. Blanco Telescope', 'Southern Astrophysical Research Telescope', 'Magellan Baade Telescope', 'Magellan Clay Telescope', 'Swope Telescope', 'du Pont Telescope', 'ESO 3.6 m Telescope', 'ESO New Technology Telescope', 'ESO 1.52-metre telescope', 'MPG/ESO 2.2 m Telescope', 'Danish 1.54 m Telescope', 'Euler Telescope', 'Rapid Eye Mount telescope', 'TRAPPIST–South telescope', 'ExTrA Observatory', 'Swedish–ESO Submillimetre Telescope']
+2025-07-26 16:40:28,099 - INFO - Question 133: Which optical telescopes are based in Chile?
+2025-07-26 16:40:28,099 - INFO - LLM Response: ['ESO 3.6 m Telescope', 'ESO 1.52-metre Telescope', 'ESO Schmidt Telescope', 'MPG/ESO 2.2 m Telescope', 'New Technology Telescope', 'VLT Survey Telescope', 'Very Large Telescope', 'VISTA (telescope)', 'SPECULOOS Southern Observatory', 'Next-Generation Transit Survey', 'Extremely Large Telescope', 'Gemini South Telescope', 'Southern Astrophysical Research Telescope', 'Magellan Telescopes', 'Giant Magellan Telescope', 'du Pont Telescope', 'Swope Telescope', 'Victor M. Blanco Telescope', 'TRAPPIST (telescope)', 'Vera C. Rubin Observatory']
+2025-07-26 16:41:04,086 - INFO - Question 134: Which European Turing Award winners were born in Ireland or the U.K.?
+2025-07-26 16:41:04,087 - INFO - LLM Response: ['Maurice Wilkes', 'James H. Wilkinson', 'Edgar F. Codd', 'Robin Milner', 'Leslie Valiant', 'Tim Berners-Lee', 'Geoffrey Hinton']
+2025-07-26 16:41:36,740 - INFO - Question 135: Which universities based in Peru have been established since 1950?
+2025-07-26 16:41:36,740 - INFO - LLM Response: []
+2025-07-26 16:42:00,993 - INFO - Question 136: Which public universities in Peru have been established since 1950?
+2025-07-26 16:42:00,994 - INFO - LLM Response: []
+2025-07-26 16:42:22,073 - INFO - Question 137: Which puzzle video games are known to be NP-complete?
+2025-07-26 16:42:22,074 - INFO - LLM Response: ['Minesweeper', 'Tetris']
+2025-07-26 16:43:04,518 - INFO - Question 138: Which video games published by Nintendo have a fox character?
+2025-07-26 16:43:04,518 - INFO - LLM Response: ['Star Fox', 'Star Fox 2', 'Star Fox 64', 'Star Fox Adventures', 'Star Fox Assault', 'Star Fox Command', 'Star Fox Zero', 'Star Fox Guard', 'Super Smash Bros.', 'Super Smash Bros. Melee', 'Super Smash Bros. Brawl', 'Super Smash Bros. for Nintendo 3DS', 'Super Smash Bros. for Wii U', 'Super Smash Bros. Ultimate', 'Animal Crossing', 'Animal Crossing: Wild World', 'Animal Crossing: City Folk', 'Animal Crossing: New Leaf', 'Animal Crossing: Happy Home Designer', 'Animal Crossing: Amiibo Festival', 'Animal Crossing: Pocket Camp', 'Animal Crossing: New Horizons', 'Mario & Sonic at the Olympic Games', 'Mario & Sonic at the Olympic Winter Games', 'Mario & Sonic at the London 2012 Olympic Games', 'Mario & Sonic at the Sochi 2014 Olympic Winter Games', 'Mario & Sonic at the Rio 2016 Olympic Games', 'Mario & Sonic at the Olympic Games Tokyo 2020']
+2025-07-26 16:43:18,408 - INFO - Question 139: Which video games that have won the award of Best Esports Game of the Year at The Game Awards have a sequel?
+2025-07-26 16:43:18,408 - INFO - LLM Response: ['Counter-Strike: Global Offensive', 'Overwatch']
+2025-07-26 16:43:53,136 - INFO - Question 140: Which civil wars took place in South America?
+2025-07-26 16:43:53,136 - INFO - LLM Response: ['Argentine Civil Wars', 'Revolution of 1880 (Argentina)', 'Bolivian Civil War (1898–1899)', 'War of the Ragamuffins', 'Brazilian Federalist Revolution', 'Chilean Civil War of 1829–1830', 'Chilean Civil War of 1891', "Thousand Days' War", 'Colombian Civil War (1860–1862)', 'Colombian Civil War (1895)', 'Ecuadorian Civil War (1859–1860)', 'Ecuadorian Civil War (1912–1914)', 'Paraguayan Civil War (1922)', 'Paraguayan Civil War (1947)', 'Paraguayan Revolution of 1904', 'Peruvian Civil War of 1834', 'Peruvian Civil War of 1835–1836', 'Peruvian Civil War of 1843–1844', 'Peruvian Civil War of 1856–1858', 'Peruvian Civil War of 1894–1895', 'Uruguayan Civil War', 'Federal War', 'Venezuelan Civil War (1867–1868)', 'Venezuelan Civil War (1868–1870)', 'Legalist Revolution', 'Revolution of the Reforms']
+2025-07-26 16:44:08,663 - INFO - Question 141: Which writers speak English, French, Arabic and Japanese?
+2025-07-26 16:44:08,664 - INFO - LLM Response: ['Toshihiko Izutsu']
+2025-07-26 16:44:32,501 - INFO - Question 142: Which English-language YouTube channels with more than 500,000 subscribers talk about math?
+2025-07-26 16:44:32,501 - INFO - LLM Response: ['Numberphile', '3Blue1Brown', 'Stand-up Maths', 'Mathologer', 'Vi Hart', 'Khan Academy', 'PatrickJMT', 'Eddie Woo', 'blackpenredpen', 'Math Antics', 'MindYourDecisions']
+2025-07-26 16:44:36,557 - INFO - Question 143: Which of Elon Musk's ex-spouses were married to him multiple times?
+2025-07-26 16:44:36,557 - INFO - LLM Response: ['Talulah Riley']
+2025-07-26 16:44:42,822 - INFO - Question 144: Who are the editors-in-chief of EMMA?
+2025-07-26 16:44:42,823 - INFO - LLM Response: ['Alice Schwarzer']
+2025-07-26 16:44:53,242 - INFO - Question 145: Who have been editors-in-chief of the EMMA journal since 2024?
+2025-07-26 16:44:53,244 - INFO - LLM Response: []
+2025-07-26 16:45:07,729 - INFO - Question 146: Which of the original developers of SPSS were educated in Mexico?
+2025-07-26 16:45:07,729 - INFO - LLM Response: ['no answer']
+2025-07-26 16:45:20,839 - INFO - Question 147: Who ran against Jair Bolsonaro for President of Brazil the first time he ran?
+2025-07-26 16:45:20,839 - INFO - LLM Response: ['Fernando Haddad', 'Ciro Gomes', 'Geraldo Alckmin', 'Marina Silva', 'Henrique Meirelles', 'Álvaro Dias', 'Guilherme Boulos', 'Cabo Daciolo', 'Vera Lúcia', 'João Amoêdo', 'João Goulart Filho', 'José Maria Eymael']
+2025-07-26 16:45:24,726 - INFO - Question 148: Who is the prime minister of South Korea?
+2025-07-26 16:45:24,727 - INFO - LLM Response: ['Han Duck-soo']
+2025-07-26 16:45:36,686 - INFO - Question 149: Who has won the Nobel Peace Prize and another type of Nobel Prize?
+2025-07-26 16:45:36,686 - INFO - LLM Response: ['Linus Pauling']
+2025-07-26 16:45:43,774 - INFO - Question 150: Who was the Democratic party candidate in the 1972 United States Presidential Election?
+2025-07-26 16:45:43,774 - INFO - LLM Response: ['George McGovern']
+2025-07-26 16:45:43,787 - INFO - Saved answers
+2025-07-26 16:45:43,787 - INFO - Processing column: Q4
+2025-07-26 16:46:06,997 - INFO - Question 1: In which countries that are not Spanish-speaking are tepuis found?
+2025-07-26 16:46:06,997 - INFO - LLM Response: ['Brazil', 'France', 'Guyana', 'Suriname']
+2025-07-26 16:46:24,199 - INFO - Question 2: In which countries is Elon Musk a citizen but not through naturalization?
+2025-07-26 16:46:24,199 - INFO - LLM Response: ['South Africa', 'Canada']
+2025-07-26 16:46:30,342 - INFO - Question 3: In which journals has Amrapali Zaveri published but not as first author?
+2025-07-26 16:46:30,342 - INFO - LLM Response: []
+2025-07-26 16:46:34,888 - INFO - Question 4: In which movies not directed by Scorsese did Al Pacino and Robert de Niro appear together?
+2025-07-26 16:46:34,889 - INFO - LLM Response: ['The Godfather Part II', 'Heat', 'Righteous Kill']
+2025-07-26 16:46:57,458 - INFO - Question 5: In which non-national museums can I see paintings by El Greco?
+2025-07-26 16:46:57,458 - INFO - LLM Response: []
+2025-07-26 16:47:03,493 - INFO - Question 6: Kim Deal played with Black Francis in which bands?
+2025-07-26 16:47:03,494 - INFO - LLM Response: ['Pixies']
+2025-07-26 16:49:07,540 - INFO - Question 7: List astronauts who completed graduate degrees at MIT.
+2025-07-26 16:49:07,540 - INFO - LLM Response: ['Edwin Eugene Aldrin Jr.', 'Philip K. Chapman', 'Charles Moss Duke Jr.', 'Russell Louis Schweickart', 'David Randolph Scott', 'Edgar Dean Mitchell', 'Frederick H. Hauck', 'Anthony Wayne England', 'Franklin Ramón Chang-Díaz', 'Terry Jonathan Hart', 'Kenneth Donald Cameron', 'Mark Charles Lee', 'Ronald Erwin McNair', 'William McMichael Shepherd', 'Byron Kurt Lichtenberg', 'Gregory Errol Chamitoff', 'Michael James Massimino', 'Stephen Gerard Bowen', 'Nicholas James MacDonald Patrick', 'Heidemarie Martha Stefanyshyn-Piper', 'Christopher John Cassidy', 'Daniel M. Tani', 'Janice Elaine Voss', 'Raja Jon Vurputoor Chari', 'Jack David Fischer', 'Warren Woodrow Hoburg', 'Christina Maria Birch', 'Christopher J. Williams', 'Jerome Arthur Apt']
+2025-07-26 16:49:21,891 - INFO - Question 8: List the second to tenth richest persons in the world.
+2025-07-26 16:49:21,892 - INFO - LLM Response: ['Jeff Bezos', 'Bernard Arnault', 'Bill Gates', 'Mark Zuckerberg', 'Larry Ellison', 'Warren Buffett', 'Larry Page', 'Sergey Brin', 'Mukesh Ambani']
+2025-07-26 16:49:27,678 - INFO - Question 9: List the second to tenth largest countries in Africa by area.
+2025-07-26 16:49:27,678 - INFO - LLM Response: ['Democratic Republic of the Congo', 'Sudan', 'Libya', 'Chad', 'Niger', 'Angola', 'Mali', 'South Africa', 'Ethiopia']
+2025-07-26 16:49:35,505 - INFO - Question 10: List the second to tenth largest countries in Africa by population.
+2025-07-26 16:49:35,506 - INFO - LLM Response: ['Ethiopia', 'Egypt', 'Democratic Republic of the Congo', 'Tanzania', 'South Africa', 'Kenya', 'Uganda', 'Sudan', 'Algeria']
+2025-07-26 16:49:44,918 - INFO - Question 11: What members of the G20 are not countries?
+2025-07-26 16:49:44,918 - INFO - LLM Response: ['European Union', 'African Union']
+2025-07-26 16:49:53,159 - INFO - Question 12: Which official languages of the European Union are Indo-European?
+2025-07-26 16:49:53,159 - INFO - LLM Response: ['Bulgarian', 'Croatian', 'Czech', 'Danish', 'Dutch', 'English', 'French', 'German', 'Greek', 'Irish', 'Italian', 'Latvian', 'Lithuanian', 'Polish', 'Portuguese', 'Romanian', 'Slovak', 'Slovenian', 'Spanish', 'Swedish']
+2025-07-26 16:50:11,612 - INFO - Question 13: What subsidiaries of Meta Platforms do not contain "Facebook" in their name?
+2025-07-26 16:50:11,614 - INFO - LLM Response: ['Instagram', 'WhatsApp', 'Novi Financial', 'Onavo', 'LiveRail', 'Oculus VR', 'Siculus']
+2025-07-26 16:50:20,742 - INFO - Question 14: Among the ten tallest mountains in the world, which ones are entirely contained in one country?
+2025-07-26 16:50:20,743 - INFO - LLM Response: ['Dhaulagiri I', 'Manaslu', 'Nanga Parbat', 'Annapurna I']
+2025-07-26 16:50:41,118 - INFO - Question 15: What binary neutron stars in the constellation Scorpius do not have exoplanets orbiting them?
+2025-07-26 16:50:41,118 - INFO - LLM Response: ['no answer']
+2025-07-26 16:51:01,044 - INFO - Question 16: What buildings other than educational ones are named after JFK?
+2025-07-26 16:51:01,046 - INFO - LLM Response: []
+2025-07-26 16:51:13,958 - INFO - Question 17: What chocolate bars are made by Nestlé and don't contain nuts?
+2025-07-26 16:51:13,958 - INFO - LLM Response: []
+2025-07-26 16:51:27,101 - INFO - Question 18: Which cities outside North America are twinned with Port-au-Prince?
+2025-07-26 16:51:27,102 - INFO - LLM Response: []
+2025-07-26 16:51:50,595 - INFO - Question 19: What collections outside of Africa that are not national museums exhibit Benin Bronzes?
+2025-07-26 16:51:50,596 - INFO - LLM Response: []
+2025-07-26 16:51:54,753 - INFO - Question 20: What colors are in the French flag but not the Italian flag?
+2025-07-26 16:51:54,754 - INFO - LLM Response: ['blue']
+2025-07-26 16:52:04,090 - INFO - Question 21: Which European countries are not part of the Schengen area?
+2025-07-26 16:52:04,090 - INFO - LLM Response: ['Albania', 'Andorra', 'Armenia', 'Azerbaijan', 'Belarus', 'Bosnia and Herzegovina', 'Bulgaria', 'Cyprus', 'Georgia', 'Ireland', 'Kosovo', 'Monaco', 'Moldova', 'Montenegro', 'North Macedonia', 'Romania', 'Russia', 'San Marino', 'Serbia', 'Turkey', 'Ukraine', 'United Kingdom', 'Vatican City']
+2025-07-26 16:52:13,509 - INFO - Question 22: What countries are in the EU but are not founding members?
+2025-07-26 16:52:13,510 - INFO - LLM Response: ['Austria', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'Estonia', 'Finland', 'Greece', 'Hungary', 'Ireland', 'Latvia', 'Lithuania', 'Malta', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden']
+2025-07-26 16:52:20,677 - INFO - Question 23: What countries that border Ghana have a lower or equal population compared with Ghana?
+2025-07-26 16:52:20,677 - INFO - LLM Response: ['Ivory Coast', 'Burkina Faso', 'Togo']
+2025-07-26 16:52:36,794 - INFO - Question 24: What diseases, excluding those affecting pregnancy, are associated with the gene FGF14?
+2025-07-26 16:52:36,794 - INFO - LLM Response: ['spinocerebellar ataxia type 27', 'episodic ataxia type 9']
+2025-07-26 16:52:49,186 - INFO - Question 25: What documentaries released before 2010 are about whaling?
+2025-07-26 16:52:49,187 - INFO - LLM Response: []
+2025-07-26 16:53:14,036 - INFO - Question 26: What non-alcoholic drinks are from Africa?
+2025-07-26 16:53:14,037 - INFO - LLM Response: ['Rooibos tea', 'Maghrebi mint tea', 'Hibiscus tea', 'Café Touba', 'Chapman (cocktail)', 'Fura da nono', 'Gnamakoudji']
+2025-07-26 16:53:20,766 - INFO - Question 27: Which elementary particles with neutral or positive charge interact with both the strong and weak forces?
+2025-07-26 16:53:20,766 - INFO - LLM Response: ['Up quark', 'Charm quark', 'Top quark']
+2025-07-26 16:53:30,965 - INFO - Question 28: What elementary particles interact with the weak force but not the strong force?
+2025-07-26 16:53:30,965 - INFO - LLM Response: ['electron', 'muon', 'tau lepton', 'electron neutrino', 'muon neutrino', 'tau neutrino', 'W boson', 'Z boson', 'Higgs boson']
+2025-07-26 16:54:02,717 - INFO - Question 29: What movies directed by Mira Nair are not primarily in the Hindi language?
+2025-07-26 16:54:02,719 - INFO - LLM Response: ['Jama Masjid Street Journal', 'So Far from India', 'India Cabaret', 'Children of a Desired Sex', 'Mississippi Masala', 'The Perez Family', 'Kama Sutra: A Tale of Love', 'My Own Country', 'The Laughing Club of India', 'Hysterical Blindness', '11\'09"01 September 11', 'Vanity Fair', 'The Namesake', 'A Fork, a Spoon and a Knight', 'Amelia', 'New York, I Love You', 'Words with Gods', 'The Reluctant Fundamentalist', 'Queen of Katwe']
+2025-07-26 16:54:31,552 - INFO - Question 30: What non-mammal hybrid species can have offspring?
+2025-07-26 16:54:31,552 - INFO - LLM Response: []
+2025-07-26 16:54:39,533 - INFO - Question 31: What languages not indigenous to Ghana did Kofi Annan speak?
+2025-07-26 16:54:39,533 - INFO - LLM Response: ['English', 'French']
+2025-07-26 16:54:46,463 - INFO - Question 32: Which montes in the Tharsis Montes are not taller than 1000 metres?
+2025-07-26 16:54:46,463 - INFO - LLM Response: ['no answer']
+2025-07-26 16:54:56,067 - INFO - Question 33: In which movies of the Matrix series does Bane not appear?
+2025-07-26 16:54:56,067 - INFO - LLM Response: ['The Matrix', 'The Matrix Resurrections']
+2025-07-26 16:55:22,140 - INFO - Question 34: What museums in Addis Ababa are not art museums?
+2025-07-26 16:55:22,141 - INFO - LLM Response: ['National Museum of Ethiopia', 'Ethnological Museum (Addis Ababa)', 'Addis Ababa Museum', "Red Terror Martyrs' Memorial Museum", 'Ethiopian Railway Museum', 'Ethiopian Postal Museum', 'National Military Museum (Ethiopia)', 'Ethiopian Natural History Museum', "St. George's Cathedral Museum", 'Science Museum (Addis Ababa)']
+2025-07-26 16:55:31,268 - INFO - Question 35: What novels written by Harper Lee were not adapted into movies?
+2025-07-26 16:55:31,268 - INFO - LLM Response: ['Go Set a Watchman']
+2025-07-26 16:55:37,043 - INFO - Question 36: What officially recognized dwarf planets orbit the Sun but do not have a moon?
+2025-07-26 16:55:37,043 - INFO - LLM Response: ['Ceres']
+2025-07-26 16:55:51,002 - INFO - Question 37: What Ogham stones found in County Clare are not from the 5th century?
+2025-07-26 16:55:51,004 - INFO - LLM Response: []
+2025-07-26 16:56:43,768 - INFO - Question 38: What operas based on works by Alexander Pushkin debuted in a place other than the Mariinsky Theatre?
+2025-07-26 16:56:43,768 - INFO - LLM Response: ['Ruslan and Lyudmila', 'Eugene Onegin', 'Mazeppa', 'Aleko', 'The Tale of Tsar Saltan', 'The Golden Cockerel', 'Rusalka', 'Mavra', 'A Feast in Time of Plague', "The Captain's Daughter"]
+2025-07-26 16:57:18,166 - INFO - Question 39: What other funcionalist buildings have the same architect as the Tsentrosoyuz Building?
+2025-07-26 16:57:18,166 - INFO - LLM Response: ['no answer']
+2025-07-26 16:57:27,873 - INFO - Question 40: What papers did Amrapali Zaveri write but not as first author?
+2025-07-26 16:57:27,873 - INFO - LLM Response: []
+2025-07-26 16:57:44,468 - INFO - Question 41: What non-Polish poets were Holocaust victims?
+2025-07-26 16:57:44,469 - INFO - LLM Response: []
+2025-07-26 16:57:53,440 - INFO - Question 42: What non-membrane proteins are found in dendrites of neurons?
+2025-07-26 16:57:53,440 - INFO - LLM Response: []
+2025-07-26 16:58:12,862 - INFO - Question 43: What non-membrane proteins are involved in retina homeostasis?
+2025-07-26 16:58:12,862 - INFO - LLM Response: []
+2025-07-26 16:58:43,594 - INFO - Question 44: What radio stations broadcast specifically in Boston but are not owned by universities?
+2025-07-26 16:58:43,595 - INFO - LLM Response: ['WEZE', 'WRKO', 'WEEI (AM)', 'WROL', 'WBZ (AM)', 'WILD (AM)', 'WBIX (AM)', 'WMEX (AM)', 'WGBH (FM)', 'WJMN (FM)', 'WBQT', 'WZLX', 'WBGB (FM)', 'WBZ-FM', 'WBWL', 'WWBX (FM)', 'WMJX']
+2025-07-26 16:58:56,844 - INFO - Question 45: What religions promote vegetarianism but do not require it under all circumstances?
+2025-07-26 16:58:56,845 - INFO - LLM Response: ['Hinduism', 'Buddhism', 'Sikhism', 'Seventh-day Adventist Church', 'Rastafari movement', 'Baháʼí Faith']
+2025-07-26 16:59:22,698 - INFO - Question 46: What extinct species are in the order Monotremata?
+2025-07-26 16:59:22,698 - INFO - LLM Response: ['Kollikodon ritchiei', 'Teinolophos trusleri', 'Steropodon galmani', 'Obdurodon dicksoni', 'Obdurodon insignis', 'Obdurodon tharalkooschild', 'Monotrematum sudamericanum', 'Megalibgwilia robusta', 'Megalibgwilia ramsayi', 'Zaglossus hacketti', 'Zaglossus robustus', 'Kryoryctes cadburyi', 'Patagorhynchus pascuali']
+2025-07-26 17:00:11,637 - INFO - Question 47: What extinct species are in the same family as Homo sapiens?
+2025-07-26 17:00:11,638 - INFO - LLM Response: ['Sahelanthropus tchadensis', 'Orrorin tugenensis', 'Ardipithecus ramidus', 'Ardipithecus kadabba', 'Kenyanthropus platyops', 'Australopithecus anamensis', 'Australopithecus afarensis', 'Australopithecus africanus', 'Australopithecus bahrelghazali', 'Australopithecus garhi', 'Australopithecus deyiremeda', 'Australopithecus sediba', 'Australopithecus prometheus', 'Homo habilis', 'Homo rudolfensis', 'Homo gautengensis', 'Homo georgicus', 'Homo erectus', 'Homo ergaster', 'Homo antecessor', 'Homo heidelbergensis', 'Homo bodoensis', 'Homo cepranensis', 'Homo rhodesiensis', 'Homo neanderthalensis', 'Homo naledi', 'Homo floresiensis', 'Homo luzonensis', 'Homo longi', 'Homo tsaichangensis', 'Paranthropus aethiopicus', 'Paranthropus boisei', 'Paranthropus robustus', 'Gigantopithecus blacki', 'Gigantopithecus giganteus', 'Gigantopithecus bilaspurensis', 'Chororapithecus abyssinicus', 'Nakalipithecus nakayamai', 'Samburupithecus kiptalami', 'Graecopithecus freybergi', 'Dryopithecus fontani', 'Dryopithecus brancoi', 'Hispanopithecus laietanus', 'Hispanopithecus crusafonti', 'Lufengpithecus keiyuanensis', 'Lufengpithecus lufengensis', 'Lufengpithecus hudienensis', 'Khoratpithecus piriyai', 'Khoratpithecus chiangmuanensis', 'Khoratpithecus ayeyarwadyensis', 'Sivapithecus indicus', 'Sivapithecus sivalensis', 'Sivapithecus parvada', 'Sivapithecus punjabicus', 'Sivapithecus simonsi', 'Ankarapithecus meteai', 'Pierolapithecus catalaunicus', 'Anoiapithecus brevirostris', 'Ouranopithecus macedoniensis', 'Ouranopithecus turkae', 'Pongo hooijeri', 'Pongo tobaensis', 'Pongo weidenreichi']
+2025-07-26 17:00:37,575 - INFO - Question 48: What species in the same genus as the monkeypox virus have not had cases of human infection?
+2025-07-26 17:00:37,576 - INFO - LLM Response: ['Ectromelia virus', 'Taterapox virus', 'Raccoonpox virus', 'Skunkpox virus', 'Volepox virus', 'Horsepox virus', 'Sea otterpox virus']
+2025-07-26 17:00:55,910 - INFO - Question 49: Which team sports use sticks excluding winter sports?
+2025-07-26 17:00:55,910 - INFO - LLM Response: ['field hockey', 'indoor field hockey', 'floorball', 'roller hockey', 'inline hockey', 'lacrosse', 'hurling', 'camogie', 'shinty', 'underwater hockey', 'polo', 'polocrosse', 'cycle polo', 'segway polo', 'gateball']
+2025-07-26 17:01:24,543 - INFO - Question 50: Which video games produced by the League of Legends developer were released before 2020?
+2025-07-26 17:01:24,544 - INFO - LLM Response: ['League of Legends', "Blitzcrank's Poro Roundup", 'Teamfight Tactics']
+2025-07-26 17:01:45,944 - INFO - Question 51: What volcanos in Iceland are currently active and not taller than 1000 metres?
+2025-07-26 17:01:45,946 - INFO - LLM Response: ['Krafla', 'Fagradalsfjall', 'Eldfell', 'Surtsey', 'Reykjanes', 'Krýsuvík']
+2025-07-26 17:02:01,285 - INFO - Question 52: What non-semi-automatic weapons were used in mass shootings in the United States?
+2025-07-26 17:02:01,285 - INFO - LLM Response: []
+2025-07-26 17:02:31,933 - INFO - Question 53: What whisky distilleries are based in Ireland outside of Cork?
+2025-07-26 17:02:31,934 - INFO - LLM Response: ['Old Bushmills Distillery', 'Kilbeggan Distillery', 'Cooley Distillery', 'Great Northern Distillery', 'Echlinville Distillery', 'Rademon Estate Distillery', 'Dingle Distillery', 'Teeling Distillery', 'Pearse Lyons Distillery', 'Roe & Co Distillery', 'The Dublin Liberties Distillery', 'Jameson Distillery Bow St.', 'Tullamore Distillery', 'Slane Distillery', 'Waterford Distillery', 'Royal Oak Distillery', 'The Connacht Whiskey Company', 'The Shed Distillery', 'Ballykeefe Distillery', 'Boann Distillery', 'Lough Gill Distillery', 'Glendalough Distillery', 'Powerscourt Distillery', 'Tipperary Boutique Distillery', 'Blackwater Distillery']
+2025-07-26 17:03:07,894 - INFO - Question 54: Where has Tim Berners-Lee worked in the past?
+2025-07-26 17:03:07,895 - INFO - LLM Response: ['CERN', 'Massachusetts Institute of Technology', 'Computer Science and Artificial Intelligence Laboratory', 'University of Oxford', 'University of Southampton', 'World Wide Web Consortium', 'World Wide Web Foundation']
+2025-07-26 17:03:28,911 - INFO - Question 55: Which actors who are Scientologists do not have a star on the Hollywood Walk of Fame?
+2025-07-26 17:03:28,912 - INFO - LLM Response: []
+2025-07-26 17:03:46,101 - INFO - Question 56: Which Asian universities with female rectors do not receive public funds?
+2025-07-26 17:03:46,102 - INFO - LLM Response: []
+2025-07-26 17:03:51,140 - INFO - Question 57: Which association football players have exactly two citizenships?
+2025-07-26 17:03:51,140 - INFO - LLM Response: []
+2025-07-26 17:03:55,177 - INFO - Question 58: Which brutalist buildings do not incorporate functionalism?
+2025-07-26 17:03:55,178 - INFO - LLM Response: []
+2025-07-26 17:04:03,725 - INFO - Question 59: Which functionalist buildings are not brutalist?
+2025-07-26 17:04:03,725 - INFO - LLM Response: []
+2025-07-26 17:04:27,202 - INFO - Question 60: Which carbon isotopes can decay into boron isotopes but not by electron capture?
+2025-07-26 17:04:27,202 - INFO - LLM Response: ['Carbon-9', 'Carbon-10']
+2025-07-26 17:04:44,584 - INFO - Question 61: Which carbon isotopes can recursively but not directly decay into boron isotopes?
+2025-07-26 17:04:44,584 - INFO - LLM Response: ['no answer']
+2025-07-26 17:05:25,632 - INFO - Question 62: Which chess openings that are variations of the Sicilian Defence do not involve the move cxd4?
+2025-07-26 17:05:25,634 - INFO - LLM Response: ['Alapin Variation', 'Bowdler Attack', 'Closed Sicilian', 'Grand Prix Attack', 'Wing Gambit', 'Rossolimo Variation', 'Moscow Variation', "King's Indian Attack", 'Mengarini Variation', 'Myers Attack', 'Snyder Variation', 'Chameleon Variation', 'Katalimov Variation']
+2025-07-26 17:05:48,967 - INFO - Question 63: Which Chilean companies, excluding energy companies, have U.S. parent companies?
+2025-07-26 17:05:48,968 - INFO - LLM Response: ['Walmart Chile', 'AFP Provida', 'Google Chile', 'IBM Chile', 'Microsoft Chile', '3M Chile']
+2025-07-26 17:06:29,421 - INFO - Question 64: Which cities named after an apostle have a population of less than one million?
+2025-07-26 17:06:29,422 - INFO - LLM Response: ['San Pedro, Laguna', 'San Pedro Sula', 'St Andrews', 'Saint Paul']
+2025-07-26 17:06:39,825 - INFO - Question 65: Which civil wars started in the nineteenth century outside of South America?
+2025-07-26 17:06:39,825 - INFO - LLM Response: []
+2025-07-26 17:07:25,073 - INFO - Question 66: Which civil wars took place in South America but did not start in the 19th century?
+2025-07-26 17:07:25,074 - INFO - LLM Response: ['Inca Civil War', 'Paraguayan Civil War', 'La Violencia', 'Ecuadorian Civil War (1912–1914)', 'Liberating Revolution', 'Revolution of 1904 (Uruguay)', 'Constitutionalist Revolution']
+2025-07-26 17:07:31,922 - INFO - Question 67: Which clubs outside of Europe did Lionel Messi play for?
+2025-07-26 17:07:31,922 - INFO - LLM Response: ["Newell's Old Boys", 'Inter Miami CF']
+2025-07-26 17:07:54,665 - INFO - Question 68: What colors are named after fruits that are not exotic fruits?
+2025-07-26 17:07:54,665 - INFO - LLM Response: ['apple green', 'apricot', 'banana mania', 'cantaloupe', 'cherry', 'cranberry', 'grape', 'granny smith apple', 'lemon', 'lime', 'melon', 'olive', 'orange', 'peach', 'plum', 'raspberry', 'strawberry', 'tangerine', 'watermelon']
+2025-07-26 17:08:11,765 - INFO - Question 69: Which conferences that focus on Machine Learning were formed in the last 40 years?
+2025-07-26 17:08:11,766 - INFO - LLM Response: ['Conference on Neural Information Processing Systems', 'International Conference on Learning Representations', 'International Conference on Artificial Intelligence and Statistics', 'European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases', 'Conference on Machine Learning and Systems', 'Conference on Robot Learning']
+2025-07-26 17:08:23,673 - INFO - Question 70: Which conferences were organized by Turing Award winners before 2016?
+2025-07-26 17:08:23,673 - INFO - LLM Response: []
+2025-07-26 17:08:37,187 - INFO - Question 71: Which countries are governed by a monarchy without a constituion?
+2025-07-26 17:08:37,187 - INFO - LLM Response: ['United Kingdom', 'Canada', 'New Zealand', 'Saudi Arabia']
+2025-07-26 17:08:48,629 - INFO - Question 72: What are the non-Spanish-speaking Latin American countries?
+2025-07-26 17:08:48,630 - INFO - LLM Response: ['Brazil', 'Haiti', 'Belize']
+2025-07-26 17:08:56,256 - INFO - Question 73: Which non-European Union countries are in the Balkan region?
+2025-07-26 17:08:56,256 - INFO - LLM Response: ['Albania', 'Bosnia and Herzegovina', 'Kosovo', 'Montenegro', 'North Macedonia', 'Serbia', 'Turkey']
+2025-07-26 17:09:21,562 - INFO - Question 74: Which mainland countries are named after plants?
+2025-07-26 17:09:21,563 - INFO - LLM Response: ['Brazil', 'Guatemala']
+2025-07-26 17:09:28,564 - INFO - Question 75: Which countries are part of the G20 but not the Arab League?
+2025-07-26 17:09:28,564 - INFO - LLM Response: ['Argentina', 'Australia', 'Brazil', 'Canada', 'China', 'France', 'Germany', 'India', 'Indonesia', 'Italy', 'Japan', 'Mexico', 'Russia', 'South Africa', 'South Korea', 'Turkey', 'United Kingdom', 'United States']
+2025-07-26 17:09:36,801 - INFO - Question 76: What countries border South Sudan excluding that which borders the most countries?
+2025-07-26 17:09:36,801 - INFO - LLM Response: ['Central African Republic', 'Ethiopia', 'Kenya', 'Sudan', 'Uganda']
+2025-07-26 17:10:19,494 - INFO - Question 77: Which countries changed their driving side from left to right but not due to being occupied or annexed?
+2025-07-26 17:10:19,495 - INFO - LLM Response: ['Afghanistan', 'Argentina', 'Belgium', 'Canada', 'Egypt', 'Ghana', 'Iceland', 'Italy', 'Myanmar', 'Nigeria', 'Portugal', 'Sierra Leone', 'Spain', 'Sweden', 'Turkey', 'Yemen']
+2025-07-26 17:10:45,857 - INFO - Question 78: Which extant countries with multiple capitals are not recognized by all of their neighbours?
+2025-07-26 17:10:45,858 - INFO - LLM Response: ['Sahrawi Arab Democratic Republic', 'State of Palestine']
+2025-07-26 17:11:23,218 - INFO - Question 79: Which countries drive on the left outside of Europe?
+2025-07-26 17:11:23,220 - INFO - LLM Response: ['Antigua and Barbuda', 'Australia', 'Bahamas', 'Bangladesh', 'Barbados', 'Bhutan', 'Botswana', 'Brunei', 'Dominica', 'East Timor', 'Eswatini', 'Fiji', 'Grenada', 'Guyana', 'India', 'Indonesia', 'Jamaica', 'Japan', 'Kenya', 'Kiribati', 'Lesotho', 'Malawi', 'Malaysia', 'Maldives', 'Mauritius', 'Mozambique', 'Namibia', 'Nauru', 'Nepal', 'New Zealand', 'Pakistan', 'Papua New Guinea', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'Seychelles', 'Singapore', 'Solomon Islands', 'South Africa', 'Sri Lanka', 'Suriname', 'Tanzania', 'Thailand', 'Tonga', 'Trinidad and Tobago', 'Tuvalu', 'Uganda', 'Zambia', 'Zimbabwe']
+2025-07-26 17:11:56,006 - INFO - Question 80: Which non-Asian countries have a female head of state?
+2025-07-26 17:11:56,008 - INFO - LLM Response: ['Barbados', 'Denmark', 'Ethiopia', 'Greece', 'Hungary', 'Honduras', 'Kosovo', 'Marshall Islands', 'Moldova', 'Peru', 'Slovakia', 'Slovenia', 'Tanzania', 'Trinidad and Tobago']
+2025-07-26 17:12:14,332 - INFO - Question 81: Which non-European countries have diplomatic relations with Chile?
+2025-07-26 17:12:14,333 - INFO - LLM Response: []
+2025-07-26 17:12:30,074 - INFO - Question 82: Which countries outside of Asia have Islam as an official religion?
+2025-07-26 17:12:30,074 - INFO - LLM Response: ['Algeria', 'Comoros', 'Djibouti', 'Egypt', 'Libya', 'Mauritania', 'Morocco', 'Somalia', 'Sahrawi Arab Democratic Republic', 'Tunisia']
+2025-07-26 17:12:37,525 - INFO - Question 83: Which countries outside of Asia have won a Cricket World Cup?
+2025-07-26 17:12:37,525 - INFO - LLM Response: ['Australia', 'England', 'West Indies']
+2025-07-26 17:12:41,856 - INFO - Question 84: Which non-European countries have won a FIFA World Cup?
+2025-07-26 17:12:41,856 - INFO - LLM Response: ['Argentina', 'Brazil', 'Uruguay']
+2025-07-26 17:13:02,007 - INFO - Question 85: Which primarily northern-hemisphere countries have won a Rugby World Cup?
+2025-07-26 17:13:02,007 - INFO - LLM Response: ['England', 'United States of America']
+2025-07-26 17:13:30,271 - INFO - Question 86: Which countries outside of the EU observe Victory in Europe Day?
+2025-07-26 17:13:30,271 - INFO - LLM Response: ['Australia', 'Canada', 'Faroe Islands', 'Guernsey', 'Jersey', 'Norway', 'Russia', 'Switzerland', 'Ukraine', 'United Kingdom', 'United States of America']
+2025-07-26 17:14:01,128 - INFO - Question 87: Which countries use the same plug as Canada but do not share an official language with Canada?
+2025-07-26 17:14:01,129 - INFO - LLM Response: ['Mexico', 'Guatemala', 'El Salvador', 'Honduras', 'Nicaragua', 'Costa Rica', 'Panama', 'Cuba', 'Dominican Republic', 'Colombia', 'Ecuador', 'Venezuela', 'Peru', 'Bolivia', 'Japan', 'China', 'Taiwan', 'Vietnam', 'Laos', 'Cambodia', 'Saudi Arabia', 'Yemen', 'Thailand']
+2025-07-26 17:14:39,950 - INFO - Question 88: Which non-European countries were dissolved in the 1990s?
+2025-07-26 17:14:39,951 - INFO - LLM Response: ['Yemen Arab Republic', "People's Democratic Republic of Yemen", "People's Democratic Republic of Ethiopia", 'Democratic Republic of Afghanistan', 'State of Cambodia', 'Transkei', 'Bophuthatswana', 'Venda', 'Ciskei', 'Trust Territory of the Pacific Islands', 'Zaire']
+2025-07-26 17:15:10,413 - INFO - Question 89: Which culinary nuts are drupes but not botanical nuts?
+2025-07-26 17:15:10,414 - INFO - LLM Response: ['Almond', 'Cashew', 'Coconut', 'Pecan', 'Pistachio', 'Walnut']
+2025-07-26 17:16:06,755 - INFO - Question 90: Which death row prisoners executed by a method other than hanging had pizza as their last meal?
+2025-07-26 17:16:06,756 - INFO - LLM Response: ['Philip Workman']
+2025-07-26 17:16:20,475 - INFO - Question 91: Which non-American desserts contain cinnamon?
+2025-07-26 17:16:20,475 - INFO - LLM Response: []
+2025-07-26 17:16:46,457 - INFO - Question 92: Which non-toy dog breeds originated in China?
+2025-07-26 17:16:46,457 - INFO - LLM Response: ['Chow Chow', 'Shar Pei', 'Chongqing dog', 'Kunming dog', 'Tibetan Mastiff', 'Tibetan Terrier', 'Tibetan Spaniel', 'Lhasa Apso', 'Xiasi Dog', 'Tang Dog', 'Tibetan Kyi Apso', 'Chinese rural dog', 'Laizhou Hong', 'Shandong Xian Hound']
+2025-07-26 17:17:03,350 - INFO - Question 93: Which non-antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-07-26 17:17:03,352 - INFO - LLM Response: ['no answer']
+2025-07-26 17:17:37,994 - INFO - Question 94: Which Ethiopian political parties founded since 2000 are no longer active?
+2025-07-26 17:17:37,994 - INFO - LLM Response: ['Coalition for Unity and Democracy', 'United Ethiopian Democratic Forces', 'Oromo Federalist Democratic Movement', 'Ginbot 7 Movement for Justice, Freedom and Democracy', 'Semayawi Party', 'All-Ethiopian Unity Party', 'New Generation Party']
+2025-07-26 17:18:08,376 - INFO - Question 95: Which football midfielders born in Senegal have played for France excluding those who played for Inter Milan?
+2025-07-26 17:18:08,376 - INFO - LLM Response: ['no answer']
+2025-07-26 17:18:31,224 - INFO - Question 96: Which football players born in Senegal have played for France excluding midfielders?
+2025-07-26 17:18:31,225 - INFO - LLM Response: ['Patrice Evra', 'Raoul Diagne']
+2025-07-26 17:19:31,679 - INFO - Question 97: Which heads of state died from COVID-19 complications but not while in office?
+2025-07-26 17:19:31,681 - INFO - LLM Response: ["Valéry Giscard d'Estaing", 'Jerry John Rawlings', 'Pierre Buyoya', 'Jacques Joachim Yhombi-Opango', 'Ali Mahdi Mohamed', 'Hissène Habré']
+2025-07-26 17:20:20,105 - INFO - Question 98: Which honorary mayors outside Alaska were not human?
+2025-07-26 17:20:20,107 - INFO - LLM Response: ['Bosco Ramos', 'Duke (dog)', 'Maximus Mighty-Dog Mueller II', 'Clay Henry (goat)', 'Lucy Lou', 'Junior Cochran', 'Brynneth Pawltro', 'Wilbur Beast', 'Sweet Tart (cat)', 'Parker the Snow Dog']
+2025-07-26 17:20:57,008 - INFO - Question 99: Which horror movies were directed by non-twin siblings?
+2025-07-26 17:20:57,008 - INFO - LLM Response: ['Paura 3D', 'The Dead', 'The Dead 2: India', 'Deadheads', 'The Wretched', 'Abrakadabra', 'What the Waters Left Behind']
+2025-07-26 17:21:44,497 - INFO - Question 100: Which pro-drop languages do not use Latin script?
+2025-07-26 17:21:44,499 - INFO - LLM Response: []
+2025-07-26 17:22:32,522 - INFO - Question 101: Which Martian mountains are not in the Tharsis Region?
+2025-07-26 17:22:32,523 - INFO - LLM Response: ['Aeolis Mons', 'Elysium Mons', 'Albor Tholus', 'Hecates Tholus', 'Apollinaris Mons', 'Hadriacus Mons', 'Tyrrhenus Mons', 'Promethei Mons', 'Zephyria Tholus']
+2025-07-26 17:22:38,791 - INFO - Question 102: Which mountains first ascended in the last eighty years are not plutons?
+2025-07-26 17:22:38,792 - INFO - LLM Response: []
+2025-07-26 17:22:48,762 - INFO - Question 103: Which movies based on works written by Philip K. Dick do not feature androids?
+2025-07-26 17:22:48,762 - INFO - LLM Response: ['Minority Report', 'A Scanner Darkly', 'The Adjustment Bureau', 'Next', 'Paycheck', 'Radio Free Albemuth', "Confessions d'un Barjo"]
+2025-07-26 17:23:07,858 - INFO - Question 104: Which movies directed by Chloé Zhao are not MPAA-rated R and did not participate in Cannes?
+2025-07-26 17:23:07,858 - INFO - LLM Response: ['Post', 'Daughters', 'Songs My Brothers Taught Me', 'Eternals']
+2025-07-26 17:24:00,309 - INFO - Question 105: Which non-science fiction movies star Uma Thurman?
+2025-07-26 17:24:00,309 - INFO - LLM Response: ['Kiss Daddy Goodnight', 'Johnny Be Good', 'The Adventures of Baron Munchausen', 'Dangerous Liaisons', 'Henry & June', 'Where the Heart Is', 'Robin Hood', 'Final Analysis', 'Jennifer 8', 'Even Cowgirls Get the Blues', 'Mad Dog and Glory', 'Pulp Fiction', 'Duke of Groove', 'Beautiful Girls', 'The Truth About Cats & Dogs', 'Batman & Robin', 'Les Misérables', 'The Avengers', 'Sweet and Lowdown', 'Vatel', 'Tape', 'Chelsea Walls', 'Hysterical Blindness', 'Kill Bill: Volume 1', 'Kill Bill: Volume 2', 'Be Cool', 'Prime', 'The Producers', 'My Super Ex-Girlfriend', 'The Life Before Her Eyes', 'The Accidental Husband', 'Motherhood', 'Percy Jackson & the Olympians: The Lightning Thief', 'Ceremony', 'Bel Ami', 'Playing for Keeps', 'Nymphomaniac', 'Burnt', 'The Con Is On', 'The House That Jack Built', 'Down a Dark Hall', 'The War with Grandpa']
+2025-07-26 17:24:27,765 - INFO - Question 106: Which non-documentary movies were filmed in Yemen?
+2025-07-26 17:24:27,765 - INFO - LLM Response: ['Arabian Nights', "A New Day in Old Sana'a", 'I Am Nojoom, Age 10 and Divorced', '10 Days Before the Wedding', 'The Losing Bet', 'The Burdened']
+2025-07-26 17:24:34,722 - INFO - Question 107: Which non-rock musical groups formed the same year as Soda Stereo?
+2025-07-26 17:24:34,723 - INFO - LLM Response: []
+2025-07-26 17:24:41,252 - INFO - Question 108: Which musicians are from Nordic countries excluding Sweden?
+2025-07-26 17:24:41,253 - INFO - LLM Response: ['Danish musicians', 'Norwegian musicians', 'Finnish musicians', 'Icelandic musicians', 'Faroese musicians', 'Greenlandic musicians', 'Ålandic musicians']
+2025-07-26 17:24:59,174 - INFO - Question 109: Which natural languages are not Indo-European and not official languages of the European Union?
+2025-07-26 17:24:59,175 - INFO - LLM Response: []
+2025-07-26 17:25:27,437 - INFO - Question 110: Which New Zealand cyclists who are at most 180cm tall participated in the 2000 Summer Olympics?
+2025-07-26 17:25:27,439 - INFO - LLM Response: ['Sarah Ulmer', 'Julian Dean', 'Susy Pryde', 'Greg Henderson', 'Kashi Leuchs', 'Glen Mitchell']
+2025-07-26 17:25:59,524 - INFO - Question 111: Which non-human animals have been sent into space excluding primates?
+2025-07-26 17:25:59,524 - INFO - LLM Response: ['Fruit fly', 'House mouse', 'Dog', 'Guinea pig', 'Rabbit', 'Norway rat', 'Domestic cat', 'Russian tortoise', 'Caenorhabditis elegans', 'African clawed frog', 'Bullfrog', 'Newt', 'Gecko', 'Mummichog', 'Zebrafish', 'Medaka', 'Japanese quail', 'Spider', 'Ant', 'Bee', 'Wasp', 'Cockroach', 'Silkworm', 'Beetle', 'Snail', 'Tardigrade', 'Bobtail squid', 'Planarian']
+2025-07-26 17:26:31,935 - INFO - Question 112: Which online streamers who studied at the University of Waterloo live outside Vancouver?
+2025-07-26 17:26:31,935 - INFO - LLM Response: ['Disguised Toast', 'xChocoBars']
+2025-07-26 17:26:55,415 - INFO - Question 113: Which stolen paintings by Camille Pissarro were never held in Alte Nationalgalerie?
+2025-07-26 17:26:55,415 - INFO - LLM Response: ['Le Boulevard de Montmartre, matinée de printemps', 'Shepherdess Bringing Home the Sheep', "Rue Saint-Honoré, dans l'après-midi. Effet de pluie"]
+2025-07-26 17:27:08,935 - INFO - Question 114: Which parks in Perth are not State Registered Places?
+2025-07-26 17:27:08,935 - INFO - LLM Response: []
+2025-07-26 17:27:32,296 - INFO - Question 115: Which people had an element named after them posthumously?
+2025-07-26 17:27:32,297 - INFO - LLM Response: ['Johan Gadolin', 'Vasily Samarsky-Bykhovets', 'Marie Curie', 'Pierre Curie', 'Albert Einstein', 'Enrico Fermi', 'Dmitri Mendeleev', 'Alfred Nobel', 'Ernest Lawrence', 'Ernest Rutherford', 'Niels Bohr', 'Lise Meitner', 'Wilhelm Conrad Röntgen', 'Nicolaus Copernicus', 'Georgy Flyorov']
+2025-07-26 17:27:37,398 - INFO - Question 116: Which fire and bug type Pokémon are from generations other than Generation VIII?
+2025-07-26 17:27:37,398 - INFO - LLM Response: ['Larvesta', 'Volcarona']
+2025-07-26 17:27:48,574 - INFO - Question 117: Which political parties that Abraham Lincoln was a member of no longer exist?
+2025-07-26 17:27:48,574 - INFO - LLM Response: ['Whig Party (United States)', 'National Union Party (United States)']
+2025-07-26 17:28:44,294 - INFO - Question 118: Which polygonal numbers greater than 40 but less than 100 are also pronic?
+2025-07-26 17:28:44,294 - INFO - LLM Response: ['42']
+2025-07-26 17:28:58,484 - INFO - Question 119: Which popes were married after ordination but not before?
+2025-07-26 17:28:58,484 - INFO - LLM Response: ['Pope Adrian II', 'Pope John XVII']
+2025-07-26 17:29:13,563 - INFO - Question 120: Which relational database management systems are open source and written in a language other than C or its variants?
+2025-07-26 17:29:13,564 - INFO - LLM Response: ['Apache Derby', 'H2', 'HyperSQL Database', 'CockroachDB', 'TiDB', 'CrateDB', 'Dolt']
+2025-07-26 17:29:29,358 - INFO - Question 121: Which non-European rugby union teams have had Chilean players?
+2025-07-26 17:29:29,358 - INFO - LLM Response: []
+2025-07-26 17:29:54,486 - INFO - Question 122: Which saints died by crucifixion excluding the last one?
+2025-07-26 17:29:54,487 - INFO - LLM Response: ['Andrew the Apostle', 'Peter', 'Philip the Apostle', 'Simon the Zealot', 'Julia of Corsica']
+2025-07-26 17:30:12,180 - INFO - Question 123: Which non-Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-07-26 17:30:12,180 - INFO - LLM Response: []
+2025-07-26 17:30:38,574 - INFO - Question 124: Which saints with their feast day on June 15th are not considered martyrs?
+2025-07-26 17:30:38,574 - INFO - LLM Response: ['Germaine Cousin', 'Amos', 'Landelin of Lobbes', 'Orsiesius', 'Bernard of Menthon', 'Abraham of Clermont']
+2025-07-26 17:31:01,358 - INFO - Question 125: Which sauces named after Italian cities are not Italian?
+2025-07-26 17:31:01,359 - INFO - LLM Response: ['Sauce vénitienne', 'Sauce génoise', 'Sauce milanaise', 'Sauce florentine']
+2025-07-26 17:31:55,129 - INFO - Question 126: Which non-Italian sauces contain both onion and garlic?
+2025-07-26 17:31:55,130 - INFO - LLM Response: ['Mole (sauce)', 'Mole poblano', 'Salsa roja', 'Salsa verde']
+2025-07-26 17:32:10,369 - INFO - ⚠️ Azure content filter triggered for question: Which science fiction movies starring Uma Thurman were released outside of the 1990s?
+2025-07-26 17:32:10,369 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-26 17:32:10,369 - INFO - Skipping question 127 due to content filter.
+2025-07-26 17:32:43,299 - INFO - Question 128: Which non-documentary series or movies were directed by alumni of the University of Bergen?
+2025-07-26 17:32:43,299 - INFO - LLM Response: ['The Danish Poet', "My Grandmother Ironed the King's Shirts", 'Me and My Moulton', 'Hocus Pocus Alfie Atkins', 'The Angel (2009 film)', 'The Art of Negative Thinking', 'Detective Downs']
+2025-07-26 17:32:57,025 - INFO - Question 129: Which Simpsons characters were not born in Springfield excluding female characters?
+2025-07-26 17:32:57,025 - INFO - LLM Response: []
+2025-07-26 17:33:35,109 - INFO - Question 130: Which smartphones are made by Chinese companies headquartered in Dongguan do not use ColorOS?
+2025-07-26 17:33:35,109 - INFO - LLM Response: ['iQOO 3', 'iQOO 3 5G', 'iQOO 5', 'iQOO 5 Pro', 'iQOO 7', 'iQOO 7 Legend', 'iQOO 9', 'iQOO 9 Pro', 'vivo V5', 'vivo V5 Plus', 'vivo V5s', 'vivo V7', 'vivo V7+', 'vivo V9', 'vivo V11', 'vivo V15 Pro', 'vivo NEX', 'vivo NEX 3', 'vivo X1', 'vivo X3', 'vivo X5', 'vivo X20', 'vivo X21', 'vivo X27', 'vivo X50', 'vivo X50 Pro', 'vivo X60', 'vivo X60 Pro', 'vivo X60 Pro+', 'vivo X70', 'vivo X70 Pro', 'vivo X70 Pro+', 'vivo X80', 'vivo X80 Pro']
+2025-07-26 17:33:41,995 - INFO - Question 131: Which species endemic to Chile are not endangered?
+2025-07-26 17:33:41,995 - INFO - LLM Response: []
+2025-07-26 17:33:55,749 - INFO - Question 132: Which telescopes are based in countries that border Chile?
+2025-07-26 17:33:55,750 - INFO - LLM Response: []
+2025-07-26 17:34:28,483 - INFO - Question 133: Which non-optical telescopes are based in Chile?
+2025-07-26 17:34:28,484 - INFO - LLM Response: ['Atacama Large Millimeter/submillimeter Array', 'Atacama Pathfinder Experiment', 'Atacama Submillimeter Telescope Experiment', 'Atacama Cosmology Telescope', 'Cosmic Background Imager', 'Q/U Imaging Experiment', 'NANTEN2', 'Swedish–ESO Submillimetre Telescope', 'POLARBEAR (telescope)', 'Simons Array', 'Simons Observatory', 'CCAT-prime', 'Atacama B-Mode Search', 'Cosmology Large Angular Scale Surveyor']
+2025-07-26 17:35:18,086 - INFO - Question 134: Which European Turing Award winners were not born in Ireland or the U.K.?
+2025-07-26 17:35:18,088 - INFO - LLM Response: ['Edsger W. Dijkstra', 'C. A. R. Hoare', 'Niklaus Wirth', 'Ole-Johan Dahl', 'Kristen Nygaard', 'Peter Naur', 'Joseph Sifakis', 'Leslie Valiant', 'Silvio Micali', 'Yann LeCun']
+2025-07-26 17:36:03,477 - INFO - Question 135: Which universities based in Peru were established before 1950?
+2025-07-26 17:36:03,478 - INFO - LLM Response: ['National University of San Marcos', 'National University of San Cristóbal de Huamanga', 'National University of Saint Anthony the Abbot in Cuzco', 'National University of Trujillo', 'National University of St Augustin of Arequipa', 'National University of Engineering', 'National Agrarian University', 'Pontifical Catholic University of Peru', 'National University of the Altiplano']
+2025-07-26 17:37:16,101 - INFO - Question 136: Which non-public universities in Peru have been established since 1950?
+2025-07-26 17:37:16,102 - INFO - LLM Response: ['Universidad Alas Peruanas', 'Universidad Andina del Cusco', 'Universidad Andina Néstor Cáceres Velásquez', 'Universidad Antonio Guillermo Urrelo', 'Universidad Antonio Ruiz de Montoya', 'Universidad Autónoma del Perú', 'Universidad Católica de Santa María', 'Universidad Católica Los Ángeles de Chimbote', 'Universidad Católica Sedes Sapientiae', 'Universidad Católica San José', 'Universidad Católica San Pablo', 'Universidad Católica Santo Toribio de Mogrovejo', 'Universidad Científica del Sur', 'Universidad Continental', 'Universidad César Vallejo', 'Universidad de Ciencias y Artes de América Latina', 'Universidad de Ciencias y Humanidades', 'Universidad de Lima', 'Universidad del Pacífico', 'Universidad de Piura', 'ESAN University', 'Universidad Femenina del Sagrado Corazón', 'Universidad Inca Garcilaso de la Vega', 'Universidad Internacional del Pacífico', 'Universidad Le Cordon Bleu', 'Universidad Peruana Los Andes', 'Universidad Norbert Wiener', 'Universidad Peruana Cayetano Heredia', 'Universidad Peruana de Ciencias Aplicadas', 'Universidad Peruana de Ciencias e Informática', 'Universidad Privada Antenor Orrego', 'Universidad Privada de Ica', 'Universidad Privada del Norte', 'Universidad Privada de Tacna', 'Universidad Privada San Juan Bautista', 'Universidad Privada San Pedro', 'Universidad Privada Telesup', 'Universidad Ricardo Palma', 'Universidad San Ignacio de Loyola', 'Universidad San Martín de Porres', 'Universidad Señor de Sipán', 'Universidad Particular de Chiclayo', 'Universidad Tecnológica del Perú']
+2025-07-26 17:37:42,528 - INFO - Question 137: Which video games are known to be NP-complete aside from puzzle games?
+2025-07-26 17:37:42,529 - INFO - LLM Response: ['Doom', 'Super Mario Bros.', 'The Legend of Zelda', 'Donkey Kong Country', 'Pokémon Red and Blue']
+2025-07-26 17:37:55,742 - INFO - Question 138: Which video games have a fox character excluding those published by Nintendo?
+2025-07-26 17:37:55,742 - INFO - LLM Response: []
+2025-07-26 17:38:16,915 - INFO - Question 139: Which video games that have won the award of Best Esports Game of the Year at The Game Awards do not have a sequel?
+2025-07-26 17:38:16,916 - INFO - LLM Response: ['League of Legends', 'Valorant']
+2025-07-26 17:38:30,194 - INFO - Question 140: Which international wars took place in South America?
+2025-07-26 17:38:30,194 - INFO - LLM Response: ['Cisplatine War', 'Gran Colombia–Peru War', 'War of the Confederation', 'War of the Triple Alliance', 'War of the Pacific', 'Ecuadorian–Peruvian War (1857–1860)', 'Chaco War', 'Colombia–Peru War', 'Ecuadorian–Peruvian War (1941)', 'Paquisha War', 'Falklands War', 'Cenepa War']
+2025-07-26 17:38:39,144 - INFO - Question 141: Which writers speak French, Arabic, and English but do not speak Japanese?
+2025-07-26 17:38:39,144 - INFO - LLM Response: []
+2025-07-26 17:39:00,709 - INFO - Question 142: Which YouTube channels with more than 500,000 subscribers talk about math in languages other than English?
+2025-07-26 17:39:00,710 - INFO - LLM Response: []
+2025-07-26 17:39:05,214 - INFO - Question 143: Which of Elon Musk's ex-spouses were married to him only once?
+2025-07-26 17:39:05,214 - INFO - LLM Response: ['Justine Musk']
+2025-07-26 17:39:17,135 - INFO - Question 144: Who are the editors of EMMA excluding the editors-in-chief?
+2025-07-26 17:39:17,135 - INFO - LLM Response: ['no answer']
+2025-07-26 17:39:32,864 - INFO - Question 145: Who are the former editors-in-chief of EMMA before 2024?
+2025-07-26 17:39:32,864 - INFO - LLM Response: []
+2025-07-26 17:39:45,036 - INFO - Question 146: Which of the original developers of SPSS were not educated in Mexico?
+2025-07-26 17:39:45,037 - INFO - LLM Response: ['Norman H. Nie', 'C. Hadlai Hull', 'Dale H. Bent']
+2025-07-26 17:40:20,671 - INFO - Question 147: Who ran against Jair Bolsonaro for President of Brazil beyond his first run?
+2025-07-26 17:40:20,673 - INFO - LLM Response: ['Fernando Haddad', 'Ciro Gomes', 'Geraldo Alckmin', 'João Amoêdo', 'Cabo Daciolo', 'Henrique Meirelles', 'Álvaro Dias', 'Marina Silva', 'Guilherme Boulos', 'José Maria Eymael', 'Vera Lúcia', 'João Goulart Filho', 'Luiz Inácio Lula da Silva', 'Simone Tebet', "Felipe d'Avila", 'Soraya Thronicke', 'Padre Kelmon', 'Sofia Manzano', 'Leonardo Péricles']
+2025-07-26 17:40:52,735 - INFO - Question 148: Who has served as Prime Minister of South Korea in the past 20 years excluding the current one?
+2025-07-26 17:40:52,737 - INFO - LLM Response: ['Goh Kun', 'Lee Hae-chan', 'Han Myeong-sook', 'Han Seung-soo', 'Chung Un-chan', 'Kim Hwang-sik', 'Jung Hong-won', 'Lee Wan-koo', 'Choi Kyoung-hwan', 'Hwang Kyo-ahn', 'Yoo Il-ho', 'Lee Nak-yeon', 'Chung Sye-kyun', 'Hong Nam-ki', 'Kim Boo-kyum', 'Choo Kyung-ho']
+2025-07-26 17:41:02,517 - INFO - Question 149: Who has won more than one type of Nobel Prize excluding the Nobel Peace Prize?
+2025-07-26 17:41:02,517 - INFO - LLM Response: ['Marie Curie']
+2025-07-26 17:41:53,806 - INFO - Question 150: Who were the candidates in the 1972 United States Presidential Election excluding any Democrats?
+2025-07-26 17:41:53,807 - INFO - LLM Response: ['Richard Nixon', 'Spiro Agnew', 'John G. Schmitz', 'Thomas J. Anderson', 'Linda Jenness', 'Andrew Pulley', 'John Hospers', 'Tonie Nathan']
+2025-07-26 17:41:53,819 - INFO - Saved answers
