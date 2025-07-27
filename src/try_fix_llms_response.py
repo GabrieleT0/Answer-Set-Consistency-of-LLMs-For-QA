@@ -279,18 +279,18 @@ def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=
 
 llm_models = ['gpt-4.1-2025-04-14']
 languages = ['en']
-datasets = ['spinach.tsv']
+datasets = ['qawiki.tsv']
 for language in languages:
     for llm_model in llm_models:
         for dataset_name in datasets:
             # Run logical equivalence test
             print(f"Processing model: {llm_model}")
-            #equal_test(llm_model, dataset_name, language)
+            equal_test(llm_model, dataset_name, language)
             print(f"Finished processing model: {llm_model}\n")
 
             # Run subset/superset test
             print(f"Processing model: {llm_model}")
-            #sup_sub_test(llm_model, dataset_name, language)
+            sup_sub_test(llm_model, dataset_name, language)
             print(f"Finished processing model: {llm_model}\n")
 
             # Run minus test

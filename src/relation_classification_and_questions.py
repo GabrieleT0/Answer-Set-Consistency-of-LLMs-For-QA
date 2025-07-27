@@ -102,7 +102,7 @@ dataset_map = {
     'minus-set.tsv': 'minus'
 }
 
-llm_models = ['gpt-4.1-nano-2025-04-14','gpt-4.1-mini-2025-04-14','gpt-4.1-2025-04-14']
+llm_models = ['gpt-4.1-2025-04-14']
 languages = ['en']
 logical_relations = {
     'en': {
@@ -117,11 +117,17 @@ logical_relations = {
     }
 }
 
-datasets = ['spinach.tsv']
+datasets = ['qawiki.tsv']
 
 def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None):
     chat = prompt_llms.return_chat_model(llm_model)
     tsv_file = os.path.join(here, f'../data/Dataset/{language}/{dataset}')
+
+    output_prefix = '*' if language == 'es' else ''
+    folder_name = 'equal' if logical_relation == 'Equivalence' else 'sup-sub'
+
+    base_output_dir = os.path.join(here, f'../data/answers/rel_classification_and_questions/{dataset.split(".")[0]}/{folder_name}')
+    os.makedirs(base_output_dir, exist_ok=True)
     
     # Read questions
     questions = []
@@ -139,12 +145,6 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
     if end_index is None or end_index > len(questions):
         end_index = len(questions)
-
-    output_prefix = '*' if language == 'es' else ''
-    folder_name = 'equal' if logical_relation == 'Equivalence' else 'sup-sub'
-
-    base_output_dir = os.path.join(here, f'../data/answers/rel_classification_and_questions/{dataset.split(".")[0]}/{folder_name}')
-    os.makedirs(base_output_dir, exist_ok=True)
         
     # Load previous answers
     def load_json(path):
