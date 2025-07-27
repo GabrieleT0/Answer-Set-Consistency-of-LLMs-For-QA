@@ -267,13 +267,13 @@ def minus_test(llm_model, dataset_name, language='en', start_index=0, end_index=
     else:
         output_prefix = ''
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q1_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q1_minus_answers_fixing_{llm_model}.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q3_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q3_minus_answers_fixing_{llm_model}.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
 
-    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q4_minus_answers_fixing_' + llm_model + '.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(here, f'../data/answers/follow_up_fixing/{dataset_name.split('.')[0]}/minus/{output_prefix}Q4_minus_answers_fixing_{llm_model}.json'), 'w', encoding='utf-8') as f:
         json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
 
 
