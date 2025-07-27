@@ -1,0 +1,21 @@
+2025-07-27 17:45:34,884 - INFO - Processing model: gpt-4o for relation: Containment in language: en
+2025-07-27 17:45:35,674 - INFO - Processing model: gpt-4o for relation: Minus in language: en
+2025-07-27 17:45:35,704 - INFO - Processing model: gpt-4o for relation: Equal in language: en
+2025-07-27 17:45:35,721 - INFO - Processing model: gpt-4o for relation: Containment in language: en
+2025-07-27 17:45:35,752 - INFO - Processing model: gpt-4o for relation: Minus in language: en
+2025-07-27 17:45:35,780 - INFO - Processing model: gpt-4o for relation: Equal in language: en
+2025-07-27 17:45:35,792 - INFO - Processing model: o3 for relation: Containment in language: en
+2025-07-27 17:45:35,814 - INFO - Processing model: o3 for relation: Minus in language: en
+2025-07-27 17:45:56,221 - ERROR - Error processing question 92: ('Which actors born in France have won an Oscar?', 'Which actors were born in France before 1970 have won an Oscar?', 'Which actors were born in France on or after 1970 and have won an Oscar?')
+2025-07-27 17:45:56,222 - INFO - Processing model: o3 for relation: Equal in language: en
+2025-07-27 17:45:56,237 - INFO - Processing model: o3 for relation: Containment in language: en
+2025-07-27 17:46:06,108 - ERROR - Error processing question 142: ("Who are Elon Musk's ex-spouses?", "Which of Elon Musk's ex-spouses were married to him multiple times?")
+2025-07-27 17:46:06,109 - INFO - Processing model: o3 for relation: Minus in language: en
+2025-07-27 17:46:55,704 - INFO - 
+Original answers: Kit Kat|Aero|Yorkie|Lion|Toffee Crisp|Crunch|Milkybar|Caramac|Rolo|Chokito|Coffee Crisp|Walnut Whip|Smarties|Drifter|Big Turk|Mirage|Munchies|Aero Bubbles, Walnut Whip|Kit Kat Chunky Peanut Butter|Kit Kat Chunky Hazelnut Cream|Lion Peanut|Kit Kat Hazelnut Cream, Kit Kat|Aero|Yorkie|Lion|Toffee Crisp|Crunch|Milkybar|Caramac|Rolo|Chokito|Coffee Crisp|Smarties|Drifter|Big Turk|Mirage|Munchies|Aero Bubbles
+2025-07-27 17:46:55,707 - INFO - 
+Index: 16 Question 1: What chocolate bars are made by Nestlé? Question 2: What chocolate bars are made by Nestlé and contain nuts? Question 3: What chocolate bars are made by Nestlé and don't contain nuts?
+2025-07-27 17:46:55,707 - INFO - Answer 1: ['Kit Kat', 'Aero', 'Yorkie', 'Lion', 'Toffee Crisp', 'Crunch', 'Milkybar', 'Caramac', 'Rolo', 'Chokito', 'Coffee Crisp', 'Walnut Whip', 'Smarties', 'Drifter', 'Big Turk', 'Mirage', 'Munchies', 'Aero Bubbles'] Answer 2: ['Walnut Whip', 'Kit Kat Chunky Peanut Butter', 'Kit Kat Chunky Hazelnut Cream', 'Lion Peanut', 'Kit Kat Hazelnut Cream'] Relation: equivalence Answer 3: ['Kit Kat', 'Aero', 'Yorkie', 'Lion', 'Toffee Crisp', 'Crunch', 'Milkybar', 'Caramac', 'Rolo', 'Chokito', 'Coffee Crisp', 'Smarties', 'Drifter', 'Big Turk', 'Mirage', 'Munchies', 'Aero Bubbles']
+
+2025-07-27 17:47:19,049 - ERROR - Error processing question 126: ('Which science fiction movies star Uma Thurman?', 'Which 1990s science fiction movies star Uma Thurman?', 'Which science fiction movies starring Uma Thurman were released outside of the 1990s?')
+2025-07-27 17:47:19,050 - INFO - Processing model: o3 for relation: Equal in language: en
