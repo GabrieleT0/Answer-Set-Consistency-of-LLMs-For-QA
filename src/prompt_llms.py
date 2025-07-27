@@ -8,6 +8,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_vertexai import ChatVertexAI
 from langchain.chains import LLMChain
 from langchain_anthropic import ChatAnthropic
+from langchain_deepseek import ChatDeepSeek
 import time
 
 load_dotenv()
@@ -49,5 +50,7 @@ def return_chat_model(model_name, temperature=0.0):
         return ChatOpenAI(model=model_name, openai_api_key=openai_api_key, temperature=temperature)
     elif 'gemini' in model_name:
         return ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key, max_tokens=None, temperature=temperature)
+    elif 'deepseek' in model_name:
+        return ChatDeepSeek(model=model_name,temperature=temperature,max_tokens=None)
     else:
         raise ValueError(f"Model {model_name} is not supported.")

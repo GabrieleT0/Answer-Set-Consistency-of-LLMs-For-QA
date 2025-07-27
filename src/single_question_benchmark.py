@@ -35,11 +35,11 @@ PROMPTS = {
 
 
 columns_map = {
-    'spinach.tsv': ['Q1', 'Q2','Q3','Q4'],
+    'qawiki.tsv': ['Q1', 'Q2','Q3','Q4'],
 }
 languages = ['en']
 columns_map = {
-    'spinach.tsv': ['Q1', 'Q2','Q3','Q4'],
+    'qawiki.tsv': ['Q1', 'Q2','Q3','Q4'],
 }
 logical_relations_map = {
     'Q1': 'equal',
@@ -48,8 +48,8 @@ logical_relations_map = {
     'Q4': 'minus',
 }
 languages = ['en']
-llm_models = ['gemini-2.5-pro']
-datasets = ['spinach.tsv']
+llm_models = ['deepseek-chat']
+datasets = ['qawiki.tsv']
 
 # Initialize rate limiter for Gemini models
 rate_limiter = GeminiRateLimiter(rpm=5, tpm=250_000, rpd=100)

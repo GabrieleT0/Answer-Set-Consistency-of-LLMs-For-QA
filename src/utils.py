@@ -7,7 +7,7 @@ def convert_response_to_set(response):
     Convert the response from LLM.
     """
     if response == 'idk':
-        return 'idk'
+        return ['idk']
     if response == 'no answer':
         return []
     response = response.split('|')
