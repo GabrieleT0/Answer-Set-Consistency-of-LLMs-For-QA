@@ -102,7 +102,7 @@ dataset_map = {
     'minus-set.tsv': 'minus'
 }
 
-llm_models = ['gpt-4.1-2025-04-14']
+llm_models = ['deepseek-chat']
 languages = ['en']
 logical_relations = {
     'en': {
@@ -279,7 +279,7 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
         print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted} Answer 3: {answer3}\n")
         time.sleep(1.5)
 
-relations = ['Minus']
+relations = ['Equivalence','Minus','Containment']
 for language in languages:
     for llm_model in llm_models:
         for dataset in datasets:
