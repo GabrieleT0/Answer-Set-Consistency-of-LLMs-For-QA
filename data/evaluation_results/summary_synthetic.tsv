@@ -1,0 +1,37 @@
+Task	Model	Action	Average_NoEmpty	Binary_count	Average_All	Ratio_empty	B_Intersected_C_EmptyCount
+equal	gpt-4.1-2025-04-14		0.8726	0.6	0.8377	0.04	0
+equal	gpt-4.1-2025-04-14	wikidata	0.8861	0.62	0.8506	0.04	0
+equal	gpt-4.1-2025-04-14	classAndAnswer	0.9856	0.9	0.9724	0.0133	0
+equal	gpt-4.1-2025-04-14	fixing	0.9727	0.8867	0.9662	0.0067	0
+equal	gpt-4.1-mini-2025-04-14		0.8272	0.4667	0.75	0.0933	0
+equal	gpt-4.1-mini-2025-04-14	wikidata	0.8235	0.5	0.7741	0.06	0
+equal	gpt-4.1-mini-2025-04-14	classAndAnswer	0.9456	0.8533	0.9204	0.0267	0
+equal	gpt-4.1-mini-2025-04-14	fixing	0.9532	0.8067	0.9151	0.04	0
+equal	gpt-4.1-nano-2025-04-14		0.7218	0.3733	0.6352	0.12	0
+equal	gpt-4.1-nano-2025-04-14	wikidata	0.7312	0.36	0.6337	0.1333	0
+equal	gpt-4.1-nano-2025-04-14	classAndAnswer	0.9679	0.64	0.6905	0.2867	0
+equal	gpt-4.1-nano-2025-04-14	fixing	0.9124	0.5533	0.6813	0.2533	0
+minus	gpt-4.1-2025-04-14		0.6228	0.1733	0.4609	0.26	0
+minus	gpt-4.1-2025-04-14	wikidata	0.6096	0.1933	0.4714	0.2267	0
+minus	gpt-4.1-2025-04-14	classAndAnswer	0.7994	0.4	0.6822	0.1467	0
+minus	gpt-4.1-2025-04-14	fixing	0.8817	0.5933	0.7465	0.1533	0
+minus	gpt-4.1-mini-2025-04-14		0.5269	0.1067	0.3793	0.28	0
+minus	gpt-4.1-mini-2025-04-14	wikidata	0.5146	0.1067	0.3842	0.2533	0
+minus	gpt-4.1-mini-2025-04-14	classAndAnswer	0.6856	0.28	0.5576	0.1867	0
+minus	gpt-4.1-mini-2025-04-14	fixing	0.7775	0.5	0.679	0.1267	0
+minus	gpt-4.1-nano-2025-04-14		0.5053	0.1333	0.32	0.3667	0
+minus	gpt-4.1-nano-2025-04-14	wikidata	0.4736	0.12	0.2905	0.3867	0
+minus	gpt-4.1-nano-2025-04-14	classAndAnswer	0.7983	0.22	0.2714	0.66	0
+minus	gpt-4.1-nano-2025-04-14	fixing	0.6062	0.1133	0.3112	0.4867	0
+sup-sub	gpt-4.1-2025-04-14		0.7318	0.7067	0.7025	0.04	92
+sup-sub	gpt-4.1-2025-04-14	wikidata	0.7168	0.6867	0.6977	0.0267	94
+sup-sub	gpt-4.1-2025-04-14	classAndAnswer	0.805	0.76	0.7997	0.0067	128
+sup-sub	gpt-4.1-2025-04-14	fixing	0.897	0.8733	0.885	0.0133	130
+sup-sub	gpt-4.1-mini-2025-04-14		0.661	0.5533	0.6301	0.0467	78
+sup-sub	gpt-4.1-mini-2025-04-14	wikidata	0.6662	0.6067	0.6351	0.0467	79
+sup-sub	gpt-4.1-mini-2025-04-14	classAndAnswer	0.7429	0.6267	0.6934	0.0667	110
+sup-sub	gpt-4.1-mini-2025-04-14	fixing	0.8362	0.7933	0.8195	0.02	117
+sup-sub	gpt-4.1-nano-2025-04-14		0.5789	0.5867	0.5056	0.1267	95
+sup-sub	gpt-4.1-nano-2025-04-14	wikidata	0.5317	0.5867	0.4537	0.1467	96
+sup-sub	gpt-4.1-nano-2025-04-14	classAndAnswer	0.6179	0.5067	0.5273	0.1467	78
+sup-sub	gpt-4.1-nano-2025-04-14	fixing	0.7156	0.5533	0.5677	0.2067	75
