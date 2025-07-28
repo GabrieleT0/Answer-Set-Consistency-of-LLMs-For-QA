@@ -217,7 +217,7 @@ if __name__ == "__main__":
 
     llm_models = ['gpt-4o',"o3"]
     languages = ['en']
-    datasets = ['spinach.tsv','qawiki.tsv']
+    datasets = ['spinach.tsv','qawiki.tsv','synthetic.tsv']
     # datasets = ['qawiki.tsv']
     relations = ['Containment', 'Minus',"Equal"]
     for language in languages:

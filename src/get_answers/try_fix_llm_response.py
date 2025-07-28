@@ -198,8 +198,8 @@ def load_answers(dataset_name, relation, column, llm_model, language):
 if __name__ == "__main__":
     llm_models = ['gpt-4o', 'o3']
     languages = ['en']
-    # datasets = ['spinach.tsv','qawiki.tsv']
-    datasets = ['qawiki.tsv']
+    datasets = ['spinach.tsv','qawiki.tsv',"synthetic.tsv"]
+    # datasets = ['qawiki.tsv']
 
     for lang in languages:
         for model in llm_models:
