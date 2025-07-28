@@ -5,7 +5,8 @@ from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_google_vertexai import ChatVertexAI
+# from langchain_google_vertexai import ChatVertexAI
+from langchain_xai import ChatXAI
 from langchain.chains import LLMChain
 from langchain_anthropic import ChatAnthropic
 # from openai import AzureOpenAI
@@ -15,7 +16,9 @@ import time
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
-gemini_key = os.getenv('GOOGLE_AI')
+gemini_key = os.getenv('GOOGLE_API_KEY')
+XAI_API_KEY = os.getenv('XAI_API_KEY')
+ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
 
 azure_openai_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
@@ -23,7 +26,13 @@ azure_api_version= os.getenv('AZURE_API_VERSION', '2023-06-01-preview')
 
 azure_models = ["gpt-4o","o3","o1"]
 openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']
-gemini_models = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.5-ultra']
+# gemini_models = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.5-ultra']
+gemini_models = ["gemini-2.0-flash","gemini-2.5-pro"]
+xai_models = ['grok-3-mini','grok-4-0709']
+claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
+
+
+
 
 class PromptLLMS:
     def __init__(self, model, prompt_template, question=None, question1=None, question2=None, q1=None, q2=None, q3=None):
@@ -55,7 +64,7 @@ class PromptLLMS:
         return result.content
 
 
-def return_chat_model(model_name, temperature=0.1):
+def return_chat_model(model_name, temperature=0):
     if model_name in openai_models:
         return ChatOpenAI(model=model_name, openai_api_key=openai_api_key, temperature=temperature)
     elif model_name in gemini_models:
@@ -68,5 +77,9 @@ def return_chat_model(model_name, temperature=0.1):
                 timeout=None,
                 # other params...
             )
+    elif model_name in xai_models:
+        return ChatXAI(model=model_name, xai_api_key=XAI_API_KEY, temperature=temperature)
+    elif model_name in claude_models:
+        return ChatAnthropic(model=model_name, anthropic_api_key=ANTHROPIC_API_KEY, temperature=temperature)
     else:
         raise ValueError(f"Model {model_name} is not supported.")

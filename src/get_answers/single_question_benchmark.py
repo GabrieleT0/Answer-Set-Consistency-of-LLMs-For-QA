@@ -69,7 +69,7 @@ def process_question(question, llm_model, prompt_template, language):
         else:
             return utils.convert_response_to_set_es(response)
     except ValueError as e:
-        logger.info(f"⚠️ Azure content filter triggered for question: {question}")
+        logger.info(f"Content filter triggered for question: {question}")
         logger.info(f"Error: {e}")
         return None  # fallback response set
 
@@ -129,8 +129,8 @@ def run_benchmark(prompt_type='standard'):
                         logger.info(f"Question {index + 1}: {question}")
                         logger.info(f"LLM Response: {response_set}")
                         
-                        if index % 10 == 0:
-                            save_answers(answers, dataset, column, language, prompt_type, llm_model)
+                 
+                        save_answers(answers, dataset, column, language, prompt_type, llm_model)
                     save_answers(answers, dataset, column, language, prompt_type, llm_model)
                     logger.info(f"Saved answers")
 
@@ -142,10 +142,15 @@ if __name__ == "__main__":
     
     LOGICAL_RELATIONS_MAP = {'Q1': 'equal', 'Q2': 'equal', 'Q3': 'sup-sub', 'Q4': 'minus'}
     LANGUAGES = ['en']
-    LLM_MODELS = ['gpt-4o','o3']
+    # LLM_MODELS = ['gpt-4o','o3']
+    # LLM_MODELS = ['gemini-2.0-flash']
+    # LLM_MODELS = ['grok-3-mini']
+    # LLM_MODELS = ['gemini-2.5-pro']
+    # LLM_MODELS = ['grok-4-0709']
+    LLM_MODELS = ['gemini-2.0-flash','grok-3-mini', 'gpt-4o','o3']
 
     DATASETS = ['spinach.tsv','qawiki.tsv', 'synthetic.tsv']
-    # DATASETS = ['qawiki.tsv']  
+
     # Run the benchmark 
     run_benchmark(prompt_type='standard')
     run_benchmark(prompt_type='wikidata')

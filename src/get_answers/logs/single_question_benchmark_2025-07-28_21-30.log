@@ -1,0 +1,92 @@
+2025-07-28 21:30:23,922 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-07-28 21:30:23,922 - INFO - Processing column: Q1
+2025-07-28 21:30:30,056 - INFO - Question 1: Which television shows were created by John Cleese?
+2025-07-28 21:30:30,056 - INFO - LLM Response: ["Monty Python's Flying Circus", 'Fawlty Towers', 'Hold the Sunset']
+2025-07-28 21:30:34,025 - INFO - Question 2: Give me all current communist countries.
+2025-07-28 21:30:34,025 - INFO - LLM Response: ["People's Republic of China", 'Republic of Cuba', "Lao People's Democratic Republic", 'Socialist Republic of Vietnam', "Democratic People's Republic of Korea"]
+2025-07-28 21:30:42,095 - INFO - Question 3: Which politicians were married to a German person?
+2025-07-28 21:30:42,096 - INFO - LLM Response: ['Angela Merkel', 'Konrad Adenauer', 'Otto von Bismarck']
+2025-07-28 21:30:50,324 - INFO - Question 4: Give me all soccer clubs in Spain that play in La Liga.
+2025-07-28 21:30:50,324 - INFO - LLM Response: ['Real Madrid', 'FC Barcelona', 'Atletico Madrid', 'Sevilla', 'Villarreal', 'Real Sociedad', 'Athletic Club', 'Valencia', 'RC Celta de Vigo', 'Real Betis', 'CA Osasuna', 'Rayo Vallecano', 'RCD Espanyol', 'Girona', 'Deportivo Alaves', 'Getafe', 'Cadiz', 'RCD Mallorca', 'Granada', 'UD Las Palmas']
+2025-07-28 21:30:55,396 - INFO - Question 5: Which telecommunications organizations are located in Belgium?
+2025-07-28 21:30:55,396 - INFO - LLM Response: ['Proximus', 'Telenet', 'Orange Belgium']
+2025-07-28 21:31:00,750 - INFO - Question 6: Which actors were born in Germany?
+2025-07-28 21:31:00,750 - INFO - LLM Response: ['Marlene Dietrich', 'Franka Potente', 'Nastassja Kinski', 'Udo Kier', 'Til Schweiger', 'Diane Kruger', 'Sandra Hüller']
+2025-07-28 21:31:05,246 - INFO - Question 7: In which countries are the Himalayas located?
+2025-07-28 21:31:05,246 - INFO - LLM Response: ['Pakistan', 'India', 'Nepal', 'Bhutan', 'China']
+2025-07-28 21:31:09,987 - INFO - Question 8: On what video streaming services can I watch the Hunter x Hunter anime series?
+2025-07-28 21:31:09,987 - INFO - LLM Response: ['Netflix', 'Hulu', 'Crunchyroll', 'Amazon Prime Video']
+2025-07-28 21:31:13,302 - INFO - Question 9: Through which countries does the Danube flow?
+2025-07-28 21:31:13,302 - INFO - LLM Response: ['Germany', 'Austria', 'Slovakia', 'Hungary', 'Croatia', 'Serbia', 'Bulgaria', 'Romania', 'Moldova', 'Ukraine']
+2025-07-28 21:31:21,543 - INFO - Question 10: What are the professions of John Lennon’s sons?
+2025-07-28 21:31:21,544 - INFO - LLM Response: ['Musician, Singer, Songwriter, Photographer', 'Musician, Singer, Songwriter, Actor, Producer, Composer']
+2025-07-28 21:31:29,887 - INFO - Question 11: What movies are in the Star Wars series?
+2025-07-28 21:31:29,887 - INFO - LLM Response: ['Star Wars Episode 4 - A New Hope', 'Star Wars Episode 5 - The Empire Strikes Back', 'Star Wars Episode 6 - Return of the Jedi', 'Star Wars Episode 1 - The Phantom Menace', 'Star Wars Episode 2 - Attack of the Clones', 'Star Wars Episode 3 - Revenge of the Sith', 'Star Wars Episode 7 - The Force Awakens', 'Star Wars Episode 8 - The Last Jedi', 'Star Wars Episode 9 - The Rise of Skywalker', 'Rogue One: A Star Wars Story', 'Solo: A Star Wars Story']
+2025-07-28 21:31:33,081 - INFO - Question 12: What instruments did Louis Armstrong play?
+2025-07-28 21:31:33,081 - INFO - LLM Response: ['Cornet', 'Trumpet']
+2025-07-28 21:31:35,643 - INFO - Question 13: What notes make up a C major chord?
+2025-07-28 21:31:35,643 - INFO - LLM Response: ['C', 'E', 'G']
+2025-07-28 21:31:39,676 - INFO - Question 14: Who created the OA?
+2025-07-28 21:31:39,676 - INFO - LLM Response: ['Brit Marling', 'Zal Batmanglij']
+2025-07-28 21:31:46,716 - INFO - Question 15: What albums has Atif Aslam appeared in?
+2025-07-28 21:31:46,716 - INFO - LLM Response: ['Aadat', 'Doorie', 'Meri Kahani']
+2025-07-28 21:31:50,886 - INFO - Question 16: Which American presidents had fathers who were also American presidents?
+2025-07-28 21:31:50,886 - INFO - LLM Response: ['John Quincy Adams', 'George W. Bush']
+2025-07-28 21:31:56,149 - INFO - Question 17: To which art movements is the painting “Les Demoiselles d'Avignon” assigned?
+2025-07-28 21:31:56,149 - INFO - LLM Response: ['Cubism', 'Primitivism']
+2025-07-28 21:31:58,766 - INFO - Question 18: Which movies belong to the Cornetto trilogy?
+2025-07-28 21:31:58,766 - INFO - LLM Response: ['Shaun of the Dead', 'Hot Fuzz', "The World's End"]
+2025-07-28 21:32:03,922 - INFO - Question 19: Which movies were directed by Thomas Vinterberg?
+2025-07-28 21:32:03,922 - INFO - LLM Response: ['The Celebration', 'The Hunt', 'Far from the Madding Crowd', 'Another Round', 'Submarino', 'The Commune', 'Kursk']
+2025-07-28 21:32:06,851 - INFO - Question 20: Which teams participated in the 2020 UEFA Champions League Final ?
+2025-07-28 21:32:06,851 - INFO - LLM Response: ['Bayern Munich', 'Paris Saint-Germain']
+2025-07-28 21:32:10,817 - INFO - Question 21: Who are the actresses in Portrait of a Lady on Fire?
+2025-07-28 21:32:10,817 - INFO - LLM Response: ['Noémie Merlant', 'Adèle Haenel', 'Luàna Bajrami', 'Valeria Golino']
+2025-07-28 21:32:14,246 - INFO - Question 22: What countries does Germany share borders with?
+2025-07-28 21:32:14,247 - INFO - LLM Response: ['Austria', 'Belgium', 'Czech Republic', 'Denmark', 'France', 'Luxembourg', 'Netherlands', 'Poland', 'Switzerland']
+2025-07-28 21:32:20,021 - INFO - Question 23: What movies did Taylor Lautner star in?
+2025-07-28 21:32:20,021 - INFO - LLM Response: ['The Adventures of Sharkboy and Lavagirl in 3-D', 'Cheaper by the Dozen 2', 'Twilight', 'The Twilight Saga: New Moon', 'The Twilight Saga: Eclipse', 'The Twilight Saga: Breaking Dawn - Part 1', 'The Twilight Saga: Breaking Dawn - Part 2', "Valentine's Day", 'Abduction', 'Grown Ups 2', 'Run the Race']
+2025-07-28 21:32:22,969 - INFO - Question 24: What countries does the Niger river flow through?
+2025-07-28 21:32:22,969 - INFO - LLM Response: ['Guinea', 'Mali', 'Niger', 'Benin', 'Nigeria']
+2025-07-28 21:32:30,594 - INFO - Question 25: What games did Bungie make?
+2025-07-28 21:32:30,594 - INFO - LLM Response: ['Marathon', 'Marathon 2: Durandal', 'Marathon Infinity', 'Myth: The Fallen Lords', 'Myth II: Soulblighter', 'Oni', 'Halo: Combat Evolved', 'Halo 2', 'Halo 3', 'Halo 3: ODST', 'Halo: Reach', 'Destiny', 'Destiny 2']
+2025-07-28 21:32:36,121 - INFO - Question 26: Who has been a senator from Utah?
+2025-07-28 21:32:36,122 - INFO - LLM Response: ['Reed Smoot', 'William H. King', 'Elbert D. Thomas', 'Arthur V. Watkins', 'Wallace F. Bennett', 'Frank E. Moss', 'Jake Garn', 'Orrin Hatch', 'Robert F. Bennett', 'Michael S. Lee', 'Willard M. Romney']
+2025-07-28 21:32:41,160 - INFO - Question 27: Who are the current senators from Illinois?
+2025-07-28 21:32:41,161 - INFO - LLM Response: ['Dick Durbin', 'Tammy Duckworth']
+2025-07-28 21:32:50,416 - INFO - Question 28: What car models does GM make?
+2025-07-28 21:32:50,416 - INFO - LLM Response: ['Chevrolet Blazer', 'Chevrolet Bolt EV', 'Chevrolet Camaro', 'Chevrolet Colorado', 'Chevrolet Corvette', 'Chevrolet Equinox', 'Chevrolet Malibu', 'Chevrolet Silverado', 'Chevrolet Suburban', 'Chevrolet Tahoe', 'Chevrolet Trailblazer', 'GMC Acadia', 'GMC Sierra', 'GMC Terrain', 'GMC Yukon', 'GMC Hummer EV', 'Cadillac CT4', 'Cadillac CT5', 'Cadillac Escalade', 'Cadillac XT4', 'Cadillac XT5', 'Cadillac XT6', 'Buick Enclave', 'Buick Envision', 'Buick Encore', 'Buick LaCrosse']
+2025-07-28 21:32:57,870 - INFO - Question 29: What countries are on the Mediterranean Sea?
+2025-07-28 21:32:57,871 - INFO - LLM Response: ['Spain', 'France', 'Monaco', 'Italy', 'Malta', 'Slovenia', 'Croatia', 'Bosnia and Herzegovina', 'Montenegro', 'Albania', 'Greece', 'Turkey', 'Syria', 'Lebanon', 'Israel', 'Cyprus', 'Egypt', 'Libya', 'Tunisia', 'Algeria', 'Morocco']
+2025-07-28 21:33:05,926 - INFO - Question 30: What cities are included in Maricopa County?
+2025-07-28 21:33:05,926 - INFO - LLM Response: ['Avondale', 'Buckeye', 'Carefree', 'Cave Creek', 'Chandler', 'El Mirage', 'Fountain Hills', 'Gila Bend', 'Gilbert', 'Glendale', 'Goodyear', 'Guadalupe', 'Litchfield Park', 'Mesa', 'Paradise Valley', 'Peoria', 'Phoenix', 'Queen Creek', 'Scottsdale', 'Surprise', 'Tempe', 'Tolleson', 'Wickenburg', 'Youngtown']
+2025-07-28 21:33:14,703 - INFO - Question 31: What characters does Todd Haberkorn voice in movies?
+2025-07-28 21:33:14,703 - INFO - LLM Response: ['Ling Yao in Fullmetal Alchemist: The Sacred Star of Milos', 'Natsu Dragneel in Fairy Tail: Phoenix Priestess']
+2025-07-28 21:33:25,685 - INFO - Question 32: What albums did John Frusciante play on in any capacity?
+2025-07-28 21:33:25,685 - INFO - LLM Response: ["Mother's Milk", 'Blood Sugar Sex Magik', 'Niandra LaDes and Usually Just a T-Shirt', 'Smile from the Streets You Hold', 'To Record Only Water for Ten Days', 'Shadows Collide with People', 'The Will to Death', 'Inside of Emptiness', 'Curtains', 'The Empyrean', 'Californication', 'By the Way', 'Stadium Arcadium', "I'm with You", 'The Getaway', 'Unlimited Love', 'Return of the Dream Canteen', 'Automatic Writing', 'AW 2', 'De-Loused in the Comatorium', 'Frances the Mute']
+2025-07-28 21:33:34,088 - INFO - Question 33: What dialects are spoken in the U.K.?
+2025-07-28 21:33:34,088 - INFO - LLM Response: ['Received Pronunciation', 'Cockney', 'Scouse', 'Geordie', 'Brummie', 'Yorkshire dialect', 'West Country dialect', 'Scottish English', 'Welsh English', 'Ulster English', 'Estuary English', 'Multicultural London English', 'Highland English', 'Highlands and Islands English', 'Aberdeen dialect', 'Highland Scots', 'Lowland Scots', 'Gaelic-influenced English', 'Border English', 'Cornish English', 'East Anglian English', 'Black Country dialect', 'Lancashire dialect', 'Manchester dialect', 'Somerset dialect', 'Devon dialect', 'Norfolk dialect', 'Suffolk dialect', 'Kentish dialect', 'Sussex dialect', 'Essex dialect', 'Surrey dialect', 'Oxford English', 'Cambridge English', 'Leicester dialect', 'Nottingham dialect', 'Derby dialect', 'Staffordshire dialect', 'Shropshire dialect', 'Herefordshire dialect', 'Worcestershire dialect', 'Cumbria dialect', 'Durham dialect', 'Northumbrian dialect', 'Isle of Wight dialect', 'Channel Islands English', 'Manx English', 'Orkney and Shetland dialect', 'Hebridean English', 'Caithness dialect', 'Anglo-Welsh dialect', 'South Wales English', 'North Wales English', 'Mid Wales English', 'Belfast dialect', 'Derry dialect', 'Armagh dialect', 'Down dialect', 'Tyrone dialect', 'Fermanagh dialect', 'Antrim dialect']
+2025-07-28 21:33:41,981 - INFO - Question 34: Which present-day countries use English as an official language?
+2025-07-28 21:33:41,981 - INFO - LLM Response: ['Antigua and Barbuda', 'Australia', 'The Bahamas', 'Barbados', 'Belize', 'Botswana', 'Canada', 'Dominica', 'Eswatini', 'Fiji', 'The Gambia', 'Ghana', 'Grenada', 'Guyana', 'India', 'Ireland', 'Jamaica', 'Kenya', 'Kiribati', 'Lesotho', 'Liberia', 'Malawi', 'Malta', 'Marshall Islands', 'Mauritius', 'Federated States of Micronesia', 'Namibia', 'Nauru', 'New Zealand', 'Nigeria', 'Pakistan', 'Palau', 'Papua New Guinea', 'Philippines', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'Seychelles', 'Sierra Leone', 'Singapore', 'Solomon Islands', 'South Africa', 'South Sudan', 'Tanzania', 'Tonga', 'Trinidad and Tobago', 'Tuvalu', 'Uganda', 'United Kingdom', 'United States of America', 'Vanuatu', 'Zambia', 'Zimbabwe']
+2025-07-28 21:33:44,965 - INFO - Question 35: What are the official languages of Canada?
+2025-07-28 21:33:44,965 - INFO - LLM Response: ['English', 'French']
+2025-07-28 21:33:48,001 - INFO - Question 36: Who were the Vice Presidents under Lincoln?
+2025-07-28 21:33:48,002 - INFO - LLM Response: ['Hannibal Hamlin', 'Andrew Johnson']
+2025-07-28 21:33:52,062 - INFO - Question 37: Which countries does Egypt border?
+2025-07-28 21:33:52,062 - INFO - LLM Response: ['Libya', 'Sudan', 'Israel']
+2025-07-28 21:33:55,969 - INFO - Question 38: Which countries border the Baltic sea?
+2025-07-28 21:33:55,970 - INFO - LLM Response: ['Denmark', 'Germany', 'Poland', 'Russia', 'Lithuania', 'Latvia', 'Estonia', 'Finland', 'Sweden']
+2025-07-28 21:34:01,000 - INFO - Question 39: What are the different dialects of Chinese?
+2025-07-28 21:34:01,000 - INFO - LLM Response: ['Mandarin', 'Wu', 'Yue', 'Min', 'Hakka', 'Gan', 'Xiang', 'Jin']
+2025-07-28 21:34:05,493 - INFO - Question 40: Which American presidents were in office during the Vietnam War?
+2025-07-28 21:34:05,493 - INFO - LLM Response: ['Dwight D. Eisenhower', 'John F. Kennedy', 'Lyndon B. Johnson', 'Richard Nixon', 'Gerald Ford']
+2025-07-28 21:34:14,352 - INFO - Question 41: Which European countries have had a constitutional monarchy at some point in history?
+2025-07-28 21:34:14,353 - INFO - LLM Response: ['United Kingdom', 'Sweden', 'Norway', 'Denmark', 'Netherlands', 'Belgium', 'Luxembourg', 'Spain', 'Monaco', 'Liechtenstein', 'Andorra', 'France', 'Italy', 'Germany', 'Austria', 'Greece', 'Portugal', 'Bulgaria', 'Romania', 'Albania', 'Serbia']
+2025-07-28 21:34:19,829 - INFO - Question 42: Give me all professional skateboarders from Sweden.
+2025-07-28 21:34:19,829 - INFO - LLM Response: ['Kevin Andersson', 'Pontus Alv', 'Oskar Rozenberg', 'Filip Gunnarsson']
+2025-07-28 21:34:24,749 - INFO - Question 43: Which professional surfers were born in Australia?
+2025-07-28 21:34:24,749 - INFO - LLM Response: ['Mick Fanning', 'Joel Parkinson', 'Stephanie Gilmore', 'Taj Burrow', 'Nat Young', 'Julian Wilson', 'Owen Wright', 'Mark Occhilupo']
+2025-07-28 21:34:35,684 - INFO - Question 44: Which space probes were sent into orbit around the sun?
+2025-07-28 21:34:35,684 - INFO - LLM Response: ['Parker Solar Probe', 'Solar Orbiter', 'Ulysses', 'Helios 1', 'Helios 2', 'Genesis', 'Advanced Composition Explorer', 'Solar and Heliospheric Observatory', 'Solar Terrestrial Relations Observatory A', 'Solar Terrestrial Relations Observatory B']
+2025-07-28 21:34:46,378 - INFO - Question 45: Which German cities have more than 250000 inhabitants?
+2025-07-28 21:34:46,379 - INFO - LLM Response: ['Berlin', 'Hamburg', 'Munich', 'Cologne', 'Frankfurt am Main', 'Stuttgart', 'Dusseldorf', 'Leipzig', 'Dortmund', 'Essen', 'Bremen', 'Hanover', 'Nuremberg', 'Duisburg', 'Bochum', 'Wuppertal', 'Bielefeld', 'Bonn', 'Munster', 'Karlsruhe', 'Mannheim', 'Augsburg', 'Monchengladbach', 'Wiesbaden', 'Gelsenkirchen']

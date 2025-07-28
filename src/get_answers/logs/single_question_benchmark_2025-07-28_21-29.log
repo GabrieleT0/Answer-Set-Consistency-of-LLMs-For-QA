@@ -1,0 +1,40 @@
+2025-07-28 21:29:24,155 - INFO - Processing dataset: spinach.tsv for model: gemini-2.0-flash and language: en
+2025-07-28 21:29:24,155 - INFO - Processing column: Q1
+2025-07-28 21:29:24,167 - INFO - Saved answers
+2025-07-28 21:29:24,167 - INFO - Processing column: Q2
+2025-07-28 21:29:24,174 - INFO - Saved answers
+2025-07-28 21:29:24,174 - INFO - Processing column: Q3
+2025-07-28 21:29:24,756 - INFO - Question 77: What tertiary-level educational institutions did Sir Isaac Newton attend?
+2025-07-28 21:29:24,756 - INFO - LLM Response: ['University of Cambridge']
+2025-07-28 21:29:25,231 - INFO - Question 78: What books are written by Suzanne Collins that belong to the "Hunger Games" series?
+2025-07-28 21:29:25,231 - INFO - LLM Response: ['The Hunger Games', 'Catching Fire', 'Mockingjay', 'The Ballad of Songbirds and Snakes']
+2025-07-28 21:29:25,777 - INFO - Question 79: Which children of King Henry VII survived to adulthood?
+2025-07-28 21:29:25,777 - INFO - LLM Response: ['Arthur Tudor', 'Henry Tudor', 'Margaret Tudor', 'Mary Tudor']
+2025-07-28 21:29:26,149 - INFO - Question 80: Who were the brothers of Demeter?
+2025-07-28 21:29:26,149 - INFO - LLM Response: ['Zeus', 'Poseidon', 'Hades']
+2025-07-28 21:29:26,641 - INFO - Question 81: Who are the Democratic U.S. senators of Pennsylvania?
+2025-07-28 21:29:26,641 - INFO - LLM Response: ['Bob Casey Junior', 'John Fetterman']
+2025-07-28 21:29:27,307 - INFO - Question 82: Who has been the head coach of the Carolina Panthers?
+2025-07-28 21:29:27,308 - INFO - LLM Response: ['Dom Capers', 'George Seifert', 'John Fox', 'Ron Rivera', 'Perry Fewell', 'Matt Rhule', 'Steve Wilks', 'Frank Reich', 'Chris Tabor', 'Dave Canales']
+2025-07-28 21:29:27,987 - INFO - Question 83: Which countries are original members of the European Union and are still members?
+2025-07-28 21:29:27,987 - INFO - LLM Response: ['Belgium', 'France', 'Germany', 'Italy', 'Luxembourg', 'Netherlands']
+2025-07-28 21:29:28,518 - INFO - Question 84: What are the Catholic holy days of obligation?
+2025-07-28 21:29:28,518 - INFO - LLM Response: ['Solemnity of Mary, Mother of God', 'Ascension of Jesus', 'Assumption of Mary', "All Saints' Day", 'Immaculate Conception of Mary', 'Nativity of Jesus']
+2025-07-28 21:29:28,970 - INFO - Question 85: Though which country of the Sahel does the Niger River flow and have its mouth?
+2025-07-28 21:29:28,970 - INFO - LLM Response: ['Guinea', 'Mali', 'Niger', 'Nigeria']
+2025-07-28 21:29:29,953 - INFO - Question 86: Who are the current St. Louis Cardinals coaches?
+2025-07-28 21:29:29,953 - INFO - LLM Response: ['Oliver Marmol', 'Daniel Descalso', 'Turner Ward', 'Dustin Kelly', 'Patrick Bailey', 'Ron Warner', 'Jamie Pogue', 'Bryan Eversgerd', 'Bengie Molina', 'Julio Rangel', 'Matt Nicolino', 'Luis Bolivar']
+2025-07-28 21:29:30,320 - INFO - Question 87: Which universities did Anders Celsius attend?
+2025-07-28 21:29:30,320 - INFO - LLM Response: ['Uppsala University']
+2025-07-28 21:29:30,840 - INFO - Question 88: Which of Ariel's sisters appear in "The Little Mermaid II: Return to the Sea"?
+2025-07-28 21:29:30,840 - INFO - LLM Response: ['Attina', 'Aquata', 'Arista', 'Adella', 'Allana', 'no answer']
+2025-07-28 21:29:31,426 - INFO - Question 89: Which human characters does Seth MacFarlane voice on Family Guy?
+2025-07-28 21:29:31,426 - INFO - LLM Response: ['Peter Griffin', 'Stewie Griffin', 'Brian Griffin', 'Glenn Quagmire', 'Tom Tucker', 'Carter Pewterschmidt']
+2025-07-28 21:29:31,921 - INFO - Question 90: Which children did Michael Jackson have with Debbie Rowe?
+2025-07-28 21:29:31,921 - INFO - LLM Response: ['Michael Jackson had two children with Debbie Rowe: Michael Joseph Jackson Junior', 'Paris Michael Katherine Jackson']
+2025-07-28 21:29:32,656 - INFO - Question 91: What undergraduate degrees does Romney have?
+2025-07-28 21:29:32,656 - INFO - LLM Response: ['Bachelor of Arts', 'no answer']
+2025-07-28 21:29:33,039 - INFO - Question 92: Give me all cities in New Jersey with more than 100000 inhabitants and an international airport.
+2025-07-28 21:29:33,039 - INFO - LLM Response: ['Newark']
+2025-07-28 21:29:40,922 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-07-28 21:29:40,922 - INFO - Processing column: Q1
