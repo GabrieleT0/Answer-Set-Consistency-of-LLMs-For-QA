@@ -13,10 +13,11 @@ import llms
 
 # === Setup ===
 
-def init_logger():
+# Conditional logging
+def setup_logger():
     log_dir = os.path.join(os.path.dirname(__file__), "logs")
     os.makedirs(log_dir, exist_ok=True)
-    log_filename = datetime.datetime.now().strftime("try_fix_llm_response_%Y-%m-%d_%H-%M.log")
+    log_filename = datetime.datetime.now().strftime("try_fix_llm_response%Y-%m-%d_%H-%M.log")
     log_path = os.path.join(log_dir, log_filename)
 
     logging.basicConfig(
@@ -28,12 +29,11 @@ def init_logger():
         ]
     )
     for name in logging.root.manager.loggerDict:
-        if name != "try_fix_llm_response":
+        if name not in ["try_fix_llm_response"]:  # your custom logger name
             logging.getLogger(name).setLevel(logging.WARNING)
 
-    return logging.getLogger("try_fix_llm_response")
-
-logger = init_logger()
+    logger = logging.getLogger("try_fix_llm_response")
+    return logger
 
 def load_prompts():
     here = os.path.dirname(os.path.abspath(__file__))
@@ -44,7 +44,7 @@ def load_prompts():
 
 # === Core Fixing Functions ===
 
-def equal_test(config, prompts, llm_model, dataset_name, language='en'):
+def equal_test(config, prompts, llm_model, dataset_name, language='en', logger=setup_logger()):
     chat = llms.return_chat_model(llm_model)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['equal_fix']
@@ -80,7 +80,7 @@ def equal_test(config, prompts, llm_model, dataset_name, language='en'):
     save_answers(config, results_q2, dataset_name, 'equal', 'Q2', llm_model, language)
 
 
-def sup_sub_test(config, prompts, llm_model, dataset_name, language='en'):
+def sup_sub_test(config, prompts, llm_model, dataset_name, language='en', logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['sup_sub_fix']
@@ -116,7 +116,7 @@ def sup_sub_test(config, prompts, llm_model, dataset_name, language='en'):
     save_answers(config, results_q3, dataset_name, 'sup-sub', 'Q3', llm_model, language)
 
 
-def minus_test(config, prompts, llm_model, dataset_name, language='en', start_index=0, end_index=None):
+def minus_test(config, prompts, llm_model, dataset_name, language='en', start_index=0, end_index=None, logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['minus_fix']
@@ -170,7 +170,7 @@ def save_answers(config, data, dataset_name, relation, column, llm_model, langua
     path = os.path.join(base_dir, f"{prefix}{column}_{relation}_answers_fixing_{llm_model}.json")
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-    logger.info(f"Saved: {path}")
+    # logger.info(f"Saved: {path}")
 
 
 def load_answers(config, dataset_name, relation, column, llm_model, language):
@@ -183,14 +183,14 @@ def load_answers(config, dataset_name, relation, column, llm_model, language):
 
 # === Entrypoint ===
 
-def main(config = None):
+def main(config = None, logger = setup_logger()):
     load_dotenv()
     prompts = load_prompts()
     
     if not config:
         config = {
             "root_dir": os.path.dirname(os.path.abspath(__name__)),
-            "llm_models": ['gpt-4o', 'o3'],
+            "llm_models": ['gemini-2.0-flash','gpt-4o', 'o3'],
             "languages": ['en'],
             "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv']
         }
@@ -199,9 +199,9 @@ def main(config = None):
         for llm_model in config["llm_models"]:
             for dataset in config["datasets"]:
                 logger.info(f"=== Running model {llm_model} on {dataset} ===")
-                equal_test(config, prompts, llm_model, dataset, language)
-                sup_sub_test(config, prompts, llm_model, dataset, language)
-                minus_test(config, prompts, llm_model, dataset, language)
+                equal_test(config, prompts, llm_model, dataset, language, logger=logger)
+                sup_sub_test(config, prompts, llm_model, dataset, language, logger=logger)
+                minus_test(config, prompts, llm_model, dataset, language, logger=logger)
                 logger.info(f"=== Finished model {llm_model} on {dataset} ===\n")
 
 

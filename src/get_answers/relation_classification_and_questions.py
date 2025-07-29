@@ -11,11 +11,11 @@ from langchain.memory import ConversationBufferMemory
 import utils
 import llms
 
-# === Setup ===
-def init_logger():
+# Conditional logging
+def setup_logger():
     log_dir = os.path.join(os.path.dirname(__file__), "logs")
     os.makedirs(log_dir, exist_ok=True)
-    log_filename = datetime.datetime.now().strftime("relation_classification_and_question_%Y-%m-%d_%H-%M.log")
+    log_filename = datetime.datetime.now().strftime("relation_classification_and_question%Y-%m-%d_%H-%M.log")
     log_path = os.path.join(log_dir, log_filename)
 
     logging.basicConfig(
@@ -27,12 +27,11 @@ def init_logger():
         ]
     )
     for name in logging.root.manager.loggerDict:
-        if name != "relation_classification":
+        if name not in ["relation_classification_and_question"]:  # your custom logger name
             logging.getLogger(name).setLevel(logging.WARNING)
 
-    return logging.getLogger("relation_classification")
-
-logger = init_logger()
+    logger = logging.getLogger("relation_classification_and_question")
+    return logger
 
 def load_prompts():
     here = os.path.dirname(os.path.abspath(__file__))
@@ -44,7 +43,7 @@ def load_prompts():
 
 # === Core Functions ===
 
-def run_benchmark(config, prompts, llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None):
+def run_benchmark(config, prompts, llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     root_dir = config["root_dir"]
     tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
@@ -112,7 +111,7 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
         time.sleep(1.5)
 
 
-def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None):
+def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     root_dir = config["root_dir"]
     tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
@@ -185,16 +184,15 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
 
 # === Entrypoint ===
 
-def main(config = None):
+def main(config = None, logger = setup_logger()):
     load_dotenv()
     prompts, prompts_minus = load_prompts()
-
     if not config:
         config = {
             "root_dir": os.path.dirname(os.path.abspath(__name__)),
-            "llm_models": ['gemini-2.0-flash'],
+            "llm_models": ['o3'],
             "languages": ['en'],
-            "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
+            "datasets": ['synthetic.tsv'],
             "relations": ['Minus', 'Containment']
         }
 
@@ -202,11 +200,11 @@ def main(config = None):
         for llm_model in config["llm_models"]:
             for dataset in config["datasets"]:
                 for relation in config["relations"]:
-                    logger.info(f"Processing model: {llm_model} | relation: {relation} | lang: {language}")
+                    logger.info(f"Processing model: {llm_model} | relation: {relation} | lang: {language} | dataset: {dataset}")
                     if relation == 'Minus' or relation == 'Resta':
-                        run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, relation, dataset)
+                        run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, relation, dataset, logger)
                     else:
-                        run_benchmark(config, prompts, llm_model, language, relation, dataset)
+                        run_benchmark(config, prompts, llm_model, language, relation, dataset, logger)
 
 
 if __name__ == "__main__":
