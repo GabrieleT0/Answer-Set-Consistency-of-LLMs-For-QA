@@ -187,13 +187,13 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
 def main(config = None, logger = setup_logger()):
     load_dotenv()
     prompts, prompts_minus = load_prompts()
-    if not config:
+    if config == None:
         config = {
             "root_dir": os.path.dirname(os.path.abspath(__name__)),
             "llm_models": ['o3'],
             "languages": ['en'],
-            "datasets": ['synthetic.tsv'],
-            "relations": ['Minus', 'Containment']
+            "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
+            "relations": ["Equivalence", "Containment", "Minus"]
         }
 
     for language in config["languages"]:
@@ -202,9 +202,9 @@ def main(config = None, logger = setup_logger()):
                 for relation in config["relations"]:
                     logger.info(f"Processing model: {llm_model} | relation: {relation} | lang: {language} | dataset: {dataset}")
                     if relation == 'Minus' or relation == 'Resta':
-                        run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, relation, dataset, logger)
+                        run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, relation, dataset, logger = logger)
                     else:
-                        run_benchmark(config, prompts, llm_model, language, relation, dataset, logger)
+                        run_benchmark(config, prompts, llm_model, language, relation, dataset, logger = logger)
 
 
 if __name__ == "__main__":

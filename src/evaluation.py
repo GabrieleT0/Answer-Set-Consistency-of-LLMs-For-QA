@@ -4,6 +4,11 @@ import pandas as pd
 from utils import jaccard_similarity
 import datetime
 
+def get_answer_set(df, q_serie, task):
+    match = df[(df["Q_serie"] == q_serie) & (df["task"] == task)]
+    if not match.empty:
+        return set(match["Answer"].values[0])
+    return set()
 
 def load_question(file_path: str) -> pd.DataFrame:
     df = pd.read_csv(file_path, sep="\t", encoding="utf-8")
@@ -57,6 +62,8 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
     print(f"JSON files found: {len(json_files)}")
 
     for file in json_files:
+        if not file.split("/")[-1].startswith("Q"):
+            continue
         elements = file.replace("_", "/").replace(".json", "").split("/")
         question = next((q for q in questions if q in elements), None)
         action = next((a for a in actions if a in elements), "zero-shot")
@@ -96,12 +103,27 @@ def enrich_answers(df_answers, df_questions):
         ].empty else None,
         axis=1
     )
+    # # assign answer serie
+    # task_to_series = {
+    #     "equal": 1,
+    #     "sup-sub": 2,
+    #     "minus": 3
+    # }
+
+    # group_keys = ["Q_ID", "Q_serie", "action", "dataset", "llm"]
+
+    # def assign_answer_serie(group):
+    #     if len(group) == 1:
+    #         group["Answer_serie"] = 1
+    #     else:
+    #         group["Answer_serie"] = group["task"].map(task_to_series)
+    #     return group
+
+    # df_answers = df_answers.groupby(group_keys, group_keys=False).apply(assign_answer_serie)
 
 
-    group_keys = ["Q_ID", "Q_serie", "action", "dataset", "llm"]
-    df_answers["Answer_serie"] = (
-        df_answers.groupby(group_keys).cumcount().apply(lambda x: x + 1)
-    )
+    # df_answers["Answer_serie"] = df_answers["task"].map(task_to_series)
+
 
     df_answers.drop_duplicates(
         subset=["Q_ID", "Q_serie", "action", "task", "dataset", "llm"],
@@ -114,58 +136,87 @@ def enrich_answers(df_answers, df_questions):
 
 
 def analysis(df):
-    summaries = []
+    rows = []
     group_keys = ["Q_ID", "action", "dataset", "llm"]
-    grouped = df[df["Answer_serie"] == 1].groupby(group_keys)
+    # grouped = df[df["Answer_serie"] == 1].groupby(group_keys)
+    grouped = df.groupby(group_keys)
 
-    for keys, group in grouped:
+    for keys, group in grouped: 
         if set(group["Q_serie"]) >= {"Q1", "Q2", "Q3", "Q4"}:
-            A1 = set(group[group["Q_serie"] == "Q1"]["Answer"].values[0])
-            A2 = set(group[group["Q_serie"] == "Q2"]["Answer"].values[0])
-            A3 = set(group[group["Q_serie"] == "Q3"]["Answer"].values[0])
-            A4 = set(group[group["Q_serie"] == "Q4"]["Answer"].values[0])
+            action = group["action"].values[0]
+            if action in ["zero-shot", "wikidata"]:
+                # A1 = set(group[group["Q_serie"] == "Q1"]["Answer"].values[0])
+                # A2 = set(group[group["Q_serie"] == "Q2"]["Answer"].values[0])
+                # A3 = set(group[group["Q_serie"] == "Q3"]["Answer"].values[0])
+                # A4 = set(group[group["Q_serie"] == "Q4"]["Answer"].values[0])
+                A1 = get_answer_set(group, "Q1", "equal")
+                A2 = get_answer_set(group, "Q2", "equal")
+                A3 = get_answer_set(group, "Q3", "sup-sub")
+                A4 = get_answer_set(group, "Q4", "minus")
 
+                A1_prime = None
+                A1_double_prime = None
+
+                similarities = {
+                    "J(A1-A2)": round(jaccard_similarity(A1, A2), 4),
+                    "J(A1-A34)": round(jaccard_similarity(A1, A3.union(A4)), 4),
+                    "J(A1-A1*)": None,
+                    "J(A1-A1**)": None
+                    }
+                consistency = {
+                    "?A1=A2": int(A1 == A2),
+                    "?A1=A3+A4": int(A1 == A3.union(A4)),
+                    "?A1>A3": int(A3.issubset(A1)),
+                    "?A1>A4": int(A4.issubset(A1)),
+                    "?A3∅A4": int(A3.isdisjoint(A4))
+                    }
+            elif action in ['classification','fixing']:
+                # Usage
+                A1_equal = get_answer_set(group, "Q1", "equal")
+                A1_contain = get_answer_set(group, "Q1", "sup-sub")
+                A1_minus = get_answer_set(group, "Q1", "minus")
+                A2_equal = get_answer_set(group, "Q2", "equal")
+                A3_contain = get_answer_set(group, "Q3", "sup-sub")
+                A3_minus = get_answer_set(group, "Q3", "minus")
+                A4_minus = get_answer_set(group, "Q4", "minus")
+                similarities = {
+                    "J(A1-A2)": round(jaccard_similarity(A1_equal, A2_equal), 4),
+                    "J(A1-A34)": round(jaccard_similarity(A1_minus, A3_minus.union(A4_minus)), 4),
+                    "J(A1-A1*)": round(jaccard_similarity(A1_equal, A1_contain), 4),
+                    "J(A1-A1**)": round(jaccard_similarity(A1_equal, A1_minus), 4)
+                    }
+                consistency = {
+                    "?A1=A2": int(A1_equal == A2_equal),
+                    "?A1=A3+A4": int(A1_minus == A3_minus.union(A4_minus)),
+                    "?A1>A3": int(A3_contain.issubset(A1_contain)),
+                    "?A1>A4": int(A4_minus.issubset(A1_minus)),
+                    "?A3∅A4": int(A3_minus.isdisjoint(A4_minus))
+                    }
+
+                A1 = A1_equal
+                A2 = A2_equal
+                A3 = A3_contain
+                A4 = A4_minus
+                A1_prime = list(A1_contain)
+                A1_double_prime = list(A1_minus)
+                
             q_map = {
                 row["Q_serie"]: row["Question"]
                 for _, row in group.iterrows()
                 if row["Q_serie"] in {"Q1", "Q2", "Q3", "Q4"}
             }
 
-            df_serie2 = df[(df["Answer_serie"] == 2) & (df["Q_serie"] == "Q1")]
-            df_serie3 = df[(df["Answer_serie"] == 3) & (df["Q_serie"] == "Q1")]
-            for col, val in zip(group_keys, keys):
-                df_serie2 = df_serie2[df_serie2[col] == val]
-                df_serie3 = df_serie3[df_serie3[col] == val]
-
-            A1_prime = set(df_serie2["Answer"].values[0]) if not df_serie2.empty else set()
-            A1_double_prime = set(df_serie3["Answer"].values[0]) if not df_serie3.empty else set()
-
-            consistency = {
-                "?A1=A2": int(A1 == A2),
-                "?A1=A3+A4": int(A1 == A3.union(A4)),
-                "?A1>A3": int(A3.issubset(A1)),
-                "?A1>A4": int(A4.issubset(A1)),
-                "?A3∅A4": int(A3.isdisjoint(A4)),
-            }
-
-            similarities = {
-                "J(A1-A2)": round(jaccard_similarity(A1, A2), 4),
-                "J(A1-A34)": round(jaccard_similarity(A1, A3.union(A4)), 4),
-                "J(A1-A1*)": round(jaccard_similarity(A1, A1_prime), 4),
-                "J(A1-A1**)": round(jaccard_similarity(A1, A1_double_prime), 4)
-            }
-
-            summary_row = {
+            row = {
                 "Q_ID": keys[0], "action": keys[1], "dataset": keys[2], "llm": keys[3],
                 **consistency, **similarities,
                 "Q1": q_map.get("Q1", ""), "Q2": q_map.get("Q2", ""),
                 "Q3": q_map.get("Q3", ""), "Q4": q_map.get("Q4", ""),
                 "A1": list(A1), "A2": list(A2), "A3": list(A3), "A4": list(A4),
-                "A1*": list(A1_prime), "A1**": list(A1_double_prime)
+                "A1*": A1_prime, "A1**": A1_double_prime
             }
-            summaries.append(summary_row)
+            rows.append(row)
 
-    return pd.DataFrame(summaries)
+    return pd.DataFrame(rows)
 
 
 def summary(df_analysis):
@@ -197,7 +248,7 @@ def summary(df_analysis):
 
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
-    datasets=["spinach", "qawiki"]
+    datasets=["spinach", "qawiki",'synthetic']
     llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 'gpt-4o', "o3"]
     actions = ["fixing", "classification", "wikidata"]
     tasks = ['equal', 'sup-sub', "minus"]

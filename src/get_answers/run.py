@@ -23,22 +23,27 @@ def load_config():
 
 # Step 3: Run main logic
 def main():
+
     config = load_config()
     logger.info("Loaded config from config.json")
     logger.info(f"{config}")
     # Inject root_dir dynamically
-    config["root_dir"] = os.path.dirname(os.path.abspath(__file__))
+    config["root_dir"] = os.path.dirname(os.path.abspath(__name__))
+    classify_main(config=None, logger=logger)
 
-    logger.info("=== Starting unified LLM benchmark pipeline ===")
+    llms = config["llm_models"]
+    for llm in llms:
+        config["llm_models"] = [llm]
+        logger.info("=== Starting unified LLM benchmark pipeline ===")
 
-    logger.info("Step 1: Running single question benchmark")
-    zeroshot_main(config, logger)
+        logger.info("Step 1: Running single question benchmark")
+        zeroshot_main(config, logger)
 
-    logger.info("Step 2: Fixing inconsistent LLM responses")
-    fix_main(config, logger)
+        logger.info("Step 2: Fixing inconsistent LLM responses")
+        fix_main(config, logger)
 
-    logger.info("Step 3: Running relation classification and question generation")
-    classify_main(config, logger)
+        logger.info("Step 3: Running relation classification and question generation")
+        classify_main(config, logger)
 
     logger.info("✅ All tasks completed successfully.")
 
