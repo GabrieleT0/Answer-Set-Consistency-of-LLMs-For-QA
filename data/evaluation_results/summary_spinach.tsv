@@ -1,4 +1,8 @@
 Task	Model	Action	Average_NoEmpty	Binary_count	Average_All	Ratio_empty	B_Intersected_C_EmptyCount
+equal	deepseek-chat		0.6741	0.32	0.5752	0.1467	0
+equal	deepseek-chat	wikidata	0.6607	0.32	0.5286	0.2	0
+equal	deepseek-chat	classAndAnswer	0.9994	0.9867	0.9994	0.0	0
+equal	deepseek-chat	fixing	0.9357	0.8267	0.9232	0.0133	0
 equal	gpt-4.1-2025-04-14		0.7748	0.4733	0.7438	0.04	0
 equal	gpt-4.1-2025-04-14	wikidata	0.8199	0.5	0.798	0.0267	0
 equal	gpt-4.1-2025-04-14	classAndAnswer	0.9751	0.9485	0.9249	0.0515	0
@@ -11,6 +15,10 @@ equal	gpt-4.1-nano-2025-04-14		0.7172	0.3467	0.6025	0.16	0
 equal	gpt-4.1-nano-2025-04-14	wikidata	0.7042	0.3333	0.6103	0.1333	0
 equal	gpt-4.1-nano-2025-04-14	classAndAnswer	0.7755	0.8333	0.0155	0.98	0
 equal	gpt-4.1-nano-2025-04-14	fixing	0.9469	0.76	0.6881	0.2733	0
+minus	deepseek-chat		0.4005	0.1133	0.2109	0.4733	0
+minus	deepseek-chat	wikidata	0.4474	0.1933	0.2088	0.5333	0
+minus	deepseek-chat	classAndAnswer	0.6481	0.2133	0.3673	0.4333	0
+minus	deepseek-chat	fixing	0.6954	0.4333	0.4961	0.2867	0
 minus	gpt-4.1-2025-04-14		0.5414	0.1533	0.3465	0.36	0
 minus	gpt-4.1-2025-04-14	wikidata	0.5726	0.1667	0.3664	0.36	0
 minus	gpt-4.1-2025-04-14	classAndAnswer	0.7426	0.3933	0.3317	0.5533	0
@@ -23,6 +31,10 @@ minus	gpt-4.1-nano-2025-04-14		0.43	0.0933	0.1749	0.5933	0
 minus	gpt-4.1-nano-2025-04-14	wikidata	0.419	0.08	0.1955	0.5333	0
 minus	gpt-4.1-nano-2025-04-14	classAndAnswer	0.0392	0.86	0.0003	0.9933	0
 minus	gpt-4.1-nano-2025-04-14	fixing	0.4255	0.1533	0.1702	0.6	0
+sup-sub	deepseek-chat		0.4984	0.4667	0.4519	0.0933	85
+sup-sub	deepseek-chat	wikidata	0.5603	0.5267	0.4744	0.1533	93
+sup-sub	deepseek-chat	classAndAnswer	0.7072	0.6867	0.6648	0.06	103
+sup-sub	deepseek-chat	fixing	0.7143	0.6733	0.6858	0.04	127
 sup-sub	gpt-4.1-2025-04-14		0.6211	0.5467	0.5839	0.06	99
 sup-sub	gpt-4.1-2025-04-14	wikidata	0.655	0.5667	0.62	0.0533	97
 sup-sub	gpt-4.1-2025-04-14	classAndAnswer	0.7646	0.6701	0.7016	0.0825	85
