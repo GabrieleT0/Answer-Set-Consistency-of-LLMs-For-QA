@@ -80,6 +80,7 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
     q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
     q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
+    q12_path = os.path.join(base_output_dir, f'{output_prefix}Q12_{folder_name}_relation_{llm_model}.json')
 
     # Load previous answers
     def load_json(path):
@@ -219,7 +220,7 @@ if __name__ == "__main__":
     languages = ['en']
     datasets = ['spinach.tsv','qawiki.tsv','synthetic.tsv']
     # datasets = ['qawiki.tsv']
-    relations = ['Containment', 'Minus',"Equal"]
+    relations = ['Equivalence','Minus','Containment']
     for language in languages:
         for llm_model in llm_models:
             for dataset in datasets:

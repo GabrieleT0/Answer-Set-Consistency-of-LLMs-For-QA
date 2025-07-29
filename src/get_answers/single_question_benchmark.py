@@ -147,7 +147,7 @@ if __name__ == "__main__":
     # LLM_MODELS = ['grok-3-mini']
     # LLM_MODELS = ['gemini-2.5-pro']
     # LLM_MODELS = ['grok-4-0709']
-    LLM_MODELS = ['gemini-2.0-flash','grok-3-mini', 'gpt-4o','o3']
+    LLM_MODELS = ['o3']
 
     DATASETS = ['spinach.tsv','qawiki.tsv', 'synthetic.tsv']
 
