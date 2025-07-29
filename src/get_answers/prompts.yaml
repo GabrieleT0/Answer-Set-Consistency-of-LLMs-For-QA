@@ -58,12 +58,11 @@ relation_classification:
     template_classification: |
       I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
 
-      - Equivalence 
-      - Containment 
-      - Disjoint 
-      - Overlap 
-      - Complement
-      - Unknown
+      - Equivalent  
+      - Contains  
+      - ContainedBy 
+      - Disjoint  
+      - Overlap
 
       These are the two questions:
 

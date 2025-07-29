@@ -100,7 +100,7 @@ def load_answers(dataset, column, language, prompt_type, llm_model):
 
 # === benchmark ===
 
-def run_benchmark(prompt_type='standard'):
+def run_benchmark_equal(prompt_type='standard'):
     for language in LANGUAGES:
         for llm_model in LLM_MODELS:
             for dataset in DATASETS:
@@ -152,5 +152,5 @@ if __name__ == "__main__":
     DATASETS = ['spinach.tsv','qawiki.tsv', 'synthetic.tsv']
 
     # Run the benchmark 
-    run_benchmark(prompt_type='standard')
-    run_benchmark(prompt_type='wikidata')
+    run_benchmark_equal(prompt_type='standard')
+    run_benchmark_equal(prompt_type='wikidata')
