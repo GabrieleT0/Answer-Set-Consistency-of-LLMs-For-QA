@@ -1,0 +1,307 @@
+2025-07-28 23:10:30,324 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-07-28 23:10:30,324 - INFO - Processing column: Q1
+2025-07-28 23:10:30,342 - INFO - Saved answers
+2025-07-28 23:10:30,342 - INFO - Processing column: Q2
+2025-07-28 23:11:38,667 - INFO - Content filter triggered for question: Who are the actors that have France as their birthplace and have won an Oscar?
+2025-07-28 23:11:38,668 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:11:38,668 - INFO - Skipping question 93 due to content filter.
+2025-07-28 23:11:38,671 - INFO - Saved answers
+2025-07-28 23:11:38,671 - INFO - Processing column: Q3
+2025-07-28 23:11:38,686 - INFO - Saved answers
+2025-07-28 23:11:38,686 - INFO - Processing column: Q4
+2025-07-28 23:11:45,568 - INFO - Content filter triggered for question: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-07-28 23:11:45,568 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:11:45,568 - INFO - Skipping question 93 due to content filter.
+2025-07-28 23:11:45,571 - INFO - Saved answers
+2025-07-28 23:11:45,571 - INFO - Processing dataset: qawiki.tsv for model: o3 and language: en
+2025-07-28 23:11:45,571 - INFO - Processing column: Q1
+2025-07-28 23:11:45,598 - INFO - Saved answers
+2025-07-28 23:11:45,598 - INFO - Processing column: Q2
+2025-07-28 23:11:49,248 - INFO - Content filter triggered for question: Who are Elon Musk's past spouses?
+2025-07-28 23:11:49,248 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:11:49,248 - INFO - Skipping question 143 due to content filter.
+2025-07-28 23:11:49,252 - INFO - Saved answers
+2025-07-28 23:11:49,252 - INFO - Processing column: Q3
+2025-07-28 23:11:49,260 - INFO - Saved answers
+2025-07-28 23:11:49,260 - INFO - Processing column: Q4
+2025-07-28 23:12:24,950 - INFO - Question 127: Which science fiction movies starring Uma Thurman were released outside of the 1990s?
+2025-07-28 23:12:24,950 - INFO - LLM Response: ['Paycheck']
+2025-07-28 23:12:24,960 - INFO - Saved answers
+2025-07-28 23:12:24,960 - INFO - Processing dataset: synthetic.tsv for model: o3 and language: en
+2025-07-28 23:12:24,960 - INFO - Processing column: Q1
+2025-07-28 23:12:33,797 - INFO - Content filter triggered for question: What are the constituent states of the USA?
+2025-07-28 23:12:33,797 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:12:33,797 - INFO - Skipping question 52 due to content filter.
+2025-07-28 23:12:33,803 - INFO - Saved answers
+2025-07-28 23:12:33,803 - INFO - Processing column: Q2
+2025-07-28 23:12:52,006 - INFO - Content filter triggered for question: Which states are part of the United States of America?
+2025-07-28 23:12:52,006 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:12:52,006 - INFO - Skipping question 52 due to content filter.
+2025-07-28 23:12:52,010 - INFO - Saved answers
+2025-07-28 23:12:52,010 - INFO - Processing column: Q3
+2025-07-28 23:12:52,022 - INFO - Saved answers
+2025-07-28 23:12:52,022 - INFO - Processing column: Q4
+2025-07-28 23:12:52,031 - INFO - Saved answers
+2025-07-28 23:12:52,031 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-07-28 23:12:52,032 - INFO - Processing column: Q1
+2025-07-28 23:12:52,040 - INFO - Saved answers
+2025-07-28 23:12:52,040 - INFO - Processing column: Q2
+2025-07-28 23:12:52,050 - INFO - Saved answers
+2025-07-28 23:12:52,050 - INFO - Processing column: Q3
+2025-07-28 23:12:52,059 - INFO - Saved answers
+2025-07-28 23:12:52,059 - INFO - Processing column: Q4
+2025-07-28 23:13:01,529 - INFO - Content filter triggered for question: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-07-28 23:13:01,529 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:13:01,529 - INFO - Skipping question 93 due to content filter.
+2025-07-28 23:13:01,532 - INFO - Saved answers
+2025-07-28 23:13:01,532 - INFO - Processing dataset: qawiki.tsv for model: o3 and language: en
+2025-07-28 23:13:01,532 - INFO - Processing column: Q1
+2025-07-28 23:13:13,151 - INFO - Content filter triggered for question: Who are Elon Musk's ex-spouses?
+2025-07-28 23:13:13,152 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:13:13,152 - INFO - Skipping question 143 due to content filter.
+2025-07-28 23:13:13,155 - INFO - Saved answers
+2025-07-28 23:13:13,155 - INFO - Processing column: Q2
+2025-07-28 23:13:23,932 - INFO - Content filter triggered for question: Who are Elon Musk's past spouses?
+2025-07-28 23:13:23,933 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:13:23,933 - INFO - Skipping question 143 due to content filter.
+2025-07-28 23:13:23,937 - INFO - Saved answers
+2025-07-28 23:13:23,937 - INFO - Processing column: Q3
+2025-07-28 23:14:33,440 - INFO - Content filter triggered for question: What chocolate bars are made by Nestlé and contain nuts?
+2025-07-28 23:14:33,441 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:14:33,441 - INFO - Skipping question 17 due to content filter.
+2025-07-28 23:14:33,444 - INFO - Saved answers
+2025-07-28 23:14:33,444 - INFO - Processing column: Q4
+2025-07-28 23:14:33,456 - INFO - Saved answers
+2025-07-28 23:14:33,456 - INFO - Processing dataset: synthetic.tsv for model: o3 and language: en
+2025-07-28 23:14:33,456 - INFO - Processing column: Q1
+2025-07-28 23:14:59,571 - INFO - Content filter triggered for question: What are the constituent states of the USA?
+2025-07-28 23:14:59,572 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:14:59,572 - INFO - Skipping question 52 due to content filter.
+2025-07-28 23:14:59,577 - INFO - Saved answers
+2025-07-28 23:14:59,577 - INFO - Processing column: Q2
+2025-07-28 23:15:05,799 - INFO - Content filter triggered for question: Which states are part of the United States of America?
+2025-07-28 23:15:05,799 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-07-28 23:15:05,799 - INFO - Skipping question 52 due to content filter.
+2025-07-28 23:15:05,802 - INFO - Saved answers
+2025-07-28 23:15:05,802 - INFO - Processing column: Q3
+2025-07-28 23:15:05,814 - INFO - Saved answers
+2025-07-28 23:15:05,814 - INFO - Processing column: Q4
+2025-07-28 23:15:53,492 - INFO - Question 42: In which countries can the short-tailed chinchilla be found today but do not have the long-tailed chinchilla?
+2025-07-28 23:15:53,493 - INFO - LLM Response: ['Argentina', 'Bolivia', 'Peru']
+2025-07-28 23:15:58,599 - INFO - Question 43: What are the planets that orbit the Sun excluding the gas giants?
+2025-07-28 23:15:58,600 - INFO - LLM Response: ['Mercury', 'Venus', 'Earth', 'Mars']
+2025-07-28 23:18:09,449 - INFO - Question 44: Which Italian UNESCO World Heritage Sites are not located in Rome?
+2025-07-28 23:18:09,450 - INFO - LLM Response: ['Rock Drawings in Valcamonica', 'Church and Dominican Convent of Santa Maria delle Grazie with "The Last Supper" by Leonardo da Vinci', 'Historic Centre of Florence', 'Venice and its Lagoon', 'Piazza del Duomo, Pisa', 'Historic Centre of San Gimignano', 'The Sassi and the Park of the Rupestrian Churches of Matera', 'City of Vicenza and the Palladian Villas of the Veneto', "Crespi d'Adda", 'Ferrara, City of the Renaissance, and its Po Delta', 'Historic Centre of Naples', 'Historic Centre of Urbino', 'Botanical Garden (Orto Botanico) of Padua', 'Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)', 'Residences of the Royal House of Savoy', 'Su Nuraxi di Barumini', 'Villa Adriana (Tivoli)', "Villa d'Este, Tivoli", 'Assisi, the Basilica of San Francesco and Other Franciscan Sites', 'City of Verona', 'Aeolian Islands', 'Sacri Monti of Piedmont and Lombardy', 'Villa Romana del Casale', 'Archaeological Area of Agrigento', 'Archaeological Areas of Pompeii, Herculaneum and Torre Annunziata', 'Castel del Monte', 'Cathedral, Torre Civica and Piazza Grande, Modena', 'Historic Centre of Pienza', 'Trulli of Alberobello', 'Early Christian Monuments of Ravenna', 'Historic Centre of Siena', 'Late Baroque Towns of the Val di Noto (South-Eastern Sicily)', 'Amalfi Coast', 'Cilento and Vallo di Diano National Park with the Archaeological Sites of Paestum and Velia, and the Certosa di Padula', 'Archaeological Area and the Patriarchal Basilica of Aquileia', "Val d'Orcia", 'Etruscan Necropolises of Cerveteri and Tarquinia', 'Syracuse and the Rocky Necropolis of Pantalica', 'Genoa: Le Strade Nuove and the system of the Palazzi dei Rolli', 'Mantua and Sabbioneta', 'Rhaetian Railway in the Albula / Bernina Landscapes', 'The Dolomites', 'Monte San Giorgio', 'Prehistoric Pile Dwellings around the Alps', 'Longobards in Italy. Places of Power (568–774 A.D.)', 'Mount Etna', 'Medici Villas and Gardens in Tuscany', 'Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato', 'Arab-Norman Palermo and the Cathedral Churches of Cefalù and Monreale', 'Venetian Works of Defence between the 16th and 17th Centuries: Stato da Terra – Western Stato da Mar', 'Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe', 'Ivrea, industrial city of the 20th century', 'Le Colline del Prosecco di Conegliano e Valdobbiadene', 'Padua’s fourteenth-century fresco cycles', 'Porticoes of Bologna', 'The Great Spa Towns of Europe']
+2025-07-28 23:19:49,677 - INFO - Question 45: Which currencies are in circulation in African countries but not in any West Africa country?
+2025-07-28 23:19:49,678 - INFO - LLM Response: ['Algerian dinar', 'Angolan kwanza', 'Botswana pula', 'Burundian franc', 'Central African CFA franc', 'Comorian franc', 'Congolese franc', 'Djiboutian franc', 'Egyptian pound', 'Eritrean nakfa', 'Ethiopian birr', 'Kenyan shilling', 'Lesotho loti', 'Libyan dinar', 'Malagasy ariary', 'Malawian kwacha', 'Mauritian rupee', 'Moroccan dirham', 'Mozambican metical', 'Namibian dollar', 'Rwandan franc', 'Sahrawi peseta', 'São Tomé and Príncipe dobra', 'Seychellois rupee', 'Somali shilling', 'South African rand', 'South Sudanese pound', 'Sudanese pound', 'Swazi lilangeni', 'Tanzanian shilling', 'Tunisian dinar', 'Ugandan shilling', 'Zambian kwacha', 'Zimbabwean dollar']
+2025-07-28 23:20:33,313 - INFO - Question 46: What novels by Jane Austen, published posthumously, were not adapted by Marvel into a graphic novel series?
+2025-07-28 23:20:33,313 - INFO - LLM Response: ['Persuasion', 'Lady Susan', 'The Watsons', 'Sanditon', 'Love and Freindship', 'Catharine, or the Bower', 'Lesley Castle']
+2025-07-28 23:20:45,336 - INFO - Question 47: Which of the five largest islands of Japan in terms of area have a population of five million or fewer?
+2025-07-28 23:20:45,337 - INFO - LLM Response: ['Shikoku', 'Okinawa Island']
+2025-07-28 23:20:59,835 - INFO - Question 48: What are the private hospitals in Cairo with more than 100 staff?
+2025-07-28 23:20:59,836 - INFO - LLM Response: []
+2025-07-28 23:21:11,125 - INFO - Question 49: What American presidents were born in Virginia aside from those born in the 18th century?
+2025-07-28 23:21:11,126 - INFO - LLM Response: ['Woodrow Wilson']
+2025-07-28 23:21:16,408 - INFO - Question 50: Which nations are part of the North Atlantic Treaty Organization excluding European nations?
+2025-07-28 23:21:16,409 - INFO - LLM Response: ['United States of America', 'Canada']
+2025-07-28 23:21:43,568 - INFO - Question 51: Which genera of clouds in meteorology are not classified as high-level clouds?
+2025-07-28 23:21:43,569 - INFO - LLM Response: ['Cumulus', 'Stratus', 'Stratocumulus', 'Altostratus', 'Altocumulus', 'Nimbostratus', 'Cumulonimbus']
+2025-07-28 23:22:25,403 - INFO - Question 52: What are the states of the USA excluding those located on the West Coast?
+2025-07-28 23:22:25,403 - INFO - LLM Response: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'West Virginia', 'Wisconsin', 'Wyoming']
+2025-07-28 23:23:28,510 - INFO - Question 53: Which countries have Buddhism as a majority religion but not a state religion?
+2025-07-28 23:23:28,510 - INFO - LLM Response: ['Thailand', 'Myanmar', 'Laos', 'Mongolia']
+2025-07-28 23:25:01,161 - INFO - Question 54: Which urban areas classified as megacities have a population of 20 million or less?
+2025-07-28 23:25:01,162 - INFO - LLM Response: []
+2025-07-28 23:25:06,306 - INFO - Question 55: Which provinces does Canada have excluding those on the Atlantic coast?
+2025-07-28 23:25:06,306 - INFO - LLM Response: ['Alberta', 'British Columbia', 'Manitoba', 'Ontario', 'Quebec', 'Saskatchewan']
+2025-07-28 23:25:08,677 - INFO - Question 56: Which terrestrial planets in the Solar System do not have moons?
+2025-07-28 23:25:08,677 - INFO - LLM Response: ['Mercury', 'Venus']
+2025-07-28 23:26:40,397 - INFO - Question 57: Which countries have coffee as a top 5 export but not their top export?
+2025-07-28 23:26:40,398 - INFO - LLM Response: []
+2025-07-28 23:27:16,835 - INFO - Question 58: What are the meat toppings of a Hawaiian pizza?
+2025-07-28 23:27:16,835 - INFO - LLM Response: ['ham']
+2025-07-28 23:28:14,342 - INFO - Question 59: What instruments most commonly used in an orchestra's string section are not hand-held?
+2025-07-28 23:28:14,342 - INFO - LLM Response: ['cello', 'double bass']
+2025-07-28 23:29:06,200 - INFO - Question 60: Which single-author novels won the Hugo Award for Best Novel?
+2025-07-28 23:29:06,201 - INFO - LLM Response: ['The Demolished Man', 'Double Star', 'The Big Time', 'A Case of Conscience', 'Starship Troopers', 'A Canticle for Leibowitz', 'Stranger in a Strange Land', 'The Man in the High Castle', 'Way Station', 'The Wanderer', 'Dune', 'This Immortal', 'The Moon Is a Harsh Mistress', 'Lord of Light', 'Stand on Zanzibar', 'The Left Hand of Darkness', 'Ringworld', 'To Your Scattered Bodies Go', 'The Gods Themselves', 'Rendezvous with Rama', 'The Dispossessed', 'The Forever War', 'Where Late the Sweet Birds Sang', 'Gateway', 'Dreamsnake', 'The Fountains of Paradise', 'The Snow Queen', 'Downbelow Station', "Foundation's Edge", 'Startide Rising', 'Neuromancer', "Ender's Game", 'Speaker for the Dead', 'The Uplift War', 'Cyteen', 'Hyperion', 'The Vor Game', 'Barrayar', 'A Fire Upon the Deep', 'Green Mars', 'Mirror Dance', 'The Diamond Age', 'Blue Mars', 'Forever Peace', 'To Say Nothing of the Dog', 'A Deepness in the Sky', 'Harry Potter and the Goblet of Fire', 'American Gods', 'Hominids', 'Paladin of Souls', 'Jonathan Strange & Mr Norrell', 'Spin', 'Rainbows End', "The Yiddish Policemen's Union", 'The Graveyard Book', 'The Windup Girl', 'The City & the City', 'Blackout/All Clear', 'Among Others', 'Redshirts', 'Ancillary Justice', 'The Three-Body Problem', 'The Fifth Season', 'The Obelisk Gate', 'The Stone Sky', 'The Calculating Stars', 'A Memory Called Empire', 'Network Effect', 'A Desolation Called Peace', 'Nona the Ninth']
+2025-07-28 23:29:58,166 - INFO - Question 61: Which CMYK colors are not a key color of any national flag?
+2025-07-28 23:29:58,166 - INFO - LLM Response: ['cyan', 'magenta']
+2025-07-28 23:30:09,962 - INFO - Question 62: What nations that are not from South America have been champions of the FIFA World Cup?
+2025-07-28 23:30:09,962 - INFO - LLM Response: ['Italy', 'Germany', 'West Germany', 'England', 'France', 'Spain']
+2025-07-28 23:30:31,588 - INFO - Question 63: What nations outside Europe are ruled by monarchs?
+2025-07-28 23:30:31,589 - INFO - LLM Response: ['Antigua and Barbuda', 'Australia', 'Bahamas', 'Bahrain', 'Belize', 'Bhutan', 'Brunei', 'Cambodia', 'Canada', 'Eswatini', 'Grenada', 'Jamaica', 'Japan', 'Jordan', 'Kuwait', 'Lesotho', 'Malaysia', 'Morocco', 'New Zealand', 'Oman', 'Papua New Guinea', 'Qatar', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Saudi Arabia', 'Solomon Islands', 'Thailand', 'Tonga', 'Tuvalu', 'United Arab Emirates']
+2025-07-28 23:31:29,555 - INFO - Question 64: Which countries use the American dollar as an official currency alongside another currency?
+2025-07-28 23:31:29,555 - INFO - LLM Response: ['Panama', 'El Salvador', 'Zimbabwe', 'Timor-Leste', 'Liberia', 'Marshall Islands']
+2025-07-28 23:33:27,309 - INFO - Question 65: What nations currently have women as heads of state that are not heads of government?
+2025-07-28 23:33:27,310 - INFO - LLM Response: ['Hungary', 'Slovakia', 'Slovenia', 'Greece', 'Georgia', 'Moldova', 'Kosovo', 'Bosnia and Herzegovina', 'San Marino', 'India', 'Ethiopia', 'Barbados', 'Dominica', 'Trinidad and Tobago']
+2025-07-28 23:33:53,734 - INFO - Question 66: Which human blood types are not universal donors?
+2025-07-28 23:33:53,734 - INFO - LLM Response: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+']
+2025-07-28 23:37:26,492 - INFO - Question 67: Which Baroque composers have music that appears in a movie that won an Academy Award excluding English-language movies?
+2025-07-28 23:37:26,492 - INFO - LLM Response: ['Johann Sebastian Bach']
+2025-07-28 23:38:11,371 - INFO - Question 68: Which nations have been hosts of the FIFA World Cup excluding those in Europe?
+2025-07-28 23:38:11,372 - INFO - LLM Response: ['Argentina', 'Brazil', 'Canada', 'Chile', 'Japan', 'Mexico', 'Morocco', 'Paraguay', 'Qatar', 'South Africa', 'South Korea', 'United States of America', 'Uruguay']
+2025-07-28 23:42:50,348 - INFO - Question 69: What nations are governed by presidents who do not have a term limit but have not had a president serve for two decades or more?
+2025-07-28 23:42:50,350 - INFO - LLM Response: ['Argentina', 'Austria', 'Bosnia and Herzegovina', 'Brazil', 'Chile', 'China', 'Colombia', 'Costa Rica', 'Dominican Republic', 'El Salvador', 'France', 'Haiti', 'Honduras', 'India', 'Iran', 'Italy', 'Laos', 'Lebanon', 'Mauritius', 'Pakistan', 'Panama', 'Peru', 'Singapore', 'Suriname', 'Switzerland', 'Turkmenistan', 'Uruguay', 'Vietnam']
+2025-07-28 23:42:57,862 - INFO - Question 70: What Nobel Prize award categories are not original categories?
+2025-07-28 23:42:57,862 - INFO - LLM Response: ['Nobel Memorial Prize in Economic Sciences']
+2025-07-28 23:43:09,538 - INFO - Question 71: Which colors make up a natural rainbow excluding the primary colors?
+2025-07-28 23:43:09,538 - INFO - LLM Response: ['orange', 'green', 'indigo', 'violet']
+2025-07-28 23:43:34,268 - INFO - Question 72: What denominations of coins exist for the Euro?
+2025-07-28 23:43:34,268 - INFO - LLM Response: ['1 cent', '2 cent', '5 cent', '10 cent', '20 cent', '50 cent', '1 euro', '2 euro']
+2025-07-28 23:44:01,008 - INFO - Question 73: Which of Earth's oceans do not touch South America?
+2025-07-28 23:44:01,009 - INFO - LLM Response: ['Indian Ocean', 'Arctic Ocean']
+2025-07-28 23:44:09,608 - INFO - Question 74: What are the extant, herbivorous or omnivorous species of bears?
+2025-07-28 23:44:09,609 - INFO - LLM Response: ['Giant panda', 'Brown bear', 'American black bear', 'Asian black bear', 'Sloth bear', 'Sun bear', 'Spectacled bear']
+2025-07-28 23:44:18,824 - INFO - Question 75: Which religions officially recognized in Indonesia are minority religions?
+2025-07-28 23:44:18,824 - INFO - LLM Response: ['Protestantism', 'Catholicism', 'Hinduism', 'Buddhism', 'Confucianism']
+2025-07-28 23:44:28,656 - INFO - Question 76: Which disciplines of the 2022 Winter Olympics do not involve skating?
+2025-07-28 23:44:28,656 - INFO - LLM Response: ['Alpine skiing', 'Biathlon', 'Bobsleigh', 'Cross-country skiing', 'Curling', 'Freestyle skiing', 'Luge', 'Nordic combined', 'Skeleton', 'Ski jumping', 'Snowboarding']
+2025-07-28 23:45:07,253 - INFO - Question 77: Of the top-10 exporters of copper by volume, which countries are not in Latin America?
+2025-07-28 23:45:07,253 - INFO - LLM Response: ['Australia', 'Canada', 'Russia', 'Democratic Republic of the Congo', 'United States of America', 'Kazakhstan', 'Zambia']
+2025-07-28 23:46:29,209 - INFO - Question 78: Which extinct species in the Homo genus have not had fossils found in Russia?
+2025-07-28 23:46:29,209 - INFO - LLM Response: ['Homo habilis', 'Homo rudolfensis', 'Homo gautengensis', 'Homo ergaster', 'Homo georgicus', 'Homo erectus', 'Homo antecessor', 'Homo heidelbergensis', 'Homo bodoensis', 'Homo rhodesiensis', 'Homo longi', 'Homo cepranensis', 'Homo floresiensis', 'Homo luzonensis', 'Homo naledi', 'Homo tsaichangensis', 'Homo soloensis']
+2025-07-28 23:46:36,054 - INFO - Question 79: What are the constituent countries of the UK excluding those located on the island of Great Britain?
+2025-07-28 23:46:36,055 - INFO - LLM Response: ['Northern Ireland']
+2025-07-28 23:46:44,811 - INFO - Question 80: Which Egyptian UNESCO World Heritage are not Pharaonic?
+2025-07-28 23:46:44,811 - INFO - LLM Response: ['Abu Mena', 'Historic Cairo', 'Saint Catherine Area', 'Wadi Al-Hitan (Whale Valley)']
+2025-07-28 23:47:11,352 - INFO - Question 81: What extant species made stone tools?
+2025-07-28 23:47:11,352 - INFO - LLM Response: ['Homo sapiens', 'Pan troglodytes', 'Pan paniscus', 'Macaca fascicularis', 'Sapajus libidinosus', 'Sapajus apella', 'Enhydra lutris', 'Neophron percnopterus']
+2025-07-28 23:47:21,619 - INFO - Question 82: What nations outside of Europe have been winners of Eurovision?
+2025-07-28 23:47:21,620 - INFO - LLM Response: ['Israel', 'Turkey', 'Azerbaijan']
+2025-07-28 23:47:29,130 - INFO - Question 83: List all French regions excluding those located in mainland France.
+2025-07-28 23:47:29,130 - INFO - LLM Response: ['Guadeloupe', 'Martinique', 'French Guiana', 'Réunion', 'Mayotte']
+2025-07-28 23:48:48,552 - INFO - Question 84: What non-artistic professions did Leonardo da Vinci have?
+2025-07-28 23:48:48,553 - INFO - LLM Response: ['engineer', 'scientist', 'mathematician', 'inventor', 'anatomist', 'astronomer', 'botanist', 'philosopher', 'writer', 'cartographer', 'geologist', 'palaeontologist', 'urban planner']
+2025-07-28 23:49:34,757 - INFO - Question 85: List the accolades received by Meryl Streep excluding the Academy Awards.
+2025-07-28 23:49:34,758 - INFO - LLM Response: ['Golden Globe Award', 'Cecil B. DeMille Award', 'BAFTA Award', 'BAFTA Award for Best Actress in a Leading Role', 'Primetime Emmy Award', 'Screen Actors Guild Award', 'Tony Award', 'Drama Desk Award', 'Theatre World Award', 'Silver Bear for Best Actress', 'New York Film Critics Circle Award', 'Los Angeles Film Critics Association Award', 'National Society of Film Critics Award', 'National Board of Review Award', 'Boston Society of Film Critics Award', 'Chicago Film Critics Association Award', 'Dallas–Fort Worth Film Critics Association Award', 'Florida Film Critics Circle Award', 'Kansas City Film Critics Circle Award', 'Southeastern Film Critics Association Award', 'Washington D.C. Area Film Critics Association Award', "London Film Critics' Circle Award", 'Satellite Award', "People's Choice Award", 'MTV Movie Award', 'Gotham Tribute Award', 'Women in Film Crystal Award', 'AFI Life Achievement Award', 'Film Society of Lincoln Center Gala Tribute', 'Kennedy Center Honors', 'National Medal of Arts', 'Presidential Medal of Freedom', 'Golden Plate Award']
+2025-07-28 23:49:57,243 - INFO - Question 86: Which characters appearing in all the Harry Potter books never worked at Hogwarts?
+2025-07-28 23:49:57,243 - INFO - LLM Response: ['Harry Potter', 'Ron Weasley', 'Hermione Granger', 'Draco Malfoy', 'Lord Voldemort', 'Ginny Weasley', 'Fred Weasley', 'George Weasley', 'Percy Weasley']
+2025-07-28 23:50:40,453 - INFO - Question 87: List the founders of the company Apple who are not engineers.
+2025-07-28 23:50:40,453 - INFO - LLM Response: ['Steve Jobs', 'Ronald Wayne']
+2025-07-28 23:50:51,925 - INFO - Question 88: List combatant countries of the Second World War who did not switch sides.
+2025-07-28 23:50:51,925 - INFO - LLM Response: []
+2025-07-28 23:51:53,651 - INFO - Question 89: From which universities did Albert Einstein earn postgraduate degrees?
+2025-07-28 23:51:53,652 - INFO - LLM Response: ['University of Bern', 'University of Zurich']
+2025-07-28 23:52:29,736 - INFO - Question 90: List the solo albums released by Paul McCartney with fewer than 15 tracks.
+2025-07-28 23:52:29,736 - INFO - LLM Response: ['McCartney', 'Ram', 'McCartney II', 'Tug of War', 'Pipes of Peace', 'Press to Play', 'CHOBA B CCCP', 'Flowers in the Dirt', 'Off the Ground', 'Flaming Pie', 'Chaos and Creation in the Backyard', 'Memory Almost Full', 'Kisses on the Bottom', 'New', 'McCartney III', 'Standing Stone', 'Liverpool Oratorio', 'Working Classical', 'Ecce Cor Meum', "Ocean's Kingdom"]
+2025-07-28 23:52:45,891 - INFO - Question 91: Which universities excluding those from her home country gave Marie Curie an honorary degree?
+2025-07-28 23:52:45,891 - INFO - LLM Response: []
+2025-07-28 23:52:57,508 - INFO - Question 92: List the screenwriters of the film 'The Godfather' who did not write the book the movie was based on.
+2025-07-28 23:52:57,508 - INFO - LLM Response: ['Francis Ford Coppola', 'Robert Towne']
+2025-07-28 23:53:15,086 - INFO - Question 93: List the nations that signed the Treaty of Versailles excluding the European nations.
+2025-07-28 23:53:15,086 - INFO - LLM Response: ['United States of America', 'Commonwealth of Australia', 'Dominion of Canada', 'Dominion of New Zealand', 'Union of South Africa', 'British Raj', 'Empire of Japan', 'Bolivia', 'Brazil', 'Cuba', 'Ecuador', 'Guatemala', 'Haiti', 'Kingdom of Hejaz', 'Honduras', 'Liberia', 'Nicaragua', 'Panama', 'Peru', 'Siam', 'Uruguay']
+2025-07-28 23:53:21,453 - INFO - Question 94: What postgraduate degrees did Newton hold?
+2025-07-28 23:53:21,454 - INFO - LLM Response: ['Master of Arts']
+2025-07-28 23:53:47,216 - INFO - Question 95: What nations have exactly the same set of official languages as Brazil?
+2025-07-28 23:53:47,217 - INFO - LLM Response: ['Brazil', 'Portugal', 'Angola', 'Mozambique', 'Cape Verde', 'Guinea-Bissau', 'São Tomé and Príncipe']
+2025-07-28 23:54:01,039 - INFO - Question 96: List all of Italy's regions not having a metropolitan area with more than one million people.
+2025-07-28 23:54:01,039 - INFO - LLM Response: ['Abruzzo', 'Aosta Valley', 'Basilicata', 'Calabria', 'Friuli Venezia Giulia', 'Marche', 'Molise', 'Sardinia', 'Trentino-Alto Adige/Südtirol', 'Umbria']
+2025-07-28 23:54:06,277 - INFO - Question 97: List the places inside the U.S. where the founders of Google were born.
+2025-07-28 23:54:06,278 - INFO - LLM Response: ['East Lansing']
+2025-07-28 23:54:16,891 - INFO - Question 98: List the voice actors for Homer in the Spanish version of The Simpsons excluding those who acted in the Latin American version.
+2025-07-28 23:54:16,891 - INFO - LLM Response: ['Carlos Revilla', 'Carlos Ysbert']
+2025-07-28 23:54:26,220 - INFO - Question 99: List the scientists credited with discovering Radium who were not female.
+2025-07-28 23:54:26,220 - INFO - LLM Response: ['Pierre Curie']
+2025-07-28 23:54:33,341 - INFO - Question 100: What non-primary colors are used for both the German and Belgian flag?
+2025-07-28 23:54:33,341 - INFO - LLM Response: ['black']
+2025-07-28 23:55:04,574 - INFO - Question 101: List the musicians in the band The Rolling Stones excluding the guitarists.
+2025-07-28 23:55:04,574 - INFO - LLM Response: ['Mick Jagger', 'Bill Wyman', 'Charlie Watts', 'Ian Stewart']
+2025-07-28 23:55:11,365 - INFO - Question 102: List the American founders of the Microsoft Corporation who never served as CEO.
+2025-07-28 23:55:11,365 - INFO - LLM Response: ['Paul Allen']
+2025-07-28 23:55:18,798 - INFO - Question 103: List the Spanish autonomous communities in which Catalan is not an official language.
+2025-07-28 23:55:18,798 - INFO - LLM Response: ['Andalusia', 'Aragon', 'Asturias', 'Basque Country', 'Canary Islands', 'Cantabria', 'Castile and León', 'Castile-La Mancha', 'Community of Madrid', 'Extremadura', 'Galicia', 'La Rioja', 'Navarre', 'Region of Murcia']
+2025-07-28 23:55:24,739 - INFO - Question 104: List writers of 'The Dark Knight' who wrote either the screenplay or the story, but not both.
+2025-07-28 23:55:24,740 - INFO - LLM Response: ['Jonathan Nolan', 'David S. Goyer']
+2025-07-28 23:55:50,500 - INFO - Question 105: Which historical countries bordering China have fought a war against China?
+2025-07-28 23:55:50,501 - INFO - LLM Response: ['Soviet Union', 'Kingdom of Nepal', 'Tibet (1912–1951)', 'Tibetan Empire', 'Sikh Empire', 'Mongol Empire', 'Göktürk Khaganate', 'Goguryeo']
+2025-07-28 23:57:04,012 - INFO - Question 106: List the recipients of the Nobel Prize in Physics who did not share their award but were not the first person from their country to win the award.
+2025-07-28 23:57:04,013 - INFO - LLM Response: ['Philipp Lenard', 'J. J. Thomson', 'Johannes Diderik van der Waals', 'Wilhelm Wien', 'Heike Kamerlingh Onnes', 'Max von Laue', 'Charles Glover Barkla', 'Max Planck', 'Johannes Stark', 'Albert Einstein', 'Robert Andrews Millikan', 'Manne Siegbahn', 'Jean Baptiste Perrin', 'Owen Willans Richardson', 'Louis de Broglie', 'Werner Heisenberg', 'James Chadwick', 'Enrico Fermi', 'Ernest Lawrence', 'Otto Stern', 'Isidor Isaac Rabi', 'Wolfgang Pauli', 'Percy Williams Bridgman', 'Edward Victor Appleton', 'Patrick Blackett', 'Cecil Powell', 'Frits Zernike', 'Willis Lamb', 'Donald A. Glaser', 'Alfred Kastler', 'Hans Bethe', 'Luis Walter Alvarez', 'Murray Gell-Mann', 'Dennis Gabor', 'Kenneth G. Wilson', 'Klaus von Klitzing', 'Pierre-Gilles de Gennes', 'Georges Charpak']
+2025-07-29 00:01:15,549 - INFO - Question 107: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise in only one season.
+2025-07-29 00:01:15,550 - INFO - LLM Response: ['Grace Lee Whitney']
+2025-07-29 00:01:26,728 - INFO - Question 108: In what companies does The Walt Disney Company hold a controlling interest without wholly owning it?
+2025-07-29 00:01:26,729 - INFO - LLM Response: ['Hulu', 'ESPN', 'National Geographic Partners']
+2025-07-29 00:01:31,343 - INFO - Question 109: List the actors who won an Oscar for Inception.
+2025-07-29 00:01:31,344 - INFO - LLM Response: ['no answer']
+2025-07-29 00:01:57,600 - INFO - Question 110: List the accolades received by Bob Dylan excluding the Grammy Awards.
+2025-07-29 00:01:57,600 - INFO - LLM Response: ['Nobel Prize in Literature', 'Academy Award for Best Original Song', 'Golden Globe Award for Best Original Song', 'Presidential Medal of Freedom', 'Pulitzer Prize Special Citation', 'Polar Music Prize', 'Prince of Asturias Award for the Arts', 'Kennedy Center Honors', 'Rock and Roll Hall of Fame', 'Songwriters Hall of Fame', 'MusiCares Person of the Year', 'Commander of the Ordre des Arts et des Lettres', 'Officer of the Legion of Honour', 'Golden Plate Award of the American Academy of Achievement']
+2025-07-29 00:02:17,118 - INFO - Question 111: List the composers of 'Avatar: The Last Airbender' who were not educated at the Berklee College of Music.
+2025-07-29 00:02:17,119 - INFO - LLM Response: ['Benjamin Wynn']
+2025-07-29 00:02:22,025 - INFO - Question 112: What modern countries were part of the Soviet Union but do not border Russia?
+2025-07-29 00:02:22,025 - INFO - LLM Response: ['Armenia', 'Kyrgyzstan', 'Moldova', 'Tajikistan', 'Turkmenistan', 'Uzbekistan']
+2025-07-29 00:02:42,177 - INFO - Question 113: Which flags of the regions of Italy share exactly three colors with the national flag?
+2025-07-29 00:02:42,177 - INFO - LLM Response: ['Flag of Abruzzo', 'Flag of Emilia-Romagna', 'Flag of Lazio', 'Flag of Liguria', 'Flag of Apulia', 'Flag of Umbria']
+2025-07-29 00:03:01,881 - INFO - Question 114: List the wholly-owned subsidiaries of Amazon founded outside the U.S. and Israel.
+2025-07-29 00:03:01,881 - INFO - LLM Response: ['AbeBooks', 'LOVEFiLM', 'The Book Depository', 'Digital Photography Review', 'Liquavista', 'IVONA Software', 'Souq.com', 'Selz', 'Evi']
+2025-07-29 00:03:33,960 - INFO - Question 115: List the directors who worked on the Breaking Bad series but directed only one episode.
+2025-07-29 00:03:33,961 - INFO - LLM Response: ['Jim McKay', 'Tricia Brock', 'Bronwen Hughes', 'Tim Hunter', 'Charles Haid', 'Peter Medak', 'Félix Enríquez Alcalá', 'Phil Abraham', 'David Slade', 'George Mastras', 'Sam Catlin', 'Thomas Schnauz', 'John Dahl']
+2025-07-29 00:03:40,427 - INFO - Question 116: List the German federal states located entirely in the former West Germany.
+2025-07-29 00:03:40,427 - INFO - LLM Response: ['Baden-Württemberg', 'Bavaria', 'Bremen', 'Hamburg', 'Hesse', 'Lower Saxony', 'North Rhine-Westphalia', 'Rhineland-Palatinate', 'Saarland', 'Schleswig-Holstein']
+2025-07-29 00:04:12,908 - INFO - Question 117: List the founding member states of the AU who were never suspended.
+2025-07-29 00:04:12,909 - INFO - LLM Response: ['Algeria', 'Angola', 'Benin', 'Botswana', 'Burundi', 'Cameroon', 'Cape Verde', 'Republic of the Congo', 'Democratic Republic of the Congo', 'Djibouti', 'Equatorial Guinea', 'Eritrea', 'Ethiopia', 'The Gambia', 'Ghana', 'Kenya', 'Lesotho', 'Liberia', 'Malawi', 'Mauritius', 'Mozambique', 'Namibia', 'Nigeria', 'Rwanda', 'Sao Tome and Principe', 'Senegal', 'Seychelles', 'Sierra Leone', 'Somalia', 'South Africa', 'Eswatini', 'Tanzania', 'Tunisia', 'Uganda', 'Zambia', 'Zimbabwe', 'Sahrawi Arab Democratic Republic']
+2025-07-29 00:04:30,806 - INFO - Question 118: List the musicians who played in Nirvana excluding those from the original lineup.
+2025-07-29 00:04:30,807 - INFO - LLM Response: ['Dave Grohl', 'Pat Smear', 'Chad Channing', 'Jason Everman', 'Dale Crover', 'Dan Peters', 'Dave Foster', 'Melora Creager', 'Lori Goldston', 'Kera Schaley']
+2025-07-29 00:04:40,513 - INFO - Question 119: List the US presidents who belonged to the Democratic Party and served at most one term.
+2025-07-29 00:04:40,514 - INFO - LLM Response: ['Martin Van Buren', 'James K. Polk', 'Franklin Pierce', 'James Buchanan', 'Andrew Johnson', 'John F. Kennedy', 'Jimmy Carter']
+2025-07-29 00:04:58,208 - INFO - Question 120: List the Indian states with an official language that is Dravidian excluding the most populous such state.
+2025-07-29 00:04:58,209 - INFO - LLM Response: ['Andhra Pradesh', 'Telangana', 'Karnataka', 'Kerala']
+2025-07-29 00:05:13,938 - INFO - Question 121: List the US presidents who belonged to the Republican Party excluding those who served during the 20th century.
+2025-07-29 00:05:13,939 - INFO - LLM Response: ['Abraham Lincoln', 'Ulysses S. Grant', 'Rutherford Birchard Hayes', 'James Abram Garfield', 'Chester Alan Arthur', 'Benjamin Harrison', 'George Walker Bush', 'Donald John Trump']
+2025-07-29 00:05:39,619 - INFO - Question 122: Which capitals of African countries were founded between 1850 and 1899, inclusive?
+2025-07-29 00:05:39,620 - INFO - LLM Response: ['Addis Ababa', 'Bangui', 'Brazzaville', 'Conakry', 'Dakar', 'Djibouti', 'Gaborone', 'Harare', 'Kampala', 'Kinshasa', 'Lomé', 'Maseru', 'Nairobi', 'Pretoria', 'Yaoundé']
+2025-07-29 00:05:46,781 - INFO - Question 123: Which mountains have a peak above 8,000 meters excluding those located in the Himalayas?
+2025-07-29 00:05:46,782 - INFO - LLM Response: ['K2', 'Broad Peak', 'Gasherbrum I', 'Gasherbrum II']
+2025-07-29 00:05:48,467 - INFO - Question 124: Name the current Belgian king.
+2025-07-29 00:05:48,468 - INFO - LLM Response: ['Philippe of Belgium']
+2025-07-29 00:05:52,030 - INFO - Question 125: Which types of triangles cannot have an angle of over 90 degrees?
+2025-07-29 00:05:52,031 - INFO - LLM Response: ['acute triangle', 'right triangle', 'equilateral triangle']
+2025-07-29 00:06:03,209 - INFO - Question 126: Which spoken languages have been made official in South Africa since 1990?
+2025-07-29 00:06:03,209 - INFO - LLM Response: ['Southern Ndebele language', 'Xhosa language', 'Zulu language', 'Swazi language', 'Northern Sotho language', 'Southern Sotho language', 'Tswana language', 'Venda language', 'Tsonga language']
+2025-07-29 00:06:09,726 - INFO - Question 127: Which federal holidays in the United States are not related to the celebration of historical or religious events?
+2025-07-29 00:06:09,726 - INFO - LLM Response: ["New Year's Day", 'Labor Day']
+2025-07-29 00:06:17,467 - INFO - Question 128: What languages are official in some Spanish autonomous community and nationally?
+2025-07-29 00:06:17,468 - INFO - LLM Response: ['Spanish', 'Catalan']
+2025-07-29 00:06:26,263 - INFO - Question 129: What countries have more than 100 million inhabitants and are not located in Asia?
+2025-07-29 00:06:26,263 - INFO - LLM Response: ['United States of America', 'Brazil', 'Nigeria', 'Mexico', 'Ethiopia', 'Democratic Republic of the Congo', 'Egypt']
+2025-07-29 00:06:30,986 - INFO - Question 130: What are the Seven Ancient Wonders of the World excluding the oldest?
+2025-07-29 00:06:30,986 - INFO - LLM Response: ['Hanging Gardens of Babylon', 'Statue of Zeus at Olympia', 'Temple of Artemis at Ephesus', 'Mausoleum at Halicarnassus', 'Colossus of Rhodes', 'Lighthouse of Alexandria']
+2025-07-29 00:06:38,243 - INFO - Question 131: What countries officially use Arabic and are not on the Arabian peninsula but are rather in Africa?
+2025-07-29 00:06:38,243 - INFO - LLM Response: ['Algeria', 'Chad', 'Comoros', 'Djibouti', 'Egypt', 'Eritrea', 'Libya', 'Mauritania', 'Morocco', 'Somalia', 'Sudan', 'Tunisia', 'Sahrawi Arab Democratic Republic']
+2025-07-29 00:07:08,340 - INFO - Question 132: What countries recognize a sign language as an official language but not constitutionally?
+2025-07-29 00:07:08,341 - INFO - LLM Response: ['New Zealand']
+2025-07-29 00:07:17,189 - INFO - Question 133: What are the rock classifications excluding the one to which marble belongs?
+2025-07-29 00:07:17,189 - INFO - LLM Response: ['igneous rock', 'sedimentary rock']
+2025-07-29 00:07:49,628 - INFO - Question 134: Which modern countries have regions that used to be part of the Roman empire but do not have a Romance language as an official language?
+2025-07-29 00:07:49,629 - INFO - LLM Response: ['United Kingdom', 'Netherlands', 'Germany', 'Austria', 'Liechtenstein', 'Czech Republic', 'Slovakia', 'Slovenia', 'Croatia', 'Bosnia and Herzegovina', 'Serbia', 'Montenegro', 'Kosovo', 'Albania', 'North Macedonia', 'Greece', 'Bulgaria', 'Hungary', 'Ukraine', 'Russia', 'Malta', 'Cyprus', 'Turkey', 'Georgia', 'Armenia', 'Azerbaijan', 'Syria', 'Lebanon', 'Israel', 'Palestine', 'Jordan', 'Iraq', 'Saudi Arabia', 'Egypt', 'Libya', 'Tunisia', 'Algeria', 'Morocco', 'Sudan']
+2025-07-29 00:07:57,912 - INFO - Question 135: Which Indian states have a larger population than France but not more than twice its population?
+2025-07-29 00:07:57,912 - INFO - LLM Response: ['Maharashtra', 'Bihar', 'West Bengal', 'Madhya Pradesh', 'Tamil Nadu', 'Rajasthan']
+2025-07-29 00:08:05,485 - INFO - Question 136: What are the notes in a C7 chord but not a C minor chord?
+2025-07-29 00:08:05,485 - INFO - LLM Response: ['E', 'B-flat']
+2025-07-29 00:08:13,833 - INFO - Question 137: What exclusively fire Pokemon were introduced in Generation 5?
+2025-07-29 00:08:13,833 - INFO - LLM Response: ['Tepig', 'Pansear', 'Simisear', 'Darumaka', 'Darmanitan', 'Heatmor']
+2025-07-29 00:08:17,032 - INFO - Question 138: What chambers are on the left side of the human heart?
+2025-07-29 00:08:17,032 - INFO - LLM Response: ['Left atrium', 'Left ventricle']
+2025-07-29 00:08:28,900 - INFO - Question 139: The boiling point of which chemical elements is lower than that of water and lower than or equal to 25°C?
+2025-07-29 00:08:28,900 - INFO - LLM Response: ['Helium', 'Hydrogen', 'Neon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Chlorine', 'Argon', 'Krypton', 'Xenon', 'Radon']
+2025-07-29 00:08:33,129 - INFO - Question 140: Which numbers below 100 are prime and odd?
+2025-07-29 00:08:33,129 - INFO - LLM Response: ['3', '5', '7', '11', '13', '17', '19', '23', '29', '31', '37', '41', '43', '47', '53', '59', '61', '67', '71', '73', '79', '83', '89', '97']
+2025-07-29 00:08:37,796 - INFO - Question 141: Which U.S. Presidents were assassinated while in office and served at least a year?
+2025-07-29 00:08:37,797 - INFO - LLM Response: ['Abraham Lincoln', 'William McKinley', 'John F. Kennedy']
+2025-07-29 00:08:42,591 - INFO - Question 142: What notes are played by only one open string on a guitar under standard tuning?
+2025-07-29 00:08:42,591 - INFO - LLM Response: ['A', 'D', 'G', 'B']
+2025-07-29 00:08:52,665 - INFO - Question 143: In which Olympics was the men’s 100 meter sprint world record broken by a time of 10 seconds or less?
+2025-07-29 00:08:52,666 - INFO - LLM Response: ['1968 Summer Olympics', '1988 Summer Olympics', '1996 Summer Olympics', '2008 Summer Olympics']
+2025-07-29 00:09:54,353 - INFO - Question 144: What countries have both deserts and glaciers and are contained in whole or part in the Northern Hemisphere?
+2025-07-29 00:09:54,353 - INFO - LLM Response: ['United States of America', 'Canada', 'Mexico', 'Spain', 'Italy', 'Iceland', 'China', 'Mongolia', 'Kazakhstan', 'Russia', 'India', 'Pakistan', 'Iran', 'Turkey', 'Georgia', 'Tajikistan', 'Kenya']
+2025-07-29 00:10:08,854 - INFO - Question 145: What countries located in the Caribbean are not island countries?
+2025-07-29 00:10:08,856 - INFO - LLM Response: ['Belize', 'Guyana', 'Suriname']
+2025-07-29 00:10:52,375 - INFO - Question 146: Which universities have Nobel laureates on their active staff excluding the Nobel Prize for Economics?
+2025-07-29 00:10:52,376 - INFO - LLM Response: []
+2025-07-29 00:11:05,474 - INFO - Question 147: With which countries that are not nuclear powers does India have ongoing border disputes?
+2025-07-29 00:11:05,474 - INFO - LLM Response: ['Nepal', 'Sri Lanka']
+2025-07-29 00:11:14,718 - INFO - Question 148: What countries on the Arabian Peninsula are part of the Middle East and have a population of five million or less?
+2025-07-29 00:11:14,718 - INFO - LLM Response: ['Bahrain', 'Kuwait', 'Oman', 'Qatar']
+2025-07-29 00:11:25,777 - INFO - Question 149: What rivers over 500 kilometers long flow into the Black Sea other than those that flow in via the Sea of Azov?
+2025-07-29 00:11:25,778 - INFO - LLM Response: ['Danube', 'Dnieper', 'Dniester', 'Southern Bug', 'Kızılırmak', 'Sakarya River']
+2025-07-29 00:14:08,992 - INFO - Question 150: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents, if any) but are not part of the European Democratic Party?
+2025-07-29 00:14:08,995 - INFO - LLM Response: ['Five Star Movement', 'Democratic Party', 'Article One', 'League (political party)', 'Forza Italia']
+2025-07-29 00:14:09,017 - INFO - Saved answers

@@ -1373,5 +1373,415 @@
         "Erzquell Brewery Bielstein",
         "Iserlohn Private Brewery",
         "Ernst Barre Private Brewery"
+    ],
+    "0": [
+        "Monty Python's Flying Circus",
+        "Fawlty Towers"
+    ],
+    "1": [
+        "People's Republic of China",
+        "Democratic People's Republic of Korea",
+        "Socialist Republic of Vietnam",
+        "Lao People's Democratic Republic",
+        "Republic of Cuba"
+    ],
+    "2": [],
+    "5": [],
+    "6": [
+        "India",
+        "Nepal",
+        "Bhutan",
+        "China",
+        "Pakistan"
+    ],
+    "11": [
+        "Trumpet",
+        "Cornet",
+        "Bugle",
+        "Voice"
+    ],
+    "12": [
+        "C",
+        "E",
+        "G"
+    ],
+    "13": [
+        "Brit Heyworth Marling",
+        "Zal Batmanglij"
+    ],
+    "15": [
+        "John Quincy Adams",
+        "George Walker Bush"
+    ],
+    "17": [
+        "Shaun of the Dead",
+        "Hot Fuzz",
+        "The World's End"
+    ],
+    "19": [
+        "Football Club Bayern Munich",
+        "Paris Saint-Germain Football Club"
+    ],
+    "20": [
+        "Noémie Merlant",
+        "Adèle Haenel",
+        "Luàna Bajrami",
+        "Valeria Golino"
+    ],
+    "26": [
+        "Richard Joseph Durbin",
+        "Ladda Tammy Duckworth"
+    ],
+    "34": [
+        "English",
+        "French"
+    ],
+    "35": [
+        "Hannibal Hamlin",
+        "Andrew Johnson"
+    ],
+    "36": [
+        "Libya",
+        "Sudan",
+        "Israel"
+    ],
+    "38": [
+        "Mandarin",
+        "Standard Mandarin (Putonghua)",
+        "Northeastern Mandarin",
+        "Beijing dialect",
+        "Jilu Mandarin",
+        "Jiaoliao Mandarin",
+        "Central Plains Mandarin",
+        "Lanyin Mandarin",
+        "Lower Yangtze Mandarin",
+        "Southwestern Mandarin",
+        "Jianghuai Mandarin",
+        "Jin Chinese",
+        "Taiyuan dialect",
+        "Lüliang dialect",
+        "Wu Chinese",
+        "Taihu Wu",
+        "Shanghainese",
+        "Suzhou dialect",
+        "Wuxi dialect",
+        "Ningbo dialect",
+        "Hangzhou dialect",
+        "Jiaxing dialect",
+        "Shaoxing dialect",
+        "Taizhou dialect",
+        "Wenzhou dialect",
+        "Oujiang Wu",
+        "Xuanzhou Wu",
+        "Huizhou Chinese",
+        "Yue Chinese",
+        "Standard Cantonese",
+        "Guangzhou Cantonese",
+        "Hong Kong Cantonese",
+        "Taishanese",
+        "Gaoyang dialect",
+        "Siyi dialect",
+        "Wuhua Cantonese",
+        "Min Chinese",
+        "Southern Min",
+        "Amoy Hokkien",
+        "Xiamen dialect",
+        "Taiwanese Hokkien",
+        "Teochew dialect",
+        "Chaoshan dialect",
+        "Zhangzhou dialect",
+        "Quanzhou dialect",
+        "Hainanese",
+        "Leizhou Min",
+        "Northern Min",
+        "Jian'ou dialect",
+        "Jianyang dialect",
+        "Central Min",
+        "Sanming dialect",
+        "Shaowu dialect",
+        "Eastern Min",
+        "Fuzhou dialect",
+        "Mindong dialect",
+        "Pu-Xian Min",
+        "Puxian dialect",
+        "Shao-Jiang Min",
+        "Gan Chinese",
+        "Changdu Gan",
+        "Yudu Gan",
+        "Ji'an dialect",
+        "Fuzhou Gan",
+        "Nanxiang dialect",
+        "Xin-Yu dialect",
+        "Xiang Chinese",
+        "Old Xiang",
+        "New Xiang",
+        "Changsha dialect",
+        "Shuangfeng dialect",
+        "Hakka Chinese",
+        "Meixian dialect",
+        "Moiyan Hakka",
+        "Pinghua Hakka",
+        "Huichang Hakka",
+        "Huiyang Hakka",
+        "Sixian dialect",
+        "Dabu dialect",
+        "Shaopin dialect",
+        "Pinghua Chinese",
+        "Northern Pinghua",
+        "Southern Pinghua",
+        "Tuhua",
+        "Shaozhou Tuhua",
+        "Danzhou dialect",
+        "Taz dialect"
+    ],
+    "44": [
+        "Berlin",
+        "Hamburg",
+        "Munich",
+        "Cologne",
+        "Frankfurt am Main",
+        "Stuttgart",
+        "Düsseldorf",
+        "Leipzig",
+        "Dortmund",
+        "Essen",
+        "Bremen",
+        "Dresden",
+        "Hanover",
+        "Nuremberg",
+        "Duisburg",
+        "Bochum",
+        "Wuppertal",
+        "Bielefeld",
+        "Bonn",
+        "Münster",
+        "Karlsruhe",
+        "Mannheim",
+        "Augsburg",
+        "Wiesbaden",
+        "Gelsenkirchen",
+        "Mönchengladbach"
+    ],
+    "48": [
+        "Neil Armstrong",
+        "Edwin Eugene Aldrin Junior",
+        "Michael Collins"
+    ],
+    "57": [
+        "Estonia",
+        "Latvia",
+        "Lithuania"
+    ],
+    "59": [
+        "Colorado",
+        "Utah",
+        "Arizona",
+        "Nevada",
+        "California"
+    ],
+    "60": [
+        "Europe",
+        "Asia",
+        "Africa"
+    ],
+    "66": [
+        "Nothing but Trouble",
+        "Juice",
+        "Poetic Justice",
+        "Above the Rim",
+        "Bullet",
+        "Gridlock'd",
+        "Gang Related"
+    ],
+    "70": [
+        "California",
+        "Nevada"
+    ],
+    "75": [
+        "Kentucky",
+        "Virginia",
+        "North Carolina",
+        "Georgia",
+        "Alabama",
+        "Mississippi",
+        "Arkansas",
+        "Missouri"
+    ],
+    "76": [
+        "The King's School, Grantham",
+        "Trinity College, University of Cambridge"
+    ],
+    "78": [
+        "Arthur Tudor",
+        "Margaret Tudor",
+        "Henry Tudor (King Henry 8)",
+        "Elizabeth Tudor",
+        "Mary Tudor",
+        "Edmund Tudor",
+        "stillborn daughter",
+        "Katherine Tudor"
+    ],
+    "79": [
+        "Zeus",
+        "Hera",
+        "Poseidon",
+        "Hades",
+        "Hestia"
+    ],
+    "80": [
+        "Robert Patrick Casey Junior",
+        "John Karl Fetterman"
+    ],
+    "81": [
+        "Dom Capers",
+        "George Seifert",
+        "John Fox",
+        "Ron Rivera",
+        "Perry Fewell",
+        "Matt Rhule",
+        "Steve Wilks",
+        "Frank Reich",
+        "Chris Tabor",
+        "Dave Canales"
+    ],
+    "86": [
+        "Uppsala University"
+    ],
+    "87": [
+        "Attina",
+        "Alana",
+        "Adella",
+        "Aquata",
+        "Arista",
+        "Andrina"
+    ],
+    "89": [
+        "Michael Joseph Jackson Junior",
+        "Paris-Michael Katherine Jackson",
+        "Prince Michael Jackson 2"
+    ],
+    "91": [
+        "Newark",
+        "Jersey City",
+        "Paterson",
+        "Elizabeth"
+    ],
+    "96": [
+        "Alan Bartlett Shepard Junior",
+        "Stuart Allen Roosa",
+        "Edgar Dean Mitchell"
+    ],
+    "99": [
+        "Wisconsin",
+        "Iowa",
+        "Missouri",
+        "Kentucky",
+        "Indiana",
+        "Michigan"
+    ],
+    "100": [],
+    "103": [],
+    "104": [],
+    "109": [
+        "On the Town",
+        "Wonderful Town",
+        "West Side Story",
+        "Candide",
+        "Peter Pan",
+        "1600 Pennsylvania Avenue",
+        "The Race to Urga",
+        "Mass"
+    ],
+    "110": [],
+    "115": [
+        "Python",
+        "Ruby",
+        "Personal Home Page Hypertext Preprocessor",
+        "JavaScript",
+        "European Computer Manufacturers Association Script",
+        "Raku",
+        "Groovy",
+        "Power Shell",
+        "Julia",
+        "Swift",
+        "Scala"
+    ],
+    "119": [],
+    "120": [],
+    "129": [],
+    "131": [
+        "The Lion King",
+        "Aida",
+        "Billy Elliot the Musical",
+        "Lestat",
+        "The Devil Wears Prada",
+        "Tammy Faye"
+    ],
+    "134": [
+        "Mark Thatcher",
+        "Carol Thatcher"
+    ],
+    "137": [
+        "Disneyland",
+        "Walt Disney Presents",
+        "Walt Disney's Wonderful World of Color",
+        "The Magical World of Disney",
+        "The Wonderful World of Disney",
+        "The Mickey Mouse Club",
+        "Zorro",
+        "The Nine Lives of Elfego Baca",
+        "Texas John Slaughter",
+        "The Swamp Fox"
+    ],
+    "138": [
+        "On the Road",
+        "The Dharma Bums"
+    ],
+    "139": [
+        "Pretty Woman",
+        "Runaway Bride"
+    ],
+    "147": [
+        "Johnny Flynn",
+        "Antonia Thomas",
+        "Daniel Ings",
+        "Joshua McGuire",
+        "Hannah Britland",
+        "Klariza Clayton",
+        "Richard Thomson",
+        "Sarah Vickers",
+        "Jessica Ellerby",
+        "Adam Hess",
+        "Will Merrick",
+        "Brett Goldstein"
+    ],
+    "82": [
+        "Austria",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Republic of Cyprus",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Netherlands",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden"
     ]
 }
