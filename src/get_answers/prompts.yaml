@@ -98,22 +98,35 @@ relation_classification:
 relation_classification_minus:
   en:
     template_classification: |
-      I prompt you three questions q1, q2, q3 you need to identify the logical relation of the concept between q1-q2 and q3
+      You are given three questions: q1, q2, and q3.
 
-      - Equivalence  
-      - Containment  
+      Your task is to identify the logical relationship of the concepts expressed in the following pairs:
+
+      1. q1 vs q2  
+      2. q1 vs q3  
+      3. q2 vs q3  
+      4. q1 vs the union of q2 and q3 (q2 + q3 combined)
+
+      Use only one of the following relations for each pair:
+      - Equivalent  
+      - Contains  
+      - ContainedBy 
       - Disjoint  
-      - Overlap  
-      - Minus  
-      - Unknown
+      - Overlap
 
       These are the three questions:
-
       q1: {q1}  
       q2: {q2}  
       q3: {q3}  
 
-      Return only the logical relation between the three questions. Return only the first relation that holds. Do not include any additional explanation.
+      Return a single line with the four relation results in this exact order, separated by the '|' symbol:
+      1. q1 vs q2  
+      2. q1 vs q3  
+      3. q2 vs q3  
+      4. q1 vs (q2 + q3)
+
+      Return **only** the relation labels separated by '|'. 
+      Do **not** include any explanation or additional text.
 
   es: |
     Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3

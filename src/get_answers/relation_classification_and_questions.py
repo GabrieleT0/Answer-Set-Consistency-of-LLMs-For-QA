@@ -80,7 +80,7 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
     q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
     q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
-    q12_path = os.path.join(base_output_dir, f'{output_prefix}Q12_{folder_name}_relation_{llm_model}.json')
+    relation_path = os.path.join(base_output_dir, f'{output_prefix}{logical_relation}_{folder_name}_relation_{llm_model}.json')
 
     # Load previous answers
     def load_json(path):
@@ -91,6 +91,7 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
     answers_ql1 = load_json(q1_path)
     answers_ql2 = load_json(q2_path)
+    q12_relation = load_json(relation_path)
 
     for index in range(start_index, end_index):
         if str(index) in answers_ql1:
@@ -121,12 +122,16 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
         # Store
         answers_ql1[str(index)] = list(answer1)
         answers_ql2[str(index)] = list(answer2)
+        q12_relation[str(index)] = relation_predicted
 
         # Write to files
         with open(q1_path, 'w', encoding='utf-8') as f:
             json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
         with open(q2_path, 'w', encoding='utf-8') as f:
             json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
+        with open(relation_path, 'w', encoding='utf-8') as f:
+            json.dump(q12_relation, f, ensure_ascii=False, indent=4)
+        
 
         logger.info(f"Index: {index} Question 1: {question[0]} Question 2: {question[1]}")
         logger.info(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted}\n")
@@ -153,8 +158,9 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
     os.makedirs(base_output_dir, exist_ok=True)
 
     q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_minus_answers_classAndAnswer_{llm_model}.json')
-    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_classAndAnswer_{llm_model}.json')
-    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_classAndAnswer_{llm_model}.json')
+    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_classAndAnswer_{llm_model}.json')
+    q4_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_classAndAnswer_{llm_model}.json')
+    relation_path = os.path.join(base_output_dir, f'{output_prefix}Relation_minus_answers_classAndAnswer_{llm_model}.json')
 
     def load_json(path):
         if os.path.exists(path):
@@ -163,8 +169,9 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
         return {}
 
     answers_ql1 = load_json(q1_path)
-    answers_ql2 = load_json(q2_path)
     answers_ql3 = load_json(q3_path)
+    answers_ql4 = load_json(q4_path)
+    answer_relation = load_json(relation_path)
 
     for index in range(start_index, end_index):
         if str(index) in answers_ql1:
@@ -196,19 +203,24 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
         answer1 = utils.convert_response_to_set(answer1)
         answer2 = utils.convert_response_to_set(answer2)
         answer3 = utils.convert_response_to_set(answer3)
+        relations = utils.convert_response_to_set(relation_predicted)
+
 
         # Save
         answers_ql1[str(index)] = list(answer1)
-        answers_ql2[str(index)] = list(answer2)
-        answers_ql3[str(index)] = list(answer3)
-
+        answers_ql3[str(index)] = list(answer2)
+        answers_ql4[str(index)] = list(answer3)
+        answer_relation[str(index)] = list(relations)
         # Write after each question
         with open(q1_path, 'w', encoding='utf-8') as f:
             json.dump(answers_ql1, f, ensure_ascii=False, indent=4)
-        with open(q2_path, 'w', encoding='utf-8') as f:
-            json.dump(answers_ql2, f, ensure_ascii=False, indent=4)
         with open(q3_path, 'w', encoding='utf-8') as f:
             json.dump(answers_ql3, f, ensure_ascii=False, indent=4)
+        with open(q4_path, 'w', encoding='utf-8') as f:
+            json.dump(answers_ql4, f, ensure_ascii=False, indent=4)
+        with open(relation_path, 'w', encoding='utf-8') as f:
+            json.dump(answer_relation, f, ensure_ascii=False, indent=4)
+        
 
         logger.info(f"\nIndex: {index} Question 1: {question[0]} Question 2: {question[1]} Question 3: {question[2]}")
         logger.info(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted} Answer 3: {answer3}\n")
@@ -216,11 +228,12 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
 
 if __name__ == "__main__":
 
-    llm_models = ['gpt-4o',"o3"]
+    llm_models = ['gemini-2.0-flash']
     languages = ['en']
     datasets = ['spinach.tsv','qawiki.tsv','synthetic.tsv']
     # datasets = ['qawiki.tsv']
-    relations = ['Equivalence','Minus','Containment']
+    # relations = ['Equivalence','Minus','Containment']
+    relations = ['Minus','Containment']
     for language in languages:
         for llm_model in llm_models:
             for dataset in datasets:

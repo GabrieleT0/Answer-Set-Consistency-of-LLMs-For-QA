@@ -1,0 +1,12 @@
+2025-07-29 16:01:41,871 - INFO - Processing model: gpt-4o for relation: Equivalence in language: en
+2025-07-29 16:01:42,049 - INFO - Processing model: gpt-4o for relation: Minus in language: en
+2025-07-29 16:01:42,059 - INFO - Processing model: gpt-4o for relation: Containment in language: en
+2025-07-29 16:01:42,069 - INFO - Processing model: gpt-4o for relation: Equivalence in language: en
+2025-07-29 16:01:42,079 - INFO - Processing model: gpt-4o for relation: Minus in language: en
+2025-07-29 16:01:42,093 - INFO - Processing model: gpt-4o for relation: Containment in language: en
+2025-07-29 16:01:42,103 - INFO - Processing model: gpt-4o for relation: Equivalence in language: en
+2025-07-29 16:01:43,731 - ERROR - Error processing question 51: ('What are the constituent states of the USA?', 'Which states are part of the United States of America?')
+2025-07-29 16:01:43,732 - INFO - Processing model: gpt-4o for relation: Minus in language: en
+2025-07-29 16:01:45,947 - ERROR - Error processing question 51: ('What are the constituent states of the USA?', 'What are the states of the USA located on the West Coast?', 'What are the states of the USA excluding those located on the West Coast?')
+2025-07-29 16:01:45,947 - INFO - Processing model: gpt-4o for relation: Containment in language: en
+2025-07-29 16:01:47,931 - ERROR - Error processing question 51: ('What are the constituent states of the USA?', 'What are the states of the USA located on the West Coast?')
