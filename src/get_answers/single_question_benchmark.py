@@ -74,20 +74,26 @@ def process_question(question, llm_model, prompt_template, language):
         return None  # fallback response set
 
 
-def save_answers(answers, dataset, column, language, prompt_type, llm_model):
+def save_answers(answers, dataset, column, language, prompt_type, llm_model, config):
     lang_prefix = '' if language == 'en' else '*'
-    relation = LOGICAL_RELATIONS_MAP[column]
+    relation = config["LOGICAL_RELATIONS_MAP"][column]
     suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
-    out_file = root_dir + f'/data/answers/zero-shot/{dataset.split(".")[0]}/{relation}/{lang_prefix}{column}_{relation}{suffix}'
-    
-    os.makedirs(os.path.dirname(out_file), exist_ok=True)
-    with open(out_file, 'w', encoding='utf-8') as f:
-        json.dump(answers, f, ensure_ascii=False, indent=4)
-    print(f"Answers saved to {out_file}")
 
-def load_answers(dataset, column, language, prompt_type, llm_model):
+    out_path = os.path.join(
+        root_dir, 'data', 'answers', 'zero-shot',
+        dataset.split(".")[0], relation,
+        f"{lang_prefix}{column}_{relation}{suffix}"
+    )
+
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, 'w', encoding='utf-8') as f:
+        json.dump(answers, f, ensure_ascii=False, indent=4)
+    logger.info(f"Answers saved to {out_path}")
+
+
+def load_answers(dataset, column, language, prompt_type, llm_model, config):
     lang_prefix = '' if language == 'en' else '*'
-    relation = LOGICAL_RELATIONS_MAP[column]
+    relation = config["LOGICAL_RELATIONS_MAP"][column]
     suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
     in_file = root_dir + f'/data/answers/zero-shot/{dataset.split(".")[0]}/{relation}/{lang_prefix}{column}_{relation}{suffix}'
 
@@ -100,24 +106,23 @@ def load_answers(dataset, column, language, prompt_type, llm_model):
 
 # === benchmark ===
 
-def run_benchmark_equal(prompt_type='standard'):
-    for language in LANGUAGES:
-        for llm_model in LLM_MODELS:
-            for dataset in DATASETS:
+def run_benchmark_equal(prompt_type, config):
+    for language in config["LANGUAGES"]:
+        for llm_model in config["LLM_MODELS"]:
+            for dataset in config["DATASETS"]:
                 logger.info(f"Processing dataset: {dataset} for model: {llm_model} and language: {language}")
                 tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
-                
-                for column in COLUMNS_MAP[dataset]:
+
+                for column in config["COLUMNS_MAP"][dataset]:
                     logger.info(f"Processing column: {column}")
                     questions = load_questions(tsv_file, column)
                     prompt_template = get_prompt(prompt_type, language)
 
-                    # Load previous answers if available
-                    answers = load_answers(dataset, column, language, prompt_type, llm_model)
+                    answers = load_answers(dataset, column, language, prompt_type, llm_model, config)
 
                     for index, question in enumerate(questions):
                         if str(index) in answers:
-                            continue  # Skip already processed
+                            continue
 
                         response_set = process_question(question, llm_model, prompt_template, language)
                         if response_set is None:
@@ -128,29 +133,31 @@ def run_benchmark_equal(prompt_type='standard'):
 
                         logger.info(f"Question {index + 1}: {question}")
                         logger.info(f"LLM Response: {response_set}")
-                        
-                 
-                        save_answers(answers, dataset, column, language, prompt_type, llm_model)
-                    save_answers(answers, dataset, column, language, prompt_type, llm_model)
-                    logger.info(f"Saved answers")
+
+                        save_answers(answers, dataset, column, language, prompt_type, llm_model, config)
+
+                    save_answers(answers, dataset, column, language, prompt_type, llm_model, config)
+
+
+def main(config = None):
+    if not config:
+        config = {
+            "COLUMNS_MAP": {
+                'spinach.tsv': ['Q1', 'Q2', 'Q3', 'Q4'],
+                'qawiki.tsv': ['Q1', 'Q2', 'Q3', 'Q4'],
+                'synthetic.tsv': ['Q1', 'Q2', 'Q3', 'Q4']
+            },
+            "LOGICAL_RELATIONS_MAP": {
+                'Q1': 'equal', 'Q2': 'equal', 'Q3': 'sup-sub', 'Q4': 'minus'
+            },
+            "LANGUAGES": ['en'],
+            "LLM_MODELS": ['gemini-2.0-flash'],
+            "DATASETS": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
+            "prompt_types": ['standard', 'wikidata']
+        }
+
+    for prompt_type in config["prompt_types"]:
+        run_benchmark_equal(prompt_type, config)
 
 if __name__ == "__main__":
-
-    COLUMNS_MAP = {'spinach.tsv': ['Q1','Q2', 'Q3', 'Q4'],
-                   'qawiki.tsv': ['Q1', 'Q2', 'Q3','Q4'],
-                   'synthetic.tsv': ['Q1', 'Q2', 'Q3','Q4']}
-    
-    LOGICAL_RELATIONS_MAP = {'Q1': 'equal', 'Q2': 'equal', 'Q3': 'sup-sub', 'Q4': 'minus'}
-    LANGUAGES = ['en']
-    # LLM_MODELS = ['gpt-4o','o3']
-    # LLM_MODELS = ['gemini-2.0-flash']
-    # LLM_MODELS = ['grok-3-mini']
-    # LLM_MODELS = ['gemini-2.5-pro']
-    # LLM_MODELS = ['grok-4-0709']
-    LLM_MODELS = ['o3']
-
-    DATASETS = ['spinach.tsv','qawiki.tsv', 'synthetic.tsv']
-
-    # Run the benchmark 
-    run_benchmark_equal(prompt_type='standard')
-    run_benchmark_equal(prompt_type='wikidata')
+    main()

@@ -247,5 +247,29 @@
         "overlap",
         "disjoint",
         "equivalent"
+    ],
+    "63": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "64": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "65": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "66": [
+        "overlap",
+        "overlap",
+        "disjoint",
+        "equivalent"
     ]
 }
