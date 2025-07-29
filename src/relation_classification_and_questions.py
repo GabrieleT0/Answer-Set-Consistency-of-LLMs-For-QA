@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 import csv
 import utils
 import json
-import time
 import prompt_llms
 
 here = os.path.dirname(os.path.abspath(__file__))
@@ -197,7 +196,8 @@ def run_benchmark(llm_model, language, logical_relation, dataset, use_hint=False
 
         print(f"Index: {index} Question 1: {question[0]} Question 2: {question[1]}")
         print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted}\n")
-        time.sleep(1.5)
+        
+
 
 
 def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None):
@@ -277,7 +277,6 @@ def run_minus_benchmark(llm_model, language, test_type, dataset, use_hint=False,
 
         print(f"\nIndex: {index} Question 1: {question[0]} Question 2: {question[1]} Question 3: {question[2]}")
         print(f"Answer 1: {answer1} Answer 2: {answer2} Relation: {relation_predicted} Answer 3: {answer3}\n")
-        time.sleep(1.5)
 
 relations = ['Equivalence','Minus','Containment']
 for language in languages:

@@ -1,0 +1,19 @@
+{
+    "COLUMNS_MAP": {
+      "spinach.tsv": ["Q1", "Q2", "Q3", "Q4"],
+      "qawiki.tsv": ["Q1", "Q2", "Q3", "Q4"],
+      "synthetic.tsv": ["Q1", "Q2", "Q3", "Q4"]
+    },
+    "LOGICAL_RELATIONS_MAP": {
+      "Q1": "equal",
+      "Q2": "equal",
+      "Q3": "sup-sub",
+      "Q4": "minus"
+    },
+    "languages": ["en"],
+    "llm_models": ["gemini-2.0-flash"],
+    "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
+    "prompt_types": ["standard", "wikidata"],
+    "relations": ["Equivalence", "Containment", "Minus"]
+  }
+  

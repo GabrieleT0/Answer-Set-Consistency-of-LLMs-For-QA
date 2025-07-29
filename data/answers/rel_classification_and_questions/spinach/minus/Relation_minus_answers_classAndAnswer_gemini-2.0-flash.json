@@ -1,0 +1,317 @@
+{
+    "10": [
+        "containment"
+    ],
+    "11": [
+        "containment"
+    ],
+    "12": [
+        "containment"
+    ],
+    "13": [
+        "containment"
+    ],
+    "14": [
+        "containment"
+    ],
+    "15": [
+        "containment"
+    ],
+    "16": [
+        "containment\nminus"
+    ],
+    "17": [
+        "containment"
+    ],
+    "18": [
+        "containment\nminus"
+    ],
+    "19": [
+        "containment"
+    ],
+    "20": [
+        "containment"
+    ],
+    "21": [
+        "containment"
+    ],
+    "22": [
+        "q1-q2: containment\nq1-q3: containment"
+    ],
+    "23": [
+        "containment"
+    ],
+    "24": [
+        "containment"
+    ],
+    "25": [
+        "containment\ncontainment\ncontainment\nequivalence"
+    ],
+    "26": [
+        "equivalence\nminus\nminus\nequivalence"
+    ],
+    "27": [
+        "containment\nminus\nminus\nequivalence"
+    ],
+    "28": [
+        "equivalence\ncontainment\ncontainment\nequivalence"
+    ],
+    "29": [
+        "containment\nminus\nminus\nequivalence"
+    ],
+    "30": [
+        "containment\nminus\nminus\nequivalence"
+    ],
+    "31": [
+        "containment\nminus\nminus\nequivalence"
+    ],
+    "32": [
+        "containment\ncontainment\ncontainment\nequivalence"
+    ],
+    "33": [
+        "containment",
+        "minus",
+        "overlap",
+        "equivalence"
+    ],
+    "34": [
+        "containment",
+        "overlap",
+        "overlap",
+        "equivalence"
+    ],
+    "35": [
+        "containment",
+        "containment",
+        "disjoint",
+        "equivalence"
+    ],
+    "36": [
+        "containment",
+        "minus",
+        "containment",
+        "equivalence"
+    ],
+    "37": [
+        "containment",
+        "containment",
+        "disjoint",
+        "equivalence"
+    ],
+    "38": [
+        "containment",
+        "overlap",
+        "overlap",
+        "equivalence"
+    ],
+    "39": [
+        "equivalence",
+        "containment",
+        "minus",
+        "equivalence"
+    ],
+    "40": [
+        "containment",
+        "containment",
+        "minus",
+        "equivalence"
+    ],
+    "41": [
+        "containment",
+        "minus",
+        "minus",
+        "equivalence"
+    ],
+    "42": [
+        "containment",
+        "minus",
+        "overlap",
+        "equivalence"
+    ],
+    "43": [
+        "containment",
+        "minus",
+        "minus",
+        "equivalence"
+    ],
+    "44": [
+        "containment",
+        "disjoint",
+        "disjoint",
+        "equivalence"
+    ],
+    "45": [
+        "containment",
+        "minus",
+        "minus",
+        "equivalence"
+    ],
+    "46": [
+        "containment",
+        "disjoint",
+        "disjoint",
+        "equivalence"
+    ],
+    "47": [
+        "containment",
+        "minus",
+        "overlap",
+        "equivalence"
+    ],
+    "48": [
+        "containment",
+        "minus",
+        "minus",
+        "equivalence"
+    ],
+    "49": [
+        "containment",
+        "containment",
+        "equivalence",
+        "equivalence"
+    ],
+    "50": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "51": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "52": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "53": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "54": [
+        "contains",
+        "disjoint",
+        "disjoint",
+        "equivalent"
+    ],
+    "55": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "56": [
+        "equivalent",
+        "disjoint",
+        "disjoint",
+        "equivalent"
+    ],
+    "57": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "58": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "59": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "60": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "61": [
+        "contains",
+        "overlap",
+        "disjoint",
+        "equivalent"
+    ],
+    "62": [
+        "overlap",
+        "overlap",
+        "disjoint",
+        "equivalent"
+    ],
+    "63": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "64": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "65": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "66": [
+        "overlap",
+        "overlap",
+        "disjoint",
+        "equivalent"
+    ],
+    "67": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "68": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "69": [
+        "contains",
+        "overlap",
+        "disjoint",
+        "equivalent"
+    ],
+    "70": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "71": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "72": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ],
+    "73": [
+        "contains",
+        "contains",
+        "disjoint",
+        "equivalent"
+    ]
+}

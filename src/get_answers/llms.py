@@ -26,7 +26,6 @@ azure_api_version= os.getenv('AZURE_API_VERSION', '2023-06-01-preview')
 
 azure_models = ["gpt-4o","o3","o1"]
 openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']
-# gemini_models = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.5-ultra']
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
@@ -70,13 +69,7 @@ def return_chat_model(model_name, temperature=0):
     elif model_name in gemini_models:
         return ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key, max_tokens=None, temperature=temperature)
     elif model_name in azure_models:
-        return AzureChatOpenAI(
-                azure_deployment=model_name,  # or your deployment
-                api_version=azure_api_version,  # or your api version
-                max_tokens=None,
-                timeout=None,
-                # other params...
-            )
+        return AzureChatOpenAI(azure_deployment=model_name, api_version=azure_api_version,)
     elif model_name in xai_models:
         return ChatXAI(model=model_name, xai_api_key=XAI_API_KEY, temperature=temperature)
     elif model_name in claude_models:
