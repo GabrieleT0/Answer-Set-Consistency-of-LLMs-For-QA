@@ -99,33 +99,31 @@ relation_classification_minus:
     template_classification: |
       You are given three questions: q1, q2, and q3.
 
-      Your task is to identify the logical relationship of the concepts expressed in the following pairs:
-
-      1. q1 vs q2  
-      2. q1 vs q3  
-      3. q2 vs q3  
-      4. q1 vs the union of q2 and q3 (q2 + q3 combined)
-
-      Use only one of the following relations for each pair:
-      - Equivalent  
-      - Contains  
-      - ContainedBy 
-      - Disjoint  
-      - Overlap
+      Each question is associated with a set of answers. Your task is to identify the logical relation between the concepts of questions based on their answer sets.
+      
+      Compare the relationship between the answers to:
+      1. q1 and q2.  
+      2. q1 and q3.  
+      3. q2 and q3.  
+      4. q1 and (q2+q3)
+         - q2+q3 :combined answers from q2 and q3.  
+      5. (q1-q2) and q3:  
+         - q1-q2: the answers in q1 that are **not** in q2  
 
       These are the three questions:
       q1: {q1}  
       q2: {q2}  
-      q3: {q3}  
+      q3: {q3}
+      
+      For each comparison, use **one of the following labels**:
+      - Equivalent  
+      - Contains  
+      - ContainedBy  
+      - Disjoint  
+      - Overlap
 
-      Return a single line with the four relation results in this exact order, separated by the '|' symbol:
-      1. q1 vs q2  
-      2. q1 vs q3  
-      3. q2 vs q3  
-      4. q1 vs (q2 + q3)
-
-      Return **only** the relation labels separated by '|'. 
-      Do **not** include any explanation or additional text.
+      Return a single line with exactly five relation labels, separated by the '|' symbol, in the order above.
+      Do **not** include any explanation or extra text.
 
   es: |
     Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3

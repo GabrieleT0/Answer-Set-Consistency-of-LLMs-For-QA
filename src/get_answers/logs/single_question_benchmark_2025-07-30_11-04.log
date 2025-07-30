@@ -1,0 +1,60 @@
+2025-07-30 11:04:12,241 - INFO - Loaded config from config.json
+2025-07-30 11:04:12,241 - INFO - {'languages': ['en'], 'llm_models': ['gemini-2.0-flash', 'grok-3-mini', 'gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-07-30 11:04:12,241 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-07-30 11:04:12,241 - INFO - Step 1: Running single question benchmark
+2025-07-30 11:04:12,241 - INFO - Processing dataset: spinach.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,241 - INFO - Processing column: Q1
+2025-07-30 11:04:12,263 - INFO - Processing column: Q2
+2025-07-30 11:04:12,275 - INFO - Processing column: Q3
+2025-07-30 11:04:12,284 - INFO - Processing column: Q4
+2025-07-30 11:04:12,293 - INFO - Processing dataset: qawiki.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,293 - INFO - Processing column: Q1
+2025-07-30 11:04:12,313 - INFO - Processing column: Q2
+2025-07-30 11:04:12,323 - INFO - Processing column: Q3
+2025-07-30 11:04:12,331 - INFO - Processing column: Q4
+2025-07-30 11:04:12,337 - INFO - Processing dataset: synthetic.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,337 - INFO - Processing column: Q1
+2025-07-30 11:04:12,347 - INFO - Processing column: Q2
+2025-07-30 11:04:12,352 - INFO - Processing column: Q3
+2025-07-30 11:04:12,357 - INFO - Processing column: Q4
+2025-07-30 11:04:12,363 - INFO - Processing dataset: spinach.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,363 - INFO - Processing column: Q1
+2025-07-30 11:04:12,373 - INFO - Processing column: Q2
+2025-07-30 11:04:12,385 - INFO - Processing column: Q3
+2025-07-30 11:04:12,393 - INFO - Processing column: Q4
+2025-07-30 11:04:12,405 - INFO - Processing dataset: qawiki.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,405 - INFO - Processing column: Q1
+2025-07-30 11:04:12,421 - INFO - Processing column: Q2
+2025-07-30 11:04:12,434 - INFO - Processing column: Q3
+2025-07-30 11:04:12,442 - INFO - Processing column: Q4
+2025-07-30 11:04:12,455 - INFO - Processing dataset: synthetic.tsv for model: gemini-2.0-flash and language: en
+2025-07-30 11:04:12,455 - INFO - Processing column: Q1
+2025-07-30 11:04:12,461 - INFO - Processing column: Q2
+2025-07-30 11:04:12,468 - INFO - Processing column: Q3
+2025-07-30 11:04:12,472 - INFO - Processing column: Q4
+2025-07-30 11:04:12,477 - INFO - Step 2: Fixing inconsistent LLM responses
+2025-07-30 11:04:12,479 - INFO - === Running model gemini-2.0-flash on spinach.tsv ===
+2025-07-30 11:04:12,555 - INFO - === Finished model gemini-2.0-flash on spinach.tsv ===
+
+2025-07-30 11:04:12,555 - INFO - === Running model gemini-2.0-flash on qawiki.tsv ===
+2025-07-30 11:04:12,606 - INFO - === Finished model gemini-2.0-flash on qawiki.tsv ===
+
+2025-07-30 11:04:12,606 - INFO - === Running model gemini-2.0-flash on synthetic.tsv ===
+2025-07-30 11:04:12,645 - INFO - === Finished model gemini-2.0-flash on synthetic.tsv ===
+
+2025-07-30 11:04:12,645 - INFO - Step 3: Running relation classification and question generation
+2025-07-30 11:04:12,647 - INFO - Processing model: gemini-2.0-flash | relation: Equivalence | lang: en | dataset: spinach.tsv
+2025-07-30 11:04:12,659 - INFO - Processing model: gemini-2.0-flash | relation: Containment | lang: en | dataset: spinach.tsv
+2025-07-30 11:04:12,670 - INFO - Processing model: gemini-2.0-flash | relation: Minus | lang: en | dataset: spinach.tsv
+2025-07-30 11:04:12,692 - INFO - Processing model: gemini-2.0-flash | relation: Equivalence | lang: en | dataset: qawiki.tsv
+2025-07-30 11:04:12,702 - INFO - Processing model: gemini-2.0-flash | relation: Containment | lang: en | dataset: qawiki.tsv
+2025-07-30 11:04:12,714 - INFO - Processing model: gemini-2.0-flash | relation: Minus | lang: en | dataset: qawiki.tsv
+2025-07-30 11:04:12,729 - INFO - Processing model: gemini-2.0-flash | relation: Equivalence | lang: en | dataset: synthetic.tsv
+2025-07-30 11:04:12,741 - INFO - Processing model: gemini-2.0-flash | relation: Containment | lang: en | dataset: synthetic.tsv
+2025-07-30 11:04:12,751 - INFO - Processing model: gemini-2.0-flash | relation: Minus | lang: en | dataset: synthetic.tsv
+2025-07-30 11:04:12,763 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-07-30 11:04:12,764 - INFO - Step 1: Running single question benchmark
+2025-07-30 11:04:12,764 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-07-30 11:04:12,764 - INFO - Processing column: Q1
+2025-07-30 11:04:12,785 - INFO - Processing column: Q2
+2025-07-30 11:04:21,618 - INFO - Question 108: On which music albums can the song Last Christmas be found?
