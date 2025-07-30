@@ -1,0 +1,8 @@
+2025-07-30 12:27:16,470 - INFO - Loaded config from config.json
+2025-07-30 12:27:16,470 - INFO - {'languages': ['en'], 'llm_models': ['grok-3-mini', 'gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-07-30 12:27:16,471 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-07-30 12:27:16,471 - INFO - Step 1: Running single question benchmark
+2025-07-30 12:27:16,471 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-07-30 12:27:16,471 - INFO - Processing column: Q1
+2025-07-30 12:27:16,533 - INFO - Processing column: Q2
+2025-07-30 12:28:15,109 - INFO - Content filter triggered for question: List all authors who have received the Nobel Prize in Literature.
