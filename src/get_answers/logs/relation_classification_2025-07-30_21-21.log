@@ -1,0 +1,27 @@
+2025-07-30 21:21:52,618 - INFO - Processing model: gpt-4o for language: en
+2025-07-30 21:21:55,309 - INFO - Question 1
+2025-07-30 21:21:55,310 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:21:56,440 - INFO - Question 2
+2025-07-30 21:21:56,440 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:21:57,651 - INFO - Question 3
+2025-07-30 21:21:57,652 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:21:58,978 - INFO - Question 4
+2025-07-30 21:21:58,979 - INFO - LLM Response: ['Unknown', 'Disjoint', 'Unknown', 'Disjoint  ', 'Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:00,242 - INFO - Question 5
+2025-07-30 21:22:00,242 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Unknown', 'Unknown', 'Unknown']
+2025-07-30 21:22:01,725 - INFO - Question 6
+2025-07-30 21:22:01,725 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:03,064 - INFO - Question 7
+2025-07-30 21:22:03,065 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:04,166 - INFO - Question 8
+2025-07-30 21:22:04,166 - INFO - LLM Response: ['Unknown', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown']
+2025-07-30 21:22:05,331 - INFO - Question 9
+2025-07-30 21:22:05,331 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Unknown', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:06,393 - INFO - Question 10
+2025-07-30 21:22:06,393 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown']
+2025-07-30 21:22:07,807 - INFO - Question 11
+2025-07-30 21:22:07,808 - INFO - LLM Response: ['Unknown', 'Disjoint', 'Disjoint', 'Disjoint  ', 'Unknown|Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:09,097 - INFO - Question 12
+2025-07-30 21:22:09,097 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown']
+2025-07-30 21:22:10,450 - INFO - Question 13
+2025-07-30 21:22:10,450 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown|Unknown|Unknown|Unknown|Unknown']

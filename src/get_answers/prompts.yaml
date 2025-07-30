@@ -57,19 +57,19 @@ relation_classification:
       Return me all answers as a list separated by the symbol '|' don' add any other text.
     template_classification: |
       I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
-
-      - Equivalent  
-      - Contains  
-      - ContainedBy 
-      - Disjoint  
-      - Overlap
+        - Equivalence  
+        - Contains
+        - ContainedBy  
+        - Disjoint  
+        - Overlap
+        - Unknown  
 
       These are the two questions:
-
-      q1: {q1}
-      q2: {q2}
-
-      Return only the logical relation between the two questions. Return only the first relation that holds. Do not include any additional explanation.
+        q1: {q1}  
+        q2: {q2}  
+      Return only the first relation that q1 and q2 holds. 
+      Do not include any additional explanation.
+        
     hint_prompt: "Remember that {relation} holds between the answers for this question and the previous question."
 
   es:
@@ -99,6 +99,51 @@ relation_classification_minus:
     template_classification: |
       You are given three questions: q1, q2, and q3.
 
+      Each question is associated with a set of answers. 
+      Your task is to identify the logical relation between the concepts of questions based on their answer sets. 
+      Compare the relationship of concept between the following two sets, s1 and s2: 
+          - s1: the set of all answers for q1 that are not answers for q2
+          - s2: the set of answers for q3.
+
+      These are the three questions:
+      q1: {q1}  
+      q2: {q2}  
+      q3: {q3}
+      
+      For each comparison, use **one of the following labels**:
+      - Equivalent  
+      - Contains  
+      - ContainedBy  
+      - Disjoint  
+      - Overlap
+      - Unknown
+
+      Return only the exactly relation label.
+      Do **not** include any explanation or extra text.
+
+  es: |
+    Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3
+
+    - Equivalencia
+    - Contención
+    - Disjunto
+    - Solapamiento
+    - Resta
+    - Desconocido
+
+    Estas son las tres preguntas:
+
+    q1: {q1}
+    q2: {q2}
+    q3: {q3}
+
+    Devuélveme solo la relación lógica entre las tres preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
+
+relation_classification_all:
+  en:
+    template_classification: |
+      You are given three questions: q1, q2, and q3.
+
       Each question is associated with a set of answers. Your task is to identify the logical relation between the concepts of questions based on their answer sets.
       
       Compare the relationship between the answers to:
@@ -124,21 +169,8 @@ relation_classification_minus:
 
       Return a single line with exactly five relation labels, separated by the '|' symbol, in the order above.
       Do **not** include any explanation or extra text.
-
-  es: |
-    Te planteo tres preguntas, q1, q2 y q3. Debes identificar la relación lógica del concepto entre q1-q2 y q3
-
-    - Equivalencia
-    - Contención
-    - Disjunto
-    - Solapamiento
-    - Resta
-    - Desconocido
-
-    Estas son las tres preguntas:
-
-    q1: {q1}
-    q2: {q2}
-    q3: {q3}
-
-    Devuélveme solo la relación lógica entre las tres preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
+    contain_direction: |
+      Now Answer only 'a' or 'b': 
+      a) the results of q1 are contained in q2 
+      b) the results of q2 are contained in q1.
+      

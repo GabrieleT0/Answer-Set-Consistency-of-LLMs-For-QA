@@ -220,7 +220,7 @@ for language in languages:
     for llm_model in llm_models:
         # Run equivalence test
         print(f"Processing model: {llm_model} for language: {language}")
-        #equivalence_test(llm_model, language, dataset, 'Equivalence')
+        equivalence_test(llm_model, language, dataset, 'Equivalence')
         print(f"Finished processing model: {llm_model} for language: {language})\n")
 
         # Run Containment test
