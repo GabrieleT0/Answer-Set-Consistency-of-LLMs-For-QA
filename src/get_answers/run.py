@@ -1,7 +1,6 @@
 # run.py
 import os
 import sys
-# Ensure src/ is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import json
@@ -29,7 +28,7 @@ def main():
     logger.info(f"{config}")
     # Inject root_dir dynamically
     config["root_dir"] = os.path.dirname(os.path.abspath(__name__))
-    classify_main(config=None, logger=logger)
+    # classify_main(config=None, logger=logger)
 
     llms = config["llm_models"]
     for llm in llms:

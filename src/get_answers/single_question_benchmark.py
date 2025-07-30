@@ -8,6 +8,10 @@ import yaml
 import datetime
 import logging
 
+LOGICAL_RELATIONS_MAP = {
+                'Q1': 'equal', 'Q2': 'equal', 'Q3': 'sup-sub', 'Q4': 'minus'
+            }
+
 # Conditional logging
 def setup_logger():
     log_dir = os.path.join(os.path.dirname(__file__), "logs")
@@ -72,7 +76,7 @@ def process_question(question, llm_model, prompt_template, language, logger):
 
 def save_answers(answers, dataset, column, language, prompt_type, llm_model, config):
     lang_prefix = '' if language == 'en' else '*'
-    relation = config["LOGICAL_RELATIONS_MAP"][column]
+    relation = LOGICAL_RELATIONS_MAP[column]
     suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
 
     out_path = os.path.join(
@@ -89,7 +93,7 @@ def save_answers(answers, dataset, column, language, prompt_type, llm_model, con
 
 def load_answers(dataset, column, language, prompt_type, llm_model, config):
     lang_prefix = '' if language == 'en' else '*'
-    relation = config["LOGICAL_RELATIONS_MAP"][column]
+    relation = LOGICAL_RELATIONS_MAP[column]
     suffix = f"_answers_{'wikidata_' if prompt_type == 'wikidata' else ''}{llm_model}.json"
     in_file = root_dir + f'/data/answers/zero-shot/{dataset.split(".")[0]}/{relation}/{lang_prefix}{column}_{relation}{suffix}'
 
@@ -109,7 +113,7 @@ def run_benchmark_equal(prompt_type, config, logger):
                 logger.info(f"Processing dataset: {dataset} for model: {llm_model} and language: {language}")
                 tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
 
-                for column in config["COLUMNS_MAP"][dataset]:
+                for column in ['Q1', 'Q2', 'Q3', 'Q4']:
                     logger.info(f"Processing column: {column}")
                     questions = load_questions(tsv_file, column)
                     prompt_template = get_prompt(prompt_type, language)
@@ -138,14 +142,6 @@ def run_benchmark_equal(prompt_type, config, logger):
 def main(config = None, logger = setup_logger()):
     if config == None:
         config = {
-            "COLUMNS_MAP": {
-                'spinach.tsv': ['Q1', 'Q2', 'Q3', 'Q4'],
-                'qawiki.tsv': ['Q1', 'Q2', 'Q3', 'Q4'],
-                'synthetic.tsv': ['Q1', 'Q2', 'Q3', 'Q4']
-            },
-            "LOGICAL_RELATIONS_MAP": {
-                'Q1': 'equal', 'Q2': 'equal', 'Q3': 'sup-sub', 'Q4': 'minus'
-            },
             "languages": ['en'],
             "llm_models": ['gemini-2.0-flash'],
             "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
