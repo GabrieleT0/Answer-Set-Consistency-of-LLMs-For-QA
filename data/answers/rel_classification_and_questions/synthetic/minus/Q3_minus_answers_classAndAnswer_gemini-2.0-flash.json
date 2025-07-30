@@ -1,0 +1,944 @@
+{
+    "0": [
+        "Inglourious Basterds"
+    ],
+    "1": [
+        "Guitar",
+        "Bass"
+    ],
+    "2": [
+        "Victoria, Princess Royal",
+        "Alice, Grand Duchess of Hesse and by Rhine",
+        "Helena, Princess Christian of Schleswig-Holstein",
+        "Louise, Duchess of Argyll",
+        "Beatrice, Princess Henry of Battenberg"
+    ],
+    "3": [
+        "French",
+        "Italian",
+        "Romansh"
+    ],
+    "4": [
+        "Europa",
+        "Ganymede",
+        "Io",
+        "Callisto",
+        "idk"
+    ],
+    "5": [
+        "Helium",
+        "Neon",
+        "Argon",
+        "Krypton",
+        "Xenon",
+        "Radon"
+    ],
+    "6": [
+        "PillPack",
+        "Amazon Pharmacy",
+        "Amazon Care",
+        "idk"
+    ],
+    "7": [
+        "Dart",
+        "Kotlin"
+    ],
+    "8": [
+        "2001: A Space Odyssey",
+        "A Clockwork Orange",
+        "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"
+    ],
+    "9": [
+        "Sully Prudhomme",
+        "Frédéric Mistral",
+        "Saint-John Perse"
+    ],
+    "10": [
+        "Sydney",
+        "Athens",
+        "Beijing",
+        "London",
+        "Rio de Janeiro",
+        "Tokyo",
+        "Paris"
+    ],
+    "11": [
+        "Adelie penguin",
+        "Chinstrap penguin",
+        "Emperor penguin",
+        "Gentoo penguin"
+    ],
+    "12": [
+        "Woodrow Wilson",
+        "Franklin Delano Roosevelt",
+        "Harry S. Truman",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
+        "Jimmy Carter",
+        "Bill Clinton",
+        "Barack Obama",
+        "Joe Biden"
+    ],
+    "13": [
+        "The Broadway Melody",
+        "Cimarron",
+        "Cavalcade",
+        "It Happened One Night",
+        "The Life of Emile Zola",
+        "You Can't Take It with You",
+        "Rebecca",
+        "How Green Was My Valley",
+        "Casablanca",
+        "Gentleman's Agreement",
+        "Hamlet",
+        "All the King's Men",
+        "Marty",
+        "Around the World in Eighty Days",
+        "The Apartment",
+        "Schindler's List",
+        "The Artist",
+        "idk"
+    ],
+    "14": [
+        "My Neighbor Totoro",
+        "Kiki's Delivery Service",
+        "Ponyo",
+        "Grave of the Fireflies",
+        "Whisper of the Heart",
+        "The Cat Returns",
+        "Arrietty",
+        "From Up on Poppy Hill",
+        "The Wind Rises",
+        "The Tale of the Princess Kaguya",
+        "When Marnie Was There",
+        "Earwig and the Witch",
+        "Ocean Waves",
+        "Pom Poko",
+        "My Neighbors the Yamadas"
+    ],
+    "15": [
+        "The Hobbit",
+        "The Lord of the Rings",
+        "The Silmarillion",
+        "Unfinished Tales",
+        "The Children of Húrin",
+        "Roverandom",
+        "Farmer Giles of Ham",
+        "Smith of Wootton Major",
+        "Leaf by Niggle",
+        "The Adventures of Tom Bombadil"
+    ],
+    "16": [
+        "Caracas",
+        "Santiago",
+        "Lima",
+        "Montevideo",
+        "Paramaribo",
+        "Georgetown"
+    ],
+    "17": [
+        "Audi",
+        "Bentley",
+        "Bugatti",
+        "Lamborghini",
+        "Porsche"
+    ],
+    "18": [
+        "Catherine of Aragon",
+        "Jane Seymour",
+        "Anne Boleyn"
+    ],
+    "19": [
+        "Australia",
+        "Bangladesh",
+        "Canada",
+        "India",
+        "Kenya",
+        "Malaysia",
+        "New Zealand",
+        "Nigeria",
+        "Pakistan",
+        "South Africa",
+        "United Kingdom"
+    ],
+    "20": [
+        "Pete Best",
+        "Stuart Sutcliffe"
+    ],
+    "21": [
+        "San Marino",
+        "Vatican City"
+    ],
+    "22": [
+        "Athens",
+        "Paris",
+        "London"
+    ],
+    "23": [
+        "Bulgari",
+        "Hublot",
+        "TAG Heuer",
+        "Zenith"
+    ],
+    "24": [
+        "Dances with Wolves",
+        "Unforgiven",
+        "Braveheart",
+        "The English Patient",
+        "Shakespeare in Love"
+    ],
+    "25": [
+        "Neofelis",
+        "Panthera"
+    ],
+    "26": [
+        "Grazia Deledda",
+        "Gabriela Mistral",
+        "Nelly Sachs",
+        "Elfriede Jelinek",
+        "Doris Lessing",
+        "Alice Munro",
+        "Louise Glück"
+    ],
+    "27": [
+        "Suriname"
+    ],
+    "28": [
+        "tennessine"
+    ],
+    "29": [
+        "Holy See"
+    ],
+    "30": [
+        "Euro"
+    ],
+    "31": [
+        "idk"
+    ],
+    "32": [
+        "Hinduism"
+    ],
+    "33": [
+        "Amsterdam",
+        "Athens",
+        "Berlin",
+        "Bratislava",
+        "Brussels",
+        "Bucharest",
+        "Budapest",
+        "Copenhagen",
+        "Dublin",
+        "Helsinki",
+        "Lisbon",
+        "Ljubljana",
+        "Luxembourg",
+        "Madrid",
+        "Nicosia",
+        "Paris",
+        "Prague",
+        "Riga",
+        "Rome",
+        "Sofia",
+        "Stockholm",
+        "Tallinn",
+        "Valletta",
+        "Vienna",
+        "Vilnius",
+        "Warsaw",
+        "Zagreb"
+    ],
+    "34": [
+        "red"
+    ],
+    "35": [
+        "Botswana",
+        "Cameroon",
+        "Eswatini",
+        "Gambia",
+        "Ghana",
+        "Kenya",
+        "Lesotho",
+        "Liberia",
+        "Malawi",
+        "Mauritius",
+        "Namibia",
+        "Nigeria",
+        "Seychelles",
+        "Sierra Leone",
+        "South Africa",
+        "South Sudan",
+        "Sudan",
+        "Tanzania",
+        "Uganda",
+        "Zambia",
+        "Zimbabwe"
+    ],
+    "36": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America",
+        "South America"
+    ],
+    "37": [
+        "The Running Grave"
+    ],
+    "38": [
+        "nitrogen",
+        "oxygen",
+        "argon"
+    ],
+    "39": [
+        "Greenland shark"
+    ],
+    "40": [
+        "Grand Theft Auto V",
+        "Grand Theft Auto IV",
+        "Grand Theft Auto: San Andreas",
+        "Grand Theft Auto: Vice City",
+        "Grand Theft Auto III",
+        "Grand Theft Auto 2",
+        "Grand Theft Auto: London 1969"
+    ],
+    "41": [
+        "Argentina",
+        "Bolivia",
+        "Chile"
+    ],
+    "42": [
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune"
+    ],
+    "43": [
+        "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+        "Vatican City"
+    ],
+    "44": [
+        "idk"
+    ],
+    "45": [
+        "idk"
+    ],
+    "46": [
+        "Honshu",
+        "Kyushu"
+    ],
+    "47": [
+        "idk"
+    ],
+    "48": [
+        "George Washington",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe",
+        "William Henry Harrison"
+    ],
+    "49": [
+        "Albania",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Montenegro",
+        "Netherlands",
+        "North Macedonia",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Turkey",
+        "United Kingdom"
+    ],
+    "50": [
+        "idk"
+    ],
+    "51": [
+        "California",
+        "Oregon",
+        "Washington"
+    ],
+    "52": [
+        "Bhutan",
+        "Cambodia",
+        "Laos",
+        "Myanmar",
+        "Thailand"
+    ],
+    "53": [
+        "idk"
+    ],
+    "54": [
+        "New Brunswick",
+        "Newfoundland and Labrador",
+        "Nova Scotia",
+        "Prince Edward Island"
+    ],
+    "55": [
+        "Earth",
+        "Mars"
+    ],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "pineapple"
+    ],
+    "58": [
+        "violin",
+        "viola"
+    ],
+    "59": [
+        "idk"
+    ],
+    "60": [
+        "cyan",
+        "magenta",
+        "yellow",
+        "key"
+    ],
+    "61": [
+        "Brazil",
+        "Argentina",
+        "Uruguay"
+    ],
+    "62": [
+        "idk"
+    ],
+    "63": [
+        "British Virgin Islands",
+        "El Salvador",
+        "Marshall Islands",
+        "Micronesia",
+        "Palau",
+        "Turks and Caicos Islands",
+        "United States of America"
+    ],
+    "64": [
+        "idk"
+    ],
+    "65": [
+        "O negative"
+    ],
+    "66": [
+        "Johann Sebastian Bach",
+        "George Frideric Handel",
+        "Henry Purcell",
+        "Giovanni Battista Pergolesi",
+        "Antonio Vivaldi"
+    ],
+    "67": [
+        "France",
+        "Italy",
+        "Germany",
+        "Switzerland",
+        "Sweden",
+        "England",
+        "Spain",
+        "Russia"
+    ],
+    "68": [
+        "I do not know."
+    ],
+    "69": [
+        "Physics",
+        "Chemistry",
+        "Physiology or Medicine",
+        "Literature",
+        "Peace"
+    ],
+    "70": [
+        "Orange",
+        "Green",
+        "Violet"
+    ],
+    "71": [
+        "5",
+        "10",
+        "20",
+        "50",
+        "100",
+        "200",
+        "500 euro banknotes"
+    ],
+    "72": [
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Southern Ocean"
+    ],
+    "73": [
+        "Polar bear"
+    ],
+    "74": [
+        "Islam"
+    ],
+    "75": [
+        "Figure Skating",
+        "Short Track Speed Skating",
+        "Speed Skating",
+        "Ice Hockey"
+    ],
+    "76": [
+        "Chile",
+        "Peru"
+    ],
+    "77": [
+        "idk"
+    ],
+    "78": [
+        "England",
+        "Scotland",
+        "Wales"
+    ],
+    "79": [
+        "Pyramids from Giza",
+        "Ancient Thebes with its Necropolis",
+        "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+        "Nubian Monuments from Abu Simbel to Philae"
+    ],
+    "80": [
+        "idk"
+    ],
+    "81": [
+        "Austria",
+        "Azerbaijan",
+        "Belgium",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Luxembourg",
+        "Netherlands",
+        "Norway",
+        "Portugal",
+        "Russia",
+        "Serbia",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Ukraine",
+        "United Kingdom"
+    ],
+    "82": [
+        "Auvergne-Rhône-Alpes",
+        "Bourgogne-Franche-Comté",
+        "Brittany",
+        "Centre-Val de Loire",
+        "Corsica",
+        "Grand Est",
+        "Hauts-de-France",
+        "Île-de-France",
+        "Normandy",
+        "Nouvelle-Aquitaine",
+        "Occitanie",
+        "Pays de la Loire",
+        "Provence-Alpes-Côte d'Azur"
+    ],
+    "83": [
+        "painter",
+        "sculptor",
+        "architect"
+    ],
+    "84": [
+        "Academy Award for Best Actress",
+        "Academy Award for Best Supporting Actress"
+    ],
+    "85": [
+        "Albus Dumbledore",
+        "Rubeus Hagrid",
+        "Severus Snape",
+        "Minerva McGonagall"
+    ],
+    "86": [
+        "Steve Wozniak"
+    ],
+    "87": [
+        "Italy",
+        "Romania",
+        "Finland"
+    ],
+    "88": [
+        "Swiss Federal Polytechnic School"
+    ],
+    "89": [
+        "Flowers in the Dirt",
+        "Flaming Pie",
+        "Driving Rain",
+        "Chaos and Creation in the Backyard",
+        "Memory Almost Full",
+        "Egypt Station"
+    ],
+    "90": [
+        "idk"
+    ],
+    "91": [
+        "Mario Puzo"
+    ],
+    "92": [
+        "Germany",
+        "Belgium",
+        "Czechoslovakia",
+        "France",
+        "Greece",
+        "Italy",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Yugoslavia",
+        "idk"
+    ],
+    "93": [
+        "Bachelor of Arts"
+    ],
+    "94": [
+        "Portugal",
+        "Equatorial Guinea",
+        "Mozambique",
+        "Angola",
+        "Cape Verde",
+        "Guinea-Bissau",
+        "Sao Tome and Principe",
+        "East Timor"
+    ],
+    "95": [
+        "Campania",
+        "Emilia-Romagna",
+        "Lazio",
+        "Lombardy",
+        "Piedmont",
+        "Sicily",
+        "Tuscany",
+        "Veneto"
+    ],
+    "96": [
+        "Moscow, Russia"
+    ],
+    "97": [
+        "idk"
+    ],
+    "98": [
+        "Marie Curie"
+    ],
+    "99": [
+        "red",
+        "yellow"
+    ],
+    "100": [
+        "Keith Richards",
+        "Ronnie Wood"
+    ],
+    "101": [
+        "Bill Gates"
+    ],
+    "102": [
+        "Catalonia",
+        "Balearic Islands",
+        "Valencian Community"
+    ],
+    "103": [
+        "Jonathan Nolan",
+        "Christopher Nolan",
+        "David S. Goyer"
+    ],
+    "104": [
+        "Korea",
+        "Vietnam",
+        "India",
+        "Russia",
+        "idk"
+    ],
+    "105": [
+        "Marie Curie",
+        "Hideki Yukawa",
+        "Dennis Gabor",
+        "Ivar Giaever",
+        "Leo Esaki",
+        "Klaus von Klitzing",
+        "Yoichiro Nambu",
+        "Peter Higgs"
+    ],
+    "106": [
+        "Nichelle Nichols",
+        "Majel Barrett"
+    ],
+    "107": [
+        "ABC Television Group",
+        "BAMTech",
+        "ESPN Inc.",
+        "Freeform",
+        "FX Networks",
+        "Marvel Entertainment",
+        "Pixar",
+        "Searchlight Pictures",
+        "The Walt Disney Studios",
+        "Walt Disney Parks, Experiences and Products",
+        "Walt Disney Direct-to-Consumer and International"
+    ],
+    "108": [
+        "Leonardo DiCaprio",
+        "Michael Caine",
+        "idk"
+    ],
+    "109": [
+        "idk"
+    ],
+    "110": [
+        "Jeremy Zuckerman"
+    ],
+    "111": [
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Belarus",
+        "Ukraine",
+        "Kazakhstan"
+    ],
+    "112": [
+        "idk"
+    ],
+    "113": [
+        "idk"
+    ],
+    "114": [
+        "Michelle MacLaren",
+        "Adam Bernstein",
+        "Vince Gilligan",
+        "Colin Bucksey",
+        "Michael Slovis",
+        "Peter Gould",
+        "Rian Johnson",
+        "Scott Winant",
+        "Bryan Cranston",
+        "Terry McDonough",
+        "idk",
+        "idk"
+    ],
+    "115": [
+        "Berlin",
+        "Brandenburg",
+        "Mecklenburg-Vorpommern",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Thuringia"
+    ],
+    "116": [
+        "Egypt",
+        "Libya"
+    ],
+    "117": [
+        "Kurt Cobain",
+        "Krist Novoselic",
+        "Chad Channing"
+    ],
+    "118": [
+        "Grover Cleveland",
+        "Woodrow Wilson",
+        "Franklin Delano Roosevelt",
+        "Harry S. Truman",
+        "Bill Clinton",
+        "Barack Obama"
+    ],
+    "119": [
+        "Tamil Nadu"
+    ],
+    "120": [
+        "William McKinley",
+        "Theodore Roosevelt",
+        "William Howard Taft",
+        "Warren G. Harding",
+        "Calvin Coolidge",
+        "Herbert Hoover",
+        "Dwight D. Eisenhower",
+        "Richard Nixon",
+        "Gerald Ford",
+        "Ronald Reagan",
+        "George H. W. Bush",
+        "George W. Bush"
+    ],
+    "121": [
+        "Antananarivo",
+        "Monrovia"
+    ],
+    "122": [
+        "Mount Everest",
+        "K2",
+        "Kangchenjunga",
+        "Lhotse",
+        "Makalu",
+        "Cho Oyu",
+        "Dhaulagiri One",
+        "Manaslu",
+        "Nanga Parbat",
+        "Annapurna One",
+        "Shishapangma"
+    ],
+    "123": [
+        "Leopold the First",
+        "Leopold the Second",
+        "Albert the First",
+        "Leopold the Third",
+        "Baudouin",
+        "Albert the Second"
+    ],
+    "124": [
+        "obtuse triangle"
+    ],
+    "125": [
+        "South African Sign Language"
+    ],
+    "126": [
+        "New Year's Day",
+        "Martin Luther King, Junior's Birthday",
+        "Washington's Birthday",
+        "Memorial Day",
+        "Juneteenth National Independence Day",
+        "Independence Day",
+        "Columbus Day",
+        "Veterans Day",
+        "Thanksgiving Day",
+        "Christmas Day"
+    ],
+    "127": [
+        "Basque",
+        "Catalan",
+        "Galician",
+        "Aranese"
+    ],
+    "128": [
+        "China",
+        "India",
+        "Indonesia",
+        "Pakistan",
+        "Bangladesh",
+        "Japan"
+    ],
+    "129": [
+        "idk"
+    ],
+    "130": [
+        "idk"
+    ],
+    "131": [
+        "Portugal",
+        "South Africa",
+        "Uganda",
+        "Kenya",
+        "Czech Republic",
+        "Ecuador",
+        "idk"
+    ],
+    "132": [
+        "Metamorphic rock"
+    ],
+    "133": [
+        "Andorra",
+        "Belgium",
+        "France",
+        "Italy",
+        "Luxembourg",
+        "Malta",
+        "Monaco",
+        "Portugal",
+        "Romania",
+        "San Marino",
+        "Spain",
+        "Switzerland"
+    ],
+    "134": [
+        "idk"
+    ],
+    "135": [
+        "C",
+        "E",
+        "G"
+    ],
+    "136": [
+        "Darmanitan (Zen Mode)"
+    ],
+    "137": [
+        "Right atrium",
+        "Right ventricle"
+    ],
+    "138": [
+        "idk"
+    ],
+    "139": [
+        "2"
+    ],
+    "140": [
+        "James A. Garfield"
+    ],
+    "141": [
+        "E"
+    ],
+    "142": [
+        "1912 Summer Olympics",
+        "1924 Summer Olympics",
+        "1932 Summer Olympics",
+        "1936 Summer Olympics"
+    ],
+    "143": [
+        "Argentina",
+        "Chile"
+    ],
+    "144": [
+        "Antigua and Barbuda",
+        "Bahamas",
+        "Barbados",
+        "Cuba",
+        "Dominica",
+        "Dominican Republic",
+        "Grenada",
+        "Haiti",
+        "Jamaica",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Trinidad and Tobago"
+    ],
+    "145": [
+        "idk"
+    ],
+    "146": [
+        "China",
+        "Pakistan",
+        "idk"
+    ],
+    "147": [
+        "Kuwait",
+        "Oman",
+        "Qatar",
+        "Saudi Arabia",
+        "United Arab Emirates",
+        "Yemen"
+    ],
+    "148": [
+        "idk"
+    ],
+    "149": [
+        "Democratic Party",
+        "Union of the Centre",
+        "Alliance for Italy"
+    ]
+}
