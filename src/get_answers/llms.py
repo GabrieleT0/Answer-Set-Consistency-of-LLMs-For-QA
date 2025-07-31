@@ -22,7 +22,7 @@ ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
 
 azure_openai_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
-azure_api_version= os.getenv('AZURE_API_VERSION', '2023-06-01-preview')
+azure_api_version= os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 
 azure_models = ["gpt-4o","o3","o1"]
 openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']

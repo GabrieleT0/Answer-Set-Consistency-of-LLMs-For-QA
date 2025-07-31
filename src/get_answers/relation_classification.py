@@ -8,6 +8,7 @@ import yaml
 import datetime
 import logging
 
+
 # Conditional logging
 def setup_logger():
     log_dir = os.path.join(os.path.dirname(__file__), "logs")
@@ -43,6 +44,9 @@ with open(PROMPT_PATH, "r", encoding="utf-8") as f:
 def relation_identification(llm_model, language, dataset, logger):
     dataset_name = dataset.split('.')[0]
     tsv_file = root_dir + f"/data/Dataset/{language}/{dataset}"
+    PROMPTS_equal = PROMPTS["relation_classification"][language]["template_classification"]
+    PROMPTS_minus = PROMPTS["relation_classification_minus"][language]["template_classification"]
+    PROMPTS_all = PROMPTS["relation_classification_all"][language]["template_classification"]
     # Load questions
     question_pairs = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
@@ -61,42 +65,34 @@ def relation_identification(llm_model, language, dataset, logger):
         
         prompt_template_1 = PromptTemplate(
             input_variables=["q1", "q2"],
-            template=PROMPTS["relation_classification"][language]["template_classification"]
+            template=PROMPTS_equal
         )
 
         prompt_template_2 = PromptTemplate(
             input_variables=["q1", "q2", "q3"],
-            template=PROMPTS["relation_classification_minus"][language]["template_classification"]
+            template=PROMPTS_minus
         )
         prompt_template_3 = PromptTemplate(
             input_variables=["q1", "q2", "q3"],
-            template=PROMPTS["relation_classification_all"][language]["template_classification"]
+            template=PROMPTS_all
         )
         # ?q1=q2
-        llms = PromptLLMS(llm_model, prompt_template_1, q1, q2)
-        q1_q2 = llms.execute_two_question()
+        q1_q2 = PromptLLMS(llm_model, prompt_template_1, q1, q2).execute_two_question()
+        q1_q3 = PromptLLMS(llm_model, prompt_template_1, q1, q3).execute_two_question()
+        q1_q4 = PromptLLMS(llm_model, prompt_template_1, q1, q4).execute_two_question()
+        q3_q4 = PromptLLMS(llm_model, prompt_template_1, q3, q4).execute_two_question()
 
-        # llms = PromptLLMS(llm_model, prompt_template_1, q1, q3)
-        llms.question1 = q3
-        q1_q3 = llms.execute_two_question()
+        q1_q34 = PromptLLMS(llm_model, prompt_template_2, q1, q3, q4).execute_three_question()
 
-        # llms = PromptLLMS(llm_model, prompt_template_1, q1, q4)
-        llms.question1 = q4
-        q1_q4 = llms.execute_two_question()
-   
-        # llms = PromptLLMS(llm_model, prompt_template_1, q3, q4)
-        llms.question = q3
-        q3_q4 = llms.execute_two_question()
-
-        llms2 = PromptLLMS(llm_model, prompt_template_2, q1, q3, q4)
-        q1_q34 = llms2.execute_three_question()
-
-        llms3 = PromptLLMS(llm_model, prompt_template_3, q1, q3, q4)
-        relations = llms3.execute_three_question()
+        relations = PromptLLMS(llm_model, prompt_template_3, q1, q3, q4).execute_three_question()
         relations = utils.convert_response_to_set(relations)
         answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34, list(relations)]
 
         logger.info(f"Question {index + 1}")
+        logger.info(f"Q1: {q1}")
+        logger.info(f"Q2: {q2}")
+        logger.info(f"Q3: {q3}")
+        logger.info(f"Q4: {q4}")
         logger.info(f"LLM Response: {answers[index]}")
         
         with open(output_filename, 'w', encoding='utf-8') as f:
@@ -107,7 +103,7 @@ def main(config = None, logger = setup_logger()):
     
     if config == None: 
         config = {
-            "datasets":['spinach.tsv'],
+            "datasets":['synthetic.tsv'],
             "llm_models": ["gpt-4o"],
             "languages": ['en']
         }

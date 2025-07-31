@@ -56,20 +56,20 @@ relation_classification:
       In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
       Return me all answers as a list separated by the symbol '|' don' add any other text.
     template_classification: |
-      I prompt you with two questions q1, q2. You need to identify which of the following logical relations holds between the sets of answers for q1 and q2:
-        - Equivalence  
-        - Contains
-        - ContainedBy  
-        - Disjoint  
-        - Overlap
-        - Unknown  
+      You are given two questions, q1 and q2.
+      Return only one of the following based on how the **sets of correct answers** relate:
+        - Equivalence (both answer sets are exactly the same)
+        - Contains (all answers to q2 are included in q1)
+        - ContainedBy (all answers to q1 are included in q2)
+        - Overlap (some answers overlap but neither fully contains the other)
+        - Disjoint (no shared answers at all)
+      Here are the two questions:
+      q1: {q1}  
+      q2: {q2}  
 
-      These are the two questions:
-        q1: {q1}  
-        q2: {q2}  
-      Return only the first relation that q1 and q2 holds. 
-      Do not include any additional explanation.
-        
+      Return **only** the name of the most appropriate relation from the list above. 
+      Do **not** provide any explanation or commentary.
+
     hint_prompt: "Remember that {relation} holds between the answers for this question and the previous question."
 
   es:
@@ -147,7 +147,7 @@ relation_classification_all:
       Each question is associated with a set of answers. Your task is to identify the logical relation between the concepts of questions based on their answer sets.
       
       Compare the relationship between the answers to:
-      1. q1 and q2.  
+      1. q1 and q2. 
       2. q1 and q3.  
       3. q2 and q3.  
       4. q1 and (q2+q3)
@@ -160,12 +160,12 @@ relation_classification_all:
       q2: {q2}  
       q3: {q3}
       
-      For each comparison, use **one of the following labels**:
-      - Equivalent  
-      - Contains  
-      - ContainedBy  
-      - Disjoint  
-      - Overlap
+      For each comparison, use **one of the following exclusive labels**:
+      - Equivalent: the results of q1 are Equivalent to q2 
+      - Contains: the results of q1 contains q2 
+      - ContainedBy: the results of q1 are contained by q2 
+      - Disjoint: the results of q1 disjoint with q2 
+      - Overlap: the results of q1 overlap with q2 but not equivalent
 
       Return a single line with exactly five relation labels, separated by the '|' symbol, in the order above.
       Do **not** include any explanation or extra text.

@@ -1,0 +1,55 @@
+2025-07-31 12:09:54,216 - INFO - Processing model: gpt-4o for language: en
+2025-07-31 12:09:58,067 - INFO - Question 18
+2025-07-31 12:09:58,068 - INFO - Q1: What automotive marques does the Volkswagen Group own?
+2025-07-31 12:09:58,068 - INFO - Q2: Which car brands are part of the Volkswagen Group?
+2025-07-31 12:09:58,068 - INFO - Q3: What luxury automotive marques does the Volkswagen Group own?
+2025-07-31 12:09:58,068 - INFO - Q4: What automotive marques does the Volkswagen Group own excluding the luxury automotive marques?
+2025-07-31 12:09:58,068 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:00,296 - INFO - Question 19
+2025-07-31 12:10:00,296 - INFO - Q1: Name the women married to Henry VIII.
+2025-07-31 12:10:00,297 - INFO - Q2: Who were the wives of King Henry VIII?
+2025-07-31 12:10:00,297 - INFO - Q3: List the women married to Henry VIII who bore him children.
+2025-07-31 12:10:00,297 - INFO - Q4: List the women married to Henry VIII who did not bear him children.
+2025-07-31 12:10:00,297 - INFO - LLM Response: ['Disjoint', 'Contains', 'Disjoint', 'Contains', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:02,436 - INFO - Question 20
+2025-07-31 12:10:02,437 - INFO - Q1: Which extant countries have regions that were part of the British Empire?
+2025-07-31 12:10:02,437 - INFO - Q2: What existing countries used to belong, in whole or part, to the British Empire?
+2025-07-31 12:10:02,437 - INFO - Q3: Which extant countries in the Commonwealth have regions that were part of the British Empire?
+2025-07-31 12:10:02,437 - INFO - Q4: Which extant countries not in the Commonwealth have regions that were part of the British Empire?
+2025-07-31 12:10:02,437 - INFO - LLM Response: ['Disjoint', 'Contains', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:05,963 - INFO - Question 21
+2025-07-31 12:10:05,963 - INFO - Q1: List the musicians who were part of The Beatles.
+2025-07-31 12:10:05,963 - INFO - Q2: Who were the members of the band The Beatles?
+2025-07-31 12:10:05,963 - INFO - Q3: List the musicians who were part of The Beatles but left before signing for EMI.
+2025-07-31 12:10:05,963 - INFO - Q4: List the musicians who were part of The Beatles excluding those who left before signing for EMI.
+2025-07-31 12:10:05,963 - INFO - LLM Response: ['Contains', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:08,270 - INFO - Question 22
+2025-07-31 12:10:08,270 - INFO - Q1: What countries are enclaves?
+2025-07-31 12:10:08,270 - INFO - Q2: Which enclaves are sovereign states?
+2025-07-31 12:10:08,270 - INFO - Q3: Which enclaves within Italy are sovereign states?
+2025-07-31 12:10:08,270 - INFO - Q4: Which sovereign states are enclaves but not within Italy?
+2025-07-31 12:10:08,270 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:10,077 - INFO - Question 23
+2025-07-31 12:10:10,077 - INFO - Q1: What are the multiple-time host cities of the Summer Olympics?
+2025-07-31 12:10:10,077 - INFO - Q2: Which cities have hosted the Summer Olympic Games more than once?
+2025-07-31 12:10:10,077 - INFO - Q3: What are the multiple-time host cities of the Summer Olympics in Europe?
+2025-07-31 12:10:10,077 - INFO - Q4: What are the multiple-time host cities of the Summer Olympics excluding those in Europe?
+2025-07-31 12:10:10,077 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:12,076 - INFO - Question 24
+2025-07-31 12:10:12,076 - INFO - Q1: What is a list of brands under the LVMH corporate umbrella?
+2025-07-31 12:10:12,076 - INFO - Q2: Which brands are owned by LVMH?
+2025-07-31 12:10:12,076 - INFO - Q3: What is a list of watch brands under the LVMH corporate umbrella?
+2025-07-31 12:10:12,076 - INFO - Q4: What is a list of brands under the LVMH corporate umbrella excluding watch brands?
+2025-07-31 12:10:12,076 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:14,031 - INFO - Question 25
+2025-07-31 12:10:14,031 - INFO - Q1: What movies were awarded Best Picture at the Oscars between 1990 and 1999 inclusive?
+2025-07-31 12:10:14,031 - INFO - Q2: Which films won the Academy Award for Best Picture during the 1990s?
+2025-07-31 12:10:14,031 - INFO - Q3: What movies awarded Best Picture at the Oscars in the 1990s are entirely set before 1900?
+2025-07-31 12:10:14,031 - INFO - Q4: What movies awarded Best Picture at the Oscars in the 1990s are set (in whole or part) during or after 1900?
+2025-07-31 12:10:14,031 - INFO - LLM Response: ['Disjoint', 'ContainedBy', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
+2025-07-31 12:10:16,430 - INFO - Question 26
+2025-07-31 12:10:16,431 - INFO - Q1: List the genera belonging to the cat family (Felidae).
+2025-07-31 12:10:16,431 - INFO - Q2: What are the genera within the Felidae family?
+2025-07-31 12:10:16,431 - INFO - Q3: List the genera belonging to the big cat subgroup of the cat family (Felidae).
+2025-07-31 12:10:16,431 - INFO - Q4: List the genera belonging to the cat family (Felidae) excluding those belonging to the big cat subgroup.
+2025-07-31 12:10:16,431 - INFO - LLM Response: ['Disjoint', 'Disjoint', 'Disjoint', 'Disjoint', 'Unknown', ['None', 'None', 'None', 'None', 'None']]
