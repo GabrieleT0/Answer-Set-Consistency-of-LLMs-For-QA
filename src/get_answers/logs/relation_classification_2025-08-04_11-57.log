@@ -1,0 +1,43 @@
+2025-08-04 11:57:18,894 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 11:57:20,819 - INFO - Question 23
+2025-08-04 11:57:20,820 - INFO - Q1: What are the multiple-time host cities of the Summer Olympics?
+2025-08-04 11:57:20,820 - INFO - Q2: Which cities have hosted the Summer Olympic Games more than once?
+2025-08-04 11:57:20,820 - INFO - Q3: What are the multiple-time host cities of the Summer Olympics in Europe?
+2025-08-04 11:57:20,820 - INFO - Q4: What are the multiple-time host cities of the Summer Olympics excluding those in Europe?
+2025-08-04 11:57:20,820 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalent']
+2025-08-04 11:57:22,251 - INFO - Question 24
+2025-08-04 11:57:22,251 - INFO - Q1: What is a list of brands under the LVMH corporate umbrella?
+2025-08-04 11:57:22,251 - INFO - Q2: Which brands are owned by LVMH?
+2025-08-04 11:57:22,251 - INFO - Q3: What is a list of watch brands under the LVMH corporate umbrella?
+2025-08-04 11:57:22,251 - INFO - Q4: What is a list of brands under the LVMH corporate umbrella excluding watch brands?
+2025-08-04 11:57:22,251 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalent']
+2025-08-04 11:57:23,376 - INFO - Question 25
+2025-08-04 11:57:23,377 - INFO - Q1: What movies were awarded Best Picture at the Oscars between 1990 and 1999 inclusive?
+2025-08-04 11:57:23,377 - INFO - Q2: Which films won the Academy Award for Best Picture during the 1990s?
+2025-08-04 11:57:23,377 - INFO - Q3: What movies awarded Best Picture at the Oscars in the 1990s are entirely set before 1900?
+2025-08-04 11:57:23,377 - INFO - Q4: What movies awarded Best Picture at the Oscars in the 1990s are set (in whole or part) during or after 1900?
+2025-08-04 11:57:23,377 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'ContainedBy']
+2025-08-04 11:57:24,938 - INFO - Question 26
+2025-08-04 11:57:24,939 - INFO - Q1: List the genera belonging to the cat family (Felidae).
+2025-08-04 11:57:24,939 - INFO - Q2: What are the genera within the Felidae family?
+2025-08-04 11:57:24,939 - INFO - Q3: List the genera belonging to the big cat subgroup of the cat family (Felidae).
+2025-08-04 11:57:24,939 - INFO - Q4: List the genera belonging to the cat family (Felidae) excluding those belonging to the big cat subgroup.
+2025-08-04 11:57:24,939 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalent']
+2025-08-04 11:57:27,595 - INFO - Question 27
+2025-08-04 11:57:27,595 - INFO - Q1: Who are the female laureates of the Nobel Prize in Literature?
+2025-08-04 11:57:27,595 - INFO - Q2: What women have won a Nobel Prize in Literature?
+2025-08-04 11:57:27,595 - INFO - Q3: Which female laureates of the Nobel Prize in Literature shared their prize?
+2025-08-04 11:57:27,595 - INFO - Q4: Which female laureates of the Nobel Prize in Literature did not share their prize?
+2025-08-04 11:57:27,595 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalent']
+2025-08-04 11:57:29,396 - INFO - Question 28
+2025-08-04 11:57:29,396 - INFO - Q1: What countries are in South America but not Latin America?
+2025-08-04 11:57:29,396 - INFO - Q2: Which South American countries are not considered part of Latin America?
+2025-08-04 11:57:29,396 - INFO - Q3: Which South American countries are not considered part of Latin America and have Dutch as an official language?
+2025-08-04 11:57:29,396 - INFO - Q4: Which South American countries are not considered part of Latin America and do not have Dutch as an official language?
+2025-08-04 11:57:29,396 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 11:57:30,920 - INFO - Question 29
+2025-08-04 11:57:30,921 - INFO - Q1: What are the last five chemical elements discovered?
+2025-08-04 11:57:30,921 - INFO - Q2: What are the five most recent elements to have been discovered?
+2025-08-04 11:57:30,921 - INFO - Q3: Which of the last five chemical elements to have been discovered are halogens?
+2025-08-04 11:57:30,921 - INFO - Q4: Which of the last five chemical elements to have been discovered are not halogens?
+2025-08-04 11:57:30,921 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalent']

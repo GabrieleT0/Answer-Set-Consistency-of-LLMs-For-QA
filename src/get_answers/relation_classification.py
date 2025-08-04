@@ -1,5 +1,6 @@
 from langchain_core.prompts import PromptTemplate
 from llms import PromptLLMS
+import llms
 import os
 import csv
 import utils
@@ -7,7 +8,8 @@ import json
 import yaml
 import datetime
 import logging
-
+from langchain.chains import ConversationChain
+from langchain.memory import ConversationBufferMemory
 
 # Conditional logging
 def setup_logger():
@@ -46,7 +48,7 @@ def relation_identification(llm_model, language, dataset, logger):
     tsv_file = root_dir + f"/data/Dataset/{language}/{dataset}"
     PROMPTS_equal = PROMPTS["relation_classification"][language]["template_classification"]
     PROMPTS_minus = PROMPTS["relation_classification_minus"][language]["template_classification"]
-    PROMPTS_all = PROMPTS["relation_classification_all"][language]["template_classification"]
+    # PROMPTS_all = PROMPTS["relation_classification_all"][language]["template_classification"]
     # Load questions
     question_pairs = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
@@ -62,31 +64,18 @@ def relation_identification(llm_model, language, dataset, logger):
     for index, (q1, q2, q3, q4) in enumerate(question_pairs):
         if str(index) in answers:
             continue
-        
-        prompt_template_1 = PromptTemplate(
-            input_variables=["q1", "q2"],
-            template=PROMPTS_equal
-        )
-
-        prompt_template_2 = PromptTemplate(
-            input_variables=["q1", "q2", "q3"],
-            template=PROMPTS_minus
-        )
-        prompt_template_3 = PromptTemplate(
-            input_variables=["q1", "q2", "q3"],
-            template=PROMPTS_all
-        )
+        chat = llms.return_chat_model(llm_model)
+        memory = ConversationBufferMemory()
+        conversation = ConversationChain(llm=chat, memory=memory)
         # ?q1=q2
-        q1_q2 = PromptLLMS(llm_model, prompt_template_1, q1, q2).execute_two_question()
-        q1_q3 = PromptLLMS(llm_model, prompt_template_1, q1, q3).execute_two_question()
-        q1_q4 = PromptLLMS(llm_model, prompt_template_1, q1, q4).execute_two_question()
-        q3_q4 = PromptLLMS(llm_model, prompt_template_1, q3, q4).execute_two_question()
+        q1_q2 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q2))
+        q1_q3 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q3))
+        q1_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q4))
+        q3_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q3, q2=q4))
 
-        q1_q34 = PromptLLMS(llm_model, prompt_template_2, q1, q3, q4).execute_three_question()
+        q1_q34 = conversation.predict(input=PROMPTS_minus.format(q1=q1, q2=q3, q3 = q4))
 
-        relations = PromptLLMS(llm_model, prompt_template_3, q1, q3, q4).execute_three_question()
-        relations = utils.convert_response_to_set(relations)
-        answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34, list(relations)]
+        answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
 
         logger.info(f"Question {index + 1}")
         logger.info(f"Q1: {q1}")

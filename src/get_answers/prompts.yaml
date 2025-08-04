@@ -56,13 +56,15 @@ relation_classification:
       In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
       Return me all answers as a list separated by the symbol '|' don' add any other text.
     template_classification: |
-      You are given two questions, q1 and q2.
-      Return only one of the following based on how the **sets of correct answers** relate:
-        - Equivalence (both answer sets are exactly the same)
-        - Contains (all answers to q2 are included in q1)
-        - ContainedBy (all answers to q1 are included in q2)
-        - Overlap (some answers overlap but neither fully contains the other)
-        - Disjoint (no shared answers at all)
+      You are given two questions, q1 and q2. 
+      Your task is to determine the logical relationship between their respective sets of correct answers. 
+      Choose only one of the following relations:
+      - Equivalence: The answer sets of q1 and q2 are exactly the same.
+      - Contains: All answers to q2 are also answers to q1, but q1 includes additional answers. (q1 ⊃ q2)
+      - ContainedBy: All answers to q1 are also answers to q2, but q2 includes additional answers. (q1 ⊂ q2)
+      - Overlap: q1 and q2 share some, but not all, answers. Neither fully contains the other.
+      - Disjoint: q1 and q2 have no answers in common.
+
       Here are the two questions:
       q1: {q1}  
       q2: {q2}  
