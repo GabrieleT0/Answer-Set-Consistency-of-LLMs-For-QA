@@ -1,0 +1,145 @@
+2025-08-04 13:11:09,104 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 13:11:10,494 - INFO - Question 1: In which countries are tepuis found? | In which countries are tepuis located?
+2025-08-04 13:11:10,494 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:10,832 - INFO - Question 2: In which countries is Elon Musk a citizen? | What citizenships does Elon Musk hold?
+2025-08-04 13:11:10,833 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:11,238 - INFO - Question 3: In which journals has Amrapali Zaveri published? | In what journals has Amrapali Zaveri published?
+2025-08-04 13:11:11,239 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:11,479 - INFO - Question 4: In which movies did Al Pacino and Robert de Niro appear together? | In which films do Pacino and de Niro costar?
+2025-08-04 13:11:11,480 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:11,872 - INFO - Question 5: In which museums can I see paintings by El Greco? | Which museums display artworks by El Greco?
+2025-08-04 13:11:11,873 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:12,232 - INFO - Question 6: Kim Deal played with which bands? | With which music groups did Kim Deal play?
+2025-08-04 13:11:12,232 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:12,651 - INFO - Question 7: List astronauts who completed degrees at MIT. | Which astronauts completed degrees with the Massachusetts Institute of Technology?
+2025-08-04 13:11:12,651 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:12,959 - INFO - Question 8: List the richest 10 persons in the world | Who are the ten richest people globally?
+2025-08-04 13:11:12,959 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:13,261 - INFO - Question 9: List the top 10 largest countries in Africa by area. | What are the ten most expansive African countries?
+2025-08-04 13:11:13,261 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:13,546 - INFO - Question 10: List the top ten largest countries in Africa by population. | What are the ten most populous African countries?
+2025-08-04 13:11:13,546 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:13,920 - INFO - Question 11: Which countries are part of the G20? | Who is in the G20?
+2025-08-04 13:11:13,921 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:14,305 - INFO - Question 12: What are the official languages of the European Union? | What are the official languages of the EU?
+2025-08-04 13:11:14,305 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:14,905 - INFO - Question 13: What are the subsidiaries of Meta Platforms? | What subsidiaries does Meta have?
+2025-08-04 13:11:14,906 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:15,189 - INFO - Question 14: What are the ten tallest mountains in the world? | List the 10 highest mountains globally
+2025-08-04 13:11:15,189 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:15,599 - INFO - Question 15: What binary neutron stars are in the constellation Scorpius? | What binary neutron stars are found in Scorpius?
+2025-08-04 13:11:15,599 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:15,882 - INFO - Question 16: What buildings are named after JFK? | What buildings are named after John F. Kennedy?
+2025-08-04 13:11:15,883 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:16,158 - INFO - Question 17: What chocolate bars are made by Nestlé? | Which chocolate candy bars do Nestle manufacture?
+2025-08-04 13:11:16,158 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:16,417 - INFO - Question 18: What cities are twinned with Port-au-Prince? | With which cities is Port-au-Prince twinned?
+2025-08-04 13:11:16,418 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:16,842 - INFO - Question 19: What collections outside of Africa exhibit Benin Bronzes? | Which locations not in Africa show Benin Bronzes?
+2025-08-04 13:11:16,842 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:17,293 - INFO - Question 20: What colors are in the French flag? | What are the colours of the flag of France?
+2025-08-04 13:11:17,294 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:17,665 - INFO - Question 21: What countries are in Europe? | List all European countries
+2025-08-04 13:11:17,666 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:17,931 - INFO - Question 22: What countries are in the EU? | List all European Union countries
+2025-08-04 13:11:17,932 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:18,315 - INFO - Question 23: What countries border Ghana? | What countries are neighbors of Ghana?
+2025-08-04 13:11:18,315 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:18,681 - INFO - Question 24: What diseases are associated with the gene FGF14? | What diseases relate to FGF14?
+2025-08-04 13:11:18,682 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:18,973 - INFO - Question 25: What documentaries are about whaling? | List whaling documentaries
+2025-08-04 13:11:18,973 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:19,393 - INFO - Question 26: What drinks are from Africa? | List African drinks
+2025-08-04 13:11:19,394 - INFO - LLM Response: ['ContainedBy']
+2025-08-04 13:11:19,694 - INFO - Question 27: What elementary particles interact with the strong force and the weak force? | What elementary particles interact with the weak force and the strong force?
+2025-08-04 13:11:19,694 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:20,008 - INFO - Question 28: What elementary particles interact with the weak force? | Which fundamental particles are mediated by the weak interaction?
+2025-08-04 13:11:20,008 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:20,512 - INFO - Question 29: What movies were directed by Mira Nair? | What films were directed by Mira Nair?
+2025-08-04 13:11:20,512 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:20,768 - INFO - Question 30: What hybrid species can have offspring? | Which hybrid species are fertile?
+2025-08-04 13:11:20,768 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:21,163 - INFO - Question 31: What languages did Kofi Annan speak? | What languages did Kofi Annan know?
+2025-08-04 13:11:21,163 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:21,547 - INFO - Question 32: What montes form the Tharsis Montes? | List the Tharsis Montes
+2025-08-04 13:11:21,547 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:21,841 - INFO - Question 33: What movies are in the Matrix series? | List Matrix movies
+2025-08-04 13:11:21,842 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:22,104 - INFO - Question 34: What museums are in Addis Ababa? | What museums are located in Addis Ababa?
+2025-08-04 13:11:22,105 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:22,847 - INFO - Question 35: What novels were written by Harper Lee? | What novels are by Harper Lee?
+2025-08-04 13:11:22,847 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:23,223 - INFO - Question 36: What officially recognized dwarf planets orbit the Sun? | What dwarf planets are confirmed to orbit the Sun?
+2025-08-04 13:11:23,223 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:23,477 - INFO - Question 37: What Ogham stones can be found in County Clare? | What Ogham stones does Co. Clare have?
+2025-08-04 13:11:23,477 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:23,953 - INFO - Question 38: What operas are based on works by Alexander Pushkin? | What operas are based on works by Pushkin?
+2025-08-04 13:11:23,953 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:24,205 - INFO - Question 39: What other buildings have the same architect as the Tsentrosoyuz Building? | What other buildings were by the same architect as the Tsentrosoyuz Building?
+2025-08-04 13:11:24,205 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:24,453 - INFO - Question 40: What papers did Amrapali Zaveri publish? | What papers has Amrapali Zaveri published?
+2025-08-04 13:11:24,453 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:24,814 - INFO - Question 41: What poets were Holocaust victims? | Which Holocaust victims were poets?
+2025-08-04 13:11:24,814 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:25,099 - INFO - Question 42: What proteins are found in dendrites? | Dendrites contain what proteins?
+2025-08-04 13:11:25,099 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:25,372 - INFO - Question 43: What proteins are involved in retina homeostasis? | Which proteins play a role in retina homeostasis?
+2025-08-04 13:11:25,372 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:25,796 - INFO - Question 44: What radio stations broadcast specifically in Boston? | List radio stations broadcasting only in Boston
+2025-08-04 13:11:25,797 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:26,040 - INFO - Question 45: What religions promote vegetarianism? | What religions restrict eating meat?
+2025-08-04 13:11:26,040 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:26,412 - INFO - Question 46: What species are in the order Monotremata? | What species are monotremes?
+2025-08-04 13:11:26,412 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:26,789 - INFO - Question 47: What species are in the same family as Homo sapiens? | What species share the family of Homo sapiens?
+2025-08-04 13:11:26,789 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:27,049 - INFO - Question 48: What species are in the same genus as the monkeypox virus? | What viruses share the same genus as monkeypox?
+2025-08-04 13:11:27,049 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:27,518 - INFO - Question 49: What team sports use sticks? | In which sports do teams use sticks?
+2025-08-04 13:11:27,519 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:28,009 - INFO - Question 50: What video games are made by the developer of League of Legends? | What video games did the developers of League of Legends develop?
+2025-08-04 13:11:28,010 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:28,277 - INFO - Question 51: What volcanoes in Iceland are currently active? | List Icelandic active volcanos
+2025-08-04 13:11:28,278 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:28,749 - INFO - Question 52: What weapons were used in mass shootings in the United States? | List weapons used in American shootings sprees
+2025-08-04 13:11:28,750 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:29,146 - INFO - Question 53: What whisky distilleries are based in Ireland? | Give me all whiskey distilleries in Ireland
+2025-08-04 13:11:29,146 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:29,487 - INFO - Question 54: Where has Tim Berners-Lee worked? | Where has Tim Berners-Lee been employed?
+2025-08-04 13:11:29,487 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:29,843 - INFO - Question 55: Which actors are Scientologists? | What actors are followers of Scientology?
+2025-08-04 13:11:29,844 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:30,112 - INFO - Question 56: Which Asian universities have female rectors? | What universities in Asia have female rectors?
+2025-08-04 13:11:30,112 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:30,434 - INFO - Question 57: Which association football players have at least two citizenships? | Which football players have more than one nationality?
+2025-08-04 13:11:30,434 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:30,840 - INFO - Question 58: Which buildings are brutalist? | Which buildings exemplify brutalism?
+2025-08-04 13:11:30,841 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:31,325 - INFO - Question 59: Which buildings are funcionalist? | Which buildings exemplify functionalism?
+2025-08-04 13:11:31,326 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:31,695 - INFO - Question 60: Which carbon isotopes can decay into boron isotopes? | What isotopes of carbon can decay into isotopes of boron?
+2025-08-04 13:11:31,695 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:32,044 - INFO - Question 61: Which carbon isotopes can recursively decay into boron isotopes? | What isotopes of carbon can recursively decay into isotopes of boron?
+2025-08-04 13:11:32,044 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:32,327 - INFO - Question 62: Which chess openings are variations of the Sicilian Defence? | What openings can follow from a Sicilian?
+2025-08-04 13:11:32,328 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:32,737 - INFO - Question 63: Which Chilean companies have U.S. parent companies? | What Chilean companies have American parent companies?
+2025-08-04 13:11:32,737 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:33,663 - INFO - Question 64: Which cities are named after an apostle? | What cities are named in honor of an apostle?
+2025-08-04 13:11:33,663 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:33,932 - INFO - Question 65: Which civil wars started in the nineteenth century? | What civil wars began in the 19th century?
+2025-08-04 13:11:33,933 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:34,236 - INFO - Question 66: Which civil wars took place in South America? | What civil wars happened in South America?
+2025-08-04 13:11:34,236 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:34,535 - INFO - Question 67: Which clubs did Lionel Messi play for? | With which clubs did Lionel Messi play?
+2025-08-04 13:11:34,535 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:34,832 - INFO - Question 68: Which colors are named after fruits? | Which colors take their name from fruits?
+2025-08-04 13:11:34,832 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:35,181 - INFO - Question 69: Which conferences focus on Machine Learning? | List machine learning conferences
+2025-08-04 13:11:35,181 - INFO - LLM Response: ['Contains']
+2025-08-04 13:11:35,558 - INFO - Question 70: Which conferences were organized by Turing Award winners? | What conferences had a Turing Award winner organizing them?
+2025-08-04 13:11:35,558 - INFO - LLM Response: ['Unknown']
+2025-08-04 13:11:35,833 - INFO - Question 71: Which countries are governed by a monarchy? | Which countries have a monarchy?
+2025-08-04 13:11:35,834 - INFO - LLM Response: ['Disjoint']
+2025-08-04 13:11:36,105 - INFO - Question 72: Which countries are in Latin America? | List Latin American countries
+2025-08-04 13:11:36,105 - INFO - LLM Response: ['ContainedBy']

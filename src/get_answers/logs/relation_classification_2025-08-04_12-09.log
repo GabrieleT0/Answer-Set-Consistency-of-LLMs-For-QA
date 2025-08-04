@@ -1,0 +1,903 @@
+2025-08-04 12:09:06,368 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 12:09:08,437 - INFO - Question 1
+2025-08-04 12:09:08,437 - INFO - Q1: Name the films for which Quentin Tarantino was the director.
+2025-08-04 12:09:08,437 - INFO - Q2: Which movies were directed by Quentin Tarantino?
+2025-08-04 12:09:08,437 - INFO - Q3: Name the films directed by Quentin Tarantino set during World War II.
+2025-08-04 12:09:08,437 - INFO - Q4: Name the films directed by Quentin Tarantino not set during World War II.
+2025-08-04 12:09:08,437 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:10,083 - INFO - Question 2
+2025-08-04 12:09:10,083 - INFO - Q1: Name the instruments Prince was known for playing.
+2025-08-04 12:09:10,083 - INFO - Q2: What musical instruments did Prince play?
+2025-08-04 12:09:10,083 - INFO - Q3: Which string instruments was Prince known for playing?
+2025-08-04 12:09:10,084 - INFO - Q4: Which instruments was Prince known for playing excluding string instruments?
+2025-08-04 12:09:10,084 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:11,284 - INFO - Question 3
+2025-08-04 12:09:11,284 - INFO - Q1: List the offspring of Queen Victoria.
+2025-08-04 12:09:11,284 - INFO - Q2: Who were the children of Queen Victoria?
+2025-08-04 12:09:11,284 - INFO - Q3: List the daughters of Queen Victoria.
+2025-08-04 12:09:11,284 - INFO - Q4: List the sons of Queen Victoria.
+2025-08-04 12:09:11,284 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:09:12,546 - INFO - Question 4
+2025-08-04 12:09:12,546 - INFO - Q1: Which languages hold official status in Switzerland?
+2025-08-04 12:09:12,546 - INFO - Q2: What are the official languages of Switzerland?
+2025-08-04 12:09:12,546 - INFO - Q3: Which Romance languages hold official status in Switzerland?
+2025-08-04 12:09:12,546 - INFO - Q4: Which languages hold official status in Switzerland excluding those that are Romance languages?
+2025-08-04 12:09:12,546 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:13,871 - INFO - Question 5
+2025-08-04 12:09:13,871 - INFO - Q1: List the moons that orbit the planet Jupiter.
+2025-08-04 12:09:13,871 - INFO - Q2: What are the natural satellites of Jupiter?
+2025-08-04 12:09:13,871 - INFO - Q3: List the Galilean moons that orbit the planet Jupiter.
+2025-08-04 12:09:13,872 - INFO - Q4: List the moons that orbit the planet Jupiter excluding the Galilean moons.
+2025-08-04 12:09:13,872 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:15,430 - INFO - Question 6
+2025-08-04 12:09:15,430 - INFO - Q1: List the elements belonging to the noble gas group.
+2025-08-04 12:09:15,431 - INFO - Q2: What are the noble gases?
+2025-08-04 12:09:15,431 - INFO - Q3: List the noble gases that are naturally occurring.
+2025-08-04 12:09:15,431 - INFO - Q4: List the synthetic noble gases.
+2025-08-04 12:09:15,431 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:16,621 - INFO - Question 7
+2025-08-04 12:09:16,621 - INFO - Q1: List the businesses owned by Amazon.
+2025-08-04 12:09:16,621 - INFO - Q2: What companies are subsidiaries of Amazon?
+2025-08-04 12:09:16,621 - INFO - Q3: List the healthcare businesses owned by Amazon.
+2025-08-04 12:09:16,621 - INFO - Q4: List the businesses owned by Amazon excluding healthcare businesses.
+2025-08-04 12:09:16,621 - INFO - LLM Response: ['Contains', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:09:17,882 - INFO - Question 8
+2025-08-04 12:09:17,882 - INFO - Q1: List the programming languages created by Google.
+2025-08-04 12:09:17,882 - INFO - Q2: What programming languages were developed by Google?
+2025-08-04 12:09:17,882 - INFO - Q3: List the reflective programming languages created by Google.
+2025-08-04 12:09:17,882 - INFO - Q4: List the non-reflective programming languages created by Google.
+2025-08-04 12:09:17,882 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:09:19,518 - INFO - Question 9
+2025-08-04 12:09:19,518 - INFO - Q1: List the films directed by Stanley Kubrick.
+2025-08-04 12:09:19,518 - INFO - Q2: What movies did Stanley Kubrick direct?
+2025-08-04 12:09:19,518 - INFO - Q3: List the science fiction films directed by Stanley Kubrick.
+2025-08-04 12:09:19,518 - INFO - Q4: List the films directed by Stanley Kubrick excluding the science fiction films.
+2025-08-04 12:09:19,518 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:21,352 - INFO - Question 10
+2025-08-04 12:09:21,352 - INFO - Q1: Name the French writers who have been awarded the Nobel Prize in Literature.
+2025-08-04 12:09:21,353 - INFO - Q2: Which authors from France have won the Nobel Prize in Literature?
+2025-08-04 12:09:21,353 - INFO - Q3: Name the French writers who have been awarded the Nobel Prize in Literature for works in poetry.
+2025-08-04 12:09:21,353 - INFO - Q4: Name the French writers who have been awarded the Nobel Prize in Literature excluding those awarded for works in poetry.
+2025-08-04 12:09:21,353 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:22,708 - INFO - Question 11
+2025-08-04 12:09:22,708 - INFO - Q1: Name the host cities for past Summer Olympics.
+2025-08-04 12:09:22,708 - INFO - Q2: Which cities have hosted the Summer Olympic Games in the past?
+2025-08-04 12:09:22,708 - INFO - Q3: Name the host cities for the past Summer Olympics held in the 21st century.
+2025-08-04 12:09:22,708 - INFO - Q4: Name the host cities for past Summer Olympics who never hosted them in the 21st century.
+2025-08-04 12:09:22,708 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:26,755 - INFO - Question 12
+2025-08-04 12:09:26,755 - INFO - Q1: Can you list the various penguin species?
+2025-08-04 12:09:26,755 - INFO - Q2: What are the different species of penguins?
+2025-08-04 12:09:26,755 - INFO - Q3: Can you list the species of penguins found in Antarctica?
+2025-08-04 12:09:26,755 - INFO - Q4: Can you list the species of penguins not found in Antarctica?
+2025-08-04 12:09:26,755 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:28,049 - INFO - Question 13
+2025-08-04 12:09:28,049 - INFO - Q1: Name the American presidents who belonged to the Democratic Party.
+2025-08-04 12:09:28,049 - INFO - Q2: Which US presidents were members of the Democratic Party?
+2025-08-04 12:09:28,049 - INFO - Q3: Name the American presidents who belonged to the Democratic Party and served in the 20th century.
+2025-08-04 12:09:28,049 - INFO - Q4: Name the American presidents who belonged to the Democratic Party but did not serve in the 20th century.
+2025-08-04 12:09:28,049 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:29,284 - INFO - Question 14
+2025-08-04 12:09:29,284 - INFO - Q1: List the movies that received the Oscar for Best Picture.
+2025-08-04 12:09:29,284 - INFO - Q2: Which films have won the Academy Award for Best Picture?
+2025-08-04 12:09:29,284 - INFO - Q3: List the fully black-and-white movies that received the Oscar for Best Picture.
+2025-08-04 12:09:29,284 - INFO - Q4: List the movies with color (in whole or part) that received the Oscar for Best Picture.
+2025-08-04 12:09:29,284 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:09:31,195 - INFO - Question 15
+2025-08-04 12:09:31,195 - INFO - Q1: List the animated movies from Studio Ghibli.
+2025-08-04 12:09:31,195 - INFO - Q2: What are the animated films produced by Studio Ghibli?
+2025-08-04 12:09:31,195 - INFO - Q3: List the animated movies from Studio Ghibli that do not feature dragons.
+2025-08-04 12:09:31,195 - INFO - Q4: List the animated movies from Studio Ghibli that feature dragons.
+2025-08-04 12:09:31,195 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:33,189 - INFO - Question 16
+2025-08-04 12:09:33,189 - INFO - Q1: List the books authored by J.R.R. Tolkien.
+2025-08-04 12:09:33,189 - INFO - Q2: What books did J.R.R. Tolkien write?
+2025-08-04 12:09:33,190 - INFO - Q3: List the fantasy books authored by J.R.R. Tolkien.
+2025-08-04 12:09:33,190 - INFO - Q4: List the books authored by J.R.R. Tolkien excluding fantasy works.
+2025-08-04 12:09:33,190 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:35,239 - INFO - Question 17
+2025-08-04 12:09:35,239 - INFO - Q1: List the South American capitals.
+2025-08-04 12:09:35,239 - INFO - Q2: What are the capital cities of South American countries?
+2025-08-04 12:09:35,239 - INFO - Q3: List the South American capitals that are on the coast.
+2025-08-04 12:09:35,239 - INFO - Q4: List the South American capitals that are not on the coast.
+2025-08-04 12:09:35,239 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:36,714 - INFO - Question 18
+2025-08-04 12:09:36,715 - INFO - Q1: What automotive marques does the Volkswagen Group own?
+2025-08-04 12:09:36,715 - INFO - Q2: Which car brands are part of the Volkswagen Group?
+2025-08-04 12:09:36,715 - INFO - Q3: What luxury automotive marques does the Volkswagen Group own?
+2025-08-04 12:09:36,715 - INFO - Q4: What automotive marques does the Volkswagen Group own excluding the luxury automotive marques?
+2025-08-04 12:09:36,715 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:37,986 - INFO - Question 19
+2025-08-04 12:09:37,986 - INFO - Q1: Name the women married to Henry VIII.
+2025-08-04 12:09:37,986 - INFO - Q2: Who were the wives of King Henry VIII?
+2025-08-04 12:09:37,986 - INFO - Q3: List the women married to Henry VIII who bore him children.
+2025-08-04 12:09:37,986 - INFO - Q4: List the women married to Henry VIII who did not bear him children.
+2025-08-04 12:09:37,986 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:39,271 - INFO - Question 20
+2025-08-04 12:09:39,271 - INFO - Q1: Which extant countries have regions that were part of the British Empire?
+2025-08-04 12:09:39,271 - INFO - Q2: What existing countries used to belong, in whole or part, to the British Empire?
+2025-08-04 12:09:39,272 - INFO - Q3: Which extant countries in the Commonwealth have regions that were part of the British Empire?
+2025-08-04 12:09:39,272 - INFO - Q4: Which extant countries not in the Commonwealth have regions that were part of the British Empire?
+2025-08-04 12:09:39,272 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:40,641 - INFO - Question 21
+2025-08-04 12:09:40,641 - INFO - Q1: List the musicians who were part of The Beatles.
+2025-08-04 12:09:40,642 - INFO - Q2: Who were the members of the band The Beatles?
+2025-08-04 12:09:40,642 - INFO - Q3: List the musicians who were part of The Beatles but left before signing for EMI.
+2025-08-04 12:09:40,642 - INFO - Q4: List the musicians who were part of The Beatles excluding those who left before signing for EMI.
+2025-08-04 12:09:40,642 - INFO - LLM Response: ['Equivalence', 'Contains', 'ContainedBy', 'Disjoint', 'Disjoint']
+2025-08-04 12:09:41,883 - INFO - Question 22
+2025-08-04 12:09:41,883 - INFO - Q1: What countries are enclaves?
+2025-08-04 12:09:41,883 - INFO - Q2: Which enclaves are sovereign states?
+2025-08-04 12:09:41,883 - INFO - Q3: Which enclaves within Italy are sovereign states?
+2025-08-04 12:09:41,883 - INFO - Q4: Which sovereign states are enclaves but not within Italy?
+2025-08-04 12:09:41,883 - INFO - LLM Response: ['ContainedBy', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:43,333 - INFO - Question 23
+2025-08-04 12:09:43,334 - INFO - Q1: What are the multiple-time host cities of the Summer Olympics?
+2025-08-04 12:09:43,334 - INFO - Q2: Which cities have hosted the Summer Olympic Games more than once?
+2025-08-04 12:09:43,334 - INFO - Q3: What are the multiple-time host cities of the Summer Olympics in Europe?
+2025-08-04 12:09:43,334 - INFO - Q4: What are the multiple-time host cities of the Summer Olympics excluding those in Europe?
+2025-08-04 12:09:43,334 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:44,451 - INFO - Question 24
+2025-08-04 12:09:44,452 - INFO - Q1: What is a list of brands under the LVMH corporate umbrella?
+2025-08-04 12:09:44,452 - INFO - Q2: Which brands are owned by LVMH?
+2025-08-04 12:09:44,452 - INFO - Q3: What is a list of watch brands under the LVMH corporate umbrella?
+2025-08-04 12:09:44,452 - INFO - Q4: What is a list of brands under the LVMH corporate umbrella excluding watch brands?
+2025-08-04 12:09:44,452 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:46,135 - INFO - Question 25
+2025-08-04 12:09:46,135 - INFO - Q1: What movies were awarded Best Picture at the Oscars between 1990 and 1999 inclusive?
+2025-08-04 12:09:46,135 - INFO - Q2: Which films won the Academy Award for Best Picture during the 1990s?
+2025-08-04 12:09:46,135 - INFO - Q3: What movies awarded Best Picture at the Oscars in the 1990s are entirely set before 1900?
+2025-08-04 12:09:46,135 - INFO - Q4: What movies awarded Best Picture at the Oscars in the 1990s are set (in whole or part) during or after 1900?
+2025-08-04 12:09:46,135 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:47,429 - INFO - Question 26
+2025-08-04 12:09:47,429 - INFO - Q1: List the genera belonging to the cat family (Felidae).
+2025-08-04 12:09:47,429 - INFO - Q2: What are the genera within the Felidae family?
+2025-08-04 12:09:47,429 - INFO - Q3: List the genera belonging to the big cat subgroup of the cat family (Felidae).
+2025-08-04 12:09:47,429 - INFO - Q4: List the genera belonging to the cat family (Felidae) excluding those belonging to the big cat subgroup.
+2025-08-04 12:09:47,429 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:48,811 - INFO - Question 27
+2025-08-04 12:09:48,812 - INFO - Q1: Who are the female laureates of the Nobel Prize in Literature?
+2025-08-04 12:09:48,812 - INFO - Q2: What women have won a Nobel Prize in Literature?
+2025-08-04 12:09:48,812 - INFO - Q3: Which female laureates of the Nobel Prize in Literature shared their prize?
+2025-08-04 12:09:48,812 - INFO - Q4: Which female laureates of the Nobel Prize in Literature did not share their prize?
+2025-08-04 12:09:48,812 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:50,144 - INFO - Question 28
+2025-08-04 12:09:50,144 - INFO - Q1: What countries are in South America but not Latin America?
+2025-08-04 12:09:50,144 - INFO - Q2: Which South American countries are not considered part of Latin America?
+2025-08-04 12:09:50,145 - INFO - Q3: Which South American countries are not considered part of Latin America and have Dutch as an official language?
+2025-08-04 12:09:50,145 - INFO - Q4: Which South American countries are not considered part of Latin America and do not have Dutch as an official language?
+2025-08-04 12:09:50,145 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence  ']
+2025-08-04 12:09:51,298 - INFO - Question 29
+2025-08-04 12:09:51,298 - INFO - Q1: What are the last five chemical elements discovered?
+2025-08-04 12:09:51,298 - INFO - Q2: What are the five most recent elements to have been discovered?
+2025-08-04 12:09:51,298 - INFO - Q3: Which of the last five chemical elements to have been discovered are halogens?
+2025-08-04 12:09:51,298 - INFO - Q4: Which of the last five chemical elements to have been discovered are not halogens?
+2025-08-04 12:09:51,298 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:53,206 - INFO - Question 30
+2025-08-04 12:09:53,206 - INFO - Q1: What countries are observer states of the UN?
+2025-08-04 12:09:53,206 - INFO - Q2: Which countries are observer states of the United Nations?
+2025-08-04 12:09:53,206 - INFO - Q3: What European countries are observer states of the UN?
+2025-08-04 12:09:53,206 - INFO - Q4: What countries outside of Europe are observer states of the UN?
+2025-08-04 12:09:53,206 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:54,462 - INFO - Question 31
+2025-08-04 12:09:54,462 - INFO - Q1: What are the official currencies used by EU countries?
+2025-08-04 12:09:54,462 - INFO - Q2: Which currencies are officially used in some European Union state?
+2025-08-04 12:09:54,462 - INFO - Q3: What are the official currencies used by more than one EU country?
+2025-08-04 12:09:54,462 - INFO - Q4: What are the official currencies used by only one EU country?
+2025-08-04 12:09:54,462 - INFO - LLM Response: ['Contains', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:55,642 - INFO - Question 32
+2025-08-04 12:09:55,642 - INFO - Q1: Which countries have more than five official languages at the national level?
+2025-08-04 12:09:55,642 - INFO - Q2: What states have at least six official languages nationwide?
+2025-08-04 12:09:55,642 - INFO - Q3: Which countries have more than fifteen official languages at the national level?
+2025-08-04 12:09:55,642 - INFO - Q4: Which countries have between six and fifteen official languages, inclusive, at the national level?
+2025-08-04 12:09:55,642 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'ContainedBy']
+2025-08-04 12:09:56,853 - INFO - Question 33
+2025-08-04 12:09:56,853 - INFO - Q1: What are the three most common religions followed in India?
+2025-08-04 12:09:56,853 - INFO - Q2: What are the three main religions practiced in India?
+2025-08-04 12:09:56,853 - INFO - Q3: What is the majority religion of India?
+2025-08-04 12:09:56,853 - INFO - Q4: What are the top two minority religions of India?
+2025-08-04 12:09:56,853 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:09:58,068 - INFO - Question 34
+2025-08-04 12:09:58,068 - INFO - Q1: What cities serve as capitals of European countries?
+2025-08-04 12:09:58,068 - INFO - Q2: Which cities are capitals of countries in Europe?
+2025-08-04 12:09:58,068 - INFO - Q3: What cities serve as capitals of European countries in the European Union?
+2025-08-04 12:09:58,068 - INFO - Q4: What cities serve as capitals of European countries excluding those in the European Union?
+2025-08-04 12:09:58,068 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:09:59,381 - INFO - Question 35
+2025-08-04 12:09:59,381 - INFO - Q1: Which colors constitute the RGB primary colors?
+2025-08-04 12:09:59,381 - INFO - Q2: What are the primary colors in the RGB color model?
+2025-08-04 12:09:59,381 - INFO - Q3: Which RGB primary colors are between violet and orange in the color spectrum?
+2025-08-04 12:09:59,382 - INFO - Q4: Which RGB primary colors are not between violet and orange in the color spectrum?
+2025-08-04 12:09:59,382 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:01,522 - INFO - Question 36
+2025-08-04 12:10:01,522 - INFO - Q1: What countries recognize English as an official language?
+2025-08-04 12:10:01,522 - INFO - Q2: Which countries have English among their official languages?
+2025-08-04 12:10:01,522 - INFO - Q3: What countries in Africa recognize English as an official language?
+2025-08-04 12:10:01,522 - INFO - Q4: What countries outside Africa recognize English as an official language?
+2025-08-04 12:10:01,522 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:02,702 - INFO - Question 37
+2025-08-04 12:10:02,702 - INFO - Q1: Which continents exist on planet Earth?
+2025-08-04 12:10:02,702 - INFO - Q2: What are the continents on Earth?
+2025-08-04 12:10:02,702 - INFO - Q3: Which of Earth’s continents are connected to other continents by land?
+2025-08-04 12:10:02,702 - INFO - Q4: Which of Earth’s continents are not connected to other continents by land?
+2025-08-04 12:10:02,702 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:03,852 - INFO - Question 38
+2025-08-04 12:10:03,852 - INFO - Q1: What books did J.K. Rowling author under the pen name Robert Galbraith?
+2025-08-04 12:10:03,852 - INFO - Q2: What books did J.K. Rowling write as Robert Galbraith?
+2025-08-04 12:10:03,852 - INFO - Q3: What books written by J.K. Rowling under the pen name Robert Galbraith include the character Eric Wardle?
+2025-08-04 12:10:03,852 - INFO - Q4: What books written by J.K. Rowling under the pen name Robert Galbraith do not include the character Eric Wardle?
+2025-08-04 12:10:03,852 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:05,331 - INFO - Question 39
+2025-08-04 12:10:05,331 - INFO - Q1: Which gases compose the atmosphere of Earth?
+2025-08-04 12:10:05,331 - INFO - Q2: What are the gases present in Earth's atmosphere?
+2025-08-04 12:10:05,331 - INFO - Q3: Which gases compose the atmosphere of Earth excluding trace gases?
+2025-08-04 12:10:05,331 - INFO - Q4: Which trace gases compose the atmosphere of Earth?
+2025-08-04 12:10:05,331 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:07,729 - INFO - Question 40
+2025-08-04 12:10:07,729 - INFO - Q1: What species of animals have verified members who lived longer than 200 years?
+2025-08-04 12:10:07,729 - INFO - Q2: Which animal species have specimens confirmed to have lived more than two centuries?
+2025-08-04 12:10:07,729 - INFO - Q3: What species of shark have verified members who lived longer than 200 years?
+2025-08-04 12:10:07,729 - INFO - Q4: What species have verified members who lived longer than 200 years excluding shark species?
+2025-08-04 12:10:07,729 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:09,509 - INFO - Question 41
+2025-08-04 12:10:09,509 - INFO - Q1: Which video games are in the Grand Theft Auto series?
+2025-08-04 12:10:09,509 - INFO - Q2: What GTA video games are there?
+2025-08-04 12:10:09,509 - INFO - Q3: Which video games in the Grand Theft Auto series have multiplayer?
+2025-08-04 12:10:09,509 - INFO - Q4: Which video games in the Grand Theft Auto series are singleplayer only?
+2025-08-04 12:10:09,509 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:10,956 - INFO - Question 42
+2025-08-04 12:10:10,956 - INFO - Q1: In which countries can the short-tailed chinchilla be found today?
+2025-08-04 12:10:10,956 - INFO - Q2: Which countries are native to the extant short-tailed chinchilla?
+2025-08-04 12:10:10,956 - INFO - Q3: In which countries can both the short-tailed and long-tailed chinchilla be found today?
+2025-08-04 12:10:10,956 - INFO - Q4: In which countries can the short-tailed chinchilla be found today but do not have the long-tailed chinchilla?
+2025-08-04 12:10:10,957 - INFO - LLM Response: ['Contains', 'Overlap', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:12,344 - INFO - Question 43
+2025-08-04 12:10:12,345 - INFO - Q1: What are the planets that orbit the Sun?
+2025-08-04 12:10:12,345 - INFO - Q2: Which planets are part of the Solar System?
+2025-08-04 12:10:12,345 - INFO - Q3: What are the gas giant planets that orbit the Sun?
+2025-08-04 12:10:12,345 - INFO - Q4: What are the planets that orbit the Sun excluding the gas giants?
+2025-08-04 12:10:12,345 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:13,723 - INFO - Question 44
+2025-08-04 12:10:13,724 - INFO - Q1: Which sites in Italy are designated as UNESCO World Heritage Sites?
+2025-08-04 12:10:13,724 - INFO - Q2: What are the UNESCO World Heritage Sites in Italy?
+2025-08-04 12:10:13,724 - INFO - Q3: Which UNESCO World Heritage Sites are located in Rome, Italy?
+2025-08-04 12:10:13,724 - INFO - Q4: Which Italian UNESCO World Heritage Sites are not located in Rome?
+2025-08-04 12:10:13,724 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:15,653 - INFO - Question 45
+2025-08-04 12:10:15,653 - INFO - Q1: Which currencies are in circulation in African countries?
+2025-08-04 12:10:15,653 - INFO - Q2: What are the official currencies used in Africa?
+2025-08-04 12:10:15,654 - INFO - Q3: Which currencies are in circulation in West African countries?
+2025-08-04 12:10:15,654 - INFO - Q4: Which currencies are in circulation in African countries but not in any West Africa country?
+2025-08-04 12:10:15,654 - INFO - LLM Response: ['ContainedBy', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:16,767 - INFO - Question 46
+2025-08-04 12:10:16,767 - INFO - Q1: What novels by Jane Austen were published posthumously?
+2025-08-04 12:10:16,767 - INFO - Q2: Which Jane Austen novels were published after her death?
+2025-08-04 12:10:16,767 - INFO - Q3: What novels by Jane Austen, published posthumously, were adapted by Marvel into a graphic novel series?
+2025-08-04 12:10:16,767 - INFO - Q4: What novels by Jane Austen, published posthumously, were not adapted by Marvel into a graphic novel series?
+2025-08-04 12:10:16,767 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:17,829 - INFO - Question 47
+2025-08-04 12:10:17,829 - INFO - Q1: What are the five most expansive islands in the Japanese archipelago?
+2025-08-04 12:10:17,829 - INFO - Q2: What are the five largest islands of Japan in terms of area?
+2025-08-04 12:10:17,829 - INFO - Q3: Which of the five largest islands of Japan in terms of area have a population over five million?
+2025-08-04 12:10:17,829 - INFO - Q4: Which of the five largest islands of Japan in terms of area have a population of five million or fewer?
+2025-08-04 12:10:17,829 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:10:19,007 - INFO - Question 48
+2025-08-04 12:10:19,007 - INFO - Q1: What are the hospitals in Cairo with more than 100 staff?
+2025-08-04 12:10:19,007 - INFO - Q2: Which Cairo hospitals have over one hundred employees?
+2025-08-04 12:10:19,007 - INFO - Q3: What are the public hospitals in Cairo with more than 100 staff?
+2025-08-04 12:10:19,007 - INFO - Q4: What are the private hospitals in Cairo with more than 100 staff?
+2025-08-04 12:10:19,008 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:20,190 - INFO - Question 49
+2025-08-04 12:10:20,190 - INFO - Q1: What American presidents were born in Virginia?
+2025-08-04 12:10:20,190 - INFO - Q2: Which U.S. presidents were born in Virginia?
+2025-08-04 12:10:20,190 - INFO - Q3: What American presidents were born in Virginia in the 18th century?
+2025-08-04 12:10:20,190 - INFO - Q4: What American presidents were born in Virginia aside from those born in the 18th century?
+2025-08-04 12:10:20,190 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:21,462 - INFO - Question 50
+2025-08-04 12:10:21,462 - INFO - Q1: Which nations are part of the North Atlantic Treaty Organization?
+2025-08-04 12:10:21,462 - INFO - Q2: What are the current member countries of NATO?
+2025-08-04 12:10:21,462 - INFO - Q3: Which European nations are part of the North Atlantic Treaty Organization?
+2025-08-04 12:10:21,462 - INFO - Q4: Which nations are part of the North Atlantic Treaty Organization excluding European nations?
+2025-08-04 12:10:21,463 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:22,596 - INFO - Question 51
+2025-08-04 12:10:22,597 - INFO - Q1: Which genera of clouds exist in meteorology?
+2025-08-04 12:10:22,597 - INFO - Q2: What are the types of clouds in meteorology?
+2025-08-04 12:10:22,597 - INFO - Q3: Which genera of clouds in meteorology are classified as high-level clouds?
+2025-08-04 12:10:22,597 - INFO - Q4: Which genera of clouds in meteorology are not classified as high-level clouds?
+2025-08-04 12:10:22,597 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:23,614 - INFO - Question 52
+2025-08-04 12:10:23,614 - INFO - Q1: What are the constituent states of the USA?
+2025-08-04 12:10:23,614 - INFO - Q2: Which states are part of the United States of America?
+2025-08-04 12:10:23,614 - INFO - Q3: What are the states of the USA located on the West Coast?
+2025-08-04 12:10:23,614 - INFO - Q4: What are the states of the USA excluding those located on the West Coast?
+2025-08-04 12:10:23,614 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:31,259 - INFO - Question 53
+2025-08-04 12:10:31,259 - INFO - Q1: In which countries is Buddhism a majority religion?
+2025-08-04 12:10:31,259 - INFO - Q2: Which countries have Buddhism as a majority religion?
+2025-08-04 12:10:31,259 - INFO - Q3: Which countries have Buddhism as a majority and state religion?
+2025-08-04 12:10:31,259 - INFO - Q4: Which countries have Buddhism as a majority religion but not a state religion?
+2025-08-04 12:10:31,259 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:32,470 - INFO - Question 54
+2025-08-04 12:10:32,471 - INFO - Q1: What urban areas are classified as megacities?
+2025-08-04 12:10:32,471 - INFO - Q2: Which cities are considered megacities?
+2025-08-04 12:10:32,471 - INFO - Q3: Which urban areas classified as megacities have a population greater than 20 million?
+2025-08-04 12:10:32,471 - INFO - Q4: Which urban areas classified as megacities have a population of 20 million or less?
+2025-08-04 12:10:32,471 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:33,520 - INFO - Question 55
+2025-08-04 12:10:33,521 - INFO - Q1: Which provinces does Canada have?
+2025-08-04 12:10:33,521 - INFO - Q2: What are the provinces of Canada?
+2025-08-04 12:10:33,521 - INFO - Q3: Which provinces of Canada are on the Atlantic coast?
+2025-08-04 12:10:33,521 - INFO - Q4: Which provinces does Canada have excluding those on the Atlantic coast?
+2025-08-04 12:10:33,521 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:34,532 - INFO - Question 56
+2025-08-04 12:10:34,532 - INFO - Q1: What planets in the Solar System are terrestrial?
+2025-08-04 12:10:34,532 - INFO - Q2: Which Solar planets are classified as terrestrial planets?
+2025-08-04 12:10:34,532 - INFO - Q3: Which terrestrial planets in the Solar System have moons?
+2025-08-04 12:10:34,532 - INFO - Q4: Which terrestrial planets in the Solar System do not have moons?
+2025-08-04 12:10:34,532 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:36,257 - INFO - Question 57
+2025-08-04 12:10:36,257 - INFO - Q1: Which countries have coffee among their top 5 exports?
+2025-08-04 12:10:36,257 - INFO - Q2: In which states is coffee a top-5 export?
+2025-08-04 12:10:36,257 - INFO - Q3: Which countries have coffee as their top export?
+2025-08-04 12:10:36,257 - INFO - Q4: Which countries have coffee as a top 5 export but not their top export?
+2025-08-04 12:10:36,257 - INFO - LLM Response: ['Unknown', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:10:37,435 - INFO - Question 58
+2025-08-04 12:10:37,435 - INFO - Q1: What are the main toppings of a Hawaiian pizza?
+2025-08-04 12:10:37,435 - INFO - Q2: What toppings does a Hawaiian pizza have?
+2025-08-04 12:10:37,435 - INFO - Q3: What are the vegetarian toppings of a Hawaiian pizza?
+2025-08-04 12:10:37,435 - INFO - Q4: What are the meat toppings of a Hawaiian pizza?
+2025-08-04 12:10:37,435 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:38,570 - INFO - Question 59
+2025-08-04 12:10:38,570 - INFO - Q1: Which musical instruments typically appear in the string section of an orchestra?
+2025-08-04 12:10:38,570 - INFO - Q2: What instruments are most commonly used in an orchestra's string section?
+2025-08-04 12:10:38,570 - INFO - Q3: What hand-held instruments are most commonly used in an orchestra's string section?
+2025-08-04 12:10:38,570 - INFO - Q4: What instruments most commonly used in an orchestra's string section are not hand-held?
+2025-08-04 12:10:38,570 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:39,685 - INFO - Question 60
+2025-08-04 12:10:39,685 - INFO - Q1: What novels received the Hugo Award for Best Novel?
+2025-08-04 12:10:39,685 - INFO - Q2: Which novels won the Hugo Award for Best Novel?
+2025-08-04 12:10:39,685 - INFO - Q3: Which novels with multiple authors won the Hugo Award for Best Novel?
+2025-08-04 12:10:39,685 - INFO - Q4: Which single-author novels won the Hugo Award for Best Novel?
+2025-08-04 12:10:39,685 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:40,798 - INFO - Question 61
+2025-08-04 12:10:40,799 - INFO - Q1: Which colors make up the CMYK system?
+2025-08-04 12:10:40,799 - INFO - Q2: What colors are used in CMYK?
+2025-08-04 12:10:40,799 - INFO - Q3: Which CMYK colors are a key color of some national flag?
+2025-08-04 12:10:40,799 - INFO - Q4: Which CMYK colors are not a key color of any national flag?
+2025-08-04 12:10:40,799 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Unknown', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:41,933 - INFO - Question 62
+2025-08-04 12:10:41,933 - INFO - Q1: What nations have been champions of the FIFA World Cup?
+2025-08-04 12:10:41,933 - INFO - Q2: Which countries have won the FIFA World Cup?
+2025-08-04 12:10:41,934 - INFO - Q3: What nations from South America have been champions of the FIFA World Cup?
+2025-08-04 12:10:41,934 - INFO - Q4: What nations that are not from South America have been champions of the FIFA World Cup?
+2025-08-04 12:10:41,934 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:43,055 - INFO - Question 63
+2025-08-04 12:10:43,055 - INFO - Q1: What nations are ruled by monarchs?
+2025-08-04 12:10:43,055 - INFO - Q2: Which countries have monarchies?
+2025-08-04 12:10:43,055 - INFO - Q3: What European nations are ruled by monarchs?
+2025-08-04 12:10:43,055 - INFO - Q4: What nations outside Europe are ruled by monarchs?
+2025-08-04 12:10:43,055 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:44,154 - INFO - Question 64
+2025-08-04 12:10:44,154 - INFO - Q1: What nations have the U.S. dollar as official currency?
+2025-08-04 12:10:44,154 - INFO - Q2: Which countries use the American dollar as an official currency?
+2025-08-04 12:10:44,155 - INFO - Q3: Which countries only use the American dollar as an official currency?
+2025-08-04 12:10:44,155 - INFO - Q4: Which countries use the American dollar as an official currency alongside another currency?
+2025-08-04 12:10:44,155 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:45,163 - INFO - Question 65
+2025-08-04 12:10:45,163 - INFO - Q1: What nations currently have women as heads of state?
+2025-08-04 12:10:45,164 - INFO - Q2: Which countries have female heads of state?
+2025-08-04 12:10:45,164 - INFO - Q3: What nations currently have women as heads of state who are also heads of government?
+2025-08-04 12:10:45,164 - INFO - Q4: What nations currently have women as heads of state that are not heads of government?
+2025-08-04 12:10:45,164 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:46,493 - INFO - Question 66
+2025-08-04 12:10:46,493 - INFO - Q1: Which blood types exist in humans?
+2025-08-04 12:10:46,493 - INFO - Q2: What are the common types of human blood groups?
+2025-08-04 12:10:46,493 - INFO - Q3: Which human blood types are universal donors?
+2025-08-04 12:10:46,493 - INFO - Q4: Which human blood types are not universal donors?
+2025-08-04 12:10:46,494 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:47,817 - INFO - Question 67
+2025-08-04 12:10:47,817 - INFO - Q1: Which Baroque period composers wrote music that appears in an Oscar-winning movie?
+2025-08-04 12:10:47,817 - INFO - Q2: Which Baroque composers have music that appears in an Academy Award-winning film?
+2025-08-04 12:10:47,817 - INFO - Q3: Which Baroque composers have music that appears in a English-language movie that won an Academy Award?
+2025-08-04 12:10:47,817 - INFO - Q4: Which Baroque composers have music that appears in a movie that won an Academy Award excluding English-language movies?
+2025-08-04 12:10:47,817 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:49,078 - INFO - Question 68
+2025-08-04 12:10:49,078 - INFO - Q1: What nations have been hosts of the FIFA World Cup?
+2025-08-04 12:10:49,078 - INFO - Q2: Which countries have hosted the FIFA World Cup?
+2025-08-04 12:10:49,078 - INFO - Q3: Which nations have been hosts of the FIFA World Cup in Europe?
+2025-08-04 12:10:49,078 - INFO - Q4: Which nations have been hosts of the FIFA World Cup excluding those in Europe?
+2025-08-04 12:10:49,078 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:50,430 - INFO - Question 69
+2025-08-04 12:10:50,430 - INFO - Q1: What nations are governed by presidents who do not have a term limit?
+2025-08-04 12:10:50,430 - INFO - Q2: Which countries have a presidential system without term limits?
+2025-08-04 12:10:50,430 - INFO - Q3: What nations are governed by presidents who do not have a term limit and have had a president serve for more than two decades?
+2025-08-04 12:10:50,430 - INFO - Q4: What nations are governed by presidents who do not have a term limit but have not had a president serve for two decades or more?
+2025-08-04 12:10:50,430 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 12:10:51,782 - INFO - Question 70
+2025-08-04 12:10:51,782 - INFO - Q1: What are the different Nobel Prize award categories?
+2025-08-04 12:10:51,782 - INFO - Q2: List Nobel Prize categories.
+2025-08-04 12:10:51,782 - INFO - Q3: What are the original Nobel Prize award categories?
+2025-08-04 12:10:51,782 - INFO - Q4: What Nobel Prize award categories are not original categories?
+2025-08-04 12:10:51,782 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:52,922 - INFO - Question 71
+2025-08-04 12:10:52,922 - INFO - Q1: Which colors make up a natural rainbow?
+2025-08-04 12:10:52,922 - INFO - Q2: What are the colors of the rainbow?
+2025-08-04 12:10:52,922 - INFO - Q3: Which non-primary colors make up a rainbow?
+2025-08-04 12:10:52,922 - INFO - Q4: Which colors make up a natural rainbow excluding the primary colors?
+2025-08-04 12:10:52,922 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'ContainedBy', 'Equivalence', 'Equivalence']
+2025-08-04 12:10:54,230 - INFO - Question 72
+2025-08-04 12:10:54,231 - INFO - Q1: What denominations of banknote and coins exist for the Euro?
+2025-08-04 12:10:54,231 - INFO - Q2: List Euro denominations.
+2025-08-04 12:10:54,231 - INFO - Q3: What denominations of banknote exist for the Euro?
+2025-08-04 12:10:54,231 - INFO - Q4: What denominations of coins exist for the Euro?
+2025-08-04 12:10:54,231 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:10:55,569 - INFO - Question 73
+2025-08-04 12:10:55,569 - INFO - Q1: Which oceans exist on our planet?
+2025-08-04 12:10:55,569 - INFO - Q2: What are the oceans on Earth?
+2025-08-04 12:10:55,570 - INFO - Q3: Which of Earth's oceans touch South America?
+2025-08-04 12:10:55,570 - INFO - Q4: Which of Earth's oceans do not touch South America?
+2025-08-04 12:10:55,570 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:10:56,804 - INFO - Question 74
+2025-08-04 12:10:56,804 - INFO - Q1: What extant species are classified as bears?
+2025-08-04 12:10:56,804 - INFO - Q2: Which living animal species are bears?
+2025-08-04 12:10:56,804 - INFO - Q3: What are the extant, carnivorous species of bear?
+2025-08-04 12:10:56,804 - INFO - Q4: What are the extant, herbivorous or omnivorous species of bears?
+2025-08-04 12:10:56,804 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:10:58,813 - INFO - Question 75
+2025-08-04 12:10:58,814 - INFO - Q1: Which religions are officially recognized in Indonesia?
+2025-08-04 12:10:58,814 - INFO - Q2: What are the official religions of Indonesia?
+2025-08-04 12:10:58,814 - INFO - Q3: Which religion officially recognized in Indonesia is a majority religion?
+2025-08-04 12:10:58,814 - INFO - Q4: Which religions officially recognized in Indonesia are minority religions?
+2025-08-04 12:10:58,814 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 12:11:00,628 - INFO - Question 76
+2025-08-04 12:11:00,629 - INFO - Q1: Which disciplines featured in the 2022 Winter Olympics?
+2025-08-04 12:11:00,629 - INFO - Q2: What were the disciplines of the 2022 Winter Olympics?
+2025-08-04 12:11:00,629 - INFO - Q3: Which disciplines of the 2022 Winter Olympics involve skating?
+2025-08-04 12:11:00,629 - INFO - Q4: Which disciplines of the 2022 Winter Olympics do not involve skating?
+2025-08-04 12:11:00,629 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:08,494 - INFO - Question 77
+2025-08-04 12:11:08,495 - INFO - Q1: What countries are top-10 exporters of copper by volume?
+2025-08-04 12:11:08,495 - INFO - Q2: Which ten states export the most copper in the world by volume?
+2025-08-04 12:11:08,495 - INFO - Q3: Of the top-10 exporters of copper by volume, which countries are in Latin America?
+2025-08-04 12:11:08,495 - INFO - Q4: Of the top-10 exporters of copper by volume, which countries are not in Latin America?
+2025-08-04 12:11:08,495 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:09,623 - INFO - Question 78
+2025-08-04 12:11:09,623 - INFO - Q1: Which extinct species are in the Homo genus?
+2025-08-04 12:11:09,623 - INFO - Q2: What Homo species are extinct?
+2025-08-04 12:11:09,624 - INFO - Q3: Which extinct species in the Homo genus have had fossils found in Russia?
+2025-08-04 12:11:09,624 - INFO - Q4: Which extinct species in the Homo genus have not had fossils found in Russia?
+2025-08-04 12:11:09,624 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:10,795 - INFO - Question 79
+2025-08-04 12:11:10,795 - INFO - Q1: What are the constituent countries of the UK?
+2025-08-04 12:11:10,795 - INFO - Q2: Which countries make up the United Kingdom?
+2025-08-04 12:11:10,795 - INFO - Q3: What are the constituent countries of the UK located on the island of Great Britain?
+2025-08-04 12:11:10,795 - INFO - Q4: What are the constituent countries of the UK excluding those located on the island of Great Britain?
+2025-08-04 12:11:10,795 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:11,903 - INFO - Question 80
+2025-08-04 12:11:11,903 - INFO - Q1: Which Egyptian sites are recognized as UNESCO World Heritage?
+2025-08-04 12:11:11,903 - INFO - Q2: What are the UNESCO World Heritage Sites in Egypt?
+2025-08-04 12:11:11,903 - INFO - Q3: Which Pharaonic Egyptian sites are recognized as UNESCO World Heritage?
+2025-08-04 12:11:11,903 - INFO - Q4: Which Egyptian UNESCO World Heritage are not Pharaonic?
+2025-08-04 12:11:11,903 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:13,334 - INFO - Question 81
+2025-08-04 12:11:13,335 - INFO - Q1: Which species, both extant and extinct, manufactured stone tools?
+2025-08-04 12:11:13,335 - INFO - Q2: What extant or extinct species made stone tools?
+2025-08-04 12:11:13,335 - INFO - Q3: What extinct species made stone tools?
+2025-08-04 12:11:13,335 - INFO - Q4: What extant species made stone tools?
+2025-08-04 12:11:13,335 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:11:14,636 - INFO - Question 82
+2025-08-04 12:11:14,636 - INFO - Q1: What nations have been winners of Eurovision?
+2025-08-04 12:11:14,636 - INFO - Q2: Which countries have won the Eurovision Song Contest?
+2025-08-04 12:11:14,636 - INFO - Q3: What European nations have been winners of Eurovision?
+2025-08-04 12:11:14,636 - INFO - Q4: What nations outside of Europe have been winners of Eurovision?
+2025-08-04 12:11:14,636 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:15,727 - INFO - Question 83
+2025-08-04 12:11:15,728 - INFO - Q1: List all French regions.
+2025-08-04 12:11:15,728 - INFO - Q2: What are the regions of France?
+2025-08-04 12:11:15,728 - INFO - Q3: List all French regions located in mainland France.
+2025-08-04 12:11:15,728 - INFO - Q4: List all French regions excluding those located in mainland France.
+2025-08-04 12:11:15,728 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:18,093 - INFO - Question 84
+2025-08-04 12:11:18,093 - INFO - Q1: What professions did Leonardo da Vinci have?
+2025-08-04 12:11:18,093 - INFO - Q2: What were Leonardo da Vinci's professions?
+2025-08-04 12:11:18,093 - INFO - Q3: What artistic professions did Leonardo da Vinci have?
+2025-08-04 12:11:18,093 - INFO - Q4: What non-artistic professions did Leonardo da Vinci have?
+2025-08-04 12:11:18,093 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 12:11:19,279 - INFO - Question 85
+2025-08-04 12:11:19,279 - INFO - Q1: List the accolades received by Meryl Streep.
+2025-08-04 12:11:19,279 - INFO - Q2: What awards has Meryl Streep won?
+2025-08-04 12:11:19,280 - INFO - Q3: List the Academy Awards received by Meryl Streep.
+2025-08-04 12:11:19,280 - INFO - Q4: List the accolades received by Meryl Streep excluding the Academy Awards.
+2025-08-04 12:11:19,280 - INFO - LLM Response: ['Contains', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:20,523 - INFO - Question 86
+2025-08-04 12:11:20,523 - INFO - Q1: Which characters featured in all the Harry Potter books?
+2025-08-04 12:11:20,524 - INFO - Q2: List the characters appearing in all books of the Harry Potter series.
+2025-08-04 12:11:20,524 - INFO - Q3: Which characters appearing in all the Harry Potter books worked at some point at Hogwarts?
+2025-08-04 12:11:20,524 - INFO - Q4: Which characters appearing in all the Harry Potter books never worked at Hogwarts?
+2025-08-04 12:11:20,524 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:21,717 - INFO - Question 87
+2025-08-04 12:11:21,718 - INFO - Q1: List the founders of the company Apple.
+2025-08-04 12:11:21,718 - INFO - Q2: Who founded Apple Inc.?
+2025-08-04 12:11:21,718 - INFO - Q3: List the founders of the company Apple who are engineers.
+2025-08-04 12:11:21,718 - INFO - Q4: List the founders of the company Apple who are not engineers.
+2025-08-04 12:11:21,718 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:22,824 - INFO - Question 88
+2025-08-04 12:11:22,824 - INFO - Q1: List the combatant countries of the Second World War.
+2025-08-04 12:11:22,824 - INFO - Q2: Which countries fought in World War II?
+2025-08-04 12:11:22,824 - INFO - Q3: List combatant countries of the Second World War who switched sides.
+2025-08-04 12:11:22,824 - INFO - Q4: List combatant countries of the Second World War who did not switch sides.
+2025-08-04 12:11:22,824 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 12:11:24,678 - INFO - Question 89
+2025-08-04 12:11:24,679 - INFO - Q1: From which universities did Albert Einstein earn degrees?
+2025-08-04 12:11:24,679 - INFO - Q2: From which universities did Albert Einstein complete undergraduate or postgraduate degrees?
+2025-08-04 12:11:24,679 - INFO - Q3: From which universities did Albert Einstein earn undergraduate degrees?
+2025-08-04 12:11:24,679 - INFO - Q4: From which universities did Albert Einstein earn postgraduate degrees?
+2025-08-04 12:11:24,679 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:27,363 - INFO - Question 90
+2025-08-04 12:11:27,363 - INFO - Q1: List the solo albums released by Paul McCartney.
+2025-08-04 12:11:27,363 - INFO - Q2: What solo albums does Paul McCartney have?
+2025-08-04 12:11:27,363 - INFO - Q3: List the solo albums released by Paul McCartney with 15 tracks or more.
+2025-08-04 12:11:27,363 - INFO - Q4: List the solo albums released by Paul McCartney with fewer than 15 tracks.
+2025-08-04 12:11:27,363 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:28,466 - INFO - Question 91
+2025-08-04 12:11:28,466 - INFO - Q1: Which universities gave Marie Curie an honorary degree?
+2025-08-04 12:11:28,466 - INFO - Q2: From which universities did Marie Curie hold an honorary degree?
+2025-08-04 12:11:28,466 - INFO - Q3: Which universities from her home country gave Marie Curie an honorary degree?
+2025-08-04 12:11:28,466 - INFO - Q4: Which universities excluding those from her home country gave Marie Curie an honorary degree?
+2025-08-04 12:11:28,466 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:11:30,219 - INFO - Question 92
+2025-08-04 12:11:30,219 - INFO - Q1: List the screenwriters of the film 'The Godfather'.
+2025-08-04 12:11:30,219 - INFO - Q2: Who wrote the screenplay for 'The Godfather'?
+2025-08-04 12:11:30,219 - INFO - Q3: List the screenwriters of the film 'The Godfather' who also wrote the book the movie was based on.
+2025-08-04 12:11:30,219 - INFO - Q4: List the screenwriters of the film 'The Godfather' who did not write the book the movie was based on.
+2025-08-04 12:11:30,219 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:31,593 - INFO - Question 93
+2025-08-04 12:11:31,593 - INFO - Q1: List the nations that signed the Treaty of Versailles.
+2025-08-04 12:11:31,593 - INFO - Q2: Which countries were signatories to the Treaty of Versailles?
+2025-08-04 12:11:31,593 - INFO - Q3: List the European nations that signed the Treaty of Versailles.
+2025-08-04 12:11:31,593 - INFO - Q4: List the nations that signed the Treaty of Versailles excluding the European nations.
+2025-08-04 12:11:31,593 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:33,314 - INFO - Question 94
+2025-08-04 12:11:33,314 - INFO - Q1: Which degrees did Isaac Newton have?
+2025-08-04 12:11:33,314 - INFO - Q2: What degrees did Newton hold?
+2025-08-04 12:11:33,314 - INFO - Q3: What undergraduate degrees did Newton hold?
+2025-08-04 12:11:33,314 - INFO - Q4: What postgraduate degrees did Newton hold?
+2025-08-04 12:11:33,314 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:34,529 - INFO - Question 95
+2025-08-04 12:11:34,529 - INFO - Q1: What countries share an official language with Brazil?
+2025-08-04 12:11:34,529 - INFO - Q2: What nations have an official language in common with Brazil?
+2025-08-04 12:11:34,529 - INFO - Q3: What nations share an official language with Brazil but do not have exactly the same set of official languages as Brazil?
+2025-08-04 12:11:34,529 - INFO - Q4: What nations have exactly the same set of official languages as Brazil?
+2025-08-04 12:11:34,529 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:36,483 - INFO - Question 96
+2025-08-04 12:11:36,484 - INFO - Q1: List all of Italy's regions.
+2025-08-04 12:11:36,484 - INFO - Q2: What are the regions of Italy?
+2025-08-04 12:11:36,484 - INFO - Q3: List all of Italy's regions having at least one metropolitan area with more than one million people.
+2025-08-04 12:11:36,484 - INFO - Q4: List all of Italy's regions not having a metropolitan area with more than one million people.
+2025-08-04 12:11:36,484 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:37,860 - INFO - Question 97
+2025-08-04 12:11:37,860 - INFO - Q1: List the places where the founders of Google were born.
+2025-08-04 12:11:37,860 - INFO - Q2: What are the birthplaces of those who founded Google?
+2025-08-04 12:11:37,860 - INFO - Q3: List the places outside of the U.S. where the founders of Google were born.
+2025-08-04 12:11:37,860 - INFO - Q4: List the places inside the U.S. where the founders of Google were born.
+2025-08-04 12:11:37,860 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:39,110 - INFO - Question 98
+2025-08-04 12:11:39,110 - INFO - Q1: List the voice actors for Homer in the Spanish version of The Simpsons.
+2025-08-04 12:11:39,110 - INFO - Q2: Who are the Spanish voice actors who play Homer in the Simpsons?
+2025-08-04 12:11:39,110 - INFO - Q3: List the voice actors for Homer in the Latin American Spanish version of The Simpsons.
+2025-08-04 12:11:39,110 - INFO - Q4: List the voice actors for Homer in the Spanish version of The Simpsons excluding those who acted in the Latin American version.
+2025-08-04 12:11:39,110 - INFO - LLM Response: ['Equivalence', 'Unknown', 'ContainedBy', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:40,565 - INFO - Question 99
+2025-08-04 12:11:40,565 - INFO - Q1: List the scientists credited with discovering Radium.
+2025-08-04 12:11:40,565 - INFO - Q2: Who discovered the element Radium?
+2025-08-04 12:11:40,565 - INFO - Q3: List the female scientists credited with discovering Radium.
+2025-08-04 12:11:40,565 - INFO - Q4: List the scientists credited with discovering Radium who were not female.
+2025-08-04 12:11:40,566 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:41,641 - INFO - Question 100
+2025-08-04 12:11:41,642 - INFO - Q1: Which colors are on the flag of both Germany and Belgium?
+2025-08-04 12:11:41,642 - INFO - Q2: What are the colors used for both the German and Belgian flag?
+2025-08-04 12:11:41,642 - INFO - Q3: What primary colors are used for both the German and Belgian flag?
+2025-08-04 12:11:41,642 - INFO - Q4: What non-primary colors are used for both the German and Belgian flag?
+2025-08-04 12:11:41,642 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:42,639 - INFO - Question 101
+2025-08-04 12:11:42,640 - INFO - Q1: List the musicians in the band The Rolling Stones.
+2025-08-04 12:11:42,640 - INFO - Q2: Who are the members of The Rolling Stones?
+2025-08-04 12:11:42,640 - INFO - Q3: List the guitarists in the band The Rolling Stones.
+2025-08-04 12:11:42,640 - INFO - Q4: List the musicians in the band The Rolling Stones excluding the guitarists.
+2025-08-04 12:11:42,640 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:44,283 - INFO - Question 102
+2025-08-04 12:11:44,283 - INFO - Q1: List the American founders of the Microsoft Corporation.
+2025-08-04 12:11:44,283 - INFO - Q2: Who founded Microsoft and is from the U.S.?
+2025-08-04 12:11:44,283 - INFO - Q3: List the American founders of the Microsoft Corporation who served as CEO.
+2025-08-04 12:11:44,284 - INFO - Q4: List the American founders of the Microsoft Corporation who never served as CEO.
+2025-08-04 12:11:44,284 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:48,675 - INFO - Question 103
+2025-08-04 12:11:48,675 - INFO - Q1: List the Spanish autonomous communities.
+2025-08-04 12:11:48,675 - INFO - Q2: What are the autonomous communities of Spain?
+2025-08-04 12:11:48,675 - INFO - Q3: List the Spanish autonomous communities in which Catalan is an official language.
+2025-08-04 12:11:48,676 - INFO - Q4: List the Spanish autonomous communities in which Catalan is not an official language.
+2025-08-04 12:11:48,676 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:49,973 - INFO - Question 104
+2025-08-04 12:11:49,974 - INFO - Q1: List the screenwriters and story-writers for the film 'The Dark Knight'.
+2025-08-04 12:11:49,974 - INFO - Q2: Who wrote the screenplay or story for 'The Dark Knight'?
+2025-08-04 12:11:49,974 - INFO - Q3: List the screenwriters for the film 'The Dark Knight' who also wrote the story.
+2025-08-04 12:11:49,974 - INFO - Q4: List writers of 'The Dark Knight' who wrote either the screenplay or the story, but not both.
+2025-08-04 12:11:49,974 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 12:11:51,448 - INFO - Question 105
+2025-08-04 12:11:51,449 - INFO - Q1: What are the neighboring countries of the People's Republic of China, both past and present, that have fought against China in a war?
+2025-08-04 12:11:51,449 - INFO - Q2: Which countries (both current and historical) bordering China have fought a war against China?
+2025-08-04 12:11:51,449 - INFO - Q3: Which current countries bordering China have fought a war against China?
+2025-08-04 12:11:51,449 - INFO - Q4: Which historical countries bordering China have fought a war against China?
+2025-08-04 12:11:51,449 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:11:52,696 - INFO - Question 106
+2025-08-04 12:11:52,697 - INFO - Q1: List the recipients of the Nobel Prize in Physics who did not share their award.
+2025-08-04 12:11:52,697 - INFO - Q2: Who has won the Nobel Prize in Physics alone?
+2025-08-04 12:11:52,697 - INFO - Q3: List the recipients of the Nobel Prize in Physics who did not share their award and were the first person from their country to win the award.
+2025-08-04 12:11:52,697 - INFO - Q4: List the recipients of the Nobel Prize in Physics who did not share their award but were not the first person from their country to win the award.
+2025-08-04 12:11:52,697 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:54,095 - INFO - Question 107
+2025-08-04 12:11:54,095 - INFO - Q1: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise.
+2025-08-04 12:11:54,095 - INFO - Q2: Who were the actresses of Star Trek: The Original Series and played crew of the USS Enterprise?
+2025-08-04 12:11:54,095 - INFO - Q3: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise in multiple seasons.
+2025-08-04 12:11:54,095 - INFO - Q4: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise in only one season.
+2025-08-04 12:11:54,095 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:55,184 - INFO - Question 108
+2025-08-04 12:11:55,185 - INFO - Q1: List the subsidiaries of The Walt Disney Company that it wholly owns or has a controlling interest in.
+2025-08-04 12:11:55,185 - INFO - Q2: What companies does The Walt Disney Company own or have a controlling interest in?
+2025-08-04 12:11:55,185 - INFO - Q3: What companies does The Walt Disney Company wholly own?
+2025-08-04 12:11:55,185 - INFO - Q4: In what companies does The Walt Disney Company hold a controlling interest without wholly owning it?
+2025-08-04 12:11:55,185 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:56,909 - INFO - Question 109
+2025-08-04 12:11:56,909 - INFO - Q1: List the Oscar-winning cast members of the film Inception.
+2025-08-04 12:11:56,909 - INFO - Q2: What actors in Inception have won an Academy Award?
+2025-08-04 12:11:56,909 - INFO - Q3: List the actors of Inception who have won an Oscar, but not for Inception.
+2025-08-04 12:11:56,909 - INFO - Q4: List the actors who won an Oscar for Inception.
+2025-08-04 12:11:56,909 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Equivalence', 'Disjoint', 'Disjoint']
+2025-08-04 12:11:58,121 - INFO - Question 110
+2025-08-04 12:11:58,121 - INFO - Q1: List the accolades received by Bob Dylan.
+2025-08-04 12:11:58,121 - INFO - Q2: What awards has Bob Dylan won?
+2025-08-04 12:11:58,121 - INFO - Q3: List the Grammy Awards received by Bob Dylan.
+2025-08-04 12:11:58,121 - INFO - Q4: List the accolades received by Bob Dylan excluding the Grammy Awards.
+2025-08-04 12:11:58,121 - INFO - LLM Response: ['Contains', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:11:59,322 - INFO - Question 111
+2025-08-04 12:11:59,323 - INFO - Q1: List the composers of 'Avatar: The Last Airbender'.
+2025-08-04 12:11:59,323 - INFO - Q2: Who composed music for the series 'Avatar: The Last Airbender'?
+2025-08-04 12:11:59,323 - INFO - Q3: List the composers of 'Avatar: The Last Airbender' who were educated at the Berklee College of Music.
+2025-08-04 12:11:59,323 - INFO - Q4: List the composers of 'Avatar: The Last Airbender' who were not educated at the Berklee College of Music.
+2025-08-04 12:11:59,323 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:00,811 - INFO - Question 112
+2025-08-04 12:12:00,812 - INFO - Q1: What modern countries were part of the Soviet Union?
+2025-08-04 12:12:00,812 - INFO - Q2: Which extant countries were in the Soviet Union?
+2025-08-04 12:12:00,812 - INFO - Q3: What modern countries were part of the Soviet Union and border Russia?
+2025-08-04 12:12:00,812 - INFO - Q4: What modern countries were part of the Soviet Union but do not border Russia?
+2025-08-04 12:12:00,812 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:01,989 - INFO - Question 113
+2025-08-04 12:12:01,989 - INFO - Q1: Which flags of the regions of Italy feature at least two of the three colors of the national flag?
+2025-08-04 12:12:01,989 - INFO - Q2: What regional flags of Italy use at least two of the three colors of the flag of Italy?
+2025-08-04 12:12:01,989 - INFO - Q3: Which flags of the regions of Italy share exactly two colors with the national flag?
+2025-08-04 12:12:01,989 - INFO - Q4: Which flags of the regions of Italy share exactly three colors with the national flag?
+2025-08-04 12:12:01,989 - INFO - LLM Response: ['Equivalence', 'Overlap', 'ContainedBy', 'Disjoint', 'Unknown']
+2025-08-04 12:12:03,230 - INFO - Question 114
+2025-08-04 12:12:03,231 - INFO - Q1: List the wholly-owned subsidiaries of Amazon founded outside the U.S.
+2025-08-04 12:12:03,231 - INFO - Q2: What companies founded outside the United States does Amazon wholly own?
+2025-08-04 12:12:03,231 - INFO - Q3: List the wholly-owned subsidiaries of Amazon founded in Israel.
+2025-08-04 12:12:03,231 - INFO - Q4: List the wholly-owned subsidiaries of Amazon founded outside the U.S. and Israel.
+2025-08-04 12:12:03,231 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Unknown']
+2025-08-04 12:12:04,832 - INFO - Question 115
+2025-08-04 12:12:04,832 - INFO - Q1: List the directors who worked on the Breaking Bad series.
+2025-08-04 12:12:04,832 - INFO - Q2: Who directed episodes of Breaking Bad?
+2025-08-04 12:12:04,832 - INFO - Q3: List the directors who worked on the Breaking Bad series and directed more than one episode.
+2025-08-04 12:12:04,832 - INFO - Q4: List the directors who worked on the Breaking Bad series but directed only one episode.
+2025-08-04 12:12:04,832 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:06,191 - INFO - Question 116
+2025-08-04 12:12:06,191 - INFO - Q1: List the German federal states.
+2025-08-04 12:12:06,191 - INFO - Q2: What are the federal states of Germany?
+2025-08-04 12:12:06,191 - INFO - Q3: List the German federal states located (partially or wholly) in the former East Germany.
+2025-08-04 12:12:06,191 - INFO - Q4: List the German federal states located entirely in the former West Germany.
+2025-08-04 12:12:06,191 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:07,804 - INFO - Question 117
+2025-08-04 12:12:07,804 - INFO - Q1: List the founding member states of the AU.
+2025-08-04 12:12:07,804 - INFO - Q2: Which countries founded the African Union?
+2025-08-04 12:12:07,804 - INFO - Q3: List the founding member states of the AU who were later suspended.
+2025-08-04 12:12:07,804 - INFO - Q4: List the founding member states of the AU who were never suspended.
+2025-08-04 12:12:07,804 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:08,978 - INFO - Question 118
+2025-08-04 12:12:08,979 - INFO - Q1: List the musicians who played in Nirvana.
+2025-08-04 12:12:08,979 - INFO - Q2: Who were the members of the band Nirvana?
+2025-08-04 12:12:08,979 - INFO - Q3: List the musicians who played in Nirvana during the original lineup.
+2025-08-04 12:12:08,979 - INFO - Q4: List the musicians who played in Nirvana excluding those from the original lineup.
+2025-08-04 12:12:08,979 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:10,284 - INFO - Question 119
+2025-08-04 12:12:10,284 - INFO - Q1: List the US presidents who belonged to the Democratic Party.
+2025-08-04 12:12:10,284 - INFO - Q2: Which US presidents were members of the Democratic Party?
+2025-08-04 12:12:10,284 - INFO - Q3: List the US presidents who belonged to the Democratic Party and served multiple terms.
+2025-08-04 12:12:10,284 - INFO - Q4: List the US presidents who belonged to the Democratic Party and served at most one term.
+2025-08-04 12:12:10,284 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:11,777 - INFO - Question 120
+2025-08-04 12:12:11,777 - INFO - Q1: List the Indian states with an official language that is Dravidian.
+2025-08-04 12:12:11,777 - INFO - Q2: What are the states of India with an official language that is Dravidian?
+2025-08-04 12:12:11,777 - INFO - Q3: List the most populous Indian state with an official language that is Dravidian.
+2025-08-04 12:12:11,778 - INFO - Q4: List the Indian states with an official language that is Dravidian excluding the most populous such state.
+2025-08-04 12:12:11,778 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:12,995 - INFO - Question 121
+2025-08-04 12:12:12,995 - INFO - Q1: List the US presidents who belonged to the Republican Party.
+2025-08-04 12:12:12,995 - INFO - Q2: Which US presidents were members of the Republican Party?
+2025-08-04 12:12:12,996 - INFO - Q3: List the US presidents who belonged to the Republican Party and served during the 20th century.
+2025-08-04 12:12:12,996 - INFO - Q4: List the US presidents who belonged to the Republican Party excluding those who served during the 20th century.
+2025-08-04 12:12:12,996 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:14,100 - INFO - Question 122
+2025-08-04 12:12:14,100 - INFO - Q1: Which capitals of African countries were founded in the 1800s?
+2025-08-04 12:12:14,100 - INFO - Q2: List capitals of African countries founded in the 19th century.
+2025-08-04 12:12:14,100 - INFO - Q3: Which capitals of African countries were founded between 1800 and 1849, inclusive?
+2025-08-04 12:12:14,100 - INFO - Q4: Which capitals of African countries were founded between 1850 and 1899, inclusive?
+2025-08-04 12:12:14,100 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:15,378 - INFO - Question 123
+2025-08-04 12:12:15,378 - INFO - Q1: Which mountains have a peak above 8,000 meters?
+2025-08-04 12:12:15,379 - INFO - Q2: What are the mountains higher than 8,000 meters?
+2025-08-04 12:12:15,379 - INFO - Q3: Which mountains have a peak above 8,000 meters located in the Himalayas?
+2025-08-04 12:12:15,379 - INFO - Q4: Which mountains have a peak above 8,000 meters excluding those located in the Himalayas?
+2025-08-04 12:12:15,379 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:16,534 - INFO - Question 124
+2025-08-04 12:12:16,534 - INFO - Q1: Who have been the kings of Belgium?
+2025-08-04 12:12:16,535 - INFO - Q2: List all Belgian kings.
+2025-08-04 12:12:16,535 - INFO - Q3: List all past Belgian kings.
+2025-08-04 12:12:16,535 - INFO - Q4: Name the current Belgian king.
+2025-08-04 12:12:16,535 - INFO - LLM Response: ['Equivalence', 'Equivalence', 'ContainedBy', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:17,715 - INFO - Question 125
+2025-08-04 12:12:17,716 - INFO - Q1: Which different kinds of triangles exist according to their angles?
+2025-08-04 12:12:17,716 - INFO - Q2: What are the types of triangles divided by angles?
+2025-08-04 12:12:17,716 - INFO - Q3: Which types of triangles can have an angle of over 90 degrees?
+2025-08-04 12:12:17,716 - INFO - Q4: Which types of triangles cannot have an angle of over 90 degrees?
+2025-08-04 12:12:17,716 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:18,811 - INFO - Question 126
+2025-08-04 12:12:18,811 - INFO - Q1: Which languages have been made official in South Africa since 1990?
+2025-08-04 12:12:18,812 - INFO - Q2: What languages of South Africa have been made official since 1990?
+2025-08-04 12:12:18,812 - INFO - Q3: Which sign languages have been made official in South Africa since 1990?
+2025-08-04 12:12:18,812 - INFO - Q4: Which spoken languages have been made official in South Africa since 1990?
+2025-08-04 12:12:18,812 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:19,994 - INFO - Question 127
+2025-08-04 12:12:19,995 - INFO - Q1: Which holidays are recognized as federal holidays in the United States?
+2025-08-04 12:12:19,995 - INFO - Q2: What are the U.S. federal holidays?
+2025-08-04 12:12:19,995 - INFO - Q3: Which federal holidays in the United States involve the celebration of historical or religious events?
+2025-08-04 12:12:19,995 - INFO - Q4: Which federal holidays in the United States are not related to the celebration of historical or religious events?
+2025-08-04 12:12:19,995 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:12:21,087 - INFO - Question 128
+2025-08-04 12:12:21,087 - INFO - Q1: Which languages have official status in some autonomous communities of Spain?
+2025-08-04 12:12:21,087 - INFO - Q2: What languages are official in some Spanish autonomous community?
+2025-08-04 12:12:21,088 - INFO - Q3: What languages are official in some Spanish autonomous community but not nationally?
+2025-08-04 12:12:21,088 - INFO - Q4: What languages are official in some Spanish autonomous community and nationally?
+2025-08-04 12:12:21,088 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Unknown']
+2025-08-04 12:12:22,365 - INFO - Question 129
+2025-08-04 12:12:22,365 - INFO - Q1: What countries have more than 100 million inhabitants?
+2025-08-04 12:12:22,366 - INFO - Q2: Which countries have a population over 100 million?
+2025-08-04 12:12:22,366 - INFO - Q3: What countries have more than 100 million inhabitants and are located in Asia?
+2025-08-04 12:12:22,366 - INFO - Q4: What countries have more than 100 million inhabitants and are not located in Asia?
+2025-08-04 12:12:22,366 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:24,063 - INFO - Question 130
+2025-08-04 12:12:24,064 - INFO - Q1: What are the Ancient Wonders of the World?
+2025-08-04 12:12:24,064 - INFO - Q2: What are the Seven Ancient Wonders of the World?
+2025-08-04 12:12:24,064 - INFO - Q3: What is the oldest of the Seven Ancient Wonders of the World?
+2025-08-04 12:12:24,064 - INFO - Q4: What are the Seven Ancient Wonders of the World excluding the oldest?
+2025-08-04 12:12:24,064 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:12:25,477 - INFO - Question 131
+2025-08-04 12:12:25,478 - INFO - Q1: What countries officially use Arabic but are not on the Arabian peninsula?
+2025-08-04 12:12:25,478 - INFO - Q2: Which countries not in the Arabian Peninsula do not have Arabic as an official language?
+2025-08-04 12:12:25,478 - INFO - Q3: What countries officially use Arabic but are not on the Arabian peninsula nor in Africa?
+2025-08-04 12:12:25,478 - INFO - Q4: What countries officially use Arabic and are not on the Arabian peninsula but are rather in Africa?
+2025-08-04 12:12:25,478 - INFO - LLM Response: ['Disjoint', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:26,722 - INFO - Question 132
+2025-08-04 12:12:26,723 - INFO - Q1: What countries recognize a sign language as an official language?
+2025-08-04 12:12:26,723 - INFO - Q2: In which countries is a sign language recognized as official?
+2025-08-04 12:12:26,723 - INFO - Q3: What countries recognize a sign language as an official language in their constitution?
+2025-08-04 12:12:26,723 - INFO - Q4: What countries recognize a sign language as an official language but not constitutionally?
+2025-08-04 12:12:26,723 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:28,613 - INFO - Question 133
+2025-08-04 12:12:28,613 - INFO - Q1: Which rock classifications are recognized in geology?
+2025-08-04 12:12:28,613 - INFO - Q2: What are the types of rocks?
+2025-08-04 12:12:28,613 - INFO - Q3: To which rock classification does marble belong?
+2025-08-04 12:12:28,613 - INFO - Q4: What are the rock classifications excluding the one to which marble belongs?
+2025-08-04 12:12:28,613 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:29,963 - INFO - Question 134
+2025-08-04 12:12:29,963 - INFO - Q1: What extant countries used to be part (wholly or partially) of the Roman empire?
+2025-08-04 12:12:29,963 - INFO - Q2: Which modern countries have regions that used to be part of the Roman empire?
+2025-08-04 12:12:29,963 - INFO - Q3: Which modern countries have regions that used to be part of the Roman empire and have a Romance language as an official language?
+2025-08-04 12:12:29,963 - INFO - Q4: Which modern countries have regions that used to be part of the Roman empire but do not have a Romance language as an official language?
+2025-08-04 12:12:29,964 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:31,062 - INFO - Question 135
+2025-08-04 12:12:31,062 - INFO - Q1: Which Indian states are more populous than France?
+2025-08-04 12:12:31,062 - INFO - Q2: What states in India have more inhabitants than France?
+2025-08-04 12:12:31,062 - INFO - Q3: Which Indian states have more than twice the population of France?
+2025-08-04 12:12:31,062 - INFO - Q4: Which Indian states have a larger population than France but not more than twice its population?
+2025-08-04 12:12:31,062 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:32,212 - INFO - Question 136
+2025-08-04 12:12:32,212 - INFO - Q1: What are the notes in a C7 chord?
+2025-08-04 12:12:32,212 - INFO - Q2: Which notes comprise a C dominant 7th chord?
+2025-08-04 12:12:32,212 - INFO - Q3: What are the notes in both a C7 chord and a C minor chord?
+2025-08-04 12:12:32,212 - INFO - Q4: What are the notes in a C7 chord but not a C minor chord?
+2025-08-04 12:12:32,213 - INFO - LLM Response: ['Equivalence', 'Overlap', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:33,585 - INFO - Question 137
+2025-08-04 12:12:33,585 - INFO - Q1: What fire Pokemon were introduced in Generation 5?
+2025-08-04 12:12:33,585 - INFO - Q2: Which Pokemon of type fire were first seen in Gen 5?
+2025-08-04 12:12:33,585 - INFO - Q3: What multi-type Pokemon were introduced in Generation 5 where one type is fire?
+2025-08-04 12:12:33,585 - INFO - Q4: What exclusively fire Pokemon were introduced in Generation 5?
+2025-08-04 12:12:33,585 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:35,218 - INFO - Question 138
+2025-08-04 12:12:35,218 - INFO - Q1: What are the chambers of the human heart?
+2025-08-04 12:12:35,218 - INFO - Q2: What chambers are in the human heart?
+2025-08-04 12:12:35,218 - INFO - Q3: What chambers are on the right side of the human heart?
+2025-08-04 12:12:35,218 - INFO - Q4: What chambers are on the left side of the human heart?
+2025-08-04 12:12:35,218 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:37,298 - INFO - Question 139
+2025-08-04 12:12:37,298 - INFO - Q1: Which chemical elements have a lower boiling point than water?
+2025-08-04 12:12:37,298 - INFO - Q2: The boiling point of which chemical elements is lower than that of water?
+2025-08-04 12:12:37,298 - INFO - Q3: The boiling point of which chemical elements is lower than that of water but higher than 25°C?
+2025-08-04 12:12:37,298 - INFO - Q4: The boiling point of which chemical elements is lower than that of water and lower than or equal to 25°C?
+2025-08-04 12:12:37,298 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:38,378 - INFO - Question 140
+2025-08-04 12:12:38,379 - INFO - Q1: Which numbers below 100 are prime?
+2025-08-04 12:12:38,379 - INFO - Q2: What are the prime numbers less than 100?
+2025-08-04 12:12:38,379 - INFO - Q3: Which numbers below 100 are prime and even?
+2025-08-04 12:12:38,379 - INFO - Q4: Which numbers below 100 are prime and odd?
+2025-08-04 12:12:38,379 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:39,919 - INFO - Question 141
+2025-08-04 12:12:39,919 - INFO - Q1: Which U.S. Presidents were assassinated while in office?
+2025-08-04 12:12:39,919 - INFO - Q2: Which sitting American Presidents were killed?
+2025-08-04 12:12:39,919 - INFO - Q3: Which U.S. Presidents were assassinated while in office and served less than a year?
+2025-08-04 12:12:39,919 - INFO - Q4: Which U.S. Presidents were assassinated while in office and served at least a year?
+2025-08-04 12:12:39,919 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:41,160 - INFO - Question 142
+2025-08-04 12:12:41,161 - INFO - Q1: What notes do the open strings on a guitar play under standard tuning?
+2025-08-04 12:12:41,161 - INFO - Q2: What notes do the open strings on a guitar play under standard tuning?
+2025-08-04 12:12:41,161 - INFO - Q3: What notes are played by multiple open strings on a guitar under standard tuning?
+2025-08-04 12:12:41,161 - INFO - Q4: What notes are played by only one open string on a guitar under standard tuning?
+2025-08-04 12:12:41,161 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:43,241 - INFO - Question 143
+2025-08-04 12:12:43,241 - INFO - Q1: In which Olympics was the men’s 100 meter sprint world record broken?
+2025-08-04 12:12:43,241 - INFO - Q2: Which Olympics saw the male 100m sprint world record broken?
+2025-08-04 12:12:43,241 - INFO - Q3: In which Olympics was the men’s 100 meter sprint world record broken by a time over 10 seconds?
+2025-08-04 12:12:43,241 - INFO - Q4: In which Olympics was the men’s 100 meter sprint world record broken by a time of 10 seconds or less?
+2025-08-04 12:12:43,241 - INFO - LLM Response: ['Equivalence', 'Contains', 'ContainedBy', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:44,770 - INFO - Question 144
+2025-08-04 12:12:44,770 - INFO - Q1: What countries have both deserts and glaciers?
+2025-08-04 12:12:44,770 - INFO - Q2: In which sovereign states can one find both deserts and glaciers?
+2025-08-04 12:12:44,770 - INFO - Q3: What countries have both deserts and glaciers and are contained entirely in the Southern Hemisphere?
+2025-08-04 12:12:44,770 - INFO - Q4: What countries have both deserts and glaciers and are contained in whole or part in the Northern Hemisphere?
+2025-08-04 12:12:44,771 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:46,525 - INFO - Question 145
+2025-08-04 12:12:46,525 - INFO - Q1: What island nations in the Caribbean were part of the Spanish Empire?
+2025-08-04 12:12:46,525 - INFO - Q2: Which countries are in the Caribbean?
+2025-08-04 12:12:46,525 - INFO - Q3: What island countries are located in the Caribbean?
+2025-08-04 12:12:46,525 - INFO - Q4: What countries located in the Caribbean are not island countries?
+2025-08-04 12:12:46,525 - INFO - LLM Response: ['ContainedBy', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 12:12:47,780 - INFO - Question 146
+2025-08-04 12:12:47,781 - INFO - Q1: In which universities do Nobel Prize Laureates work currently?
+2025-08-04 12:12:47,781 - INFO - Q2: Which universities have Nobel laureates on their active staff?
+2025-08-04 12:12:47,781 - INFO - Q3: Which universities have Nobel laureates in Economics on their active staff?
+2025-08-04 12:12:47,781 - INFO - Q4: Which universities have Nobel laureates on their active staff excluding the Nobel Prize for Economics?
+2025-08-04 12:12:47,781 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 12:12:49,747 - INFO - Question 147
+2025-08-04 12:12:49,747 - INFO - Q1: With which countries does India have ongoing border disputes?
+2025-08-04 12:12:49,747 - INFO - Q2: Which countries currently have territorial disputes with India?
+2025-08-04 12:12:49,747 - INFO - Q3: With which countries that are nuclear powers does India have ongoing border disputes?
+2025-08-04 12:12:49,747 - INFO - Q4: With which countries that are not nuclear powers does India have ongoing border disputes?
+2025-08-04 12:12:49,747 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:51,221 - INFO - Question 148
+2025-08-04 12:12:51,221 - INFO - Q1: What countries on the Arabian Peninsula are considered part of the Middle East?
+2025-08-04 12:12:51,221 - INFO - Q2: Which countries are in the Middle East and on the Arabian Peninsula?
+2025-08-04 12:12:51,221 - INFO - Q3: What countries on the Arabian Peninsula are part of the Middle East and have a population over five million?
+2025-08-04 12:12:51,221 - INFO - Q4: What countries on the Arabian Peninsula are part of the Middle East and have a population of five million or less?
+2025-08-04 12:12:51,221 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:52,625 - INFO - Question 149
+2025-08-04 12:12:52,626 - INFO - Q1: What rivers over 500 kilometers long flow into the Black Sea or the Sea of Azov?
+2025-08-04 12:12:52,626 - INFO - Q2: Which rivers over 500 kms in length feed into the Black Sea or the Sea of Azov?
+2025-08-04 12:12:52,626 - INFO - Q3: What rivers over 500 kilometers long flow into the Sea of Azov?
+2025-08-04 12:12:52,626 - INFO - Q4: What rivers over 500 kilometers long flow into the Black Sea other than those that flow in via the Sea of Azov?
+2025-08-04 12:12:52,626 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:54,415 - INFO - Question 150
+2025-08-04 12:12:54,416 - INFO - Q1: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents)?
+2025-08-04 12:12:54,416 - INFO - Q2: Which parties (excluding independents) have had ministers or deputy ministers in the 67th government of the Italian Republic?
+2025-08-04 12:12:54,416 - INFO - Q3: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents) and are part of the European Democratic Party?
+2025-08-04 12:12:54,416 - INFO - Q4: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents, if any) but are not part of the European Democratic Party?
+2025-08-04 12:12:54,416 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 12:12:54,420 - INFO - Finished processing model: gpt-4o for language: en
+2025-08-04 12:12:54,420 - INFO - Processing model: gpt-4o for language: en

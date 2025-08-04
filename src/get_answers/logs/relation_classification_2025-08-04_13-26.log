@@ -1,0 +1,135 @@
+2025-08-04 13:26:03,317 - INFO - Processing model: gemini-2.0-flash for language: en
+2025-08-04 13:26:06,363 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-08-04 13:26:07,336 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:09,297 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:09,298 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:09,301 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:10,244 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:12,294 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:12,295 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:12,298 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:13,351 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:15,451 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:15,451 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:15,455 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:16,402 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:18,407 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:18,408 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:18,412 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:19,381 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:21,570 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:21,570 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:21,572 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:22,666 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:27,757 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:26:27,758 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:30,763 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-08-04 13:26:31,736 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:33,742 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:33,743 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:33,746 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:34,842 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:36,934 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:36,934 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:36,938 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:37,874 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:40,012 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:40,012 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:40,015 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:41,075 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:43,057 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:43,058 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:43,061 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:44,022 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:46,027 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:46,027 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:46,029 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:47,012 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:52,055 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:26:52,055 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:55,060 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-08-04 13:26:56,062 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:58,216 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:58,217 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:26:58,220 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:26:59,262 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:01,321 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:01,321 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:01,324 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:02,249 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:04,321 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:04,321 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:04,323 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:05,274 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:07,324 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:07,324 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:07,328 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:08,398 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:10,238 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:10,238 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:10,241 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:11,336 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:13,328 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:13,329 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:13,332 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:17,297 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-08-04 13:27:22,106 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:27:22,107 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:22,110 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:23,049 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:25,165 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:25,165 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:25,168 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:26,072 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:27,993 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:27,993 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:27,996 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:29,074 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:30,990 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:30,991 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:30,994 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:31,950 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:33,793 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:33,794 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:33,797 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:34,736 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:36,752 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:36,752 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:36,755 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:37,741 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:39,824 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:39,825 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:27:39,828 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:27:40,776 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:42:51,787 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:42:51,788 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:42:54,796 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-08-04 13:42:55,896 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:42:57,966 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:42:57,967 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:42:57,970 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:42:59,075 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:01,170 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:01,170 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:43:01,173 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:02,199 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:04,257 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:04,257 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:43:04,260 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:05,370 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:07,387 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:07,387 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:43:07,388 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:08,350 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:10,307 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:10,308 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:43:10,310 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:11,395 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+2025-08-04 13:43:16,445 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:43:16,445 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:49:38,699 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-08-04 13:49:42,720 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-08-04 13:49:47,555 - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-08-04 13:49:47,555 - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-08-04 13:49:47,559 - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 65] No route to host
+2025-08-04 13:49:48,584 - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down

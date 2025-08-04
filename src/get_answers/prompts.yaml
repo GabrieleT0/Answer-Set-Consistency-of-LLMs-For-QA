@@ -64,7 +64,7 @@ relation_classification:
       - ContainedBy: All answers to q1 are also answers to q2, but q2 includes additional answers. (q1 ⊂ q2)
       - Overlap: q1 and q2 share some, but not all, answers. Neither fully contains the other.
       - Disjoint: q1 and q2 have no answers in common.
-
+      - Unknown: The relation between the answer sets cannot be confidently determined based on the given questions.
       Here are the two questions:
       q1: {q1}  
       q2: {q2}  
@@ -113,7 +113,7 @@ relation_classification_minus:
       q3: {q3}
       
       For each comparison, use **one of the following labels**:
-      - Equivalent  
+      - Equivalence  
       - Contains  
       - ContainedBy  
       - Disjoint  

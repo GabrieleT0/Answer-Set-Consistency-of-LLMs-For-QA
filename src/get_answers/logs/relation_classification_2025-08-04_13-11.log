@@ -1,0 +1,456 @@
+2025-08-04 13:11:46,150 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 13:11:46,158 - INFO - Finished processing model: gpt-4o for language: en
+2025-08-04 13:11:46,159 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 13:11:47,496 - INFO - Question 145
+2025-08-04 13:11:47,496 - INFO - Q1: Which airports are located in California, USA?
+2025-08-04 13:11:47,496 - INFO - Q2: What airports are there in California, USA?
+2025-08-04 13:11:47,496 - INFO - Q3: Which airports are located on islands in California, USA?
+2025-08-04 13:11:47,496 - INFO - Q4: Which airports are located on mainland California, USA?
+2025-08-04 13:11:47,496 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Disjoint']
+2025-08-04 13:11:47,497 - INFO - Finished processing model: gpt-4o for language: en
+2025-08-04 13:11:47,497 - INFO - Processing model: gpt-4o for language: en
+2025-08-04 13:11:48,589 - INFO - Question 77
+2025-08-04 13:11:48,589 - INFO - Q1: Which countries changed their driving side from left to right?
+2025-08-04 13:11:48,590 - INFO - Q2: Which countries changed from driving on the left to driving on the right?
+2025-08-04 13:11:48,590 - INFO - Q3: Which countries changed their driving side from left to right due to being occupied or annexed?
+2025-08-04 13:11:48,590 - INFO - Q4: Which countries changed their driving side from left to right but not due to being occupied or annexed?
+2025-08-04 13:11:48,590 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:11:49,645 - INFO - Question 78
+2025-08-04 13:11:49,646 - INFO - Q1: Which countries currently have multiple capitals?
+2025-08-04 13:11:49,646 - INFO - Q2: Which countries have more than one capital city today?
+2025-08-04 13:11:49,646 - INFO - Q3: Which extant countries with multiple capitals are recognized by all of their neighbours?
+2025-08-04 13:11:49,646 - INFO - Q4: Which extant countries with multiple capitals are not recognized by all of their neighbours?
+2025-08-04 13:11:49,646 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 13:11:51,479 - INFO - Question 79
+2025-08-04 13:11:51,480 - INFO - Q1: Which countries drive on the left?
+2025-08-04 13:11:51,480 - INFO - Q2: In which countries does traffic drive on the left?
+2025-08-04 13:11:51,480 - INFO - Q3: Which countries drive on the left in Europe?
+2025-08-04 13:11:51,480 - INFO - Q4: Which countries drive on the left outside of Europe?
+2025-08-04 13:11:51,480 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:11:53,096 - INFO - Question 80
+2025-08-04 13:11:53,096 - INFO - Q1: Which countries have a female head of state?
+2025-08-04 13:11:53,096 - INFO - Q2: What countries have a woman as head of state?
+2025-08-04 13:11:53,096 - INFO - Q3: Which Asian countries have a female head of state?
+2025-08-04 13:11:53,096 - INFO - Q4: Which non-Asian countries have a female head of state?
+2025-08-04 13:11:53,096 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:11:54,838 - INFO - Question 81
+2025-08-04 13:11:54,838 - INFO - Q1: Which countries have diplomatic relations with Chile?
+2025-08-04 13:11:54,838 - INFO - Q2: Which countries does Chile have diplomatic relations with?
+2025-08-04 13:11:54,838 - INFO - Q3: Which European countries have diplomatic relations with Chile?
+2025-08-04 13:11:54,838 - INFO - Q4: Which non-European countries have diplomatic relations with Chile?
+2025-08-04 13:11:54,838 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:11:55,989 - INFO - Question 82
+2025-08-04 13:11:55,990 - INFO - Q1: Which countries have Islam as an official religion?
+2025-08-04 13:11:55,990 - INFO - Q2: In which countries is Islam an official religion?
+2025-08-04 13:11:55,990 - INFO - Q3: Which countries in Asia have Islam as an official religion?
+2025-08-04 13:11:55,990 - INFO - Q4: Which countries outside of Asia have Islam as an official religion?
+2025-08-04 13:11:55,990 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:11:57,570 - INFO - Question 83
+2025-08-04 13:11:57,570 - INFO - Q1: Which countries have won a Cricket World Cup?
+2025-08-04 13:11:57,570 - INFO - Q2: Which countries have won a World Cup in Cricket?
+2025-08-04 13:11:57,570 - INFO - Q3: Which countries in Asia have won a Cricket World Cup?
+2025-08-04 13:11:57,570 - INFO - Q4: Which countries outside of Asia have won a Cricket World Cup?
+2025-08-04 13:11:57,570 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:11:58,604 - INFO - Question 84
+2025-08-04 13:11:58,605 - INFO - Q1: Which countries have won a FIFA World Cup?
+2025-08-04 13:11:58,605 - INFO - Q2: List all countries that won a FIFA World Cup
+2025-08-04 13:11:58,605 - INFO - Q3: Which countries in Europe have won a FIFA World Cup?
+2025-08-04 13:11:58,605 - INFO - Q4: Which non-European countries have won a FIFA World Cup?
+2025-08-04 13:11:58,605 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:11:59,640 - INFO - Question 85
+2025-08-04 13:11:59,641 - INFO - Q1: Which countries have won a Rugby World Cup?
+2025-08-04 13:11:59,641 - INFO - Q2: Give me all countries that have won a Rugby World Cup
+2025-08-04 13:11:59,641 - INFO - Q3: Which primarily southern-hemisphere countries have won a Rugby World Cup?
+2025-08-04 13:11:59,641 - INFO - Q4: Which primarily northern-hemisphere countries have won a Rugby World Cup?
+2025-08-04 13:11:59,641 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:00,703 - INFO - Question 86
+2025-08-04 13:12:00,703 - INFO - Q1: Which countries observe Victory in Europe day?
+2025-08-04 13:12:00,703 - INFO - Q2: In which countries is VE day commemorated?
+2025-08-04 13:12:00,703 - INFO - Q3: Which countries in the EU observe Victory in Europe day?
+2025-08-04 13:12:00,704 - INFO - Q4: Which countries outside of the EU observe Victory in Europe Day?
+2025-08-04 13:12:00,704 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:02,078 - INFO - Question 87
+2025-08-04 13:12:02,078 - INFO - Q1: Which countries use the same plug as Canada?
+2025-08-04 13:12:02,078 - INFO - Q2: What countries have the same power outlets as Canada?
+2025-08-04 13:12:02,078 - INFO - Q3: Which countries use the same plug as Canada and share an official language with Canada?
+2025-08-04 13:12:02,078 - INFO - Q4: Which countries use the same plug as Canada but do not share an official language with Canada?
+2025-08-04 13:12:02,078 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:12:03,209 - INFO - Question 88
+2025-08-04 13:12:03,210 - INFO - Q1: Which countries were dissolved in the 1990s?
+2025-08-04 13:12:03,210 - INFO - Q2: What countries ended in the 90s?
+2025-08-04 13:12:03,210 - INFO - Q3: Which European countries were dissolved in the 1990s?
+2025-08-04 13:12:03,210 - INFO - Q4: Which non-European countries were dissolved in the 1990s?
+2025-08-04 13:12:03,210 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:04,378 - INFO - Question 89
+2025-08-04 13:12:04,379 - INFO - Q1: Which culinary nuts are not botanical nuts?
+2025-08-04 13:12:04,379 - INFO - Q2: What culinary nuts are not botanical?
+2025-08-04 13:12:04,379 - INFO - Q3: Which culinary nuts are not botanical nuts nor drupes?
+2025-08-04 13:12:04,379 - INFO - Q4: Which culinary nuts are drupes but not botanical nuts?
+2025-08-04 13:12:04,379 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:05,505 - INFO - Question 90
+2025-08-04 13:12:05,506 - INFO - Q1: Which death row prisoners had pizza as their last meal?
+2025-08-04 13:12:05,506 - INFO - Q2: Which executed inmates had pizza for their last meal?
+2025-08-04 13:12:05,506 - INFO - Q3: Which death row prisoners executed by hanging had pizza as their last meal?
+2025-08-04 13:12:05,506 - INFO - Q4: Which death row prisoners executed by a method other than hanging had pizza as their last meal?
+2025-08-04 13:12:05,506 - INFO - LLM Response: ['Contains', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:06,735 - INFO - Question 91
+2025-08-04 13:12:06,736 - INFO - Q1: Which desserts contain cinnamon?
+2025-08-04 13:12:06,736 - INFO - Q2: What desserts use cinnamon?
+2025-08-04 13:12:06,736 - INFO - Q3: Which American desserts contain cinnamon?
+2025-08-04 13:12:06,736 - INFO - Q4: Which non-American desserts contain cinnamon?
+2025-08-04 13:12:06,736 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:07,861 - INFO - Question 92
+2025-08-04 13:12:07,862 - INFO - Q1: Which dog breeds originated in China?
+2025-08-04 13:12:07,862 - INFO - Q2: What canine breeds come from China?
+2025-08-04 13:12:07,862 - INFO - Q3: Which toy dog breeds originated in China? 
+2025-08-04 13:12:07,862 - INFO - Q4: Which non-toy dog breeds originated in China?
+2025-08-04 13:12:07,862 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:09,521 - INFO - Question 93
+2025-08-04 13:12:09,522 - INFO - Q1: Which drugs for treating atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-04 13:12:09,522 - INFO - Q2: Which medications for treating atrial fibrillation are contraindicated in people who take lovastatin?
+2025-08-04 13:12:09,522 - INFO - Q3: Which antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-04 13:12:09,522 - INFO - Q4: Which non-antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-04 13:12:09,522 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:10,785 - INFO - Question 94
+2025-08-04 13:12:10,785 - INFO - Q1: Which Ethiopian political parties were founded since 2000?
+2025-08-04 13:12:10,785 - INFO - Q2: Which Ethiopian political parties started since 2000?
+2025-08-04 13:12:10,785 - INFO - Q3: Which Ethiopian political parties founded since 2000 are still active?
+2025-08-04 13:12:10,785 - INFO - Q4: Which Ethiopian political parties founded since 2000 are no longer active?
+2025-08-04 13:12:10,785 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:12,039 - INFO - Question 95
+2025-08-04 13:12:12,040 - INFO - Q1: Which football midfielders born in Senegal have played for France?
+2025-08-04 13:12:12,040 - INFO - Q2: Which French midfielders were born in Senegal?
+2025-08-04 13:12:12,040 - INFO - Q3: Which football midfielders born in Senegal have played for France and Inter Milan?
+2025-08-04 13:12:12,040 - INFO - Q4: Which football midfielders born in Senegal have played for France excluding those who played for Inter Milan?
+2025-08-04 13:12:12,040 - INFO - LLM Response: ['ContainedBy', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:18,831 - INFO - Question 96
+2025-08-04 13:12:18,835 - INFO - Q1: Which football players born in Senegal have played for France?
+2025-08-04 13:12:18,836 - INFO - Q2: Which French footballers were born in Senegal?
+2025-08-04 13:12:18,836 - INFO - Q3: Which football midfielders born in Senegal have played for France?
+2025-08-04 13:12:18,836 - INFO - Q4: Which football players born in Senegal have played for France excluding midfielders?
+2025-08-04 13:12:18,836 - INFO - LLM Response: ['Contains', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:20,233 - INFO - Question 97
+2025-08-04 13:12:20,233 - INFO - Q1: Which heads of state died from COVID-19 complications?
+2025-08-04 13:12:20,234 - INFO - Q2: Which heads of state passed away due to COVID-19?
+2025-08-04 13:12:20,234 - INFO - Q3: Which heads of state died in office from COVID-19 complications?
+2025-08-04 13:12:20,234 - INFO - Q4: Which heads of state died from COVID-19 complications but not while in office?
+2025-08-04 13:12:20,234 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:21,432 - INFO - Question 98
+2025-08-04 13:12:21,432 - INFO - Q1: Which honorary mayors were not human?
+2025-08-04 13:12:21,432 - INFO - Q2: List honorary mayors who were not people
+2025-08-04 13:12:21,433 - INFO - Q3: Which honorary mayors in Alaska were not human?
+2025-08-04 13:12:21,433 - INFO - Q4: Which honorary mayors outside Alaska were not human?
+2025-08-04 13:12:21,433 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:12:22,672 - INFO - Question 99
+2025-08-04 13:12:22,673 - INFO - Q1: Which horror movies were directed by siblings?
+2025-08-04 13:12:22,673 - INFO - Q2: Which horror films were directed by brothers or sisters?
+2025-08-04 13:12:22,673 - INFO - Q3: Which horror movies were directed by twin siblings?
+2025-08-04 13:12:22,673 - INFO - Q4: Which horror movies were directed by non-twin siblings?
+2025-08-04 13:12:22,673 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:24,043 - INFO - Question 100
+2025-08-04 13:12:24,043 - INFO - Q1: What languages are pro-drop?
+2025-08-04 13:12:24,043 - INFO - Q2: What languages drop pronouns?
+2025-08-04 13:12:24,043 - INFO - Q3: Which pro-drop languages use Latin script?
+2025-08-04 13:12:24,043 - INFO - Q4: Which pro-drop languages do not use Latin script?
+2025-08-04 13:12:24,043 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:25,591 - INFO - Question 101
+2025-08-04 13:12:25,592 - INFO - Q1: Which mountains are on Mars?
+2025-08-04 13:12:25,592 - INFO - Q2: List all Martian mountains
+2025-08-04 13:12:25,592 - INFO - Q3: Which Martian mountains are in the Tharsis Region?
+2025-08-04 13:12:25,592 - INFO - Q4: Which Martian mountains are not in the Tharsis Region?
+2025-08-04 13:12:25,592 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:26,728 - INFO - Question 102
+2025-08-04 13:12:26,728 - INFO - Q1: Which mountains were first ascended in the last eighty years?
+2025-08-04 13:12:26,728 - INFO - Q2: What mountains were first summited in the last 80 years?
+2025-08-04 13:12:26,728 - INFO - Q3: Which mountains first ascended in the last eighty years are plutons?
+2025-08-04 13:12:26,728 - INFO - Q4: Which mountains first ascended in the last eighty years are not plutons?
+2025-08-04 13:12:26,728 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:27,928 - INFO - Question 103
+2025-08-04 13:12:27,928 - INFO - Q1: Which movies are based on works written by Philip K. Dick?
+2025-08-04 13:12:27,928 - INFO - Q2: What films adapt the writing of Philip K. Dick?
+2025-08-04 13:12:27,928 - INFO - Q3: Which movies based on works written by Philip K. Dick feature androids?
+2025-08-04 13:12:27,928 - INFO - Q4: Which movies based on works written by Philip K. Dick do not feature androids?
+2025-08-04 13:12:27,928 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:28,994 - INFO - Question 104
+2025-08-04 13:12:28,994 - INFO - Q1: Which movies directed by Chloé Zhao are not MPAA-rated R?
+2025-08-04 13:12:28,994 - INFO - Q2: Which films not rated R did Chloe Zhao direct?
+2025-08-04 13:12:28,994 - INFO - Q3: Which movies directed by Chloé Zhao are not MPAA-rated R and participated in Cannes?
+2025-08-04 13:12:28,994 - INFO - Q4: Which movies directed by Chloé Zhao are not MPAA-rated R and did not participate in Cannes?
+2025-08-04 13:12:28,994 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Overlap']
+2025-08-04 13:12:30,555 - INFO - Question 105
+2025-08-04 13:12:30,555 - INFO - Q1: Which movies star Uma Thurman?
+2025-08-04 13:12:30,555 - INFO - Q2: In what films has Uma Thurman acted?
+2025-08-04 13:12:30,555 - INFO - Q3: Which science fiction movies star Uma Thurman?
+2025-08-04 13:12:30,555 - INFO - Q4: Which non-science fiction movies star Uma Thurman?
+2025-08-04 13:12:30,555 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:31,641 - INFO - Question 106
+2025-08-04 13:12:31,641 - INFO - Q1: Which movies were filmed in Yemen?
+2025-08-04 13:12:31,641 - INFO - Q2: What films used locations in Yemen?
+2025-08-04 13:12:31,641 - INFO - Q3: Which documentary movies were filmed in Yemen?
+2025-08-04 13:12:31,641 - INFO - Q4: Which non-documentary movies were filmed in Yemen?
+2025-08-04 13:12:31,642 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:32,742 - INFO - Question 107
+2025-08-04 13:12:32,742 - INFO - Q1: Which musical groups formed the same year as Soda Stereo?
+2025-08-04 13:12:32,743 - INFO - Q2: What musical groups started the same year that Soda Stereo started?
+2025-08-04 13:12:32,743 - INFO - Q3: Which rock musical groups formed the same year as Soda Stereo?
+2025-08-04 13:12:32,743 - INFO - Q4: Which non-rock musical groups formed the same year as Soda Stereo?
+2025-08-04 13:12:32,743 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:33,937 - INFO - Question 108
+2025-08-04 13:12:33,937 - INFO - Q1: Which musicians are from Nordic Countries?
+2025-08-04 13:12:33,937 - INFO - Q2: List Nordic musicians
+2025-08-04 13:12:33,937 - INFO - Q3: Which Nordic musicians are from Sweden?
+2025-08-04 13:12:33,937 - INFO - Q4: Which musicians are from Nordic countries excluding Sweden?
+2025-08-04 13:12:33,938 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:35,173 - INFO - Question 109
+2025-08-04 13:12:35,173 - INFO - Q1: Which natural languages are not Indo-European?
+2025-08-04 13:12:35,173 - INFO - Q2: What human languages are not Indo-European?
+2025-08-04 13:12:35,174 - INFO - Q3: Which official languages of the European Union are not Indo-European?
+2025-08-04 13:12:35,174 - INFO - Q4: Which natural languages are not Indo-European and not official languages of the European Union?
+2025-08-04 13:12:35,174 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Contains']
+2025-08-04 13:12:36,330 - INFO - Question 110
+2025-08-04 13:12:36,331 - INFO - Q1: Which New Zealand cyclists participated in the 2000 Summer Olympics?
+2025-08-04 13:12:36,331 - INFO - Q2: Which cyclists from New Zealand took part in the 2000 Olympics?
+2025-08-04 13:12:36,331 - INFO - Q3: Which New Zealand cyclists taller than 180cm participated in the 2000 Summer Olympics?
+2025-08-04 13:12:36,331 - INFO - Q4: Which New Zealand cyclists who are at most 180cm tall participated in the 2000 Summer Olympics?
+2025-08-04 13:12:36,331 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:37,387 - INFO - Question 111
+2025-08-04 13:12:37,388 - INFO - Q1: Which non-human animals have been sent into space?
+2025-08-04 13:12:37,388 - INFO - Q2: What animals were launched into space?
+2025-08-04 13:12:37,388 - INFO - Q3: Which non-human primates have been sent into space?
+2025-08-04 13:12:37,388 - INFO - Q4: Which non-human animals have been sent into space excluding primates?
+2025-08-04 13:12:37,388 - INFO - LLM Response: ['Contains', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:38,665 - INFO - Question 112
+2025-08-04 13:12:38,665 - INFO - Q1: Which online streamers studied at the University of Waterloo?
+2025-08-04 13:12:38,665 - INFO - Q2: What online streamers were educated at the University of Waterloo?
+2025-08-04 13:12:38,665 - INFO - Q3: Which online streamers who studied at the University of Waterloo live in Vancouver?
+2025-08-04 13:12:38,665 - INFO - Q4: Which online streamers who studied at the University of Waterloo live outside Vancouver?
+2025-08-04 13:12:38,665 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:39,896 - INFO - Question 113
+2025-08-04 13:12:39,897 - INFO - Q1: Which paintings by Camille Pissarro were stolen?
+2025-08-04 13:12:39,897 - INFO - Q2: What artworks by Camille Pissarro were subject to theft?
+2025-08-04 13:12:39,897 - INFO - Q3: Which stolen paintings by Camille Pissarro were held at some point in Alte Nationalgalerie?
+2025-08-04 13:12:39,897 - INFO - Q4: Which stolen paintings by Camille Pissarro were never held in Alte Nationalgalerie?
+2025-08-04 13:12:39,897 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:12:41,614 - INFO - Question 114
+2025-08-04 13:12:41,614 - INFO - Q1: Which parks are in Perth?
+2025-08-04 13:12:41,614 - INFO - Q2: List parks in Perth
+2025-08-04 13:12:41,614 - INFO - Q3: Which parks in Perth are State Registered Places?
+2025-08-04 13:12:41,614 - INFO - Q4: Which parks in Perth are not State Registered Places?
+2025-08-04 13:12:41,614 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:43,583 - INFO - Question 115
+2025-08-04 13:12:43,584 - INFO - Q1: Which people have an element named after them?
+2025-08-04 13:12:43,584 - INFO - Q2: Which people who had a chemical element named in their honor?
+2025-08-04 13:12:43,584 - INFO - Q3: Which people had an element named after them during their lifetime?
+2025-08-04 13:12:43,584 - INFO - Q4: Which people had an element named after them posthumously?
+2025-08-04 13:12:43,584 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:45,249 - INFO - Question 116
+2025-08-04 13:12:45,249 - INFO - Q1: Which Pokémon are fire and bug types?
+2025-08-04 13:12:45,249 - INFO - Q2: Which Pokémon are bug and fire types?
+2025-08-04 13:12:45,249 - INFO - Q3: Which Generation VIII Pokémon are fire and bug types?
+2025-08-04 13:12:45,249 - INFO - Q4: Which fire and bug type Pokémon are from generations other than Generation VIII?
+2025-08-04 13:12:45,249 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'ContainedBy', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:46,415 - INFO - Question 117
+2025-08-04 13:12:46,415 - INFO - Q1: Which political parties was Abraham Lincoln a member of?
+2025-08-04 13:12:46,416 - INFO - Q2: Abe Lincoln was a member of which political parties?
+2025-08-04 13:12:46,416 - INFO - Q3: Which political parties that Abraham Lincoln was a member of still exist today?
+2025-08-04 13:12:46,416 - INFO - Q4: Which political parties that Abraham Lincoln was a member of no longer exist?
+2025-08-04 13:12:46,416 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:47,907 - INFO - Question 118
+2025-08-04 13:12:47,907 - INFO - Q1: Which polygonal numbers less than 100 are also pronic?
+2025-08-04 13:12:47,907 - INFO - Q2: What numbers less than 100 are both pronic and polygonal?
+2025-08-04 13:12:47,907 - INFO - Q3: Which polygonal numbers less than or equals 40 are also pronic?
+2025-08-04 13:12:47,907 - INFO - Q4: Which polygonal numbers greater than 40 but less than 100 are also pronic?
+2025-08-04 13:12:47,908 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:49,180 - INFO - Question 119
+2025-08-04 13:12:49,180 - INFO - Q1: Which popes were married?
+2025-08-04 13:12:49,180 - INFO - Q2: Which popes had spouses?
+2025-08-04 13:12:49,180 - INFO - Q3: Which popes were married before ordination?
+2025-08-04 13:12:49,180 - INFO - Q4: Which popes were married after ordination but not before?
+2025-08-04 13:12:49,180 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:50,359 - INFO - Question 120
+2025-08-04 13:12:50,359 - INFO - Q1: Which relational database management systems are open source?
+2025-08-04 13:12:50,359 - INFO - Q2: What open source relational database engines are there?
+2025-08-04 13:12:50,359 - INFO - Q3: Which relational database management systems are open source and written in C or its variants?
+2025-08-04 13:12:50,359 - INFO - Q4: Which relational database management systems are open source and written in a language other than C or its variants?
+2025-08-04 13:12:50,359 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:51,661 - INFO - Question 121
+2025-08-04 13:12:51,661 - INFO - Q1: Which rugby union teams have had Chilean players?
+2025-08-04 13:12:51,661 - INFO - Q2: Which rugby union clubs have had players from Chile?
+2025-08-04 13:12:51,661 - INFO - Q3: Which European rugby union teams have had Chilean players?
+2025-08-04 13:12:51,661 - INFO - Q4: Which non-European rugby union teams have had Chilean players?
+2025-08-04 13:12:51,661 - INFO - LLM Response: ['ContainedBy', 'Contains', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:52,796 - INFO - Question 122
+2025-08-04 13:12:52,797 - INFO - Q1: Which saints died by crucifixion?
+2025-08-04 13:12:52,797 - INFO - Q2: Which saints were crucified?
+2025-08-04 13:12:52,797 - INFO - Q3: Who was the last saint to die by crucifixion?
+2025-08-04 13:12:52,797 - INFO - Q4: Which saints died by crucifixion excluding the last one?
+2025-08-04 13:12:52,797 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:54,431 - INFO - Question 123
+2025-08-04 13:12:54,432 - INFO - Q1: Which saints have their feast day on Desmond Tutu's birthday?
+2025-08-04 13:12:54,432 - INFO - Q2: What saints share their feast day with Desmond Tutu's birthday?
+2025-08-04 13:12:54,432 - INFO - Q3: Which Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-08-04 13:12:54,432 - INFO - Q4: Which non-Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-08-04 13:12:54,432 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:56,031 - INFO - Question 124
+2025-08-04 13:12:56,032 - INFO - Q1: Which saints have their feast day on June 15th?
+2025-08-04 13:12:56,032 - INFO - Q2: What saints' feast day is on June 15?
+2025-08-04 13:12:56,032 - INFO - Q3: Which saints with their feast day on June 15th are considered martyrs?
+2025-08-04 13:12:56,032 - INFO - Q4: Which saints with their feast day on June 15th are not considered martyrs?
+2025-08-04 13:12:56,032 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:12:57,103 - INFO - Question 125
+2025-08-04 13:12:57,103 - INFO - Q1: Which sauces are named after Italian cities?
+2025-08-04 13:12:57,103 - INFO - Q2: What sauces are named after cities in Italy?
+2025-08-04 13:12:57,103 - INFO - Q3: Which Italian sauces are named after Italian cities?
+2025-08-04 13:12:57,103 - INFO - Q4: Which sauces named after Italian cities are not Italian?
+2025-08-04 13:12:57,104 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:12:58,453 - INFO - Question 126
+2025-08-04 13:12:58,453 - INFO - Q1: Which sauces contain onion and garlic?
+2025-08-04 13:12:58,453 - INFO - Q2: What sauces have garlic and onion?
+2025-08-04 13:12:58,454 - INFO - Q3: Which Italian sauces contain both onion and garlic?
+2025-08-04 13:12:58,454 - INFO - Q4: Which non-Italian sauces contain both onion and garlic?
+2025-08-04 13:12:58,454 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:12:59,801 - INFO - Question 127
+2025-08-04 13:12:59,801 - INFO - Q1: Which science fiction movies star Uma Thurman?
+2025-08-04 13:12:59,801 - INFO - Q2: In what sci fi films has Uma Thurman acted?
+2025-08-04 13:12:59,802 - INFO - Q3: Which 1990s science fiction movies star Uma Thurman?
+2025-08-04 13:12:59,802 - INFO - Q4: Which science fiction movies starring Uma Thurman were released outside of the 1990s?
+2025-08-04 13:12:59,802 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:00,997 - INFO - Question 128
+2025-08-04 13:13:00,997 - INFO - Q1: Which series or movies were directed by alumni of the University of Bergen?
+2025-08-04 13:13:00,997 - INFO - Q2: Which films or TV series were directed by University of Bergen alumni?
+2025-08-04 13:13:00,998 - INFO - Q3: Which documentary series or movies were directed by alumni of the University of Bergen?
+2025-08-04 13:13:00,998 - INFO - Q4: Which non-documentary series or movies were directed by alumni of the University of Bergen?
+2025-08-04 13:13:00,998 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:02,248 - INFO - Question 129
+2025-08-04 13:13:02,248 - INFO - Q1: Which Simpsons characters were not born in Springfield?
+2025-08-04 13:13:02,248 - INFO - Q2: Which Simpsons characters were born outside Springfield?
+2025-08-04 13:13:02,248 - INFO - Q3: Which female Simpsons characters were not born in Springfield?
+2025-08-04 13:13:02,248 - INFO - Q4: Which Simpsons characters were not born in Springfield excluding female characters?
+2025-08-04 13:13:02,248 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:03,332 - INFO - Question 130
+2025-08-04 13:13:03,332 - INFO - Q1: Which smartphones are made by Chinese companies headquartered in Dongguan?
+2025-08-04 13:13:03,332 - INFO - Q2: What smartphones are manufactured by Chinese companies with headquarters in Dongguan?
+2025-08-04 13:13:03,332 - INFO - Q3: Which smartphones made by Chinese companies headquartered in Dongguan use ColorOS?
+2025-08-04 13:13:03,332 - INFO - Q4: Which smartphones are made by Chinese companies headquartered in Dongguan do not use ColorOS?
+2025-08-04 13:13:03,333 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:08,033 - INFO - Question 131
+2025-08-04 13:13:08,033 - INFO - Q1: Which species are endemic to Chile?
+2025-08-04 13:13:08,033 - INFO - Q2: What species are only found in Chile?
+2025-08-04 13:13:08,033 - INFO - Q3: Which species endemic to Chile are endangered?
+2025-08-04 13:13:08,033 - INFO - Q4: Which species endemic to Chile are not endangered?
+2025-08-04 13:13:08,033 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:09,333 - INFO - Question 132
+2025-08-04 13:13:09,333 - INFO - Q1: Which telescopes are based in Chile or countries that border Chile?
+2025-08-04 13:13:09,333 - INFO - Q2: Which telescopes are based in Chile or in countries that neighbor Chile?
+2025-08-04 13:13:09,333 - INFO - Q3: Which telescopes are based in Chile?
+2025-08-04 13:13:09,333 - INFO - Q4: Which telescopes are based in countries that border Chile?
+2025-08-04 13:13:09,333 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:10,490 - INFO - Question 133
+2025-08-04 13:13:10,490 - INFO - Q1: Which telescopes are based in Chile?
+2025-08-04 13:13:10,490 - INFO - Q2: What telescopes are located in Chile?
+2025-08-04 13:13:10,490 - INFO - Q3: Which optical telescopes are based in Chile?
+2025-08-04 13:13:10,490 - INFO - Q4: Which non-optical telescopes are based in Chile?
+2025-08-04 13:13:10,490 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:11,891 - INFO - Question 134
+2025-08-04 13:13:11,891 - INFO - Q1: Which Turing Award winners were born in Europe?
+2025-08-04 13:13:11,891 - INFO - Q2: Who born in Europe has won a Turing Award?
+2025-08-04 13:13:11,891 - INFO - Q3: Which European Turing Award winners were born in Ireland or the U.K.?
+2025-08-04 13:13:11,892 - INFO - Q4: Which European Turing Award winners were not born in Ireland or the U.K.?
+2025-08-04 13:13:11,892 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:13,145 - INFO - Question 135
+2025-08-04 13:13:13,146 - INFO - Q1: Which universities are based in Peru?
+2025-08-04 13:13:13,146 - INFO - Q2: What universities are in Peru?
+2025-08-04 13:13:13,146 - INFO - Q3: Which universities based in Peru have been established since 1950?
+2025-08-04 13:13:13,146 - INFO - Q4: Which universities based in Peru were established before 1950?
+2025-08-04 13:13:13,146 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Disjoint']
+2025-08-04 13:13:14,624 - INFO - Question 136
+2025-08-04 13:13:14,624 - INFO - Q1: Which universities based in Peru were established since 1950?
+2025-08-04 13:13:14,624 - INFO - Q2: What universities in Peru were founded since 1950?
+2025-08-04 13:13:14,624 - INFO - Q3: Which public universities in Peru have been established since 1950?
+2025-08-04 13:13:14,624 - INFO - Q4: Which non-public universities in Peru have been established since 1950?
+2025-08-04 13:13:14,624 - INFO - LLM Response: ['Equivalence', 'Contains', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:15,755 - INFO - Question 137
+2025-08-04 13:13:15,755 - INFO - Q1: Which video games are known to be NP-complete?
+2025-08-04 13:13:15,755 - INFO - Q2: What video games are NP-complete?
+2025-08-04 13:13:15,755 - INFO - Q3: Which puzzle video games are known to be NP-complete?
+2025-08-04 13:13:15,756 - INFO - Q4: Which video games are known to be NP-complete aside from puzzle games?
+2025-08-04 13:13:15,756 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:16,879 - INFO - Question 138
+2025-08-04 13:13:16,879 - INFO - Q1: Which video games have a fox character?
+2025-08-04 13:13:16,879 - INFO - Q2: What video games have a character that is a fox?
+2025-08-04 13:13:16,879 - INFO - Q3: Which video games published by Nintendo have a fox character?
+2025-08-04 13:13:16,879 - INFO - Q4: Which video games have a fox character excluding those published by Nintendo?
+2025-08-04 13:13:16,880 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:18,847 - INFO - Question 139
+2025-08-04 13:13:18,847 - INFO - Q1: Which video games have won the award of Best Esports Game of the Year at The Game Awards?
+2025-08-04 13:13:18,847 - INFO - Q2: Which games have been awarded the Best Esports Game of the Year?
+2025-08-04 13:13:18,847 - INFO - Q3: Which video games that have won the award of Best Esports Game of the Year at The Game Awards have a sequel?
+2025-08-04 13:13:18,847 - INFO - Q4: Which video games that have won the award of Best Esports Game of the Year at The Game Awards do not have a sequel?
+2025-08-04 13:13:18,847 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:19,914 - INFO - Question 140
+2025-08-04 13:13:19,914 - INFO - Q1: Which wars took place in South America?
+2025-08-04 13:13:19,914 - INFO - Q2: What wars happened in South America?
+2025-08-04 13:13:19,914 - INFO - Q3: Which civil wars took place in South America?
+2025-08-04 13:13:19,915 - INFO - Q4: Which international wars took place in South America?
+2025-08-04 13:13:19,915 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:13:21,460 - INFO - Question 141
+2025-08-04 13:13:21,460 - INFO - Q1: Which writers speak French, Arabic and Japanese?
+2025-08-04 13:13:21,460 - INFO - Q2: Which authors speak French, Arabic and Japanese?
+2025-08-04 13:13:21,461 - INFO - Q3: Which writers speak English, French, Arabic and Japanese?
+2025-08-04 13:13:21,461 - INFO - Q4: Which writers speak French, Arabic, and English but do not speak Japanese?
+2025-08-04 13:13:21,461 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:13:23,093 - INFO - Question 142
+2025-08-04 13:13:23,094 - INFO - Q1: Which YouTube channels with more than 500,000 subscribers talk about math?
+2025-08-04 13:13:23,094 - INFO - Q2: List YouTube maths channels with more than 500,000 followers
+2025-08-04 13:13:23,094 - INFO - Q3: Which English-language YouTube channels with more than 500,000 subscribers talk about math?
+2025-08-04 13:13:23,094 - INFO - Q4: Which YouTube channels with more than 500,000 subscribers talk about math in languages other than English?
+2025-08-04 13:13:23,094 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:24,744 - INFO - Question 143
+2025-08-04 13:13:24,744 - INFO - Q1: Who are Elon Musk's ex-spouses?
+2025-08-04 13:13:24,744 - INFO - Q2: Who are Elon Musk's past spouses?
+2025-08-04 13:13:24,744 - INFO - Q3: Which of Elon Musk's ex-spouses were married to him multiple times?
+2025-08-04 13:13:24,744 - INFO - Q4: Which of Elon Musk's ex-spouses were married to him only once?
+2025-08-04 13:13:24,745 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:26,459 - INFO - Question 144
+2025-08-04 13:13:26,459 - INFO - Q1: Who are the editors of EMMA?
+2025-08-04 13:13:26,459 - INFO - Q2: Who are EMMA's editors?
+2025-08-04 13:13:26,459 - INFO - Q3: Who are the editors-in-chief of EMMA?
+2025-08-04 13:13:26,459 - INFO - Q4: Who are the editors of EMMA excluding the editors-in-chief?
+2025-08-04 13:13:26,459 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:27,601 - INFO - Question 145
+2025-08-04 13:13:27,601 - INFO - Q1: Who are the editors-in-chief of EMMA?
+2025-08-04 13:13:27,601 - INFO - Q2: Who are EMMA's editors-in-chief?
+2025-08-04 13:13:27,601 - INFO - Q3: Who have been editors-in-chief of the EMMA journal since 2024?
+2025-08-04 13:13:27,601 - INFO - Q4: Who are the former editors-in-chief of EMMA before 2024?
+2025-08-04 13:13:27,602 - INFO - LLM Response: ['Equivalence', 'Unknown', 'Disjoint', 'Disjoint', 'Disjoint']
+2025-08-04 13:13:32,096 - INFO - Question 146
+2025-08-04 13:13:32,096 - INFO - Q1: Who are the original developers of SPSS?
+2025-08-04 13:13:32,096 - INFO - Q2: Who are SPSS' initial developers?
+2025-08-04 13:13:32,096 - INFO - Q3: Which of the original developers of SPSS were educated in Mexico?
+2025-08-04 13:13:32,096 - INFO - Q4: Which of the original developers of SPSS were not educated in Mexico?
+2025-08-04 13:13:32,097 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:33,601 - INFO - Question 147
+2025-08-04 13:13:33,601 - INFO - Q1: Who has run against Jair Bolsonaro for President of Brazil?
+2025-08-04 13:13:33,601 - INFO - Q2: Who ran against Bolsonaro for Brazilian President?
+2025-08-04 13:13:33,601 - INFO - Q3: Who ran against Jair Bolsonaro for President of Brazil the first time he ran?
+2025-08-04 13:13:33,602 - INFO - Q4: Who ran against Jair Bolsonaro for President of Brazil beyond his first run?
+2025-08-04 13:13:33,602 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Unknown']
+2025-08-04 13:13:34,722 - INFO - Question 148
+2025-08-04 13:13:34,723 - INFO - Q1: Who has served as Prime Minister of South Korea in the past 20 years?
+2025-08-04 13:13:34,723 - INFO - Q2: Name all South Korean Prime Ministers from the past 20 years
+2025-08-04 13:13:34,723 - INFO - Q3: Who is the prime minister of South Korea?
+2025-08-04 13:13:34,723 - INFO - Q4: Who has served as Prime Minister of South Korea in the past 20 years excluding the current one?
+2025-08-04 13:13:34,723 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:35,912 - INFO - Question 149
+2025-08-04 13:13:35,912 - INFO - Q1: Who has won more than one type of Nobel Prize?
+2025-08-04 13:13:35,912 - INFO - Q2: Who has won multiple types of Nobel Prize?
+2025-08-04 13:13:35,912 - INFO - Q3: Who has won the Nobel Peace Prize and another type of Nobel Prize?
+2025-08-04 13:13:35,912 - INFO - Q4: Who has won more than one type of Nobel Prize excluding the Nobel Peace Prize?
+2025-08-04 13:13:35,912 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Unknown']
+2025-08-04 13:13:37,100 - INFO - Question 150
+2025-08-04 13:13:37,100 - INFO - Q1: Who were the candidates in the 1972 United States Presidential Election?
+2025-08-04 13:13:37,100 - INFO - Q2: Who ran in the 1972 U.S. Presidential Election?
+2025-08-04 13:13:37,100 - INFO - Q3: Who was the Democratic party candidate in the 1972 United States Presidential Election?
+2025-08-04 13:13:37,100 - INFO - Q4: Who were the candidates in the 1972 United States Presidential Election excluding any Democrats?
+2025-08-04 13:13:37,100 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-04 13:13:37,104 - INFO - Finished processing model: gpt-4o for language: en

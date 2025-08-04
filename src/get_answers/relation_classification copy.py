@@ -174,7 +174,7 @@ def main(config = None, logger = setup_logger()):
     if config == None: 
         config = {
             "datasets":['qawiki.tsv'],
-            "llm_models": ['grok-3-mini'],
+            "llm_models": ['gpt-4o'],
             "languages": ['en']
         }
 

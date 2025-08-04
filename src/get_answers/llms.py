@@ -32,7 +32,6 @@ claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
 
 
 
-
 class PromptLLMS:
     def __init__(self, model, prompt_template, question=None, question1=None, question2=None, q1=None, q2=None, q3=None):
         self.chat = return_chat_model(model)

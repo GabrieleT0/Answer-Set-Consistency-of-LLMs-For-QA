@@ -59,30 +59,32 @@ def relation_identification(llm_model, language, dataset, logger):
     answers = {}
     if os.path.exists(output_filename):
         with open(output_filename, 'r', encoding='utf-8') as f:
+            print(output_filename)
             answers = json.load(f)
 
     for index, (q1, q2, q3, q4) in enumerate(question_pairs):
         if str(index) in answers:
             continue
-        chat = llms.return_chat_model(llm_model)
-        memory = ConversationBufferMemory()
-        conversation = ConversationChain(llm=chat, memory=memory)
-        # ?q1=q2
-        q1_q2 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q2))
-        q1_q3 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q3))
-        q1_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q4))
-        q3_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q3, q2=q4))
+        try:
+            chat = llms.return_chat_model(llm_model)
+            memory = ConversationBufferMemory()
+            conversation = ConversationChain(llm=chat, memory=memory)
+            # ?q1=q2
+            q1_q2 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q2))
+            q1_q3 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q3))
+            q1_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q4))
+            q3_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q3, q2=q4))
+            q1_q34 = conversation.predict(input=PROMPTS_minus.format(q1=q1, q2=q3, q3 = q4))
 
-        q1_q34 = conversation.predict(input=PROMPTS_minus.format(q1=q1, q2=q3, q3 = q4))
-
-        answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
-
-        logger.info(f"Question {index + 1}")
-        logger.info(f"Q1: {q1}")
-        logger.info(f"Q2: {q2}")
-        logger.info(f"Q3: {q3}")
-        logger.info(f"Q4: {q4}")
-        logger.info(f"LLM Response: {answers[index]}")
+            answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
+            logger.info(f"Question {index + 1}")
+            logger.info(f"Q1: {q1}")
+            logger.info(f"Q2: {q2}")
+            logger.info(f"Q3: {q3}")
+            logger.info(f"Q4: {q4}")
+            logger.info(f"LLM Response: {answers[index]}")
+        except:
+            continue
         
         with open(output_filename, 'w', encoding='utf-8') as f:
             json.dump(answers, f, ensure_ascii=False, indent=4)
@@ -92,8 +94,8 @@ def main(config = None, logger = setup_logger()):
     
     if config == None: 
         config = {
-            "datasets":['synthetic.tsv'],
-            "llm_models": ["gpt-4o"],
+            "datasets":['synthetic.tsv', "spinach.tsv", "qawiki.tsv"],
+            "llm_models": ["gemini-2.0-flash"],
             "languages": ['en']
         }
 
