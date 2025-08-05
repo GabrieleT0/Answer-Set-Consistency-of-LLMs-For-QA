@@ -29,8 +29,40 @@ openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
+self_hosted_models = ['llama3.3:8b','llama3.3:70b']
 
+class SelfHostedAPIWrapper(LLM):
+    model: str
+    url: str = 'your_api_url'
 
+    @property
+    def _identifying_params(self) -> dict:
+        """Get the identifying parameters."""
+        return {"model": self.model, "url": self.url}
+
+    @property
+    def _llm_type(self) -> str:
+        """Return type of LLM."""
+        return "custom"
+
+    def _call(self, prompt: str, stop = None) -> str:
+        payload = {
+            "model": self.model,
+            "prompt": prompt
+        }
+        headers = {"Content-Type": "application/json"}
+        response = requests.post(self.url, data=json.dumps(payload), headers=headers, stream=True)
+        response.raise_for_status()
+        aggregated_response = ""
+        for line in response.iter_lines():
+            if line:
+                try:
+                    obj = json.loads(line.decode("utf-8"))
+                    if "response" in obj:
+                        aggregated_response += obj["response"]
+                except Exception:
+                    continue
+        return aggregated_response
 
 class PromptLLMS:
     def __init__(self, model, prompt_template, question=None, question1=None, question2=None, q1=None, q2=None, q3=None):
@@ -73,5 +105,7 @@ def return_chat_model(model_name, temperature=0):
         return ChatXAI(model=model_name, xai_api_key=XAI_API_KEY, temperature=temperature)
     elif model_name in claude_models:
         return ChatAnthropic(model=model_name, anthropic_api_key=ANTHROPIC_API_KEY, temperature=temperature)
+    elif model_name in self_hosted_models:
+        return SelfHostedAPIWrapper(model=model_name, url="http://warhol.informatik.rwth-aachen.de:11434/api/generate")
     else:
         raise ValueError(f"Model {model_name} is not supported.")
