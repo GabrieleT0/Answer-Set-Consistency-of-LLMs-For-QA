@@ -141,7 +141,7 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
     answer_relation = load_json(relation_path)
 
     for index in range(start_index, end_index):
-        if str(index) in answers_ql1:
+        if str(index) in answers_ql1 and len(answers_ql1[str(index)])>0:
             continue
         question = questions[index]
         memory = ConversationBufferMemory()

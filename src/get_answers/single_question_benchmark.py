@@ -121,7 +121,7 @@ def run_benchmark_equal(prompt_type, config, logger):
                     answers = load_answers(dataset, column, language, prompt_type, llm_model, config)
 
                     for index, question in enumerate(questions):
-                        if str(index) in answers:
+                        if str(index) in answers and len(answers[str(index)])>0:
                             continue
 
                         response_set = process_question(question, llm_model, prompt_template, language, logger)
