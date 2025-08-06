@@ -1,0 +1,452 @@
+{
+    "0": [
+        "overlap. \n\n(note: to determine this, i analyzed the answer sets for each question:\ns1 contains some answers that are in s2 and also some that aren't.\ntherefore, it is not completely disjoint from s2.)"
+    ],
+    "1": [
+        "contains \n\nexplanation:\nthe set s1 contains all answers for q1 that are not answers for q2. this means it includes instruments that prince played, excluding string instruments (which might be included in the answer set of q2). the set s2 includes all answers for q3, which are instruments prince was known to play, excluding string instruments."
+    ],
+    "2": [
+        "disjoint"
+    ],
+    "3": [
+        "disjoint"
+    ],
+    "4": [
+        "overlap. \n\nthe set s1 includes all answers for q1 except those also answering q2, which are just the galilean moons io, europa, ganymede, and callisto. \nthe set s2 is identical to that of q3's answer set, which only excludes these four galilean moons.\nsince both sets share common elements but also include unique ones from their respective questions' full answer sets, they overlap."
+    ],
+    "5": [
+        "equivalent \n\nexplanation: both s1 and s2 contain elements that are specifically noble gases, but they have a unique relationship based on their context. the set of all answers for q1 that are not answers for q2 (s1) can be thought to be equivalent to the set of answers for q3 (s2), as both sets share common elements in the context of the questions about noble gases and some subsets may have similar characteristics or criteria used in their definitions."
+    ],
+    "6": [
+        "containedby"
+    ],
+    "7": [
+        "equivalent  \n\ns1 and s2 are equivalent because they contain the same elements. the set of all answers for q1 that are not answers for q2 (s1) should be identical to the set of answers for q3 (s2), since questions q1, q2, and q3 share common answers but differ in scope."
+    ],
+    "8": [
+        "overlap"
+    ],
+    "9": [
+        "equivalent."
+    ],
+    "10": [
+        "containby \n\nreasoning: the set s1 contains all answers for q1 that are not answers for q2, which means it includes host cities for past summer olympics excluding those in the 21st century. the set s2 is the set of answers for q3, consisting of host cities who never hosted them in the 21st century. since all host cities for past summer olympics can be divided into two groups based on their hosting history in the 21st century - those that did and those that didn't - s1 is contained by s2."
+    ],
+    "11": [
+        "overlap"
+    ],
+    "12": [
+        "overlaps"
+    ],
+    "13": [
+        "overlap"
+    ],
+    "14": [
+        "based on the context and definitions provided, i'll perform the comparison between s1 and s2:\n\ns1 contains answers for q3 (i.e., animated movies from studio ghibli that feature dragons).\ns2 is equivalent to s1.\n\nthe relationship between s1 and s2 is: **equivalent**"
+    ],
+    "15": [
+        "overlap \n\nexplanation: since s1 contains all answers for q1 that are not in q2, and some of these answers may also be answers to q3 (books authored by j.r.r. tolkien excluding fantasy works), there is an overlap between the concepts represented by s1 and s2."
+    ],
+    "16": [
+        "overlap"
+    ],
+    "17": [
+        "overlap"
+    ],
+    "18": [
+        "overlap"
+    ],
+    "19": [
+        "overlap"
+    ],
+    "20": [
+        "overlap \n\nexplanation: the set s1 is a subset of all answers for q3, because some musicians left before signing with emi. and the set s2 contains a subset of s1 (musicians who stayed), so they are overlapping."
+    ],
+    "21": [
+        "overlapping"
+    ],
+    "22": [
+        "overlap \n\nexplanation (just for fun): the set s1, containing answers to q1 that are not answers to q2, is related to the set s2, which contains answers to q3. this relationship can be visualized as an overlap between two sets. in this case, some answers in s1 may also appear in s2 because they pertain to cities that hosted the summer olympics multiple times but not exclusively in europe (q1), while others might not be related to q3 at all. the overlap label signifies that there is a non-empty intersection between the two sets s1 and s2, even though it's not exhaustive."
+    ],
+    "23": [
+        "containedby  \n\nexplanation: the set s1 (all answers for q1 that are not answers for q2) is a subset of the set s2 (answers for q3), because all watch brands under lvmh corporate umbrella (q1, excluding those in q2) are also excluded from the list of all non-watch brands under lvmh corporate umbrella (q3)."
+    ],
+    "24": [
+        "overlap"
+    ],
+    "25": [
+        "disjoint"
+    ],
+    "26": [
+        "overlap \n\nexplanation (if you want it): the set s1 and s2 are not disjoint because q3 is related to how many of its answers were also part of q2's answer set, which means there could be overlap between them. in this case, the female laureates who did not share their prize are a subset of those that shared their prize for the purpose of comparison with the total pool of women who received the award in literature."
+    ],
+    "27": [
+        "after analyzing the answer sets for q1, q2, and q3, i can determine that:\n\nthe set s1 (the set of all answers for q1 that are not answers for q2) is **disjoint** with the set s2 (the set of answers for q3)."
+    ],
+    "28": [
+        "overlap"
+    ],
+    "29": [
+        "overlap"
+    ],
+    "30": [
+        "overlap"
+    ],
+    "31": [
+        "overlap \n\n(note: s1 and s2 are not completely disjoint, as a country with more than 5 official languages could also have between 6 and 15 official languages)"
+    ],
+    "32": [
+        "overlap"
+    ],
+    "33": [
+        "overlap"
+    ],
+    "34": [
+        "after analyzing the questions and their answer sets, i can tell you that the relationship between s1 and s2 is:\n\ndisjoint"
+    ],
+    "35": [
+        "overlap"
+    ],
+    "36": [
+        "overlap \n\nexplanation (for context):\nthe set s1 contains all answers for q1 that are not answers for q2. \nthese are the continents: africa, antarctica, asia, australia/oceania, europe, north america.\nthose that are connected by land to other continents are africa, asia, and europe (q2).\nso s1 includes: antarctica, australia/oceania, north america.\n\nthe set s2 contains all answers for q3.\nthese are the continents not connected to others by land: australia/oceania and antarctica (q3).\n\nboth sets share one common answer: antarctica."
+    ],
+    "37": [
+        "given that q1 and q2 are related to books written by j.k. rowling under the pen name robert galbraith, i will proceed with analyzing s1 and s2.\n\nthe set s1 contains all answers for q1 that are not answers for q2. in other words, it is the set of books written by j.k. rowling under the pen name robert galbraith that do not include the character eric wardle.\n\nthe set s2 consists of answers for q3, which are the books written by j.k. rowling under the pen name robert galbraith and do not include the character eric wardle.\n\nbased on this information, s1 and s2 represent essentially the same concept - they both describe books written by j.k. rowling under the pen name robert galbraith that exclude eric wardle."
+    ],
+    "38": [
+        "overlap \n\nexplanation: s1 and s2 overlap because an answer in s1 could also be in s2, but they are not equivalent (some answers in s1 may not be trace gases) and they do not contain each other."
+    ],
+    "39": [
+        "overlap"
+    ],
+    "40": [
+        "overlap."
+    ],
+    "41": [
+        "after analyzing the questions and their answer sets, i conclude that:\n\ns1 contains s2\n\nand also, \ns2 is contained by s1"
+    ],
+    "42": [
+        "containesby"
+    ],
+    "43": [
+        "overlap"
+    ],
+    "44": [
+        "overlapping"
+    ],
+    "45": [
+        "let's break down the given questions and their answer sets.\n\nfor q1, the possible answers are novels by jane austen that were published posthumously. \nthese could be \"northanger abbey\" and \"persuasion\", as they were both published after her death in 1817.\n\nfor q2, we're looking for novels that were adapted into a marvel graphic novel series. based on my knowledge, only \"pride and prejudice\" has been adapted by marvel, but it was actually published during austen's lifetime, not posthumously. so, this question seems to have no correct answers.\n\nfor q3, the possible answers are novels that were published posthumously but not adapted into a graphic novel series. given that there is only one posthumously published novel by jane austen (\"northanger abbey\" and \"persuasion\"), we can infer that this question's answer set will contain at least these two options.\n\nnow, comparing the relationships between the concepts of s1 and s2:\n\ns1: the set of all answers for q1 that are not answers for q2 \nsince there is no correct answer for q2 (as \"pride and prejudice\" was published during austen's lifetime), i'll assume this question has an empty answer set.\n\ns2: the set of answers for q3\n\nthe relationship between s1 and s2 appears to be **disjoint**."
+    ],
+    "46": [
+        "based on the given questions and answer sets, i will compare the relationship between s1 and s2. \n\ns1: the set of all answers for q1 that are not answers for q2  \ns2: the set of answers for q3  \n\nthe relation is: **disjoint**"
+    ],
+    "47": [
+        "equivalent. \n\nthe set s1 (all answers for q1 that are not answers for q2) and the set s2 (answers for q3) contain identical elements, because the concepts of \"hospitals in cairo with more than 100 staff\" (q1), \"public hospitals in cairo with more than 100 staff\" (q2), and \"private hospitals in cairo with more than 100 staff\" (q3) are mutually exclusive and exhaustive given the context. \n\nhence, q1 is logically equivalent to q2 or q3, implying that s1 and s2 share the same elements."
+    ],
+    "48": [
+        "**overlap**\n\nexplanation: the set s1 contains answers for q3 (since some answers for q1 that are not for q2 might also be answers for q3), and s2 is a subset of s1 (since all answers for q3 must also be in the set of all answers for q1 that are not for q2)."
+    ],
+    "49": [
+        "overlap"
+    ],
+    "50": [
+        "overlap\n\nexplanation: the set s1 includes all answers for q1 that are not answers for q2, while the set s2 includes all answers for q3. since q1 and q2 deal with different aspects of cloud genera (all genera vs high-level clouds), and there is an overlap between the sets s1 and s2 because some genera in s1 may also be classified as non-high-level clouds in question q3, we label this relation as overlap.\n\nrelation between s1 and s2: **overlap**\n\nrelation between s1 and q1's answer set: **disjoint** (as s1 includes answers that are not for q2)\n\nrelation between s2 and q3's answer set: **equivalent**"
+    ],
+    "51": [
+        "overlap"
+    ],
+    "52": [
+        "overlap"
+    ],
+    "53": [
+        "equivalent."
+    ],
+    "54": [
+        "overlap"
+    ],
+    "55": [
+        "overlap"
+    ],
+    "56": [
+        "overlap \n\nexplanation: s1 and s2 share some common elements, but they are not identical. for example, a country might have coffee as its top 5 export (q3), but it's not among its top exports, or it has coffee among its top 5 exports (q1) without being the primary export (q2)."
+    ],
+    "57": [
+        "overlap"
+    ],
+    "58": [
+        "containedby"
+    ],
+    "59": [
+        "overlap"
+    ],
+    "60": [
+        "overlap"
+    ],
+    "61": [
+        "overlap"
+    ],
+    "62": [
+        "overlap"
+    ],
+    "63": [
+        "overlap"
+    ],
+    "64": [
+        "equivalent \n\nthe set s1 contains all nations currently having women as heads of state but not also as heads of government (as per q2), while the set s2 specifically includes such nations (as per q3). since both sets describe the same concept, they are equivalent."
+    ],
+    "65": [
+        "equivalent \n\nexplanation for my answer: \ni was able to identify that both sets s1 and s2 have equivalent logical relations. the set of all answers for q1 that are not answers for q2 is the same as the set of answers for q3 since the universal donors in q2 will be excluded from q1's answer set, which then matches exactly with q3's answer set."
+    ],
+    "66": [
+        "based on the given questions and answer sets, i would compare s1 and s2 as follows:\n\ns1 is a subset of q1's answers that are not answers for q2. this implies it contains composers who wrote music for oscar-winning movies but their music does not appear in english-language movies that won an academy award.\n\nto determine the relationship between s1 and s2, i will compare them with q3's set of answers.\nfor q3: baroque composers whose music appears in a movie winning an academy award excluding english-language movies. \n\nconsidering both sets (s1 and s2), they are related to the concept of \"oscar-winning movies\", but with different constraints on language. however, since both conditions for s1 and s2 are not mutually exclusive, we can determine their relationship using set theory.\n\nthe exact relation between s1 and s2 is: \n\n**overlap**"
+    ],
+    "67": [
+        "the set s1 contains all answers for q1 that are not answers for q2, which means it includes nations that have hosted the fifa world cup but not in europe. \n\ns2 is simply the set of answers for q3, which includes all nations that have hosted the fifa world cup excluding those in europe.\n\ncomparing these two sets...  \n\nthe relation between s1 and s2 is **equivalent**."
+    ],
+    "68": [
+        "after analyzing the answer sets for s1 and s2, i would classify their relationship as:\n\n**disjoint**\n\nexplanation: the set of answers for s1 consists of nations that do not have a president serving for two decades or more (i.e., q3's condition is not met), whereas the set of answers for s2 only includes countries where a president has served for two decades or more. these two sets are mutually exclusive, meaning no nation can be in both sets simultaneously."
+    ],
+    "69": [
+        "overlap"
+    ],
+    "70": [
+        "overlap\n\nexplanation: the set s1 contains answers to q1 that are not answers to q2. however, some of these answers may also be present in the answer set for q3 (the natural rainbow excluding primary colors). similarly, s2 contains answers for q3. since there is a non-empty intersection between s1 and s2 (answers to q3), the relation label is overlap."
+    ],
+    "71": [
+        "containedby \n\nexplanation: the set s1 contains all answers for q1 that are not answers for q2, meaning it includes answers that are specific to coins (not banknotes) and therefore is a subset of the set of answers for q3."
+    ],
+    "72": [
+        "overlap \n\nnote: the set s1 contains answers that are in q1 but not in q2, and it overlaps with the set of answers for q3 because some oceans may exist without touching south america. however, i should clarify that this is a human-oriented response, and my ai processing indicates that the correct relation label between sets s1 and s2 is overlap."
+    ],
+    "73": [
+        "equivalent"
+    ],
+    "74": [
+        "containedby \n\nexplanation: the set s1 (the set of all answers for q1 that are not answers for q2) is a subset of the set s2 (the set of answers for q3), since all minority religions in indonesia would be recognized but not be the majority religion. therefore, the relationship between s1 and s2 can be described as \"containedby\"."
+    ],
+    "75": [
+        "containedby \n\nexplanation: \nthe set s1 includes all answers for q1 that are not in q2, which means it contains all disciplines featured in the 2022 winter olympics except those involving skating. the set s2 contains all disciplines of the 2022 winter olympics that do not involve skating (q3). since s1 is a subset of s2 (all disciplines except those involving skating), the relationship between the two sets is containedby.\n\nhowever, i need to correct my previous response. \n\nthe correct answer is: overlap"
+    ],
+    "76": [
+        "containedby"
+    ],
+    "77": [
+        "equivalent"
+    ],
+    "78": [
+        "overlap"
+    ],
+    "79": [
+        "after analyzing the relationships between the answer sets s1 and s2, i can tell you that:\n\ns1 is equivalent to s2."
+    ],
+    "80": [
+        "overlap \n\nexplanation: the set s1 contains answers that are unique to q1, but not in q2. the set s2 contains all possible extant species that made stone tools (including those also mentioned in q3 as extant). since there can be overlap between the two sets (for example, a species could be mentioned in both q1 and q3), they are related by an overlap relation.\n\nto provide more context: in this case, we're considering \"overlap\" to mean that the two sets have common elements. this implies that some of the answers for q1 might also appear as answers for q3, or vice versa."
+    ],
+    "81": [
+        "equivalent \n\nexplanation: s1 and s2 contain identical answer sets, as the difference in the definition of q1 and q2 does not affect which nations have won eurovision outside of europe."
+    ],
+    "82": [
+        "overlap \n\nnote that s1 and s2 have some elements in common (e.g., corsica is an answer for both q1 and q3), but they also have different elements. therefore, the relationship between s1 and s2 is overlap."
+    ],
+    "83": [
+        "overlap"
+    ],
+    "84": [
+        "overlap. \n\nlet's analyze s1 and s2 more closely: \ns1 contains answers that are not answers for q2, meaning they are exclusive to q1.\ns2 is a set of all answers for q3.\ncomparing these two sets reveals overlap because there exists common ground between them."
+    ],
+    "85": [
+        "overlap \n\ns1 and s2 overlap because they share at least one answer, specifically dumbledore. dumbledore is a character featured in all harry potter books (q1) but did not work at hogwarts (q3), whereas some characters appearing in all the harry potter books worked at some point at hogwarts (q2)."
+    ],
+    "86": [
+        "overlap"
+    ],
+    "87": [
+        "overlap"
+    ],
+    "88": [
+        "overlap"
+    ],
+    "89": [
+        "based on the given information, i will determine the relationship between sets s1 and s2. \n\ns1 is the set of all answers for q1 that are not answers for q2, which means it includes solo albums by paul mccartney with fewer than 15 tracks (since these would be excluded from q2's answer set).\n\ns2 is the set of answers for q3, which directly lists solo albums released by paul mccartney with fewer than 15 tracks.\n\nthe relationship between s1 and s2 is containedby."
+    ],
+    "90": [
+        "overlap \n\nexplanation for my answer:\ncomparing s1 and s2, we need to check the relationship between the set of answers for q1 that are not answers for q2 (s1) and the set of answers for q3 (s2). \nsince both sets can potentially have elements in common with each other because they both relate to universities giving marie curie an honorary degree but from different perspectives, we consider this relationship as \"overlap\"."
+    ],
+    "91": [
+        "equivalent. \n\ns1 = s2 because they both contain all screenwriters of 'the godfather' except those who wrote the book, which are the same answers for q3."
+    ],
+    "92": [
+        "based on the given information, i would say that s1 is equivalent to q3 and s2 is a subset of q1. however, since you asked for the comparison between two sets (s1 and s2), i will focus on their relationship.\n\nfor s1 and s2:\n\n**disjoint**\n\nexplanation: since s1 contains answers that are not associated with q2, and q3's answer set is identical to q1's except for european nations, it implies that the non-european nations in q1 (which make up s1) do not overlap with the answer set of q3 (which makes up s2)."
+    ],
+    "93": [
+        "overlap"
+    ],
+    "94": [
+        "overlaps"
+    ],
+    "95": [
+        "equivalent."
+    ],
+    "96": [
+        "overlap \n\nexplanation (just for fun): i compared the sets s1 and s2. the set s1 includes all answers to q1 that are not in q2, which means it has places where google's founders were born outside of the u.s., but also within the u.s. (since q1 doesn't exclude any locations). on the other hand, the set s2 only contains places inside the u.s. where the founders were born. since there is some overlap in these sets (places that are common to both, e.g. mountain view, ca), i labeled it as an overlap."
+    ],
+    "97": [
+        "equivalent  \n\nexplanation (for context): the answer set for q1 that are not answers for q2 is empty, as all answers for q1 are also answers for q2. since s2 has an equal number of elements as this empty set, the relation between s1 and s2 is equivalent."
+    ],
+    "98": [
+        "contains"
+    ],
+    "99": [
+        "based on the information provided, i will compare the relationship between sets s1 and s2. \n\nfor q1, some possible answers are red, blue, white, black, yellow, green, etc.  \nfor q2, the primary colors that could be used for both flags are red and blue. \nfor q3, non-primary colors like green and black might be used by both countries.\n\ncomparing s1 (set of all answers for q1 that are not answers for q2) to s2 (the set of answers for q3): \n\n**overlap**"
+    ],
+    "100": [
+        "overlap"
+    ],
+    "101": [
+        "overlap."
+    ],
+    "102": [
+        "disjoint. \n\nexplanation: the set of all answers for q1 that are not answers for q2 (s1) would be the spanish autonomous communities where catalan is not an official language, which matches with the question q3. these two sets s1 and q3 answers have no overlap because they contain different entities: s1 contains the autonomous communities where catalan is not an official language and q3 contains those where it is not an official language but does not account for those that are bilingual (in which case they would be in both sets, if they were to exist)."
+    ],
+    "103": [
+        "overlap"
+    ],
+    "104": [
+        "overlap"
+    ],
+    "105": [
+        "equivalent"
+    ],
+    "106": [
+        "after analyzing the answer sets for q1, q2, and q3, i found that:\n\ns1 is equivalent to s2 because both sets contain actresses who played crew members of the uss enterprise in only one season (for q1) or only have answers from q3 (for s2). the set of answers for q1 that are not answers for q2 would be empty since all answers for q1 were also answers for q2. however, this empty set is equal to the set of answers for q3."
+    ],
+    "107": [
+        "overlap"
+    ],
+    "108": [
+        "containedby \n\nexplanation: s2 is a subset of answers for q3, and the set of all answers for q1 that are not answers for q2 is contained within the answers for q3."
+    ],
+    "109": [
+        "overlaps."
+    ],
+    "110": [
+        "overlap \n\n(note: the set s1 contains answers that are not in q2, but may still be in q3. and since there is some overlap between q1 and q3, there must also be an overlap between s1 and q3)"
+    ],
+    "111": [
+        "containedby"
+    ],
+    "112": [
+        "overlap"
+    ],
+    "113": [
+        "overlap"
+    ],
+    "114": [
+        "overlap"
+    ],
+    "115": [
+        "overlap"
+    ],
+    "116": [
+        "containedby"
+    ],
+    "117": [
+        "overlap"
+    ],
+    "118": [
+        "disjoint \n\ns1 contains answers that are also in s2, but it specifically includes presidents who belonged to the democratic party and served a single term. since q3 is focused on those who served at most one term, this implies that all the members of s2 would be part of s1 as well, but not all members of s1 would be part of s2. therefore, the relationship between these two sets can be classified as disjoint is incorrect here. \n\nupon reevaluating this information, it appears that both sets contain elements from q3 but differ in their specificity. the correct classification for the relation between set s1 and s2 should actually be **containedby** since s1 includes all of s2 but also encompasses more answers.\n\nhowever, given that the instructions are to choose one label that best describes the relationship, i must reassess this further considering set definitions provided."
+    ],
+    "119": [
+        "let's analyze the answer sets for s1 and s2.\n\nfor q1, some answers might be kerala, tamil nadu, karnataka, etc., because these indian states have an official language that is dravidian. \n\nfor q2, one possible answer is tamil nadu, as it is the most populous indian state with an official language that is dravidian.\n\nfor q3, a potential answer is kerala, since it's an indian state with an official language that is dravidian excluding the most populous such state (tamil nadu).\n\nthe set of all answers for q1 that are not answers for q2, s1, would exclude tamil nadu. \n\nthe set of answers for q3, s2, is only relevant to one possible answer, which is kerala.\n\nbased on these observations, it seems the relationship between s1 and s2 can be described as **disjoint**."
+    ],
+    "120": [
+        "equivalent."
+    ],
+    "121": [
+        "contains \n\nexplanation: the set s1 contains all answers for q1 that are not answers for q2, which means it includes cities founded in the 1800s but not between 1800 and 1849. the set s2 contains answers for q3, which includes cities founded between 1850 and 1899. since some cities might have been founded in the 1800s (q1) but outside of q2's timeframe (between 1800 and 1849), they could also be in s2's timeframe (between 1850 and 1899). therefore, s1 contains s2 is a possible relation."
+    ],
+    "122": [
+        "containedby"
+    ],
+    "123": [
+        "overlapping."
+    ],
+    "124": [
+        "overlap"
+    ],
+    "125": [
+        "equivalent"
+    ],
+    "126": [
+        "overlap \n\nexplanation: the set s1 contains answers that are in q1 but not in q2, while the set s2 contains all answers related to q3. there is an overlap between these two sets because some federal holidays in the united states might be recognized as such by being listed on q1 and also related to historical or religious events, even though they do not exclusively involve celebrations of those types (q2)."
+    ],
+    "127": [
+        "after analyzing the answer sets for each question, i have found that:\n\ns1 and s2 are overlap."
+    ],
+    "128": [
+        "overlap"
+    ],
+    "129": [
+        "disjoint"
+    ],
+    "130": [
+        "overlap"
+    ],
+    "131": [
+        "equivalent \n\nexplanation: \nsince q1 and q2 differ in their answer sets due to the constititutional recognition, but s1 is actually related to both. to find an exact relationship between two sets s1 and s2 we have compared them with each other.\ns1 includes all countries that sign language is an official language for, excluding those that are also in q2's set as they have a constitutional acknowledgment. in turn, q3 asks about the same thing as q1 but adds the detail of not being constitutionally recognized. \nthus, s2 which contains answers to q3 must be equivalent to s1 (the set of countries where sign language is an official language excluding those that also are in q2). \n\nnote: the ai had a very long explanation before giving the answer."
+    ],
+    "132": [
+        "overlaps"
+    ],
+    "133": [
+        "based on the given information, i will compare the relationship between s1 and s2. \n\nsince q1 is about all countries that used to be part of the roman empire (wholly or partially), and q3 specifically excludes those with romance languages as official languages, it implies that all answers for q3 are not answers for q1.\n\nthus, s2 (the set of answers for q3) is **disjoint** from s1 (the set of all answers for q1 that are not answers for q2)."
+    ],
+    "134": [
+        "equivalent \n\nbecause s1 = s2."
+    ],
+    "135": [
+        "**disjoint**\n\nexplanation: since q1 and q3 are logically equivalent (both ask for notes in a c7 chord but not a c minor chord), their answer sets will be identical, which means s2 is actually an alternate way of asking q3. the set s1 (answers to q1 that are not answers to q2) would therefore be empty because there are no answers unique to q1, leading to a disjoint relationship between s1 and s2."
+    ],
+    "136": [
+        "overlap \n\nexplanation: the set s1 contains answers that are not in s2, and the set s2 is a subset of s1. since there's an overlap between the two sets, this justifies the \"overlap\" label."
+    ],
+    "137": [
+        "overlap"
+    ],
+    "138": [
+        "overlap"
+    ],
+    "139": [
+        "disjoint"
+    ],
+    "140": [
+        "containedby"
+    ],
+    "141": [
+        "overlap"
+    ],
+    "142": [
+        "overlap \n\nexplanation: the set s1 contains answers for q3, but also includes other possible answers not related to q3. therefore, it is an overlap between s1 and s2."
+    ],
+    "143": [
+        "after analyzing the answer sets for q1, q2, and q3, i have determined that:\n\ns1 is contained by s2."
+    ],
+    "144": [
+        "disjoint"
+    ],
+    "145": [
+        "based on the given information, i'll make a comparison between s1 and s2:\n\ns1 (the set of all answers for q1 that are not answers for q2) is overlap  \ns2 (the set of answers for q3) is disjoint"
+    ],
+    "146": [
+        "**overlap**"
+    ],
+    "147": [
+        "containedby"
+    ],
+    "148": [
+        "disjoint \n\nexplanation: the set s1 includes answers that are not present in q2. however, all the answers for q3 (s2) can be found within q1's answer set because they represent rivers flowing into the black sea without going through the sea of azov. this means every element in s2 is also in s1."
+    ],
+    "149": [
+        "containedby"
+    ]
+}
