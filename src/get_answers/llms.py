@@ -105,7 +105,7 @@ def return_chat_model(model_name, temperature=0, max_tokens = 20000):
     elif model_name in azure_models:
         return AzureChatOpenAI(azure_deployment=model_name, api_version=azure_api_version,)
     elif model_name in xai_models:
-        return ChatXAI(model=model_name, xai_api_key=XAI_API_KEY, temperature=temperature)
+        return ChatXAI(model=model_name, xai_api_key=XAI_API_KEY, max_tokens=max_tokens, temperature=temperature)
     elif model_name in claude_models:
         return ChatAnthropic(model=model_name, anthropic_api_key=ANTHROPIC_API_KEY, temperature=temperature)
     elif model_name in self_hosted_models:

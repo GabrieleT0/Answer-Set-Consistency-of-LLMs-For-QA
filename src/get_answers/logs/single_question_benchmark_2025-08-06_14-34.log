@@ -1,0 +1,25 @@
+2025-08-06 14:34:04,476 - INFO - Loaded config from config.json
+2025-08-06 14:34:04,476 - INFO - {'languages': ['en'], 'llm_models': ['grok-3-mini', 'gpt-4o', 'o3', 'gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:34:04,476 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:34:04,476 - INFO - Step 0: Identify Relations
+2025-08-06 14:34:04,477 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,478 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,478 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,479 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,479 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,480 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:34:04,480 - INFO - Step 1: Running single question benchmark
+2025-08-06 14:34:04,480 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-08-06 14:34:04,480 - INFO - Processing column: Q1
+2025-08-06 14:34:08,818 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-06 14:34:13,380 - INFO - Question 115: Give me all children's books written by Danielle Steel.
+2025-08-06 14:34:21,723 - INFO - Question 126: Give me all people that were born in Vienna and died in Berlin.
+2025-08-06 14:34:26,557 - INFO - Question 141: Give me a list of all Canadian record labels associated with Grunge music.
+2025-08-06 14:34:26,588 - INFO - Processing column: Q2
+2025-08-06 14:34:31,771 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-06 14:34:38,735 - INFO - Question 115: Can you provide a list of every children's book authored by Danielle Steel?
+2025-08-06 14:34:44,184 - INFO - Question 126: List all individuals who were born in Vienna and passed away in Berlin.
+2025-08-06 14:34:49,189 - INFO - Question 141: Can you provide a list of all Canadian record labels that publish Grunge music?
+2025-08-06 14:34:49,249 - INFO - Processing column: Q3
+2025-08-06 14:34:58,328 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-06 14:35:07,835 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?

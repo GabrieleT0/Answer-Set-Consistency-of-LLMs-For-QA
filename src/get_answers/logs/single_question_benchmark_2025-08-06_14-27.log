@@ -1,0 +1,18 @@
+2025-08-06 14:27:35,294 - INFO - Loaded config from config.json
+2025-08-06 14:27:35,294 - INFO - {'languages': ['en'], 'llm_models': ['grok-3-mini', 'gpt-4o', 'o3', 'gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:27:35,294 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:27:35,294 - INFO - Step 0: Identify Relations
+2025-08-06 14:27:35,294 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,295 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,295 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,297 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,297 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,298 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:27:35,298 - INFO - Step 1: Running single question benchmark
+2025-08-06 14:27:35,298 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-08-06 14:27:35,298 - INFO - Processing column: Q1
+2025-08-06 14:27:46,909 - INFO - Content filter triggered for question: Which US presidents were born in 1945?
+2025-08-06 14:27:47,407 - INFO - Error: 1 validation error for ChatXAI
+  Value error, xAI API key is not set. Please set it in the `xai_api_key` field or in the `XAI_API_KEY` environment variable. [type=value_error, input_value={'model': 'grok-3-mini', ...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-08-06 14:27:58,373 - INFO - Skipping question 102 due to content filter.

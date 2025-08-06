@@ -1,0 +1,13 @@
+2025-08-06 14:30:24,784 - INFO - Loaded config from config.json
+2025-08-06 14:30:24,785 - INFO - {'languages': ['en'], 'llm_models': ['grok-3-mini', 'gpt-4o', 'o3', 'gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:30:24,785 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:30:24,785 - INFO - Step 0: Identify Relations
+2025-08-06 14:30:24,785 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,786 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,786 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,787 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,787 - INFO - Processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,788 - INFO - Finished processing model: grok-3-mini for language: en
+2025-08-06 14:30:24,789 - INFO - Step 1: Running single question benchmark
+2025-08-06 14:30:24,789 - INFO - Processing dataset: spinach.tsv for model: grok-3-mini and language: en
+2025-08-06 14:30:24,789 - INFO - Processing column: Q1

@@ -6,6 +6,13 @@ def convert_response_to_set(response):
     """
     Convert the response from LLM.
     """
+    if hasattr(response, "content"):
+        response = response.content
+
+    # Ensure response is a string
+    if not isinstance(response, str):
+        response = str(response)
+
     if response == 'idk':
         return ['idk']
     if response == 'no answer':
@@ -19,6 +26,12 @@ def convert_response_to_set_es(response):
     """
     Convert the response from LLM.
     """
+    if hasattr(response, "content"):
+        response = response.content
+    # Ensure response is a string
+    if not isinstance(response, str):
+        response = str(response)
+        
     if response == 'no sé':
         return []
     response = response.split('|')
