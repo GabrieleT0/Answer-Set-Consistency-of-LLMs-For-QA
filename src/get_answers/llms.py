@@ -11,8 +11,11 @@ from langchain.chains import LLMChain
 from langchain_anthropic import ChatAnthropic
 # from openai import AzureOpenAI
 from langchain_openai import AzureChatOpenAI
+from langchain_core.language_models.llms import LLM
 
 import time
+import requests
+import json
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -29,7 +32,7 @@ openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
-self_hosted_models = ['llama3.3:8b','llama3.3:70b']
+self_hosted_models = ['llama3.1:8b','llama3.1:70b']
 
 class SelfHostedAPIWrapper(LLM):
     model: str
@@ -79,19 +82,19 @@ class PromptLLMS:
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"question": self.question})
-        return result.content
+        return result
 
     def execute_two_question(self):
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"q1": self.question1, "q2": self.question2})
-        return result.content
+        return result
 
     def execute_three_question(self):
         chain = self.prompt_template | self.chat
 
         result =  chain.invoke({"q1": self.q1, "q2": self.q2, "q3": self.q3})
-        return result.content
+        return result
 
 
 def return_chat_model(model_name, temperature=0):
