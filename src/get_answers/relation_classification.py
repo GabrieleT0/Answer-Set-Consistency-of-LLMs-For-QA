@@ -63,7 +63,7 @@ def relation_identification(llm_model, language, dataset, logger):
             answers = json.load(f)
 
     for index, (q1, q2, q3, q4) in enumerate(question_pairs):
-        if str(index) in answers and len(answers[index])>0:
+        if str(index) in answers and len(answers[str(index)]) > 0:
             continue
         try:
             chat = llms.return_chat_model(llm_model)

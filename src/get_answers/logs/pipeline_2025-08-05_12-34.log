@@ -1059,3 +1059,592 @@
 2025-08-05 18:12:27,616 - INFO - Question 101: Which Martian mountains are not in the Tharsis Region?
 2025-08-05 18:12:34,307 - INFO - Question 102: Which mountains first ascended in the last eighty years are not plutons?
 2025-08-05 18:12:43,289 - INFO - Question 103: Which movies based on works written by Philip K. Dick do not feature androids?
+2025-08-05 18:12:53,086 - INFO - Question 104: Which movies directed by Chloé Zhao are not MPAA-rated R and did not participate in Cannes?
+2025-08-05 18:13:05,570 - INFO - Question 105: Which non-science fiction movies star Uma Thurman?
+2025-08-05 18:13:10,357 - INFO - Question 106: Which non-documentary movies were filmed in Yemen?
+2025-08-05 18:13:20,631 - INFO - Question 107: Which non-rock musical groups formed the same year as Soda Stereo?
+2025-08-05 18:13:31,270 - INFO - Question 108: Which musicians are from Nordic countries excluding Sweden?
+2025-08-05 18:13:39,734 - INFO - Question 109: Which natural languages are not Indo-European and not official languages of the European Union?
+2025-08-05 18:13:47,908 - INFO - Question 110: Which New Zealand cyclists who are at most 180cm tall participated in the 2000 Summer Olympics?
+2025-08-05 18:13:56,592 - INFO - Question 111: Which non-human animals have been sent into space excluding primates?
+2025-08-05 18:14:00,939 - INFO - Question 112: Which online streamers who studied at the University of Waterloo live outside Vancouver?
+2025-08-05 18:14:16,833 - INFO - Question 113: Which stolen paintings by Camille Pissarro were never held in Alte Nationalgalerie?
+2025-08-05 18:14:22,024 - INFO - Question 114: Which parks in Perth are not State Registered Places?
+2025-08-05 18:14:34,913 - INFO - Question 115: Which people had an element named after them posthumously?
+2025-08-05 18:14:39,661 - INFO - Question 116: Which fire and bug type Pokémon are from generations other than Generation VIII?
+2025-08-05 18:14:44,928 - INFO - Question 117: Which political parties that Abraham Lincoln was a member of no longer exist?
+2025-08-05 18:15:00,039 - INFO - Question 118: Which polygonal numbers greater than 40 but less than 100 are also pronic?
+2025-08-05 18:15:05,574 - INFO - Question 119: Which popes were married after ordination but not before?
+2025-08-05 18:15:18,842 - INFO - Question 120: Which relational database management systems are open source and written in a language other than C or its variants?
+2025-08-05 18:15:25,357 - INFO - Question 121: Which non-European rugby union teams have had Chilean players?
+2025-08-05 18:15:34,448 - INFO - Question 122: Which saints died by crucifixion excluding the last one?
+2025-08-05 18:15:45,188 - INFO - Question 123: Which non-Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-08-05 18:15:52,075 - INFO - Question 124: Which saints with their feast day on June 15th are not considered martyrs?
+2025-08-05 18:16:00,606 - INFO - Question 125: Which sauces named after Italian cities are not Italian?
+2025-08-05 18:16:08,527 - INFO - Question 126: Which non-Italian sauces contain both onion and garlic?
+2025-08-05 18:16:23,475 - INFO - Question 127: Which science fiction movies starring Uma Thurman were released outside of the 1990s?
+2025-08-05 18:16:28,290 - INFO - Question 128: Which non-documentary series or movies were directed by alumni of the University of Bergen?
+2025-08-05 18:16:39,690 - INFO - Question 129: Which Simpsons characters were not born in Springfield excluding female characters?
+2025-08-05 18:16:52,774 - INFO - Question 130: Which smartphones are made by Chinese companies headquartered in Dongguan do not use ColorOS?
+2025-08-05 18:16:58,606 - INFO - Question 131: Which species endemic to Chile are not endangered?
+2025-08-05 18:17:06,841 - INFO - Question 132: Which telescopes are based in countries that border Chile?
+2025-08-05 18:17:14,458 - INFO - Question 133: Which non-optical telescopes are based in Chile?
+2025-08-05 18:17:27,526 - INFO - Question 134: Which European Turing Award winners were not born in Ireland or the U.K.?
+2025-08-05 18:17:36,181 - INFO - Question 135: Which universities based in Peru were established before 1950?
+2025-08-05 18:17:43,884 - INFO - Question 136: Which non-public universities in Peru have been established since 1950?
+2025-08-05 18:17:57,926 - INFO - Question 137: Which video games are known to be NP-complete aside from puzzle games?
+2025-08-05 18:18:07,987 - INFO - Question 138: Which video games have a fox character excluding those published by Nintendo?
+2025-08-05 18:18:16,145 - INFO - Question 139: Which video games that have won the award of Best Esports Game of the Year at The Game Awards do not have a sequel?
+2025-08-05 18:18:23,681 - INFO - Question 140: Which international wars took place in South America?
+2025-08-05 18:18:28,803 - INFO - Question 141: Which writers speak French, Arabic, and English but do not speak Japanese?
+2025-08-05 18:18:48,939 - INFO - Question 142: Which YouTube channels with more than 500,000 subscribers talk about math in languages other than English?
+2025-08-05 18:18:55,588 - INFO - Question 143: Which of Elon Musk's ex-spouses were married to him only once?
+2025-08-05 18:19:00,391 - INFO - Question 144: Who are the editors of EMMA excluding the editors-in-chief?
+2025-08-05 18:19:08,412 - INFO - Question 145: Who are the former editors-in-chief of EMMA before 2024?
+2025-08-05 18:19:15,320 - INFO - Question 146: Which of the original developers of SPSS were not educated in Mexico?
+2025-08-05 18:19:29,022 - INFO - Question 147: Who ran against Jair Bolsonaro for President of Brazil beyond his first run?
+2025-08-05 18:19:40,462 - INFO - Question 148: Who has served as Prime Minister of South Korea in the past 20 years excluding the current one?
+2025-08-05 18:19:47,479 - INFO - Question 149: Who has won more than one type of Nobel Prize excluding the Nobel Peace Prize?
+2025-08-05 18:19:55,698 - INFO - Question 150: Who were the candidates in the 1972 United States Presidential Election excluding any Democrats?
+2025-08-05 18:19:55,707 - INFO - Processing dataset: synthetic.tsv for model: grok-3-mini and language: en
+2025-08-05 18:19:55,708 - INFO - Processing column: Q1
+2025-08-05 18:20:02,067 - INFO - Question 1: Name the films for which Quentin Tarantino was the director.
+2025-08-05 18:20:07,254 - INFO - Question 2: Name the instruments Prince was known for playing.
+2025-08-05 18:20:19,021 - INFO - Question 3: List the offspring of Queen Victoria.
+2025-08-05 18:20:22,764 - INFO - Question 4: Which languages hold official status in Switzerland?
+2025-08-05 18:20:39,054 - INFO - Question 5: List the moons that orbit the planet Jupiter.
+2025-08-05 18:20:43,791 - INFO - Question 6: List the elements belonging to the noble gas group.
+2025-08-05 18:20:52,323 - INFO - Question 7: List the businesses owned by Amazon.
+2025-08-05 18:20:58,712 - INFO - Question 8: List the programming languages created by Google.
+2025-08-05 18:21:05,991 - INFO - Question 9: List the films directed by Stanley Kubrick.
+2025-08-05 18:21:14,440 - INFO - Question 10: Name the French writers who have been awarded the Nobel Prize in Literature.
+2025-08-05 18:21:26,605 - INFO - Question 11: Name the host cities for past Summer Olympics.
+2025-08-05 18:21:35,741 - INFO - Question 12: Can you list the various penguin species?
+2025-08-05 18:21:46,391 - INFO - Question 13: Name the American presidents who belonged to the Democratic Party.
+2025-08-05 18:21:57,300 - INFO - Question 14: List the movies that received the Oscar for Best Picture.
+2025-08-05 18:22:11,709 - INFO - Question 15: List the animated movies from Studio Ghibli.
+2025-08-05 18:22:22,861 - INFO - Question 16: List the books authored by J.R.R. Tolkien.
+2025-08-05 18:22:33,235 - INFO - Question 17: List the South American capitals.
+2025-08-05 18:22:42,378 - INFO - Question 18: What automotive marques does the Volkswagen Group own?
+2025-08-05 18:22:46,120 - INFO - Question 19: Name the women married to Henry VIII.
+2025-08-05 18:44:21,750 - INFO - Question 20: Which extant countries have regions that were part of the British Empire?
+2025-08-05 18:44:27,886 - INFO - Question 21: List the musicians who were part of The Beatles.
+2025-08-05 18:44:33,780 - INFO - Question 22: What countries are enclaves?
+2025-08-05 18:44:40,193 - INFO - Question 23: What are the multiple-time host cities of the Summer Olympics?
+2025-08-05 18:44:52,134 - INFO - Question 24: What is a list of brands under the LVMH corporate umbrella?
+2025-08-05 18:45:02,434 - INFO - Question 25: What movies were awarded Best Picture at the Oscars between 1990 and 1999 inclusive?
+2025-08-05 18:45:10,421 - INFO - Question 26: List the genera belonging to the cat family (Felidae).
+2025-08-05 18:45:20,497 - INFO - Question 27: Who are the female laureates of the Nobel Prize in Literature?
+2025-08-05 18:45:26,519 - INFO - Question 28: What countries are in South America but not Latin America?
+2025-08-05 18:45:37,616 - INFO - Question 29: What are the last five chemical elements discovered?
+2025-08-05 18:45:42,564 - INFO - Question 30: What countries are observer states of the UN?
+2025-08-05 18:45:50,602 - INFO - Question 31: What are the official currencies used by EU countries?
+2025-08-05 18:46:03,250 - INFO - Question 32: Which countries have more than five official languages at the national level?
+2025-08-05 18:46:07,884 - INFO - Question 33: What are the three most common religions followed in India?
+2025-08-05 18:46:20,953 - INFO - Question 34: What cities serve as capitals of European countries?
+2025-08-05 18:46:24,206 - INFO - Question 35: Which colors constitute the RGB primary colors?
+2025-08-05 18:46:37,526 - INFO - Question 36: What countries recognize English as an official language?
+2025-08-05 18:46:42,090 - INFO - Question 37: Which continents exist on planet Earth?
+2025-08-05 18:46:46,870 - INFO - Question 38: What books did J.K. Rowling author under the pen name Robert Galbraith?
+2025-08-05 18:46:55,157 - INFO - Question 39: Which gases compose the atmosphere of Earth?
+2025-08-05 18:47:02,592 - INFO - Question 40: What species of animals have verified members who lived longer than 200 years?
+2025-08-05 18:47:13,420 - INFO - Question 41: Which video games are in the Grand Theft Auto series?
+2025-08-05 18:47:21,160 - INFO - Question 42: In which countries can the short-tailed chinchilla be found today?
+2025-08-05 18:47:24,209 - INFO - Question 43: What are the planets that orbit the Sun?
+2025-08-05 18:47:54,251 - INFO - Question 44: Which sites in Italy are designated as UNESCO World Heritage Sites?
+2025-08-05 18:54:04,758 - INFO - Question 45: Which currencies are in circulation in African countries?
+2025-08-05 18:54:09,314 - INFO - Question 46: What novels by Jane Austen were published posthumously?
+2025-08-05 18:54:14,922 - INFO - Question 47: What are the five most expansive islands in the Japanese archipelago?
+2025-08-05 18:54:18,547 - INFO - Question 48: What are the hospitals in Cairo with more than 100 staff?
+2025-08-05 18:54:24,053 - INFO - Question 49: What American presidents were born in Virginia?
+2025-08-05 18:54:32,493 - INFO - Question 50: Which nations are part of the North Atlantic Treaty Organization?
+2025-08-05 18:54:43,353 - INFO - Question 51: Which genera of clouds exist in meteorology?
+2025-08-05 18:54:52,018 - INFO - Question 52: What are the constituent states of the USA?
+2025-08-05 18:54:59,978 - INFO - Question 53: In which countries is Buddhism a majority religion?
+2025-08-05 18:55:09,532 - INFO - Question 54: What urban areas are classified as megacities?
+2025-08-05 18:55:12,842 - INFO - Question 55: Which provinces does Canada have?
+2025-08-05 18:55:15,874 - INFO - Question 56: What planets in the Solar System are terrestrial?
+2025-08-05 18:55:22,388 - INFO - Question 57: Which countries have coffee among their top 5 exports?
+2025-08-05 18:55:26,938 - INFO - Question 58: What are the main toppings of a Hawaiian pizza?
+2025-08-05 18:55:31,476 - INFO - Question 59: Which musical instruments typically appear in the string section of an orchestra?
+2025-08-05 19:17:23,292 - INFO - Question 60: What novels received the Hugo Award for Best Novel?
+2025-08-05 19:17:26,529 - INFO - Question 61: Which colors make up the CMYK system?
+2025-08-05 19:17:32,564 - INFO - Question 62: What nations have been champions of the FIFA World Cup?
+2025-08-05 19:17:40,585 - INFO - Question 63: What nations are ruled by monarchs?
+2025-08-05 19:17:53,804 - INFO - Question 64: What nations have the U.S. dollar as official currency?
+2025-08-05 19:18:08,702 - INFO - Question 65: What nations currently have women as heads of state?
+2025-08-05 19:18:14,282 - INFO - Question 66: Which blood types exist in humans?
+2025-08-05 19:18:26,159 - INFO - Question 67: Which Baroque period composers wrote music that appears in an Oscar-winning movie?
+2025-08-05 19:18:33,703 - INFO - Question 68: What nations have been hosts of the FIFA World Cup?
+2025-08-05 19:18:41,757 - INFO - Question 69: What nations are governed by presidents who do not have a term limit?
+2025-08-05 19:18:47,902 - INFO - Question 70: What are the different Nobel Prize award categories?
+2025-08-05 19:18:51,221 - INFO - Question 71: Which colors make up a natural rainbow?
+2025-08-05 19:19:00,434 - INFO - Question 72: What denominations of banknote and coins exist for the Euro?
+2025-08-05 19:19:03,688 - INFO - Question 73: Which oceans exist on our planet?
+2025-08-05 19:19:11,234 - INFO - Question 74: What extant species are classified as bears?
+2025-08-05 19:19:14,789 - INFO - Question 75: Which religions are officially recognized in Indonesia?
+2025-08-05 19:19:21,729 - INFO - Question 76: Which disciplines featured in the 2022 Winter Olympics?
+2025-08-05 19:19:27,834 - INFO - Question 77: What countries are top-10 exporters of copper by volume?
+2025-08-05 19:19:34,968 - INFO - Question 78: Which extinct species are in the Homo genus?
+2025-08-05 19:19:38,409 - INFO - Question 79: What are the constituent countries of the UK?
+2025-08-05 19:19:45,780 - INFO - Question 80: Which Egyptian sites are recognized as UNESCO World Heritage?
+2025-08-05 19:19:52,821 - INFO - Question 81: Which species, both extant and extinct, manufactured stone tools?
+2025-08-05 19:20:09,743 - INFO - Question 82: What nations have been winners of Eurovision?
+2025-08-05 19:20:22,543 - INFO - Question 83: List all French regions.
+2025-08-05 19:20:28,248 - INFO - Question 84: What professions did Leonardo da Vinci have?
+2025-08-05 19:20:50,575 - INFO - Question 85: List the accolades received by Meryl Streep.
+2025-08-05 19:21:06,581 - INFO - Question 86: Which characters featured in all the Harry Potter books?
+2025-08-05 19:21:10,261 - INFO - Question 87: List the founders of the company Apple.
+2025-08-05 19:21:20,491 - INFO - Question 88: List the combatant countries of the Second World War.
+2025-08-05 19:21:27,697 - INFO - Question 89: From which universities did Albert Einstein earn degrees?
+2025-08-05 19:21:39,267 - INFO - Question 90: List the solo albums released by Paul McCartney.
+2025-08-05 19:21:47,188 - INFO - Question 91: Which universities gave Marie Curie an honorary degree?
+2025-08-05 19:21:51,734 - INFO - Question 92: List the screenwriters of the film 'The Godfather'.
+2025-08-05 19:22:05,129 - INFO - Question 93: List the nations that signed the Treaty of Versailles.
+2025-08-05 19:22:09,600 - INFO - Question 94: Which degrees did Isaac Newton have?
+2025-08-05 19:22:16,559 - INFO - Question 95: What countries share an official language with Brazil?
+2025-08-05 19:22:23,642 - INFO - Question 96: List all of Italy's regions.
+2025-08-05 19:22:28,661 - INFO - Question 97: List the places where the founders of Google were born.
+2025-08-05 19:22:38,074 - INFO - Question 98: List the voice actors for Homer in the Spanish version of The Simpsons.
+2025-08-05 19:22:42,928 - INFO - Question 99: List the scientists credited with discovering Radium.
+2025-08-05 19:22:48,197 - INFO - Question 100: Which colors are on the flag of both Germany and Belgium?
+2025-08-05 19:22:57,655 - INFO - Question 101: List the musicians in the band The Rolling Stones.
+2025-08-05 19:23:02,371 - INFO - Question 102: List the American founders of the Microsoft Corporation.
+2025-08-05 19:23:11,284 - INFO - Question 103: List the Spanish autonomous communities.
+2025-08-05 19:23:17,635 - INFO - Question 104: List the screenwriters and story-writers for the film 'The Dark Knight'.
+2025-08-05 19:23:30,134 - INFO - Question 105: What are the neighboring countries of the People's Republic of China, both past and present, that have fought against China in a war?
+2025-08-05 19:23:42,453 - INFO - Question 106: List the recipients of the Nobel Prize in Physics who did not share their award.
+2025-08-05 19:23:49,949 - INFO - Question 107: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise.
+2025-08-05 19:23:58,220 - INFO - Question 108: List the subsidiaries of The Walt Disney Company that it wholly owns or has a controlling interest in.
+2025-08-05 19:24:04,817 - INFO - Question 109: List the Oscar-winning cast members of the film Inception.
+2025-08-05 19:24:17,899 - INFO - Question 110: List the accolades received by Bob Dylan.
+2025-08-05 19:24:24,409 - INFO - Question 111: List the composers of 'Avatar: The Last Airbender'.
+2025-08-05 19:24:30,262 - INFO - Question 112: What modern countries were part of the Soviet Union?
+2025-08-05 19:24:45,567 - INFO - Question 113: Which flags of the regions of Italy feature at least two of the three colors of the national flag?
+2025-08-05 19:24:57,049 - INFO - Question 114: List the wholly-owned subsidiaries of Amazon founded outside the U.S.
+2025-08-05 19:25:02,356 - INFO - Question 115: List the directors who worked on the Breaking Bad series.
+2025-08-05 19:25:09,637 - INFO - Question 116: List the German federal states.
+2025-08-05 19:25:23,582 - INFO - Question 117: List the founding member states of the AU.
+2025-08-05 19:25:31,395 - INFO - Question 118: List the musicians who played in Nirvana.
+2025-08-05 19:25:38,757 - INFO - Question 119: List the US presidents who belonged to the Democratic Party.
+2025-08-05 19:25:44,184 - INFO - Question 120: List the Indian states with an official language that is Dravidian.
+2025-08-05 19:25:56,104 - INFO - Question 121: List the US presidents who belonged to the Republican Party.
+2025-08-05 19:26:07,257 - INFO - Question 122: Which capitals of African countries were founded in the 1800s?
+2025-08-05 19:26:15,089 - INFO - Question 123: Which mountains have a peak above 8,000 meters?
+2025-08-05 19:26:22,074 - INFO - Question 124: Who have been the kings of Belgium?
+2025-08-05 19:26:30,467 - INFO - Question 125: Which different kinds of triangles exist according to their angles?
+2025-08-05 19:26:44,282 - INFO - Question 126: Which languages have been made official in South Africa since 1990?
+2025-08-05 19:26:52,148 - INFO - Question 127: Which holidays are recognized as federal holidays in the United States?
+2025-08-05 19:27:03,475 - INFO - Question 128: Which languages have official status in some autonomous communities of Spain?
+2025-08-05 19:27:12,552 - INFO - Question 129: What countries have more than 100 million inhabitants?
+2025-08-05 19:27:17,123 - INFO - Question 130: What are the Ancient Wonders of the World?
+2025-08-05 19:27:25,904 - INFO - Question 131: What countries officially use Arabic but are not on the Arabian peninsula?
+2025-08-05 19:27:32,610 - INFO - Question 132: What countries recognize a sign language as an official language?
+2025-08-05 19:27:36,313 - INFO - Question 133: Which rock classifications are recognized in geology?
+2025-08-05 19:27:46,692 - INFO - Question 134: What extant countries used to be part (wholly or partially) of the Roman empire?
+2025-08-05 19:27:54,682 - INFO - Question 135: Which Indian states are more populous than France?
+2025-08-05 19:28:02,324 - INFO - Question 136: What are the notes in a C7 chord?
+2025-08-05 19:28:09,992 - INFO - Question 137: What fire Pokemon were introduced in Generation 5?
+2025-08-05 19:28:12,588 - INFO - Question 138: What are the chambers of the human heart?
+2025-08-05 19:28:22,361 - INFO - Question 139: Which chemical elements have a lower boiling point than water?
+2025-08-05 19:28:28,379 - INFO - Question 140: Which numbers below 100 are prime?
+2025-08-05 19:28:35,610 - INFO - Question 141: Which U.S. Presidents were assassinated while in office?
+2025-08-05 19:28:40,977 - INFO - Question 142: What notes do the open strings on a guitar play under standard tuning?
+2025-08-05 19:28:51,920 - INFO - Question 143: In which Olympics was the men’s 100 meter sprint world record broken?
+2025-08-05 19:29:00,026 - INFO - Question 144: What countries have both deserts and glaciers?
+2025-08-05 19:29:08,431 - INFO - Question 145: What island nations in the Caribbean were part of the Spanish Empire?
+2025-08-05 19:29:14,454 - INFO - Question 146: In which universities do Nobel Prize Laureates work currently?
+2025-08-05 19:29:24,574 - INFO - Question 147: With which countries does India have ongoing border disputes?
+2025-08-05 19:29:29,969 - INFO - Question 148: What countries on the Arabian Peninsula are considered part of the Middle East?
+2025-08-05 19:29:37,506 - INFO - Question 149: What rivers over 500 kilometers long flow into the Black Sea or the Sea of Azov?
+2025-08-05 19:29:47,702 - INFO - Question 150: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents)?
+2025-08-05 19:29:47,748 - INFO - Processing column: Q2
+2025-08-05 19:29:53,654 - INFO - Question 1: Which movies were directed by Quentin Tarantino?
+2025-08-05 19:30:00,413 - INFO - Question 2: What musical instruments did Prince play?
+2025-08-05 19:30:10,373 - INFO - Question 3: Who were the children of Queen Victoria?
+2025-08-05 19:30:14,027 - INFO - Question 4: What are the official languages of Switzerland?
+2025-08-05 19:30:31,381 - INFO - Question 5: What are the natural satellites of Jupiter?
+2025-08-05 19:30:36,574 - INFO - Question 6: What are the noble gases?
+2025-08-05 19:30:42,426 - INFO - Question 7: What companies are subsidiaries of Amazon?
+2025-08-05 19:30:49,687 - INFO - Question 8: What programming languages were developed by Google?
+2025-08-05 19:30:57,184 - INFO - Question 9: What movies did Stanley Kubrick direct?
+2025-08-05 19:31:04,677 - INFO - Question 10: Which authors from France have won the Nobel Prize in Literature?
+2025-08-05 19:31:17,974 - INFO - Question 11: Which cities have hosted the Summer Olympic Games in the past?
+2025-08-05 19:31:26,425 - INFO - Question 12: What are the different species of penguins?
+2025-08-05 19:31:49,730 - INFO - Question 13: Which US presidents were members of the Democratic Party?
+2025-08-05 19:32:03,247 - INFO - Question 14: Which films have won the Academy Award for Best Picture?
+2025-08-05 19:32:13,474 - INFO - Question 15: What are the animated films produced by Studio Ghibli?
+2025-08-05 19:32:23,181 - INFO - Question 16: What books did J.R.R. Tolkien write?
+2025-08-05 19:32:32,905 - INFO - Question 17: What are the capital cities of South American countries?
+2025-08-05 19:32:40,894 - INFO - Question 18: Which car brands are part of the Volkswagen Group?
+2025-08-05 19:32:44,495 - INFO - Question 19: Who were the wives of King Henry VIII?
+2025-08-05 19:32:57,553 - INFO - Question 20: What existing countries used to belong, in whole or part, to the British Empire?
+2025-08-05 19:33:02,396 - INFO - Question 21: Who were the members of the band The Beatles?
+2025-08-05 19:33:08,667 - INFO - Question 22: Which enclaves are sovereign states?
+2025-08-05 19:33:15,456 - INFO - Question 23: Which cities have hosted the Summer Olympic Games more than once?
+2025-08-05 19:33:28,578 - INFO - Question 24: Which brands are owned by LVMH?
+2025-08-05 19:33:36,532 - INFO - Question 25: Which films won the Academy Award for Best Picture during the 1990s?
+2025-08-05 19:33:43,862 - INFO - Question 26: What are the genera within the Felidae family?
+2025-08-05 19:33:54,006 - INFO - Question 27: What women have won a Nobel Prize in Literature?
+2025-08-05 19:34:00,131 - INFO - Question 28: Which South American countries are not considered part of Latin America?
+2025-08-05 19:34:09,646 - INFO - Question 29: What are the five most recent elements to have been discovered?
+2025-08-05 19:34:15,947 - INFO - Question 30: Which countries are observer states of the United Nations?
+2025-08-05 19:34:22,976 - INFO - Question 31: Which currencies are officially used in some European Union state?
+2025-08-05 19:34:31,857 - INFO - Question 32: What states have at least six official languages nationwide?
+2025-08-05 19:34:36,719 - INFO - Question 33: What are the three main religions practiced in India?
+2025-08-05 19:34:49,429 - INFO - Question 34: Which cities are capitals of countries in Europe?
+2025-08-05 19:34:53,236 - INFO - Question 35: What are the primary colors in the RGB color model?
+2025-08-05 19:35:04,300 - INFO - Question 36: Which countries have English among their official languages?
+2025-08-05 19:35:09,590 - INFO - Question 37: What are the continents on Earth?
+2025-08-05 19:35:14,246 - INFO - Question 38: What books did J.K. Rowling write as Robert Galbraith?
+2025-08-05 19:35:22,373 - INFO - Question 39: What are the gases present in Earth's atmosphere?
+2025-08-05 19:35:33,911 - INFO - Question 40: Which animal species have specimens confirmed to have lived more than two centuries?
+2025-08-05 19:35:42,415 - INFO - Question 41: What GTA video games are there?
+2025-08-05 19:35:48,913 - INFO - Question 42: Which countries are native to the extant short-tailed chinchilla?
+2025-08-05 19:35:52,217 - INFO - Question 43: Which planets are part of the Solar System?
+2025-08-05 19:58:36,014 - INFO - Question 44: What are the UNESCO World Heritage Sites in Italy?
+2025-08-05 19:58:52,480 - INFO - Question 45: What are the official currencies used in Africa?
+2025-08-05 19:58:57,198 - INFO - Question 46: Which Jane Austen novels were published after her death?
+2025-08-05 19:59:01,895 - INFO - Question 47: What are the five largest islands of Japan in terms of area?
+2025-08-05 19:59:05,637 - INFO - Question 48: Which Cairo hospitals have over one hundred employees?
+2025-08-05 19:59:11,835 - INFO - Question 49: Which U.S. presidents were born in Virginia?
+2025-08-05 19:59:19,816 - INFO - Question 50: What are the current member countries of NATO?
+2025-08-05 19:59:24,741 - INFO - Question 51: What are the types of clouds in meteorology?
+2025-08-05 19:59:32,842 - INFO - Question 52: Which states are part of the United States of America?
+2025-08-05 19:59:38,451 - INFO - Question 53: Which countries have Buddhism as a majority religion?
+2025-08-05 19:59:47,829 - INFO - Question 54: Which cities are considered megacities?
+2025-08-05 19:59:54,095 - INFO - Question 55: What are the provinces of Canada?
+2025-08-05 19:59:57,044 - INFO - Question 56: Which Solar planets are classified as terrestrial planets?
+2025-08-05 20:00:03,932 - INFO - Question 57: In which states is coffee a top-5 export?
+2025-08-05 20:00:07,876 - INFO - Question 58: What toppings does a Hawaiian pizza have?
+2025-08-05 20:00:12,289 - INFO - Question 59: What instruments are most commonly used in an orchestra's string section?
+2025-08-05 20:00:25,165 - INFO - Question 60: Which novels won the Hugo Award for Best Novel?
+2025-08-05 20:00:28,480 - INFO - Question 61: What colors are used in CMYK?
+2025-08-05 20:00:35,261 - INFO - Question 62: Which countries have won the FIFA World Cup?
+2025-08-05 20:00:44,601 - INFO - Question 63: Which countries have monarchies?
+2025-08-05 20:00:51,779 - INFO - Question 64: Which countries use the American dollar as an official currency?
+2025-08-05 20:01:06,309 - INFO - Question 65: Which countries have female heads of state?
+2025-08-05 20:01:12,601 - INFO - Question 66: What are the common types of human blood groups?
+2025-08-05 20:01:23,694 - INFO - Question 67: Which Baroque composers have music that appears in an Academy Award-winning film?
+2025-08-05 20:01:33,670 - INFO - Question 68: Which countries have hosted the FIFA World Cup?
+2025-08-05 20:01:41,863 - INFO - Question 69: Which countries have a presidential system without term limits?
+2025-08-05 20:01:47,522 - INFO - Question 70: List Nobel Prize categories.
+2025-08-05 20:01:51,434 - INFO - Question 71: What are the colors of the rainbow?
+2025-08-05 20:02:00,741 - INFO - Question 72: List Euro denominations.
+2025-08-05 20:02:05,304 - INFO - Question 73: What are the oceans on Earth?
+2025-08-05 20:02:11,794 - INFO - Question 74: Which living animal species are bears?
+2025-08-05 20:02:16,923 - INFO - Question 75: What are the official religions of Indonesia?
+2025-08-05 20:02:29,621 - INFO - Question 76: What were the disciplines of the 2022 Winter Olympics?
+2025-08-05 20:02:39,932 - INFO - Question 77: Which ten states export the most copper in the world by volume?
+2025-08-05 20:02:46,768 - INFO - Question 78: What Homo species are extinct?
+2025-08-05 20:02:49,834 - INFO - Question 79: Which countries make up the United Kingdom?
+2025-08-05 20:02:56,477 - INFO - Question 80: What are the UNESCO World Heritage Sites in Egypt?
+2025-08-05 20:03:03,787 - INFO - Question 81: What extant or extinct species made stone tools?
+2025-08-05 20:03:15,680 - INFO - Question 82: Which countries have won the Eurovision Song Contest?
+2025-08-05 20:03:27,327 - INFO - Question 83: What are the regions of France?
+2025-08-05 20:03:34,248 - INFO - Question 84: What were Leonardo da Vinci's professions?
+2025-08-05 20:03:48,778 - INFO - Question 85: What awards has Meryl Streep won?
+2025-08-05 20:04:02,012 - INFO - Question 86: List the characters appearing in all books of the Harry Potter series.
+2025-08-05 20:04:05,946 - INFO - Question 87: Who founded Apple Inc.?
+2025-08-05 20:04:14,777 - INFO - Question 88: Which countries fought in World War II?
+2025-08-05 20:04:21,758 - INFO - Question 89: From which universities did Albert Einstein complete undergraduate or postgraduate degrees?
+2025-08-05 20:04:33,021 - INFO - Question 90: What solo albums does Paul McCartney have?
+2025-08-05 20:25:52,599 - INFO - Question 91: From which universities did Marie Curie hold an honorary degree?
+2025-08-05 20:25:57,798 - INFO - Question 92: Who wrote the screenplay for 'The Godfather'?
+2025-08-05 20:26:12,014 - INFO - Question 93: Which countries were signatories to the Treaty of Versailles?
+2025-08-05 20:26:23,690 - INFO - Question 94: What degrees did Newton hold?
+2025-08-05 20:26:31,204 - INFO - Question 95: What nations have an official language in common with Brazil?
+2025-08-05 20:26:41,550 - INFO - Question 96: What are the regions of Italy?
+2025-08-05 20:26:47,037 - INFO - Question 97: What are the birthplaces of those who founded Google?
+2025-08-05 20:26:55,081 - INFO - Question 98: Who are the Spanish voice actors who play Homer in the Simpsons?
+2025-08-05 20:26:59,200 - INFO - Question 99: Who discovered the element Radium?
+2025-08-05 20:27:04,749 - INFO - Question 100: What are the colors used for both the German and Belgian flag?
+2025-08-05 20:27:13,080 - INFO - Question 101: Who are the members of The Rolling Stones?
+2025-08-05 20:27:17,265 - INFO - Question 102: Who founded Microsoft and is from the U.S.?
+2025-08-05 20:27:26,358 - INFO - Question 103: What are the autonomous communities of Spain?
+2025-08-05 20:27:31,640 - INFO - Question 104: Who wrote the screenplay or story for 'The Dark Knight'?
+2025-08-05 20:27:58,670 - INFO - Question 105: Which countries (both current and historical) bordering China have fought a war against China?
+2025-08-05 20:28:11,024 - INFO - Question 106: Who has won the Nobel Prize in Physics alone?
+2025-08-05 20:28:19,567 - INFO - Question 107: Who were the actresses of Star Trek: The Original Series and played crew of the USS Enterprise?
+2025-08-05 20:28:32,952 - INFO - Question 108: What companies does The Walt Disney Company own or have a controlling interest in?
+2025-08-05 20:28:41,189 - INFO - Question 109: What actors in Inception have won an Academy Award?
+2025-08-05 20:28:52,861 - INFO - Question 110: What awards has Bob Dylan won?
+2025-08-05 20:28:59,749 - INFO - Question 111: Who composed music for the series 'Avatar: The Last Airbender'?
+2025-08-05 20:29:07,735 - INFO - Question 112: Which extant countries were in the Soviet Union?
+2025-08-05 20:29:22,718 - INFO - Question 113: What regional flags of Italy use at least two of the three colors of the flag of Italy?
+2025-08-05 20:29:32,553 - INFO - Question 114: What companies founded outside the United States does Amazon wholly own?
+2025-08-05 20:29:39,570 - INFO - Question 115: Who directed episodes of Breaking Bad?
+2025-08-05 20:29:48,408 - INFO - Question 116: What are the federal states of Germany?
+2025-08-05 20:30:06,816 - INFO - Question 117: Which countries founded the African Union?
+2025-08-05 20:30:15,687 - INFO - Question 118: Who were the members of the band Nirvana?
+2025-08-05 20:30:29,283 - INFO - Question 119: Which US presidents were members of the Democratic Party?
+2025-08-05 20:30:35,472 - INFO - Question 120: What are the states of India with an official language that is Dravidian?
+2025-08-05 20:30:46,533 - INFO - Question 121: Which US presidents were members of the Republican Party?
+2025-08-05 20:30:55,868 - INFO - Question 122: List capitals of African countries founded in the 19th century.
+2025-08-05 20:31:05,331 - INFO - Question 123: What are the mountains higher than 8,000 meters?
+2025-08-05 20:31:11,599 - INFO - Question 124: List all Belgian kings.
+2025-08-05 20:31:16,124 - INFO - Question 125: What are the types of triangles divided by angles?
+2025-08-05 20:31:56,179 - INFO - Question 126: What languages of South Africa have been made official since 1990?
+2025-08-05 20:32:04,192 - INFO - Question 127: What are the U.S. federal holidays?
+2025-08-05 20:32:16,478 - INFO - Question 128: What languages are official in some Spanish autonomous community?
+2025-08-05 20:32:26,679 - INFO - Question 129: Which countries have a population over 100 million?
+2025-08-05 20:32:31,728 - INFO - Question 130: What are the Seven Ancient Wonders of the World?
+2025-08-05 20:32:45,111 - INFO - Question 131: Which countries not in the Arabian Peninsula do not have Arabic as an official language?
+2025-08-05 20:32:52,360 - INFO - Question 132: In which countries is a sign language recognized as official?
+2025-08-05 20:32:56,798 - INFO - Question 133: What are the types of rocks?
+2025-08-05 20:33:16,808 - INFO - Question 134: Which modern countries have regions that used to be part of the Roman empire?
+2025-08-05 20:33:24,295 - INFO - Question 135: What states in India have more inhabitants than France?
+2025-08-05 20:33:28,662 - INFO - Question 136: Which notes comprise a C dominant 7th chord?
+2025-08-05 20:33:36,328 - INFO - Question 137: Which Pokemon of type fire were first seen in Gen 5?
+2025-08-05 20:33:39,518 - INFO - Question 138: What chambers are in the human heart?
+2025-08-05 20:33:49,105 - INFO - Question 139: The boiling point of which chemical elements is lower than that of water?
+2025-08-05 20:33:53,787 - INFO - Question 140: What are the prime numbers less than 100?
+2025-08-05 20:34:00,287 - INFO - Question 141: Which sitting American Presidents were killed?
+2025-08-05 20:34:04,882 - INFO - Question 142: What notes do the open strings on a guitar play under standard tuning?
+2025-08-05 20:34:17,858 - INFO - Question 143: Which Olympics saw the male 100m sprint world record broken?
+2025-08-05 20:34:28,134 - INFO - Question 144: In which sovereign states can one find both deserts and glaciers?
+2025-08-05 20:34:35,966 - INFO - Question 145: Which countries are in the Caribbean?
+2025-08-05 20:34:45,328 - INFO - Question 146: Which universities have Nobel laureates on their active staff?
+2025-08-05 20:34:51,050 - INFO - Question 147: Which countries currently have territorial disputes with India?
+2025-08-05 20:34:55,955 - INFO - Question 148: Which countries are in the Middle East and on the Arabian Peninsula?
+2025-08-05 20:35:04,919 - INFO - Question 149: Which rivers over 500 kms in length feed into the Black Sea or the Sea of Azov?
+2025-08-05 20:35:12,512 - INFO - Question 150: Which parties (excluding independents) have had ministers or deputy ministers in the 67th government of the Italian Republic?
+2025-08-05 20:35:12,574 - INFO - Processing column: Q3
+2025-08-05 20:35:17,949 - INFO - Question 1: Name the films directed by Quentin Tarantino set during World War II.
+2025-08-05 20:35:23,716 - INFO - Question 2: Which string instruments was Prince known for playing?
+2025-08-05 20:35:30,726 - INFO - Question 3: List the daughters of Queen Victoria.
+2025-08-05 20:35:34,164 - INFO - Question 4: Which Romance languages hold official status in Switzerland?
+2025-08-05 20:35:37,197 - INFO - Question 5: List the Galilean moons that orbit the planet Jupiter.
+2025-08-05 20:35:40,950 - INFO - Question 6: List the noble gases that are naturally occurring.
+2025-08-05 20:35:46,821 - INFO - Question 7: List the healthcare businesses owned by Amazon.
+2025-08-05 20:35:53,352 - INFO - Question 8: List the reflective programming languages created by Google.
+2025-08-05 20:35:59,735 - INFO - Question 9: List the science fiction films directed by Stanley Kubrick.
+2025-08-05 20:36:04,925 - INFO - Question 10: Name the French writers who have been awarded the Nobel Prize in Literature for works in poetry.
+2025-08-05 20:36:13,460 - INFO - Question 11: Name the host cities for the past Summer Olympics held in the 21st century.
+2025-08-05 20:36:19,878 - INFO - Question 12: Can you list the species of penguins found in Antarctica?
+2025-08-05 20:36:28,476 - INFO - Question 13: Name the American presidents who belonged to the Democratic Party and served in the 20th century.
+2025-08-05 20:36:47,969 - INFO - Question 14: List the fully black-and-white movies that received the Oscar for Best Picture.
+2025-08-05 20:37:01,903 - INFO - Question 15: List the animated movies from Studio Ghibli that do not feature dragons.
+2025-08-05 20:37:10,009 - INFO - Question 16: List the fantasy books authored by J.R.R. Tolkien.
+2025-08-05 20:37:16,558 - INFO - Question 17: List the South American capitals that are on the coast.
+2025-08-05 20:37:21,648 - INFO - Question 18: What luxury automotive marques does the Volkswagen Group own?
+2025-08-05 20:37:26,355 - INFO - Question 19: List the women married to Henry VIII who bore him children.
+2025-08-05 20:37:40,882 - INFO - Question 20: Which extant countries in the Commonwealth have regions that were part of the British Empire?
+2025-08-05 20:37:46,482 - INFO - Question 21: List the musicians who were part of The Beatles but left before signing for EMI.
+2025-08-05 20:37:50,439 - INFO - Question 22: Which enclaves within Italy are sovereign states?
+2025-08-05 20:37:59,491 - INFO - Question 23: What are the multiple-time host cities of the Summer Olympics in Europe?
+2025-08-05 20:38:05,431 - INFO - Question 24: What is a list of watch brands under the LVMH corporate umbrella?
+2025-08-05 20:38:12,081 - INFO - Question 25: What movies awarded Best Picture at the Oscars in the 1990s are entirely set before 1900?
+2025-08-05 20:38:20,794 - INFO - Question 26: List the genera belonging to the big cat subgroup of the cat family (Felidae).
+2025-08-05 20:38:28,898 - INFO - Question 27: Which female laureates of the Nobel Prize in Literature shared their prize?
+2025-08-05 20:38:34,552 - INFO - Question 28: Which South American countries are not considered part of Latin America and have Dutch as an official language?
+2025-08-05 20:38:42,785 - INFO - Question 29: Which of the last five chemical elements to have been discovered are halogens?
+2025-08-05 20:38:50,282 - INFO - Question 30: What European countries are observer states of the UN?
+2025-08-05 20:38:55,931 - INFO - Question 31: What are the official currencies used by more than one EU country?
+2025-08-05 20:39:05,319 - INFO - Question 32: Which countries have more than fifteen official languages at the national level?
+2025-08-05 20:39:14,979 - INFO - Question 33: What is the majority religion of India?
+2025-08-05 20:39:23,329 - INFO - Question 34: What cities serve as capitals of European countries in the European Union?
+2025-08-05 20:39:28,619 - INFO - Question 35: Which RGB primary colors are between violet and orange in the color spectrum?
+2025-08-05 20:40:18,759 - INFO - Question 36: What countries in Africa recognize English as an official language?
+2025-08-05 20:40:23,951 - INFO - Question 37: Which of Earth’s continents are connected to other continents by land?
+2025-08-05 20:40:31,356 - INFO - Question 38: What books written by J.K. Rowling under the pen name Robert Galbraith include the character Eric Wardle?
+2025-08-05 20:40:36,804 - INFO - Question 39: Which gases compose the atmosphere of Earth excluding trace gases?
+2025-08-05 20:40:44,495 - INFO - Question 40: What species of shark have verified members who lived longer than 200 years?
+2025-08-05 20:40:51,932 - INFO - Question 41: Which video games in the Grand Theft Auto series have multiplayer?
+2025-08-05 20:41:01,563 - INFO - Question 42: In which countries can both the short-tailed and long-tailed chinchilla be found today?
+2025-08-05 20:41:04,956 - INFO - Question 43: What are the gas giant planets that orbit the Sun?
+2025-08-05 20:41:23,415 - INFO - Question 44: Which UNESCO World Heritage Sites are located in Rome, Italy?
+2025-08-05 20:41:33,459 - INFO - Question 45: Which currencies are in circulation in West African countries?
+2025-08-05 20:41:39,237 - INFO - Question 46: What novels by Jane Austen, published posthumously, were adapted by Marvel into a graphic novel series?
+2025-08-05 20:41:47,234 - INFO - Question 47: Which of the five largest islands of Japan in terms of area have a population over five million?
+2025-08-05 20:41:55,089 - INFO - Question 48: What are the public hospitals in Cairo with more than 100 staff?
+2025-08-05 20:42:01,689 - INFO - Question 49: What American presidents were born in Virginia in the 18th century?
+2025-08-05 20:42:10,949 - INFO - Question 50: Which European nations are part of the North Atlantic Treaty Organization?
+2025-08-05 20:42:14,532 - INFO - Question 51: Which genera of clouds in meteorology are classified as high-level clouds?
+2025-08-05 20:42:20,034 - INFO - Question 52: What are the states of the USA located on the West Coast?
+2025-08-05 20:42:25,936 - INFO - Question 53: Which countries have Buddhism as a majority and state religion?
+2025-08-05 20:42:35,393 - INFO - Question 54: Which urban areas classified as megacities have a population greater than 20 million?
+2025-08-05 20:42:39,574 - INFO - Question 55: Which provinces of Canada are on the Atlantic coast?
+2025-08-05 20:42:43,999 - INFO - Question 56: Which terrestrial planets in the Solar System have moons?
+2025-08-05 20:42:51,987 - INFO - Question 57: Which countries have coffee as their top export?
+2025-08-05 20:43:00,246 - INFO - Question 58: What are the vegetarian toppings of a Hawaiian pizza?
+2025-08-05 20:43:06,122 - INFO - Question 59: What hand-held instruments are most commonly used in an orchestra's string section?
+2025-08-05 20:43:12,241 - INFO - Question 60: Which novels with multiple authors won the Hugo Award for Best Novel?
+2025-08-05 20:43:22,208 - INFO - Question 61: Which CMYK colors are a key color of some national flag?
+2025-08-05 20:43:25,970 - INFO - Question 62: What nations from South America have been champions of the FIFA World Cup?
+2025-08-05 20:43:32,101 - INFO - Question 63: What European nations are ruled by monarchs?
+2025-08-05 20:43:43,223 - INFO - Question 64: Which countries only use the American dollar as an official currency?
+2025-08-05 20:43:55,988 - INFO - Question 65: What nations currently have women as heads of state who are also heads of government?
+2025-08-05 20:44:01,901 - INFO - Question 66: Which human blood types are universal donors?
+2025-08-05 20:44:12,960 - INFO - Question 67: Which Baroque composers have music that appears in a English-language movie that won an Academy Award?
+2025-08-05 20:44:19,474 - INFO - Question 68: Which nations have been hosts of the FIFA World Cup in Europe?
+2025-08-05 20:44:28,566 - INFO - Question 69: What nations are governed by presidents who do not have a term limit and have had a president serve for more than two decades?
+2025-08-05 20:44:32,011 - INFO - Question 70: What are the original Nobel Prize award categories?
+2025-08-05 20:44:37,800 - INFO - Question 71: Which non-primary colors make up a rainbow?
+2025-08-05 20:44:44,546 - INFO - Question 72: What denominations of banknote exist for the Euro?
+2025-08-05 20:44:49,213 - INFO - Question 73: Which of Earth's oceans touch South America?
+2025-08-05 20:44:56,432 - INFO - Question 74: What are the extant, carnivorous species of bear?
+2025-08-05 20:45:02,216 - INFO - Question 75: Which religion officially recognized in Indonesia is a majority religion?
+2025-08-05 20:45:08,999 - INFO - Question 76: Which disciplines of the 2022 Winter Olympics involve skating?
+2025-08-05 20:45:14,892 - INFO - Question 77: Of the top-10 exporters of copper by volume, which countries are in Latin America?
+2025-08-05 20:45:22,514 - INFO - Question 78: Which extinct species in the Homo genus have had fossils found in Russia?
+2025-08-05 20:45:26,301 - INFO - Question 79: What are the constituent countries of the UK located on the island of Great Britain?
+2025-08-05 20:45:34,311 - INFO - Question 80: Which Pharaonic Egyptian sites are recognized as UNESCO World Heritage?
+2025-08-05 20:45:39,738 - INFO - Question 81: What extinct species made stone tools?
+2025-08-05 20:45:53,593 - INFO - Question 82: What European nations have been winners of Eurovision?
+2025-08-05 20:46:02,738 - INFO - Question 83: List all French regions located in mainland France.
+2025-08-05 20:46:10,068 - INFO - Question 84: What artistic professions did Leonardo da Vinci have?
+2025-08-05 20:46:18,173 - INFO - Question 85: List the Academy Awards received by Meryl Streep.
+2025-08-05 20:46:29,974 - INFO - Question 86: Which characters appearing in all the Harry Potter books worked at some point at Hogwarts?
+2025-08-05 20:46:34,991 - INFO - Question 87: List the founders of the company Apple who are engineers.
+2025-08-05 20:46:43,793 - INFO - Question 88: List combatant countries of the Second World War who switched sides.
+2025-08-05 20:46:50,143 - INFO - Question 89: From which universities did Albert Einstein earn undergraduate degrees?
+2025-08-05 20:47:05,547 - INFO - Question 90: List the solo albums released by Paul McCartney with 15 tracks or more.
+2025-08-05 20:47:14,649 - INFO - Question 91: Which universities from her home country gave Marie Curie an honorary degree?
+2025-08-05 20:47:19,540 - INFO - Question 92: List the screenwriters of the film 'The Godfather' who also wrote the book the movie was based on.
+2025-08-05 20:47:30,308 - INFO - Question 93: List the European nations that signed the Treaty of Versailles.
+2025-08-05 20:47:35,147 - INFO - Question 94: What undergraduate degrees did Newton hold?
+2025-08-05 20:47:43,951 - INFO - Question 95: What nations share an official language with Brazil but do not have exactly the same set of official languages as Brazil?
+2025-08-05 20:47:55,599 - INFO - Question 96: List all of Italy's regions having at least one metropolitan area with more than one million people.
+2025-08-05 20:48:04,346 - INFO - Question 97: List the places outside of the U.S. where the founders of Google were born.
+2025-08-05 20:48:10,085 - INFO - Question 98: List the voice actors for Homer in the Latin American Spanish version of The Simpsons.
+2025-08-05 20:48:16,512 - INFO - Question 99: List the female scientists credited with discovering Radium.
+2025-08-05 20:48:22,038 - INFO - Question 100: What primary colors are used for both the German and Belgian flag?
+2025-08-05 20:48:27,406 - INFO - Question 101: List the guitarists in the band The Rolling Stones.
+2025-08-05 20:48:33,561 - INFO - Question 102: List the American founders of the Microsoft Corporation who served as CEO.
+2025-08-05 20:48:37,768 - INFO - Question 103: List the Spanish autonomous communities in which Catalan is an official language.
+2025-08-05 20:48:43,242 - INFO - Question 104: List the screenwriters for the film 'The Dark Knight' who also wrote the story.
+2025-08-05 20:48:52,020 - INFO - Question 105: Which current countries bordering China have fought a war against China?
+2025-08-05 20:49:12,054 - INFO - Question 106: List the recipients of the Nobel Prize in Physics who did not share their award and were the first person from their country to win the award.
+2025-08-05 20:49:20,030 - INFO - Question 107: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise in multiple seasons.
+2025-08-05 20:49:29,628 - INFO - Question 108: What companies does The Walt Disney Company wholly own?
+2025-08-05 20:49:36,504 - INFO - Question 109: List the actors of Inception who have won an Oscar, but not for Inception.
+2025-08-05 20:49:48,916 - INFO - Question 110: List the Grammy Awards received by Bob Dylan.
+2025-08-05 20:49:54,813 - INFO - Question 111: List the composers of 'Avatar: The Last Airbender' who were educated at the Berklee College of Music.
+2025-08-05 20:50:02,858 - INFO - Question 112: What modern countries were part of the Soviet Union and border Russia?
+2025-08-05 20:50:18,892 - INFO - Question 113: Which flags of the regions of Italy share exactly two colors with the national flag?
+2025-08-05 20:50:25,409 - INFO - Question 114: List the wholly-owned subsidiaries of Amazon founded in Israel.
+2025-08-05 20:50:32,664 - INFO - Question 115: List the directors who worked on the Breaking Bad series and directed more than one episode.
+2025-08-05 20:50:41,721 - INFO - Question 116: List the German federal states located (partially or wholly) in the former East Germany.
+2025-08-05 20:50:53,731 - INFO - Question 117: List the founding member states of the AU who were later suspended.
+2025-08-05 20:51:04,852 - INFO - Question 118: List the musicians who played in Nirvana during the original lineup.
+2025-08-05 20:51:16,652 - INFO - Question 119: List the US presidents who belonged to the Democratic Party and served multiple terms.
+2025-08-05 20:51:25,959 - INFO - Question 120: List the most populous Indian state with an official language that is Dravidian.
+2025-08-05 20:51:36,610 - INFO - Question 121: List the US presidents who belonged to the Republican Party and served during the 20th century.
+2025-08-05 20:51:47,374 - INFO - Question 122: Which capitals of African countries were founded between 1800 and 1849, inclusive?
+2025-08-05 20:51:54,867 - INFO - Question 123: Which mountains have a peak above 8,000 meters located in the Himalayas?
+2025-08-05 20:52:01,355 - INFO - Question 124: List all past Belgian kings.
+2025-08-05 20:52:08,346 - INFO - Question 125: Which types of triangles can have an angle of over 90 degrees?
+2025-08-05 20:52:14,526 - INFO - Question 126: Which sign languages have been made official in South Africa since 1990?
+2025-08-05 20:52:25,097 - INFO - Question 127: Which federal holidays in the United States involve the celebration of historical or religious events?
+2025-08-05 20:52:35,787 - INFO - Question 128: What languages are official in some Spanish autonomous community but not nationally?
+2025-08-05 20:52:41,923 - INFO - Question 129: What countries have more than 100 million inhabitants and are located in Asia?
+2025-08-05 20:52:54,586 - INFO - Question 130: What is the oldest of the Seven Ancient Wonders of the World?
+2025-08-05 20:53:02,573 - INFO - Question 131: What countries officially use Arabic but are not on the Arabian peninsula nor in Africa?
+2025-08-05 20:53:09,945 - INFO - Question 132: What countries recognize a sign language as an official language in their constitution?
+2025-08-05 20:53:15,599 - INFO - Question 133: To which rock classification does marble belong?
+2025-08-05 20:53:25,034 - INFO - Question 134: Which modern countries have regions that used to be part of the Roman empire and have a Romance language as an official language?
+2025-08-05 20:53:33,047 - INFO - Question 135: Which Indian states have more than twice the population of France?
+2025-08-05 20:53:42,876 - INFO - Question 136: What are the notes in both a C7 chord and a C minor chord?
+2025-08-05 20:53:53,445 - INFO - Question 137: What multi-type Pokemon were introduced in Generation 5 where one type is fire?
+2025-08-05 20:53:56,736 - INFO - Question 138: What chambers are on the right side of the human heart?
+2025-08-05 20:54:05,958 - INFO - Question 139: The boiling point of which chemical elements is lower than that of water but higher than 25°C?
+2025-08-05 20:54:11,207 - INFO - Question 140: Which numbers below 100 are prime and even?
+2025-08-05 20:54:18,515 - INFO - Question 141: Which U.S. Presidents were assassinated while in office and served less than a year?
+2025-08-05 20:54:26,376 - INFO - Question 142: What notes are played by multiple open strings on a guitar under standard tuning?
+2025-08-05 20:54:41,076 - INFO - Question 143: In which Olympics was the men’s 100 meter sprint world record broken by a time over 10 seconds?
+2025-08-05 20:54:55,974 - INFO - Question 144: What countries have both deserts and glaciers and are contained entirely in the Southern Hemisphere?
+2025-08-05 20:55:01,755 - INFO - Question 145: What island countries are located in the Caribbean?
+2025-08-05 20:55:10,615 - INFO - Question 146: Which universities have Nobel laureates in Economics on their active staff?
+2025-08-05 20:55:16,002 - INFO - Question 147: With which countries that are nuclear powers does India have ongoing border disputes?
+2025-08-05 20:55:23,489 - INFO - Question 148: What countries on the Arabian Peninsula are part of the Middle East and have a population over five million?
+2025-08-05 20:55:30,029 - INFO - Question 149: What rivers over 500 kilometers long flow into the Sea of Azov?
+2025-08-05 20:55:38,260 - INFO - Question 150: What political parties had at least one minister or deputy minister in the 67th Italian government (excluding independents) and are part of the European Democratic Party?
+2025-08-05 20:55:38,279 - INFO - Processing column: Q4
+2025-08-05 20:55:48,216 - INFO - Question 1: Name the films directed by Quentin Tarantino not set during World War II.
+2025-08-05 20:55:58,085 - INFO - Question 2: Which instruments was Prince known for playing excluding string instruments?
+2025-08-05 20:56:07,261 - INFO - Question 3: List the sons of Queen Victoria.
+2025-08-05 20:56:12,780 - INFO - Question 4: Which languages hold official status in Switzerland excluding those that are Romance languages?
+2025-08-05 21:18:18,015 - INFO - Question 5: List the moons that orbit the planet Jupiter excluding the Galilean moons.
+2025-08-05 21:18:26,150 - INFO - Question 6: List the synthetic noble gases.
+2025-08-05 21:18:39,931 - INFO - Question 7: List the businesses owned by Amazon excluding healthcare businesses.
+2025-08-05 21:18:49,758 - INFO - Question 8: List the non-reflective programming languages created by Google.
+2025-08-05 21:19:00,669 - INFO - Question 9: List the films directed by Stanley Kubrick excluding the science fiction films.
+2025-08-05 21:19:12,868 - INFO - Question 10: Name the French writers who have been awarded the Nobel Prize in Literature excluding those awarded for works in poetry.
+2025-08-05 21:19:31,420 - INFO - Question 11: Name the host cities for past Summer Olympics who never hosted them in the 21st century.
+2025-08-05 21:19:41,201 - INFO - Question 12: Can you list the species of penguins not found in Antarctica?
+2025-08-05 21:19:53,764 - INFO - Question 13: Name the American presidents who belonged to the Democratic Party but did not serve in the 20th century.
+2025-08-05 21:20:15,160 - INFO - Question 14: List the movies with color (in whole or part) that received the Oscar for Best Picture.
+2025-08-05 21:20:21,801 - INFO - Question 15: List the animated movies from Studio Ghibli that feature dragons.
+2025-08-05 21:20:34,212 - INFO - Question 16: List the books authored by J.R.R. Tolkien excluding fantasy works.
+2025-08-05 21:20:44,673 - INFO - Question 17: List the South American capitals that are not on the coast.
+2025-08-05 21:20:54,635 - INFO - Question 18: What automotive marques does the Volkswagen Group own excluding the luxury automotive marques?
+2025-08-05 21:21:09,475 - INFO - Question 19: List the women married to Henry VIII who did not bear him children.
+2025-08-05 21:21:24,345 - INFO - Question 20: Which extant countries not in the Commonwealth have regions that were part of the British Empire?
+2025-08-05 21:21:33,931 - INFO - Question 21: List the musicians who were part of The Beatles excluding those who left before signing for EMI.
+2025-08-05 21:21:39,952 - INFO - Question 22: Which sovereign states are enclaves but not within Italy?
+2025-08-05 21:21:49,663 - INFO - Question 23: What are the multiple-time host cities of the Summer Olympics excluding those in Europe?
+2025-08-05 21:22:02,805 - INFO - Question 24: What is a list of brands under the LVMH corporate umbrella excluding watch brands?
+2025-08-05 21:22:10,425 - INFO - Question 25: What movies awarded Best Picture at the Oscars in the 1990s are set (in whole or part) during or after 1900?
+2025-08-05 21:22:22,835 - INFO - Question 26: List the genera belonging to the cat family (Felidae) excluding those belonging to the big cat subgroup.
+2025-08-05 21:22:32,915 - INFO - Question 27: Which female laureates of the Nobel Prize in Literature did not share their prize?
+2025-08-05 21:22:40,163 - INFO - Question 28: Which South American countries are not considered part of Latin America and do not have Dutch as an official language?
+2025-08-05 21:22:57,857 - INFO - Question 29: Which of the last five chemical elements to have been discovered are not halogens?
+2025-08-05 21:23:05,207 - INFO - Question 30: What countries outside of Europe are observer states of the UN?
+2025-08-05 21:23:15,302 - INFO - Question 31: What are the official currencies used by only one EU country?
+2025-08-05 21:23:31,014 - INFO - Question 32: Which countries have between six and fifteen official languages, inclusive, at the national level?
+2025-08-05 21:23:36,065 - INFO - Question 33: What are the top two minority religions of India?
+2025-08-05 21:23:46,642 - INFO - Question 34: What cities serve as capitals of European countries excluding those in the European Union?
+2025-08-05 21:23:56,471 - INFO - Question 35: Which RGB primary colors are not between violet and orange in the color spectrum?
+2025-08-05 21:24:12,507 - INFO - Question 36: What countries outside Africa recognize English as an official language?
+2025-08-05 21:24:18,099 - INFO - Question 37: Which of Earth’s continents are not connected to other continents by land?
+2025-08-05 21:24:30,757 - INFO - Question 38: What books written by J.K. Rowling under the pen name Robert Galbraith do not include the character Eric Wardle?
+2025-08-05 21:24:41,938 - INFO - Question 39: Which trace gases compose the atmosphere of Earth?
+2025-08-05 21:24:51,896 - INFO - Question 40: What species have verified members who lived longer than 200 years excluding shark species?
+2025-08-05 21:25:02,188 - INFO - Question 41: Which video games in the Grand Theft Auto series are singleplayer only?
+2025-08-05 21:25:10,263 - INFO - Question 42: In which countries can the short-tailed chinchilla be found today but do not have the long-tailed chinchilla?
+2025-08-05 21:25:17,032 - INFO - Question 43: What are the planets that orbit the Sun excluding the gas giants?
+2025-08-05 21:53:37,628 - INFO - Question 44: Which Italian UNESCO World Heritage Sites are not located in Rome?
+2025-08-05 21:54:01,176 - INFO - Question 45: Which currencies are in circulation in African countries but not in any West Africa country?
+2025-08-05 21:54:07,972 - INFO - Question 46: What novels by Jane Austen, published posthumously, were not adapted by Marvel into a graphic novel series?
+2025-08-05 21:54:19,957 - INFO - Question 47: Which of the five largest islands of Japan in terms of area have a population of five million or fewer?
+2025-08-05 21:55:19,121 - INFO - Question 48: What are the private hospitals in Cairo with more than 100 staff?
+2025-08-05 21:57:54,316 - INFO - Question 49: What American presidents were born in Virginia aside from those born in the 18th century?
+2025-08-05 21:58:02,124 - INFO - Question 50: Which nations are part of the North Atlantic Treaty Organization excluding European nations?
+2025-08-05 21:58:10,371 - INFO - Question 51: Which genera of clouds in meteorology are not classified as high-level clouds?
+2025-08-05 22:00:32,849 - INFO - Question 52: What are the states of the USA excluding those located on the West Coast?
+2025-08-05 22:01:21,084 - INFO - Question 53: Which countries have Buddhism as a majority religion but not a state religion?
+2025-08-05 22:09:55,211 - INFO - Question 54: Which urban areas classified as megacities have a population of 20 million or less?
+2025-08-05 22:10:13,680 - INFO - Question 55: Which provinces does Canada have excluding those on the Atlantic coast?
+2025-08-05 22:10:29,416 - INFO - Question 56: Which terrestrial planets in the Solar System do not have moons?
+2025-08-05 22:38:49,751 - INFO - Question 57: Which countries have coffee as a top 5 export but not their top export?
+2025-08-05 22:39:06,810 - INFO - Question 58: What are the meat toppings of a Hawaiian pizza?
+2025-08-05 22:39:29,772 - INFO - Question 59: What instruments most commonly used in an orchestra's string section are not hand-held?
+2025-08-05 22:43:40,246 - INFO - Question 60: Which single-author novels won the Hugo Award for Best Novel?
+2025-08-05 22:43:53,009 - INFO - Question 61: Which CMYK colors are not a key color of any national flag?
+2025-08-05 22:44:11,950 - INFO - Question 62: What nations that are not from South America have been champions of the FIFA World Cup?
+2025-08-05 22:44:27,309 - INFO - Question 63: What nations outside Europe are ruled by monarchs?
+2025-08-05 22:44:49,797 - INFO - Question 64: Which countries use the American dollar as an official currency alongside another currency?
+2025-08-05 22:45:05,936 - INFO - Question 65: What nations currently have women as heads of state that are not heads of government?
+2025-08-05 22:45:13,390 - INFO - Question 66: Which human blood types are not universal donors?
+2025-08-05 22:45:27,399 - INFO - Question 67: Which Baroque composers have music that appears in a movie that won an Academy Award excluding English-language movies?
+2025-08-05 22:45:39,436 - INFO - Question 68: Which nations have been hosts of the FIFA World Cup excluding those in Europe?
+2025-08-05 22:45:53,575 - INFO - Question 69: What nations are governed by presidents who do not have a term limit but have not had a president serve for two decades or more?
+2025-08-05 22:46:02,668 - INFO - Question 70: What Nobel Prize award categories are not original categories?
+2025-08-05 22:46:07,588 - INFO - Question 71: Which colors make up a natural rainbow excluding the primary colors?
+2025-08-05 22:46:12,868 - INFO - Question 72: What denominations of coins exist for the Euro?
+2025-08-05 22:46:23,801 - INFO - Question 73: Which of Earth's oceans do not touch South America?
+2025-08-05 22:46:34,124 - INFO - Question 74: What are the extant, herbivorous or omnivorous species of bears?
+2025-08-05 22:46:37,930 - INFO - Question 75: Which religions officially recognized in Indonesia are minority religions?
+2025-08-05 22:46:44,961 - INFO - Question 76: Which disciplines of the 2022 Winter Olympics do not involve skating?
+2025-08-05 22:46:57,348 - INFO - Question 77: Of the top-10 exporters of copper by volume, which countries are not in Latin America?
+2025-08-05 22:47:08,776 - INFO - Question 78: Which extinct species in the Homo genus have not had fossils found in Russia?
+2025-08-05 22:47:12,756 - INFO - Question 79: What are the constituent countries of the UK excluding those located on the island of Great Britain?
+2025-08-05 22:47:23,031 - INFO - Question 80: Which Egyptian UNESCO World Heritage are not Pharaonic?
+2025-08-05 22:47:32,863 - INFO - Question 81: What extant species made stone tools?
+2025-08-05 22:47:43,060 - INFO - Question 82: What nations outside of Europe have been winners of Eurovision?
+2025-08-05 22:47:51,912 - INFO - Question 83: List all French regions excluding those located in mainland France.
+2025-08-05 22:48:00,759 - INFO - Question 84: What non-artistic professions did Leonardo da Vinci have?
+2025-08-05 22:48:13,536 - INFO - Question 85: List the accolades received by Meryl Streep excluding the Academy Awards.
+2025-08-05 22:48:30,617 - INFO - Question 86: Which characters appearing in all the Harry Potter books never worked at Hogwarts?
+2025-08-05 22:48:34,985 - INFO - Question 87: List the founders of the company Apple who are not engineers.
