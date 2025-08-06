@@ -97,11 +97,11 @@ class PromptLLMS:
         return result
 
 
-def return_chat_model(model_name, temperature=0):
+def return_chat_model(model_name, temperature=0, max_tokens = 20000):
     if model_name in openai_models:
         return ChatOpenAI(model=model_name, openai_api_key=openai_api_key, temperature=temperature)
     elif model_name in gemini_models:
-        return ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key, max_tokens=None, temperature=temperature)
+        return ChatGoogleGenerativeAI(model=model_name, google_api_key=gemini_key, max_tokens=max_tokens, temperature=temperature)
     elif model_name in azure_models:
         return AzureChatOpenAI(azure_deployment=model_name, api_version=azure_api_version,)
     elif model_name in xai_models:
