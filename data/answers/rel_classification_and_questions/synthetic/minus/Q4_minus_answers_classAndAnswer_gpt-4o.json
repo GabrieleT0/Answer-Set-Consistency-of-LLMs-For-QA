@@ -9,7 +9,9 @@
         "The Hateful Eight",
         "Once Upon a Time in Hollywood"
     ],
-    "1": [],
+    "1": [
+        "idk"
+    ],
     "2": [
         "Albert Edward",
         "Alfred Ernest Albert",
@@ -76,7 +78,9 @@
         "Pandia"
     ],
     "5": [],
-    "6": [],
+    "6": [
+        "idk"
+    ],
     "7": [
         "Go",
         "Dart",
@@ -84,12 +88,15 @@
         "Carbon",
         "AngularDart"
     ],
-    "8": [],
-    "9": [],
+    "8": [
+        "idk"
+    ],
+    "9": [
+        "idk"
+    ],
     "10": [
         "Paris",
         "Saint Louis",
-        "London",
         "Stockholm",
         "Antwerp",
         "Amsterdam",
@@ -105,8 +112,7 @@
         "Moscow",
         "Seoul",
         "Barcelona",
-        "Atlanta",
-        "Sydney"
+        "Atlanta"
     ],
     "11": [
         "King Penguin",
@@ -128,7 +134,9 @@
         "Grover Cleveland",
         "Joseph Robinette Biden Jr."
     ],
-    "13": [],
+    "13": [
+        "idk"
+    ],
     "14": [
         "Spirited Away",
         "Princess Mononoke",
@@ -147,7 +155,12 @@
         "Tree and Leaf",
         "Mr. Bliss"
     ],
-    "16": [],
+    "16": [
+        "Quito",
+        "Brasília",
+        "Asunción",
+        "Santiago"
+    ],
     "17": [
         "SEAT",
         "Škoda",
@@ -179,7 +192,9 @@
         "Los Angeles",
         "Tokyo"
     ],
-    "23": [],
+    "23": [
+        "idk"
+    ],
     "24": [
         "The Silence of the Lambs",
         "Unforgiven",
@@ -188,17 +203,27 @@
         "Shakespeare in Love",
         "American Beauty"
     ],
-    "25": [],
-    "26": [],
+    "25": [
+        "idk"
+    ],
+    "26": [
+        "idk"
+    ],
     "27": [
         "French Guiana"
     ],
-    "28": [],
+    "28": [
+        "idk"
+    ],
     "29": [
         "State of Palestine"
     ],
-    "30": [],
-    "31": [],
+    "30": [
+        "idk"
+    ],
+    "31": [
+        "idk"
+    ],
     "32": [
         "Islam",
         "Christianity"
@@ -274,20 +299,30 @@
         "Grand Theft Auto The Lost and Damned",
         "Grand Theft Auto The Ballad of Gay Tony"
     ],
-    "41": [],
+    "41": [
+        "idk"
+    ],
     "42": [
         "Mercury",
         "Venus",
         "Earth",
         "Mars"
     ],
-    "43": [],
-    "44": [],
-    "45": [],
+    "43": [
+        "idk"
+    ],
+    "44": [
+        "idk"
+    ],
+    "45": [
+        "idk"
+    ],
     "46": [
         "Okinawa"
     ],
-    "47": [],
+    "47": [
+        "idk"
+    ],
     "48": [
         "William Henry Harrison",
         "John Tyler",
@@ -301,13 +336,19 @@
     "50": [
         "Cumulus",
         "Stratus",
+        "Nimbus",
+        "Altostratus",
+        "Altocumulus",
         "Stratocumulus",
         "Nimbostratus",
-        "Altocumulus",
-        "Altostratus"
+        "Cumulonimbus"
     ],
-    "52": [],
-    "53": [],
+    "52": [
+        "idk"
+    ],
+    "53": [
+        "idk"
+    ],
     "54": [
         "Alberta",
         "British Columbia",
@@ -320,12 +361,18 @@
         "Mercury",
         "Venus"
     ],
-    "56": [],
-    "57": [],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "Ham"
+    ],
     "58": [
         "Double Bass"
     ],
-    "59": [],
+    "59": [
+        "idk"
+    ],
     "60": [
         "Black"
     ],
@@ -357,15 +404,34 @@
         "Panama",
         "East Timor"
     ],
-    "64": [],
+    "64": [
+        "idk"
+    ],
     "65": [
         "A",
         "B",
         "AB"
     ],
-    "66": [],
-    "67": [],
-    "68": [],
+    "66": [
+        "idk"
+    ],
+    "67": [
+        "Uruguay",
+        "Brazil",
+        "Chile",
+        "Mexico",
+        "Argentina",
+        "Mexico",
+        "United States of America",
+        "South Korea",
+        "Japan",
+        "South Africa",
+        "Brazil",
+        "Qatar"
+    ],
+    "68": [
+        "idk"
+    ],
     "69": [
         "Economic Sciences"
     ],
@@ -389,7 +455,10 @@
         "Indian Ocean",
         "Arctic Ocean"
     ],
-    "73": [],
+    "73": [
+        "Andean bear",
+        "Panda bear"
+    ],
     "74": [
         "Protestantism",
         "Catholicism",
@@ -397,8 +466,30 @@
         "Buddhism",
         "Confucianism"
     ],
-    "75": [],
-    "76": [],
+    "75": [
+        "Alpine skiing",
+        "Biathlon",
+        "Bobsleigh",
+        "Cross-country skiing",
+        "Curling",
+        "Freestyle skiing",
+        "Ice hockey",
+        "Luge",
+        "Nordic combined",
+        "Skeleton",
+        "Ski jumping",
+        "Snowboarding"
+    ],
+    "76": [
+        "China",
+        "United States of America",
+        "Australia",
+        "Russia",
+        "Democratic Republic of the Congo",
+        "Zambia",
+        "Indonesia",
+        "Kazakhstan"
+    ],
     "77": [
         "Homo habilis",
         "Homo erectus",
@@ -412,10 +503,18 @@
     "78": [
         "Northern Ireland"
     ],
-    "79": [],
-    "80": [],
-    "81": [],
-    "82": [],
+    "79": [
+        "idk"
+    ],
+    "80": [
+        "Homo sapiens"
+    ],
+    "81": [
+        "idk"
+    ],
+    "82": [
+        "idk"
+    ],
     "83": [
         "Architect",
         "Engineer",
@@ -426,8 +525,12 @@
         "Cartographer",
         "Botanist"
     ],
-    "84": [],
-    "85": [],
+    "84": [
+        "idk"
+    ],
+    "85": [
+        "idk"
+    ],
     "86": [
         "Steve Jobs",
         "Ronald Wayne"
@@ -453,18 +556,34 @@
         "Yugoslavia",
         "Czechoslovakia"
     ],
-    "88": [],
-    "89": [],
-    "90": [],
+    "88": [
+        "idk"
+    ],
+    "89": [
+        "idk"
+    ],
+    "90": [
+        "idk"
+    ],
     "91": [
         "Francis Ford Coppola"
     ],
-    "92": [],
-    "93": [],
-    "94": [],
-    "95": [],
+    "92": [
+        "idk"
+    ],
+    "93": [
+        "idk"
+    ],
+    "94": [
+        "idk"
+    ],
+    "95": [
+        "idk"
+    ],
     "96": [],
-    "97": [],
+    "97": [
+        "idk"
+    ],
     "98": [
         "Pierre Curie"
     ],
@@ -473,7 +592,9 @@
         "Yellow",
         "Red"
     ],
-    "100": [],
+    "100": [
+        "idk"
+    ],
     "101": [
         "Paul Allen"
     ],
@@ -496,13 +617,27 @@
     "103": [
         "David S. Goyer"
     ],
-    "104": [],
-    "105": [],
-    "106": [],
-    "107": [],
-    "108": [],
-    "109": [],
-    "110": [],
+    "104": [
+        "idk"
+    ],
+    "105": [
+        "idk"
+    ],
+    "106": [
+        "idk"
+    ],
+    "107": [
+        "idk"
+    ],
+    "108": [
+        "idk"
+    ],
+    "109": [
+        "idk"
+    ],
+    "110": [
+        "idk"
+    ],
     "111": [
         "Moldova",
         "Kyrgyzstan",
@@ -510,22 +645,66 @@
         "Turkmenistan",
         "Uzbekistan"
     ],
-    "112": [],
-    "113": [],
-    "114": [],
-    "115": [],
-    "116": [],
-    "117": [],
-    "118": [],
+    "112": [
+        "idk"
+    ],
+    "113": [
+        "idk"
+    ],
+    "114": [
+        "idk"
+    ],
+    "115": [
+        "Baden-Württemberg",
+        "Bavaria",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "North Rhine-Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Schleswig-Holstein"
+    ],
+    "116": [
+        "idk"
+    ],
+    "117": [
+        "idk"
+    ],
+    "118": [
+        "Martin Van Buren",
+        "James K. Polk",
+        "Franklin Pierce",
+        "James Buchanan",
+        "Andrew Johnson",
+        "Harry S. Truman",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
+        "Jimmy Carter",
+        "Joe Biden"
+    ],
     "119": [
         "Andhra Pradesh",
         "Karnataka",
         "Kerala",
         "Telangana"
     ],
-    "120": [],
-    "121": [],
-    "122": [],
+    "120": [
+        "Abraham Lincoln",
+        "Ulysses S. Grant",
+        "Rutherford B. Hayes",
+        "James A. Garfield",
+        "Chester A. Arthur",
+        "Benjamin Harrison",
+        "William McKinley"
+    ],
+    "121": [
+        "idk"
+    ],
+    "122": [
+        "K2",
+        "Nanga Parbat"
+    ],
     "123": [
         "Philippe"
     ],
@@ -533,7 +712,9 @@
         "- Acute-angled triangle",
         "Right-angled triangle"
     ],
-    "125": [],
+    "125": [
+        "idk"
+    ],
     "126": [
         "Labor Day",
         "Memorial Day"
@@ -574,8 +755,13 @@
         "Sudan",
         "Tunisia"
     ],
-    "131": [],
-    "132": [],
+    "131": [
+        "idk"
+    ],
+    "132": [
+        "Igneous rocks",
+        "Sedimentary rocks"
+    ],
     "133": [
         "Germany",
         "United Kingdom",
@@ -602,12 +788,16 @@
         "Algeria",
         "Morocco"
     ],
-    "134": [],
+    "134": [
+        "idk"
+    ],
     "135": [
         "E",
         "B flat"
     ],
-    "136": [],
+    "136": [
+        "idk"
+    ],
     "137": [
         "Left atrium",
         "Left ventricle"
@@ -663,8 +853,15 @@
         "B",
         "E"
     ],
-    "142": [],
-    "143": [],
+    "142": [
+        "idk"
+    ],
+    "143": [
+        "China",
+        "Mongolia",
+        "Peru",
+        "United States of America"
+    ],
     "144": [
         "Belize",
         "Guyana",
@@ -677,7 +874,9 @@
         "Costa Rica",
         "Panama"
     ],
-    "145": [],
+    "145": [
+        "idk"
+    ],
     "146": [],
     "147": [
         "Oman",
@@ -686,6 +885,10 @@
         "Qatar",
         "Bahrain"
     ],
-    "148": [],
-    "149": []
+    "148": [
+        "idk"
+    ],
+    "149": [
+        "idk"
+    ]
 }
