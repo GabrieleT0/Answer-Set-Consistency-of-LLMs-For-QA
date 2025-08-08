@@ -95,7 +95,7 @@ def main(config = None, logger = setup_logger()):
     if config == None: 
         config = {
             "datasets":['synthetic.tsv', "spinach.tsv", "qawiki.tsv"],
-            "llm_models": ["gemini-2.0-flash"],
+            "llm_models": ["o3"],
             "languages": ['en']
         }
 
