@@ -1,0 +1,619 @@
+2025-08-08 23:14:46,187 - INFO - Loaded config from config.json
+2025-08-08 23:14:46,187 - INFO - {'languages': ['en'], 'llm_models': ['gemini-2.5-pro', 'grok-4-0709'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-08 23:14:46,187 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-08 23:14:46,187 - INFO - Step 0: Identify Relations
+2025-08-08 23:14:46,187 - INFO - Processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,197 - INFO - Finished processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,197 - INFO - Processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,210 - INFO - Finished processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,210 - INFO - Processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,216 - INFO - Finished processing model: gemini-2.5-pro for language: en
+2025-08-08 23:14:46,216 - INFO - Step 1: Running single question benchmark
+2025-08-08 23:14:46,216 - INFO - Processing dataset: spinach.tsv for model: gemini-2.5-pro and language: en
+2025-08-08 23:14:46,216 - INFO - Processing column: Q1
+2025-08-08 23:14:56,064 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-08 23:14:56,078 - INFO - Processing column: Q2
+2025-08-08 23:15:04,001 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-08 23:15:04,017 - INFO - Processing column: Q3
+2025-08-08 23:15:12,776 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-08 23:15:35,395 - INFO - Question 51: Which French politicians were married to a German man?
+2025-08-08 23:15:47,240 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?
+2025-08-08 23:15:58,118 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-08 23:16:26,811 - INFO - Question 108: Which music albums contain the song Last Christmas as an original track?
+2025-08-08 23:16:53,333 - INFO - Question 126: Give me all people that were born in Vienna before 1900 and died in Berlin.
+2025-08-08 23:17:03,385 - INFO - Question 138: Which television shows were created by Walt Disney and originally aired on the Disney Channel?
+2025-08-08 23:17:24,130 - INFO - Question 141: Give me a list of all currently active Canadian record labels associated with Grunge music.
+2025-08-08 23:17:24,150 - INFO - Processing column: Q4
+2025-08-08 23:17:34,927 - INFO - Question 31: What characters does Todd Haberkorn voice in Japanese films?
+2025-08-08 23:17:41,878 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-08 23:17:55,509 - INFO - Question 87: Which educational institutions did Anders Celsius attend before university?
+2025-08-08 23:18:09,270 - INFO - Question 88: Which of Ariel's sisters no not appear in "The Little Mermaid II: Return to the Sea"?
+2025-08-08 23:18:18,256 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-08 23:18:26,004 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-08 23:19:01,501 - INFO - Question 126: Give me all people that were born in Vienna on or after 1900 and died in Berlin.
+2025-08-08 23:19:13,598 - INFO - Question 129: Which international airports does Yeti Airlines serve?
+2025-08-08 23:19:13,614 - INFO - Processing dataset: qawiki.tsv for model: gemini-2.5-pro and language: en
+2025-08-08 23:19:13,614 - INFO - Processing column: Q1
+2025-08-08 23:19:31,135 - INFO - Question 15: What binary neutron stars are in the constellation Scorpius?
+2025-08-08 23:19:42,545 - INFO - Question 37: What Ogham stones can be found in County Clare?
+2025-08-08 23:22:28,012 - INFO - Question 40: What papers did Amrapali Zaveri publish?
+2025-08-08 23:22:56,971 - INFO - Question 93: Which drugs for treating atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-08 23:23:39,550 - INFO - Question 97: Which heads of state died from COVID-19 complications?
+2025-08-08 23:23:59,688 - INFO - Question 115: Which people have an element named after them?
+2025-08-08 23:24:12,965 - INFO - Question 141: Which writers speak French, Arabic and Japanese?
+2025-08-08 23:24:12,980 - INFO - Processing column: Q2
+2025-08-08 23:24:32,398 - INFO - Question 15: What binary neutron stars are found in Scorpius?
+2025-08-08 23:27:23,395 - INFO - Question 40: What papers has Amrapali Zaveri published?
+2025-08-08 23:27:52,723 - INFO - Question 44: List radio stations broadcasting only in Boston
+2025-08-08 23:28:20,936 - INFO - Question 93: Which medications for treating atrial fibrillation are contraindicated in people who take lovastatin?
+2025-08-08 23:28:50,329 - INFO - Question 97: Which heads of state passed away due to COVID-19?
+2025-08-08 23:29:27,103 - INFO - Question 121: Which rugby union clubs have had players from Chile?
+2025-08-08 23:29:41,194 - INFO - Question 141: Which authors speak French, Arabic and Japanese?
+2025-08-08 23:29:41,211 - INFO - Processing column: Q3
+2025-08-08 23:29:56,969 - INFO - Question 15: What binary neutron stars in the constellation Scorpius have exoplanets orbiting them?
+2025-08-08 23:30:06,618 - INFO - Question 23: What countries that border Ghana have a higher population than Ghana?
+2025-08-08 23:30:21,729 - INFO - Question 24: What diseases affecting pregnancy are associated with the gene FGF14?
+2025-08-08 23:30:38,934 - INFO - Question 90: Which death row prisoners executed by hanging had pizza as their last meal?
+2025-08-08 23:31:03,976 - INFO - Question 97: Which heads of state died in office from COVID-19 complications?
+2025-08-08 23:31:24,030 - INFO - Question 113: Which stolen paintings by Camille Pissarro were held at some point in Alte Nationalgalerie?
+2025-08-08 23:31:38,001 - INFO - Question 141: Which writers speak English, French, Arabic and Japanese?
+2025-08-08 23:31:52,415 - INFO - Question 146: Which of the original developers of SPSS were educated in Mexico?
+2025-08-08 23:31:52,429 - INFO - Processing column: Q4
+2025-08-08 23:32:08,880 - INFO - Question 15: What binary neutron stars in the constellation Scorpius do not have exoplanets orbiting them?
+2025-08-08 23:32:23,503 - INFO - Question 32: Which montes in the Tharsis Montes are not taller than 1000 metres?
+2025-08-08 23:35:05,095 - INFO - Question 40: What papers did Amrapali Zaveri write but not as first author?
+2025-08-08 23:35:17,257 - INFO - Question 57: Which association football players have exactly two citizenships?
+2025-08-08 23:35:34,893 - INFO - Question 58: Which brutalist buildings do not incorporate functionalism?
+2025-08-08 23:36:46,843 - INFO - Question 61: Which carbon isotopes can recursively but not directly decay into boron isotopes?
+2025-08-08 23:37:04,070 - INFO - Question 71: Which countries are governed by a monarchy without a constituion?
+2025-08-08 23:37:28,991 - INFO - Question 93: Which non-antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-08 23:37:48,226 - INFO - Question 119: Which popes were married after ordination but not before?
+2025-08-08 23:38:19,491 - INFO - Question 122: Which saints died by crucifixion excluding the last one?
+2025-08-08 23:38:19,519 - INFO - Processing dataset: synthetic.tsv for model: gemini-2.5-pro and language: en
+2025-08-08 23:38:19,519 - INFO - Processing column: Q1
+2025-08-08 23:39:07,829 - INFO - Question 14: List the movies that received the Oscar for Best Picture.
+2025-08-08 23:39:53,370 - INFO - Question 60: What novels received the Hugo Award for Best Novel?
+2025-08-08 23:39:53,394 - INFO - Processing column: Q2
+2025-08-08 23:40:50,300 - INFO - Question 14: Which films have won the Academy Award for Best Picture?
+2025-08-08 23:42:44,917 - INFO - Question 44: What are the UNESCO World Heritage Sites in Italy?
+2025-08-08 23:43:03,356 - INFO - Question 57: In which states is coffee a top-5 export?
+2025-08-08 23:45:33,310 - INFO - Question 60: Which novels won the Hugo Award for Best Novel?
+2025-08-08 23:45:46,025 - INFO - Question 77: Which ten states export the most copper in the world by volume?
+2025-08-08 23:45:46,054 - INFO - Processing column: Q3
+2025-08-08 23:45:46,068 - INFO - Processing column: Q4
+2025-08-08 23:46:11,450 - INFO - Question 5: List the moons that orbit the planet Jupiter excluding the Galilean moons.
+2025-08-08 23:46:30,012 - INFO - Question 9: List the films directed by Stanley Kubrick excluding the science fiction films.
+2025-08-08 23:47:30,717 - INFO - Question 14: List the movies with color (in whole or part) that received the Oscar for Best Picture.
+2025-08-08 23:47:40,734 - INFO - Question 38: What books written by J.K. Rowling under the pen name Robert Galbraith do not include the character Eric Wardle?
+2025-08-08 23:47:52,040 - INFO - Question 109: List the actors who won an Oscar for Inception.
+2025-08-08 23:48:15,099 - INFO - Question 123: Which mountains have a peak above 8,000 meters excluding those located in the Himalayas?
+2025-08-08 23:48:15,120 - INFO - Processing dataset: spinach.tsv for model: gemini-2.5-pro and language: en
+2025-08-08 23:48:15,121 - INFO - Processing column: Q1
+2025-08-08 23:49:55,841 - INFO - Question 39: What are the different dialects of Chinese?
+2025-08-08 23:50:47,453 - INFO - Question 94: Which historical wargames are published by GMT Games?
+2025-08-08 23:52:07,424 - INFO - Question 95: Which monarchs were married to a German spouse?
+2025-08-08 23:52:28,945 - INFO - Question 96: Which international organizations were founded in 1950?
+2025-08-08 23:52:39,068 - INFO - Question 97: Give me the Apollo 14 astronauts.
+2025-08-08 23:58:05,701 - INFO - Question 98: Which spaceflights were launched from Baikonur?
+2025-08-08 23:58:29,233 - INFO - Question 99: Which U.S. states are in the same timezone as Utah?
+2025-08-08 23:58:42,012 - INFO - Question 100: Which states border Illinois?
+2025-08-09 00:01:20,774 - INFO - Question 101: Give all Olympic swimmers that were born in Moscow.
+2025-08-09 00:01:29,682 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-09 00:01:50,476 - INFO - Question 103: Show a list of soccer clubs that play in the Bundesliga.
+2025-08-09 00:02:16,751 - INFO - Question 104: Which rivers flow into lakes located in Germany?
+2025-08-09 00:02:44,214 - INFO - Question 105: Give me all inhabited islands that belong to Japan.
+2025-08-09 00:03:08,624 - INFO - Question 106: Give me all soccer clubs in the Premier League.
+2025-08-09 00:03:19,725 - INFO - Question 107: Which movies star both Liz Taylor and Richard Burton?
+2025-08-09 00:03:41,035 - INFO - Question 108: Which music albums contain the song Last Christmas?
+2025-08-09 00:04:10,472 - INFO - Question 109: Give me all Swedish holidays (including public, regional, and unofficial holidays).
+2025-08-09 00:04:29,339 - INFO - Question 110: List all the musicals with music by Leonard Bernstein.
+2025-08-09 00:05:16,638 - INFO - Question 111: Which writers studied in Istanbul?
+2025-08-09 00:05:42,642 - INFO - Question 112: Give me all Australian metalcore bands.
+2025-08-09 00:06:01,437 - INFO - Question 113: List all recognized types of eating disorders.
+2025-08-09 00:06:16,659 - INFO - Question 114: Which U.S. states are entirely or partially in the Mountain Time Zone?
+2025-08-09 00:06:29,125 - INFO - Question 115: Give me all children's books written by Danielle Steel.
+2025-08-09 00:06:51,804 - INFO - Question 116: Which programming languages have been influenced by Perl?
+2025-08-09 00:07:13,735 - INFO - Question 117: What airlines are part of the SkyTeam alliance?
+2025-08-09 00:07:28,504 - INFO - Question 118: Could you please list other books have been written by the author of The Fault in Our Stars?
+2025-08-09 00:07:43,367 - INFO - Question 119: Which films starring Clint Eastwood did he direct himself?
+2025-08-09 00:08:08,375 - INFO - Question 120: Give me all actors with the last name Baldwin.
+2025-08-09 00:10:23,024 - INFO - Question 121: List all English Gothic buildings in Kent.
+2025-08-09 00:10:33,090 - INFO - Question 122: In which countries can you pay using the West African CFA franc?
+2025-08-09 00:11:20,563 - INFO - Question 123: Which weapons did Heckler & Koch develop?
+2025-08-09 00:12:25,809 - INFO - Question 124: Give me all films produced by Hal Roach.
+2025-08-09 00:12:53,830 - INFO - Question 125: Give me a list of all bandleaders that play trumpet and have won a Grammy.
+2025-08-09 00:13:27,122 - INFO - Question 126: Give me all people that were born in Vienna and died in Berlin.
+2025-08-09 00:13:46,677 - INFO - Question 127: Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+2025-08-09 00:14:05,699 - INFO - Question 128: Give me all types or lines of the German Shepherd dog.
+2025-08-09 00:14:15,067 - INFO - Question 129: Which airports does Yeti Airlines serve?
+2025-08-09 00:14:25,777 - INFO - Question 130: Which awards did Douglas Hofstadter win?
+2025-08-09 00:14:44,176 - INFO - Question 131: Give me all launch pads used by NASA.
+2025-08-09 00:14:56,946 - INFO - Question 132: List all the musicals with music composed by Elton John.
+2025-08-09 00:15:15,823 - INFO - Question 133: Which companies produce hovercrafts?
+2025-08-09 00:15:50,184 - INFO - Question 134: Which electronics companies were founded in Beijing?
+2025-08-09 00:15:57,902 - INFO - Question 135: List the children of Margaret Thatcher.
+2025-08-09 00:16:14,449 - INFO - Question 136: Give me all members of Prodigy.
+2025-08-09 00:16:23,259 - INFO - Question 137: Who are the writers of the Wall album of Pink Floyd?
+2025-08-09 00:16:37,154 - INFO - Question 138: Which television shows were created by Walt Disney?
+2025-08-09 00:16:51,886 - INFO - Question 139: Which books by Kerouac were published by Viking Press?
+2025-08-09 00:17:04,016 - INFO - Question 140: In which films did both Julia Roberts and Richard Gere play?
+2025-08-09 00:17:16,690 - INFO - Question 141: Give me a list of all Canadian record labels associated with Grunge music.
+2025-08-09 00:17:44,833 - INFO - Question 142: Give me all actors starring in Last Action Hero.
+2025-08-09 00:20:58,884 - INFO - Question 143: Which shows aired for the first time in the same year as Saturday Night Live?
+2025-08-09 00:21:19,115 - INFO - Question 144: Which artists have the same birthday as Rachel Stevens?
+2025-08-09 00:21:50,821 - INFO - Question 145: Which airports are located in California, USA?
+2025-08-09 00:22:38,128 - INFO - Question 146: Which monarchs of the United Kingdom were married to a German spouse?
+2025-08-09 00:22:54,081 - INFO - Question 147: Give me all writers that won the Nobel Prize in literature.
+2025-08-09 00:23:21,873 - INFO - Question 148: Give me English actors starring in Lovesick.
+2025-08-09 00:24:03,823 - INFO - Question 149: Which rivers flow into the North Sea?
+2025-08-09 00:26:49,982 - INFO - Question 150: Which beer brewing companies are located in North-Rhine Westphalia?
+2025-08-09 00:26:50,015 - INFO - Processing column: Q2
+2025-08-09 00:27:13,655 - INFO - Question 1: What television programs did John Cleese create?
+2025-08-09 00:27:39,427 - INFO - Question 2: What countries have a communist government?
+2025-08-09 00:29:31,974 - INFO - Question 3: Which politicians had a spouse who was German?
+2025-08-09 00:29:46,595 - INFO - Question 4: Can you list every soccer club located in Spain that play in La Liga?
+2025-08-09 00:30:14,720 - INFO - Question 5: Which telecommunications organizations are based in Belgium?
+2025-08-09 00:33:25,171 - INFO - Question 6: What actors have a German birthplace?
+2025-08-09 00:33:38,426 - INFO - Question 7: Which countries do the Himalayas span?
+2025-08-09 00:33:55,551 - INFO - Question 8: Which platforms stream the Hunter x Hunter anime series?
+2025-08-09 00:34:05,754 - INFO - Question 9: Which countries does the Danube flow through?
+2025-08-09 00:34:20,950 - INFO - Question 10: In which professions are John Lennon’s sons involved?
+2025-08-09 00:34:33,273 - INFO - Question 11: What are the movies in the Star Wars series?
+2025-08-09 00:34:42,954 - INFO - Question 12: Which instruments were played by Louis Armstrong?
+2025-08-09 00:34:52,222 - INFO - Question 13: Which notes comprise a C major chord?
+2025-08-09 00:34:59,160 - INFO - Question 14: The OA is created by whom?
+2025-08-09 00:35:21,715 - INFO - Question 15: Which albums feature Atif Aslam?
+2025-08-09 00:35:31,764 - INFO - Question 16: Which U.S. presidents had fathers who were also U.S. presidents?
+2025-08-09 00:35:39,666 - INFO - Question 17: To which art movements does the painting “Les Demoiselles d'Avignon” belong?
+2025-08-09 00:35:50,917 - INFO - Question 18: What are the movies that make up the Cornetto trilogy?
+2025-08-09 00:36:08,077 - INFO - Question 19: Which films were directed by Thomas Vinterberg?
+2025-08-09 00:36:16,904 - INFO - Question 20: What teams took part in the 2020 UEFA Champions League Final?
+2025-08-09 00:36:27,530 - INFO - Question 21: Which actresses appear in Portrait of a Lady on Fire?
+2025-08-09 00:36:38,382 - INFO - Question 22: Which countries border Germany?
+2025-08-09 00:36:50,164 - INFO - Question 23: In which films did Taylor Lautner star?
+2025-08-09 00:37:03,188 - INFO - Question 24: Through which countries does the Niger River flow?
+2025-08-09 00:37:16,170 - INFO - Question 25: Which games were developed by Bungie?
+2025-08-09 00:37:29,823 - INFO - Question 26: Which senators have represented Utah?
+2025-08-09 00:37:42,367 - INFO - Question 27: Which individuals currently serve as senators representing Illinois?
+2025-08-09 00:38:35,923 - INFO - Question 28: Which car models are produced by General Motors?
+2025-08-09 00:38:58,280 - INFO - Question 29: Which countries border the Mediterranean Sea?
+2025-08-09 00:39:17,617 - INFO - Question 30: Which cities are located within Maricopa County?
+2025-08-09 00:42:02,641 - INFO - Question 31: Which characters are voiced by Todd Haberkorn in movies?
+2025-08-09 00:42:36,983 - INFO - Question 32: On which albums did John Frusciante perform?
+2025-08-09 00:43:08,809 - INFO - Question 33: Which dialects are used in the United Kingdom?
+2025-08-09 00:43:38,772 - INFO - Question 34: Which contemporary countries have English as an official language?
+2025-08-09 00:43:46,658 - INFO - Question 35: What languages are officially recognized in Canada?
+2025-08-09 00:43:59,001 - INFO - Question 36: Who were the Vice Presidents of Lincoln?
+2025-08-09 00:44:07,902 - INFO - Question 37: Which countries share a border with Egypt?
+2025-08-09 00:44:19,069 - INFO - Question 38: What countries have coastlines along the Baltic Sea?
+2025-08-09 00:47:07,159 - INFO - Question 39: What dialects are spoken in the Chinese language?
+2025-08-09 00:47:26,173 - INFO - Question 40: Who were the U.S. presidents during the Vietnam War?
+2025-08-09 00:48:05,619 - INFO - Question 41: Which European nations have had a constitutional monarchy as their form of government?
+2025-08-09 00:48:17,028 - INFO - Question 42: List every professional skateboarder who is from Sweden.
+2025-08-09 00:48:40,413 - INFO - Question 43: Who are the professional surfers that were born in Australia?
+2025-08-09 00:48:55,614 - INFO - Question 44: What space probes have been launched to orbit the sun?
+2025-08-09 00:49:29,418 - INFO - Question 45: In which German cities does the population exceed 250,000?
+2025-08-09 00:49:56,793 - INFO - Question 46: List every spacecraft that has traveled to Mars.
+2025-08-09 00:50:17,034 - INFO - Question 47: Provide me with a list of all taikonauts.
+2025-08-09 00:50:32,689 - INFO - Question 48: Which countries have above ten volcanoes in total?
+2025-08-09 00:50:50,866 - INFO - Question 49: Which individuals participated in the Apollo 11 mission?
+2025-08-09 00:51:16,165 - INFO - Question 50: Could you provide a list of all the Ramones' B-sides?
+2025-08-09 00:52:04,826 - INFO - Question 51: Which French politicians had a spouse who was German?
+2025-08-09 00:52:17,062 - INFO - Question 52: What are the movies directed by Kurosawa?
+2025-08-09 00:52:44,190 - INFO - Question 53: Which Frisian islands are part of the Netherlands?
+2025-08-09 00:52:53,998 - INFO - Question 54: What religions do Indonesians are official recognized?
+2025-08-09 00:53:11,701 - INFO - Question 55: In which battles did Stonewall Jackson participate during his military career?
+2025-08-09 00:53:21,645 - INFO - Question 56: In which countries is German an official language?
+2025-08-09 00:53:35,885 - INFO - Question 57: Which basketball teams did Shaquille O'Neal play on?
+2025-08-09 00:53:52,610 - INFO - Question 58: Which countries belong to the Baltic region?
+2025-08-09 00:54:16,083 - INFO - Question 59: Which states constitute New England?
+2025-08-09 00:54:31,688 - INFO - Question 60: Through which American states does the Colorado River flow?
+2025-08-09 00:54:39,766 - INFO - Question 61: What continents did the Roman Empire spread over?
+2025-08-09 00:55:01,447 - INFO - Question 62: Which countries recognize Spanish as an official language?
+2025-08-09 00:55:33,823 - INFO - Question 63: At which colleges did Albert Einstein work as a teacher?
+2025-08-09 00:56:05,961 - INFO - Question 64: In which TV shows did Shawnee Smith appear?
+2025-08-09 00:56:26,210 - INFO - Question 65: Which countries share a land or maritime border with Spain?
+2025-08-09 00:59:26,955 - INFO - Question 66: Which TV shows are filmed in New York?
+2025-08-09 00:59:43,924 - INFO - Question 67: In which movies did Tupac act?
+2025-08-09 01:02:31,895 - INFO - Question 68: Which actors have portrayed Lex Luthor?
+2025-08-09 01:02:47,457 - INFO - Question 69: Can you list the names of the confirmed children of Henry VIII?
+2025-08-09 01:03:01,219 - INFO - Question 70: Which countries are located in Oceania in whole or in part?
+2025-08-09 01:03:11,835 - INFO - Question 71: Which states does the Sierra Nevada run through in the United States?
+2025-08-09 01:03:27,970 - INFO - Question 72: For which teams has Stephen Ireland played?
+2025-08-09 01:03:46,364 - INFO - Question 73: Who are the celebrities Brody Jenner has dated, either confirmed or rumored?
+2025-08-09 01:03:59,517 - INFO - Question 74: Which countries are in NAFTA?
+2025-08-09 01:04:15,780 - INFO - Question 75: Which books has Louis Sachar write?
+2025-08-09 01:04:25,424 - INFO - Question 76: Which states does Tennessee border?
+2025-08-09 01:04:34,532 - INFO - Question 77: Which educational institutions did Sir Isaac Newton attend?
+2025-08-09 01:04:52,983 - INFO - Question 78: Which books has Suzanne Collins authored?
+2025-08-09 01:05:11,935 - INFO - Question 79: Who were the children of King Henry VII?
+2025-08-09 01:05:21,963 - INFO - Question 80: Who were the brothers and sisters of Demeter?
+2025-08-09 01:05:39,780 - INFO - Question 81: Which individuals serve as U.S. senators representing Pennsylvania?
+2025-08-09 01:05:49,989 - INFO - Question 82: Who has coached the Carolina Panthers?
+2025-08-09 01:06:05,961 - INFO - Question 83: Which countries make up the European Union?
+2025-08-09 01:06:36,428 - INFO - Question 84: Which days are considered holy in the Catholic Church?
+2025-08-09 01:06:56,458 - INFO - Question 85: Which Sahel countries does the Niger River pass through?
+2025-08-09 01:07:28,315 - INFO - Question 86: Can you name the coaches, past and present, of the St. Louis Cardinals?
+2025-08-09 01:07:36,146 - INFO - Question 87: What educational institutions did Anders Celsius attend?
+2025-08-09 01:07:44,194 - INFO - Question 88: Can you list Ariel's sisters?
+2025-08-09 01:07:58,756 - INFO - Question 89: Which characters are voiced by Seth MacFarlane on Family Guy?
+2025-08-09 01:08:07,272 - INFO - Question 90: Who are the children of Michael Jackson?
+2025-08-09 01:08:18,509 - INFO - Question 91: Which degrees has Romney earned?
+2025-08-09 01:08:50,900 - INFO - Question 92: Which cities in New Jersey have a population exceeding 100,000?
+2025-08-09 01:09:20,841 - INFO - Question 93: Who are the actors that have France as their birthplace and have won an Oscar?
+2025-08-09 01:09:58,656 - INFO - Question 94: Provide a list of all historical wargames published by GMT Games.
+2025-08-09 01:13:05,974 - INFO - Question 95: Which monarchs were married to someone from Germany?
+2025-08-09 01:13:19,105 - INFO - Question 96: What international organizations came into existence in 1950?
+2025-08-09 01:13:31,096 - INFO - Question 97: Who were the astronauts on Apollo 14?
+2025-08-09 01:16:04,264 - INFO - Question 98: For which spaceflights did the launch occur at Baikonur?
+2025-08-09 01:16:24,286 - INFO - Question 99: Which U.S. states share the same timezone as Utah?
+2025-08-09 01:16:36,717 - INFO - Question 100: What states share a border with Illinois?
+2025-08-09 01:19:11,130 - INFO - Question 101: List all Olympic swimmers whose place of birth is Moscow.
+2025-08-09 01:19:20,359 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-09 01:19:42,398 - INFO - Question 103: Provide a list of soccer teams that compete in the Bundesliga.
+2025-08-09 01:22:22,961 - INFO - Question 104: Which rivers flow into German lakes?
+2025-08-09 01:23:05,356 - INFO - Question 105: List all the inhabited islands that are part of Japan.
+2025-08-09 01:23:38,790 - INFO - Question 106: List every soccer club that plays in the Premier League.
+2025-08-09 01:23:56,596 - INFO - Question 107: In which films do both Liz Taylor and Richard Burton appear?
+2025-08-09 01:24:11,081 - INFO - Question 108: On which music albums can the song Last Christmas be found?
+2025-08-09 01:24:34,300 - INFO - Question 109: Can you provide a list of all public, regional, and unofficial holidays celebrated in Sweden?
+2025-08-09 01:25:00,982 - INFO - Question 110: Which musicals feature music composed by Leonard Bernstein?
+2025-08-09 01:28:05,500 - INFO - Question 111: Which writers were educated in Istanbul?
+2025-08-09 01:28:28,730 - INFO - Question 112: Can you provide a list of all metalcore bands from Australia?
+2025-08-09 01:28:44,646 - INFO - Question 113: List all standard types of eating disorders.
+2025-08-09 01:28:57,449 - INFO - Question 114: Which U.S. states are in the Mountain Time Zone either in whole or in part?
+2025-08-09 01:29:21,535 - INFO - Question 115: Can you provide a list of every children's book authored by Danielle Steel?
+2025-08-09 01:29:38,074 - INFO - Question 116: What programming languages were influenced by Perl?
+2025-08-09 01:29:58,231 - INFO - Question 117: Which airlines belong to the SkyTeam alliance?
+2025-08-09 01:30:23,422 - INFO - Question 118: What other books have been written by the author of The Fault in Our Stars?
+2025-08-09 01:30:38,740 - INFO - Question 119: Which films did Clint Eastwood direct and star in?
+2025-08-09 01:30:54,877 - INFO - Question 120: List all actors with the last name Baldwin.
+2025-08-09 01:31:26,023 - INFO - Question 121: What Gothic buildings are in Kent?
+2025-08-09 01:31:37,648 - INFO - Question 122: What countries accept the West African CFA franc?
+2025-08-09 01:32:05,525 - INFO - Question 123: What weapons were developed by Heckler & Koch?
+2025-08-09 01:32:30,108 - INFO - Question 124: Can you provide a list of every film produced by Hal Roach?
+2025-08-09 01:32:49,768 - INFO - Question 125: Can you provide a list of all bandleaders who play the trumpet and have won an Grammy?
+2025-08-09 01:34:27,473 - INFO - Question 126: List all individuals who were born in Vienna and passed away in Berlin.
+2025-08-09 01:35:34,210 - INFO - Question 127: List every film produced by Steven Spielberg that had a budget of $80 million or more.
+2025-08-09 01:35:56,663 - INFO - Question 128: List every type or line of the German Shepherd dog.
+2025-08-09 01:36:08,192 - INFO - Question 129: What airports are served by Yeti Airlines?
+2025-08-09 01:36:17,940 - INFO - Question 130: What awards has Douglas Hofstadter received?
+2025-08-09 01:36:38,076 - INFO - Question 131: List every launch pad that has been used by NASA.
+2025-08-09 01:36:52,834 - INFO - Question 132: Which musicals feature music composed by Elton John?
+2025-08-09 01:37:14,918 - INFO - Question 133: What companies manufacture hovercrafts?
+2025-08-09 01:37:40,765 - INFO - Question 134: Which electronics companies were established in Beijing?
+2025-08-09 01:37:50,224 - INFO - Question 135: Who are the children of Margaret Thatcher?
+2025-08-09 01:38:03,013 - INFO - Question 136: List every member of Prodigy.
+2025-08-09 01:38:12,889 - INFO - Question 137: Who wrote Pink Floyd's album The Wall?
+2025-08-09 01:38:34,032 - INFO - Question 138: What television programs did Walt Disney create?
+2025-08-09 01:38:45,551 - INFO - Question 139: What books written by Kerouac were released through Viking Press?
+2025-08-09 01:38:56,584 - INFO - Question 140: What movies have Julia Roberts and Richard Gere starred in together?
+2025-08-09 01:39:04,327 - INFO - Question 141: Can you provide a list of all Canadian record labels that publish Grunge music?
+2025-08-09 01:40:12,089 - INFO - Question 142: List all actors who starred in Last Action Hero.
+2025-08-09 01:44:01,360 - INFO - Question 143: Which shows debuted the same year as Saturday Night Live?
+2025-08-09 01:44:29,100 - INFO - Question 144: Which people with the same birthday as Rachel Stevens are artists?
+2025-08-09 01:45:16,791 - INFO - Question 145: What airports are there in California, USA?
+2025-08-09 01:46:30,624 - INFO - Question 146: Which British monarchs had spouses of German origin?
+2025-08-09 01:46:54,711 - INFO - Question 147: List all authors who have received the Nobel Prize in Literature.
+2025-08-09 01:47:16,754 - INFO - Question 148: Which English actors appear in Lovesick?
+2025-08-09 01:47:40,492 - INFO - Question 149: Which rivers have their mouth on the North Sea?
+2025-08-09 01:48:13,381 - INFO - Question 150: Which commercial beer breweries are located in North-Rhine Westphalia?
+2025-08-09 01:48:13,425 - INFO - Processing column: Q3
+2025-08-09 01:48:28,714 - INFO - Question 1: Which television shows were created by John Cleese and first aired before the year 2000?
+2025-08-09 01:48:46,287 - INFO - Question 2: Give me all communist countries in Asia.
+2025-08-09 01:53:05,505 - INFO - Question 3: Which politicians were married to a German woman?
+2025-08-09 01:53:23,916 - INFO - Question 4: Please tell me all the Spanish football clubs that play in La Liga and have won the Champions League.
+2025-08-09 01:53:57,429 - INFO - Question 5: Which telecommunications organizations are located in Belgium and headquartered in Brussels?
+2025-08-09 01:56:29,927 - INFO - Question 6: Which actors were born in Germany and are currently living there?
+2025-08-09 01:56:45,243 - INFO - Question 7: In which countries with a population of less than one million are the Himalayas located?
+2025-08-09 01:57:24,274 - INFO - Question 8: On which video streaming services can I watch the Hunter x Hunter anime series with a subscription?
+2025-08-09 01:57:42,131 - INFO - Question 9: Through which countries that use Central Europe Time does the Danube flow?
+2025-08-09 01:57:58,519 - INFO - Question 10: What are the musical professions of John Lennon’s sons?
+2025-08-09 01:58:18,664 - INFO - Question 11: What are the Star Wars series movies released before 2000?
+2025-08-09 01:58:30,792 - INFO - Question 12: What brass instruments did Louis Armstrong play?
+2025-08-09 01:58:40,543 - INFO - Question 13: What root notes are in a C major chord?
+2025-08-09 01:58:55,302 - INFO - Question 14: Which creator of The OA also played a cast role in it?
+2025-08-09 01:59:08,270 - INFO - Question 15: What solo albums has Atif Aslam released?
+2025-08-09 01:59:21,012 - INFO - Question 16: Which American presidents had fathers who were also American presidents for the same party?
+2025-08-09 01:59:38,300 - INFO - Question 17: To which Cubist art movements is the painting “Les Demoiselles d'Avignon” assigned?
+2025-08-09 01:59:49,489 - INFO - Question 18: Which movies in the Cornetto trilogy star Lucy Davis?
+2025-08-09 02:00:01,829 - INFO - Question 19: Which movies directed by Thomas Vinterberg also starred Mads Mikkelsen?
+2025-08-09 02:00:09,982 - INFO - Question 20: Which team won the 2020 UEFA Champions League Final?
+2025-08-09 02:00:34,331 - INFO - Question 21: Which actresses play a named character in Portrait of a Lady on Fire?
+2025-08-09 02:00:45,970 - INFO - Question 22: What countries does Germany border that have German as an official language?
+2025-08-09 02:01:01,732 - INFO - Question 23: What movies did Taylor Lautner star in that were released before 2010?
+2025-08-09 02:01:14,882 - INFO - Question 24: Through what landlocked countries does the Niger River flow?
+2025-08-09 02:01:32,086 - INFO - Question 25: What first-person shooter games did Bungie develop?
+2025-08-09 02:02:07,476 - INFO - Question 26: Who have been Republican senators for Utah?
+2025-08-09 02:02:21,897 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-09 02:02:46,675 - INFO - Question 28: What electric car models does GM make?
+2025-08-09 02:02:57,610 - INFO - Question 29: What European countries have a coastline on the Mediterranean Sea?
+2025-08-09 02:03:11,210 - INFO - Question 30: What cities in Maricopa County have a population greater than 100,000?
+2025-08-09 02:03:29,928 - INFO - Question 31: What characters does Todd Haberkorn voice in non-Japanese films?
+2025-08-09 02:04:15,640 - INFO - Question 32: What solo albums did John Frusciante play on?
+2025-08-09 02:04:46,756 - INFO - Question 33: What dialects are spoken in England?
+2025-08-09 02:05:36,257 - INFO - Question 34: Which present-day countries use English as their only official language?
+2025-08-09 02:06:11,741 - INFO - Question 35: What is the official language of Canada used by the majority of the population?
+2025-08-09 02:06:22,479 - INFO - Question 36: Who was the Vice President under Abraham Lincoln during his first term?
+2025-08-09 02:06:42,328 - INFO - Question 37: What majority Arab countries does Egypt border?
+2025-08-09 02:07:00,023 - INFO - Question 38: Which countries border the Baltic Sea and are members of the European Union?
+2025-08-09 02:07:29,501 - INFO - Question 39: What dialect of Chinese is the majority dialect of Hong Kong?
+2025-08-09 02:07:47,680 - INFO - Question 40: Which American presidents were in office during the Vietnam War but not when it ended?
+2025-08-09 02:08:08,479 - INFO - Question 41: Which European countries currently have had a constitutional monarchy?
+2025-08-09 02:08:27,143 - INFO - Question 42: Give me all male professional skateboarders from Sweden.
+2025-08-09 02:08:58,641 - INFO - Question 43: Which professional surfers were born in Sydney, Australia?
+2025-08-09 02:09:20,983 - INFO - Question 44: Which space probes were sent into orbit around the sun and are still operational?
+2025-08-09 02:10:08,897 - INFO - Question 45: Which German cities have more than 250000 inhabitants but fewer than 1000000?
+2025-08-09 02:11:03,423 - INFO - Question 46: Give me all spacecrafts that successfully landed on Mars.
+2025-08-09 02:11:18,627 - INFO - Question 47: Give me all taikonauts who have flown in space.
+2025-08-09 02:11:39,327 - INFO - Question 48: Which countries have more than ten active volcanoes?
+2025-08-09 02:11:50,587 - INFO - Question 49: Who from the Apollo 11 mission was still alive as of January 1st, 2025?
+2025-08-09 02:12:18,173 - INFO - Question 50: Give me all B-sides of the Ramones released before 1985.
+2025-08-09 02:12:37,155 - INFO - Question 51: Which French politicians were married to a German man?
+2025-08-09 02:12:50,264 - INFO - Question 52: Which movies did Kurosawa direct that are dramas?
+2025-08-09 02:13:21,159 - INFO - Question 53: Give me all Frisian islands that belong to the Netherlands and are inhabited.
+2025-08-09 02:13:37,410 - INFO - Question 54: Which Abrahamic religions are officially recognized in Indonesia?
+2025-08-09 02:13:55,844 - INFO - Question 55: What battles did Stonewall Jackson fight in during the American Civil War?
+2025-08-09 02:14:07,428 - INFO - Question 56: Which countries have German but not French as an official language?
+2025-08-09 02:14:20,149 - INFO - Question 57: What NBA basketball teams has Shaquille O'Neal played for?
+2025-08-09 02:14:46,629 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?
+2025-08-09 02:14:57,226 - INFO - Question 59: Which states in New England have "New" in their name?
+2025-08-09 02:15:42,669 - INFO - Question 60: Which U.S. states does the Colorado River run through in the Upper Basin?
+2025-08-09 02:15:57,392 - INFO - Question 61: On which continent did the Roman Empire start?
+2025-08-09 02:16:29,367 - INFO - Question 62: What countries have Spanish as an official language and do not have a non-Indo-European official language?
+2025-08-09 02:16:54,036 - INFO - Question 63: At which colleges did Albert Einstein hold a permanent teaching position?
+2025-08-09 02:17:23,165 - INFO - Question 64: In what TV shows did Shawnee Smith appear in only one episode?
+2025-08-09 02:18:08,224 - INFO - Question 65: What countries share a land or martiime border with Spain, but not both?
+2025-08-09 02:20:53,624 - INFO - Question 66: What TV shows are shot in New York and are comedies?
+2025-08-09 02:21:54,562 - INFO - Question 67: In what movies did Tupac give a musical performance?
+2025-08-09 02:22:15,336 - INFO - Question 68: Who has played Lex Luthor in live-action adaptations?
+2025-08-09 02:22:42,524 - INFO - Question 69: What were the names of Henry VIII's confirmed legitimate children?
+2025-08-09 02:23:01,996 - INFO - Question 70: Which countries are entirely contained in Oceania?
+2025-08-09 02:23:22,356 - INFO - Question 71: Which states with a Democratic governor does the Sierra Nevada run through in the United States?
+2025-08-09 02:23:39,909 - INFO - Question 72: Which teams has Stephen Ireland played for in the English Premier League?
+2025-08-09 02:23:58,955 - INFO - Question 73: Which celebrities has Brody Jenner confirmed to have dated?
+2025-08-09 02:24:14,067 - INFO - Question 74: What countries are members of NAFTA and in Latin America?
+2025-08-09 02:24:33,237 - INFO - Question 75: Which books did Louis Sachar write that were adapted into movies?
+2025-08-09 02:24:50,481 - INFO - Question 76: What states share a border with Tennessee but not with Illinois?
+2025-08-09 02:25:00,247 - INFO - Question 77: What tertiary-level educational institutions did Sir Isaac Newton attend?
+2025-08-09 02:25:12,232 - INFO - Question 78: What books are written by Suzanne Collins that belong to the "Hunger Games" series?
+2025-08-09 02:25:38,901 - INFO - Question 79: Which children of King Henry VII survived to adulthood?
+2025-08-09 02:25:49,913 - INFO - Question 80: Who were the brothers of Demeter?
+2025-08-09 02:26:02,298 - INFO - Question 81: Who are the Democratic U.S. senators of Pennsylvania?
+2025-08-09 02:26:13,254 - INFO - Question 82: Who has been the head coach of the Carolina Panthers?
+2025-08-09 02:26:27,592 - INFO - Question 83: Which countries are original members of the European Union and are still members?
+2025-08-09 02:26:46,360 - INFO - Question 84: What are the Catholic holy days of obligation?
+2025-08-09 02:27:31,139 - INFO - Question 85: Though which country of the Sahel does the Niger River flow and have its mouth?
+2025-08-09 02:28:19,712 - INFO - Question 86: Who are the current St. Louis Cardinals coaches?
+2025-08-09 02:28:25,651 - INFO - Question 87: Which universities did Anders Celsius attend?
+2025-08-09 02:28:41,706 - INFO - Question 88: Which of Ariel's sisters appear in "The Little Mermaid II: Return to the Sea"?
+2025-08-09 02:28:59,075 - INFO - Question 89: Which human characters does Seth MacFarlane voice on Family Guy?
+2025-08-09 02:29:08,407 - INFO - Question 90: Which children did Michael Jackson have with Debbie Rowe?
+2025-08-09 02:29:25,178 - INFO - Question 91: What undergraduate degrees does Romney have?
+2025-08-09 02:29:39,301 - INFO - Question 92: Give me all cities in New Jersey with more than 100000 inhabitants and an international airport.
+2025-08-09 02:30:04,781 - INFO - Question 93: Which actors were born in France before 1970 have won an Oscar?
+2025-08-09 02:30:30,036 - INFO - Question 94: Which historical wargames published by GMT Games focus on World War II?
+2025-08-09 02:32:08,597 - INFO - Question 95: Which monarchs were married to a German man?
+2025-08-09 02:32:26,417 - INFO - Question 96: Which international organizations were founded in 1950 in the United States?
+2025-08-09 02:32:41,206 - INFO - Question 97: Give me the Apollo 14 astronauts who walked on the Moon.
+2025-08-09 02:35:18,533 - INFO - Question 98: Which spaceflights were launched from Baikonur excluding the 21st century?
+2025-08-09 02:35:37,029 - INFO - Question 99: Which U.S. states are in the same timezone as Utah and share a border with Utah?
+2025-08-09 02:35:48,842 - INFO - Question 100: Which states in the Great Lakes region border Illinois?
+2025-08-09 02:36:11,836 - INFO - Question 101: Give all swimmers that were born in Moscow and have won at least one medal in Olympic.
+2025-08-09 02:36:22,983 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-09 02:36:54,810 - INFO - Question 103: Show a list of soccer clubs that play in the Bundesliga and have won it in the past.
+2025-08-09 02:40:43,367 - INFO - Question 104: Which rivers flow into natural lakes located in Germany?
+2025-08-09 02:40:55,045 - INFO - Question 105: Give me all inhabited islands with more than 100000 population that belong to Japan.
+2025-08-09 02:41:18,728 - INFO - Question 106: Give me all soccer clubs in the Premier League with their stadium in London.
+2025-08-09 02:41:38,460 - INFO - Question 107: Which movies star both Liz Taylor and Richard Burton and were released before 1970?
+2025-08-09 02:42:02,631 - INFO - Question 108: Which music albums contain the song Last Christmas as an original track?
+2025-08-09 02:43:02,716 - INFO - Question 109: Can you provide a list of all public, regional, and unofficial holidays celebrated in Sweden in March?
+2025-08-09 02:43:35,766 - INFO - Question 110: List all the musicals with music by Leonard Bernstein that premiered before 1970.
+2025-08-09 02:44:08,176 - INFO - Question 111: Which writers studied at Istanbul University?
+2025-08-09 02:44:33,879 - INFO - Question 112: Give me all Australian metalcore bands formed before 2010.
+2025-08-09 02:44:48,474 - INFO - Question 113: List all recognized types of eating disorders that involve binge eating.
+2025-08-09 02:45:08,295 - INFO - Question 114: Which U.S. states are entirely in the Mountain Time Zone?
+2025-08-09 02:45:23,264 - INFO - Question 115: Give me all children's books written by Danielle Steel that were published before the year 1995.
+2025-08-09 02:45:41,758 - INFO - Question 116: Which programming languages influenced by Perl are primarily scripting languages?
+2025-08-09 02:45:59,904 - INFO - Question 117: Which airlines in the SkyTeam alliance are based in Europe?
+2025-08-09 02:46:15,413 - INFO - Question 118: What other fiction books have been written by the author of The Fault in Our Stars?
+2025-08-09 02:46:31,483 - INFO - Question 119: Which films starring Clint Eastwood did he both direct and produce himself?
+2025-08-09 02:46:59,906 - INFO - Question 120: Give me all male actors with the last name Baldwin.
+2025-08-09 02:47:35,488 - INFO - Question 121: List all Gothic churches or cathedrals in Kent.
+2025-08-09 02:47:52,461 - INFO - Question 122: In which countries that were previously Portuguese colonies can you pay using the West African CFA franc?
+2025-08-09 02:48:18,052 - INFO - Question 123: Which Heckler & Koch weapons are firearms?
+2025-08-09 02:51:15,830 - INFO - Question 124: Give me all films produced by Hal Roach that are comedies.
+2025-08-09 02:51:36,616 - INFO - Question 125: Give me a list of all bandleaders born in New Orleans that play trumpet and have won a Grammy.
+2025-08-09 02:54:01,697 - INFO - Question 126: Give me all people that were born in Vienna before 1900 and died in Berlin.
+2025-08-09 02:54:25,553 - INFO - Question 127: Give me all films produced by Steven Spielberg with a budget of at least $80 million and released before 2010.
+2025-08-09 02:54:36,908 - INFO - Question 128: Give me all working line types of the German Shepherd dog.
+2025-08-09 02:54:50,694 - INFO - Question 129: Which domestic airports does Yeti Airlines serve?
+2025-08-09 02:55:10,635 - INFO - Question 130: Which awards did Douglas Hofstadter win for his work in cognitive science?
+2025-08-09 02:55:53,580 - INFO - Question 131: Give me all launch pads used by NASA that are located within the United States.
+2025-08-09 02:56:15,728 - INFO - Question 132: List all the musicals with music solely composed by Elton John.
+2025-08-09 02:56:37,762 - INFO - Question 133: Which companies produce electric hovercrafts?
+2025-08-09 02:56:55,952 - INFO - Question 134: Which electronics companies were founded in Beijing before the year 2000?
+2025-08-09 02:57:07,088 - INFO - Question 135: List the sons of Margaret Thatcher.
+2025-08-09 02:57:17,583 - INFO - Question 136: Give me all current members of Prodigy.
+2025-08-09 02:57:36,630 - INFO - Question 137: Who are the primary songwriters of the Wall album of Pink Floyd?
+2025-08-09 02:57:44,212 - INFO - Question 138: Which television shows were created by Walt Disney and originally aired on the Disney Channel?
+2025-08-09 02:58:04,957 - INFO - Question 139: Which books by Kerouac were published posthumously by Viking Press?
+2025-08-09 02:58:17,055 - INFO - Question 140: In which films did both Julia Roberts and Richard Gere play before 1995?
+2025-08-09 02:58:35,346 - INFO - Question 141: Give me a list of all currently active Canadian record labels associated with Grunge music.
+2025-08-09 02:59:17,267 - INFO - Question 142: Give me all male actors starring in Last Action Hero.
+2025-08-09 02:59:49,213 - INFO - Question 143: Which comedy shows aired for the first time in the same year as Saturday Night Live?
+2025-08-09 03:00:07,222 - INFO - Question 144: Which artists were born on the same date and in the same year as Rachel Stevens?
+2025-08-09 03:00:39,227 - INFO - Question 145: Which airports are located on islands in California, USA?
+2025-08-09 03:01:59,487 - INFO - Question 146: Which monarchs of the United Kingdom were married to a German princess?
+2025-08-09 03:02:22,939 - INFO - Question 147: Give me all Asian writers that won the Nobel Prize in literature.
+2025-08-09 03:03:02,136 - INFO - Question 148: Give me English male actors starring in Lovesick.
+2025-08-09 03:05:46,742 - INFO - Question 149: Which rivers flow through Britain into the North Sea?
+2025-08-09 03:06:22,953 - INFO - Question 150: Which brewing companies producing at least 1 million hl of beer are located in North-Rhine Westphalia?
+2025-08-09 03:06:22,993 - INFO - Processing column: Q4
+2025-08-09 03:06:34,633 - INFO - Question 1: Which television shows were created by John Cleese and first aired on or after the year 2000?
+2025-08-09 03:06:50,045 - INFO - Question 2: Give me all communist countries outside of Asia.
+2025-08-09 03:08:08,838 - INFO - Question 3: Which politicians were married to a German man or non-binary person?
+2025-08-09 03:08:36,095 - INFO - Question 4: Please tell me all the Spanish football clubs that play in La Liga and never won the Champions League.
+2025-08-09 03:09:10,900 - INFO - Question 5: Which telecommunications organizations are located in Belgium but not headquartered in Brussels?
+2025-08-09 03:09:51,450 - INFO - Question 6: Which actors were born in Germany but are currently living outside of Germany?
+2025-08-09 03:10:04,242 - INFO - Question 7: In which countries with a population of at least one million are the Himalayas located?
+2025-08-09 03:10:24,009 - INFO - Question 8: On which video streaming services can I watch the Hunter x Hunter anime series without subscription?
+2025-08-09 03:10:44,746 - INFO - Question 9: Through which countries that do not use Central Europe Time does the Danube flow?
+2025-08-09 03:11:01,183 - INFO - Question 10: What are the non-musical professions of John Lennon’s sons?
+2025-08-09 03:11:21,299 - INFO - Question 11: What are the Star Wars series movies released on or after 2000?
+2025-08-09 03:11:32,923 - INFO - Question 12: What non-brass instruments did Louis Armstrong play?
+2025-08-09 03:11:43,515 - INFO - Question 13: What non-root notes make up a C major chord?
+2025-08-09 03:11:55,118 - INFO - Question 14: Which creator of The OA did not play a cast role in it?
+2025-08-09 03:12:30,454 - INFO - Question 15: What non-solo albums has Atif Aslam contributed to?
+2025-08-09 03:12:48,730 - INFO - Question 16: Which American presidents had fathers who were also American presidents but for a different party?
+2025-08-09 03:12:57,833 - INFO - Question 17: To which non-Cubist art movements is the painting “Les Demoiselles d'Avignon” assigned?
+2025-08-09 03:13:08,998 - INFO - Question 18: Which movies in the Cornetto trilogy do not star Lucy Davis?
+2025-08-09 03:13:30,665 - INFO - Question 19: Which movies directed by Thomas Vinterberg did not star Mads Mikkelsen?
+2025-08-09 03:13:39,809 - INFO - Question 20: Which team lost the 2020 UEFA Champions League Final?
+2025-08-09 03:14:20,477 - INFO - Question 21: Which actresses in Portrait of a Lady on Fire do not play a named character?
+2025-08-09 03:14:34,534 - INFO - Question 22: What countries does Germany border that do not have German as an official language?
+2025-08-09 03:14:55,456 - INFO - Question 23: What movies did Taylor Lautner star in that were released on or after 2010?
+2025-08-09 03:15:14,257 - INFO - Question 24: Through what coastal countries does the Niger River flow?
+2025-08-09 03:15:32,812 - INFO - Question 25: What games other than first-person shooters did Bungie develop?
+2025-08-09 03:15:52,430 - INFO - Question 26: Who have been non-Republican senators for Utah?
+2025-08-09 03:16:05,252 - INFO - Question 27: Who are the current Democratic senators from Illinois?
+2025-08-09 03:16:36,884 - INFO - Question 28: What non-electric car models does GM make?
+2025-08-09 03:17:03,498 - INFO - Question 29: What non-European countries have a coastline on the Mediterranean Sea?
+2025-08-09 03:17:56,336 - INFO - Question 30: What cities in Maricopa County have a population of 100,000 or less?
+2025-08-09 03:18:52,209 - INFO - Question 31: What characters does Todd Haberkorn voice in Japanese films?
+2025-08-09 03:20:16,913 - INFO - Question 32: What non-solo albums did John Frusciante play on?
+2025-08-09 03:20:52,987 - INFO - Question 33: What dialects are spoken in Scotland, Wales, and Northern Ireland?
+2025-08-09 03:21:10,642 - INFO - Question 34: Which present-day countries use English as one of their multiple official languages?
+2025-08-09 03:21:58,603 - INFO - Question 35: What are the official languages of Canada used by a minority of the population?  
+2025-08-09 03:22:10,573 - INFO - Question 36: Who was the Vice President under Abraham Lincoln during his second term?
+2025-08-09 03:22:24,854 - INFO - Question 37: What non-Arab majority countries does Egypt border?
+2025-08-09 03:22:42,072 - INFO - Question 38: Which countries border the Baltic Sea and are not members of the European Union?
+2025-08-09 03:23:15,823 - INFO - Question 39: What dialects of Chinese are not the majority dialect of Hong Kong?
+2025-08-09 03:23:38,709 - INFO - Question 40: Which American president was in office when the Vietnam War ended?
+2025-08-09 03:24:20,823 - INFO - Question 41: Which European countries once had a constitutional monarchy but now have a different form of government?
+2025-08-09 03:24:37,384 - INFO - Question 42: Give me all professional skateboarders from Sweden who are not male.
+2025-08-09 03:25:16,615 - INFO - Question 43: Which professional surfers were born in Australia outside of Sydney?
+2025-08-09 03:25:44,856 - INFO - Question 44: Which space probes were sent into orbit around the sun but are no longer operational?
+2025-08-09 03:25:55,935 - INFO - Question 45: Which German cities have more than 1000000 inhabitants?
+2025-08-09 03:26:55,777 - INFO - Question 46: Give me all spacecrafts that flew by or orbited Mars but did not land.
+2025-08-09 03:27:42,761 - INFO - Question 47: Give me all taikonauts who have never flown in space.
+2025-08-09 03:28:31,123 - INFO - Question 48: Which countries have more than ten volcanoes but fewer than ten active ones?
+2025-08-09 03:28:41,975 - INFO - Question 49: Who from the Apollo 11 mission died before January 1st, 2025?
+2025-08-09 03:29:09,168 - INFO - Question 50: Give me all B-sides of the Ramones released on or after 1985.
+2025-08-09 03:29:31,402 - INFO - Question 51: Which French politicians were married to a German woman or non-binary person?
+2025-08-09 03:29:58,206 - INFO - Question 52: Which movies did Kurosawa direct that are not dramas?
+2025-08-09 03:30:28,165 - INFO - Question 53: Give me all Frisian islands that belong to the Netherlands and are uninhabited.
+2025-08-09 03:30:36,807 - INFO - Question 54: Which non-Abrahamic religions are officially recognized in Indonesia?
+2025-08-09 03:30:54,329 - INFO - Question 55: What battles did Stonewall Jackson fight in outside of the American Civil War?
+2025-08-09 03:31:04,208 - INFO - Question 56: Which countries have both German and French as official languages?
+2025-08-09 03:31:20,943 - INFO - Question 57: What international or non-NBA basketball teams has Shaquille O'Neal played for?
+2025-08-09 03:31:46,785 - INFO - Question 58: What countries with a coastline are considered part of the Baltic region?
+2025-08-09 03:32:03,696 - INFO - Question 59: Which states in New England do not have "New" in their name?
+2025-08-09 03:32:22,271 - INFO - Question 60: Which U.S. states does the Colorado River run through in the Lower Basin?
+2025-08-09 03:32:36,215 - INFO - Question 61: To which continents did the Roman Empire expand beyond the first continent?
+2025-08-09 03:33:01,331 - INFO - Question 62: What countries have Spanish and a non-Indo-European language as official languages?
+2025-08-09 03:33:26,413 - INFO - Question 63: At which colleges did Albert Einstein teach as a temporary teaching position?
+2025-08-09 03:33:45,346 - INFO - Question 64: In what TV shows did Shawnee Smith appear in multiple episodes?
+2025-08-09 03:34:08,159 - INFO - Question 65: What countries share both a land and maritime border with Spain?
+2025-08-09 03:35:20,607 - INFO - Question 66: What TV shows are shot in New York and are not comedies?
+2025-08-09 03:35:58,261 - INFO - Question 67: In what movies did Tupac star but did not give a musical performance?
+2025-08-09 03:36:29,512 - INFO - Question 68: Who has played Lex Luthor but never in live-action adaptations?
+2025-08-09 03:36:48,389 - INFO - Question 69: What were the names of Henry VIII's confirmed illegitimate children?
+2025-08-09 03:37:05,341 - INFO - Question 70: Which countries are only partially (not fully) contained in Oceania?
+2025-08-09 03:37:24,091 - INFO - Question 71: Which states without a Democratic governor does the Sierra Nevada run through in the United States?
+2025-08-09 03:38:09,018 - INFO - Question 72: Which teams has Stephen Ireland played for outside the English Premier League?
+2025-08-09 03:38:26,028 - INFO - Question 73: Which celebrities has Brody Jenner been rumored but not confirmed to have dated?
+2025-08-09 03:38:46,672 - INFO - Question 74: What countries are members of NAFTA but not in Latin America?
+2025-08-09 03:39:12,598 - INFO - Question 75: Which books did Louis Sachar write that were not adapted into movies?
+2025-08-09 03:39:26,481 - INFO - Question 76: What states share a border with Tennessee and Illinois?
+2025-08-09 03:39:41,049 - INFO - Question 77: What primary and secondary-level educational institutions did Sir Isaac Newton attend?
+2025-08-09 03:40:00,983 - INFO - Question 78: What books are written by Suzanne Collins are not part of the "Hunger Games" series?
+2025-08-09 03:40:16,617 - INFO - Question 79: Which children of King Henry VII died in childhood?
+2025-08-09 03:40:28,125 - INFO - Question 80: Who were the sisters of Demeter?
+2025-08-09 03:40:39,243 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-09 03:41:17,677 - INFO - Question 82: Who has been an assistant coach but never head coach of the Carolina Panthers?
+2025-08-09 03:41:35,119 - INFO - Question 83: Which countries are members of the European Union but are not original members?
+2025-08-09 03:42:10,546 - INFO - Question 84: What are the Catholic holy days that are not days of obligation?
+2025-08-09 03:42:36,242 - INFO - Question 85: Though which country of the Sahel does the Niger River flow but does not have its mouth?
+2025-08-09 03:43:27,593 - INFO - Question 86: Who are the former St. Louis Cardinals coaches?
+2025-08-09 03:43:36,548 - INFO - Question 87: Which educational institutions did Anders Celsius attend before university?
+2025-08-09 03:44:01,611 - INFO - Question 88: Which of Ariel's sisters no not appear in "The Little Mermaid II: Return to the Sea"?
+2025-08-09 03:44:32,830 - INFO - Question 89: Which non-human characters does Seth MacFarlane voice on Family Guy?
+2025-08-09 03:44:41,164 - INFO - Question 90: Which children did Michael Jackson have with someone other than Debbie Rowe?
+2025-08-09 03:45:00,103 - INFO - Question 91: What graduate degrees does Romney have?
+2025-08-09 03:45:40,209 - INFO - Question 92: Give me all cities in New Jersey with more than 100000 inhabitants without an international airport.
+2025-08-09 03:46:09,775 - INFO - Question 93: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-09 03:46:44,228 - INFO - Question 94: Which historical wargames published by GMT Games do not focus on World War II?
+2025-08-09 03:48:09,741 - INFO - Question 95: Which monarchs were married to a German who was female or non-binary?
+2025-08-09 03:51:04,399 - INFO - Question 96: Which international organizations were founded in 1950 outside the United States?
+2025-08-09 03:51:17,262 - INFO - Question 97: Give me the Apollo 14 astronauts who did not walk on the Moon.
+2025-08-09 03:51:40,397 - INFO - Question 98: Which spaceflights were launched from Baikonur in the 21st century?
+2025-08-09 03:52:05,398 - INFO - Question 99: Which U.S. states are in the same timezone as Utah but do not share a border with Utah?
+2025-08-09 03:52:31,697 - INFO - Question 100: Which states not in the Great Lakes region border Illinois?
+2025-08-09 03:54:24,126 - INFO - Question 101: Give all swimmers that were born in Moscow and attened Olympic but have never won a medal.
+2025-08-09 03:54:37,901 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-09 03:55:07,006 - INFO - Question 103: Show a list of soccer clubs that play in the Bundesliga and have never won it.
+2025-08-09 03:55:37,551 - INFO - Question 104: Which rivers flow into artificial lakes located in Germany?
+2025-08-09 03:58:15,380 - INFO - Question 105: Give me all inhabited islands with no more than 1000000 population that belong to Japan.
+2025-08-09 03:58:38,805 - INFO - Question 106: Give me all soccer clubs in the Premier League with their stadium outside London.
+2025-08-09 03:58:57,318 - INFO - Question 107: Which movies star both Liz Taylor and Richard Burton and were released on or after 1970?
+2025-08-09 04:02:15,371 - INFO - Question 108: Which music albums contain the song Last Christmas as a cover track?
+2025-08-09 04:03:14,845 - INFO - Question 109: Can you provide a list of all public, regional, and unofficial holidays celebrated in Sweden in months other than March?
+2025-08-09 04:03:48,884 - INFO - Question 110: List all the musicals with music by Leonard Bernstein that premiered on or after 1970.
+2025-08-09 04:04:18,528 - INFO - Question 111: Which writers studied in Istanbul but never in Istanbul University?
+2025-08-09 04:04:38,523 - INFO - Question 112: Give me all Australian metalcore bands formed on or after 2010.
+2025-08-09 04:05:08,744 - INFO - Question 113: List all recognized types of eating disorders that do not involve binge eating.
+2025-08-09 04:05:27,951 - INFO - Question 114: Which U.S. states are only partially in the Mountain Time Zone?
+2025-08-09 04:05:47,342 - INFO - Question 115: Give me all children's books written by Danielle Steel that were published on or after the year 1995.
+2025-08-09 04:06:13,127 - INFO - Question 116: Which programming languages influenced by Perl are not primarily script languages?
+2025-08-09 04:06:47,308 - INFO - Question 117: Which airlines in the SkyTeam alliance are based outside of Europe?
+2025-08-09 04:07:27,608 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-09 04:07:48,868 - INFO - Question 119: Which films starring Clint Eastwood did he direct but not produce himself?
+2025-08-09 04:08:16,025 - INFO - Question 120: Give me all female or non-binary actors with the last name Baldwin.
+2025-08-09 04:08:48,975 - INFO - Question 121: List all Gothic buildings in Kent that are not churches or cathedrals.
+2025-08-09 04:09:05,074 - INFO - Question 122: In which countries that were not Portuguese colonies can you pay using the West African CFA franc?
+2025-08-09 04:09:25,692 - INFO - Question 123: Which Heckler & Koch weapons are non-firearm weapons?
+2025-08-09 04:11:08,535 - INFO - Question 124: Give me all films produced by Hal Roach that are not comedies.
+2025-08-09 04:11:33,831 - INFO - Question 125: Give me a list of all bandleaders not born in New Orleans that play trumpet and have won a Grammy.
+2025-08-09 04:14:25,791 - INFO - Question 126: Give me all people that were born in Vienna on or after 1900 and died in Berlin.
+2025-08-09 04:14:49,552 - INFO - Question 127: Give me all films produced by Steven Spielberg with a budget of at least $80 million and released on or after 2010.
+2025-08-09 04:15:20,573 - INFO - Question 128: Give me all non-working line types of the German Shepherd dog.
+2025-08-09 04:15:35,388 - INFO - Question 129: Which international airports does Yeti Airlines serve?
+2025-08-09 04:16:01,244 - INFO - Question 130: Which awards did Douglas Hofstadter win for his contributions outside of cognitive science?
+2025-08-09 04:16:29,204 - INFO - Question 131: Give me all launch pads used by NASA that are located outside the United States.
+2025-08-09 04:16:54,593 - INFO - Question 132: List all the musicals with music composed by Elton John along with other composers.
+2025-08-09 04:17:59,856 - INFO - Question 133: Which companies produce non-electric hovercrafts and do not produce electric ones?
+2025-08-09 04:18:34,867 - INFO - Question 134: Which electronics companies were founded in Beijing on or after the year 2000?
+2025-08-09 04:18:42,995 - INFO - Question 135: List the non-male children of Margaret Thatcher.
+2025-08-09 04:19:00,191 - INFO - Question 136: Give me all former members of Prodigy.
+2025-08-09 04:19:15,807 - INFO - Question 137: Who are the additional or contributing writers of the Wall album of Pink Floyd?
+2025-08-09 04:19:35,174 - INFO - Question 138: Which television shows were created by Walt Disney and did not originally air on the Disney Channel?
+2025-08-09 04:20:02,825 - INFO - Question 139: Which books by Kerouac were published during his lifetime by Viking Press?
+2025-08-09 04:20:15,699 - INFO - Question 140: In which films did both Julia Roberts and Richard Gere play since 1995?
+2025-08-09 04:20:36,222 - INFO - Question 141: Give me a list of all defunct Canadian record labels associated with Grunge music.
+2025-08-09 04:20:55,735 - INFO - Question 142: Give me all non-male actors starring in Last Action Hero.
+2025-08-09 04:21:25,557 - INFO - Question 143: Which non-comedy shows aired for the first time in the same year as Saturday Night Live?
+2025-08-09 04:21:58,548 - INFO - Question 144: Which artists were born on the same date but in a different year than Rachel Stevens?
+2025-08-09 04:25:38,135 - INFO - Question 145: Which airports are located on mainland California, USA?
+2025-08-09 04:26:21,596 - INFO - Question 146: Which monarchs of the United Kingdom were married to a German who was not a princess?
+2025-08-09 04:26:56,251 - INFO - Question 147: Give me all writers  from outside Asia that won the Nobel Prize in literature.
+2025-08-09 04:27:24,050 - INFO - Question 148: Give me English female or non-binary actors starring in Lovesick.
+2025-08-09 04:27:49,845 - INFO - Question 149: Which rivers flow into the North Sea but not through Britain?
+2025-08-09 04:28:32,465 - INFO - Question 150: Which brewing companies producing less than 1 million hl of beer are located in North-Rhine Westphalia?
+2025-08-09 04:28:32,491 - INFO - Processing dataset: qawiki.tsv for model: gemini-2.5-pro and language: en
+2025-08-09 04:28:32,491 - INFO - Processing column: Q1
+2025-08-09 04:28:51,231 - INFO - Question 1: In which countries are tepuis found?
+2025-08-09 04:28:58,344 - INFO - Question 2: In which countries is Elon Musk a citizen?
+2025-08-09 04:29:12,300 - INFO - Question 3: In which journals has Amrapali Zaveri published?
+2025-08-09 04:29:29,424 - INFO - Question 4: In which movies did Al Pacino and Robert de Niro appear together?
+2025-08-09 04:29:54,550 - INFO - Question 5: In which museums can I see paintings by El Greco?
+2025-08-09 04:30:04,082 - INFO - Question 6: Kim Deal played with which bands?
+2025-08-09 04:30:34,576 - INFO - Question 7: List astronauts who completed degrees at MIT.
+2025-08-09 04:30:48,474 - INFO - Question 8: List the richest 10 persons in the world
+2025-08-09 04:30:58,226 - INFO - Question 9: List the top 10 largest countries in Africa by area.
+2025-08-09 04:31:08,933 - INFO - Question 10: List the top ten largest countries in Africa by population.
+2025-08-09 04:31:26,772 - INFO - Question 11: Which countries are part of the G20?
+2025-08-09 04:31:39,414 - INFO - Question 12: What are the official languages of the European Union?
+2025-08-09 04:32:04,927 - INFO - Question 13: What are the subsidiaries of Meta Platforms?
+2025-08-09 04:32:15,198 - INFO - Question 14: What are the ten tallest mountains in the world?
+2025-08-09 04:32:39,598 - INFO - Question 15: What binary neutron stars are in the constellation Scorpius?
