@@ -29,7 +29,7 @@ azure_api_version= os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 
 azure_models = ["gpt-4o","o3","o1"]
 openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14']
-gemini_models = ["gemini-2.0-flash","gemini-2.5-pro"]
+gemini_models = ["gemini-2.0-flash","gemini-2.5-pro","gemini-2.5-flash"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
 self_hosted_models = ['llama3.1:8b','llama3.1:70b']

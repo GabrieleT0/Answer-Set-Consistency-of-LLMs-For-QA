@@ -3069,3 +3069,489 @@
 2025-08-12 08:47:26,418 - INFO - Q3: Which team won the 2020 UEFA Champions League Final?
 2025-08-12 08:47:26,418 - INFO - Q4: Which team lost the 2020 UEFA Champions League Final?
 2025-08-12 08:47:26,418 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 08:51:16,130 - INFO - Question 21
+2025-08-12 08:51:16,130 - INFO - Q1: Who are the actresses in Portrait of a Lady on Fire?
+2025-08-12 08:51:16,130 - INFO - Q2: Which actresses appear in Portrait of a Lady on Fire?
+2025-08-12 08:51:16,130 - INFO - Q3: Which actresses play a named character in Portrait of a Lady on Fire?
+2025-08-12 08:51:16,130 - INFO - Q4: Which actresses in Portrait of a Lady on Fire do not play a named character?
+2025-08-12 08:51:16,130 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 08:52:42,492 - INFO - Question 22
+2025-08-12 08:52:42,492 - INFO - Q1: What countries does Germany share borders with?
+2025-08-12 08:52:42,492 - INFO - Q2: Which countries border Germany?
+2025-08-12 08:52:42,493 - INFO - Q3: What countries does Germany border that have German as an official language?
+2025-08-12 08:52:42,493 - INFO - Q4: What countries does Germany border that do not have German as an official language?
+2025-08-12 08:52:42,493 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 08:54:30,714 - INFO - Question 23
+2025-08-12 08:54:30,714 - INFO - Q1: What movies did Taylor Lautner star in?
+2025-08-12 08:54:30,714 - INFO - Q2: In which films did Taylor Lautner star?
+2025-08-12 08:54:30,714 - INFO - Q3: What movies did Taylor Lautner star in that were released before 2010?
+2025-08-12 08:54:30,714 - INFO - Q4: What movies did Taylor Lautner star in that were released on or after 2010?
+2025-08-12 08:54:30,714 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 08:55:57,087 - INFO - Question 24
+2025-08-12 08:55:57,088 - INFO - Q1: What countries does the Niger river flow through?
+2025-08-12 08:55:57,088 - INFO - Q2: Through which countries does the Niger River flow?
+2025-08-12 08:55:57,088 - INFO - Q3: Through what landlocked countries does the Niger River flow?
+2025-08-12 08:55:57,088 - INFO - Q4: Through what coastal countries does the Niger River flow?
+2025-08-12 08:55:57,088 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 08:57:38,975 - INFO - Question 25
+2025-08-12 08:57:38,975 - INFO - Q1: What games did Bungie make?
+2025-08-12 08:57:38,975 - INFO - Q2: Which games were developed by Bungie?
+2025-08-12 08:57:38,975 - INFO - Q3: What first-person shooter games did Bungie develop?
+2025-08-12 08:57:38,976 - INFO - Q4: What games other than first-person shooters did Bungie develop?
+2025-08-12 08:57:38,976 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:04:02,435 - INFO - Question 26
+2025-08-12 09:04:02,436 - INFO - Q1: Who has been a senator from Utah?
+2025-08-12 09:04:02,436 - INFO - Q2: Which senators have represented Utah?
+2025-08-12 09:04:02,436 - INFO - Q3: Who have been Republican senators for Utah?
+2025-08-12 09:04:02,436 - INFO - Q4: Who have been non-Republican senators for Utah?
+2025-08-12 09:04:02,436 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Overlap', 'ContainedBy']
+2025-08-12 09:09:45,253 - INFO - Question 27
+2025-08-12 09:09:45,255 - INFO - Q1: Who are the current senators from Illinois?
+2025-08-12 09:09:45,256 - INFO - Q2: Which individuals currently serve as senators representing Illinois?
+2025-08-12 09:09:45,256 - INFO - Q3: Who are the current non-Democratic senators from Illinois?
+2025-08-12 09:09:45,256 - INFO - Q4: Who are the current Democratic senators from Illinois?
+2025-08-12 09:09:45,256 - INFO - LLM Response: ['Equivalence', 'Contains', 'Equivalence', 'ContainedBy', 'Equivalence']
+2025-08-12 09:11:02,565 - INFO - Question 28
+2025-08-12 09:11:02,566 - INFO - Q1: What car models does GM make?
+2025-08-12 09:11:02,566 - INFO - Q2: Which car models are produced by General Motors?
+2025-08-12 09:11:02,566 - INFO - Q3: What electric car models does GM make?
+2025-08-12 09:11:02,566 - INFO - Q4: What non-electric car models does GM make?
+2025-08-12 09:11:02,566 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:13:05,410 - INFO - Question 29
+2025-08-12 09:13:05,410 - INFO - Q1: What countries are on the Mediterranean Sea?
+2025-08-12 09:13:05,410 - INFO - Q2: Which countries border the Mediterranean Sea?
+2025-08-12 09:13:05,410 - INFO - Q3: What European countries have a coastline on the Mediterranean Sea?
+2025-08-12 09:13:05,411 - INFO - Q4: What non-European countries have a coastline on the Mediterranean Sea?
+2025-08-12 09:13:05,411 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:14:36,113 - INFO - Question 30
+2025-08-12 09:14:36,114 - INFO - Q1: What cities are included in Maricopa County?
+2025-08-12 09:14:36,114 - INFO - Q2: Which cities are located within Maricopa County?
+2025-08-12 09:14:36,114 - INFO - Q3: What cities in Maricopa County have a population greater than 100,000?
+2025-08-12 09:14:36,114 - INFO - Q4: What cities in Maricopa County have a population of 100,000 or less?
+2025-08-12 09:14:36,114 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:17:14,721 - INFO - Question 31
+2025-08-12 09:17:14,721 - INFO - Q1: What characters does Todd Haberkorn voice in movies?
+2025-08-12 09:17:14,721 - INFO - Q2: Which characters are voiced by Todd Haberkorn in movies?
+2025-08-12 09:17:14,721 - INFO - Q3: What characters does Todd Haberkorn voice in non-Japanese films?
+2025-08-12 09:17:14,722 - INFO - Q4: What characters does Todd Haberkorn voice in Japanese films?
+2025-08-12 09:17:14,722 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:18:53,783 - INFO - Question 32
+2025-08-12 09:18:53,784 - INFO - Q1: What albums did John Frusciante play on in any capacity?
+2025-08-12 09:18:53,784 - INFO - Q2: On which albums did John Frusciante perform?
+2025-08-12 09:18:53,784 - INFO - Q3: What solo albums did John Frusciante play on?
+2025-08-12 09:18:53,784 - INFO - Q4: What non-solo albums did John Frusciante play on?
+2025-08-12 09:18:53,784 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:21:08,088 - INFO - Question 33
+2025-08-12 09:21:08,088 - INFO - Q1: What dialects are spoken in the U.K.?
+2025-08-12 09:21:08,088 - INFO - Q2: Which dialects are used in the United Kingdom?
+2025-08-12 09:21:08,088 - INFO - Q3: What dialects are spoken in England?
+2025-08-12 09:21:08,088 - INFO - Q4: What dialects are spoken in Scotland, Wales, and Northern Ireland?
+2025-08-12 09:21:08,089 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:21:51,262 - INFO - Question 34
+2025-08-12 09:21:51,263 - INFO - Q1: Which present-day countries use English as an official language?
+2025-08-12 09:21:51,263 - INFO - Q2: Which contemporary countries have English as an official language?
+2025-08-12 09:21:51,263 - INFO - Q3: Which present-day countries use English as their only official language?
+2025-08-12 09:21:51,263 - INFO - Q4: Which present-day countries use English as one of their multiple official languages?
+2025-08-12 09:21:51,263 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:23:25,848 - INFO - Question 35
+2025-08-12 09:23:25,849 - INFO - Q1: What are the official languages of Canada?
+2025-08-12 09:23:25,849 - INFO - Q2: What languages are officially recognized in Canada?
+2025-08-12 09:23:25,849 - INFO - Q3: What is the official language of Canada used by the majority of the population?
+2025-08-12 09:23:25,849 - INFO - Q4: What are the official languages of Canada used by a minority of the population?  
+2025-08-12 09:23:25,849 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:24:14,813 - INFO - Question 36
+2025-08-12 09:24:14,813 - INFO - Q1: Who were the Vice Presidents under Lincoln?
+2025-08-12 09:24:14,814 - INFO - Q2: Who were the Vice Presidents of Lincoln?
+2025-08-12 09:24:14,814 - INFO - Q3: Who was the Vice President under Abraham Lincoln during his first term?
+2025-08-12 09:24:14,814 - INFO - Q4: Who was the Vice President under Abraham Lincoln during his second term?
+2025-08-12 09:24:14,814 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:25:52,904 - INFO - Question 37
+2025-08-12 09:25:52,905 - INFO - Q1: Which countries does Egypt border?
+2025-08-12 09:25:52,905 - INFO - Q2: Which countries share a border with Egypt?
+2025-08-12 09:25:52,905 - INFO - Q3: What majority Arab countries does Egypt border?
+2025-08-12 09:25:52,905 - INFO - Q4: What non-Arab majority countries does Egypt border?
+2025-08-12 09:25:52,905 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:26:50,070 - INFO - Question 38
+2025-08-12 09:26:50,070 - INFO - Q1: Which countries border the Baltic sea?
+2025-08-12 09:26:50,070 - INFO - Q2: What countries have coastlines along the Baltic Sea?
+2025-08-12 09:26:50,070 - INFO - Q3: Which countries border the Baltic Sea and are members of the European Union?
+2025-08-12 09:26:50,070 - INFO - Q4: Which countries border the Baltic Sea and are not members of the European Union?
+2025-08-12 09:26:50,070 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:28:00,560 - INFO - Question 39
+2025-08-12 09:28:00,561 - INFO - Q1: What are the different dialects of Chinese?
+2025-08-12 09:28:00,561 - INFO - Q2: What dialects are spoken in the Chinese language?
+2025-08-12 09:28:00,561 - INFO - Q3: What dialect of Chinese is the majority dialect of Hong Kong?
+2025-08-12 09:28:00,561 - INFO - Q4: What dialects of Chinese are not the majority dialect of Hong Kong?
+2025-08-12 09:28:00,561 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:29:06,011 - INFO - Question 40
+2025-08-12 09:29:06,012 - INFO - Q1: Which American presidents were in office during the Vietnam War?
+2025-08-12 09:29:06,012 - INFO - Q2: Who were the U.S. presidents during the Vietnam War?
+2025-08-12 09:29:06,012 - INFO - Q3: Which American presidents were in office during the Vietnam War but not when it ended?
+2025-08-12 09:29:06,012 - INFO - Q4: Which American president was in office when the Vietnam War ended?
+2025-08-12 09:29:06,012 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:32:56,116 - INFO - Question 41
+2025-08-12 09:32:56,116 - INFO - Q1: Which European countries have had a constitutional monarchy at some point in history?
+2025-08-12 09:32:56,116 - INFO - Q2: Which European nations have had a constitutional monarchy as their form of government?
+2025-08-12 09:32:56,116 - INFO - Q3: Which European countries currently have had a constitutional monarchy?
+2025-08-12 09:32:56,117 - INFO - Q4: Which European countries once had a constitutional monarchy but now have a different form of government?
+2025-08-12 09:32:56,117 - INFO - LLM Response: ['Equivalence', 'Unknown', 'Contains', 'Unknown', 'Unknown']
+2025-08-12 09:34:59,554 - INFO - Question 42
+2025-08-12 09:34:59,554 - INFO - Q1: Give me all professional skateboarders from Sweden.
+2025-08-12 09:34:59,554 - INFO - Q2: List every professional skateboarder who is from Sweden.
+2025-08-12 09:34:59,554 - INFO - Q3: Give me all male professional skateboarders from Sweden.
+2025-08-12 09:34:59,555 - INFO - Q4: Give me all professional skateboarders from Sweden who are not male.
+2025-08-12 09:34:59,555 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:36:06,371 - INFO - Question 43
+2025-08-12 09:36:06,371 - INFO - Q1: Which professional surfers were born in Australia?
+2025-08-12 09:36:06,371 - INFO - Q2: Who are the professional surfers that were born in Australia?
+2025-08-12 09:36:06,372 - INFO - Q3: Which professional surfers were born in Sydney, Australia?
+2025-08-12 09:36:06,372 - INFO - Q4: Which professional surfers were born in Australia outside of Sydney?
+2025-08-12 09:36:06,372 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:38:44,816 - INFO - Question 44
+2025-08-12 09:38:44,817 - INFO - Q1: Which space probes were sent into orbit around the sun?
+2025-08-12 09:38:44,817 - INFO - Q2: What space probes have been launched to orbit the sun?
+2025-08-12 09:38:44,817 - INFO - Q3: Which space probes were sent into orbit around the sun and are still operational?
+2025-08-12 09:38:44,817 - INFO - Q4: Which space probes were sent into orbit around the sun but are no longer operational?
+2025-08-12 09:38:44,817 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:40:52,460 - INFO - Question 45
+2025-08-12 09:40:52,460 - INFO - Q1: Which German cities have more than 250000 inhabitants?
+2025-08-12 09:40:52,460 - INFO - Q2: In which German cities does the population exceed 250,000?
+2025-08-12 09:40:52,460 - INFO - Q3: Which German cities have more than 250000 inhabitants but fewer than 1000000?
+2025-08-12 09:40:52,461 - INFO - Q4: Which German cities have more than 1000000 inhabitants?
+2025-08-12 09:40:52,461 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:47:21,158 - INFO - Question 46
+2025-08-12 09:47:21,158 - INFO - Q1: Give me all spacecraft that flew to Mars.
+2025-08-12 09:47:21,158 - INFO - Q2: List every spacecraft that has traveled to Mars.
+2025-08-12 09:47:21,158 - INFO - Q3: Give me all spacecrafts that successfully landed on Mars.
+2025-08-12 09:47:21,158 - INFO - Q4: Give me all spacecrafts that flew by or orbited Mars but did not land.
+2025-08-12 09:47:21,158 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Contains']
+2025-08-12 09:49:03,516 - INFO - Question 47
+2025-08-12 09:49:03,516 - INFO - Q1: Give me all taikonauts.
+2025-08-12 09:49:03,516 - INFO - Q2: Provide me with a list of all taikonauts.
+2025-08-12 09:49:03,516 - INFO - Q3: Give me all taikonauts who have flown in space.
+2025-08-12 09:49:03,517 - INFO - Q4: Give me all taikonauts who have never flown in space.
+2025-08-12 09:49:03,517 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 09:55:18,009 - INFO - Question 48
+2025-08-12 09:55:18,009 - INFO - Q1: Which countries have more than ten volcanoes in total?
+2025-08-12 09:55:18,010 - INFO - Q2: Which countries have above ten volcanoes in total?
+2025-08-12 09:55:18,010 - INFO - Q3: Which countries have more than ten active volcanoes?
+2025-08-12 09:55:18,010 - INFO - Q4: Which countries have more than ten volcanoes but fewer than ten active ones?
+2025-08-12 09:55:18,010 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Unknown']
+2025-08-12 10:03:27,539 - INFO - Question 49
+2025-08-12 10:03:27,540 - INFO - Q1: Who were the crew members on the Apollo 11 mission?
+2025-08-12 10:03:27,540 - INFO - Q2: Which individuals participated in the Apollo 11 mission?
+2025-08-12 10:03:27,540 - INFO - Q3: Who from the Apollo 11 mission was still alive as of January 1st, 2025?
+2025-08-12 10:03:27,540 - INFO - Q4: Who from the Apollo 11 mission died before January 1st, 2025?
+2025-08-12 10:03:27,540 - INFO - LLM Response: ['Equivalence', 'Contains', 'Unknown', 'Unknown', 'Equivalence']
+2025-08-12 10:06:10,994 - INFO - Question 50
+2025-08-12 10:06:10,994 - INFO - Q1: Give me all B-sides of the Ramones.
+2025-08-12 10:06:10,994 - INFO - Q2: Could you provide a list of all the Ramones' B-sides?
+2025-08-12 10:06:10,994 - INFO - Q3: Give me all B-sides of the Ramones released before 1985.
+2025-08-12 10:06:10,994 - INFO - Q4: Give me all B-sides of the Ramones released on or after 1985.
+2025-08-12 10:06:10,994 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:20:30,754 - INFO - Question 51
+2025-08-12 10:20:30,755 - INFO - Q1: Which French politicians were married to a German?
+2025-08-12 10:20:30,755 - INFO - Q2: Which French politicians had a spouse who was German?
+2025-08-12 10:20:30,755 - INFO - Q3: Which French politicians were married to a German man?
+2025-08-12 10:20:30,755 - INFO - Q4: Which French politicians were married to a German woman or non-binary person?
+2025-08-12 10:20:30,755 - INFO - LLM Response: ['Equivalence', 'Contains', 'Unknown', 'Unknown', 'Unknown']
+2025-08-12 10:27:06,583 - INFO - Question 52
+2025-08-12 10:27:06,584 - INFO - Q1: Which movies did Kurosawa direct?
+2025-08-12 10:27:06,584 - INFO - Q2: What are the movies directed by Kurosawa?
+2025-08-12 10:27:06,584 - INFO - Q3: Which movies did Kurosawa direct that are dramas?
+2025-08-12 10:27:06,584 - INFO - Q4: Which movies did Kurosawa direct that are not dramas?
+2025-08-12 10:27:06,584 - INFO - LLM Response: ['Equivalence', 'Unknown', 'Unknown', 'Unknown', 'Equivalence']
+2025-08-12 10:28:07,350 - INFO - Question 53
+2025-08-12 10:28:07,350 - INFO - Q1: Give me all Frisian islands that belong to the Netherlands.
+2025-08-12 10:28:07,350 - INFO - Q2: Which Frisian islands are part of the Netherlands?
+2025-08-12 10:28:07,350 - INFO - Q3: Give me all Frisian islands that belong to the Netherlands and are inhabited.
+2025-08-12 10:28:07,350 - INFO - Q4: Give me all Frisian islands that belong to the Netherlands and are uninhabited.
+2025-08-12 10:28:07,350 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:29:30,026 - INFO - Question 54
+2025-08-12 10:29:30,027 - INFO - Q1: Which officially recognized religions are present in Indonesia?
+2025-08-12 10:29:30,027 - INFO - Q2: What religions do Indonesians are official recognized?
+2025-08-12 10:29:30,027 - INFO - Q3: Which Abrahamic religions are officially recognized in Indonesia?
+2025-08-12 10:29:30,027 - INFO - Q4: Which non-Abrahamic religions are officially recognized in Indonesia?
+2025-08-12 10:29:30,027 - INFO - LLM Response: ['Unknown', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:30:57,398 - INFO - Question 55
+2025-08-12 10:30:57,398 - INFO - Q1: What battles did Stonewall Jackson fight in during his military career?
+2025-08-12 10:30:57,398 - INFO - Q2: In which battles did Stonewall Jackson participate during his military career?
+2025-08-12 10:30:57,398 - INFO - Q3: What battles did Stonewall Jackson fight in during the American Civil War?
+2025-08-12 10:30:57,398 - INFO - Q4: What battles did Stonewall Jackson fight in outside of the American Civil War?
+2025-08-12 10:30:57,398 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:33:28,293 - INFO - Question 56
+2025-08-12 10:33:28,294 - INFO - Q1: Which countries speak German officially?
+2025-08-12 10:33:28,294 - INFO - Q2: In which countries is German an official language?
+2025-08-12 10:33:28,294 - INFO - Q3: Which countries have German but not French as an official language?
+2025-08-12 10:33:28,294 - INFO - Q4: Which countries have both German and French as official languages?
+2025-08-12 10:33:28,294 - INFO - LLM Response: ['Equivalence', 'Unknown', 'Unknown', 'Disjoint', 'Equivalence']
+2025-08-12 10:37:44,258 - INFO - Question 57
+2025-08-12 10:37:44,258 - INFO - Q1: What basketball teams has Shaq played for?
+2025-08-12 10:37:44,258 - INFO - Q2: Which basketball teams did Shaquille O'Neal play on?
+2025-08-12 10:37:44,258 - INFO - Q3: What NBA basketball teams has Shaquille O'Neal played for?
+2025-08-12 10:37:44,258 - INFO - Q4: What international or non-NBA basketball teams has Shaquille O'Neal played for?
+2025-08-12 10:37:44,259 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:43:37,662 - INFO - Question 58
+2025-08-12 10:43:37,663 - INFO - Q1: What countries are considered part of the Baltic region?
+2025-08-12 10:43:37,663 - INFO - Q2: Which countries belong to the Baltic region?
+2025-08-12 10:43:37,663 - INFO - Q3: What landlocked countries are considered part of the Baltic region?
+2025-08-12 10:43:37,663 - INFO - Q4: What countries with a coastline are considered part of the Baltic region?
+2025-08-12 10:43:37,663 - INFO - LLM Response: ['Equivalence', 'Contains', 'Equivalence', 'ContainedBy', 'Equivalence']
+2025-08-12 10:44:24,484 - INFO - Question 59
+2025-08-12 10:44:24,485 - INFO - Q1: What states make up New England?
+2025-08-12 10:44:24,485 - INFO - Q2: Which states constitute New England?
+2025-08-12 10:44:24,485 - INFO - Q3: Which states in New England have "New" in their name?
+2025-08-12 10:44:24,485 - INFO - Q4: Which states in New England do not have "New" in their name?
+2025-08-12 10:44:24,485 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:48:29,790 - INFO - Question 60
+2025-08-12 10:48:29,792 - INFO - Q1: Which U.S. states does the Colorado River run through?
+2025-08-12 10:48:29,792 - INFO - Q2: Through which American states does the Colorado River flow?
+2025-08-12 10:48:29,792 - INFO - Q3: Which U.S. states does the Colorado River run through in the Upper Basin?
+2025-08-12 10:48:29,792 - INFO - Q4: Which U.S. states does the Colorado River run through in the Lower Basin?
+2025-08-12 10:48:29,792 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Overlap', 'ContainedBy']
+2025-08-12 10:49:09,740 - INFO - Question 61
+2025-08-12 10:49:09,740 - INFO - Q1: Which continents did the Roman Empire span?
+2025-08-12 10:49:09,740 - INFO - Q2: What continents did the Roman Empire spread over?
+2025-08-12 10:49:09,741 - INFO - Q3: On which continent did the Roman Empire start?
+2025-08-12 10:49:09,741 - INFO - Q4: To which continents did the Roman Empire expand beyond the first continent?
+2025-08-12 10:49:09,741 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 10:58:32,230 - INFO - Question 62
+2025-08-12 10:58:32,231 - INFO - Q1: What countries have Spanish as a national language?
+2025-08-12 10:58:32,231 - INFO - Q2: Which countries recognize Spanish as an official language?
+2025-08-12 10:58:32,231 - INFO - Q3: What countries have Spanish as an official language and do not have a non-Indo-European official language?
+2025-08-12 10:58:32,231 - INFO - Q4: What countries have Spanish and a non-Indo-European language as official languages?
+2025-08-12 10:58:32,231 - INFO - LLM Response: ['Unknown', 'Unknown', 'Contains', 'Disjoint', 'Unknown']
+2025-08-12 11:01:50,595 - INFO - Question 63
+2025-08-12 11:01:50,595 - INFO - Q1: In what colleges did Albert Einstein teach professionally?
+2025-08-12 11:01:50,595 - INFO - Q2: At which colleges did Albert Einstein work as a teacher?
+2025-08-12 11:01:50,595 - INFO - Q3: At which colleges did Albert Einstein hold a permanent teaching position?
+2025-08-12 11:01:50,595 - INFO - Q4: At which colleges did Albert Einstein teach as a temporary teaching position?
+2025-08-12 11:01:50,595 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:02:58,516 - INFO - Question 64
+2025-08-12 11:02:58,516 - INFO - Q1: What TV shows did Shawnee Smith appear in?
+2025-08-12 11:02:58,516 - INFO - Q2: In which TV shows did Shawnee Smith appear?
+2025-08-12 11:02:58,517 - INFO - Q3: In what TV shows did Shawnee Smith appear in only one episode?
+2025-08-12 11:02:58,517 - INFO - Q4: In what TV shows did Shawnee Smith appear in multiple episodes?
+2025-08-12 11:02:58,517 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:04:07,209 - INFO - Question 65
+2025-08-12 11:04:07,209 - INFO - Q1: What countries share a land or maritime border with Spain?
+2025-08-12 11:04:07,209 - INFO - Q2: Which countries share a land or maritime border with Spain?
+2025-08-12 11:04:07,209 - INFO - Q3: What countries share a land or martiime border with Spain, but not both?
+2025-08-12 11:04:07,209 - INFO - Q4: What countries share both a land and maritime border with Spain?
+2025-08-12 11:04:07,209 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:05:02,743 - INFO - Question 66
+2025-08-12 11:05:02,743 - INFO - Q1: Which television shows are shot in New York?
+2025-08-12 11:05:02,743 - INFO - Q2: Which TV shows are filmed in New York?
+2025-08-12 11:05:02,743 - INFO - Q3: What TV shows are shot in New York and are comedies?
+2025-08-12 11:05:02,744 - INFO - Q4: What TV shows are shot in New York and are not comedies?
+2025-08-12 11:05:02,744 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:08:43,928 - INFO - Question 67
+2025-08-12 11:08:43,929 - INFO - Q1: What movies did Tupac star in?
+2025-08-12 11:08:43,929 - INFO - Q2: In which movies did Tupac act?
+2025-08-12 11:08:43,929 - INFO - Q3: In what movies did Tupac give a musical performance?
+2025-08-12 11:08:43,929 - INFO - Q4: In what movies did Tupac star but did not give a musical performance?
+2025-08-12 11:08:43,929 - INFO - LLM Response: ['ContainedBy', 'Overlap', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:11:25,022 - INFO - Question 68
+2025-08-12 11:11:25,023 - INFO - Q1: Who has played Lex Luthor?
+2025-08-12 11:11:25,023 - INFO - Q2: Which actors have portrayed Lex Luthor?
+2025-08-12 11:11:25,023 - INFO - Q3: Who has played Lex Luthor in live-action adaptations?
+2025-08-12 11:11:25,023 - INFO - Q4: Who has played Lex Luthor but never in live-action adaptations?
+2025-08-12 11:11:25,023 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:12:55,343 - INFO - Question 69
+2025-08-12 11:12:55,344 - INFO - Q1: What were the names of Henry VIII's confirmed children?
+2025-08-12 11:12:55,344 - INFO - Q2: Can you list the names of the confirmed children of Henry VIII?
+2025-08-12 11:12:55,344 - INFO - Q3: What were the names of Henry VIII's confirmed legitimate children?
+2025-08-12 11:12:55,344 - INFO - Q4: What were the names of Henry VIII's confirmed illegitimate children?
+2025-08-12 11:12:55,344 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:16:20,298 - INFO - Question 70
+2025-08-12 11:16:20,298 - INFO - Q1: Which countries have territories in Oceania?
+2025-08-12 11:16:20,298 - INFO - Q2: Which countries are located in Oceania in whole or in part?
+2025-08-12 11:16:20,298 - INFO - Q3: Which countries are entirely contained in Oceania?
+2025-08-12 11:16:20,298 - INFO - Q4: Which countries are only partially (not fully) contained in Oceania?
+2025-08-12 11:16:20,298 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:19:23,394 - INFO - Question 71
+2025-08-12 11:19:23,395 - INFO - Q1: What states does the Sierra Nevada run through in the United States?
+2025-08-12 11:19:23,395 - INFO - Q2: Which states does the Sierra Nevada run through in the United States?
+2025-08-12 11:19:23,395 - INFO - Q3: Which states with a Democratic governor does the Sierra Nevada run through in the United States?
+2025-08-12 11:19:23,395 - INFO - Q4: Which states without a Democratic governor does the Sierra Nevada run through in the United States?
+2025-08-12 11:19:23,395 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:25:58,609 - INFO - Question 72
+2025-08-12 11:25:58,609 - INFO - Q1: Who has Stephen Ireland played for?
+2025-08-12 11:25:58,610 - INFO - Q2: For which teams has Stephen Ireland played?
+2025-08-12 11:25:58,610 - INFO - Q3: Which teams has Stephen Ireland played for in the English Premier League?
+2025-08-12 11:25:58,610 - INFO - Q4: Which teams has Stephen Ireland played for outside the English Premier League?
+2025-08-12 11:25:58,610 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:30:41,853 - INFO - Question 73
+2025-08-12 11:30:41,854 - INFO - Q1: Which celebrities has Brody Jenner been confirmed to have dated or rumored to have dated?
+2025-08-12 11:30:41,854 - INFO - Q2: Who are the celebrities Brody Jenner has dated, either confirmed or rumored?
+2025-08-12 11:30:41,854 - INFO - Q3: Which celebrities has Brody Jenner confirmed to have dated?
+2025-08-12 11:30:41,854 - INFO - Q4: Which celebrities has Brody Jenner been rumored but not confirmed to have dated?
+2025-08-12 11:30:41,854 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:31:17,458 - INFO - Question 74
+2025-08-12 11:31:17,458 - INFO - Q1: What countries are members of NAFTA?
+2025-08-12 11:31:17,458 - INFO - Q2: Which countries are in NAFTA?
+2025-08-12 11:31:17,458 - INFO - Q3: What countries are members of NAFTA and in Latin America?
+2025-08-12 11:31:17,458 - INFO - Q4: What countries are members of NAFTA but not in Latin America?
+2025-08-12 11:31:17,459 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:33:16,688 - INFO - Question 75
+2025-08-12 11:33:16,689 - INFO - Q1: What books did Louis Sachar write?
+2025-08-12 11:33:16,689 - INFO - Q2: Which books has Louis Sachar write?
+2025-08-12 11:33:16,689 - INFO - Q3: Which books did Louis Sachar write that were adapted into movies?
+2025-08-12 11:33:16,689 - INFO - Q4: Which books did Louis Sachar write that were not adapted into movies?
+2025-08-12 11:33:16,689 - INFO - LLM Response: ['Unknown', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:34:39,377 - INFO - Question 76
+2025-08-12 11:34:39,378 - INFO - Q1: What states share a border with Tennessee?
+2025-08-12 11:34:39,378 - INFO - Q2: Which states does Tennessee border?
+2025-08-12 11:34:39,378 - INFO - Q3: What states share a border with Tennessee but not with Illinois?
+2025-08-12 11:34:39,378 - INFO - Q4: What states share a border with Tennessee and Illinois?
+2025-08-12 11:34:39,378 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:35:48,654 - INFO - Question 77
+2025-08-12 11:35:48,655 - INFO - Q1: What educational institutions did Sir Isaac Newton attend?
+2025-08-12 11:35:48,655 - INFO - Q2: Which educational institutions did Sir Isaac Newton attend?
+2025-08-12 11:35:48,655 - INFO - Q3: What tertiary-level educational institutions did Sir Isaac Newton attend?
+2025-08-12 11:35:48,655 - INFO - Q4: What primary and secondary-level educational institutions did Sir Isaac Newton attend?
+2025-08-12 11:35:48,655 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:37:04,007 - INFO - Question 78
+2025-08-12 11:37:04,008 - INFO - Q1: What books are written by Suzanne Collins?
+2025-08-12 11:37:04,008 - INFO - Q2: Which books has Suzanne Collins authored?
+2025-08-12 11:37:04,008 - INFO - Q3: What books are written by Suzanne Collins that belong to the "Hunger Games" series?
+2025-08-12 11:37:04,008 - INFO - Q4: What books are written by Suzanne Collins are not part of the "Hunger Games" series?
+2025-08-12 11:37:04,008 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:38:50,306 - INFO - Question 79
+2025-08-12 11:38:50,306 - INFO - Q1: Who were King Henry VII's children?
+2025-08-12 11:38:50,306 - INFO - Q2: Who were the children of King Henry VII?
+2025-08-12 11:38:50,306 - INFO - Q3: Which children of King Henry VII survived to adulthood?
+2025-08-12 11:38:50,306 - INFO - Q4: Which children of King Henry VII died in childhood?
+2025-08-12 11:38:50,306 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:39:43,187 - INFO - Question 80
+2025-08-12 11:39:43,187 - INFO - Q1: Who were Demeter's siblings?
+2025-08-12 11:39:43,187 - INFO - Q2: Who were the brothers and sisters of Demeter?
+2025-08-12 11:39:43,188 - INFO - Q3: Who were the brothers of Demeter?
+2025-08-12 11:39:43,188 - INFO - Q4: Who were the sisters of Demeter?
+2025-08-12 11:39:43,188 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:47:04,851 - INFO - Question 81
+2025-08-12 11:47:04,851 - INFO - Q1: Who are the U.S. senators of Pennsylvania?
+2025-08-12 11:47:04,851 - INFO - Q2: Which individuals serve as U.S. senators representing Pennsylvania?
+2025-08-12 11:47:04,852 - INFO - Q3: Who are the Democratic U.S. senators of Pennsylvania?
+2025-08-12 11:47:04,852 - INFO - Q4: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-12 11:47:04,852 - INFO - LLM Response: ['Equivalence', 'Equivalence', 'Contains', 'Contains', 'Equivalence']
+2025-08-12 11:49:30,267 - INFO - Question 82
+2025-08-12 11:49:30,267 - INFO - Q1: Who has been a coach for the Carolina Panthers?
+2025-08-12 11:49:30,267 - INFO - Q2: Who has coached the Carolina Panthers?
+2025-08-12 11:49:30,268 - INFO - Q3: Who has been the head coach of the Carolina Panthers?
+2025-08-12 11:49:30,268 - INFO - Q4: Who has been an assistant coach but never head coach of the Carolina Panthers?
+2025-08-12 11:49:30,268 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:50:16,015 - INFO - Question 83
+2025-08-12 11:50:16,016 - INFO - Q1: Which countries constitute the European Union?
+2025-08-12 11:50:16,016 - INFO - Q2: Which countries make up the European Union?
+2025-08-12 11:50:16,016 - INFO - Q3: Which countries are original members of the European Union and are still members?
+2025-08-12 11:50:16,016 - INFO - Q4: Which countries are members of the European Union but are not original members?
+2025-08-12 11:50:16,016 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:52:35,536 - INFO - Question 84
+2025-08-12 11:52:35,536 - INFO - Q1: What are the Catholic holy days of obligation and other holy days?
+2025-08-12 11:52:35,536 - INFO - Q2: Which days are considered holy in the Catholic Church?
+2025-08-12 11:52:35,536 - INFO - Q3: What are the Catholic holy days of obligation?
+2025-08-12 11:52:35,536 - INFO - Q4: What are the Catholic holy days that are not days of obligation?
+2025-08-12 11:52:35,536 - INFO - LLM Response: ['Unknown', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:55:27,567 - INFO - Question 85
+2025-08-12 11:55:27,568 - INFO - Q1: Through which countries of the Sahel does the Niger River flow?
+2025-08-12 11:55:27,568 - INFO - Q2: Which Sahel countries does the Niger River pass through?
+2025-08-12 11:55:27,568 - INFO - Q3: Though which country of the Sahel does the Niger River flow and have its mouth?
+2025-08-12 11:55:27,568 - INFO - Q4: Though which country of the Sahel does the Niger River flow but does not have its mouth?
+2025-08-12 11:55:27,568 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 11:56:36,381 - INFO - Question 86
+2025-08-12 11:56:36,382 - INFO - Q1: Who has been a coach of the St. Louis Cardinals?
+2025-08-12 11:56:36,382 - INFO - Q2: Can you name the coaches, past and present, of the St. Louis Cardinals?
+2025-08-12 11:56:36,382 - INFO - Q3: Who are the current St. Louis Cardinals coaches?
+2025-08-12 11:56:36,382 - INFO - Q4: Who are the former St. Louis Cardinals coaches?
+2025-08-12 11:56:36,382 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:03:56,783 - INFO - Question 87
+2025-08-12 12:03:56,784 - INFO - Q1: Which educational institutions has Anders Celsius attend?
+2025-08-12 12:03:56,784 - INFO - Q2: What educational institutions did Anders Celsius attend?
+2025-08-12 12:03:56,784 - INFO - Q3: Which universities did Anders Celsius attend?
+2025-08-12 12:03:56,784 - INFO - Q4: Which educational institutions did Anders Celsius attend before university?
+2025-08-12 12:03:56,784 - INFO - LLM Response: ['Equivalence', 'Equivalence', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:15:49,235 - INFO - Question 88
+2025-08-12 12:15:49,237 - INFO - Q1: Who are Ariel's sisters?
+2025-08-12 12:15:49,237 - INFO - Q2: Can you list Ariel's sisters?
+2025-08-12 12:15:49,237 - INFO - Q3: Which of Ariel's sisters appear in "The Little Mermaid II: Return to the Sea"?
+2025-08-12 12:15:49,237 - INFO - Q4: Which of Ariel's sisters no not appear in "The Little Mermaid II: Return to the Sea"?
+2025-08-12 12:15:49,237 - INFO - LLM Response: ['Equivalence', 'Equivalence', 'Contains', 'Contains', 'Equivalence']
+2025-08-12 12:16:48,344 - INFO - Question 89
+2025-08-12 12:16:48,345 - INFO - Q1: Which characters does Seth MacFarlane voice on Family Guy?
+2025-08-12 12:16:48,345 - INFO - Q2: Which characters are voiced by Seth MacFarlane on Family Guy?
+2025-08-12 12:16:48,345 - INFO - Q3: Which human characters does Seth MacFarlane voice on Family Guy?
+2025-08-12 12:16:48,345 - INFO - Q4: Which non-human characters does Seth MacFarlane voice on Family Guy?
+2025-08-12 12:16:48,345 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:17:35,648 - INFO - Question 90
+2025-08-12 12:17:35,648 - INFO - Q1: What are the names of Michael Jackson's kids?
+2025-08-12 12:17:35,648 - INFO - Q2: Who are the children of Michael Jackson?
+2025-08-12 12:17:35,648 - INFO - Q3: Which children did Michael Jackson have with Debbie Rowe?
+2025-08-12 12:17:35,649 - INFO - Q4: Which children did Michael Jackson have with someone other than Debbie Rowe?
+2025-08-12 12:17:35,649 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:19:33,248 - INFO - Question 91
+2025-08-12 12:19:33,248 - INFO - Q1: What degrees does Romney have?
+2025-08-12 12:19:33,248 - INFO - Q2: Which degrees has Romney earned?
+2025-08-12 12:19:33,249 - INFO - Q3: What undergraduate degrees does Romney have?
+2025-08-12 12:19:33,249 - INFO - Q4: What graduate degrees does Romney have?
+2025-08-12 12:19:33,249 - INFO - LLM Response: ['Contains', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:21:26,715 - INFO - Question 92
+2025-08-12 12:21:26,715 - INFO - Q1: Give me all cities in New Jersey with more than 100000 inhabitants.
+2025-08-12 12:21:26,715 - INFO - Q2: Which cities in New Jersey have a population exceeding 100,000?
+2025-08-12 12:21:26,715 - INFO - Q3: Give me all cities in New Jersey with more than 100000 inhabitants and an international airport.
+2025-08-12 12:21:26,715 - INFO - Q4: Give me all cities in New Jersey with more than 100000 inhabitants without an international airport.
+2025-08-12 12:21:26,715 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:23:18,481 - INFO - Question 93
+2025-08-12 12:23:18,482 - INFO - Q1: Which actors born in France have won an Oscar?
+2025-08-12 12:23:18,482 - INFO - Q2: Who are the actors that have France as their birthplace and have won an Oscar?
+2025-08-12 12:23:18,482 - INFO - Q3: Which actors were born in France before 1970 have won an Oscar?
+2025-08-12 12:23:18,482 - INFO - Q4: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-12 12:23:18,482 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:24:49,414 - INFO - Question 94
+2025-08-12 12:24:49,414 - INFO - Q1: Which historical wargames are published by GMT Games?
+2025-08-12 12:24:49,414 - INFO - Q2: Provide a list of all historical wargames published by GMT Games.
+2025-08-12 12:24:49,415 - INFO - Q3: Which historical wargames published by GMT Games focus on World War II?
+2025-08-12 12:24:49,415 - INFO - Q4: Which historical wargames published by GMT Games do not focus on World War II?
+2025-08-12 12:24:49,415 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:30:13,589 - INFO - Question 95
+2025-08-12 12:30:13,589 - INFO - Q1: Which monarchs were married to a German spouse?
+2025-08-12 12:30:13,590 - INFO - Q2: Which monarchs were married to someone from Germany?
+2025-08-12 12:30:13,590 - INFO - Q3: Which monarchs were married to a German man?
+2025-08-12 12:30:13,590 - INFO - Q4: Which monarchs were married to a German who was female or non-binary?
+2025-08-12 12:30:13,590 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:34:39,873 - INFO - Question 96
+2025-08-12 12:34:39,873 - INFO - Q1: Which international organizations were founded in 1950?
+2025-08-12 12:34:39,873 - INFO - Q2: What international organizations came into existence in 1950?
+2025-08-12 12:34:39,873 - INFO - Q3: Which international organizations were founded in 1950 in the United States?
+2025-08-12 12:34:39,874 - INFO - Q4: Which international organizations were founded in 1950 outside the United States?
+2025-08-12 12:34:39,874 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:35:19,815 - INFO - Question 97
+2025-08-12 12:35:19,816 - INFO - Q1: Give me the Apollo 14 astronauts.
+2025-08-12 12:35:19,816 - INFO - Q2: Who were the astronauts on Apollo 14?
+2025-08-12 12:35:19,816 - INFO - Q3: Give me the Apollo 14 astronauts who walked on the Moon.
+2025-08-12 12:35:19,816 - INFO - Q4: Give me the Apollo 14 astronauts who did not walk on the Moon.
+2025-08-12 12:35:19,816 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:35:59,497 - INFO - Question 98
+2025-08-12 12:35:59,498 - INFO - Q1: Which spaceflights were launched from Baikonur?
+2025-08-12 12:35:59,498 - INFO - Q2: For which spaceflights did the launch occur at Baikonur?
+2025-08-12 12:35:59,498 - INFO - Q3: Which spaceflights were launched from Baikonur excluding the 21st century?
+2025-08-12 12:35:59,498 - INFO - Q4: Which spaceflights were launched from Baikonur in the 21st century?
+2025-08-12 12:35:59,498 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:40:08,704 - INFO - Question 99
+2025-08-12 12:40:08,704 - INFO - Q1: Which U.S. states are in the same timezone as Utah?
+2025-08-12 12:40:08,704 - INFO - Q2: Which U.S. states share the same timezone as Utah?
+2025-08-12 12:40:08,705 - INFO - Q3: Which U.S. states are in the same timezone as Utah and share a border with Utah?
+2025-08-12 12:40:08,705 - INFO - Q4: Which U.S. states are in the same timezone as Utah but do not share a border with Utah?
+2025-08-12 12:40:08,705 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:42:15,437 - INFO - Question 100
+2025-08-12 12:42:15,439 - INFO - Q1: Which states border Illinois?
+2025-08-12 12:42:15,439 - INFO - Q2: What states share a border with Illinois?
+2025-08-12 12:42:15,439 - INFO - Q3: Which states in the Great Lakes region border Illinois?
+2025-08-12 12:42:15,439 - INFO - Q4: Which states not in the Great Lakes region border Illinois?
+2025-08-12 12:42:15,440 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-12 12:45:25,764 - INFO - Question 101
+2025-08-12 12:45:25,765 - INFO - Q1: Give all Olympic swimmers that were born in Moscow.
+2025-08-12 12:45:25,765 - INFO - Q2: List all Olympic swimmers whose place of birth is Moscow.
+2025-08-12 12:45:25,765 - INFO - Q3: Give all swimmers that were born in Moscow and have won at least one medal in Olympic.
+2025-08-12 12:45:25,765 - INFO - Q4: Give all swimmers that were born in Moscow and attened Olympic but have never won a medal.
+2025-08-12 12:45:25,765 - INFO - LLM Response: ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
