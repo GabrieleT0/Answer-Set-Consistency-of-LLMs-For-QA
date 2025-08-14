@@ -143,7 +143,7 @@ def main(config = None, logger = setup_logger()):
     if config == None:
         config = {
             "languages": ['en'],
-            "llm_models": ['gemini-2.0-flash'],
+            "llm_models": ['o3'],
             "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
             "prompt_types": ['standard', 'wikidata']
         }

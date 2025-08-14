@@ -1,0 +1,379 @@
+2025-08-14 11:57:07,116 - INFO - Loaded config from config.json
+2025-08-14 11:57:07,116 - INFO - {'languages': ['en'], 'llm_models': ['o3', 'gpt-4o', 'gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14', 'gpt-4.1'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-14 11:57:07,116 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-14 11:57:07,116 - INFO - Step 0: Identify Relations
+2025-08-14 11:57:07,116 - INFO - Processing model: o3 for language: en
+2025-08-14 11:57:07,117 - INFO - Finished processing model: o3 for language: en
+2025-08-14 11:57:07,117 - INFO - Processing model: o3 for language: en
+2025-08-14 11:57:07,118 - INFO - Finished processing model: o3 for language: en
+2025-08-14 11:57:07,118 - INFO - Processing model: o3 for language: en
+2025-08-14 11:57:07,119 - INFO - Finished processing model: o3 for language: en
+2025-08-14 11:57:07,119 - INFO - Step 1: Running single question benchmark
+2025-08-14 11:57:07,119 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-08-14 11:57:07,119 - INFO - Processing column: Q1
+2025-08-14 11:57:28,337 - INFO - Question 42: Give me all professional skateboarders from Sweden.
+2025-08-14 11:58:33,887 - INFO - Question 46: Give me all spacecraft that flew to Mars.
+2025-08-14 11:59:26,306 - INFO - Question 51: Which French politicians were married to a German?
+2025-08-14 12:01:01,530 - INFO - Question 64: What TV shows did Shawnee Smith appear in?
+2025-08-14 12:01:36,640 - INFO - Question 86: Who has been a coach of the St. Louis Cardinals?
+2025-08-14 12:02:48,430 - INFO - Question 101: Give all Olympic swimmers that were born in Moscow.
+2025-08-14 12:02:54,870 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-14 12:03:16,618 - INFO - Question 105: Give me all inhabited islands that belong to Japan.
+2025-08-14 12:03:30,487 - INFO - Question 121: List all English Gothic buildings in Kent.
+2025-08-14 12:03:37,341 - INFO - Question 124: Give me all films produced by Hal Roach.
+2025-08-14 12:05:05,696 - INFO - Question 125: Give me a list of all bandleaders that play trumpet and have won a Grammy.
+2025-08-14 12:07:40,659 - INFO - Question 126: Give me all people that were born in Vienna and died in Berlin.
+2025-08-14 12:08:38,750 - INFO - Question 141: Give me a list of all Canadian record labels associated with Grunge music.
+2025-08-14 12:08:38,758 - INFO - Processing column: Q2
+2025-08-14 12:09:03,839 - INFO - Question 42: List every professional skateboarder who is from Sweden.
+2025-08-14 12:09:06,417 - INFO - Question 50: Could you provide a list of all the Ramones' B-sides?
+2025-08-14 12:10:02,695 - INFO - Question 51: Which French politicians had a spouse who was German?
+2025-08-14 12:11:12,024 - INFO - Question 86: Can you name the coaches, past and present, of the St. Louis Cardinals?
+2025-08-14 12:11:43,690 - INFO - Question 93: Who are the actors that have France as their birthplace and have won an Oscar?
+2025-08-14 12:12:41,712 - INFO - Question 94: Provide a list of all historical wargames published by GMT Games.
+2025-08-14 12:12:56,889 - INFO - Question 101: List all Olympic swimmers whose place of birth is Moscow.
+2025-08-14 12:13:01,050 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-14 12:13:13,420 - INFO - Question 105: List all the inhabited islands that are part of Japan.
+2025-08-14 12:13:27,888 - INFO - Question 112: Can you provide a list of all metalcore bands from Australia?
+2025-08-14 12:14:02,129 - INFO - Question 120: List all actors with the last name Baldwin.
+2025-08-14 12:14:04,526 - INFO - Question 124: Can you provide a list of every film produced by Hal Roach?
+2025-08-14 12:14:43,555 - INFO - Question 125: Can you provide a list of all bandleaders who play the trumpet and have won an Grammy?
+2025-08-14 12:15:00,256 - INFO - Question 126: List all individuals who were born in Vienna and passed away in Berlin.
+2025-08-14 12:15:52,210 - INFO - Question 131: List every launch pad that has been used by NASA.
+2025-08-14 12:16:21,596 - INFO - Question 141: Can you provide a list of all Canadian record labels that publish Grunge music?
+2025-08-14 12:17:54,795 - INFO - Question 142: List all actors who starred in Last Action Hero.
+2025-08-14 12:18:16,788 - INFO - Question 145: What airports are there in California, USA?
+2025-08-14 12:18:16,806 - INFO - Processing column: Q3
+2025-08-14 12:18:34,858 - INFO - Question 3: Which politicians were married to a German woman?
+2025-08-14 12:19:57,834 - INFO - Question 31: What characters does Todd Haberkorn voice in non-Japanese films?
+2025-08-14 12:20:19,664 - INFO - Question 42: Give me all male professional skateboarders from Sweden.
+2025-08-14 12:20:34,466 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?
+2025-08-14 12:21:21,091 - INFO - Question 64: In what TV shows did Shawnee Smith appear in only one episode?
+2025-08-14 12:21:55,050 - INFO - Question 96: Which international organizations were founded in 1950 in the United States?
+2025-08-14 12:22:23,637 - INFO - Question 98: Which spaceflights were launched from Baikonur excluding the 21st century?
+2025-08-14 12:22:32,700 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-14 12:22:40,466 - INFO - Question 121: List all Gothic churches or cathedrals in Kent.
+2025-08-14 12:23:22,241 - INFO - Question 124: Give me all films produced by Hal Roach that are comedies.
+2025-08-14 12:24:13,168 - INFO - Question 126: Give me all people that were born in Vienna before 1900 and died in Berlin.
+2025-08-14 12:25:58,164 - INFO - Question 131: Give me all launch pads used by NASA that are located within the United States.
+2025-08-14 12:26:19,237 - INFO - Question 141: Give me a list of all currently active Canadian record labels associated with Grunge music.
+2025-08-14 12:27:00,866 - INFO - Question 144: Which artists were born on the same date and in the same year as Rachel Stevens?
+2025-08-14 12:27:00,879 - INFO - Processing column: Q4
+2025-08-14 12:27:13,803 - INFO - Question 1: Which television shows were created by John Cleese and first aired on or after the year 2000?
+2025-08-14 12:28:56,760 - INFO - Question 15: What non-solo albums has Atif Aslam contributed to?
+2025-08-14 12:30:09,042 - INFO - Question 47: Give me all taikonauts who have never flown in space.
+2025-08-14 12:33:58,193 - INFO - Question 50: Give me all B-sides of the Ramones released on or after 1985.
+2025-08-14 12:34:50,086 - INFO - Question 51: Which French politicians were married to a German woman or non-binary person?
+2025-08-14 12:35:14,879 - INFO - Question 52: Which movies did Kurosawa direct that are not dramas?
+2025-08-14 12:35:20,592 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-14 12:35:35,035 - INFO - Question 93: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-14 12:36:37,674 - INFO - Question 98: Which spaceflights were launched from Baikonur in the 21st century?
+2025-08-14 12:37:03,351 - INFO - Question 101: Give all swimmers that were born in Moscow and attened Olympic but have never won a medal.
+2025-08-14 12:37:09,489 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-14 12:37:32,908 - INFO - Question 105: Give me all inhabited islands with no more than 1000000 population that belong to Japan.
+2025-08-14 12:37:41,634 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-14 12:38:23,697 - INFO - Question 120: Give me all female or non-binary actors with the last name Baldwin.
+2025-08-14 12:38:50,640 - INFO - Question 121: List all Gothic buildings in Kent that are not churches or cathedrals.
+2025-08-14 12:39:14,844 - INFO - Question 123: Which Heckler & Koch weapons are non-firearm weapons?
+2025-08-14 12:39:24,032 - INFO - Question 141: Give me a list of all defunct Canadian record labels associated with Grunge music.
+2025-08-14 12:39:32,020 - INFO - Question 145: Which airports are located on mainland California, USA?
+2025-08-14 12:39:53,797 - INFO - Question 146: Which monarchs of the United Kingdom were married to a German who was not a princess?
+2025-08-14 12:39:53,813 - INFO - Processing dataset: qawiki.tsv for model: o3 and language: en
+2025-08-14 12:39:53,813 - INFO - Processing column: Q1
+2025-08-14 12:40:09,648 - INFO - Question 3: In which journals has Amrapali Zaveri published?
+2025-08-14 12:41:19,859 - INFO - Question 15: What binary neutron stars are in the constellation Scorpius?
+2025-08-14 12:41:25,928 - INFO - Question 16: What buildings are named after JFK?
+2025-08-14 12:42:07,853 - INFO - Question 18: What cities are twinned with Port-au-Prince?
+2025-08-14 12:42:38,046 - INFO - Question 25: What documentaries are about whaling?
+2025-08-14 12:43:00,576 - INFO - Question 30: What hybrid species can have offspring?
+2025-08-14 12:44:06,579 - INFO - Question 37: What Ogham stones can be found in County Clare?
+2025-08-14 12:44:16,104 - INFO - Question 40: What papers did Amrapali Zaveri publish?
+2025-08-14 12:45:53,593 - INFO - Question 52: What weapons were used in mass shootings in the United States?
+2025-08-14 12:46:01,426 - INFO - Question 56: Which Asian universities have female rectors?
+2025-08-14 12:46:04,770 - INFO - Question 57: Which association football players have at least two citizenships?
+2025-08-14 12:46:09,933 - INFO - Question 58: Which buildings are brutalist?
+2025-08-14 12:46:16,996 - INFO - Question 59: Which buildings are funcionalist?
+2025-08-14 12:46:41,830 - INFO - Question 63: Which Chilean companies have U.S. parent companies?
+2025-08-14 12:47:20,044 - INFO - Question 70: Which conferences were organized by Turing Award winners?
+2025-08-14 12:48:45,031 - INFO - Question 77: Which countries changed their driving side from left to right?
+2025-08-14 12:49:13,639 - INFO - Question 81: Which countries have diplomatic relations with Chile?
+2025-08-14 12:49:42,275 - INFO - Question 86: Which countries observe Victory in Europe day?
+2025-08-14 12:50:10,676 - INFO - Question 90: Which death row prisoners had pizza as their last meal?
+2025-08-14 12:50:31,790 - INFO - Question 91: Which desserts contain cinnamon?
+2025-08-14 12:50:48,257 - INFO - Question 93: Which drugs for treating atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-14 12:51:12,569 - INFO - Question 94: Which Ethiopian political parties were founded since 2000?
+2025-08-14 12:51:23,808 - INFO - Question 100: What languages are pro-drop?
+2025-08-14 12:52:02,663 - INFO - Question 106: Which movies were filmed in Yemen?
+2025-08-14 12:52:20,908 - INFO - Question 107: Which musical groups formed the same year as Soda Stereo?
+2025-08-14 12:52:27,082 - INFO - Question 109: Which natural languages are not Indo-European?
+2025-08-14 12:52:40,802 - INFO - Question 113: Which paintings by Camille Pissarro were stolen?
+2025-08-14 12:52:54,826 - INFO - Question 114: Which parks are in Perth?
+2025-08-14 12:53:00,141 - INFO - Question 126: Which sauces contain onion and garlic?
+2025-08-14 12:53:48,276 - INFO - Question 129: Which Simpsons characters were not born in Springfield?
+2025-08-14 12:53:55,158 - INFO - Question 131: Which species are endemic to Chile?
+2025-08-14 12:55:48,944 - INFO - Question 136: Which universities based in Peru were established since 1950?
+2025-08-14 12:56:01,846 - INFO - Question 141: Which writers speak French, Arabic and Japanese?
+2025-08-14 12:56:05,258 - INFO - Question 142: Which YouTube channels with more than 500,000 subscribers talk about math?
+2025-08-14 12:56:13,805 - INFO - Question 144: Who are the editors of EMMA?
+2025-08-14 12:56:33,043 - INFO - Question 145: Who are the editors-in-chief of EMMA?
+2025-08-14 12:56:33,056 - INFO - Processing column: Q2
+2025-08-14 12:56:50,428 - INFO - Question 3: In what journals has Amrapali Zaveri published?
+2025-08-14 12:57:17,044 - INFO - Question 13: What subsidiaries does Meta have?
+2025-08-14 12:58:31,853 - INFO - Question 15: What binary neutron stars are found in Scorpius?
+2025-08-14 12:58:41,492 - INFO - Question 16: What buildings are named after John F. Kennedy?
+2025-08-14 12:59:31,073 - INFO - Question 18: With which cities is Port-au-Prince twinned?
+2025-08-14 12:59:39,098 - INFO - Question 30: Which hybrid species are fertile?
+2025-08-14 13:00:00,131 - INFO - Question 40: What papers has Amrapali Zaveri published?
+2025-08-14 13:00:44,613 - INFO - Question 41: Which Holocaust victims were poets?
+2025-08-14 13:01:02,224 - INFO - Question 44: List radio stations broadcasting only in Boston
+2025-08-14 13:01:07,491 - INFO - Question 56: What universities in Asia have female rectors?
+2025-08-14 13:01:10,801 - INFO - Question 57: Which football players have more than one nationality?
+2025-08-14 13:01:28,971 - INFO - Question 63: What Chilean companies have American parent companies?
+2025-08-14 13:01:36,154 - INFO - Question 70: What conferences had a Turing Award winner organizing them?
+2025-08-14 13:02:55,868 - INFO - Question 77: Which countries changed from driving on the left to driving on the right?
+2025-08-14 13:03:41,210 - INFO - Question 81: Which countries does Chile have diplomatic relations with?
+2025-08-14 13:04:38,094 - INFO - Question 86: In which countries is VE day commemorated?
+2025-08-14 13:04:59,363 - INFO - Question 90: Which executed inmates had pizza for their last meal?
+2025-08-14 13:05:13,533 - INFO - Question 93: Which medications for treating atrial fibrillation are contraindicated in people who take lovastatin?
+2025-08-14 13:05:23,678 - INFO - Question 101: List all Martian mountains
+2025-08-14 13:05:28,957 - INFO - Question 102: What mountains were first summited in the last 80 years?
+2025-08-14 13:06:12,200 - INFO - Question 106: What films used locations in Yemen?
+2025-08-14 13:06:42,846 - INFO - Question 107: What musical groups started the same year that Soda Stereo started?
+2025-08-14 13:06:46,005 - INFO - Question 108: List Nordic musicians
+2025-08-14 13:06:58,878 - INFO - Question 109: What human languages are not Indo-European?
+2025-08-14 13:07:37,950 - INFO - Question 112: What online streamers were educated at the University of Waterloo?
+2025-08-14 13:07:47,138 - INFO - Question 114: List parks in Perth
+2025-08-14 13:08:18,099 - INFO - Question 119: Which popes had spouses?
+2025-08-14 13:09:11,500 - INFO - Question 121: Which rugby union clubs have had players from Chile?
+2025-08-14 13:10:18,835 - INFO - Question 128: Which films or TV series were directed by University of Bergen alumni?
+2025-08-14 13:10:23,445 - INFO - Question 131: What species are only found in Chile?
+2025-08-14 13:11:19,724 - INFO - Question 135: What universities are in Peru?
+2025-08-14 13:13:03,903 - INFO - Question 136: What universities in Peru were founded since 1950?
+2025-08-14 13:13:29,121 - INFO - Question 137: What video games are NP-complete?
+2025-08-14 13:13:52,471 - INFO - Question 141: Which authors speak French, Arabic and Japanese?
+2025-08-14 13:14:13,575 - INFO - Question 142: List YouTube maths channels with more than 500,000 followers
+2025-08-14 13:14:35,740 - INFO - Question 144: Who are EMMA's editors?
+2025-08-14 13:14:35,757 - INFO - Processing column: Q3
+2025-08-14 13:15:18,172 - INFO - Question 3: In which journals has Amrapali Zaveri published as first author?
+2025-08-14 13:16:01,513 - INFO - Question 13: What subsidiaries of Meta Platforms contain "Facebook" in their name?
+2025-08-14 13:16:13,836 - INFO - Question 15: What binary neutron stars in the constellation Scorpius have exoplanets orbiting them?
+2025-08-14 13:16:24,212 - INFO - Question 16: What educational buildings are named after JFK?
+2025-08-14 13:16:42,709 - INFO - Question 17: What chocolate bars are made by Nestlé and contain nuts?
+2025-08-14 13:16:48,854 - INFO - Question 23: What countries that border Ghana have a higher population than Ghana?
+2025-08-14 13:16:52,788 - INFO - Question 24: What diseases affecting pregnancy are associated with the gene FGF14?
+2025-08-14 13:17:12,572 - INFO - Question 37: What 5th-century Ogham stones are located in County Clare?
+2025-08-14 13:18:19,181 - INFO - Question 39: What other buildings that are not functionalist have the same architect as the Tsentrosoyuz Building?
+2025-08-14 13:18:28,297 - INFO - Question 40: What papers did Amrapali Zaveri publish as first author?
+2025-08-14 13:19:00,008 - INFO - Question 43: What membrane proteins are involved in retina homeostasis?
+2025-08-14 13:20:21,139 - INFO - Question 52: What semi-automatic weapons were used in mass shootings in the United States?
+2025-08-14 13:20:51,998 - INFO - Question 56: Which Asian universities with female rectors receive public funds?
+2025-08-14 13:20:58,455 - INFO - Question 57: Which association football players have at least three citizenships?
+2025-08-14 13:21:24,244 - INFO - Question 58: Which buildings combine functionalism and brutalism?
+2025-08-14 13:21:29,596 - INFO - Question 59: Which buildings combine functionalism and brutalism?
+2025-08-14 13:21:50,095 - INFO - Question 70: Which conferences have been organized by Turing Award winners since 2016?
+2025-08-14 13:22:04,668 - INFO - Question 90: Which death row prisoners executed by hanging had pizza as their last meal?
+2025-08-14 13:22:29,121 - INFO - Question 93: Which antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?
+2025-08-14 13:22:54,160 - INFO - Question 94: Which Ethiopian political parties founded since 2000 are still active?
+2025-08-14 13:23:19,749 - INFO - Question 97: Which heads of state died in office from COVID-19 complications?
+2025-08-14 13:23:45,573 - INFO - Question 100: Which pro-drop languages use Latin script?
+2025-08-14 13:23:58,949 - INFO - Question 102: Which mountains first ascended in the last eighty years are plutons?
+2025-08-14 13:24:46,728 - INFO - Question 106: Which documentary movies were filmed in Yemen?
+2025-08-14 13:25:44,628 - INFO - Question 107: Which rock musical groups formed the same year as Soda Stereo?
+2025-08-14 13:25:50,520 - INFO - Question 108: Which Nordic musicians are from Sweden?
+2025-08-14 13:26:09,024 - INFO - Question 112: Which online streamers who studied at the University of Waterloo live in Vancouver?
+2025-08-14 13:27:19,121 - INFO - Question 113: Which stolen paintings by Camille Pissarro were held at some point in Alte Nationalgalerie?
+2025-08-14 13:27:55,376 - INFO - Question 122: Who was the last saint to die by crucifixion?
+2025-08-14 13:28:35,745 - INFO - Question 123: Which Catholic saints have their feast day on Desmond Tutu's birthday?
+2025-08-14 13:28:50,746 - INFO - Question 126: Which Italian sauces contain both onion and garlic?
+2025-08-14 13:29:13,036 - INFO - Question 128: Which documentary series or movies were directed by alumni of the University of Bergen?
+2025-08-14 13:29:40,484 - INFO - Question 129: Which female Simpsons characters were not born in Springfield?
+2025-08-14 13:30:12,752 - INFO - Question 131: Which species endemic to Chile are endangered?
+2025-08-14 13:30:28,138 - INFO - Question 141: Which writers speak English, French, Arabic and Japanese?
+2025-08-14 13:30:51,794 - INFO - Question 142: Which English-language YouTube channels with more than 500,000 subscribers talk about math?
+2025-08-14 13:30:59,815 - INFO - Question 145: Who have been editors-in-chief of the EMMA journal since 2024?
+2025-08-14 13:31:08,733 - INFO - Question 146: Which of the original developers of SPSS were educated in Mexico?
+2025-08-14 13:31:08,752 - INFO - Processing column: Q4
+2025-08-14 13:31:17,386 - INFO - Question 3: In which journals has Amrapali Zaveri published but not as first author?
+2025-08-14 13:32:44,881 - INFO - Question 5: In which non-national museums can I see paintings by El Greco?
+2025-08-14 13:32:56,306 - INFO - Question 17: What chocolate bars are made by Nestlé and don't contain nuts?
+2025-08-14 13:33:21,250 - INFO - Question 37: What Ogham stones found in County Clare are not from the 5th century?
+2025-08-14 13:33:42,755 - INFO - Question 40: What papers did Amrapali Zaveri write but not as first author?
+2025-08-14 13:34:27,484 - INFO - Question 41: What non-Polish poets were Holocaust victims?
+2025-08-14 13:34:36,410 - INFO - Question 56: Which Asian universities with female rectors do not receive public funds?
+2025-08-14 13:34:40,268 - INFO - Question 57: Which association football players have exactly two citizenships?
+2025-08-14 13:35:02,557 - INFO - Question 59: Which functionalist buildings are not brutalist?
+2025-08-14 13:35:25,821 - INFO - Question 63: Which Chilean companies, excluding energy companies, have U.S. parent companies?
+2025-08-14 13:35:44,274 - INFO - Question 64: Which cities named after an apostle have a population of less than one million?
+2025-08-14 13:36:21,532 - INFO - Question 69: Which conferences that focus on Machine Learning were formed in the last 40 years?
+2025-08-14 13:36:27,580 - INFO - Question 70: Which conferences were organized by Turing Award winners before 2016?
+2025-08-14 13:38:08,664 - INFO - Question 90: Which death row prisoners executed by a method other than hanging had pizza as their last meal?
+2025-08-14 13:39:02,491 - INFO - Question 99: Which horror movies were directed by non-twin siblings?
+2025-08-14 13:39:16,500 - INFO - Question 102: Which mountains first ascended in the last eighty years are not plutons?
+2025-08-14 13:39:30,263 - INFO - Question 107: Which non-rock musical groups formed the same year as Soda Stereo?
+2025-08-14 13:39:34,719 - INFO - Question 108: Which musicians are from Nordic countries excluding Sweden?
+2025-08-14 13:40:36,346 - INFO - Question 113: Which stolen paintings by Camille Pissarro were never held in Alte Nationalgalerie?
+2025-08-14 13:40:58,862 - INFO - Question 114: Which parks in Perth are not State Registered Places?
+2025-08-14 13:41:28,472 - INFO - Question 121: Which non-European rugby union teams have had Chilean players?
+2025-08-14 13:41:53,323 - INFO - Question 122: Which saints died by crucifixion excluding the last one?
+2025-08-14 13:42:28,929 - INFO - Question 124: Which saints with their feast day on June 15th are not considered martyrs?
+2025-08-14 13:42:38,446 - INFO - Question 131: Which species endemic to Chile are not endangered?
+2025-08-14 13:43:08,497 - INFO - Question 136: Which non-public universities in Peru have been established since 1950?
+2025-08-14 13:43:12,925 - INFO - Question 138: Which video games have a fox character excluding those published by Nintendo?
+2025-08-14 13:43:17,605 - INFO - Question 141: Which writers speak French, Arabic, and English but do not speak Japanese?
+2025-08-14 13:43:27,206 - INFO - Question 144: Who are the editors of EMMA excluding the editors-in-chief?
+2025-08-14 13:43:55,916 - INFO - Question 145: Who are the former editors-in-chief of EMMA before 2024?
+2025-08-14 13:43:55,941 - INFO - Processing dataset: synthetic.tsv for model: o3 and language: en
+2025-08-14 13:43:55,941 - INFO - Processing column: Q1
+2025-08-14 13:44:03,498 - INFO - Question 7: List the businesses owned by Amazon.
+2025-08-14 13:44:07,598 - INFO - Question 48: What are the hospitals in Cairo with more than 100 staff?
+2025-08-14 13:44:15,175 - INFO - Question 52: What are the constituent states of the USA?
+2025-08-14 13:45:19,491 - INFO - Question 85: List the accolades received by Meryl Streep.
+2025-08-14 13:45:44,066 - INFO - Question 91: Which universities gave Marie Curie an honorary degree?
+2025-08-14 13:45:47,543 - INFO - Question 146: In which universities do Nobel Prize Laureates work currently?
+2025-08-14 13:45:47,563 - INFO - Processing column: Q2
+2025-08-14 13:45:51,685 - INFO - Question 48: Which Cairo hospitals have over one hundred employees?
+2025-08-14 13:45:59,962 - INFO - Question 52: Which states are part of the United States of America?
+2025-08-14 13:47:24,464 - INFO - Question 67: Which Baroque composers have music that appears in an Academy Award-winning film?
+2025-08-14 13:47:59,031 - INFO - Question 91: From which universities did Marie Curie hold an honorary degree?
+2025-08-14 13:48:27,750 - INFO - Question 114: What companies founded outside the United States does Amazon wholly own?
+2025-08-14 13:48:32,228 - INFO - Question 146: Which universities have Nobel laureates on their active staff?
+2025-08-14 13:48:32,242 - INFO - Processing column: Q3
+2025-08-14 13:48:40,850 - INFO - Question 48: What are the public hospitals in Cairo with more than 100 staff?
+2025-08-14 13:48:45,065 - INFO - Question 108: What companies does The Walt Disney Company wholly own?
+2025-08-14 13:50:16,744 - INFO - Question 146: Which universities have Nobel laureates in Economics on their active staff?
+2025-08-14 13:50:16,756 - INFO - Processing column: Q4
+2025-08-14 13:50:21,001 - INFO - Question 7: List the businesses owned by Amazon excluding healthcare businesses.
+2025-08-14 13:51:09,743 - INFO - Question 8: List the non-reflective programming languages created by Google.
+2025-08-14 13:51:19,250 - INFO - Question 48: What are the private hospitals in Cairo with more than 100 staff?
+2025-08-14 13:52:46,933 - INFO - Question 67: Which Baroque composers have music that appears in a movie that won an Academy Award excluding English-language movies?
+2025-08-14 13:53:22,189 - INFO - Question 91: Which universities excluding those from her home country gave Marie Curie an honorary degree?
+2025-08-14 13:53:50,033 - INFO - Question 114: List the wholly-owned subsidiaries of Amazon founded outside the U.S. and Israel.
+2025-08-14 13:53:52,673 - INFO - Question 146: Which universities have Nobel laureates on their active staff excluding the Nobel Prize for Economics?
+2025-08-14 13:53:52,691 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-08-14 13:53:52,692 - INFO - Processing column: Q1
+2025-08-14 13:54:26,785 - INFO - Question 3: Which politicians were married to a German person?
+2025-08-14 13:54:32,320 - INFO - Question 6: Which actors were born in Germany?
+2025-08-14 13:55:02,777 - INFO - Question 50: Give me all B-sides of the Ramones.
+2025-08-14 13:55:46,702 - INFO - Question 94: Which historical wargames are published by GMT Games?
+2025-08-14 13:56:23,602 - INFO - Question 98: Which spaceflights were launched from Baikonur?
+2025-08-14 13:57:47,933 - INFO - Question 101: Give all Olympic swimmers that were born in Moscow.
+2025-08-14 13:57:55,464 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-14 13:58:05,621 - INFO - Question 105: Give me all inhabited islands that belong to Japan.
+2025-08-14 13:58:59,073 - INFO - Question 111: Which writers studied in Istanbul?
+2025-08-14 13:59:12,591 - INFO - Question 124: Give me all films produced by Hal Roach.
+2025-08-14 13:59:34,874 - INFO - Question 126: Give me all people that were born in Vienna and died in Berlin.
+2025-08-14 14:00:08,556 - INFO - Question 128: Give me all types or lines of the German Shepherd dog.
+2025-08-14 14:00:40,801 - INFO - Question 129: Which airports does Yeti Airlines serve?
+2025-08-14 14:01:22,206 - INFO - Question 131: Give me all launch pads used by NASA.
+2025-08-14 14:01:51,228 - INFO - Question 141: Give me a list of all Canadian record labels associated with Grunge music.
+2025-08-14 14:01:51,245 - INFO - Processing column: Q2
+2025-08-14 14:02:45,385 - INFO - Question 48: Which countries have above ten volcanoes in total?
+2025-08-14 14:04:24,954 - INFO - Question 51: Which French politicians had a spouse who was German?
+2025-08-14 14:06:14,170 - INFO - Question 68: Which actors have portrayed Lex Luthor?
+2025-08-14 14:08:13,635 - INFO - Question 94: Provide a list of all historical wargames published by GMT Games.
+2025-08-14 14:08:47,536 - INFO - Question 98: For which spaceflights did the launch occur at Baikonur?
+2025-08-14 14:08:58,710 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-14 14:09:38,265 - INFO - Question 105: List all the inhabited islands that are part of Japan.
+2025-08-14 14:09:48,465 - INFO - Question 124: Can you provide a list of every film produced by Hal Roach?
+2025-08-14 14:09:59,629 - INFO - Question 126: List all individuals who were born in Vienna and passed away in Berlin.
+2025-08-14 14:10:23,117 - INFO - Question 128: List every type or line of the German Shepherd dog.
+2025-08-14 14:10:52,812 - INFO - Question 131: List every launch pad that has been used by NASA.
+2025-08-14 14:11:13,380 - INFO - Question 141: Can you provide a list of all Canadian record labels that publish Grunge music?
+2025-08-14 14:11:40,129 - INFO - Question 145: What airports are there in California, USA?
+2025-08-14 14:12:05,757 - INFO - Question 149: Which rivers have their mouth on the North Sea?
+2025-08-14 14:12:05,773 - INFO - Processing column: Q3
+2025-08-14 14:12:17,886 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-14 14:13:29,057 - INFO - Question 51: Which French politicians were married to a German man?
+2025-08-14 14:13:45,476 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?
+2025-08-14 14:14:45,585 - INFO - Question 96: Which international organizations were founded in 1950 in the United States?
+2025-08-14 14:14:54,675 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-14 14:15:04,221 - INFO - Question 124: Give me all films produced by Hal Roach that are comedies.
+2025-08-14 14:15:20,252 - INFO - Question 133: Which companies produce electric hovercrafts?
+2025-08-14 14:15:52,318 - INFO - Question 141: Give me a list of all currently active Canadian record labels associated with Grunge music.
+2025-08-14 14:16:22,663 - INFO - Question 144: Which artists were born on the same date and in the same year as Rachel Stevens?
+2025-08-14 14:16:22,684 - INFO - Processing column: Q4
+2025-08-14 14:17:22,627 - INFO - Question 31: What characters does Todd Haberkorn voice in Japanese films?
+2025-08-14 14:17:57,647 - INFO - Question 39: What dialects of Chinese are not the majority dialect of Hong Kong?
+2025-08-14 14:18:22,327 - INFO - Question 42: Give me all professional skateboarders from Sweden who are not male.
+2025-08-14 14:18:47,236 - INFO - Question 48: Which countries have more than ten volcanoes but fewer than ten active ones?
+2025-08-14 14:19:40,855 - INFO - Question 51: Which French politicians were married to a German woman or non-binary person?
+2025-08-14 14:20:36,784 - INFO - Question 73: Which celebrities has Brody Jenner been rumored but not confirmed to have dated?
+2025-08-14 14:22:07,466 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-14 14:22:28,473 - INFO - Question 87: Which educational institutions did Anders Celsius attend before university?
+2025-08-14 14:22:59,069 - INFO - Question 93: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-14 14:23:10,330 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-14 14:23:22,914 - INFO - Question 105: Give me all inhabited islands with no more than 1000000 population that belong to Japan.
+2025-08-14 14:25:14,239 - INFO - Question 116: Which programming languages influenced by Perl are not primarily script languages?
+2025-08-14 14:25:33,408 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-14 14:26:24,286 - INFO - Question 120: Give me all female or non-binary actors with the last name Baldwin.
+2025-08-14 14:26:55,982 - INFO - Question 121: List all Gothic buildings in Kent that are not churches or cathedrals.
+2025-08-14 14:28:31,488 - INFO - Question 125: Give me a list of all bandleaders not born in New Orleans that play trumpet and have won a Grammy.
+2025-08-14 14:29:37,354 - INFO - Question 126: Give me all people that were born in Vienna on or after 1900 and died in Berlin.
+2025-08-14 14:30:05,740 - INFO - Question 128: Give me all non-working line types of the German Shepherd dog.
+2025-08-14 14:31:02,099 - INFO - Question 131: Give me all launch pads used by NASA that are located outside the United States.
+2025-08-14 14:31:16,643 - INFO - Question 141: Give me a list of all defunct Canadian record labels associated with Grunge music.
+2025-08-14 14:32:04,936 - INFO - Question 144: Which artists were born on the same date but in a different year than Rachel Stevens?
+2025-08-14 14:32:29,995 - INFO - Question 145: Which airports are located on mainland California, USA?
+2025-08-14 14:32:30,010 - INFO - Processing dataset: qawiki.tsv for model: o3 and language: en
+2025-08-14 14:32:30,010 - INFO - Processing column: Q1
+2025-08-14 14:33:06,891 - INFO - Question 3: In which journals has Amrapali Zaveri published?
+2025-08-14 14:33:43,484 - INFO - Question 5: In which museums can I see paintings by El Greco?
+2025-08-14 14:34:13,215 - INFO - Question 13: What are the subsidiaries of Meta Platforms?
+2025-08-14 14:34:37,428 - INFO - Question 15: What binary neutron stars are in the constellation Scorpius?
+2025-08-14 14:34:56,106 - INFO - Question 16: What buildings are named after JFK?
+2025-08-14 14:35:21,789 - INFO - Question 25: What documentaries are about whaling?
+2025-08-14 14:35:57,836 - INFO - Question 30: What hybrid species can have offspring?
+2025-08-14 14:36:44,731 - INFO - Question 39: What other buildings have the same architect as the Tsentrosoyuz Building?
+2025-08-14 14:36:55,615 - INFO - Question 40: What papers did Amrapali Zaveri publish?
+2025-08-14 14:37:06,870 - INFO - Question 42: What proteins are found in dendrites?
+2025-08-14 14:37:26,648 - INFO - Question 43: What proteins are involved in retina homeostasis?
+2025-08-14 14:37:40,640 - INFO - Question 45: What religions promote vegetarianism?
+2025-08-14 14:38:36,577 - INFO - Question 52: What weapons were used in mass shootings in the United States?
+2025-08-14 14:39:43,731 - INFO - Question 56: Which Asian universities have female rectors?
+2025-08-14 14:39:47,210 - INFO - Question 57: Which association football players have at least two citizenships?
+2025-08-14 14:39:56,846 - INFO - Question 58: Which buildings are brutalist?
+2025-08-14 14:40:10,557 - INFO - Question 59: Which buildings are funcionalist?
+2025-08-14 14:40:47,914 - INFO - Question 63: Which Chilean companies have U.S. parent companies?
+2025-08-14 14:41:31,784 - INFO - Question 64: Which cities are named after an apostle?
+2025-08-14 14:42:55,435 - INFO - Question 65: Which civil wars started in the nineteenth century?
+2025-08-14 14:43:51,986 - INFO - Question 70: Which conferences were organized by Turing Award winners?
+2025-08-14 14:44:13,489 - INFO - Question 81: Which countries have diplomatic relations with Chile?
+2025-08-14 14:44:30,817 - INFO - Question 87: Which countries use the same plug as Canada?
+2025-08-14 14:44:46,974 - INFO - Question 90: Which death row prisoners had pizza as their last meal?
+2025-08-14 14:45:52,062 - INFO - Question 94: Which Ethiopian political parties were founded since 2000?
+2025-08-14 14:46:06,417 - INFO - Question 100: What languages are pro-drop?
+2025-08-14 14:46:25,230 - INFO - Question 102: Which mountains were first ascended in the last eighty years?
+2025-08-14 14:47:04,004 - INFO - Question 106: Which movies were filmed in Yemen?
+2025-08-14 14:47:59,614 - INFO - Question 107: Which musical groups formed the same year as Soda Stereo?
+2025-08-14 14:48:04,144 - INFO - Question 108: Which musicians are from Nordic Countries?
+2025-08-14 14:48:10,312 - INFO - Question 109: Which natural languages are not Indo-European?
+2025-08-14 14:49:18,619 - INFO - Question 114: Which parks are in Perth?
+2025-08-14 14:50:53,691 - INFO - Question 122: Which saints died by crucifixion?
+2025-08-14 14:51:34,742 - INFO - Question 129: Which Simpsons characters were not born in Springfield?
+2025-08-14 14:51:42,558 - INFO - Question 131: Which species are endemic to Chile?
+2025-08-14 14:52:08,074 - INFO - Question 135: Which universities are based in Peru?
+2025-08-14 14:53:36,670 - INFO - Question 136: Which universities based in Peru were established since 1950?
+2025-08-14 14:54:37,679 - INFO - Question 140: Which wars took place in South America?
+2025-08-14 14:55:19,397 - INFO - Question 141: Which writers speak French, Arabic and Japanese?
+2025-08-14 14:55:27,139 - INFO - Question 143: Who are Elon Musk's ex-spouses?
+2025-08-14 14:55:27,156 - INFO - Processing column: Q2
+2025-08-14 14:56:31,551 - INFO - Question 3: In what journals has Amrapali Zaveri published?
+2025-08-14 14:56:45,956 - INFO - Question 5: Which museums display artworks by El Greco?
+2025-08-14 14:57:32,600 - INFO - Question 13: What subsidiaries does Meta have?
+2025-08-14 14:59:11,001 - INFO - Question 15: What binary neutron stars are found in Scorpius?
+2025-08-14 14:59:39,868 - INFO - Question 16: What buildings are named after John F. Kennedy?
+2025-08-14 15:00:51,915 - INFO - Question 18: With which cities is Port-au-Prince twinned?
+2025-08-14 15:02:11,544 - INFO - Question 19: Which locations not in Africa show Benin Bronzes?
+2025-08-14 15:02:29,851 - INFO - Question 25: List whaling documentaries
+2025-08-14 15:03:17,463 - INFO - Question 26: List African drinks
+2025-08-14 15:03:27,771 - INFO - Question 40: What papers has Amrapali Zaveri published?
+2025-08-14 15:04:05,750 - INFO - Question 42: Dendrites contain what proteins?
+2025-08-14 15:04:39,008 - INFO - Question 43: Which proteins play a role in retina homeostasis?
+2025-08-14 15:05:22,006 - INFO - Question 44: List radio stations broadcasting only in Boston
+2025-08-14 15:05:37,325 - INFO - Question 52: List weapons used in American shootings sprees
+2025-08-14 15:06:13,739 - INFO - Question 56: What universities in Asia have female rectors?
+2025-08-14 15:06:18,775 - INFO - Question 57: Which football players have more than one nationality?
+2025-08-14 15:07:26,850 - INFO - Question 58: Which buildings exemplify brutalism?
+2025-08-14 15:07:45,768 - INFO - Question 59: Which buildings exemplify functionalism?
+2025-08-14 15:08:03,074 - INFO - Question 63: What Chilean companies have American parent companies?
+2025-08-14 15:09:32,674 - INFO - Question 64: What cities are named in honor of an apostle?

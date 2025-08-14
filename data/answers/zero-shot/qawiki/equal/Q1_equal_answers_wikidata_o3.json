@@ -11,14 +11,18 @@
         "Canada",
         "United States of America"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "The Godfather Part II",
         "Heat",
         "Righteous Kill",
         "The Irishman"
     ],
-    "4": [],
+    "4": [
+        "idk"
+    ],
     "5": [
         "Pixies",
         "The Breeders",
@@ -138,7 +142,9 @@
         "Spanish",
         "Swedish"
     ],
-    "12": [],
+    "12": [
+        "idk"
+    ],
     "13": [
         "Mount Everest",
         "K2",
@@ -152,7 +158,9 @@
         "Annapurna I"
     ],
     "14": [],
-    "15": [],
+    "15": [
+        "idk"
+    ],
     "16": [
         "Aero",
         "Baby Ruth",
@@ -315,7 +323,9 @@
     "23": [
         "spinocerebellar ataxia type 27"
     ],
-    "24": [],
+    "24": [
+        "idk"
+    ],
     "25": [
         "Akpeteshie",
         "Amarula",
@@ -401,7 +411,29 @@
         "A Fork, a Spoon and a Knight",
         "Queen of Katwe"
     ],
-    "29": [],
+    "29": [
+        "Beefalo",
+        "Coywolf",
+        "Wolfdog",
+        "Czechoslovakian Wolfdog",
+        "Wholphin",
+        "Bengal cat",
+        "Savannah cat",
+        "Chausie",
+        "Grolar bear",
+        "Triticale",
+        "Bread wheat",
+        "Spartina anglica",
+        "Spartina townsendii",
+        "Tragopogon miscellus",
+        "Tragopogon mirus",
+        "Brassica napus",
+        "Arabidopsis suecica",
+        "Helianthus anomalus",
+        "Helianthus paradoxus",
+        "Helianthus deserticola",
+        "Prunus domestica"
+    ],
     "30": [
         "English",
         "French",
@@ -468,8 +500,12 @@
         "The Stone Guest",
         "The Tale of Tsar Saltan"
     ],
-    "38": [],
-    "39": [],
+    "38": [
+        "idk"
+    ],
+    "39": [
+        "idk"
+    ],
     "40": [
         "Gertrud Kolmar",
         "Miklós Radnóti",
@@ -479,8 +515,12 @@
         "Mordechai Gebirtig",
         "Ilse Weber"
     ],
-    "41": [],
-    "42": [],
+    "41": [
+        "idk"
+    ],
+    "42": [
+        "idk"
+    ],
     "43": [
         "WEZE",
         "WRKO",
@@ -504,7 +544,15 @@
         "WBMX",
         "WMJX"
     ],
-    "44": [],
+    "44": [
+        "Jainism",
+        "Hinduism",
+        "Buddhism",
+        "Seventh-day Adventist Church",
+        "Rastafari",
+        "Brahma Kumaris",
+        "International Society for Krishna Consciousness"
+    ],
     "45": [
         "Ornithorhynchus anatinus",
         "Tachyglossus aculeatus",
@@ -589,7 +637,9 @@
         "Katla",
         "Krafla"
     ],
-    "51": [],
+    "51": [
+        "idk"
+    ],
     "52": [
         "Old Bushmills Distillery",
         "Midleton Distillery",
@@ -663,10 +713,26 @@
         "Michelle Stafford",
         "Nancy Cartwright"
     ],
-    "55": [],
-    "56": [],
-    "57": [],
-    "58": [],
+    "55": [
+        "Akdeniz University",
+        "Boğaziçi University",
+        "Ewha Womans University",
+        "Sookmyung Women’s University",
+        "Ochanomizu University",
+        "Tsuda University",
+        "Tokyo Woman’s Christian University",
+        "Lahore College for Women University",
+        "Princess Nourah bint Abdulrahman University"
+    ],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "idk"
+    ],
+    "58": [
+        "idk"
+    ],
     "59": [
         "carbon-7",
         "carbon-8",
@@ -712,9 +778,57 @@
         "O’Kelly Variation",
         "Four Knights Variation"
     ],
-    "62": [],
-    "63": [],
-    "64": [],
+    "62": [
+        "Walmart Chile",
+        "VTR",
+        "AES Andes",
+        "Esso Chile Petrolera",
+        "DirecTV Chile",
+        "IBM Chile"
+    ],
+    "63": [
+        "Saint Petersburg",
+        "Peterborough",
+        "San Pedro Sula",
+        "San Pedro",
+        "Saint John's",
+        "San Juan",
+        "Santiago",
+        "Santiago de Cuba",
+        "Santiago de los Caballeros",
+        "Santiago del Estero",
+        "Santiago de Querétaro",
+        "São Paulo",
+        "San Felipe",
+        "San Mateo",
+        "São Tomé"
+    ],
+    "64": [
+        "Argentine Civil Wars",
+        "Chilean Civil War of 1829–30",
+        "Chilean Civil War of 1851",
+        "Chilean Revolution of 1859",
+        "Chilean Civil War of 1891",
+        "Colombian Civil War of 1860–1862",
+        "Thousand Days' War",
+        "War of the Reform",
+        "Ragamuffin War",
+        "Liberal War",
+        "First Carlist War",
+        "Second Carlist War",
+        "Third Carlist War",
+        "Uruguayan Civil War",
+        "Revolution of the Lances",
+        "Federal War",
+        "Guerra de los Supremos",
+        "Taiping Rebellion",
+        "Indian Rebellion of 1857",
+        "American Civil War",
+        "Boshin War",
+        "Satsuma Rebellion",
+        "Haitian Civil War (1867–1870)",
+        "Federalist Revolution"
+    ],
     "65": [
         "Argentine Civil Wars",
         "Bolivian civil war (1898–1899)",
@@ -791,7 +905,9 @@
         "International Conference on Machine Learning and Applications",
         "International Conference on Artificial Intelligence and Statistics"
     ],
-    "69": [],
+    "69": [
+        "International Conference on Learning Representations"
+    ],
     "70": [
         "Andorra",
         "Antigua and Barbuda",
@@ -1013,7 +1129,9 @@
         "Tanzania",
         "Trinidad and Tobago"
     ],
-    "80": [],
+    "80": [
+        "idk"
+    ],
     "81": [
         "Afghanistan",
         "Algeria",
@@ -1081,7 +1199,9 @@
         "United Kingdom",
         "United States of America"
     ],
-    "86": [],
+    "86": [
+        "idk"
+    ],
     "87": [
         "German Democratic Republic",
         "Yemen Arab Republic",
@@ -1116,7 +1236,9 @@
         "Tiger nut",
         "Walnut"
     ],
-    "89": [],
+    "89": [
+        "idk"
+    ],
     "90": [
         "Apple pie",
         "Pumpkin pie",
@@ -1155,7 +1277,24 @@
         "Diltiazem",
         "Verapamil"
     ],
-    "93": [],
+    "93": [
+        "Prosperity Party",
+        "Ethiopian Citizens for Social Justice",
+        "Balderas for True Democracy",
+        "National Movement of Amhara",
+        "Tigray Independence Party",
+        "Afar People's Party",
+        "Oromo Federalist Congress",
+        "Blue Party",
+        "Oromo Federalist Democratic Movement",
+        "Ginbot 7",
+        "Unity for Democracy and Justice",
+        "Rainbow Ethiopia: Movement for Democracy and Social Justice",
+        "Ethiopian Social Democratic Party",
+        "Coalition for Unity and Democracy",
+        "All Ethiopian Unity Party",
+        "United Ethiopian Democratic Forces"
+    ],
     "94": [
         "Patrick Vieira"
     ],
@@ -1201,7 +1340,9 @@
         "Deadheads",
         "The Wretched"
     ],
-    "99": [],
+    "99": [
+        "idk"
+    ],
     "100": [
         "Abalos Mons",
         "Aeolis Mons",
@@ -1225,7 +1366,9 @@
         "Uranius Tholus",
         "Zephyria Tholus"
     ],
-    "101": [],
+    "101": [
+        "idk"
+    ],
     "102": [
         "Barjo",
         "Blade Runner",
@@ -1297,10 +1440,18 @@
         "Red, White & Royal Blue",
         "The Kill Room"
     ],
-    "105": [],
-    "106": [],
-    "107": [],
-    "108": [],
+    "105": [
+        "idk"
+    ],
+    "106": [
+        "idk"
+    ],
+    "107": [
+        "idk"
+    ],
+    "108": [
+        "idk"
+    ],
     "109": [
         "Glen Mitchell",
         "Julian Dean",
@@ -1352,7 +1503,10 @@
         "Le Quai Malaquais, printemps",
         "La Cueillette des pois"
     ],
-    "113": [],
+    "113": [
+        "North Inch",
+        "South Inch"
+    ],
     "114": [
         "Marie Curie",
         "Pierre Curie",
@@ -1427,7 +1581,9 @@
         "Chile national rugby union team",
         "Chile national rugby sevens team"
     ],
-    "121": [],
+    "121": [
+        "idk"
+    ],
     "122": [
         "Justina of Padua",
         "Osgyth",
@@ -1488,7 +1644,9 @@
         "Nowhere Home",
         "Songs of Earth"
     ],
-    "128": [],
+    "128": [
+        "idk"
+    ],
     "129": [
         "OPPO Find 5",
         "OPPO Find 7",
@@ -1632,7 +1790,9 @@
         "iQOO Z5",
         "iQOO Z7"
     ],
-    "130": [],
+    "130": [
+        "idk"
+    ],
     "131": [
         "Atacama Large Millimeter/submillimeter Array",
         "Atacama Cosmology Telescope",
@@ -1719,8 +1879,12 @@
         "Geoffrey Hinton",
         "Yann LeCun"
     ],
-    "134": [],
-    "135": [],
+    "134": [
+        "idk"
+    ],
+    "135": [
+        "idk"
+    ],
     "136": [
         "Tetris",
         "Minesweeper",
@@ -1770,7 +1934,51 @@
         "League of Legends",
         "Valorant"
     ],
-    "139": [],
+    "139": [
+        "Spanish conquest of the Inca Empire",
+        "Arauco War",
+        "Guaraní War",
+        "War of the Emboabas",
+        "Cabanagem",
+        "Ragamuffin War",
+        "Praieira revolt",
+        "Cisplatine War",
+        "Uruguayan Civil War",
+        "Uruguayan War",
+        "Revolution of the Lances",
+        "Revolution of 1904 (Uruguay)",
+        "Platine War",
+        "Paraguayan War",
+        "Chaco War",
+        "Contestado War",
+        "Federalist Revolution",
+        "Conquest of the Desert",
+        "Pacification of Araucanía",
+        "Chincha Islands War",
+        "War of the Pacific",
+        "War of the Confederation",
+        "Peru–Bolivian War",
+        "Argentine War of Independence",
+        "Bolivian War of Independence",
+        "Brazilian War of Independence",
+        "Chilean War of Independence",
+        "Colombian War of Independence",
+        "Ecuadorian War of Independence",
+        "Peruvian War of Independence",
+        "Venezuelan War of Independence",
+        "Chilean Civil War of 1829–30",
+        "Chilean Civil War of 1891",
+        "Colombian Civil War of 1860–1862",
+        "Colombian Civil War of 1895",
+        "Thousand Days' War",
+        "War of the Supremos",
+        "Federal War",
+        "Ecuadorian–Peruvian War (1857–1860)",
+        "Ecuadorian–Peruvian War (1941)",
+        "Paquisha War",
+        "Cenepa War",
+        "Colombia–Peru War"
+    ],
     "140": [],
     "141": [
         "3Blue1Brown",
@@ -1846,5 +2054,9 @@
         "Gus Hall",
         "Louis Fisher",
         "John Hospers"
+    ],
+    "142": [
+        "Justine Musk",
+        "Talulah Riley"
     ]
 }

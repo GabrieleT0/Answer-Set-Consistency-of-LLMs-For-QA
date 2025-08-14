@@ -10,14 +10,18 @@
         "Canada",
         "United States of America"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "The Godfather Part II",
         "Heat",
         "Righteous Kill",
         "The Irishman"
     ],
-    "4": [],
+    "4": [
+        "idk"
+    ],
     "5": [
         "Pixies",
         "The Breeders",
@@ -134,7 +138,35 @@
         "Spanish",
         "Swedish"
     ],
-    "12": [],
+    "12": [
+        "WhatsApp",
+        "Instagram",
+        "Oculus VR",
+        "Novi Financial",
+        "Onavo",
+        "LiveRail",
+        "Parse",
+        "FriendFeed",
+        "Little Eye Labs",
+        "CTRL-labs",
+        "Giphy",
+        "Kustomer",
+        "Atlas Solutions",
+        "Beluga",
+        "Snaptu",
+        "Moves",
+        "Masquerade Technologies",
+        "Pebbles Interfaces",
+        "PrivateCore",
+        "Surreal Vision",
+        "ProtoGeo Oy",
+        "Redkix",
+        "tbh",
+        "Wit.ai",
+        "Branch",
+        "Ascenta",
+        "Bloomsbury AI"
+    ],
     "13": [
         "Mount Everest",
         "K2",
@@ -147,8 +179,12 @@
         "Nanga Parbat",
         "Annapurna I"
     ],
-    "14": [],
-    "15": [],
+    "14": [
+        "idk"
+    ],
+    "15": [
+        "idk"
+    ],
     "16": [
         "100 Grand",
         "Aero",
@@ -167,8 +203,82 @@
         "Toffee Crisp",
         "Yorkie"
     ],
-    "17": [],
-    "18": [],
+    "17": [
+        "Montreal"
+    ],
+    "18": [
+        "Aberdeen Art Gallery",
+        "Art Institute of Chicago",
+        "Ashmolean Museum",
+        "Australian Museum",
+        "Bern Historical Museum",
+        "Birmingham Museum and Art Gallery",
+        "Bristol Museum & Art Gallery",
+        "British Museum",
+        "Brighton Museum & Art Gallery",
+        "Brooklyn Museum",
+        "Cambridge Museum of Archaeology and Anthropology",
+        "Chazen Museum of Art",
+        "Cleveland Museum of Art",
+        "Dallas Museum of Art",
+        "Denver Art Museum",
+        "Derby Museum and Art Gallery",
+        "Detroit Institute of Arts",
+        "Ethnologisches Museum Berlin",
+        "Field Museum",
+        "Fitzwilliam Museum",
+        "GRASSI Museum für Völkerkunde zu Leipzig",
+        "Great North Museum: Hancock",
+        "Horniman Museum",
+        "Indianapolis Museum of Art",
+        "Kelvingrove Art Gallery and Museum",
+        "Leeds City Museum",
+        "Linden Museum",
+        "Los Angeles County Museum of Art",
+        "MARKK – Museum am Rothenbaum",
+        "Metropolitan Museum of Art",
+        "Minneapolis Institute of Art",
+        "Museum der Kulturen Basel",
+        "Museum Fünf Kontinente",
+        "Museum of Anthropology at UBC",
+        "Museum of Cultural History (Oslo)",
+        "Museum of Ethnography, Stockholm",
+        "Museum of Fine Arts, Boston",
+        "Museum of Fine Arts, Houston",
+        "Musée d'ethnographie de Genève",
+        "Musée du quai Branly – Jacques Chirac",
+        "Museum für Völkerkunde Dresden",
+        "National Gallery of Victoria",
+        "National Museum of African Art",
+        "National Museum of Denmark",
+        "National Museum of Ireland – Archaeology",
+        "National Museum of Scotland",
+        "National Museum of Ethnology (Japan)",
+        "Nelson-Atkins Museum of Art",
+        "Penn Museum",
+        "Pitt Rivers Museum",
+        "Princeton University Art Museum",
+        "Queensland Museum",
+        "Rautenstrauch-Joest-Museum",
+        "RISD Museum",
+        "Royal Albert Memorial Museum",
+        "Royal Museum for Central Africa",
+        "Royal Ontario Museum",
+        "Sainsbury Centre for Visual Arts",
+        "Saint Louis Art Museum",
+        "Seattle Art Museum",
+        "Tropenmuseum",
+        "Tullie House Museum and Art Gallery",
+        "Ulster Museum",
+        "Victoria and Albert Museum",
+        "Virginia Museum of Fine Arts",
+        "Världskulturmuseet",
+        "Wereldmuseum Rotterdam",
+        "Weltmuseum Wien",
+        "World Museum",
+        "Worcester Art Museum",
+        "Yale University Art Gallery"
+    ],
     "19": [
         "blue",
         "white",
@@ -264,8 +374,58 @@
     "23": [
         "spinocerebellar ataxia type 27"
     ],
-    "24": [],
-    "25": [],
+    "24": [
+        "idk"
+    ],
+    "25": [
+        "Amasi",
+        "Amarula",
+        "Appletiser",
+        "Akpeteshie",
+        "Alomo Bitters",
+        "Areki",
+        "Basi",
+        "Bissap",
+        "Boeber",
+        "Borde",
+        "Bouza",
+        "Boukha",
+        "Burukutu",
+        "Busaa",
+        "Chapman's",
+        "Cheka",
+        "Chibuku",
+        "Coffee",
+        "Fura",
+        "iQhilika",
+        "Kaffir beer",
+        "Katikala",
+        "Karkade",
+        "Konyagi",
+        "Kunu",
+        "Lotoko",
+        "Mabisi",
+        "Maghrebi mint tea",
+        "Mahia",
+        "Malamba",
+        "Mampoer",
+        "Merisa",
+        "Munkoyo",
+        "Nsafufuo",
+        "Ogogoro",
+        "Palm wine",
+        "Pito",
+        "Rooibos tea",
+        "Sahrawi tea",
+        "Sobia",
+        "Sugarcane juice",
+        "Tella",
+        "Tej",
+        "Togwa",
+        "Umqombothi",
+        "Waragi",
+        "Zobo"
+    ],
     "26": [
         "up quark",
         "down quark",
@@ -425,7 +585,9 @@
         "Unité d'habitation of Rezé",
         "Unité d'habitation of Firminy"
     ],
-    "39": [],
+    "39": [
+        "idk"
+    ],
     "40": [
         "Benjamin Fondane",
         "Max Jacob",
@@ -444,9 +606,33 @@
         "Abraham Koplowicz",
         "Franta Bass"
     ],
-    "41": [],
-    "42": [],
-    "43": [],
+    "41": [
+        "actin",
+        "tubulin",
+        "microtubule-associated protein 2"
+    ],
+    "42": [
+        "idk"
+    ],
+    "43": [
+        "WBZ (AM)",
+        "WRKO",
+        "WEEI (AM)",
+        "WROL (AM)",
+        "WILD (AM)",
+        "WBIX (AM)",
+        "WMEX (AM)",
+        "WBUR-FM",
+        "WGBH (FM)",
+        "WERS",
+        "WUMB-FM",
+        "WJMN (FM)",
+        "WBQT (FM)",
+        "WBZ-FM",
+        "WZLX (FM)",
+        "WBGB-FM",
+        "WMJX (FM)"
+    ],
     "44": [
         "Hinduism",
         "Buddhism",
@@ -560,7 +746,9 @@
         "Þeistareykir",
         "Vestmannaeyjar"
     ],
-    "51": [],
+    "51": [
+        "idk"
+    ],
     "52": [
         "Old Bushmills Distillery",
         "Cooley Distillery",
@@ -635,10 +823,37 @@
         "Alanna Masterson",
         "Jordan Masterson"
     ],
-    "55": [],
-    "56": [],
-    "57": [],
-    "58": [],
+    "55": [
+        "idk"
+    ],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "Barbican Estate",
+        "Boston City Hall",
+        "J. Edgar Hoover Building",
+        "Trellick Tower",
+        "Habitat 67",
+        "Unité d'habitation",
+        "National Theatre (London)",
+        "Preston bus station",
+        "Geisel Library",
+        "Birmingham Central Library",
+        "Robin Hood Gardens",
+        "Prentice Women's Hospital Building",
+        "St Peter's Seminary, Cardross",
+        "Sirius building",
+        "Orange County Government Center",
+        "Trinity Square car park",
+        "Park Hill, Sheffield",
+        "Southbank Centre",
+        "Institute of Education building (London)",
+        "Civic Centre, Plymouth"
+    ],
+    "58": [
+        "idk"
+    ],
     "59": [
         "Carbon-8",
         "Carbon-9",
@@ -689,8 +904,30 @@
         "Hedgehog (chess)",
         "Yugoslav Attack"
     ],
-    "62": [],
-    "63": [],
+    "62": [
+        "idk"
+    ],
+    "63": [
+        "São Paulo",
+        "Saint Petersburg",
+        "Santiago",
+        "Santiago de Compostela",
+        "Santiago del Estero",
+        "Santiago de Cuba",
+        "Santiago de Querétaro",
+        "Santiago de los Caballeros",
+        "Santiago de Veraguas",
+        "Santiago City",
+        "San Pedro Sula",
+        "San Pedro de Macorís",
+        "San Pedro de la Paz",
+        "San Andrés Tuxtla",
+        "San Andrés Cholula",
+        "San Felipe, Chile",
+        "San Felipe, Venezuela",
+        "São Tomé",
+        "Saint Paul, Minnesota"
+    ],
     "64": [
         "American Civil War",
         "Argentine Civil Wars",

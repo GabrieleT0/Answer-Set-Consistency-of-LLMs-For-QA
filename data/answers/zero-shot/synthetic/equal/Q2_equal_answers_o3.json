@@ -1006,7 +1006,9 @@
         "Shikoku",
         "Okinawa Island"
     ],
-    "47": [],
+    "47": [
+        "idk"
+    ],
     "48": [
         "George Washington",
         "Thomas Jefferson",
@@ -1319,7 +1321,19 @@
         "O positive",
         "O negative"
     ],
-    "66": [],
+    "66": [
+        "Johann Sebastian Bach",
+        "George Frideric Handel",
+        "Antonio Vivaldi",
+        "Johann Pachelbel",
+        "Henry Purcell",
+        "Arcangelo Corelli",
+        "François Couperin",
+        "Jean-Baptiste Lully",
+        "Domenico Scarlatti",
+        "Tomaso Albinoni",
+        "Jean-Joseph Mouret"
+    ],
     "67": [
         "Uruguay",
         "Italy",
@@ -1724,7 +1738,9 @@
         "Egypt Station",
         "McCartney 3"
     ],
-    "90": [],
+    "90": [
+        "idk"
+    ],
     "91": [
         "Mario Puzo",
         "Francis Ford Coppola"
@@ -2040,7 +2056,9 @@
         "Tuscany",
         "Umbria"
     ],
-    "113": [],
+    "113": [
+        "idk"
+    ],
     "114": [
         "Adam Bernstein",
         "Bronwen Hughes",
@@ -2716,7 +2734,9 @@
         "Saint Vincent and the Grenadines",
         "Trinidad and Tobago"
     ],
-    "145": [],
+    "145": [
+        "idk"
+    ],
     "146": [
         "Islamic Republic of Pakistan",
         "People's Republic of China",
@@ -2749,5 +2769,57 @@
         "Forza Italia",
         "Italia Viva",
         "Article 1 Democratic and Progressive Movement"
+    ],
+    "51": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
     ]
 }

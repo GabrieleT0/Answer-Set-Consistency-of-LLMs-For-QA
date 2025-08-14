@@ -9,7 +9,9 @@
         "Canada",
         "United States of America"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "The Godfather Part 2",
         "Heat",
@@ -211,7 +213,35 @@
         "Spanish",
         "Swedish"
     ],
-    "12": [],
+    "12": [
+        "Atlas Solutions Limited Liability Company",
+        "Atlas Solutions Besloten Vennootschap",
+        "Beluga Incorporated",
+        "Control Labs Incorporated",
+        "Facebook India Online Services Private Limited",
+        "Facebook International Operations Limited",
+        "Facebook Payments International Limited",
+        "Facebook Payments Incorporated",
+        "Facebook Payments Two Limited Liability Company",
+        "Facebook Technologies Limited Liability Company",
+        "Facebook Ireland Holdings Limited",
+        "Instagram Limited Liability Company",
+        "LiveRail Incorporated",
+        "Mapillary Aktiebolag",
+        "Novi Financial Incorporated",
+        "Onavo Mobile Limited",
+        "Parse Incorporated",
+        "Proto Geo Osakeyhtio",
+        "WhatsApp Limited Liability Company",
+        "WhatsApp Ireland Limited",
+        "Wit Artificial Intelligence Incorporated",
+        "Oculus Virtual Reality Limited Liability Company",
+        "Facebook Brasil Online Servicos Limitada",
+        "Facebook Belgium Besloten Vennootschap",
+        "Facebook France Societe a Responsabilite Limitee",
+        "Facebook Germany Gesellschaft mit Beschrankter Haftung",
+        "Facebook United Kingdom Limited"
+    ],
     "13": [
         "Mount Everest",
         "Mount Godwin Austen",
@@ -225,7 +255,9 @@
         "Annapurna 1"
     ],
     "14": [],
-    "15": [],
+    "15": [
+        "idk"
+    ],
     "16": [
         "100 Grand",
         "Aero",
@@ -259,7 +291,9 @@
         "Wonka Bar",
         "Yorkie"
     ],
-    "17": [],
+    "17": [
+        "idk"
+    ],
     "18": [
         "British Museum London United Kingdom",
         "Victoria and Albert Museum London United Kingdom",
@@ -502,7 +536,9 @@
         "Words with Gods",
         "Queen of Katwe"
     ],
-    "29": [],
+    "29": [
+        "idk"
+    ],
     "30": [
         "English",
         "French",
@@ -623,8 +659,30 @@
         "Maison de la Culture Firminy",
         "Stadium Firminy-Vert"
     ],
-    "39": [],
-    "40": [],
+    "39": [
+        "idk"
+    ],
+    "40": [
+        "Itzhak Katzenelson",
+        "Hannah Szenes",
+        "Miklós Radnóti",
+        "Gertrud Kolmar",
+        "Selma Meerbaum-Eisinger",
+        "Ilse Weber",
+        "Abraham Koplowicz",
+        "Mordechai Gebirtig",
+        "Pavel Friedmann",
+        "Marianne Cohn",
+        "Benjamin Fondane",
+        "Zuzanna Ginczanka",
+        "Tadeusz Hollender",
+        "David Vogel",
+        "Jiří Orten",
+        "Karel Fleischmann",
+        "Robert Desnos",
+        "Max Jacob",
+        "Władysław Szlengel"
+    ],
     "41": [
         "microtubule associated protein 2"
     ],
@@ -660,7 +718,9 @@
         "Tight junction protein 1",
         "Cadherin 5"
     ],
-    "43": [],
+    "43": [
+        "idk"
+    ],
     "44": [
         "Buddhism",
         "Hinduism",
@@ -871,8 +931,12 @@
         "Patrick Renna",
         "Jason Lee"
     ],
-    "55": [],
-    "56": [],
+    "55": [
+        "idk"
+    ],
+    "56": [
+        "idk"
+    ],
     "57": [
         "Boston City Hall Boston Massachusetts United States of America",
         "Barbican Estate London England United Kingdom",
@@ -961,7 +1025,9 @@
         "Bowdler Attack",
         "Kadas Variation"
     ],
-    "62": [],
+    "62": [
+        "idk"
+    ],
     "63": [
         "Saint Petersburg",
         "São Paulo",
@@ -1111,7 +1177,9 @@
         "International Workshop on Machine Learning and Data Mining in Pattern Recognition",
         "International Conference on Big Data and Artificial Intelligence"
     ],
-    "69": [],
+    "69": [
+        "idk"
+    ],
     "70": [
         "Andorra",
         "Antigua and Barbuda",
@@ -1229,7 +1297,9 @@
         "Democratic Republic of the Congo",
         "Central African Republic"
     ],
-    "76": [],
+    "76": [
+        "idk"
+    ],
     "77": [
         "Benin",
         "Bolivia",
@@ -1315,7 +1385,200 @@
         "Tanzania",
         "Trinidad and Tobago"
     ],
-    "80": [],
+    "80": [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Andorra",
+        "Angola",
+        "Antigua and Barbuda",
+        "Argentina",
+        "Armenia",
+        "Australia",
+        "Austria",
+        "Azerbaijan",
+        "Bahamas",
+        "Bahrain",
+        "Bangladesh",
+        "Barbados",
+        "Belarus",
+        "Belgium",
+        "Belize",
+        "Benin",
+        "Bosnia and Herzegovina",
+        "Botswana",
+        "Brazil",
+        "Brunei Darussalam",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burundi",
+        "Cambodia",
+        "Cameroon",
+        "Canada",
+        "Cape Verde",
+        "Central African Republic",
+        "Chad",
+        "China",
+        "Colombia",
+        "Comoros",
+        "Republic of the Congo",
+        "Democratic Republic of the Congo",
+        "Costa Rica",
+        "Côte d'Ivoire",
+        "Croatia",
+        "Cuba",
+        "Cyprus",
+        "Czech Republic",
+        "Denmark",
+        "Djibouti",
+        "Dominica",
+        "Dominican Republic",
+        "East Timor",
+        "Ecuador",
+        "Egypt",
+        "El Salvador",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Estonia",
+        "Eswatini",
+        "Ethiopia",
+        "Fiji",
+        "Finland",
+        "France",
+        "Gabon",
+        "Gambia",
+        "Georgia",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "Grenada",
+        "Guatemala",
+        "Guinea",
+        "Guinea-Bissau",
+        "Guyana",
+        "Haiti",
+        "Honduras",
+        "Hungary",
+        "Iceland",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "Jamaica",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kiribati",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Laos",
+        "Latvia",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Madagascar",
+        "Malawi",
+        "Malaysia",
+        "Maldives",
+        "Mali",
+        "Malta",
+        "Marshall Islands",
+        "Mauritania",
+        "Mauritius",
+        "Mexico",
+        "Federated States of Micronesia",
+        "Moldova",
+        "Monaco",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Mozambique",
+        "Myanmar",
+        "Namibia",
+        "Nauru",
+        "Nepal",
+        "Netherlands",
+        "New Zealand",
+        "Nicaragua",
+        "Niger",
+        "Nigeria",
+        "North Korea",
+        "North Macedonia",
+        "Norway",
+        "Oman",
+        "Pakistan",
+        "Palau",
+        "Panama",
+        "Papua New Guinea",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Portugal",
+        "Qatar",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Samoa",
+        "San Marino",
+        "Sao Tome and Principe",
+        "Saudi Arabia",
+        "Senegal",
+        "Serbia",
+        "Seychelles",
+        "Sierra Leone",
+        "Singapore",
+        "Slovakia",
+        "Slovenia",
+        "Solomon Islands",
+        "Somalia",
+        "South Africa",
+        "South Korea",
+        "South Sudan",
+        "Spain",
+        "Sri Lanka",
+        "Sudan",
+        "Suriname",
+        "Sweden",
+        "Switzerland",
+        "Syria",
+        "Tajikistan",
+        "Tanzania",
+        "Thailand",
+        "Togo",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Turkmenistan",
+        "Tuvalu",
+        "Uganda",
+        "Ukraine",
+        "United Arab Emirates",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "United States of America",
+        "Uruguay",
+        "Uzbekistan",
+        "Vanuatu",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zambia",
+        "Zimbabwe",
+        "Holy See",
+        "State of Palestine"
+    ],
     "81": [
         "Afghanistan",
         "Algeria",
@@ -1368,7 +1631,9 @@
         "South Africa",
         "England"
     ],
-    "85": [],
+    "85": [
+        "idk"
+    ],
     "86": [
         "United States of America",
         "Mexico",
@@ -1436,7 +1701,9 @@
         "Tiger nut",
         "Walnut"
     ],
-    "89": [],
+    "89": [
+        "idk"
+    ],
     "90": [
         "Cinnamon roll",
         "Cinnamon bun",
@@ -1673,8 +1940,12 @@
         "Zulu",
         "Xhosa"
     ],
-    "100": [],
-    "101": [],
+    "100": [
+        "idk"
+    ],
+    "101": [
+        "idk"
+    ],
     "102": [
         "Blade Runner 1982",
         "Total Recall 1990",
@@ -1743,10 +2014,18 @@
         "Hollywood Stargirl",
         "The Kill Room"
     ],
-    "105": [],
-    "106": [],
-    "107": [],
-    "108": [],
+    "105": [
+        "idk"
+    ],
+    "106": [
+        "idk"
+    ],
+    "107": [
+        "idk"
+    ],
+    "108": [
+        "idk"
+    ],
     "109": [
         "Anthony Peden",
         "Greg Henderson",
@@ -1819,7 +2098,10 @@
         "Stump tailed macaques",
         "Chimpanzees"
     ],
-    "111": [],
+    "111": [
+        "Disguised Toast",
+        "Matthias Wandel"
+    ],
     "112": [
         "Rue Saint Honoré, Après Midi. Effet de Pluie",
         "Boulevard de Montmartre, Matinée de Printemps",
@@ -1829,7 +2111,9 @@
         "Le Quai Malaquais, Printemps",
         "Landscape Near Pontoise"
     ],
-    "113": [],
+    "113": [
+        "idk"
+    ],
     "114": [
         "Vasili Samarsky-Bykhovets",
         "Johan Gadolin",
@@ -1870,7 +2154,15 @@
         "72",
         "90"
     ],
-    "118": [],
+    "118": [
+        "Saint Peter",
+        "Saint Felix 3",
+        "Pope Hormisdas",
+        "Pope Adrian 2",
+        "Pope John 17",
+        "Pope Clement 4",
+        "Pope Honorius 4"
+    ],
     "119": [
         "Postgre Structured Query Language",
         "My Structured Query Language",
@@ -1891,7 +2183,17 @@
         "OpenGauss",
         "OceanBase"
     ],
-    "120": [],
+    "120": [
+        "Selknam",
+        "Aviron Bayonnais Rugby Pro",
+        "Section Paloise Béarn Pyrénées",
+        "Union Sportive des Arlequins Perpignanais",
+        "Biarritz Olympique Pays Basque",
+        "Union Sportive de Carcassonne",
+        "Stade Montois Rugby",
+        "Anglet Olympique Rugby Club",
+        "Soyaux Angoulême XV Charente"
+    ],
     "121": [
         "Saint Peter",
         "Saint Andrew",
@@ -1986,7 +2288,20 @@
         "The Avengers",
         "My Super Ex-Girlfriend"
     ],
-    "127": [],
+    "127": [
+        "Stella Polaris",
+        "Burnt by Frost",
+        "Iskyss",
+        "Cool and Crazy",
+        "Cool and Crazy on the Road",
+        "Ultima Thule",
+        "Turn Me On, Dammit!",
+        "Women in Oversized Men's Shirts",
+        "Mammon",
+        "Grey's Anatomy",
+        "Home Ground",
+        "Made in Oslo"
+    ],
     "128": [
         "Apu Nahasapeemapetilon",
         "Manjula Nahasapeemapetilon",
@@ -2008,7 +2323,9 @@
         "Vivo",
         "iQOO"
     ],
-    "130": [],
+    "130": [
+        "idk"
+    ],
     "131": [
         "Very Large Telescope",
         "Atacama Large Millimeter and Submillimeter Array",
@@ -2081,9 +2398,127 @@
         "Geoffrey Everest Hinton",
         "Yann André LeCun"
     ],
-    "134": [],
-    "135": [],
-    "136": [],
+    "134": [
+        "idk"
+    ],
+    "135": [
+        "Universidad Nacional Agraria de la Selva",
+        "Universidad Nacional Amazónica de Madre de Dios",
+        "Universidad Nacional Autónoma Alto Amazonas",
+        "Universidad Nacional Autónoma de Chota",
+        "Universidad Nacional Autónoma de Huanta",
+        "Universidad Nacional Autónoma de Tayacaja Daniel Hernández Morillo",
+        "Universidad Nacional Ciro Alegría",
+        "Universidad Nacional Daniel Alcides Carrión",
+        "Universidad Nacional de Barranca",
+        "Universidad Nacional de Cajamarca",
+        "Universidad Nacional de Educación Enrique Guzmán y Valle",
+        "Universidad Nacional de Frontera",
+        "Universidad Nacional de Huancavelica",
+        "Universidad Nacional de Jaén",
+        "Universidad Nacional de Juliaca",
+        "Universidad Nacional de la Amazonía Peruana",
+        "Universidad Nacional de Moquegua",
+        "Universidad Nacional de Piura",
+        "Universidad Nacional de San Cristóbal de Huamanga",
+        "Universidad Nacional de San Martín",
+        "Universidad Nacional de Tumbes",
+        "Universidad Nacional de Ucayali",
+        "Universidad Nacional del Callao",
+        "Universidad Nacional del Centro del Perú",
+        "Universidad Nacional del Santa",
+        "Universidad Nacional Federico Villarreal",
+        "Universidad Nacional Hermilio Valdizán",
+        "Universidad Nacional Intercultural de la Amazonía",
+        "Universidad Nacional Intercultural de Quillabamba",
+        "Universidad Nacional Intercultural Fabiola Salazar Leguía de Bagua",
+        "Universidad Nacional José Faustino Sánchez Carrión",
+        "Universidad Nacional Jorge Basadre Grohmann",
+        "Universidad Nacional Micaela Bastidas de Apurímac",
+        "Universidad Nacional Pedro Ruiz Gallo",
+        "Universidad Nacional San Luis Gonzaga",
+        "Universidad Nacional Santiago Antúnez de Mayolo",
+        "Universidad Nacional Tecnológica de Lima Sur",
+        "Universidad Nacional Tecnológica de la Selva Central Juan Santos Atahualpa",
+        "Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas",
+        "Universidad Alas Peruanas",
+        "Universidad Andina del Cusco",
+        "Universidad Andina Néstor Cáceres Velásquez",
+        "Universidad Antonio Ruiz de Montoya",
+        "Universidad Autónoma de Ica",
+        "Universidad Autónoma del Perú",
+        "Universidad Autónoma San Francisco",
+        "Universidad Católica de Santa María",
+        "Universidad Católica Los Ángeles de Chimbote",
+        "Universidad Católica Sedes Sapientiae",
+        "Universidad Católica San Pablo",
+        "Universidad Católica San José",
+        "Universidad Católica Santo Toribio de Mogrovejo",
+        "Universidad César Vallejo",
+        "Universidad Científica del Sur",
+        "Universidad Continental",
+        "Universidad de Ciencias y Artes de América Latina",
+        "Universidad de Ciencias y Humanidades",
+        "Universidad de Lima",
+        "Universidad de Piura",
+        "Universidad del Pacífico",
+        "Universidad ESAN",
+        "Universidad Femenina del Sagrado Corazón",
+        "Universidad Inca Garcilaso de la Vega",
+        "Universidad Le Cordon Bleu",
+        "Universidad Marítima del Perú",
+        "Universidad Norbert Wiener",
+        "Universidad Peruana Cayetano Heredia",
+        "Universidad Peruana de Ciencias Aplicadas",
+        "Universidad Peruana de Ciencias e Informática",
+        "Universidad Peruana de Integración Global",
+        "Universidad Peruana de Investigación y Negocios",
+        "Universidad Peruana de Las Américas",
+        "Universidad Peruana de los Andes",
+        "Universidad Peruana del Centro",
+        "Universidad Privada Antenor Orrego",
+        "Universidad Privada Autónoma del Sur",
+        "Universidad Privada Católica de Trujillo Benedicto 16",
+        "Universidad Privada de Huancayo Franklin Roosevelt",
+        "Universidad Privada de Huánuco",
+        "Universidad Privada de Ica",
+        "Universidad Privada de la Selva Peruana",
+        "Universidad Privada de Moquegua",
+        "Universidad Privada de Pucallpa",
+        "Universidad Privada de Tacna",
+        "Universidad Privada del Centro",
+        "Universidad Privada del Norte",
+        "Universidad Privada Juan Mejía Baca",
+        "Universidad Privada Leonardo Da Vinci",
+        "Universidad Privada Líder Peruana",
+        "Universidad Privada Peruano Alemana",
+        "Universidad Privada San Carlos",
+        "Universidad Privada San Juan Bautista",
+        "Universidad Privada San Pedro",
+        "Universidad Privada Santo Domingo de Guzmán",
+        "Universidad Privada Sergio Bernales",
+        "Universidad Privada Telesup",
+        "Universidad Ricardo Palma",
+        "Universidad San Ignacio de Loyola",
+        "Universidad San Martín de Porres",
+        "Universidad Señor de Sipán",
+        "Universidad Tecnológica del Perú"
+    ],
+    "136": [
+        "Tetris",
+        "Super Mario Bros",
+        "Donkey Kong Country",
+        "The Legend of Zelda",
+        "Metroid",
+        "Pokémon",
+        "Puyo Puyo",
+        "Dr. Mario",
+        "Puzzle Bobble",
+        "Candy Crush Saga",
+        "Bejeweled",
+        "2048",
+        "Threes"
+    ],
     "137": [
         "Star Fox",
         "Star Fox 64",
@@ -2193,9 +2628,31 @@
         "Falklands War",
         "Cenepa War"
     ],
-    "140": [],
-    "141": [],
-    "143": [],
+    "140": [
+        "Toshihiko Izutsu"
+    ],
+    "141": [
+        "3Blue1Brown",
+        "Numberphile",
+        "Stand-up Maths",
+        "Mathologer",
+        "Math Antics",
+        "Blackpenredpen",
+        "MindYourDecisions",
+        "Patrick Just Mathematics Tutorials",
+        "Khan Academy",
+        "Eddie Woo",
+        "Organic Chemistry Tutor",
+        "Professor Leonard",
+        "NancyPi",
+        "Tibees",
+        "Professor Dave Explains",
+        "Socratica",
+        "Public Broadcasting Service Infinite Series"
+    ],
+    "143": [
+        "idk"
+    ],
     "144": [
         "Alice Schwarzer"
     ],

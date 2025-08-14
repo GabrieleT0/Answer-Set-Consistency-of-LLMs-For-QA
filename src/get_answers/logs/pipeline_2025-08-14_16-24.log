@@ -1,0 +1,26 @@
+2025-08-14 16:24:26,069 - INFO - Loaded config from config.json
+2025-08-14 16:24:26,069 - INFO - {'languages': ['en'], 'llm_models': ['o3', 'gpt-4o', 'gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14', 'gpt-4.1'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-14 16:24:26,069 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-14 16:24:26,069 - INFO - Step 0: Identify Relations
+2025-08-14 16:24:26,069 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:26,078 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:26,078 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:26,091 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:26,091 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:26,098 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:26,098 - INFO - Step 1: Running single question benchmark
+2025-08-14 16:24:26,098 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-08-14 16:24:26,098 - INFO - Processing column: Q1
+2025-08-14 16:24:44,885 - INFO - Loaded config from config.json
+2025-08-14 16:24:44,885 - INFO - {'languages': ['en'], 'llm_models': ['o3', 'gpt-4o', 'gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14', 'gpt-4.1'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-14 16:24:44,885 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-14 16:24:44,885 - INFO - Step 0: Identify Relations
+2025-08-14 16:24:44,885 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:44,886 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:44,886 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:44,887 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:44,887 - INFO - Processing model: o3 for language: en
+2025-08-14 16:24:44,887 - INFO - Finished processing model: o3 for language: en
+2025-08-14 16:24:44,888 - INFO - Step 1: Running single question benchmark
+2025-08-14 16:24:44,888 - INFO - Processing dataset: spinach.tsv for model: o3 and language: en
+2025-08-14 16:24:44,888 - INFO - Processing column: Q1
