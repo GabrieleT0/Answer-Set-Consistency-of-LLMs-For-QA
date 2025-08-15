@@ -6,11 +6,15 @@
         "Canada",
         "United States of America"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "The Irishman"
     ],
-    "4": [],
+    "4": [
+        "idk"
+    ],
     "5": [
         "The Breeders",
         "The Amps"
@@ -71,11 +75,19 @@
         "Cho Oyu"
     ],
     "14": [],
-    "15": [],
+    "15": [
+        "idk"
+    ],
     "17": [
         "Miami"
     ],
-    "18": [],
+    "18": [
+        "British Museum",
+        "National Museum of Ireland",
+        "National Museum of Denmark",
+        "National Museum of Scotland",
+        "National Museums of World Culture"
+    ],
     "19": [
         "white",
         "red"
@@ -192,7 +204,28 @@
         "Kama Sutra: A Tale of Love",
         "Monsoon Wedding"
     ],
-    "29": [],
+    "29": [
+        "wolfdog",
+        "coyote–dog hybrid",
+        "coywolf",
+        "jackal–dog hybrid",
+        "Sulimov dog",
+        "beefalo",
+        "żubroń",
+        "dzo",
+        "yakalo",
+        "cama",
+        "sheep–goat hybrid",
+        "liger",
+        "tigon",
+        "grolar bear",
+        "wholphin",
+        "Savannah cat",
+        "Bengal cat",
+        "Chausie",
+        "caraval",
+        "servical"
+    ],
     "30": [
         "Akan"
     ],
@@ -257,7 +290,9 @@
         "Villa de Mandrot",
         "Maisons Jaoul"
     ],
-    "39": [],
+    "39": [
+        "idk"
+    ],
     "40": [
         "Władysław Szlengel",
         "Zuzanna Ginczanka",
@@ -271,8 +306,12 @@
         "Izrael Rabon",
         "Miryam Ulinover"
     ],
-    "41": [],
-    "42": [],
+    "41": [
+        "idk"
+    ],
+    "42": [
+        "idk"
+    ],
     "43": [
         "WERS",
         "WBUR-FM",
@@ -392,10 +431,18 @@
         "Nancy Cartwright",
         "Sonny Bono"
     ],
-    "55": [],
-    "56": [],
-    "57": [],
-    "58": [],
+    "55": [
+        "idk"
+    ],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "idk"
+    ],
+    "58": [
+        "idk"
+    ],
     "59": [
         "carbon-11"
     ],
@@ -599,7 +646,57 @@
         "Georgia",
         "Taiwan"
     ],
-    "80": [],
+    "80": [
+        "Albania",
+        "Andorra",
+        "Armenia",
+        "Austria",
+        "Azerbaijan",
+        "Belarus",
+        "Belgium",
+        "Bosnia and Herzegovina",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Georgia",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Moldova",
+        "Monaco",
+        "Montenegro",
+        "Netherlands",
+        "North Macedonia",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Russia",
+        "San Marino",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Turkey",
+        "Ukraine",
+        "United Kingdom",
+        "Vatican City"
+    ],
     "81": [
         "Afghanistan",
         "Bahrain",
@@ -676,7 +773,9 @@
         "Ginkgo nut",
         "Pandanus nut"
     ],
-    "89": [],
+    "89": [
+        "idk"
+    ],
     "90": [
         "Apple pie",
         "Pumpkin pie",
@@ -798,7 +897,9 @@
         "Socotra: The Hidden Land",
         "Socotra, la isla de los genios"
     ],
-    "106": [],
+    "106": [
+        "idk"
+    ],
     "107": [],
     "108": [
         "Estonian",
@@ -940,9 +1041,19 @@
         "Brothers (2015 film)",
         "Generation Utøya"
     ],
-    "128": [],
-    "129": [],
-    "130": [],
+    "128": [
+        "Manjula Nahasapeemapetilon",
+        "Kumiko Nakamura",
+        "Lurleen Lumpkin",
+        "Amber Simpson",
+        "Francesca Terwilliger"
+    ],
+    "129": [
+        "idk"
+    ],
+    "130": [
+        "idk"
+    ],
     "131": [
         "Atacama Cosmology Telescope",
         "Atacama Large Millimeter Array",
@@ -1005,8 +1116,49 @@
         "Tim Berners-Lee",
         "Geoffrey Hinton"
     ],
-    "134": [],
-    "135": [],
+    "134": [
+        "idk"
+    ],
+    "135": [
+        "Universidad Nacional Agraria de la Selva",
+        "Universidad Nacional Amazónica de Madre de Dios",
+        "Universidad Nacional Autónoma Altoandina de Tarma",
+        "Universidad Nacional Autónoma de Alto Amazonas",
+        "Universidad Nacional Autónoma de Chota",
+        "Universidad Nacional Autónoma de Huanta",
+        "Universidad Nacional Ciro Alegría",
+        "Universidad Nacional Daniel Alcides Carrión",
+        "Universidad Nacional de Barranca",
+        "Universidad Nacional de Cajamarca",
+        "Universidad Nacional de Cañete",
+        "Universidad Nacional de Frontera",
+        "Universidad Nacional de Huancavelica",
+        "Universidad Nacional de Jaén",
+        "Universidad Nacional de Juliaca",
+        "Universidad Nacional de la Amazonía Peruana",
+        "Universidad Nacional de Moquegua",
+        "Universidad Nacional de Piura",
+        "Universidad Nacional de Tumbes",
+        "Universidad Nacional del Callao",
+        "Universidad Nacional del Centro del Perú",
+        "Universidad Nacional del Santa",
+        "Universidad Nacional Federico Villarreal",
+        "Universidad Nacional Hermilio Valdizán",
+        "Universidad Nacional Intercultural de la Amazonía",
+        "Universidad Nacional Intercultural de la Selva Central Juan Santos Atahualpa",
+        "Universidad Nacional Intercultural de Quillabamba",
+        "Universidad Nacional Jorge Basadre Grohmann",
+        "Universidad Nacional José Faustino Sánchez Carrión",
+        "Universidad Nacional José María Arguedas",
+        "Universidad Nacional Micaela Bastidas de Apurímac",
+        "Universidad Nacional Pedro Ruiz Gallo",
+        "Universidad Nacional San Luis Gonzaga",
+        "Universidad Nacional San Martín",
+        "Universidad Nacional Santiago Antúnez de Mayolo",
+        "Universidad Nacional Tecnológica de Lima Sur",
+        "Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas",
+        "Universidad Nacional de Ucayali"
+    ],
     "136": [
         "Minesweeper",
         "Tetris"
@@ -1095,7 +1247,9 @@
     "143": [
         "Alice Schwarzer"
     ],
-    "144": [],
+    "144": [
+        "Chantal Louis"
+    ],
     "145": [],
     "146": [
         "Fernando Haddad",
@@ -1119,5 +1273,13 @@
     ],
     "149": [
         "George McGovern"
+    ],
+    "16": [
+        "Baby Ruth",
+        "Butterfinger",
+        "Chunky (candy bar)",
+        "Frigor",
+        "Nuts (chocolate bar)",
+        "Oh Henry!"
     ]
 }

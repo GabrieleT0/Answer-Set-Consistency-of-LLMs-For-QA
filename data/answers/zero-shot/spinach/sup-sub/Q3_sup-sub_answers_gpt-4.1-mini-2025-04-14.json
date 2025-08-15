@@ -1017,7 +1017,14 @@
         "Utah",
         "Wyoming"
     ],
-    "113": [],
+    "113": [
+        "Montana",
+        "Wyoming",
+        "Utah",
+        "Colorado",
+        "New Mexico",
+        "Idaho"
+    ],
     "114": [
         "Ruby",
         "PHP",
@@ -1084,7 +1091,15 @@
         "St. Laurence Church, Ramsgate",
         "St. George's Church, Trotton"
     ],
-    "120": [],
+    "120": [
+        "Canterbury Cathedral",
+        "Rochester Cathedral",
+        "St. Mary the Virgin Church, Aylesford",
+        "St. Dunstan's Church, Canterbury",
+        "All Saints Church, Maidstone",
+        "St. Peter and St. Paul Church, Tonbridge",
+        "St. George's Church, Trotton"
+    ],
     "121": [
         "Heckler & Koch G3",
         "Heckler & Koch MP5",
@@ -1176,7 +1191,22 @@
         "The Devil Wears Prada",
         "Gnomeo & Juliet"
     ],
-    "130": [],
+    "130": [
+        "Launch Complex 39A at Kennedy Space Center",
+        "Launch Complex 39B at Kennedy Space Center",
+        "Launch Complex 34 at Cape Canaveral Space Launch Complex",
+        "Launch Complex 37 at Cape Canaveral Space Launch Complex",
+        "Launch Complex 41 at Cape Canaveral Space Launch Complex",
+        "Launch Complex 40 at Cape Canaveral Space Launch Complex",
+        "Launch Complex 46 at Cape Canaveral Space Launch Complex",
+        "Wallops Flight Facility Launch Pad 0A",
+        "Wallops Flight Facility Launch Pad 0B",
+        "Wallops Flight Facility Launch Pad 2",
+        "Wallops Flight Facility Launch Pad 3",
+        "Wallops Flight Facility Launch Pad 1",
+        "Stennis Space Center Test Stand A",
+        "Stennis Space Center Test Stand B"
+    ],
     "131": [
         "Lenovo",
         "BOE Technology Group"
@@ -1235,7 +1265,16 @@
     "137": [
         "Pretty Woman"
     ],
-    "138": [],
+    "138": [
+        "Visions of Cody",
+        "Book of Dreams",
+        "Big Sur",
+        "Satori in Paris",
+        "Vanity of Duluoz",
+        "Angelheaded Hipster",
+        "Tristessa",
+        "The Sea is My Brother"
+    ],
     "139": [
         "Arnold Schwarzenegger",
         "Austin O'Brien",
@@ -1324,5 +1363,74 @@
         "Brauerei Gaffel Becker & Co",
         "Brauerei Früh",
         "Brauerei Schumacher"
+    ],
+    "147": [
+        "Johnny Flynn",
+        "Daniel Ings",
+        "Joshua McGuire"
+    ],
+    "148": [
+        "Thames",
+        "Tyne",
+        "Tees",
+        "Wear",
+        "Humber",
+        "Ouse",
+        "Yare",
+        "Waveney",
+        "Blyth",
+        "Tweed",
+        "Esk",
+        "Aire",
+        "Derwent",
+        "Don",
+        "Afon Dyfi",
+        "Afon Severn",
+        "Afon Wye",
+        "Afon Dee",
+        "Afon Clwyd",
+        "Afon Conwy",
+        "Afon Alun",
+        "Afon Elwy",
+        "Afon Glaslyn",
+        "Afon Dwyryd",
+        "Afon Mawddach",
+        "Afon Dysynni",
+        "Afon Dyfi",
+        "Afon Leri",
+        "Afon Rheidol",
+        "Afon Ystwyth",
+        "Afon Teifi",
+        "Afon Taf",
+        "Afon Towy",
+        "Afon Gwendraeth",
+        "Afon Loughor",
+        "Afon Neath",
+        "Afon Tawe",
+        "Afon Afan",
+        "Afon Kenfig",
+        "Afon Ogmore",
+        "Afon Ewenny",
+        "Afon Cadoxton",
+        "Afon Rhymney",
+        "Afon Taff",
+        "Afon Ely",
+        "Afon Rhondda",
+        "Afon Cynon",
+        "Afon Taf Fawr",
+        "Afon Taf Fechan",
+        "Afon Cynon",
+        "Afon Taff",
+        "Afon Ely",
+        "Afon Rhymney",
+        "Afon Taff",
+        "Afon Ely",
+        "Afon Rhymney"
+    ],
+    "149": [
+        "Krombacher Brauerei",
+        "Warsteiner Brauerei",
+        "Veltins Brauerei",
+        "Bitburger Brauerei"
     ]
 }

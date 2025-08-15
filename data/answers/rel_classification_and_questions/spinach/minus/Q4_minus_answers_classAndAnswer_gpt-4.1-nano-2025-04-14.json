@@ -1,41 +1,81 @@
 {
-    "0": [],
-    "1": [],
-    "2": [],
-    "3": [
-        "Real Sociedad",
-        "Villarreal",
-        "Valencia",
-        "Atlético Madrid",
-        "Sevilla"
+    "0": [
+        "Disjoint"
     ],
-    "4": [],
-    "5": [],
-    "6": [],
-    "7": [],
-    "8": [],
-    "9": [],
-    "10": [],
-    "11": [],
-    "12": [],
+    "1": [
+        "idk"
+    ],
+    "2": [
+        "Disjoint"
+    ],
+    "3": [
+        "idk"
+    ],
+    "4": [
+        "idk"
+    ],
+    "5": [
+        "ContainedBy"
+    ],
+    "6": [
+        "Disjoint"
+    ],
+    "7": [
+        "idk"
+    ],
+    "8": [
+        "Overlap"
+    ],
+    "9": [
+        "Disjoint"
+    ],
+    "10": [
+        "Disjoint"
+    ],
+    "11": [
+        "idk"
+    ],
+    "12": [
+        "idk"
+    ],
     "13": [
         "idk",
         "Containment",
         "Containment"
     ],
-    "14": [],
+    "14": [
+        "idk"
+    ],
     "15": [
         "Disjoint"
     ],
-    "16": [],
-    "17": [],
-    "18": [],
-    "19": [],
-    "20": [],
-    "21": [],
-    "22": [],
-    "23": [],
-    "24": [],
+    "16": [
+        "Contained"
+    ],
+    "17": [
+        "Disjoint"
+    ],
+    "18": [
+        "idk"
+    ],
+    "19": [
+        "Disjoint"
+    ],
+    "20": [
+        "idk"
+    ],
+    "21": [
+        "idk"
+    ],
+    "22": [
+        "idk"
+    ],
+    "23": [
+        "idk"
+    ],
+    "24": [
+        "idk"
+    ],
     "25": [
         "idk",
         "idk",
@@ -46,282 +86,385 @@
         "idk",
         "idk"
     ],
-    "27": [],
-    "28": [],
-    "29": [],
-    "30": [],
-    "31": [],
+    "27": [
+        "idk"
+    ],
+    "28": [
+        "Disjoint"
+    ],
+    "29": [
+        "Disjoint"
+    ],
+    "30": [
+        "idk"
+    ],
+    "31": [
+        "idk"
+    ],
     "32": [
         "idk",
         "idk",
         "idk"
     ],
-    "33": [],
-    "34": [],
-    "35": [],
-    "36": [],
-    "37": [
-        "Estonia",
-        "Latvia",
-        "Lithuania",
-        "Russia",
-        "Sweden",
-        "Denmark",
-        "Germany",
-        "Poland",
-        "Finland",
-        "Estonia",
-        "Latvia",
-        "Lithuania",
-        "Russia",
-        "Sweden",
-        "Denmark",
-        "Germany",
-        "Poland",
-        "Finland"
-    ],
-    "38": [],
-    "39": [],
-    "40": [],
-    "41": [],
-    "42": [],
-    "43": [],
-    "44": [],
-    "45": [],
-    "46": [],
-    "47": [],
-    "48": [],
-    "49": [],
-    "50": [],
-    "51": [],
-    "52": [],
-    "53": [],
-    "54": [],
-    "55": [],
-    "56": [],
-    "57": [
-        "Establishment of the Baltic region's coastal countries",
+    "33": [
         "idk"
     ],
-    "58": [],
-    "59": [],
+    "34": [
+        "Disjoint"
+    ],
+    "35": [
+        "idk"
+    ],
+    "36": [
+        "idk"
+    ],
+    "37": [
+        "idk"
+    ],
+    "38": [
+        "idk"
+    ],
+    "39": [
+        "Disjoint"
+    ],
+    "40": [
+        "idk"
+    ],
+    "41": [
+        "Disjoint"
+    ],
+    "42": [
+        "Disjoint"
+    ],
+    "43": [
+        "idk"
+    ],
+    "44": [
+        "idk"
+    ],
+    "45": [
+        "idk"
+    ],
+    "46": [
+        "idk"
+    ],
+    "47": [
+        "Disjoint"
+    ],
+    "48": [
+        "idk"
+    ],
+    "49": [
+        "idk"
+    ],
+    "50": [
+        "Disjoint"
+    ],
+    "51": [
+        "idk"
+    ],
+    "52": [
+        "idk"
+    ],
+    "53": [
+        "idk"
+    ],
+    "54": [
+        "Disjoint"
+    ],
+    "55": [
+        "idk"
+    ],
+    "56": [
+        "idk"
+    ],
+    "57": [
+        "idk"
+    ],
+    "58": [
+        "idk"
+    ],
+    "59": [
+        "Disjoint"
+    ],
     "60": [
         "idk",
         "idk",
         "idk"
     ],
-    "61": [],
-    "62": [],
-    "63": [],
-    "64": [],
-    "65": [],
-    "66": [],
-    "67": [],
-    "68": [],
-    "69": [],
-    "70": [],
-    "71": [],
-    "72": [],
-    "73": [],
+    "61": [
+        "idk"
+    ],
+    "62": [
+        "idk"
+    ],
+    "63": [
+        "idk"
+    ],
+    "64": [
+        "idk"
+    ],
+    "65": [
+        "idk"
+    ],
+    "66": [
+        "idk"
+    ],
+    "67": [
+        "idk"
+    ],
+    "68": [
+        "Disjoint"
+    ],
+    "69": [
+        "idk"
+    ],
+    "70": [
+        "Disjoint"
+    ],
+    "71": [
+        "idk"
+    ],
+    "72": [
+        "idk"
+    ],
+    "73": [
+        "idk"
+    ],
     "74": [
         "idk",
         "Overlap",
         "Containment"
     ],
-    "75": [],
-    "76": [],
-    "77": [],
-    "78": [],
+    "75": [
+        "idk"
+    ],
+    "76": [
+        "idk"
+    ],
+    "77": [
+        "idk"
+    ],
+    "78": [
+        "idk"
+    ],
     "79": [
         "idk",
         "idk",
         "idk"
     ],
-    "80": [],
-    "81": [],
-    "82": [
-        "Germany",
-        "France",
-        "Italy",
-        "Spain",
-        "Belgium",
-        "Netherlands",
-        "Luxembourg",
-        "Denmark",
-        "Ireland",
-        "Greece",
-        "Portugal",
-        "Austria",
-        "Sweden",
-        "Finland",
-        "Cyprus",
-        "Czech Republic",
-        "Estonia",
-        "Hungary",
-        "Latvia",
-        "Lithuania",
-        "Malta",
-        "Poland",
-        "Slovakia",
-        "Slovenia",
-        "Bulgaria",
-        "Romania",
-        "Croatia",
-        "Austria",
-        "Croatia",
-        "Romania",
-        "Bulgaria",
-        "Slovakia",
-        "Slovenia",
-        "Estonia",
-        "Latvia",
-        "Lithuania",
-        "Cyprus",
-        "Malta",
-        "Poland",
-        "Hungary",
-        "Czech Republic",
-        "Sweden",
-        "Finland",
-        "Ireland",
-        "Greece",
-        "Portugal",
-        "Spain",
-        "France",
-        "Germany",
-        "Italy",
-        "Belgium",
-        "Luxembourg",
-        "Netherlands",
-        "Austria",
-        "Sweden",
-        "Finland",
-        "Cyprus",
-        "Czech Republic",
-        "Estonia",
-        "Hungary",
-        "Latvia",
-        "Lithuania",
-        "Malta",
-        "Poland",
-        "Slovakia",
-        "Slovenia",
-        "Bulgaria",
-        "Romania",
-        "Croatia",
-        "United Kingdom",
-        "Denmark",
-        "Sweden",
-        "Finland",
-        "Ireland",
-        "Greece",
-        "Portugal",
-        "Spain",
-        "France",
-        "Germany",
-        "Italy",
-        "Belgium",
-        "Luxembourg",
-        "Netherlands",
-        "Austria",
-        "Sweden",
-        "Finland",
-        "Cyprus",
-        "Czech Republic",
-        "Estonia",
-        "Hungary",
-        "Latvia",
-        "Lithuania",
-        "Malta",
-        "Poland",
-        "Slovakia",
-        "Slovenia",
-        "Bulgaria",
-        "Romania"
+    "80": [
+        "idk"
     ],
-    "83": [],
-    "84": [],
-    "85": [],
-    "86": [],
+    "81": [
+        "idk"
+    ],
+    "82": [
+        "Disjoint"
+    ],
+    "83": [
+        "ContainedBy"
+    ],
+    "84": [
+        "Disjoint"
+    ],
+    "85": [
+        "idk"
+    ],
+    "86": [
+        "Disjoint"
+    ],
     "87": [
         "idk",
         "Minus",
         "Disjoint"
     ],
     "88": [
-        "Containment"
+        "ContainedBy"
     ],
     "89": [
         "idk",
         "idk",
         "idk"
     ],
-    "90": [],
-    "91": [],
-    "92": [],
-    "93": [],
-    "94": [],
-    "95": [],
-    "96": [],
-    "97": [],
-    "98": [],
+    "90": [
+        "Disjoint"
+    ],
+    "91": [
+        "Disjoint"
+    ],
+    "92": [
+        "Disjoint"
+    ],
+    "93": [
+        "idk"
+    ],
+    "94": [
+        "idk"
+    ],
+    "95": [
+        "idk"
+    ],
+    "96": [
+        "idk"
+    ],
+    "97": [
+        "idk"
+    ],
+    "98": [
+        "ContainedBy"
+    ],
     "99": [
         "Disjoint"
     ],
     "100": [
-        "Overlap"
+        "idk"
     ],
-    "101": [],
-    "102": [],
-    "103": [],
-    "104": [],
-    "105": [],
-    "106": [],
-    "107": [],
+    "101": [
+        "idk"
+    ],
+    "102": [
+        "idk"
+    ],
+    "103": [
+        "Disjoint"
+    ],
+    "104": [
+        "idk"
+    ],
+    "105": [
+        "Disjoint"
+    ],
+    "106": [
+        "Disjoint"
+    ],
+    "107": [
+        "Disjoint"
+    ],
     "108": [
-        "Containment"
+        "Disjoint"
     ],
-    "109": [],
-    "110": [],
-    "111": [],
-    "112": [],
+    "109": [
+        "idk"
+    ],
+    "110": [
+        "idk"
+    ],
+    "111": [
+        "idk"
+    ],
+    "112": [
+        "idk"
+    ],
     "113": [
-        "Containment"
+        "ContainedBy"
     ],
-    "114": [],
-    "115": [],
-    "116": [],
-    "117": [],
-    "118": [],
-    "119": [],
-    "120": [],
-    "121": [],
-    "122": [],
-    "123": [],
-    "124": [],
-    "125": [],
-    "126": [],
-    "127": [],
-    "128": [],
-    "129": [],
-    "130": [],
-    "131": [],
-    "132": [],
-    "133": [],
-    "134": [],
-    "135": [],
-    "136": [],
-    "137": [],
-    "138": [],
-    "139": [],
-    "140": [],
-    "141": [],
-    "142": [],
-    "143": [],
-    "144": [],
-    "145": [],
-    "146": [],
-    "147": [],
-    "148": [],
-    "149": []
+    "114": [
+        "idk"
+    ],
+    "115": [
+        "idk"
+    ],
+    "116": [
+        "Disjoint"
+    ],
+    "117": [
+        "Disjoint"
+    ],
+    "118": [
+        "Disjoint"
+    ],
+    "119": [
+        "Disjoint"
+    ],
+    "120": [
+        "idk"
+    ],
+    "121": [
+        "ContainedBy"
+    ],
+    "122": [
+        "idk"
+    ],
+    "123": [
+        "idk"
+    ],
+    "124": [
+        "Disjoint"
+    ],
+    "125": [
+        "idk"
+    ],
+    "126": [
+        "idk"
+    ],
+    "127": [
+        "Disjoint"
+    ],
+    "128": [
+        "Disjoint"
+    ],
+    "129": [
+        "Disjoint"
+    ],
+    "130": [
+        "idk"
+    ],
+    "131": [
+        "ContainedBy"
+    ],
+    "132": [
+        "idk"
+    ],
+    "133": [
+        "Disjoint"
+    ],
+    "134": [
+        "Disjoint"
+    ],
+    "135": [
+        "idk"
+    ],
+    "136": [
+        "idk"
+    ],
+    "137": [
+        "ContainedBy"
+    ],
+    "138": [
+        "Disjoint"
+    ],
+    "139": [
+        "Disjoint"
+    ],
+    "140": [
+        "idk"
+    ],
+    "141": [
+        "idk"
+    ],
+    "142": [
+        "ContainedBy"
+    ],
+    "143": [
+        "ContainedBy"
+    ],
+    "144": [
+        "idk"
+    ],
+    "145": [
+        "Disjoint"
+    ],
+    "146": [
+        "Disjoint"
+    ],
+    "147": [
+        "idk"
+    ],
+    "148": [
+        "Disjoint"
+    ],
+    "149": [
+        "Disjoint"
+    ]
 }

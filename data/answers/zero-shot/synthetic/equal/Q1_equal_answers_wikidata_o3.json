@@ -617,7 +617,22 @@
         "Titanic",
         "Shakespeare in Love"
     ],
-    "25": [],
+    "25": [
+        "Acinonyx",
+        "Caracal",
+        "Catopuma",
+        "Felis",
+        "Herpailurus",
+        "Leopardus",
+        "Leptailurus",
+        "Lynx",
+        "Neofelis",
+        "Otocolobus",
+        "Panthera",
+        "Pardofelis",
+        "Prionailurus",
+        "Puma"
+    ],
     "26": [
         "Selma Lagerlöf",
         "Grazia Deledda",
@@ -996,7 +1011,9 @@
         "Shikoku",
         "Okinawa Island"
     ],
-    "47": [],
+    "47": [
+        "idk"
+    ],
     "48": [
         "George Washington",
         "Thomas Jefferson",
@@ -1062,7 +1079,54 @@
         "Sri Lanka",
         "Thailand"
     ],
-    "53": [],
+    "53": [
+        "Tokyo",
+        "Delhi",
+        "Shanghai",
+        "São Paulo",
+        "Mexico City",
+        "Cairo",
+        "Dhaka",
+        "Mumbai",
+        "Beijing",
+        "Osaka",
+        "New York City",
+        "Karachi",
+        "Chongqing",
+        "Istanbul",
+        "Buenos Aires",
+        "Kolkata",
+        "Lagos",
+        "Kinshasa",
+        "Manila",
+        "Tianjin",
+        "Guangzhou",
+        "Rio de Janeiro",
+        "Lahore",
+        "Bangalore",
+        "Shenzhen",
+        "Paris",
+        "Bogotá",
+        "Jakarta",
+        "Chennai",
+        "Lima",
+        "Bangkok",
+        "Hyderabad",
+        "Seoul",
+        "Nagoya",
+        "London",
+        "Chengdu",
+        "Tehran",
+        "Nanjing",
+        "Chicago",
+        "Ho Chi Minh City",
+        "Luanda",
+        "Ahmedabad",
+        "Kuala Lumpur",
+        "Wuhan",
+        "Hangzhou",
+        "Dongguan"
+    ],
     "54": [
         "Alberta",
         "British Columbia",
@@ -1081,7 +1145,9 @@
         "Earth",
         "Mars"
     ],
-    "56": [],
+    "56": [
+        "idk"
+    ],
     "57": [
         "ham",
         "pineapple"
@@ -1287,7 +1353,34 @@
         "Russia",
         "Qatar"
     ],
-    "68": [],
+    "68": [
+        "Azerbaijan",
+        "Belarus",
+        "Bolivia",
+        "Bosnia and Herzegovina",
+        "Cameroon",
+        "China",
+        "Djibouti",
+        "Eritrea",
+        "Gabon",
+        "The Gambia",
+        "Honduras",
+        "Iceland",
+        "India",
+        "Italy",
+        "Nauru",
+        "Nicaragua",
+        "Pakistan",
+        "Singapore",
+        "Suriname",
+        "Switzerland",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uganda",
+        "Vanuatu",
+        "Venezuela",
+        "Vietnam"
+    ],
     "69": [
         "Physics",
         "Chemistry",
@@ -1501,7 +1594,9 @@
         "urban planner",
         "writer"
     ],
-    "84": [],
+    "84": [
+        "idk"
+    ],
     "85": [
         "Harry Potter",
         "Ron Weasley",
@@ -1622,7 +1717,9 @@
         "Ecce Cor Meum",
         "Ocean's Kingdom"
     ],
-    "90": [],
+    "90": [
+        "idk"
+    ],
     "91": [
         "Mario Puzo",
         "Francis Ford Coppola"
@@ -1812,7 +1909,9 @@
         "Majel Barrett",
         "Grace Lee Whitney"
     ],
-    "107": [],
+    "107": [
+        "idk"
+    ],
     "108": [
         "Leonardo DiCaprio",
         "Marion Cotillard",
@@ -2409,7 +2508,9 @@
         "Jamaica",
         "Trinidad and Tobago"
     ],
-    "145": [],
+    "145": [
+        "idk"
+    ],
     "146": [
         "Pakistan",
         "China",
@@ -2443,5 +2544,57 @@
         "Forza Italia",
         "Italia Viva",
         "Article One"
+    ],
+    "51": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
     ]
 }

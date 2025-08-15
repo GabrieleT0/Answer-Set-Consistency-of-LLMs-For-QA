@@ -375,7 +375,9 @@
         "Tianwen-1 Orbiter",
         "Hope Mars Mission Orbiter"
     ],
-    "46": [],
+    "46": [
+        "idk"
+    ],
     "47": [
         "Indonesia",
         "Japan",
@@ -792,7 +794,9 @@
         "European Coal and Steel Community",
         "Organisation for Economic Co-operation and Development"
     ],
-    "96": [],
+    "96": [
+        "Stuart Roosa"
+    ],
     "97": [
         "Nevada",
         "Idaho",
@@ -976,7 +980,21 @@
         "Arizona",
         "Colorado"
     ],
-    "113": [],
+    "113": [
+        "Idaho",
+        "Oregon",
+        "Nevada",
+        "Utah",
+        "Wyoming",
+        "North Dakota",
+        "South Dakota",
+        "Nebraska",
+        "Kansas",
+        "Texas",
+        "Oklahoma",
+        "New Mexico",
+        "Arizona"
+    ],
     "114": [
         "Ruby",
         "Lua"
@@ -994,7 +1012,17 @@
         "Middle East Airlines",
         "Vietnam Airlines"
     ],
-    "116": [],
+    "116": [
+        "Aeroflot Russian Airlines",
+        "China Eastern Airlines",
+        "China Southern Airlines",
+        "Garuda Indonesia",
+        "Kenya Airways",
+        "Korean Air",
+        "Middle East Airlines",
+        "Vietnam Airlines",
+        "Xiamen Airlines"
+    ],
     "117": [
         "Play Misty for Me",
         "High Plains Drifter",
@@ -1271,5 +1299,30 @@
         "Brauerei Königshof GmbH",
         "Brauerei Kürzer GmbH & Co. KG",
         "Brauerei Stauder GmbH & Co. KG"
+    ],
+    "147": [
+        "Antonia Thomas",
+        "Jessica Raine"
+    ],
+    "148": [
+        "Rhine",
+        "Elbe",
+        "Ems",
+        "Weser",
+        "Meuse",
+        "Scheldt",
+        "Yser",
+        "Douro",
+        "Oder",
+        "Vistula",
+        "Torne River",
+        "Glomma",
+        "Göta älv",
+        "Skagerrak tributaries such as the Numedalslågen",
+        "Lule River",
+        "Kattegat tributaries such as the Gota River"
+    ],
+    "149": [
+        "idk"
     ]
 }

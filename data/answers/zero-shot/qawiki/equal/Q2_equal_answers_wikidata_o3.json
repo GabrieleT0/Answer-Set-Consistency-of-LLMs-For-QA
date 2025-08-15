@@ -1257,7 +1257,9 @@
         "Trinidad and Tobago",
         "Dominica"
     ],
-    "80": [],
+    "80": [
+        "idk"
+    ],
     "81": [
         "Afghanistan",
         "Algeria",
@@ -1309,7 +1311,9 @@
         "New Zealand",
         "South Africa"
     ],
-    "85": [],
+    "85": [
+        "idk"
+    ],
     "86": [
         "United States of America",
         "Mexico",
@@ -1372,8 +1376,29 @@
         "Tiger nut",
         "Walnut"
     ],
-    "89": [],
-    "90": [],
+    "89": [
+        "idk"
+    ],
+    "90": [
+        "Cinnamon roll",
+        "Cinnamon bun",
+        "Kanelbullar",
+        "Apple pie",
+        "Apple strudel",
+        "Apple crisp",
+        "Pumpkin pie",
+        "Rice pudding",
+        "Arroz con leche",
+        "Snickerdoodle",
+        "Churro",
+        "Speculaas",
+        "Zimtsterne",
+        "Gingerbread",
+        "Baklava",
+        "Banana bread",
+        "Apple cider doughnut",
+        "Cinnamon sugar doughnut"
+    ],
     "91": [
         "Pekingese",
         "Pug",
@@ -1390,11 +1415,26 @@
         "Xiasi Dog"
     ],
     "92": [],
-    "93": [],
+    "93": [
+        "Prosperity Party",
+        "Ethiopian Citizens for Social Justice",
+        "National Movement of Amhara",
+        "Balderas for Genuine Democracy",
+        "Oromo Federalist Congress",
+        "Blue Party",
+        "Unity for Democracy and Justice",
+        "Ethiopian Federal Democratic Unity Forum",
+        "Coalition for Unity and Democracy",
+        "New Generation Party",
+        "Gambela Peoples' Democratic Movement",
+        "All Ethiopian Unity Party"
+    ],
     "94": [
         "Patrick Vieira"
     ],
-    "95": [],
+    "95": [
+        "idk"
+    ],
     "96": [
         "Valéry Giscard d'Estaing",
         "Pierre Buyoya",
@@ -1437,9 +1477,15 @@
         "After Midnight",
         "Martyrs (2015 film)"
     ],
-    "99": [],
-    "100": [],
-    "101": [],
+    "99": [
+        "idk"
+    ],
+    "100": [
+        "idk"
+    ],
+    "101": [
+        "idk"
+    ],
     "102": [
         "Blade Runner (1982)",
         "Confessions d'un Barjo",
@@ -1506,10 +1552,18 @@
         "Hollywood Stargirl",
         "Red, White & Royal Blue"
     ],
-    "105": [],
-    "106": [],
-    "107": [],
-    "108": [],
+    "105": [
+        "idk"
+    ],
+    "106": [
+        "idk"
+    ],
+    "107": [
+        "idk"
+    ],
+    "108": [
+        "idk"
+    ],
     "109": [
         "Tim Carswell",
         "Julian Dean",
@@ -1578,8 +1632,42 @@
     "111": [
         "Jeremy Wang"
     ],
-    "112": [],
-    "113": [],
+    "112": [
+        "Boulevard Montmartre at Night",
+        "Rue Saint-Honoré, dans l'après-midi. Effet de pluie",
+        "Shepherdess Bringing in Sheep",
+        "La Cueillette des pois"
+    ],
+    "113": [
+        "Kings Park, Western Australia",
+        "Bold Park",
+        "Hyde Park, Perth",
+        "Queens Gardens, Perth",
+        "Stirling Gardens",
+        "Langley Park (Western Australia)",
+        "Sir James Mitchell Park",
+        "Mardalup Park",
+        "Neil McDougall Park",
+        "Harold Boas Gardens",
+        "Bardon Park",
+        "Wellington Square, Perth",
+        "Wireless Hill Park",
+        "John Oldham Park",
+        "Perry Lakes",
+        "Carine Regional Open Space",
+        "Canning River Regional Park",
+        "Herdsman Lake Regional Park",
+        "Beeliar Regional Park",
+        "Jandakot Regional Park",
+        "Koondoola Regional Park",
+        "Rockingham Lakes Regional Park",
+        "Yellagonga Regional Park",
+        "Whiteman Park",
+        "Neerabup National Park",
+        "Serpentine National Park",
+        "Walyunga National Park",
+        "Araluen Botanic Park"
+    ],
     "114": [
         "Johann Gadolin",
         "Vasili Samarsky-Bykhovets",
@@ -1645,8 +1733,26 @@
         "Percona Server for MySQL",
         "OceanBase"
     ],
-    "120": [],
-    "121": [],
+    "120": [
+        "Selknam",
+        "Austin Gilgronis",
+        "Doncaster Knights",
+        "Aviron Bayonnais",
+        "Biarritz Olympique",
+        "Section Paloise",
+        "Soyaux Angoulême XV Charente"
+    ],
+    "121": [
+        "Andrew the Apostle",
+        "Peter",
+        "Philip the Apostle",
+        "Bartholomew the Apostle",
+        "Simon the Zealot",
+        "Matthias",
+        "Julia of Corsica",
+        "Wilgefortis",
+        "Eulalia of Barcelona"
+    ],
     "122": [
         "Justina of Padua",
         "Sergius",
@@ -1671,7 +1777,9 @@
         "Amatriciana sauce",
         "Pesto alla genovese"
     ],
-    "125": [],
+    "125": [
+        "idk"
+    ],
     "126": [
         "Gattaca",
         "Paycheck"
@@ -1684,7 +1792,9 @@
         "Iskyss",
         "Stella Polaris"
     ],
-    "128": [],
+    "128": [
+        "idk"
+    ],
     "129": [
         "Oppo Find 5",
         "Oppo Find 7",
@@ -1787,7 +1897,9 @@
         "Vivo S1",
         "Vivo S1 Pro"
     ],
-    "130": [],
+    "130": [
+        "idk"
+    ],
     "131": [
         "Very Large Telescope",
         "VLT Survey Telescope",
@@ -1857,15 +1969,151 @@
         "Geoffrey Hinton",
         "Yann LeCun"
     ],
-    "134": [],
-    "135": [],
+    "134": [
+        "Pontifical Catholic University of Peru",
+        "Peruvian University Cayetano Heredia",
+        "University of Lima",
+        "ESAN University",
+        "University of the Pacific (Peru)",
+        "Scientific University of the South",
+        "Peruvian University of Applied Sciences",
+        "University of Piura",
+        "Catholic University of Santa María",
+        "San Pablo Catholic University",
+        "Catholic University Santo Toribio de Mogrovejo",
+        "Catholic University Sedes Sapientiae",
+        "Los Ángeles Catholic University of Chimbote",
+        "Antonio Ruiz de Montoya University",
+        "Women’s University of the Sacred Heart",
+        "Continental University",
+        "César Vallejo University",
+        "University of San Martín de Porres",
+        "Ricardo Palma University",
+        "Inca Garcilaso de la Vega University",
+        "Alas Peruanas University",
+        "Technological University of Peru",
+        "Northern Private University",
+        "Private University of Tacna",
+        "Antenor Orrego Private University",
+        "Private University of Ica",
+        "Franklin Roosevelt Private University of Huancayo",
+        "Juan Mejía Baca Private University",
+        "Norbert Wiener University",
+        "Le Cordon Bleu University",
+        "Autonomous University of Peru",
+        "Señor de Sipán University",
+        "Andina del Cusco University",
+        "Catholic University of Trujillo",
+        "Peruvian Union University",
+        "University of Sciences and Humanities",
+        "University of Sciences and Arts of Latin America",
+        "University of the Sciences and Informatics",
+        "National University of San Marcos",
+        "National University of Engineering (Peru)",
+        "National Agrarian University La Molina",
+        "Federico Villarreal National University",
+        "National University of Trujillo",
+        "National University of Saint Anthony the Abbot in Cuzco",
+        "National University of San Agustín",
+        "National University of Piura",
+        "National University of the Altiplano",
+        "National University of the Peruvian Amazon",
+        "Amazonian Mother of God National University",
+        "José Faustino Sánchez Carrión National University",
+        "Jorge Basadre Grohmann National University",
+        "National University of Santa",
+        "Hermilio Valdizán National University",
+        "Daniel Alcides Carrión National University",
+        "National University of Callao",
+        "National University of Tumbes",
+        "Pedro Ruiz Gallo National University",
+        "National University of Cajamarca",
+        "National University of San Cristóbal de Huamanga",
+        "Toribio Rodríguez de Mendoza National University",
+        "National University of San Luis Gonzaga",
+        "National University of Ucayali",
+        "National University of the Center of Peru",
+        "Santiago Antúnez de Mayolo National University",
+        "National Intercultural University of the Amazon",
+        "National University of Huancavelica",
+        "José María Arguedas National University",
+        "Micaela Bastidas de Apurímac National University",
+        "National University of Frontera",
+        "National University of Jaén",
+        "Ciro Alegría National University",
+        "National University of Cañete",
+        "South Lima National Technological University",
+        "National Autonomous University of Chota",
+        "High-Andean Autonomous University of Tarma",
+        "Autonomous University of Huanta",
+        "National University of Music of Peru",
+        "Fabiola Salazar Leguía National Intercultural University",
+        "National University of Juliaca",
+        "National Intercultural University of Quillabamba",
+        "San Juan de Lurigancho National Technological University",
+        "Autonomous University of Alto Amazonas",
+        "Enrique Guzmán y Valle National Education University",
+        "National University of Barranca"
+    ],
+    "135": [
+        "idk"
+    ],
     "136": [
         "Minesweeper",
         "Tetris",
         "Pokémon Red and Blue",
         "The Legend of Zelda"
     ],
-    "137": [],
+    "137": [
+        "Star Fox",
+        "Star Fox 64",
+        "Star Fox Adventures",
+        "Star Fox: Assault",
+        "Star Fox Command",
+        "Star Fox 64 3D",
+        "Star Fox Zero",
+        "Star Fox Guard",
+        "Starlink: Battle for Atlas",
+        "Sonic the Hedgehog 2",
+        "Sonic the Hedgehog 3",
+        "Sonic & Knuckles",
+        "Sonic Chaos",
+        "Sonic Triple Trouble",
+        "Sonic the Hedgehog CD",
+        "Sonic Adventure",
+        "Sonic Adventure 2",
+        "Sonic Advance",
+        "Sonic Advance 2",
+        "Sonic Advance 3",
+        "Sonic Heroes",
+        "Sonic Rush",
+        "Sonic Rush Adventure",
+        "Sonic Unleashed",
+        "Sonic the Hedgehog (2006 video game)",
+        "Sonic Colors",
+        "Sonic Generations",
+        "Sonic Lost World",
+        "Sonic Boom: Rise of Lyric",
+        "Sonic Boom: Shattered Crystal",
+        "Sonic Boom: Fire & Ice",
+        "Sonic Forces",
+        "Sonic Mania",
+        "Team Sonic Racing",
+        "Sonic Frontiers",
+        "Tails Adventure",
+        "Tails' Skypatrol",
+        "Lucky's Tale",
+        "Super Lucky's Tale",
+        "New Super Lucky's Tale",
+        "Spirit of the North",
+        "Never Alone",
+        "Tunic",
+        "Seasons After Fall",
+        "Stories: The Path of Destinies",
+        "The Little Fox",
+        "The First Tree",
+        "Endling – Extinction Is Forever"
+    ],
     "138": [
         "Counter-Strike: Global Offensive",
         "League of Legends",
@@ -1909,8 +2157,12 @@
         "Colombian Civil War (1860–1862)",
         "Liberal Revolution of 1895"
     ],
-    "140": [],
-    "141": [],
+    "140": [
+        "Toshihiko Izutsu"
+    ],
+    "141": [
+        "idk"
+    ],
     "143": [
         "Alice Schwarzer"
     ],
@@ -1973,5 +2225,9 @@
         "Gus Hall",
         "Louis Fisher",
         "Earl F. Dodge"
+    ],
+    "142": [
+        "Justine Musk",
+        "Talulah Riley"
     ]
 }

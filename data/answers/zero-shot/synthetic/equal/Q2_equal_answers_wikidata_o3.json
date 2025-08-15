@@ -651,7 +651,22 @@
         "Titanic",
         "Shakespeare in Love"
     ],
-    "25": [],
+    "25": [
+        "Panthera",
+        "Neofelis",
+        "Acinonyx",
+        "Caracal",
+        "Catopuma",
+        "Felis",
+        "Herpailurus",
+        "Leopardus",
+        "Leptailurus",
+        "Lynx",
+        "Otocolobus",
+        "Pardofelis",
+        "Prionailurus",
+        "Puma"
+    ],
     "26": [
         "Selma Lagerlöf",
         "Grazia Deledda",
@@ -856,7 +871,20 @@
         "Ozone",
         "Xenon"
     ],
-    "39": [],
+    "39": [
+        "Aldabrachelys gigantea",
+        "Balaena mysticetus",
+        "Somniosus microcephalus",
+        "Arctica islandica",
+        "Margaritifera margaritifera",
+        "Cyprinus rubrofuscus",
+        "Sebastes aleutianus",
+        "Lamellibrachia luymesi",
+        "Escarpia laminata",
+        "Scolymastra joubini",
+        "Monorhaphis chuni",
+        "Leiopathes glaberrima"
+    ],
     "40": [
         "Grand Theft Auto",
         "Grand Theft Auto: London 1969",
@@ -1086,7 +1114,9 @@
         "Thailand",
         "Mongolia"
     ],
-    "53": [],
+    "53": [
+        "idk"
+    ],
     "54": [
         "Alberta",
         "British Columbia",
@@ -1297,7 +1327,14 @@
         "AB",
         "O"
     ],
-    "66": [],
+    "66": [
+        "Johann Sebastian Bach",
+        "George Frideric Handel",
+        "Antonio Vivaldi",
+        "Henry Purcell",
+        "Arcangelo Corelli",
+        "Tomaso Albinoni"
+    ],
     "67": [
         "Uruguay",
         "Italy",
@@ -1318,7 +1355,23 @@
         "Russia",
         "Qatar"
     ],
-    "68": [],
+    "68": [
+        "Azerbaijan",
+        "Belarus",
+        "Bolivia",
+        "Cameroon",
+        "Djibouti",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Gabon",
+        "The Gambia",
+        "Honduras",
+        "Nicaragua",
+        "Togo",
+        "Turkmenistan",
+        "Uganda",
+        "Venezuela"
+    ],
     "69": [
         "Nobel Prize in Physics",
         "Nobel Prize in Chemistry",
@@ -1395,7 +1448,18 @@
         "Snowboarding",
         "Speed skating"
     ],
-    "76": [],
+    "76": [
+        "Chile",
+        "Peru",
+        "Australia",
+        "Canada",
+        "Indonesia",
+        "United States of America",
+        "Russia",
+        "Mexico",
+        "Kazakhstan",
+        "Zambia"
+    ],
     "77": [
         "Homo antecessor",
         "Homo bodoensis",
@@ -1512,7 +1576,9 @@
         "cartographer",
         "philosopher"
     ],
-    "84": [],
+    "84": [
+        "idk"
+    ],
     "85": [
         "Harry Potter",
         "Ron Weasley",
@@ -1650,7 +1716,9 @@
         "Good Evening New York City",
         "Amoeba Gig"
     ],
-    "90": [],
+    "90": [
+        "idk"
+    ],
     "91": [
         "Francis Ford Coppola",
         "Mario Puzo"
@@ -1873,7 +1941,58 @@
         "Celeste Yarnall",
         "Phyllis Douglas"
     ],
-    "107": [],
+    "107": [
+        "American Broadcasting Company",
+        "ABC News",
+        "ABC Owned Television Stations",
+        "ABC Signature",
+        "ABC Family Worldwide",
+        "Freeform",
+        "Disney Channel",
+        "Disney XD",
+        "Disney Junior",
+        "FX Networks",
+        "FX",
+        "FXX",
+        "FXM",
+        "National Geographic Partners",
+        "National Geographic Global Networks",
+        "National Geographic (American TV channel)",
+        "Nat Geo Wild",
+        "Nat Geo Mundo",
+        "Hulu",
+        "ESPN Inc.",
+        "BAMTech",
+        "Disney Streaming Services",
+        "The Walt Disney Studios",
+        "Walt Disney Studios Motion Pictures",
+        "Walt Disney Studios Home Entertainment",
+        "Buena Vista International",
+        "Walt Disney Pictures",
+        "Walt Disney Animation Studios",
+        "Pixar",
+        "Marvel Studios",
+        "Lucasfilm",
+        "20th Century Studios",
+        "Searchlight Pictures",
+        "20th Century Animation",
+        "20th Television",
+        "20th Television Animation",
+        "Blue Sky Studios",
+        "Star Studios",
+        "Fox Networks Group",
+        "Fox Networks Group Asia Pacific",
+        "Star India",
+        "Walt Disney Music Group",
+        "Walt Disney Records",
+        "Hollywood Records",
+        "Disney Theatrical Group",
+        "Walt Disney Imagineering",
+        "Walt Disney Parks and Resorts",
+        "Walt Disney World Company",
+        "Disneyland Resort",
+        "Maker Studios"
+    ],
     "108": [
         "Leonardo DiCaprio",
         "Marion Cotillard",
@@ -2447,7 +2566,9 @@
         "Suriname",
         "Trinidad and Tobago"
     ],
-    "145": [],
+    "145": [
+        "idk"
+    ],
     "146": [
         "China",
         "Pakistan",
@@ -2481,5 +2602,57 @@
         "Democratic Party",
         "Italia Viva",
         "Article One"
+    ],
+    "51": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
     ]
 }
