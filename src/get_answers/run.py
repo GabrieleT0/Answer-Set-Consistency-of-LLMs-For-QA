@@ -47,7 +47,7 @@ def main():
         logger.info("Step 3: Running relation classification and question generation")
         classify_main(config, logger)
 
-    logger.info("✅ All tasks completed successfully.")
+    logger.info("All tasks completed successfully.")
 
 
 if __name__ == "__main__":
