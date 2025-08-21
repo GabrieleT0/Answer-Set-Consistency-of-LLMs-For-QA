@@ -1,0 +1,72 @@
+2025-08-21 13:57:21,399 - INFO - Loaded config from config.json
+2025-08-21 13:57:21,400 - INFO - {'languages': ['en'], 'llm_models': ['gpt-5-mini', 'gpt-5'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-21 13:57:21,400 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-21 13:57:21,400 - INFO - Step 0: Identify Relations
+2025-08-21 13:57:21,400 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,410 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,410 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,421 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,421 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,424 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-21 13:57:21,424 - INFO - Step 1: Running single question benchmark
+2025-08-21 13:57:21,424 - INFO - Processing dataset: spinach.tsv for model: gpt-5-mini and language: en
+2025-08-21 13:57:21,424 - INFO - Processing column: Q1
+2025-08-21 13:57:53,535 - INFO - Content filter triggered for question: Which actors born in France have won an Oscar?
+2025-08-21 13:57:53,536 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-21 13:57:53,536 - INFO - Skipping question 93 due to content filter.
+2025-08-21 13:57:59,002 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-21 13:58:16,219 - INFO - Question 107: Which movies star both Liz Taylor and Richard Burton?
+2025-08-21 13:58:21,456 - INFO - Question 108: Which music albums contain the song Last Christmas?
+2025-08-21 13:58:47,144 - INFO - Question 109: Give me all Swedish holidays (including public, regional, and unofficial holidays).
+2025-08-21 13:58:57,207 - INFO - Question 110: List all the musicals with music by Leonard Bernstein.
+2025-08-21 13:59:00,517 - INFO - Question 111: Which writers studied in Istanbul?
+2025-08-21 13:59:04,904 - INFO - Question 112: Give me all Australian metalcore bands.
+2025-08-21 13:59:14,684 - INFO - Question 113: List all recognized types of eating disorders.
+2025-08-21 13:59:26,570 - INFO - Question 114: Which U.S. states are entirely or partially in the Mountain Time Zone?
+2025-08-21 13:59:31,690 - INFO - Question 115: Give me all children's books written by Danielle Steel.
+2025-08-21 13:59:41,724 - INFO - Question 116: Which programming languages have been influenced by Perl?
+2025-08-21 14:00:48,804 - INFO - Question 117: What airlines are part of the SkyTeam alliance?
+2025-08-21 14:01:03,090 - INFO - Question 118: Could you please list other books have been written by the author of The Fault in Our Stars?
+2025-08-21 14:01:26,346 - INFO - Question 119: Which films starring Clint Eastwood did he direct himself?
+2025-08-21 14:01:31,832 - INFO - Question 120: Give me all actors with the last name Baldwin.
+2025-08-21 14:01:35,354 - INFO - Question 121: List all English Gothic buildings in Kent.
+2025-08-21 14:01:40,577 - INFO - Question 122: In which countries can you pay using the West African CFA franc?
+2025-08-21 14:01:44,777 - INFO - Question 123: Which weapons did Heckler & Koch develop?
+2025-08-21 14:01:47,503 - INFO - Question 124: Give me all films produced by Hal Roach.
+2025-08-21 14:01:53,164 - INFO - Question 125: Give me a list of all bandleaders that play trumpet and have won a Grammy.
+2025-08-21 14:01:56,018 - INFO - Question 126: Give me all people that were born in Vienna and died in Berlin.
+2025-08-21 14:02:12,810 - INFO - Question 127: Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+2025-08-21 14:02:23,627 - INFO - Question 128: Give me all types or lines of the German Shepherd dog.
+2025-08-21 14:02:30,327 - INFO - Question 129: Which airports does Yeti Airlines serve?
+2025-08-21 14:02:38,231 - INFO - Question 130: Which awards did Douglas Hofstadter win?
+2025-08-21 14:02:44,434 - INFO - Question 131: Give me all launch pads used by NASA.
+2025-08-21 14:03:01,674 - INFO - Question 132: List all the musicals with music composed by Elton John.
+2025-08-21 14:03:07,038 - INFO - Question 133: Which companies produce hovercrafts?
+2025-08-21 14:03:12,964 - INFO - Question 134: Which electronics companies were founded in Beijing?
+2025-08-21 14:03:17,934 - INFO - Question 135: List the children of Margaret Thatcher.
+2025-08-21 14:03:28,310 - INFO - Question 136: Give me all members of Prodigy.
+2025-08-21 14:03:37,218 - INFO - Question 137: Who are the writers of the Wall album of Pink Floyd?
+2025-08-21 14:03:44,565 - INFO - Question 138: Which television shows were created by Walt Disney?
+2025-08-21 14:03:53,389 - INFO - Question 139: Which books by Kerouac were published by Viking Press?
+2025-08-21 14:04:00,045 - INFO - Question 140: In which films did both Julia Roberts and Richard Gere play?
+2025-08-21 14:04:04,288 - INFO - Question 141: Give me a list of all Canadian record labels associated with Grunge music.
+2025-08-21 14:04:12,743 - INFO - Question 142: Give me all actors starring in Last Action Hero.
+2025-08-21 14:04:29,772 - INFO - Question 143: Which shows aired for the first time in the same year as Saturday Night Live?
+2025-08-21 14:04:34,139 - INFO - Question 144: Which artists have the same birthday as Rachel Stevens?
+2025-08-21 14:04:37,330 - INFO - Question 145: Which airports are located in California, USA?
+2025-08-21 14:04:51,523 - INFO - Question 146: Which monarchs of the United Kingdom were married to a German spouse?
+2025-08-21 14:05:41,633 - INFO - Question 147: Give me all writers that won the Nobel Prize in literature.
+2025-08-21 14:05:52,071 - INFO - Question 148: Give me English actors starring in Lovesick.
+2025-08-21 14:05:57,746 - INFO - Question 149: Which rivers flow into the North Sea?
+2025-08-21 14:06:05,621 - INFO - Question 150: Which beer brewing companies are located in North-Rhine Westphalia?
+2025-08-21 14:06:05,635 - INFO - Processing column: Q2
+2025-08-21 14:06:14,703 - INFO - Question 1: What television programs did John Cleese create?
+2025-08-21 14:06:22,890 - INFO - Question 2: What countries have a communist government?
+2025-08-21 14:06:25,251 - INFO - Question 3: Which politicians had a spouse who was German?
+2025-08-21 14:06:33,295 - INFO - Question 4: Can you list every soccer club located in Spain that play in La Liga?
+2025-08-21 14:06:38,600 - INFO - Question 5: Which telecommunications organizations are based in Belgium?
+2025-08-21 14:06:43,286 - INFO - Question 6: What actors have a German birthplace?
+2025-08-21 14:06:50,683 - INFO - Question 7: Which countries do the Himalayas span?
+2025-08-21 14:06:56,547 - INFO - Question 8: Which platforms stream the Hunter x Hunter anime series?
+2025-08-21 14:07:05,735 - INFO - Question 9: Which countries does the Danube flow through?
+2025-08-21 14:07:13,063 - INFO - Question 10: In which professions are John Lennon’s sons involved?

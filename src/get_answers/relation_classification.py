@@ -95,7 +95,7 @@ def main(config = None, logger = setup_logger()):
     if config == None: 
         config = {
             "datasets":['synthetic.tsv', "spinach.tsv", "qawiki.tsv"],
-            "llm_models": ["o3"],
+            "llm_models": ["gpt-5-mini"],
             "languages": ['en']
         }
 
