@@ -1,11 +1,10 @@
 {
     "0": [
-        "My Best Friend's Birthday",
         "Reservoir Dogs",
         "Pulp Fiction",
         "Jackie Brown",
-        "Kill Bill: Vol. 1",
-        "Kill Bill: Vol. 2",
+        "Kill Bill: Volume 1",
+        "Kill Bill: Volume 2",
         "Death Proof",
         "Inglourious Basterds",
         "Django Unchained",
@@ -18,13 +17,13 @@
     "2": [
         "Victoria, Princess Royal",
         "Albert Edward, Prince of Wales",
-        "Alice, Princess of Hesse and by Rhine",
-        "Alfred, Duke of Edinburgh and of Saxe-Coburg and Gotha",
+        "Alice, Grand Duchess of Hesse and by Rhine",
+        "Alfred, Duke of Edinburgh",
         "Helena, Princess Christian",
-        "Louise, Duchess of Argyll",
+        "Louise, Princess Royal",
         "Arthur, Duke of Connaught and Strathearn",
         "Leopold, Duke of Albany",
-        "Beatrice, Princess Henry of Battenberg"
+        "Beatrice, Princess Beatrice"
     ],
     "3": [
         "German",
@@ -45,13 +44,45 @@
         "Oganesson"
     ],
     "6": [
-        "idk"
+        "Amazon.com",
+        "Amazon Web Services",
+        "Whole Foods Market",
+        "Zappos",
+        "Audible",
+        "Goodreads",
+        "Internet Movie Database",
+        "Ring",
+        "Blink",
+        "ComiXology",
+        "Twitch Interactive",
+        "Souq",
+        "Shopbop",
+        "Woot",
+        "LoveFilm",
+        "The Book Depository",
+        "PillPack",
+        "Amazon Pharmacy",
+        "Eero",
+        "Zoox",
+        "Metro-Goldwyn-Mayer",
+        "Amazon Publishing",
+        "Amazon Game Studios",
+        "Amazon Games",
+        "Amazon Studios",
+        "Prime Video",
+        "Amazon Music",
+        "Amazon Advertising",
+        "Amazon Pay",
+        "Amazon Logistics",
+        "Amazon Go",
+        "Amazon Fresh",
+        "Prime Air",
+        "Amazon Robotics"
     ],
     "7": [
         "Go",
         "Dart",
-        "Sawzall",
-        "Starlark"
+        "Sawzall"
     ],
     "8": [
         "Fear and Desire",
@@ -71,6 +102,7 @@
     "9": [
         "Sully Prudhomme",
         "Frédéric Mistral",
+        "Romain Rolland",
         "Anatole France",
         "Roger Martin du Gard",
         "André Gide",
@@ -79,7 +111,6 @@
         "Saint-John Perse",
         "Jean-Paul Sartre",
         "Claude Simon",
-        "Gao Xingjian",
         "Jean-Marie Gustave Le Clézio",
         "Patrick Modiano",
         "Annie Ernaux"
@@ -87,7 +118,7 @@
     "10": [
         "Athens",
         "Paris",
-        "St. Louis",
+        "Saint Louis",
         "London",
         "Stockholm",
         "Antwerp",
@@ -98,6 +129,7 @@
         "London",
         "Helsinki",
         "Melbourne",
+        "Stockholm",
         "Rome",
         "Tokyo",
         "Mexico City",
@@ -117,23 +149,41 @@
         "Paris"
     ],
     "11": [
-        "idk"
+        "Emperor penguin",
+        "King penguin",
+        "Gentoo penguin",
+        "Adélie penguin",
+        "Chinstrap penguin",
+        "Little penguin",
+        "Magellanic penguin",
+        "Humboldt penguin",
+        "Galapagos penguin",
+        "African penguin",
+        "Yellow-eyed penguin",
+        "Fiordland penguin",
+        "Snares penguin",
+        "Erect-crested penguin",
+        "Macaroni penguin",
+        "Royal penguin",
+        "Northern rockhopper penguin",
+        "Eastern rockhopper penguin",
+        "Southern rockhopper penguin"
     ],
     "12": [
         "Andrew Jackson",
         "Martin Van Buren",
-        "James K. Polk",
+        "James Knox Polk",
         "Franklin Pierce",
         "James Buchanan",
         "Andrew Johnson",
         "Grover Cleveland",
         "Woodrow Wilson",
-        "Franklin D. Roosevelt",
-        "Harry S. Truman",
-        "John F. Kennedy",
-        "Lyndon B. Johnson",
+        "Franklin Delano Roosevelt",
+        "Harry Truman",
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
         "Jimmy Carter",
-        "Bill Clinton",
+        "William Jefferson Clinton",
         "Barack Obama",
         "Joe Biden"
     ],
@@ -142,7 +192,6 @@
         "The Broadway Melody",
         "All Quiet on the Western Front",
         "Cimarron",
-        "Grand Hotel",
         "Cavalcade",
         "It Happened One Night",
         "Mutiny on the Bounty",
@@ -159,13 +208,14 @@
         "The Best Years of Our Lives",
         "Gentleman's Agreement",
         "Hamlet",
+        "All the King's Men",
         "All About Eve",
         "An American in Paris",
         "The Greatest Show on Earth",
         "From Here to Eternity",
         "On the Waterfront",
         "Marty",
-        "Around the World in 80 Days",
+        "Around the World in Eighty Days",
         "The Bridge on the River Kwai",
         "Gigi",
         "Ben-Hur",
@@ -227,15 +277,15 @@
         "Spotlight",
         "Moonlight",
         "The Shape of Water",
-        "Green Book",
+        "Coda",
         "Parasite",
         "Nomadland",
         "Everything Everywhere All at Once",
-        "O"
+        "Oppenheimer"
     ],
     "14": [
         "Nausicaä of the Valley of the Wind",
-        "Laputa: Castle in the Sky",
+        "Castle in the Sky",
         "My Neighbor Totoro",
         "Grave of the Fireflies",
         "Kiki's Delivery Service",
@@ -250,7 +300,7 @@
         "Howl's Moving Castle",
         "Tales from Earthsea",
         "Ponyo",
-        "The Secret World of Arrietty",
+        "Arrietty",
         "From Up on Poppy Hill",
         "The Wind Rises",
         "The Tale of the Princess Kaguya",
@@ -263,27 +313,32 @@
     ],
     "16": [
         "Buenos Aires",
+        "Sucre",
         "La Paz",
-        "Brasília",
+        "Brasilia",
         "Santiago",
-        "Bogotá",
+        "Bogota",
         "Quito",
         "Georgetown",
-        "Asunción",
+        "Asuncion",
         "Lima",
         "Paramaribo",
         "Montevideo",
         "Caracas"
     ],
     "17": [
-        "Volkswagen",
         "Audi",
-        "SEAT",
-        "Škoda",
+        "Seat",
+        "Skoda",
+        "Volkswagen",
         "Bentley",
         "Bugatti",
         "Lamborghini",
-        "Porsche"
+        "Porsche",
+        "Cupra",
+        "Ducati",
+        "Scania",
+        "MAN"
     ],
     "18": [
         "Catherine of Aragon",
@@ -294,15 +349,77 @@
         "Catherine Parr"
     ],
     "19": [
-        "idk"
+        "United Kingdom",
+        "United States of America",
+        "Canada",
+        "Ireland",
+        "Malta",
+        "Cyprus",
+        "India",
+        "Pakistan",
+        "Bangladesh",
+        "Sri Lanka",
+        "Myanmar",
+        "Malaysia",
+        "Singapore",
+        "Brunei",
+        "Maldives",
+        "Mauritius",
+        "Seychelles",
+        "Kenya",
+        "Uganda",
+        "Tanzania",
+        "Nigeria",
+        "Ghana",
+        "Sierra Leone",
+        "The Gambia",
+        "Cameroon",
+        "Lesotho",
+        "Eswatini",
+        "Botswana",
+        "Malawi",
+        "Zambia",
+        "Zimbabwe",
+        "Egypt",
+        "Sudan",
+        "Somalia",
+        "South Africa",
+        "Yemen",
+        "Oman",
+        "United Arab Emirates",
+        "Qatar",
+        "Bahrain",
+        "Kuwait",
+        "Iraq",
+        "Israel",
+        "Jordan",
+        "Belize",
+        "Guyana",
+        "Jamaica",
+        "Bahamas",
+        "Barbados",
+        "Antigua and Barbuda",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Grenada",
+        "Dominica",
+        "Trinidad and Tobago",
+        "Nauru",
+        "Kiribati",
+        "Tuvalu",
+        "Vanuatu",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Fiji"
     ],
     "20": [
         "John Lennon",
         "Paul McCartney",
         "George Harrison",
-        "Ringo Starr",
+        "Stuart Sutcliffe",
         "Pete Best",
-        "Stuart Sutcliffe"
+        "Ringo Starr"
     ],
     "21": [
         "Lesotho",
@@ -310,26 +427,47 @@
         "Vatican City"
     ],
     "22": [
-        "Athens",
         "London",
-        "Los Angeles",
         "Paris",
+        "Los Angeles",
         "Tokyo"
     ],
     "23": [
         "idk"
     ],
     "24": [
-        "idk"
+        "Driving Miss Daisy",
+        "Dances with Wolves",
+        "The Silence of the Lambs",
+        "Unforgiven",
+        "Schindler's List",
+        "Forrest Gump",
+        "Braveheart",
+        "The English Patient",
+        "Titanic",
+        "Shakespeare in Love"
     ],
     "25": [
-        "idk"
+        "Acinonyx",
+        "Caracal",
+        "Catopuma",
+        "Felis",
+        "Leopardus",
+        "Leptailurus",
+        "Lynx",
+        "Neofelis",
+        "Panthera",
+        "Pardofelis",
+        "Prionailurus",
+        "Puma",
+        "Herpailurus",
+        "Otocolobus"
     ],
     "26": [
         "Selma Lagerlöf",
         "Grazia Deledda",
         "Sigrid Undset",
-        "Pearl S. Buck",
+        "Pearl S Buck",
         "Gabriela Mistral",
         "Nelly Sachs",
         "Nadine Gordimer",
@@ -339,6 +477,7 @@
         "Doris Lessing",
         "Herta Müller",
         "Alice Munro",
+        "Svetlana Alexievich",
         "Olga Tokarczuk",
         "Louise Glück",
         "Annie Ernaux"
@@ -350,26 +489,29 @@
     "28": [
         "Tennessine",
         "Nihonium",
-        "Moscovium",
         "Oganesson",
+        "Moscovium",
         "Livermorium"
     ],
     "29": [
         "Holy See",
-        "State of Palestine"
+        "State of Palestine",
+        "Sovereign Military Order of Malta"
     ],
     "30": [
-        "BGN",
-        "CZK",
-        "DKK",
-        "EUR",
-        "HUF",
-        "PLN",
-        "RON",
-        "SEK"
+        "Euro",
+        "Bulgarian lev",
+        "Czech koruna",
+        "Danish krone",
+        "Hungarian forint",
+        "Polish zloty",
+        "Romanian leu",
+        "Swedish krona"
     ],
     "31": [
-        "idk"
+        "Bolivia",
+        "India",
+        "South Africa"
     ],
     "32": [
         "Hinduism",
@@ -385,7 +527,58 @@
         "blue"
     ],
     "35": [
-        "idk"
+        "Antigua and Barbuda",
+        "Australia",
+        "The Bahamas",
+        "Barbados",
+        "Belize",
+        "Botswana",
+        "Cameroon",
+        "Canada",
+        "Dominica",
+        "Eswatini",
+        "Fiji",
+        "The Gambia",
+        "Ghana",
+        "Grenada",
+        "Guyana",
+        "India",
+        "Ireland",
+        "Jamaica",
+        "Kenya",
+        "Kiribati",
+        "Lesotho",
+        "Liberia",
+        "Malawi",
+        "Mauritius",
+        "Federated States of Micronesia",
+        "Nauru",
+        "Namibia",
+        "New Zealand",
+        "Nigeria",
+        "Pakistan",
+        "Palau",
+        "Papua New Guinea",
+        "Philippines",
+        "Rwanda",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Samoa",
+        "Seychelles",
+        "Sierra Leone",
+        "Singapore",
+        "Solomon Islands",
+        "South Africa",
+        "South Sudan",
+        "Tanzania",
+        "Trinidad and Tobago",
+        "Tuvalu",
+        "Uganda",
+        "Zimbabwe",
+        "Zambia",
+        "Marshall Islands",
+        "Vanuatu"
     ],
     "36": [
         "Africa",
@@ -402,7 +595,8 @@
         "Career of Evil",
         "Lethal White",
         "Troubled Blood",
-        "The Ink Black Heart"
+        "The Ink Black Heart",
+        "The Running Grave"
     ],
     "38": [
         "Nitrogen",
@@ -416,38 +610,40 @@
         "Hydrogen",
         "Water vapor",
         "Ozone",
-        "Xenon",
         "Nitrous oxide",
-        "Nitric oxide",
-        "Nitrogen dioxide",
         "Sulfur dioxide",
-        "Carbon monoxide"
+        "Carbon monoxide",
+        "Sulfur hexafluoride",
+        "Xenon",
+        "Radon"
     ],
     "39": [
         "Arctica islandica",
         "Balaena mysticetus",
         "Somniosus microcephalus",
-        "Sebastes aleutianus"
+        "Leiopathes glaberrima"
     ],
     "40": [
         "Grand Theft Auto",
-        "Grand Theft Auto: London 1969",
+        "Grand Theft Auto London 1969",
         "Grand Theft Auto 2",
-        "Grand Theft Auto III",
-        "Grand Theft Auto: Vice City",
-        "Grand Theft Auto: San Andreas",
-        "Grand Theft Auto: Liberty City Stories",
-        "Grand Theft Auto: Vice City Stories",
+        "Grand Theft Auto 3",
+        "Grand Theft Auto Vice City",
+        "Grand Theft Auto San Andreas",
         "Grand Theft Auto Advance",
-        "Grand Theft Auto IV",
-        "Grand Theft Auto IV: The Lost and Damned",
-        "Grand Theft Auto IV: The Ballad of Gay Tony",
-        "Grand Theft Auto: Chinatown Wars",
-        "Grand Theft Auto V",
+        "Grand Theft Auto Liberty City Stories",
+        "Grand Theft Auto Vice City Stories",
+        "Grand Theft Auto 4",
+        "Grand Theft Auto 4 The Lost and Damned",
+        "Grand Theft Auto 4 The Ballad of Gay Tony",
+        "Grand Theft Auto Episodes from Liberty City",
+        "Grand Theft Auto Chinatown Wars",
+        "Grand Theft Auto 5",
         "Grand Theft Auto Online"
     ],
     "41": [
-        "Argentina",
+        "Peru",
+        "Bolivia",
         "Chile"
     ],
     "42": [
@@ -486,13 +682,14 @@
         "James Madison",
         "James Monroe",
         "William Henry Harrison",
-        "Zachary Taylor",
         "John Tyler",
+        "Zachary Taylor",
         "Woodrow Wilson"
     ],
     "49": [
         "Albania",
         "Belgium",
+        "Bulgaria",
         "Canada",
         "Croatia",
         "Czech Republic",
@@ -521,7 +718,7 @@
         "Sweden",
         "Turkey",
         "United Kingdom",
-        "United States"
+        "United States of America"
     ],
     "50": [
         "Cirrus",
@@ -531,9 +728,9 @@
         "Altocumulus",
         "Stratus",
         "Stratocumulus",
-        "Nimbostratus",
         "Cumulus",
-        "Cumulonimbus"
+        "Cumulonimbus",
+        "Nimbostratus"
     ],
     "51": [
         "Alabama",
@@ -588,7 +785,12 @@
         "Wyoming"
     ],
     "52": [
-        "idk"
+        "Bhutan",
+        "Cambodia",
+        "Laos",
+        "Myanmar",
+        "Sri Lanka",
+        "Thailand"
     ],
     "53": [
         "idk"
@@ -615,8 +817,8 @@
         "idk"
     ],
     "57": [
-        "pineapple",
-        "ham"
+        "ham",
+        "pineapple"
     ],
     "58": [
         "Violin",
@@ -634,50 +836,93 @@
         "black"
     ],
     "61": [
-        "Argentina",
         "Brazil",
-        "England",
-        "France",
         "Germany",
         "Italy",
+        "Argentina",
+        "Uruguay",
+        "France",
         "Spain",
-        "Uruguay"
+        "England"
     ],
     "62": [
-        "idk"
+        "United Kingdom of Great Britain and Northern Ireland",
+        "Canada",
+        "Australia",
+        "New Zealand",
+        "Jamaica",
+        "Antigua and Barbuda",
+        "The Bahamas",
+        "Grenada",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Belize",
+        "Solomon Islands",
+        "Papua New Guinea",
+        "Tuvalu",
+        "Malaysia",
+        "Brunei",
+        "Thailand",
+        "Cambodia",
+        "Japan",
+        "Spain",
+        "The Netherlands",
+        "Belgium",
+        "Sweden",
+        "Norway",
+        "Denmark",
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Oman",
+        "Qatar",
+        "Kuwait",
+        "Bahrain",
+        "Jordan",
+        "Morocco",
+        "Lesotho",
+        "Eswatini",
+        "Monaco",
+        "Liechtenstein",
+        "Luxembourg",
+        "Vatican City",
+        "Bhutan"
     ],
     "63": [
-        "United States",
+        "Timor-Leste",
+        "United States of America",
         "Ecuador",
         "El Salvador",
-        "Timor-Leste",
         "Federated States of Micronesia",
-        "Palau",
-        "Marshall Islands"
+        "Marshall Islands",
+        "Palau"
     ],
     "64": [
         "Barbados",
+        "Denmark",
+        "India",
+        "Greece",
+        "Moldova",
+        "Slovakia",
+        "Slovenia",
+        "Hungary",
+        "Peru",
+        "Tanzania",
         "Ethiopia",
         "Georgia",
-        "Greece",
-        "Hungary",
+        "Kosovo",
         "Honduras",
-        "India",
-        "Moldova",
-        "Peru",
-        "Slovenia",
-        "Tanzania",
         "Trinidad and Tobago"
     ],
     "65": [
-        "A+",
-        "A-",
-        "B+",
-        "B-",
-        "AB+",
-        "AB-",
-        "O+",
-        "O-"
+        "A positive",
+        "A negative",
+        "B positive",
+        "B negative",
+        "AB positive",
+        "AB negative",
+        "O positive",
+        "O negative"
     ],
     "66": [
         "idk"
@@ -695,12 +940,14 @@
         "Germany",
         "Argentina",
         "Spain",
-        "United States",
+        "United States of America",
+        "Republic of Korea",
         "Japan",
-        "South Korea",
+        "South Africa",
         "Russia",
         "Qatar",
-        "Canada"
+        "Canada",
+        "United Mexican States"
     ],
     "68": [
         "idk"
@@ -730,31 +977,31 @@
         "100 euro banknote",
         "200 euro banknote",
         "500 euro banknote",
-        "1 euro coin",
-        "2 euro coin",
-        "50 euro cent coin",
-        "20 euro cent coin",
-        "10 euro cent coin",
-        "5 euro cent coin",
+        "1 euro cent coin",
         "2 euro cent coin",
-        "1 euro cent coin"
+        "5 euro cent coin",
+        "10 euro cent coin",
+        "20 euro cent coin",
+        "50 euro cent coin",
+        "1 euro coin",
+        "2 euro coin"
     ],
     "72": [
-        "Pacific Ocean",
+        "Arctic Ocean",
         "Atlantic Ocean",
         "Indian Ocean",
-        "Southern Ocean",
-        "Arctic Ocean"
+        "Pacific Ocean",
+        "Southern Ocean"
     ],
     "73": [
-        "Ailuropoda melanoleuca",
-        "Helarctos malayanus",
-        "Melursus ursinus",
-        "Tremarctos ornatus",
-        "Ursus americanus",
-        "Ursus arctos",
-        "Ursus maritimus",
-        "Ursus thibetanus"
+        "American black bear (Ursus americanus)",
+        "Asiatic black bear (Ursus thibetanus)",
+        "Brown bear (Ursus arctos)",
+        "Polar bear (Ursus maritimus)",
+        "Sloth bear (Melursus ursinus)",
+        "Sun bear (Helarctos malayanus)",
+        "Spectacled bear (Tremarctos ornatus)",
+        "Giant panda (Ailuropoda melanoleuca)"
     ],
     "74": [
         "Islam",
@@ -785,17 +1032,18 @@
         "idk"
     ],
     "77": [
-        "Homo antecessor",
-        "Homo ergaster",
-        "Homo erectus",
         "Homo habilis",
+        "Homo erectus",
+        "Homo ergaster",
+        "Homo georgicus",
+        "Homo antecessor",
         "Homo heidelbergensis",
         "Homo neanderthalensis",
         "Homo floresiensis",
         "Homo luzonensis",
+        "Homo naledi",
         "Homo denisova",
         "Homo rudolfensis",
-        "Homo georgicus",
         "Homo cepranensis"
     ],
     "78": [
@@ -808,28 +1056,31 @@
         "Ancient Thebes with its Necropolis",
         "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
         "Nubian Monuments from Abu Simbel to Philae",
-        "Historic Centre of Cairo",
-        "Saint Catherine's Monastery",
         "Wadi al-Hitan",
-        "Abu Mena"
+        "Saint Catherine Area",
+        "Historic Cairo"
     ],
     "80": [
-        "idk"
+        "Homo habilis",
+        "Homo erectus",
+        "Homo heidelbergensis",
+        "Homo neanderthalensis",
+        "Homo sapiens",
+        "Homo floresiensis"
     ],
     "81": [
         "Austria",
         "Azerbaijan",
-        "Monaco",
+        "Belgium",
         "Denmark",
-        "Finland",
         "France",
         "Germany",
         "Greece",
         "Ireland",
         "Israel",
         "Italy",
-        "Latvia",
         "Luxembourg",
+        "Monaco",
         "Netherlands",
         "Norway",
         "Portugal",
@@ -843,27 +1094,45 @@
         "Yugoslavia"
     ],
     "82": [
-        "Auvergne-Rhône-Alpes",
-        "Bourgogne-Franche-Comté",
-        "Bretagne",
+        "Auvergne-Rhone-Alpes",
+        "Bourgogne-Franche-Comte",
+        "Brittany",
         "Centre-Val de Loire",
-        "Corse",
+        "Corsica",
         "Grand Est",
         "Hauts-de-France",
-        "Île-de-France",
-        "Normandie",
-        "Nouvelle-Aquitaine",
+        "Ile-de-France",
+        "Normandy",
+        "New Aquitaine",
         "Occitanie",
         "Pays de la Loire",
-        "Provence-Alpes-Côte d'Azur",
+        "Provence-Alpes-Cote d'Azur",
+        "French Guiana",
         "Guadeloupe",
-        "Guyane",
         "Martinique",
         "Mayotte",
-        "Réunion"
+        "Reunion"
     ],
     "83": [
-        "idk"
+        "Painter",
+        "Sculptor",
+        "Architect",
+        "Engineer",
+        "Inventor",
+        "Scientist",
+        "Anatomist",
+        "Cartographer",
+        "Draftsman",
+        "Designer",
+        "Writer",
+        "Musician",
+        "Mathematician",
+        "Botanist",
+        "Geologist",
+        "Natural philosopher",
+        "Military engineer",
+        "Hydraulic engineer",
+        "Urban planner"
     ],
     "84": [
         "idk"
@@ -880,11 +1149,30 @@
         "idk"
     ],
     "88": [
-        "ETH Zurich",
+        "Swiss Federal Institute of Technology in Zurich",
         "University of Zurich"
     ],
     "89": [
-        "idk"
+        "McCartney",
+        "Ram",
+        "McCartney 2",
+        "Tug of War",
+        "Pipes of Peace",
+        "Give My Regards to Broad Street",
+        "Press to Play",
+        "Flowers in the Dirt",
+        "Off the Ground",
+        "Flaming Pie",
+        "Run Devil Run",
+        "Liverpool Sound Collage",
+        "Driving Rain",
+        "Chaos and Creation in the Backyard",
+        "Ecce Cor Meum",
+        "Memory Almost Full",
+        "Kisses on the Bottom",
+        "New",
+        "Egypt Station",
+        "McCartney 3"
     ],
     "90": [
         "idk"
@@ -907,14 +1195,12 @@
         "Equatorial Guinea",
         "Guinea-Bissau",
         "Mozambique",
-        "Portugal",
         "Sao Tome and Principe",
-        "Timor-Leste"
+        "Timor-Leste",
+        "Portugal"
     ],
     "95": [
         "Abruzzo",
-        "Aosta Valley",
-        "Apulia",
         "Basilicata",
         "Calabria",
         "Campania",
@@ -922,57 +1208,71 @@
         "Friuli-Venezia Giulia",
         "Lazio",
         "Liguria",
-        "Lombardy",
+        "Lombardia",
         "Marche",
         "Molise",
-        "Piedmont",
-        "Sardinia",
-        "Sicily",
-        "Tuscany",
-        "Trentino-Alto Adige/Südtirol",
+        "Piemonte",
+        "Puglia",
+        "Sardegna",
+        "Sicilia",
+        "Toscana",
         "Umbria",
-        "Veneto"
+        "Veneto",
+        "Trentino-Alto Adige/Südtirol",
+        "Valle d'Aosta"
     ],
     "96": [
-        "East Lansing, Michigan, United States",
-        "Moscow, Russian SFSR, Soviet Union"
+        "East Lansing, Michigan, United States of America",
+        "Moscow, Russian Soviet Federative Socialist Republic, Soviet Union"
     ],
     "97": [
         "idk"
     ],
     "98": [
-        "Marie Skłodowska-Curie",
+        "Marie Skłodowska Curie",
         "Pierre Curie"
     ],
     "99": [
         "black",
-        "red",
-        "yellow"
+        "red"
     ],
     "100": [
-        "idk"
+        "Mick Jagger",
+        "Keith Richards",
+        "Brian Jones",
+        "Ian Stewart",
+        "Dick Taylor",
+        "Tony Chapman",
+        "Bill Wyman",
+        "Charlie Watts",
+        "Mick Taylor",
+        "Ronnie Wood",
+        "Darryl Jones",
+        "Chuck Leavell",
+        "Steve Jordan",
+        "Bernard Fowler"
     ],
     "101": [
-        "William Henry Gates III",
-        "Paul Gardner Allen"
+        "Bill Gates",
+        "Paul Allen"
     ],
     "102": [
         "Andalucía",
         "Aragón",
         "Asturias",
         "Islas Baleares",
-        "Islas Canarias",
+        "Canarias",
         "Cantabria",
         "Castilla y León",
         "Castilla-La Mancha",
         "Cataluña",
         "Extremadura",
         "Galicia",
-        "La Rioja",
         "Comunidad de Madrid",
         "Región de Murcia",
         "Navarra",
         "País Vasco",
+        "La Rioja",
         "Comunidad Valenciana"
     ],
     "103": [
@@ -981,24 +1281,21 @@
     ],
     "104": [
         "India",
-        "Russia",
+        "Soviet Union",
         "Vietnam"
     ],
     "105": [
         "idk"
     ],
     "106": [
-        "Majel Barrett",
-        "Grace Lee Whitney",
-        "Nichelle Nichols",
-        "Sally Kellerman",
-        "Diana Ewing"
+        "idk"
     ],
     "107": [
         "idk"
     ],
     "108": [
         "Leonardo DiCaprio",
+        "Ellen Page",
         "Marion Cotillard",
         "Michael Caine"
     ],
@@ -1010,21 +1307,21 @@
         "Benjamin Wynn"
     ],
     "111": [
-        "Russia",
-        "Ukraine",
-        "Belarus",
-        "Uzbekistan",
-        "Kazakhstan",
-        "Georgia",
+        "Armenia",
         "Azerbaijan",
+        "Belarus",
+        "Estonia",
+        "Georgia",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Latvia",
         "Lithuania",
         "Moldova",
-        "Latvia",
-        "Kyrgyzstan",
+        "Russia",
         "Tajikistan",
-        "Armenia",
         "Turkmenistan",
-        "Estonia"
+        "Ukraine",
+        "Uzbekistan"
     ],
     "112": [
         "idk"
@@ -1059,59 +1356,59 @@
     "117": [
         "Kurt Cobain",
         "Krist Novoselic",
-        "Dave Grohl",
-        "Chad Channing",
         "Aaron Burckhard",
-        "Jason Everman",
+        "Dale Crover",
+        "Chad Channing",
         "Dan Peters",
-        "Pat Smear",
-        "Dale Crover"
+        "Jason Everman",
+        "Dave Grohl",
+        "Pat Smear"
     ],
     "118": [
         "Andrew Jackson",
         "Martin Van Buren",
-        "James K. Polk",
+        "James Knox Polk",
         "Franklin Pierce",
         "James Buchanan",
         "Andrew Johnson",
         "Grover Cleveland",
-        "Woodrow Wilson",
-        "Franklin D. Roosevelt",
+        "Thomas Woodrow Wilson",
+        "Franklin Delano Roosevelt",
         "Harry S. Truman",
-        "John F. Kennedy",
-        "Lyndon B. Johnson",
-        "Jimmy Carter",
-        "Bill Clinton",
-        "Barack Obama",
-        "Joe Biden"
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
+        "James Earl Carter",
+        "William Jefferson Clinton",
+        "Barack Hussein Obama 2",
+        "Joseph Robinette Biden"
     ],
     "119": [
         "Andhra Pradesh",
-        "Telangana",
         "Karnataka",
         "Kerala",
-        "Tamil Nadu"
+        "Tamil Nadu",
+        "Telangana"
     ],
     "120": [
         "Abraham Lincoln",
-        "Ulysses S. Grant",
-        "Rutherford B. Hayes",
-        "James A. Garfield",
-        "Chester A. Arthur",
+        "Ulysses Simpson Grant",
+        "Rutherford Birchard Hayes",
+        "James Abram Garfield",
+        "Chester Alan Arthur",
         "Benjamin Harrison",
         "William McKinley",
         "Theodore Roosevelt",
         "William Howard Taft",
-        "Warren G. Harding",
-        "Calvin Coolidge",
-        "Herbert Hoover",
-        "Dwight D. Eisenhower",
-        "Richard Nixon",
-        "Gerald Ford",
-        "Ronald Reagan",
-        "George H. W. Bush",
-        "George W. Bush",
-        "Donald Trump"
+        "Warren Gamaliel Harding",
+        "John Calvin Coolidge",
+        "Herbert Clark Hoover",
+        "Dwight David Eisenhower",
+        "Richard Milhous Nixon",
+        "Gerald Rudolph Ford",
+        "Ronald Wilson Reagan",
+        "George Herbert Walker Bush",
+        "George Walker Bush",
+        "Donald John Trump"
     ],
     "121": [
         "idk"
@@ -1123,22 +1420,22 @@
         "Lhotse",
         "Makalu",
         "Cho Oyu",
-        "Dhaulagiri I",
+        "Dhaulagiri 1",
         "Manaslu",
         "Nanga Parbat",
-        "Annapurna I",
-        "Gasherbrum I",
+        "Annapurna 1",
+        "Gasherbrum 1",
         "Broad Peak",
-        "Gasherbrum II",
+        "Gasherbrum 2",
         "Shishapangma"
     ],
     "123": [
-        "Leopold I",
-        "Leopold II",
-        "Albert I",
-        "Leopold III",
-        "Baudouin",
-        "Albert II",
+        "Leopold 1",
+        "Leopold 2",
+        "Albert 1",
+        "Leopold 3",
+        "Baudouin 1",
+        "Albert 2",
         "Philippe"
     ],
     "124": [
@@ -1147,19 +1444,21 @@
         "Obtuse-angled triangle"
     ],
     "125": [
+        "Afrikaans",
+        "English",
         "IsiNdebele",
         "IsiXhosa",
         "IsiZulu",
+        "Sepedi",
         "Sesotho",
         "Setswana",
-        "Sesotho sa Leboa",
         "SiSwati",
         "Tshivenda",
         "Xitsonga"
     ],
     "126": [
         "New Year's Day",
-        "Martin Luther King Jr. Day",
+        "Birthday of Martin Luther King, Junior",
         "Washington's Birthday",
         "Memorial Day",
         "Juneteenth National Independence Day",
@@ -1171,25 +1470,26 @@
         "Christmas Day"
     ],
     "127": [
-        "Aranese",
-        "Basque",
+        "Spanish",
         "Catalan",
+        "Valencian",
+        "Basque",
         "Galician",
-        "Valencian"
+        "Aranese"
     ],
     "128": [
         "China",
         "India",
-        "United States",
+        "United States of America",
         "Indonesia",
         "Pakistan",
-        "Brazil",
         "Nigeria",
+        "Brazil",
         "Bangladesh",
         "Russia",
         "Mexico",
-        "Japan",
         "Ethiopia",
+        "Japan",
         "Democratic Republic of the Congo",
         "Philippines",
         "Egypt",
@@ -1198,41 +1498,77 @@
     "129": [
         "Great Pyramid of Giza",
         "Hanging Gardens of Babylon",
-        "Temple of Artemis at Ephesus",
         "Statue of Zeus at Olympia",
+        "Temple of Artemis at Ephesus",
         "Mausoleum at Halicarnassus",
         "Colossus of Rhodes",
         "Lighthouse of Alexandria"
     ],
     "130": [
         "Algeria",
-        "Egypt",
-        "Libya",
-        "Morocco",
-        "Tunisia",
-        "Mauritania",
-        "Sudan",
         "Chad",
-        "Djibouti",
         "Comoros",
-        "Eritrea",
-        "Somalia",
+        "Djibouti",
+        "Egypt",
         "Iraq",
         "Jordan",
         "Lebanon",
+        "Libya",
+        "Mauritania",
+        "Morocco",
+        "Sudan",
         "Syria",
-        "Palestine"
+        "Tunisia"
     ],
     "131": [
         "idk"
     ],
     "132": [
-        "Igneous rock",
-        "Sedimentary rock",
-        "Metamorphic rock"
+        "igneous rocks",
+        "sedimentary rocks",
+        "metamorphic rocks"
     ],
     "133": [
-        "idk"
+        "Albania",
+        "Algeria",
+        "Austria",
+        "Belgium",
+        "Bosnia and Herzegovina",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Egypt",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Italy",
+        "Israel",
+        "Iraq",
+        "Jordan",
+        "Kosovo",
+        "Lebanon",
+        "Libya",
+        "Liechtenstein",
+        "Luxembourg",
+        "Malta",
+        "Monaco",
+        "Montenegro",
+        "Morocco",
+        "Netherlands",
+        "North Macedonia",
+        "Portugal",
+        "Romania",
+        "San Marino",
+        "Serbia",
+        "Slovenia",
+        "Spain",
+        "Switzerland",
+        "Syria",
+        "Tunisia",
+        "Turkey",
+        "United Kingdom",
+        "Vatican City"
     ],
     "134": [
         "Uttar Pradesh",
@@ -1241,13 +1577,14 @@
         "West Bengal",
         "Madhya Pradesh",
         "Tamil Nadu",
-        "Rajasthan"
+        "Rajasthan",
+        "Karnataka"
     ],
     "135": [
         "C",
         "E",
         "G",
-        "Bb"
+        "B flat"
     ],
     "136": [
         "Tepig",
@@ -1257,13 +1594,14 @@
         "Simisear",
         "Darumaka",
         "Darmanitan",
-        "Litwick",
-        "Lampent",
-        "Chandelure",
         "Heatmor",
         "Larvesta",
         "Volcarona",
-        "Victini",
+        "Litwick",
+        "Lampent",
+        "Chandelure",
+        "Litleo",
+        "Pyroar",
         "Reshiram"
     ],
     "137": [
@@ -1315,9 +1653,9 @@
     ],
     "140": [
         "Abraham Lincoln",
-        "James A. Garfield",
+        "James Abram Garfield",
         "William McKinley",
-        "John F. Kennedy"
+        "John Fitzgerald Kennedy"
     ],
     "141": [
         "E2",
@@ -1328,25 +1666,27 @@
         "E4"
     ],
     "142": [
-        "idk"
+        "1968 Mexico City Olympics",
+        "1988 Seoul Olympics",
+        "1996 Atlanta Olympics",
+        "2008 Beijing Olympics",
+        "2012 London Olympics"
     ],
     "143": [
         "idk"
     ],
     "144": [
         "Cuba",
-        "Dominican Republic",
-        "Jamaica",
         "Puerto Rico",
-        "Trinidad and Tobago"
+        "Dominican Republic"
     ],
     "145": [
         "idk"
     ],
     "146": [
-        "China",
-        "Pakistan",
-        "Nepal"
+        "People's Republic of China",
+        "Islamic Republic of Pakistan",
+        "Federal Democratic Republic of Nepal"
     ],
     "147": [
         "Bahrain",
@@ -1361,13 +1701,17 @@
         "Danube",
         "Dnieper",
         "Dniester",
+        "Southern Bug",
         "Don",
         "Kuban",
-        "Southern Bug"
+        "Sakarya",
+        "Kizilirmak",
+        "Coruh",
+        "Yesilirmak"
     ],
     "149": [
         "Fratelli d'Italia",
-        "Lega",
+        "Lega Salvini Premier",
         "Forza Italia"
     ]
 }
