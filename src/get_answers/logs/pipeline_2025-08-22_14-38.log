@@ -1,0 +1,98 @@
+2025-08-22 14:38:56,069 - INFO - Loaded config from config.json
+2025-08-22 14:38:56,069 - INFO - {'languages': ['en'], 'llm_models': ['gpt-5-mini', 'gpt-5'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-22 14:38:56,070 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-22 14:38:56,070 - INFO - Step 0: Identify Relations
+2025-08-22 14:38:56,070 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,074 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,074 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,081 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,081 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,087 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 14:38:56,087 - INFO - Step 1: Running single question benchmark
+2025-08-22 14:38:56,087 - INFO - Processing dataset: spinach.tsv for model: gpt-5-mini and language: en
+2025-08-22 14:38:56,087 - INFO - Processing column: Q1
+2025-08-22 14:39:02,578 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-22 14:39:02,583 - INFO - Processing column: Q2
+2025-08-22 14:39:07,972 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-22 14:39:07,980 - INFO - Processing column: Q3
+2025-08-22 14:39:10,802 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-22 14:39:16,809 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-22 14:39:19,829 - INFO - Question 138: Which television shows were created by Walt Disney and originally aired on the Disney Channel?
+2025-08-22 14:39:19,838 - INFO - Processing column: Q4
+2025-08-22 14:39:25,001 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-22 14:39:41,362 - INFO - Content filter triggered for question: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-22 14:39:41,362 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:39:41,362 - INFO - Skipping question 93 due to content filter.
+2025-08-22 14:39:46,561 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-22 14:39:53,719 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-22 14:39:53,733 - INFO - Processing dataset: qawiki.tsv for model: gpt-5-mini and language: en
+2025-08-22 14:39:53,733 - INFO - Processing column: Q1
+2025-08-22 14:39:58,782 - INFO - Content filter triggered for question: Who are Elon Musk's ex-spouses?
+2025-08-22 14:39:58,782 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:39:58,782 - INFO - Skipping question 143 due to content filter.
+2025-08-22 14:39:58,784 - INFO - Processing column: Q2
+2025-08-22 14:39:58,792 - INFO - Processing column: Q3
+2025-08-22 14:40:04,436 - INFO - Question 15: What binary neutron stars in the constellation Scorpius have exoplanets orbiting them?
+2025-08-22 14:40:07,848 - INFO - Question 23: What countries that border Ghana have a higher population than Ghana?
+2025-08-22 14:40:12,462 - INFO - Question 24: What diseases affecting pregnancy are associated with the gene FGF14?
+2025-08-22 14:40:12,466 - INFO - Processing column: Q4
+2025-08-22 14:40:16,564 - INFO - Question 32: Which montes in the Tharsis Montes are not taller than 1000 metres?
+2025-08-22 14:40:30,696 - INFO - Question 95: Which football midfielders born in Senegal have played for France excluding those who played for Inter Milan?
+2025-08-22 14:40:30,701 - INFO - Processing dataset: synthetic.tsv for model: gpt-5-mini and language: en
+2025-08-22 14:40:30,701 - INFO - Processing column: Q1
+2025-08-22 14:40:37,074 - INFO - Content filter triggered for question: What are the constituent states of the USA?
+2025-08-22 14:40:37,074 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:40:37,074 - INFO - Skipping question 52 due to content filter.
+2025-08-22 14:40:37,075 - INFO - Processing column: Q2
+2025-08-22 14:40:42,933 - INFO - Content filter triggered for question: Which states are part of the United States of America?
+2025-08-22 14:40:42,934 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:40:42,934 - INFO - Skipping question 52 due to content filter.
+2025-08-22 14:40:42,936 - INFO - Processing column: Q3
+2025-08-22 14:40:42,948 - INFO - Processing column: Q4
+2025-08-22 14:40:53,676 - INFO - Content filter triggered for question: What are the states of the USA excluding those located on the West Coast?
+2025-08-22 14:40:53,676 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:40:53,676 - INFO - Skipping question 52 due to content filter.
+2025-08-22 14:40:59,543 - INFO - Question 109: List the actors who won an Oscar for Inception.
+2025-08-22 14:40:59,553 - INFO - Processing dataset: spinach.tsv for model: gpt-5-mini and language: en
+2025-08-22 14:40:59,553 - INFO - Processing column: Q1
+2025-08-22 14:41:05,114 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-22 14:41:05,120 - INFO - Processing column: Q2
+2025-08-22 14:41:47,071 - INFO - Content filter triggered for question: Who are the actors that have France as their birthplace and have won an Oscar?
+2025-08-22 14:41:47,071 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 14:41:47,071 - INFO - Skipping question 93 due to content filter.
+2025-08-22 14:41:52,430 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-22 14:41:52,436 - INFO - Processing column: Q3
+2025-08-22 14:41:55,896 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-22 14:42:04,796 - INFO - Question 39: What dialect of Chinese is the majority dialect of Hong Kong?
+2025-08-22 14:42:13,079 - INFO - Question 40: Which American presidents were in office during the Vietnam War but not when it ended?
+2025-08-22 14:42:24,252 - INFO - Question 41: Which European countries currently have had a constitutional monarchy?
+2025-08-22 14:42:26,913 - INFO - Question 42: Give me all male professional skateboarders from Sweden.
+2025-08-22 14:42:34,904 - INFO - Question 43: Which professional surfers were born in Sydney, Australia?
+2025-08-22 14:42:50,774 - INFO - Question 44: Which space probes were sent into orbit around the sun and are still operational?
+2025-08-22 14:43:14,848 - INFO - Question 45: Which German cities have more than 250000 inhabitants but fewer than 1000000?
+2025-08-22 14:43:36,926 - INFO - Question 46: Give me all spacecrafts that successfully landed on Mars.
+2025-08-22 14:44:04,255 - INFO - Question 47: Give me all taikonauts who have flown in space.
+2025-08-22 14:44:09,518 - INFO - Question 48: Which countries have more than ten active volcanoes?
+2025-08-22 14:44:13,562 - INFO - Question 49: Who from the Apollo 11 mission was still alive as of January 1st, 2025?
+2025-08-22 14:44:17,803 - INFO - Question 50: Give me all B-sides of the Ramones released before 1985.
+2025-08-22 14:44:22,909 - INFO - Question 51: Which French politicians were married to a German man?
+2025-08-22 14:44:32,708 - INFO - Question 52: Which movies did Kurosawa direct that are dramas?
+2025-08-22 14:44:38,375 - INFO - Question 53: Give me all Frisian islands that belong to the Netherlands and are inhabited.
+2025-08-22 14:44:43,210 - INFO - Question 54: Which Abrahamic religions are officially recognized in Indonesia?
+2025-08-22 14:44:53,243 - INFO - Question 55: What battles did Stonewall Jackson fight in during the American Civil War?
+2025-08-22 14:45:00,413 - INFO - Question 56: Which countries have German but not French as an official language?
+2025-08-22 14:45:04,284 - INFO - Question 57: What NBA basketball teams has Shaquille O'Neal played for?
+2025-08-22 14:45:10,692 - INFO - Question 58: What landlocked countries are considered part of the Baltic region?
+2025-08-22 14:45:13,827 - INFO - Question 59: Which states in New England have "New" in their name?
+2025-08-22 14:45:24,895 - INFO - Question 60: Which U.S. states does the Colorado River run through in the Upper Basin?
+2025-08-22 14:45:30,714 - INFO - Question 61: On which continent did the Roman Empire start?
+2025-08-22 14:45:49,731 - INFO - Question 62: What countries have Spanish as an official language and do not have a non-Indo-European official language?
+2025-08-22 14:46:06,816 - INFO - Question 63: At which colleges did Albert Einstein hold a permanent teaching position?
+2025-08-22 14:46:10,148 - INFO - Question 64: In what TV shows did Shawnee Smith appear in only one episode?
+2025-08-22 14:46:25,937 - INFO - Question 65: What countries share a land or martiime border with Spain, but not both?
+2025-08-22 14:46:28,961 - INFO - Question 66: What TV shows are shot in New York and are comedies?
+2025-08-22 14:46:38,109 - INFO - Question 67: In what movies did Tupac give a musical performance?
+2025-08-22 14:46:57,150 - INFO - Question 68: Who has played Lex Luthor in live-action adaptations?
+2025-08-22 14:47:02,705 - INFO - Question 69: What were the names of Henry VIII's confirmed legitimate children?
+2025-08-22 14:47:11,383 - INFO - Question 70: Which countries are entirely contained in Oceania?
+2025-08-22 14:47:15,177 - INFO - Question 71: Which states with a Democratic governor does the Sierra Nevada run through in the United States?

@@ -18,3 +18,33 @@
 2025-08-22 00:59:40,973 - INFO - Question 102: Who are the US presidents born in the year 1945?
 2025-08-22 00:59:40,978 - INFO - Processing column: Q3
 2025-08-22 00:59:44,469 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-22 01:00:18,640 - INFO - Content filter triggered for question: Which actors were born in France before 1970 have won an Oscar?
+2025-08-22 01:00:18,640 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 01:00:18,640 - INFO - Skipping question 93 due to content filter.
+2025-08-22 01:00:24,913 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-22 01:00:28,991 - INFO - Question 138: Which television shows were created by Walt Disney and originally aired on the Disney Channel?
+2025-08-22 01:00:28,996 - INFO - Processing column: Q4
+2025-08-22 01:00:36,299 - INFO - Question 1: Which television shows were created by John Cleese and first aired on or after the year 2000?
+2025-08-22 01:00:49,501 - INFO - Question 57: What international or non-NBA basketball teams has Shaquille O'Neal played for?
+2025-08-22 01:00:53,067 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-22 01:00:56,826 - INFO - Question 84: What are the Catholic holy days that are not days of obligation?
+2025-08-22 01:01:13,457 - INFO - Content filter triggered for question: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-22 01:01:13,458 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 01:01:13,458 - INFO - Skipping question 93 due to content filter.
+2025-08-22 01:01:19,043 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-22 01:01:25,971 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-22 01:01:25,977 - INFO - Processing dataset: qawiki.tsv for model: gpt-5-mini and language: en
+2025-08-22 01:01:25,977 - INFO - Processing column: Q1
+2025-08-22 01:01:32,741 - INFO - Content filter triggered for question: Who are Elon Musk's ex-spouses?
+2025-08-22 01:01:32,741 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 01:01:32,741 - INFO - Skipping question 143 due to content filter.
+2025-08-22 01:01:32,743 - INFO - Processing column: Q2
+2025-08-22 01:01:36,214 - INFO - Question 137: What video games are NP-complete?
+2025-08-22 01:01:42,482 - INFO - Content filter triggered for question: Who are Elon Musk's past spouses?
+2025-08-22 01:01:42,483 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 01:01:42,483 - INFO - Skipping question 143 due to content filter.
+2025-08-22 01:01:42,484 - INFO - Processing column: Q3
+2025-08-22 01:01:48,054 - INFO - Question 15: What binary neutron stars in the constellation Scorpius have exoplanets orbiting them?
+2025-08-22 01:01:52,253 - INFO - Question 23: What countries that border Ghana have a higher population than Ghana?
+2025-08-22 01:01:57,169 - INFO - Question 24: What diseases affecting pregnancy are associated with the gene FGF14?
+2025-08-22 01:02:11,646 - INFO - Question 93: Which antiarrhythmic drugs for atrial fibrillation are contraindicated in patients taking lovastatin?

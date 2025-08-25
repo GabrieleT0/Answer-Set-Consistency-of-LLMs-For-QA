@@ -1,0 +1,108 @@
+2025-08-22 11:26:47,906 - INFO - Loaded config from config.json
+2025-08-22 11:26:47,907 - INFO - {'languages': ['en'], 'llm_models': ['gpt-5-mini', 'gpt-5'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-22 11:26:47,907 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-22 11:26:47,907 - INFO - Step 0: Identify Relations
+2025-08-22 11:26:47,907 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,919 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,919 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,935 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,935 - INFO - Processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,943 - INFO - Finished processing model: gpt-5-mini for language: en
+2025-08-22 11:26:47,943 - INFO - Step 1: Running single question benchmark
+2025-08-22 11:26:47,943 - INFO - Processing dataset: spinach.tsv for model: gpt-5-mini and language: en
+2025-08-22 11:26:47,943 - INFO - Processing column: Q1
+2025-08-22 11:26:57,164 - INFO - Question 102: Which US presidents were born in 1945?
+2025-08-22 11:26:57,172 - INFO - Processing column: Q2
+2025-08-22 11:27:00,967 - INFO - Question 102: Who are the US presidents born in the year 1945?
+2025-08-22 11:27:00,974 - INFO - Processing column: Q3
+2025-08-22 11:27:04,720 - INFO - Question 27: Who are the current non-Democratic senators from Illinois?
+2025-08-22 11:27:26,183 - INFO - Content filter triggered for question: Which actors were born in France before 1970 have won an Oscar?
+2025-08-22 11:27:26,184 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 11:27:26,184 - INFO - Skipping question 93 due to content filter.
+2025-08-22 11:27:34,734 - INFO - Question 102: Which US presidents were born in 1945 and were elected before the year 2000?
+2025-08-22 11:27:37,572 - INFO - Question 138: Which television shows were created by Walt Disney and originally aired on the Disney Channel?
+2025-08-22 11:27:37,584 - INFO - Processing column: Q4
+2025-08-22 11:27:42,642 - INFO - Question 81: Who are the Republican U.S. senators of Pennsylvania?
+2025-08-22 11:27:53,527 - INFO - Content filter triggered for question: Which actors were born in France on or after 1970 and have won an Oscar?
+2025-08-22 11:27:53,527 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 11:27:53,527 - INFO - Skipping question 93 due to content filter.
+2025-08-22 11:27:58,288 - INFO - Question 102: Which US presidents were born in 1945 and were elected president or after the year 2000?
+2025-08-22 11:28:06,572 - INFO - Question 118: What non-fiction books have been written by the author of The Fault in Our Stars before 2010?
+2025-08-22 11:28:06,586 - INFO - Processing dataset: qawiki.tsv for model: gpt-5-mini and language: en
+2025-08-22 11:28:06,586 - INFO - Processing column: Q1
+2025-08-22 11:28:11,832 - INFO - Content filter triggered for question: Who are Elon Musk's ex-spouses?
+2025-08-22 11:28:11,832 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 11:28:11,833 - INFO - Skipping question 143 due to content filter.
+2025-08-22 11:28:11,835 - INFO - Processing column: Q2
+2025-08-22 11:28:18,052 - INFO - Question 143: Who are Elon Musk's past spouses?
+2025-08-22 11:28:18,061 - INFO - Processing column: Q3
+2025-08-22 11:28:23,884 - INFO - Question 15: What binary neutron stars in the constellation Scorpius have exoplanets orbiting them?
+2025-08-22 11:28:28,323 - INFO - Question 23: What countries that border Ghana have a higher population than Ghana?
+2025-08-22 11:28:31,965 - INFO - Question 24: What diseases affecting pregnancy are associated with the gene FGF14?
+2025-08-22 11:28:38,358 - INFO - Question 146: Which of the original developers of SPSS were educated in Mexico?
+2025-08-22 11:28:38,366 - INFO - Processing column: Q4
+2025-08-22 11:28:43,392 - INFO - Question 32: Which montes in the Tharsis Montes are not taller than 1000 metres?
+2025-08-22 11:28:55,306 - INFO - Question 95: Which football midfielders born in Senegal have played for France excluding those who played for Inter Milan?
+2025-08-22 11:29:04,986 - INFO - Question 119: Which popes were married after ordination but not before?
+2025-08-22 11:29:04,993 - INFO - Processing dataset: synthetic.tsv for model: gpt-5-mini and language: en
+2025-08-22 11:29:04,994 - INFO - Processing column: Q1
+2025-08-22 11:29:12,677 - INFO - Content filter triggered for question: What are the constituent states of the USA?
+2025-08-22 11:29:12,678 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 11:29:12,678 - INFO - Skipping question 52 due to content filter.
+2025-08-22 11:29:12,680 - INFO - Processing column: Q2
+2025-08-22 11:29:21,279 - INFO - Content filter triggered for question: Which states are part of the United States of America?
+2025-08-22 11:29:21,279 - INFO - Error: Azure has not provided the response due to a content filter being triggered
+2025-08-22 11:29:21,280 - INFO - Skipping question 52 due to content filter.
+2025-08-22 11:29:21,282 - INFO - Processing column: Q3
+2025-08-22 11:29:50,185 - INFO - Question 65: What nations currently have women as heads of state who are also heads of government?
+2025-08-22 11:30:00,935 - INFO - Question 66: Which human blood types are universal donors?
+2025-08-22 11:30:09,049 - INFO - Question 67: Which Baroque composers have music that appears in a English-language movie that won an Academy Award?
+2025-08-22 11:30:20,588 - INFO - Question 68: Which nations have been hosts of the FIFA World Cup in Europe?
+2025-08-22 11:30:43,508 - INFO - Question 69: What nations are governed by presidents who do not have a term limit and have had a president serve for more than two decades?
+2025-08-22 11:30:47,680 - INFO - Question 70: What are the original Nobel Prize award categories?
+2025-08-22 11:30:53,565 - INFO - Question 71: Which non-primary colors make up a rainbow?
+2025-08-22 11:30:58,048 - INFO - Question 72: What denominations of banknote exist for the Euro?
+2025-08-22 11:31:03,493 - INFO - Question 73: Which of Earth's oceans touch South America?
+2025-08-22 11:31:11,888 - INFO - Question 74: What are the extant, carnivorous species of bear?
+2025-08-22 11:31:15,441 - INFO - Question 75: Which religion officially recognized in Indonesia is a majority religion?
+2025-08-22 11:31:22,880 - INFO - Question 76: Which disciplines of the 2022 Winter Olympics involve skating?
+2025-08-22 11:31:29,574 - INFO - Question 77: Of the top-10 exporters of copper by volume, which countries are in Latin America?
+2025-08-22 11:31:42,494 - INFO - Question 78: Which extinct species in the Homo genus have had fossils found in Russia?
+2025-08-22 11:31:46,381 - INFO - Question 79: What are the constituent countries of the UK located on the island of Great Britain?
+2025-08-22 11:32:02,201 - INFO - Question 80: Which Pharaonic Egyptian sites are recognized as UNESCO World Heritage?
+2025-08-22 11:32:12,523 - INFO - Question 81: What extinct species made stone tools?
+2025-08-22 11:32:43,781 - INFO - Question 82: What European nations have been winners of Eurovision?
+2025-08-22 11:32:50,575 - INFO - Question 83: List all French regions located in mainland France.
+2025-08-22 11:33:02,514 - INFO - Question 84: What artistic professions did Leonardo da Vinci have?
+2025-08-22 11:33:08,985 - INFO - Question 85: List the Academy Awards received by Meryl Streep.
+2025-08-22 11:33:35,337 - INFO - Question 86: Which characters appearing in all the Harry Potter books worked at some point at Hogwarts?
+2025-08-22 11:33:42,568 - INFO - Question 87: List the founders of the company Apple who are engineers.
+2025-08-22 11:33:59,910 - INFO - Question 88: List combatant countries of the Second World War who switched sides.
+2025-08-22 11:34:08,258 - INFO - Question 89: From which universities did Albert Einstein earn undergraduate degrees?
+2025-08-22 11:34:16,380 - INFO - Question 90: List the solo albums released by Paul McCartney with 15 tracks or more.
+2025-08-22 11:34:23,055 - INFO - Question 91: Which universities from her home country gave Marie Curie an honorary degree?
+2025-08-22 11:34:26,611 - INFO - Question 92: List the screenwriters of the film 'The Godfather' who also wrote the book the movie was based on.
+2025-08-22 11:34:45,480 - INFO - Question 93: List the European nations that signed the Treaty of Versailles.
+2025-08-22 11:34:51,710 - INFO - Question 94: What undergraduate degrees did Newton hold?
+2025-08-22 11:35:03,517 - INFO - Question 95: What nations share an official language with Brazil but do not have exactly the same set of official languages as Brazil?
+2025-08-22 11:35:19,946 - INFO - Question 96: List all of Italy's regions having at least one metropolitan area with more than one million people.
+2025-08-22 11:35:26,835 - INFO - Question 97: List the places outside of the U.S. where the founders of Google were born.
+2025-08-22 11:35:32,382 - INFO - Question 98: List the voice actors for Homer in the Latin American Spanish version of The Simpsons.
+2025-08-22 11:35:39,912 - INFO - Question 99: List the female scientists credited with discovering Radium.
+2025-08-22 11:35:46,289 - INFO - Question 100: What primary colors are used for both the German and Belgian flag?
+2025-08-22 11:36:04,466 - INFO - Question 101: List the guitarists in the band The Rolling Stones.
+2025-08-22 11:36:10,152 - INFO - Question 102: List the American founders of the Microsoft Corporation who served as CEO.
+2025-08-22 11:36:18,906 - INFO - Question 103: List the Spanish autonomous communities in which Catalan is an official language.
+2025-08-22 11:36:27,673 - INFO - Question 104: List the screenwriters for the film 'The Dark Knight' who also wrote the story.
+2025-08-22 11:36:51,536 - INFO - Question 105: Which current countries bordering China have fought a war against China?
+2025-08-22 11:37:53,007 - INFO - Question 106: List the recipients of the Nobel Prize in Physics who did not share their award and were the first person from their country to win the award.
+2025-08-22 11:38:03,166 - INFO - Question 107: List the actresses who starred in the original Star Trek television show and played crew members of the USS Enterprise in multiple seasons.
+2025-08-22 11:38:05,691 - INFO - Question 108: What companies does The Walt Disney Company wholly own?
+2025-08-22 11:38:19,622 - INFO - Question 109: List the actors of Inception who have won an Oscar, but not for Inception.
+2025-08-22 11:38:28,555 - INFO - Question 110: List the Grammy Awards received by Bob Dylan.
+2025-08-22 11:38:37,185 - INFO - Question 111: List the composers of 'Avatar: The Last Airbender' who were educated at the Berklee College of Music.
+2025-08-22 11:38:43,371 - INFO - Question 112: What modern countries were part of the Soviet Union and border Russia?
+2025-08-22 11:38:50,327 - INFO - Question 113: Which flags of the regions of Italy share exactly two colors with the national flag?
+2025-08-22 11:38:54,967 - INFO - Question 114: List the wholly-owned subsidiaries of Amazon founded in Israel.
+2025-08-22 11:39:03,587 - INFO - Question 115: List the directors who worked on the Breaking Bad series and directed more than one episode.
+2025-08-22 11:39:13,391 - INFO - Question 116: List the German federal states located (partially or wholly) in the former East Germany.
