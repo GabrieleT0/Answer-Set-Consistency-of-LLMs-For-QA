@@ -9,10 +9,10 @@
     ],
     "2": [
         "Victoria, Princess Royal",
-        "Princess Alice",
-        "Princess Helena",
-        "Princess Louise",
-        "Princess Beatrice"
+        "Alice, Princess of Hesse and by Rhine",
+        "Helena, Princess Christian of Schleswig-Holstein",
+        "Louise, Duchess of Argyll",
+        "Beatrice, Princess Henry of Battenberg"
     ],
     "3": [
         "French",
@@ -34,14 +34,14 @@
         "Radon"
     ],
     "6": [
-        "Amazon Pharmacy",
         "PillPack",
-        "One Medical",
-        "Amazon Clinic"
+        "Amazon Pharmacy",
+        "One Medical"
     ],
     "7": [
         "Go",
-        "Dart"
+        "Dart",
+        "Google Apps Script"
     ],
     "8": [
         "2001: A Space Odyssey",
@@ -67,13 +67,13 @@
         "Gentoo penguin"
     ],
     "12": [
-        "Woodrow Wilson",
-        "Franklin D. Roosevelt",
-        "Harry S. Truman",
-        "John F. Kennedy",
-        "Lyndon B. Johnson",
-        "Jimmy Carter",
-        "Bill Clinton"
+        "Thomas Woodrow Wilson",
+        "Franklin Delano Roosevelt",
+        "Harry S Truman",
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
+        "James Earl Carter Junior",
+        "William Jefferson Clinton"
     ],
     "13": [
         "Wings",
@@ -111,6 +111,7 @@
         "Kiki's Delivery Service",
         "Only Yesterday",
         "Porco Rosso",
+        "Ocean Waves",
         "Pom Poko",
         "Whisper of the Heart",
         "Princess Mononoke",
@@ -133,29 +134,28 @@
         "The Two Towers",
         "The Return of the King",
         "The Silmarillion",
-        "Unfinished Tales of Númenor and Middle-earth",
-        "The Children of Húrin",
+        "Unfinished Tales",
+        "The Children of Hurin",
         "The Adventures of Tom Bombadil",
         "Farmer Giles of Ham",
-        "Smith of Wootton Major",
         "Leaf by Niggle",
-        "Tree and Leaf",
+        "Smith of Wootton Major",
         "Roverandom",
-        "Tales from the Perilous Realm",
-        "The Legend of Sigurd and Gudrún",
-        "The Fall of Arthur",
-        "The Story of Kullervo"
+        "Mr. Bliss",
+        "The Father Christmas Letters"
     ],
     "16": [
         "Buenos Aires",
-        "Georgetown",
         "Lima",
+        "Caracas",
+        "Georgetown",
         "Paramaribo",
         "Montevideo"
     ],
     "17": [
         "Audi",
         "Bentley",
+        "Bugatti",
         "Lamborghini",
         "Porsche"
     ],
@@ -165,7 +165,57 @@
         "Jane Seymour"
     ],
     "19": [
-        "idk"
+        "Antigua and Barbuda",
+        "Bahamas",
+        "Barbados",
+        "Belize",
+        "Canada",
+        "Dominica",
+        "Grenada",
+        "Guyana",
+        "Jamaica",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Trinidad and Tobago",
+        "United Kingdom",
+        "Australia",
+        "New Zealand",
+        "India",
+        "Pakistan",
+        "Bangladesh",
+        "Sri Lanka",
+        "Malaysia",
+        "Singapore",
+        "Brunei Darussalam",
+        "Maldives",
+        "Kenya",
+        "Uganda",
+        "Tanzania",
+        "Cameroon",
+        "Nigeria",
+        "Ghana",
+        "Sierra Leone",
+        "Gambia",
+        "Zambia",
+        "Malawi",
+        "Botswana",
+        "Lesotho",
+        "Eswatini",
+        "South Africa",
+        "Mauritius",
+        "Seychelles",
+        "Cyprus",
+        "Malta",
+        "Papua New Guinea",
+        "Fiji",
+        "Solomon Islands",
+        "Vanuatu",
+        "Samoa",
+        "Tonga",
+        "Kiribati",
+        "Tuvalu",
+        "Nauru"
     ],
     "20": [
         "Stuart Sutcliffe",
@@ -174,7 +224,8 @@
         "Norman Chapman"
     ],
     "21": [
-        "Contains"
+        "Republic of San Marino",
+        "Vatican City State"
     ],
     "22": [
         "Athens",
@@ -182,15 +233,14 @@
         "London"
     ],
     "23": [
-        "Louis Vuitton",
-        "Bulgari",
-        "Techniques d'Avant-Garde Heuer",
+        "Techniques d'Avant Garde Heuer",
         "Hublot",
         "Zenith",
+        "Bulgari",
+        "Louis Vuitton",
         "Christian Dior",
-        "Chaumet",
-        "Fred",
-        "Tiffany and Company"
+        "Tiffany and Company",
+        "Chaumet"
     ],
     "24": [
         "Dances with Wolves",
@@ -200,9 +250,7 @@
     ],
     "25": [
         "Panthera",
-        "Neofelis",
-        "Acinonyx",
-        "Puma"
+        "Neofelis"
     ],
     "26": [
         "Nelly Sachs"
@@ -214,7 +262,7 @@
         "Tennessine"
     ],
     "29": [
-        "Holy See"
+        "Vatican City State"
     ],
     "30": [
         "Euro"
@@ -261,6 +309,7 @@
     ],
     "35": [
         "Botswana",
+        "Burundi",
         "Cameroon",
         "Eswatini",
         "The Gambia",
@@ -277,13 +326,10 @@
         "Sierra Leone",
         "South Africa",
         "South Sudan",
-        "Sudan",
         "Tanzania",
         "Uganda",
         "Zambia",
-        "Zimbabwe",
-        "Equatorial Guinea",
-        "Burundi"
+        "Zimbabwe"
     ],
     "36": [
         "Africa",
@@ -296,24 +342,26 @@
         "idk"
     ],
     "38": [
-        "Nitrogen",
-        "Oxygen",
-        "Argon",
-        "Carbon dioxide",
-        "Water vapor"
+        "nitrogen",
+        "oxygen",
+        "argon",
+        "water vapor"
     ],
     "39": [
-        "Greenland shark (Somniosus microcephalus)"
+        "Greenland shark"
     ],
     "40": [
+        "Grand Theft Auto: Liberty City Stories",
+        "Grand Theft Auto: Vice City Stories",
         "Grand Theft Auto IV",
         "Grand Theft Auto IV: The Lost and Damned",
         "Grand Theft Auto IV: The Ballad of Gay Tony",
+        "Grand Theft Auto: Episodes from Liberty City",
         "Grand Theft Auto V",
         "Grand Theft Auto Online"
     ],
     "41": [
-        "Contains"
+        "idk"
     ],
     "42": [
         "Jupiter",
@@ -323,15 +371,15 @@
         "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura"
     ],
     "44": [
-        "Cape Verdean escudo",
-        "Gambian dalasi",
+        "West African Communauté Financière Africaine franc",
         "Ghanaian cedi",
-        "Guinean franc",
+        "Nigerian naira",
+        "Gambian dalasi",
+        "Sierra Leonean leone",
         "Liberian dollar",
         "Mauritanian ouguiya",
-        "Nigerian naira",
-        "Sierra Leonean leone",
-        "West African CFA franc"
+        "Cape Verdean escudo",
+        "Guinean franc"
     ],
     "45": [
         "idk"
@@ -354,36 +402,34 @@
         "Zachary Taylor"
     ],
     "49": [
-        "Albania",
-        "Belgium",
-        "Bulgaria",
-        "Croatia",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
-        "Finland",
+        "United Kingdom",
         "France",
         "Germany",
-        "Greece",
-        "Hungary",
-        "Iceland",
         "Italy",
-        "Latvia",
-        "Lithuania",
-        "Luxembourg",
-        "Montenegro",
-        "Netherlands",
-        "North Macedonia",
-        "Norway",
-        "Poland",
+        "Spain",
         "Portugal",
+        "Belgium",
+        "Netherlands",
+        "Luxembourg",
+        "Denmark",
+        "Norway",
+        "Iceland",
+        "Greece",
+        "Bulgaria",
         "Romania",
+        "Hungary",
+        "Poland",
+        "Czech Republic",
         "Slovakia",
         "Slovenia",
-        "Spain",
-        "Sweden",
-        "Turkey",
-        "United Kingdom of Great Britain and Northern Ireland"
+        "Croatia",
+        "Albania",
+        "Montenegro",
+        "North Macedonia",
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Finland"
     ],
     "50": [
         "Cirrus",
@@ -392,8 +438,7 @@
     ],
     "52": [
         "Cambodia",
-        "Bhutan",
-        "Sri Lanka"
+        "Bhutan"
     ],
     "53": [
         "Tokyo",
@@ -407,8 +452,8 @@
         "Dhaka"
     ],
     "54": [
-        "Nova Scotia",
         "New Brunswick",
+        "Nova Scotia",
         "Prince Edward Island",
         "Newfoundland and Labrador"
     ],
@@ -420,17 +465,14 @@
         "idk"
     ],
     "57": [
-        "pineapple",
-        "mozzarella cheese"
+        "pineapple"
     ],
     "58": [
-        "violin",
-        "viola",
-        "cello",
-        "double bass"
+        "Violin",
+        "Viola"
     ],
     "59": [
-        "idk"
+        "They'd Rather Be Right"
     ],
     "60": [
         "Cyan",
@@ -438,37 +480,39 @@
         "Black"
     ],
     "61": [
-        "Argentina",
+        "Uruguay",
         "Brazil",
-        "Uruguay"
+        "Argentina"
     ],
     "62": [
-        "Andorra",
-        "Belgium",
-        "Denmark",
-        "Liechtenstein",
-        "Luxembourg",
-        "Monaco",
-        "Netherlands",
-        "Norway",
-        "Spain",
-        "Sweden",
         "United Kingdom of Great Britain and Northern Ireland",
+        "Kingdom of Belgium",
+        "Kingdom of Denmark",
+        "Principality of Liechtenstein",
+        "Grand Duchy of Luxembourg",
+        "Principality of Monaco",
+        "Kingdom of the Netherlands",
+        "Kingdom of Norway",
+        "Kingdom of Spain",
+        "Kingdom of Sweden",
+        "Principality of Andorra",
         "Vatican City State"
     ],
     "63": [
         "United States of America",
-        "Ecuador",
-        "Timor-Leste",
+        "Republic of Ecuador",
+        "Democratic Republic of Timor-Leste",
         "Federated States of Micronesia",
         "Republic of the Marshall Islands",
         "Republic of Palau"
     ],
     "64": [
-        "idk"
+        "Honduras",
+        "Peru",
+        "Tanzania"
     ],
     "65": [
-        "Type O negative"
+        "O negative"
     ],
     "66": [
         "idk"
@@ -487,31 +531,30 @@
         "idk"
     ],
     "69": [
-        "Nobel Prize in Physics",
-        "Nobel Prize in Chemistry",
-        "Nobel Prize in Physiology or Medicine",
-        "Nobel Prize in Literature",
-        "Nobel Peace Prize"
+        "Physics",
+        "Chemistry",
+        "Physiology or Medicine",
+        "Literature",
+        "Peace"
     ],
     "70": [
-        "Orange",
-        "Green",
-        "Indigo",
-        "Violet"
+        "orange",
+        "green",
+        "indigo",
+        "violet"
     ],
     "71": [
-        "Five euro banknote",
-        "Ten euro banknote",
-        "Twenty euro banknote",
-        "Fifty euro banknote",
-        "One hundred euro banknote",
-        "Two hundred euro banknote",
-        "Five hundred euro banknote"
+        "five euros",
+        "ten euros",
+        "twenty euros",
+        "fifty euros",
+        "one hundred euros",
+        "two hundred euros",
+        "five hundred euros"
     ],
     "72": [
         "Pacific Ocean",
-        "Atlantic Ocean",
-        "Southern Ocean"
+        "Atlantic Ocean"
     ],
     "73": [
         "Polar bear"
@@ -539,16 +582,17 @@
     ],
     "79": [
         "Ancient Thebes with its Necropolis",
-        "Nubian Monuments from Abu Simbel to Philae",
-        "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur"
+        "Memphis and its Necropolis, the Pyramid Fields from Giza to Dahshur",
+        "Nubian Monuments from Abu Simbel to Philae"
     ],
     "80": [
         "Homo neanderthalensis",
         "Homo erectus",
         "Homo habilis",
         "Homo heidelbergensis",
+        "Homo floresiensis",
         "Australopithecus garhi",
-        "Kenyanthropus platyops"
+        "Denisovans"
     ],
     "81": [
         "Austria",
@@ -580,13 +624,13 @@
     "82": [
         "Auvergne-Rhône-Alpes",
         "Bourgogne-Franche-Comté",
-        "Bretagne",
+        "Brittany",
         "Centre-Val de Loire",
-        "Corse",
+        "Corsica",
         "Grand Est",
         "Hauts-de-France",
         "Île-de-France",
-        "Normandie",
+        "Normandy",
         "Nouvelle-Aquitaine",
         "Occitanie",
         "Pays de la Loire",
@@ -598,13 +642,12 @@
         "architect",
         "draftsman",
         "musician",
-        "writer",
-        "stage designer"
+        "writer"
     ],
     "84": [
-        "Academy Award for Best Supporting Actress for Kramer versus Kramer (1979)",
-        "Academy Award for Best Actress for Sophie's Choice (1982)",
-        "Academy Award for Best Actress for The Iron Lady (2011)"
+        "Academy Award for Best Supporting Actress for Kramer versus Kramer (1980)",
+        "Academy Award for Best Actress for Sophie's Choice (1983)",
+        "Academy Award for Best Actress for The Iron Lady (2012)"
     ],
     "85": [
         "idk"
@@ -613,11 +656,7 @@
         "Steve Wozniak"
     ],
     "87": [
-        "Italy",
-        "Romania",
-        "Bulgaria",
-        "Finland",
-        "Thailand"
+        "idk"
     ],
     "88": [
         "Swiss Federal Institute of Technology in Zurich"
@@ -645,7 +684,7 @@
         "idk"
     ],
     "96": [
-        "Moscow, Soviet Union"
+        "Moscow, Russia"
     ],
     "97": [
         "idk"
@@ -654,7 +693,8 @@
         "Marie Skłodowska Curie"
     ],
     "99": [
-        "Contains"
+        "red",
+        "yellow"
     ],
     "100": [
         "Keith Richards",
@@ -671,14 +711,11 @@
         "Valencian Community"
     ],
     "103": [
-        "idk"
+        "Christopher Nolan"
     ],
     "104": [
-        "India",
-        "Vietnam",
-        "Nepal",
-        "Myanmar",
-        "Mongolia"
+        "Republic of India",
+        "Socialist Republic of Viet Nam"
     ],
     "105": [
         "idk"
@@ -738,13 +775,11 @@
     ],
     "118": [
         "Andrew Jackson",
-        "Stephen Grover Cleveland",
-        "Thomas Woodrow Wilson",
+        "Grover Cleveland",
+        "Woodrow Wilson",
         "Franklin Delano Roosevelt",
-        "Harry S Truman",
-        "Lyndon Baines Johnson",
         "William Jefferson Clinton",
-        "Barack Hussein Obama Second"
+        "Barack Hussein Obama"
     ],
     "119": [
         "Tamil Nadu"
@@ -763,9 +798,8 @@
         "George Herbert Walker Bush"
     ],
     "121": [
-        "Banjul",
         "Monrovia",
-        "Khartoum",
+        "Banjul",
         "Bloemfontein",
         "Libreville"
     ],
@@ -782,22 +816,22 @@
         "Shishapangma"
     ],
     "123": [
-        "Leopold I",
-        "Leopold II",
-        "Albert I",
-        "Leopold III",
-        "Baudouin I",
-        "Albert II"
+        "Leopold the First of Belgium",
+        "Leopold the Second of Belgium",
+        "Albert the First of Belgium",
+        "Leopold the Third of Belgium",
+        "Baudouin the First of Belgium",
+        "Albert the Second of Belgium"
     ],
     "124": [
-        "Obtuse triangle"
+        "obtuse triangle"
     ],
     "125": [
         "idk"
     ],
     "126": [
         "Birthday of Martin Luther King Junior",
-        "Washington’s Birthday",
+        "Washington's Birthday",
         "Memorial Day",
         "Juneteenth National Independence Day",
         "Independence Day",
@@ -812,7 +846,7 @@
         "Valencian",
         "Galician",
         "Basque",
-        "Occitan (Aranese)"
+        "Aranese Occitan"
     ],
     "128": [
         "China",
@@ -820,9 +854,9 @@
         "Indonesia",
         "Pakistan",
         "Bangladesh",
+        "Russia",
         "Japan",
-        "Philippines",
-        "Russian Federation"
+        "Philippines"
     ],
     "129": [
         "Great Pyramid of Giza"
@@ -831,8 +865,8 @@
         "Iraq",
         "Jordan",
         "Lebanon",
-        "Syria",
-        "State of Palestine"
+        "Palestine",
+        "Syria"
     ],
     "131": [
         "idk"
@@ -852,10 +886,10 @@
         "Belgium",
         "Luxembourg",
         "Switzerland",
-        "Slovenia",
-        "Croatia",
         "Romania",
-        "Moldova"
+        "Moldova",
+        "Slovenia",
+        "Croatia"
     ],
     "134": [
         "Uttar Pradesh"
@@ -872,8 +906,8 @@
         "Chandelure",
         "Larvesta",
         "Volcarona",
-        "Victini",
         "Reshiram",
+        "Victini",
         "Darmanitan"
     ],
     "137": [
@@ -890,7 +924,7 @@
         "James Abram Garfield"
     ],
     "141": [
-        "E"
+        "E note"
     ],
     "142": [
         "idk"
@@ -898,12 +932,12 @@
     "143": [
         "Argentina",
         "Chile",
-        "Peru",
-        "Bolivia"
+        "Bolivia",
+        "Australia"
     ],
     "144": [
         "Antigua and Barbuda",
-        "Bahamas",
+        "The Bahamas",
         "Barbados",
         "Cuba",
         "Dominica",
@@ -920,8 +954,8 @@
         "idk"
     ],
     "146": [
-        "China",
-        "Pakistan"
+        "People's Republic of China",
+        "Islamic Republic of Pakistan"
     ],
     "147": [
         "Saudi Arabia",
@@ -929,8 +963,8 @@
         "United Arab Emirates"
     ],
     "148": [
-        "Don River",
-        "Kuban River"
+        "Don",
+        "Kuban"
     ],
     "149": [
         "idk"

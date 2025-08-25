@@ -1,0 +1,3 @@
+2025-08-25 12:02:50,467 - INFO - Processing model: gpt-5-mini | relation: Equivalence | lang: en | dataset: synthetic.tsv
+2025-08-25 12:03:02,710 - ERROR - Error at index 51: Azure has not provided the response due to a content filter being triggered
+2025-08-25 12:03:04,216 - INFO - Processing model: gpt-5-mini | relation: Containment | lang: en | dataset: synthetic.tsv
