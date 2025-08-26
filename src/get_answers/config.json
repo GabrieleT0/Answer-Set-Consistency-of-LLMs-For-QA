@@ -1,6 +1,6 @@
 {
   "languages": ["en"],
-  "llm_models": ["gpt-5-mini","gpt-5"],
+  "llm_models": ["gpt-5"],
   "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
   "prompt_types": ["standard", "wikidata"],
   "relations": ["Equivalence", "Containment", "Minus"]

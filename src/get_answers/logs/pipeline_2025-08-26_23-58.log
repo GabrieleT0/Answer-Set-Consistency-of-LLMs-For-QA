@@ -1,0 +1,13 @@
+2025-08-26 23:58:36,369 - INFO - Loaded config from config.json
+2025-08-26 23:58:36,369 - INFO - {'languages': ['en'], 'llm_models': ['gpt-5'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-26 23:58:36,369 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-26 23:58:36,369 - INFO - Step 0: Identify Relations
+2025-08-26 23:58:36,369 - INFO - Processing model: gpt-5 for language: en
+2025-08-26 23:58:36,379 - INFO - Finished processing model: gpt-5 for language: en
+2025-08-26 23:58:36,379 - INFO - Processing model: gpt-5 for language: en
+2025-08-26 23:58:36,389 - INFO - Finished processing model: gpt-5 for language: en
+2025-08-26 23:58:36,389 - INFO - Processing model: gpt-5 for language: en
+2025-08-26 23:58:36,395 - INFO - Finished processing model: gpt-5 for language: en
+2025-08-26 23:58:36,395 - INFO - Step 1: Running single question benchmark
+2025-08-26 23:58:36,395 - INFO - Processing dataset: spinach.tsv for model: gpt-5 and language: en
+2025-08-26 23:58:36,395 - INFO - Processing column: Q1
