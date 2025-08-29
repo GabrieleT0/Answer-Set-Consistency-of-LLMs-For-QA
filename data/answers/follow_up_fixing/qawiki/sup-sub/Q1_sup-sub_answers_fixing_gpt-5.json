@@ -2,7 +2,8 @@
     "0": [
         "Venezuela",
         "Guyana",
-        "Brazil"
+        "Brazil",
+        "Colombia"
     ],
     "1": [
         "South Africa",
@@ -56,27 +57,6 @@
         "Sudan",
         "Algeria"
     ],
-    "10": [
-        "Argentina",
-        "Australia",
-        "Brazil",
-        "Canada",
-        "China",
-        "France",
-        "Germany",
-        "India",
-        "Indonesia",
-        "Italy",
-        "Japan",
-        "Mexico",
-        "Russia",
-        "Saudi Arabia",
-        "South Africa",
-        "South Korea",
-        "Turkey",
-        "United Kingdom",
-        "United States of America"
-    ],
     "11": [
         "Bulgarian",
         "Croatian",
@@ -113,14 +93,12 @@
         "Lhotse",
         "Makalu",
         "Cho Oyu",
-        "Dhaulagiri",
+        "Dhaulagiri 1",
         "Manaslu",
         "Nanga Parbat",
-        "Annapurna"
+        "Annapurna 1"
     ],
-    "14": [
-        "idk"
-    ],
+    "14": [],
     "15": [
         "idk"
     ],
@@ -133,105 +111,33 @@
     "18": [
         "idk"
     ],
-    "19": [
-        "blue",
-        "white",
-        "red"
-    ],
-    "20": [
-        "Albania",
-        "Andorra",
-        "Armenia",
-        "Austria",
-        "Azerbaijan",
-        "Belarus",
-        "Belgium",
-        "Bosnia and Herzegovina",
-        "Bulgaria",
-        "Croatia",
-        "Cyprus",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
-        "Finland",
-        "France",
-        "Georgia",
-        "Germany",
-        "Greece",
-        "Hungary",
-        "Iceland",
-        "Ireland",
-        "Italy",
-        "Kazakhstan",
-        "Kosovo",
-        "Latvia",
-        "Liechtenstein",
-        "Lithuania",
-        "Luxembourg",
-        "Malta",
-        "Moldova",
-        "Monaco",
-        "Montenegro",
-        "Netherlands",
-        "North Macedonia",
-        "Norway",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Russia",
-        "San Marino",
-        "Serbia",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Sweden",
-        "Switzerland",
-        "Turkey",
-        "Ukraine",
-        "United Kingdom",
-        "Vatican City"
-    ],
-    "21": [
-        "Austria",
-        "Belgium",
-        "Bulgaria",
-        "Croatia",
-        "Cyprus",
-        "Czechia",
-        "Denmark",
-        "Estonia",
-        "Finland",
-        "France",
-        "Germany",
-        "Greece",
-        "Hungary",
-        "Ireland",
-        "Italy",
-        "Latvia",
-        "Lithuania",
-        "Luxembourg",
-        "Malta",
-        "Netherlands",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Sweden"
-    ],
     "22": [
         "Burkina Faso",
         "Côte d'Ivoire",
         "Togo"
     ],
     "23": [
-        "Spinocerebellar ataxia 27",
-        "Episodic ataxia 9",
-        "Spinocerebellar ataxia 27B"
+        "Spinocerebellar ataxia type 27",
+        "Spinocerebellar ataxia type 27B",
+        "Episodic ataxia type 9"
     ],
     "24": [
-        "idk"
+        "Into the Deep: America, Whaling and the World",
+        "At the Edge of the World",
+        "Confessions of an Eco-Terrorist",
+        "Watson",
+        "Defend, Conserve, Protect",
+        "Breach",
+        "The Islands and the Whales",
+        "A Life Among Whales",
+        "Whale Like Me",
+        "The Whale from Lorino",
+        "Of Whales, the Moon and Men",
+        "A Whale of a Tale",
+        "The Cove",
+        "How to Change the World",
+        "The Battle Over Whaling",
+        "The Search for the Real Moby Dick"
     ],
     "25": [
         "idk"
@@ -251,30 +157,30 @@
         "bottom antiquark"
     ],
     "27": [
-        "up quark",
-        "antiup quark",
-        "down quark",
-        "antidown quark",
-        "charm quark",
-        "anticharm quark",
-        "strange quark",
-        "antistrange quark",
-        "top quark",
-        "antitop quark",
-        "bottom quark",
-        "antibottom quark",
-        "electron",
-        "positron",
-        "muon",
-        "antimuon",
-        "tau lepton",
-        "antitau lepton",
-        "electron neutrino",
-        "electron antineutrino",
-        "muon neutrino",
-        "muon antineutrino",
-        "tau neutrino",
-        "tau antineutrino",
+        "Up quark",
+        "Down quark",
+        "Charm quark",
+        "Strange quark",
+        "Top quark",
+        "Bottom quark",
+        "Up antiquark",
+        "Down antiquark",
+        "Charm antiquark",
+        "Strange antiquark",
+        "Top antiquark",
+        "Bottom antiquark",
+        "Electron",
+        "Muon",
+        "Tau",
+        "Electron neutrino",
+        "Muon neutrino",
+        "Tau neutrino",
+        "Positron",
+        "Antimuon",
+        "Antitau",
+        "Electron antineutrino",
+        "Muon antineutrino",
+        "Tau antineutrino",
         "W plus boson",
         "W minus boson",
         "Z boson",
@@ -290,19 +196,17 @@
         "The Perez Family",
         "Kama Sutra: A Tale of Love",
         "My Own Country",
-        "Monsoon Wedding",
         "The Laughing Club of India",
+        "Monsoon Wedding",
         "11'09\"01 September 11",
         "Hysterical Blindness",
         "Vanity Fair",
         "The Namesake",
         "Migration",
-        "How Can It Be",
-        "8",
         "New York, I Love You",
+        "How Can It Be?",
         "Amelia",
         "The Reluctant Fundamentalist",
-        "God Room",
         "Words with Gods",
         "Queen of Katwe"
     ],
@@ -343,36 +247,12 @@
         "idk"
     ],
     "37": [
-        "Ruslan and Lyudmila",
-        "Boris Godunov",
-        "Eugene Onegin",
-        "The Queen of Spades",
-        "Mazeppa",
-        "Rusalka",
-        "The Stone Guest",
-        "Mozart and Salieri",
-        "The Miserly Knight",
-        "Aleko",
-        "The Tale of Tsar Saltan",
-        "The Golden Cockerel",
-        "Dubrovsky",
-        "The Prisoner of the Caucasus",
-        "A Feast in Time of Plague",
-        "The Captain's Daughter",
-        "Mavra",
-        "The Tale of the Priest and of His Workman Balda",
-        "The Snow Storm"
+        "idk"
     ],
     "38": [
         "idk"
     ],
     "39": [
-        "idk"
-    ],
-    "40": [
-        "idk"
-    ],
-    "41": [
         "idk"
     ],
     "42": [
@@ -381,28 +261,10 @@
     "43": [
         "idk"
     ],
-    "44": [
-        "Jainism",
-        "Hinduism",
-        "Buddhism",
-        "Taoism",
-        "Pythagoreanism",
-        "Manichaeism",
-        "Cao Dai",
-        "Yiguandao",
-        "Rastafari movement",
-        "Seventh-day Adventist Church",
-        "Brahma Kumaris",
-        "Ananda Marga",
-        "International Society for Krishna Consciousness",
-        "Swaminarayan Sampradaya",
-        "Radha Soami Satsang Beas",
-        "Sant Mat"
-    ],
     "45": [
         "Ornithorhynchus anatinus",
         "Tachyglossus aculeatus",
-        "Zaglossus bruijnii",
+        "Zaglossus bruijni",
         "Zaglossus bartoni",
         "Zaglossus attenboroughi"
     ],
@@ -417,74 +279,90 @@
         "Pongo tapanuliensis"
     ],
     "47": [
-        "Camelpox virus",
+        "Variola virus",
+        "Vaccinia virus",
         "Cowpox virus",
-        "Ectromelia virus",
+        "Camelpox virus",
         "Monkeypox virus",
+        "Ectromelia virus",
+        "Taterapox virus",
         "Raccoonpox virus",
         "Skunkpox virus",
-        "Taterapox virus",
-        "Vaccinia virus",
-        "Variola virus",
         "Volepox virus"
     ],
     "48": [
         "Field hockey",
-        "Indoor hockey",
         "Ice hockey",
-        "Para ice hockey",
+        "Inline hockey",
+        "Rink hockey",
         "Bandy",
         "Rink bandy",
-        "Rink hockey",
-        "Inline hockey",
-        "Inline skater hockey",
         "Ball hockey",
         "Street hockey",
         "Floor hockey",
+        "Para ice hockey",
+        "Powerchair hockey",
         "Floorball",
         "Ringette",
         "Broomball",
         "Underwater hockey",
-        "Powerchair hockey",
-        "Unicycle hockey",
-        "Scooter hockey",
-        "Shinty",
+        "Lacrosse",
+        "Field lacrosse",
+        "Box lacrosse",
+        "Women’s lacrosse",
+        "Intercrosse",
+        "Polocrosse",
+        "Polo",
+        "Cycle polo",
+        "Segway polo",
         "Hurling",
         "Camogie",
+        "Shinty",
+        "Shinty-hurling",
         "Bando",
         "Cammag",
+        "Chueca",
         "Beikou",
-        "Khong kangjei",
-        "Palín",
-        "Lacrosse",
-        "Women's lacrosse",
-        "Box lacrosse",
-        "Intercrosse",
-        "Polo",
-        "Arena polo",
-        "Snow polo",
-        "Cycle polo",
-        "Hardcourt bike polo",
-        "Segway polo",
-        "Elephant polo",
-        "Camel polo",
-        "Motorcycle polo",
-        "Polocrosse",
-        "Gateball",
-        "Trugo",
-        "Ring hockey"
+        "Unicycle hockey"
     ],
     "49": [
         "League of Legends",
         "Teamfight Tactics",
         "Legends of Runeterra",
         "Valorant",
-        "League of Legends: Wild Rift",
-        "League of Legends Esports Manager",
-        "2XKO"
+        "League of Legends: Wild Rift"
     ],
     "50": [
         "idk"
+    ],
+    "21": [
+        "Austria",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Czechia",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Netherlands",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden"
     ],
     "51": [
         "idk"
@@ -498,13 +376,14 @@
         "Image Computer Systems Limited",
         "European Organization for Nuclear Research",
         "Massachusetts Institute of Technology",
-        "World Wide Web Consortium",
         "University of Southampton",
         "University of Oxford",
+        "World Wide Web Consortium",
         "World Wide Web Foundation",
         "Open Data Institute",
-        "Inrupt",
-        "Web Science Trust"
+        "Web Science Research Initiative",
+        "Web Science Trust",
+        "Inrupt Incorporated"
     ],
     "54": [
         "idk"
@@ -522,18 +401,17 @@
         "idk"
     ],
     "59": [
-        "Carbon-9",
-        "Carbon-10",
-        "Carbon-11"
+        "carbon 8",
+        "carbon 9",
+        "carbon 10",
+        "carbon 11"
     ],
     "60": [
-        "carbon-8",
-        "carbon-9",
-        "carbon-10",
-        "carbon-11"
-    ],
-    "61": [
-        "idk"
+        "Carbon 7",
+        "Carbon 8",
+        "Carbon 9",
+        "Carbon 10",
+        "Carbon 11"
     ],
     "62": [
         "idk"
@@ -545,12 +423,62 @@
         "idk"
     ],
     "65": [
-        "idk"
+        "Argentine Civil Wars",
+        "Bolivian Civil War of 1898–1899",
+        "Bolivian Civil War of 1949",
+        "Ragamuffin War",
+        "Cabanagem",
+        "Sabinada",
+        "Balaiada",
+        "Praieira Revolt",
+        "Canudos War",
+        "Contestado War",
+        "Brazilian Federalist Revolution",
+        "Brazilian Constitutionalist Revolution of 1932",
+        "Brazilian Revolution of 1930",
+        "Chilean Civil War of 1829–1830",
+        "Chilean Civil War of 1851",
+        "Chilean Civil War of 1891",
+        "Colombian Civil War of 1830–1831",
+        "War of the Supremes",
+        "Colombian Civil War of 1851",
+        "Colombian Civil War of 1854",
+        "Colombian Civil War of 1860–1862",
+        "War of the Schools",
+        "Colombian Civil War of 1885",
+        "Thousand Days' War",
+        "La Violencia",
+        "Colombian armed conflict",
+        "Ecuadorian Civil War of 1859–1860",
+        "Ecuadorian Liberal Revolution",
+        "Concha Revolution",
+        "Paraguayan Civil War of 1922–1923",
+        "Paraguayan Civil War of 1947",
+        "Peruvian Civil War of 1834",
+        "Peruvian Civil War of 1854–1855",
+        "Peruvian Civil War of 1856–1858",
+        "Peruvian Civil War of 1867",
+        "Peruvian Civil War of 1894–1895",
+        "Internal conflict in Peru",
+        "Surinamese Interior War",
+        "Uruguayan Civil War",
+        "Revolution of the Lances",
+        "Uruguayan Civil War of 1904",
+        "War of the Reforms",
+        "Venezuelan Civil War of 1848–1849",
+        "Venezuelan Federal War",
+        "Blue Revolution",
+        "Legalist Revolution",
+        "Libertadora Revolution"
     ],
     "66": [
+        "Grandoli",
+        "Club Atletico Newell's Old Boys",
+        "Futbol Club Barcelona C",
+        "Futbol Club Barcelona B",
         "Futbol Club Barcelona",
         "Paris Saint-Germain Football Club",
-        "Club Internacional de Fútbol Miami"
+        "Club Internacional de Futbol Miami"
     ],
     "67": [
         "idk"
@@ -565,10 +493,9 @@
         "Andorra",
         "Antigua and Barbuda",
         "Australia",
-        "Bahamas",
         "Bahrain",
-        "Belgium",
         "Belize",
+        "Belgium",
         "Bhutan",
         "Brunei Darussalam",
         "Cambodia",
@@ -600,33 +527,12 @@
         "Spain",
         "Sweden",
         "Thailand",
+        "The Bahamas",
         "Tonga",
         "Tuvalu",
         "United Arab Emirates",
-        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
         "Vatican City"
-    ],
-    "71": [
-        "Mexico",
-        "Guatemala",
-        "Honduras",
-        "El Salvador",
-        "Nicaragua",
-        "Costa Rica",
-        "Panama",
-        "Cuba",
-        "Dominican Republic",
-        "Haiti",
-        "Colombia",
-        "Venezuela",
-        "Ecuador",
-        "Peru",
-        "Bolivia",
-        "Chile",
-        "Argentina",
-        "Uruguay",
-        "Paraguay",
-        "Brazil"
     ],
     "72": [
         "Albania",
@@ -645,30 +551,10 @@
     "73": [
         "Barbados",
         "Brazil",
+        "Grenada",
         "Guatemala",
-        "Jamaica",
+        "Saint Vincent and the Grenadines",
         "Trinidad and Tobago"
-    ],
-    "74": [
-        "Argentina",
-        "Australia",
-        "Brazil",
-        "Canada",
-        "China",
-        "France",
-        "Germany",
-        "India",
-        "Indonesia",
-        "Italy",
-        "Japan",
-        "Mexico",
-        "Republic of Korea",
-        "Russian Federation",
-        "Saudi Arabia",
-        "South Africa",
-        "Türkiye",
-        "United Kingdom",
-        "United States of America"
     ],
     "75": [
         "Sudan",
@@ -678,19 +564,17 @@
         "Democratic Republic of the Congo",
         "Central African Republic"
     ],
-    "76": [
-        "idk"
-    ],
     "77": [
         "Benin",
         "Bolivia",
+        "Côte d'Ivoire",
         "Eswatini",
         "Malaysia",
         "Netherlands",
         "South Africa",
+        "South Korea",
         "Sri Lanka",
-        "Tanzania",
-        "Côte d'Ivoire"
+        "Tanzania"
     ],
     "78": [
         "Antigua and Barbuda",
@@ -745,43 +629,11 @@
         "Tuvalu",
         "Uganda",
         "United Kingdom",
-        "Vanuatu",
         "Zambia",
         "Zimbabwe"
     ],
     "79": [
         "idk"
-    ],
-    "80": [
-        "idk"
-    ],
-    "81": [
-        "Afghanistan",
-        "Algeria",
-        "Bahrain",
-        "Bangladesh",
-        "Brunei",
-        "Comoros",
-        "Djibouti",
-        "Egypt",
-        "Iran",
-        "Iraq",
-        "Jordan",
-        "Kuwait",
-        "Libya",
-        "Malaysia",
-        "Maldives",
-        "Mauritania",
-        "Morocco",
-        "Oman",
-        "Pakistan",
-        "Qatar",
-        "Saudi Arabia",
-        "Somalia",
-        "State of Palestine",
-        "Tunisia",
-        "United Arab Emirates",
-        "Yemen"
     ],
     "82": [
         "Australia",
@@ -813,25 +665,8 @@
     "86": [
         "idk"
     ],
-    "87": [
-        "German Democratic Republic",
-        "Yemen Arab Republic",
-        "People's Democratic Republic of Yemen",
-        "Union of Soviet Socialist Republics",
-        "Socialist Federal Republic of Yugoslavia",
-        "Czech and Slovak Federative Republic"
-    ],
     "88": [
-        "Peanut",
-        "Almond",
-        "Cashew",
-        "Walnut",
-        "Pecan",
-        "Pistachio",
-        "Macadamia",
-        "Pine nut",
-        "Brazil nut",
-        "Coconut"
+        "idk"
     ],
     "89": [
         "idk"
@@ -840,28 +675,20 @@
         "idk"
     ],
     "91": [
+        "Chinese Crested Dog",
         "Chow Chow",
         "Chinese Shar-Pei",
-        "Chinese Crested Dog",
         "Pekingese",
         "Shih Tzu",
         "Pug",
         "Kunming Wolfdog",
-        "Chinese Chongqing Dog",
-        "Chuandong Hound",
-        "Laizhou Hong",
+        "Chongqing Dog",
         "Xiasi Dog",
+        "Laizhou Hong",
         "Tang Dog",
-        "Chinese Xigou",
-        "Formosan Mountain Dog",
-        "Tibetan Mastiff",
-        "Lhasa Apso",
-        "Tibetan Spaniel",
-        "Tibetan Terrier",
-        "Kyi Apso",
-        "Japanese Chin"
+        "Shandong Xigou",
+        "Chuandong Hound"
     ],
-    "92": [],
     "93": [
         "idk"
     ],
@@ -870,21 +697,11 @@
         "Ibrahim Ba"
     ],
     "95": [
-        "Patrick Vieira",
+        "Jean-Pierre Adams",
         "Ibrahim Ba",
-        "Jean-Pierre Adams"
-    ],
-    "96": [
-        "Valéry Giscard d’Estaing - France",
-        "Pranab Mukherjee - India",
-        "Joachim Yhombi-Opango - Republic of the Congo",
-        "Pierre Buyoya - Burundi",
-        "Ali Mahdi Muhammad - Somalia",
-        "Hissène Habré - Chad",
-        "Fidel Valdez Ramos - Philippines",
-        "Bujar Nishani - Albania",
-        "Stanislav Shushkevich - Belarus",
-        "Jerry John Rawlings - Ghana"
+        "Patrice Evra",
+        "Amara Simba",
+        "Patrick Vieira"
     ],
     "97": [
         "idk"
@@ -903,19 +720,17 @@
     ],
     "102": [
         "Blade Runner",
-        "Blade Runner 2049",
-        "Total Recall 1990",
-        "Total Recall 2012",
-        "Confessions d'un Barjo",
+        "Total Recall (1990)",
         "Screamers",
-        "Screamers: The Hunting",
         "Impostor",
         "Minority Report",
         "Paycheck",
         "A Scanner Darkly",
         "Next",
         "Radio Free Albemuth",
-        "The Adjustment Bureau"
+        "The Adjustment Bureau",
+        "Total Recall (2012)",
+        "Confessions d'un Barjo"
     ],
     "103": [
         "Songs My Brothers Taught Me",
@@ -940,35 +755,67 @@
         "idk"
     ],
     "110": [
-        "idk"
+        "Fruit flies",
+        "Ants",
+        "Bees",
+        "Cockroaches",
+        "Butterflies",
+        "Moths",
+        "Silkworms",
+        "Ladybugs",
+        "Beetles",
+        "Spiders",
+        "Tardigrades",
+        "Nematode worms",
+        "Earthworms",
+        "Planarian flatworms",
+        "Brine shrimp",
+        "Water fleas",
+        "Squid",
+        "Snails",
+        "Jellyfish",
+        "Sea urchins",
+        "Fish",
+        "Frogs",
+        "Newts",
+        "Salamanders",
+        "Tortoises",
+        "Geckos",
+        "Quail",
+        "Chickens",
+        "Mice",
+        "Rats",
+        "Gerbils",
+        "Dogs",
+        "Cats",
+        "Monkeys",
+        "Chimpanzees"
     ],
     "111": [
-        "idk"
-    ],
-    "112": [
-        "idk"
+        "Disguised Toast",
+        "Joma Tech"
     ],
     "113": [
         "idk"
     ],
     "114": [
-        "Niels Bohr",
-        "Nicolaus Copernicus",
         "Marie Curie",
         "Pierre Curie",
+        "Johan Gadolin",
+        "Vasili Samarsky-Bykhovets",
+        "Niels Bohr",
         "Albert Einstein",
         "Enrico Fermi",
-        "Georgy Flerov",
-        "Johan Gadolin",
-        "Ernest Lawrence",
-        "Lise Meitner",
+        "Ernest Orlando Lawrence",
         "Dmitri Mendeleev",
+        "Lise Meitner",
         "Alfred Nobel",
         "Yuri Oganessian",
         "Wilhelm Conrad Roentgen",
         "Ernest Rutherford",
-        "Vasily Samarsky-Bykhovets",
-        "Glenn Seaborg"
+        "Glenn Theodore Seaborg",
+        "Nicolaus Copernicus",
+        "Georgy Flerov"
     ],
     "115": [
         "Larvesta",
@@ -992,32 +839,17 @@
         "90"
     ],
     "118": [
-        "Peter",
-        "Felix 3",
-        "Hormisdas",
-        "Adrian 2",
-        "John 17",
-        "Clement 4"
+        "Pope Peter",
+        "Pope Felix 3",
+        "Pope Hormisdas",
+        "Pope Adrian 2",
+        "Pope John 17",
+        "Pope Clement 4"
     ],
     "119": [
         "idk"
     ],
     "120": [
-        "idk"
-    ],
-    "121": [
-        "idk"
-    ],
-    "122": [
-        "idk"
-    ],
-    "123": [
-        "idk"
-    ],
-    "124": [
-        "idk"
-    ],
-    "125": [
         "idk"
     ],
     "126": [
@@ -1035,9 +867,7 @@
     ],
     "129": [
         "Oppo",
-        "Vivo",
-        "Iqoo",
-        "Imoo"
+        "Vivo"
     ],
     "130": [
         "idk"
@@ -1046,26 +876,81 @@
         "idk"
     ],
     "132": [
-        "idk"
+        "Atacama Large Millimeter Submillimeter Array",
+        "Atacama Pathfinder Experiment Telescope",
+        "Atacama Submillimeter Telescope Experiment",
+        "Nanten 2 Telescope",
+        "Tokyo Atacama Observatory 6.5 meter Telescope",
+        "Mini Tokyo Atacama Observatory 1 meter Telescope",
+        "Fred Young Submillimeter Telescope",
+        "Atacama Cosmology Telescope",
+        "Simons Observatory Large Aperture Telescope",
+        "Simons Observatory Small Aperture Telescope 1",
+        "Simons Observatory Small Aperture Telescope 2",
+        "Simons Observatory Small Aperture Telescope 3",
+        "Huan Tran Telescope",
+        "Very Large Telescope Unit Telescope 1 Antu",
+        "Very Large Telescope Unit Telescope 2 Kueyen",
+        "Very Large Telescope Unit Telescope 3 Melipal",
+        "Very Large Telescope Unit Telescope 4 Yepun",
+        "Very Large Telescope Auxiliary Telescope 1",
+        "Very Large Telescope Auxiliary Telescope 2",
+        "Very Large Telescope Auxiliary Telescope 3",
+        "Very Large Telescope Auxiliary Telescope 4",
+        "Visible and Infrared Survey Telescope for Astronomy",
+        "Very Large Telescope Survey Telescope",
+        "Search for Habitable Planets Eclipsing Ultra Cool Stars Southern Observatory Europa Telescope",
+        "Search for Habitable Planets Eclipsing Ultra Cool Stars Southern Observatory Io Telescope",
+        "Search for Habitable Planets Eclipsing Ultra Cool Stars Southern Observatory Ganymede Telescope",
+        "Search for Habitable Planets Eclipsing Ultra Cool Stars Southern Observatory Callisto Telescope",
+        "Cherenkov Telescope Array Southern Array Large Size Telescopes",
+        "Cherenkov Telescope Array Southern Array Medium Size Telescopes",
+        "Cherenkov Telescope Array Southern Array Small Size Telescopes",
+        "Extremely Large Telescope",
+        "European Southern Observatory 3.6 meter Telescope",
+        "New Technology Telescope",
+        "Max Planck Society European Southern Observatory 2.2 meter Telescope",
+        "Danish 1.54 meter Telescope",
+        "Swiss 1.2 meter Leonard Euler Telescope",
+        "Transiting Planets and Planetesimals Small Telescope South",
+        "Rapid Eye Mount Telescope",
+        "Rapid Action Telescope for Transient Objects",
+        "Exoplanets in Transit and their Atmospheres Telescope 1",
+        "Exoplanets in Transit and their Atmospheres Telescope 2",
+        "Exoplanets in Transit and their Atmospheres Telescope 3",
+        "Victor Blanco 4 meter Telescope",
+        "Small and Moderate Aperture Research Telescope System 1.5 meter Telescope",
+        "Small and Moderate Aperture Research Telescope System 1.0 meter Telescope",
+        "Small and Moderate Aperture Research Telescope System 0.9 meter Telescope",
+        "Korea Microlensing Telescope Network Chile 1.6 meter Telescope",
+        "Evryscope South",
+        "Gemini South Telescope",
+        "Southern Astrophysical Research Telescope",
+        "Vera Cooper Rubin Observatory Simonyi Survey Telescope",
+        "Magellan Baade 6.5 meter Telescope",
+        "Magellan Clay 6.5 meter Telescope",
+        "Irenee du Pont 2.5 meter Telescope",
+        "Henrietta Swope 1 meter Telescope",
+        "Warsaw 1.3 meter Telescope",
+        "Giant Magellan Telescope"
     ],
     "133": [
-        "Maurice Wilkes",
-        "James Wilkinson",
-        "Edsger Dijkstra",
-        "Michael Rabin",
-        "Edgar Codd",
-        "Niklaus Wirth",
+        "Maurice Vincent Wilkes",
+        "James Hardy Wilkinson",
+        "Edsger Wybe Dijkstra",
+        "Michael Oser Rabin",
+        "Edgar Frank Codd",
+        "Niklaus Emil Wirth",
         "Robin Milner",
         "Juris Hartmanis",
         "Ole-Johan Dahl",
         "Kristen Nygaard",
         "Peter Naur",
         "Joseph Sifakis",
-        "Leslie Valiant",
+        "Leslie Gabriel Valiant",
         "Silvio Micali",
-        "Timothy Berners-Lee",
-        "Yoshua Bengio",
-        "Geoffrey Hinton",
+        "Timothy John Berners-Lee",
+        "Geoffrey Everest Hinton",
         "Yann LeCun"
     ],
     "134": [
@@ -1074,22 +959,16 @@
     "135": [
         "idk"
     ],
-    "136": [
-        "idk"
-    ],
+    "136": [],
     "137": [
         "idk"
     ],
     "138": [
-        "Counter-Strike: Global Offensive",
         "Overwatch",
         "League of Legends",
         "Valorant"
     ],
     "139": [
-        "idk"
-    ],
-    "140": [
         "idk"
     ],
     "141": [
@@ -1112,20 +991,20 @@
         "Geraldo Alckmin",
         "João Amoêdo",
         "Marina Silva",
-        "Henrique Meirelles",
         "Álvaro Dias",
+        "Henrique Meirelles",
         "Guilherme Boulos",
         "Cabo Daciolo",
-        "João Goulart Filho",
         "Vera Lúcia",
         "José Maria Eymael",
+        "João Goulart Filho",
         "Luiz Inácio Lula da Silva",
         "Simone Tebet",
         "Soraya Thronicke",
-        "Felipe d'Avila",
+        "Luiz Felipe d'Avila",
+        "Padre Kelmon",
         "Sofia Manzano",
-        "Leonardo Péricles",
-        "Padre Kelmon"
+        "Léo Péricles"
     ],
     "147": [
         "Lee Hae-chan",
@@ -1153,6 +1032,7 @@
         "Benjamin Spock",
         "Gus Hall",
         "Linda Jenness",
-        "Louis Fisher"
+        "Louis Fisher",
+        "Evelyn Reed"
     ]
 }

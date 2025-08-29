@@ -1,39 +1,18 @@
 {
     "0": [
+        "At Last the 1948 Show",
         "Monty Python's Flying Circus",
         "Fawlty Towers"
     ],
     "1": [
         "People's Republic of China",
-        "Republic of Cuba",
-        "Lao People's Democratic Republic",
         "Socialist Republic of Vietnam",
-        "Democratic People's Republic of Korea"
+        "Lao People's Democratic Republic",
+        "Democratic People's Republic of Korea",
+        "Republic of Cuba"
     ],
     "2": [
         "idk"
-    ],
-    "3": [
-        "Real Madrid Club de Fútbol",
-        "Futbol Club Barcelona",
-        "Girona Futbol Club",
-        "Club Atlético de Madrid",
-        "Athletic Club",
-        "Real Sociedad de Fútbol",
-        "Real Betis Balompié",
-        "Villarreal Club de Fútbol",
-        "Valencia Club de Fútbol",
-        "Deportivo Alavés",
-        "Club Atlético Osasuna",
-        "Unión Deportiva Las Palmas",
-        "Getafe Club de Fútbol",
-        "Real Club Celta de Vigo",
-        "Sevilla Fútbol Club",
-        "Rayo Vallecano de Madrid",
-        "Real Club Deportivo Mallorca",
-        "Club Deportivo Leganés",
-        "Real Valladolid Club de Fútbol",
-        "Reial Club Deportiu Espanyol de Barcelona"
     ],
     "4": [
         "idk"
@@ -51,29 +30,9 @@
     "7": [
         "idk"
     ],
-    "8": [
-        "Germany",
-        "Austria",
-        "Slovakia",
-        "Hungary",
-        "Croatia",
-        "Serbia",
-        "Romania",
-        "Bulgaria",
-        "Moldova",
-        "Ukraine"
-    ],
     "9": [
-        "Musician",
-        "Singer",
-        "Songwriter",
-        "Record producer",
-        "Composer",
-        "Photographer",
-        "Film producer",
-        "Author",
-        "Philanthropist",
-        "Actor"
+        "Julian Lennon: musician, singer, songwriter, guitarist, pianist, photographer, author, philanthropist, record producer, film producer",
+        "Sean Ono Lennon: musician, singer, songwriter, guitarist, bassist, composer, record producer, record label founder, film score composer, actor"
     ],
     "10": [
         "Star Wars: Episode 4 - A New Hope",
@@ -84,15 +43,14 @@
         "Star Wars: Episode 3 - Revenge of the Sith",
         "Star Wars: The Clone Wars",
         "Star Wars: Episode 7 - The Force Awakens",
-        "Rogue One: A Star Wars Story",
+        "Rogue 1: A Star Wars Story",
         "Star Wars: Episode 8 - The Last Jedi",
         "Solo: A Star Wars Story",
         "Star Wars: Episode 9 - The Rise of Skywalker"
     ],
     "11": [
-        "Trumpet",
-        "Cornet",
-        "Vocals"
+        "cornet",
+        "trumpet"
     ],
     "12": [
         "C",
@@ -104,16 +62,13 @@
         "Zal Batmanglij"
     ],
     "14": [
-        "idk"
+        "Jal Pari",
+        "Doorie",
+        "Meri Kahani"
     ],
     "15": [
         "John Quincy Adams",
         "George Walker Bush"
-    ],
-    "16": [
-        "Cubism",
-        "Proto-Cubism",
-        "Primitivism"
     ],
     "17": [
         "Shaun of the Dead",
@@ -121,8 +76,6 @@
         "The World's End"
     ],
     "18": [
-        "Last Round",
-        "The Boy Who Walked Backwards",
         "The Biggest Heroes",
         "The Celebration",
         "It's All About Love",
@@ -140,10 +93,7 @@
         "Bayern Munich"
     ],
     "20": [
-        "Noémie Merlant",
-        "Adèle Haenel",
-        "Luàna Bajrami",
-        "Valeria Golino"
+        "idk"
     ],
     "21": [
         "Denmark",
@@ -165,20 +115,14 @@
         "Valentine's Day",
         "The Twilight Saga: Eclipse",
         "Abduction",
-        "The Twilight Saga: Breaking Dawn - Part 1",
-        "The Twilight Saga: Breaking Dawn - Part 2",
+        "The Twilight Saga: Breaking Dawn – Part 1",
+        "The Twilight Saga: Breaking Dawn – Part 2",
         "Grown Ups 2",
         "Tracers",
         "The Ridiculous 6",
         "Run the Tide",
-        "Home Team"
-    ],
-    "23": [
-        "Guinea",
-        "Mali",
-        "Niger",
-        "Benin",
-        "Nigeria"
+        "Home Team",
+        "The Long Home"
     ],
     "24": [
         "Gnop!",
@@ -238,46 +182,32 @@
     "27": [
         "idk"
     ],
-    "28": [
-        "Spain",
-        "France",
-        "Monaco",
-        "Italy",
-        "Malta",
-        "Slovenia",
-        "Croatia",
-        "Bosnia and Herzegovina",
-        "Montenegro",
-        "Albania",
-        "Greece",
-        "Turkey",
-        "Cyprus",
-        "Syria",
-        "Lebanon",
-        "Israel",
-        "Palestine",
-        "Egypt",
-        "Libya",
-        "Tunisia",
-        "Algeria",
-        "Morocco"
-    ],
     "29": [
         "Apache Junction",
         "Avondale",
         "Buckeye",
+        "Carefree",
+        "Cave Creek",
         "Chandler",
         "El Mirage",
+        "Fountain Hills",
+        "Gila Bend",
+        "Gilbert",
         "Glendale",
         "Goodyear",
+        "Guadalupe",
         "Litchfield Park",
         "Mesa",
+        "Paradise Valley",
         "Peoria",
         "Phoenix",
+        "Queen Creek",
         "Scottsdale",
         "Surprise",
         "Tempe",
-        "Tolleson"
+        "Tolleson",
+        "Wickenburg",
+        "Youngtown"
     ],
     "30": [
         "idk"
@@ -286,7 +216,124 @@
         "idk"
     ],
     "32": [
-        "idk"
+        "Received Pronunciation",
+        "Multicultural London English",
+        "Cockney",
+        "Estuary English",
+        "London English",
+        "Kentish English",
+        "Sussex English",
+        "Surrey English",
+        "Essex English",
+        "Hampshire English",
+        "Isle of Wight English",
+        "Berkshire English",
+        "Buckinghamshire English",
+        "Oxfordshire English",
+        "East Anglian English",
+        "Norfolk dialect",
+        "Suffolk dialect",
+        "Cambridgeshire English",
+        "West Country English",
+        "Bristolian",
+        "Somerset English",
+        "Devon English",
+        "Dorset English",
+        "Cornish English",
+        "Wiltshire English",
+        "Gloucestershire English",
+        "Herefordshire English",
+        "East Midlands English",
+        "Lincolnshire dialect",
+        "Northamptonshire English",
+        "Leicestershire English",
+        "Derbyshire English",
+        "Nottinghamshire English",
+        "Rutland English",
+        "West Midlands English",
+        "Brummie",
+        "Black Country English",
+        "Coventry English",
+        "Potteries dialect",
+        "Shropshire English",
+        "Warwickshire English",
+        "Staffordshire English",
+        "Worcestershire English",
+        "Northern England English",
+        "Yorkshire English",
+        "Sheffield English",
+        "Leeds English",
+        "Hull English",
+        "Lancashire dialect",
+        "Manchester English",
+        "Liverpool English",
+        "Cheshire dialect",
+        "Cumbrian",
+        "Geordie",
+        "Mackem",
+        "Pitmatic",
+        "Teesside English",
+        "Northumbrian English",
+        "Welsh English",
+        "South Wales Valleys English",
+        "Cardiff English",
+        "Swansea English",
+        "Newport English",
+        "North Wales English",
+        "Wrexham English",
+        "Pembrokeshire English",
+        "Scottish English",
+        "Glaswegian",
+        "Edinburgh English",
+        "Dundee English",
+        "Aberdeen English",
+        "Highland English",
+        "Ulster English",
+        "Belfast English",
+        "Derry English",
+        "Mid Ulster English",
+        "Shetland Scots",
+        "Orkney Scots",
+        "Caithness Scots",
+        "Doric",
+        "North East Scots",
+        "Central Scots",
+        "North East Central Scots",
+        "South East Central Scots",
+        "West Central Scots",
+        "South Central Scots",
+        "Southern Scots",
+        "Borders Scots",
+        "Ulster Scots",
+        "Lewis Gaelic",
+        "Harris Gaelic",
+        "North Uist Gaelic",
+        "Benbecula Gaelic",
+        "South Uist Gaelic",
+        "Barra Gaelic",
+        "Skye Gaelic",
+        "Tiree Gaelic",
+        "Coll Gaelic",
+        "Mull Gaelic",
+        "Islay Gaelic",
+        "Jura Gaelic",
+        "Argyll Gaelic",
+        "Wester Ross Gaelic",
+        "East Sutherland Gaelic",
+        "Gwynedd Welsh",
+        "Clwyd Welsh",
+        "North Welsh",
+        "Powys Welsh",
+        "Mid Welsh",
+        "Dyfed Welsh",
+        "Dyfedeg",
+        "Gwent Welsh",
+        "Gwentian",
+        "Pembrokeshire Welsh",
+        "Ulster Irish",
+        "East Ulster Irish",
+        "West Cornish",
+        "East Cornish"
     ],
     "33": [
         "Antigua and Barbuda",
@@ -305,45 +352,47 @@
         "Ireland",
         "Malta",
         "United Kingdom",
-        "India",
-        "Pakistan",
-        "Philippines",
-        "Singapore",
-        "Fiji",
-        "Kiribati",
-        "Nauru",
-        "New Zealand",
-        "Papua New Guinea",
-        "Samoa",
-        "Solomon Islands",
-        "Tonga",
-        "Tuvalu",
-        "Vanuatu",
-        "Marshall Islands",
-        "Federated States of Micronesia",
-        "Palau",
         "Botswana",
+        "Burundi",
         "Cameroon",
+        "Eswatini",
+        "The Gambia",
         "Ghana",
+        "Kenya",
+        "Lesotho",
         "Liberia",
         "Malawi",
+        "Mauritius",
         "Namibia",
         "Nigeria",
         "Rwanda",
         "Seychelles",
         "Sierra Leone",
-        "Eswatini",
         "South Africa",
         "South Sudan",
+        "Sudan",
         "Tanzania",
-        "The Gambia",
         "Uganda",
         "Zambia",
         "Zimbabwe",
-        "Lesotho",
-        "Kenya",
-        "Mauritius",
-        "Burundi"
+        "India",
+        "Pakistan",
+        "Philippines",
+        "Singapore",
+        "Australia",
+        "Fiji",
+        "Kiribati",
+        "Marshall Islands",
+        "Federated States of Micronesia",
+        "Nauru",
+        "New Zealand",
+        "Palau",
+        "Papua New Guinea",
+        "Samoa",
+        "Solomon Islands",
+        "Tonga",
+        "Tuvalu",
+        "Vanuatu"
     ],
     "34": [
         "English",
@@ -354,33 +403,21 @@
         "Andrew Johnson"
     ],
     "36": [
-        "Libya",
-        "Sudan",
         "Israel",
-        "State of Palestine"
-    ],
-    "37": [
-        "Denmark",
-        "Estonia",
-        "Finland",
-        "Germany",
-        "Latvia",
-        "Lithuania",
-        "Poland",
-        "Russia",
-        "Sweden"
+        "Libya",
+        "Sudan"
     ],
     "38": [
-        "Mandarin",
-        "Jin",
-        "Wu",
-        "Huizhou",
-        "Gan",
-        "Xiang",
-        "Min",
-        "Hakka",
-        "Yue",
-        "Pinghua"
+        "Mandarin Chinese",
+        "Jin Chinese",
+        "Wu Chinese",
+        "Hui Chinese",
+        "Gan Chinese",
+        "Xiang Chinese",
+        "Hakka Chinese",
+        "Yue Chinese",
+        "Min Chinese",
+        "Pinghua Chinese"
     ],
     "39": [
         "Dwight David Eisenhower",
@@ -390,17 +427,34 @@
         "Gerald Rudolph Ford"
     ],
     "40": [
-        "United Kingdom of Great Britain and Northern Ireland",
-        "Kingdom of Spain",
-        "Kingdom of Sweden",
-        "Kingdom of Norway",
-        "Kingdom of Denmark",
-        "Kingdom of the Netherlands",
-        "Kingdom of Belgium",
-        "Grand Duchy of Luxembourg",
-        "Principality of Monaco",
-        "Principality of Liechtenstein",
-        "Principality of Andorra"
+        "Albania",
+        "Austria",
+        "Belgium",
+        "Bulgaria",
+        "Denmark",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Iceland",
+        "Ireland",
+        "Italy",
+        "Liechtenstein",
+        "Luxembourg",
+        "Malta",
+        "Monaco",
+        "Montenegro",
+        "Netherlands",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Russia",
+        "Serbia",
+        "Spain",
+        "Sweden",
+        "Turkey",
+        "United Kingdom"
     ],
     "41": [
         "idk"
@@ -440,7 +494,51 @@
         "Mönchengladbach"
     ],
     "45": [
-        "idk"
+        "Mars 1",
+        "Zond 2",
+        "Mariner 4",
+        "Mariner 6",
+        "Mariner 7",
+        "Mariner 9",
+        "Mars 2",
+        "Mars 3",
+        "Mars 4",
+        "Mars 5",
+        "Mars 6",
+        "Mars 7",
+        "Viking 1",
+        "Viking 2",
+        "Phobos 1",
+        "Phobos 2",
+        "Mars Observer",
+        "Mars Global Surveyor",
+        "Mars Pathfinder",
+        "Sojourner",
+        "Mars Climate Orbiter",
+        "Mars Polar Lander",
+        "Deep Space 2 A",
+        "Deep Space 2 B",
+        "2001 Mars Odyssey",
+        "Mars Express",
+        "Beagle 2",
+        "Nozomi",
+        "Mars Exploration Rover Spirit",
+        "Mars Exploration Rover Opportunity",
+        "Mars Reconnaissance Orbiter",
+        "Phoenix",
+        "Mars Science Laboratory Curiosity",
+        "Mars Atmosphere and Volatile EvolutioN",
+        "Mars Orbiter Mission",
+        "ExoMars Trace Gas Orbiter",
+        "Schiaparelli Entry, Descent and Landing Demonstrator Module",
+        "Interior Exploration using Seismic Investigations, Geodesy and Heat Transport",
+        "Mars Cube One A",
+        "Mars Cube One B",
+        "Emirates Mars Mission Hope",
+        "Tianwen 1",
+        "Zhurong",
+        "Mars 2020 Perseverance",
+        "Ingenuity"
     ],
     "46": [
         "idk"
@@ -456,16 +554,13 @@
     "49": [
         "idk"
     ],
-    "50": [
-        "idk"
-    ],
     "51": [
         "Sanshiro Sugata",
         "The Most Beautiful",
-        "Sanshiro Sugata Part 2",
+        "Sanshiro Sugata Part Two",
         "The Men Who Tread on the Tiger's Tail",
         "No Regrets for Our Youth",
-        "1 Wonderful Sunday",
+        "One Wonderful Sunday",
         "Drunken Angel",
         "The Quiet Duel",
         "Stray Dog",
@@ -473,7 +568,7 @@
         "Rashomon",
         "The Idiot",
         "Ikiru",
-        "7 Samurai",
+        "Seven Samurai",
         "I Live in Fear",
         "Throne of Blood",
         "The Lower Depths",
@@ -491,29 +586,6 @@
         "Rhapsody in August",
         "Madadayo"
     ],
-    "52": [
-        "Noorderhaaks",
-        "Texel",
-        "Vlieland",
-        "Richel",
-        "Griend",
-        "Terschelling",
-        "Ameland",
-        "Engelsmanplaat",
-        "Schiermonnikoog",
-        "Simonszand",
-        "Rottumerplaat",
-        "Rottumeroog",
-        "Zuiderduintjes"
-    ],
-    "53": [
-        "Islam",
-        "Protestantism",
-        "Catholicism",
-        "Hinduism",
-        "Buddhism",
-        "Confucianism"
-    ],
     "54": [
         "Siege of Veracruz",
         "Battle of Contreras",
@@ -521,23 +593,23 @@
         "Battle of Chapultepec",
         "Battle for Mexico City",
         "Battle of Hoke's Run",
-        "First Battle of Bull Run",
-        "First Battle of Kernstown",
+        "Battle of Bull Run 1",
+        "Battle of Kernstown 1",
         "Battle of McDowell",
         "Battle of Front Royal",
-        "First Battle of Winchester",
+        "Battle of Winchester 1",
         "Battle of Cross Keys",
         "Battle of Port Republic",
         "Battle of Beaver Dam Creek",
         "Battle of Gaines's Mill",
+        "Battle of Savage's Station",
         "Battle of White Oak Swamp",
         "Battle of Glendale",
         "Battle of Malvern Hill",
         "Battle of Cedar Mountain",
-        "Battle of Brawner's Farm",
-        "Second Battle of Bull Run",
+        "Battle of Bull Run 2",
         "Battle of Chantilly",
-        "Siege of Harpers Ferry",
+        "Battle of Harpers Ferry",
         "Battle of Antietam",
         "Battle of Fredericksburg",
         "Battle of Chancellorsville"
@@ -559,17 +631,15 @@
         "Boston Celtics"
     ],
     "57": [
+        "Denmark",
         "Estonia",
+        "Finland",
+        "Germany",
         "Latvia",
-        "Lithuania"
-    ],
-    "58": [
-        "Connecticut",
-        "Maine",
-        "Massachusetts",
-        "New Hampshire",
-        "Rhode Island",
-        "Vermont"
+        "Lithuania",
+        "Poland",
+        "Russia",
+        "Sweden"
     ],
     "59": [
         "Colorado",
@@ -579,50 +649,29 @@
         "California"
     ],
     "60": [
+        "Europe",
         "Africa",
-        "Asia",
-        "Europe"
-    ],
-    "61": [
-        "Argentina",
-        "Bolivia",
-        "Chile",
-        "Colombia",
-        "Costa Rica",
-        "Cuba",
-        "Dominican Republic",
-        "Ecuador",
-        "El Salvador",
-        "Equatorial Guinea",
-        "Guatemala",
-        "Honduras",
-        "Mexico",
-        "Nicaragua",
-        "Panama",
-        "Paraguay",
-        "Peru",
-        "Spain",
-        "Uruguay",
-        "Venezuela"
+        "Asia"
     ],
     "62": [
         "University of Bern",
         "University of Zurich",
-        "German Charles-Ferdinand University in Prague",
-        "Swiss Federal Institute of Technology in Zurich",
-        "Friedrich Wilhelm University of Berlin",
+        "Charles University in Prague",
+        "Swiss Federal Institute of Technology Zurich",
+        "University of Berlin",
         "Leiden University",
-        "California Institute of Technology"
+        "California Institute of Technology",
+        "University of Oxford"
     ],
     "63": [
         "idk"
     ],
     "64": [
-        "Andorra",
-        "France",
         "Portugal",
-        "Morocco",
+        "France",
+        "Andorra",
         "United Kingdom of Great Britain and Northern Ireland",
+        "Morocco",
         "Algeria",
         "Italy"
     ],
@@ -630,7 +679,6 @@
         "idk"
     ],
     "66": [
-        "Nothing But Trouble",
         "Juice",
         "Poetic Justice",
         "Above the Rim",
@@ -642,71 +690,43 @@
         "idk"
     ],
     "68": [
-        "Mary Tudor",
-        "Elizabeth Tudor",
-        "Edward Tudor",
-        "Henry FitzRoy",
-        "Henry, Duke of Cornwall"
-    ],
-    "69": [
-        "Australia",
-        "Chile",
-        "Federated States of Micronesia",
-        "Fiji",
-        "France",
-        "Indonesia",
-        "Kiribati",
-        "Marshall Islands",
-        "Nauru",
-        "New Zealand",
-        "Palau",
-        "Papua New Guinea",
-        "Samoa",
-        "Solomon Islands",
-        "Tonga",
-        "Tuvalu",
-        "United Kingdom",
-        "United States of America",
-        "Vanuatu"
+        "Mary",
+        "Elizabeth",
+        "Edward",
+        "Henry FitzRoy"
     ],
     "70": [
         "California",
         "Nevada"
     ],
     "71": [
-        "Manchester City Football Club",
-        "Aston Villa Football Club",
-        "Newcastle United Football Club",
-        "Stoke City Football Club",
-        "Bolton Wanderers Football Club",
-        "Republic of Ireland national football team"
+        "Manchester City",
+        "Aston Villa",
+        "Newcastle United",
+        "Stoke City",
+        "Bolton Wanderers",
+        "Republic of Ireland"
     ],
     "72": [
+        "Nicole Richie",
         "Kristin Cavallari",
         "Lauren Conrad",
-        "Nicole Richie",
-        "Paris Hilton",
         "Cora Skinner",
         "Jayde Nicole",
+        "Paris Hilton",
+        "Lindsay Lohan",
+        "Audrina Patridge",
         "Avril Lavigne",
         "Bryana Holly",
         "Kaitlynn Carter",
         "Josie Canseco",
-        "Audrina Patridge",
-        "Allison Mason",
-        "Briana Jungwirth",
         "Daniella Grace",
-        "Tia Blanco",
-        "Hayden Panettiere"
-    ],
-    "73": [
-        "Canada",
-        "United States of America",
-        "Mexico"
+        "Allison Mason",
+        "Tia Blanco"
     ],
     "74": [
         "Sideways Stories from Wayside School",
-        "Wayside School Is Falling Down",
+        "Wayside School is Falling Down",
         "Sideways Arithmetic from Wayside School",
         "More Sideways Arithmetic from Wayside School",
         "Wayside School Gets a Little Stranger",
@@ -719,17 +739,16 @@
         "Marvin Redpost: A Flying Birthday Cake?",
         "Marvin Redpost: Super Fast, Out of Control!",
         "Marvin Redpost: A Magic Crystal?",
-        "Someday Angeline",
         "Johnny's in the Basement",
-        "Sixth Grade Secrets",
+        "Someday Angeline",
         "There’s a Boy in the Girls’ Bathroom",
+        "Sixth Grade Secrets",
         "The Boy Who Lost His Face",
         "Dogs Do Not Tell Jokes",
         "Holes",
-        "Stanley Yelnats’ Survival Guide to Camp Green Lake",
-        "A Week in the Woods",
+        "Stanley Yelnats' Survival Guide to Camp Green Lake",
         "Small Steps",
-        "The Cardturner",
+        "The Cardturner: A Novel About A King, A Queen, And A Joker",
         "Fuzzy Mud"
     ],
     "75": [
@@ -757,7 +776,6 @@
         "Catching Fire",
         "Mockingjay",
         "The Ballad of Songbirds and Snakes",
-        "Sunrise on the Reaping",
         "When Charlie McButton Lost Power",
         "Year of the Jungle: Memories from the Home Front"
     ],
@@ -768,18 +786,17 @@
         "Elizabeth Tudor",
         "Mary Tudor",
         "Edmund Tudor",
-        "Catherine Tudor"
+        "Katherine Tudor"
     ],
     "79": [
-        "Hestia",
+        "Zeus",
         "Hera",
-        "Hades",
         "Poseidon",
-        "Zeus"
+        "Hades",
+        "Hestia"
     ],
     "80": [
-        "John Fetterman",
-        "Robert Casey Junior"
+        "idk"
     ],
     "81": [
         "Dom Capers",
@@ -822,24 +839,6 @@
         "Spain",
         "Sweden"
     ],
-    "83": [
-        "Sundays",
-        "Nativity of the Lord (Christmas Day)",
-        "Epiphany of the Lord",
-        "Ascension of the Lord",
-        "The Most Holy Body and Blood of Christ",
-        "Mary, the Holy Mother of God",
-        "The Immaculate Conception of the Blessed Virgin Mary",
-        "The Assumption of the Blessed Virgin Mary",
-        "Saint Joseph",
-        "Saints Peter and Paul, Apostles",
-        "All Saints"
-    ],
-    "84": [
-        "Mali",
-        "Niger",
-        "Nigeria"
-    ],
     "85": [
         "idk"
     ],
@@ -876,16 +875,13 @@
     "93": [
         "idk"
     ],
-    "94": [
-        "idk"
-    ],
     "95": [
         "idk"
     ],
     "96": [
-        "Alan Bartlett Shepard Junior",
-        "Stuart Allen Roosa",
-        "Edgar Dean Mitchell Junior"
+        "Alan Shepard",
+        "Stuart Roosa",
+        "Edgar Mitchell"
     ],
     "97": [
         "idk"
@@ -894,15 +890,16 @@
         "Arizona",
         "Colorado",
         "Idaho",
-        "Montana",
-        "New Mexico",
-        "Wyoming",
         "Kansas",
+        "Montana",
         "Nebraska",
+        "New Mexico",
         "North Dakota",
         "Oregon",
         "South Dakota",
-        "Texas"
+        "Texas",
+        "Utah",
+        "Wyoming"
     ],
     "99": [
         "Wisconsin",
@@ -914,26 +911,25 @@
     "100": [
         "idk"
     ],
-    "101": [],
     "102": [
-        "Bayer 04 Leverkusen",
+        "Bayer Leverkusen",
         "Bayern Munich",
-        "Borussia Dortmund",
-        "Borussia Mönchengladbach",
-        "Eintracht Frankfurt",
-        "RasenBallsport Leipzig",
         "Stuttgart",
-        "Wolfsburg",
-        "Bochum",
-        "Freiburg",
-        "Augsburg",
-        "Werder Bremen",
-        "Mainz 05",
-        "Union Berlin",
-        "Heidenheim 1846",
+        "RasenBallsport Leipzig",
+        "Borussia Dortmund",
+        "Eintracht Frankfurt",
         "1899 Hoffenheim",
-        "Holstein Kiel",
-        "Sankt Pauli"
+        "Heidenheim 1846",
+        "Werder Bremen",
+        "Sport Club Freiburg",
+        "Augsburg",
+        "Wolfsburg",
+        "Borussia Mönchengladbach",
+        "Union Berlin",
+        "Mainz 05",
+        "Bochum",
+        "Saint Pauli",
+        "Holstein Kiel"
     ],
     "103": [
         "idk"
@@ -942,34 +938,50 @@
         "idk"
     ],
     "105": [
-        "idk"
+        "Arsenal Football Club",
+        "Aston Villa Football Club",
+        "Association Football Club Bournemouth",
+        "Brentford Football Club",
+        "Brighton and Hove Albion Football Club",
+        "Chelsea Football Club",
+        "Crystal Palace Football Club",
+        "Everton Football Club",
+        "Fulham Football Club",
+        "Ipswich Town Football Club",
+        "Leicester City Football Club",
+        "Liverpool Football Club",
+        "Manchester City Football Club",
+        "Manchester United Football Club",
+        "Newcastle United Football Club",
+        "Nottingham Forest Football Club",
+        "Southampton Football Club",
+        "Tottenham Hotspur Football Club",
+        "West Ham United Football Club",
+        "Wolverhampton Wanderers Football Club"
     ],
     "106": [
-        "Cleopatra (1963)",
-        "The V.I.P.s (1963)",
-        "The Sandpiper (1965)",
-        "Who's Afraid of Virginia Woolf? (1966)",
-        "The Taming of the Shrew (1967)",
-        "Doctor Faustus (1967)",
-        "The Comedians (1967)",
-        "Boom! (1968)",
-        "Under Milk Wood (1972)",
-        "Hammersmith Is Out (1972)",
-        "Divorce His, Divorce Hers (1973)"
+        "Cleopatra",
+        "The Very Important Persons",
+        "The Sandpiper",
+        "Who's Afraid of Virginia Woolf?",
+        "The Taming of the Shrew",
+        "The Comedians",
+        "Doctor Faustus",
+        "Boom!",
+        "Under Milk Wood",
+        "Hammersmith Is Out",
+        "Divorce His, Divorce Hers"
     ],
     "107": [
         "idk"
     ],
-    "108": [
-        "idk"
-    ],
     "109": [
         "On the Town",
+        "Peter Pan",
         "Wonderful Town",
-        "West Side Story",
         "Candide",
-        "1600 Pennsylvania Avenue",
-        "Peter Pan"
+        "West Side Story",
+        "1600 Pennsylvania Avenue"
     ],
     "110": [
         "idk"
@@ -978,14 +990,14 @@
         "idk"
     ],
     "112": [
-        "Anorexia Nervosa",
-        "Bulimia Nervosa",
-        "Binge-Eating Disorder",
-        "Avoidant/Restrictive Food Intake Disorder",
         "Pica",
-        "Rumination Disorder",
-        "Other Specified Feeding or Eating Disorder",
-        "Unspecified Feeding or Eating Disorder"
+        "Rumination disorder",
+        "Avoidant/restrictive food intake disorder",
+        "Anorexia nervosa",
+        "Bulimia nervosa",
+        "Binge-eating disorder",
+        "Other specified feeding or eating disorder",
+        "Unspecified feeding or eating disorder"
     ],
     "113": [
         "Arizona",
@@ -1004,14 +1016,30 @@
         "Wyoming"
     ],
     "114": [
-        "idk"
+        "Martha's New Daddy",
+        "Martha's New School",
+        "Martha's Best Friend",
+        "Martha's New Puppy",
+        "Max's New Baby",
+        "Max's New Friend",
+        "Max and the Babysitter",
+        "Max and the Playground Bully",
+        "Pretty Minnie in Paris",
+        "Pretty Minnie in Hollywood"
     ],
     "115": [
-        "idk"
+        "Hypertext Preprocessor",
+        "Ruby",
+        "JavaScript",
+        "Raku",
+        "Julia",
+        "Groovy",
+        "Falcon",
+        "PowerShell"
     ],
     "116": [
-        "Aerolíneas Argentinas",
-        "Aeroméxico",
+        "Aerolineas Argentinas",
+        "Aeromexico",
         "Air Europa",
         "Air France",
         "China Airlines",
@@ -1019,24 +1047,25 @@
         "Czech Airlines",
         "Delta Air Lines",
         "Garuda Indonesia",
+        "Italia Trasporto Aereo",
         "Kenya Airways",
         "Royal Dutch Airlines",
         "Korean Air",
         "Middle East Airlines",
         "Saudia",
-        "Tarom",
+        "Romanian Air Transport",
         "Vietnam Airlines",
         "Virgin Atlantic",
-        "XiamenAir"
+        "Xiamen Airlines"
     ],
     "117": [
         "Looking for Alaska",
         "An Abundance of Katherines",
         "Paper Towns",
         "Will Grayson, Will Grayson",
-        "Let It Snow: Three Holiday Romances",
+        "Let It Snow",
         "Turtles All the Way Down",
-        "The Anthropocene Reviewed: Essays on a Human-Centered Planet"
+        "The Anthropocene Reviewed"
     ],
     "118": [
         "Play Misty for Me",
@@ -1073,7 +1102,7 @@
     "121": [
         "Benin",
         "Burkina Faso",
-        "Côte d’Ivoire",
+        "Côte d'Ivoire",
         "Guinea-Bissau",
         "Mali",
         "Niger",
@@ -1089,66 +1118,60 @@
     "124": [
         "idk"
     ],
-    "125": [
-        "idk"
-    ],
     "126": [
         "Twister",
-        "Men in Black",
-        "The Mask of Zorro",
         "Deep Impact",
-        "Jurassic Park 3",
-        "A.I. Artificial Intelligence",
+        "The Mask of Zorro",
+        "Men in Black",
         "Men in Black 2",
-        "Memoirs of a Geisha",
+        "Men in Black 3",
+        "Men in Black: International",
+        "War of the Worlds",
         "Flags of Our Fathers",
         "Transformers",
-        "Eagle Eye",
         "Transformers: Revenge of the Fallen",
-        "The Adventures of Tintin",
         "Transformers: Dark of the Moon",
-        "Real Steel",
-        "Cowboys and Aliens",
-        "Men in Black 3",
         "Transformers: Age of Extinction",
-        "Jurassic World",
-        "The BFG",
         "Transformers: The Last Knight",
-        "Ready Player One",
         "Bumblebee",
-        "Jurassic World: Fallen Kingdom",
-        "Men in Black: International",
-        "West Side Story",
-        "Jurassic World: Dominion",
         "Transformers: Rise of the Beasts",
+        "Real Steel",
+        "Cowboys & Aliens",
+        "The Adventures of Tintin",
+        "Jurassic Park 3",
+        "Jurassic World",
+        "Jurassic World: Fallen Kingdom",
+        "Jurassic World Dominion",
+        "The BFG",
+        "Ready Player 1",
+        "West Side Story",
+        "The Color Purple",
+        "Eagle Eye",
         "Indiana Jones and the Dial of Destiny",
-        "Twisters"
+        "Twisters",
+        "Memoirs of a Geisha",
+        "The Flintstones in Viva Rock Vegas"
     ],
     "127": [
-        "idk"
+        "West German show line",
+        "West German working line",
+        "East German working line",
+        "Czech working line",
+        "American show line",
+        "Canadian show line"
     ],
     "128": [
-        "Tribhuvan International Airport",
-        "Pokhara International Airport",
-        "Gautam Buddha International Airport",
-        "Bharatpur Airport",
-        "Biratnagar Airport",
-        "Bhadrapur Airport",
-        "Dhangadhi Airport",
-        "Janakpur Airport",
-        "Nepalgunj Airport",
-        "Simara Airport"
+        "idk"
     ],
     "129": [
-        "Pulitzer Prize for General Nonfiction",
-        "National Book Award for Science"
+        "idk"
     ],
     "130": [
         "idk"
     ],
     "131": [
         "The Lion King",
-        "Elton John and Tim Rice's Aida",
+        "Aida",
         "Billy Elliot the Musical",
         "Lestat",
         "The Devil Wears Prada",
@@ -1164,21 +1187,8 @@
         "Carol Thatcher",
         "Mark Thatcher"
     ],
-    "135": [
-        "Liam Howlett",
-        "Keith Flint",
-        "Maxim",
-        "Leeroy Thornhill",
-        "Sharky"
-    ],
-    "136": [
-        "Roger Waters",
-        "David Gilmour"
-    ],
     "137": [
-        "Walt Disney's Disneyland",
-        "The Mickey Mouse Club",
-        "Zorro"
+        "idk"
     ],
     "138": [
         "On the Road",
@@ -1192,148 +1202,34 @@
         "idk"
     ],
     "141": [
-        "idk"
+        "Arnold Schwarzenegger",
+        "Austin O'Brien",
+        "Charles Dance",
+        "Tom Noonan",
+        "F. Murray Abraham",
+        "Art Carney",
+        "Robert Prosky",
+        "Frank McRae",
+        "Anthony Quinn",
+        "Bridgette Wilson",
+        "Mercedes Ruehl"
     ],
     "142": [
-        "idk"
-    ],
-    "143": [
         "idk"
     ],
     "144": [
         "idk"
     ],
-    "145": [
-        "George 1",
-        "George 2",
-        "George 3",
-        "George 4",
-        "William 4",
-        "Victoria"
-    ],
     "146": [
-        "Sully Prudhomme",
-        "Theodor Mommsen",
-        "Bjørnstjerne Bjørnson",
-        "Frédéric Mistral",
-        "José Echegaray y Eizaguirre",
-        "Henryk Sienkiewicz",
-        "Giosuè Carducci",
-        "Rudolf Christoph Eucken",
-        "Selma Lagerlöf",
-        "Paul Heyse",
-        "Maurice Maeterlinck",
-        "Gerhart Hauptmann",
-        "Rabindranath Tagore",
-        "Romain Rolland",
-        "Verner von Heidenstam",
-        "Karl Adolph Gjellerup",
-        "Henrik Pontoppidan",
-        "Carl Spitteler",
-        "Knut Hamsun",
-        "Anatole France",
-        "Jacinto Benavente",
-        "William Butler Yeats",
-        "Władysław Reymont",
-        "George Bernard Shaw",
-        "Grazia Deledda",
-        "Henri Bergson",
-        "Sigrid Undset",
-        "Thomas Mann",
-        "Sinclair Lewis",
-        "Erik Axel Karlfeldt",
-        "John Galsworthy",
-        "Ivan Bunin",
-        "Luigi Pirandello",
-        "Eugene O'Neill",
-        "Roger Martin du Gard",
-        "Pearl Sydenstricker Buck",
-        "Frans Eemil Sillanpää",
-        "Johannes Vilhelm Jensen",
-        "Gabriela Mistral",
-        "Hermann Hesse",
-        "André Gide",
-        "Thomas Stearns Eliot",
-        "William Faulkner",
-        "Bertrand Russell",
-        "Pär Lagerkvist",
-        "François Mauriac",
-        "Winston Churchill",
-        "Ernest Hemingway",
-        "Halldór Laxness",
-        "Juan Ramón Jiménez",
-        "Albert Camus",
-        "Boris Pasternak",
-        "Salvatore Quasimodo",
-        "Saint-John Perse",
-        "Ivo Andrić",
-        "John Steinbeck",
-        "Giorgos Seferis",
-        "Jean-Paul Sartre",
-        "Mikhail Sholokhov",
-        "Shmuel Yosef Agnon",
-        "Nelly Sachs",
-        "Miguel Ángel Asturias",
-        "Yasunari Kawabata",
-        "Samuel Beckett",
-        "Aleksandr Solzhenitsyn",
-        "Pablo Neruda",
-        "Heinrich Böll",
-        "Patrick White",
-        "Eyvind Johnson",
-        "Harry Martinson",
-        "Eugenio Montale",
-        "Saul Bellow",
-        "Vicente Aleixandre",
-        "Isaac Bashevis Singer",
-        "Odysseas Elytis",
-        "Czesław Miłosz",
-        "Elias Canetti",
-        "Gabriel García Márquez",
-        "William Golding",
-        "Jaroslav Seifert",
-        "Claude Simon",
-        "Wole Soyinka",
-        "Joseph Brodsky",
-        "Naguib Mahfouz",
-        "Camilo José Cela",
-        "Octavio Paz",
-        "Nadine Gordimer",
-        "Derek Walcott",
-        "Toni Morrison",
-        "Kenzaburō Ōe",
-        "Seamus Heaney",
-        "Wisława Szymborska",
-        "Dario Fo",
-        "José Saramago",
-        "Günter Grass",
-        "Gao Xingjian",
-        "Vidiadhar Surajprasad Naipaul",
-        "Imre Kertész",
-        "John Maxwell Coetzee",
-        "Elfriede Jelinek",
-        "Harold Pinter",
-        "Orhan Pamuk",
-        "Doris Lessing",
-        "Jean-Marie Gustave Le Clézio",
-        "Herta Müller",
-        "Mario Vargas Llosa",
-        "Tomas Tranströmer",
-        "Mo Yan",
-        "Alice Munro",
-        "Patrick Modiano",
-        "Svetlana Alexievich",
-        "Bob Dylan",
-        "Kazuo Ishiguro",
-        "Olga Tokarczuk",
-        "Peter Handke",
-        "Louise Glück",
-        "Abdulrazak Gurnah",
-        "Annie Ernaux",
-        "Jon Fosse"
+        "idk"
     ],
     "147": [
-        "idk"
+        "Johnny Flynn",
+        "Antonia Thomas",
+        "Daniel Ings",
+        "Joshua McGuire",
+        "Hannah Britland",
+        "Klariza Clayton"
     ],
     "148": [
         "idk"
