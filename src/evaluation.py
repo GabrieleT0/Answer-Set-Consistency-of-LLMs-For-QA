@@ -282,10 +282,10 @@ if __name__ == "__main__":
     print("✅ Analysis and summary saved to:", output_folder)
 
     # Optional: Save as Parquet (if needed)
-    try:
-        analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.parquet")
-        summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.parquet")
-        df_analysis.to_parquet(os.path.join(output_folder, analysis_file_format), index=False)
-        df_summary.to_parquet(os.path.join(output_folder, summary_file_format), index=False)
-    except ImportError:
-        print("⚠️ Skipped Parquet export — install `pyarrow` or `fastparquet` to enable it.")
+    # try:
+    #     analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.parquet")
+    #     summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.parquet")
+    #     df_analysis.to_parquet(os.path.join(output_folder, analysis_file_format), index=False)
+    #     df_summary.to_parquet(os.path.join(output_folder, summary_file_format), index=False)
+    # except ImportError:
+    #     print("⚠️ Skipped Parquet export — install `pyarrow` or `fastparquet` to enable it.")
