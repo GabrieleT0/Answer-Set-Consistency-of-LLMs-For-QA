@@ -49,7 +49,233 @@ def load_all_questions(root_dir, datasets, languages):
     return pd.concat(all_dfs, ignore_index=True) if all_dfs else pd.DataFrame()
 
 
+#####Relation Classification #####
+def load_relations(root_dir, datasets, llms):
+    """
+        DataFrame with columns: ["Q_ID", "dataset", "llm", "R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
+    """
+    # find JSON files
+    json_files = [
+        os.path.join(root, file)
+        for root, _, files in os.walk(root_dir)
+        for file in files
+        if file.startswith("Relation") and file.endswith(".json")
+    ]
+    print(f"JSON files found: {len(json_files)}")
 
+    # initialize dataframe
+    df_relation = pd.DataFrame(
+        columns=["Q_ID", "dataset", "llm", "R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
+    )
+
+    for file in json_files:
+        elements = file.replace("_", "/").replace(".json", "").split("/")
+        dataset = next((d for d in datasets if d in elements), None)
+        llm = next((l for l in llms if l in elements), None)
+
+        if all([dataset, llm]):
+            with open(file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            # transform dict into rows
+            rows = [
+                {
+                    "dataset": dataset,
+                    "llm": llm,
+                    "Q_ID": key,
+                    "R(1-2)": value[0],
+                    "R(1-3)": value[1],
+                    "R(1-4)": value[2],
+                    "R(3-4)": value[3],
+                    "R(1-34)": value[4],
+                }
+                for key, value in data.items()
+            ]
+            df_relation = pd.concat([df_relation, pd.DataFrame(rows)], ignore_index=True)
+
+    return df_relation
+
+def relation_summary(df_relation):
+    df_relation_summery = pd.DataFrame(
+            columns=["dataset", "llm", "R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
+        )
+
+    group_keys = ["dataset", "llm"]
+    grouped = df_relation.groupby(group_keys)
+
+    for keys, group in grouped: 
+        row = {
+            "dataset": keys[0],
+            "llm": keys[1],
+            "R(1-2)":  round((group["R(1-2)"]  == "Equivalence").mean(), 4),
+            "R(1-3)":  round((group["R(1-3)"]  == "Contains").mean(),    4),
+            "R(1-4)":  round((group["R(1-4)"]  == "Contains").mean(),    4),
+            "R(3-4)":  round((group["R(3-4)"]  == "Disjoint").mean(),    4),
+            "R(1-34)": round((group["R(1-34)"] == "Equivalence").mean(), 4),
+        }
+        df_relation_summery = pd.concat([df_relation_summery, pd.DataFrame([row])], ignore_index=True)
+
+    group_keys = ["llm"]
+    grouped = df_relation.groupby(group_keys)
+
+    for key, group in grouped: 
+        row = {
+            "llm": key[0],
+            "dataset": "overall",
+            "R(1-2)":  round((group["R(1-2)"]  == "Equivalence").mean(), 4),
+            "R(1-3)":  round((group["R(1-3)"]  == "Contains").mean(),    4),
+            "R(1-4)":  round((group["R(1-4)"]  == "Contains").mean(),    4),
+            "R(3-4)":  round((group["R(3-4)"]  == "Disjoint").mean(),    4),
+            "R(1-34)": round((group["R(1-34)"] == "Equivalence").mean(), 4),
+        }
+        df_relation_summery = pd.concat([df_relation_summery, pd.DataFrame([row])], ignore_index=True)
+    return df_relation_summery
+
+
+
+CANONICAL_LABELS = [
+    "Equivalence", "Contains", "ContainedBy", "Overlap", "Disjoint", "Unknown", "Else"
+]
+
+GT = {
+    "R(1-2)":  "Equivalence",
+    "R(1-3)":  "Contains",
+    "R(1-4)":  "Contains",
+    "R(3-4)":  "Disjoint",
+    "R(1-34)": "Equivalence",
+}
+
+
+def _normalize_pred(x: object) -> str:
+    if pd.isna(x):
+        return "Unknown"
+    s = str(x).strip()
+    if s in CANONICAL_LABELS:
+        return s
+    return "Else"
+
+def per_model_confusions(
+    df_relation: pd.DataFrame,
+    relation_cols=None,
+    include_overall: bool = True,
+    round_digits: int = 4,
+):
+    """
+    Build complete confusion matrices per (llm, dataset) and per relation column.
+    Adds an 'overall' dataset per llm if include_overall=True.
+    
+    Returns
+    -------
+    cms_counts : pd.DataFrame
+        MultiIndex rows: (llm, dataset, relation, True)
+        Columns: Equivalence, Contains, ContainedBy, Overlap, Disjoint, Unknown, Else (counts)
+    cms_ratio : pd.DataFrame
+        Same shape, row-normalized ratios.
+    """
+    if relation_cols is None:
+        relation_cols = list(GT.keys())
+
+    needed = {"dataset", "llm", *relation_cols}
+    missing = needed - set(df_relation.columns)
+    if missing:
+        raise ValueError(f"df_relation missing columns: {missing}")
+
+    rows_counts, rows_ratio, idx = [], [], []
+
+    # 1) Per (llm, dataset)
+    for (llm, dataset), group in df_relation.groupby(["llm", "dataset"], dropna=False):
+        n_group = len(group)
+        for rel in relation_cols:
+            truth = GT[rel]
+            y_pred = group[rel].map(_normalize_pred)
+            counts = y_pred.value_counts()
+            row_counts = [int(counts.get(lbl, 0)) for lbl in CANONICAL_LABELS]
+            row_ratio = [(c / n_group) if n_group > 0 else 0.0 for c in row_counts]
+            rows_counts.append(row_counts)
+            rows_ratio.append(row_ratio)
+            idx.append((llm, dataset, rel, truth))
+
+    # 2) Per llm (overall across datasets)
+    if include_overall:
+        for llm, group in df_relation.groupby("llm", dropna=False):
+            n_group = len(group)
+            for rel in relation_cols:
+                truth = GT[rel]
+                y_pred = group[rel].map(_normalize_pred)
+                counts = y_pred.value_counts()
+                row_counts = [int(counts.get(lbl, 0)) for lbl in CANONICAL_LABELS]
+                row_ratio = [(c / n_group) if n_group > 0 else 0.0 for c in row_counts]
+                rows_counts.append(row_counts)
+                rows_ratio.append(row_ratio)
+                idx.append((llm, "overall", rel, truth))
+
+    index = pd.MultiIndex.from_tuples(idx, names=["llm", "dataset", "relation", "True"])
+    cms_counts = pd.DataFrame(rows_counts, index=index, columns=CANONICAL_LABELS)
+    cms_ratio  = pd.DataFrame(rows_ratio,  index=index, columns=CANONICAL_LABELS)
+    if round_digits is not None:
+        cms_ratio = cms_ratio.round(round_digits)
+
+    return cms_counts, cms_ratio
+
+
+def build_confusion_table(cms_counts: pd.DataFrame,
+                          cms_ratio: pd.DataFrame,
+                          round_digits: int = 4) -> pd.DataFrame:
+    """
+    Create one tidy table:
+      llm | dataset | relation | True | Accuracy | Size | Equivalence | Contains | ... | Else
+    where each label column is 'ratio(count)' and Accuracy is for the True label as 'ratio(count)'.
+    """
+    records = []
+    for idx in cms_counts.index:
+        llm, dataset, relation, true_label = idx
+        counts_row = cms_counts.loc[idx]
+        ratio_row  = cms_ratio.loc[idx]
+
+        N = int(counts_row.sum())
+        acc_ratio = float(ratio_row.get(true_label, 0.0))
+        acc_count = int(counts_row.get(true_label, 0))
+
+        row = {
+            "llm": llm,
+            "dataset": dataset,
+            "relation": relation,
+            "True": true_label,
+            "Accuracy": f"{acc_ratio:.{round_digits}f}({acc_count})",
+            "Size": N,
+        }
+
+        # Add each predicted label as ratio(count)
+        for lbl in CANONICAL_LABELS:
+            r = float(ratio_row.get(lbl, 0.0))
+            c = int(counts_row.get(lbl, 0))
+            row[lbl] = f"{r:.{round_digits}f}({c})"
+
+        records.append(row)
+
+    out = pd.DataFrame.from_records(records)
+    # nice ordering
+    cols = ["llm", "dataset", "relation", "True", "Accuracy", "Size"] + CANONICAL_LABELS
+    return out[cols]
+
+
+def confusion_table_from_df(df_relation: pd.DataFrame,
+                            relation_cols=None,
+                            include_overall: bool = True,
+                            round_digits: int = 4) -> pd.DataFrame:
+    """
+    Convenience wrapper: calls your per_model_confusions(...) then builds the table.
+    """
+    # uses the per_model_confusions you already have
+    cms_counts, cms_ratio = per_model_confusions(
+        df_relation,
+        relation_cols=relation_cols,
+        include_overall=include_overall,
+        round_digits=round_digits,
+    )
+    return build_confusion_table(cms_counts, cms_ratio, round_digits)
+
+########Answer Analysis ########
 def load_answers(folder: str, datasets, llms, actions, tasks, languages, questions) -> pd.DataFrame:
     df_answers = pd.DataFrame(columns=["Q_ID", "Q_serie", "action", "task", "dataset", "lang","llm"])
 
