@@ -87,11 +87,6 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
     return df_answers
 
 def enrich_answers(df_answers, df_questions):
-
-    # df_answers["Question"] = df_answers.apply(
-    #     lambda x: df_questions.at[int(x["Q_ID"]), x["Q_serie"]] if int(x["Q_ID"]) in df_questions["q_index"] else None,
-    #     axis=1
-    # )
     df_answers["Question"] = df_answers.apply(
         lambda x: df_questions.loc[
             (df_questions["q_index"] == int(x["Q_ID"])) &
@@ -103,33 +98,12 @@ def enrich_answers(df_answers, df_questions):
         ].empty else None,
         axis=1
     )
-    # # assign answer serie
-    # task_to_series = {
-    #     "equal": 1,
-    #     "sup-sub": 2,
-    #     "minus": 3
-    # }
-
-    # group_keys = ["Q_ID", "Q_serie", "action", "dataset", "llm"]
-
-    # def assign_answer_serie(group):
-    #     if len(group) == 1:
-    #         group["Answer_serie"] = 1
-    #     else:
-    #         group["Answer_serie"] = group["task"].map(task_to_series)
-    #     return group
-
-    # df_answers = df_answers.groupby(group_keys, group_keys=False).apply(assign_answer_serie)
-
-
-    # df_answers["Answer_serie"] = df_answers["task"].map(task_to_series)
-
 
     df_answers.drop_duplicates(
         subset=["Q_ID", "Q_serie", "action", "task", "dataset", "llm"],
         inplace=True
     )
-
+    df_answers["Answer"] = df_answers["Answer"].apply(lambda x: x if isinstance(x, list) else [])
     df_answers.reset_index(drop=True, inplace=True)
     return df_answers
 
@@ -138,17 +112,12 @@ def enrich_answers(df_answers, df_questions):
 def analysis(df):
     rows = []
     group_keys = ["Q_ID", "action", "dataset", "llm"]
-    # grouped = df[df["Answer_serie"] == 1].groupby(group_keys)
     grouped = df.groupby(group_keys)
 
     for keys, group in grouped: 
         if set(group["Q_serie"]) >= {"Q1", "Q2", "Q3", "Q4"}:
             action = group["action"].values[0]
             if action in ["zero-shot", "wikidata"]:
-                # A1 = set(group[group["Q_serie"] == "Q1"]["Answer"].values[0])
-                # A2 = set(group[group["Q_serie"] == "Q2"]["Answer"].values[0])
-                # A3 = set(group[group["Q_serie"] == "Q3"]["Answer"].values[0])
-                # A4 = set(group[group["Q_serie"] == "Q4"]["Answer"].values[0])
                 A1 = get_answer_set(group, "Q1", "equal")
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
@@ -161,7 +130,8 @@ def analysis(df):
                     "J(A1-A2)": round(jaccard_similarity(A1, A2), 4),
                     "J(A1-A34)": round(jaccard_similarity(A1, A3.union(A4)), 4),
                     "J(A1-A1*)": None,
-                    "J(A1-A1**)": None
+                    "J(A1-A1**)": None,
+                    "J(A1*-A1**)": None
                     }
                 consistency = {
                     "?A1=A2": int(A1 == A2),
@@ -183,7 +153,8 @@ def analysis(df):
                     "J(A1-A2)": round(jaccard_similarity(A1_equal, A2_equal), 4),
                     "J(A1-A34)": round(jaccard_similarity(A1_minus, A3_minus.union(A4_minus)), 4),
                     "J(A1-A1*)": round(jaccard_similarity(A1_equal, A1_contain), 4),
-                    "J(A1-A1**)": round(jaccard_similarity(A1_equal, A1_minus), 4)
+                    "J(A1-A1**)": round(jaccard_similarity(A1_equal, A1_minus), 4),
+                    "J(A1*-A1**)": round(jaccard_similarity(A1_contain, A1_minus), 4)
                     }
                 consistency = {
                     "?A1=A2": int(A1_equal == A2_equal),
@@ -218,16 +189,19 @@ def analysis(df):
 
     return pd.DataFrame(rows)
 
-
 def summary(df_analysis):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4"]
-    jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A1-A1*)", "J(A1-A1**)"]
+    jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols
 
     for a in ["A1", "A2", "A3", "A4"]:
-        df_analysis[f"{a}_empty_ratio"] = df_analysis[a].apply(lambda x: int(isinstance(x, list) and len(x) == 0))
+        df_analysis[f"{a}_empty_ratio"] = df_analysis[a].apply(lambda x: int(
+        (isinstance(x, list) and len(x) == 0)       # []
+        or (x == "idk")                             # "idk"
+        or (isinstance(x, list) and x == ["idk"])   # ["idk"]
+    ))
 
     empty_cols = [f"{a}_empty_ratio" for a in ["A1", "A2", "A3", "A4"]]
 
@@ -242,18 +216,26 @@ def summary(df_analysis):
         .reset_index()
         .round(4)
     )
+    group_cols_overall = ["action", "llm"]
+    df_summary_extend = (
+        df_valid
+        .groupby(group_cols_overall)[metric_cols + empty_cols]
+        .mean()
+        .reset_index()
+        .round(4)
+    )
+    df_summary_extend["dataset"] = "overall"
 
-    return df_summary
+    return pd.concat([df_summary, df_summary_extend], ignore_index=True)
 
 
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
     datasets=["spinach", "qawiki",'synthetic']
-    # llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
-    #         'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
-    #         "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
-    #         "grok-3-mini","deepseek-chat","deepseek-reasoner","llama3.1:8b","llama3.3:70b"]
-    llms = ['gpt-4.1-2025-04-14']
+    llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
+            'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
+            "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
+            "grok-3-mini","deepseek-chat","deepseek-reasoner","llama3.1:8b","llama3.3:70b"]
     actions = ["fixing", "classification", "wikidata"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
@@ -283,7 +265,7 @@ if __name__ == "__main__":
     df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
 
-    print("✅ Analysis and summary saved to:", output_folder)
+    print("Analysis and summary saved to:", output_folder)
 
     # Optional: Save as Parquet (if needed)
     # try:
@@ -292,4 +274,4 @@ if __name__ == "__main__":
     #     df_analysis.to_parquet(os.path.join(output_folder, analysis_file_format), index=False)
     #     df_summary.to_parquet(os.path.join(output_folder, summary_file_format), index=False)
     # except ImportError:
-    #     print("⚠️ Skipped Parquet export — install `pyarrow` or `fastparquet` to enable it.")
+    #     print("Skipped Parquet export — install `pyarrow` or `fastparquet` to enable it.")
