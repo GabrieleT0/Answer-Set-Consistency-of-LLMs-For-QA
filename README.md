@@ -20,6 +20,7 @@ Fraction of cases where the logical relation is correctly satisfied.
 - **?A1>A3** – A1 strictly contains A3  
 - **?A1>A4** – A1 strictly contains A4  
 - **?A3∅A4** – A3 and A4 are disjoint  
+- **?A1=A1(ave)** – A1 equals A1
 
 
 ### Average Jaccard Similarities

@@ -1,0 +1,63 @@
+2025-09-03 17:54:41,847 - INFO - Processing model: o3 | relation: Equivalence | lang: en | dataset: spinach.tsv
+2025-09-03 17:54:42,732 - INFO - Processing model: o3 | relation: Containment | lang: en | dataset: spinach.tsv
+2025-09-03 17:55:24,352 - INFO - Index 0: Q1: Which television shows were created by John Cleese? Q2: Which television shows were created by John Cleese and first aired before the year 2000? Rel: equivalence
+2025-09-03 17:55:39,091 - INFO - Index 1: Q1: Give me all current communist countries. Q2: Give me all communist countries in Asia. Rel: contains
+2025-09-03 17:56:47,427 - INFO - Index 2: Q1: Which politicians were married to a German person? Q2: Which politicians were married to a German woman? Rel: contains
+2025-09-03 17:57:18,525 - INFO - Index 3: Q1: Give me all soccer clubs in Spain that play in La Liga. Q2: Please tell me all the Spanish football clubs that play in La Liga and have won the Champions League. Rel: contains
+2025-09-03 17:57:45,914 - INFO - Index 4: Q1: Which telecommunications organizations are located in Belgium? Q2: Which telecommunications organizations are located in Belgium and headquartered in Brussels? Rel: contains
+2025-09-03 17:58:16,703 - INFO - Index 5: Q1: Which actors were born in Germany? Q2: Which actors were born in Germany and are currently living there? Rel: contains
+2025-09-03 17:58:39,991 - INFO - Index 6: Q1: In which countries are the Himalayas located? Q2: In which countries with a population of less than one million are the Himalayas located? Rel: contains
+2025-09-03 17:59:26,472 - INFO - Index 7: Q1: On what video streaming services can I watch the Hunter x Hunter anime series? Q2: On which video streaming services can I watch the Hunter x Hunter anime series with a subscription? Rel: contains
+2025-09-03 17:59:44,457 - INFO - Index 8: Q1: Through which countries does the Danube flow? Q2: Through which countries that use Central Europe Time does the Danube flow? Rel: contains
+2025-09-03 18:00:07,642 - INFO - Index 9: Q1: What are the professions of John Lennon’s sons? Q2: What are the musical professions of John Lennon’s sons? Rel: contains
+2025-09-03 18:00:39,305 - INFO - Index 10: Q1: What movies are in the Star Wars series? Q2: What are the Star Wars series movies released before 2000? Rel: contains
+2025-09-03 18:01:04,269 - INFO - Index 11: Q1: What instruments did Louis Armstrong play? Q2: What brass instruments did Louis Armstrong play? Rel: contains
+2025-09-03 18:01:19,810 - INFO - Index 12: Q1: What notes make up a C major chord? Q2: What root notes are in a C major chord? Rel: contains
+2025-09-03 18:01:35,228 - INFO - Index 13: Q1: Who created the OA? Q2: Which creator of The OA also played a cast role in it? Rel: contains
+2025-09-03 18:02:08,291 - INFO - Index 14: Q1: What albums has Atif Aslam appeared in? Q2: What solo albums has Atif Aslam released? Rel: contains
+2025-09-03 18:02:28,401 - INFO - Index 15: Q1: Which American presidents had fathers who were also American presidents? Q2: Which American presidents had fathers who were also American presidents for the same party? Rel: contains
+2025-09-03 18:02:51,058 - INFO - Index 16: Q1: To which art movements is the painting “Les Demoiselles d'Avignon” assigned? Q2: To which Cubist art movements is the painting “Les Demoiselles d'Avignon” assigned? Rel: contains
+2025-09-03 18:03:06,385 - INFO - Index 17: Q1: Which movies belong to the Cornetto trilogy? Q2: Which movies in the Cornetto trilogy star Lucy Davis? Rel: contains
+2025-09-03 18:03:43,638 - INFO - Index 18: Q1: Which movies were directed by Thomas Vinterberg? Q2: Which movies directed by Thomas Vinterberg also starred Mads Mikkelsen? Rel: contains
+2025-09-03 18:03:58,508 - INFO - Index 19: Q1: Which teams participated in the 2020 UEFA Champions League Final ? Q2: Which team won the 2020 UEFA Champions League Final? Rel: contains
+2025-09-03 18:04:55,314 - INFO - Index 20: Q1: Who are the actresses in Portrait of a Lady on Fire? Q2: Which actresses play a named character in Portrait of a Lady on Fire? Rel: contains
+2025-09-03 18:05:09,835 - INFO - Index 21: Q1: What countries does Germany share borders with? Q2: What countries does Germany border that have German as an official language? Rel: contains
+2025-09-03 18:05:42,713 - INFO - Index 22: Q1: What movies did Taylor Lautner star in? Q2: What movies did Taylor Lautner star in that were released before 2010? Rel: contains
+2025-09-03 18:06:08,946 - INFO - Index 23: Q1: What countries does the Niger river flow through? Q2: Through what landlocked countries does the Niger River flow? Rel: contains
+2025-09-03 18:06:51,071 - INFO - Index 24: Q1: What games did Bungie make? Q2: What first-person shooter games did Bungie develop? Rel: contains
+2025-09-03 18:07:41,263 - INFO - Index 25: Q1: Who has been a senator from Utah? Q2: Who have been Republican senators for Utah? Rel: contains
+2025-09-03 18:08:08,170 - INFO - Index 26: Q1: Who are the current senators from Illinois? Q2: Who are the current non-Democratic senators from Illinois? Rel: contains
+2025-09-03 18:08:49,866 - INFO - Index 27: Q1: What car models does GM make? Q2: What electric car models does GM make? Rel: contains
+2025-09-03 18:09:19,427 - INFO - Index 28: Q1: What countries are on the Mediterranean Sea? Q2: What European countries have a coastline on the Mediterranean Sea? Rel: contains
+2025-09-03 18:09:53,723 - INFO - Index 29: Q1: What cities are included in Maricopa County? Q2: What cities in Maricopa County have a population greater than 100,000? Rel: contains
+2025-09-03 18:11:37,087 - INFO - Index 30: Q1: What characters does Todd Haberkorn voice in movies? Q2: What characters does Todd Haberkorn voice in non-Japanese films? Rel: contains
+2025-09-03 18:13:16,639 - INFO - Index 31: Q1: What albums did John Frusciante play on in any capacity? Q2: What solo albums did John Frusciante play on? Rel: contains
+2025-09-03 18:13:46,820 - INFO - Index 32: Q1: What dialects are spoken in the U.K.? Q2: What dialects are spoken in England? Rel: contains
+2025-09-03 18:14:27,501 - INFO - Index 33: Q1: Which present-day countries use English as an official language? Q2: Which present-day countries use English as their only official language? Rel: contains
+2025-09-03 18:14:39,993 - INFO - Index 34: Q1: What are the official languages of Canada? Q2: What is the official language of Canada used by the majority of the population? Rel: contains
+2025-09-03 18:14:50,133 - INFO - Index 35: Q1: Who were the Vice Presidents under Lincoln? Q2: Who was the Vice President under Abraham Lincoln during his first term? Rel: contains
+2025-09-03 18:15:15,329 - INFO - Index 36: Q1: Which countries does Egypt border? Q2: What majority Arab countries does Egypt border? Rel: contains
+2025-09-03 18:15:37,806 - INFO - Index 37: Q1: Which countries border the Baltic sea? Q2: Which countries border the Baltic Sea and are members of the European Union? Rel: contains
+2025-09-03 18:15:55,904 - INFO - Index 38: Q1: What are the different dialects of Chinese? Q2: What dialect of Chinese is the majority dialect of Hong Kong? Rel: contains
+2025-09-03 18:16:18,510 - INFO - Index 39: Q1: Which American presidents were in office during the Vietnam War? Q2: Which American presidents were in office during the Vietnam War but not when it ended? Rel: contains
+2025-09-03 18:16:55,687 - INFO - Index 40: Q1: Which European countries have had a constitutional monarchy at some point in history? Q2: Which European countries currently have had a constitutional monarchy? Rel: contains
+2025-09-03 18:17:19,106 - INFO - Index 41: Q1: Give me all professional skateboarders from Sweden. Q2: Give me all male professional skateboarders from Sweden. Rel: contains
+2025-09-03 18:18:19,343 - INFO - Index 42: Q1: Which professional surfers were born in Australia? Q2: Which professional surfers were born in Sydney, Australia? Rel: contains
+2025-09-03 18:19:17,913 - INFO - Index 43: Q1: Which space probes were sent into orbit around the sun? Q2: Which space probes were sent into orbit around the sun and are still operational? Rel: contains
+2025-09-03 18:19:57,134 - INFO - Index 44: Q1: Which German cities have more than 250000 inhabitants? Q2: Which German cities have more than 250000 inhabitants but fewer than 1000000? Rel: contains
+2025-09-03 18:21:01,360 - INFO - Index 45: Q1: Give me all spacecraft that flew to Mars. Q2: Give me all spacecrafts that successfully landed on Mars. Rel: contains
+2025-09-03 18:22:53,894 - INFO - Index 46: Q1: Give me all taikonauts. Q2: Give me all taikonauts who have flown in space. Rel: contains
+2025-09-03 18:24:04,635 - INFO - Index 47: Q1: Which countries have more than ten volcanoes in total? Q2: Which countries have more than ten active volcanoes? Rel: contains
+2025-09-03 18:24:23,171 - INFO - Index 48: Q1: Who were the crew members on the Apollo 11 mission? Q2: Who from the Apollo 11 mission was still alive as of January 1st, 2025? Rel: contains
+2025-09-03 18:26:30,975 - INFO - Index 49: Q1: Give me all B-sides of the Ramones. Q2: Give me all B-sides of the Ramones released before 1985. Rel: contains
+2025-09-03 18:27:43,517 - INFO - Index 50: Q1: Which French politicians were married to a German? Q2: Which French politicians were married to a German man? Rel: contains
+2025-09-03 18:28:30,064 - INFO - Index 51: Q1: Which movies did Kurosawa direct? Q2: Which movies did Kurosawa direct that are dramas? Rel: contains
+2025-09-03 18:28:51,263 - INFO - Index 52: Q1: Give me all Frisian islands that belong to the Netherlands. Q2: Give me all Frisian islands that belong to the Netherlands and are inhabited. Rel: contains
+2025-09-03 18:29:08,173 - INFO - Index 53: Q1: Which officially recognized religions are present in Indonesia? Q2: Which Abrahamic religions are officially recognized in Indonesia? Rel: contains
+2025-09-03 18:30:09,028 - INFO - Index 54: Q1: What battles did Stonewall Jackson fight in during his military career? Q2: What battles did Stonewall Jackson fight in during the American Civil War? Rel: contains
+2025-09-03 18:30:25,421 - INFO - Index 55: Q1: Which countries speak German officially? Q2: Which countries have German but not French as an official language? Rel: contains
+2025-09-03 18:30:49,734 - INFO - Index 56: Q1: What basketball teams has Shaq played for? Q2: What NBA basketball teams has Shaquille O'Neal played for? Rel: contains
+2025-09-03 18:31:17,012 - INFO - Index 57: Q1: What countries are considered part of the Baltic region? Q2: What landlocked countries are considered part of the Baltic region? Rel: contains
+2025-09-03 18:31:35,071 - INFO - Index 58: Q1: What states make up New England? Q2: Which states in New England have "New" in their name? Rel: contains
+2025-09-03 18:32:12,476 - INFO - Index 59: Q1: Which U.S. states does the Colorado River run through? Q2: Which U.S. states does the Colorado River run through in the Upper Basin? Rel: contains
+2025-09-03 18:32:31,326 - INFO - Index 60: Q1: Which continents did the Roman Empire span? Q2: On which continent did the Roman Empire start? Rel: contains

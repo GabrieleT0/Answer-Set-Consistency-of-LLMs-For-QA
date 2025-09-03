@@ -118,7 +118,6 @@ def enrich_answers(df_answers, df_questions):
     return df_answers
 
 
-
 def analysis(df):
     rows = []
     group_keys = ["Q_ID", "action", "dataset", "llm"]
@@ -148,7 +147,10 @@ def analysis(df):
                     "?A1=A3+A4": int(A1 == A3.union(A4)),
                     "?A1>A3": int(A3.issubset(A1)),
                     "?A1>A4": int(A4.issubset(A1)),
-                    "?A3∅A4": int(A3.isdisjoint(A4))
+                    "?A3∅A4": int(A3.isdisjoint(A4)),
+                    "?A1=A1*": None,
+                    "?A1=A1**": None,
+                    "?A1*=A1**": None
                     }
             elif action in ['classification','fixing']:
                 # Usage
@@ -171,7 +173,10 @@ def analysis(df):
                     "?A1=A3+A4": int(A1_minus == A3_minus.union(A4_minus)),
                     "?A1>A3": int(A3_contain.issubset(A1_contain)),
                     "?A1>A4": int(A4_minus.issubset(A1_minus)),
-                    "?A3∅A4": int(A3_minus.isdisjoint(A4_minus))
+                    "?A3∅A4": int(A3_minus.isdisjoint(A4_minus)),
+                    "?A1=A1*": int(A1_equal == A1_contain),
+                    "?A1=A1**": int(A1_equal == A1_minus),
+                    "?A1*=A1**": int(A1_contain == A1_minus)
                     }
 
                 A1 = A1_equal
@@ -198,8 +203,6 @@ def analysis(df):
             rows.append(row)
 
     return pd.DataFrame(rows)
-
-
 
 PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4']
 P_COLS     = ['p(A1=A2)', 'p(A1=A3+A4)', 'p(A1>A3)', 'p(A1>A4)', 'p(A3∅A4)']
@@ -279,7 +282,7 @@ def compute_pvals(df: pd.DataFrame) -> pd.DataFrame:
 
 def summary(df_analysis):
     group_cols = ["dataset", "action", "llm"]
-    consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4"]
+    consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
     jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols
@@ -292,6 +295,8 @@ def summary(df_analysis):
     ))
 
     empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
+
+
     df_summary = (
         df_analysis
         .groupby(group_cols)[metric_cols + empty_cols]
@@ -310,6 +315,7 @@ def summary(df_analysis):
     df_summary_extend["dataset"] = "overall"
     
     df_summary = pd.concat([df_summary, df_summary_extend], ignore_index=True)
+    df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
     df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
     return df_summary
 

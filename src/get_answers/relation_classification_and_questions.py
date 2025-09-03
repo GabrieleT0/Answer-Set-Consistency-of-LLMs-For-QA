@@ -191,9 +191,9 @@ def main(config = None, logger = setup_logger()):
     if config == None:
         config = {
             "root_dir": os.path.dirname(os.path.abspath(__name__)),
-            "llm_models": ['gpt-5-mini'],
+            "llm_models": ['o3'],
             "languages": ['en'],
-            "datasets": ["synthetic.tsv"],
+            "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
             "relations": ["Equivalence", "Containment", "Minus"]
         }
 
