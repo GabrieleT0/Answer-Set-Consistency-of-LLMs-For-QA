@@ -1,4 +1,5 @@
-from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, load_relations, relation_summary
+from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, compute_pvals
+from eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 import os
 import datetime
 
@@ -21,13 +22,13 @@ if __name__ == "__main__":
 
     # Relation Classification
     df_relation = load_relations(root_dir + "/data/answers/zero-shot/", datasets, llms)
-    # df_relation_summery = relation_summary(df_relation)
+    df_relation_clf = load_relation_clf(root_dir + "/data/answers/rel_classification_and_questions/", datasets, llms, tasks)
     # From your df_relation:
     df_relation_summery = relation_summary(df_relation, include_overall=True, round_digits=4)
 
     # Save if you want:
-    relation_file_format = datetime.datetime.now().strftime("relations_%Y-%m-%d_%H-%M.tsv")
-    summary_file_format = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.tsv")
+    relation_file_format = datetime.datetime.now().strftime("relations_%Y-%m-%d_%H-%M.csv")
+    summary_file_format = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
     summary_file_format_excel = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
 
     df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
@@ -48,13 +49,21 @@ if __name__ == "__main__":
 
     df_answers = enrich_answers(df_answers, df_questions)
     df_analysis = analysis(df_answers)
-    df_summary = summary(df_analysis)
+    df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
 
     # Save results
-    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.tsv")
-    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.tsv")
-    summary_file_format_excel = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.xlsx")
+    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
+
+    # p-values
+    df_pval = compute_pvals(df_analysis)
+    df_summary = summary(df_analysis)
+    df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
+    df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
+    df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
+
+    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.csv")
+    summary_file_format_excel = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.xlsx")
     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
     df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 

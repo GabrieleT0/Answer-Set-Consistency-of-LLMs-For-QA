@@ -75,7 +75,7 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
     q12_relation = load_json(relation_path)
 
     for index in range(start_index, end_index):
-        if str(index) in answers_ql1:
+        if str(index) in answers_ql1 and str(index) in answers_ql2 and str(index) in q12_relation:
             continue
         question = questions[index]
         memory = ConversationBufferMemory()
@@ -141,7 +141,8 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
     answer_relation = load_json(relation_path)
 
     for index in range(start_index, end_index):
-        if str(index) in answers_ql1 and len(answers_ql1[str(index)])>0:
+        if str(index) in answers_ql1 and str(index) in answers_ql3 and str(index) in answers_ql4 and str(index) in answer_relation:
+        # if str(index) in answers_ql1 and len(answers_ql1[str(index)])>0:
             continue
         question = questions[index]
         memory = ConversationBufferMemory()
