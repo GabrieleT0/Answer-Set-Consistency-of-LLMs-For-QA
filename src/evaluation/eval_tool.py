@@ -389,7 +389,7 @@ def analysis(df):
     return pd.DataFrame(rows)
 
 def summary(df_analysis):
-    group_cols = ["dataset", "action", "llm"]
+    group_cols = ["llm", "dataset", "action"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4"]
     jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]

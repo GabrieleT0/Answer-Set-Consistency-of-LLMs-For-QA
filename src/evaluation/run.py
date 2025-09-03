@@ -26,8 +26,8 @@ if __name__ == "__main__":
     df_relation_summery = relation_summary(df_relation, include_overall=True, round_digits=4)
 
     # Save if you want:
-    relation_file_format = datetime.datetime.now().strftime("relations_%Y-%m-%d_%H-%M.csv")
-    summary_file_format = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
+    relation_file_format = datetime.datetime.now().strftime("relations_%Y-%m-%d_%H-%M.tsv")
+    summary_file_format = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.tsv")
     summary_file_format_excel = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
 
     df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
@@ -51,8 +51,8 @@ if __name__ == "__main__":
     df_summary = summary(df_analysis)
 
     # Save results
-    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.csv")
-    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.csv")
+    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.tsv")
+    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.tsv")
     summary_file_format_excel = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.xlsx")
     df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
