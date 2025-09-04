@@ -1,38 +1,41 @@
 {
     "0": [
         "Fawlty Towers",
-        "Whoops Apocalypse",
-        "The Human Face",
-        "Seven Deadly Sins",
-        "The Secret Policeman's Ball",
-        "The Secret Policeman's Other Ball",
-        "The Secret Policeman's Third Ball",
-        "The Secret Policeman's Fourth Ball",
-        "The Secret Policeman's Biggest Ball"
+        "Monty Python's Flying Circus",
+        "Seven Deadly Sins (TV series)",
+        "At Last the 1948 Show",
+        "The Secret Policeman's Ball"
     ],
     "1": [
         "People's Republic of China",
         "Socialist Republic of Vietnam",
-        "Lao People's Democratic Republic"
+        "Lao People's Democratic Republic",
+        "Democratic People's Republic of Korea"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "Real Madrid Club de Fútbol",
         "Fútbol Club Barcelona"
     ],
     "4": [
         "Proximus Group",
-        "Belgacom International Carrier Services"
+        "Belgacom"
     ],
-    "5": [],
+    "5": [
+        "idk"
+    ],
     "6": [
         "Bhutan"
     ],
     "7": [
         "Netflix",
-        "Crunchyroll",
         "Hulu",
-        "Amazon Prime Video"
+        "Crunchyroll",
+        "Amazon Prime Video",
+        "Peacock",
+        "HBO Max"
     ],
     "8": [
         "Germany",
@@ -44,6 +47,7 @@
     ],
     "9": [
         "Musician",
+        "Singer",
         "Songwriter"
     ],
     "10": [
@@ -68,7 +72,8 @@
         "Meri Kahani"
     ],
     "15": [
-        "George Walker Bush"
+        "John Adams",
+        "John Quincy Adams"
     ],
     "16": [
         "Cubism"
@@ -92,7 +97,8 @@
     "21": [
         "Austria",
         "Switzerland",
-        "Luxembourg"
+        "Luxembourg",
+        "Belgium"
     ],
     "22": [
         "The Adventures of Sharkboy and Lavagirl in 3-D",
@@ -101,45 +107,48 @@
         "The Twilight Saga: New Moon"
     ],
     "23": [
-        "Guinea",
         "Mali",
         "Niger"
     ],
     "24": [
-        "Pathways Into Darkness",
+        "Pathways into Darkness",
         "Marathon",
-        "Marathon Two Durandal",
+        "Marathon 2: Durandal",
         "Marathon Infinity",
         "Oni",
-        "Halo Combat Evolved",
-        "Halo Two",
-        "Halo Three",
+        "Halo: Combat Evolved",
+        "Halo 2",
+        "Halo 3",
+        "Halo 3: ODST",
+        "Halo: Reach",
         "Destiny",
-        "Destiny Two"
+        "Destiny 2"
     ],
     "25": [
         "Arthur Brown",
-        "George Sutherland",
+        "Thomas Kearns",
         "Reed Smoot",
+        "George Sutherland",
         "Wallace F. Bennett",
         "Jake Garn",
         "Orrin Hatch",
         "Bob Bennett",
-        "Mike Lee",
-        "Mitt Romney"
+        "Mitt Romney",
+        "Mike Lee"
     ],
-    "26": [],
+    "26": [
+        "idk"
+    ],
     "27": [
         "Chevrolet Bolt Electric Vehicle",
-        "Chevrolet Bolt Electric Utility Vehicle",
-        "Chevrolet Blazer Electric Utility Vehicle",
-        "Chevrolet Equinox Electric Utility Vehicle",
+        "Chevrolet Bolt Utility Vehicle Electric Vehicle",
+        "Chevrolet Blazer Electric Vehicle",
         "Chevrolet Silverado Electric Vehicle",
-        "Cadillac Lyriq",
-        "Cadillac Celestiq",
-        "GMC Hummer Electric Vehicle Sport Utility Truck",
+        "GMC Hummer Electric Vehicle Pickup",
         "GMC Hummer Electric Vehicle Sport Utility Vehicle",
-        "GMC Sierra Electric Vehicle"
+        "GMC Sierra Electric Vehicle",
+        "Cadillac Lyriq",
+        "Cadillac Celestiq"
     ],
     "28": [
         "Spain",
@@ -164,26 +173,59 @@
         "Peoria",
         "Surprise"
     ],
-    "30": [],
-    "31": [],
+    "30": [
+        "idk"
+    ],
+    "31": [
+        "Niandra LaDes and Usually Just a T-Shirt",
+        "Smile from the Streets You Hold",
+        "To Record Only Water for Ten Days",
+        "Shadows Collide with People",
+        "The Will to Death",
+        "Inside of Emptiness",
+        "Curtains",
+        "The Empyrean",
+        "PBX Funicular Intaglio Zone",
+        "Enclosure",
+        "Foregrow",
+        "Maya",
+        "A Sphere in the Heart of Silence",
+        "Trickfinger"
+    ],
     "32": [
         "English dialects",
-        "Cornish",
-        "Romani",
-        "Polari",
-        "Shelta"
+        "Cornish"
     ],
     "33": [
-        "Bahamas",
         "Barbados",
         "Belize",
-        "Dominica",
+        "Botswana",
+        "Eswatini",
+        "Gambia",
+        "Ghana",
         "Grenada",
+        "Guyana",
         "Jamaica",
+        "Kiribati",
+        "Lesotho",
+        "Liberia",
+        "Malta",
+        "Marshall Islands",
+        "Micronesia",
+        "Nauru",
+        "Nigeria",
         "Saint Kitts and Nevis",
         "Saint Lucia",
         "Saint Vincent and the Grenadines",
-        "Trinidad and Tobago"
+        "Samoa",
+        "Sierra Leone",
+        "Solomon Islands",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tuvalu",
+        "Uganda",
+        "Zambia",
+        "Zimbabwe"
     ],
     "34": [
         "English"
@@ -193,8 +235,7 @@
     ],
     "36": [
         "Libya",
-        "Sudan",
-        "Palestine"
+        "Sudan"
     ],
     "37": [
         "Denmark",
@@ -217,44 +258,33 @@
     "40": [
         "United Kingdom",
         "Spain",
+        "Belgium",
+        "Netherlands",
         "Sweden",
         "Norway",
         "Denmark",
-        "Belgium",
-        "Netherlands",
-        "Luxembourg"
+        "Luxembourg",
+        "Monaco",
+        "Liechtenstein"
     ],
     "41": [
-        "Oskar Rozenberg Hallberg",
-        "Ali Boulala",
-        "Josef Scott Jatta",
-        "John Magnusson",
-        "Filip Almqvist",
-        "Fernando Bramsmark",
-        "Kalle Berglind",
-        "Karl Berglind"
+        "idk"
     ],
     "42": [
         "Layne Beachley"
     ],
     "43": [
         "Parker Solar Probe",
-        "Solar Orbiter",
-        "Solar and Heliospheric Observatory",
-        "Solar Terrestrial Relations Observatory A",
-        "Wind",
-        "Advanced Composition Explorer"
+        "Solar Orbiter"
     ],
     "44": [
-        "Hamburg",
-        "Munich",
         "Cologne",
         "Frankfurt am Main",
         "Stuttgart",
         "Düsseldorf",
+        "Leipzig",
         "Dortmund",
         "Essen",
-        "Leipzig",
         "Bremen",
         "Dresden",
         "Hanover",
@@ -264,19 +294,25 @@
         "Wuppertal",
         "Bielefeld",
         "Bonn",
-        "Münster"
+        "Münster",
+        "Karlsruhe",
+        "Mannheim",
+        "Augsburg",
+        "Wiesbaden"
     ],
     "45": [
-        "Mars Viking 1",
-        "Mars Viking 2",
+        "Mars 3",
+        "Mars 6",
+        "Viking 1",
+        "Viking 2",
         "Mars Pathfinder",
-        "Mars Spirit",
-        "Mars Opportunity",
-        "Mars Phoenix",
-        "Mars Curiosity",
-        "Mars InSight",
-        "Mars Perseverance",
-        "Mars Tianwen-1"
+        "Mars Exploration Rover Spirit",
+        "Mars Exploration Rover Opportunity",
+        "Phoenix",
+        "Mars Science Laboratory Curiosity",
+        "InSight",
+        "Mars 2020 Perseverance",
+        "Tianwen-1"
     ],
     "46": [
         "Yang Liwei",
@@ -286,12 +322,11 @@
         "Liu Boming",
         "Jing Haipeng",
         "Liu Wang",
-        "Wang Yaping",
         "Zhang Xiaoguang",
+        "Wang Yaping",
         "Chen Dong",
         "Tang Hongbo",
-        "Ye Guangfu",
-        "Gui Haichao"
+        "Ye Guangfu"
     ],
     "47": [
         "Indonesia",
@@ -299,28 +334,32 @@
         "United States of America",
         "Russia",
         "Chile",
+        "Papua New Guinea",
         "Philippines",
-        "Papua New Guinea"
+        "Ethiopia",
+        "Guatemala"
     ],
     "48": [
-        "Edwin Eugene Aldrin Junior"
+        "Michael Collins"
     ],
-    "49": [],
-    "50": [],
+    "49": [
+        "I do not know."
+    ],
+    "50": [
+        "idk"
+    ],
     "51": [
+        "Rashomon",
         "Ikiru",
-        "Drunken Angel",
-        "Stray Dog",
+        "Throne of Blood",
+        "High and Low",
         "Red Beard",
-        "The Bad Sleep Well",
-        "Scandal",
-        "No Regrets for Our Youth",
-        "One Wonderful Sunday",
-        "The Quiet Duel",
-        "I Live in Fear",
-        "The Lower Depths",
-        "The Idiot",
-        "Dersu Uzala"
+        "Dersu Uzala",
+        "Kagemusha",
+        "Ran",
+        "Dreams",
+        "Rhapsody in August",
+        "Madadayo"
     ],
     "52": [
         "Texel",
@@ -331,23 +370,11 @@
     ],
     "53": [
         "Islam",
-        "Protestant Christianity",
-        "Catholic Christianity"
+        "Protestantism",
+        "Catholicism"
     ],
     "54": [
-        "First Battle of Bull Run",
-        "First Battle of Kernstown",
-        "Battle of McDowell",
-        "Battle of Front Royal",
-        "Battle of Winchester",
-        "Battle of Cross Keys",
-        "Battle of Port Republic",
-        "Seven Days Battles",
-        "Battle of Cedar Mountain",
-        "Second Battle of Bull Run",
-        "Battle of Antietam",
-        "Battle of Fredericksburg",
-        "Battle of Chancellorsville"
+        "American Civil War battles"
     ],
     "55": [
         "Germany",
@@ -362,10 +389,12 @@
         "Cleveland Cavaliers",
         "Boston Celtics"
     ],
-    "57": [],
+    "57": [
+        "idk"
+    ],
     "58": [
         "New Hampshire",
-        "New Connecticut"
+        "New York"
     ],
     "59": [
         "Colorado",
@@ -379,52 +408,44 @@
     "61": [
         "Spain",
         "Mexico",
-        "Argentina",
-        "Colombia",
-        "Chile",
-        "Peru",
-        "Venezuela",
-        "Ecuador",
-        "Guatemala",
+        "Costa Rica",
+        "Panama",
         "Cuba",
         "Dominican Republic",
-        "Honduras",
-        "El Salvador",
-        "Nicaragua",
-        "Costa Rica",
-        "Puerto Rico",
-        "Panama",
+        "Colombia",
+        "Venezuela",
+        "Ecuador",
+        "Chile",
+        "Argentina",
         "Uruguay"
     ],
     "62": [
         "Swiss Federal Polytechnic",
         "University of Zurich",
         "Charles-Ferdinand University in Prague",
-        "German University in Prague",
+        "Swiss Federal Institute of Technology Zurich",
         "University of Berlin",
-        "Institute for Advanced Study in Princeton"
+        "Institute for Advanced Study, Princeton"
     ],
     "63": [
         "Murder, She Wrote",
-        "The X-Files",
-        "Cagney and Lacey",
-        "Law and Order: Special Victims Unit",
-        "Who's the Boss?",
+        "Law & Order: Special Victims Unit",
+        "Cagney & Lacey",
         "Grace Under Fire",
-        "The Torkelsons",
-        "The Ray Bradbury Theater",
-        "The Renegades",
-        "The Hitchhiker",
-        "The Equalizer",
-        "The Twilight Zone",
-        "The Bernie Mac Show",
-        "The Middle",
-        "The Fosters"
+        "Lucky Louie",
+        "Elf: Buddy's Musical Christmas",
+        "Crossing Jordan",
+        "Xena: Warrior Princess",
+        "The X-Files",
+        "Arsenio",
+        "Sullivan & Son"
     ],
     "64": [
+        "Portugal",
+        "France",
         "Andorra",
         "Gibraltar",
-        "Algeria",
+        "Morocco",
         "Italy"
     ],
     "65": [
@@ -433,11 +454,12 @@
         "30 Rock",
         "Unbreakable Kimmy Schmidt",
         "Broad City",
-        "The Marvelous Mrs. Maisel",
-        "The Odd Couple",
-        "Younger"
+        "How I Met Your Mother",
+        "The Marvelous Mrs. Maisel"
     ],
-    "66": [],
+    "66": [
+        "Poetic Justice"
+    ],
     "67": [
         "Gene Hackman",
         "Kevin Spacey",
@@ -446,14 +468,7 @@
         "John Shea",
         "Sherman Howard",
         "Scott James Wells",
-        "Lyle Talbot",
-        "Titus Welliver",
-        "Michael Cerveris",
-        "Jon Cryer",
-        "Paul Adelstein",
-        "John Glover",
-        "Clancy Brown (as a cameo in live-action)",
-        "Michael Ironside (as a cameo in live-action)"
+        "Lyle Talbot"
     ],
     "68": [
         "Mary Tudor",
@@ -462,10 +477,10 @@
     ],
     "69": [
         "Australia",
+        "Federated States of Micronesia",
         "Fiji",
         "Kiribati",
         "Marshall Islands",
-        "Micronesia",
         "Nauru",
         "New Zealand",
         "Palau",
@@ -487,14 +502,12 @@
         "Bolton Wanderers Football Club"
     ],
     "72": [
-        "Kaitlynn Carter",
         "Lauren Conrad",
         "Avril Lavigne",
-        "Kristin Cavallari",
         "Josie Canseco",
+        "Kaitlynn Carter",
         "Bryana Holly",
-        "Jayde Nicole",
-        "Cora Skinner"
+        "Jayde Nicole"
     ],
     "73": [
         "Mexico"
@@ -504,12 +517,12 @@
         "There's a Boy in the Girls' Bathroom"
     ],
     "75": [
+        "Kentucky",
         "Virginia",
         "North Carolina",
         "Georgia",
         "Alabama",
-        "Mississippi",
-        "Arkansas"
+        "Mississippi"
     ],
     "76": [
         "Trinity College, University of Cambridge"
@@ -520,17 +533,18 @@
         "Mockingjay"
     ],
     "78": [
+        "Arthur Tudor",
         "Margaret Tudor",
         "Henry Tudor",
         "Mary Tudor"
     ],
     "79": [
-        "Zeus",
+        "Hades",
         "Poseidon",
-        "Hades"
+        "Zeus"
     ],
     "80": [
-        "Robert Casey Junior",
+        "Bob Casey Jr.",
         "John Fetterman"
     ],
     "81": [
@@ -540,8 +554,7 @@
         "Ron Rivera",
         "Matt Rhule",
         "Frank Reich",
-        "Steve Wilks",
-        "Perry Fewell"
+        "Steve Wilks"
     ],
     "82": [
         "Belgium",
@@ -553,51 +566,40 @@
     ],
     "83": [
         "Solemnity of Mary, Mother of God",
-        "Ascension of Jesus Christ",
+        "Epiphany",
+        "Ascension",
         "Assumption of the Blessed Virgin Mary",
-        "All Saints' Day",
+        "All Saints",
         "Immaculate Conception of the Blessed Virgin Mary",
-        "Christmas Day"
+        "Christmas"
     ],
     "84": [
         "Nigeria"
     ],
     "85": [
-        "Oliver Marmol",
-        "Joe McEwing",
-        "Turner Ward",
-        "Dusty Blake",
-        "Willie McGee",
-        "Stubby Clapp",
-        "Ron Warner",
-        "Julio Rangel",
-        "Daniel Descalso",
-        "Packy Elkins"
+        "idk"
     ],
     "86": [
-        "Uppsala University"
+        "idk"
     ],
     "87": [
-        "Attina",
-        "Alana",
-        "Adella",
         "Aquata",
-        "Arista",
-        "Andrina"
+        "Andrina",
+        "Attina",
+        "Adella",
+        "Alana"
     ],
     "88": [
         "Peter Griffin",
         "Glenn Quagmire",
         "Tom Tucker",
         "Carter Pewterschmidt",
-        "Dr. Hartman",
-        "Seamus Levine",
-        "News Anchor",
-        "Various other minor human characters"
+        "Dr. Elmer Hartman",
+        "Seamus Levine"
     ],
     "89": [
-        "Michael Joseph Jackson Junior",
-        "Paris-Michael Katherine Jackson"
+        "Prince Jackson",
+        "Paris Jackson"
     ],
     "90": [
         "Bachelor of Arts in English from Brigham Young University"
@@ -606,76 +608,343 @@
         "Newark"
     ],
     "92": [
-        "Simone Signoret",
-        "Juliette Binoche"
+        "idk"
     ],
     "93": [
         "Paths of Glory",
         "Empire of the Sun",
-        "Combat Commander: Europe",
-        "Combat Commander: Pacific",
-        "Unconditional Surrender! World War II in Europe",
-        "The Dark Valley",
         "Ardennes '44",
-        "Holland '44",
         "Normandy '44",
-        "Ukraine '43",
-        "The Battle for Normandy",
+        "Holland '44",
         "Cataclysm: A Second World War",
-        "Triumph and Tragedy: European Balance of Power 1936-1945",
-        "Red Winter: The Soviet Attack at Tolvajärvi, Finland, 1939"
+        "The Dark Valley",
+        "Race to the Rhine",
+        "Salerno '43",
+        "Unconditional Surrender!",
+        "Red Winter: The Soviet Attack at Tolvajärvi, Finland – 1939"
     ],
-    "94": [],
-    "95": [],
+    "94": [
+        "idk"
+    ],
+    "95": [
+        "idk"
+    ],
     "96": [
-        "Alan Shepard",
-        "Edgar Mitchell"
+        "Alan Bartlett Shepard Junior",
+        "Edgar Dean Mitchell"
     ],
-    "97": [],
+    "97": [
+        "Vostok 1",
+        "Vostok 2",
+        "Vostok 3",
+        "Vostok 4",
+        "Vostok 5",
+        "Vostok 6",
+        "Voskhod 1",
+        "Voskhod 2",
+        "Soyuz 1",
+        "Soyuz 3",
+        "Soyuz 4",
+        "Soyuz 5",
+        "Soyuz 6",
+        "Soyuz 7",
+        "Soyuz 8",
+        "Soyuz 9",
+        "Soyuz 10",
+        "Soyuz 11",
+        "Soyuz 12",
+        "Soyuz 13",
+        "Soyuz 14",
+        "Soyuz 15",
+        "Soyuz 16",
+        "Soyuz 17",
+        "Soyuz 18a",
+        "Soyuz 18",
+        "Soyuz 19",
+        "Soyuz 21",
+        "Soyuz 22",
+        "Soyuz 23",
+        "Soyuz 24",
+        "Soyuz 25",
+        "Soyuz 26",
+        "Soyuz 27",
+        "Soyuz 28",
+        "Soyuz 29",
+        "Soyuz 30",
+        "Soyuz 31",
+        "Soyuz 32",
+        "Soyuz 33",
+        "Soyuz 34",
+        "Soyuz 35",
+        "Soyuz 36",
+        "Soyuz 37",
+        "Soyuz 38",
+        "Soyuz 39",
+        "Soyuz 40",
+        "Soyuz T-1",
+        "Soyuz T-2",
+        "Soyuz T-3",
+        "Soyuz T-4",
+        "Soyuz T-5",
+        "Soyuz T-6",
+        "Soyuz T-7",
+        "Soyuz T-8",
+        "Soyuz T-9",
+        "Soyuz T-10-1",
+        "Soyuz T-10",
+        "Soyuz T-11",
+        "Soyuz T-12",
+        "Soyuz T-13",
+        "Soyuz T-14",
+        "Soyuz T-15",
+        "Soyuz TM-1",
+        "Soyuz TM-2",
+        "Soyuz TM-3",
+        "Soyuz TM-4",
+        "Soyuz TM-5",
+        "Soyuz TM-6",
+        "Soyuz TM-7",
+        "Soyuz TM-8",
+        "Soyuz TM-9",
+        "Soyuz TM-10",
+        "Soyuz TM-11",
+        "Soyuz TM-12",
+        "Soyuz TM-13",
+        "Soyuz TM-14",
+        "Soyuz TM-15",
+        "Soyuz TM-16",
+        "Soyuz TM-17",
+        "Soyuz TM-18",
+        "Soyuz TM-19",
+        "Soyuz TM-20",
+        "Soyuz TM-21",
+        "Soyuz TM-22",
+        "Soyuz TM-23",
+        "Soyuz TM-24",
+        "Soyuz TM-25",
+        "Soyuz TM-26",
+        "Soyuz TM-27",
+        "Soyuz TM-28",
+        "Soyuz TM-29",
+        "Soyuz TM-30",
+        "Soyuz TMA-1",
+        "Soyuz TMA-2",
+        "Soyuz TMA-3",
+        "Soyuz TMA-4",
+        "Soyuz TMA-5",
+        "Soyuz TMA-6",
+        "Soyuz TMA-7",
+        "Soyuz TMA-8",
+        "Soyuz TMA-9",
+        "Soyuz TMA-10",
+        "Soyuz TMA-11",
+        "Soyuz TMA-12",
+        "Soyuz TMA-13",
+        "Soyuz TMA-14",
+        "Soyuz TMA-15",
+        "Soyuz TMA-16",
+        "Soyuz TMA-17",
+        "Sputnik 1",
+        "Sputnik 2",
+        "Sputnik 3",
+        "Sputnik 4",
+        "Sputnik 5",
+        "Sputnik 6",
+        "Sputnik 7",
+        "Sputnik 8",
+        "Sputnik 9",
+        "Sputnik 10",
+        "Luna 1",
+        "Luna 2",
+        "Luna 3",
+        "Luna 4",
+        "Luna 5",
+        "Luna 6",
+        "Luna 7",
+        "Luna 8",
+        "Luna 9",
+        "Luna 10",
+        "Luna 11",
+        "Luna 12",
+        "Luna 13",
+        "Luna 14",
+        "Cosmos 1",
+        "Cosmos 186",
+        "Zond 1",
+        "Zond 2",
+        "Zond 3",
+        "Zond 4",
+        "Zond 5",
+        "Zond 6",
+        "Zond 7",
+        "Zond 8",
+        "Intercosmos 1",
+        "Intercosmos 2",
+        "Intercosmos 3",
+        "Intercosmos 4",
+        "Intercosmos 5",
+        "Intercosmos 6",
+        "Intercosmos 7",
+        "Mars 1",
+        "Mars 2",
+        "Mars 3",
+        "Mars 4",
+        "Mars 5",
+        "Mars 6",
+        "Mars 7",
+        "Venera 1",
+        "Venera 2",
+        "Venera 3",
+        "Venera 4",
+        "Venera 5",
+        "Venera 6",
+        "Venera 7",
+        "Venera 8",
+        "Venera 9",
+        "Venera 10",
+        "Venera 11",
+        "Venera 12",
+        "Venera 13",
+        "Venera 14",
+        "Venera 15",
+        "Venera 16",
+        "Bion 1",
+        "Bion 2",
+        "Bion 3",
+        "Bion 4",
+        "Bion 5",
+        "Bion 6",
+        "Bion 7",
+        "Bion 8",
+        "Bion 9",
+        "Bion 10",
+        "Bion 11",
+        "Bion 12",
+        "Progress 1",
+        "Progress 2",
+        "Progress 3",
+        "Progress 4",
+        "Progress 5",
+        "Progress 6",
+        "Progress 7",
+        "Progress 8",
+        "Progress 9",
+        "Progress 10",
+        "Progress 11",
+        "Progress 12",
+        "Progress 13",
+        "Progress 14",
+        "Progress 15",
+        "Progress 16",
+        "Progress 17",
+        "Progress 18",
+        "Progress 19",
+        "Progress 20",
+        "Progress 21",
+        "Progress 22",
+        "Progress 23",
+        "Progress 24",
+        "Progress 25",
+        "Progress 26",
+        "Progress 27",
+        "Progress 28",
+        "Progress 29",
+        "Progress 30",
+        "Progress 31",
+        "Progress 32",
+        "Progress 33",
+        "Progress 34",
+        "Progress 35",
+        "Progress 36",
+        "Progress 37",
+        "Progress 38",
+        "Progress 39",
+        "Progress 40",
+        "Progress 41",
+        "Progress 42",
+        "Progress 43",
+        "Progress 44",
+        "Progress 45",
+        "Progress 46",
+        "Progress 47",
+        "Progress 48",
+        "Progress 49",
+        "Progress 50",
+        "Progress 51",
+        "Progress 52",
+        "Progress 53",
+        "Progress 54",
+        "Progress 55",
+        "Progress 56",
+        "Progress 57",
+        "Progress 58",
+        "Progress 59",
+        "Progress 60",
+        "Progress 61",
+        "Progress 62",
+        "Progress 63",
+        "Progress 64",
+        "Progress 65",
+        "Progress 66",
+        "Progress 67",
+        "Progress 68",
+        "Progress 69",
+        "Progress 70",
+        "Progress 71",
+        "Progress 72",
+        "Progress 73",
+        "Progress 74",
+        "Progress 75",
+        "Progress 76",
+        "Progress 77",
+        "Progress 78",
+        "Progress 79",
+        "Progress 80",
+        "Progress 81",
+        "Progress 82",
+        "Progress 83",
+        "Progress 84",
+        "Progress 85",
+        "Progress 86",
+        "Progress 87",
+        "Progress 88",
+        "Progress 89",
+        "Progress 90",
+        "Progress 91",
+        "Progress 92",
+        "Progress 93",
+        "Progress 94",
+        "Progress 95"
+    ],
     "98": [
-        "Idaho",
-        "Wyoming",
+        "Utah",
         "Colorado",
-        "Arizona"
+        "Wyoming",
+        "Idaho"
     ],
     "99": [
         "Wisconsin",
         "Indiana"
     ],
-    "100": [],
+    "100": [
+        "idk"
+    ],
     "101": [
         "William Jefferson Clinton"
     ],
     "102": [
-        "Bayern Munich",
+        "FC Bayern München",
         "Borussia Dortmund",
         "Werder Bremen",
-        "Stuttgart",
-        "Wolfsburg",
-        "Kaiserslautern",
-        "Hamburg",
-        "Cologne",
-        "Nurnberg",
-        "Eintracht Braunschweig",
-        "1860 Munich"
+        "VfB Stuttgart",
+        "Hamburger SV",
+        "1. FC Köln",
+        "1. FC Kaiserslautern",
+        "Borussia Mönchengladbach",
+        "VfL Wolfsburg"
     ],
     "103": [
-        "Elbe River",
-        "Havel River",
-        "Spree River",
-        "Isar River",
-        "Lech River",
-        "Main River",
-        "Saale River",
-        "Altmühl River",
-        "Ems River",
-        "Weser River",
-        "Aller River",
-        "Lippe River",
-        "Moselle River",
-        "Lahn River",
-        "Fulda River",
-        "Werra River"
+        "idk"
     ],
     "104": [
         "Honshu",
@@ -695,37 +964,45 @@
     ],
     "106": [
         "Cleopatra",
-        "The V.I.P.s",
         "The Sandpiper",
         "Who's Afraid of Virginia Woolf?",
         "The Taming of the Shrew",
-        "Doctor Faustus"
+        "Doctor Faustus",
+        "The Comedians",
+        "Boom!"
     ],
     "107": [
-        "Make It Big by Wham!"
+        "\"Music from the Edge of Heaven\"",
+        "\"The Final\"",
+        "\"Last Christmas: The Original Motion Picture Soundtrack\""
     ],
     "108": [
-        "Saint Patrick's Day",
-        "International Women's Day"
+        "Shrove Tuesday"
     ],
     "109": [
+        "West Side Story",
         "On the Town",
         "Wonderful Town",
         "Candide",
-        "West Side Story",
         "Peter Pan"
     ],
-    "110": [],
+    "110": [
+        "idk"
+    ],
     "111": [
+        "I Killed The Prom Queen",
         "Parkway Drive",
         "The Amity Affliction",
-        "I Killed the Prom Queen",
-        "Buried in Verona",
+        "Buried In Verona",
         "Confession",
-        "Feed Her to the Sharks",
+        "In Hearts Wake",
+        "Hand Of Mercy",
+        "House Vs. Hurricane",
         "Dream On, Dreamer",
-        "Hand of Mercy",
-        "Sienna Skies"
+        "Feed Her To The Sharks",
+        "Saviour",
+        "Storm The Sky",
+        "For All Eternity"
     ],
     "112": [
         "Bulimia nervosa",
@@ -739,40 +1016,36 @@
         "Utah",
         "Wyoming"
     ],
-    "114": [],
+    "114": [
+        "Maiasaurus"
+    ],
     "115": [
-        "Python",
         "Ruby",
-        "JavaScript",
+        "Python",
         "PHP",
+        "JavaScript",
         "Raku",
-        "Tcl",
-        "Lua"
+        "ECMAScript",
+        "Falcon",
+        "Bash"
     ],
     "116": [
-        "Aeroflot Russian Airlines",
-        "Air Europa",
         "Air France",
+        "KLM Royal Dutch Airlines",
         "Czech Airlines",
         "ITA Airways",
-        "KLM Royal Dutch Airlines",
-        "TAROM"
+        "TAROM",
+        "Aeroflot"
     ],
     "117": [
         "Looking for Alaska",
         "An Abundance of Katherines",
         "Paper Towns",
         "Will Grayson, Will Grayson",
-        "Turtles All the Way Down",
-        "Let It Snow"
+        "Let It Snow: Three Holiday Romances",
+        "Zombicorns"
     ],
     "118": [
-        "High Plains Drifter",
-        "The Outlaw Josey Wales",
-        "The Gauntlet",
-        "Bronco Billy",
-        "Firefox",
-        "Honkytonk Man",
         "Sudden Impact",
         "Pale Rider",
         "Heartbreak Ridge",
@@ -808,73 +1081,66 @@
         "Alec Baldwin",
         "Daniel Baldwin",
         "William Baldwin",
-        "Stephen Baldwin",
-        "Adam Baldwin"
+        "Stephen Baldwin"
     ],
     "120": [
-        "Canterbury Cathedral",
-        "Rochester Cathedral",
-        "St Mary’s Church, Ashford",
-        "St Peter and St Paul’s Church, Tonbridge",
-        "St Martin’s Church, Canterbury",
-        "St Mary’s Church, Dover",
-        "St Mary Magdalene Church, Gillingham",
-        "St Nicholas Church, New Romney",
-        "St Mary’s Church, Sandwich",
-        "St Mary’s Church, Chartham"
+        "idk"
     ],
     "121": [
         "Guinea-Bissau"
     ],
     "122": [
-        "Heckler & Koch MP5",
-        "Heckler & Koch G3",
-        "Heckler & Koch USP",
-        "Heckler & Koch HK416",
-        "Heckler & Koch HK417",
-        "Heckler & Koch VP9",
-        "Heckler & Koch P30",
-        "Heckler & Koch G36",
-        "Heckler & Koch PSG1",
-        "Heckler & Koch UMP",
-        "Heckler & Koch SL8",
-        "Heckler & Koch HK21",
-        "Heckler & Koch HK33",
-        "Heckler & Koch HK53",
         "Heckler & Koch P7",
-        "Heckler & Koch P9",
-        "Heckler & Koch P2000",
-        "Heckler & Koch MG5",
-        "Heckler & Koch MG4",
-        "Heckler & Koch HK45",
+        "Heckler & Koch G3",
+        "Heckler & Koch MP5",
         "Heckler & Koch VP70",
-        "Heckler & Koch HK4",
+        "Heckler & Koch HK21",
         "Heckler & Koch HK23",
-        "Heckler & Koch HK11",
-        "Heckler & Koch HK13",
-        "Heckler & Koch HK32",
-        "Heckler & Koch HK94",
-        "Heckler & Koch HK54",
-        "Heckler & Koch HK36",
-        "Heckler & Koch HK51"
+        "Heckler & Koch G36",
+        "Heckler & Koch HK416",
+        "Heckler & Koch MP7",
+        "Heckler & Koch UMP",
+        "Heckler & Koch PSG1",
+        "Heckler & Koch SL8",
+        "Heckler & Koch P30",
+        "Heckler & Koch USP",
+        "Heckler & Koch P2000",
+        "Heckler & Koch HK417",
+        "Heckler & Koch MG5",
+        "Heckler & Koch G11",
+        "Heckler & Koch HK33",
+        "Heckler & Koch SL7",
+        "Heckler & Koch VP9",
+        "Heckler & Koch HK45",
+        "Heckler & Koch Mark 23",
+        "Heckler & Koch XM8"
     ],
-    "123": [],
+    "123": [
+        "idk"
+    ],
     "124": [
         "Wynton Marsalis",
-        "Terence Blanchard",
-        "Nicholas Payton"
+        "Terence Blanchard"
     ],
-    "125": [],
-    "126": [],
+    "125": [
+        "idk"
+    ],
+    "126": [
+        "War Horse",
+        "Indiana Jones and the Kingdom of the Crystal Skull"
+    ],
     "127": [
         "West German Working Line",
         "East German Working Line",
         "Czech Working Line"
     ],
-    "128": [],
+    "128": [
+        "idk"
+    ],
     "129": [
-        "Pulitzer Prize for General Non-Fiction",
-        "Los Angeles Times Book Prize for Science and Technology"
+        "Pulitzer Prize for General Nonfiction",
+        "Los Angeles Times Book Prize",
+        "National Book Award for Science"
     ],
     "130": [
         "Kennedy Space Center Launch Complex 39A",
@@ -883,36 +1149,32 @@
         "Cape Canaveral Space Launch Complex 41",
         "Cape Canaveral Space Launch Complex 37B",
         "Cape Canaveral Space Launch Complex 40",
-        "Cape Canaveral Space Launch Complex 36A",
-        "Cape Canaveral Space Launch Complex 36B",
         "Wallops Flight Facility Launch Pad 0A",
         "Wallops Flight Facility Launch Pad 0B",
         "Wallops Flight Facility Launch Pad 2",
-        "Wallops Flight Facility Launch Pad 3",
-        "Vandenberg Space Force Base Space Launch Complex 2",
-        "Vandenberg Space Force Base Space Launch Complex 3",
-        "Vandenberg Space Force Base Space Launch Complex 4E",
-        "Vandenberg Space Force Base Space Launch Complex 6",
-        "Stennis Space Center E Test Complex",
-        "White Sands Missile Range Launch Complex 32",
-        "White Sands Missile Range Launch Complex 33"
+        "Wallops Flight Facility Launch Area 3",
+        "Vandenberg Space Launch Complex 2",
+        "Vandenberg Space Launch Complex 3",
+        "Vandenberg Space Launch Complex 4",
+        "Kodiak Launch Complex Launch Pad 1",
+        "Pacific Missile Range Facility Launch Complex"
     ],
     "131": [
         "Aida",
         "Billy Elliot the Musical",
-        "Lestat"
+        "Lestat",
+        "The Vampire Lestat",
+        "Tammy Faye"
     ],
     "132": [
-        "Neoteric Hovercraft",
-        "Mercier-Jones",
-        "The British Hovercraft Company"
+        "idk"
     ],
     "133": [
-        "Lenovo Group Limited",
-        "BOE Technology Group Company Limited",
-        "Tsinghua Tongfang Company Limited",
-        "Sohu.com Limited",
-        "Founder Group"
+        "Lenovo",
+        "Baidu",
+        "Huawei",
+        "BOE Technology",
+        "Tsinghua Tongfang"
     ],
     "134": [
         "Mark Thatcher"
@@ -925,16 +1187,18 @@
         "Roger Waters",
         "David Gilmour"
     ],
-    "137": [],
+    "137": [
+        "idk"
+    ],
     "138": [
-        "Doctor Sax",
-        "Maggie Cassidy",
-        "Tristessa"
+        "Desolation Angels"
     ],
     "139": [
         "Pretty Woman"
     ],
-    "140": [],
+    "140": [
+        "idk"
+    ],
     "141": [
         "Arnold Schwarzenegger",
         "Austin O'Brien",
@@ -942,24 +1206,24 @@
         "F. Murray Abraham",
         "Art Carney",
         "Tom Noonan",
-        "Frank McRae",
-        "Robert Prosky",
         "Anthony Quinn",
-        "Ian McKellen",
-        "Professor Toru Tanaka"
+        "Robert Prosky",
+        "Frank McRae"
     ],
     "142": [
         "Saturday Night Live",
-        "Fawlty Towers",
-        "One Day at a Time",
-        "Welcome Back, Kotter",
+        "Welcome Back Kotter",
         "The Jeffersons",
+        "One Day at a Time",
+        "Phyllis",
+        "The Dumplings",
         "Barney Miller"
     ],
-    "143": [],
+    "143": [
+        "idk"
+    ],
     "144": [
-        "Catalina Airport",
-        "San Clemente Island Naval Auxiliary Landing Field"
+        "Catalina Airport"
     ],
     "145": [
         "George I",
@@ -970,24 +1234,30 @@
         "Queen Victoria",
         "Edward VII"
     ],
-    "146": [],
+    "146": [
+        "Rabindranath Tagore",
+        "Yasunari Kawabata",
+        "Kenzaburo Oe",
+        "Gao Xingjian",
+        "Orhan Pamuk",
+        "Mo Yan",
+        "Abdulrazak Gurnah",
+        "Kazuo Ishiguro",
+        "Naguib Mahfouz"
+    ],
     "147": [
         "Johnny Flynn",
         "Daniel Ings",
-        "Joshua McGuire",
-        "Richard Thomson"
+        "Joshua McGuire"
     ],
     "148": [
-        "Thames River",
-        "Humber River",
-        "Tyne River",
-        "Forth River",
-        "Tay River"
+        "Thames",
+        "Humber",
+        "Tyne",
+        "Forth",
+        "Tay"
     ],
     "149": [
-        "Warsteiner Brauerei",
-        "Krombacher Brauerei",
-        "Veltins Brauerei",
-        "Dortmunder Actien Brauerei"
+        "idk"
     ]
 }

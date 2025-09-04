@@ -24,16 +24,7 @@
         "idk"
     ],
     "8": [
-        "Algeria",
-        "Democratic Republic of the Congo",
-        "Sudan",
-        "Libya",
-        "Chad",
-        "Niger",
-        "Angola",
-        "Mali",
-        "South Africa",
-        "Ethiopia"
+        "idk"
     ],
     "9": [
         "idk"
@@ -60,7 +51,7 @@
         "idk"
     ],
     "17": [
-        "idk"
+        "Disjoint"
     ],
     "18": [
         "idk"
@@ -75,11 +66,7 @@
         "idk"
     ],
     "22": [
-        "Benin",
-        "Burkina Faso",
-        "Togo",
-        "Ivory Coast",
-        "Mali"
+        "idk"
     ],
     "23": [
         "idk"
@@ -91,14 +78,10 @@
         "idk"
     ],
     "26": [
-        "quarks",
-        "leptons",
-        "neutrinos"
+        "idk"
     ],
     "27": [
-        "quarks",
-        "leptons",
-        "gauge bosons"
+        "idk"
     ],
     "28": [
         "idk"
@@ -110,7 +93,7 @@
         "idk"
     ],
     "31": [
-        "idk"
+        "ContainedBy"
     ],
     "32": [
         "idk"
@@ -263,14 +246,7 @@
         "idk"
     ],
     "82": [
-        "India",
-        "Pakistan",
-        "Sri Lanka",
-        "Australia",
-        "New Zealand",
-        "England",
-        "South Africa",
-        "West Indies"
+        "idk"
     ],
     "83": [
         "idk"
@@ -315,9 +291,7 @@
         "idk"
     ],
     "97": [
-        "Containment",
-        "Containment",
-        "Disjoint"
+        "ContainedBy"
     ],
     "98": [
         "idk"
@@ -356,7 +330,7 @@
         "idk"
     ],
     "110": [
-        "idk"
+        "ContainedBy"
     ],
     "111": [
         "idk"
@@ -461,6 +435,7 @@
         "idk"
     ],
     "145": [
+        "idk",
         "idk"
     ],
     "146": [
@@ -473,14 +448,6 @@
         "idk"
     ],
     "149": [
-        "Richard Nixon",
-        "George McGovern",
-        "John Schmitz",
-        "Elliot Richardson",
-        "John G. Schmitz",
-        "George Wallace",
-        "Benjamin Spock",
-        "Roger MacBride",
-        "Other minor candidates"
+        "idk"
     ]
 }

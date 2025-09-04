@@ -1,6 +1,6 @@
 {
     "0": [
-        "idk"
+        "Disjoint"
     ],
     "1": [
         "idk"
@@ -12,101 +12,6 @@
         "idk"
     ],
     "4": [
-        "Amalthea",
-        "Himalia",
-        "Elara",
-        "Pasiphae",
-        "Sinope",
-        "Lysithea",
-        "Carme",
-        "Ananke",
-        "Leda",
-        "Thebe",
-        "Adrastea",
-        "Metis",
-        "Callirrhoe",
-        "Themisto",
-        "Megaclite",
-        "Taygete",
-        "Chaldene",
-        "Harpalyke",
-        "Kalyke",
-        "Iocaste",
-        "Erinome",
-        "Isonoe",
-        "Praxidike",
-        "Autonoe",
-        "Thyone",
-        "Hermippe",
-        "Aitne",
-        "Eurydome",
-        "Euanthe",
-        "Euporie",
-        "Orthosie",
-        "Sponde",
-        "Kale",
-        "Carpo",
-        "Eirene",
-        "Thalia",
-        "Hegemone",
-        "Mneme",
-        "Aoede",
-        "Thelxinoe",
-        "Arche",
-        "Kallichore",
-        "Helike",
-        "Carpo",
-        "Eukelade",
-        "Cyllene",
-        "Kore",
-        "Pasithee",
-        "Herse",
-        "Ananke",
-        "Eirene",
-        "Sinope",
-        "Lysithea",
-        "Carme",
-        "Ananke",
-        "Leda",
-        "Thebe",
-        "Adrastea",
-        "Metis",
-        "Callirrhoe",
-        "Themisto",
-        "Megaclite",
-        "Taygete",
-        "Chaldene",
-        "Harpalyke",
-        "Kalyke",
-        "Iocaste",
-        "Erinome",
-        "Isonoe",
-        "Praxtidike",
-        "Autonoe",
-        "Thyone",
-        "Hermippe",
-        "Aitne",
-        "Eurydome",
-        "Euanthe",
-        "Euporie",
-        "Orthosie",
-        "Sponde",
-        "Kale",
-        "Herse",
-        "Eirene",
-        "Thalia",
-        "Hegemone",
-        "Mneme",
-        "Aoede",
-        "Thelxinoe",
-        "Arche",
-        "Kallichore",
-        "Helike",
-        "Eukelade",
-        "Cyllene",
-        "Kore",
-        "Pasithee",
-        "Herse",
         "idk"
     ],
     "5": [
@@ -125,12 +30,7 @@
         "idk"
     ],
     "10": [
-        "Atlanta",
-        "Sydney",
-        "Athens",
-        "Beijing",
-        "London",
-        "Rio de Janeiro"
+        "idk"
     ],
     "11": [
         "idk"
@@ -139,29 +39,25 @@
         "idk"
     ],
     "13": [
-        "idk"
+        "Disjoint"
     ],
     "14": [
-        "Ponyo",
-        "The Tale of the Princess Kaguya"
+        "idk"
     ],
     "15": [
-        "idk"
+        "Disjoint"
     ],
     "16": [
         "idk"
     ],
     "17": [
-        "idk"
+        "Disjoint"
     ],
     "18": [
-        "Catherine of Aragon",
-        "Anne of Cleves",
-        "Catherine Howard",
-        "Catherine Parr"
+        "idk"
     ],
     "19": [
-        "idk"
+        "Disjoint"
     ],
     "20": [
         "idk"
@@ -170,23 +66,16 @@
         "idk"
     ],
     "22": [
-        "idk"
+        "ContainedBy"
     ],
     "23": [
-        "idk"
+        "ContainedBy"
     ],
     "24": [
         "idk"
     ],
     "25": [
-        "Lynx",
-        "Puma",
-        "Caracal",
-        "Leopardus",
-        "Otocolobus",
-        "Prionailurus",
-        "Felis",
-        "Acinonyx"
+        "Disjoint"
     ],
     "26": [
         "idk"
@@ -201,7 +90,7 @@
         "idk"
     ],
     "30": [
-        "idk"
+        "Disjoint"
     ],
     "31": [
         "idk"
@@ -219,26 +108,25 @@
         "idk"
     ],
     "36": [
-        "Australia",
-        "Antarctica"
+        "Disjoint"
     ],
     "37": [
-        "idk"
+        "Disjoint"
     ],
     "38": [
-        "idk"
+        "Disjoint"
     ],
     "39": [
-        "idk"
+        "Contain"
     ],
     "40": [
-        "idk"
+        "Disjoint"
     ],
     "41": [
         "idk"
     ],
     "42": [
-        "idk"
+        "Disjoint"
     ],
     "43": [
         "idk"
@@ -250,19 +138,16 @@
         "idk"
     ],
     "46": [
-        "Honshu",
-        "Hokkaido",
-        "Kyushu"
+        "idk"
     ],
     "47": [
         "idk"
     ],
     "48": [
-        "idk"
+        "Disjoint"
     ],
     "49": [
-        "United States of America",
-        "Canada"
+        "idk"
     ],
     "50": [
         "idk"
@@ -280,34 +165,29 @@
         "idk"
     ],
     "55": [
+        "Mercury",
         "Venus"
     ],
     "56": [
-        "idk"
+        "Disjoint"
     ],
     "57": [
         "idk"
     ],
     "58": [
-        "harp"
+        "idk"
     ],
     "59": [
         "idk"
     ],
     "60": [
-        "yellow",
-        "black"
+        "idk"
     ],
     "61": [
-        "Brazil",
-        "Germany",
-        "Italy",
-        "France",
-        "England",
-        "Spain"
+        "Overlap"
     ],
     "62": [
-        "idk"
+        "Containment"
     ],
     "63": [
         "idk"
@@ -316,24 +196,19 @@
         "idk"
     ],
     "65": [
-        "A positive",
-        "A negative",
-        "B positive",
-        "B negative",
-        "AB positive",
-        "AB negative"
+        "ContainedBy"
     ],
     "66": [
-        "idk"
+        "Disjoint"
     ],
     "67": [
         "idk"
     ],
     "68": [
-        "idk"
+        "ContainedBy"
     ],
     "69": [
-        "idk"
+        "Disjoint"
     ],
     "70": [
         "idk"
@@ -342,7 +217,7 @@
         "idk"
     ],
     "72": [
-        "Containment"
+        "idk"
     ],
     "73": [
         "idk"
@@ -357,35 +232,22 @@
         "idk"
     ],
     "77": [
-        "idk"
+        "Overlap"
     ],
     "78": [
-        "Northern Ireland"
+        "Disjoint"
     ],
     "79": [
-        "idk"
+        "Disjoint"
     ],
     "80": [
-        "Homo sapiens",
-        "Pan troglodytes",
-        "Gorilla gorilla",
-        "Pongo pygmaeus",
-        "Hylobates lar",
-        "Homo erectus",
-        "Homo neanderthalensis"
+        "Disjoint"
     ],
     "81": [
-        "idk"
+        "ContainedBy"
     ],
     "82": [
-        "Guadeloupe",
-        "Martinique",
-        "French Guiana",
-        "Réunion",
-        "Mayotte",
-        "Saint Pierre and Miquelon",
-        "Saint Martin",
-        "Saint Barthelemy"
+        "idk"
     ],
     "83": [
         "idk"
@@ -394,34 +256,13 @@
         "idk"
     ],
     "85": [
-        "idk"
+        "ContainedBy"
     ],
     "86": [
         "idk"
     ],
     "87": [
-        "United States of America",
-        "Soviet Union",
-        "United Kingdom",
-        "China",
-        "France",
-        "Australia",
-        "Canada",
-        "New Zealand",
-        "India",
-        "South Africa",
-        "Poland",
-        "Yugoslavia",
-        "Belgium",
-        "Norway",
-        "Greece",
-        "Czechoslovakia",
-        "Netherlands",
-        "Brazil",
-        "Mexico",
-        "Philippines",
-        "Cuba",
-        "Luxembourg"
+        "idk"
     ],
     "88": [
         "idk"
@@ -433,7 +274,7 @@
         "idk"
     ],
     "91": [
-        "disjoint"
+        "Disjoint"
     ],
     "92": [
         "idk"
@@ -442,7 +283,7 @@
         "idk"
     ],
     "94": [
-        "idk"
+        "Brazil"
     ],
     "95": [
         "idk"
@@ -454,71 +295,40 @@
         "idk"
     ],
     "98": [
-        "Pierre Curie",
-        "André-Louis Debierne"
+        "Discovered",
+        "Becquerel",
+        "Curie",
+        "Hahn",
+        "Maurice",
+        "Pierre",
+        "Germain"
     ],
     "99": [
-        "Overlap"
+        "Disjoint"
     ],
     "100": [
-        "Mick Jagger",
-        "Charlie Watts",
-        "Bill Wyman",
-        "Ronnie Wood",
-        "Mick Taylor",
-        "Ian Stewart"
+        "idk"
     ],
     "101": [
         "idk"
     ],
     "102": [
-        "Andalucia",
-        "Aragon",
-        "Asturias",
-        "Basque Country",
-        "Canary Islands",
-        "Cantabria",
-        "Castilla-La Mancha",
-        "Castilla y Leon",
-        "Extremadura",
-        "Galicia",
-        "Madrid",
-        "Región de Murcia",
-        "La Rioja",
-        "Navarra",
-        "Pais Vasco",
-        "Comunidad de Madrid",
-        "Comunidad Valenciana",
-        "Castilla-La Mancha",
-        "Castilla y Leon",
-        "Andalucia",
-        "Aragon",
-        "Asturias",
-        "Basque Country",
-        "Canary Islands",
-        "Cantabria",
-        "Extremadura",
-        "Galicia",
-        "La Rioja",
-        "Madrid",
-        "Murcia",
-        "Navarra",
-        "Pais Vasco"
+        "idk"
     ],
     "103": [
-        "idk"
+        "ContainedBy"
     ],
     "104": [
-        "idk"
+        "Disjoint"
     ],
     "105": [
-        "idk"
+        "Disjoint"
     ],
     "106": [
         "idk"
     ],
     "107": [
-        "idk"
+        "ContainedBy"
     ],
     "108": [
         "idk"
@@ -527,20 +337,10 @@
         "idk"
     ],
     "110": [
-        "idk"
+        "Disjoint"
     ],
     "111": [
-        "Ukraine",
-        "Belarus",
-        "Moldova",
-        "Georgia",
-        "Armenia",
-        "Azerbaijan",
-        "Kazakhstan",
-        "Uzbekistan",
-        "Turkmenistan",
-        "Kyrgyzstan",
-        "Tajikistan"
+        "idk"
     ],
     "112": [
         "idk"
@@ -549,55 +349,71 @@
         "idk"
     ],
     "114": [
-        "idk"
+        "Disjoint"
     ],
     "115": [
+        "Hessen",
+        "North Rhine-Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
         "Baden-Württemberg",
         "Bavaria",
         "Bremen",
         "Hamburg",
-        "Hesse",
-        "North Rhine-Westphalia",
-        "Rhineland-Palatinate",
-        "Saarland",
-        "Schleswig-Holstein",
         "Lower Saxony",
-        "Hamburg",
-        "North Rhine-Westphalia",
-        "Baden-Württemberg"
+        "Schleswig-Holstein",
+        "Berlin",
+        "Brandenburg",
+        "Mecklenburg-Vorpommern",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Thuringia"
     ],
     "116": [
-        "Egypt",
-        "Ethiopia",
-        "Libya",
-        "Sudan",
-        "South Africa",
-        "Ghana",
-        "Senegal",
+        "Algeria",
+        "Benin",
+        "Burundi",
         "Cameroon",
-        "Côte d'Ivoire",
+        "Central African Republic",
+        "Chad",
+        "Congo",
+        "Equatorial Guinea",
+        "Gabon",
+        "Gambia",
+        "Ghana",
+        "Guinea",
+        "Ivory Coast",
+        "Kenya",
+        "Lesotho",
+        "Liberia",
+        "Libya",
         "Madagascar",
         "Malawi",
+        "Mali",
+        "Mauritania",
         "Mauritius",
-        "Morocco",
         "Niger",
         "Nigeria",
+        "Rwanda",
+        "Senegal",
+        "Sierra Leone",
+        "Somalia",
+        "Sudan",
+        "Swaziland",
+        "Tanzania",
         "Togo",
-        "Tunisia"
+        "Tunisia",
+        "Uganda",
+        "Zaire"
     ],
     "117": [
-        "Kurt Cobain",
-        "Krist Novoselic",
-        "Dave Grohl"
+        "Overlap"
     ],
     "118": [
-        "idk"
+        "Overlap"
     ],
     "119": [
-        "Tamil Nadu",
-        "Karnataka",
-        "Telangana",
-        "Kerala"
+        "idk"
     ],
     "120": [
         "idk"
@@ -606,16 +422,14 @@
         "idk"
     ],
     "122": [
-        "idk"
+        "ContainedBy"
     ],
     "123": [
         "idk"
     ],
     "124": [
-        "acute triangles",
-        "equilateral triangles",
-        "isosceles triangles",
-        "scalene triangles"
+        "IncludingObtained",
+        "idk"
     ],
     "125": [
         "idk"
@@ -624,70 +438,28 @@
         "idk"
     ],
     "127": [
-        "Castilian Spanish"
+        "idk"
     ],
     "128": [
-        "United States of America",
-        "Brazil",
-        "Nigeria"
+        "idk"
     ],
     "129": [
         "idk"
     ],
     "130": [
-        "Algeria",
-        "Egypt",
-        "Libya",
-        "Morocco",
-        "Sudan",
-        "Tunisia",
-        "Mauritania",
-        "Chad",
-        "Niger",
-        "Mali",
-        "Senegal",
-        "Gambia",
-        "Guinea",
-        "Sierra Leone",
-        "Liberia",
-        "Cote d'Ivoire",
-        "Burkina Faso",
-        "Ghana",
-        "Togo",
-        "Benin",
-        "Nigeria",
-        "Cameroon",
-        "Central African Republic",
-        "Democratic Republic of the Congo",
-        "Republic of the Congo",
-        "Gabon",
-        "Equatorial Guinea",
-        "São Tomé and Príncipe",
-        "Eritrea"
+        "Contains"
     ],
     "131": [
-        "idk"
+        "Disjoint"
     ],
     "132": [
         "idk"
     ],
     "133": [
-        "Algeria",
-        "Bosnia and Herzegovina",
-        "Croatia",
-        "Cyprus",
-        "Egypt",
-        "Greece",
-        "Israel",
-        "Lebanon",
-        "Libya",
-        "Morocco",
-        "North Macedonia",
-        "Syria",
-        "Turkey"
+        "Disjoint"
     ],
     "134": [
-        "idk"
+        "Disjoint"
     ],
     "135": [
         "idk"
@@ -696,69 +468,42 @@
         "idk"
     ],
     "137": [
-        "idk"
+        "Disjoint"
     ],
     "138": [
         "idk"
     ],
     "139": [
-        "3",
-        "5",
-        "7",
-        "11",
-        "13",
-        "17",
-        "19",
-        "23",
-        "29",
-        "31",
-        "37",
-        "41",
-        "43",
-        "47",
-        "53",
-        "59",
-        "61",
-        "67",
-        "71",
-        "73",
-        "79",
-        "83",
-        "89",
-        "97"
+        "2"
     ],
     "140": [
-        "Disjoint"
+        "ContainedBy"
     ],
     "141": [
-        "idk"
+        "ContainedBy"
     ],
     "142": [
         "idk"
     ],
     "143": [
-        "idk"
+        "ContainedBy"
     ],
     "144": [
         "idk"
     ],
     "145": [
-        "idk"
+        "Disjoint"
     ],
     "146": [
         "idk"
     ],
     "147": [
-        "Yemen",
-        "Oman",
-        "Kuwait",
-        "Bahrain",
-        "Qatar"
+        "idk"
     ],
     "148": [
-        "idk"
+        "Disjoint"
     ],
     "149": [
-        "idk"
+        "Disjoint"
     ]
 }

@@ -1,15 +1,9 @@
 {
     "0": [
-        "Venezuela",
-        "Brazil",
-        "Guyana",
-        "Peru",
-        "Colombia"
+        "idk"
     ],
     "1": [
-        "United States of America",
-        "Canada",
-        "South Africa"
+        "idk"
     ],
     "2": [
         "idk"
@@ -30,16 +24,7 @@
         "idk"
     ],
     "8": [
-        "Algeria",
-        "Democratic Republic of the Congo",
-        "Sudan",
-        "Libya",
-        "Chad",
-        "Niger",
-        "Angola",
-        "Mali",
-        "South Africa",
-        "Ethiopia"
+        "idk"
     ],
     "9": [
         "idk"
@@ -48,28 +33,7 @@
         "idk"
     ],
     "11": [
-        "English",
-        "French",
-        "German",
-        "Spanish",
-        "Italian",
-        "Dutch",
-        "Polish",
-        "Romanian",
-        "Hungarian",
-        "Czech",
-        "Slovak",
-        "Finnish",
-        "Swedish",
-        "Danish",
-        "Greek",
-        "Bulgarian",
-        "Croatian",
-        "Irish",
-        "Latvian",
-        "Lithuanian",
-        "Malta",
-        "Estonian"
+        "idk"
     ],
     "12": [
         "idk"
@@ -102,12 +66,7 @@
         "idk"
     ],
     "22": [
-        "Burkina Faso",
-        "Togo",
-        "Ivory Coast",
-        "Liberia",
-        "Guinea",
-        "Mali"
+        "idk"
     ],
     "23": [
         "idk"
@@ -119,16 +78,10 @@
         "idk"
     ],
     "26": [
-        "quarks",
-        "gluons",
-        "W and Z bosons"
+        "idk"
     ],
     "27": [
-        "electron neutrino",
-        "muon neutrino",
-        "tau neutrino",
-        "W boson",
-        "Z boson"
+        "idk"
     ],
     "28": [
         "idk"
@@ -143,7 +96,7 @@
         "idk"
     ],
     "32": [
-        "idk"
+        "Disjoint"
     ],
     "33": [
         "idk"
@@ -179,38 +132,19 @@
         "idk"
     ],
     "44": [
-        "Hinduism",
-        "Jainism",
-        "Buddhism",
-        "Rastafarianism"
+        "idk"
     ],
     "45": [
-        "platypuses",
-        "short-beaked echidnas",
-        "western long-beaked echidnas",
-        "sirens",
-        "dugongs",
-        "manatees"
+        "idk"
     ],
     "46": [
-        "Homo sapiens",
-        "Homo sapiens",
-        "Homo sapiens",
-        "Homo sapiens"
+        "idk"
     ],
     "47": [
         "idk"
     ],
     "48": [
-        "hockey",
-        "lacrosse",
-        "field hockey",
-        "ice hockey",
-        "bandy",
-        "shinty",
-        "hurling",
-        "bandy",
-        "polo"
+        "idk"
     ],
     "49": [
         "idk"
@@ -237,7 +171,7 @@
         "idk"
     ],
     "57": [
-        "idk"
+        "Disjoint"
     ],
     "58": [
         "idk"
@@ -276,29 +210,10 @@
         "idk"
     ],
     "70": [
-        "idk"
+        "Disjoint"
     ],
     "71": [
-        "Argentina",
-        "Bolivia",
-        "Brazil",
-        "Chile",
-        "Colombia",
-        "Costa Rica",
-        "Cuba",
-        "Dominican Republic",
-        "Ecuador",
-        "El Salvador",
-        "Guatemala",
-        "Honduras",
-        "Mexico",
-        "Nicaragua",
-        "Panama",
-        "Paraguay",
-        "Peru",
-        "Puerto Rico",
-        "Uruguay",
-        "Venezuela"
+        "idk"
     ],
     "72": [
         "idk"
@@ -310,120 +225,16 @@
         "idk"
     ],
     "75": [
-        "Sudan",
-        "Ethiopia",
-        "Kenya",
-        "Uganda",
-        "Democratic Republic of the Congo",
-        "Central African Republic",
-        "Equatorial Guinea",
-        "Sudan",
-        "Ethiopia",
-        "Kenya",
-        "Uganda",
-        "Democratic Republic of the Congo",
-        "Central African Republic"
+        "idk"
     ],
     "76": [
         "idk"
     ],
     "77": [
-        "United States of America",
-        "South Africa",
-        "Bolivia",
-        "Switzerland"
+        "idk"
     ],
     "78": [
-        "United Kingdom",
-        "Japan",
-        "Australia",
-        "India",
-        "South Africa",
-        "New Zealand",
-        "Thailand",
-        "Malaysia",
-        "Kenya",
-        "Singapore",
-        "Pakistan",
-        "Bangladesh",
-        "Sri Lanka",
-        "Indonesia",
-        "Malawi",
-        "Zambia",
-        "Zimbabwe",
-        "Lesotho",
-        "Eswatini",
-        "Mauritius",
-        "Fiji",
-        "Papua New Guinea",
-        "Brunei",
-        "Hong Kong",
-        "Macau",
-        "Timor-Leste",
-        "Cyprus",
-        "Malta",
-        "Jamaica",
-        "Barbados",
-        "Bahamas",
-        "Saint Lucia",
-        "Saint Vincent and the Grenadines",
-        "Grenada",
-        "Antigua and Barbuda",
-        "Saint Kitts and Nevis",
-        "Dominica",
-        "Saint Kitts and Nevis",
-        "Fiji",
-        "Solomon Islands",
-        "Vanuatu",
-        "Nauru",
-        "Palau",
-        "Marshall Islands",
-        "Micronesia",
-        "Kiribati",
-        "Tuvalu",
-        "Samoa",
-        "Tonga",
-        "Seychelles",
-        "Comoros",
-        "Madagascar",
-        "Mozambique",
-        "Eswatini",
-        "Lesotho",
-        "Botswana",
-        "Namibia",
-        "Zambia",
-        "Zimbabwe",
-        "Malawi",
-        "Kenya",
-        "Uganda",
-        "Tanzania",
-        "Rwanda",
-        "Burundi",
-        "Cote d'Ivoire",
-        "Gambia",
-        "Ghana",
-        "Liberia",
-        "Sierra Leone",
-        "The Gambia",
-        "Seychelles",
-        "Mauritius",
-        "Malawi",
-        "Zambia",
-        "Zimbabwe",
-        "Lesotho",
-        "Eswatini",
-        "Fiji",
-        "Papua New Guinea",
-        "Solomon Islands",
-        "Vanuatu",
-        "Nauru",
-        "Palau",
-        "Marshall Islands",
-        "Micronesia",
-        "Kiribati",
-        "Tuvalu",
-        "Samoa",
-        "Tonga"
+        "idk"
     ],
     "79": [
         "idk"
@@ -435,31 +246,13 @@
         "idk"
     ],
     "82": [
-        "Afghanistan",
-        "Australia",
-        "England",
-        "India",
-        "New Zealand",
-        "Pakistan",
-        "Sri Lanka"
+        "idk"
     ],
     "83": [
-        "Brazil",
-        "Germany",
-        "Italy",
-        "Argentina",
-        "France",
-        "Uruguay",
-        "England",
-        "Spain"
+        "idk"
     ],
     "84": [
-        "Australia",
-        "New Zealand",
-        "South Africa",
-        "England",
-        "France",
-        "Japan"
+        "idk"
     ],
     "85": [
         "idk"
@@ -504,197 +297,7 @@
         "idk"
     ],
     "99": [
-        "Chinese",
-        "Japanese",
-        "Korean",
-        "Italian",
-        "Spanish",
-        "Portuguese",
-        "Turkish",
-        "Arabic",
-        "Hebrew",
-        "Greek",
-        "Slovak",
-        "Czech",
-        "Finnish",
-        "Swedish",
-        "Norwegian",
-        "Danish",
-        "Hungarian",
-        "Romanian",
-        "Bulgarian",
-        "Serbian",
-        "Croatian",
-        "Bosnian",
-        "Albanian",
-        "Algerian Arabic",
-        "Moroccan Arabic",
-        "Egyptian Arabic",
-        "Lebanese Arabic",
-        "Syrian Arabic",
-        "Iraqi Arabic",
-        "Iranian Persian",
-        "Pashto",
-        "Dari",
-        "Urdu",
-        "Punjabi",
-        "Sindhi",
-        "Bengali",
-        "Nepali",
-        "Tibetan",
-        "Myanmar (Burma) language",
-        "Vietnamese",
-        "Tagalog",
-        "Indonesian",
-        "Malay",
-        "Javanese",
-        "Sundanese",
-        "Filipino",
-        "Hawaiian",
-        "Maori",
-        "Samoan",
-        "Tongan",
-        "Fijian",
-        "Haitian Creole",
-        "Hausa",
-        "Yoruba",
-        "Igbo",
-        "Shona",
-        "Zulu",
-        "Xhosa",
-        "Swahili",
-        "Amharic",
-        "Oromo",
-        "Somali",
-        "Afrikaans",
-        "Dutch",
-        "German",
-        "Swedish",
-        "Norwegian",
-        "Danish",
-        "Icelandic",
-        "Finnish",
-        "Estonian",
-        "Latvian",
-        "Lithuanian",
-        "Polish",
-        "Ukrainian",
-        "Belarusian",
-        "Russian",
-        "Czech",
-        "Slovak",
-        "Bosnian",
-        "Croatian",
-        "Serbian",
-        "Montenegrin",
-        "Albanian",
-        "Macedonian",
-        "Bulgarian",
-        "Romanian",
-        "Moldovan",
-        "Greek",
-        "Albanian",
-        "Armenian",
-        "Georgian",
-        "Azerbaijani",
-        "Kazakh",
-        "Uzbek",
-        "Turkmen",
-        "Kyrgyz",
-        "Tajik",
-        "Pashto",
-        "Dari",
-        "Tibetan",
-        "Uyghur",
-        "Kurdish",
-        "Hmong",
-        "Lao",
-        "Khmer",
-        "Thai",
-        "Burmese",
-        "Chinese",
-        "Japanese",
-        "Korean",
-        "Vietnamese",
-        "Mongolian",
-        "Tibetan",
-        "Nepali",
-        "Bengali",
-        "Assamese",
-        "Gujarati",
-        "Punjabi",
-        "Marathi",
-        "Sindhi",
-        "Urdu",
-        "Pashto",
-        "Kurdish",
-        "Farsi",
-        "Arabic",
-        "Hebrew",
-        "Amharic",
-        "Tigrinya",
-        "Oromo",
-        "Somali",
-        "Swahili",
-        "Hausa",
-        "Yoruba",
-        "Igbo",
-        "Shona",
-        "Zulu",
-        "Xhosa",
-        "Sotho",
-        "Tswana",
-        "Venda",
-        "Tsonga",
-        "Swazi",
-        "Malagasy",
-        "Maori",
-        "Samoan",
-        "Tongan",
-        "Fijian",
-        "Hawaiian",
-        "Chamorro",
-        "Marshallese",
-        "Palauan",
-        "Carolinian",
-        "Chuukese",
-        "Kosraean",
-        "Pohnpeian",
-        "Yapese",
-        "Burmese",
-        "Karen",
-        "Lao",
-        "Vietnamese",
-        "Khmer",
-        "Thai",
-        "Chinese",
-        "Japanese",
-        "Korean",
-        "Mongolian",
-        "Tibetan",
-        "Nepali",
-        "Bengali",
-        "Assamese",
-        "Gujarati",
-        "Punjabi",
-        "Marathi",
-        "Sindhi",
-        "Urdu",
-        "Pashto",
-        "Kurdish",
-        "Farsi",
-        "Arabic",
-        "Hebrew",
-        "Amharic",
-        "Tigrinya",
-        "Oromo",
-        "Somali",
-        "Hausa",
-        "Yoruba",
-        "Igbo",
-        "Shona",
-        "Zulu",
-        "Xhosa"
+        "idk"
     ],
     "100": [
         "idk"
@@ -745,8 +348,7 @@
         "idk"
     ],
     "116": [
-        "The Republican Party",
-        "The Democratic Party"
+        "idk"
     ],
     "117": [
         "idk"
@@ -845,13 +447,6 @@
         "idk"
     ],
     "149": [
-        "Richard Nixon",
-        "George McGovern",
-        "George Wallace",
-        "E. H. \"Red\" Davidson",
-        "John G. Schmitz",
-        "Roger MacBride",
-        "Benjamin Spock",
-        "Other minor candidates"
+        "idk"
     ]
 }

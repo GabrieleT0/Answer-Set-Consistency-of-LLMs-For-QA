@@ -1,13 +1,6 @@
 {
     "0": [
-        "Venezuela",
-        "Colombia",
-        "Ecuador",
-        "Peru",
-        "Bolivia",
-        "Paraguay",
-        "Chile",
-        "Argentina"
+        "idk"
     ],
     "1": [
         "idk"
@@ -16,7 +9,7 @@
         "idk"
     ],
     "3": [
-        "idk"
+        "Disjoint"
     ],
     "4": [
         "idk"
@@ -31,7 +24,7 @@
         "idk"
     ],
     "8": [
-        "Algeria"
+        "idk"
     ],
     "9": [
         "idk"
@@ -64,9 +57,7 @@
         "idk"
     ],
     "19": [
-        "blue",
-        "white",
-        "red"
+        "idk"
     ],
     "20": [
         "idk"
@@ -75,8 +66,7 @@
         "idk"
     ],
     "22": [
-        "Burkina Faso",
-        "Mali"
+        "idk"
     ],
     "23": [
         "idk"
@@ -91,8 +81,7 @@
         "idk"
     ],
     "27": [
-        "quarks",
-        "gauge bosons"
+        "idk"
     ],
     "28": [
         "idk"
@@ -104,7 +93,7 @@
         "idk"
     ],
     "31": [
-        "idk"
+        "Disjoint"
     ],
     "32": [
         "idk"
@@ -125,7 +114,7 @@
         "idk"
     ],
     "38": [
-        "idk"
+        "Disjoint"
     ],
     "39": [
         "idk"
@@ -146,17 +135,13 @@
         "idk"
     ],
     "45": [
-        "platypus",
-        "short-beaked echidna",
-        "western long-beaked echidna",
-        "sirens",
-        "dugongs"
+        "idk"
     ],
     "46": [
-        "idk"
+        "ContainedBy"
     ],
     "47": [
-        "idk"
+        "Overlap"
     ],
     "48": [
         "idk"
@@ -228,38 +213,10 @@
         "idk"
     ],
     "71": [
-        "Argentina",
-        "Bolivia",
-        "Chile",
-        "Colombia",
-        "Costa Rica",
-        "Cuba",
-        "Dominican Republic",
-        "Ecuador",
-        "El Salvador",
-        "Guatemala",
-        "Honduras",
-        "Mexico",
-        "Nicaragua",
-        "Panama",
-        "Paraguay",
-        "Peru",
-        "Puerto Rico",
-        "Uruguay",
-        "Venezuela"
+        "idk"
     ],
     "72": [
-        "Albania",
-        "Bosnia and Herzegovina",
-        "Bulgaria",
-        "Croatia",
-        "Kosovo",
-        "Montenegro",
-        "North Macedonia",
-        "Romania",
-        "Serbia",
-        "Slovenia",
-        "Turkey"
+        "idk"
     ],
     "73": [
         "idk"
@@ -268,12 +225,7 @@
         "idk"
     ],
     "75": [
-        "Sudan",
-        "Ethiopia",
-        "Kenya",
-        "Uganda",
-        "Democratic Republic of the Congo",
-        "Central African Republic"
+        "idk"
     ],
     "76": [
         "idk"
@@ -295,7 +247,9 @@
     ],
     "82": [
         "India",
-        "Sri Lanka"
+        "Pakistan",
+        "Sri Lanka",
+        "idk"
     ],
     "83": [
         "idk"
@@ -310,13 +264,13 @@
         "idk"
     ],
     "87": [
-        "idk"
+        "Disjoint"
     ],
     "88": [
-        "idk"
+        "disjoint"
     ],
     "89": [
-        "idk"
+        "Disjoint"
     ],
     "90": [
         "idk"
@@ -325,7 +279,7 @@
         "idk"
     ],
     "92": [
-        "idk"
+        "Disjoint"
     ],
     "93": [
         "idk"
@@ -337,13 +291,13 @@
         "idk"
     ],
     "96": [
-        "idk"
+        "Disjoint"
     ],
     "97": [
-        "idk"
+        "Contain"
     ],
     "98": [
-        "idk"
+        "Disjoint"
     ],
     "99": [
         "idk"
@@ -352,7 +306,7 @@
         "idk"
     ],
     "101": [
-        "idk"
+        "Disjoint"
     ],
     "102": [
         "idk"
@@ -382,7 +336,7 @@
         "idk"
     ],
     "111": [
-        "idk"
+        "Disjoint"
     ],
     "112": [
         "idk"
@@ -400,7 +354,7 @@
         "idk"
     ],
     "117": [
-        "1, 0"
+        "idk"
     ],
     "118": [
         "idk"
@@ -421,7 +375,7 @@
         "idk"
     ],
     "124": [
-        "idk"
+        "Disjoint"
     ],
     "125": [
         "idk"
@@ -430,7 +384,7 @@
         "idk"
     ],
     "127": [
-        "idk"
+        "Disjoint"
     ],
     "128": [
         "idk"
@@ -454,7 +408,7 @@
         "idk"
     ],
     "135": [
-        "idk"
+        "Disjoint"
     ],
     "136": [
         "idk"
@@ -472,7 +426,7 @@
         "idk"
     ],
     "141": [
-        "idk"
+        "Disjoint"
     ],
     "142": [
         "idk"
@@ -490,12 +444,12 @@
         "idk"
     ],
     "147": [
-        "idk"
+        "Disjoint"
     ],
     "148": [
-        "idk"
+        "Disjoint"
     ],
     "149": [
-        "George McGovern"
+        "idk"
     ]
 }

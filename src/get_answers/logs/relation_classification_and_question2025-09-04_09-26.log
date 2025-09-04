@@ -1,0 +1,13 @@
+2025-09-04 09:26:03,363 - INFO - Processing model: gpt-4.1-2025-04-14 | relation: Equivalence | lang: en | dataset: spinach.tsv
+2025-09-04 09:26:06,624 - INFO - Index 0: Q1: Which television shows were created by John Cleese? Q2: What television programs did John Cleese create? Rel: equivalence
+2025-09-04 09:26:10,829 - INFO - Index 1: Q1: Give me all current communist countries. Q2: What countries have a communist government? Rel: equivalence
+2025-09-04 09:26:15,336 - INFO - Index 2: Q1: Which politicians were married to a German person? Q2: Which politicians had a spouse who was German? Rel: equivalence
+2025-09-04 09:26:20,988 - INFO - Index 3: Q1: Give me all soccer clubs in Spain that play in La Liga. Q2: Can you list every soccer club located in Spain that play in La Liga? Rel: equivalence
+2025-09-04 09:26:24,997 - INFO - Index 4: Q1: Which telecommunications organizations are located in Belgium? Q2: Which telecommunications organizations are based in Belgium? Rel: equivalence
+2025-09-04 09:26:29,354 - INFO - Index 5: Q1: Which actors were born in Germany? Q2: What actors have a German birthplace? Rel: equivalence
+2025-09-04 09:26:32,439 - INFO - Index 6: Q1: In which countries are the Himalayas located? Q2: Which countries do the Himalayas span? Rel: equivalence
+2025-09-04 09:26:35,601 - INFO - Index 7: Q1: On what video streaming services can I watch the Hunter x Hunter anime series? Q2: Which platforms stream the Hunter x Hunter anime series? Rel: equivalence
+2025-09-04 09:26:39,331 - INFO - Index 8: Q1: Through which countries does the Danube flow? Q2: Which countries does the Danube flow through? Rel: equivalence
+2025-09-04 09:26:42,730 - INFO - Index 9: Q1: What are the professions of John Lennon’s sons? Q2: In which professions are John Lennon’s sons involved? Rel: equivalence
+2025-09-04 09:26:46,972 - INFO - Index 10: Q1: What movies are in the Star Wars series? Q2: What are the movies in the Star Wars series? Rel: equivalence
+2025-09-04 09:26:50,116 - INFO - Index 11: Q1: What instruments did Louis Armstrong play? Q2: Which instruments were played by Louis Armstrong? Rel: equivalence

@@ -1,8 +1,6 @@
 {
     "0": [
-        "Brazil",
-        "Venezuela",
-        "Guyana"
+        "idk"
     ],
     "1": [
         "idk"
@@ -11,10 +9,10 @@
         "idk"
     ],
     "3": [
-        "idk"
+        "Disjoint"
     ],
     "4": [
-        "idk"
+        "Disjoint"
     ],
     "5": [
         "idk"
@@ -26,30 +24,22 @@
         "idk"
     ],
     "8": [
-        "Democratic Republic of the Congo",
-        "Sudan",
-        "Libya",
-        "Chad",
-        "Niger",
-        "Angola",
-        "Mali",
-        "South Africa",
-        "Ethiopia"
+        "idk"
     ],
     "9": [
         "idk"
     ],
     "10": [
-        "idk"
+        "Disjoint"
     ],
     "11": [
-        "idk"
+        "disjoint"
     ],
     "12": [
         "idk"
     ],
     "13": [
-        "idk"
+        "Disjoint"
     ],
     "14": [
         "idk"
@@ -58,17 +48,16 @@
         "idk"
     ],
     "16": [
-        "idk"
+        "Disjoint"
     ],
     "17": [
-        "idk"
+        "Contains"
     ],
     "18": [
-        "idk"
+        "Disjoint"
     ],
     "19": [
-        "red",
-        "white"
+        "idk"
     ],
     "20": [
         "idk"
@@ -77,45 +66,43 @@
         "idk"
     ],
     "22": [
-        "Benin",
-        "Togo",
-        "Ivory Coast"
+        "idk"
     ],
     "23": [
-        "idk"
+        "ContainedBy"
     ],
     "24": [
         "idk"
     ],
     "25": [
-        "idk"
+        "Disjoint"
     ],
     "26": [
-        "idk"
+        "Disjoint"
     ],
     "27": [
-        "leptons"
+        "idk"
     ],
     "28": [
-        "idk"
+        "Disjoint"
     ],
     "29": [
-        "idk"
+        "Disjoint"
     ],
     "30": [
         "idk"
     ],
     "31": [
-        "idk"
+        "Disjoint"
     ],
     "32": [
         "idk"
     ],
     "33": [
-        "idk"
+        "Disjoint"
     ],
     "34": [
-        "idk"
+        "Contain"
     ],
     "35": [
         "idk"
@@ -127,7 +114,7 @@
         "idk"
     ],
     "38": [
-        "idk"
+        "Disjoint"
     ],
     "39": [
         "idk"
@@ -151,10 +138,10 @@
         "idk"
     ],
     "46": [
-        "idk"
+        "ContainedBy"
     ],
     "47": [
-        "idk"
+        "Disjoint"
     ],
     "48": [
         "idk"
@@ -172,10 +159,10 @@
         "idk"
     ],
     "53": [
-        "Containment"
+        "idk"
     ],
     "54": [
-        "idk"
+        "Contains"
     ],
     "55": [
         "idk"
@@ -187,7 +174,7 @@
         "idk"
     ],
     "58": [
-        "disjoint"
+        "idk"
     ],
     "59": [
         "idk"
@@ -196,16 +183,16 @@
         "idk"
     ],
     "61": [
-        "idk"
+        "Disjoint"
     ],
     "62": [
-        "idk"
+        "ContainedBy"
     ],
     "63": [
         "idk"
     ],
     "64": [
-        "idk"
+        "Disjoint"
     ],
     "65": [
         "idk"
@@ -220,46 +207,25 @@
         "idk"
     ],
     "69": [
-        "idk"
+        "Disjoint"
     ],
     "70": [
         "idk"
     ],
     "71": [
-        "Brazil",
-        "Haiti",
-        "Jamaica",
-        "Bahamas",
-        "Belize",
-        "Guyana",
-        "Suriname",
-        "French Guiana"
+        "Disjoint"
     ],
     "72": [
-        "Albania",
-        "Bosnia and Herzegovina",
-        "Bulgaria",
-        "Croatia",
-        "Kosovo",
-        "Montenegro",
-        "North Macedonia",
-        "Romania",
-        "Serbia",
-        "Slovenia",
-        "Turkey"
+        "idk"
     ],
     "73": [
         "idk"
     ],
     "74": [
-        "Minus"
+        "ContainedBy"
     ],
     "75": [
-        "Ethiopia",
-        "Kenya",
-        "Uganda",
-        "Democratic Republic of the Congo",
-        "Central African Republic"
+        "idk"
     ],
     "76": [
         "idk"
@@ -268,54 +234,78 @@
         "idk"
     ],
     "78": [
-        "idk"
+        "ContainedBy"
     ],
     "79": [
-        "idk"
+        "Disjoint"
     ],
     "80": [
         "idk"
     ],
     "81": [
-        "idk"
+        "Disjoint"
     ],
     "82": [
         "Australia",
-        "Pakistan",
         "England",
-        "West Indies"
+        "West Indies",
+        "New Zealand",
+        "idk"
     ],
     "83": [
         "Brazil",
+        "Germany",
+        "Argentina",
         "Uruguay",
-        "Argentina"
+        "France",
+        "England",
+        "Spain",
+        "Italy",
+        "Croatia",
+        "Netherlands",
+        "Portugal",
+        "Czechoslovakia",
+        "Sweden",
+        "Hungary",
+        "Brazil",
+        "South Korea",
+        "Mexico",
+        "United States of America",
+        "Germany",
+        "Argentina",
+        "Uruguay",
+        "Brazil",
+        "France",
+        "England",
+        "Spain",
+        "Italy"
     ],
     "84": [
         "idk"
     ],
     "85": [
-        "idk"
+        "Disjoint"
     ],
     "86": [
-        "idk"
+        "Disjoint"
     ],
     "87": [
-        "idk"
+        "Disjoint"
     ],
     "88": [
-        "idk"
+        "Overlap"
     ],
     "89": [
-        "idk"
+        "Disjoint"
     ],
     "90": [
-        "idk"
+        "disjoint"
     ],
     "91": [
-        "idk"
+        "Disjoint"
     ],
     "92": [
-        "idk"
+        "Overlap"
     ],
     "93": [
         "idk"
@@ -324,16 +314,16 @@
         "idk"
     ],
     "95": [
-        "idk"
+        "Disjoint"
     ],
     "96": [
-        "idk"
+        "ContainedBy"
     ],
     "97": [
-        "idk"
+        "Contained"
     ],
     "98": [
-        "idk"
+        "ContainedBy"
     ],
     "99": [
         "idk"
@@ -342,13 +332,13 @@
         "idk"
     ],
     "101": [
-        "disjoint"
+        "Contains"
     ],
     "102": [
         "idk"
     ],
     "103": [
-        "idk"
+        "Disjoint"
     ],
     "104": [
         "idk"
@@ -357,7 +347,7 @@
         "idk"
     ],
     "106": [
-        "idk"
+        "Disjoint"
     ],
     "107": [
         "idk"
@@ -369,10 +359,10 @@
         "idk"
     ],
     "110": [
-        "idk"
+        "Overlap"
     ],
     "111": [
-        "idk"
+        "ContainedBy"
     ],
     "112": [
         "idk"
@@ -381,7 +371,7 @@
         "idk"
     ],
     "114": [
-        "idk"
+        "Disjoint"
     ],
     "115": [
         "idk"
@@ -390,7 +380,7 @@
         "idk"
     ],
     "117": [
-        "idk"
+        "Disjoint"
     ],
     "118": [
         "idk"
@@ -399,31 +389,31 @@
         "idk"
     ],
     "120": [
-        "idk"
+        "Disjoint"
     ],
     "121": [
-        "idk"
+        "Contain"
     ],
     "122": [
-        "idk"
+        "Disjoint"
     ],
     "123": [
-        "idk"
+        "Disjoint"
     ],
     "124": [
-        "idk"
+        "Disjoint"
     ],
     "125": [
-        "idk"
+        "Disjoint"
     ],
     "126": [
         "idk"
     ],
     "127": [
-        "idk"
+        "Overlap"
     ],
     "128": [
-        "idk"
+        "ContainedBy"
     ],
     "129": [
         "idk"
@@ -432,7 +422,7 @@
         "idk"
     ],
     "131": [
-        "idk"
+        "Disjoint"
     ],
     "132": [
         "idk"
@@ -444,10 +434,10 @@
         "idk"
     ],
     "135": [
-        "idk"
+        "Disjoint"
     ],
     "136": [
-        "idk"
+        "Disjoint"
     ],
     "137": [
         "idk"
@@ -459,13 +449,13 @@
         "idk"
     ],
     "140": [
-        "idk"
+        "Overlap"
     ],
     "141": [
-        "idk"
+        "ContainedBy"
     ],
     "142": [
-        "idk"
+        "Disjoint"
     ],
     "143": [
         "idk"
@@ -474,22 +464,18 @@
         "idk"
     ],
     "145": [
-        "idk"
+        "Disjoint"
     ],
     "146": [
-        "idk"
+        "Disjoint"
     ],
     "147": [
-        "idk"
+        "Disjoint"
     ],
     "148": [
-        "idk"
+        "Disjoint"
     ],
     "149": [
-        "Richard Nixon",
-        "George Wallace",
-        "Benjamin Spock",
-        "Roger MacBride",
-        "Other minor candidates"
+        "Disjoint"
     ]
 }
