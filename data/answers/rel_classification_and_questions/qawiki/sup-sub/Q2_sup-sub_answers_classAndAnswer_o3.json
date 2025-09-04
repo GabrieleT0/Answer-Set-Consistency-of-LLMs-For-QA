@@ -5,31 +5,28 @@
     "1": [
         "United States of America"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "The Irishman"
     ],
     "4": [
         "Museo Nacional del Prado",
         "Museo Nacional Thyssen Bornemisza",
-        "Museo del Greco",
         "National Gallery of Art",
-        "The National Gallery",
-        "The National Galleries of Scotland",
+        "National Gallery London",
+        "Scottish National Gallery",
         "National Museum Cardiff",
-        "Musée du Louvre",
-        "Museo e Real Bosco di Capodimonte",
-        "Galleria Nazionale di Parma",
-        "Palazzo Barberini Galleria Nazionale di Arte Antica",
-        "Kunsthistorisches Museum",
-        "Royal Museums of Fine Arts of Belgium",
-        "State Hermitage Museum",
-        "State Pushkin Museum of Fine Arts",
-        "National Gallery Alexandros Soutzos Museum",
+        "Louvre Museum",
+        "Gemäldegalerie Berlin",
+        "Kunsthistorisches Museum Vienna",
+        "Museo di Capodimonte",
         "Museum of Fine Arts Budapest",
-        "Museu Nacional d'Art de Catalunya",
+        "State Hermitage Museum",
+        "Pushkin State Museum of Fine Arts",
         "National Museum of Western Art",
-        "National Gallery of Ireland"
+        "National Gallery Alexandros Soutzos Museum"
     ],
     "5": [
         "The Breeders",
@@ -37,13 +34,15 @@
     ],
     "6": [
         "Russell Louis Schweickart",
-        "Kenneth Donald Cameron",
-        "Anthony Wayne England",
-        "Daniel Mowry Tani",
+        "Catherine Grace Coleman",
+        "Michael Edward Fincke",
+        "Daniel Mark Tani",
+        "Heidemarie Martha Stefanyshyn Piper",
         "Robert Lee Satcher Junior",
-        "Heidi Marie Stefanyshyn Piper",
-        "Jasmin Moghbeli",
-        "Warren Woodrow Hoburg"
+        "John Mace Grunsfeld",
+        "Dominic Anthony Antonelli",
+        "Warren Woodrow Hoburg",
+        "Jasmin Moghbeli"
     ],
     "7": [
         "Bernard Arnault"
@@ -59,19 +58,19 @@
         "Australia",
         "Brazil",
         "Canada",
-        "China",
+        "People's Republic of China",
         "France",
         "Germany",
         "India",
         "Indonesia",
         "Italy",
         "Japan",
-        "Republic of Korea",
         "Mexico",
         "Russian Federation",
         "Saudi Arabia",
         "South Africa",
-        "Türkiye",
+        "Republic of Korea",
+        "Turkey",
         "United Kingdom",
         "United States of America"
     ],
@@ -82,11 +81,7 @@
         "Maltese"
     ],
     "12": [
-        "Facebook Payments Incorporated",
-        "Facebook Technologies Limited Liability Company",
-        "Facebook Ireland Holdings Unlimited Company",
-        "Facebook Operations Limited Liability Company",
-        "Facebook Holdings Limited Liability Company"
+        "Facebook Technologies Limited Liability Company"
     ],
     "13": [
         "Mount Everest",
@@ -96,27 +91,47 @@
         "Makalu",
         "Cho Oyu"
     ],
-    "14": [],
-    "15": [
-        "John Fitzgerald Kennedy School of Government"
+    "14": [
+        "idk"
     ],
-    "17": [],
+    "15": [
+        "John Fitzgerald Kennedy School of Government Cambridge Massachusetts",
+        "John Fitzgerald Kennedy University Pleasant Hill California",
+        "John Fitzgerald Kennedy High School Bellmore New York",
+        "John Fitzgerald Kennedy High School Cheektowaga New York",
+        "John Fitzgerald Kennedy High School Granada Hills California",
+        "John Fitzgerald Kennedy High School La Palma California",
+        "John Fitzgerald Kennedy High School Richmond California",
+        "John Fitzgerald Kennedy High School Sacramento California",
+        "John Fitzgerald Kennedy High School Fremont California",
+        "John Fitzgerald Kennedy High School Denver Colorado",
+        "John Fitzgerald Kennedy High School Bloomington Minnesota",
+        "John Fitzgerald Kennedy High School Paterson New Jersey",
+        "John Fitzgerald Kennedy Memorial High School Iselin New Jersey",
+        "John Fitzgerald Kennedy High School Cleveland Ohio",
+        "John Fitzgerald Kennedy High School Chicago Illinois",
+        "John Fitzgerald Kennedy High School Silver Spring Maryland",
+        "John Fitzgerald Kennedy High School New Orleans Louisiana",
+        "John Fitzgerald Kennedy High School Waterbury Connecticut",
+        "John Fitzgerald Kennedy High School Tamuning Guam",
+        "John Fitzgerald Kennedy Middle School Enfield Connecticut",
+        "John Fitzgerald Kennedy Middle School Cupertino California",
+        "John Fitzgerald Kennedy Middle School Northampton Massachusetts",
+        "John Fitzgerald Kennedy Elementary School Boston Massachusetts"
+    ],
+    "17": [
+        "Miami-Dade County",
+        "Montreal"
+    ],
     "18": [
         "British Museum",
-        "Victoria and Albert Museum",
-        "National Museums Scotland",
-        "Royal Museum for Central Africa",
-        "Royal Museums of Art and History",
-        "Rijksmuseum",
-        "National Museum of Ethnology Leiden",
-        "Musée du Quai Branly – Jacques Chirac",
-        "Ethnological Museum of Berlin at the Humboldt Forum",
-        "Weltmuseum Wien",
+        "Musée du quai Branly – Jacques Chirac",
         "National Museum of Denmark",
-        "Swedish Museum of Ethnography",
+        "National Museum of Ireland",
+        "National Museum of Scotland",
+        "National Museum of Ethnology",
         "Smithsonian National Museum of African Art",
-        "National Gallery of Australia",
-        "Museum of New Zealand Te Papa Tongarewa"
+        "National Gallery of Australia"
     ],
     "19": [
         "white",
@@ -125,7 +140,6 @@
     "20": [
         "Austria",
         "Belgium",
-        "Bulgaria",
         "Croatia",
         "Czech Republic",
         "Denmark",
@@ -146,7 +160,6 @@
         "Norway",
         "Poland",
         "Portugal",
-        "Romania",
         "Slovakia",
         "Slovenia",
         "Spain",
@@ -162,24 +175,42 @@
         "Netherlands"
     ],
     "22": [],
-    "23": [],
+    "23": [
+        "idk"
+    ],
     "24": [
-        "The Island and the Whales",
         "A Whale of a Tale",
-        "Confessions of an Eco Terrorist"
+        "Behind the Cove",
+        "Confessions of an Eco-Terrorist",
+        "The Islands and the Whales",
+        "Breach",
+        "Whale Like Me",
+        "Defend, Conserve, Protect"
     ],
     "25": [
         "Palm wine",
         "Tej",
-        "Umqombothi",
-        "Amarula cream liqueur",
-        "Malwa",
         "Tella",
-        "Burukutu",
-        "Chibuku beer",
+        "Umqombothi",
+        "Amarula",
+        "Boukha",
+        "Ogogoro",
         "Akpeteshie",
         "Mampoer",
-        "Dolo"
+        "Witblits",
+        "Burukutu",
+        "Pito",
+        "Dolo",
+        "Chibuku",
+        "Chang'aa",
+        "Konyagi",
+        "Mahia",
+        "Areki",
+        "Borde",
+        "Pombe",
+        "Waragi",
+        "Banana beer",
+        "Sorghum beer"
     ],
     "26": [
         "down quark",
@@ -187,36 +218,36 @@
         "bottom quark"
     ],
     "27": [
-        "Up quark",
-        "Down quark",
-        "Charm quark",
-        "Strange quark",
-        "Top quark",
-        "Bottom quark"
+        "up quark",
+        "down quark",
+        "charm quark",
+        "strange quark",
+        "top quark",
+        "bottom quark"
     ],
     "28": [
         "Salaam Bombay!",
-        "Monsoon Wedding"
+        "Monsoon Wedding",
+        "Migration"
     ],
     "29": [
-        "Beefalo",
-        "Zubron",
-        "Dzo",
         "Liger",
-        "Tigon",
-        "Leopon",
-        "Jaglion",
-        "Wholphin",
-        "Pizzly bear",
-        "Wolfdog",
+        "Tiglon",
+        "Beefalo",
+        "Bactrian camel and dromedary camel hybrid",
+        "Polar bear and grizzly bear hybrid",
         "Coywolf",
         "Coydog",
-        "Red wolf",
+        "Wolfdog",
         "Savannah cat",
-        "Bengal cat"
+        "Bengal cat",
+        "Wholphin",
+        "Yak and domestic cattle hybrid"
     ],
     "30": [
-        "Akan"
+        "Akan",
+        "Fante",
+        "Twi"
     ],
     "31": [
         "Ascraeus Mons",
@@ -228,79 +259,104 @@
         "The Matrix Revolutions"
     ],
     "33": [
-        "Zoma Museum",
-        "Gebre Kristos Desta Center",
-        "Modern Art Museum of Addis Ababa University Alle School of Fine Arts and Design"
+        "Modern Art Museum Gebre Kristos Desta Center",
+        "Zoma Museum"
     ],
     "34": [
         "To Kill a Mockingbird"
     ],
     "35": [
         "Pluto",
-        "Eris",
         "Haumea",
-        "Makemake"
+        "Makemake",
+        "Eris"
     ],
     "36": [
-        "Drumandoora",
-        "Mountscott"
+        "Drumandoora I",
+        "Drumandoora II",
+        "Drumandoora III"
     ],
     "37": [
+        "The Queen of Spades",
         "Boris Godunov",
         "The Stone Guest",
-        "The Queen of Spades",
-        "Dubrovsky"
+        "Dubrovsky",
+        "The Captain's Daughter"
     ],
     "38": [
-        "Notre Dame du Haut",
-        "Sainte Marie de La Tourette Monastery",
-        "Saint Pierre Church Firminy"
+        "Unité d'Habitation at Marseille",
+        "Unité d'Habitation at Nantes Rezé",
+        "Unité d'Habitation at Berlin",
+        "Unité d'Habitation at Briey",
+        "Notre Dame du Haut at Ronchamp",
+        "La Tourette Monastery",
+        "Carpenter Center for the Visual Arts",
+        "Maison Curutchet",
+        "Villa Shodhan",
+        "Villa Sarabhai",
+        "Mill Owners' Association Building",
+        "Palace of Assembly Chandigarh",
+        "Punjab and Haryana High Court",
+        "Chandigarh Secretariat Building",
+        "Open Hand Monument Chandigarh",
+        "Church of Saint Pierre at Firminy"
     ],
-    "39": [],
+    "39": [
+        "idk"
+    ],
     "40": [
+        "Wladyslaw Szlengel",
+        "Itzhak Katzenelson",
         "Mordechai Gebirtig",
-        "Władysław Szlengel",
-        "Zuzanna Ginczanka",
-        "Henryka Łazowertówna",
-        "Abraham Koplowicz",
-        "Itzhak Katzenelson"
+        "Henryka Lazowertówna",
+        "Zuzanna Ginczanka"
     ],
     "41": [
-        "Glutamate receptor ionotropic N methyl D aspartate subunit one",
-        "Glutamate receptor ionotropic N methyl D aspartate subunit two B",
-        "Alpha amino three hydroxy five methyl four isoxazolepropionic acid receptor subunit one",
+        "Glutamate receptor ionotropic alpha amino three hydroxy five methyl four isoxazolepropionic acid type subunit one",
+        "Glutamate receptor ionotropic alpha amino three hydroxy five methyl four isoxazolepropionic acid type subunit two",
+        "Glutamate receptor ionotropic alpha amino three hydroxy five methyl four isoxazolepropionic acid type subunit three",
+        "Glutamate receptor ionotropic alpha amino three hydroxy five methyl four isoxazolepropionic acid type subunit four",
+        "Glutamate receptor ionotropic N methyl D aspartate type subunit one",
+        "Glutamate receptor ionotropic N methyl D aspartate type subunit two A",
+        "Glutamate receptor ionotropic N methyl D aspartate type subunit two B",
+        "Glutamate receptor ionotropic N methyl D aspartate type subunit two C",
+        "Glutamate receptor ionotropic N methyl D aspartate type subunit two D",
+        "Metabotropic glutamate receptor one",
+        "Metabotropic glutamate receptor five",
         "Gamma aminobutyric acid type A receptor alpha one subunit",
-        "Voltage dependent calcium channel subunit alpha one C",
-        "Voltage gated potassium channel subfamily A member one",
-        "Sodium potassium transporting adenosine triphosphatase subunit alpha three",
-        "Neuroligin one",
+        "Gamma aminobutyric acid type A receptor beta two subunit",
+        "Hyperpolarization activated cyclic nucleotide gated channel two",
+        "Hyperpolarization activated cyclic nucleotide gated channel four",
+        "Voltage gated sodium channel type two alpha subunit",
+        "Voltage gated calcium channel P and Q type alpha one A subunit",
+        "Potassium two pore domain channel subfamily K member three",
         "Neural cell adhesion molecule one",
+        "L one cell adhesion molecule",
         "Cadherin two",
-        "Tyrosine receptor kinase B",
-        "Serotonin receptor two A"
+        "Protocadherin ten",
+        "Integrin beta one",
+        "Ephrin type A receptor four",
+        "Neurotrophic receptor tyrosine kinase two"
     ],
     "42": [
-        "Rhodopsin",
-        "Peripherin two",
         "Retinal pigment epithelium specific sixty five kilodalton protein",
-        "Bestrophin one",
-        "Cluster of differentiation thirty six",
-        "Adenosine triphosphate binding cassette subfamily A member four",
-        "Lecithin retinol acyltransferase",
-        "Retinol dehydrogenase ten"
+        "Rhodopsin",
+        "Peripherin two"
     ],
     "43": [
-        "W B U R Ninety Point Nine Megahertz Frequency Modulation"
+        "W B U R nine zero point nine",
+        "W E R S eight eight point nine",
+        "W U M B nine one point nine"
     ],
     "44": [
         "Jainism"
     ],
     "45": [
         "Ornithorhynchus anatinus",
+        "Tachyglossus aculeatus",
         "Zaglossus bruijni",
-        "Zaglossus bartoni",
         "Zaglossus attenboroughi",
-        "Tachyglossus aculeatus"
+        "Zaglossus bartoni"
     ],
     "46": [
         "Homo sapiens",
@@ -313,20 +369,19 @@
         "Pongo tapanuliensis"
     ],
     "47": [
-        "Camelpox virus",
-        "Cowpox virus",
         "Monkeypox virus",
+        "Variola virus",
         "Vaccinia virus",
-        "Variola virus"
+        "Cowpox virus",
+        "Camelpox virus"
     ],
     "48": [
         "Ice hockey",
         "Bandy",
+        "Rink bandy",
         "Ringette",
         "Broomball",
-        "Floorball",
-        "Rinkball",
-        "Snow polo"
+        "Para ice hockey"
     ],
     "49": [
         "Legends of Runeterra",
@@ -336,39 +391,17 @@
     "50": [
         "Askja",
         "Bárðarbunga",
+        "Esjufjöll",
         "Eyjafjallajökull",
         "Grímsvötn",
         "Hekla",
         "Katla",
-        "Öræfajökull"
+        "Kverkfjöll",
+        "Öræfajökull",
+        "Snæfellsjökull"
     ],
     "51": [
-        "Bushmaster XM fifteen E two S semi-automatic rifle",
-        "Colt ArmaLite Rifle fifteen semi-automatic rifle",
-        "Smith and Wesson Military and Police fifteen semi-automatic rifle",
-        "Sig Sauer MCX semi-automatic rifle",
-        "Ruger ArmaLite Rifle five five six semi-automatic rifle",
-        "Daniel Defense Delta Defense Model four V eleven semi-automatic rifle",
-        "Anderson Manufacturing A M fifteen semi-automatic rifle",
-        "WASR ten semi-automatic rifle",
-        "Norinco M A K ninety semi-automatic rifle",
-        "Century Arms C thirty nine semi-automatic rifle",
-        "Ruger Mini fourteen semi-automatic rifle",
-        "S K S semi-automatic rifle",
-        "Sig Sauer M P X semi-automatic carbine",
-        "Glock seventeen semi-automatic pistol",
-        "Glock nineteen semi-automatic pistol",
-        "Glock twenty semi-automatic pistol",
-        "Glock twenty one semi-automatic pistol",
-        "Glock twenty two semi-automatic pistol",
-        "Glock thirty four semi-automatic pistol",
-        "Sig Sauer P two hundred twenty six semi-automatic pistol",
-        "Sig Sauer P three hundred twenty semi-automatic pistol",
-        "Heckler and Koch Universal Self-loading Pistol forty five semi-automatic pistol",
-        "Walther P twenty two semi-automatic pistol",
-        "Intratec Tactical Exercise Carbine nine semi-automatic pistol",
-        "Hi Point nine nine five semi-automatic carbine",
-        "Ruger S R twenty two semi-automatic pistol"
+        "idk"
     ],
     "52": [
         "Midleton Distillery",
@@ -376,160 +409,149 @@
         "Clonakilty Distillery"
     ],
     "53": [
-        "Massachusetts Institute of Technology",
-        "University of Oxford",
         "World Wide Web Consortium",
+        "Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory",
+        "University of Oxford Department of Computer Science",
+        "Open Data Institute",
         "World Wide Web Foundation",
         "Inrupt Incorporated"
     ],
     "54": [
         "John Travolta",
+        "Tom Cruise",
         "Kirstie Alley"
     ],
     "55": [
-        "Princess Nourah bint Abdul Rahman University",
-        "Alzahra University",
-        "Universitas Gadjah Mada"
+        "Padjadjaran University",
+        "University of Gadjah Mada",
+        "Princess Nourah bint Abdulrahman University"
     ],
-    "56": [],
+    "56": [
+        "idk"
+    ],
     "57": [
         "Boston City Hall",
         "Barbican Estate",
         "Trellick Tower",
-        "Unité d'Habitation Marseille",
-        "Geisel Library",
-        "National Theatre London",
-        "Robin Hood Gardens"
+        "Habitat Sixty Seven",
+        "Preston Bus Station",
+        "Cite Radieuse Marseille"
     ],
     "58": [
-        "Boston City Hall",
-        "Barbican Estate",
-        "National Theatre London",
-        "Trellick Tower",
-        "Unite d'Habitation",
-        "Habitat Sixty Seven"
+        "Unité d'Habitation in Marseille, France",
+        "Habitat Sixty Seven in Montreal, Quebec, Canada",
+        "Boston City Hall in Boston, Massachusetts, United States of America"
     ],
     "59": [
-        "Carbon-10",
-        "Carbon-11"
+        "Carbon nine",
+        "Carbon ten",
+        "Carbon eleven"
     ],
     "60": [
-        "Carbon-8",
-        "Carbon-9",
-        "Carbon-10",
-        "Carbon-11"
+        "Carbon seven",
+        "Carbon eight",
+        "Carbon nine",
+        "Carbon ten",
+        "Carbon eleven"
     ],
     "61": [
-        "Najdorf Variation",
-        "Dragon Variation",
-        "Accelerated Dragon Variation",
-        "Hyper Accelerated Dragon Variation",
-        "Classical Variation",
-        "Richter Rauzer Attack",
-        "Scheveningen Variation",
-        "Sveshnikov Variation",
-        "Pelikan Variation",
-        "Kalashnikov Variation",
-        "Kan Variation",
-        "Taimanov Variation",
-        "O Kelly Variation",
-        "Four Knights Variation",
-        "Chekhover Variation",
-        "Smith Morra Gambit",
-        "Keres Attack",
-        "Saint George Variation"
+        "Najdorf Variation of the Sicilian Defence",
+        "Dragon Variation of the Sicilian Defence",
+        "Classical Variation of the Sicilian Defence",
+        "Scheveningen Variation of the Sicilian Defence",
+        "Accelerated Dragon Variation of the Sicilian Defence",
+        "Hyper Accelerated Dragon Variation of the Sicilian Defence",
+        "Sveshnikov Variation of the Sicilian Defence",
+        "Lasker Pelikan Variation of the Sicilian Defence",
+        "Kalashnikov Variation of the Sicilian Defence",
+        "Taimanov Variation of the Sicilian Defence",
+        "Kan Variation of the Sicilian Defence",
+        "Paulsen Variation of the Sicilian Defence",
+        "Four Knights Variation of the Sicilian Defence",
+        "Richter Rauzer Attack of the Sicilian Defence",
+        "Sozin Attack of the Sicilian Defence",
+        "English Attack of the Sicilian Defence"
     ],
     "62": [
-        "Applied Energy Services Andes"
+        "AES Andes"
     ],
     "63": [
-        "Santiago, Chile",
-        "São Paulo, Brazil",
-        "Saint Petersburg, Russia"
+        "Sao Paulo",
+        "Saint Petersburg",
+        "Santiago"
     ],
     "64": [
-        "Argentine Civil Wars",
-        "Uruguayan Civil War",
-        "Chilean Civil War of 1829–1830",
-        "Chilean Civil War of 1851",
-        "Chilean Civil War of 1891",
-        "Ragamuffin War",
-        "Colombian Civil War of 1860–1862",
-        "Thousand Days' War"
+        "idk"
     ],
     "65": [
         "Argentine Civil Wars",
-        "Uruguayan Civil War",
-        "Ragamuffin War",
-        "Federal War of Venezuela",
-        "Colombian Civil War of 1860 to 1862",
-        "Colombian Civil War of 1876 to 1877",
-        "Colombian Civil War of 1885",
-        "Thousand Days' War",
-        "Ecuadorian Civil War of 1859 to 1860",
-        "Peruvian Civil War of 1834",
-        "Peruvian Civil War of 1856 to 1858",
-        "Peruvian Civil War of 1894 to 1895",
         "Chilean Civil War of 1829 to 1830",
-        "Chilean Civil War of 1851",
+        "Ragamuffin War",
+        "Uruguayan Civil War",
+        "Venezuelan Revolution of 1835",
+        "Venezuelan Federal War",
         "Chilean Civil War of 1891",
+        "Ecuadorian Liberal Revolution",
+        "War of Canudos",
         "Bolivian Civil War of 1898 to 1899",
-        "War of Canudos"
+        "Thousand Days' War"
     ],
     "66": [
-        "Futbol Club Barcelona",
+        "Football Club Barcelona C",
+        "Football Club Barcelona B",
+        "Football Club Barcelona",
         "Paris Saint-Germain Football Club"
     ],
     "67": [
-        "Mango",
-        "Papaya",
-        "Persimmon",
-        "Guava",
-        "Dragonfruit",
-        "Passionfruit",
-        "Lychee",
-        "Kiwi",
-        "Pomegranate",
-        "Starfruit"
+        "dragonfruit",
+        "kiwi",
+        "mango",
+        "papaya",
+        "passionfruit",
+        "pomegranate"
     ],
-    "68": [],
-    "69": [],
+    "68": [
+        "International Conference on Machine Learning"
+    ],
+    "69": [
+        "idk"
+    ],
     "70": [
-        "Antigua and Barbuda",
-        "Commonwealth of Australia",
-        "The Bahamas",
-        "Kingdom of Bahrain",
+        "United Kingdom of Great Britain and Northern Ireland",
         "Kingdom of Belgium",
-        "Belize",
-        "Kingdom of Cambodia",
-        "Canada",
         "Kingdom of Denmark",
-        "Hashemite Kingdom of Jordan",
-        "Jamaica",
-        "Japan",
-        "State of Kuwait",
-        "Kingdom of Lesotho",
         "Principality of Liechtenstein",
         "Grand Duchy of Luxembourg",
-        "Kingdom of Bhutan",
-        "Malaysia",
         "Principality of Monaco",
-        "Kingdom of Morocco",
         "Kingdom of the Netherlands",
-        "New Zealand",
         "Kingdom of Norway",
+        "Kingdom of Spain",
+        "Kingdom of Sweden",
+        "Principality of Andorra",
+        "Kingdom of Bahrain",
+        "Kingdom of Bhutan",
+        "Kingdom of Cambodia",
+        "Hashemite Kingdom of Jordan",
+        "State of Kuwait",
+        "Malaysia",
+        "Kingdom of Thailand",
+        "Kingdom of Lesotho",
+        "Kingdom of Morocco",
+        "Antigua and Barbuda",
+        "Commonwealth of Australia",
+        "Commonwealth of The Bahamas",
+        "Belize",
+        "Canada",
+        "Grenada",
+        "Jamaica",
+        "New Zealand",
         "Independent State of Papua New Guinea",
-        "Solomon Islands",
         "Saint Kitts and Nevis",
         "Saint Lucia",
         "Saint Vincent and the Grenadines",
-        "Kingdom of Spain",
-        "Kingdom of Sweden",
-        "Kingdom of Thailand",
-        "Kingdom of Tonga",
+        "Solomon Islands",
         "Tuvalu",
-        "United Kingdom of Great Britain and Northern Ireland",
-        "Principality of Andorra"
+        "Kingdom of Tonga"
     ],
     "71": [
         "Mexico",
@@ -548,8 +570,8 @@
         "Bolivia",
         "Chile",
         "Argentina",
-        "Paraguay",
-        "Uruguay"
+        "Uruguay",
+        "Paraguay"
     ],
     "72": [
         "Bulgaria",
@@ -559,12 +581,11 @@
         "Slovenia"
     ],
     "73": [
-        "Republic of Cyprus",
         "Barbados",
         "Grenada"
     ],
     "74": [
-        "Kingdom of Saudi Arabia"
+        "Saudi Arabia"
     ],
     "75": [
         "Democratic Republic of the Congo"
@@ -572,82 +593,84 @@
     "76": [
         "Austria",
         "Czech Republic",
-        "Finland",
-        "Democratic People’s Republic of Korea",
+        "Slovakia",
+        "Hungary",
+        "Taiwan",
         "Republic of Korea",
-        "Slovakia"
+        "Democratic People's Republic of Korea"
     ],
     "77": [
-        "Bolivia",
         "South Africa",
+        "Bolivia",
         "Netherlands",
-        "Sri Lanka",
-        "Ivory Coast",
+        "Eswatini",
         "Benin",
+        "Sri Lanka",
         "Malaysia",
         "Tanzania",
-        "Eswatini"
+        "Côte d'Ivoire"
     ],
     "78": [
-        "Republic of Cyprus",
+        "Cyprus",
         "Ireland",
-        "Republic of Malta",
-        "United Kingdom of Great Britain and Northern Ireland"
+        "Malta",
+        "United Kingdom"
     ],
     "79": [
         "Georgia",
-        "India"
+        "India",
+        "Taiwan"
     ],
     "80": [
-        "Republic of Albania",
-        "Principality of Andorra",
-        "Republic of Austria",
-        "Republic of Belarus",
-        "Kingdom of Belgium",
+        "Albania",
+        "Andorra",
+        "Armenia",
+        "Austria",
+        "Azerbaijan",
+        "Belarus",
+        "Belgium",
         "Bosnia and Herzegovina",
-        "Republic of Bulgaria",
-        "Republic of Croatia",
-        "Republic of Cyprus",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
         "Czech Republic",
-        "Kingdom of Denmark",
-        "Republic of Estonia",
-        "Republic of Finland",
-        "French Republic",
-        "Federal Republic of Germany",
-        "Hellenic Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Georgia",
+        "Germany",
+        "Greece",
         "Holy See",
         "Hungary",
-        "Republic of Iceland",
+        "Iceland",
         "Ireland",
-        "Italian Republic",
-        "Republic of Latvia",
-        "Principality of Liechtenstein",
-        "Republic of Lithuania",
-        "Grand Duchy of Luxembourg",
-        "Republic of Malta",
-        "Principality of Monaco",
+        "Italy",
+        "Latvia",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Malta",
+        "Moldova",
+        "Monaco",
         "Montenegro",
-        "Kingdom of the Netherlands",
-        "Republic of North Macedonia",
-        "Kingdom of Norway",
-        "Republic of Poland",
-        "Portuguese Republic",
+        "Netherlands",
+        "North Macedonia",
+        "Norway",
+        "Poland",
+        "Portugal",
         "Romania",
         "Russian Federation",
-        "Republic of San Marino",
-        "Republic of Serbia",
-        "Slovak Republic",
-        "Republic of Slovenia",
-        "Kingdom of Spain",
-        "Kingdom of Sweden",
-        "Swiss Confederation",
+        "San Marino",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Turkey",
         "Ukraine",
-        "United Kingdom of Great Britain and Northern Ireland",
-        "Republic of Turkey",
-        "Republic of Armenia",
-        "Georgia",
-        "Republic of Azerbaijan",
-        "State of Kosovo"
+        "United Kingdom of Great Britain and Northern Ireland"
     ],
     "81": [
         "Afghanistan",
@@ -681,32 +704,30 @@
         "Spain"
     ],
     "84": [
-        "New Zealand",
         "Australia",
+        "New Zealand",
         "South Africa"
     ],
     "85": [
-        "Czech Republic",
         "France",
-        "Germany",
-        "Poland",
+        "Czech Republic",
         "Slovakia"
     ],
     "86": [
-        "United States of America",
-        "Belize",
-        "Haiti",
-        "Bahamas",
-        "Jamaica",
-        "Trinidad and Tobago",
-        "Saint Kitts and Nevis",
-        "Saint Vincent and the Grenadines",
-        "Barbados",
-        "Grenada",
         "Antigua and Barbuda",
+        "The Bahamas",
+        "Barbados",
+        "Belize",
+        "Federated States of Micronesia",
         "Guyana",
-        "Philippines",
-        "Liberia"
+        "Haiti",
+        "Jamaica",
+        "Liberia",
+        "Republic of the Marshall Islands",
+        "Palau",
+        "The Philippines",
+        "Saint Kitts and Nevis",
+        "Trinidad and Tobago"
     ],
     "87": [
         "Union of Soviet Socialist Republics",
@@ -715,54 +736,60 @@
         "German Democratic Republic"
     ],
     "88": [
-        "Peanut",
-        "Macadamia nut",
         "Brazil nut",
-        "Pine nut",
-        "Tiger nut",
-        "Kola nut",
-        "Water chestnut",
         "Ginkgo nut",
-        "Shea nut"
+        "Macadamia nut",
+        "Peanut",
+        "Pine nut"
     ],
-    "89": [],
+    "89": [
+        "idk"
+    ],
     "90": [
         "Apple pie",
         "Pumpkin pie",
-        "Snickerdoodle cookies",
-        "Cinnamon rolls",
-        "Sticky buns",
-        "Cinnamon sugar donuts",
-        "Cinnamon streusel coffee cake",
         "Sweet potato pie",
+        "Snickerdoodle cookies",
+        "Oatmeal raisin cookies",
+        "Cinnamon roll",
+        "Sticky buns",
+        "Apple crisp",
+        "Cinnamon doughnuts",
+        "Cinnamon swirl coffee cake",
+        "Cinnamon raisin bread pudding",
+        "Cinnamon sugar cookies",
+        "Cinnamon streusel cake",
+        "Cinnamon monkey bread",
+        "Cinnamon ice cream",
+        "Apple dumplings",
+        "Cinnamon raisin muffins",
+        "Cinnamon streusel muffins",
         "Pecan pie",
-        "Cinnamon swirl cheesecake",
-        "Cinnamon bread pudding"
+        "Apple cinnamon bread"
     ],
     "91": [
         "Pekingese",
         "Pug",
         "Shih Tzu",
         "Chinese Crested Dog",
-        "Chinese Imperial Dog",
-        "Tibetan Spaniel"
+        "Chinese Imperial Dog"
     ],
-    "92": [],
+    "92": [
+        "idk"
+    ],
     "93": [
-        "Prosperity Party",
-        "Ethiopian Citizens for Social Justice",
-        "Balderas for True Democracy",
-        "Oromo Federalist Congress",
-        "National Movement of Amhara",
-        "Ethiopian Federal Democratic Unity Forum"
+        "idk"
     ],
     "94": [
         "Patrick Vieira"
     ],
     "95": [
-        "Patrick Vieira"
+        "Patrick Vieira",
+        "Ibrahim Ba"
     ],
-    "96": [],
+    "96": [
+        "idk"
+    ],
     "97": [
         "Stubbs"
     ],
@@ -771,31 +798,43 @@
         "American Mary",
         "See No Evil 2",
         "Rabid",
-        "The Eye",
-        "The Eye 2",
-        "The Eye 10",
-        "Re-Cycle",
-        "The Messengers",
         "Undead",
         "Daybreakers",
         "Jigsaw",
         "Winchester",
+        "The Eye",
+        "The Eye 2",
+        "The Eye 10",
+        "Re-Cycle",
+        "Talk to Me",
         "Hidden"
     ],
     "99": [
         "Spanish",
         "Italian",
         "Portuguese",
+        "Romanian",
         "Catalan",
         "Galician",
-        "Romanian",
-        "Polish",
-        "Serbian",
-        "Croatian",
-        "Hungarian",
         "Finnish",
         "Estonian",
-        "Turkish"
+        "Hungarian",
+        "Polish",
+        "Czech",
+        "Slovak",
+        "Slovenian",
+        "Croatian",
+        "Serbian",
+        "Bosnian",
+        "Montenegrin",
+        "Turkish",
+        "Azerbaijani",
+        "Uzbek",
+        "Vietnamese",
+        "Malay",
+        "Indonesian",
+        "Tagalog",
+        "Basque"
     ],
     "100": [
         "Olympus Mons",
@@ -805,16 +844,23 @@
         "Alba Mons",
         "Biblis Tholus",
         "Ceraunius Tholus",
-        "Uranius Tholus",
-        "Ulysses Tholus",
         "Jovis Tholus",
-        "Tharsis Tholus"
+        "Ulysses Tholus",
+        "Tharsis Tholus",
+        "Uranius Mons",
+        "Uranius Tholus",
+        "Ceraunius Montes",
+        "Tithoniae Montes",
+        "Tharsis Montes"
     ],
-    "101": [],
+    "101": [
+        "idk"
+    ],
     "102": [
         "Blade Runner",
-        "Total Recall nineteen ninety",
-        "Total Recall two thousand twelve",
+        "Blade Runner 2049",
+        "Total Recall 1990",
+        "Total Recall 2012",
         "Screamers",
         "Impostor"
     ],
@@ -822,40 +868,27 @@
         "Songs My Brothers Taught Me"
     ],
     "104": [
+        "Batman and Robin",
         "Gattaca",
         "Paycheck",
-        "The Avengers"
+        "My Super Ex Girlfriend"
     ],
     "105": [
-        "The Mulberry House",
-        "The Reluctant Revolutionary"
+        "Karama Has No Walls",
+        "The Reluctant Revolutionary",
+        "The Mulberry House"
     ],
     "106": [
-        "A-ha",
         "The Smiths",
-        "The Pogues",
-        "Die Ärzte",
-        "Legião Urbana",
         "Kreator",
-        "Destruction",
-        "Warlock"
+        "The Pogues",
+        "Armored Saint",
+        "Cinderella",
+        "X Japan",
+        "A-ha"
     ],
     "107": [
-        "Agnetha Fältskog",
-        "Benny Andersson",
-        "Björn Ulvaeus",
-        "Anni Frid Lyngstad",
-        "Tim Bergling",
-        "Zara Larsson",
-        "Robin Miriam Carlsson",
-        "Ebba Tove Elsa Nilsson",
-        "Li Lykke Timotej Svensson Zachrisson",
-        "Lorine Zineb Nora Talhaoui",
-        "Carola Häggkvist",
-        "Håkan Hellström",
-        "Sebastian Ingrosso",
-        "Steve Angello Josefsson Fragogiannis",
-        "Axel Christofer Hedfors"
+        "idk"
     ],
     "108": [
         "Estonian",
@@ -864,21 +897,33 @@
         "Maltese"
     ],
     "109": [
-        "Anthony Peden"
+        "Anthony Peden",
+        "Tim Carswell"
     ],
     "110": [
-        "Rhesus macaques",
-        "Crab-eating macaques",
-        "Squirrel monkeys",
-        "Southern pig-tailed macaques",
-        "Chimpanzees"
+        "Rhesus macaque",
+        "Crab eating macaque",
+        "Pig tailed macaque",
+        "Squirrel monkey",
+        "Chimpanzee"
     ],
-    "111": [],
-    "112": [],
+    "111": [
+        "idk"
+    ],
+    "112": [
+        "Shepherdess Bringing in Sheep (La Bergère rentrant des moutons)",
+        "Rue Saint-Honoré, Afternoon, Rain Effect (Rue Saint-Honoré, après-midi, effet de pluie)"
+    ],
     "113": [
         "Kings Park",
         "Hyde Park",
-        "Queens Gardens"
+        "Queens Gardens",
+        "Supreme Court Gardens",
+        "Stirling Gardens",
+        "Langley Park",
+        "Russell Square",
+        "Esplanade Reserve",
+        "Harold Boas Gardens"
     ],
     "114": [
         "Glenn Theodore Seaborg",
@@ -898,226 +943,150 @@
         "30"
     ],
     "118": [
-        "Pope Saint Peter",
-        "Pope Saint Felix the Third",
-        "Pope Saint Hormisdas",
-        "Pope Saint Adrian the Second",
+        "Saint Peter",
+        "Pope Felix the Third",
+        "Pope Hormisdas",
+        "Pope Adrian the Second",
         "Pope John the Seventeenth",
         "Pope Clement the Fourth"
     ],
     "119": [
-        "Post Ingres Structured Query Language",
         "My Structured Query Language",
+        "Postgres Structured Query Language",
         "Maria Database",
         "Structured Query Language Lite",
         "Firebird",
-        "Monet Database"
+        "Monet Database",
+        "Drizzle",
+        "Percona Server for My Structured Query Language",
+        "Cubrid"
     ],
-    "120": [],
+    "120": [
+        "Aviron Bayonnais",
+        "Sporting Union Agen Lot et Garonne",
+        "Rugby Club Massy Essonne",
+        "Stade Montois Rugby",
+        "Doncaster Knights"
+    ],
     "121": [
-        "Saint Wilgefortis"
+        "Saint Simeon of Jerusalem"
     ],
     "122": [
-        "Blessed Virgin Mary under the title of Our Lady of the Rosary",
+        "Blessed Virgin Mary under the title Our Lady of the Rosary",
+        "Pope Saint Mark",
+        "Saint Justina of Padua",
         "Saint Sergius",
         "Saint Bacchus",
-        "Saint Justina of Padua",
-        "Saint Osyth",
-        "Pope Saint Mark",
-        "Saint Artaldus of Belley",
-        "Saint Augustus of Nicomedia"
+        "Saint Osyth"
     ],
     "123": [
         "Saint Vitus",
         "Saint Modestus",
         "Saint Crescentia",
-        "Saint Doulas of Cilicia"
+        "Saint Dulas of Zephyrium",
+        "Saint Hesychius of Dorostorum",
+        "Saint Julian of Dorostorum",
+        "Saint Cyriacus",
+        "Saint Valerian"
     ],
     "124": [
         "Bolognese sauce",
-        "Neapolitan sauce",
-        "Genovese sauce",
         "Amatriciana sauce",
-        "Trapanese pesto"
+        "Neapolitan sauce",
+        "Pesto alla Genovese",
+        "Genovese sauce"
     ],
     "125": [
         "Marinara sauce",
-        "Bolognese sauce",
         "Tomato sauce",
-        "Puttanesca sauce"
+        "Bolognese sauce",
+        "Cacciatore sauce",
+        "Fra Diavolo sauce"
     ],
     "126": [
-        "Gattaca",
-        "Batman and Robin",
-        "The Avengers"
+        "Gattaca"
     ],
     "127": [
-        "Raw Youth",
-        "My Body",
-        "Nowhere Home",
-        "Cathedrals of Culture",
-        "Childhood",
-        "Self-Portrait",
-        "Songs of Earth"
+        "idk"
     ],
-    "128": [],
+    "128": [
+        "Manjula Nahasapeemapetilon",
+        "Kumiko Nakamura",
+        "Francesca Terwilliger",
+        "Ling Bouvier",
+        "Mary Spuckler"
+    ],
     "129": [
-        "Oppo Find X",
-        "Oppo Find X2",
-        "Oppo Find X2 Pro",
-        "Oppo Find X3",
-        "Oppo Find X3 Pro",
-        "Oppo Find X5",
-        "Oppo Find X5 Pro",
-        "Oppo Find N",
-        "Oppo Reno",
-        "Oppo Reno2",
-        "Oppo Reno3",
-        "Oppo Reno3 Pro",
-        "Oppo Reno4",
-        "Oppo Reno4 Pro",
-        "Oppo Reno5",
-        "Oppo Reno5 Pro",
-        "Oppo Reno6",
-        "Oppo Reno6 Pro",
-        "Oppo Reno7",
-        "Oppo Reno7 Pro",
-        "Oppo K3",
-        "Oppo K5",
-        "Oppo K7",
-        "Oppo A5",
-        "Oppo A5s",
-        "Oppo A15",
-        "Oppo A16",
-        "Oppo A31",
-        "Oppo A32",
-        "Oppo A53",
-        "Oppo A54",
-        "Oppo A55",
-        "Oppo A57",
-        "Oppo A74",
-        "Oppo A77"
+        "Oppo smartphones"
     ],
     "130": [
         "Darwin's fox",
-        "Chilean woodstar",
-        "Juan Fernandez firecrown",
+        "Juan Fernández firecrown",
+        "Juan Fernández tit tyrant",
         "Masafuera rayadito",
-        "Long-tailed chinchilla"
+        "Chile Darwin's frog",
+        "Chilean woodstar"
     ],
     "131": [
         "Very Large Telescope",
         "Atacama Large Millimeter Array",
-        "Magellan Telescopes",
-        "Blanco Telescope",
+        "European Extremely Large Telescope",
         "Gemini South Telescope",
-        "New Technology Telescope",
-        "Atacama Cosmology Telescope",
-        "European Extremely Large Telescope"
+        "Magellan Baade Telescope",
+        "Magellan Clay Telescope",
+        "Southern Astrophysical Research Telescope",
+        "Blanco Telescope",
+        "Atacama Pathfinder Experiment",
+        "Cerro Chajnantor Atacama Telescope",
+        "Vera C. Rubin Observatory",
+        "Visible and Infrared Survey Telescope for Astronomy"
     ],
     "132": [
         "Very Large Telescope",
-        "Magellan Telescopes",
+        "Visible and Infrared Survey Telescope for Astronomy",
+        "Very Large Telescope Survey Telescope",
+        "Extremely Large Telescope",
+        "New Technology Telescope",
+        "European Southern Observatory three point six metre Telescope",
+        "Max Planck Society European Southern Observatory two point two metre Telescope",
+        "Danish one point five four metre Telescope",
+        "Euler Telescope",
+        "Magellan Baade Telescope",
+        "Magellan Clay Telescope",
+        "Giant Magellan Telescope",
+        "Irénée du Pont Telescope",
+        "Swope Telescope",
+        "Víctor M. Blanco Telescope",
         "Gemini South Telescope",
         "Southern Astrophysical Research Telescope",
-        "Victor M Blanco Telescope",
-        "European Extremely Large Telescope",
-        "Giant Magellan Telescope",
-        "Vera C Rubin Observatory"
+        "Vera C. Rubin Observatory Simonyi Survey Telescope"
     ],
     "133": [
         "Maurice Vincent Wilkes",
         "James Hardy Wilkinson",
         "Edgar Frank Codd",
         "Robin Milner",
-        "Timothy John Berners-Lee",
-        "Leslie Gabriel Valiant",
+        "Tim Berners-Lee",
         "Geoffrey Everest Hinton"
     ],
     "134": [
-        "Universidad Peruana Cayetano Heredia",
-        "Universidad de Lima",
-        "Universidad del Pacifico",
-        "Universidad de Piura",
-        "Universidad Ricardo Palma",
-        "Universidad San Ignacio de Loyola",
-        "Universidad Privada del Norte",
-        "Universidad Cesar Vallejo",
-        "Universidad Peruana de Ciencias Aplicadas",
-        "Universidad Tecnologica del Peru",
-        "Universidad Catolica San Pablo",
-        "Universidad Continental",
-        "Universidad Nacional Federico Villarreal",
-        "Universidad Nacional de la Amazonia Peruana",
-        "Universidad Nacional Jorge Basadre Grohmann",
-        "Universidad Privada Antenor Orrego",
-        "Universidad Cientifica del Sur",
-        "Universidad Alas Peruanas",
-        "Universidad Nacional Santiago Antunez de Mayolo",
-        "Universidad Nacional Pedro Ruiz Gallo",
-        "Universidad Nacional Daniel Alcides Carrion",
-        "Universidad Nacional Hermilio Valdizan",
-        "Universidad Nacional Toribio Rodriguez de Mendoza de Amazonas",
-        "Universidad Privada de Tacna",
-        "Universidad Andina del Cusco",
-        "Universidad Nacional de Tumbes",
-        "Universidad Nacional de San Martin",
-        "Universidad Nacional Intercultural de la Amazonia",
-        "Universidad Nacional de Ucayali",
-        "Universidad Nacional de Moquegua",
-        "Universidad Nacional de Huancavelica"
+        "idk"
     ],
     "135": [
-        "Universidad Nacional Federico Villarreal",
-        "Universidad Nacional de Piura",
-        "Universidad Nacional de la Amazonía Peruana",
-        "Universidad Nacional de Callao",
-        "Universidad Nacional Daniel Alcides Carrión",
-        "Universidad Nacional Jorge Basadre Grohmann",
-        "Universidad Nacional de Ucayali",
-        "Universidad Nacional del Santa",
-        "Universidad Nacional de Tumbes",
-        "Universidad Nacional Pedro Ruiz Gallo",
-        "Universidad Nacional José Faustino Sánchez Carrión",
-        "Universidad Nacional Santiago Antúnez de Mayolo",
-        "Universidad Nacional Hermilio Valdizán",
-        "Universidad Nacional del Centro del Perú",
-        "Universidad Nacional Intercultural de la Amazonía",
-        "Universidad Nacional de Moquegua",
-        "Universidad Nacional de Jaén",
-        "Universidad Nacional de Cañete",
-        "Universidad Nacional de Huancavelica",
-        "Universidad Nacional Amazónica de Madre de Dios",
-        "Universidad Nacional Intercultural de Quillabamba",
-        "Universidad Nacional Tecnológica de Lima Sur",
-        "Universidad Nacional de Barranca",
-        "Universidad Nacional Autónoma de Alto Amazonas",
-        "Universidad Nacional de Frontera",
-        "Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas",
-        "Universidad Nacional Micaela Bastidas de Apurímac",
-        "Universidad Nacional Agraria de la Selva",
-        "Universidad Nacional de Cajamarca",
-        "Universidad Nacional de Educación Enrique Guzmán y Valle",
-        "Universidad Nacional de San Martín",
-        "Universidad Nacional de Juliaca",
-        "Universidad Nacional San Luis Gonzaga",
-        "Universidad Nacional Autónoma de Chota"
+        "idk"
     ],
     "136": [
+        "Minesweeper",
         "Tetris",
-        "Microsoft Windows Minesweeper",
         "Bejeweled",
         "Candy Crush Saga",
-        "Two Thousand Forty Eight",
-        "Lemmings",
-        "Klondike Solitaire",
-        "Puzzle Bobble",
-        "Threes",
-        "Same Game"
+        "Puyo Puyo",
+        "Clickomania",
+        "Peg Solitaire"
     ],
     "137": [
         "Star Fox",
-        "Star Fox Sixty Four",
+        "Star Fox 64",
         "Star Fox Adventures",
         "Star Fox Assault",
         "Star Fox Command",
@@ -1126,13 +1095,12 @@
         "Super Smash Brothers",
         "Super Smash Brothers Melee",
         "Super Smash Brothers Brawl",
-        "Super Smash Brothers for Nintendo Three Dimensional System and Wii U",
         "Super Smash Brothers Ultimate",
         "Animal Crossing",
         "Animal Crossing Wild World",
         "Animal Crossing City Folk",
         "Animal Crossing New Leaf",
-        "Animal Crossing Happy Home Designer",
+        "Animal Crossing Pocket Camp",
         "Animal Crossing New Horizons"
     ],
     "138": [
@@ -1140,64 +1108,44 @@
         "Overwatch"
     ],
     "139": [
-        "Argentine Civil Wars",
-        "Chilean Civil War of 1829–1830",
-        "Chilean Civil War of 1851",
-        "Chilean Civil War of 1891",
         "Uruguayan Civil War",
-        "Ragamuffin War",
-        "Venezuelan Federal War",
+        "Federal War",
         "Thousand Days' War",
-        "Colombian Conflict",
-        "La Violencia",
-        "Paraguayan Civil War of 1922–1923",
-        "Peruvian Civil War of 1834",
-        "Peruvian Civil War of 1843–1844",
-        "Peruvian Civil War of 1854–1855",
-        "Peruvian Civil War of 1865",
-        "Peruvian Civil War of 1894–1895",
-        "Ecuadorian Civil War of 1859",
-        "Ecuadorian Civil War of 1913–1916",
-        "Ecuadorian Civil War of 1932"
+        "War of Canudos",
+        "Contestado War",
+        "La Violencia"
     ],
-    "140": [],
+    "140": [
+        "idk"
+    ],
     "141": [
-        "Numberphile",
-        "Three Blue One Brown",
-        "Stand Up Maths",
-        "Mathologer",
-        "Khan Academy",
-        "Patrick Just Math Tutorials",
-        "Black Pen Red Pen",
-        "Math Antics",
-        "Vsauce",
-        "Mind Your Decisions",
-        "Eddie Woo",
-        "Flammable Maths",
-        "Numberphile Two",
-        "Minute Physics",
-        "Doctor Trefor Bazett",
-        "Brian McLogan"
+        "idk"
     ],
-    "143": [],
-    "144": [],
-    "145": [],
+    "143": [
+        "Alice Schwarzer"
+    ],
+    "144": [
+        "idk"
+    ],
+    "145": [
+        "Norman H Nie"
+    ],
     "146": [
-        "Fernando Haddad",
+        "Álvaro Dias",
+        "Benevenuto Daciolo",
         "Ciro Gomes",
-        "Geraldo José Rodrigues Alckmin Filho",
-        "João Dionisio Filgueira Barreto Amoêdo",
-        "Benevenuto Daciolo Fonseca dos Santos",
-        "Henrique de Campos Meirelles",
-        "Álvaro Fernandes Dias",
-        "Maria Osmarina Marina da Silva Vaz de Lima",
-        "Guilherme Castro Boulos",
-        "Vera Lucia Pereira da Silva Salgado",
-        "João Vicente Fontella Goulart",
-        "José Maria Eymael"
+        "Fernando Haddad",
+        "Geraldo Alckmin",
+        "Guilherme Boulos",
+        "Henrique Meirelles",
+        "João Amoêdo",
+        "João Vicente Goulart",
+        "José Maria Eymael",
+        "Marina Silva",
+        "Vera Lúcia Salgado"
     ],
     "147": [
-        "Han Duck-soo"
+        "Han Duck Soo"
     ],
     "148": [
         "Linus Carl Pauling"
@@ -1206,12 +1154,12 @@
         "George Stanley McGovern"
     ],
     "16": [
-        "Damak",
-        "Baci Perugina",
-        "Cailler Lait Noisettes",
-        "Kit Kat Chunky Peanut Butter",
-        "Kit Kat Chunky Hazelnut",
-        "Yorkie Peanut"
+        "Baby Ruth",
+        "Butterfinger",
+        "Chunky",
+        "Munch Nuts",
+        "Oh Henry",
+        "Walnut Whip"
     ],
     "142": [
         "Talulah Riley"

@@ -5,14 +5,17 @@
     "1": [
         "electric guitar",
         "acoustic guitar",
-        "bass guitar"
+        "bass guitar",
+        "piano",
+        "electric piano",
+        "clavinet"
     ],
     "2": [
-        "Victoria Adelaide Mary Louisa",
-        "Alice Maud Mary",
-        "Helena Augusta Victoria",
-        "Louise Caroline Alberta",
-        "Beatrice Mary Victoria Feodore"
+        "Victoria Princess Royal",
+        "Alice Princess of Hesse",
+        "Helena Princess Christian of Schleswig Holstein",
+        "Louise Duchess of Argyll",
+        "Beatrice Princess Henry of Battenberg"
     ],
     "3": [
         "French",
@@ -34,12 +37,11 @@
         "Radon"
     ],
     "6": [
-        "Amazon Pharmacy",
         "PillPack",
+        "Amazon Pharmacy",
         "One Medical",
-        "Amazon Clinic",
-        "Amazon Comprehend Medical",
-        "Amazon HealthLake"
+        "Health Navigator",
+        "Amazon Clinic"
     ],
     "7": [
         "Go",
@@ -47,8 +49,7 @@
     ],
     "8": [
         "2001: A Space Odyssey",
-        "A Clockwork Orange",
-        "Doctor Strangelove or: How I Learned to Stop Worrying and Love the Bomb"
+        "A Clockwork Orange"
     ],
     "9": [
         "Sully Prudhomme",
@@ -64,10 +65,10 @@
     ],
     "11": [
         "Emperor Penguin",
+        "King Penguin",
         "Adélie Penguin",
         "Chinstrap Penguin",
         "Gentoo Penguin",
-        "King Penguin",
         "Macaroni Penguin"
     ],
     "12": [
@@ -88,7 +89,7 @@
         "Mutiny on the Bounty",
         "The Great Ziegfeld",
         "The Life of Emile Zola",
-        "You Cannot Take It with You",
+        "You Can't Take It with You",
         "Rebecca",
         "How Green Was My Valley",
         "Mrs. Miniver",
@@ -107,7 +108,6 @@
         "The Artist"
     ],
     "14": [
-        "Nausicaä of the Valley of the Wind",
         "Castle in the Sky",
         "Grave of the Fireflies",
         "My Neighbor Totoro",
@@ -117,16 +117,17 @@
         "Ocean Waves",
         "Pom Poko",
         "Whisper of the Heart",
-        "My Neighbors the Yamadas",
         "Princess Mononoke",
-        "Howl's Moving Castle",
-        "Ponyo",
+        "My Neighbors the Yamadas",
         "The Cat Returns",
+        "Howl's Moving Castle",
+        "Ponyo on the Cliff by the Sea",
         "The Secret World of Arrietty",
         "From Up on Poppy Hill",
         "The Wind Rises",
-        "The Tale of The Princess Kaguya",
+        "The Tale of the Princess Kaguya",
         "When Marnie Was There",
+        "The Red Turtle",
         "Earwig and the Witch",
         "The Boy and the Heron"
     ],
@@ -136,49 +137,38 @@
         "The Two Towers",
         "The Return of the King",
         "The Silmarillion",
-        "Unfinished Tales of Númenor and Middle-earth",
-        "The Children of Húrin",
-        "Beren and Lúthien",
+        "Unfinished Tales of Numenor and Middle-earth",
+        "The Children of Hurin",
+        "Beren and Luthien",
         "The Fall of Gondolin",
         "The Adventures of Tom Bombadil and Other Verses from the Red Book",
-        "Tree and Leaf",
-        "Smith of Wootton Major",
-        "Farmer Giles of Ham",
         "Roverandom",
-        "Tales from the Perilous Realm",
-        "The Legend of Sigurd and Gudrún",
-        "The Fall of Arthur",
+        "Farmer Giles of Ham",
+        "Smith of Wootton Major",
+        "Leaf by Niggle",
         "The Lay of Aotrou and Itroun",
         "The Story of Kullervo",
-        "Mister Bliss",
-        "The Letters of Father Christmas",
-        "Bilbo's Last Song",
-        "The Book of Lost Tales Part One",
-        "The Book of Lost Tales Part Two",
-        "The Lays of Beleriand",
-        "The Shaping of Middle-earth",
-        "The Lost Road and Other Writings",
-        "The Return of the Shadow",
-        "The Treason of Isengard",
-        "The War of the Ring",
-        "Sauron Defeated",
-        "Morgoth's Ring",
-        "The War of the Jewels",
-        "The Peoples of Middle-earth"
+        "The Legend of Sigurd and Gudrun",
+        "The Fall of Arthur",
+        "Tree and Leaf",
+        "The Father Christmas Letters",
+        "Mr. Bliss",
+        "Tales from the Perilous Realm",
+        "The Road Goes Ever On: A Song Cycle"
     ],
     "16": [
         "Buenos Aires",
-        "Georgetown",
-        "Lima",
         "Montevideo",
+        "Lima",
+        "Georgetown",
         "Paramaribo",
         "Caracas"
     ],
     "17": [
         "Audi",
         "Bentley",
-        "Bugatti",
-        "Lamborghini",
+        "Automobili Lamborghini",
+        "Bugatti Automobiles",
         "Porsche"
     ],
     "18": [
@@ -189,7 +179,7 @@
     "19": [
         "Antigua and Barbuda",
         "Australia",
-        "The Bahamas",
+        "Bahamas",
         "Bangladesh",
         "Barbados",
         "Belize",
@@ -199,7 +189,9 @@
         "Canada",
         "Cyprus",
         "Dominica",
+        "Eswatini",
         "Fiji",
+        "Gambia",
         "Ghana",
         "Grenada",
         "Guyana",
@@ -230,21 +222,16 @@
         "South Africa",
         "Sri Lanka",
         "Tanzania",
-        "The Gambia",
         "Tonga",
         "Trinidad and Tobago",
         "Tuvalu",
         "Uganda",
-        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
         "Vanuatu",
-        "Zambia",
-        "Zimbabwe"
+        "Zambia"
     ],
     "20": [
-        "Stuart Fergusson Victor Sutcliffe",
-        "Thomas Henry Moore",
-        "Norman Chapman",
-        "Charles Newby"
+        "Stuart Sutcliffe"
     ],
     "21": [
         "Vatican City",
@@ -256,7 +243,7 @@
         "London"
     ],
     "23": [
-        "Techniques d Avant Garde Heuer",
+        "Techniques d'Avant Garde Heuer",
         "Hublot",
         "Zenith",
         "Bulgari"
@@ -287,40 +274,41 @@
         "Euro"
     ],
     "31": [
-        "Plurinational State of Bolivia",
-        "Republic of Zimbabwe"
+        "Bolivia",
+        "India",
+        "Zimbabwe"
     ],
     "32": [
         "Hinduism"
     ],
     "33": [
-        "Vienna",
-        "Brussels",
-        "Sofia",
-        "Zagreb",
-        "Nicosia",
-        "Prague",
-        "Copenhagen",
-        "Tallinn",
-        "Helsinki",
-        "Paris",
-        "Berlin",
-        "Athens",
-        "Budapest",
-        "Dublin",
-        "Rome",
-        "Riga",
-        "Vilnius",
-        "Luxembourg City",
-        "Valletta",
         "Amsterdam",
-        "Warsaw",
-        "Lisbon",
-        "Bucharest",
+        "Athens",
+        "Berlin",
         "Bratislava",
+        "Brussels",
+        "Bucharest",
+        "Budapest",
+        "Copenhagen",
+        "Dublin",
+        "Helsinki",
+        "Lisbon",
         "Ljubljana",
+        "Luxembourg City",
         "Madrid",
-        "Stockholm"
+        "Nicosia",
+        "Paris",
+        "Prague",
+        "Riga",
+        "Rome",
+        "Sofia",
+        "Stockholm",
+        "Tallinn",
+        "Valletta",
+        "Vienna",
+        "Vilnius",
+        "Warsaw",
+        "Zagreb"
     ],
     "34": [
         "Blue",
@@ -330,7 +318,9 @@
         "Botswana",
         "Burundi",
         "Cameroon",
+        "Equatorial Guinea",
         "Eswatini",
+        "Gambia",
         "Ghana",
         "Kenya",
         "Lesotho",
@@ -345,9 +335,8 @@
         "South Africa",
         "South Sudan",
         "Sudan",
-        "The Gambia",
+        "Tanzania",
         "Uganda",
-        "United Republic of Tanzania",
         "Zambia",
         "Zimbabwe"
     ],
@@ -360,7 +349,6 @@
     ],
     "37": [
         "The Cuckoo's Calling",
-        "The Silkworm",
         "Career of Evil",
         "Lethal White",
         "Troubled Blood"
@@ -369,13 +357,16 @@
         "Nitrogen",
         "Oxygen",
         "Argon",
+        "Carbon dioxide",
         "Water vapor"
     ],
     "39": [
-        "Greenland shark"
+        "Somniosus microcephalus"
     ],
     "40": [
         "Grand Theft Auto",
+        "Grand Theft Auto: London 1969",
+        "Grand Theft Auto: London 1961",
         "Grand Theft Auto 2",
         "Grand Theft Auto: San Andreas",
         "Grand Theft Auto: Liberty City Stories",
@@ -383,7 +374,6 @@
         "Grand Theft Auto IV",
         "Grand Theft Auto: The Lost and Damned",
         "Grand Theft Auto: The Ballad of Gay Tony",
-        "Grand Theft Auto: Episodes from Liberty City",
         "Grand Theft Auto: Chinatown Wars",
         "Grand Theft Auto V",
         "Grand Theft Auto Online"
@@ -398,20 +388,19 @@
         "Neptune"
     ],
     "43": [
-        "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and Saint Paul Outside the Walls",
+        "Historic Centre of Rome the Properties of the Holy See in that City Enjoying Extraterritorial Rights and Saint Paul Outside the Walls",
         "Vatican City"
     ],
     "44": [
-        "West African CFA franc",
         "Cape Verdean escudo",
         "Gambian dalasi",
         "Ghanaian cedi",
         "Guinean franc",
         "Liberian dollar",
-        "United States of America dollar",
         "Mauritanian ouguiya",
         "Nigerian naira",
-        "Sierra Leonean leone"
+        "Sierra Leonean leone",
+        "West African African Financial Community franc"
     ],
     "45": [
         "Northanger Abbey"
@@ -421,7 +410,9 @@
         "Hokkaido",
         "Kyushu"
     ],
-    "47": [],
+    "47": [
+        "idk"
+    ],
     "48": [
         "George Washington",
         "Thomas Jefferson",
@@ -432,84 +423,89 @@
         "Zachary Taylor"
     ],
     "49": [
-        "Albania",
-        "Belgium",
-        "Bulgaria",
-        "Croatia",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
-        "Finland",
+        "United Kingdom",
         "France",
         "Germany",
-        "Greece",
-        "Hungary",
-        "Iceland",
         "Italy",
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg",
+        "Denmark",
+        "Norway",
+        "Iceland",
+        "Greece",
+        "Turkey",
+        "Hungary",
+        "Poland",
+        "Czech Republic",
+        "Slovakia",
+        "Romania",
+        "Bulgaria",
+        "Slovenia",
+        "Croatia",
+        "Albania",
+        "Montenegro",
+        "North Macedonia",
+        "Estonia",
         "Latvia",
         "Lithuania",
-        "Luxembourg",
-        "Montenegro",
-        "Netherlands",
-        "North Macedonia",
-        "Norway",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Turkey",
-        "United Kingdom"
+        "Finland",
+        "Sweden"
     ],
     "50": [
         "Cirrus",
-        "Cirrostratus",
-        "Cirrocumulus"
+        "Cirrocumulus",
+        "Cirrostratus"
     ],
     "52": [
-        "Bhutan",
         "Cambodia",
-        "Myanmar",
+        "Bhutan",
         "Sri Lanka"
     ],
     "53": [
         "Tokyo",
         "Delhi",
         "Shanghai",
-        "Sao Paulo",
-        "Mexico City",
-        "Cairo",
         "Dhaka",
+        "Sao Paulo",
+        "Cairo",
+        "Mexico City",
+        "Beijing",
         "Mumbai",
-        "Beijing"
+        "Jakarta"
     ],
     "54": [
         "New Brunswick",
         "Newfoundland and Labrador",
         "Nova Scotia",
-        "Prince Edward Island"
+        "Prince Edward Island",
+        "Quebec"
     ],
     "55": [
         "Earth",
         "Mars"
     ],
     "56": [
-        "Ethiopia",
-        "Honduras",
-        "Burundi"
+        "Federal Democratic Republic of Ethiopia",
+        "Republic of Burundi",
+        "Republic of Honduras",
+        "Republic of Uganda",
+        "Republic of Rwanda"
     ],
     "57": [
-        "Tomato sauce",
-        "Mozzarella cheese",
-        "Pineapple"
+        "pineapple",
+        "mozzarella cheese"
     ],
     "58": [
         "violin",
-        "viola"
+        "viola",
+        "violoncello",
+        "double bass"
     ],
     "59": [
-        "They'd Rather Be Right"
+        "They Would Rather Be Right"
     ],
     "60": [
         "Cyan",
@@ -524,15 +520,15 @@
     "63": [
         "United States of America",
         "Ecuador",
-        "Timor-Leste",
+        "East Timor",
         "Federated States of Micronesia",
-        "Palau",
-        "Marshall Islands"
+        "Republic of Palau",
+        "Republic of the Marshall Islands"
     ],
     "64": [
-        "Honduras",
-        "Peru",
-        "Tanzania"
+        "Republic of Honduras",
+        "Republic of Peru",
+        "United Republic of Tanzania"
     ],
     "65": [
         "Type O negative"
@@ -542,27 +538,34 @@
         "George Frideric Handel",
         "Antonio Vivaldi",
         "Johann Pachelbel",
-        "Henry Purcell"
+        "Henry Purcell",
+        "Arcangelo Corelli",
+        "Tomaso Albinoni",
+        "Domenico Scarlatti",
+        "François Couperin",
+        "Jean-Philippe Rameau"
     ],
     "67": [
-        "England",
-        "France",
-        "Germany",
         "Italy",
-        "Russia",
-        "Spain",
+        "France",
+        "Switzerland",
         "Sweden",
-        "Switzerland"
+        "England",
+        "Germany",
+        "Spain",
+        "Russia"
     ],
     "68": [
-        "Republic of Belarus",
-        "Republic of Nicaragua",
-        "Republic of Azerbaijan",
-        "Republic of Tajikistan",
         "Republic of Cameroon",
+        "Republic of Equatorial Guinea",
+        "Gabonese Republic",
         "Republic of Uganda",
-        "Republic of the Gambia",
-        "Republic of Equatorial Guinea"
+        "State of Eritrea",
+        "Republic of Azerbaijan",
+        "Democratic People's Republic of Korea",
+        "Republic of Tajikistan",
+        "Republic of Nicaragua",
+        "Republic of Belarus"
     ],
     "62": [
         "Principality of Andorra",
