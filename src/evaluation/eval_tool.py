@@ -138,6 +138,8 @@ def analysis(df):
                 similarities = {
                     "J(A1-A2)": round(jaccard_similarity(A1, A2), 4),
                     "J(A1-A34)": round(jaccard_similarity(A1, A3.union(A4)), 4),
+                    "J(A3-A4)": round(jaccard_similarity(A3, A4), 4),
+                    "J(A4-A1|3)":round(jaccard_similarity(A4, A1 - A3),4),
                     "J(A1-A1*)": None,
                     "J(A1-A1**)": None,
                     "J(A1*-A1**)": None
@@ -148,6 +150,7 @@ def analysis(df):
                     "?A1>A3": int(A3.issubset(A1)),
                     "?A1>A4": int(A4.issubset(A1)),
                     "?A3∅A4": int(A3.isdisjoint(A4)),
+                    "?A4=A1|3": int(A4 == (A1 - A3)),
                     "?A1=A1*": None,
                     "?A1=A1**": None,
                     "?A1*=A1**": None
@@ -164,6 +167,8 @@ def analysis(df):
                 similarities = {
                     "J(A1-A2)": round(jaccard_similarity(A1_equal, A2_equal), 4),
                     "J(A1-A34)": round(jaccard_similarity(A1_minus, A3_minus.union(A4_minus)), 4),
+                    "J(A3-A4)": round(jaccard_similarity(A3_minus, A4_minus), 4),
+                    "J(A4-A1|3)":round(jaccard_similarity(A4_minus, A1_minus - A3_minus),4),
                     "J(A1-A1*)": round(jaccard_similarity(A1_equal, A1_contain), 4),
                     "J(A1-A1**)": round(jaccard_similarity(A1_equal, A1_minus), 4),
                     "J(A1*-A1**)": round(jaccard_similarity(A1_contain, A1_minus), 4)
@@ -174,6 +179,7 @@ def analysis(df):
                     "?A1>A3": int(A3_contain.issubset(A1_contain)),
                     "?A1>A4": int(A4_minus.issubset(A1_minus)),
                     "?A3∅A4": int(A3_minus.isdisjoint(A4_minus)),
+                    "?A4=A1|3": int(A4_minus == (A1_minus - A3_minus)),
                     "?A1=A1*": int(A1_equal == A1_contain),
                     "?A1=A1**": int(A1_equal == A1_minus),
                     "?A1*=A1**": int(A1_contain == A1_minus)
@@ -204,8 +210,8 @@ def analysis(df):
 
     return pd.DataFrame(rows)
 
-PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4']
-P_COLS     = ['p(A1=A2)', 'p(A1=A3+A4)', 'p(A1>A3)', 'p(A1>A4)', 'p(A3∅A4)']
+PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4', "?A4=A1|3"]
+P_COLS     = ['p(A1=A2)', 'p(A1=A3+A4)', 'p(A1>A3)', 'p(A1>A4)', 'p(A3∅A4)', 'p(A4=A1|3)']
 
 def _mcnemar_p(z, a):
     """Exact McNemar p-value for two paired 0/1 vectors (same length)."""
@@ -282,8 +288,8 @@ def compute_pvals(df: pd.DataFrame) -> pd.DataFrame:
 
 def summary(df_analysis):
     group_cols = ["dataset", "action", "llm"]
-    consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
-    jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
+    consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
+    jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A3-A4)","J(A4-A1|3)","J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols
 
