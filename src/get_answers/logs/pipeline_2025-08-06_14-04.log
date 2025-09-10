@@ -1,0 +1,59 @@
+2025-08-06 14:04:27,266 - INFO - Loaded config from config.json
+2025-08-06 14:04:27,266 - INFO - {'languages': ['en'], 'llm_models': ['llama3.1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:04:27,267 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:04:27,267 - INFO - Step 0: Identify Relations
+2025-08-06 14:04:27,267 - INFO - Processing model: llama3.1:70b for language: en
+2025-08-06 14:05:00,223 - INFO - Question 5
+2025-08-06 14:05:00,223 - INFO - Q1: Which telecommunications organizations are located in Belgium?
+2025-08-06 14:05:00,223 - INFO - Q2: Which telecommunications organizations are based in Belgium?
+2025-08-06 14:05:00,223 - INFO - Q3: Which telecommunications organizations are located in Belgium and headquartered in Brussels?
+2025-08-06 14:05:00,223 - INFO - Q4: Which telecommunications organizations are located in Belgium but not headquartered in Brussels?
+2025-08-06 14:05:00,224 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Contains', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:02,789 - INFO - Question 6
+2025-08-06 14:05:02,789 - INFO - Q1: Which actors were born in Germany?
+2025-08-06 14:05:02,790 - INFO - Q2: What actors have a German birthplace?
+2025-08-06 14:05:02,790 - INFO - Q3: Which actors were born in Germany and are currently living there?
+2025-08-06 14:05:02,790 - INFO - Q4: Which actors were born in Germany but are currently living outside of Germany?
+2025-08-06 14:05:02,790 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:05,414 - INFO - Question 7
+2025-08-06 14:05:05,415 - INFO - Q1: In which countries are the Himalayas located?
+2025-08-06 14:05:05,415 - INFO - Q2: Which countries do the Himalayas span?
+2025-08-06 14:05:05,415 - INFO - Q3: In which countries with a population of less than one million are the Himalayas located?
+2025-08-06 14:05:05,415 - INFO - Q4: In which countries with a population of at least one million are the Himalayas located?
+2025-08-06 14:05:05,415 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:08,097 - INFO - Question 8
+2025-08-06 14:05:08,097 - INFO - Q1: On what video streaming services can I watch the Hunter x Hunter anime series?
+2025-08-06 14:05:08,098 - INFO - Q2: Which platforms stream the Hunter x Hunter anime series?
+2025-08-06 14:05:08,098 - INFO - Q3: On which video streaming services can I watch the Hunter x Hunter anime series with a subscription?
+2025-08-06 14:05:08,098 - INFO - Q4: On which video streaming services can I watch the Hunter x Hunter anime series without subscription?
+2025-08-06 14:05:08,098 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:10,689 - INFO - Question 9
+2025-08-06 14:05:10,689 - INFO - Q1: Through which countries does the Danube flow?
+2025-08-06 14:05:10,690 - INFO - Q2: Which countries does the Danube flow through?
+2025-08-06 14:05:10,690 - INFO - Q3: Through which countries that use Central Europe Time does the Danube flow?
+2025-08-06 14:05:10,690 - INFO - Q4: Through which countries that do not use Central Europe Time does the Danube flow?
+2025-08-06 14:05:10,690 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:13,255 - INFO - Question 10
+2025-08-06 14:05:13,256 - INFO - Q1: What are the professions of John Lennon’s sons?
+2025-08-06 14:05:13,256 - INFO - Q2: In which professions are John Lennon’s sons involved?
+2025-08-06 14:05:13,256 - INFO - Q3: What are the musical professions of John Lennon’s sons?
+2025-08-06 14:05:13,256 - INFO - Q4: What are the non-musical professions of John Lennon’s sons?
+2025-08-06 14:05:13,257 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:15,839 - INFO - Question 11
+2025-08-06 14:05:15,839 - INFO - Q1: What movies are in the Star Wars series?
+2025-08-06 14:05:15,840 - INFO - Q2: What are the movies in the Star Wars series?
+2025-08-06 14:05:15,840 - INFO - Q3: What are the Star Wars series movies released before 2000?
+2025-08-06 14:05:15,840 - INFO - Q4: What are the Star Wars series movies released on or after 2000?
+2025-08-06 14:05:15,840 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:18,335 - INFO - Question 12
+2025-08-06 14:05:18,335 - INFO - Q1: What instruments did Louis Armstrong play?
+2025-08-06 14:05:18,335 - INFO - Q2: Which instruments were played by Louis Armstrong?
+2025-08-06 14:05:18,335 - INFO - Q3: What brass instruments did Louis Armstrong play?
+2025-08-06 14:05:18,336 - INFO - Q4: What non-brass instruments did Louis Armstrong play?
+2025-08-06 14:05:18,336 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:22,349 - INFO - Question 13
+2025-08-06 14:05:22,349 - INFO - Q1: What notes make up a C major chord?
+2025-08-06 14:05:22,349 - INFO - Q2: Which notes comprise a C major chord?
+2025-08-06 14:05:22,350 - INFO - Q3: What root notes are in a C major chord?
+2025-08-06 14:05:22,350 - INFO - Q4: What non-root notes make up a C major chord?
+2025-08-06 14:05:22,350 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Disjoint', 'Disjoint', 'Equivalence']

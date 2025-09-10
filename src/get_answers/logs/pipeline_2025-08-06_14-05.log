@@ -1,0 +1,39 @@
+2025-08-06 14:05:19,807 - INFO - Loaded config from config.json
+2025-08-06 14:05:19,807 - INFO - {'languages': ['en'], 'llm_models': ['llama3.1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:05:19,807 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:05:19,807 - INFO - Step 0: Identify Relations
+2025-08-06 14:05:19,807 - INFO - Processing model: llama3.1:70b for language: en
+2025-08-06 14:05:25,875 - INFO - Question 1
+2025-08-06 14:05:25,876 - INFO - Q1: Which television shows were created by John Cleese?
+2025-08-06 14:05:25,876 - INFO - Q2: What television programs did John Cleese create?
+2025-08-06 14:05:25,876 - INFO - Q3: Which television shows were created by John Cleese and first aired before the year 2000?
+2025-08-06 14:05:25,876 - INFO - Q4: Which television shows were created by John Cleese and first aired on or after the year 2000?
+2025-08-06 14:05:25,876 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:30,560 - INFO - Question 2
+2025-08-06 14:05:30,561 - INFO - Q1: Give me all current communist countries.
+2025-08-06 14:05:30,561 - INFO - Q2: What countries have a communist government?
+2025-08-06 14:05:30,561 - INFO - Q3: Give me all communist countries in Asia.
+2025-08-06 14:05:30,561 - INFO - Q4: Give me all communist countries outside of Asia.
+2025-08-06 14:05:30,561 - INFO - LLM Response: ['Equivalence', 'Contains', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:32,917 - INFO - Question 3
+2025-08-06 14:05:32,918 - INFO - Q1: Which politicians were married to a German person?
+2025-08-06 14:05:32,918 - INFO - Q2: Which politicians had a spouse who was German?
+2025-08-06 14:05:32,918 - INFO - Q3: Which politicians were married to a German woman?
+2025-08-06 14:05:32,918 - INFO - Q4: Which politicians were married to a German man or non-binary person?
+2025-08-06 14:05:32,918 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:35,214 - INFO - Question 4
+2025-08-06 14:05:35,215 - INFO - Q1: Give me all soccer clubs in Spain that play in La Liga.
+2025-08-06 14:05:35,215 - INFO - Q2: Can you list every soccer club located in Spain that play in La Liga?
+2025-08-06 14:05:35,215 - INFO - Q3: Please tell me all the Spanish football clubs that play in La Liga and have won the Champions League.
+2025-08-06 14:05:35,215 - INFO - Q4: Please tell me all the Spanish football clubs that play in La Liga and never won the Champions League.
+2025-08-06 14:05:35,215 - INFO - LLM Response: ['Equivalence', 'ContainedBy', 'Overlap', 'Disjoint', 'Equivalence']
+2025-08-06 14:05:56,144 - INFO - Loaded config from config.json
+2025-08-06 14:05:56,144 - INFO - {'languages': ['en'], 'llm_models': ['llama3.1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:05:56,144 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:05:56,144 - INFO - Step 0: Identify Relations
+2025-08-06 14:05:56,144 - INFO - Processing model: llama3.1:70b for language: en
+2025-08-06 14:05:59,467 - INFO - Loaded config from config.json
+2025-08-06 14:05:59,467 - INFO - {'languages': ['en'], 'llm_models': ['llama3.1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:05:59,467 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:05:59,467 - INFO - Step 0: Identify Relations
+2025-08-06 14:05:59,467 - INFO - Processing model: llama3.1:70b for language: en

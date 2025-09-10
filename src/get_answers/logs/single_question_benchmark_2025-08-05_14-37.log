@@ -1,0 +1,6 @@
+2025-08-05 14:37:58,471 - INFO - Loaded config from config.json
+2025-08-05 14:37:58,472 - INFO - {'languages': ['en'], 'llm_models': ['llama3.3:8b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-05 14:37:58,472 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-05 14:37:58,472 - INFO - Step 1: Running single question benchmark
+2025-08-05 14:37:58,472 - INFO - Processing dataset: spinach.tsv for model: llama3.3:8b and language: en
+2025-08-05 14:37:58,472 - INFO - Processing column: Q1

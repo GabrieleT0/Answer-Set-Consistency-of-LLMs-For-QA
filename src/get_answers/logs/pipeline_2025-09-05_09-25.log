@@ -1,0 +1,526 @@
+2025-09-05 09:25:05,342 - INFO - Loaded config from config.json
+2025-09-05 09:25:05,342 - INFO - {'languages': ['en'], 'llm_models': ['deepseek-r1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-09-05 09:25:05,342 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-09-05 09:25:05,342 - INFO - Step 0: Identify Relations
+2025-09-05 09:25:05,342 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,349 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,350 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,351 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,352 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,353 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,354 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,354 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,360 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,361 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,362 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,363 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,364 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,365 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,366 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,366 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,366 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,366 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,366 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,366 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,371 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,371 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,371 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,371 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,372 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,373 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,374 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,375 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,376 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Answer found. Skip prompting.
+2025-09-05 09:25:05,377 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-09-05 09:25:05,377 - INFO - Step 1: Running single question benchmark
+2025-09-05 09:25:05,377 - INFO - Processing dataset: spinach.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,377 - INFO - Processing column: Q1
+2025-09-05 09:25:05,383 - INFO - Processing column: Q2
+2025-09-05 09:25:05,388 - INFO - Processing column: Q3
+2025-09-05 09:25:05,393 - INFO - Processing column: Q4
+2025-09-05 09:25:05,398 - INFO - Processing dataset: qawiki.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,398 - INFO - Processing column: Q1
+2025-09-05 09:25:05,404 - INFO - Processing column: Q2
+2025-09-05 09:25:05,409 - INFO - Processing column: Q3
+2025-09-05 09:25:05,415 - INFO - Processing column: Q4
+2025-09-05 09:25:05,422 - INFO - Processing dataset: synthetic.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,422 - INFO - Processing column: Q1
+2025-09-05 09:25:05,428 - INFO - Processing column: Q2
+2025-09-05 09:25:05,433 - INFO - Processing column: Q3
+2025-09-05 09:25:05,439 - INFO - Processing column: Q4
+2025-09-05 09:25:05,445 - INFO - Processing dataset: spinach.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,445 - INFO - Processing column: Q1
+2025-09-05 09:25:05,450 - INFO - Processing column: Q2
+2025-09-05 09:25:05,455 - INFO - Processing column: Q3
+2025-09-05 09:25:05,460 - INFO - Processing column: Q4
+2025-09-05 09:25:05,465 - INFO - Processing dataset: qawiki.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,466 - INFO - Processing column: Q1
+2025-09-05 09:25:05,471 - INFO - Processing column: Q2
+2025-09-05 09:25:05,479 - INFO - Processing column: Q3
+2025-09-05 09:25:05,484 - INFO - Processing column: Q4
+2025-09-05 09:25:05,491 - INFO - Processing dataset: synthetic.tsv for model: deepseek-r1:70b and language: en
+2025-09-05 09:25:05,491 - INFO - Processing column: Q1
+2025-09-05 09:25:05,497 - INFO - Processing column: Q2
+2025-09-05 09:25:05,502 - INFO - Processing column: Q3
+2025-09-05 09:25:05,508 - INFO - Processing column: Q4
+2025-09-05 09:25:05,514 - INFO - Step 2: Fixing inconsistent LLM responses
+2025-09-05 09:25:05,518 - INFO - === Running model deepseek-r1:70b on spinach.tsv ===
+2025-09-05 09:25:05,543 - INFO - === Finished model deepseek-r1:70b on spinach.tsv ===
+
+2025-09-05 09:25:05,543 - INFO - === Running model deepseek-r1:70b on qawiki.tsv ===
+2025-09-05 09:25:05,553 - INFO - [SupSub 141] Which YouTube channels with more than 500,000 subscribers talk about math? | Which English-language YouTube channels with more than 500,000 subscribers talk about math?
+2025-09-05 09:26:08,728 - INFO - [SupSub 142] Who are Elon Musk's ex-spouses? | Which of Elon Musk's ex-spouses were married to him multiple times?
+2025-09-05 09:26:26,237 - INFO - [SupSub 143] Who are the editors of EMMA? | Who are the editors-in-chief of EMMA?
+2025-09-05 09:26:51,156 - INFO - [SupSub 144] Who are the editors-in-chief of EMMA? | Who have been editors-in-chief of the EMMA journal since 2024?
+2025-09-05 09:27:17,712 - INFO - [SupSub 145] Who are the original developers of SPSS? | Which of the original developers of SPSS were educated in Mexico?
+2025-09-05 09:27:29,402 - INFO - [SupSub 146] Who has run against Jair Bolsonaro for President of Brazil? | Who ran against Jair Bolsonaro for President of Brazil the first time he ran?
+2025-09-05 09:27:46,343 - INFO - [SupSub 147] Who has served as Prime Minister of South Korea in the past 20 years? | Who is the prime minister of South Korea?
+2025-09-05 09:28:24,266 - INFO - [SupSub 148] Who has won more than one type of Nobel Prize? | Who has won the Nobel Peace Prize and another type of Nobel Prize?
+2025-09-05 09:28:51,121 - INFO - [SupSub 149] Who were the candidates in the 1972 United States Presidential Election? | Who was the Democratic party candidate in the 1972 United States Presidential Election?
+2025-09-05 09:29:25,075 - INFO - [Minus 0] In which countries are tepuis found? | In which Spanish-speaking countries are tepuis found? | In which countries that are not Spanish-speaking are tepuis found?
+2025-09-05 09:29:56,614 - INFO - [Minus 1] In which countries is Elon Musk a citizen? | In which countries is Elon Musk a naturalized citizen? | In which countries is Elon Musk a citizen but not through naturalization?
+2025-09-05 09:30:13,509 - INFO - [Minus 2] In which journals has Amrapali Zaveri published? | In which journals has Amrapali Zaveri published as first author? | In which journals has Amrapali Zaveri published but not as first author?
+2025-09-05 09:30:33,115 - INFO - [Minus 3] In which movies did Al Pacino and Robert de Niro appear together? | In which movies directed by Scorsese did Al Pacino and Robert de Niro appear together? | In which movies not directed by Scorsese did Al Pacino and Robert de Niro appear together?
+2025-09-05 09:31:08,801 - INFO - [Minus 4] In which museums can I see paintings by El Greco? | In which national museums can I see paintings by El Greco? | In which non-national museums can I see paintings by El Greco?
+2025-09-05 09:32:00,233 - INFO - [Minus 5] Kim Deal played with which bands? | Kim Deal played in which bands without Black Francis? | Kim Deal played with Black Francis in which bands?
+2025-09-05 09:32:34,620 - INFO - [Minus 6] List astronauts who completed degrees at MIT. | List astronauts who completed undergraduate degrees at MIT. | List astronauts who completed graduate degrees at MIT.
+2025-09-05 09:33:28,239 - INFO - [Minus 7] List the richest 10 persons in the world | Who is the richest person in the world? | List the second to tenth richest persons in the world.
+2025-09-05 09:34:01,630 - INFO - [Minus 8] List the top 10 largest countries in Africa by area. | What is the largest country in Africa by area? | List the second to tenth largest countries in Africa by area.
+2025-09-05 09:35:09,114 - INFO - [Minus 9] List the top ten largest countries in Africa by population. | What is the largest country in Africa by population? | List the second to tenth largest countries in Africa by population.
+2025-09-05 09:35:40,535 - INFO - [Minus 10] Which countries are part of the G20? | Which countries are part of the G20? | What members of the G20 are not countries?
+2025-09-05 09:36:13,980 - INFO - [Minus 11] What are the official languages of the European Union? | Which official languages of the European Union are not Indo-European? | Which official languages of the European Union are Indo-European?
+2025-09-05 09:37:09,814 - INFO - [Minus 12] What are the subsidiaries of Meta Platforms? | What subsidiaries of Meta Platforms contain "Facebook" in their name? | What subsidiaries of Meta Platforms do not contain "Facebook" in their name?
+2025-09-05 09:37:37,651 - INFO - [Minus 13] What are the ten tallest mountains in the world? | Among the ten tallest mountains in the world, which ones span international borders? | Among the ten tallest mountains in the world, which ones are entirely contained in one country?
+2025-09-05 09:38:03,800 - INFO - [Minus 14] What binary neutron stars are in the constellation Scorpius? | What binary neutron stars in the constellation Scorpius have exoplanets orbiting them? | What binary neutron stars in the constellation Scorpius do not have exoplanets orbiting them?
+2025-09-05 09:38:49,177 - INFO - [Minus 15] What buildings are named after JFK? | What educational buildings are named after JFK? | What buildings other than educational ones are named after JFK?
+2025-09-05 09:39:23,774 - INFO - [Minus 16] What chocolate bars are made by Nestlé? | What chocolate bars are made by Nestlé and contain nuts? | What chocolate bars are made by Nestlé and don't contain nuts?
+2025-09-05 09:40:38,619 - INFO - [Minus 17] What cities are twinned with Port-au-Prince? | Which North American cities are twinned with Port-au-Prince? | Which cities outside North America are twinned with Port-au-Prince?
+2025-09-05 09:41:04,596 - INFO - [Minus 18] What collections outside of Africa exhibit Benin Bronzes? | What national museums outside of Africa exhibit Benin Bronzes? | What collections outside of Africa that are not national museums exhibit Benin Bronzes?
+2025-09-05 09:41:58,163 - INFO - [Minus 19] What colors are in the French flag? | What colors are in both the French flag and the Italian flag? | What colors are in the French flag but not the Italian flag?
+2025-09-05 09:42:28,451 - INFO - [Minus 20] What countries are in Europe? | What countries are in the Schengen area? | Which European countries are not part of the Schengen area?

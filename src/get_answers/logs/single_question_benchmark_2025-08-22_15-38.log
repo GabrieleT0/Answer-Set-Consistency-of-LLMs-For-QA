@@ -1,0 +1,463 @@
+2025-08-22 15:38:18,356 - INFO - Loaded config from config.json
+2025-08-22 15:38:18,356 - INFO - {'languages': ['en'], 'llm_models': ['deepseek-r1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-22 15:38:18,356 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-22 15:38:18,356 - INFO - Step 0: Identify Relations
+2025-08-22 15:38:18,356 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-08-22 15:40:15,062 - INFO - Question 1
+2025-08-22 15:41:55,699 - INFO - Question 2
+2025-08-22 15:43:34,440 - INFO - Question 3
+2025-08-22 15:48:35,215 - INFO - Question 4
+2025-08-22 15:49:28,839 - INFO - Question 5
+2025-08-22 15:51:06,151 - INFO - Question 6
+2025-08-22 15:52:29,657 - INFO - Question 7
+2025-08-22 15:53:35,053 - INFO - Question 8
+2025-08-22 15:54:57,886 - INFO - Question 9
+2025-08-22 15:55:19,032 - INFO - Question 10
+2025-08-22 15:56:24,331 - INFO - Question 11
+2025-08-22 15:57:28,189 - INFO - Question 12
+2025-08-22 15:58:16,298 - INFO - Question 13
+2025-08-22 15:59:44,259 - INFO - Question 14
+2025-08-22 16:00:26,759 - INFO - Question 15
+2025-08-22 16:01:47,975 - INFO - Question 16
+2025-08-22 16:03:11,301 - INFO - Question 17
+2025-08-22 16:03:55,728 - INFO - Question 18
+2025-08-22 16:05:21,736 - INFO - Question 19
+2025-08-22 16:06:35,501 - INFO - Question 20
+2025-08-22 16:07:46,748 - INFO - Question 21
+2025-08-22 16:09:51,521 - INFO - Question 22
+2025-08-22 16:10:45,210 - INFO - Question 23
+2025-08-22 16:11:52,858 - INFO - Question 24
+2025-08-22 16:12:41,677 - INFO - Question 25
+2025-08-22 16:13:52,880 - INFO - Question 26
+2025-08-22 16:15:55,096 - INFO - Question 27
+2025-08-22 16:18:14,816 - INFO - Question 28
+2025-08-22 16:19:35,668 - INFO - Question 29
+2025-08-22 16:20:28,811 - INFO - Question 30
+2025-08-22 16:21:35,462 - INFO - Question 31
+2025-08-22 16:23:09,662 - INFO - Question 32
+2025-08-22 16:24:35,198 - INFO - Question 33
+2025-08-22 16:25:45,537 - INFO - Question 34
+2025-08-22 16:27:09,350 - INFO - Question 35
+2025-08-22 16:27:57,656 - INFO - Question 36
+2025-08-22 16:28:58,843 - INFO - Question 37
+2025-08-22 16:30:03,166 - INFO - Question 38
+2025-08-22 16:31:22,793 - INFO - Question 39
+2025-08-22 16:32:34,169 - INFO - Question 40
+2025-08-22 16:34:30,228 - INFO - Question 41
+2025-08-22 16:35:37,005 - INFO - Question 42
+2025-08-22 16:37:01,648 - INFO - Question 43
+2025-08-22 16:38:13,934 - INFO - Question 44
+2025-08-22 16:39:10,372 - INFO - Question 45
+2025-08-22 16:40:09,491 - INFO - Question 46
+2025-08-22 16:41:22,566 - INFO - Question 47
+2025-08-22 16:43:12,934 - INFO - Question 48
+2025-08-22 16:44:01,985 - INFO - Question 49
+2025-08-22 16:44:45,509 - INFO - Question 50
+2025-08-22 16:46:35,453 - INFO - Question 51
+2025-08-22 16:47:48,482 - INFO - Question 52
+2025-08-22 16:49:05,970 - INFO - Question 53
+2025-08-22 16:50:19,165 - INFO - Question 54
+2025-08-22 16:50:57,035 - INFO - Question 55
+2025-08-22 16:58:05,073 - INFO - Question 56
+2025-08-22 16:59:22,442 - INFO - Question 57
+2025-08-22 17:00:23,661 - INFO - Question 58
+2025-08-22 17:01:30,395 - INFO - Question 59
+2025-08-22 17:02:45,480 - INFO - Question 60
+2025-08-22 17:03:48,419 - INFO - Question 61
+2025-08-22 17:06:34,511 - INFO - Question 62
+2025-08-22 17:07:24,480 - INFO - Question 63
+2025-08-22 17:17:00,919 - INFO - Question 64
+2025-08-22 17:19:23,665 - INFO - Question 65
+2025-08-22 17:20:34,902 - INFO - Question 66
+2025-08-22 17:21:28,814 - INFO - Question 67
+2025-08-22 17:22:11,644 - INFO - Question 68
+2025-08-22 17:23:16,470 - INFO - Question 69
+2025-08-22 17:25:11,895 - INFO - Question 70
+2025-08-22 17:26:17,847 - INFO - Question 71
+2025-08-22 17:27:05,468 - INFO - Question 72
+2025-08-22 17:27:48,524 - INFO - Question 73
+2025-08-22 17:28:39,424 - INFO - Question 74
+2025-08-22 17:29:43,374 - INFO - Question 75
+2025-08-22 17:31:14,891 - INFO - Question 76
+2025-08-22 17:32:03,957 - INFO - Question 77
+2025-08-22 17:33:24,134 - INFO - Question 78
+2025-08-22 17:34:13,847 - INFO - Question 79
+2025-08-22 17:35:19,819 - INFO - Question 80
+2025-08-22 17:36:05,138 - INFO - Question 81
+2025-08-22 17:37:03,943 - INFO - Question 82
+2025-08-22 17:38:05,257 - INFO - Question 83
+2025-08-22 17:39:00,597 - INFO - Question 84
+2025-08-22 17:40:26,913 - INFO - Question 85
+2025-08-22 17:41:16,609 - INFO - Question 86
+2025-08-22 17:42:50,299 - INFO - Question 87
+2025-08-22 17:44:27,054 - INFO - Question 88
+2025-08-22 17:45:51,093 - INFO - Question 89
+2025-08-22 17:48:01,733 - INFO - Question 90
+2025-08-22 17:49:37,286 - INFO - Question 91
+2025-08-22 17:50:26,986 - INFO - Question 92
+2025-08-22 17:51:24,113 - INFO - Question 93
+2025-08-22 17:52:19,966 - INFO - Question 94
+2025-08-22 17:53:38,534 - INFO - Question 95
+2025-08-22 17:54:34,640 - INFO - Question 96
+2025-08-22 17:55:57,297 - INFO - Question 97
+2025-08-22 17:56:38,498 - INFO - Question 98
+2025-08-22 17:58:06,012 - INFO - Question 99
+2025-08-22 17:58:53,426 - INFO - Question 100
+2025-08-22 17:59:59,088 - INFO - Question 101
+2025-08-22 18:00:57,669 - INFO - Question 102
+2025-08-22 18:01:32,130 - INFO - Question 103
+2025-08-22 18:02:41,744 - INFO - Question 104
+2025-08-22 18:12:45,366 - INFO - Question 105
+2025-08-22 18:13:47,432 - INFO - Question 106
+2025-08-22 18:14:35,869 - INFO - Question 107
+2025-08-22 18:15:41,933 - INFO - Question 108
+2025-08-22 18:16:51,815 - INFO - Question 109
+2025-08-22 18:17:38,632 - INFO - Question 110
+2025-08-22 18:19:10,212 - INFO - Question 111
+2025-08-22 18:21:07,256 - INFO - Question 112
+2025-08-22 18:22:09,736 - INFO - Question 113
+2025-08-22 18:28:13,616 - INFO - Question 114
+2025-08-22 18:28:51,191 - INFO - Question 115
+2025-08-22 18:30:08,702 - INFO - Question 116
+2025-08-22 18:31:28,376 - INFO - Question 117
+2025-08-22 18:37:07,765 - INFO - Question 118
+2025-08-22 18:37:41,002 - INFO - Question 119
+2025-08-22 18:39:14,615 - INFO - Question 120
+2025-08-22 18:40:36,622 - INFO - Question 121
+2025-08-22 18:41:13,661 - INFO - Question 122
+2025-08-22 18:45:19,897 - INFO - Question 123
+2025-08-22 18:45:55,505 - INFO - Question 124
+2025-08-22 18:46:58,243 - INFO - Question 125
+2025-08-22 18:47:59,076 - INFO - Question 126
+2025-08-22 18:48:41,439 - INFO - Question 127
+2025-08-22 18:50:08,399 - INFO - Question 128
+2025-08-22 18:51:11,421 - INFO - Question 129
+2025-08-22 18:52:48,530 - INFO - Question 130
+2025-08-22 18:53:53,427 - INFO - Question 131
+2025-08-22 18:55:10,504 - INFO - Question 132
+2025-08-22 18:56:55,885 - INFO - Question 133
+2025-08-22 18:57:58,152 - INFO - Question 134
+2025-08-22 18:59:06,836 - INFO - Question 135
+2025-08-22 18:59:45,352 - INFO - Question 136
+2025-08-22 19:01:08,722 - INFO - Question 137
+2025-08-22 19:02:27,381 - INFO - Question 138
+2025-08-22 19:03:06,190 - INFO - Question 139
+2025-08-22 19:03:59,975 - INFO - Question 140
+2025-08-22 19:05:25,676 - INFO - Question 141
+2025-08-22 19:06:51,724 - INFO - Question 142
+2025-08-22 19:07:52,406 - INFO - Question 143
+2025-08-22 19:08:59,980 - INFO - Question 144
+2025-08-22 19:10:03,912 - INFO - Question 145
+2025-08-22 19:10:43,965 - INFO - Question 146
+2025-08-22 19:12:03,903 - INFO - Question 147
+2025-08-22 19:12:53,549 - INFO - Question 148
+2025-08-22 19:13:38,320 - INFO - Question 149
+2025-08-22 19:15:24,023 - INFO - Question 150
+2025-08-22 19:15:24,041 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-08-22 19:15:24,041 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-08-22 19:16:10,895 - INFO - Question 1
+2025-08-22 19:17:01,379 - INFO - Question 2
+2025-08-22 19:18:22,292 - INFO - Question 3
+2025-08-22 19:19:44,437 - INFO - Question 4
+2025-08-22 19:20:52,089 - INFO - Question 5
+2025-08-22 19:21:40,757 - INFO - Question 6
+2025-08-22 19:22:23,979 - INFO - Question 7
+2025-08-22 19:24:20,597 - INFO - Question 8
+2025-08-22 19:26:00,581 - INFO - Question 9
+2025-08-22 19:27:35,377 - INFO - Question 10
+2025-08-22 19:28:39,936 - INFO - Question 11
+2025-08-22 19:29:53,260 - INFO - Question 12
+2025-08-22 19:31:04,670 - INFO - Question 13
+2025-08-22 19:32:03,674 - INFO - Question 14
+2025-08-22 19:33:33,998 - INFO - Question 15
+2025-08-22 19:34:30,658 - INFO - Question 16
+2025-08-22 19:36:41,088 - INFO - Question 17
+2025-08-22 19:37:56,961 - INFO - Question 18
+2025-08-22 19:38:55,014 - INFO - Question 19
+2025-08-22 19:40:14,606 - INFO - Question 20
+2025-08-22 19:42:16,421 - INFO - Question 21
+2025-08-22 19:43:53,436 - INFO - Question 22
+2025-08-22 19:44:48,109 - INFO - Question 23
+2025-08-22 19:52:22,701 - INFO - Question 24
+2025-08-22 19:53:42,039 - INFO - Question 25
+2025-08-22 19:55:01,575 - INFO - Question 26
+2025-08-22 19:55:53,079 - INFO - Question 27
+2025-08-22 19:57:30,667 - INFO - Question 28
+2025-08-22 19:58:24,321 - INFO - Question 29
+2025-08-22 19:59:37,381 - INFO - Question 30
+2025-08-22 20:00:28,530 - INFO - Question 31
+2025-08-22 20:03:10,325 - INFO - Question 32
+2025-08-22 20:03:51,967 - INFO - Question 33
+2025-08-22 20:04:16,591 - INFO - Question 34
+2025-08-22 20:05:17,296 - INFO - Question 35
+2025-08-22 20:06:31,676 - INFO - Question 36
+2025-08-22 20:07:58,261 - INFO - Question 37
+2025-08-22 20:09:05,051 - INFO - Question 38
+2025-08-22 20:10:23,216 - INFO - Question 39
+2025-08-22 20:11:31,506 - INFO - Question 40
+2025-08-22 20:12:37,044 - INFO - Question 41
+2025-08-22 20:13:47,513 - INFO - Question 42
+2025-08-22 20:15:28,096 - INFO - Question 43
+2025-08-22 20:17:53,059 - INFO - Question 44
+2025-08-22 20:19:04,031 - INFO - Question 45
+2025-08-22 20:20:22,931 - INFO - Question 46
+2025-08-22 20:21:49,657 - INFO - Question 47
+2025-08-22 20:23:28,373 - INFO - Question 48
+2025-08-22 20:24:48,780 - INFO - Question 49
+2025-08-22 20:25:48,564 - INFO - Question 50
+2025-08-22 20:26:52,266 - INFO - Question 51
+2025-08-22 20:27:50,488 - INFO - Question 52
+2025-08-22 20:28:33,963 - INFO - Question 53
+2025-08-22 20:29:32,231 - INFO - Question 54
+2025-08-22 20:30:34,934 - INFO - Question 55
+2025-08-22 20:31:48,810 - INFO - Question 56
+2025-08-22 20:32:50,754 - INFO - Question 57
+2025-08-22 20:38:54,645 - INFO - Question 58
+2025-08-22 20:39:57,205 - INFO - Question 59
+2025-08-22 20:41:43,096 - INFO - Question 60
+2025-08-22 20:42:47,524 - INFO - Question 61
+2025-08-22 20:44:41,891 - INFO - Question 62
+2025-08-22 20:45:49,452 - INFO - Question 63
+2025-08-22 20:46:37,025 - INFO - Question 64
+2025-08-22 20:47:39,287 - INFO - Question 65
+2025-08-22 20:48:27,189 - INFO - Question 66
+2025-08-22 20:49:38,090 - INFO - Question 67
+2025-08-22 20:51:16,811 - INFO - Question 68
+2025-08-22 20:52:11,386 - INFO - Question 69
+2025-08-22 20:53:31,136 - INFO - Question 70
+2025-08-22 20:54:19,922 - INFO - Question 71
+2025-08-22 20:55:38,780 - INFO - Question 72
+2025-08-22 20:56:33,132 - INFO - Question 73
+2025-08-22 20:57:19,969 - INFO - Question 74
+2025-08-22 20:58:31,382 - INFO - Question 75
+2025-08-22 21:01:21,629 - INFO - Question 76
+2025-08-22 21:02:35,126 - INFO - Question 77
+2025-08-22 21:03:43,971 - INFO - Question 78
+2025-08-22 21:04:55,966 - INFO - Question 79
+2025-08-22 21:06:52,067 - INFO - Question 80
+2025-08-22 21:07:45,296 - INFO - Question 81
+2025-08-22 21:15:37,331 - INFO - Question 82
+2025-08-22 21:16:33,189 - INFO - Question 83
+2025-08-22 21:17:25,873 - INFO - Question 84
+2025-08-22 21:18:26,496 - INFO - Question 85
+2025-08-22 21:19:12,733 - INFO - Question 86
+2025-08-22 21:20:01,394 - INFO - Question 87
+2025-08-22 21:21:18,906 - INFO - Question 88
+2025-08-22 21:22:33,289 - INFO - Question 89
+2025-08-22 21:23:41,816 - INFO - Question 90
+2025-08-22 21:25:06,633 - INFO - Question 91
+2025-08-22 21:26:23,616 - INFO - Question 92
+2025-08-22 21:27:43,739 - INFO - Question 93
+2025-08-22 21:29:15,287 - INFO - Question 94
+2025-08-22 21:30:35,686 - INFO - Question 95
+2025-08-22 21:32:04,826 - INFO - Question 96
+2025-08-22 21:33:14,091 - INFO - Question 97
+2025-08-22 21:35:22,925 - INFO - Question 98
+2025-08-22 21:37:14,676 - INFO - Question 99
+2025-08-22 21:38:22,670 - INFO - Question 100
+2025-08-22 21:39:32,871 - INFO - Question 101
+2025-08-22 21:40:38,636 - INFO - Question 102
+2025-08-22 21:41:36,598 - INFO - Question 103
+2025-08-22 21:42:30,359 - INFO - Question 104
+2025-08-22 21:43:17,123 - INFO - Question 105
+2025-08-22 21:44:09,458 - INFO - Question 106
+2025-08-22 21:49:31,954 - INFO - Question 107
+2025-08-22 21:50:36,099 - INFO - Question 108
+2025-08-22 21:51:55,703 - INFO - Question 109
+2025-08-22 21:53:53,981 - INFO - Question 110
+2025-08-22 21:54:23,566 - INFO - Question 111
+2025-08-22 21:55:42,922 - INFO - Question 112
+2025-08-22 22:00:17,444 - INFO - Question 113
+2025-08-22 22:01:54,839 - INFO - Question 114
+2025-08-22 22:03:32,274 - INFO - Question 115
+2025-08-22 22:05:15,001 - INFO - Question 116
+2025-08-22 22:06:11,282 - INFO - Question 117
+2025-08-22 22:07:28,319 - INFO - Question 118
+2025-08-22 22:08:43,870 - INFO - Question 119
+2025-08-22 22:10:43,897 - INFO - Question 120
+2025-08-22 22:12:19,421 - INFO - Question 121
+2025-08-22 22:13:31,609 - INFO - Question 122
+2025-08-22 22:14:37,577 - INFO - Question 123
+2025-08-22 22:15:34,693 - INFO - Question 124
+2025-08-22 22:16:55,443 - INFO - Question 125
+2025-08-22 22:18:25,737 - INFO - Question 126
+2025-08-22 22:19:20,722 - INFO - Question 127
+2025-08-22 22:20:36,649 - INFO - Question 128
+2025-08-22 22:22:08,776 - INFO - Question 129
+2025-08-22 22:23:19,836 - INFO - Question 130
+2025-08-22 22:24:49,503 - INFO - Question 131
+2025-08-22 22:25:43,168 - INFO - Question 132
+2025-08-22 22:26:36,498 - INFO - Question 133
+2025-08-22 22:28:08,005 - INFO - Question 134
+2025-08-22 22:32:26,752 - INFO - Question 135
+2025-08-22 22:33:24,141 - INFO - Question 136
+2025-08-22 22:34:30,067 - INFO - Question 137
+2025-08-22 22:36:24,428 - INFO - Question 138
+2025-08-22 22:37:03,361 - INFO - Question 139
+2025-08-22 22:38:13,361 - INFO - Question 140
+2025-08-22 22:39:19,174 - INFO - Question 141
+2025-08-22 22:39:53,967 - INFO - Question 142
+2025-08-22 22:41:04,958 - INFO - Question 143
+2025-08-22 22:42:02,299 - INFO - Question 144
+2025-08-22 22:43:25,528 - INFO - Question 145
+2025-08-22 22:47:44,974 - INFO - Question 146
+2025-08-22 22:48:34,076 - INFO - Question 147
+2025-08-22 22:56:05,003 - INFO - Question 148
+2025-08-22 23:17:47,804 - INFO - Question 149
+2025-08-22 23:18:57,202 - INFO - Question 150
+2025-08-22 23:18:57,220 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-08-22 23:18:57,220 - INFO - Processing model: deepseek-r1:70b for language: en
+2025-08-22 23:20:17,654 - INFO - Question 1
+2025-08-22 23:21:11,754 - INFO - Question 2
+2025-08-22 23:22:33,670 - INFO - Question 3
+2025-08-22 23:28:59,184 - INFO - Question 4
+2025-08-22 23:30:36,464 - INFO - Question 5
+2025-08-22 23:32:27,441 - INFO - Question 6
+2025-08-22 23:33:17,105 - INFO - Question 7
+2025-08-22 23:34:35,150 - INFO - Question 8
+2025-08-22 23:35:16,715 - INFO - Question 9
+2025-08-22 23:36:18,378 - INFO - Question 10
+2025-08-22 23:37:52,730 - INFO - Question 11
+2025-08-22 23:39:11,499 - INFO - Question 12
+2025-08-22 23:40:42,367 - INFO - Question 13
+2025-08-22 23:42:09,638 - INFO - Question 14
+2025-08-22 23:43:11,395 - INFO - Question 15
+2025-08-22 23:44:12,745 - INFO - Question 16
+2025-08-22 23:45:51,692 - INFO - Question 17
+2025-08-22 23:46:58,537 - INFO - Question 18
+2025-08-22 23:47:51,312 - INFO - Question 19
+2025-08-22 23:48:35,665 - INFO - Question 20
+2025-08-22 23:49:37,819 - INFO - Question 21
+2025-08-22 23:51:14,059 - INFO - Question 22
+2025-08-22 23:52:08,257 - INFO - Question 23
+2025-08-22 23:52:46,911 - INFO - Question 24
+2025-08-22 23:53:48,832 - INFO - Question 25
+2025-08-22 23:54:27,334 - INFO - Question 26
+2025-08-22 23:55:43,682 - INFO - Question 27
+2025-08-22 23:56:57,894 - INFO - Question 28
+2025-08-22 23:58:12,972 - INFO - Question 29
+2025-08-23 00:02:54,533 - INFO - Question 30
+2025-08-23 00:04:40,653 - INFO - Question 31
+2025-08-23 00:06:08,651 - INFO - Question 32
+2025-08-23 00:07:41,475 - INFO - Question 33
+2025-08-23 00:08:36,064 - INFO - Question 34
+2025-08-23 00:14:58,716 - INFO - Question 35
+2025-08-23 00:20:22,697 - INFO - Question 36
+2025-08-23 00:21:27,803 - INFO - Question 37
+2025-08-23 00:22:25,432 - INFO - Question 38
+2025-08-23 00:23:49,088 - INFO - Question 39
+2025-08-23 00:24:37,065 - INFO - Question 40
+2025-08-23 00:25:40,152 - INFO - Question 41
+2025-08-23 00:26:38,670 - INFO - Question 42
+2025-08-23 00:27:32,038 - INFO - Question 43
+2025-08-23 00:29:05,671 - INFO - Question 44
+2025-08-23 00:30:06,247 - INFO - Question 45
+2025-08-23 00:31:37,213 - INFO - Question 46
+2025-08-23 00:32:38,997 - INFO - Question 47
+2025-08-23 00:33:43,726 - INFO - Question 48
+2025-08-23 00:34:44,249 - INFO - Question 49
+2025-08-23 00:35:43,666 - INFO - Question 50
+2025-08-23 00:36:53,244 - INFO - Question 51
+2025-08-23 00:38:45,039 - INFO - Question 52
+2025-08-23 00:39:44,944 - INFO - Question 53
+2025-08-23 00:40:32,601 - INFO - Question 54
+2025-08-23 00:41:57,689 - INFO - Question 55
+2025-08-23 00:42:48,736 - INFO - Question 56
+2025-08-23 00:44:12,337 - INFO - Question 57
+2025-08-23 00:45:26,137 - INFO - Question 58
+2025-08-23 00:46:13,089 - INFO - Question 59
+2025-08-23 00:47:49,699 - INFO - Question 60
+2025-08-23 00:49:35,073 - INFO - Question 61
+2025-08-23 00:50:41,448 - INFO - Question 62
+2025-08-23 00:52:48,560 - INFO - Question 63
+2025-08-23 00:54:39,504 - INFO - Question 64
+2025-08-23 00:55:52,026 - INFO - Question 65
+2025-08-23 00:58:04,518 - INFO - Question 66
+2025-08-23 01:00:19,222 - INFO - Question 67
+2025-08-23 01:31:41,034 - INFO - Question 68
+2025-08-23 01:32:32,128 - INFO - Question 69
+2025-08-23 01:35:42,608 - INFO - Question 70
+2025-08-23 01:36:45,306 - INFO - Question 71
+2025-08-23 01:38:20,657 - INFO - Question 72
+2025-08-23 01:39:38,827 - INFO - Question 73
+2025-08-23 01:40:40,215 - INFO - Question 74
+2025-08-23 01:41:45,950 - INFO - Question 75
+2025-08-23 01:42:49,111 - INFO - Question 76
+2025-08-23 01:43:59,656 - INFO - Question 77
+2025-08-23 01:45:46,186 - INFO - Question 78
+2025-08-23 01:46:55,648 - INFO - Question 79
+2025-08-23 01:48:53,295 - INFO - Question 80
+2025-08-23 01:49:52,498 - INFO - Question 81
+2025-08-23 01:50:59,563 - INFO - Question 82
+2025-08-23 01:52:12,095 - INFO - Question 83
+2025-08-23 01:53:16,662 - INFO - Question 84
+2025-08-23 01:54:54,025 - INFO - Question 85
+2025-08-23 01:56:02,040 - INFO - Question 86
+2025-08-23 01:57:11,158 - INFO - Question 87
+2025-08-23 01:58:08,457 - INFO - Question 88
+2025-08-23 01:59:09,442 - INFO - Question 89
+2025-08-23 02:00:00,978 - INFO - Question 90
+2025-08-23 02:00:01,181 - ERROR - Error while performing relation identification: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-23 02:00:01,187 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6180>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,193 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874c7c740>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,197 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,201 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4110>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,204 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6a20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,208 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,211 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf77a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,215 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7380>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,218 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,221 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6450>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,225 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4b30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,228 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4a70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,232 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7b60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,235 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7800>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,239 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4a40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,242 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874b546b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,245 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4ad0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,249 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7620>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,252 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf45c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,256 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874dc14f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,260 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf45f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,263 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,267 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7a10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,270 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4f20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,273 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7d70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,276 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,280 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6d50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,283 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5910>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,286 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf52b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,289 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4260>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,292 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874dc2390>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,296 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6780>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,299 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4da0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,302 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,305 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4230>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,308 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,311 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7d10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,315 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf62a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,317 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6c30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,321 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,323 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6d80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,326 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4b90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,329 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf63f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,332 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7860>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,334 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874b57200>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,337 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf7710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,340 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4110>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,343 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf64e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,346 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874b57fb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,349 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf70b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,352 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5250>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,354 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874b57fe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,357 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4bf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,360 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf6630>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,362 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5af0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,365 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874b57d40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,368 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf5df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,370 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874bf4650>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,373 - ERROR - Error while performing relation identification: HTTPConnectionPool(host='warhol.informatik.rwth-aachen.de', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9874dc2390>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-23 02:00:01,373 - INFO - Finished processing model: deepseek-r1:70b for language: en
+2025-08-23 02:00:01,373 - INFO - Step 1: Running single question benchmark
+2025-08-23 02:00:01,373 - INFO - Processing dataset: spinach.tsv for model: deepseek-r1:70b and language: en
+2025-08-23 02:00:01,373 - INFO - Processing column: Q1

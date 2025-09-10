@@ -1,8 +1,11 @@
 {
   "languages": ["en"],
+<<<<<<< HEAD
   "llm_models": ["o3"],
+=======
+  "llm_models": ["gpt-oss:20b"],
+>>>>>>> 6c4ed9e (self hosted adjustments)
   "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
   "prompt_types": ["standard", "wikidata"],
   "relations": ["Equivalence", "Containment", "Minus"]
-  }
-  
+}

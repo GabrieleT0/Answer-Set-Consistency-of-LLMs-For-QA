@@ -1,0 +1,5 @@
+2025-08-06 14:17:44,074 - INFO - Loaded config from config.json
+2025-08-06 14:17:44,074 - INFO - {'languages': ['en'], 'llm_models': ['llama3.1:70b'], 'datasets': ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'], 'prompt_types': ['standard', 'wikidata'], 'relations': ['Equivalence', 'Containment', 'Minus']}
+2025-08-06 14:17:44,074 - INFO - === Starting unified LLM benchmark pipeline ===
+2025-08-06 14:17:44,074 - INFO - Step 0: Identify Relations
+2025-08-06 14:17:44,074 - INFO - Processing model: llama3.1:70b for language: en
