@@ -1,0 +1,452 @@
+{
+    "0": [
+        "containment is not possible since s1 has answers that are not in q2 and thus, definitely not all of them can be in s2. equivalence is also impossible because for equivalence to hold between two sets, each element must be in both sets which cannot happen here as the set definitions imply different conditions. disjoint is incorrect as well: it would imply there is no common answer for q1 that is not an answer for q2 and is an answer for q3 but this doesn't necessarily have to be true given the year condition stated in q3.\n\nthe only remaining relation left is **overlap**"
+    ],
+    "1": [
+        "equivalence"
+    ],
+    "2": [
+        "equivalence"
+    ],
+    "3": [
+        "equivalence"
+    ],
+    "4": [
+        "equivalence"
+    ],
+    "5": [
+        "equivalence"
+    ],
+    "6": [
+        "overlap"
+    ],
+    "7": [
+        "overlap"
+    ],
+    "8": [
+        "equivalence"
+    ],
+    "9": [
+        "equivalence"
+    ],
+    "10": [
+        "overlap"
+    ],
+    "11": [
+        "equivalence"
+    ],
+    "12": [
+        "equivalence"
+    ],
+    "13": [
+        "equivalence"
+    ],
+    "14": [
+        "equivalence"
+    ],
+    "15": [
+        "disjoint"
+    ],
+    "16": [
+        "disjoint"
+    ],
+    "17": [
+        "equivalence"
+    ],
+    "18": [
+        "equivalence"
+    ],
+    "19": [
+        "containmentby"
+    ],
+    "20": [
+        "equivalence"
+    ],
+    "21": [
+        "equivalence"
+    ],
+    "22": [
+        "equivalence"
+    ],
+    "23": [
+        "overlap"
+    ],
+    "24": [
+        "equivalence"
+    ],
+    "25": [
+        "equivalence"
+    ],
+    "26": [
+        "equivalence"
+    ],
+    "27": [
+        "equivalence"
+    ],
+    "28": [
+        "equivalence"
+    ],
+    "29": [
+        "equivalence"
+    ],
+    "30": [
+        "equivalence"
+    ],
+    "31": [
+        "overlap"
+    ],
+    "32": [
+        "equivalence"
+    ],
+    "33": [
+        "equivalence"
+    ],
+    "34": [
+        "equivalence"
+    ],
+    "35": [
+        "equivalence"
+    ],
+    "36": [
+        "equivalence"
+    ],
+    "37": [
+        "equivalence"
+    ],
+    "38": [
+        "equivalence"
+    ],
+    "39": [
+        "overlap"
+    ],
+    "40": [
+        "equivalence"
+    ],
+    "41": [
+        "equivalence"
+    ],
+    "42": [
+        "equivalence"
+    ],
+    "43": [
+        "overlap"
+    ],
+    "44": [
+        "containedby"
+    ],
+    "45": [
+        "equivalence"
+    ],
+    "46": [
+        "equivalence"
+    ],
+    "47": [
+        "equivalence"
+    ],
+    "48": [
+        "equivalence"
+    ],
+    "49": [
+        "overlap"
+    ],
+    "50": [
+        "disjoint"
+    ],
+    "51": [
+        "equivalence"
+    ],
+    "52": [
+        "equivalence"
+    ],
+    "53": [
+        "equivalence"
+    ],
+    "54": [
+        "equivalence"
+    ],
+    "55": [
+        "disjoint"
+    ],
+    "56": [
+        "equivalence"
+    ],
+    "57": [
+        "equivalence"
+    ],
+    "58": [
+        "equivalence"
+    ],
+    "59": [
+        "containment is not possible between s1 and s2, as s1 includes states from both upper basin and lower basin (outside of q2's scope), while s2 specifically focuses on lower basin. similarly, equivalence can't hold because s2 won't cover the full scope outside of q2 that s1 does, nor will it include states only in the upper basin outside of q2.\n\nsince s2 will not include any state from the upper basin covered by q2 (as per its definition focusing on lower basin), there's no way s2 can be a superset or equivalent to s1, and we also know for sure s1 won't fully fit within s2 due to inclusion of states from both basins. however, it's certain that some lower basin states will overlap between being in the full set of q1 (outside of q2) and those strictly in q3.\n\ntherefore, since there is indeed a guaranteed overlap (with no total containment or equivalence possible), overlap"
+    ],
+    "60": [
+        "equivalence"
+    ],
+    "61": [
+        "overlap"
+    ],
+    "62": [
+        "overlap"
+    ],
+    "63": [
+        "disjoint"
+    ],
+    "64": [
+        "disjoint"
+    ],
+    "65": [
+        "equivalence"
+    ],
+    "66": [
+        "equivalence"
+    ],
+    "67": [
+        "equivalence"
+    ],
+    "68": [
+        "equivalence"
+    ],
+    "69": [
+        "overlap"
+    ],
+    "70": [
+        "overlap"
+    ],
+    "71": [
+        "equivalence"
+    ],
+    "72": [
+        "equivalence"
+    ],
+    "73": [
+        "equivalence"
+    ],
+    "74": [
+        "equivalence"
+    ],
+    "75": [
+        "disjoint"
+    ],
+    "76": [
+        "equivalence"
+    ],
+    "77": [
+        "equivalence"
+    ],
+    "78": [
+        "overlap"
+    ],
+    "79": [
+        "overlap"
+    ],
+    "80": [
+        "disjoint"
+    ],
+    "81": [
+        "disjoint"
+    ],
+    "82": [
+        "equivalence"
+    ],
+    "83": [
+        "equivalence"
+    ],
+    "84": [
+        "overlap"
+    ],
+    "85": [
+        "equivalence"
+    ],
+    "86": [
+        "containedby"
+    ],
+    "87": [
+        "equivalence"
+    ],
+    "88": [
+        "equivalence"
+    ],
+    "89": [
+        "overlap"
+    ],
+    "90": [
+        "equivalence"
+    ],
+    "91": [
+        "equivalence"
+    ],
+    "92": [
+        "equivalence"
+    ],
+    "93": [
+        "equivalence"
+    ],
+    "94": [
+        "overlap"
+    ],
+    "95": [
+        "equivalence"
+    ],
+    "96": [
+        "equivalence"
+    ],
+    "97": [
+        "equivalence"
+    ],
+    "98": [
+        "equivalence"
+    ],
+    "99": [
+        "disjoint"
+    ],
+    "100": [
+        "disjoint"
+    ],
+    "101": [
+        "overlap"
+    ],
+    "102": [
+        "equivalence"
+    ],
+    "103": [
+        "overlap"
+    ],
+    "104": [
+        "containedby"
+    ],
+    "105": [
+        "equivalence"
+    ],
+    "106": [
+        "overlap"
+    ],
+    "107": [
+        "equivalence"
+    ],
+    "108": [
+        "equivalence"
+    ],
+    "109": [
+        "overlap"
+    ],
+    "110": [
+        "equivalence"
+    ],
+    "111": [
+        "equivalence"
+    ],
+    "112": [
+        "equivalence"
+    ],
+    "113": [
+        "equivalence"
+    ],
+    "114": [
+        "equivalence"
+    ],
+    "115": [
+        "equivalence"
+    ],
+    "116": [
+        "equivalence"
+    ],
+    "117": [
+        "disjoint"
+    ],
+    "118": [
+        "equivalence"
+    ],
+    "119": [
+        "equivalence"
+    ],
+    "120": [
+        "equivalence"
+    ],
+    "121": [
+        "equivalence"
+    ],
+    "122": [
+        "equivalence"
+    ],
+    "123": [
+        "equivalence"
+    ],
+    "124": [
+        "equivalence"
+    ],
+    "125": [
+        "overlap"
+    ],
+    "126": [
+        "equivalence"
+    ],
+    "127": [
+        "equivalence"
+    ],
+    "128": [
+        "equivalence"
+    ],
+    "129": [
+        "overlap"
+    ],
+    "130": [
+        "equivalence"
+    ],
+    "131": [
+        "equivalence"
+    ],
+    "132": [
+        "equivalence"
+    ],
+    "133": [
+        "equivalence"
+    ],
+    "134": [
+        "equivalence"
+    ],
+    "135": [
+        "equivalence"
+    ],
+    "136": [
+        "overlap"
+    ],
+    "137": [
+        "equivalence"
+    ],
+    "138": [
+        "equivalence"
+    ],
+    "139": [
+        "overlap"
+    ],
+    "140": [
+        "overlap"
+    ],
+    "141": [
+        "equivalence"
+    ],
+    "142": [
+        "disjoint"
+    ],
+    "143": [
+        "overlap"
+    ],
+    "144": [
+        "equivalence"
+    ],
+    "145": [
+        "overlap"
+    ],
+    "146": [
+        "equivalence"
+    ],
+    "147": [
+        "equivalence"
+    ],
+    "148": [
+        "equivalence"
+    ],
+    "149": [
+        "overlap"
+    ]
+}

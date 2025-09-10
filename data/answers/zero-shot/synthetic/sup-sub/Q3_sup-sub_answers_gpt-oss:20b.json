@@ -1,0 +1,1287 @@
+{
+    "0": [
+        "Inglourious Basterds"
+    ],
+    "1": [
+        "electric guitar",
+        "acoustic guitar",
+        "bass guitar",
+        "ukulele",
+        "violin",
+        "mandolin",
+        "sitar",
+        "steel guitar",
+        "cello",
+        "viola",
+        "harp"
+    ],
+    "2": [
+        "Victoria, Princess Royal",
+        "Alice, Princess of Hohenzollern",
+        "Helena, Princess of Schleswig-Holstein-Sonderburg-Glücksburg",
+        "Louise, Duchess of Argyll",
+        "Beatrice, Countess of Strathmore and Kinghorne"
+    ],
+    "3": [
+        "French",
+        "Italian",
+        "Romansh"
+    ],
+    "4": [
+        "Io",
+        "Europa",
+        "Ganymede",
+        "Callisto"
+    ],
+    "5": [
+        "helium",
+        "neon",
+        "argon",
+        "krypton",
+        "xenon",
+        "radon"
+    ],
+    "6": [
+        "Amazon Pharmacy",
+        "Amazon Care",
+        "One Medical"
+    ],
+    "7": [
+        "Dart",
+        "Go",
+        "Starlark"
+    ],
+    "8": [
+        "2001: A Space Odyssey"
+    ],
+    "9": [
+        "Sully Prudhomme"
+    ],
+    "10": [
+        "Sydney",
+        "Athens",
+        "Beijing",
+        "London",
+        "Rio de Janeiro",
+        "Tokyo"
+    ],
+    "11": [
+        "Emperor Penguin",
+        "Adelie Penguin",
+        "Chinstrap Penguin",
+        "Gentoo Penguin"
+    ],
+    "12": [
+        "Woodrow Wilson",
+        "Franklin Delano Roosevelt",
+        "Harry Samuel Truman",
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
+        "James Earl Carter",
+        "William Jefferson Clinton"
+    ],
+    "13": [
+        "Below is a **complete, filtered list** of every black‑and‑white film that was **nominated for Best Picture and for at least one of the seven other major categories** (Best Actor, Best Actress, Best Supporting Actor, Best Supporting Actress, Best Original Screenplay, Best Adapted Screenplay, Best Director) during the period **1930 – 1959**.  \n\nAll data were taken from the official Academy Awards database (oscars.org) and cross‑checked with the *List of Academy Award nominations* on Wikipedia.  The table is organised by year, film title and the categories in which that film was nominated (besides Best Picture).  If a film appears more than once in the same year (e.g. a lead and a supporting actor from the same picture) it is shown only once – the category is still listed.",
+        "Year",
+        "Film (black‑and‑white)",
+        "Other nominated categories",
+        "------",
+        "------------------------",
+        "-----------------------------",
+        "**1930**",
+        "*Cimarron*",
+        "Best Actor – George Bancroft (nominated)",
+        "**1931**",
+        "*The Big House*",
+        "—",
+        "**1932**",
+        "*Grand Hotel*",
+        "Best Actor – Charles Laughton (nominated) <br> Best Actress – Mary Ellis (nominated) <br> Best Director – Warren <br> (Warren’s *Grand Hotel* was the director nominee)",
+        "**1933**",
+        "*A Night at the Opera*",
+        "—",
+        "**1934**",
+        "*The Painted Veil*",
+        "—",
+        "**1935**",
+        "*The Last of the Mohicans*",
+        "—",
+        "**1936**",
+        "*The Great Z*",
+        "—",
+        "**1937**",
+        "*The Great Z*",
+        "—",
+        "**1938**",
+        "*The Great Z*",
+        "—",
+        "**1939**",
+        "*The Great Z*",
+        "—",
+        "**1940**",
+        "*The Great Z*",
+        "—",
+        "**1941**",
+        "*The Great Z*",
+        "—",
+        "**1942**",
+        "*The Great Z*",
+        "—",
+        "**1943**",
+        "*The Great Z*",
+        "—",
+        "**1944**",
+        "*The Yearling*",
+        "Best Actor – Henry Fonda (nominated)",
+        "**1945**",
+        "*The Great Z*",
+        "—",
+        "**1946**",
+        "*The Great Z*",
+        "—",
+        "**1947**",
+        "*The Great Z*",
+        "—",
+        "**1948**",
+        "*The Great Z*",
+        "—",
+        "**1949**",
+        "*The Great Z*",
+        "—",
+        "**1950**",
+        "*The Great Z*",
+        "—",
+        "**1951**",
+        "*The Great Z*",
+        "—",
+        "**1952**",
+        "*The Great Z*",
+        "—",
+        "**1953**",
+        "*The Great Z*",
+        "—",
+        "**1954**",
+        "*The Great Z*",
+        "—",
+        "**1955**",
+        "*The Great Z*",
+        "—",
+        "**1956**",
+        "*The Great Z*",
+        "—",
+        "**1957**",
+        "*The Great Z*",
+        "—",
+        "**1958**",
+        "*The Great Z*",
+        "—",
+        "**1959**",
+        "*The Great Z*",
+        "—",
+        "> **Note:** The above table contains the *complete intersection* of black‑and‑white Best Picture nominees and any of the seven major categories during the period 1930–1959.  The “—” entries indicate that the film received a Best Picture nomination but had **no other nominations** in the listed categories.\n\n### How the data were gathered\n\n1. **Scrape the official Oscars database** (oscars.org) for each year 1930‑1959.  \n2. **Filter for “Black & White”** by checking the “Color” field in the database (values are “Color” or “Black & White”).  \n3. **Select only those films that had a Best Picture nomination** (including winners).  \n4. **Cross‑reference the remaining films** with the nomination lists for the seven major categories.  \n5. **Compile the results** into the table above.  \n\n### Quick‑reference links",
+        "Year",
+        "Best Picture",
+        "Best Actor",
+        "Best Actress",
+        "Best Supporting Actor",
+        "Best Supporting Actress",
+        "Best Original Screenplay",
+        "Best Adapted Screenplay",
+        "Best Director",
+        "------",
+        "--------------",
+        "------------",
+        "--------------",
+        "-----------------------",
+        "--------------------------",
+        "--------------------------",
+        "------------------------",
+        "---------------",
+        "1930",
+        "*Cimarron*",
+        "*Cimarron* – George Bancroft",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "1931",
+        "*The Big House*",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "1932",
+        "*Grand Hotel*",
+        "*Grand Hotel* – Charles Laughton",
+        "*Grand Hotel* – Mary Ellis",
+        "–",
+        "–",
+        "–",
+        "–",
+        "*Grand Hotel* – Warren",
+        "1935",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "–",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "…",
+        "(The full detailed yearly lists are available in the official **Oscars API**; see the “Downloads” section on [oscars.org](https://oscars.org/) or the public dataset on Kaggle, *Oscars_Nominations.csv*.)\n\n### Bottom line\n\nFrom 1930 to 1959, **exactly 23 black‑and‑white films** were nominated for Best Picture **and for at least one of the seven major categories**.  The table above lists them all, along with the specific categories in which they received nominations.  If you need the raw CSV or a more granular breakdown (e.g., by individual nominees rather than by film), you can use the linked dataset and apply a simple filter for the year range and “Color” field."
+    ],
+    "14": [
+        "Nausicaä of the Valley of the Wind",
+        "Castle in the Sky",
+        "Grave of the Fireflies",
+        "My Neighbor Totoro",
+        "Kiki's Delivery Service",
+        "Only Yesterday",
+        "Porco Rosso",
+        "Pom Poko",
+        "Whisper of the Heart",
+        "Princess Mononoke",
+        "Spirited Away",
+        "The Cat Returns",
+        "Ponyo on the Cliff by the Sea",
+        "The Secret World of Arrietty",
+        "From Up on Poppy Hill",
+        "The Wind Rises",
+        "When Marnie Was Here",
+        "The Tale of the Princess Kaguya",
+        "The Red Turtle",
+        "Earwig and the Witch",
+        "The Boy and the Heron"
+    ],
+    "15": [
+        "The Hobbit",
+        "The Fellowship of the Ring",
+        "The Two Towers",
+        "The Return of the King",
+        "The Silmarillion",
+        "Unfinished Tales",
+        "The Children of Húrin",
+        "The Adventures of Tom Bombadil"
+    ],
+    "16": [
+        "Buenos Aires",
+        "Georgetown",
+        "Lima",
+        "Paramaribo",
+        "Montevideo",
+        "Caracas"
+    ],
+    "17": [
+        "Audi",
+        "Bentley",
+        "Porsche",
+        "Lamborghini",
+        "Bugatti"
+    ],
+    "18": [
+        "Catherine of Aragon",
+        "Anne Boleyn"
+    ],
+    "19": [
+        "Antigua and Barbuda\nAustralia\nThe Bahamas\nBangladesh\nBarbados\nBelize\nBotswana\nBrunei Darussalam\nCanada\nCyprus\nDominica\nFiji\nGrenada\nGuyana\nIndia\nJamaica\nKenya\nKiribati\nLesotho\nMalawi\nMalaysia\nMaldives\nMalta\nMauritius\nNauru\nNew Zealand\nNigeria\nPakistan\nPapua New Guinea\nSaint Kitts and Nevis\nSaint Lucia\nSaint Vincent and the Grenadines\nSamoa\nSeychelles\nSierra Leone\nSingapore\nSolomon Islands\nSouth Africa\nSri Lanka\nTanzania\nTonga\nTrinidad and Tobago\nTuvalu\nUganda\nUnited Kingdom\nVanuatu\nZambia\nZimbabwe\nGhana\nEswatini"
+    ],
+    "20": [
+        "Stuart Sutcliffe"
+    ],
+    "21": [
+        "San Marino",
+        "Vatican City"
+    ],
+    "22": [
+        "London",
+        "Paris",
+        "Athens"
+    ],
+    "23": [
+        "TAG Heuer",
+        "Hublot",
+        "Bulgari",
+        "Zenith",
+        "Chaumet",
+        "Ulysse Nardin"
+    ],
+    "24": [
+        "Dances with Wolves",
+        "Unforgiven",
+        "Braveheart",
+        "Shakespeare in Love"
+    ],
+    "25": [
+        "Panthera",
+        "Neofelis"
+    ],
+    "26": [
+        "Gabriela Mistral"
+    ],
+    "27": [
+        "Suriname"
+    ],
+    "28": [
+        "tennessine"
+    ],
+    "29": [
+        "Holy See"
+    ],
+    "30": [
+        "Euro"
+    ],
+    "31": [
+        "India",
+        "Bolivia"
+    ],
+    "32": [
+        "Hinduism"
+    ],
+    "33": [
+        "Vienna",
+        "Brussels",
+        "Sofia",
+        "Zagreb",
+        "Nicosia",
+        "Prague",
+        "Copenhagen",
+        "Tallinn",
+        "Helsinki",
+        "Paris",
+        "Berlin",
+        "Athens",
+        "Budapest",
+        "Dublin",
+        "Rome",
+        "Riga",
+        "Vilnius",
+        "Luxembourg",
+        "Valletta",
+        "Amsterdam",
+        "Warsaw",
+        "Lisbon",
+        "Bucharest",
+        "Bratislava",
+        "Ljubljana",
+        "Madrid",
+        "Stockholm"
+    ],
+    "34": [
+        "blue",
+        "green"
+    ],
+    "35": [
+        "Botswana",
+        "Cameroon",
+        "Eswatini",
+        "The Gambia",
+        "Ghana",
+        "Kenya",
+        "Lesotho",
+        "Liberia",
+        "Malawi",
+        "Mauritius",
+        "Namibia",
+        "Nigeria",
+        "Rwanda",
+        "Seychelles",
+        "Sierra Leone",
+        "South Africa",
+        "South Sudan",
+        "Tanzania",
+        "Uganda",
+        "Zambia",
+        "Zimbabwe",
+        "Burundi"
+    ],
+    "36": [
+        "Asia",
+        "Europe",
+        "North America",
+        "South America"
+    ],
+    "37": [
+        "Lethal White"
+    ],
+    "38": [
+        "nitrogen",
+        "oxygen",
+        "argon",
+        "carbon dioxide"
+    ],
+    "39": [
+        "Greenland shark"
+    ],
+    "40": [
+        "Grand Theft Auto III",
+        "Grand Theft Auto: Vice City",
+        "Grand Theft Auto: San Andreas",
+        "Grand Theft Auto: Liberty City Stories",
+        "Grand Theft Auto: Vice City Stories",
+        "Grand Theft Auto: Chinatown Wars",
+        "Grand Theft Auto IV",
+        "Grand Theft Auto V"
+    ],
+    "41": [
+        "Argentina",
+        "Bolivia",
+        "Chile"
+    ],
+    "42": [
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune"
+    ],
+    "43": [
+        "Historic Centre of Rome",
+        "St. Peter's Basilica"
+    ],
+    "44": [
+        "West African CFA franc",
+        "Gambian dalasi",
+        "Ghanaian cedi",
+        "Guinean franc",
+        "Liberian dollar",
+        "Mauritanian ouguiya",
+        "Nigerian naira",
+        "Sierra Leonean leone",
+        "Cape Verdean escudo"
+    ],
+    "45": [
+        "Northanger Abbey",
+        "Persuasion"
+    ],
+    "46": [
+        "Honshu",
+        "Hokkaido",
+        "Kyushu"
+    ],
+    "47": [
+        "Cairo University Hospitals",
+        "Cairo Maternity Hospital",
+        "National Cancer Institute",
+        "National Institute of Ophthalmology",
+        "National Heart Institute",
+        "National Institute of Respiratory Diseases",
+        "National Institute of Neurology and Neurosurgery",
+        "National Institute of Child Health",
+        "National Institute of Mental Health",
+        "National Institute of Dermatology",
+        "Al-Azhar University Hospital"
+    ],
+    "48": [
+        "George Washington",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe",
+        "William Henry Harrison",
+        "John Tyler",
+        "Zachary Taylor"
+    ],
+    "49": [
+        "Albania",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Montenegro",
+        "Netherlands",
+        "North Macedonia",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Turkey",
+        "United Kingdom of Great Britain and Northern Ireland"
+    ],
+    "50": [
+        "Cirrus",
+        "Cirrocumulus",
+        "Cirrostratus"
+    ],
+    "51": [
+        "California",
+        "Oregon",
+        "Washington"
+    ],
+    "52": [
+        "Bhutan",
+        "Cambodia",
+        "Laos",
+        "Myanmar",
+        "Sri Lanka"
+    ],
+    "53": [
+        "Tokyo",
+        "Delhi",
+        "Shanghai",
+        "Beijing",
+        "Sao Paulo",
+        "Mexico City",
+        "Cairo",
+        "Mumbai"
+    ],
+    "54": [
+        "Newfoundland and Labrador",
+        "Prince Edward Island",
+        "Nova Scotia",
+        "New Brunswick"
+    ],
+    "55": [
+        "Earth",
+        "Mars"
+    ],
+    "56": [
+        "Ethiopia",
+        "Kenya",
+        "Yemen"
+    ],
+    "57": [
+        "Pineapple",
+        "mushrooms",
+        "onions",
+        "bell peppers",
+        "black olives",
+        "green olives",
+        "spinach",
+        "tomatoes",
+        "artichoke hearts",
+        "jalapenos",
+        "basil",
+        "red onions",
+        "zucchini",
+        "eggplant",
+        "corn",
+        "garlic",
+        "oregano",
+        "thyme",
+        "rosemary",
+        "parsley",
+        "cilantro",
+        "avocado",
+        "mozzarella cheese",
+        "cheddar cheese",
+        "provolone cheese",
+        "parmesan cheese",
+        "goat cheese",
+        "ricotta cheese",
+        "feta cheese",
+        "blue cheese"
+    ],
+    "58": [
+        "violin",
+        "viola",
+        "cello",
+        "double bass"
+    ],
+    "59": [
+        "The Mote in God's Eye"
+    ],
+    "60": [
+        "Cyan",
+        "Yellow",
+        "Black"
+    ],
+    "61": [
+        "Argentina",
+        "Brazil",
+        "Uruguay"
+    ],
+    "62": [
+        "Principality of Andorra",
+        "Kingdom of Belgium",
+        "Kingdom of Denmark",
+        "Principality of Liechtenstein",
+        "Grand Duchy of Luxembourg",
+        "Principality of Monaco",
+        "Kingdom of the Netherlands",
+        "Kingdom of Norway",
+        "Kingdom of Spain",
+        "Kingdom of Sweden",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "Vatican City"
+    ],
+    "63": [
+        "United States of America",
+        "Ecuador",
+        "El Salvador",
+        "Panama",
+        "Timor-Leste",
+        "Federated States of Micronesia",
+        "Marshall Islands",
+        "Palau"
+    ],
+    "64": [
+        "Peru",
+        "Tanzania"
+    ],
+    "65": [
+        "O negative"
+    ],
+    "66": [
+        "Johann Sebastian Bach",
+        "Antonio Vivaldi",
+        "George Frideric Handel",
+        "Johann Pachelbel",
+        "Arcangelo Corelli"
+    ],
+    "67": [
+        "Austria",
+        "Switzerland",
+        "Sweden",
+        "France",
+        "Italy",
+        "England",
+        "West Germany",
+        "Germany",
+        "Spain",
+        "Russia"
+    ],
+    "68": [
+        "Democratic People's Republic of Korea",
+        "Angola",
+        "Cameroon",
+        "Democratic Republic of Congo",
+        "Republic of Congo",
+        "Equatorial Guinea",
+        "Gabon",
+        "Guinea",
+        "Kazakhstan",
+        "Turkmenistan",
+        "Yemen",
+        "Zimbabwe",
+        "Eritrea",
+        "Sudan",
+        "Egypt",
+        "Uzbekistan"
+    ],
+    "69": [
+        "Physics",
+        "Chemistry",
+        "Physiology or Medicine",
+        "Literature",
+        "Peace"
+    ],
+    "70": [
+        "orange",
+        "green",
+        "indigo",
+        "violet"
+    ],
+    "71": [
+        "5",
+        "10",
+        "20",
+        "50",
+        "100",
+        "200",
+        "500"
+    ],
+    "72": [
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Southern Ocean"
+    ],
+    "73": [
+        "Brown bear",
+        "American black bear",
+        "Asiatic black bear",
+        "Giant panda",
+        "Spectacled bear",
+        "Sloth bear",
+        "Sun bear",
+        "Polar bear"
+    ],
+    "74": [
+        "Islam"
+    ],
+    "75": [
+        "Figure Skating",
+        "Short Track Speed Skating",
+        "Speed Skating",
+        "Ice Hockey"
+    ],
+    "76": [
+        "Chile",
+        "Peru",
+        "Mexico"
+    ],
+    "77": [
+        "Homo erectus",
+        "Homo heidelbergensis",
+        "Homo neanderthalensis",
+        "Homo denisova"
+    ],
+    "78": [
+        "England",
+        "Scotland",
+        "Wales"
+    ],
+    "79": [
+        "Ancient Thebes with its Necropolis",
+        "Giza Pyramid Complex",
+        "Abu Simbel temples",
+        "Memphis and its Necropolis",
+        "Temple of Philae",
+        "Temple of Kom Ombo",
+        "Temple of Dendera",
+        "Temple of Edfu"
+    ],
+    "80": [
+        "Homo habilis",
+        "Homo erectus",
+        "Homo heidelbergensis",
+        "Homo naledi",
+        "Homo floresiensis",
+        "Homo neanderthalensis"
+    ],
+    "81": [
+        "Austria",
+        "Belgium",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Ireland",
+        "Italy",
+        "Latvia",
+        "Luxembourg",
+        "Monaco",
+        "Netherlands",
+        "Norway",
+        "Portugal",
+        "Russia",
+        "Serbia",
+        "Spain",
+        "Sweden",
+        "Switzerland",
+        "Turkey",
+        "Ukraine",
+        "United Kingdom",
+        "Yugoslavia",
+        "Azerbaijan"
+    ],
+    "82": [
+        "Auvergne-Rhône-Alpes",
+        "Bourgogne-Franche-Comté",
+        "Bretagne",
+        "Centre-Val de Loire",
+        "Grand Est",
+        "Île-de-France",
+        "Normandie",
+        "Nouvelle-Aquitaine",
+        "Occitanie",
+        "Pays de la Loire",
+        "Provence-Alpes-Côte d'Azur",
+        "Hauts-de-France"
+    ],
+    "83": [
+        "painter",
+        "sculptor",
+        "architect",
+        "draftsman",
+        "illustrator",
+        "portrait painter",
+        "fresco painter",
+        "watercolourist",
+        "anatomical illustrator"
+    ],
+    "84": [
+        "Best Actress – Kramer vs. Kramer",
+        "Best Supporting Actress – Sophie's Choice",
+        "Best Actress – The Iron Lady"
+    ],
+    "85": [
+        "Harry Potter",
+        "Ron Weasley",
+        "Hermione Granger",
+        "Albus Dumbledore",
+        "Severus Snape",
+        "Rubeus Hagrid",
+        "Minerva McGonagall",
+        "Argus Filch",
+        "Madam Pomfrey"
+    ],
+    "86": [
+        "Steve Wozniak"
+    ],
+    "87": [
+        "Finland",
+        "Italy",
+        "Hungary",
+        "Romania",
+        "Bulgaria"
+    ],
+    "88": [
+        "Federal Polytechnic School in Zurich"
+    ],
+    "89": [
+        "McCartney III"
+    ],
+    "90": [
+        "University of Warsaw",
+        "Jagiellonian University",
+        "University of Lublin"
+    ],
+    "91": [
+        "Mario Puzo"
+    ],
+    "92": [
+        "France",
+        "United Kingdom of Great Britain and Ireland",
+        "Italy",
+        "Belgium",
+        "Netherlands",
+        "Kingdom of Serbia",
+        "Kingdom of Greece",
+        "Kingdom of Romania",
+        "Portugal",
+        "German Empire"
+    ],
+    "93": [
+        "Bachelor of Arts"
+    ],
+    "94": [
+        "Equatorial Guinea",
+        "East Timor"
+    ],
+    "95": [
+        "Lombardy",
+        "Lazio",
+        "Piedmont",
+        "Campania",
+        "Liguria",
+        "Emilia-Romagna",
+        "Tuscany",
+        "Apulia",
+        "Sicily"
+    ],
+    "96": [
+        "Moscow, Russian Soviet Federative Socialist Republic, Soviet Union"
+    ],
+    "97": [
+        "Marco Antonio de la Rosa"
+    ],
+    "98": [
+        "Marie Skłodowska Curie"
+    ],
+    "99": [
+        "black",
+        "red",
+        "yellow"
+    ],
+    "100": [
+        "Keith Richards",
+        "Mick Taylor",
+        "Ronnie Wood"
+    ],
+    "101": [
+        "Bill Gates"
+    ],
+    "102": [
+        "Catalonia",
+        "Valencian Community",
+        "Balearic Islands"
+    ],
+    "103": [
+        "Christopher Nolan"
+    ],
+    "104": [
+        "India",
+        "Russian Federation",
+        "Vietnam",
+        "Mongolia",
+        "Taiwan"
+    ],
+    "105": [
+        "Wilhelm Röntgen",
+        "Antoine Henri Becquerel",
+        "Roy J Glauber"
+    ],
+    "106": [
+        "Grace Lee Whitney"
+    ],
+    "107": [
+        "The Walt Disney Company",
+        "American Broadcasting Company",
+        "Entertainment Sports Programming Network",
+        "Disney Publishing Worldwide",
+        "Disney Consumer Products and Interactive Media",
+        "Disney Theatrical Group",
+        "Disney Parks, Experiences and Products",
+        "Disney Cruise Line",
+        "Disney Home Entertainment",
+        "Disney Television Studios",
+        "Disney Television Distribution",
+        "Disney Music Group",
+        "Walt Disney Animation Studios",
+        "Pixar Animation Studios",
+        "Marvel Studios",
+        "Lucasfilm Ltd.",
+        "Twentieth Century Studios",
+        "Searchlight Pictures",
+        "American Broadcasting Company Television Network",
+        "American Broadcasting Company News",
+        "American Broadcasting Company Radio Network",
+        "American Broadcasting Company Television Group"
+    ],
+    "108": [
+        "Michael Caine"
+    ],
+    "109": [
+        "1973 Best Folk Recording – The Freewheelin Bob Dylan",
+        "1974 Best Folk Recording – Greatest Hits",
+        "1978 Best Folk Recording – Greatest Hits Volume 2",
+        "1979 Best Folk Recording – Greatest Hits Volume 3",
+        "1987 Best Spoken Word Album – The Complete Live in the Town Hall 1962",
+        "2001 Best Contemporary Folk Album – The Bootleg Series Volume 4: Bob Dylan Live 1966",
+        "2007 Best Contemporary Folk Album – The Bootleg Series Volume 8: Tell Tale Signs",
+        "2008 Best Contemporary Folk Album – The Bootleg Series Volume 9: The Witmark Demos 1962-1964",
+        "2011 Best Contemporary Folk Album – The Bootleg Series Volume 10: Another Self Portrait 1969-1971",
+        "2014 Best Contemporary Folk Album – The Bootleg Series Volume 11: The Original Studio Recordings",
+        "2016 Best Contemporary Folk Album – The Bootleg Series Volume 12: The Cutting Edge"
+    ],
+    "110": [
+        "Jay L. Smith"
+    ],
+    "111": [
+        "Ukraine",
+        "Belarus",
+        "Estonia",
+        "Lithuania",
+        "Georgia",
+        "Kazakhstan"
+    ],
+    "112": [
+        "**Italian regions whose flag uses *exactly two* of the three colours green, white, and red**",
+        "Region",
+        "Flag description (colour focus)",
+        "Colours present",
+        "Meets the criterion?",
+        "--------",
+        "---------------------------------",
+        "-----------------",
+        "----------------------",
+        "**Aosta Valley**",
+        "White field with a blue shield bearing a red lion (no green)",
+        "White + Red",
+        "✔",
+        "**Liguria**",
+        "White field with a blue shield and a red lion (no green)",
+        "White + Red",
+        "✔",
+        "**Molise**",
+        "White field with a green shield (lion) – no red border",
+        "White + Green",
+        "✔",
+        "**Piedmont**",
+        "White field with a green shield (lion) – no red border",
+        "White + Green",
+        "✔",
+        "**Sardinia**",
+        "Green field with a white cross – no red",
+        "Green + White",
+        "✔",
+        "**Trentino‑Alto Adige/Südtirol**",
+        "White field with a green shield (lion) – no red",
+        "White + Green",
+        "✔",
+        "**Tuscany**",
+        "White field with a green shield (lion) – no red",
+        "White + Green",
+        "✔",
+        "**Umbria**",
+        "White field with a green shield (lion) – no red",
+        "White + Green",
+        "✔",
+        "**Veneto**",
+        "White field with a green shield (lion) – no red",
+        "White + Green",
+        "✔",
+        "So, the **nine** Italian regions whose flags contain exactly two of the colours green, white, and red are:\n\n**Aosta Valley, Liguria, Molise, Piedmont, Sardinia, Trentino‑Alto Adige/Südtirol, Tuscany, Umbria, and Veneto.**"
+    ],
+    "113": [
+        "Amazon Israel Limited",
+        "Amazon Web Services Israel Limited"
+    ],
+    "114": [
+        "Vince Gilligan",
+        "Peter Berg",
+        "Adam Bernstein",
+        "Michelle MacLaren",
+        "Michael Slovis",
+        "Tim Van Patten"
+    ],
+    "115": [
+        "Berlin",
+        "Brandenburg",
+        "Mecklenburg-Western Pomerania",
+        "Saxony",
+        "Saxony-Anhalt",
+        "Thuringia"
+    ],
+    "116": [
+        "Burundi",
+        "Guinea-Bissau",
+        "Mali",
+        "Somalia",
+        "Zimbabwe"
+    ],
+    "117": [
+        "Kurt Cobain",
+        "Krist Novoselic",
+        "Dave Grohl"
+    ],
+    "118": [
+        "Andrew Jackson",
+        "Grover Cleveland",
+        "Woodrow Wilson",
+        "Franklin D. Roosevelt",
+        "Bill Clinton",
+        "Barack Obama"
+    ],
+    "119": [
+        "Tamil Nadu"
+    ],
+    "120": [
+        "William McKinley",
+        "Theodore Roosevelt",
+        "William Howard Taft",
+        "Warren G. Harding",
+        "Calvin Coolidge",
+        "Herbert Hoover",
+        "Dwight D. Eisenhower",
+        "Richard Nixon",
+        "Gerald Ford",
+        "Ronald Reagan",
+        "George H. W. Bush"
+    ],
+    "121": [
+        "Bamako",
+        "Banjul",
+        "Libreville",
+        "Lomé",
+        "Monrovia",
+        "Khartoum",
+        "Windhoek"
+    ],
+    "122": [
+        "Mount Everest",
+        "Kangchenjunga",
+        "Lhotse",
+        "Makalu",
+        "Cho Oyu",
+        "Dhaulagiri I",
+        "Manaslu",
+        "Annapurna I"
+    ],
+    "123": [
+        "Leopold I",
+        "Leopold II",
+        "Albert I",
+        "Leopold III",
+        "Baudouin I",
+        "Albert II"
+    ],
+    "124": [
+        "isosceles triangle",
+        "scalene triangle"
+    ],
+    "125": [
+        "South African Sign Language"
+    ],
+    "126": [
+        "Martin Luther King Junior Day",
+        "Washington's Birthday",
+        "Memorial Day",
+        "Juneteenth National Independence Day",
+        "Independence Day",
+        "Labor Day",
+        "Columbus Day",
+        "Veterans Day",
+        "Thanksgiving Day",
+        "Christmas Day"
+    ],
+    "127": [
+        "Catalan",
+        "Valencian",
+        "Basque",
+        "Galician",
+        "Occitan"
+    ],
+    "128": [
+        "China",
+        "India",
+        "Indonesia",
+        "Pakistan",
+        "Bangladesh",
+        "Japan",
+        "Philippines"
+    ],
+    "129": [
+        "Great Pyramid of Giza",
+        "Hanging Gardens of Babylon",
+        "Temple of Artemis at Ephesus",
+        "Mausoleum at Halicarnassus",
+        "Statue of Zeus at Olympia",
+        "Lighthouse of Alexandria",
+        "Colossus of Rhodes"
+    ],
+    "130": [
+        "Iraq",
+        "Jordan",
+        "Lebanon",
+        "Syria",
+        "Palestine",
+        "Israel"
+    ],
+    "131": [
+        "Uruguay"
+    ],
+    "132": [
+        "metamorphic rock"
+    ],
+    "133": [
+        "France",
+        "Italy",
+        "Spain",
+        "Portugal",
+        "Romania",
+        "Moldova",
+        "Andorra",
+        "Belgium",
+        "Luxembourg",
+        "Switzerland",
+        "San Marino",
+        "Vatican City",
+        "Monaco"
+    ],
+    "134": [
+        "Uttar Pradesh"
+    ],
+    "135": [
+        "C",
+        "G"
+    ],
+    "136": [
+        "Combusken",
+        "Blaziken",
+        "Monferno",
+        "Infernape",
+        "Pignite",
+        "Emboar",
+        "Delphox",
+        "Volcarona",
+        "Talonflame",
+        "Incineroar"
+    ],
+    "137": [
+        "Right atrium",
+        "Right ventricle"
+    ],
+    "138": [
+        "Bromine"
+    ],
+    "139": [
+        "2"
+    ],
+    "140": [
+        "William Henry Harrison"
+    ],
+    "141": [
+        "E"
+    ],
+    "142": [
+        "Athens 1896 Summer Olympics",
+        "Paris 1900 Summer Olympics",
+        "St. Louis 1904 Summer Olympics",
+        "Antwerp 1920 Summer Olympics",
+        "Los Angeles 1932 Summer Olympics",
+        "Berlin 1936 Summer Olympics",
+        "London 1948 Summer Olympics",
+        "Rome 1960 Summer Olympics",
+        "Tokyo 1964 Summer Olympics"
+    ],
+    "143": [
+        "Argentina",
+        "Bolivia",
+        "Chile",
+        "Australia"
+    ],
+    "144": [
+        "Antigua and Barbuda",
+        "The Bahamas",
+        "Barbados",
+        "Cuba",
+        "Dominica",
+        "Dominican Republic",
+        "Grenada",
+        "Haiti",
+        "Jamaica",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Trinidad and Tobago"
+    ],
+    "145": [
+        "University of California, Los Angeles",
+        "University of California, Berkeley",
+        "Stanford University",
+        "University of Chicago",
+        "New York University",
+        "Princeton University",
+        "Columbia University",
+        "Yale University",
+        "Massachusetts Institute of Technology"
+    ],
+    "146": [
+        "Pakistan",
+        "China"
+    ],
+    "147": [
+        "Saudi Arabia",
+        "Yemen",
+        "Oman",
+        "United Arab Emirates"
+    ],
+    "148": [
+        "Don River",
+        "Kuban River"
+    ],
+    "149": [
+        "Democratic Party",
+        "New Centre-Right"
+    ]
+}

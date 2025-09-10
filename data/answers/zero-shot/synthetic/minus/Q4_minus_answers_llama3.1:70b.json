@@ -1,0 +1,1442 @@
+{
+    "0": [
+        "Reservoir Dogs",
+        "Pulp Fiction",
+        "Jackie Brown",
+        "Kill Bill: Volume One",
+        "Kill Bill: Volume Two",
+        "Death Proof",
+        "Django Unchained"
+    ],
+    "1": [
+        "Drums",
+        "Keyboards",
+        "Piano",
+        "Synthesizers"
+    ],
+    "2": [
+        "Edward VII",
+        "Alfred Duke of Edinburgh",
+        "Arthur Duke of Connaught and Strathearn",
+        "Leopold Duke of Albany"
+    ],
+    "3": [
+        "German",
+        "English"
+    ],
+    "4": [
+        "Amalthea",
+        "Thebe",
+        "Metis",
+        "Adrastea",
+        "Themisto",
+        "Carme",
+        "Pasiphae",
+        "Sinope",
+        "Leda",
+        "Himalia",
+        "Lysithea",
+        "Elara",
+        "Dia",
+        "Carpo",
+        "Valetudo",
+        "Eupheme",
+        "S/2003 J 2",
+        "S/2003 J 4",
+        "S/2003 J 9",
+        "S/2003 J 10",
+        "S/2003 J 12",
+        "S/2003 J 16",
+        "S/2003 J 18",
+        "S/2003 J 23",
+        "S/2010 J 1",
+        "S/2010 J 2",
+        "S/2010 J 3",
+        "S/2016 J 1",
+        "S/2016 J 3",
+        "Megaclite",
+        "Taygete",
+        "Chaldene",
+        "Harpalyke",
+        "Kalyke",
+        "Euporie",
+        "Cyllene",
+        "Kore",
+        "Herse",
+        "Praxidike",
+        "Thyone",
+        "Sponde",
+        "Hegemone",
+        "Arche",
+        "Ananke",
+        "Iocaste",
+        "Erinome",
+        "Aoede",
+        "Kallichore",
+        "Helike",
+        "Aitne",
+        "Kale"
+    ],
+    "5": [
+        "Tennessine",
+        "Oganesson"
+    ],
+    "6": [
+        "Audible",
+        "Brilliance Audio",
+        "Comixology",
+        "Diapers.com",
+        "Goodreads",
+        "IMDb",
+        "MGM Holdings",
+        "Twitch Interactive",
+        "Whole Foods Market",
+        "Zappos",
+        "Woot!",
+        "Amazon Publishing",
+        "Amazon Game Studios",
+        "Double Helix Games",
+        "Relentless Software",
+        "Amazon Robotics",
+        "Annapurna Labs",
+        "Eero",
+        "Ring",
+        "PillPack subsidiary, Corner Drop Off",
+        "Amazon Air",
+        "Amazon Logistics",
+        "Amazon Fresh",
+        "Prime Now",
+        "Amazon Restaurants",
+        "Amazon Lockers",
+        "Amazon Go",
+        "Amazon 4-Star",
+        "Amazon Bookstore",
+        "Treasure Truck",
+        "Amazon Sumerian",
+        "Amazon Lumberyard",
+        "Audible Suno",
+        "Box Office Mojo"
+    ],
+    "7": [
+        "idk"
+    ],
+    "8": [
+        "Fear and Desire",
+        "Killer's Kiss",
+        "The Killing",
+        "Paths of Glory",
+        "Spartacus",
+        "Lolita",
+        "Dr. Strangelove is science fiction so it's excluded",
+        "2001: A Space Odyssey is science fiction so it's excluded",
+        "A Clockwork Orange is dystopian science fiction so it's excluded",
+        "Barry Lyndon",
+        "The Shining is supernatural horror with some elements of science fiction so it's excluded",
+        "Eyes Wide Shut"
+    ],
+    "9": [
+        "Romain Rolland",
+        "André Gide",
+        "François Mauriac",
+        "Samuel Beckett is Irish but also French citizen, however he wrote in English and his literary work was not honored for works in the French language, so I exclude him from the list,  Jean-Paul Sartre (declined)",
+        "Albert Camus",
+        "Claude Simon"
+    ],
+    "10": [
+        "Mexico City",
+        "Munich",
+        "Montreal",
+        "Seoul",
+        "Barcelona",
+        "Atlanta",
+        "Athens",
+        "Beijing"
+    ],
+    "11": [
+        "African Penguin",
+        "Humboldt Penguin",
+        "Magellanic Penguin",
+        "Galapagos Penguin",
+        "Little Blue Penguin",
+        "Snares Penguin",
+        "Fiordland Penguin",
+        "Yellow-eyed Penguin",
+        "Erect-crested Penguin",
+        "Southern Rockhopper Penguin",
+        "Macaroni Penguin is found in the Antarctic Peninsula, so it's not included",
+        "Royal Penguin"
+    ],
+    "12": [
+        "Martin Van Buren",
+        "James K. Polk",
+        "Franklin Pierce",
+        "Andrew Jackson",
+        "Grover Cleveland"
+    ],
+    "13": [
+        "Million Dollar Baby",
+        "The Lord of the Rings: The Return of the King",
+        "Chicago",
+        "Gladiator",
+        "American Beauty",
+        "Shakespeare in Love",
+        "Titanic",
+        "Braveheart",
+        "Schindler's List",
+        "Unforgiven",
+        "Dances with Wolves",
+        "Driving Miss Daisy",
+        "Rain Man",
+        "The Last Emperor",
+        "Platoon",
+        "Amadeus",
+        "Terms of Endearment",
+        "Gandhi",
+        "Chariots of Fire"
+    ],
+    "14": [
+        "Spirited Away",
+        "Princess Mononoke"
+    ],
+    "15": [
+        "Leaf by Niggle",
+        "On Fairy-Stories",
+        "Smith of Wootton Major is actually a fantasy work so it's not included, Farmer Giles of Ham too",
+        "The Father Christmas Letters"
+    ],
+    "16": [
+        "Asunción",
+        "Bogotá",
+        "Brasília",
+        "Caracas",
+        "Quito",
+        "Sucre"
+    ],
+    "17": [
+        "Volkswagen",
+        "SEAT",
+        "Škoda"
+    ],
+    "18": [
+        "Anne of Cleves",
+        "Catherine Howard"
+    ],
+    "19": [
+        "Egypt",
+        "France",
+        "United States of America",
+        "Mauritania",
+        "Senegal",
+        "Gambia",
+        "Morocco",
+        "Oman",
+        "Qatar",
+        "United Arab Emirates",
+        "Yemen",
+        "Thailand",
+        "China",
+        "Papua New Guinea's neighboring islands that are part of the country of Indonesia but were previously under British administration, specifically the island of New Guinea's northern and southern coastlines"
+    ],
+    "20": [
+        "John Lennon",
+        "Paul McCartney",
+        "George Harrison",
+        "Ringo Starr"
+    ],
+    "21": [
+        "Lesotho",
+        "San Marino"
+    ],
+    "22": [
+        "Los Angeles, California, United States of America",
+        "Tokyo, Japan"
+    ],
+    "23": [
+        "Here is the list of brands under the LVMH corporate umbrella excluding watch brands:\n\nMoët & Chandon",
+        "Dom Pérignon",
+        "Veuve Clicquot",
+        "Krug",
+        "Ruinart",
+        "Mercier",
+        "Belvedere",
+        "Glenmorangie",
+        "Ardbeg",
+        "Domaine des Lambrays",
+        "Numanthia",
+        "Newton Vineyard",
+        "Cheval Blanc",
+        "Cloudy Bay",
+        "Terrazas de los Andes",
+        "Bodega Cape Mentelle",
+        "Wenjun",
+        "Château d'Yquem",
+        "Hennessy",
+        "Moët Hennessy Diageo",
+        "Givenchy",
+        "Parfums Christian Dior",
+        "Guerlain",
+        "Fresh",
+        "Make Up For Ever",
+        "Fenty Beauty by Rihanna",
+        "Benefit Cosmetics",
+        "Ole Henriksen",
+        "Drunk Elephant",
+        "Kendo Brands",
+        "Marc Jacobs Beauty",
+        "Acqua di Parma",
+        "Bulgari Parfums",
+        "Loewe",
+        "Goyard",
+        "Emilio Pucci",
+        "Thomas Pink",
+        "Donna Karan International",
+        "Nicholas Kirkwood",
+        "Loro Piana",
+        "Berluti",
+        "Céline",
+        "Fendi",
+        "Givenchy",
+        "Kenzo",
+        "Louis Vuitton",
+        "Marc Jacobs",
+        "Rimowa",
+        "Christian Dior"
+    ],
+    "24": [
+        "Schindler's List",
+        "Forrest Gump"
+    ],
+    "25": [
+        "Lynx",
+        "Leopardus",
+        "Prionailurus",
+        "Otocolobus",
+        "Puma",
+        "Acinonyx"
+    ],
+    "26": [
+        "Selma Lagerlöf",
+        "Toni Morrison",
+        "Wisława Szymborska",
+        "Alice Munro",
+        "Olga Tokarczuk"
+    ],
+    "27": [
+        "Guyana",
+        "Suriname"
+    ],
+    "28": [
+        "Oganesson",
+        "Tennessine",
+        "Moscovium",
+        "Flerovium",
+        "Livermorium"
+    ],
+    "29": [
+        "United States of America",
+        "Japan",
+        "India",
+        "Brazil",
+        "China",
+        "Canada",
+        "Australia",
+        "Argentina",
+        "Republic of Korea",
+        "South Africa",
+        "Israel",
+        "Mexico",
+        "Turkey",
+        "Thailand",
+        "Malaysia",
+        "Singapore",
+        "Indonesia",
+        "Philippines"
+    ],
+    "30": [
+        "Danish krone used by Denmark",
+        "British pound sterling is used by no EU country alone, it's used in United Kingdom which left the European Union and also some crown dependencies, Gibraltar",
+        "Bulgarian lev used by Bulgaria",
+        "Croatian kuna used by Croatia",
+        "Czech koruna used by Czech Republic",
+        "Hungarian forint used by Hungary",
+        "Polish złoty used by Poland",
+        "Romanian leu used by Romania",
+        "Swedish krona used by Sweden"
+    ],
+    "31": [
+        "India",
+        "South Africa",
+        "Papua New Guinea",
+        "Nigeria",
+        "Democratic Republic of the Congo",
+        "Vanuatu",
+        "Solomon Islands",
+        "Namibia",
+        "Zambia",
+        "Central African Republic"
+    ],
+    "32": [
+        "Sikhism",
+        "Jainism"
+    ],
+    "33": [
+        "Andorra la Vella",
+        "Belgrade",
+        "Bern",
+        "Chisinau",
+        "Kiev",
+        "London",
+        "Minsk",
+        "Monaco",
+        "Moscow",
+        "Oslo",
+        "Podgorica",
+        "Pristina",
+        "San Marino",
+        "Sarajevo",
+        "Skopje",
+        "Tirana",
+        "Vaduz",
+        "Zagreb",
+        "Zürich"
+    ],
+    "34": [
+        "Red",
+        "Green"
+    ],
+    "35": [
+        "Antigua and Barbuda",
+        "Australia",
+        "The Bahamas",
+        "Bangladesh",
+        "Barbados",
+        "Belize",
+        "Botswana is in Africa so not included",
+        "Canada",
+        "Dominica",
+        "Fiji",
+        "Ghana is in Africa so not included",
+        "Grenada",
+        "Guyana",
+        "India",
+        "Ireland",
+        "Jamaica",
+        "Kenya is in Africa so not included",
+        "Kiribati",
+        "Lesotho is in Africa so not included",
+        "Liberia is in Africa so not included",
+        "Malawi is in Africa so not included",
+        "Malaysia",
+        "Malta",
+        "Marshall Islands",
+        "Mauritius is in Africa but also in the Indian Ocean, outside of the African mainland so included",
+        "Micronesia",
+        "Namibia is in Africa so not included",
+        "Nauru",
+        "New Zealand",
+        "Pakistan",
+        "Palau",
+        "Papua New Guinea",
+        "Philippines",
+        "Rwanda is in Africa so not included",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Samoa",
+        "Seychelles is in Africa but also in the Indian Ocean, outside of the African mainland so included",
+        "Sierra Leone is in Africa so not included",
+        "Singapore",
+        "Solomon Islands",
+        "South Sudan is in Africa so not included",
+        "Sri Lanka",
+        "Swaziland is in Africa so not included",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tuvalu",
+        "Uganda is in Africa so not included",
+        "United Kingdom",
+        "United States of America",
+        "Vanuatu",
+        "Zambia is in Africa so not included",
+        "Zimbabwe is in Africa so not included"
+    ],
+    "36": [
+        "Australia",
+        "Antarctica"
+    ],
+    "37": [
+        "The Cuckoo's Calling",
+        "The Silkworm",
+        "Career of Evil",
+        "Lethal White",
+        "Troubled Blood"
+    ],
+    "38": [
+        "Oxygen",
+        "Nitrogen",
+        "Argon",
+        "Carbon Dioxide",
+        "Neon",
+        "Helium",
+        "Methane",
+        "Krypton",
+        "Hydrogen",
+        "Xenon",
+        "Ozone",
+        "Nitrous Oxide",
+        "Carbon Monoxide",
+        "Ammonia",
+        "Sulfur Hexafluoride",
+        "Nitrogen Dioxide",
+        "Fluorine",
+        "Chlorine",
+        "Bromine"
+    ],
+    "39": [
+        "Koi fish",
+        "Ocean quahog",
+        "Tortoise",
+        "Hydrorhizaspiraloid",
+        "Corals"
+    ],
+    "40": [
+        "Grand Theft Auto Advance",
+        "Grand Theft Auto: Chinatown Wars"
+    ],
+    "41": [
+        "Peru",
+        "Chile",
+        "Argentina"
+    ],
+    "42": [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Mars"
+    ],
+    "43": [
+        "City of Vicenza and the Palladian Villas",
+        "Historic Centre of Siena",
+        "Historic Centre of San Gimignano",
+        "City of Verona",
+        "Archaeological Area of Agrigento's Valley of the Temples",
+        "The Trulli of Alberobello",
+        "Castel del Monte",
+        "Early Christian Monuments of Ravenna",
+        "Baroque Cities of the Val di Noto (South-Eastern Sicily)",
+        "Sacri Monti of Piedmont and Lombardy",
+        "Etruscan Necropolises of Cerveteri and Tarquinia",
+        "Historic Centre of Urbino",
+        "Villas and Gardens of Medici in Tuscany",
+        "The Dolomites",
+        "City of Pienza",
+        "Historic Centre of Naples",
+        "Amalfi Coast",
+        "Val d'Orcia",
+        "Residences of the Royal House of Savoy",
+        "Ancient Greek Cities of Magna Graecia (Agrigento, Paestum, Syracuse)"
+    ],
+    "44": [
+        "Angolan Kwanza",
+        "Botswana Pula",
+        "Burundian Franc",
+        "Comorian Franc",
+        "Congolese Franc",
+        "Djiboutian Franc",
+        "Eritrean Nakfa",
+        "Ethiopian Birr",
+        "Kenyan Shilling",
+        "Lesotho Loti",
+        "Malagasy Ariary",
+        "Malawian Kwacha",
+        "Mauritian Rupee",
+        "Mozambican Metical",
+        "Namibian Dollar",
+        "Rwandan Franc",
+        "Seychellois Rupee",
+        "Somali Shilling",
+        "South African Rand",
+        "South Sudanese Pound",
+        "Swazi Lilangeni",
+        "Tanzanian Shilling",
+        "Ugandan Shilling",
+        "Zambian Kwacha",
+        "Zimbabwean Dollar"
+    ],
+    "45": [
+        "Lady Susan",
+        "Sanditon"
+    ],
+    "46": [
+        "Hokkaido",
+        "Kyushu"
+    ],
+    "47": [
+        "Al Salam International Hospital",
+        "As-Salam International Hospital",
+        "Dar El Fouad Hospital",
+        "El Demerdash Hospital",
+        "Heliopolis Sporting Club Medical Center",
+        "Magrabi Eye and Ear Hospital",
+        "Nasser Institute for Research and Treatment",
+        "New Cairo Hospital",
+        "Nile Badrawi Hospital",
+        "October 6 University Hospital",
+        "Police Authority Hospital",
+        "Queen Nefertiti Hospital",
+        "Saudi German Hospital",
+        "Theodor Bilharz Research Institute"
+    ],
+    "48": [
+        "William Henry Harrison",
+        "Zachary Taylor",
+        "John Tyler",
+        "James Madison was born in eighteenth century so i exclude him"
+    ],
+    "49": [
+        "Canada",
+        "United States of America",
+        "Albania is incorrect since its a European nation so",
+        "Canada",
+        "United States of America"
+    ],
+    "50": [
+        "Cumulus",
+        "Stratus",
+        "Stratocumulus",
+        "Nimbostratus",
+        "Cumulonimbus",
+        "Altocumulus"
+    ],
+    "51": [
+        "Alabama",
+        "Alaska is excluded because it is on the West Coast of North America but part of the Pacific region so we also exclude Hawaii and all other west coastal states. The remaining are  Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Idaho is excluded",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana is excluded",
+        "Nebraska",
+        "Nevada is excluded",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico is excluded",
+        "New York",
+        "North Carolina",
+        "Ohio",
+        "Oklahoma",
+        "Oregon is excluded",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "Tennessee",
+        "Texas",
+        "Utah is excluded",
+        "Vermont",
+        "Virginia",
+        "Washington is excluded",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+    ],
+    "52": [
+        "Sri Lanka does have Buddhism as a majority and state religion, Bhutan also has it as a state religion. \nTaiwan doesn't declare any official religion but around 35-93% of Taiwanese people identify with some form of Buddhism, Mongolia has no official religion but around 53% of its population follows Buddhism.\n\nSo the list is:\nTaiwan",
+        "Mongolia"
+    ],
+    "53": [
+        "Istanbul, Turkey",
+        "Karachi, Pakistan",
+        "Chongqing, People's Republic of China",
+        "Lagos, Federal Republic of Nigeria",
+        "Beijing, People's Republic of China",
+        "Mexico City, United Mexican States",
+        "Osaka-Kobe-Kyoto, Japan",
+        "Kolkata, Republic of India",
+        "Dhaka, People's Republic of Bangladesh",
+        "Cairo, Arab Republic of Egypt"
+    ],
+    "54": [
+        "Quebec",
+        "Ontario",
+        "Manitoba",
+        "Saskatchewan",
+        "Alberta",
+        "British Columbia"
+    ],
+    "55": [
+        "Mercury",
+        "Mars"
+    ],
+    "56": [
+        "Colombia",
+        "Indonesia",
+        "Vietnam"
+    ],
+    "57": [
+        "Ham",
+        "Canadian bacon"
+    ],
+    "58": [
+        "Double bass",
+        "Cello"
+    ],
+    "59": [
+        "Dune by Frank Herbert",
+        "To Say Nothing of the Dog by Connie Willis",
+        "The Big Time by Fritz Leiber",
+        "A Fire Upon the Deep by Vernor Vinge",
+        "Hominids by Robert J Sawyer",
+        "Jonathan Strange & Mr Norrell by Susanna Clarke",
+        "Spin by Robert Charles Wilson",
+        "The Yiddish Policemen's Union by Michael Chabon",
+        "Among Others by Jo Walton"
+    ],
+    "60": [
+        "Magenta",
+        "Cyan"
+    ],
+    "61": [
+        "Italy",
+        "Germany",
+        "England",
+        "Spain",
+        "France"
+    ],
+    "62": [
+        "Cambodia",
+        "Japan",
+        "Jordan",
+        "Lesotho",
+        "Malaysia",
+        "Morocco",
+        "Oman",
+        "Qatar",
+        "Saudi Arabia",
+        "Swaziland",
+        "Thailand",
+        "Tonga",
+        "United Arab Emirates",
+        "Brunei",
+        "Bahrain",
+        "Kuwait"
+    ],
+    "63": [
+        "Ecuador",
+        "El Salvador",
+        "Marshall Islands",
+        "Micronesia",
+        "Palau",
+        "Panama",
+        "Timor-Leste"
+    ],
+    "64": [
+        "United Kingdom of Great Britain and Northern Ireland \nGermany"
+    ],
+    "65": [
+        "Type B",
+        "Type A"
+    ],
+    "66": [
+        "Antonio Vivaldi",
+        "George Frideric Handel",
+        "Henry Purcell"
+    ],
+    "67": [
+        "Uruguay",
+        "Brazil",
+        "Chile",
+        "Mexico",
+        "Argentina",
+        "South Africa",
+        "South Korea",
+        "Japan",
+        "United States of America",
+        "Mexico",
+        "South Africa",
+        "Qatar"
+    ],
+    "68": [
+        "France",
+        "Poland",
+        "Portugal",
+        "South Africa",
+        "Sri Lanka"
+    ],
+    "69": [
+        "Economics",
+        "Physiology or Medicine was not one of the original categories, but rather a later expansion of the original Medicine category",
+        "Peace was originally awarded by the Norwegian Nobel Committee alone and only in Oslo, but now can also be awarded to organizations."
+    ],
+    "70": [
+        "Orange",
+        "Indigo",
+        "Violet"
+    ],
+    "71": [
+        "1 cent",
+        "2 cents",
+        "5 cents",
+        "10 cents",
+        "20 cents",
+        "50 cents",
+        "1 euro",
+        "2 euros"
+    ],
+    "72": [
+        "The Arctic Ocean",
+        "The Southern Ocean does not exist but the Southern Ocean is the newest of the world's five oceans and it surrounds Antarctica and extends north to the coast of South America"
+    ],
+    "73": [
+        "Sloth bear",
+        "Panda bear",
+        "Spectacled bear",
+        "Asiatic black bear",
+        "Sun bear",
+        "American black bear"
+    ],
+    "74": [
+        "Hinduism",
+        "Buddhism",
+        "Confucianism",
+        "Protestant Christianity",
+        "Catholic Christianity"
+    ],
+    "75": [
+        "Alpine Skiing",
+        "Biathlon",
+        "Bobsleigh",
+        "Cross-Country Skiing",
+        "Freestyle Skiing - Aerials",
+        "Freestyle Skiing - Moguls",
+        "Freestyle Skiing - Ski Cross",
+        "Luge",
+        "Nordic Combined",
+        "Skeleton",
+        "Snowboarding - Big Air",
+        "Snowboarding - Halfpipe",
+        "Snowboarding - Slopestyle",
+        "Snowboarding - Snowboard Cross"
+    ],
+    "76": [
+        "United States of America",
+        "Canada",
+        "Russia"
+    ],
+    "77": [
+        "Homo heidelbergensis",
+        "Homo rhodesiensis",
+        "Homo floresiensis"
+    ],
+    "78": [
+        "Northern Ireland"
+    ],
+    "79": [
+        "Saint Catherine Area",
+        "Historic City of Rosetta",
+        "Monasteries of Wadi Al-Natrun"
+    ],
+    "80": [
+        "Chimpanzees",
+        "Capuchin monkeys",
+        "Bonobos",
+        "Orangutans",
+        "Gorillas",
+        "Bearded capuchins",
+        "Mandrills"
+    ],
+    "81": [
+        "Israel",
+        "Australia"
+    ],
+    "82": [
+        "Guadeloupe",
+        "French Guiana",
+        "Martinique",
+        "Réunion",
+        "Mayotte"
+    ],
+    "83": [
+        "Engineer",
+        "Mathematician",
+        "Anatomist",
+        "Geologist",
+        "Physicist",
+        "Inventor",
+        "Architect",
+        "Engineer",
+        "Cartographer"
+    ],
+    "84": [
+        "American Film Institute Life Achievement Award",
+        "American Comedy Awards Honorary Award",
+        "Berlin International Film Festival Honorary Golden Bear",
+        "Critics' Choice Movie Awards Lifetime Achievement Award",
+        "Directors Guild of America Honorary Life Member Award",
+        "Emmy Awards Outstanding Lead Actress in a Miniseries or a Movie",
+        "Golden Globe Cecil B. DeMille Award for outstanding contribution to the world of entertainment",
+        "Human Rights Campaign Ally for Equality Award",
+        "International Indian Film Academy World Diamond Award",
+        "Kennedy Center Honors",
+        "National Medal of Arts",
+        "People's Choice Awards Favorite Dramatic Movie Actress",
+        "Presidential Medal of Freedom",
+        "Screen Actors Guild Life Achievement Award",
+        "Theatre World Special Award"
+    ],
+    "85": [
+        "Dumbledore's brother Aberforth Dumbledore",
+        "Bathilda Bagshot",
+        "Dobby",
+        "Griphook",
+        "Kreacher",
+        "Lee Jordan",
+        "Madam Malkin",
+        "Merope Gaunt",
+        "Nymphadora Tonks' mother Andromeda Black",
+        "Rita Skeeter",
+        "Vernon Dursley",
+        "Petunia Evans Dursley"
+    ],
+    "86": [
+        "Mike Markkula",
+        "Mike Scott"
+    ],
+    "87": [
+        "United States of America",
+        "United Kingdom",
+        "Canada",
+        "Australia",
+        "New Zealand",
+        "India",
+        "South Africa",
+        "Brazil",
+        "Mexico",
+        "Ethiopia",
+        "Philippines",
+        "China"
+    ],
+    "88": [
+        "University of Zurich",
+        "no postgraduate degree from University of Berlin"
+    ],
+    "89": [
+        "McCartney One",
+        "McCartney II",
+        "Tug of War",
+        "Pipes of Peace",
+        "Flowers in the Dirt",
+        "Run Devil Run",
+        "Driving Rain",
+        "Memory Almost Full"
+    ],
+    "90": [
+        "University of Chicago",
+        "University of Edinburgh",
+        "Harvard University",
+        "Yale University",
+        "Smith College"
+    ],
+    "91": [
+        "Francis Ford Coppola",
+        "Mario Puzo"
+    ],
+    "92": [
+        "United States of America",
+        "Japan",
+        "Australia",
+        "Dominion of Canada",
+        "British India",
+        "South Africa",
+        "New Zealand",
+        "Hejaz",
+        "Brazil",
+        "China"
+    ],
+    "93": [
+        "Master of Arts",
+        "Lucasian Professorship"
+    ],
+    "94": [],
+    "95": [
+        "Abruzzo",
+        "Aosta Valley",
+        "Basilicata",
+        "Calabria",
+        "Friuli-Venezia Giulia",
+        "Molise",
+        "Sardinia",
+        "Trentino-Alto Adige/Südtirol"
+    ],
+    "96": [
+        "East Lansing, Michigan",
+        "Moscow, Idaho"
+    ],
+    "97": [
+        "José Luis Gil",
+        "Carlos Revilla"
+    ],
+    "98": [
+        "Gustave Bémont"
+    ],
+    "99": [
+        "Black",
+        "Yellow"
+    ],
+    "100": [
+        "Charlie Watts",
+        "Bill Wyman",
+        "Darryl Jones"
+    ],
+    "101": [
+        "Paul Allen"
+    ],
+    "102": [
+        "Andalusia",
+        "Aragon",
+        "Asturias",
+        "Balearic Islands is excluded because Catalan is official there, Canary Islands",
+        "Cantabria",
+        "Castile-La Mancha",
+        "Castile and León",
+        "Extremadura",
+        "Galicia is excluded in the mainland but Catalan has some official recognition in some areas near Catalonia",
+        "La Rioja",
+        "Madrid",
+        "Murcia",
+        "Navarre is excluded because of the official recognition in the valley of Arán although not in all the community",
+        "Basque Country"
+    ],
+    "103": [
+        "Christopher Nolan wrote the screenplay and the story, Jonathan Nolan wrote the screenplay, David S Goyer wrote the story"
+    ],
+    "104": [
+        "Afghanistan",
+        "Annam",
+        "Bhutan",
+        "Burma",
+        "Dzungar Khanate",
+        "East Turkistan Republic",
+        "Empire of Japan",
+        "Gurkha Kingdom",
+        "India",
+        "Joseon Dynasty",
+        "Kazakh Khanates",
+        "Korea",
+        "Kyrgyz Khanate",
+        "Ladakh",
+        "Malaysia",
+        "Maldives",
+        "Manghit dynasty",
+        "Mongol Khanates",
+        "Nepal",
+        "Nguyen Dynasty",
+        "Nguyen Lords",
+        "Ottoman Empire",
+        "Pakistan",
+        "Portugal",
+        "Qinghai-Gansu warlord regime",
+        "Russian Empire",
+        "Siam",
+        "Tibet",
+        "Timurid Empire",
+        "Tran Dynasty",
+        "Trinh lords",
+        "United Kingdom of Great Britain and Ireland",
+        "Vietnam",
+        "Xanadu",
+        "Xinjiang Province under Yakub Beg"
+    ],
+    "105": [
+        "Marie Curie",
+        "Albert Einstein",
+        "Enrico Fermi",
+        "Lev Landau",
+        "Maria Goeppert Mayer",
+        "Chen Ning Yang",
+        "Emilio Segrè",
+        "Ernest Walton",
+        "Hideki Yukawa",
+        "Johannes Stark",
+        "Werner Heisenberg",
+        "Alexander Prokhorov",
+        "Manne Siegbahn"
+    ],
+    "106": [
+        "Pamelyn Ferdin",
+        "Emily Banks",
+        "Barbara Baldavin",
+        "Beverly Washburn",
+        "Kathryn Hays",
+        "Susan Denberg",
+        "Joanne Linville"
+    ],
+    "107": [
+        "A&E Television Networks",
+        "Hulu",
+        "National Geographic Partners"
+    ],
+    "108": [
+        "No actors won Oscars for Inception. However, four Oscars were awarded to the crew members: Wally Pfister for Best Cinematography, Lora Hirschberg, Gary Rizzo and Ed Novick for Best Sound Editing, and Paul Franklin, Chris Corbould, Andrew Lockley and Peter Bebb for Best Visual Effects."
+    ],
+    "109": [
+        "National Medal of Arts",
+        "Presidential Medal of Freedom",
+        "Kennedy Center Honors",
+        "American Academy and Institute of Arts and Letters Award",
+        "Guggenheim Fellowship",
+        "Prince Asturias Award for Artistic Creation",
+        "National Music Council American Eagle Award",
+        "Polar Music Prize",
+        "Commander of the Order of Arts and Letters",
+        "Doctorates from Princeton University, Yale University, St Andrews University, Bates College and Brown University"
+    ],
+    "110": [
+        "Jerrold Immel",
+        "Jeremy Zuckerman"
+    ],
+    "111": [
+        "Estonia",
+        "Latvia",
+        "Lithuania"
+    ],
+    "112": [
+        "Liguria",
+        "Umbria",
+        "Marche",
+        "Emilia-Romagna"
+    ],
+    "113": [
+        "Audible.co.uk in the United Kingdom",
+        "Book Depository in the United Kingdom",
+        "Brilliance Publishing Limited in the United Kingdom",
+        "Comixology Europe in the United Kingdom",
+        "The Book Depository Limited in the United Kingdom",
+        "Mobipocket.com in France",
+        "Javari GmbH in Germany",
+        "Audible GmbH in Germany",
+        "Amazon.de Services GmbH in Germany"
+    ],
+    "114": [
+        "Tricia Cooke",
+        "Colin Bucksey",
+        "Michelle MacLaren",
+        "John Dahl",
+        "Johan Renck",
+        "Terry McDonough"
+    ],
+    "115": [
+        "Baden-Württemberg",
+        "Bavaria",
+        "Bremen",
+        "Hamburg",
+        "Hesse",
+        "Lower Saxony",
+        "North Rhine-Westphalia",
+        "Rhineland-Palatinate",
+        "Saarland",
+        "Schleswig-Holstein"
+    ],
+    "116": [
+        "Ghana",
+        "Kenya",
+        "Liberia",
+        "Malawi",
+        "Mauritius",
+        "Rwanda",
+        "Sierra Leone",
+        "Tanzania",
+        "Togo"
+    ],
+    "117": [
+        "Pat Smear",
+        "Lori Goldston",
+        "Melora Creager",
+        "Aaron Burckhard",
+        "Dale Crover",
+        "Dave Foster",
+        "Dan Peters",
+        "Jason Everman",
+        "Chad Channing"
+    ],
+    "118": [
+        "John Tyler",
+        "Andrew Johnson",
+        "Jimmy Carter"
+    ],
+    "119": [
+        "Kerala",
+        "Karnataka",
+        "Andhra Pradesh",
+        "Telangana",
+        "Tamil Nadu"
+    ],
+    "120": [
+        "Abraham Lincoln",
+        "Rutherford B Hayes",
+        "James A Garfield",
+        "Benjamin Harrison",
+        "William McKinley"
+    ],
+    "121": [
+        "Brazzaville",
+        "Freetown",
+        "Lomé",
+        "Bamako"
+    ],
+    "122": [
+        "K2 in the Karakoram mountain range",
+        "Broad Peak in the Karakoram mountain range",
+        "Gasherbrum I in the Karakoram mountain range",
+        "Gasherbrum II in the Karakoram mountain range"
+    ],
+    "123": [
+        "Philippe of Belgium",
+        "no other king currently reigning"
+    ],
+    "124": [
+        "Acute triangles",
+        "Right triangles",
+        "Isosceles right triangles"
+    ],
+    "125": [
+        "Sepedi",
+        "Sesotho",
+        "Setswana",
+        "siSwati",
+        "Tshivenda",
+        "Xitsonga",
+        "Afrikaans",
+        "English",
+        "isiNdebele",
+        "isiXhosa",
+        "isiZulu"
+    ],
+    "126": [
+        "New Year's Day",
+        "Inauguration Day",
+        "Flag Day is related to a historical event so it does not apply here",
+        "Groundhog Day is not a federal holiday",
+        "Martin Luther King Jr.'s Birthday and Presidents' Day are both related to the celebration of historical events. \n Juneteenth National Independence Day, Independence Day, Columbus Day, Veterans Day, Thanksgiving Day are all related to historical events too.\nSo only one federal holiday is left which is not related to a historical or religious event:\n New Year's Day"
+    ],
+    "127": [
+        "Spanish",
+        "Catalan in Catalonia, Valencian Community and Balearic Islands",
+        "Basque in Basque Country and Navarre",
+        "Galician in Galicia"
+    ],
+    "128": [
+        "United States of America",
+        "Brazil",
+        "Russia",
+        "Mexico",
+        "Nigeria",
+        "Ethiopia",
+        "Democratic Republic of the Congo"
+    ],
+    "129": [
+        "The Great Pyramid of Giza is generally considered the oldest of the Seven Ancient Wonders of the World. Here are the remaining six:\n\nThe Hanging Gardens of Babylon",
+        "The Statue of Zeus at Olympia",
+        "The Temple of Artemis at Ephesus",
+        "The Mausoleum at Halicarnassus",
+        "The Colossus of Rhodes",
+        "The Lighthouse of Alexandria"
+    ],
+    "130": [
+        "Chad",
+        "Comoros",
+        "Djibouti",
+        "Mauritania",
+        "Somalia"
+    ],
+    "131": [
+        "Australia",
+        "Canada",
+        "France",
+        "Germany",
+        "India",
+        "Italy",
+        "Japan",
+        "New Zealand",
+        "Portugal",
+        "South Africa",
+        "Spain",
+        "Sweden",
+        "United Kingdom"
+    ],
+    "132": [
+        "Igneous rocks",
+        "Sedimentary rocks"
+    ],
+    "133": [
+        "Albania",
+        "Austria",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Lebanon",
+        "Libya",
+        "Malta",
+        "Monaco is not included because it has a Romance language as official language",
+        "Montenegro",
+        "North Macedonia",
+        "Romania is not included because it has a Romance language as official language",
+        "Serbia",
+        "Slovenia",
+        "Syria",
+        "Tunisia",
+        "Turkey"
+    ],
+    "134": [
+        "Maharashtra",
+        "Uttar Pradesh"
+    ],
+    "135": [
+        "B flat",
+        "E flat"
+    ],
+    "136": [
+        "Vulpix was not introduced in Generation Five",
+        "Reshiram is a dragon fire type and not exclusively fire",
+        "Volcarona",
+        "Heatmor",
+        "Fennekin was introduced in Generation Six"
+    ],
+    "137": [
+        "Left atrium",
+        "Left ventricle"
+    ],
+    "138": [
+        "Radon",
+        "Helium",
+        "Neon",
+        "Nitrogen",
+        "Oxygen",
+        "Fluorine",
+        "Argon",
+        "Krypton",
+        "Xenon"
+    ],
+    "139": [
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23",
+        "29",
+        "31",
+        "37",
+        "41",
+        "43",
+        "47",
+        "53",
+        "59",
+        "61",
+        "67",
+        "71",
+        "73",
+        "79",
+        "83",
+        "89",
+        "97"
+    ],
+    "140": [
+        "Abraham Lincoln",
+        "James A Garfield",
+        "William McKinley",
+        "John F Kennedy"
+    ],
+    "141": [
+        "E",
+        "A",
+        "D",
+        "G",
+        "B",
+        "E"
+    ],
+    "142": [
+        "1988 Summer Olympics in Seoul",
+        "1991 World Athletics Championships was not an Olympic event but Carl Lewis broke the world record with a time of 9.86 seconds",
+        "1996 Summer Olympics in Atlanta"
+    ],
+    "143": [
+        "Canada",
+        "China",
+        "India",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Mongolia",
+        "Russia",
+        "Tajikistan",
+        "United States of America"
+    ],
+    "144": [
+        "Guyana",
+        "Suriname",
+        "French Guiana"
+    ],
+    "145": [
+        "Massachusetts Institute of Technology",
+        "Stanford University",
+        "Harvard University",
+        "California Institute of Technology",
+        "Princeton University",
+        "University of Chicago",
+        "University of California, Berkeley",
+        "Columbia University",
+        "Yale University",
+        "Johns Hopkins University",
+        "Rockefeller University",
+        "University of Oxford",
+        "Cambridge University",
+        "Imperial College London",
+        "University College London",
+        "École Polytechnique Fédérale de Lausanne",
+        "Swiss Federal Institute of Technology in Zurich",
+        "Technical University Munich"
+    ],
+    "146": [
+        "Nepal",
+        "Bhutan"
+    ],
+    "147": [
+        "Bahrain",
+        "Oman",
+        "Qatar",
+        "Kuwait",
+        "United Arab Emirates"
+    ],
+    "148": [
+        "Danube River",
+        "Rioni River",
+        "Chorokhi River",
+        "Enguri River",
+        "Kodori River",
+        "Bzyb River",
+        "Mzymta River",
+        "Psou River",
+        "Kuban River",
+        "Dnieper River"
+    ],
+    "149": [
+        "idk"
+    ]
+}

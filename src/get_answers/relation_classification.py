@@ -64,6 +64,7 @@ def relation_identification(llm_model, language, dataset, logger):
 
     for index, (q1, q2, q3, q4) in enumerate(question_pairs):
         if str(index) in answers and len(answers[str(index)]) > 0:
+            logger.info("Answer found. Skip prompting.")
             continue
         try:
             chat = llms.return_chat_model(llm_model)
@@ -78,12 +79,13 @@ def relation_identification(llm_model, language, dataset, logger):
 
             answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
             logger.info(f"Question {index + 1}")
-            logger.info(f"Q1: {q1}")
-            logger.info(f"Q2: {q2}")
-            logger.info(f"Q3: {q3}")
-            logger.info(f"Q4: {q4}")
-            logger.info(f"LLM Response: {answers[index]}")
-        except:
+            #logger.info(f"Q1: {q1}")
+            #logger.info(f"Q2: {q2}")
+            #logger.info(f"Q3: {q3}")
+            #logger.info(f"Q4: {q4}")
+            #logger.info(f"LLM Response: {answers[index]}")
+        except Exception as e:
+            logging.error(f"Error while performing relation identification: {e}")
             continue
         
         with open(output_filename, 'w', encoding='utf-8') as f:

@@ -23,7 +23,6 @@ def load_config():
 
 # Step 3: Run main logic
 def main():
-
     config = load_config()
     logger.info("Loaded config from config.json")
     logger.info(f"{config}")
