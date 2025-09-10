@@ -12,6 +12,7 @@ from langchain_anthropic import ChatAnthropic
 # from openai import AzureOpenAI
 from langchain_openai import AzureChatOpenAI
 from langchain_core.language_models.llms import LLM
+from langchain_deepseek import ChatDeepSeek
 
 import time
 import requests
@@ -35,6 +36,7 @@ gemini_models = ["gemini-2.0-flash","gemini-2.5-pro","gemini-2.5-flash"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
 self_hosted_models = ['llama3.1:8b','llama3.1:70b', 'deepseek-r1:1.5b', 'deepseek-r1:70b', 'gpt-oss:20b']
+deepseek_models = ['deepseek-chat','deepseek-reasoner']
 
 class SelfHostedAPIWrapper(LLM):
     model: str
@@ -116,5 +118,7 @@ def return_chat_model(model_name, temperature=0, max_tokens = 20000):
         return ChatAnthropic(model=model_name, anthropic_api_key=ANTHROPIC_API_KEY, temperature=temperature)
     elif model_name in self_hosted_models:
         return SelfHostedAPIWrapper(model=model_name, url="http://warhol.informatik.rwth-aachen.de:11434/api/generate")
+    elif model_name in deepseek_models:
+        return ChatDeepSeek(model=model_name,temperature=temperature,max_tokens=None)
     else:
         raise ValueError(f"Model {model_name} is not supported.")
