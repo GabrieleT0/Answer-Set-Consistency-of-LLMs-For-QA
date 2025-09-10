@@ -85,3 +85,6 @@ yarl==1.18.3
 statsmodels
 pandas
 langchain-anthropic
+langchain_xai
+matplotlib
+seaborn
