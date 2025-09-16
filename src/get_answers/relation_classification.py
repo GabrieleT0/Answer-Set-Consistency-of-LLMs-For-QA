@@ -88,6 +88,7 @@ def relation_identification(llm_model, language, dataset, logger):
             logging.error(f"Error while performing relation identification: {e}")
             continue
         
+        os.makedirs(os.path.dirname(output_filename), exist_ok=True)
         with open(output_filename, 'w', encoding='utf-8') as f:
             json.dump(answers, f, ensure_ascii=False, indent=4)
 

@@ -7,13 +7,15 @@ import datetime
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
     print("Root directory:", root_dir)
-    datasets=["spinach", "qawiki",'synthetic']
+    datasets=["lc-quad","spinach", "qawiki",'synthetic']
+
     llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
             'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
             "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
             "grok-3-mini","deepseek-chat","deepseek-reasoner","llama3.1:8b","llama3.3:70b",
-            "grok-3-mini","deepseek-chat","deepseek-reasoner","deepseek-r1:1.5b","deepseek-r1:70b",
+             "deepseek-r1:1.5b","deepseek-r1:70b",
             "llama3.1:8b","llama3.3:70b","llama3.3:8b", "gpt-oss:20b"]
+    
     actions = ["zero-shot","fixing", "classification", "wikidata"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']

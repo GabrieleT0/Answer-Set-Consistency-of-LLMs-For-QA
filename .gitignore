@@ -1,5 +1,6 @@
 __pycache__
 *.pyc
+*.log
 .*
 !.gitignore
 # Ignore a specific config file in your pipeline
