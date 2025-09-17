@@ -7,16 +7,15 @@ import datetime
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
     print("Root directory:", root_dir)
-    datasets=["lc-quad","spinach", "qawiki",'synthetic']
+    datasets=["spinach", "qawiki",'synthetic']
 
     llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
             'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
             "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
-            "grok-3-mini","deepseek-chat","deepseek-reasoner","llama3.1:8b","llama3.3:70b",
-             "deepseek-r1:1.5b","deepseek-r1:70b",
-            "llama3.1:8b","llama3.3:70b","llama3.3:8b", "gpt-oss:20b"]
+            "grok-3-mini","deepseek-chat","deepseek-reasoner",
+            "llama3.1:8b","llama3.1:70b", "gpt-oss:20b"]
     
-    actions = ["zero-shot","fixing", "classification", "wikidata"]
+    actions = ["wikidata", "fixing", "classification","zero-shot"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
 
@@ -32,9 +31,10 @@ if __name__ == "__main__":
     df_relation_summery = relation_summary(df_relation, include_overall=True, round_digits=4)
 
     # Save if you want:
-    relation_file_format = datetime.datetime.now().strftime("relations_%Y-%m-%d_%H-%M.csv")
-    summary_file_format = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
-    summary_file_format_excel = datetime.datetime.now().strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
+    time = datetime.datetime.now()
+    relation_file_format = time.strftime("relations_%Y-%m-%d_%H-%M.csv")
+    summary_file_format = time.strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
+    summary_file_format_excel = time.strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
 
     df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
     df_relation_summery.to_csv(os.path.join(output_folder, summary_file_format), index=False)
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
 
     # Save results
-    analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.csv")
+    analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
 
     # p-values
@@ -68,13 +68,13 @@ if __name__ == "__main__":
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
     df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
 
-    summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.csv")
-    summary_file_format_excel = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.xlsx")
+    summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
+    summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
     df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
     df_pvalue = p_value_matrixs(df_analysis, actions)
-    p_value_matrixs_file_format = datetime.datetime.now().strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
+    p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, p_value_matrixs_file_format), index=False)
 
     print("Analysis and summary saved to:", output_folder)

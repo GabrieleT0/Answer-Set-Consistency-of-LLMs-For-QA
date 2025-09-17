@@ -150,7 +150,7 @@ def analysis(df):
                     "?A1>A3": int(A3.issubset(A1)),
                     "?A1>A4": int(A4.issubset(A1)),
                     "?A3∅A4": int(A3.isdisjoint(A4)),
-                    "?A4=A1|3": int(A4 == (A1 - A3)),
+                    "?A4=A1|3": int(A1 == A3.union(A4) and A3.isdisjoint(A4)),
                     "?A1=A1*": None,
                     "?A1=A1**": None,
                     "?A1*=A1**": None
@@ -179,7 +179,7 @@ def analysis(df):
                     "?A1>A3": int(A3_contain.issubset(A1_contain)),
                     "?A1>A4": int(A4_minus.issubset(A1_minus)),
                     "?A3∅A4": int(A3_minus.isdisjoint(A4_minus)),
-                    "?A4=A1|3": int(A4_minus == (A1_minus - A3_minus)),
+                    "?A4=A1|3": int(A1_minus == A3_minus.union(A4_minus) and A3_minus.isdisjoint(A4_minus)),
                     "?A1=A1*": int(A1_equal == A1_contain),
                     "?A1=A1**": int(A1_equal == A1_minus),
                     "?A1*=A1**": int(A1_contain == A1_minus)
