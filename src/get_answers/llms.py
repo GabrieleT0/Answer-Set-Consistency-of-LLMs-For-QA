@@ -28,7 +28,7 @@ azure_openai_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
 azure_api_version= os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 
-azure_models = ["gpt-4o","o3"]
+azure_models = ['gpt-5',"gpt-5-mini","gpt-5-nano","gpt-4o","o3"]
 # azure_models = ['gpt-5',"gpt-5-mini","o3","gpt-4o","gpt-4.1",]
 openai_models_notemperature = ["o3","gpt-5-nano"]
 openai_models = ['gpt-5',"gpt-5-mini","gpt-5-nano",'gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14',"gpt-4o","gpt-4.1"]

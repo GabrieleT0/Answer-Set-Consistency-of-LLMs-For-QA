@@ -1,38 +1,34 @@
 {
     "0": [
-        "Naples",
         "Rome",
+        "Naples",
         "Milan"
     ],
     "1": [
-        "Arve",
-        "Dranse",
-        "Trient",
-        "Morge"
+        "idk"
     ],
     "2": [
         "New York"
     ],
     "3": [
-        "Best Costume Design Black and White"
+        "Best Costume Design, Black-and-White"
     ],
     "4": [
         "idk"
     ],
     "5": [
-        "Academy Award for Best Original Song",
-        "Grammy Award for Best Pop Vocal Performance by a Duo, Group or Chorus",
-        "Grammy Award for Best Rhythm and Blues Vocal Performance by a Duo, Group or Chorus"
+        "Grammy Awards",
+        "Golden Globe Awards"
     ],
     "6": [
-        "Abigaille"
+        "Hebrew slaves"
     ],
     "7": [
-        "New York"
+        "New York",
+        "South Dakota"
     ],
     "8": [
-        "Sergei Ivanovich Taneyev",
-        "Alexander Ilyich Siloti"
+        "Sergei Taneyev"
     ],
     "9": [
         "Sima Zhong"
@@ -47,10 +43,10 @@
     ],
     "12": [
         "Homer Simpson",
-        "Marjorie Simpson",
-        "Bartholomew Simpson",
+        "Marge Simpson",
+        "Bart Simpson",
         "Lisa Simpson",
-        "Margaret Simpson"
+        "Maggie Simpson"
     ],
     "13": [
         "idk"
@@ -58,132 +54,94 @@
     "14": [
         "idk"
     ],
-    "15": [
-        "idk"
-    ],
+    "15": [],
     "16": [
         "Ronald Wilson Reagan",
         "George Herbert Walker Bush"
     ],
     "17": [
-        "Seth MacFarlane",
-        "Wendy Schaal",
-        "Scott Grimes",
-        "Rachael MacFarlane",
-        "Dee Bradley Baker",
-        "Patrick Stewart",
-        "Jeff Fischer",
-        "Curtis Armstrong",
-        "Kevin Michael Richardson"
+        "idk"
     ],
     "18": [
-        "gingivitis",
-        "periodontitis",
-        "dental plaque related infection",
-        "surgical site infection",
-        "central line associated bloodstream infection",
-        "catheter related bloodstream infection",
-        "catheter associated urinary tract infection",
-        "ventilator associated pneumonia",
-        "healthcare associated pneumonia",
-        "neonatal umbilical cord infection leading to sepsis",
-        "skin and soft tissue infection"
+        "idk"
     ],
     "19": [
-        "Glenfiddich Twenty One Year Old Gran Reserva Caribbean Rum Cask Finish",
+        "Glenfiddich Caribbean Cask 14 Year Old",
+        "Glenfiddich Gran Reserva 21 Year Old Rum Cask Finish",
+        "Glenfiddich Havana Reserve 21 Year Old",
         "Glenfiddich Fire and Cane"
     ],
     "20": [
         "Major depressive disorder",
         "Persistent depressive disorder",
-        "Bipolar depression",
-        "Obsessive compulsive disorder",
-        "Panic disorder",
         "Generalized anxiety disorder",
-        "Posttraumatic stress disorder",
-        "Attention deficit hyperactivity disorder",
-        "Bulimia nervosa",
-        "Nicotine dependence smoking cessation",
-        "Chronic insomnia"
+        "Panic disorder",
+        "Post-traumatic stress disorder",
+        "Insomnia disorder"
     ],
     "21": [
-        "Progressive Corporation",
-        "Sherwin Williams Company",
-        "Parker Hannifin Corporation"
+        "The Sherwin-Williams Company",
+        "Parker-Hannifin Corporation",
+        "Cleveland-Cliffs Incorporated"
     ],
     "22": [
-        "Air Senegal",
-        "Transportes Aéreos Portugueses Air Portugal",
         "Delta Air Lines",
-        "Corsair International",
-        "Azul Brazilian Airlines",
+        "Virgin Atlantic Airways",
         "Italia Trasporto Aereo",
-        "Condor Flugdienst"
+        "Transportes Aéreos Portugueses",
+        "Condor Flugdienst",
+        "Corsair International",
+        "Azul Linhas Aéreas Brasileiras",
+        "Air Senegal",
+        "Air Greenland"
     ],
     "23": [
-        "The Tower of Babel (Kunsthistorisches Museum Vienna)",
-        "The Tower of Babel (Museum Boijmans Van Beuningen Rotterdam)",
-        "The Little Tower of Babel"
+        "The Tower of Babel (Vienna)",
+        "The Tower of Babel (Rotterdam)"
     ],
     "24": [
-        "Night Thoughts",
-        "The Grave",
-        "The Book of Job",
-        "The Divine Comedy",
-        "Pilgrim's Progress",
-        "The Pastorals of Virgil",
-        "Original Stories from Real Life",
-        "Poems by Thomas Gray"
+        "idk"
     ],
     "25": [
-        "Arabic",
-        "Persian",
-        "Dari",
-        "Pashto",
-        "Urdu",
-        "Saraiki"
+        "idk"
     ],
     "26": [
-        "Jerry Garcia",
-        "Bob Weir",
-        "Ron McKernan",
-        "Phil Lesh",
-        "Bill Kreutzmann"
+        "Jerome John Garcia",
+        "Robert Hall Weir",
+        "Ronald Charles McKernan",
+        "Philip Chapman Lesh",
+        "William Kreutzmann Junior"
     ],
     "27": [
         "Ireland",
-        "Republic of Cyprus"
+        "Cyprus"
     ],
     "28": [
         "Harry Potter and the Deathly Hallows"
     ],
     "29": [
-        "One Wonderful Sunday",
-        "Drunken Angel",
-        "Stray Dog",
-        "Ikiru",
-        "Dodes'ka-den"
+        "idk"
     ],
     "30": [
-        "Republic of Korea",
         "Democratic People's Republic of Korea",
         "People's Republic of China",
+        "Republic of Korea",
         "United States of America",
         "United Kingdom of Great Britain and Northern Ireland",
-        "Canada",
         "Commonwealth of Australia",
+        "Canada",
         "New Zealand",
         "Republic of South Africa",
-        "Republic of Turkey",
+        "French Republic",
+        "Kingdom of the Netherlands",
+        "Kingdom of Belgium",
+        "Grand Duchy of Luxembourg",
         "Hellenic Republic",
+        "Republic of Türkiye",
         "Kingdom of Thailand",
         "Republic of the Philippines",
-        "Republic of Colombia",
-        "French Republic",
-        "Kingdom of Belgium",
-        "Kingdom of the Netherlands",
-        "Grand Duchy of Luxembourg",
-        "Federal Democratic Republic of Ethiopia"
+        "Federal Democratic Republic of Ethiopia",
+        "Republic of Colombia"
     ],
     "31": [
         "James Louis McCartney"
@@ -193,47 +151,54 @@
         "Joseph and the Amazing Technicolor Dreamcoat",
         "Jesus Christ Superstar",
         "Evita",
-        "Cricket",
-        "The Wizard of Oz"
+        "Cricket"
     ],
     "33": [
-        "Le Duc Tho",
+        "Nguyen Duy Trinh",
         "Tran Van Lam",
         "Nguyen Thi Binh"
     ],
     "34": [
         "Sterling Memorial Library",
         "Beinecke Rare Book and Manuscript Library",
-        "Bass Library",
-        "Irving S Gilmore Music Library",
-        "Marx Science and Social Science Library",
-        "Robert B Haas Family Arts Library",
-        "Harvey Cushing John Hay Whitney Medical Library",
-        "Lillian Goldman Law Library",
+        "Anne T. and Robert M. Bass Library",
+        "Robert B. Haas Family Arts Library",
+        "Cushing/Whitney Medical Library",
         "Yale Divinity Library",
+        "Irving S. Gilmore Music Library",
+        "Marx Science and Social Science Library",
+        "East Asia Library",
+        "Lillian Goldman Law Library",
         "Lewis Walpole Library",
-        "Yale Center for British Art Reference Library and Archives"
+        "Yale Center for British Art Reference Library and Archives",
+        "Yale Film Archive"
     ],
     "35": [
-        "European Court of Human Rights"
+        "European Court of Human Rights",
+        "Administrative Tribunal of the Council of Europe"
     ],
     "36": [
-        "Boeing 777-200 Extended Range",
-        "Boeing 777-300 Extended Range",
+        "Boeing 777-300 extended range",
+        "Boeing 777-200 extended range",
+        "Boeing 787-9",
         "Boeing 787-8",
-        "Boeing 787-9"
+        "Boeing 737-8",
+        "Boeing 737-800",
+        "Airbus A321 new engine option",
+        "Airbus A321-200",
+        "Airbus A320-200",
+        "Airbus A319-100"
     ],
     "37": [
         "Black Dog",
         "Rock and Roll"
     ],
     "38": [
-        "Treaty of Peace with Finland",
         "Treaty of Peace with Italy",
-        "Treaty of Peace with Romania",
+        "Treaty of Peace with Rumania",
         "Treaty of Peace with Hungary",
         "Treaty of Peace with Bulgaria",
-        "Austrian State Treaty"
+        "Treaty of Peace with Finland"
     ],
     "39": [
         "Bespin"
@@ -243,11 +208,11 @@
         "Italy"
     ],
     "41": [
-        "Prince Hamlet",
         "King Claudius",
         "Queen Gertrude",
         "King Hamlet",
-        "Fortinbras"
+        "Prince Hamlet",
+        "Prince Fortinbras"
     ],
     "42": [
         "The Castle of Cagliostro",
@@ -269,50 +234,39 @@
         "New General Catalogue 185"
     ],
     "44": [
-        "Best Original Screenplay"
+        "Academy Award for Best Original Screenplay"
     ],
     "45": [
-        "The Muppet Movie",
-        "The Great Muppet Caper",
-        "The Muppets Take Manhattan"
+        "The Muppet Movie"
     ],
     "46": [
-        "Northern Lights"
+        "Northern Lights",
+        "The Golden Compass"
     ],
     "47": [
-        "The Virgin Suicides",
-        "Somewhere"
+        "idk"
     ],
     "48": [
-        "Barack Obama School of Career and Technical Education",
-        "Golda Meir School",
-        "Hmong American Peace Academy High School",
-        "Milwaukee Academy of Science",
-        "Milwaukee Excellence Charter School",
-        "Saint Anthony High School",
-        "The Alliance School of Milwaukee"
+        "idk"
     ],
     "49": [
-        "Argentine Primera División",
-        "División de Fútbol Profesional",
+        "Primera División de Argentina",
+        "División Profesional de Bolivia",
         "Campeonato Brasileiro Série A",
-        "Chilean Primera División",
-        "Categoría Primera A",
-        "Ecuadorian Serie A",
-        "Paraguayan Primera División",
-        "Liga 1",
-        "Uruguayan Primera División",
-        "Venezuelan Primera División"
+        "Primera División de Chile",
+        "Categoría Primera A de Colombia",
+        "Serie A de Ecuador",
+        "Primera División de Paraguay",
+        "Liga 1 de Perú",
+        "Primera División de Uruguay",
+        "Primera División de Venezuela"
     ],
     "50": [
-        "Waxing Crescent",
-        "First Quarter",
-        "Waxing Gibbous"
+        "Waxing Crescent Moon",
+        "1st Quarter Moon",
+        "Waxing Gibbous Moon"
     ],
-    "51": [
-        "Great Prayer Day",
-        "Constitution Day"
-    ],
+    "51": [],
     "52": [
         "Assam",
         "Bihar",
@@ -340,43 +294,38 @@
         "Latin script"
     ],
     "54": [
-        "Andorra",
-        "Armenia",
-        "Cook Islands",
-        "Cayman Islands",
-        "Turks and Caicos Islands",
-        "Norway",
-        "Poland",
-        "Ukraine",
-        "Kazakhstan",
-        "Kyrgyzstan",
-        "Turkmenistan",
-        "Japan",
-        "Marshall Islands",
-        "Palau",
-        "Federated States of Micronesia"
+        "idk"
     ],
     "55": [
-        "Athena",
-        "Bellona",
-        "Eris",
         "Mars",
-        "Minerva"
+        "Bellona",
+        "Minerva",
+        "Athena",
+        "Tyr",
+        "Odin",
+        "Wotan",
+        "Freyja",
+        "Toutatis",
+        "Smertrios",
+        "Phobos",
+        "Deimos"
     ],
     "56": [
         "Superman",
         "Batman",
         "Wonder Woman",
-        "Aquaman",
         "The Flash",
         "Green Lantern",
+        "Aquaman",
         "Martian Manhunter"
     ],
     "57": [
         "idk"
     ],
     "58": [
-        "fortifications"
+        "defensive walls",
+        "corner towers",
+        "gate"
     ],
     "59": [
         "idk"
@@ -391,14 +340,14 @@
         "MicroProse"
     ],
     "63": [
-        "Cabotegravir"
+        "cabotegravir"
     ],
     "64": [
         "idk"
     ],
     "65": [
-        "Runway 06L/24R",
-        "Runway 06R/24L"
+        "Runway 6 Left/24 Right",
+        "Runway 6 Right/24 Left"
     ],
     "66": [
         "Rent"
@@ -414,35 +363,31 @@
         "Stark County"
     ],
     "68": [
-        "Australian Open",
-        "United States Open"
+        "Australian Open singles",
+        "United States Open singles"
     ],
     "69": [
-        "Best Original Score",
-        "Best Original Song"
+        "Music (Original Score)",
+        "Music (Original Song)"
     ],
     "70": [
-        "Best Original Screenplay",
         "Best Foreign Language Film",
         "Best Documentary Feature",
         "Best Documentary Short Subject",
         "Best Live Action Short Film",
         "Best Animated Short Film",
+        "Best Original Screenplay",
         "Best Original Song"
     ],
     "71": [
         "FlixBus",
-        "Greyhound Lines",
-        "Kamil Koc",
-        "FlixCharter"
+        "Greyhound",
+        "Kamil Koc"
     ],
     "72": [
         "The Rolling Stones",
-        "12 X 5",
         "The Rolling Stones No. 2",
-        "The Rolling Stones, Now!",
         "Out of Our Heads",
-        "December's Children (And Everybody's)",
         "Aftermath",
         "Between the Buttons",
         "Their Satanic Majesties Request",
@@ -454,20 +399,15 @@
         "Lincoln"
     ],
     "74": [
-        "Slumber Party Panic",
-        "Trouble in Lumpy Space",
-        "Prisoners of Love",
-        "Tree Trunks",
-        "The Enchiridion!",
-        "The Jiggler"
+        "idk"
     ],
     "75": [
         "Afghanistan",
         "Algeria",
         "Azerbaijan",
         "Bahrain",
+        "Bosnia and Herzegovina",
         "Comoros",
-        "Djibouti",
         "Iran",
         "Kuwait",
         "Libya",
@@ -475,11 +415,9 @@
         "Mauritania",
         "Morocco",
         "Oman",
-        "Pakistan",
         "Qatar",
         "Saudi Arabia",
         "Somalia",
-        "Sudan",
         "Tajikistan",
         "Tunisia",
         "Turkey",
@@ -493,17 +431,24 @@
         "Miguel Tejada",
         "Alex Rodriguez",
         "Vladimir Guerrero",
+        "Alex Rodriguez",
         "Justin Morneau",
+        "Alex Rodriguez",
         "Dustin Pedroia",
         "Joe Mauer",
         "Josh Hamilton",
         "Justin Verlander",
         "Miguel Cabrera",
+        "Miguel Cabrera",
         "Mike Trout",
         "Josh Donaldson",
+        "Mike Trout",
         "Jose Altuve",
         "Mookie Betts",
+        "Mike Trout",
         "Jose Abreu",
+        "Shohei Ohtani",
+        "Aaron Judge",
         "Shohei Ohtani",
         "Aaron Judge"
     ],
@@ -512,7 +457,7 @@
     ],
     "78": [
         "sword",
-        "axe"
+        "sickle"
     ],
     "79": [
         "idk"
@@ -526,80 +471,135 @@
         "Tarbes-3"
     ],
     "82": [
-        "Sukhoi Su Twenty Seven",
-        "Sukhoi Su Thirty",
-        "Sukhoi Su Twenty Five",
-        "Mikoyan and Gurevich MiG Twenty Nine",
-        "Mikoyan and Gurevich MiG Thirty One",
-        "Aero L Thirty Nine Albatros",
-        "Yakovlev Yak One Hundred Thirty",
-        "Ilyushin Il Seventy Six",
-        "Antonov An Seventy Two",
-        "Antonov An Twenty Six",
-        "Antonov An Twenty Four",
-        "Antonov An Twelve",
-        "Casa C Two Hundred Ninety Five"
+        "Sukhoi Su-30SM",
+        "Sukhoi Su-27",
+        "Mikoyan MiG-31",
+        "Sukhoi Su-25",
+        "Aero Vodochody L-39 Albatros",
+        "Airbus Defence and Space C-295",
+        "Antonov An-26",
+        "Antonov An-72",
+        "Antonov An-74",
+        "Antonov An-12",
+        "Ilyushin Il-76",
+        "Antonov An-30"
     ],
     "83": [
         "David Crean"
     ],
     "84": [
-        "harp",
         "violin",
         "viola",
         "violoncello",
-        "double bass"
+        "double bass",
+        "harp"
+    ],
+    "85": [
+        "idk"
     ],
     "86": [
-        "idk"
+        "Aci Bonaccorsi",
+        "Aci Castello",
+        "Aci Catena",
+        "Aci Sant'Antonio",
+        "Acireale",
+        "Adrano",
+        "Belpasso",
+        "Biancavilla",
+        "Bronte",
+        "Calatabiano",
+        "Caltagirone",
+        "Camporotondo Etneo",
+        "Castel di Iudica",
+        "Castiglione di Sicilia",
+        "Catania",
+        "Fiumefreddo di Sicilia",
+        "Giarre",
+        "Grammichele",
+        "Gravina di Catania",
+        "Licodia Eubea",
+        "Linguaglossa",
+        "Maletto",
+        "Maniace",
+        "Mascali",
+        "Mascalucia",
+        "Mazzarrone",
+        "Militello in Val di Catania",
+        "Milo",
+        "Mineo",
+        "Mirabella Imbaccari",
+        "Misterbianco",
+        "Motta Sant'Anastasia",
+        "Nicolosi",
+        "Palagonia",
+        "Paternò",
+        "Pedara",
+        "Piedimonte Etneo",
+        "Raddusa",
+        "Ragalna",
+        "Ramacca",
+        "Randazzo",
+        "Riposto",
+        "San Cono",
+        "San Giovanni la Punta",
+        "San Gregorio di Catania",
+        "San Michele di Ganzaria",
+        "San Pietro Clarenza",
+        "Sant'Agata li Battiati",
+        "Sant'Alfio",
+        "Santa Maria di Licodia",
+        "Santa Venerina",
+        "Scordia",
+        "Trecastagni",
+        "Tremestieri Etneo",
+        "Valverde",
+        "Viagrande",
+        "Vizzini",
+        "Zafferana Etnea"
     ],
     "87": [
         "idk"
     ],
-    "88": [
-        "idk"
-    ],
+    "88": [],
     "89": [
-        "Eliezer Ben Yehuda"
+        "idk"
     ],
     "90": [
         "Winston Groovy"
     ],
     "91": [
         "Inchmurrin",
+        "Inchfad",
         "Inchtavannach"
     ],
     "92": [
-        "Wendy Schaal",
-        "Rachael MacFarlane"
+        "idk"
     ],
     "93": [
         "Hannibal Barca",
         "Hasdrubal Barca",
-        "Hasdrubal Gisco",
-        "Mago Barca"
+        "Mago Barca",
+        "Hasdrubal Gisco"
     ],
     "94": [
-        "Attila",
-        "Dido",
-        "Gustavus Adolphus",
-        "Haile Selassie",
         "Maria Theresa",
-        "Theodora"
+        "Dido",
+        "Haile Selassie",
+        "Attila",
+        "Gustavus Adolphus"
     ],
     "95": [
-        "Ji Parana River",
-        "Jamari River",
-        "Aripuanã River",
-        "Manicoré River",
-        "Marmelos River"
+        "idk"
+    ],
+    "96": [
+        "Nancy Drew and the Hidden Staircase"
     ],
     "97": [
         "idk"
     ],
     "98": [
-        "Susan Lancaster",
-        "Joanna Lancaster"
+        "Joanna Lancaster",
+        "Sighle Lancaster"
     ],
     "99": [
         "Muzaiko"
@@ -607,14 +607,22 @@
     "100": [
         "Other Voices, Other Rooms",
         "The Grass Harp",
-        "Breakfast at Tiffany's"
+        "Breakfast at Tiffany's",
+        "In Cold Blood"
     ],
     "101": [
-        "Ford Model e"
+        "Ford Model e",
+        "Ford Pro"
     ],
     "102": [
         "Napoleon Bonaparte",
-        "Louis Nicolas Davout"
+        "Louis Alexandre Berthier",
+        "Jean-de-Dieu Soult",
+        "Louis Nicolas Davout",
+        "Jean Lannes",
+        "Joachim Murat",
+        "Jean Baptiste Bernadotte",
+        "Jean Baptiste Bessières"
     ],
     "103": [
         "Elliott",
@@ -624,8 +632,7 @@
         "Keys",
         "Greg",
         "Steve",
-        "Tyler",
-        "Harvey"
+        "Tyler"
     ],
     "104": [
         "Don't Come Home A-Drinkin' (With Lovin' on Your Mind)",
@@ -633,21 +640,20 @@
         "Woman of the World (Leave My World Alone)",
         "Coal Miner's Daughter",
         "One's on the Way",
-        "Rated 'X'",
+        "Rated \"X\"",
         "Love Is the Foundation",
         "Trouble in Paradise",
         "Somebody Somewhere (Don't Know What He's Missin' Tonight)",
         "She's Got You",
-        "Out of My Head and Back in My Bed",
-        "I Lie"
+        "Out of My Head and Back in My Bed"
     ],
     "105": [
-        "Betty Stöve",
-        "Karen Susman",
-        "Margaret Court",
+        "Karen Hantze Susman",
         "Maria Bueno",
-        "Martina Navratilova",
-        "Rosie Casals"
+        "Ann Haydon-Jones",
+        "Rosemary Casals",
+        "Betty Stöve",
+        "Martina Navratilova"
     ],
     "106": [
         "Johann Wolfgang Textor",
@@ -660,13 +666,10 @@
         "Belgorod Oblast",
         "Bryansk Oblast",
         "Chelyabinsk Oblast",
-        "Chita Oblast",
         "Irkutsk Oblast",
         "Ivanovo Oblast",
-        "Jewish Autonomous Oblast",
         "Kaliningrad Oblast",
         "Kaluga Oblast",
-        "Kamchatka Oblast",
         "Kemerovo Oblast",
         "Kirov Oblast",
         "Kostroma Oblast",
@@ -684,7 +687,6 @@
         "Orenburg Oblast",
         "Oryol Oblast",
         "Penza Oblast",
-        "Perm Oblast",
         "Pskov Oblast",
         "Rostov Oblast",
         "Ryazan Oblast",
@@ -703,24 +705,24 @@
         "Volgograd Oblast",
         "Vologda Oblast",
         "Voronezh Oblast",
-        "Yaroslavl Oblast"
+        "Yaroslavl Oblast",
+        "Jewish Autonomous Oblast"
     ],
     "108": [
-        "Külüg Khan",
-        "Gegeen Khan",
-        "Yesün Temür",
-        "Ragibagh Khan",
-        "Jayaatu Khan Tugh Temür",
-        "Khutughtu Khan Kusala",
-        "Irinjabal Rinchinbal"
+        "Emperor Wuzong of Yuan",
+        "Emperor Yingzong of Yuan",
+        "Emperor Taiding of Yuan",
+        "Emperor Tianshun of Yuan",
+        "Emperor Wenzong of Yuan",
+        "Emperor Mingzong of Yuan",
+        "Emperor Ningzong of Yuan"
     ],
     "109": [
-        "Cytochrome P450 2B6",
-        "Cytochrome P450 2C19",
-        "Cytochrome P450 2D6",
-        "Cytochrome P450 2C9",
-        "Cytochrome P450 2C8",
-        "Cytochrome P450 2C18"
+        "Cytochrome P 450 family 2 subfamily B member 6",
+        "Cytochrome P 450 family 2 subfamily C member 19",
+        "Cytochrome P 450 family 2 subfamily C member 9",
+        "Cytochrome P 450 family 2 subfamily C member 8",
+        "Cytochrome P 450 family 2 subfamily D member 6"
     ],
     "110": [
         "Lower Saxony"
@@ -730,44 +732,61 @@
         "Council of the European Union"
     ],
     "112": [
-        "London Paddington railway station",
-        "Bristol Temple Meads railway station",
-        "Bath Spa railway station",
-        "Chippenham railway station",
-        "Reading railway station",
-        "Didcot Parkway railway station",
-        "Swindon railway station",
-        "Slough railway station"
+        "idk"
     ],
     "113": [
         "Golden Hits of Jerry Lee Lewis",
+        "The Return of Rock",
         "Country Songs for City Folks",
         "Memphis Beat",
         "Soul My Way",
-        "Another Place Another Time",
-        "She Still Comes Around (To Love What Is Left of Me)",
-        "Sings the Country Music Hall of Fame Hits, Volume One",
-        "Sings the Country Music Hall of Fame Hits, Volume Two"
+        "Another Place, Another Time",
+        "She Still Comes Around (To Love What's Left of Me)",
+        "Sings the Country Music Hall of Fame Hits, Volume 1",
+        "Sings the Country Music Hall of Fame Hits, Volume 2"
     ],
     "114": [
         "Silver Play Button"
     ],
     "115": [
+        "Channel NewsAsia",
         "Al Jazeera English",
+        "Nippon Hoso Kyokai World-Japan",
         "China Global Television Network",
-        "Channel News Asia",
-        "World Is One News",
-        "Arirang Television",
-        "Japan Broadcasting Corporation World Japan",
         "Turkish Radio and Television Corporation World",
+        "World Is One News",
+        "Times Now",
+        "India Today",
+        "Mirror Now",
+        "New Delhi Television 24x7",
+        "Cable News Network-News18",
+        "Republic Television",
+        "Doordarshan India",
+        "Consumer News and Business Channel-Television 18",
+        "Economic Times Now",
+        "Cable News Network Philippines",
+        "Alto Broadcasting System - Chronicle Broadcasting Network News Channel",
+        "One News",
+        "Ada Derana 24",
+        "TaiwanPlus",
+        "Hong Kong International Business Channel",
+        "i24 News",
+        "Press Television",
+        "Pakistan Television World",
+        "Arirang Television",
+        "Bloomberg Television Asia",
+        "Consumer News and Business Channel Asia",
         "China Xinhua News Network Corporation World",
-        "Door Darshan India"
+        "News X",
+        "Southeast Asia Today",
+        "Metro Globe Network",
+        "A News"
     ],
     "116": [
-        "Portrait of Dante Alighieri by Sandro Botticelli",
-        "Dante in Exile by Frederic Leighton"
+        "idk"
     ],
     "117": [
+        "Hugo Haase",
         "Walther Rathenau"
     ],
     "118": [
@@ -781,49 +800,53 @@
         "Madrid",
         "Rome",
         "Paris",
-        "Vienna",
         "Bucharest",
+        "Vienna",
         "Warsaw",
         "Budapest"
     ],
     "121": [
-        "Republic of Madagascar",
-        "Republic of Seychelles",
         "Union of the Comoros",
-        "Republic of Mauritius"
+        "Republic of Madagascar",
+        "Republic of Mauritius",
+        "Republic of Seychelles"
     ],
     "122": [
         "Swimming",
         "Diving",
         "Water polo",
         "Artistic swimming",
-        "Rowing",
-        "Canoe sprint",
-        "Canoe slalom",
-        "Sailing"
+        "Open water swimming",
+        "High diving"
     ],
     "123": [
         "Sam Diamond",
-        "Samuel Vimes"
+        "Sam Slade",
+        "Sam",
+        "Sam Vimes",
+        "Sam Shovel",
+        "Sam Noir",
+        "Sam Spade Junior"
     ],
     "124": [
         "Ottawa",
-        "Washington District of Columbia"
+        "Washington, District of Columbia"
     ],
     "125": [
         "Breaking"
     ],
     "126": [
-        "Suriname"
+        "Italian Republic",
+        "Republic of Suriname"
     ],
     "127": [
-        "Ambassadors or nuncios and other heads of mission of equivalent rank",
-        "Envoys, ministers and internuncios"
+        "Ambassadors or nuncios accredited to heads of state and other heads of mission of equivalent rank",
+        "Envoys, ministers and internuncios accredited to heads of state"
     ],
     "128": [
-        "Proxima Centauri",
         "Alpha Centauri A",
         "Alpha Centauri B",
+        "Proxima Centauri",
         "Sirius A",
         "Sirius B",
         "Luyten 726-8 A",
@@ -835,92 +858,90 @@
     "130": [
         "German Shepherd Dog",
         "German Shorthaired Pointer",
-        "German Longhaired Pointer",
         "German Wirehaired Pointer",
-        "German Spitz",
-        "German Pinscher"
+        "German Longhaired Pointer",
+        "German Roughhaired Pointer",
+        "German Pinscher",
+        "German Hound",
+        "German Spaniel",
+        "German Hunting Terrier",
+        "German Spitz"
     ],
     "131": [
-        "idk"
+        "Sukuma",
+        "Nyamwezi",
+        "Kimbu",
+        "Konongo",
+        "Sumbwa"
     ],
     "133": [
-        "Seoul Special City",
-        "Sejong Special Self-Governing City"
+        "Seoul Special Metropolitan City",
+        "Busan Metropolitan City",
+        "Daegu Metropolitan City",
+        "Incheon Metropolitan City",
+        "Gwangju Metropolitan City",
+        "Daejeon Metropolitan City",
+        "Ulsan Metropolitan City"
     ],
     "134": [
         "Euro",
         "Pound sterling"
     ],
     "135": [
-        "Chicago Tribune",
-        "Salt Lake Tribune",
-        "San Diego Union-Tribune",
-        "Pittsburgh Tribune-Review",
-        "Sarasota Herald-Tribune",
-        "Casper Star-Tribune",
-        "Columbia Daily Tribune",
-        "Duluth News Tribune",
-        "Great Falls Tribune",
-        "La Crosse Tribune",
-        "Bismarck Tribune",
-        "Ames Tribune",
-        "Bay City Tribune",
-        "South Bend Tribune",
-        "The San Luis Obispo Tribune"
+        "idk"
     ],
     "136": [
         "Ernani",
         "Rigoletto"
     ],
     "137": [
+        "Butterfield Overland National Historic Trail",
         "California National Historic Trail",
         "Captain John Smith Chesapeake National Historic Trail",
         "El Camino Real de los Tejas National Historic Trail",
-        "El Camino Real de Tierra Adentro National Historic Trail",
         "Iditarod National Historic Trail",
         "Juan Bautista de Anza National Historic Trail",
         "Lewis and Clark National Historic Trail",
         "Mormon Pioneer National Historic Trail",
-        "Nez Perce National Historic Trail",
+        "Nez Perce (Nee-Me-Poo) National Historic Trail",
         "Old Spanish National Historic Trail",
         "Oregon National Historic Trail",
         "Pony Express National Historic Trail",
         "Santa Fe National Historic Trail",
         "Trail of Tears National Historic Trail",
-        "Washington Rochambeau Revolutionary Route National Historic Trail"
+        "Washington-Rochambeau Revolutionary Route National Historic Trail"
     ],
     "138": [
         "Baku",
         "Sumqayit",
+        "Aktau",
         "Makhachkala",
         "Kaspiysk",
         "Derbent",
-        "Atyrau",
-        "Aktau",
         "Bandar-e Anzali"
     ],
     "139": [
         "Christmas Day"
     ],
     "140": [
-        "Trigonal pyramidal",
-        "Rhombohedral",
-        "Ditrigonal pyramidal",
-        "Trigonal dipyramidal",
-        "Ditrigonal dipyramidal",
-        "Hexagonal pyramidal",
-        "Hexagonal scalenohedral",
-        "Hexagonal dipyramidal",
-        "Dihexagonal pyramidal",
-        "Dihexagonal dipyramidal",
-        "Hexagonal trapezohedral",
-        "Dihexagonal trapezohedral"
+        "3",
+        "-3",
+        "32",
+        "3m",
+        "-3m",
+        "6",
+        "-6",
+        "6/m",
+        "622",
+        "6mm",
+        "-6m2",
+        "6/mmm"
     ],
     "141": [
-        "Archostemata",
         "Adephaga",
-        "Polyphaga",
-        "Myxophaga"
+        "Archostemata",
+        "Myxophaga",
+        "Polyphaga"
     ],
     "142": [
         "Paul Warfield Tibbets Junior"
@@ -934,71 +955,39 @@
     ],
     "144": [
         "Frank Island",
-        "North Molly Island",
-        "South Molly Island",
+        "Stevenson Island",
         "Peale Island",
-        "Stevenson Island"
+        "Molly Islands"
     ],
     "145": [
-        "Yokohama, Japan",
-        "Guangzhou, China"
+        "Guangzhou",
+        "Yokohama"
     ],
     "146": [
-        "Erwin Johannes Eugen Rommel",
-        "Hans Jürgen von Arnim",
-        "Ludwig Crüwell",
-        "Walther Karl Friedrich Ernst Wolfgang Nehring",
-        "Wilhelm Josef Ritter von Thoma",
-        "Giovanni Messe",
-        "Rodolfo Graziani",
-        "Ettore Bastico",
-        "Giuseppe Tellera",
-        "Annibale Bergonzoli",
-        "Italo Gariboldi",
-        "Italo Balbo"
+        "idk"
     ],
     "147": [
-        "Belleville Nuclear Power Plant",
+        "Belleville-sur-Loire Nuclear Power Plant",
         "Blayais Nuclear Power Plant",
         "Bugey Nuclear Power Plant",
         "Cattenom Nuclear Power Plant",
         "Chinon Nuclear Power Plant",
         "Chooz Nuclear Power Plant",
         "Civaux Nuclear Power Plant",
-        "Cruas Nuclear Power Plant",
-        "Dampierre Nuclear Power Plant",
+        "Cruas-Meysse Nuclear Power Plant",
+        "Dampierre-en-Burly Nuclear Power Plant",
         "Flamanville Nuclear Power Plant",
         "Golfech Nuclear Power Plant",
         "Gravelines Nuclear Power Plant",
         "Nogent-sur-Seine Nuclear Power Plant",
         "Paluel Nuclear Power Plant",
         "Penly Nuclear Power Plant",
-        "Saint-Alban Nuclear Power Plant",
-        "Saint-Laurent Nuclear Power Plant",
+        "Saint-Alban Saint-Maurice Nuclear Power Plant",
+        "Saint-Laurent-des-Eaux Nuclear Power Plant",
         "Tricastin Nuclear Power Plant"
     ],
     "148": [
-        "Rigobert Song Bahanag",
-        "Samuel Eto'o Fils",
-        "Geremi Sorele Njitap Fotso",
-        "Jacques Celestin Songo'o",
-        "Thomas N'Kono",
-        "Idriss Carlos Kameni",
-        "François Omam Biyik",
-        "Jean II Makoun",
-        "Pierre Nlend Womé",
-        "Nicolas Alexis Julio Nkoulou Ndoubena",
-        "Stéphane Mbia Etoundi",
-        "Eric Maxim Choupo Moting",
-        "Vincent Aboubakar",
-        "Patrick Mboma Dem",
-        "Joseph Desire Job",
-        "Benjamin Moukandjo Bilé",
-        "Pierre Achille Webo Kouamo",
-        "Eyong Tarkang Enoh",
-        "Michael Ngadeu Ngadjui",
-        "André Frank Zambo Anguissa",
-        "Christian Bassogog"
+        "idk"
     ],
     "149": [
         "Pikachu"

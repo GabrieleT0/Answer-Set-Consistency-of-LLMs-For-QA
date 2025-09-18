@@ -257,7 +257,7 @@ def main(config = None):
     if llms is None:
         llms = ['gpt-4.1-nano-2025-04-14', 'gpt-5-nano', 'gpt-4.1-mini-2025-04-14', 'gpt-5-mini', 
             'grok-3-mini', 'llama3.1:8b', 'gpt-oss:20b', 
-            'llama3.3:70b', 'gemini-2.0-flash', 'gemini-2.5-flash', 
+            'llama3.1:70b', 'gemini-2.0-flash', 'gemini-2.5-flash', 
             'gpt-4.1-2025-04-14', 'gpt-4o', 'gemini-2.5-pro', 'deepseek-chat', 'deepseek-reasoner', 'o3', 'gpt-5']# For 6 matrices -> 2x3
 
     df_p_value = pd.read_csv(f"{folder}/p_value_matrices_{time}.csv")
