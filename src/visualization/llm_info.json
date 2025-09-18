@@ -14,6 +14,11 @@
       "parameters": null,
       "information": "Part of the GPT-4.1 family released April 14, 2025. The mini version is intermediate in size between full and nano but parameter counts not disclosed. Context window 1 million tokens. :contentReference[oaicite:2]{index=2}"
     },
+    "gpt-5": {
+      "release_date": "2025-08-07",
+      "parameters": null,
+      "information": ""
+    },
     "gpt-5-mini": {
       "release_date": "2025-08-07",
       "parameters": null,
@@ -55,7 +60,7 @@
       "information": "Full GPT-4.1 (not mini or nano) launched April 14, 2025 with 1M token context, knowledge cutoff June 2024. Parameter count not disclosed. :contentReference[oaicite:8]{index=8}"
     },
     "gpt-4o": {
-      "release_date": "2024-11-20",
+      "release_date": "2024-05-13",
       "parameters": null,
       "information": "GPT-4o was released November 20, 2024; context window shorter; parameter count not publicly shared. :contentReference[oaicite:9]{index=9}"
     },

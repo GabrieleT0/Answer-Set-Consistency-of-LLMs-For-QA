@@ -12,10 +12,7 @@
         "Pennsylvania"
     ],
     "3": [
-        "Academy Award for Best Director",
-        "Academy Award for Best Original Screenplay",
-        "Academy Award for Best Art Direction – Black-and-White",
-        "Academy Award for Best Costume Design – Black-and-White"
+        "idk"
     ],
     "4": [
         "idk"
@@ -40,19 +37,18 @@
         "idk"
     ],
     "10": [
+        "Mauritania",
         "Mali",
         "Guinea",
         "Guinea-Bissau"
     ],
     "11": [
-        "Aurich (district)",
-        "Wittmund (district)",
-        "Friesland (district)",
-        "Wesermarsch (district)",
-        "Cuxhaven (district)",
-        "Leer (district)",
-        "Wilhelmshaven",
-        "Emden"
+        "Landkreis Cuxhaven",
+        "Landkreis Wesermarsch",
+        "Landkreis Friesland",
+        "Landkreis Wittmund",
+        "Landkreis Aurich",
+        "Landkreis Leer"
     ],
     "12": [
         "idk"
@@ -100,7 +96,10 @@
         "idk"
     ],
     "21": [
-        "idk"
+        "Sherwin-Williams",
+        "Cleveland-Cliffs",
+        "Parker Hannifin",
+        "KeyCorp"
     ],
     "22": [
         "idk"
@@ -117,18 +116,15 @@
     "26": [
         "Jerry Garcia",
         "Bob Weir",
+        "Ron McKernan",
         "Phil Lesh",
         "Bill Kreutzmann",
         "Mickey Hart",
-        "Ron McKernan",
         "Tom Constanten",
         "Keith Godchaux",
         "Donna Jean Godchaux",
         "Brent Mydland",
-        "Vince Welnick",
-        "Robert Hunter",
-        "John Perry Barlow",
-        "Bruce Hornsby"
+        "Vince Welnick"
     ],
     "27": [
         "Cyprus",
@@ -148,25 +144,7 @@
         "idk"
     ],
     "30": [
-        "Australia",
-        "Belgium",
-        "Canada",
-        "Colombia",
-        "Ethiopia",
-        "France",
-        "Greece",
-        "Luxembourg",
-        "Netherlands",
-        "New Zealand",
-        "North Korea",
-        "People's Republic of China",
-        "Philippines",
-        "South Africa",
-        "South Korea",
-        "Thailand",
-        "Turkey",
-        "United Kingdom",
-        "United States of America"
+        "idk"
     ],
     "31": [
         "Heather McCartney",
@@ -180,41 +158,64 @@
         "Joseph and the Amazing Technicolor Dreamcoat",
         "Jesus Christ Superstar",
         "Jeeves",
-        "By Jeeves",
         "Evita",
         "Tell Me on a Sunday",
-        "Song and Dance",
         "Cats",
+        "Song and Dance",
         "Starlight Express",
+        "Cricket",
         "The Phantom of the Opera",
         "Aspects of Love",
         "Sunset Boulevard",
         "Whistle Down the Wind",
+        "By Jeeves",
         "The Beautiful Game",
         "The Woman in White",
+        "The Boys in the Photograph",
         "Love Never Dies",
-        "Cricket (Hearts and Wickets)",
-        "The Wizard of Oz (2011 musical)",
+        "The Wizard of Oz",
         "Stephen Ward",
         "School of Rock",
         "Cinderella"
     ],
     "33": [
         "William P. Rogers",
-        "Nguyễn Duy Trinh",
         "Trần Văn Lâm",
+        "Nguyễn Duy Trinh",
         "Nguyễn Thị Bình"
     ],
     "34": [
         "idk"
     ],
     "35": [
-        "idk"
+        "Council of Europe",
+        "European Court of Human Rights",
+        "European Parliament",
+        "Central Commission for Navigation on the Rhine",
+        "European Ombudsman",
+        "European Audiovisual Observatory",
+        "Eurimages",
+        "European Science Foundation",
+        "International Institute of Human Rights",
+        "Eurocorps",
+        "Assembly of European Regions",
+        "European Directorate for the Quality of Medicines & HealthCare",
+        "European Pharmacopoeia Commission",
+        "Parliamentary Assembly of the Council of Europe",
+        "Congress of Local and Regional Authorities",
+        "Conference of INGOs of the Council of Europe",
+        "Group of States against Corruption",
+        "Committee of Experts on the Evaluation of Anti-Money Laundering Measures and the Financing of Terrorism",
+        "European Committee for the Prevention of Torture",
+        "European Commission against Racism and Intolerance",
+        "European Commission for the Efficiency of Justice",
+        "Pompidou Group",
+        "European Youth Foundation"
     ],
     "36": [
-        "Airbus A319",
-        "Airbus A320",
-        "Airbus A321",
+        "Airbus A319-100",
+        "Airbus A320-200",
+        "Airbus A321-200",
         "Airbus A321neo",
         "Boeing 737-800",
         "Boeing 737 MAX 8",
@@ -242,43 +243,10 @@
         "Bespin"
     ],
     "40": [
-        "French Third Republic",
-        "United Kingdom",
-        "Belgium",
-        "Netherlands",
-        "Luxembourg",
-        "Nazi Germany",
-        "Kingdom of Italy"
+        "idk"
     ],
     "41": [
-        "Prince Hamlet",
-        "King Claudius",
-        "Queen Gertrude",
-        "Polonius",
-        "Horatio",
-        "Ophelia",
-        "Laertes",
-        "Fortinbras",
-        "Rosencrantz",
-        "Guildenstern",
-        "Osric",
-        "Reynaldo",
-        "Voltemand",
-        "Cornelius",
-        "Marcellus",
-        "Bernardo",
-        "Francisco",
-        "Ghost (Hamlet)",
-        "First Player",
-        "Player King",
-        "Player Queen",
-        "Lucianus",
-        "First Gravedigger",
-        "Second Gravedigger",
-        "Priest",
-        "Captain",
-        "Sailor",
-        "English Ambassador"
+        "idk"
     ],
     "42": [
         "The Castle of Cagliostro",
@@ -298,9 +266,9 @@
         "idk"
     ],
     "44": [
-        "Academy Award for Best Picture",
         "Academy Award for Best Director",
-        "Academy Award for Best Original Screenplay"
+        "Academy Award for Best Original Screenplay",
+        "Academy Award for Best Picture"
     ],
     "45": [
         "idk"
@@ -317,36 +285,36 @@
         "idk"
     ],
     "49": [
-        "Argentine Primera División",
-        "Campeonato de Fútbol Femenino (Argentina)",
+        "Primera División (Argentina)",
         "Bolivian Primera División",
-        "Liga de Fútbol Femenino (Bolivia)",
         "Campeonato Brasileiro Série A",
-        "Campeonato Brasileiro de Futebol Feminino Série A1",
         "Chilean Primera División",
-        "Campeonato Nacional Femenino (Chile)",
         "Categoría Primera A",
-        "Liga Profesional Femenina (Colombia)",
-        "Ecuadorian Serie A",
-        "Superliga Femenina (Ecuador)",
+        "Serie A (Ecuador)",
         "Paraguayan Primera División",
-        "Campeonato Paraguayo de Fútbol Femenino",
         "Liga 1 (Peru)",
-        "Liga Femenina (Peru)",
         "Uruguayan Primera División",
-        "Campeonato Uruguayo Femenino",
         "Venezuelan Primera División",
+        "Campeonato de Fútbol Femenino (Argentina)",
+        "Liga Femenina de Fútbol (Bolivia)",
+        "Campeonato Brasileiro de Futebol Feminino Série A1",
+        "Campeonato Nacional Fútbol Femenino (Chile)",
+        "Liga Profesional Femenina (Colombia)",
+        "Superliga Femenina (Ecuador)",
+        "Campeonato Paraguayo de Fútbol Femenino",
+        "Liga Femenina (Peru)",
+        "Campeonato Uruguayo Femenino",
         "Superliga Femenina (Venezuela)"
     ],
     "50": [
-        "New moon",
-        "Waxing crescent",
-        "First quarter",
-        "Waxing gibbous",
-        "Full moon",
-        "Waning gibbous",
-        "Last quarter",
-        "Waning crescent"
+        "new moon",
+        "waxing crescent",
+        "first quarter",
+        "waxing gibbous",
+        "full moon",
+        "waning gibbous",
+        "last quarter",
+        "waning crescent"
     ],
     "51": [
         "New Year's Day",
@@ -355,7 +323,7 @@
         "Easter Sunday",
         "Easter Monday",
         "Ascension Day",
-        "Whit Sunday",
+        "Pentecost Sunday",
         "Whit Monday",
         "Christmas Day",
         "Second Day of Christmas"
@@ -407,7 +375,7 @@
         "idk"
     ],
     "57": [
-        "idk"
+        "Burning Man"
     ],
     "58": [
         "idk"
@@ -438,55 +406,68 @@
         "idk"
     ],
     "65": [
-        "06L/24R",
-        "06R/24L",
-        "07L/25R",
-        "07R/25L"
+        "6L/24R",
+        "6R/24L",
+        "7L/25R",
+        "7R/25L"
     ],
     "66": [
         "Rent",
-        "Tick, Tick... Boom!"
+        "tick, tick... BOOM!"
     ],
     "67": [
-        "Adams County",
-        "Billings County",
-        "Bowman County",
-        "Dunn County",
-        "Golden Valley County",
-        "Hettinger County",
-        "Slope County",
-        "Stark County"
+        "Adams County, North Dakota",
+        "Billings County, North Dakota",
+        "Bowman County, North Dakota",
+        "Dunn County, North Dakota",
+        "Golden Valley County, North Dakota",
+        "Hettinger County, North Dakota",
+        "McKenzie County, North Dakota",
+        "Slope County, North Dakota",
+        "Stark County, North Dakota"
     ],
     "68": [
         "Australian Open",
         "French Open",
-        "Wimbledon Championships",
+        "Wimbledon",
         "US Open"
     ],
     "69": [
-        "Best Picture",
-        "Best Director",
-        "Best Adapted Screenplay",
-        "Best Foreign Language Film",
-        "Best Cinematography",
-        "Best Art Direction",
-        "Best Costume Design",
-        "Best Film Editing",
-        "Best Original Score",
-        "Best Original Song"
+        "Academy Award for Best Picture",
+        "Academy Award for Best Director",
+        "Academy Award for Best Adapted Screenplay",
+        "Academy Award for Best International Feature Film",
+        "Academy Award for Best Cinematography",
+        "Academy Award for Best Production Design",
+        "Academy Award for Best Costume Design",
+        "Academy Award for Best Film Editing",
+        "Academy Award for Best Original Score",
+        "Academy Award for Best Original Song"
     ],
     "70": [
-        "idk"
+        "Academy Award for Best Supporting Actor",
+        "Academy Award for Best Supporting Actress",
+        "Academy Award for Best Original Screenplay",
+        "Academy Award for Best Cinematography",
+        "Academy Award for Best Production Design",
+        "Academy Award for Best Costume Design",
+        "Academy Award for Best Makeup and Hairstyling",
+        "Academy Award for Best Original Score",
+        "Academy Award for Best Original Song",
+        "Academy Award for Best Sound Editing",
+        "Academy Award for Best Visual Effects",
+        "Academy Award for Best International Feature Film",
+        "Academy Award for Best Documentary Feature",
+        "Academy Award for Best Documentary Short Subject",
+        "Academy Award for Best Live Action Short Film",
+        "Academy Award for Best Animated Short Film"
     ],
     "71": [
-        "FlixBus",
-        "FlixTrain",
-        "FlixCar",
-        "Greyhound Lines",
-        "Kamil Koç"
+        "idk"
     ],
     "72": [
         "The Rolling Stones",
+        "England's Newest Hit Makers",
         "12 X 5",
         "The Rolling Stones No. 2",
         "The Rolling Stones, Now!",
@@ -516,7 +497,6 @@
     ],
     "73": [
         "My Left Foot",
-        "Gangs of New York",
         "There Will Be Blood",
         "Lincoln"
     ],
@@ -552,40 +532,7 @@
         "idk"
     ],
     "76": [
-        "Ichiro Suzuki",
-        "Barry Bonds",
-        "Miguel Tejada",
-        "Alex Rodriguez",
-        "Vladimir Guerrero",
-        "Albert Pujols",
-        "Justin Morneau",
-        "Ryan Howard",
-        "Jimmy Rollins",
-        "Dustin Pedroia",
-        "Joe Mauer",
-        "Josh Hamilton",
-        "Joey Votto",
-        "Justin Verlander",
-        "Ryan Braun",
-        "Miguel Cabrera",
-        "Buster Posey",
-        "Andrew McCutchen",
-        "Mike Trout",
-        "Clayton Kershaw",
-        "Josh Donaldson",
-        "Bryce Harper",
-        "Kris Bryant",
-        "José Altuve",
-        "Giancarlo Stanton",
-        "Mookie Betts",
-        "Christian Yelich",
-        "Cody Bellinger",
-        "José Abreu",
-        "Freddie Freeman",
-        "Shohei Ohtani",
-        "Aaron Judge",
-        "Paul Goldschmidt",
-        "Ronald Acuña Jr."
+        "idk"
     ],
     "77": [
         "idk"
@@ -597,10 +544,28 @@
         "idk"
     ],
     "80": [
-        "idk"
+        "Lieutenant general",
+        "Vice admiral",
+        "Air marshal"
     ],
     "81": [
-        "idk"
+        "Argelès-Gazost",
+        "Aureilhan",
+        "Bagnères-de-Bigorre",
+        "Bordères-sur-l'Échez",
+        "La Vallée de l'Arros et des Baïses",
+        "Les Coteaux",
+        "Lourdes-1",
+        "Lourdes-2",
+        "Moyen Adour",
+        "Neste, Aure et Louron",
+        "Ossun",
+        "Tarbes-1",
+        "Tarbes-2",
+        "Tarbes-3",
+        "Val d'Adour-Rustan-Madiranais",
+        "Vic-en-Bigorre",
+        "Lannemezan"
     ],
     "82": [
         "idk"
@@ -611,7 +576,8 @@
         "Stephen Crean"
     ],
     "84": [
-        "idk"
+        "soprano voice",
+        "orchestra"
     ],
     "85": [
         "idk"
@@ -626,8 +592,8 @@
         "Belpasso",
         "Biancavilla",
         "Bronte",
-        "Calatabiano",
         "Caltagirone",
+        "Calatabiano",
         "Camporotondo Etneo",
         "Castel di Iudica",
         "Castiglione di Sicilia",
@@ -643,9 +609,9 @@
         "Mascali",
         "Mascalucia",
         "Mazzarrone",
+        "Militello in Val di Catania",
         "Milo",
         "Mineo",
-        "Militello in Val di Catania",
         "Mirabella Imbaccari",
         "Misterbianco",
         "Motta Sant'Anastasia",
@@ -665,7 +631,6 @@
         "San Michele di Ganzaria",
         "San Pietro Clarenza",
         "Sant'Agata li Battiati",
-        "Sant'Alfio",
         "Santa Maria di Licodia",
         "Santa Venerina",
         "Scordia",
@@ -686,17 +651,11 @@
         "idk"
     ],
     "90": [
-        "idk"
+        "Winston Groovy",
+        "UB40"
     ],
     "91": [
-        "Inchmurrin",
-        "Inchmoan",
-        "Inchtavannach",
-        "Inchlonaig",
-        "Inchcruin",
-        "Inchconnachan",
-        "Inchcailloch",
-        "Inchfad"
+        "idk"
     ],
     "92": [
         "idk"
@@ -706,14 +665,14 @@
     ],
     "94": [
         "Attila",
-        "Boudicca",
+        "Boudica",
         "Dido",
         "Gustavus Adolphus",
         "Haile Selassie",
         "Maria Theresa",
-        "Pacal",
+        "K'inich Janaab' Pakal",
         "Theodora",
-        "William of Orange"
+        "William the Silent"
     ],
     "95": [
         "idk"
@@ -726,10 +685,10 @@
     ],
     "98": [
         "Bill Lancaster",
-        "James Lancaster",
-        "Susan Lancaster",
         "Joanna Lancaster",
-        "Sighle Lancaster"
+        "Susan Lancaster",
+        "Sighle Lancaster",
+        "James Lancaster"
     ],
     "99": [
         "idk"
@@ -737,9 +696,9 @@
     "100": [
         "Other Voices, Other Rooms",
         "The Grass Harp",
-        "Summer Crossing",
         "In Cold Blood",
-        "Answered Prayers"
+        "Answered Prayers",
+        "Summer Crossing"
     ],
     "101": [
         "idk"
@@ -751,29 +710,29 @@
         "idk"
     ],
     "104": [
-        "Don't Come Home A-Drinkin' (With Lovin' on Your Mind)",
+        "Don't Come Home a-Drinkin' (With Lovin' on Your Mind)",
         "Fist City",
         "Woman of the World (Leave My World Alone)",
         "Coal Miner's Daughter",
-        "One's on the Way",
-        "Rated \"X\"",
-        "Love Is the Foundation",
-        "Trouble in Paradise",
-        "Somebody Somewhere (Don't Know What He's Missin' Tonight)",
-        "She's Got You",
-        "Out of My Head and Back in My Bed",
         "After the Fire Is Gone",
         "Lead Me On",
+        "One's on the Way",
+        "Rated 'X'",
+        "Love Is the Foundation",
         "Louisiana Woman, Mississippi Man",
         "As Soon as I Hang Up the Phone",
-        "Feelin's"
+        "Trouble in Paradise",
+        "Feelin's",
+        "Somebody Somewhere (Don't Know What He's Missin' Tonight)",
+        "She's Got You",
+        "Out of My Head and Back in My Bed"
     ],
     "105": [
         "idk"
     ],
     "106": [
         "Friedrich Georg Göthe",
-        "Cornelia Schellhorn",
+        "Cornelia Maria Walther",
         "Johann Wolfgang Textor",
         "Anna Margaretha Lindheimer"
     ],
@@ -781,26 +740,22 @@
         "idk"
     ],
     "108": [
-        "Genghis Khan",
-        "Ögedei Khan",
-        "Güyük Khan",
-        "Möngke Khan",
         "Kublai Khan",
         "Temür Khan",
         "Külüg Khan",
-        "Ayurbarwada Buyantu Khan",
+        "Buyantu Khan",
         "Gegeen Khan",
         "Yesün Temür",
-        "Ragibagh",
-        "Tugh Temür",
+        "Ragibagh Khan",
+        "Jayaatu Khan Tugh Temür",
         "Kusala",
+        "Rinchinbal",
         "Toghon Temür"
     ],
     "109": [
-        "cytochrome P450 3A4",
-        "cytochrome P450 2B6",
-        "cytochrome P450 2D6",
-        "cytochrome P450 2C19"
+        "CYP2B6",
+        "CYP2D6",
+        "CYP3A4"
     ],
     "110": [
         "Lower Saxony"
@@ -818,43 +773,14 @@
         "idk"
     ],
     "113": [
-        "Jerry Lee Lewis",
-        "The Return of Rock",
-        "Country Songs for City Folks",
-        "Memphis Beat",
-        "Soul My Way",
-        "Another Place, Another Time",
-        "She Still Comes Around (To Love What's Left of Me)",
-        "Sings the Country Music Hall of Fame Hits, Vol. 1",
-        "Sings the Country Music Hall of Fame Hits, Vol. 2",
-        "She Even Woke Me Up to Say Goodbye",
-        "Love Country Style",
-        "There Must Be More to Love Than This",
-        "Touching Home",
-        "Would You Take Another Chance on Me?",
-        "The Killer Rocks On",
-        "Who's Gonna Play This Old Piano (Think About It, Darlin')",
-        "The Session... Recorded in London with Great Artists",
-        "Sometimes a Memory Ain't Enough",
-        "Southern Roots: Back Home in Memphis",
-        "Boogie Woogie Country Man",
-        "Odd Man In",
-        "Country Class",
-        "Country Memories",
-        "Jerry Lee Keeps Rockin'",
-        "Jerry Lee Lewis",
-        "When Two Worlds Collide",
-        "My Fingers Do the Talkin'",
-        "I Am What I Am",
-        "Young Blood",
-        "Rock & Roll Time"
+        "idk"
     ],
     "114": [
-        "Silver Play Button",
-        "Gold Play Button",
-        "Diamond Play Button",
-        "Custom Play Button",
-        "Red Diamond Play Button"
+        "Silver Creator Award",
+        "Gold Creator Award",
+        "Diamond Creator Award",
+        "Custom Creator Award",
+        "Red Diamond Creator Award"
     ],
     "115": [
         "idk"
@@ -886,17 +812,17 @@
         "Vienna",
         "Hamburg",
         "Warsaw",
-        "Budapest",
         "Bucharest",
+        "Budapest",
         "Barcelona"
     ],
     "121": [
-        "Cape Verde",
+        "Cabo Verde",
         "Comoros",
         "Madagascar",
         "Mauritius",
-        "São Tomé and Príncipe",
-        "Seychelles"
+        "Seychelles",
+        "São Tomé and Príncipe"
     ],
     "122": [
         "idk"
@@ -936,13 +862,12 @@
         "Surfing"
     ],
     "126": [
-        "Canada",
         "Comoros",
         "Madagascar",
         "Mauritius",
         "Vanuatu",
-        "Suriname",
-        "Italy"
+        "Italy",
+        "Suriname"
     ],
     "127": [
         "Ambassadors or nuncios",
@@ -959,8 +884,8 @@
         "Lalande 21185",
         "Sirius A",
         "Sirius B",
-        "Luyten 726-8 A",
-        "Luyten 726-8 B",
+        "BL Ceti",
+        "UV Ceti",
         "Ross 154"
     ],
     "129": [
@@ -970,9 +895,9 @@
         "idk"
     ],
     "131": [
-        "Kera language",
-        "Masa language",
-        "Tupuri language"
+        "Taba",
+        "Kadai",
+        "Maba"
     ],
     "133": [
         "Seoul",
@@ -981,11 +906,16 @@
         "Incheon",
         "Gwangju",
         "Daejeon",
-        "Ulsan",
-        "Sejong"
+        "Ulsan"
     ],
     "134": [
-        "idk"
+        "United States dollar",
+        "euro",
+        "Japanese yen",
+        "pound sterling",
+        "Renminbi",
+        "Canadian dollar",
+        "Australian dollar"
     ],
     "135": [
         "idk"
@@ -998,33 +928,34 @@
         "Simon Boccanegra"
     ],
     "137": [
-        "Overmountain Victory National Historic Trail",
-        "Oregon National Historic Trail",
-        "Mormon Pioneer National Historic Trail",
+        "Ala Kahakai National Historic Trail",
+        "Butterfield Overland National Historic Trail",
         "California National Historic Trail",
-        "Santa Fe National Historic Trail",
-        "Pony Express National Historic Trail",
-        "Nez Perce National Historic Trail",
-        "Iditarod National Historic Trail",
-        "Trail of Tears National Historic Trail",
-        "Juan Bautista de Anza National Historic Trail",
+        "Captain John Smith Chesapeake National Historic Trail",
         "El Camino Real de Tierra Adentro National Historic Trail",
         "El Camino Real de los Tejas National Historic Trail",
-        "Old Spanish National Historic Trail",
-        "Ala Kahakai National Historic Trail",
-        "Captain John Smith Chesapeake National Historic Trail",
-        "Star-Spangled Banner National Historic Trail",
-        "Selma to Montgomery National Historic Trail",
-        "Washington–Rochambeau Revolutionary Route National Historic Trail",
+        "Iditarod National Historic Trail",
+        "Juan Bautista de Anza National Historic Trail",
         "Lewis and Clark National Historic Trail",
-        "Butterfield Overland National Historic Trail"
+        "Mormon Pioneer National Historic Trail",
+        "Nez Perce National Historic Trail",
+        "Old Spanish National Historic Trail",
+        "Oregon National Historic Trail",
+        "Overmountain Victory National Historic Trail",
+        "Pony Express National Historic Trail",
+        "Santa Fe National Historic Trail",
+        "Selma to Montgomery National Historic Trail",
+        "Star-Spangled Banner National Historic Trail",
+        "Trail of Tears National Historic Trail",
+        "Washington-Rochambeau Revolutionary Route National Historic Trail"
     ],
     "138": [
         "idk"
     ],
     "139": [
         "New Year's Day",
-        "Martin Luther King Jr. Day",
+        "Inauguration Day",
+        "Birthday of Martin Luther King, Jr.",
         "Washington's Birthday",
         "Memorial Day",
         "Juneteenth National Independence Day",
@@ -1033,8 +964,7 @@
         "Columbus Day",
         "Veterans Day",
         "Thanksgiving Day",
-        "Christmas Day",
-        "Inauguration Day"
+        "Christmas Day"
     ],
     "140": [
         "1",
@@ -1062,7 +992,7 @@
         "6/m",
         "622",
         "6mm",
-        "-62m",
+        "-6m2",
         "6/mmm",
         "23",
         "m-3",
@@ -1071,24 +1001,24 @@
         "m-3m"
     ],
     "141": [
+        "Adephaga",
         "Archostemata",
         "Myxophaga",
-        "Adephaga",
         "Polyphaga"
     ],
     "142": [
-        "Paul W. Tibbets Jr.",
+        "Paul Tibbets",
         "Robert A. Lewis",
-        "Thomas W. Ferebee",
-        "Theodore J. Van Kirk",
-        "William S. Parsons",
-        "Morris R. Jeppson",
+        "Thomas Ferebee",
+        "Theodore Van Kirk",
+        "William Sterling Parsons",
+        "Morris Jeppson",
         "Jacob Beser",
-        "George R. Caron",
+        "Wyatt E. Duzenbury",
         "Joe Stiborik",
         "Richard H. Nelson",
-        "Robert H. Shumard",
-        "Wyatt E. Duzenbury"
+        "George R. Caron",
+        "Robert H. Shumard"
     ],
     "143": [
         "2000",
@@ -1122,8 +1052,8 @@
     ],
     "145": [
         "Guangzhou",
-        "Yokohama",
-        "Odesa"
+        "Odesa",
+        "Yokohama"
     ],
     "146": [
         "idk"
@@ -1131,11 +1061,9 @@
     "147": [
         "Belleville Nuclear Power Plant",
         "Blayais Nuclear Power Plant",
-        "Brennilis Nuclear Power Plant",
         "Bugey Nuclear Power Plant",
         "Cattenom Nuclear Power Plant",
         "Chinon Nuclear Power Plant",
-        "Chooz Nuclear Power Plant",
         "Civaux Nuclear Power Plant",
         "Cruas Nuclear Power Plant",
         "Dampierre Nuclear Power Plant",
@@ -1148,8 +1076,11 @@
         "Penly Nuclear Power Plant",
         "Saint-Alban Nuclear Power Plant",
         "Saint-Laurent Nuclear Power Plant",
-        "Superphénix",
-        "Tricastin Nuclear Power Plant"
+        "Tricastin Nuclear Power Plant",
+        "Brennilis Nuclear Power Plant",
+        "Chooz Nuclear Power Plant",
+        "Chooz A nuclear power plant",
+        "Creys-Malville Nuclear Power Plant"
     ],
     "148": [
         "idk"
