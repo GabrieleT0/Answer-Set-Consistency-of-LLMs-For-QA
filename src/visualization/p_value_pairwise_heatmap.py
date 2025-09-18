@@ -255,11 +255,24 @@ def main(config = None):
     time = config.get("time", "2025-09-17_15-25")
     llms = config.get("llms", None)
     if llms is None:
-        llms = ['gpt-4.1-nano-2025-04-14', 'gpt-5-nano', 'gpt-4.1-mini-2025-04-14', 'gpt-5-mini', 
-            'grok-3-mini', 'llama3.1:8b', 'gpt-oss:20b', 
-            'llama3.1:70b', 'gemini-2.0-flash', 'gemini-2.5-flash', 
-            'gpt-4.1-2025-04-14', 'gpt-4o', 'gemini-2.5-pro', 'deepseek-chat', 'deepseek-reasoner', 'o3', 'gpt-5']# For 6 matrices -> 2x3
-
+        llms = ['llama3.1:8b',
+                'llama3.1:70b',
+                'deepseek-chat',
+                'deepseek-reasoner',
+                'grok-3-mini',
+                'gemini-2.0-flash',
+                'gemini-2.5-flash',
+                'gemini-2.5-pro',
+                'gpt-4.1-2025-04-14',
+                'gpt-4.1-mini-2025-04-14',
+                'gpt-4.1-nano-2025-04-14',
+                'gpt-4o',
+                'o3',
+                'gpt-oss:20b',
+                'gpt-5-nano',
+                'gpt-5-mini',
+                'gpt-5']
+        
     df_p_value = pd.read_csv(f"{folder}/p_value_matrices_{time}.csv")
     predicates = ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"]
     paths = save_heatmap_panels_by_combo(
