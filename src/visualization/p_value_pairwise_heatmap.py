@@ -1,5 +1,5 @@
 import os
-import sys
+import re
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -161,11 +161,6 @@ def plot_heatmap_panel_2xN(
     # tighter outer margins so plots fill the canvas
     fig.subplots_adjust(left=0.06, right=0.985, top=0.96, bottom=0.04)
     return fig, axes
-
-import os
-import re
-import pandas as pd
-import matplotlib.pyplot as plt
 
 def save_heatmap_panels_by_combo(
     df: pd.DataFrame,
