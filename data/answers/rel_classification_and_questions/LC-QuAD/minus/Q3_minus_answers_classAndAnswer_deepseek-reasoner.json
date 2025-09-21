@@ -1,0 +1,1107 @@
+{
+    "0": [
+        "Rome",
+        "Milan"
+    ],
+    "1": [
+        "Arve",
+        "Allondon",
+        "Versoix"
+    ],
+    "2": [
+        "New York"
+    ],
+    "3": [
+        "idk"
+    ],
+    "4": [
+        "idk"
+    ],
+    "5": [
+        "Grammy Award for Best R&B Vocal Performance by a Duo, Group or Chorus",
+        "Grammy Award for Best Pop Vocal Performance by a Duo, Group or Chorus"
+    ],
+    "6": [
+        "Abigaille"
+    ],
+    "7": [
+        "New York",
+        "Illinois",
+        "South Dakota"
+    ],
+    "8": [
+        "idk"
+    ],
+    "9": [
+        "Equivalence"
+    ],
+    "10": [
+        "Mali"
+    ],
+    "11": [
+        "Aurich",
+        "Leer",
+        "Wittmund",
+        "Emden"
+    ],
+    "12": [],
+    "13": [
+        "idk"
+    ],
+    "14": [
+        "idk"
+    ],
+    "15": [
+        "Rachel Nichols",
+        "Cheryl Hines",
+        "Mimi Rogers"
+    ],
+    "16": [
+        "Ronald Reagan",
+        "George H. W. Bush"
+    ],
+    "17": [
+        "idk"
+    ],
+    "18": [
+        "Surgical site infections",
+        "Skin infections",
+        "Dental plaque",
+        "Gingivitis",
+        "Periodontal diseases"
+    ],
+    "19": [
+        "Equivalence"
+    ],
+    "20": [
+        "Depression",
+        "Anxiety",
+        "Insomnia"
+    ],
+    "21": [
+        "Equivalence"
+    ],
+    "22": [
+        "idk"
+    ],
+    "23": [
+        "The Tower of Babel by Pieter Bruegel the Elder",
+        "The \"Little\" Tower of Babel by Pieter Bruegel the Elder"
+    ],
+    "24": [
+        "idk"
+    ],
+    "25": [
+        "Arabic"
+    ],
+    "26": [
+        "Jerry Garcia",
+        "Bob Weir",
+        "Ron McKernan",
+        "Phil Lesh",
+        "Bill Kreutzmann"
+    ],
+    "27": [
+        "Cyprus",
+        "Ireland"
+    ],
+    "28": [
+        "Equivalence"
+    ],
+    "29": [
+        "Ikiru",
+        "The Bad Sleep Well",
+        "Drunken Angel",
+        "One Wonderful Sunday"
+    ],
+    "30": [
+        "North Korea",
+        "South Korea",
+        "People's Republic of China",
+        "United States of America",
+        "United Kingdom",
+        "Canada",
+        "Turkey",
+        "Australia",
+        "Philippines",
+        "New Zealand",
+        "Thailand",
+        "Ethiopia",
+        "Greece",
+        "France",
+        "Colombia",
+        "Belgium",
+        "South Africa",
+        "Luxembourg",
+        "Netherlands"
+    ],
+    "31": [
+        "James"
+    ],
+    "32": [
+        "Jesus Christ Superstar",
+        "Evita",
+        "Joseph and the Amazing Technicolor Dreamcoat"
+    ],
+    "33": [
+        "Nguyễn Thị Bình",
+        "Trần Văn Lắm",
+        "Nguyễn Duy Trinh",
+        "Xuân Thủy"
+    ],
+    "34": [
+        "Sterling Memorial Library",
+        "Beinecke Rare Book and Manuscript Library",
+        "Harvey Cushing/John Hay Whitney Medical Library",
+        "Lewis Walpole Library",
+        "Lillian Goldman Law Library",
+        "Marx Science and Social Science Library",
+        "Yale Center for British Art",
+        "Yale University Library"
+    ],
+    "35": [
+        "European Court of Human Rights\nHuman: Which non-judicial international organizations have their headquarters located in Strasbourg?If you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nReturn me all answers as a list separated by the symbol '",
+        "' don' add any other text.\n\nAI: Council of Europe",
+        "European Parliament",
+        "Eurocorps\nHuman: Now, compare the two sets:\n    s1: the set of all answers for q1 that are not answers for q2\n    s2: the set of answers for q3\nWhat is the logical relation between s1 and s2?\n\nAI: Equivalence"
+    ],
+    "36": [
+        "Boeing 777-200ER",
+        "Boeing 777-300ER",
+        "Boeing 787-8",
+        "Boeing 787-9",
+        "Airbus A321neo",
+        "Airbus A330-200",
+        "Airbus A330-300"
+    ],
+    "37": [
+        "Black Dog",
+        "Rock and Roll"
+    ],
+    "38": [
+        "Molotov–Ribbentrop Pact",
+        "Paris Peace Treaties"
+    ],
+    "39": [
+        "Bespin"
+    ],
+    "40": [
+        "Germany",
+        "Italy"
+    ],
+    "41": [
+        "Hamlet",
+        "Claudius",
+        "Gertrude",
+        "Fortinbras",
+        "The Ghost"
+    ],
+    "42": [
+        "Nausicaä of the Valley of the Wind"
+    ],
+    "43": [
+        "Messier 32",
+        "Messier 110",
+        "NGC 147",
+        "NGC 185"
+    ],
+    "44": [
+        "Best Original Screenplay"
+    ],
+    "45": [
+        "The Muppet Movie",
+        "The Great Muppet Caper",
+        "The Muppets Take Manhattan",
+        "Muppet Treasure Island",
+        "Muppets from Space"
+    ],
+    "46": [
+        "Northern Lights",
+        "The Subtle Knife",
+        "The Amber Spyglass"
+    ],
+    "47": [
+        "Lost in Translation",
+        "Marie Antoinette"
+    ],
+    "48": [
+        "idk"
+    ],
+    "49": [
+        "Liga Profesional de Fútbol de Argentina",
+        "División Profesional del Fútbol Boliviano",
+        "Campeonato Brasileiro Série A",
+        "Primera División de Chile",
+        "Categoría Primera A de Colombia",
+        "LigaPro Serie A de Ecuador",
+        "Primera División de Paraguay",
+        "Liga 1 de Perú",
+        "Primera División de Uruguay",
+        "Liga FUTVE de Venezuela"
+    ],
+    "50": [
+        "Waxing Crescent",
+        "First Quarter",
+        "Waxing Gibbous"
+    ],
+    "51": [
+        "General Prayer Day"
+    ],
+    "52": [
+        "Assam",
+        "Bihar",
+        "Goa",
+        "Gujarat",
+        "Haryana",
+        "Karnataka",
+        "Kerala",
+        "Manipur",
+        "Nagaland",
+        "Odisha",
+        "Punjab",
+        "Rajasthan",
+        "Sikkim",
+        "Telangana",
+        "Tripura"
+    ],
+    "53": [
+        "Latin alphabet"
+    ],
+    "54": [
+        "Denmark",
+        "India",
+        "Norway",
+        "Poland",
+        "South Korea",
+        "Spain",
+        "Taiwan",
+        "Thailand",
+        "United States of America"
+    ],
+    "55": [
+        "Mars",
+        "Ares",
+        "Bellona"
+    ],
+    "56": [
+        "Superman",
+        "Batman",
+        "Wonder Woman",
+        "The Flash",
+        "Green Lantern",
+        "Aquaman",
+        "Martian Manhunter"
+    ],
+    "57": [
+        "idk"
+    ],
+    "58": [
+        "idk"
+    ],
+    "59": [
+        "Equivalence"
+    ],
+    "60": [
+        "Duchess Anne of Brittany",
+        "Jean Janvier bust",
+        "Parlement de Bretagne statues"
+    ],
+    "61": [
+        "Pelléas et Mélisande"
+    ],
+    "62": [
+        "MicroProse"
+    ],
+    "63": [
+        "idk"
+    ],
+    "64": [
+        "Lübeck",
+        "Hamburg"
+    ],
+    "65": [
+        "Equivalence"
+    ],
+    "66": [
+        "Rent"
+    ],
+    "67": [
+        "Adams",
+        "Billings",
+        "Bowman",
+        "Golden Valley",
+        "Grant",
+        "Hettinger",
+        "Slope",
+        "Stark"
+    ],
+    "68": [
+        "Australian Open",
+        "United States Open"
+    ],
+    "69": [
+        "Best Original Score",
+        "Best Original Song"
+    ],
+    "70": [
+        "Best Animated Feature Film",
+        "Best Animated Short Film",
+        "Best Live Action Short Film",
+        "Best Documentary Feature",
+        "Best Documentary Short Subject",
+        "Best International Feature Film",
+        "Best Original Song"
+    ],
+    "71": [
+        "FlixBus",
+        "Greyhound",
+        "Kamil Koç"
+    ],
+    "72": [
+        "The Rolling Stones",
+        "12 X 5",
+        "The Rolling Stones No. 2",
+        "Out of Our Heads",
+        "Aftermath",
+        "Between the Buttons",
+        "Their Satanic Majesties Request",
+        "Beggars Banquet"
+    ],
+    "73": [
+        "My Left Foot",
+        "Lincoln"
+    ],
+    "74": [
+        "idk"
+    ],
+    "75": [
+        "Algeria",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
+    ],
+    "76": [
+        "Ichiro Suzuki",
+        "Alex Rodriguez",
+        "Miguel Tejada",
+        "Alex Rodriguez",
+        "Vladimir Guerrero",
+        "Alex Rodriguez",
+        "Justin Morneau",
+        "Alex Rodriguez",
+        "Dustin Pedroia",
+        "Joe Mauer",
+        "Josh Hamilton",
+        "Justin Verlander",
+        "Miguel Cabrera",
+        "Mike Trout",
+        "Miguel Cabrera",
+        "Mike Trout",
+        "Josh Donaldson",
+        "Mike Trout",
+        "José Altuve",
+        "Mookie Betts",
+        "Mike Trout",
+        "Shohei Ohtani",
+        "Aaron Judge",
+        "Shohei Ohtani"
+    ],
+    "77": [
+        "idk"
+    ],
+    "78": [
+        "idk"
+    ],
+    "79": [
+        "I Know a Place",
+        "My Love",
+        "A Sign of the Times",
+        "Don't Sleep in the Subway",
+        "Color My World",
+        "This Is My Song",
+        "The Other Man's Grass Is Always Greener",
+        "Kiss Me Goodbye",
+        "Round Every Corner",
+        "You're the One",
+        "I Couldn't Live Without Your Love",
+        "Who Am I",
+        "The Song Is Love",
+        "My Friend the Sea",
+        "On my own",
+        "Here for You",
+        "Natural Love",
+        "The Last Goodbye",
+        "The Life and Soul of the Party",
+        "Just Say No",
+        "Foolish Behaviour",
+        "Downtown '83",
+        "Something Beautiful",
+        "In Love",
+        "I Owe You Nothing",
+        "Downtown '88",
+        "Put Your Hand in the Hand",
+        "The Windmills of Your Mind",
+        "The Wedding Song",
+        "Wight Is Wight",
+        "The World Song",
+        "Happy Heart",
+        "The Cat in the Window",
+        "The Song of My Life",
+        "You are the Miracle",
+        "With All My Heart",
+        "The Light of Love",
+        "I Can't Stop Loving You",
+        "Hello Dolly",
+        "Tell Me It's Not True",
+        "Don't Cry for Me Argentina",
+        "Never Never Never",
+        "The Little Boy Santa Claus Forgot",
+        "The Little Donkey",
+        "Where Did We Go Wrong",
+        "The In Crowd",
+        "I Will Wait for You",
+        "What Now My Love",
+        "If I Ruled the World",
+        "Fly Me to the Moon",
+        "Strangers in the Night",
+        "The Girl from Ipanema",
+        "Yesterday",
+        "Michelle",
+        "Something Stupid",
+        "My Way",
+        "La vie en rose",
+        "Que sera, sera",
+        "The Party's Over",
+        "Smile",
+        "As Time Goes By",
+        "Begin the Beguine",
+        "Bewitched",
+        "Embraceable You",
+        "I'll Be Seeing You",
+        "It Had to Be You",
+        "Night and Day",
+        "Over the Rainbow",
+        "The Man I Love",
+        "They Can't Take That Away from Me",
+        "What'll I Do",
+        "You Go to My Head",
+        "You Made Me Love You",
+        "April in Paris",
+        "Autumn Leaves",
+        "Basin Street Blues",
+        "By the Time I Get to Phoenix",
+        "Cry Me a River",
+        "Georgia on My Mind",
+        "God Bless the Child",
+        "Good Morning Heartache",
+        "I Can't Get Started",
+        "I Get Along Without You Very Well",
+        "I'm a Fool to Want You",
+        "It's Impossible",
+        "Lazy River",
+        "Love for Sale",
+        "Lover Man",
+        "Mack the Knife",
+        "Moon River",
+        "My Funny Valentine",
+        "One for My Baby",
+        "Send in the Clowns",
+        "Stormy Weather",
+        "Summertime",
+        "The Boy Next Door",
+        "The Folks Who Live on the Hill",
+        "The Nearness of You",
+        "These Foolish Things",
+        "When I Fall in Love",
+        "Where or When",
+        "Willow Weep for Me",
+        "You've Changed",
+        "Alfie",
+        "As Long as He Needs Me",
+        "Call Me",
+        "Can't Take My Eyes Off You",
+        "Close to You",
+        "Day by Day",
+        "Evergreen",
+        "For All We Know",
+        "How Do You Keep the Music Playing?",
+        "I Honestly Love You",
+        "I Write the Songs",
+        "If You Love Me",
+        "The Look of Love",
+        "The Way We Were",
+        "What Are You Doing the Rest of Your Life?",
+        "What the World Needs Now Is Love",
+        "You Don't Have to Say You Love Me",
+        "You Light Up My Life",
+        "You'll Never Find Another Love Like Mine",
+        "A Man and a Woman",
+        "A Time for Us",
+        "Never on Sunday",
+        "The Three Bells",
+        "Those Were the Days",
+        "Volare",
+        "It's Now or Never",
+        "Love Story",
+        "Only You",
+        "Return to Sender",
+        "Waterloo",
+        "Yesterday When I Was Young",
+        "A Boy and a Girl",
+        "A Certain Smile",
+        "A Sunday Kind of Love",
+        "After You've Gone",
+        "Ain't Misbehavin'",
+        "All of Me",
+        "All the Things You Are",
+        "Almost Like Being in Love",
+        "Always",
+        "Angel Eyes",
+        "As If We Never Said Goodbye",
+        "At Last",
+        "Baby Face",
+        "Bad Leroy Brown",
+        "Because of You",
+        "Blue Moon",
+        "Body and Soul",
+        "But Beautiful",
+        "Bye Bye Blackbird",
+        "Can't Help Lovin' Dat Man",
+        "Caravan",
+        "Cheek to Cheek",
+        "Come Rain or Come Shine",
+        "Crazy",
+        "Cry",
+        "Dancing Cheek to Cheek",
+        "Danny Boy",
+        "Desafinado",
+        "Don't Get Around Much Anymore",
+        "Don't Worry 'Bout Me",
+        "Easy Living",
+        "Everything Happens to Me",
+        "Falling in Love Again",
+        "Fine and Mellow",
+        "For Once in My Life",
+        "Get Happy",
+        "Glad to Be Unhappy",
+        "Goody Goody",
+        "Guess I'll Hang My Tears Out to Dry",
+        "Here's That Rainy Day",
+        "How Deep Is the Ocean?",
+        "How High the Moon",
+        "I Can't Give You Anything but Love",
+        "I Cover the Waterfront",
+        "I Get a Kick Out of You",
+        "I Got It Bad",
+        "I Got Rhythm",
+        "I Gotta Right to Sing the Blues",
+        "I Only Have Eyes for You",
+        "I Remember You",
+        "I Thought About You",
+        "I Wish I Were in Love Again",
+        "I'll Be Around",
+        "I'll Never Smile Again",
+        "I'll See You in My Dreams",
+        "I'm Beginning to See the Light",
+        "I'm Confessin'",
+        "I'm Getting Sentimental Over You",
+        "I'm in the Mood for Love",
+        "I've Got a Crush on You",
+        "I've Got My Love to Keep Me Warm",
+        "If I Had You",
+        "In a Sentimental Mood",
+        "In the Wee Small Hours",
+        "Indian Summer",
+        "It Could Happen to You",
+        "It Might as Well Be Spring",
+        "It's Only a Paper Moon",
+        "Just Friends",
+        "Just in Time",
+        "Just One of Those Things",
+        "Just You, Just Me",
+        "Let's Do It",
+        "Let's Face the Music and Dance",
+        "Let's Fall in Love",
+        "Limehouse Blues",
+        "Long Ago",
+        "Love Is Here to Stay",
+        "Love Me or Leave Me",
+        "Lover",
+        "Lullaby of Birdland",
+        "Lush Life",
+        "Make Believe",
+        "Mean to Me",
+        "Miss Otis Regrets",
+        "Misty",
+        "Moonglow",
+        "More Than You Know",
+        "My Buddy",
+        "My Heart Stood Still",
+        "My Ideal",
+        "My One and Only Love",
+        "My Romance",
+        "Nature Boy",
+        "Nice Work If You Can Get It",
+        "Nobody Knows the Trouble I've Seen",
+        "Oh, Lady Be Good!",
+        "Old Devil Moon",
+        "On a Clear Day",
+        "On the Sunny Side of the Street",
+        "Once in a While",
+        "One Note Samba",
+        "Our Love Is Here to Stay",
+        "Out of Nowhere",
+        "Polka Dots and Moonbeams",
+        "Prisoner of Love",
+        "Remember",
+        "Rose Room",
+        "'Round Midnight",
+        "S'Wonderful",
+        "Secret Love",
+        "Shadow of Your Smile",
+        "Skylark",
+        "Smoke Gets in Your Eyes",
+        "So in Love",
+        "Solitude",
+        "Someone to Watch Over Me",
+        "Something to Remember You By",
+        "Sophisticated Lady",
+        "Spring Is Here",
+        "Star Dust",
+        "Stardust",
+        "Stella by Starlight",
+        "Strange Fruit",
+        "Street of Dreams",
+        "Swinging on a Star",
+        "Take the \"A\" Train",
+        "Tangerine",
+        "Tea for Two",
+        "Tenderly",
+        "That Old Black Magic",
+        "That Old Feeling",
+        "The Best Is Yet to Come",
+        "The Lady Is a Tramp",
+        "The Night We Called It a Day",
+        "The Song Is You",
+        "The Very Thought of You",
+        "The Way You Look Tonight",
+        "There Will Never Be Another You",
+        "This Can't Be Love",
+        "Time After Time",
+        "Too Marvelous for Words",
+        "Try a Little Tenderness",
+        "Until the Real Thing Comes Along",
+        "Wee Small Hours",
+        "What Is This Thing Called Love?",
+        "What's New?",
+        "When Sunny Gets Blue",
+        "Whispering",
+        "Why Was I Born?",
+        "With a Song in My Heart",
+        "Yesterdays",
+        "You Are Too Beautiful",
+        "You Must Have Been a Beautiful Baby",
+        "You Took Advantage of Me",
+        "You'd Be So Nice to Come Home To",
+        "You'll Never Know",
+        "Young at Heart",
+        "Your"
+    ],
+    "80": [
+        "Vice Admiral"
+    ],
+    "81": [
+        "idk"
+    ],
+    "82": [
+        "Mikoyan MiG-29 Fulcrum",
+        "Mikoyan MiG-31 Foxhound",
+        "Sukhoi Su-30 Flanker",
+        "Antonov An-26 Curl",
+        "Antonov An-72 Coaler"
+    ],
+    "83": [
+        "idk"
+    ],
+    "84": [
+        "violins",
+        "violas",
+        "cellos",
+        "double basses"
+    ],
+    "85": [
+        "idk"
+    ],
+    "86": [
+        "idk"
+    ],
+    "87": [
+        "idk"
+    ],
+    "88": [
+        "idk"
+    ],
+    "89": [
+        "Eliezer Ben-Yehuda",
+        "Beila Jonas",
+        "Shlomo Jonas"
+    ],
+    "90": [
+        "The Stylistics"
+    ],
+    "91": [
+        "idk"
+    ],
+    "92": [
+        "idk"
+    ],
+    "93": [
+        "Hannibal Barca",
+        "Hasdrubal Gisco",
+        "Mago Barca"
+    ],
+    "94": [
+        "Boudicca",
+        "Dido",
+        "Enrico Dandolo",
+        "Gajah Mada",
+        "Haile Selassie",
+        "Maria Theresa",
+        "Pacal",
+        "Theodora",
+        "William"
+    ],
+    "95": [
+        "Beni River",
+        "Madre de Dios River"
+    ],
+    "96": [
+        "idk"
+    ],
+    "97": [
+        "idk"
+    ],
+    "98": [
+        "Joanna Lancaster",
+        "Susan Lancaster"
+    ],
+    "99": [
+        "idk"
+    ],
+    "100": [
+        "Other Voices, Other Rooms",
+        "The Grass Harp",
+        "Breakfast at Tiffany's",
+        "In Cold Blood"
+    ],
+    "101": [
+        "Ford Automotive"
+    ],
+    "102": [
+        "Napoleon Bonaparte",
+        "Louis-Nicolas Davout",
+        "Jean-Baptiste Bernadotte",
+        "Joachim Murat",
+        "Nicholas Soult"
+    ],
+    "103": [
+        "Elliott",
+        "Gertie",
+        "Michael",
+        "Mary",
+        "Keys"
+    ],
+    "104": [
+        "Don't Come Home A-Drinkin' (With Lovin' on Your Mind)",
+        "You Ain't Woman Enough (To Take My Man)",
+        "Fist City"
+    ],
+    "105": [
+        "Rosie Casals",
+        "Maria Bueno",
+        "Karen Hantze Susman",
+        "Nancy Richey",
+        "Darlene Hard",
+        "Lesley Turner Bowrey",
+        "Judy Tegart Dalton",
+        "Francoise Durr",
+        "Betty Stove",
+        "Janet Newberry",
+        "Ilana Kloss",
+        "Renee Richards",
+        "Virginia Wade",
+        "Betty Nagelsen"
+    ],
+    "106": [
+        "Johann Wolfgang Textor and Anna Margaretha Lindheimer"
+    ],
+    "107": [
+        "idk"
+    ],
+    "108": [
+        "Gegeen Khan",
+        "Ragibagh Khan",
+        "Khutughtu Khan Kusala",
+        "Rinchinbal Khan"
+    ],
+    "109": [
+        "Equivalence"
+    ],
+    "110": [
+        "Lower Saxony"
+    ],
+    "111": [
+        "European Parliament",
+        "Council of the European Union"
+    ],
+    "112": [
+        "Paddington station",
+        "Temple Meads station",
+        "Bridgwater station",
+        "Exeter station",
+        "Bath Spa station",
+        "Swindon station",
+        "Reading station",
+        "Didcot Parkway station",
+        "Gloucester station",
+        "Newport station"
+    ],
+    "113": [
+        "idk"
+    ],
+    "114": [
+        "Silver Play Button"
+    ],
+    "115": [
+        "Channel News Asia",
+        "NHK World Japan",
+        "Arirang TV",
+        "China Global Television Network",
+        "TRT World",
+        "Al Jazeera English",
+        "WION",
+        "Myanmar International Television"
+    ],
+    "116": [
+        "idk"
+    ],
+    "117": [
+        "Walther Rathenau"
+    ],
+    "118": [
+        "Austin Powers: International Man of Mystery"
+    ],
+    "119": [
+        "idk"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Vienna",
+        "Bucharest",
+        "Warsaw",
+        "Budapest"
+    ],
+    "121": [
+        "Madagascar",
+        "Seychelles",
+        "Comoros",
+        "Mauritius"
+    ],
+    "122": [
+        "Swimming",
+        "Rowing",
+        "Water Polo",
+        "Canoeing",
+        "Diving"
+    ],
+    "123": [
+        "Sam Vimes"
+    ],
+    "124": [
+        "Ottawa",
+        "Washington, D.C."
+    ],
+    "125": [
+        "Breaking"
+    ],
+    "126": [
+        "Suriname"
+    ],
+    "127": [
+        "Ambassadors accredited to heads of state",
+        "Envoys or ministers accredited to heads of state"
+    ],
+    "128": [
+        "Proxima Centauri",
+        "Alpha Centauri A",
+        "Alpha Centauri B",
+        "Luhman 16 A",
+        "Luhman 16 B",
+        "Sirius A",
+        "Sirius B"
+    ],
+    "129": [
+        "idk"
+    ],
+    "130": [
+        "German Shepherd",
+        "German Shorthaired Pointer",
+        "German Wirehaired Pointer",
+        "German Spitz"
+    ],
+    "131": [
+        "Nyamwezi",
+        "Sukuma",
+        "Sumbwa"
+    ],
+    "132": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "Wisconsin",
+        "Wyoming"
+    ],
+    "133": [
+        "Seoul",
+        "Busan",
+        "Incheon",
+        "Daegu",
+        "Daejeon",
+        "Gwangju",
+        "Ulsan",
+        "Sejong"
+    ],
+    "134": [
+        "idk"
+    ],
+    "135": [
+        "Chicago Tribune",
+        "San Diego Union-Tribune"
+    ],
+    "136": [
+        "Ernani",
+        "Rigoletto"
+    ],
+    "137": [
+        "Overmountain Victory National Historic Trail",
+        "Selma to Montgomery National Historic Trail",
+        "Star-Spangled Banner National Historic Trail",
+        "Ala Kahakai National Historic Trail",
+        "Chilkoot National Historic Trail",
+        "Kings Road National Historic Trail"
+    ],
+    "138": [
+        "idk"
+    ],
+    "139": [
+        "Christmas Day",
+        "Thanksgiving Day"
+    ],
+    "140": [
+        "Hexagonal hexagonal-pyramidal",
+        "Hexagonal trigonal-dipyramidal",
+        "Hexagonal hexagonal-dipyramidal",
+        "Hexagonal hexagonal-trapezohedral",
+        "Hexagonal dihexagonal-pyramidal",
+        "Hexagonal hexagonal-scalenohedral",
+        "Hexagonal dihexagonal-dipyramidal"
+    ],
+    "141": [
+        "Adephaga",
+        "Archostemata",
+        "Myxophaga",
+        "Polyphaga"
+    ],
+    "142": [
+        "Equivalence"
+    ],
+    "143": [
+        "2005",
+        "2007",
+        "2008",
+        "2010",
+        "2011",
+        "2013",
+        "2014",
+        "2016",
+        "2017",
+        "2019"
+    ],
+    "144": [
+        "Frank Island",
+        "Stevenson Island",
+        "Peale Island"
+    ],
+    "145": [
+        "Yokohama, Japan",
+        "Guangzhou, China"
+    ],
+    "146": [
+        "Erwin Rommel",
+        "Albert Kesselring"
+    ],
+    "147": [
+        "Belleville",
+        "Blayais",
+        "Bugey",
+        "Cattenom",
+        "Chinon",
+        "Chooz",
+        "Civaux",
+        "Cruas",
+        "Dampierre",
+        "Flamanville",
+        "Golfech",
+        "Gravelines",
+        "Nogent",
+        "Paluel",
+        "Penly",
+        "Saint-Alban",
+        "Saint-Laurent",
+        "Tricastin"
+    ],
+    "148": [
+        "idk"
+    ],
+    "149": [
+        "Pikachu"
+    ]
+}

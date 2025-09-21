@@ -17,7 +17,7 @@
         "Equivalence",
         "Contains",
         "Contains",
-        "Overlap",
+        "Disjoint",
         "Equivalence"
     ],
     "3": [
@@ -28,13 +28,174 @@
         "Equivalence"
     ],
     "4": [
-        "ContainedBy",
+        "Disjoint",
         "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "5": [
+        "Overlap",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "127": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "128": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "129": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "130": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "131": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "132": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "133": [
+        "Equivalence",
+        "Unknown",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "134": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "135": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "136": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "137": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "138": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "139": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "140": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "141": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "142": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "143": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "144": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "145": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "146": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "147": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Contains"
+    ],
+    "148": [
+        "Unknown",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "ContainedBy"
+    ],
+    "149": [
         "Equivalence",
         "Contains",
         "Contains",
@@ -45,8 +206,8 @@
         "Equivalence",
         "Contains",
         "Contains",
-        "Overlap",
-        "ContainedBy"
+        "Disjoint",
+        "Equivalence"
     ],
     "7": [
         "Equivalence",
@@ -71,10 +232,10 @@
     ],
     "10": [
         "Equivalence",
-        "Equivalence",
+        "Contains",
+        "Contains",
         "Disjoint",
-        "Disjoint",
-        "Disjoint"
+        "Equivalence"
     ],
     "11": [
         "Equivalence",
@@ -126,11 +287,11 @@
         "Equivalence"
     ],
     "18": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "Contains"
     ],
     "19": [
         "Equivalence",
@@ -156,7 +317,7 @@
     "22": [
         "Equivalence",
         "Contains",
-        "Equivalence",
+        "Contains",
         "Disjoint",
         "Equivalence"
     ],
@@ -189,7 +350,7 @@
         "Equivalence"
     ],
     "27": [
-        "Contains",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -210,17 +371,17 @@
         "Equivalence"
     ],
     "30": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
-        "Disjoint",
+        "Contains",
         "Equivalence"
     ],
     "31": [
         "Equivalence",
-        "Equivalence",
         "Contains",
         "Contains",
+        "Disjoint",
         "Equivalence"
     ],
     "32": [
@@ -245,7 +406,7 @@
         "Equivalence"
     ],
     "35": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -263,7 +424,7 @@
         "Contains",
         "Contains",
         "Disjoint",
-        "Contains"
+        "Equivalence"
     ],
     "38": [
         "Equivalence",
@@ -308,7 +469,7 @@
         "Equivalence"
     ],
     "44": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -329,7 +490,7 @@
         "Equivalence"
     ],
     "47": [
-        "Equivalence",
+        "Contains",
         "Contains",
         "Contains",
         "Disjoint",
@@ -347,7 +508,7 @@
         "Contains",
         "Contains",
         "Disjoint",
-        "Contains"
+        "Equivalence"
     ],
     "50": [
         "Equivalence",
@@ -357,7 +518,7 @@
         "Equivalence"
     ],
     "51": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -371,18 +532,18 @@
         "Equivalence"
     ],
     "53": [
-        "Contains",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "Contains"
     ],
     "54": [
         "Equivalence",
         "Contains",
         "Contains",
-        "Disjoint",
-        "Equivalence"
+        "Unknown",
+        "Unknown"
     ],
     "55": [
         "Equivalence",
@@ -399,7 +560,7 @@
         "Equivalence"
     ],
     "57": [
-        "Contains",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -416,7 +577,7 @@
         "Equivalence",
         "Contains",
         "Contains",
-        "Unknown",
+        "Disjoint",
         "Equivalence"
     ],
     "60": [
@@ -464,7 +625,7 @@
     "66": [
         "Equivalence",
         "Contains",
-        "Contains",
+        "Unknown",
         "Disjoint",
         "Equivalence"
     ],
@@ -490,14 +651,14 @@
         "Equivalence"
     ],
     "70": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "71": [
-        "Equivalence",
+        "Disjoint",
         "Contains",
         "Contains",
         "Disjoint",
@@ -546,7 +707,7 @@
         "Equivalence"
     ],
     "78": [
-        "Equivalence",
+        "ContainedBy",
         "Contains",
         "Contains",
         "Disjoint",
@@ -596,10 +757,10 @@
     ],
     "85": [
         "Equivalence",
+        "ContainedBy",
         "Contains",
         "Contains",
-        "Disjoint",
-        "Equivalence"
+        "Disjoint"
     ],
     "86": [
         "Equivalence",
@@ -609,7 +770,7 @@
         "Equivalence"
     ],
     "87": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -624,10 +785,10 @@
     ],
     "89": [
         "Equivalence",
+        "ContainedBy",
+        "Equivalence",
         "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
+        "ContainedBy"
     ],
     "90": [
         "Equivalence",
@@ -644,11 +805,11 @@
         "Equivalence"
     ],
     "92": [
-        "Equivalence",
+        "Unknown",
         "Contains",
         "Contains",
-        "Disjoint",
-        "Equivalence"
+        "Unknown",
+        "ContainedBy"
     ],
     "93": [
         "Equivalence",
@@ -665,7 +826,7 @@
         "Equivalence"
     ],
     "95": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -676,7 +837,7 @@
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "Contains"
     ],
     "97": [
         "Equivalence",
@@ -686,9 +847,9 @@
         "Equivalence"
     ],
     "98": [
+        "Equivalence",
         "Contains",
-        "Contains",
-        "Contains",
+        "Unknown",
         "Disjoint",
         "Equivalence"
     ],
@@ -728,18 +889,18 @@
         "Equivalence"
     ],
     "104": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "105": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "ContainedBy"
     ],
     "106": [
         "Equivalence",
@@ -749,14 +910,14 @@
         "Equivalence"
     ],
     "107": [
-        "Equivalence",
+        "Disjoint",
         "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "108": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -770,7 +931,7 @@
         "Equivalence"
     ],
     "110": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -784,7 +945,7 @@
         "Equivalence"
     ],
     "112": [
-        "ContainedBy",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -806,20 +967,20 @@
     ],
     "115": [
         "Equivalence",
-        "Unknown",
-        "Unknown",
+        "Contains",
+        "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "116": [
-        "Equivalence",
+        "Contains",
         "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
     ],
     "117": [
-        "Equivalence",
+        "ContainedBy",
         "Contains",
         "Contains",
         "Disjoint",
@@ -827,7 +988,7 @@
     ],
     "118": [
         "Equivalence",
-        "Equivalence",
+        "Contains",
         "Contains",
         "Disjoint",
         "Equivalence"
@@ -837,10 +998,10 @@
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "ContainedBy"
     ],
     "120": [
-        "Contains",
+        "Equivalence",
         "Contains",
         "Contains",
         "Disjoint",
@@ -858,7 +1019,7 @@
         "Contains",
         "Contains",
         "Disjoint",
-        "Equivalence"
+        "Contains"
     ],
     "123": [
         "Equivalence",
@@ -882,167 +1043,6 @@
         "Equivalence"
     ],
     "126": [
-        "ContainedBy",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "127": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "128": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "129": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "130": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "131": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "132": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "133": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "134": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "135": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "136": [
-        "Unknown",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "137": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "138": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "139": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Contains"
-    ],
-    "140": [
-        "Equivalence",
-        "Contains",
-        "Disjoint",
-        "Disjoint",
-        "Disjoint"
-    ],
-    "141": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "142": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "143": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "144": [
-        "Equivalence",
-        "Unknown",
-        "Disjoint",
-        "Unknown",
-        "Unknown"
-    ],
-    "145": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "146": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "147": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "148": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "149": [
         "Equivalence",
         "Contains",
         "Contains",
