@@ -15,12 +15,10 @@ def draw_llm_bubble_grid(
     predicates: list,                # list[str] -> one subplot per predicate
     llms: list,                      # sorted LLM names (display order)
     dataset: str,                    # dataset filter in df["dataset"]
-    actions: list,                   # list[str] -> filter df["action"] and aggregate
-    bubble_sizes: dict,              # {llm: area or "small"/"medium"/"large"}
-    release_dates: dict,             # {llm: "YYYY-MM-DD" | datetime | {"release_date": "..."}}
+    actions: list,    
+    llm_info,               
     *,
     date_format: str = "%Y-%m-%d",
-    families: dict | None = None,    # {llm: "OpenAI"/"Google"/"Meta"/"xAI"/"DeepSeek"/...}
     legend_position: str = "top",    # "top" or "bottom" for the OUTSIDE legend
     annotate: bool = True,
     annotate_rotation: int = 0,
@@ -61,13 +59,13 @@ def draw_llm_bubble_grid(
     # Parse/normalize release dates for all llms
     parsed_dates = {}
     for m in llms:
-        if m not in release_dates:
+        if m not in llm_info:
             raise KeyError(f"Missing release date for model: {m}")
-        parsed_dates[m] = _to_dt(release_dates[m]["release_date"])
+        parsed_dates[m] = _to_dt(llm_info[m]["release_date"])
 
     # Normalize bubble sizes (allow direct float or named buckets)
     def _area_for(m):
-        s = bubble_sizes.get(m, "medium")
+        s = llm_info[m].get("size", "medium")
         if isinstance(s, (int, float)):
             return float(s)
         return float(bucket_sizes.get(str(s), bucket_sizes["medium"]))
@@ -91,7 +89,7 @@ def draw_llm_bubble_grid(
 
     # color grouping
     def _group_key(model: str):
-        return families.get(model, "Other") if families else "Series"
+        return llm_info[model].get("company", "Other")
 
     # --- grid layout (dynamic: prefer 2 rows → 2x2 for 4, 2x3 for 6, etc.) ---
     n = len(predicates)
@@ -127,7 +125,7 @@ def draw_llm_bubble_grid(
 
 
     legend_handles = {}
-    legend_title = "" if families else "Series"
+    legend_title = ""
 
     for i, pred in enumerate(predicates):
         ax = axes_flat[i]
@@ -311,15 +309,9 @@ def save_all_bubble_grids(
     df,
     predicates,
     llms,
-    bubble_sizes,
-    release_dates,
-    families=None,
-    # If None, infer from df['dataset'].unique()
-    datasets=None,
-    # If None, create one action-set per unique action in df['action'].
-    # You can also pass a list of lists, e.g. [["zero-shot"], ["fix-llm-response"], ["zero-shot","fix-llm-response"]]
-    actions=None,
-    include_all_actions=False,   # if True and action_sets is None, add one extra set with all actions
+    llm_info,
+    datasets,
+    actions,
     outdir="plots",
     ncols=3,
     figsize=(16, 9),
@@ -349,9 +341,7 @@ def save_all_bubble_grids(
                 llms=llms,
                 dataset=ds,
                 actions=[act],
-                bubble_sizes=bubble_sizes,
-                release_dates=release_dates,
-                families=families,
+                llm_info = llm_info,
                 ncols=ncols,
                 figsize=figsize,
                 date_format=date_format,
@@ -374,7 +364,7 @@ def main(config =None):
         config = {
             "folder": os.path.join(root_dir, "output"),
             "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-17_15-25",
+            "time": "2025-09-22_00-41",
             "llms": None,
             "datasets":["overall", "spinach", "qawiki","synthetic"],
             "actions":["zero-shot","wikidata", "fixing","classification"],
@@ -388,70 +378,28 @@ def main(config =None):
     jccards_col = config.get("jccards", ["J(A1-A2)","J(A1-A34)","J(A3-A4)","J(A4-A1|3)"])
     folder = config.get("folder", os.path.join(root_dir, "output"))
     out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-17_15-25")
-    actions = config.get("actions", )
-    llms = config.get("llms", None)
-    if llms is None:
-        llms = ['llama3.1:8b',
-                'llama3.1:70b',
-                'deepseek-chat',
-                'deepseek-reasoner',
-                'grok-3-mini',
-                'gemini-2.0-flash',
-                'gemini-2.5-flash',
-                'gemini-2.5-pro',
-                'gpt-4.1-2025-04-14',
-                'gpt-4.1-mini-2025-04-14',
-                'gpt-4.1-nano-2025-04-14',
-                'gpt-4o',
-                'o3',
-                'gpt-oss:20b',
-                'gpt-5-nano',
-                'gpt-5-mini',
-                'gpt-5']
+    time = config.get("time", "2025-09-22_00-41")
+  
+    llms_name = config.get("llms", None)
+    llm_info = config.get("llm_info", None)
+    if llms_name is None:
+        llm_path = f"{root_dir}/data/llm_info.json"
+        with open(llm_path, "r", encoding="utf-8") as f:
+            llm_info = json.load(f)
+            llms_name = list(llm_info.keys())
 
     df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
-    
-
-    model_size = {
-        'llama3.1:8b': "small",
-        'llama3.1:70b':'large', 
-        'gpt-oss:20b': 'medium',
-        'gpt-4o':'large',
-        'gpt-4.1-2025-04-14':'large',
-        'gpt-4.1-mini-2025-04-14':'medium',
-        'gpt-4.1-nano-2025-04-14':'small',
-        'gpt-5':'large',
-        'gpt-5-mini':'medium',
-        'gpt-5-nano':'small',
-        'gemini-2.0-flash':'medium',
-        'gemini-2.5-pro':'large',
-        'gemini-2.5-flash':'medium',
-        'grok-3-mini':'small',
-        'deepseek-chat':'large',          # e.g., assume large (MoE active)
-        'deepseek-reasoner':'large',
-        'o3':'large',
-    }
-
-    families = {
-        'gpt-4o':'OpenAI','gpt-4.1-2025-04-14':'OpenAI','gpt-4.1-mini-2025-04-14':'OpenAI','gpt-4.1-nano-2025-04-14':'OpenAI',
-        'gpt-oss:20b':'OpenAI','gpt-5':'OpenAI','gpt-5-mini':'OpenAI','gpt-5-nano':'OpenAI','o3':'OpenAI',
-        'gemini-2.0-flash':'Google','gemini-2.5-pro':'Google','gemini-2.5-flash':'Google',
-        'llama3.1:8b':'Meta','llama3.1:70b':'Meta','grok-3-mini':'xAI',
-        'deepseek-chat':'DeepSeek','deepseek-reasoner':'DeepSeek'
-    }
-    BASE_DIR = os.path.dirname(__file__)
-    # print(BASE_DIR)
-    with open(BASE_DIR + "/llm_info.json", "r") as f:
-        llm_info = json.load(f)
+    summery_llms = df_summery["llm"].unique()
+    llms = []
+    for llm in llms_name:
+        if llm in summery_llms:
+            llms.append(llm)
 
     paths = save_all_bubble_grids(
         df=df_summery,
         predicates=predicates,
         llms=llms,
-        bubble_sizes=model_size,
-        release_dates=llm_info,
-        families=families,
+        llm_info=llm_info,
         datasets=datasets,       # or None to infer from df
         actions=actions,
         outdir=f"{out_dir}/bubble_scatter",
@@ -465,9 +413,7 @@ def main(config =None):
         df=df_summery,
         predicates=predicates,
         llms=llms,
-        bubble_sizes=model_size,
-        release_dates=llm_info,
-        families=families,
+        llm_info=llm_info,
         datasets=datasets,       # or None to infer from df
         actions=actions,
         outdir=f"{out_dir}/bubble_scatter_jarccard",

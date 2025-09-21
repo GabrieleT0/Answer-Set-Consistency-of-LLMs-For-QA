@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 import numpy as np
 import numpy as np
@@ -365,38 +366,31 @@ def main(config = None):
         config = {
             "folder": os.path.join(root_dir, "output"),
             "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-17_15-25",
+            "time": "2025-09-22_00-41",
             "llms": None
         }   
         
     folder = config.get("folder", os.path.join(root_dir, "output"))
     out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-17_15-25")
-    llms = config.get("llms", None)
-    if llms is None:
-        llms = ['llama3.1:8b',
-                'llama3.1:70b',
-                'deepseek-chat',
-                'deepseek-reasoner',
-                'grok-3-mini',
-                'gemini-2.0-flash',
-                'gemini-2.5-flash',
-                'gemini-2.5-pro',
-                'gpt-4.1-2025-04-14',
-                'gpt-4.1-mini-2025-04-14',
-                'gpt-4.1-nano-2025-04-14',
-                'gpt-4o',
-                'o3',
-                'gpt-oss:20b',
-                'gpt-5-nano',
-                'gpt-5-mini',
-                'gpt-5']
+    time = config.get("time", "2025-09-22_00-41")
 
     actions = ["fixing","classification","wikidata"]
     predicates = ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"]
     columns=["p(A1=A2)", "p(A1=A3+A4)", "p(A1>A3)", "p(A1>A4)", "p(A3∅A4)", "p(A4=A1|3)"]
     
+    llms_name = config.get("llms", None)
+    if llms_name is None:
+        llm_path = f"{root_dir}/data/llm_info.json"
+        with open(llm_path, "r", encoding="utf-8") as f:
+            llms_name = list(json.load(f).keys())
+
     df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
+    summery_llms = df_summery["llm"].unique()
+    llms = []
+    for llm in llms_name:
+        if llm in summery_llms:
+            llms.append(llm)
+
     p_value_matrix = df_summery[["action", "dataset", "llm"] + columns]
     
 
@@ -405,7 +399,7 @@ def main(config = None):
         actions=actions,
         columns=columns,
         llms=llms,
-        out_dir=f"{out_dir}/new_charts/p_value_heatmap_actions_1x3",
+        out_dir=f"{out_dir}/p_value_heatmap_actions_1x3",
         cmap="Reds",
         low_thr=0.05, high_thr=0.95,
         under_color="white", over_color="black",
@@ -419,7 +413,7 @@ def main(config = None):
         actions=["fixing", "classification"],
         columns=columns,
         llms=llms,
-        out_dir=f"{out_dir}/new_charts/p_value_heatmap_actions_1x2",
+        out_dir=f"{out_dir}/p_value_heatmap_actions_1x2",
         cmap="Reds",
         low_thr=0.05, high_thr=0.95,
         under_color="white", over_color="black",

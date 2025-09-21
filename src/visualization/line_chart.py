@@ -1,4 +1,5 @@
 import os
+import json
 from pathlib import Path
 import matplotlib.pyplot as plt
 import math
@@ -34,7 +35,6 @@ def save_all_line_plots(
     out_path.mkdir(parents=True, exist_ok=True)
 
     datasets = sorted(df["dataset"].dropna().unique().tolist())
-    saved_paths = []
 
     for ds in datasets:
         fig, axes, _ = plot_llms_for_predicates(
@@ -272,7 +272,7 @@ def main(config =None):
         config = {
             "folder": os.path.join(root_dir, "output"),
             "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-17_15-25",
+            "time": "2025-09-22_00-41",
             "llms": None,
             "actions": ["zero-shot","wikidata", "fixing","classification"],
             "predicates": ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"],
@@ -283,30 +283,22 @@ def main(config =None):
     jccards_col = config.get("jccards", ["J(A1-A2)","J(A1-A34)","J(A3-A4)","J(A4-A1|3)"])
     folder = config.get("folder", os.path.join(root_dir, "output"))
     out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-17_15-25")
-    actions = config.get("actions", )
-    llms = config.get("llms", None)
-    if llms is None:
-        llms = ['llama3.1:8b',
-                'llama3.1:70b',
-                'deepseek-chat',
-                'deepseek-reasoner',
-                'grok-3-mini',
-                'gemini-2.0-flash',
-                'gemini-2.5-flash',
-                'gemini-2.5-pro',
-                'gpt-4.1-2025-04-14',
-                'gpt-4.1-mini-2025-04-14',
-                'gpt-4.1-nano-2025-04-14',
-                'gpt-4o',
-                'o3',
-                'gpt-oss:20b',
-                'gpt-5-nano',
-                'gpt-5-mini',
-                'gpt-5']
+    time = config.get("time", "2025-09-22_00-41")
+
+   
+    llms_name = config.get("llms", None)
+    if llms_name is None:
+        llm_path = f"{root_dir}/data/llm_info.json"
+        with open(llm_path, "r", encoding="utf-8") as f:
+            llms_name = list(json.load(f).keys())
 
     df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
-    
+    summery_llms = df_summery["llm"].unique()
+    llms = []
+    for llm in llms_name:
+        if llm in summery_llms:
+            llms.append(llm)
+
     paths = save_all_line_plots(
         df=df_summery,
         predicate_cols=predicates,

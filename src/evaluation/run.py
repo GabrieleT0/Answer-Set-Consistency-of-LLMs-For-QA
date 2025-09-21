@@ -2,6 +2,7 @@ from eval_tool import load_all_questions, load_answers, enrich_answers, analysis
 from eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 from eval_pvalue import compute_pvals, p_value_matrixs
 import os
+import json
 import datetime
 
 if __name__ == "__main__":
@@ -9,12 +10,9 @@ if __name__ == "__main__":
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic']
 
-    llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
-            'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
-            "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
-            "grok-3-mini","deepseek-chat","deepseek-reasoner",
-            "llama3.1:8b","llama3.1:70b", "gpt-oss:20b"]
-    
+    llm_path = f"{root_dir}/data/llm_info.json"
+    with open(llm_path, "r", encoding="utf-8") as f:
+        llms = json.load(f).keys()
     actions = ["wikidata", "fixing", "classification","zero-shot"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
