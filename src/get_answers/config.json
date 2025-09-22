@@ -1,6 +1,6 @@
 {
   "languages": ["en"],
-  "llm_models": ["grok-3-mini", "gpt-5-nano","o3","gpt-4o"],
+  "llm_models": ["grok-3-mini", "gpt-5-nano","o3","gpt-4o","gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro"],
   "datasets": ["lc-quad.tsv"],
   "prompt_types": ["standard", "wikidata"],
   "relations": ["Equivalence", "Containment", "Minus"]
