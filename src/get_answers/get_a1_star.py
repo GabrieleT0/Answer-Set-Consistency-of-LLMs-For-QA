@@ -143,7 +143,7 @@ def main(config = None, logger = setup_logger()):
     if config == None:
         config = {
             "languages": ['en'],
-            "llm_models": ['gpt-5-mini'],
+            "llm_models": ["gemini-2.0-flash", 'gpt-4o', 'o3',"gemini-2.5-pro","gemini-2.5-flash"],
             "datasets": ['lc-quad.tsv', 'spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
             "prompt_types": ['standard']
         }
