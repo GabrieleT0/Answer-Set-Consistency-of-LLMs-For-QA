@@ -6,7 +6,10 @@
         "idk"
     ],
     "2": [
-        "idk"
+        "New York",
+        "New Jersey",
+        "Pennsylvania",
+        "Delaware"
     ],
     "3": [
         "idk"
@@ -21,7 +24,9 @@
         "Abigaille"
     ],
     "7": [
-        "idk"
+        "New York",
+        "Illinois",
+        "South Dakota"
     ],
     "8": [
         "idk"
@@ -30,18 +35,17 @@
         "idk"
     ],
     "10": [
-        "idk"
+        "Mauritania",
+        "Mali",
+        "Guinea",
+        "Guinea-Bissau"
     ],
     "11": [
-        "Emsland",
-        "Leer",
-        "Aurich",
-        "Wittmund",
-        "Friesland",
-        "Wilhelmshaven",
-        "Wesermarsch",
         "Cuxhaven",
-        "Emden"
+        "Friesland",
+        "Wittmund",
+        "Aurich",
+        "Leer"
     ],
     "12": [
         "idk"
@@ -50,40 +54,53 @@
         "idk"
     ],
     "14": [
-        "Sharknado 2: The Second One",
-        "Sharknado 3: Oh Hell No!",
-        "Sharknado: The 4th Awakens",
-        "Sharknado 5: Global Swarming",
-        "The Last Sharknado: It's About Time"
+        "idk"
     ],
     "15": [
         "idk"
     ],
     "16": [
-        "Harry S. Truman",
-        "Dwight D. Eisenhower",
-        "John F. Kennedy",
-        "Lyndon B. Johnson",
-        "Richard Nixon",
-        "Gerald Ford",
-        "Jimmy Carter",
-        "Ronald Reagan",
-        "George H. W. Bush"
+        "Harry S Truman",
+        "Dwight David Eisenhower",
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
+        "Richard Milhous Nixon",
+        "Gerald Rudolph Ford",
+        "James Earl Carter",
+        "Ronald Wilson Reagan",
+        "George Herbert Walker Bush"
     ],
     "17": [
         "idk"
     ],
     "18": [
-        "idk"
+        "Surgical site infections",
+        "Central line associated bloodstream infections",
+        "Umbilical cord infections in newborns",
+        "Neonatal sepsis",
+        "Peritoneal dialysis related peritonitis",
+        "Ventilator associated pneumonia"
     ],
     "19": [
         "idk"
     ],
     "20": [
-        "idk"
+        "Major depressive disorder",
+        "Neuropathic pain",
+        "Diabetic neuropathy",
+        "Postherpetic neuralgia",
+        "Fibromyalgia",
+        "Migraine",
+        "Tension-type headache",
+        "Irritable bowel syndrome",
+        "Functional dyspepsia",
+        "Insomnia",
+        "Chronic musculoskeletal pain"
     ],
     "21": [
-        "idk"
+        "Cleveland-Cliffs",
+        "KeyCorp",
+        "Sherwin-Williams"
     ],
     "22": [
         "idk"
@@ -100,9 +117,9 @@
     "26": [
         "Jerry Garcia",
         "Bob Weir",
+        "Ron McKernan",
         "Phil Lesh",
         "Bill Kreutzmann",
-        "Ron \"Pigpen\" McKernan",
         "Mickey Hart",
         "Tom Constanten",
         "Keith Godchaux",
@@ -112,8 +129,8 @@
         "Bruce Hornsby"
     ],
     "27": [
-        "Cyprus",
         "Ireland",
+        "Cyprus",
         "Malta"
     ],
     "28": [
@@ -129,51 +146,64 @@
         "idk"
     ],
     "30": [
-        "idk"
+        "Democratic People's Republic of Korea",
+        "Republic of Korea",
+        "United States of America",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "Canada",
+        "Australia",
+        "New Zealand",
+        "Republic of Turkey",
+        "France",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg",
+        "Greece",
+        "Colombia",
+        "Philippines",
+        "Ethiopia",
+        "Sweden",
+        "Denmark",
+        "Thailand"
     ],
     "31": [
-        "Heather McCartney",
-        "Mary McCartney",
-        "Stella McCartney",
-        "James McCartney",
-        "Beatrice McCartney"
+        "Mary Pamela McCartney",
+        "James Louis McCartney",
+        "Heather Louise McCartney"
     ],
     "32": [
         "The Likes of Us",
         "Joseph and the Amazing Technicolor Dreamcoat",
         "Jesus Christ Superstar",
-        "By Jeeves",
         "Evita",
-        "Tell Me on a Sunday",
         "Cats",
+        "Tell Me on a Sunday",
         "Song and Dance",
-        "Starlight Express",
+        "By Jeeves",
         "The Phantom of the Opera",
         "Aspects of Love",
         "Sunset Boulevard",
+        "Starlight Express",
         "Whistle Down the Wind",
         "The Beautiful Game",
-        "The Woman in White",
         "Love Never Dies",
-        "Stephen Ward",
-        "School of Rock"
+        "School of Rock",
+        "The Woman in White",
+        "Cinderella"
     ],
     "33": [
-        "idk"
+        "Henry Kissinger",
+        "Le Duc Tho",
+        "Xuan Thuy",
+        "Nguyen Thi Binh"
     ],
     "34": [
         "idk"
     ],
     "35": [
         "Council of Europe",
-        "European Court of Human Rights",
         "European Parliament",
-        "European Directorate for the Quality of Medicines and HealthCare",
-        "European Audiovisual Observatory",
-        "Eurocorps",
-        "International Institute of Human Rights",
-        "International Space University",
-        "European Ombudsman"
+        "Eurocorps"
     ],
     "36": [
         "idk"
@@ -189,7 +219,15 @@
         "When the Levee Breaks"
     ],
     "38": [
-        "idk"
+        "Treaty of Brest-Litovsk",
+        "Treaty of Tartu",
+        "Treaty of Riga",
+        "Moscow Peace Treaty",
+        "Treaty of Peace with Italy",
+        "Treaty of Peace with Romania",
+        "Treaty of Peace with Hungary",
+        "Treaty of Peace with Bulgaria",
+        "Treaty of Peace with Finland"
     ],
     "39": [
         "Hoth",
@@ -198,28 +236,62 @@
     ],
     "40": [
         "Germany",
-        "Italy",
         "France",
         "United Kingdom",
         "Belgium",
         "Netherlands",
-        "Luxembourg",
-        "Poland",
-        "Czechoslovakia"
+        "Italy",
+        "Poland"
     ],
     "41": [
-        "idk"
+        "Hamlet, Prince of Denmark",
+        "Claudius, King of Denmark",
+        "Gertrude, Queen of Denmark",
+        "Ghost, King Hamlet",
+        "Horatio",
+        "Ophelia",
+        "Polonius, Lord Chamberlain",
+        "Laertes",
+        "Rosencrantz",
+        "Guildenstern",
+        "Francisco",
+        "Bernardo",
+        "Marcellus",
+        "Osric",
+        "Fortinbras, Prince of Norway",
+        "Captain",
+        "Voltimand",
+        "Cornelius",
+        "Reynaldo",
+        "Player King",
+        "Player Queen",
+        "First Player",
+        "Second Player",
+        "First Gravedigger",
+        "Second Gravedigger",
+        "Priest",
+        "Gentleman"
     ],
     "42": [
-        "idk"
+        "Lupin the 3rd: The Castle of Cagliostro",
+        "Nausicaä of the Valley of the Wind",
+        "Laputa: Castle in the Sky",
+        "My Neighbor Totoro",
+        "Kiki's Delivery Service",
+        "Porco Rosso",
+        "Princess Mononoke",
+        "Spirited Away",
+        "Howl's Moving Castle",
+        "Ponyo",
+        "The Wind Rises",
+        "The Boy and the Heron"
     ],
     "43": [
         "idk"
     ],
     "44": [
-        "Academy Award for Best Original Screenplay",
-        "Academy Award for Best Director",
-        "Academy Award for Best Picture"
+        "Best Original Screenplay",
+        "Best Director"
     ],
     "45": [
         "idk"
@@ -236,26 +308,7 @@
         "idk"
     ],
     "49": [
-        "Argentine Primera División",
-        "Campeonato de Fútbol Femenino (Argentina)",
-        "Bolivian Primera División",
-        "Bolivian Women's Football Championship",
-        "Campeonato Brasileiro Série A",
-        "Campeonato Brasileiro de Futebol Feminino Série A1",
-        "Chilean Primera División",
-        "Campeonato Nacional Fútbol Femenino",
-        "Categoría Primera A",
-        "Liga Femenina Profesional (Colombia)",
-        "Ecuadorian Serie A",
-        "Campeonato Ecuatoriano de Fútbol Femenino",
-        "Paraguayan Primera División",
-        "Paraguayan Women's Football Championship",
-        "Peruvian Primera División (Liga 1)",
-        "Liga Femenina (Peru)",
-        "Uruguayan Primera División",
-        "Campeonato Uruguayo Femenino",
-        "Venezuelan Primera División",
-        "Primera División Femenina (Venezuela)"
+        "idk"
     ],
     "50": [
         "New Moon",
@@ -275,10 +328,10 @@
         "Easter Monday",
         "Great Prayer Day",
         "Ascension Day",
-        "Pentecost (Whit Sunday)",
-        "Whit Monday (Pentecost Monday)",
+        "Pentecost Sunday",
+        "Pentecost Monday",
         "Christmas Day",
-        "Second Day of Christmas"
+        "Second Christmas Day"
     ],
     "52": [
         "Andhra Pradesh",
@@ -311,8 +364,8 @@
         "West Bengal"
     ],
     "53": [
-        "Latin script",
-        "Cyrillic script",
+        "Latin alphabet",
+        "Cyrillic alphabet",
         "Greek alphabet",
         "Armenian alphabet",
         "Georgian script"
@@ -321,16 +374,55 @@
         "idk"
     ],
     "55": [
-        "idk"
+        "Ares",
+        "Athena",
+        "Mars",
+        "Minerva",
+        "Bellona",
+        "Nike",
+        "Eris",
+        "Enyo",
+        "Polemos",
+        "Odin",
+        "Tyr",
+        "Freyja",
+        "Valkyries",
+        "Lugh",
+        "Nuada",
+        "The Morrigan",
+        "Badb",
+        "Macha",
+        "Nemain",
+        "Perun",
+        "Svetovid",
+        "Perkunas",
+        "Teutates",
+        "Toutatis",
+        "Camulus",
+        "Esus",
+        "Menrva"
     ],
     "56": [
-        "idk"
+        "Superman",
+        "Batman",
+        "Wonder Woman",
+        "The Flash",
+        "Green Lantern",
+        "Aquaman",
+        "Martian Manhunter"
     ],
     "57": [
         "idk"
     ],
     "58": [
-        "idk"
+        "ksar",
+        "kasbah",
+        "fortified village",
+        "earthen architecture",
+        "rammed earth construction",
+        "adobe construction",
+        "watchtowers",
+        "courtyard houses"
     ],
     "59": [
         "idk"
@@ -339,20 +431,17 @@
         "idk"
     ],
     "61": [
-        "Pelléas et Mélisande",
-        "L'heure espagnole",
-        "Rodrigue et Chimène",
-        "La chute de la maison Usher"
-    ],
-    "62": [
         "idk"
     ],
+    "62": [
+        "MicroProse",
+        "Infogrames",
+        "Electronic Arts",
+        "2K Games"
+    ],
     "63": [
-        "raltegravir",
-        "elvitegravir",
-        "dolutegravir",
-        "bictegravir",
-        "cabotegravir"
+        "Dolutegravir",
+        "Raltegravir"
     ],
     "64": [
         "idk"
@@ -364,17 +453,16 @@
         "7R/25L"
     ],
     "66": [
-        "Rent",
-        "tick, tick... BOOM!"
+        "Rent"
     ],
     "67": [
         "idk"
     ],
     "68": [
-        "Australian Open",
-        "French Open",
-        "Wimbledon",
-        "US Open"
+        "Australian Open 6 times",
+        "French Open 3 times",
+        "Wimbledon 7 times",
+        "United States Open 7 times"
     ],
     "69": [
         "idk"
@@ -386,10 +474,35 @@
         "idk"
     ],
     "72": [
-        "idk"
+        "The Rolling Stones",
+        "The Rolling Stones Number 2",
+        "Out of Our Heads",
+        "Aftermath",
+        "Between the Buttons",
+        "Their Satanic Majesties Request",
+        "Beggars Banquet",
+        "Let It Bleed",
+        "Sticky Fingers",
+        "Exile on Main Street",
+        "Goats Head Soup",
+        "It Is Only Rock and Roll",
+        "Black and Blue",
+        "Some Girls",
+        "Emotional Rescue",
+        "Tattoo You",
+        "Undercover",
+        "Dirty Work",
+        "Steel Wheels",
+        "Voodoo Lounge",
+        "Bridges to Babylon",
+        "A Bigger Bang",
+        "Blue and Lonesome",
+        "Hackney Diamonds"
     ],
     "73": [
-        "idk"
+        "My Left Foot",
+        "There Will Be Blood",
+        "Lincoln"
     ],
     "74": [
         "idk"
@@ -410,7 +523,15 @@
         "idk"
     ],
     "80": [
-        "idk"
+        "Major General",
+        "Rear Admiral",
+        "Air Vice Marshal",
+        "Generalleutnant",
+        "Général de division",
+        "Generale di divisione",
+        "Generaal-majoor",
+        "Generalmajor",
+        "Tümgeneral"
     ],
     "81": [
         "idk"
@@ -419,8 +540,7 @@
         "idk"
     ],
     "83": [
-        "Simon Crean",
-        "David Crean"
+        "idk"
     ],
     "84": [
         "idk"
@@ -440,9 +560,7 @@
     "89": [
         "idk"
     ],
-    "90": [
-        "idk"
-    ],
+    "90": [],
     "91": [
         "idk"
     ],
@@ -473,13 +591,13 @@
     "100": [
         "Other Voices, Other Rooms",
         "The Grass Harp",
-        "Breakfast at Tiffany's",
         "In Cold Blood",
-        "Answered Prayers",
         "Summer Crossing"
     ],
     "101": [
-        "idk"
+        "Model e",
+        "Ford Blue",
+        "Ford Pro"
     ],
     "102": [
         "idk"
@@ -497,44 +615,26 @@
         "idk"
     ],
     "107": [
-        "Russian SFSR",
-        "Ukrainian SSR",
-        "Byelorussian SSR",
-        "Uzbek SSR",
-        "Kazakh SSR",
-        "Georgian SSR",
-        "Azerbaijan SSR",
-        "Lithuanian SSR",
-        "Moldavian SSR",
-        "Latvian SSR",
-        "Kyrgyz SSR",
-        "Tajik SSR",
-        "Armenian SSR",
-        "Turkmen SSR",
-        "Estonian SSR"
+        "idk"
     ],
     "108": [
         "Kublai Khan",
         "Temür Khan",
         "Külüg Khan",
-        "Buyantu Khan",
+        "Ayurbarwada Buyantu Khan",
         "Gegeen Khan",
-        "Yesun Temur",
-        "Ragibagh Khan",
-        "Jayaatu Khan Tugh Temür",
-        "Kusala",
-        "Rinchinbal Khan",
-        "Toghon Temur"
+        "Yesün Temür",
+        "Toghon Temür"
     ],
     "109": [
-        "cytochrome P450 3A4",
-        "cytochrome P450 2B6",
-        "cytochrome P450 2D6",
-        "cytochrome P450 2C19",
-        "cytochrome P450 2C9"
+        "cytochrome P450 family 3 subfamily A 4 enzyme",
+        "cytochrome P450 family 2 subfamily B 6 enzyme",
+        "cytochrome P450 family 2 subfamily C 19 enzyme",
+        "cytochrome P450 family 2 subfamily D 6 enzyme",
+        "cytochrome P450 family 3 subfamily A 5 enzyme"
     ],
     "110": [
-        "idk"
+        "Lower Saxony"
     ],
     "111": [
         "European Parliament",
@@ -555,9 +655,8 @@
         "Silver Play Button",
         "Gold Play Button",
         "Diamond Play Button",
-        "Ruby Play Button",
-        "Red Diamond Play Button",
-        "Custom Play Button"
+        "Custom Play Button",
+        "Red Diamond Play Button"
     ],
     "115": [
         "idk"
@@ -566,6 +665,7 @@
         "idk"
     ],
     "117": [
+        "Kurt Eisner",
         "Matthias Erzberger",
         "Walther Rathenau"
     ],
@@ -588,11 +688,11 @@
         "Barcelona"
     ],
     "121": [
-        "Cabo Verde",
+        "Cape Verde",
         "Comoros",
         "Madagascar",
         "Mauritius",
-        "São Tomé and Príncipe",
+        "Sao Tome and Principe",
         "Seychelles"
     ],
     "122": [
@@ -602,17 +702,17 @@
         "idk"
     ],
     "124": [
-        "St. John's",
+        "Saint John's",
         "Nassau",
         "Bridgetown",
         "Belmopan",
         "Ottawa",
-        "San José",
+        "San Jose",
         "Havana",
         "Roseau",
         "Santo Domingo",
         "San Salvador",
-        "St. George's",
+        "Saint George's",
         "Guatemala City",
         "Port-au-Prince",
         "Tegucigalpa",
@@ -624,34 +724,35 @@
         "Castries",
         "Kingstown",
         "Port of Spain",
-        "Washington, D.C."
+        "Washington, District of Columbia"
     ],
     "125": [
         "Breaking",
-        "3x3 basketball",
-        "BMX freestyle",
+        "Surfing",
         "Skateboarding",
-        "Sport climbing",
-        "Surfing"
+        "Sport climbing"
     ],
     "126": [
-        "idk"
+        "Union of the Comoros",
+        "Republic of Madagascar",
+        "Republic of Mauritius",
+        "United Mexican States"
     ],
     "127": [
-        "Ambassadors or nuncios accredited to Heads of State",
-        "Envoys, ministers and internuncios accredited to Heads of State",
-        "Chargés d'affaires accredited to Ministers for Foreign Affairs"
+        "Ambassador",
+        "Envoy",
+        "Minister"
     ],
     "128": [
         "Sun",
+        "Proxima Centauri",
         "Alpha Centauri A",
         "Alpha Centauri B",
-        "Proxima Centauri",
+        "Sirius A",
+        "Sirius B",
         "Barnard's Star",
         "Wolf 359",
         "Lalande 21185",
-        "Sirius A",
-        "Sirius B",
         "Luyten 726-8 A",
         "Luyten 726-8 B",
         "Ross 154"
@@ -665,25 +766,85 @@
     "131": [
         "idk"
     ],
+    "132": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+    ],
     "133": [
-        "Seoul",
-        "Busan",
-        "Daegu",
-        "Incheon",
-        "Gwangju",
-        "Daejeon",
-        "Ulsan",
-        "Sejong"
+        "Seoul Special City",
+        "Busan Metropolitan City",
+        "Daegu Metropolitan City",
+        "Incheon Metropolitan City",
+        "Gwangju Metropolitan City",
+        "Daejeon Metropolitan City",
+        "Ulsan Metropolitan City"
     ],
     "134": [
-        "idk"
+        "United States dollar",
+        "Euro",
+        "Japanese yen",
+        "British pound sterling",
+        "Chinese renminbi",
+        "Canadian dollar",
+        "Australian dollar"
     ],
     "135": [
         "idk"
     ],
     "136": [
-        "Ernani",
+        "Un giorno di regno",
         "Attila",
+        "Macbeth",
+        "I due Foscari",
+        "I vespri siciliani",
         "Rigoletto",
         "La traviata",
         "Simon Boccanegra"
@@ -696,7 +857,7 @@
     ],
     "139": [
         "New Year's Day",
-        "Birthday of Martin Luther King, Jr.",
+        "Birthday of Martin Luther King Junior",
         "Washington's Birthday",
         "Memorial Day",
         "Juneteenth National Independence Day",
@@ -708,43 +869,12 @@
         "Christmas Day"
     ],
     "140": [
-        "1",
-        "-1",
-        "2",
-        "m",
-        "2/m",
-        "222",
-        "mm2",
-        "mmm",
-        "4",
-        "-4",
-        "4/m",
-        "422",
-        "4mm",
-        "-42m",
-        "4/mmm",
-        "3",
-        "-3",
-        "32",
-        "3m",
-        "-3m",
-        "6",
-        "-6",
-        "6/m",
-        "622",
-        "6mm",
-        "-6m2",
-        "6/mmm",
-        "23",
-        "m-3",
-        "432",
-        "-43m",
-        "m-3m"
+        "idk"
     ],
     "141": [
-        "Adephaga",
         "Archostemata",
         "Myxophaga",
+        "Adephaga",
         "Polyphaga"
     ],
     "142": [
@@ -790,10 +920,6 @@
     ],
     "149": [
         "Pikachu",
-        "Raichu",
-        "Alolan Raichu"
-    ],
-    "132": [
-        "idk"
+        "Raichu"
     ]
 }

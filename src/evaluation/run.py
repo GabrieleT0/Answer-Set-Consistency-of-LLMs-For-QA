@@ -62,6 +62,9 @@ if __name__ == "__main__":
     df_pval = compute_pvals(df_analysis)
 
     df_summary = summary(df_analysis)
+
+    
+
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
     df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")

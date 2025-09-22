@@ -249,6 +249,15 @@ def summary(df_analysis):
     df_summary = pd.concat([df_summary, df_summary_extend], ignore_index=True)
     df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
     df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
+    
+    col = ["?A1=A1*","J(A1-A1*)"]
+    # source values indexed by (llm, dataset) from classification rows
+    src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
+
+    # assign to matching zero-shot rows
+    mask = df_summary['action'].eq('zero-shot')
+    zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
+    df_summary.loc[mask, col] = src.reindex(zero_idx).to_numpy()
     return df_summary
 
 # if __name__ == "__main__":

@@ -6,7 +6,10 @@
         "idk"
     ],
     "2": [
-        "idk"
+        "New York",
+        "New Jersey",
+        "Pennsylvania",
+        "Delaware"
     ],
     "3": [
         "idk"
@@ -18,10 +21,11 @@
         "idk"
     ],
     "6": [
-        "Abigaille"
+        "idk"
     ],
     "7": [
-        "idk"
+        "New York",
+        "South Dakota"
     ],
     "8": [
         "idk"
@@ -33,15 +37,13 @@
         "idk"
     ],
     "11": [
-        "Emsland",
-        "Leer",
         "Aurich",
-        "Wittmund",
-        "Friesland",
-        "Wilhelmshaven",
-        "Wesermarsch",
         "Cuxhaven",
-        "Emden"
+        "Friesland",
+        "Leer",
+        "Stade",
+        "Wesermarsch",
+        "Wittmund"
     ],
     "12": [
         "idk"
@@ -50,11 +52,7 @@
         "idk"
     ],
     "14": [
-        "Sharknado 2: The Second One",
-        "Sharknado 3: Oh Hell No!",
-        "Sharknado: The 4th Awakens",
-        "Sharknado 5: Global Swarming",
-        "The Last Sharknado: It's About Time"
+        "idk"
     ],
     "15": [
         "idk"
@@ -83,7 +81,9 @@
         "idk"
     ],
     "21": [
-        "idk"
+        "Sherwin-Williams",
+        "KeyCorp",
+        "Cleveland-Cliffs"
     ],
     "22": [
         "idk"
@@ -98,18 +98,7 @@
         "idk"
     ],
     "26": [
-        "Jerry Garcia",
-        "Bob Weir",
-        "Phil Lesh",
-        "Bill Kreutzmann",
-        "Ron \"Pigpen\" McKernan",
-        "Mickey Hart",
-        "Tom Constanten",
-        "Keith Godchaux",
-        "Donna Jean Godchaux",
-        "Brent Mydland",
-        "Vince Welnick",
-        "Bruce Hornsby"
+        "idk"
     ],
     "27": [
         "Cyprus",
@@ -132,31 +121,14 @@
         "idk"
     ],
     "31": [
-        "Heather McCartney",
-        "Mary McCartney",
-        "Stella McCartney",
-        "James McCartney",
-        "Beatrice McCartney"
+        "Heather Louise McCartney",
+        "Mary Anna McCartney",
+        "Stella Nina McCartney",
+        "James Louis McCartney",
+        "Beatrice Milly McCartney"
     ],
     "32": [
-        "The Likes of Us",
-        "Joseph and the Amazing Technicolor Dreamcoat",
-        "Jesus Christ Superstar",
-        "By Jeeves",
-        "Evita",
-        "Tell Me on a Sunday",
-        "Cats",
-        "Song and Dance",
-        "Starlight Express",
-        "The Phantom of the Opera",
-        "Aspects of Love",
-        "Sunset Boulevard",
-        "Whistle Down the Wind",
-        "The Beautiful Game",
-        "The Woman in White",
-        "Love Never Dies",
-        "Stephen Ward",
-        "School of Rock"
+        "idk"
     ],
     "33": [
         "idk"
@@ -167,13 +139,8 @@
     "35": [
         "Council of Europe",
         "European Court of Human Rights",
-        "European Parliament",
-        "European Directorate for the Quality of Medicines and HealthCare",
         "European Audiovisual Observatory",
-        "Eurocorps",
-        "International Institute of Human Rights",
-        "International Space University",
-        "European Ombudsman"
+        "European Directorate for the Quality of Medicines & HealthCare"
     ],
     "36": [
         "idk"
@@ -192,26 +159,35 @@
         "idk"
     ],
     "39": [
-        "Hoth",
+        "Bespin",
         "Dagobah",
-        "Bespin"
+        "Hoth"
     ],
     "40": [
         "Germany",
-        "Italy",
         "France",
         "United Kingdom",
         "Belgium",
         "Netherlands",
         "Luxembourg",
-        "Poland",
-        "Czechoslovakia"
+        "Italy"
     ],
     "41": [
         "idk"
     ],
     "42": [
-        "idk"
+        "Lupin III: The Castle of Cagliostro",
+        "Nausicaä of the Valley of the Wind",
+        "Laputa: Castle in the Sky",
+        "My Neighbor Totoro",
+        "Kiki's Delivery Service",
+        "Porco Rosso",
+        "Princess Mononoke",
+        "Spirited Away",
+        "Howl's Moving Castle",
+        "Ponyo",
+        "The Wind Rises",
+        "The Boy and the Heron"
     ],
     "43": [
         "idk"
@@ -225,7 +201,7 @@
         "idk"
     ],
     "46": [
-        "Northern Lights",
+        "The Golden Compass",
         "The Subtle Knife",
         "The Amber Spyglass"
     ],
@@ -236,36 +212,17 @@
         "idk"
     ],
     "49": [
-        "Argentine Primera División",
-        "Campeonato de Fútbol Femenino (Argentina)",
-        "Bolivian Primera División",
-        "Bolivian Women's Football Championship",
-        "Campeonato Brasileiro Série A",
-        "Campeonato Brasileiro de Futebol Feminino Série A1",
-        "Chilean Primera División",
-        "Campeonato Nacional Fútbol Femenino",
-        "Categoría Primera A",
-        "Liga Femenina Profesional (Colombia)",
-        "Ecuadorian Serie A",
-        "Campeonato Ecuatoriano de Fútbol Femenino",
-        "Paraguayan Primera División",
-        "Paraguayan Women's Football Championship",
-        "Peruvian Primera División (Liga 1)",
-        "Liga Femenina (Peru)",
-        "Uruguayan Primera División",
-        "Campeonato Uruguayo Femenino",
-        "Venezuelan Primera División",
-        "Primera División Femenina (Venezuela)"
+        "idk"
     ],
     "50": [
-        "New Moon",
-        "Waxing Crescent",
-        "First Quarter",
-        "Waxing Gibbous",
-        "Full Moon",
-        "Waning Gibbous",
-        "Last Quarter",
-        "Waning Crescent"
+        "new moon",
+        "waxing crescent moon",
+        "first quarter moon",
+        "waxing gibbous moon",
+        "full moon",
+        "waning gibbous moon",
+        "last quarter moon",
+        "waning crescent moon"
     ],
     "51": [
         "New Year's Day",
@@ -275,10 +232,11 @@
         "Easter Monday",
         "Great Prayer Day",
         "Ascension Day",
-        "Pentecost (Whit Sunday)",
-        "Whit Monday (Pentecost Monday)",
+        "Pentecost Sunday",
+        "Pentecost Monday",
         "Christmas Day",
-        "Second Day of Christmas"
+        "Second Christmas Day",
+        "Constitution Day"
     ],
     "52": [
         "Andhra Pradesh",
@@ -311,11 +269,11 @@
         "West Bengal"
     ],
     "53": [
-        "Latin script",
-        "Cyrillic script",
-        "Greek alphabet",
-        "Armenian alphabet",
-        "Georgian script"
+        "Armenian",
+        "Cyrillic",
+        "Georgian",
+        "Greek",
+        "Latin"
     ],
     "54": [
         "idk"
@@ -330,7 +288,7 @@
         "idk"
     ],
     "58": [
-        "idk"
+        "ksar"
     ],
     "59": [
         "idk"
@@ -340,19 +298,17 @@
     ],
     "61": [
         "Pelléas et Mélisande",
-        "L'heure espagnole",
-        "Rodrigue et Chimène",
-        "La chute de la maison Usher"
+        "La chute de la Maison Usher"
     ],
     "62": [
         "idk"
     ],
     "63": [
-        "raltegravir",
-        "elvitegravir",
-        "dolutegravir",
         "bictegravir",
-        "cabotegravir"
+        "cabotegravir",
+        "dolutegravir",
+        "elvitegravir",
+        "raltegravir"
     ],
     "64": [
         "idk"
@@ -364,17 +320,16 @@
         "7R/25L"
     ],
     "66": [
-        "Rent",
-        "tick, tick... BOOM!"
+        "Rent"
     ],
     "67": [
         "idk"
     ],
     "68": [
-        "Australian Open",
-        "French Open",
-        "Wimbledon",
-        "US Open"
+        "Australian Open (singles)",
+        "French Open (singles)",
+        "Wimbledon (singles)",
+        "US Open (singles)"
     ],
     "69": [
         "idk"
@@ -383,13 +338,16 @@
         "idk"
     ],
     "71": [
-        "idk"
+        "FlixBus",
+        "FlixTrain"
     ],
     "72": [
         "idk"
     ],
     "73": [
-        "idk"
+        "My Left Foot",
+        "There Will Be Blood",
+        "Lincoln"
     ],
     "74": [
         "idk"
@@ -404,13 +362,15 @@
         "idk"
     ],
     "78": [
-        "idk"
+        "khadga"
     ],
     "79": [
         "idk"
     ],
     "80": [
-        "idk"
+        "Major General",
+        "Rear Admiral",
+        "Air Vice-Marshal"
     ],
     "81": [
         "idk"
@@ -419,8 +379,7 @@
         "idk"
     ],
     "83": [
-        "Simon Crean",
-        "David Crean"
+        "idk"
     ],
     "84": [
         "idk"
@@ -475,11 +434,13 @@
         "The Grass Harp",
         "Breakfast at Tiffany's",
         "In Cold Blood",
-        "Answered Prayers",
-        "Summer Crossing"
+        "That Summer",
+        "Answered Prayers"
     ],
     "101": [
-        "idk"
+        "Ford Blue",
+        "Ford Model e",
+        "Ford Pro"
     ],
     "102": [
         "idk"
@@ -497,44 +458,16 @@
         "idk"
     ],
     "107": [
-        "Russian SFSR",
-        "Ukrainian SSR",
-        "Byelorussian SSR",
-        "Uzbek SSR",
-        "Kazakh SSR",
-        "Georgian SSR",
-        "Azerbaijan SSR",
-        "Lithuanian SSR",
-        "Moldavian SSR",
-        "Latvian SSR",
-        "Kyrgyz SSR",
-        "Tajik SSR",
-        "Armenian SSR",
-        "Turkmen SSR",
-        "Estonian SSR"
+        "idk"
     ],
     "108": [
-        "Kublai Khan",
-        "Temür Khan",
-        "Külüg Khan",
-        "Buyantu Khan",
-        "Gegeen Khan",
-        "Yesun Temur",
-        "Ragibagh Khan",
-        "Jayaatu Khan Tugh Temür",
-        "Kusala",
-        "Rinchinbal Khan",
-        "Toghon Temur"
+        "idk"
     ],
     "109": [
-        "cytochrome P450 3A4",
-        "cytochrome P450 2B6",
-        "cytochrome P450 2D6",
-        "cytochrome P450 2C19",
-        "cytochrome P450 2C9"
+        "idk"
     ],
     "110": [
-        "idk"
+        "Lower Saxony"
     ],
     "111": [
         "European Parliament",
@@ -556,8 +489,7 @@
         "Gold Play Button",
         "Diamond Play Button",
         "Ruby Play Button",
-        "Red Diamond Play Button",
-        "Custom Play Button"
+        "Red Diamond Play Button"
     ],
     "115": [
         "idk"
@@ -570,7 +502,10 @@
         "Walther Rathenau"
     ],
     "118": [
-        "idk"
+        "Austin Powers: International Man of Mystery",
+        "Austin Powers: The Spy Who Shagged Me",
+        "Austin Powers in Goldmember",
+        "The Love Guru"
     ],
     "119": [
         "idk"
@@ -581,18 +516,18 @@
         "Rome",
         "Paris",
         "Vienna",
-        "Hamburg",
         "Bucharest",
         "Warsaw",
-        "Budapest",
-        "Barcelona"
+        "Barcelona",
+        "Munich",
+        "Milan"
     ],
     "121": [
-        "Cabo Verde",
+        "Cape Verde",
         "Comoros",
         "Madagascar",
         "Mauritius",
-        "São Tomé and Príncipe",
+        "Sao Tome and Principe",
         "Seychelles"
     ],
     "122": [
@@ -602,59 +537,50 @@
         "idk"
     ],
     "124": [
-        "St. John's",
+        "Ottawa",
+        "Washington, D.C.",
+        "Mexico City",
+        "Saint John's",
         "Nassau",
         "Bridgetown",
         "Belmopan",
-        "Ottawa",
         "San José",
         "Havana",
         "Roseau",
         "Santo Domingo",
         "San Salvador",
-        "St. George's",
+        "Saint George's",
         "Guatemala City",
         "Port-au-Prince",
         "Tegucigalpa",
         "Kingston",
-        "Mexico City",
         "Managua",
         "Panama City",
         "Basseterre",
         "Castries",
         "Kingstown",
-        "Port of Spain",
-        "Washington, D.C."
+        "Port of Spain"
     ],
     "125": [
         "Breaking",
-        "3x3 basketball",
-        "BMX freestyle",
-        "Skateboarding",
         "Sport climbing",
-        "Surfing"
+        "Surfing",
+        "Skateboarding",
+        "3x3 basketball"
     ],
     "126": [
-        "idk"
+        "Comoros",
+        "Madagascar",
+        "Mauritius"
     ],
     "127": [
-        "Ambassadors or nuncios accredited to Heads of State",
-        "Envoys, ministers and internuncios accredited to Heads of State",
-        "Chargés d'affaires accredited to Ministers for Foreign Affairs"
+        "Ambassador Extraordinary and Plenipotentiary",
+        "Envoy Extraordinary and Minister Plenipotentiary",
+        "Minister Resident",
+        "Chargé d'affaires"
     ],
     "128": [
-        "Sun",
-        "Alpha Centauri A",
-        "Alpha Centauri B",
-        "Proxima Centauri",
-        "Barnard's Star",
-        "Wolf 359",
-        "Lalande 21185",
-        "Sirius A",
-        "Sirius B",
-        "Luyten 726-8 A",
-        "Luyten 726-8 B",
-        "Ross 154"
+        "idk"
     ],
     "129": [
         "idk"
@@ -665,28 +591,89 @@
     "131": [
         "idk"
     ],
+    "132": [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming"
+    ],
     "133": [
         "Seoul",
         "Busan",
         "Daegu",
         "Incheon",
-        "Gwangju",
         "Daejeon",
-        "Ulsan",
-        "Sejong"
+        "Gwangju",
+        "Ulsan"
     ],
     "134": [
-        "idk"
+        "USD",
+        "EUR",
+        "JPY",
+        "GBP",
+        "CNY",
+        "AUD",
+        "CHF"
     ],
     "135": [
         "idk"
     ],
     "136": [
         "Ernani",
+        "I due Foscari",
+        "Giovanna d'Arco",
         "Attila",
+        "Il corsaro",
+        "Simon Boccanegra",
         "Rigoletto",
         "La traviata",
-        "Simon Boccanegra"
+        "Un ballo in maschera"
     ],
     "137": [
         "idk"
@@ -696,7 +683,7 @@
     ],
     "139": [
         "New Year's Day",
-        "Birthday of Martin Luther King, Jr.",
+        "Martin Luther King Jr. Day",
         "Washington's Birthday",
         "Memorial Day",
         "Juneteenth National Independence Day",
@@ -708,42 +695,11 @@
         "Christmas Day"
     ],
     "140": [
-        "1",
-        "-1",
-        "2",
-        "m",
-        "2/m",
-        "222",
-        "mm2",
-        "mmm",
-        "4",
-        "-4",
-        "4/m",
-        "422",
-        "4mm",
-        "-42m",
-        "4/mmm",
-        "3",
-        "-3",
-        "32",
-        "3m",
-        "-3m",
-        "6",
-        "-6",
-        "6/m",
-        "622",
-        "6mm",
-        "-6m2",
-        "6/mmm",
-        "23",
-        "m-3",
-        "432",
-        "-43m",
-        "m-3m"
+        "idk"
     ],
     "141": [
-        "Adephaga",
         "Archostemata",
+        "Adephaga",
         "Myxophaga",
         "Polyphaga"
     ],
@@ -790,10 +746,6 @@
     ],
     "149": [
         "Pikachu",
-        "Raichu",
-        "Alolan Raichu"
-    ],
-    "132": [
-        "idk"
+        "Raichu"
     ]
 }
