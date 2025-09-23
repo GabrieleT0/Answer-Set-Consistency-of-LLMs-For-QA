@@ -6,12 +6,12 @@
     "size": "small",
     "company": "Meta"
   },
-  "llama3.1:70b": {
-    "release_date": "2024-07-23",
-    "parameters": 70,
-    "information": "Meta LLaMA 3.1 70B was released on July 23, 2024. :contentReference[oaicite:7]{index=7}",
+  "gpt-oss:20b": {
+    "release_date": "2025-08-13",
+    "parameters": 20,
+    "information": "gpt-oss-20B is an open-weight model by OpenAI recently released; total ~21B parameters. :contentReference[oaicite:6]{index=6}",
     "size": "medium",
-    "company": "Meta"
+    "company": "OpenAI"
   },
   "mistral-small:24b": {
     "release_date": "2024-10-15",
@@ -19,6 +19,62 @@
     "information": "Mistral Small (24B) model; positioned as a mid-tier model for efficiency with strong performance. Parameter count ~24B.",
     "size": "medium",
     "company": "Mistral AI"
+  },
+  "llama3.1:70b": {
+    "release_date": "2024-07-23",
+    "parameters": 70,
+    "information": "Meta LLaMA 3.1 70B was released on July 23, 2024. :contentReference[oaicite:7]{index=7}",
+    "size": "medium",
+    "company": "Meta"
+  },
+  "gpt-4.1-nano-2025-04-14": {
+    "release_date": "2025-04-14",
+    "parameters": null,
+    "information": "OpenAI launched GPT-4.1 family (GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano) on April 14, 2025. Their context windows are 1 million tokens; knowledge cutoff June 2024. No disclosed parameter counts. :contentReference[oaicite:0]{index=0}",
+    "size": "small",
+    "company": "OpenAI"
+  },
+  "gpt-5-nano": {
+    "release_date": "2025-08-07",
+    "parameters": null,
+    "information": "GPT-5 was released August 7, 2025. The model family includes variants (main, mini, thinking etc.) but OpenAI has not disclosed exact parameter counts for publique variants. :contentReference[oaicite:1]{index=1}",
+    "size": "small",
+    "company": "OpenAI"
+  },
+  "gemini-2.0-flash": {
+    "release_date": "2024-12-11",
+    "parameters": null,
+    "information": "No reliable public info found (so far) for Gemini-2.0-Flash regarding parameter count or release date.",
+    "size": "medium",
+    "company": "Google"
+  },
+  "gpt-4.1-mini-2025-04-14": {
+    "release_date": "2025-04-14",
+    "parameters": null,
+    "information": "Part of the GPT-4.1 family released April 14, 2025. The mini version is intermediate in size between full and nano but parameter counts not disclosed. Context window 1 million tokens. :contentReference[oaicite:2]{index=2}",
+    "size": "medium",
+    "company": "OpenAI"
+  },
+  "gemini-2.5-flash": {
+    "release_date": "2025-04-17",
+    "parameters": null,
+    "information": "No reliable public info found as yet on Gemini-2.5-Flash’s parameters or exact release date.",
+    "size": "medium",
+    "company": "Google"
+  },
+  "grok-3-mini": {
+    "release_date": "2025-05-19",
+    "parameters": null,
+    "information": "xAI’s Grok-3-mini (Grok 3 Mini) became available around May 19, 2025 via Azure Foundry. It is a lightweight model with context length ~131,072 tokens; no public parameter count found. :contentReference[oaicite:4]{index=4}",
+    "size": "medium",
+    "company": "xAI"
+  },
+  "gpt-5-mini": {
+    "release_date": "2025-08-07",
+    "parameters": null,
+    "information": "GPT-5 includes 'mini' variants; formal release date August 7, 2025. Exact parameter counts for mini not publicly disclosed. :contentReference[oaicite:3]{index=3}",
+    "size": "medium",
+    "company": "OpenAI"
   },
   "deepseek-chat": {
     "release_date": "2025-01-10",
@@ -34,53 +90,11 @@
     "size": "large",
     "company": "DeepSeek"
   },
-  "grok-3-mini": {
-    "release_date": "2025-05-19",
-    "parameters": null,
-    "information": "xAI’s Grok-3-mini (Grok 3 Mini) became available around May 19, 2025 via Azure Foundry. It is a lightweight model with context length ~131,072 tokens; no public parameter count found. :contentReference[oaicite:4]{index=4}",
-    "size": "medium",
-    "company": "xAI"
-  },
-  "gemini-2.0-flash": {
-    "release_date": "2024-12-11",
-    "parameters": null,
-    "information": "No reliable public info found (so far) for Gemini-2.0-Flash regarding parameter count or release date.",
-    "size": "medium",
-    "company": "Google"
-  },
-  "gemini-2.5-flash": {
-    "release_date": "2025-04-17",
-    "parameters": null,
-    "information": "No reliable public info found as yet on Gemini-2.5-Flash’s parameters or exact release date.",
-    "size": "medium",
-    "company": "Google"
-  },
-  "gemini-2.5-pro": {
-    "release_date": "2025-03-25",
-    "parameters": null,
-    "information": "No verifiable public data found yet for Gemini-2.5-Pro (release date or parameters).",
-    "size": "large",
-    "company": "Google"
-  },
   "gpt-4.1-2025-04-14": {
     "release_date": "2025-04-14",
     "parameters": null,
     "information": "Full GPT-4.1 (not mini or nano) launched April 14, 2025 with 1M token context, knowledge cutoff June 2024. Parameter count not disclosed. :contentReference[oaicite:8]{index=8}",
     "size": "large",
-    "company": "OpenAI"
-  },
-  "gpt-4.1-mini-2025-04-14": {
-    "release_date": "2025-04-14",
-    "parameters": null,
-    "information": "Part of the GPT-4.1 family released April 14, 2025. The mini version is intermediate in size between full and nano but parameter counts not disclosed. Context window 1 million tokens. :contentReference[oaicite:2]{index=2}",
-    "size": "medium",
-    "company": "OpenAI"
-  },
-  "gpt-4.1-nano-2025-04-14": {
-    "release_date": "2025-04-14",
-    "parameters": null,
-    "information": "OpenAI launched GPT-4.1 family (GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano) on April 14, 2025. Their context windows are 1 million tokens; knowledge cutoff June 2024. No disclosed parameter counts. :contentReference[oaicite:0]{index=0}",
-    "size": "small",
     "company": "OpenAI"
   },
   "gpt-4o": {
@@ -97,26 +111,12 @@
     "size": "large",
     "company": "OpenAI"
   },
-  "gpt-oss:20b": {
-    "release_date": "2025-08-13",
-    "parameters": 20000000000,
-    "information": "gpt-oss-20B is an open-weight model by OpenAI recently released; total ~21B parameters. :contentReference[oaicite:6]{index=6}",
-    "size": "medium",
-    "company": "OpenAI"
-  },
-  "gpt-5-nano": {
-    "release_date": "2025-08-07",
+  "gemini-2.5-pro": {
+    "release_date": "2025-03-25",
     "parameters": null,
-    "information": "GPT-5 was released August 7, 2025. The model family includes variants (main, mini, thinking etc.) but OpenAI has not disclosed exact parameter counts for publique variants. :contentReference[oaicite:1]{index=1}",
-    "size": "small",
-    "company": "OpenAI"
-  },
-  "gpt-5-mini": {
-    "release_date": "2025-08-07",
-    "parameters": null,
-    "information": "GPT-5 includes 'mini' variants; formal release date August 7, 2025. Exact parameter counts for mini not publicly disclosed. :contentReference[oaicite:3]{index=3}",
-    "size": "medium",
-    "company": "OpenAI"
+    "information": "No verifiable public data found yet for Gemini-2.5-Pro (release date or parameters).",
+    "size": "large",
+    "company": "Google"
   },
   "gpt-5": {
     "release_date": "2025-08-07",
