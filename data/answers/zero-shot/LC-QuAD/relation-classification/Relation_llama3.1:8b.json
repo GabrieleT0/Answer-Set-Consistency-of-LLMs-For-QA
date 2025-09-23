@@ -1,0 +1,1052 @@
+{
+    "0": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Contains"
+    ],
+    "1": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Contains",
+        "Contains"
+    ],
+    "2": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "3": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "4": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "5": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Contains",
+        "Disjoint"
+    ],
+    "6": [
+        "Overlap",
+        "Equivalence",
+        "Overlap",
+        "ContainedBy",
+        "Overlap \nEquivalence \nContainedBy"
+    ],
+    "7": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap \ns1 ⊃ s2 is not correct. We can infer that s1 and s2 share a common set of answers for q3 which is also in s1, since all answers to q3 are settings for the plot of North by Northwest but did not have filming on location. The question of q1 does not contain any information about locations without filming on location, therefore there's an overlap between sets s1 and s2"
+    ],
+    "8": [
+        "Overlap",
+        "Disjoint",
+        "Contains",
+        "Overlap",
+        "Equivalence \n(No explanation)"
+    ],
+    "9": [
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "10": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "11": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "12": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "13": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "14": [
+        "Contains",
+        "Disjoint",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "15": [
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Equivalence",
+        "Overlap"
+    ],
+    "16": [
+        "Contains",
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "17": [
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "18": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "19": [
+        "ContainBy",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "20": [
+        "Contains (q1 ⊃ q2)",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "21": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "22": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "ContainedBy",
+        "Contains"
+    ],
+    "23": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Equivalence",
+        "ContainedBy"
+    ],
+    "24": [
+        "Overlap",
+        "ContainedBy",
+        "Equivalence",
+        "ContainedBy",
+        "Contains"
+    ],
+    "25": [
+        "Contains (q1 ⊃ q2)",
+        "Contains (q1 ⊃ q2)",
+        "Overlap",
+        "ContainedBy (q1 ⊂ q2)",
+        "Overlap \nDisjoint \n\nOverlaps because some languages use the Arabic alphabet alongside other scripts, but exclusively use it."
+    ],
+    "26": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "ContainedBy",
+        "Overlap \nDisjoint"
+    ],
+    "27": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "28": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "29": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Equivalence \ns1 ⊂ s2, but since q3 is broader than both q1 and q2, it includes all their answers. Thus, s1 = s2. The answer sets of q1, q2, and q3 are exactly the same. \n\nLabel: Equivalence"
+    ],
+    "30": [
+        "Overlap",
+        "Contains",
+        "Disjoint",
+        "ContainedBy",
+        "Equivalence"
+    ],
+    "31": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "32": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy"
+    ],
+    "33": [
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "ContainedBy",
+        "Disjoint"
+    ],
+    "34": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Overlap",
+        "Disjoint"
+    ],
+    "35": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "Overlap",
+        "Contains"
+    ],
+    "36": [
+        "Overlap",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "37": [
+        "Equivalence",
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "38": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "ContainedBy",
+        "Disjoint"
+    ],
+    "39": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap \ns1 ⊃ s2"
+    ],
+    "40": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "41": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Contains",
+        "Disjoint"
+    ],
+    "42": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "Overlap",
+        "Contains"
+    ],
+    "43": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "44": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "45": [
+        "Contains (q1 ⊃ q2)",
+        "Overlap",
+        "Overlap",
+        "ContainedBy (q1 ⊂ q2)",
+        "Overlap"
+    ],
+    "46": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Equivalence",
+        "Overlap"
+    ],
+    "47": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy"
+    ],
+    "48": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "49": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Contains"
+    ],
+    "50": [
+        "Equivalence",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "51": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Contains"
+    ],
+    "52": [
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "53": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Contains"
+    ],
+    "54": [
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "55": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Contains",
+        "Disjoint"
+    ],
+    "56": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Contains",
+        "Overlap"
+    ],
+    "57": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Disjoint"
+    ],
+    "58": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlapping Sets"
+    ],
+    "59": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "60": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "61": [
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "62": [
+        "Overlap",
+        "Equivalence",
+        "ContainedBy",
+        "Disjoint",
+        "ContainedBy"
+    ],
+    "63": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap \n ContainedBy"
+    ],
+    "64": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "65": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "66": [
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy"
+    ],
+    "67": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "68": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "69": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "70": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "71": [
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "72": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "73": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "74": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "75": [
+        "Overlap",
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "76": [
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "77": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap",
+        "ContainedBy"
+    ],
+    "78": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "79": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "80": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "81": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy"
+    ],
+    "82": [
+        "Overlap",
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "83": [
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "84": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "85": [
+        "Overlap",
+        "Contains",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "86": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap \n\ns1 = { A, B, C } (all municipalities in Catania not cities) \ns2 = { A, C } (non-city municipalities in Catania)\n\nNote that s1 and s2 share some answers, but not all (A and C are shared). Therefore, the relationship is Overlap."
+    ],
+    "87": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "88": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Contains",
+        "Overlap"
+    ],
+    "89": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Contains"
+    ],
+    "90": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "91": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "ContainedBy",
+        "Equivalence"
+    ],
+    "92": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "93": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap \nContainedBy"
+    ],
+    "94": [
+        "Overlap",
+        "Contains",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap"
+    ],
+    "95": [
+        "Overlap",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "96": [
+        "Overlap",
+        "Equivalence",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "97": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "98": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "99": [
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "ContainedBy",
+        "Contains"
+    ],
+    "100": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "101": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Equivalence"
+    ],
+    "102": [
+        "Equivalence",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "103": [
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "104": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "105": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "106": [
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "107": [
+        "Overlap",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "108": [
+        "Contains",
+        "Contains",
+        "ContainedBy",
+        "Overlap",
+        "Overlap"
+    ],
+    "109": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Disjoint \ns1 and s2 are disjoint because q3 asks about a different group of enzymes than q1 and q2, specifically those whose genes are not in subfamily 2."
+    ],
+    "110": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Contains"
+    ],
+    "111": [
+        "Equivalence",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "112": [
+        "Overlap",
+        "Contains",
+        "Contains",
+        "Overlap",
+        "Contains"
+    ],
+    "113": [
+        "Equivalence",
+        "Contains",
+        "Overlap",
+        "ContainedBy",
+        "Contains"
+    ],
+    "114": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "ContainedBy",
+        "ContainedBy"
+    ],
+    "115": [
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint"
+    ],
+    "116": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Overlap",
+        "Contains"
+    ],
+    "117": [
+        "Overlap",
+        "Disjoint",
+        "Disjoint",
+        "Overlap",
+        "Overlap"
+    ],
+    "118": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap"
+    ],
+    "119": [
+        "Overlap",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap",
+        "Disjoint"
+    ],
+    "120": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Contains"
+    ],
+    "121": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Disjoint"
+    ],
+    "122": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "123": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "124": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Disjoint"
+    ],
+    "125": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "ContainedBy"
+    ],
+    "126": [
+        "Contains",
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "127": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "128": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "ContainedBy",
+        "Disjoint"
+    ],
+    "129": [
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "ContainedBy",
+        "Contains"
+    ],
+    "130": [
+        "ContainedBy",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "131": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap \nDisjoint \nContainedBy"
+    ],
+    "132": [
+        "Contains",
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Overlap"
+    ],
+    "133": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "134": [
+        "Contains (q1 ⊃ q2)",
+        "Overlap",
+        "Overlap",
+        "ContainedBy (q1 ⊂ q2)",
+        "Overlap"
+    ],
+    "135": [
+        "Overlap",
+        "ContainedBy",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "136": [
+        "Contains",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlaps with s2 \n(However, to answer your original question about q1 and q3): Equivalence"
+    ],
+    "137": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Contains",
+        "Overlap"
+    ],
+    "138": [
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "139": [
+        "Equivalence",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "140": [
+        "Overlap",
+        "ContainedBy",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "141": [
+        "Contains (q1 ⊃ q2)",
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Contains"
+    ],
+    "142": [
+        "Contains (q1 ⊃ q2)",
+        "Disjoint",
+        "ContainedBy (q1 ⊂ q2)",
+        "ContainedBy (q1 ⊂ q2)",
+        "Overlap"
+    ],
+    "143": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "144": [
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Overlap"
+    ],
+    "145": [
+        "Contains (q1 ⊃ q2)",
+        "Disjoint",
+        "Overlap",
+        "Overlap",
+        "Overlap"
+    ],
+    "146": [
+        "Overlap",
+        "Contains",
+        "Disjoint",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "147": [
+        "Contains",
+        "Contains",
+        "Overlap",
+        "Overlap",
+        "Disjoint"
+    ],
+    "148": [
+        "Overlap",
+        "Overlap",
+        "ContainedBy",
+        "Disjoint",
+        "Overlap"
+    ],
+    "149": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Overlap"
+    ]
+}

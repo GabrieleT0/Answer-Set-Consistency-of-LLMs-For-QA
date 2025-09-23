@@ -36,7 +36,7 @@ openai_models = ['gpt-5',"gpt-5-mini","gpt-5-nano",'gpt-4.1-nano-2025-04-14', 'g
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro","gemini-2.5-flash"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
-self_hosted_models = ['llama3.1:8b','llama3.1:70b', 'deepseek-r1:1.5b', 'deepseek-r1:70b', 'gpt-oss:20b']
+self_hosted_models = ['llama3.1:8b','llama3.1:70b', 'deepseek-r1:1.5b', 'deepseek-r1:70b', 'gpt-oss:20b', 'mistral-small:24b']
 deepseek_models = ['deepseek-chat','deepseek-reasoner']
 
 class SelfHostedAPIWrapper(LLM):
