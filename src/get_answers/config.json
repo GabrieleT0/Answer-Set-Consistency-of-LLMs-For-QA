@@ -1,7 +1,7 @@
 {
   "languages": ["en"],
-  "llm_models": ["gpt-5-nano","o3","gpt-4o","gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro"],
+  "llm_models": ["gemini-2.0-flash","gemini-2.5-flash"],
   "datasets": ["lc-quad.tsv"],
-  "prompt_types": ["standard", "wikidata"],
+  "prompt_types": ["standard"],
   "relations": ["Equivalence", "Containment", "Minus"]
 }
