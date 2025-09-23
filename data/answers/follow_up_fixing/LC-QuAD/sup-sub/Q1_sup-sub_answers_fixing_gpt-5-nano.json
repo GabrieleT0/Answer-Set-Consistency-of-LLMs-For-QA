@@ -8,10 +8,10 @@
         "idk"
     ],
     "2": [
-        "New York",
+        "Delaware",
         "New Jersey",
-        "Pennsylvania",
-        "Delaware"
+        "New York",
+        "Pennsylvania"
     ],
     "3": [
         "idk"
@@ -43,12 +43,12 @@
         "Guinea"
     ],
     "11": [
-        "Landkreis Cuxhaven",
-        "Landkreis Wesermarsch",
-        "Landkreis Friesland",
-        "Landkreis Aurich",
-        "Landkreis Wittmund",
-        "Landkreis Leer"
+        "Cuxhaven district",
+        "Stade district",
+        "Wesermarsch district",
+        "Friesland district",
+        "Aurich district",
+        "Wittmund district"
     ],
     "12": [
         "idk"
@@ -57,7 +57,10 @@
         "idk"
     ],
     "14": [
-        "idk"
+        "Sharknado 2: The Second One",
+        "Sharknado 3: Oh Hell No",
+        "Sharknado 4: The Fourth Awakens",
+        "Sharknado 5: Global Swarming"
     ],
     "15": [
         "idk"
@@ -78,10 +81,11 @@
     ],
     "18": [
         "Surgical site infections",
-        "Catheter-related bloodstream infections",
-        "Ventilator-associated pneumonia",
-        "Omphalitis in newborns",
-        "Neonatal sepsis"
+        "Central venous catheter related bloodstream infections",
+        "Neonatal omphalitis",
+        "Neonatal sepsis",
+        "Ventilator associated pneumonia",
+        "Peritoneal dialysis catheter infections"
     ],
     "19": [
         "idk"
@@ -90,16 +94,19 @@
         "Major depressive disorder",
         "Neuropathic pain",
         "Postherpetic neuralgia",
-        "Diabetic neuropathy",
-        "Fibromyalgia",
         "Migraine prophylaxis",
         "Tension-type headache prophylaxis",
+        "Irritable bowel syndrome",
+        "Fibromyalgia",
         "Insomnia",
+        "Anxiety disorders",
+        "Diabetic neuropathy",
         "Nocturnal enuresis"
     ],
     "21": [
-        "The Sherwin-Williams Company",
-        "KeyCorp"
+        "Cleveland-Cliffs Incorporated",
+        "Key Corporation",
+        "Sherwin-Williams Company"
     ],
     "22": [
         "idk"
@@ -108,53 +115,34 @@
         "idk"
     ],
     "24": [
-        "Songs of Innocence and of Experience",
-        "The Book of Thel",
-        "The Marriage of Heaven and Hell",
-        "America a Prophecy",
-        "Europe a Prophecy",
-        "Visions of the Daughters of Albion",
-        "The Song of Los",
-        "The Book of Los",
-        "The Book of Urizen",
-        "The 4 Zoas",
-        "Milton a Poem",
-        "Paradise Lost",
-        "The Divine Comedy",
-        "The Book of Job",
-        "Jerusalem The Emanation of the Giant Albion"
+        "idk"
     ],
     "25": [
         "Arabic",
         "Persian",
-        "Dari",
         "Urdu",
-        "Pashto",
+        "Punjabi",
+        "Saraiki",
         "Sindhi",
         "Kashmiri",
-        "Punjabi",
+        "Pashto",
         "Kurdish Sorani",
         "Uyghur",
         "Balochi",
+        "Rohingya",
         "Malay",
         "Acehnese",
-        "Hausa",
-        "Fula",
-        "Kanuri",
-        "Mazandarani",
-        "Gilaki",
+        "Azerbaijani",
         "Luri",
-        "Brahui",
-        "Rohingya",
-        "Shina",
-        "Balti"
+        "Mazandarani",
+        "Brahui"
     ],
     "26": [
         "Jerry Garcia",
         "Bob Weir",
         "Phil Lesh",
-        "Bill Kreutzmann",
         "Ron McKernan",
+        "Bill Kreutzmann",
         "Mickey Hart",
         "Tom Constanten",
         "Keith Godchaux",
@@ -178,65 +166,53 @@
         "Harry Potter and the Deathly Hallows"
     ],
     "29": [
-        "idk"
+        "Sanshiro Sugata",
+        "The Most Beautiful",
+        "No Regrets for Our Youth",
+        "One Wonderful Sunday",
+        "Drunken Angel",
+        "Stray Dog",
+        "The Quiet Duel",
+        "Ikiru",
+        "The Lower Depths",
+        "The Bad Sleep Well",
+        "High and Low",
+        "Dodes'ka-den"
     ],
     "30": [
         "Democratic People's Republic of Korea",
         "Republic of Korea",
-        "People's Republic of China",
         "United States of America",
-        "United Kingdom of Great Britain and Northern Ireland",
-        "Canada",
-        "Australia",
-        "New Zealand",
-        "Turkey",
-        "Republic of the Philippines",
-        "Thailand",
-        "Greece",
-        "Netherlands",
-        "Belgium",
-        "Luxembourg",
-        "France",
-        "Italy",
-        "Colombia",
-        "Ethiopia",
-        "Pakistan"
+        "People's Republic of China"
     ],
     "31": [
         "Mary Anna McCartney",
-        "James Louis McCartney",
         "Stella Nina McCartney",
+        "James Louis McCartney",
         "Beatrice Milly McCartney"
     ],
     "32": [
-        "The Likes of Us",
         "Joseph and the Amazing Technicolor Dreamcoat",
         "Jesus Christ Superstar",
         "Evita",
-        "Tell Me on a Sunday",
         "Cats",
-        "Song and Dance",
         "Starlight Express",
         "The Phantom of the Opera",
         "Aspects of Love",
         "Sunset Boulevard",
-        "By Jeeves",
         "Whistle Down the Wind",
         "The Beautiful Game",
         "The Woman in White",
         "Love Never Dies",
         "School of Rock",
-        "Cinderella"
+        "Cinderella",
+        "Bad Cinderella"
     ],
     "33": [
         "United States of America",
         "Democratic Republic of Vietnam",
         "Republic of Vietnam",
-        "Provisional Revolutionary Government of the Republic of South Vietnam",
-        "Henry Kissinger",
-        "Le Duc Tho",
-        "Tran Van Do",
-        "Nguyen Thi Binh"
+        "Provisional Revolutionary Government of the Republic of South Vietnam"
     ],
     "34": [
         "idk"
@@ -245,24 +221,10 @@
         "Council of Europe",
         "European Parliament",
         "European Court of Human Rights",
-        "Parliamentary Assembly of the Council of Europe",
         "European Audiovisual Observatory"
     ],
     "36": [
-        "Airbus A319-100",
-        "Airbus A320-200",
-        "Airbus A320neo",
-        "Airbus A321-200",
-        "Airbus A321neo",
-        "Boeing 737-800",
-        "Boeing 737-8",
-        "Boeing 737-9",
-        "Boeing 757-200",
-        "Boeing 767-300ER",
-        "Boeing 777-200ER",
-        "Boeing 777-300ER",
-        "Boeing 787-8",
-        "Boeing 787-9"
+        "idk"
     ],
     "37": [
         "Black Dog",
@@ -275,13 +237,7 @@
         "When the Levee Breaks"
     ],
     "38": [
-        "Moscow Peace Treaty with Finland 1940",
-        "Austrian State Treaty 1955",
-        "Treaty of Peace with Italy 1947",
-        "Treaty of Peace with Romania 1947",
-        "Treaty of Peace with Bulgaria 1947",
-        "Treaty of Peace with Hungary 1947",
-        "Treaty on the Final Settlement with Respect to Germany 1990"
+        "idk"
     ],
     "39": [
         "Hoth",
@@ -290,41 +246,37 @@
     ],
     "40": [
         "Germany",
-        "France",
         "United Kingdom",
+        "France",
         "Belgium",
         "Netherlands",
-        "Luxembourg",
-        "Canada",
         "Poland",
         "Italy"
     ],
     "41": [
-        "Hamlet, Prince of Denmark",
-        "Claudius, King of Denmark",
-        "Gertrude, Queen of Denmark",
         "Ghost of King Hamlet",
-        "Polonius, Lord Chamberlain",
+        "Claudius",
+        "Gertrude",
+        "Hamlet",
+        "Polonius",
         "Ophelia",
-        "Laertes, Son of Polonius",
+        "Laertes",
         "Horatio",
         "Rosencrantz",
         "Guildenstern",
-        "The Player King",
-        "The Player Queen",
-        "First Player",
-        "Reynaldo",
-        "Francisco",
-        "Bernardo",
-        "Marcellus",
         "Fortinbras, Prince of Norway",
-        "Osric",
-        "Voltimand",
-        "Cornelius",
         "Captain",
-        "First Grave-Digger",
-        "Second Grave-Digger",
-        "Priest"
+        "Osric",
+        "Player King",
+        "Player Queen",
+        "First Player",
+        "Second Player",
+        "Francisco",
+        "Barnardo",
+        "Marcellus",
+        "Gravedigger",
+        "Priest",
+        "English Ambassador"
     ],
     "42": [
         "The Castle of Cagliostro",
@@ -344,13 +296,14 @@
         "idk"
     ],
     "44": [
+        "Best Director",
         "Best Original Screenplay"
     ],
     "45": [
         "idk"
     ],
     "46": [
-        "The Northern Lights",
+        "The Golden Compass",
         "The Subtle Knife",
         "The Amber Spyglass"
     ],
@@ -361,16 +314,16 @@
         "idk"
     ],
     "49": [
-        "Liga Profesional de Fútbol",
-        "Liga de Fútbol Profesional Boliviano",
-        "Campeonato Brasileiro de Futebol Série A",
-        "Primera División de Chile",
+        "Argentine Primera División",
+        "Bolivian Primera División",
+        "Campeonato Brasileiro Serie A",
+        "Chilean Primera División",
         "Categoría Primera A",
         "Serie A",
-        "Primera División Paraguaya",
-        "Liga 1",
-        "Primera División Uruguaya",
-        "Primera División Venezolana"
+        "Paraguayan Primera División",
+        "Peruvian Liga 1",
+        "Uruguayan Primera División",
+        "Venezuelan Primera División"
     ],
     "50": [
         "New Moon",
@@ -388,13 +341,12 @@
         "Good Friday",
         "Easter Sunday",
         "Easter Monday",
-        "Great Prayer Day",
+        "General Prayer Day",
         "Ascension Day",
         "Pentecost Sunday",
         "Pentecost Monday",
         "Christmas Day",
-        "Second Christmas Day",
-        "Constitution Day"
+        "Second Christmas Day"
     ],
     "52": [
         "Andhra Pradesh",
@@ -431,7 +383,7 @@
         "Cyrillic alphabet",
         "Greek alphabet",
         "Armenian alphabet",
-        "Georgian script"
+        "Georgian alphabet"
     ],
     "54": [
         "idk"
@@ -439,26 +391,27 @@
     "55": [
         "Ares",
         "Athena",
-        "Polemos",
         "Enyo",
         "Nike",
         "Mars",
         "Minerva",
         "Bellona",
         "Victoria",
-        "Tyr",
         "Odin",
-        "Valkyries",
-        "Nuada",
-        "Lugh",
-        "Macha",
-        "Badb",
-        "Nemain",
+        "Tyr",
+        "Freyja",
         "Morrigan",
-        "Esus",
+        "Badb",
+        "Macha",
+        "Nemain",
+        "Lugh",
+        "Teutates",
         "Camulus",
+        "Esus",
         "Toutatis",
-        "Perun"
+        "Perun",
+        "Svetovid",
+        "Perkunas"
     ],
     "56": [
         "idk"
@@ -467,17 +420,14 @@
         "idk"
     ],
     "58": [
-        "Kasbahs",
-        "Ksars",
-        "Earth-built houses",
+        "Ksar",
+        "Kasbah",
+        "Mud brick houses",
         "Granaries",
-        "Watchtowers",
-        "Gatehouses",
+        "Caravansaries",
         "Defensive walls",
-        "Courtyards",
-        "Staircases",
-        "Terraces",
-        "Arches"
+        "Watchtowers",
+        "Gates"
     ],
     "59": [
         "idk"
@@ -486,75 +436,40 @@
         "idk"
     ],
     "61": [
-        "Pelléas et Mélisande",
-        "La Demoiselle élue",
-        "La Chute de la maison Usher"
+        "idk"
     ],
     "62": [
         "MicroProse",
         "Infogrames",
+        "Atari",
+        "Electronic Arts",
         "Activision",
         "2K Games"
     ],
     "63": [
         "Raltegravir",
-        "Elvitegravir",
-        "Dolutegravir",
-        "Bictegravir",
-        "Cabotegravir"
+        "Dolutegravir"
     ],
     "64": [
         "idk"
     ],
     "65": [
-        "Runway 6 left 24 right",
-        "Runway 6 right 24 left",
-        "Runway 7 left 25 right",
-        "Runway 7 right 25 left"
+        "6 left slash 24 right",
+        "6 right slash 24 left",
+        "7 left slash 25 right",
+        "7 right slash 25 left"
     ],
     "66": [
         "Rent"
     ],
     "67": [
-        "Adams County",
-        "Billings County",
-        "Bowman County",
-        "Burke County",
-        "Divide County",
-        "Dunn County",
-        "Golden Valley County",
-        "Hettinger County",
-        "McKenzie County",
-        "Mercer County",
-        "Mountrail County",
-        "Slope County",
-        "Stark County",
-        "Williams County"
+        "idk"
     ],
     "68": [
-        "Australian Open 2004",
-        "Australian Open 2006",
-        "Australian Open 2007",
-        "Australian Open 2009",
-        "Australian Open 2010",
-        "Australian Open 2015",
-        "Australian Open 2017",
-        "French Open 2002",
-        "French Open 2013",
-        "French Open 2015",
-        "Wimbledon 2002",
-        "Wimbledon 2003",
-        "Wimbledon 2009",
-        "Wimbledon 2010",
-        "Wimbledon 2012",
-        "Wimbledon 2015",
-        "Wimbledon 2016",
-        "United States Open 1999",
-        "United States Open 2002",
-        "United States Open 2008",
-        "United States Open 2012",
-        "United States Open 2013",
-        "United States Open 2014"
+        "Australian Open",
+        "French Open",
+        "Wimbledon",
+        "United States Open"
     ],
     "69": [
         "idk"
@@ -564,14 +479,13 @@
     ],
     "71": [
         "FlixBus",
-        "FlixTrain",
-        "Greyhound"
+        "FlixTrain"
     ],
     "72": [
         "The Rolling Stones",
-        "12 X 5",
         "The Rolling Stones Number 2",
         "Out of Our Heads",
+        "December's Children (And Everybody's)",
         "Aftermath",
         "Between the Buttons",
         "Their Satanic Majesties Request",
@@ -612,14 +526,14 @@
         "idk"
     ],
     "78": [
-        "idk"
+        "Khadga",
+        "Severed Head"
     ],
     "79": [
         "idk"
     ],
     "80": [
-        "Major General",
-        "Rear Admiral Upper Half"
+        "idk"
     ],
     "81": [
         "idk"
@@ -685,10 +599,14 @@
     "100": [
         "Other Voices, Other Rooms",
         "The Grass Harp",
-        "Summer Crossing"
+        "Summer Crossing",
+        "Breakfast at Tiffany's",
+        "In Cold Blood",
+        "Answered Prayers"
     ],
     "101": [
-        "idk"
+        "Automotive",
+        "Ford Credit"
     ],
     "102": [
         "idk"
@@ -705,35 +623,30 @@
     "106": [
         "idk"
     ],
-    "107": [
-        "none"
-    ],
+    "107": [],
     "108": [
         "Kublai Khan",
         "Temür Khan",
         "Külüg Khan",
         "Ayurbarwada Buyantu Khan",
         "Gegeen Khan",
-        "Yesün Temür",
-        "Ragibagh Khan",
-        "Jayaatu Khan Tugh Temür",
-        "Khayishan",
+        "Yesün Temür Khan",
+        "Biligtü Khan",
         "Toghon Temür"
     ],
     "109": [
-        "Cytochrome P450 3A4",
-        "Cytochrome P450 2B6",
-        "Cytochrome P450 2D6",
-        "Cytochrome P450 3A5"
+        "CYP3A4",
+        "CYP2B6",
+        "CYP2C19",
+        "CYP2D6"
     ],
     "110": [
         "Lower Saxony"
     ],
     "111": [
-        "European Parliament",
-        "European Council",
-        "Council of the European Union",
         "European Commission",
+        "Council of the European Union",
+        "European Parliament",
         "Court of Justice of the European Union",
         "European Central Bank",
         "European Court of Auditors"
@@ -748,8 +661,8 @@
         "Silver Play Button",
         "Gold Play Button",
         "Diamond Play Button",
-        "Custom Play Button",
-        "Red Diamond Play Button"
+        "Ruby Play Button",
+        "Custom Play Button"
     ],
     "115": [
         "idk"
@@ -762,13 +675,7 @@
         "Walther Rathenau"
     ],
     "118": [
-        "Wayne's World",
-        "Wayne's World 2",
-        "So I Married an Axe Murderer",
-        "Austin Powers: International Man of Mystery",
-        "Austin Powers: The Spy Who Shagged Me",
-        "Austin Powers in Goldmember",
-        "The Love Guru"
+        "idk"
     ],
     "119": [
         "idk"
@@ -786,79 +693,61 @@
         "Munich"
     ],
     "121": [
-        "Cape Verde",
-        "Comoros",
         "Madagascar",
+        "Comoros",
         "Mauritius",
-        "Sao Tome and Principe",
-        "Seychelles"
+        "Seychelles",
+        "Cape Verde",
+        "Sao Tome and Principe"
     ],
     "122": [
-        "Association football",
-        "Rugby union",
-        "Cricket",
-        "Netball",
-        "Basketball",
-        "Volleyball",
-        "Field hockey",
-        "Baseball",
-        "Ice hockey",
-        "Darts",
-        "Pool",
-        "Snooker",
-        "Sailing",
-        "Alpine skiing",
-        "Cross-country skiing",
-        "Biathlon",
-        "Ski jumping",
-        "Nordic combined",
-        "Speed skating",
-        "Luge",
-        "Bobsleigh",
-        "Skeleton"
+        "idk"
     ],
     "123": [
         "idk"
     ],
     "124": [
-        "Saint John's",
-        "Nassau",
-        "Bridgetown",
-        "Belmopan",
-        "Ottawa",
-        "San Jose",
-        "Havana",
-        "Roseau",
-        "Santo Domingo",
-        "San Salvador",
-        "Saint George's",
-        "Guatemala City",
-        "Port-au-Prince",
-        "Tegucigalpa",
-        "Kingston",
-        "Mexico City",
-        "Managua",
-        "Panama City",
-        "Basseterre",
-        "Castries",
-        "Kingstown",
-        "Port of Spain",
-        "Washington, District of Columbia"
+        "Antigua and Barbuda Saint John's",
+        "Bahamas Nassau",
+        "Barbados Bridgetown",
+        "Belize Belmopan",
+        "Canada Ottawa",
+        "Costa Rica San Jose",
+        "Cuba Havana",
+        "Dominica Roseau",
+        "Dominican Republic Santo Domingo",
+        "El Salvador San Salvador",
+        "Grenada Saint George's",
+        "Guatemala Guatemala City",
+        "Haiti Port-au-Prince",
+        "Honduras Tegucigalpa",
+        "Jamaica Kingston",
+        "Mexico City Mexico",
+        "Nicaragua Managua",
+        "Panama Panama City",
+        "Saint Kitts and Nevis Basseterre",
+        "Saint Lucia Castries",
+        "Saint Vincent and the Grenadines Kingstown",
+        "Trinidad and Tobago Port of Spain",
+        "United States of America Washington District of Columbia"
     ],
     "125": [
         "Breaking",
+        "Baseball/Softball",
+        "Karate",
+        "Sport climbing",
         "Surfing",
-        "Skateboarding",
-        "Sport climbing"
+        "Skateboarding"
     ],
     "126": [
-        "Union of the Comoros",
-        "Republic of Madagascar"
+        "Comoros",
+        "Madagascar",
+        "Mauritius"
     ],
     "127": [
         "Ambassador Extraordinary and Plenipotentiary",
         "Envoy Extraordinary and Minister Plenipotentiary",
-        "Minister Plenipotentiary",
+        "Minister Resident and Plenipotentiary",
         "Chargé d'Affaires"
     ],
     "128": [
@@ -866,11 +755,11 @@
         "Proxima Centauri",
         "Alpha Centauri A",
         "Alpha Centauri B",
+        "Sirius A",
+        "Sirius B",
         "Barnard's Star",
         "Wolf 359",
         "Lalande 21185",
-        "Sirius A",
-        "Sirius B",
         "Luyten 726-8 A",
         "Luyten 726-8 B",
         "Ross 154"
@@ -879,31 +768,30 @@
         "idk"
     ],
     "130": [
-        "German Shepherd Dog",
         "Boxer",
+        "German Shepherd Dog",
         "Dachshund",
+        "Great Dane",
         "Rottweiler",
         "Doberman Pinscher",
-        "Great Dane",
-        "Miniature Schnauzer",
-        "Standard Schnauzer",
-        "Giant Schnauzer",
         "Weimaraner",
         "German Shorthaired Pointer",
         "German Wirehaired Pointer",
-        "German Pinscher",
         "Miniature Pinscher",
+        "German Pinscher",
+        "Standard Schnauzer",
+        "Giant Schnauzer",
+        "Miniature Schnauzer",
+        "Hovawart",
         "Pomeranian",
         "German Spitz",
-        "Kleinspitz",
-        "Mittelspitz",
-        "Grossspitz",
-        "Hovawart",
+        "Kromfohrlander",
+        "Jagdterrier",
+        "Eurasier",
         "Bavarian Mountain Hound",
-        "Kleiner Münsterländer",
-        "Großer Münsterländer",
-        "Deutsch Drahthaar",
-        "Harzer Fuchs"
+        "Westphalian Dachsbracke",
+        "Löwchen",
+        "German Longhaired Pointer"
     ],
     "131": [
         "idk"
@@ -961,13 +849,13 @@
         "Wyoming"
     ],
     "133": [
-        "Seoul Special City",
-        "Busan Metropolitan City",
-        "Daegu Metropolitan City",
-        "Incheon Metropolitan City",
-        "Gwangju Metropolitan City",
-        "Daejeon Metropolitan City",
-        "Ulsan Metropolitan City"
+        "Seoul",
+        "Busan",
+        "Daegu",
+        "Incheon",
+        "Gwangju",
+        "Daejeon",
+        "Ulsan"
     ],
     "134": [
         "United States dollar",
@@ -983,21 +871,20 @@
         "idk"
     ],
     "137": [
-        "Santa Fe National Historic Trail",
+        "Juan Bautista de Anza National Historic Trail",
         "Old Spanish National Historic Trail",
+        "El Camino Real de los Tejas National Historic Trail",
         "California National Historic Trail",
         "Oregon National Historic Trail",
+        "Santa Fe National Historic Trail",
         "Mormon Pioneer National Historic Trail",
         "Pony Express National Historic Trail",
         "Lewis and Clark National Historic Trail",
-        "Nez Perce National Historic Trail",
         "Trail of Tears National Historic Trail",
-        "Underground Railroad National Historic Trail",
-        "Cumberland Gap National Historical Trail",
-        "San Antonio Missions National Historical Trail",
-        "Captain John Smith Chesapeake National Historic Trail",
-        "Star-Spangled Banner National Historic Trail",
-        "Washington-Rochambeau Revolutionary Route National Historic Trail"
+        "Nez Perce National Historic Trail",
+        "Great Basin National Historic Trail",
+        "Fur Trade Route National Historic Trail",
+        "Emigrant Trails National Historic Trail"
     ],
     "138": [
         "idk"
@@ -1020,8 +907,8 @@
     ],
     "141": [
         "Archostemata",
-        "Myxophaga",
         "Adephaga",
+        "Myxophaga",
         "Polyphaga"
     ],
     "142": [
@@ -1060,25 +947,25 @@
         "idk"
     ],
     "147": [
-        "Belleville Nuclear Power Plant",
-        "Blayais Nuclear Power Plant",
-        "Bugey Nuclear Power Plant",
-        "Cattenom Nuclear Power Plant",
-        "Chooz Nuclear Power Plant",
-        "Chinon Nuclear Power Plant",
-        "Civaux Nuclear Power Plant",
-        "Cruas Nuclear Power Plant",
-        "Dampierre Nuclear Power Plant",
-        "Fessenheim Nuclear Power Plant",
-        "Flamanville Nuclear Power Plant",
-        "Golfech Nuclear Power Plant",
-        "Gravelines Nuclear Power Plant",
-        "Nogent Nuclear Power Plant",
-        "Paluel Nuclear Power Plant",
-        "Saint-Alban Nuclear Power Plant",
-        "Saint-Laurent Nuclear Power Plant",
-        "Tricastin Nuclear Power Plant",
-        "Superphénix Nuclear Power Plant"
+        "Centrale nucléaire de Brennilis",
+        "Centrale nucléaire de Belleville",
+        "Centrale nucléaire du Blayais",
+        "Centrale nucléaire de Bugey",
+        "Centrale nucléaire de Cattenom",
+        "Centrale nucléaire de Chinon",
+        "Centrale nucléaire de Chooz",
+        "Centrale nucléaire de Civaux",
+        "Centrale nucléaire de Cruas-Meysse",
+        "Centrale nucléaire de Dampierre",
+        "Centrale nucléaire de Fessenheim",
+        "Centrale nucléaire de Flamanville",
+        "Centrale nucléaire de Golfech",
+        "Centrale nucléaire de Gravelines",
+        "Centrale nucléaire de Nogent-sur-Seine",
+        "Centrale nucléaire de Paluel",
+        "Centrale nucléaire de Saint-Alban",
+        "Centrale nucléaire de Saint-Laurent-des-Eaux",
+        "Centrale nucléaire de Tricastin"
     ],
     "148": [
         "idk"

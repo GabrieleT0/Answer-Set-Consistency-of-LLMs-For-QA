@@ -5,5 +5,6 @@ __pycache__
 !.gitignore
 # Ignore a specific config file in your pipeline
 src/question_pipeline/config.json
+src/get_answers/config.json
 
 data/batch_api
