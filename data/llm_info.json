@@ -1,5 +1,6 @@
 {
   "llama3.1:8b": {
+    "ID":"A",
     "release_date": "2024-07-23",
     "parameters": 8,
     "information": "Part of Meta’s LLaMA 3.1 series, released July 23, 2024. One of the model sizes is 8B parameters. :contentReference[oaicite:5]{index=5}",
@@ -7,6 +8,7 @@
     "company": "Meta"
   },
   "gpt-oss:20b": {
+    "ID":"B",
     "release_date": "2025-08-13",
     "parameters": 20,
     "information": "gpt-oss-20B is an open-weight model by OpenAI recently released; total ~21B parameters. :contentReference[oaicite:6]{index=6}",
@@ -14,111 +16,127 @@
     "company": "OpenAI"
   },
   "mistral-small:24b": {
+    "ID":"C",
     "release_date": "2024-10-15",
     "parameters": 24,
     "information": "Mistral Small (24B) model; positioned as a mid-tier model for efficiency with strong performance. Parameter count ~24B.",
     "size": "medium",
     "company": "Mistral AI"
   },
-  "llama3.1:70b": {
-    "release_date": "2024-07-23",
-    "parameters": 70,
-    "information": "Meta LLaMA 3.1 70B was released on July 23, 2024. :contentReference[oaicite:7]{index=7}",
-    "size": "medium",
-    "company": "Meta"
-  },
   "gpt-4.1-nano-2025-04-14": {
+    "ID":"D",
     "release_date": "2025-04-14",
     "parameters": null,
     "information": "OpenAI launched GPT-4.1 family (GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano) on April 14, 2025. Their context windows are 1 million tokens; knowledge cutoff June 2024. No disclosed parameter counts. :contentReference[oaicite:0]{index=0}",
     "size": "small",
     "company": "OpenAI"
   },
-  "gpt-5-nano": {
-    "release_date": "2025-08-07",
-    "parameters": null,
-    "information": "GPT-5 was released August 7, 2025. The model family includes variants (main, mini, thinking etc.) but OpenAI has not disclosed exact parameter counts for publique variants. :contentReference[oaicite:1]{index=1}",
-    "size": "small",
-    "company": "OpenAI"
-  },
   "gemini-2.0-flash": {
+    "ID":"E",
     "release_date": "2024-12-11",
     "parameters": null,
     "information": "No reliable public info found (so far) for Gemini-2.0-Flash regarding parameter count or release date.",
     "size": "medium",
     "company": "Google"
   },
+  "llama3.1:70b": {
+    "ID":"F",
+    "release_date": "2024-07-23",
+    "parameters": 70,
+    "information": "Meta LLaMA 3.1 70B was released on July 23, 2024. :contentReference[oaicite:7]{index=7}",
+    "size": "medium",
+    "company": "Meta"
+  },
   "gpt-4.1-mini-2025-04-14": {
+    "ID":"G",
     "release_date": "2025-04-14",
     "parameters": null,
     "information": "Part of the GPT-4.1 family released April 14, 2025. The mini version is intermediate in size between full and nano but parameter counts not disclosed. Context window 1 million tokens. :contentReference[oaicite:2]{index=2}",
     "size": "medium",
     "company": "OpenAI"
   },
-  "gemini-2.5-flash": {
-    "release_date": "2025-04-17",
-    "parameters": null,
-    "information": "No reliable public info found as yet on Gemini-2.5-Flash’s parameters or exact release date.",
-    "size": "medium",
-    "company": "Google"
-  },
-  "grok-3-mini": {
-    "release_date": "2025-05-19",
-    "parameters": null,
-    "information": "xAI’s Grok-3-mini (Grok 3 Mini) became available around May 19, 2025 via Azure Foundry. It is a lightweight model with context length ~131,072 tokens; no public parameter count found. :contentReference[oaicite:4]{index=4}",
-    "size": "medium",
-    "company": "xAI"
-  },
-  "gpt-5-mini": {
-    "release_date": "2025-08-07",
-    "parameters": null,
-    "information": "GPT-5 includes 'mini' variants; formal release date August 7, 2025. Exact parameter counts for mini not publicly disclosed. :contentReference[oaicite:3]{index=3}",
-    "size": "medium",
-    "company": "OpenAI"
-  },
-  "deepseek-chat": {
-    "release_date": "2025-01-10",
-    "parameters": 685,
-    "information": "DeepSeek (chatbot) by DeepSeek released January 10, 2025. Parameter counts or full model size not clearly disclosed. :contentReference[oaicite:10]{index=10}",
-    "size": "medium",
-    "company": "DeepSeek"
-  },
-  "deepseek-reasoner": {
-    "release_date": "2025-01-20",
-    "parameters": 671,
-    "information": "No reliable separate model spec found under the name ‘DeepSeek-Reasoner’ distinct from other DeepSeek variants in public sources.",
-    "size": "large",
-    "company": "DeepSeek"
-  },
-  "gpt-4.1-2025-04-14": {
-    "release_date": "2025-04-14",
-    "parameters": null,
-    "information": "Full GPT-4.1 (not mini or nano) launched April 14, 2025 with 1M token context, knowledge cutoff June 2024. Parameter count not disclosed. :contentReference[oaicite:8]{index=8}",
-    "size": "large",
-    "company": "OpenAI"
-  },
   "gpt-4o": {
+    "ID":"H",
     "release_date": "2024-05-13",
     "parameters": null,
     "information": "GPT-4o was released November 20, 2024; context window shorter; parameter count not publicly shared. :contentReference[oaicite:9]{index=9}",
     "size": "large",
     "company": "OpenAI"
   },
-  "o3": {
-    "release_date": "2024-12-20",
+  "gpt-4.1-2025-04-14": {
+    "ID":"I",
+    "release_date": "2025-04-14",
     "parameters": null,
-    "information": "OpenAI’s ‘o3’ model is mentioned in context of newer reasoning models, but public details about release date or parameter counts are scarce or not disclosed.",
+    "information": "Full GPT-4.1 (not mini or nano) launched April 14, 2025 with 1M token context, knowledge cutoff June 2024. Parameter count not disclosed. :contentReference[oaicite:8]{index=8}",
     "size": "large",
     "company": "OpenAI"
   },
+  "grok-3-mini": {
+    "ID":"J",
+    "release_date": "2025-05-19",
+    "parameters": null,
+    "information": "xAI’s Grok-3-mini (Grok 3 Mini) became available around May 19, 2025 via Azure Foundry. It is a lightweight model with context length ~131,072 tokens; no public parameter count found. :contentReference[oaicite:4]{index=4}",
+    "size": "medium",
+    "company": "xAI"
+  },
+  "deepseek-chat": {
+    "ID":"K",
+    "release_date": "2025-01-10",
+    "parameters": 685,
+    "information": "DeepSeek (chatbot) by DeepSeek released January 10, 2025. Parameter counts or full model size not clearly disclosed. :contentReference[oaicite:10]{index=10}",
+    "size": "medium",
+    "company": "DeepSeek"
+  },
+  "gemini-2.5-flash": {
+    "ID":"L",
+    "release_date": "2025-04-17",
+    "parameters": null,
+    "information": "No reliable public info found as yet on Gemini-2.5-Flash’s parameters or exact release date.",
+    "size": "medium",
+    "company": "Google"
+  },
+  "gpt-5-nano": {
+    "ID":"M",
+    "release_date": "2025-08-07",
+    "parameters": null,
+    "information": "GPT-5 was released August 7, 2025. The model family includes variants (main, mini, thinking etc.) but OpenAI has not disclosed exact parameter counts for publique variants. :contentReference[oaicite:1]{index=1}",
+    "size": "small",
+    "company": "OpenAI"
+  },
+  "deepseek-reasoner": {
+    "ID":"N",
+    "release_date": "2025-01-20",
+    "parameters": 671,
+    "information": "No reliable separate model spec found under the name ‘DeepSeek-Reasoner’ distinct from other DeepSeek variants in public sources.",
+    "size": "large",
+    "company": "DeepSeek"
+  },
   "gemini-2.5-pro": {
+    "ID":"O",
     "release_date": "2025-03-25",
     "parameters": null,
     "information": "No verifiable public data found yet for Gemini-2.5-Pro (release date or parameters).",
     "size": "large",
     "company": "Google"
   },
+  "gpt-5-mini": {
+    "ID":"P",
+    "release_date": "2025-08-07",
+    "parameters": null,
+    "information": "GPT-5 includes 'mini' variants; formal release date August 7, 2025. Exact parameter counts for mini not publicly disclosed. :contentReference[oaicite:3]{index=3}",
+    "size": "medium",
+    "company": "OpenAI"
+  },
+  "o3": {
+    "ID":"Q",
+    "release_date": "2024-12-20",
+    "parameters": null,
+    "information": "OpenAI’s ‘o3’ model is mentioned in context of newer reasoning models, but public details about release date or parameter counts are scarce or not disclosed.",
+    "size": "large",
+    "company": "OpenAI"
+  },
   "gpt-5": {
+    "ID":"R",
     "release_date": "2025-08-07",
     "parameters": null,
     "information": "",

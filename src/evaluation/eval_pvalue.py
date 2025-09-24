@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from scipy.stats import binomtest
-
+import json
 
 # Extended predicates and column names
 PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4', '?A4=A1|3']
@@ -80,7 +80,7 @@ def compute_pvals(df: pd.DataFrame) -> pd.DataFrame:
     return res.sort_values(['dataset', 'llm', 'action'], ignore_index=True)
 
 
-def compute_pval_matrix(df: pd.DataFrame, action_filter="zero-shot"):
+def compute_pval_matrix(df: pd.DataFrame, llms, action_filter="zero-shot"):
     """
     For each dataset (and overall), compute one-sided p-value matrices between LLMs
     for the given action (default: zero-shot).
@@ -98,8 +98,7 @@ def compute_pval_matrix(df: pd.DataFrame, action_filter="zero-shot"):
         if g.empty:
             continue
 
-        llms = sorted(g['llm'].unique())
-
+        # llms = sorted(g['llm'].unique())
         for pred in PREDICATES:
             mat = pd.DataFrame(1.0, index=llms, columns=llms, dtype=float)
 
@@ -131,11 +130,17 @@ def p_value_matrixs(df_analysis: pd.DataFrame, actions):
     Saves results in wide format CSV.
     """
     rows_wide = []
+    root_dir = os.path.dirname(os.path.abspath(__name__))
+    llm_path = f"{root_dir}/data/llm_info.json"
+    with open(llm_path, "r", encoding="utf-8") as f:
+        llm_info = json.load(f)
+    llms = list(llm_info.keys())
+    # df = df.sort_values(by="llm_ID", ascending=True)
+    # name_id_map = {key: llm_info[key]["ID"] for key in llm_info}
     for action in actions:
-        pval_matrices = compute_pval_matrix(df_analysis, action_filter=action)
+        pval_matrices = compute_pval_matrix(df_analysis, llms, action_filter=action)
 
         for (dataset, pred), mat in pval_matrices.items():
-            llms = sorted(mat.index.tolist())
             mat  = mat.loc[llms, llms].astype(float).round(4)
         
             for row_llm in llms:
@@ -144,14 +149,14 @@ def p_value_matrixs(df_analysis: pd.DataFrame, actions):
                 row.update({f"{llms[i]}": vals[i] for i in range(len(llms))})
                 rows_wide.append(row)
 
-    df_pvalue = pd.DataFrame(rows_wide).sort_values(["action","dataset", "predicate", "llm"], ignore_index=True)
+    df_pvalue = pd.DataFrame(rows_wide).sort_values(["action","dataset", "predicate"], ignore_index=True)
     return df_pvalue
 
 if __name__ == "__main__":
     # Example usage
     root_dir = os.path.dirname(os.path.abspath(__name__))
     folder = root_dir + "/output/"
-    df_analysis = pd.read_csv(folder + "analysis_2025-09-10_13-38.csv")
+    df_analysis = pd.read_csv(folder + "analysis_2025-09-23_16-04.csv")
     actions = ["zero-shot", "fixing", "classification"]
     df_pvalue = p_value_matrixs(df_analysis, actions)
     df_pvalue.to_csv(os.path.join(folder, "p_value_matrices.csv"), index=False)

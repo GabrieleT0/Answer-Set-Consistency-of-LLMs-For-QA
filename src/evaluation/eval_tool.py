@@ -126,12 +126,19 @@ def analysis(df):
     for keys, group in grouped: 
         if set(group["Q_serie"]) >= {"Q1", "Q2", "Q3", "Q4"}:
             action = group["action"].values[0]
+            llm = group["llm"].values[0]
+            dataset = group["dataset"].values[0]
+            qid = group["Q_ID"].values[0]
             if action in ["zero-shot", "wikidata"]:
                 A1 = get_answer_set(group, "Q1", "equal")
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
                 A4 = get_answer_set(group, "Q4", "minus")
-
+                A1_star = None
+                if action == "zero-shot":
+                    row = df[(df["action"]=="star") & (df["llm"]==llm)&(df["dataset"]==dataset)&(df["Q_ID"]==qid)]
+                    if not row.empty:
+                        A1_star = set(row["Answer"].values[0])
                 A1_prime = None
                 A1_double_prime = None
 
@@ -140,7 +147,7 @@ def analysis(df):
                     "J(A1-A34)": round(jaccard_similarity(A1, A3.union(A4)), 4),
                     "J(A3-A4)": round(jaccard_similarity(A3, A4), 4),
                     "J(A4-A1|3)":round(jaccard_similarity(A4, A1 - A3),4),
-                    "J(A1-A1*)": None,
+                    "J(A1-A1*)": round(jaccard_similarity(A1, A1_star), 4) if A1_star is not None else None,
                     "J(A1-A1**)": None,
                     "J(A1*-A1**)": None
                     }
@@ -151,7 +158,7 @@ def analysis(df):
                     "?A1>A4": int(A4.issubset(A1)),
                     "?A3∅A4": int(A3.isdisjoint(A4)),
                     "?A4=A1|3": int(A1 == A3.union(A4) and A3.isdisjoint(A4)),
-                    "?A1=A1*": None,
+                    "?A1=A1*": int(A1 == A1_star) if A1_star is not None else None,
                     "?A1=A1**": None,
                     "?A1*=A1**": None
                     }
@@ -207,7 +214,7 @@ def analysis(df):
                 "A1*": A1_prime, "A1**": A1_double_prime
             }
             rows.append(row)
-
+    
     return pd.DataFrame(rows)
 
 
@@ -250,14 +257,16 @@ def summary(df_analysis):
     df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
     df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
     
-    col = ["?A1=A1*","J(A1-A1*)"]
+    # col = ["?A1=A1*","J(A1-A1*)"]
     # source values indexed by (llm, dataset) from classification rows
-    src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
+    # src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
 
     # assign to matching zero-shot rows
-    mask = df_summary['action'].eq('zero-shot')
-    zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
-    df_summary.loc[mask, col] = src.reindex(zero_idx).to_numpy()
+    # mask = df_summary['action'].eq('zero-shot')
+    # zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
+    # df_summary.loc[mask, col] = src.reindex(zero_idx).to_numpy()
+    idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
+    df_summary["idk"] = df_summary[idk_col].mean(axis=1)
     return df_summary
 
 # if __name__ == "__main__":

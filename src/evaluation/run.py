@@ -1,6 +1,8 @@
 from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary
 from eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 from eval_pvalue import compute_pvals, p_value_matrixs
+from split_heatmap import dataframe_to_heatmap_csvs
+from split import split
 import os
 import json
 import datetime
@@ -8,12 +10,12 @@ import datetime
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
     print("Root directory:", root_dir)
-    datasets=["spinach", "qawiki",'synthetic']
+    datasets=["spinach", "qawiki",'synthetic','lc-quad']
 
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
         llms = json.load(f).keys()
-    actions = ["wikidata", "fixing", "classification","zero-shot"]
+    actions = ["wikidata", "fixing", "classification","star","zero-shot"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
 
@@ -71,11 +73,15 @@ if __name__ == "__main__":
 
     summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
     summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
+
+
     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
     df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
+    split(df_summary, "summary")
+    
     df_pvalue = p_value_matrixs(df_analysis, actions)
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, p_value_matrixs_file_format), index=False)
-
+    dataframe_to_heatmap_csvs(df_pvalue, output_folder)
     print("Analysis and summary saved to:", output_folder)
