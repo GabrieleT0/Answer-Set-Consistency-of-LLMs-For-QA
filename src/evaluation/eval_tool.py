@@ -214,8 +214,8 @@ def analysis(df):
                 "A1*": A1_prime, "A1**": A1_double_prime
             }
             rows.append(row)
-    
-    return pd.DataFrame(rows)
+    df_analysis = pd.DataFrame(rows)
+    return df_analysis
 
 
 
@@ -223,8 +223,9 @@ def summary(df_analysis):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
     jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A3-A4)","J(A4-A1|3)","J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
+    self_contradition_cols = ["?SC(A1=A2)","?SC(A1>A3)","?SC(A1>A4)","?SC(A3∅A4)","?SC(A4=A1|3)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
-    metric_cols = consistency_cols + jaccard_cols + pval_cols
+    metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
     for a in ["A1", "A2", "A3", "A4"]:
         df_analysis[f"idk_{a}"] = df_analysis[a].apply(lambda x: int(

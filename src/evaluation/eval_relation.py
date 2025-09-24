@@ -440,6 +440,20 @@ def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
     if m_cls.any():
         cls_merge = df_analysis.loc[m_cls, keys].merge(df_rel_clf_aligned, on=keys, how="left")
         df_analysis.loc[m_cls, rel_cols] = cls_merge[rel_cols].values
+
+    
+        # check self_contradition
+    df_analysis["?SC(A1=A2)"] = ((df_analysis["?A1=A2"]) == 
+                                (df_analysis["R(1-2)"] == "Equivalence").astype(int)).astype(int)
+    df_analysis["?SC(A1>A3)"] = ((df_analysis["?A1>A3"]) ==
+                                (df_analysis["R(1-3)"] == "Contains").astype(int)).astype(int)
+    df_analysis["?SC(A1>A4)"] = ((df_analysis["?A1>A4"]) == 
+                                (df_analysis["R(1-4)"] == "Contains").astype(int)).astype(int)
+    df_analysis["?SC(A3∅A4)"] = ((df_analysis["?A3∅A4"]) ==
+                                (df_analysis["R(3-4)"] == "Disjoint").astype(int)).astype(int)
+    df_analysis["?SC(A4=A1|3)"] = ((df_analysis["?A4=A1|3"]) == 
+                                (df_analysis["R(1-34)"] == "Equivalence")).astype(int)
+    
     df_analysis =  df_analysis.replace({None: pd.NA}).convert_dtypes()
     return df_analysis
 

@@ -28,12 +28,12 @@ def _compare_group(g, dataset_label):
     if 'zero-shot' not in set(g['action']):
         return pd.DataFrame(out_rows)
 
-    base = g[g['action'] == 'zero-shot'][['Q_ID'] + PREDICATES].copy()
+    base = g[g['action'] == 'zero-shot'][['Q_ID',"dataset"] + PREDICATES].copy()
 
     for action, g_act in g.groupby('action'):
         merged = base.merge(
-            g_act[['Q_ID'] + PREDICATES], 
-            on='Q_ID', 
+            g_act[['Q_ID',"dataset"] + PREDICATES], 
+            on=['Q_ID',"dataset"], 
             suffixes=('_zero', '_act')
         )
         if merged.empty:
@@ -156,8 +156,9 @@ if __name__ == "__main__":
     # Example usage
     root_dir = os.path.dirname(os.path.abspath(__name__))
     folder = root_dir + "/output/"
-    df_analysis = pd.read_csv(folder + "analysis_2025-09-23_16-04.csv")
+    df_analysis = pd.read_csv(folder + "analysis.csv")
     actions = ["zero-shot", "fixing", "classification"]
-    df_pvalue = p_value_matrixs(df_analysis, actions)
-    df_pvalue.to_csv(os.path.join(folder, "p_value_matrices.csv"), index=False)
-        
+    # df_pvalue = p_value_matrixs(df_analysis, actions)
+    # df_pvalue.to_csv(os.path.join(folder, "p_value_matrices.csv"), index=False)
+    df_pval = compute_pvals(df_analysis)
+    print(df_pval.shape)
