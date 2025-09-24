@@ -46,13 +46,13 @@ if __name__ == "__main__":
     # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
     # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
-    # df_summary = pd.read_csv(root_dir + "/output/summary.csv")
+    df_summary = pd.read_csv(root_dir + "/output/summary.csv")
     
-    # df_summary["release_date"] = df_summary["llm"].apply(lambda x: llm_info[x]["release_date"])
-    # df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
-    # df_summary["size"] = df_summary["llm"].apply(lambda x: llm_info[x]["size"])
-    # df_summary["score"] = df_summary["llm"].apply(lambda x: llm_info[x]["score"])
-    # df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
+    df_summary["release_date"] = df_summary["llm"].apply(lambda x: llm_info[x]["release_date"])
+    df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
+    df_summary["size"] = df_summary["llm"].apply(lambda x: llm_info[x]["size"])
+    df_summary["score"] = df_summary["llm"].apply(lambda x: llm_info[x]["score"])
+    df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
 
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
