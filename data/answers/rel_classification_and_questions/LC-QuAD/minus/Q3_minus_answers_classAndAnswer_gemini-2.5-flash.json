@@ -1,19 +1,18 @@
 {
     "0": [
-        "Naples",
-        "Rome",
-        "Milan"
+        "Milan",
+        "Rome"
     ],
     "1": [
         "Arve River",
         "Borgne River",
         "Dranse River (Valais)",
-        "Grande Eau River",
-        "Gryonne River",
         "Lizerne River",
         "Lonza River",
+        "Massa River",
         "Morge River (Valais)",
         "Navizence River",
+        "Saltina River",
         "Trient River",
         "Vispa River"
     ],
@@ -23,23 +22,18 @@
     "3": [
         "Best Costume Design - Black-and-White"
     ],
-    "4": [
-        "People's Choice Award for Favorite Crime Drama Television Show"
-    ],
+    "4": [],
     "5": [
-        "Grammy Award for Best Pop Vocal Performance by a Duo, Group or Chorus",
-        "Grammy Award for Best Rhythm and Blues Vocal Performance by a Duo, Group or Chorus"
+        "Grammy Awards"
     ],
-    "6": [
-        "Anna"
-    ],
+    "6": [],
     "7": [
         "New York",
+        "Illinois",
         "South Dakota"
     ],
     "8": [
-        "Sergei Taneyev",
-        "Anton Arensky"
+        "Sergei Taneyev"
     ],
     "9": [
         "Sima Zhong",
@@ -61,17 +55,20 @@
         "Maggie Simpson"
     ],
     "13": [
-        "idk"
+        "Huracán",
+        "River Plate",
+        "Platense",
+        "Racing Club",
+        "Estudiantes de La Plata",
+        "Deportivo Español"
     ],
     "14": [
         "idk"
     ],
-    "15": [
-        "idk"
-    ],
+    "15": [],
     "16": [
         "Ronald Reagan",
-        "George Herbert Walker Bush"
+        "George H.W. Bush"
     ],
     "17": [
         "Seth MacFarlane",
@@ -81,97 +78,103 @@
         "Dee Bradley Baker",
         "Patrick Stewart",
         "Jeff Fischer",
-        "Curtis Armstrong",
         "Eddie Kaye Thomas",
+        "Curtis Armstrong",
         "Kevin Michael Richardson",
         "Mike Barker",
-        "Erik Durbin",
-        "John Viener",
-        "Matt McKenna",
         "Carlos Alazraqui",
+        "Daran Norris",
+        "Grey DeLisle",
+        "Tara Strong",
         "Maurice LaMarche",
         "John DiMaggio",
-        "Tara Strong",
-        "Tom Kenny",
-        "Jason Alexander",
-        "J.K. Simmons",
-        "Kristen Schaal",
-        "Mark Hamill",
-        "Octavia Spencer"
+        "Kristen Schaal"
     ],
     "18": [
         "Surgical site infections",
-        "Catheter related bloodstream infections",
-        "Ventilator associated pneumonia",
-        "Central line associated bloodstream infections",
-        "Oral infections",
+        "Catheter-related bloodstream infections",
+        "Ventilator-associated pneumonia",
         "Gingivitis",
-        "Periodontitis",
-        "Dental plaque related infections",
-        "Skin infections",
-        "Wound infections",
-        "Healthcare associated infections"
+        "Periodontal disease",
+        "Dental plaque formation",
+        "General skin infections",
+        "Healthcare-associated infections"
     ],
     "19": [
         "Glenfiddich 21 Year Old Gran Reserva",
         "Glenfiddich Fire & Cane"
     ],
     "20": [
-        "Major depressive disorder",
-        "Generalized anxiety disorder",
-        "Insomnia"
+        "Depression",
+        "Anxiety disorders",
+        "Fibromyalgia",
+        "Insomnia",
+        "Irritable bowel syndrome",
+        "Bulimia nervosa"
     ],
     "21": [
-        "Sherwin-Williams Company",
-        "Eaton Corporation",
-        "Progressive Corporation",
+        "The Sherwin-Williams Company",
         "Parker Hannifin Corporation"
     ],
     "22": [
-        "TAP Air Portugal",
         "Delta Air Lines",
-        "Azul Linhas Aéreas Brasileiras",
-        "Virgin Atlantic",
-        "Corsair International",
-        "Condor",
-        "Sunclass Airlines",
+        "TAP Air Portugal",
         "Air Senegal",
-        "Uganda Airlines",
+        "Azul Linhas Aéreas Brasileiras",
+        "Condor",
+        "Corsair International",
+        "Virgin Atlantic",
         "ITA Airways",
         "Air Belgium",
-        "Air Mauritius",
-        "World2Fly",
-        "Aer Lingus"
+        "French Bee",
+        "Iberia",
+        "LATAM Airlines",
+        "Lufthansa",
+        "Scandinavian Airlines",
+        "Turkish Airlines"
     ],
     "23": [
-        "The Tower of Babel by Pieter Bruegel the Elder (Vienna version)",
-        "The Tower of Babel by Pieter Bruegel the Elder (Rotterdam version)"
+        "The Tower of Babel (Vienna) by Pieter Bruegel the Elder",
+        "The Tower of Babel (Rotterdam) by Pieter Bruegel the Elder"
     ],
     "24": [
-        "Illustrations for Dante Alighieri's Divine Comedy",
-        "Illustrations for John Milton's Paradise Lost",
-        "Illustrations for Edward Young's Night Thoughts",
-        "Illustrations for Robert Blair's The Grave",
-        "Illustrations for Geoffrey Chaucer's Canterbury Tales",
-        "Illustrations for the Book of Job",
-        "Illustrations for Mary Wollstonecraft's Original Stories from Real Life",
-        "Illustrations for William Hayley's Ballads",
-        "Illustrations for William Hayley's The Triumphs of Temper"
+        "Night Thoughts",
+        "The Grave",
+        "Paradise Lost",
+        "Comus",
+        "On the Morning of Christ's Nativity",
+        "The Divine Comedy",
+        "The Canterbury Tales",
+        "Illustrations of the Book of Job",
+        "Original Stories from Real Life",
+        "Ballads",
+        "The Triumphs of Temper",
+        "Fables",
+        "The Ladies' New and Elegant Pocket Book",
+        "The Botanic Garden",
+        "The History of England",
+        "Illustrations to Homer's Iliad and Odyssey",
+        "Thoughts on Outline",
+        "The Speaker",
+        "A Select Collection of English Songs",
+        "Narrative of a Five Years' Expedition against the Revolted Negroes of Surinam",
+        "Fables Ancient and Modern",
+        "Poems",
+        "The Task"
     ],
     "25": [
         "Arabic",
         "Persian",
         "Urdu",
         "Pashto",
-        "Uyghur",
-        "Ottoman Turkish"
+        "Saraiki"
     ],
     "26": [
         "Jerry Garcia",
         "Bob Weir",
         "Phil Lesh",
         "Bill Kreutzmann",
-        "Ron \"Pigpen\" McKernan"
+        "Ron McKernan"
     ],
     "27": [
         "Cyprus",
@@ -181,37 +184,28 @@
         "Harry Potter and the Deathly Hallows"
     ],
     "29": [
-        "The Bad Sleep Well",
-        "Dodes'ka-den",
-        "Drunken Angel",
-        "Ikiru",
-        "Madadayo",
-        "One Wonderful Sunday",
-        "Record of a Living Being (I Live in Fear)",
-        "Scandal",
-        "Stray Dog",
-        "The Lower Depths"
+        "idk"
     ],
     "30": [
         "Democratic People's Republic of Korea",
         "People's Republic of China",
         "Republic of Korea",
         "United States of America",
-        "United Kingdom of Great Britain and Northern Ireland",
+        "United Kingdom",
         "Canada",
-        "Commonwealth of Australia",
+        "Australia",
         "New Zealand",
-        "French Republic",
-        "Kingdom of the Netherlands",
-        "Kingdom of Belgium",
-        "Grand Duchy of Luxembourg",
-        "Hellenic Republic",
-        "Republic of Turkey",
-        "Federal Democratic Republic of Ethiopia",
-        "Republic of Colombia",
-        "Republic of the Philippines",
-        "Kingdom of Thailand",
-        "Republic of South Africa"
+        "France",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg",
+        "Greece",
+        "Turkey",
+        "Ethiopia",
+        "Colombia",
+        "Philippines",
+        "Thailand",
+        "South Africa"
     ],
     "31": [
         "James McCartney"
@@ -223,43 +217,45 @@
     ],
     "33": [
         "Nguyễn Duy Trinh",
-        "Trần Văn Lắm",
-        "Nguyễn Thị Bình"
+        "Nguyễn Thị Bình",
+        "Trần Văn Lắm"
     ],
     "34": [
-        "Sterling Memorial Library",
+        "African Collection",
+        "Bass Library",
         "Beinecke Rare Book and Manuscript Library",
-        "Lillian Goldman Law Library",
-        "Harvey Cushing John Hay Whitney Medical Library",
         "Divinity Library",
+        "East Asia Library",
+        "Engineering Library",
         "Haas Arts Library",
+        "Harvey Cushing John Hay Whitney Medical Library",
+        "Lillian Goldman Law Library",
+        "Manuscripts and Archives",
         "Marx Science and Social Science Library",
         "Music Library",
-        "East Asia Library",
-        "Bass Library"
+        "Sterling Memorial Library"
     ],
     "35": [
         "European Court of Human Rights"
     ],
     "36": [
+        "Airbus A319",
         "Airbus A321",
         "Airbus A321neo",
         "Boeing 737-800",
         "Boeing 737 MAX 8",
-        "Boeing 777-200ER",
-        "Boeing 777-300ER",
+        "Boeing 777-200 Extended Range",
+        "Boeing 777-300 Extended Range",
         "Boeing 787-8",
         "Boeing 787-9"
     ],
     "37": [
         "Black Dog",
-        "Rock and Roll",
-        "Misty Mountain Hop"
+        "Rock and Roll"
     ],
     "38": [
-        "Paris Peace Treaties of 1947",
-        "Austrian State Treaty",
-        "Treaty on the Final Settlement with Respect to Germany"
+        "Paris Peace Treaties, 1947",
+        "Austrian State Treaty"
     ],
     "39": [
         "Bespin"
@@ -272,56 +268,55 @@
         "Hamlet",
         "Claudius",
         "Gertrude",
-        "Fortinbras",
-        "The Ghost of Hamlet's Father"
+        "The Ghost",
+        "Fortinbras"
     ],
     "42": [
-        "Howl's Moving Castle",
-        "Laputa: Castle in the Sky",
         "Lupin the 3rd: The Castle of Cagliostro",
-        "My Neighbor Totoro",
         "Nausicaä of the Valley of the Wind",
-        "Ponyo",
+        "Castle in the Sky",
+        "My Neighbor Totoro",
         "Porco Rosso",
         "Princess Mononoke",
         "Spirited Away",
-        "The Boy and the Heron",
-        "The Wind Rises"
+        "Howl's Moving Castle",
+        "Ponyo",
+        "The Wind Rises",
+        "The Boy and the Heron"
     ],
     "43": [
-        "Messier Thirty-Two",
-        "Messier One Hundred and Ten",
-        "Andromeda One",
-        "Andromeda Two",
-        "Andromeda Three",
-        "Andromeda Five",
-        "Pegasus Dwarf Spheroidal Galaxy",
-        "Cassiopeia Dwarf Galaxy",
-        "Andromeda Eight",
-        "Andromeda Nine",
-        "Andromeda Ten",
-        "Andromeda Eleven",
-        "Andromeda Twelve",
-        "Andromeda Thirteen",
-        "Andromeda Fourteen",
-        "Andromeda Fifteen",
-        "Andromeda Sixteen",
-        "Andromeda Seventeen",
-        "Andromeda Nineteen",
-        "Andromeda Twenty",
-        "Andromeda Twenty-One",
-        "Andromeda Twenty-Two",
-        "Andromeda Twenty-Three",
-        "Andromeda Twenty-Four",
-        "Andromeda Twenty-Five",
-        "Andromeda Twenty-Six",
-        "Andromeda Twenty-Seven",
-        "Andromeda Twenty-Eight",
-        "Andromeda Twenty-Nine",
-        "Andromeda Thirty",
-        "Andromeda Thirty-One",
-        "Andromeda Thirty-Two",
-        "Andromeda Thirty-Three"
+        "Messier 32",
+        "Messier 110",
+        "NGC 185",
+        "NGC 147",
+        "Andromeda I",
+        "Andromeda II",
+        "Andromeda III",
+        "Andromeda V",
+        "Andromeda VI",
+        "Andromeda VII",
+        "Andromeda VIII",
+        "Andromeda IX",
+        "Andromeda X",
+        "Andromeda XI",
+        "Andromeda XII",
+        "Andromeda XIII",
+        "Andromeda XIV",
+        "Andromeda XV",
+        "Andromeda XVI",
+        "Andromeda XVII",
+        "Andromeda XVIII",
+        "Andromeda XIX",
+        "Andromeda XX",
+        "Andromeda XXI",
+        "Andromeda XXII",
+        "Andromeda XXIII",
+        "Andromeda XXIV",
+        "Andromeda XXV",
+        "Andromeda XXVI",
+        "Andromeda XXVII",
+        "Andromeda XXVIII",
+        "Andromeda XXIX"
     ],
     "44": [
         "Best Original Screenplay"
@@ -335,43 +330,46 @@
         "Northern Lights"
     ],
     "47": [
+        "The Outsiders",
+        "Rumble Fish",
+        "The Cotton Club",
+        "Gardens of Stone",
+        "Tucker: The Man and His Dream",
+        "The Godfather Part III",
         "The Virgin Suicides",
         "Lost in Translation",
         "Marie Antoinette",
+        "Youth Without Youth",
+        "Tetro",
         "Somewhere",
+        "Twixt",
         "Palo Alto",
+        "The Bling Ring",
         "The Beguiled",
-        "Mainstream"
+        "The Godfather Coda: The Death of Michael Corleone"
     ],
     "48": [
-        "Golda Meir School",
-        "Saint Augustine Preparatory Academy",
-        "Messmer High School",
-        "Milwaukee Academy of Science",
-        "Milwaukee School of Languages",
-        "Hmong American Peace Academy",
-        "Milwaukee Excellence Charter School"
+        "Carmen High School of Science and Technology",
+        "St. Augustine Preparatory Academy"
     ],
     "49": [
-        "Argentine Primera División",
-        "Bolivian Primera División",
+        "Primera División (Liga Profesional de Fútbol) de Argentina",
+        "División Profesional de Bolivia",
         "Campeonato Brasileiro Série A",
-        "Chilean Primera División",
+        "Primera División de Chile",
         "Categoría Primera A de Colombia",
-        "Ecuadorian Serie A",
-        "Paraguayan Primera División",
-        "Peruvian Primera División",
-        "Uruguayan Primera División",
-        "Venezuelan Primera División"
+        "LigaPro Serie A de Ecuador",
+        "Primera División de Paraguay",
+        "Liga 1 de Perú",
+        "Primera División Profesional de Uruguay",
+        "Primera División de Venezuela"
     ],
     "50": [
         "Waxing Crescent",
         "First Quarter",
         "Waxing Gibbous"
     ],
-    "51": [
-        "Constitution Day"
-    ],
+    "51": [],
     "52": [
         "Assam",
         "Bihar",
@@ -399,33 +397,39 @@
         "Latin script"
     ],
     "54": [
-        "Japan",
-        "Norway",
-        "Denmark",
-        "Poland",
-        "Kazakhstan",
-        "Kyrgyzstan",
-        "Turkmenistan",
         "Armenia",
-        "Ukraine",
-        "Lesotho",
-        "Liberia",
-        "Democratic Republic of the Congo",
-        "Gabon",
-        "Equatorial Guinea",
-        "Sao Tome and Principe",
-        "Mozambique",
-        "Mauritania",
-        "Burkina Faso",
+        "Australia",
+        "Canada",
+        "Croatia",
+        "Denmark",
+        "Federated States of Micronesia",
         "Fiji",
+        "Indonesia",
+        "Israel",
         "Italy",
-        "Iceland",
-        "Canada"
+        "Japan",
+        "Kazakhstan",
+        "Kenya",
+        "Kyrgyzstan",
+        "Marshall Islands",
+        "New Zealand",
+        "Nigeria",
+        "Norway",
+        "Pakistan",
+        "Palau",
+        "Poland",
+        "Tonga",
+        "Turkmenistan"
     ],
     "55": [
         "Ares",
         "Athena",
-        "Mars"
+        "Deimos",
+        "Phobos",
+        "Nike",
+        "Mars",
+        "Bellona",
+        "Victoria"
     ],
     "56": [
         "Superman",
@@ -442,19 +446,14 @@
     "58": [
         "Kasbahs",
         "Defensive walls",
-        "Corner towers",
+        "Towers",
         "Gates"
     ],
     "59": [
         "idk"
     ],
     "60": [
-        "Statue of Bertrand du Guesclin",
-        "Statue of Anne of Brittany",
-        "Statue of Bertrand d'Argentré",
-        "Statue of Jean Jaurès",
-        "Statue of Aristide Briand",
-        "Statue of Charles de Gaulle"
+        "idk"
     ],
     "61": [
         "Pelléas et Mélisande"
@@ -462,24 +461,19 @@
     "62": [
         "MicroProse"
     ],
-    "63": [
-        "Cabotegravir"
-    ],
+    "63": [],
     "64": [
         "Lübeck",
         "Hamburg",
         "Munich",
         "Berlin",
-        "Frankfurt am Main",
+        "Frankfurt",
         "Bremen",
-        "Danzig",
-        "Travemünde"
+        "Dresden"
     ],
     "65": [
-        "Runway 6 Left",
-        "Runway 24 Right",
-        "Runway 6 Right",
-        "Runway 24 Left"
+        "Runway Six Left / Twenty-four Right",
+        "Runway Six Right / Twenty-four Left"
     ],
     "66": [
         "Rent"
@@ -487,20 +481,31 @@
     "67": [
         "Billings County",
         "Bowman County",
-        "Divide County",
         "Golden Valley County",
         "Slope County",
-        "Williams County"
+        "Stark County"
     ],
     "68": [
-        "Australian Open",
-        "United States Open"
+        "United States Open 1999",
+        "United States Open 2002",
+        "Australian Open 2003",
+        "Australian Open 2005",
+        "Australian Open 2007",
+        "United States Open 2008",
+        "Australian Open 2009",
+        "Australian Open 2010",
+        "United States Open 2012",
+        "United States Open 2013",
+        "United States Open 2014",
+        "Australian Open 2015",
+        "Australian Open 2017"
     ],
     "69": [
-        "Best Original Score",
-        "Best Original Song"
+        "Best Original Song",
+        "Best Original Score"
     ],
     "70": [
+        "Best Original Screenplay",
         "Best Foreign Language Film",
         "Best Documentary Feature",
         "Best Documentary Short Subject",
@@ -509,22 +514,17 @@
     ],
     "71": [
         "FlixBus",
-        "Greyhound",
-        "Kamil Koç"
+        "Kamil Koç",
+        "Greyhound"
     ],
     "72": [
-        "The Rolling Stones (United Kingdom)",
-        "England's Newest Hit Makers",
+        "The Rolling Stones",
         "12 X 5",
         "The Rolling Stones No. 2",
-        "The Rolling Stones, Now!",
-        "Out of Our Heads (United Kingdom)",
-        "Out of Our Heads (United States)",
+        "Out of Our Heads",
         "December's Children (And Everybody's)",
-        "Aftermath (United Kingdom)",
-        "Aftermath (United States)",
-        "Between the Buttons (United Kingdom)",
-        "Between the Buttons (United States)",
+        "Aftermath",
+        "Between the Buttons",
         "Their Satanic Majesties Request",
         "Beggars Banquet",
         "Let It Bleed"
@@ -534,21 +534,17 @@
         "Lincoln"
     ],
     "74": [
-        "Slumber Party Panic",
-        "Trouble in Lumpy Space",
-        "The Enchiridion!"
+        "idk"
     ],
     "75": [
         "Afghanistan",
         "Algeria",
         "Azerbaijan",
         "Bahrain",
-        "Bangladesh",
         "Brunei",
         "Comoros",
         "Djibouti",
         "Iran",
-        "Jordan",
         "Kuwait",
         "Libya",
         "Maldives",
@@ -556,14 +552,16 @@
         "Morocco",
         "Niger",
         "Oman",
-        "Pakistan",
         "Qatar",
         "Saudi Arabia",
         "Somalia",
         "Sudan",
+        "Tajikistan",
         "Tunisia",
         "Turkey",
+        "Turkmenistan",
         "United Arab Emirates",
+        "Uzbekistan",
         "Yemen"
     ],
     "76": [
@@ -589,73 +587,72 @@
         "Helge Lund"
     ],
     "78": [
-        "Sword"
+        "Sword",
+        "Scimitar"
     ],
     "79": [
+        "I Couldn't Sleep a Wink",
+        "You Are My True Love",
+        "The Card",
+        "Where Did My Snowman Go?",
         "The Little Shoemaker",
         "Suddenly There's a Valley",
         "With All My Heart",
-        "Alone (Why Must I Be Alone)",
         "Baby Lover",
         "Sailor",
         "Romeo",
-        "Chariot",
+        "My Friend the Sea",
         "Ya Ya Twist",
+        "Casanova",
+        "Chariot",
+        "I Will Follow Him",
+        "Hello Dolly!",
+        "Call Me",
         "I Know a Place",
+        "You're the One",
         "My Love",
         "A Sign of the Times",
         "I Couldn't Live Without Your Love",
-        "Who Am I",
+        "Who Am I?",
         "Colour My World",
-        "Don't Sleep in the Subway",
         "This Is My Song",
+        "Don't Sleep in the Subway",
         "The Other Man's Grass Is Always Greener",
         "Kiss Me Goodbye",
-        "The Cat in the Window (The Bird in the Sky)",
         "Happy Heart",
-        "American Boys",
-        "The Road",
+        "My Whole World Ended (The Moment You Left Me)",
+        "Look at Mine",
+        "The Song of My Life",
         "I Don't Know How to Love Him",
         "The Wedding Song (There Is Love)",
         "My Guy",
-        "Natural Love",
-        "I Am Your Song",
-        "The Song of My Life",
-        "I'm a Believer",
+        "I Am a Clown",
+        "Just Say Goodbye",
+        "I'm the One",
         "The Show Is Over",
-        "The Sun Always Shines on Television",
+        "I'm a Believer",
+        "Natural Love",
+        "The Sun Ain't Gonna Shine Anymore",
         "Love Me Tender",
+        "Oxygen",
+        "The Windmills of Your Mind",
+        "Here for You",
         "In My Life",
-        "A Million Great Ways",
+        "A Million Miles Away",
+        "Starting All Over Again",
         "Cut Copy Me",
         "Sacrifice My Heart",
-        "Starting All Over Again",
-        "Darling Cheri",
-        "Zigeuner Boy"
+        "A Brand New World",
+        "Gotta Get Up! (A Brand New Day)"
     ],
     "80": [
-        "Vice Admiral (United States Navy)",
-        "Vice Admiral (United States Coast Guard)",
-        "Vice Admiral (Royal Navy)",
-        "Vice-Admiral (Royal Canadian Navy)",
-        "Vice-amiral d'escadre (French Navy)",
-        "Vizeadmiral (German Navy)",
-        "Ammiraglio di squadra (Italian Navy)",
-        "Vicealmirante (Spanish Navy)",
-        "Vice-admiraal (Royal Netherlands Navy)",
-        "Vice-admiraal (Belgian Marine Component)",
-        "Vice-amiral (Belgian Marine Component)",
-        "Vice-almirante (Portuguese Navy)",
-        "Antinavarchos (Hellenic Navy)",
-        "Koramiral (Turkish Naval Forces)",
-        "Wiceadmirał (Polish Navy)",
-        "Viseadmiral (Royal Norwegian Navy)",
-        "Viceadmiral (Royal Danish Navy)",
-        "Viceadmiral (Bulgarian Navy)",
-        "Viceamiral (Romanian Naval Forces)",
-        "Viceadmiral (Croatian Navy)",
-        "Viceadmiral (Slovenian Navy)",
-        "Viceadmiral (Montenegrin Navy)"
+        "Vice Admiral",
+        "Vizeadmiral",
+        "Vice-amiral d'escadre",
+        "Ammiraglio di Squadra",
+        "Wiceadmirał",
+        "Koramiral",
+        "Antinávarchos"
     ],
     "81": [
         "Tarbes-1",
@@ -663,112 +660,97 @@
         "Tarbes-3"
     ],
     "82": [
-        "Mikoyan MiG-29",
+        "Mikoyan-Gurevich MiG-29",
+        "Mikoyan-Gurevich MiG-31",
         "Sukhoi Su-27",
         "Sukhoi Su-30SM",
-        "Mikoyan MiG-31",
         "Sukhoi Su-25",
         "Antonov An-12",
         "Antonov An-26",
-        "Antonov An-30",
         "Antonov An-72",
-        "Ilyushin Il-76",
-        "Aero L-39 Albatros",
-        "Yakovlev Yak-130"
+        "Airbus C295",
+        "Aero L-39 Albatros"
     ],
     "83": [
         "idk"
     ],
     "84": [
-        "Violins",
-        "Violas",
-        "Cellos",
-        "Double basses"
+        "Cello",
+        "Double bass",
+        "Harp",
+        "Viola",
+        "Violin"
     ],
     "85": [
-        "Anders Behring Breivik"
+        "Anders Behring Breivik",
+        "a daughter with Tove Øvermo"
     ],
     "86": [
-        "Acireale",
-        "Adrano",
-        "Aci Catena",
-        "Belpasso",
-        "Biancavilla",
-        "Bronte",
-        "Caltagirone",
         "Catania",
+        "Acireale",
+        "Caltagirone",
+        "Paternò",
+        "Adrano",
         "Giarre",
-        "Grammichele",
+        "Misterbianco",
         "Gravina di Catania",
         "Mascalucia",
-        "Militello in Val di Catania",
-        "Mineo",
-        "Misterbianco",
-        "Motta Sant'Anastasia",
-        "Palagonia",
-        "Paternò",
-        "Randazzo",
+        "Biancavilla",
+        "Bronte",
         "Riposto",
-        "San Giovanni la Punta",
-        "San Gregorio di Catania",
         "Scordia",
-        "Vizzini"
+        "Palagonia",
+        "Ramacca",
+        "Militello in Val di Catania",
+        "Randazzo"
     ],
     "87": [
-        "Western Lowland Gorilla",
-        "Orangutan",
+        "African Elephant",
+        "Bighorn Sheep",
+        "Black Rhinoceros",
         "Bongo",
-        "Okapi",
-        "Masai Giraffe",
-        "Grevy's Zebra",
-        "Indian Rhinoceros",
-        "Asian Elephant",
-        "Koala",
-        "Red Kangaroo",
-        "Parma Wallaby",
-        "Two-toed Sloth",
-        "Malayan Tapir",
         "Capybara",
-        "Black-and-white Ruffed Lemur",
-        "Red Ruffed Lemur",
-        "Red-backed Saki",
-        "Black-handed Spider Monkey",
-        "Mantled Howler Monkey",
-        "Rodrigues Flying Fox",
-        "African Crested Porcupine",
-        "Prehensile-tailed Porcupine",
-        "Naked Mole-rat",
-        "Rock Hyrax",
-        "Southern Pudu",
-        "Kirk's Dik-dik",
-        "Addax",
-        "Scimitar-horned Oryx",
-        "Bighorn Sheep"
+        "Giraffe",
+        "Gorilla",
+        "Greater Kudu",
+        "Grevy's Zebra",
+        "Koala",
+        "Malayan Tapir",
+        "Okapi",
+        "Pygmy Hippopotamus",
+        "Swamp Wallaby",
+        "Two-toed Sloth"
     ],
     "88": [],
     "89": [
-        "idk"
+        "Leah Levin",
+        "Shmuel Persky",
+        "Rachel Eisenberg",
+        "Shoshana Friedman",
+        "Yitzhak Eisenberg",
+        "Yitzhak Avineri",
+        "Mordechai Eisenberg",
+        "Sarah Levin",
+        "David Yellin",
+        "Rivka Cohen",
+        "Moshe Bar-Natan",
+        "Shoshana Levin"
     ],
     "90": [
-        "The Shadows"
+        "The Cure"
     ],
     "91": [
         "Inchmurrin",
-        "Inchtavannach"
+        "Inchfad"
     ],
     "92": [
-        "Kelli Maroney",
-        "Julie Strain",
-        "Misty Mundae",
-        "Debbie Rochon",
-        "Darian Caine"
+        "idk"
     ],
     "93": [
         "Hannibal Barca",
         "Hasdrubal Barca",
         "Mago Barca",
-        "Gisgo",
-        "Hanno the Elder"
+        "Hasdrubal Gisco"
     ],
     "94": [
         "Maria Theresa",
@@ -782,35 +764,26 @@
         "Gustavus Adolphus"
     ],
     "95": [
-        "Jamari River",
-        "Ji-Paraná River",
         "Aripuanã River",
+        "Sucunduri River",
         "Canumã River",
         "Manicoré River",
-        "Roosevelt River",
         "Marmelos River",
-        "Maici River",
-        "Jatuarana River",
-        "Ipixuna River",
-        "Sepoti River",
-        "Acari River",
-        "Matupiri River",
-        "Autaz-Mirim River",
         "Mutum River",
-        "Cuniã River",
-        "Juma River"
+        "Sepoti River"
     ],
     "96": [
-        "Finding Dory",
-        "Nancy Drew and the Hidden Staircase"
+        "Finding Dory"
     ],
     "97": [
         "idk"
     ],
-    "98": [],
+    "98": [
+        "Joanna Lancaster",
+        "Sighle Lancaster"
+    ],
     "99": [
-        "Muzaiko",
-        "Radio Verda"
+        "Muzaiko"
     ],
     "100": [
         "Other Voices, Other Rooms",
@@ -819,18 +792,16 @@
         "In Cold Blood"
     ],
     "101": [
-        "Ford Model e",
-        "Ford Pro"
+        "Ford Model e"
     ],
     "102": [
         "Napoleon Bonaparte",
-        "Louis-Nicolas Davout",
-        "Jean Lannes",
-        "Nicolas Soult",
-        "Joachim Murat",
-        "Jean-Baptiste Bessières",
+        "Louis-Nicolas d'Avout",
         "Jean-Baptiste Bernadotte",
-        "Édouard Mortier"
+        "Jean Lannes",
+        "Joachim Murat",
+        "Nicolas Soult",
+        "Claude Victor-Perrin"
     ],
     "103": [
         "Elliott",
@@ -840,8 +811,7 @@
         "Keys",
         "Greg",
         "Steve",
-        "Tyler",
-        "Peter"
+        "Tyler"
     ],
     "104": [
         "Don't Come Home a' Drinkin' (With Lovin' on Your Mind)",
@@ -849,22 +819,24 @@
         "Woman of the World (Leave My World Alone)",
         "Coal Miner's Daughter",
         "One's on the Way",
+        "You're Lookin' at Country",
         "Rated 'X'",
         "Love Is the Foundation",
         "Trouble in Paradise",
-        "When the Tingle Becomes a Chill",
-        "Out of My Head and Back in My Bed"
+        "The Pill"
     ],
     "105": [
         "Karen Hantze Susman",
-        "Maria Bueno",
+        "Lesley Turner Bowrey",
         "Rosie Casals",
-        "Martina Navratilova",
-        "Betty Stöve"
+        "Betty Stöve",
+        "Chris Evert",
+        "Wendy Turnbull",
+        "Ilana Kloss"
     ],
     "106": [
-        "Johann Textor",
-        "Cornelia Textor"
+        "Johann Wolfgang Textor",
+        "Anna Margaretha Textor"
     ],
     "107": [
         "Amur Oblast",
@@ -874,13 +846,16 @@
         "Bryansk Oblast",
         "Chelyabinsk Oblast",
         "Chita Oblast",
+        "Gorky Oblast",
         "Irkutsk Oblast",
         "Ivanovo Oblast",
+        "Kalinin Oblast",
         "Kaliningrad Oblast",
         "Kaluga Oblast",
         "Kemerovo Oblast",
         "Kirov Oblast",
         "Kostroma Oblast",
+        "Kuibyshev Oblast",
         "Kurgan Oblast",
         "Kursk Oblast",
         "Leningrad Oblast",
@@ -888,7 +863,6 @@
         "Magadan Oblast",
         "Moscow Oblast",
         "Murmansk Oblast",
-        "Gorky Oblast",
         "Novgorod Oblast",
         "Novosibirsk Oblast",
         "Omsk Oblast",
@@ -900,14 +874,12 @@
         "Rostov Oblast",
         "Ryazan Oblast",
         "Sakhalin Oblast",
-        "Kuybyshev Oblast",
         "Saratov Oblast",
         "Smolensk Oblast",
         "Sverdlovsk Oblast",
         "Tambov Oblast",
         "Tomsk Oblast",
         "Tula Oblast",
-        "Kalinin Oblast",
         "Tyumen Oblast",
         "Ulyanovsk Oblast",
         "Vladimir Oblast",
@@ -919,66 +891,82 @@
     "108": [
         "Külüg Khan",
         "Gegeen Khan",
-        "Yesün Temür Khan",
-        "Ragibagh Khan",
+        "Yesün Temür",
+        "Ragibagh",
         "Jayaatu Khan Tugh Temür",
         "Khutughtu Khan Kusala",
         "Rinchinbal Khan"
     ],
     "109": [
         "Cytochrome P450 2B6",
-        "Cytochrome P450 2C19",
         "Cytochrome P450 2D6",
-        "Cytochrome P450 2C8",
-        "Cytochrome P450 2C9"
+        "Cytochrome P450 2C19"
     ],
     "110": [
         "Lower Saxony"
     ],
     "111": [
-        "The European Parliament",
-        "The Council of the European Union"
+        "European Parliament",
+        "Council of the European Union"
     ],
     "112": [
-        "Bristol Temple Meads",
-        "Paddington Station",
-        "Bath Spa",
-        "Swindon",
-        "Didcot Parkway",
-        "Exeter Saint Davids",
-        "Gloucester Central",
-        "Reading",
-        "Slough",
-        "Maidenhead",
-        "Chippenham",
-        "Taunton",
-        "Weston-super-Mare"
+        "Bristol Temple Meads railway station",
+        "London Paddington railway station",
+        "Bath Spa railway station",
+        "Swindon railway station",
+        "Reading railway station",
+        "Didcot Parkway railway station",
+        "Chippenham railway station",
+        "Frome railway station",
+        "Trowbridge railway station",
+        "Westbury railway station",
+        "Exeter Saint Davids railway station",
+        "Taunton railway station",
+        "Bridgwater railway station",
+        "Plymouth Millbay railway station",
+        "Totnes railway station",
+        "Newton Abbot railway station",
+        "Chepstow railway station",
+        "Newport railway station",
+        "Cardiff Central railway station"
     ],
     "113": [
-        "The Return of Rock (1965)",
-        "Country Songs for City Folks (1965)",
-        "Memphis Beat (1966)",
-        "Soul My Way (1967)"
+        "The Return of Rock",
+        "Country Songs for City Folks",
+        "Memphis Beat",
+        "Soul My Way",
+        "Another Place, Another Time",
+        "She Still Comes Around",
+        "Sings the Country Music Hall of Fame Hits, Volume 1",
+        "Sings the Country Music Hall of Fame Hits, Volume 2"
     ],
     "114": [
-        "Silver Play Button"
+        "Silver Creator Award"
     ],
     "115": [
+        "British Broadcasting Corporation World News Asia",
+        "Cable News Network International Asia Pacific",
+        "Bloomberg Television Asia Pacific",
+        "Consumer News and Business Channel Asia",
         "Channel NewsAsia",
-        "NHK World-Japan",
+        "Times Now",
+        "Republic Television",
         "India Today Television",
         "World Is One News",
-        "Turkish Radio and Television World",
-        "Al Jazeera English",
-        "China Global Television Network English"
+        "New Delhi Television 24x7",
+        "Cable News Network-News18",
+        "Mirror Now",
+        "Economic Times Now",
+        "ABS-CBN News Channel",
+        "Cable News Network Philippines",
+        "One News",
+        "Al Jazeera English"
     ],
     "116": [
-        "Dante Alighieri by Sandro Botticelli",
-        "Dante Alighieri by Giotto (Bargello Chapel)",
+        "Portrait of Dante Alighieri by Sandro Botticelli",
         "Dante Alighieri by Andrea del Castagno",
-        "Dante Alighieri by Domenico di Michelino",
-        "Dante Alighieri by Raphael (from Parnassus)",
-        "Dante Alighieri by Luca Signorelli"
+        "Dante Explaining the Divine Comedy by Domenico di Michelino",
+        "Fresco in Bargello Chapel (attributed to Giotto or his workshop)"
     ],
     "117": [
         "Walther Rathenau"
@@ -987,17 +975,17 @@
         "Austin Powers: International Man of Mystery"
     ],
     "119": [
-        "La Traviata",
-        "Carmen",
-        "La Fabeloj de Hoffmann"
+        "idk"
     ],
     "120": [
-        "Paris, France",
-        "Madrid, Spain",
         "Berlin, Germany",
+        "Madrid, Spain",
         "Rome, Italy",
+        "Paris, France",
+        "Vienna, Austria",
         "Warsaw, Poland",
-        "Vienna, Austria"
+        "Bucharest, Romania",
+        "Budapest, Hungary"
     ],
     "121": [
         "Comoros",
@@ -1006,59 +994,58 @@
         "Seychelles"
     ],
     "122": [
-        "Rowing",
-        "Canoeing",
-        "Kayaking",
         "Swimming",
         "Diving",
         "Water Polo",
         "Artistic Swimming",
         "Sailing",
-        "Triathlon",
-        "Underwater Hockey"
+        "Rowing",
+        "Canoe Sprint",
+        "Canoe Slalom"
     ],
     "123": [
         "Sam Vimes",
-        "Sam and Max"
+        "Sam (from Sam and Max)"
     ],
     "124": [
         "Ottawa",
         "Washington, D.C."
     ],
     "125": [
-        "Breaking"
+        "Breakdancing"
     ],
     "126": [
         "Suriname"
     ],
     "127": [
-        "Ambassadors or nuncios accredited to heads of state, and other heads of mission of equivalent rank",
-        "Envoys, ministers and internuncios accredited to heads of state"
+        "Ambassadors or nuncios accredited to Heads of State, and other heads of mission of equivalent rank",
+        "Envoys, ministers and internuncios accredited to Heads of State"
     ],
     "128": [
-        "Proxima Centauri",
         "Alpha Centauri A",
         "Alpha Centauri B",
+        "Proxima Centauri",
         "Sirius A",
         "Sirius B",
-        "Luyten 726-8 A (UV Ceti)",
-        "Luyten 726-8 B (BL Ceti)"
+        "Luyten 726-8 A",
+        "Luyten 726-8 B"
     ],
     "129": [
         "idk"
     ],
     "130": [
+        "German Jagdterrier",
         "German Longhaired Pointer",
-        "German Pinscher",
         "German Shepherd Dog",
         "German Shorthaired Pointer",
         "German Spitz",
         "German Wirehaired Pointer"
     ],
     "131": [
+        "Kimbu",
+        "Konongo",
         "Nyamwezi",
-        "Sukuma",
-        "Sumbwa"
+        "Sukuma"
     ],
     "132": [
         "Alabama",
@@ -1107,33 +1094,24 @@
     ],
     "134": [
         "Euro",
-        "Pound Sterling",
-        "Swiss Franc"
+        "Pound Sterling"
     ],
     "135": [
-        "Chicago Tribune",
-        "The Salt Lake Tribune",
-        "San Diego Union-Tribune",
-        "Greeley Tribune",
         "Albert Lea Tribune",
-        "Grand Haven Tribune",
-        "La Crosse Tribune",
-        "Great Falls Tribune",
         "Bismarck Tribune",
         "Casper Star-Tribune",
-        "Wyoming Tribune Eagle",
+        "Chicago Tribune",
         "East Valley Tribune",
-        "Columbia Daily Tribune",
-        "Jefferson City News Tribune",
-        "Fremont Tribune",
-        "Hastings Tribune",
-        "Coshocton Tribune",
-        "Ironton Tribune",
-        "Ames Tribune",
-        "The Saint Lucie News Tribune",
-        "Rome News-Tribune",
-        "South Bend Tribune",
-        "Elkin Tribune"
+        "Great Falls Tribune",
+        "La Crosse Tribune",
+        "San Diego Union-Tribune",
+        "The Coshocton Tribune",
+        "The Elkin Tribune",
+        "The Greeley Tribune",
+        "The Ironton Tribune",
+        "The Salt Lake Tribune",
+        "The Seymour Tribune",
+        "The St. Lucie News Tribune"
     ],
     "136": [
         "Ernani",
@@ -1141,50 +1119,49 @@
     ],
     "137": [
         "Lewis and Clark National Historic Trail",
-        "Mormon Pioneer National Historic Trail",
         "Oregon National Historic Trail",
-        "Pony Express National Historic Trail",
+        "Mormon Pioneer National Historic Trail",
         "Santa Fe National Historic Trail",
+        "California National Historic Trail",
+        "Pony Express National Historic Trail",
         "Trail of Tears National Historic Trail",
+        "Juan Bautista de Anza National Historic Trail",
+        "Captain John Smith Chesapeake National Historic Trail",
         "El Camino Real de Tierra Adentro National Historic Trail",
         "El Camino Real de los Tejas National Historic Trail",
         "Old Spanish National Historic Trail",
+        "Nez Perce National Historic Trail",
         "Washington-Rochambeau Revolutionary Route National Historic Trail",
-        "Captain John Smith Chesapeake National Historic Trail",
-        "Nez Perce (Nimiipuu) National Historic Trail",
-        "California National Historic Trail",
-        "Juan Bautista de Anza National Historic Trail",
         "Chisholm Trail National Historic Trail",
-        "Great Western Cattle Trail National Historic Trail",
-        "Butterfield Overland Trail National Historic Trail"
+        "Great Western Cattle Trail National Historic Trail"
     ],
     "138": [
         "Baku",
         "Sumqayit",
         "Bandar-e Anzali",
-        "Atyrau",
+        "Tonekabon",
+        "Chalus",
         "Aktau",
+        "Atyrau",
         "Makhachkala",
         "Derbent",
-        "Kaspiysk"
+        "Kaspiysk",
+        "Turkmenbashi"
     ],
     "139": [
-        "Thanksgiving Day",
         "Christmas Day"
     ],
     "140": [
+        "Hexagonal Pyramidal",
+        "Hexagonal Dipyramidal",
+        "Hexagonal Trapezohedral",
+        "Dihexagonal Pyramidal",
+        "Dihexagonal Dipyramidal",
         "Trigonal Pyramidal",
         "Rhombohedral",
         "Trigonal Trapezohedral",
         "Ditrigonal Pyramidal",
-        "Hexagonal Scalenohedral",
-        "Hexagonal Pyramidal",
-        "Trigonal Dipyramidal",
-        "Hexagonal Dipyramidal",
-        "Hexagonal Trapezohedral",
-        "Dihexagonal Pyramidal",
-        "Ditrigonal Dipyramidal",
-        "Dihexagonal Dipyramidal"
+        "Hexagonal Scalenohedral"
     ],
     "141": [
         "Adephaga",
@@ -1203,17 +1180,16 @@
         "2016"
     ],
     "144": [
-        "Dot Island",
         "Frank Island",
-        "Peale Island",
         "Molly Islands",
+        "Peale Island",
         "Stevenson Island"
     ],
     "145": [
         "Yokohama, Japan",
-        "Kobe, Japan",
         "Guangzhou, China",
-        "Fuzhou, China"
+        "Busan, South Korea",
+        "Dubai, United Arab Emirates"
     ],
     "146": [
         "Erwin Rommel",
@@ -1222,12 +1198,11 @@
         "Giovanni Messe",
         "Ettore Bastico",
         "Gastone Gambara",
-        "Walther Nehring",
-        "Ludwig Crüwell",
-        "Wilhelm von Thoma"
+        "Walther Nehring"
     ],
     "147": [
         "Bugey Nuclear Power Plant",
+        "Blayais Nuclear Power Plant",
         "Cattenom Nuclear Power Plant",
         "Chinon Nuclear Power Plant",
         "Chooz Nuclear Power Plant",
@@ -1235,30 +1210,33 @@
         "Cruas Nuclear Power Plant",
         "Dampierre Nuclear Power Plant",
         "Flamanville Nuclear Power Plant",
-        "Golfech Nuclear Power Plant",
         "Gravelines Nuclear Power Plant",
         "Nogent Nuclear Power Plant",
         "Paluel Nuclear Power Plant",
         "Penly Nuclear Power Plant",
         "Saint-Alban Nuclear Power Plant",
         "Saint-Laurent Nuclear Power Plant",
-        "Tricastin Nuclear Power Plant",
-        "Blayais Nuclear Power Plant"
+        "Tricastin Nuclear Power Plant"
     ],
     "148": [
+        "André-Frank Zambo Anguissa",
         "Benjamin Moukandjo",
         "Emmanuel Kundé",
         "Eric Maxim Choupo-Moting",
         "François Omam-Biyik",
         "Geremi Njitap",
         "Idriss Carlos Kameni",
-        "Louis-Paul Mfédé",
+        "Karl Toko Ekambi",
+        "Louis-Paul M'Fédé",
         "Marc-Vivien Foé",
         "Nicolas Nkoulou",
         "Patrick Mboma",
         "Pierre Womé",
+        "Raymond Kalla",
         "Rigobert Song",
+        "Roger Milla",
         "Samuel Eto'o",
+        "Stéphane Mbia",
         "Thomas Nkono",
         "Vincent Aboubakar"
     ],
