@@ -6,7 +6,7 @@
     "information": "Part of Meta’s LLaMA 3.1 series, released July 23, 2024. One of the model sizes is 8B parameters. :contentReference[oaicite:5]{index=5}",
     "size": "small",
     "company": "Meta",
-    "score": 20
+    "score": null
   },
   "gpt-oss:20b": {
     "ID":"B",
@@ -15,7 +15,7 @@
     "information": "gpt-oss-20B is an open-weight model by OpenAI recently released; total ~21B parameters. :contentReference[oaicite:6]{index=6}",
     "size": "medium",
     "company": "OpenAI",
-    "score": 40
+    "score": null
   },
   "gpt-4.1-nano-2025-04-14": {
     "ID":"C",
@@ -42,7 +42,7 @@
     "information": "Meta LLaMA 3.1 70B was released on July 23, 2024. :contentReference[oaicite:7]{index=7}",
     "size": "medium",
     "company": "Meta",
-    "score": 41
+    "score": null
   },
   "gemini-2.0-flash": {
     "ID":"F",
@@ -60,7 +60,7 @@
     "information": "xAI’s Grok-3-mini (Grok 3 Mini) became available around May 19, 2025 via Azure Foundry. It is a lightweight model with context length ~131,072 tokens; no public parameter count found. :contentReference[oaicite:4]{index=4}",
     "size": "medium",
     "company": "xAI",
-    "score": 50
+    "score": null
   },
   "gpt-4.1-mini-2025-04-14": {
     "ID":"H",

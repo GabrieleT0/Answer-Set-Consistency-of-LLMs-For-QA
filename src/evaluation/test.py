@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
-        llms = json.load(f).keys()
+        llm_info = json.load(f)
+        llms = llm_info.keys()
     actions = ["wikidata", "fixing", "classification","star","zero-shot"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
@@ -25,35 +26,41 @@ if __name__ == "__main__":
     output_folder = os.path.join(root_dir, "output")
     os.makedirs(output_folder, exist_ok=True)
 
-    df_analysis = pd.read_csv(root_dir + "/output/analysis.csv")
+    # df_analysis = pd.read_csv(root_dir + "/output/analysis.csv")
 
-    # df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
-    # Save results
-    # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
-    df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
+    # # df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
+    # # Save results
+    # # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
+    # df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
-    # p-values
-    df_pval = compute_pvals(df_analysis)
-
-    df_summary = summary(df_analysis)
+    # # p-values
+    # df_pval = compute_pvals(df_analysis)
 
     
+    # df_summary = summary(df_analysis)
 
-    df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
-    df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
-    df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
+    # df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
+    # df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
+    # df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
 
     # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
     # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
+    df_summary = pd.read_csv(root_dir + "/output/summary.csv")
+    
+    df_summary["release_date"] = df_summary["llm"].apply(lambda x: llm_info[x]["release_date"])
+    df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
+    df_summary["size"] = df_summary["llm"].apply(lambda x: llm_info[x]["size"])
+    df_summary["score"] = df_summary["llm"].apply(lambda x: llm_info[x]["score"])
+    df_summary["company"] = df_summary["llm"].apply(lambda x: llm_info[x]["company"])
 
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
     split(df_summary, "summary")
     
-    df_pvalue = p_value_matrixs(df_analysis, actions)
+    # df_pvalue = p_value_matrixs(df_analysis, actions)
     # p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
-    df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
-    dataframe_to_heatmap_csvs(df_pvalue, output_folder)
+    # df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
+    # dataframe_to_heatmap_csvs(df_pvalue, output_folder)
     print("Analysis and summary saved to:", output_folder)
