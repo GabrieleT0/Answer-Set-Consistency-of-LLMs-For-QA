@@ -443,17 +443,24 @@ def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
 
     
         # check self_contradition
-    df_analysis["?SC(A1=A2)"] = ((df_analysis["?A1=A2"]) == 
-                                (df_analysis["R(1-2)"] == "Equivalence").astype(int)).astype(int)
-    df_analysis["?SC(A1>A3)"] = ((df_analysis["?A1>A3"]) ==
-                                (df_analysis["R(1-3)"] == "Contains").astype(int)).astype(int)
-    df_analysis["?SC(A1>A4)"] = ((df_analysis["?A1>A4"]) == 
-                                (df_analysis["R(1-4)"] == "Contains").astype(int)).astype(int)
-    df_analysis["?SC(A3∅A4)"] = ((df_analysis["?A3∅A4"]) ==
-                                (df_analysis["R(3-4)"] == "Disjoint").astype(int)).astype(int)
-    df_analysis["?SC(A4=A1|3)"] = ((df_analysis["?A4=A1|3"]) == 
-                                (df_analysis["R(1-34)"] == "Equivalence")).astype(int)
     
+
+    def _sc(df, pred_col, rcol, truth_value):
+        import numpy as np
+        # mask: only evaluate where R(*) is present (not NaN, not "None")
+        mask = df[rcol].notna() & (df[rcol].astype(str).str.lower() != "none")
+        # ground-truth as 1/0 for the specific relation value
+        truth = (df[rcol] == truth_value).astype(int)
+        # prediction coerced to 1/0
+        pred = pd.to_numeric(df[pred_col], errors="coerce").fillna(0).astype(int)
+        return np.where(mask, (pred == truth).astype(int), np.nan)
+
+    df_analysis["?SC(A1=A2)"]   = _sc(df_analysis, "?A1=A2",    "R(1-2)",  "Equivalence")
+    df_analysis["?SC(A1>A3)"]   = _sc(df_analysis, "?A1>A3",    "R(1-3)",  "Contains")
+    df_analysis["?SC(A1>A4)"]   = _sc(df_analysis, "?A1>A4",    "R(1-4)",  "Contains")
+    df_analysis["?SC(A3∅A4)"]   = _sc(df_analysis, "?A3∅A4",    "R(3-4)",  "Disjoint")
+    df_analysis["?SC(A4=A1|3)"] = _sc(df_analysis, "?A4=A1|3",  "R(1-34)", "Equivalence")
+
     df_analysis =  df_analysis.replace({None: pd.NA}).convert_dtypes()
     return df_analysis
 

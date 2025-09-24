@@ -55,7 +55,8 @@ if __name__ == "__main__":
     df_answers = enrich_answers(df_answers, df_questions)
     df_analysis = analysis(df_answers)
     df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
-
+    
+    
     # Save results
     analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)

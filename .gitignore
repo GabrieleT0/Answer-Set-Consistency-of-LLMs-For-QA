@@ -7,4 +7,4 @@ __pycache__
 src/question_pipeline/config.json
 src/get_answers/config.json
 
-data/batch_api
+data/batch_apioutput/analysis.csv
