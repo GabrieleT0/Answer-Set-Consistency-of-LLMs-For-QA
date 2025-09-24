@@ -36,9 +36,9 @@ if __name__ == "__main__":
     summary_file_format = time.strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
     summary_file_format_excel = time.strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
 
-    df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
-    df_relation_summery.to_csv(os.path.join(output_folder, summary_file_format), index=False)
-    df_relation_summery.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
+    # df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
+    df_relation_summery.to_csv(os.path.join(output_folder, "relation_summery.csv"), index=False)
+    # df_relation_summery.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
 
     df_questions = load_all_questions(root_dir, datasets, languages)
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     # Save results
     analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
-    df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
+    df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
     # p-values
     df_pval = compute_pvals(df_analysis)
@@ -75,13 +75,13 @@ if __name__ == "__main__":
     summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
 
-    df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
-    df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
+    df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
+    # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
     split(df_summary, "summary")
     
     df_pvalue = p_value_matrixs(df_analysis, actions)
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
-    df_pvalue.to_csv(os.path.join(output_folder, p_value_matrixs_file_format), index=False)
+    df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
     dataframe_to_heatmap_csvs(df_pvalue, output_folder)
     print("Analysis and summary saved to:", output_folder)
