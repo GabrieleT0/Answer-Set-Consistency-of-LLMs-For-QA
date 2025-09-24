@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+import numpy as np
 from statsmodels.stats.contingency_tables import mcnemar
 
 
@@ -258,35 +259,28 @@ def summary(df_analysis):
     df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
     df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
     
-    # col = ["?A1=A1*","J(A1-A1*)"]
-    # # source values indexed by (llm, dataset) from classification rows
+    col = ["?A1=A1*","J(A1-A1*)"]
+    # source values indexed by (llm, dataset) from classification rows
     # src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
 
     # # assign to matching zero-shot rows
     # mask = df_summary['action'].eq('zero-shot')
     # zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
     # df_summary.loc[mask, col] = src.reindex(zero_idx).to_numpy()
+    mask1 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
+    mask2 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "classification")
+    a = df_summary.loc[mask1, col].copy()
+    b = df_summary.loc[mask2, col]
 
-    col = ["?A1=A1*","J(A1-A1*)"]
+    # Vectorized conditional assignment
+    for column in col:
+        # Where a[column] is NaN, use b[column], otherwise use (a[column] + b[column]) / 2
+        a[column] = np.where(a[column].isna(), 
+                            b[column].values, 
+                            (a[column] + b[column].values) / 2)
 
-# Get source values indexed by (llm, dataset) from classification rows
-    src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
-
-    # Get zero-shot rows
-    mask = df_summary['action'].eq('zero-shot')
-    zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
-
-    # For each column, only fill NaN/None values
-    for c in col:
-        if c in df_summary.columns:
-            # Check which zero-shot rows have missing values in this column
-            missing_mask = mask & df_summary[c].isna()
-            if missing_mask.any():
-                # Get corresponding values from classification rows
-                fill_values = src[c].reindex(pd.MultiIndex.from_frame(
-                    df_summary.loc[missing_mask, ['llm', 'dataset']]
-                ))
-                df_summary.loc[missing_mask, c] = fill_values.to_numpy()
+    # Assign back to original dataframe
+    df_summary.loc[mask1, col] = a
 
     idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
