@@ -5,10 +5,10 @@ idx,letter,llm
 4,D,mistral-small:24b
 5,E,llama3.1:70b
 6,F,gemini-2.0-flash
-7,G,grok-3-mini
-8,H,gpt-4.1-mini-2025-04-14
-9,I,gpt-4o
-10,J,gpt-4.1-2025-04-14
+7,G,gpt-4.1-mini-2025-04-14
+8,H,gpt-4o
+9,I,gpt-4.1-2025-04-14
+10,J,grok-3-mini
 11,K,deepseek-chat
 12,L,gemini-2.5-flash
 13,M,gpt-5-nano

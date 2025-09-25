@@ -59,8 +59,8 @@ if __name__ == "__main__":
 
     split(df_summary, "summary")
     
-    # df_pvalue = p_value_matrixs(df_analysis, actions)
+    df_pvalue = p_value_matrixs(df_analysis, actions)
     # p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
-    # df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
-    # dataframe_to_heatmap_csvs(df_pvalue, output_folder)
+    df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
+    dataframe_to_heatmap_csvs(df_pvalue, output_folder)
     print("Analysis and summary saved to:", output_folder)

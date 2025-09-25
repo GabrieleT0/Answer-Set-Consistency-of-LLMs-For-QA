@@ -212,7 +212,11 @@ def analysis(df):
                 "Q1": q_map.get("Q1", ""), "Q2": q_map.get("Q2", ""),
                 "Q3": q_map.get("Q3", ""), "Q4": q_map.get("Q4", ""),
                 "A1": list(A1), "A2": list(A2), "A3": list(A3), "A4": list(A4),
-                "A1*": A1_prime, "A1**": A1_double_prime
+                "A1*": A1_prime, "A1**": A1_double_prime,
+                "idk_A1": 1 if len(A1) == 0 or ("idk" in A1) else 0,
+                "idk_A2": 1 if len(A2) == 0 or ("idk" in A2) else 0,
+                "idk_A3": 1 if len(A3) == 0 or ("idk" in A3) else 0,
+                "idk_A4": 1 if len(A4) == 0 or ("idk" in A4) else 0
             }
             rows.append(row)
     df_analysis = pd.DataFrame(rows)
