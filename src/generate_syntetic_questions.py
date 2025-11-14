@@ -8,19 +8,27 @@ here = os.path.dirname(os.path.abspath(__file__))
 PROMPTS = {
     "equivalence" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, every pair of questions must be semantically equivalent. \
                     The answer to every question that you formulate must be a list of values — not an ordered list, not a paragraph of text, not a boolean value, and not a single number. \
-                    The answer to the questions must be available in Wikidata, and give me also the SPARQL query to retrieve the answer. \
                     This is an example of a possible pair of questions: \
-                    1. How many regions of France are there? | How many regions does France have? | SELECT ?region ?regionLabel WHERE {{{{ ?region wdt:P31 wd:Q36784; wdt:P17 wd:Q142. SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}} }}}} ORDER BY ?regionLabel \
+                    1. How many regions of France are there? | How many regions does France have? \
                     Follow the following format to return the questions: \
-                    1. Question1 | Equivalent_Question1 | SPARQL_query \
+                    1. Question1 | Equivalent_Question1 \
                     Do not add any other kind of text except questions.''',
                     
-    "subset-superset" : '''Generate {number_of_questions_to_generate} pairs of diverse questions about different topics, in every pair of questions, the first question must be broader than the second i.e. the answer of the second question must be a subset of the answer of the first \
-                             and the answer to every questions that you formulate must be a list of values, not an ordered list, not a paragraph of text, not a boolean value and not a single number. \
-                             The answer to the questions must be available in Wikidata, and give me also the SPARQL query to retrieve the answer.
-                             This is an example of a possible pair of questions: 1. What countries are in the EU? | What countries are in the western EU? | SELECT ?country ?countryLabel WHERE {{{{?country wdt:P463 wd:Q458.  # member of European Union SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}} ORDER BY ?countryLabel | SELECT ?country ?countryLabel WHERE {{{{ ?country wdt:P463 wd:Q458;  wdt:P30 wd:Q46; wdt:P17 ?sovereign. ?country wdt:P276 ?region. ?region wdt:P279* wd:Q27468. SERVICE wikibase:label {{{{ bd:serviceParam wikibase:language "en". }}}}
-                             Follow the following format to return the questions: 1. Broader_Question | Subset_Question | SPARQL_query_Broader_Question | SPARQL_query_Subset_Question
-                             Do not add any other kind of text except questions''',
+    "subset-superset" : '''
+        {dataset_of_question_pairs}
+        Starting from the provided dataset of question pairs, where each pair consists of two semantically equivalent questions, generate a third question whose answer is a subset of the answers to the original two questions.
+        The answer to the generated question must be a list of values (not an ordered list, not a descriptive paragraph, not a Boolean value, and not a single number).
+
+        Use the following output format, and provide only the third question:
+
+        1. Broader_Question_from_the_dataset | Subset_Question
+
+        For example, given the pair:
+        “What countries are in the EU?” | “What countries are in the western EU?”
+        the generated question would be the subset question.
+
+        Return only the formulated subset question and no additional text. '''
+
 } 
 
 languages = ["en"]
