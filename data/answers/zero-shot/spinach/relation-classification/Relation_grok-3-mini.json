@@ -1006,5 +1006,47 @@
         "Contains",
         "Disjoint",
         "Equivalence"
+    ],
+    "3": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "7": [
+        "Equivalence",
+        "Unknown",
+        "Unknown",
+        "Unknown",
+        "Unknown"
+    ],
+    "44": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Unknown"
+    ],
+    "65": [
+        "Contains",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Contains"
+    ],
+    "91": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "105": [
+        "Equivalence",
+        "Contains",
+        "Contains",
+        "Disjoint",
+        "Equivalence"
     ]
 }
