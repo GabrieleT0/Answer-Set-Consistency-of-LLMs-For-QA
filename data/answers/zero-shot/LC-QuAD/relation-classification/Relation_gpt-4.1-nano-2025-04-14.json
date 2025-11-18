@@ -1034,5 +1034,19 @@
         "Contains",
         "Disjoint",
         "Disjoint"
+    ],
+    "120": [
+        "Equivalence",
+        "Overlap",
+        "Overlap",
+        "Overlap",
+        "Disjoint"
+    ],
+    "138": [
+        "Equivalence",
+        "Overlap",
+        "Disjoint",
+        "Disjoint",
+        "Disjoint"
     ]
 }

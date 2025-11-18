@@ -1034,5 +1034,19 @@
         "Overlap",
         "Disjoint",
         "Equivalence"
+    ],
+    "120": [
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "138": [
+        "Equivalence",
+        "Contains",
+        "Overlap",
+        "Disjoint",
+        "Equivalence"
     ]
 }

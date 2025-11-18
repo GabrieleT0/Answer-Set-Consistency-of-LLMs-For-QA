@@ -1,16 +1,13 @@
 {
     "0": [
-        "Fawlty Towers",
-        "Monty Python's Flying Circus",
-        "Doctor at Large",
-        "The Strange Case of the End of Civilization as We Know It",
-        "Whoops Apocalypse"
+        "idk"
     ],
     "1": [
         "China",
         "Cuba",
         "Laos",
-        "Vietnam"
+        "Vietnam",
+        "North Korea"
     ],
     "2": [
         "idk"
@@ -41,8 +38,8 @@
         "Hungary",
         "Croatia",
         "Serbia",
-        "Bulgaria",
         "Romania",
+        "Bulgaria",
         "Moldova",
         "Ukraine"
     ],
@@ -50,20 +47,22 @@
         "Musician",
         "Photographer",
         "Actor",
-        "Writer"
+        "Writer",
+        "Filmmaker"
     ],
     "10": [
-        "Star Wars Episode I The Phantom Menace",
-        "Star Wars Episode II Attack of the Clones",
-        "Star Wars Episode III Revenge of the Sith",
-        "Star Wars Episode IV A New Hope",
-        "Star Wars Episode V The Empire Strikes Back",
-        "Star Wars Episode VI Return of the Jedi",
-        "Star Wars Episode VII The Force Awakens",
-        "Star Wars Episode VIII The Last Jedi",
-        "Star Wars Episode IX The Rise of Skywalker",
-        "Rogue One A Star Wars Story",
-        "Solo A Star Wars Story"
+        "Star Wars: Episode IV - A New Hope",
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace",
+        "Star Wars: Episode II - Attack of the Clones",
+        "Star Wars: Episode III - Revenge of the Sith",
+        "Star Wars: Episode VII - The Force Awakens",
+        "Star Wars: Episode VIII - The Last Jedi",
+        "Star Wars: Episode IX - The Rise of Skywalker",
+        "Star Wars: The Clone Wars",
+        "Rogue One: A Star Wars Story",
+        "Solo: A Star Wars Story"
     ],
     "11": [
         "Trumpet",
@@ -87,9 +86,9 @@
         "George W. Bush"
     ],
     "16": [
-        "Cubism",
         "Proto-Cubism",
-        "Modernism"
+        "Modernism",
+        "Primitivism"
     ],
     "17": [
         "Shaun of the Dead",
@@ -124,29 +123,19 @@
         "idk"
     ],
     "23": [
+        "Benin",
+        "Burkina Faso",
+        "Cameroon",
+        "Chad",
+        "Côte d'Ivoire",
+        "Guinea",
         "Mali",
         "Niger",
         "Nigeria",
-        "Guinea",
-        "Benin",
-        "Ivory Coast",
-        "Burkina Faso",
-        "Chad"
+        "Sierra Leone"
     ],
     "24": [
-        "Halo: Combat Evolved",
-        "Halo 2",
-        "Halo 3",
-        "Halo 3: ODST",
-        "Halo: Reach",
-        "Destiny",
-        "Destiny 2",
-        "Marathon",
-        "Marathon 2: Durandal",
-        "Marathon Infinity",
-        "Myth: The Fallen Lords",
-        "Myth II: Soulblighter",
-        "Oni"
+        "idk"
     ],
     "25": [
         "idk"
@@ -228,7 +217,9 @@
     "36": [
         "Libya",
         "Sudan",
-        "Israel"
+        "Israel",
+        "Palestine",
+        "Jordan"
     ],
     "37": [
         "Denmark",
@@ -244,16 +235,24 @@
     "38": [
         "Mandarin",
         "Cantonese",
-        "Wu",
-        "Min",
-        "Xiang",
+        "Shanghainese",
+        "Hokkien",
         "Hakka",
-        "Gan"
+        "Gan",
+        "Xiang",
+        "Min",
+        "Wu",
+        "Yue",
+        "Jin",
+        "Pinghua",
+        "Huizhou"
     ],
     "39": [
-        "Lyndon Baines Johnson",
-        "Richard Milhous Nixon",
-        "John Fitzgerald Kennedy"
+        "Dwight D. Eisenhower",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
+        "Richard Nixon",
+        "Gerald Ford"
     ],
     "40": [
         "United Kingdom",
@@ -269,16 +268,21 @@
         "Andorra",
         "Vatican City",
         "Italy",
+        "Greece",
         "France",
         "Germany",
         "Austria",
         "Hungary",
-        "Greece",
         "Portugal",
+        "Romania",
+        "Bulgaria",
         "Serbia",
         "Montenegro",
-        "Romania",
-        "Bulgaria"
+        "Croatia",
+        "Czech Republic",
+        "Slovakia",
+        "Poland",
+        "Russia"
     ],
     "41": [
         "idk"
@@ -303,7 +307,7 @@
     ],
     "48": [
         "Neil Armstrong",
-        "Buzz Aldrin",
+        "Edwin \"Buzz\" Aldrin",
         "Michael Collins"
     ],
     "49": [
@@ -320,7 +324,10 @@
         "Vlieland",
         "Terschelling",
         "Ameland",
-        "Schiermonnikoog"
+        "Schiermonnikoog",
+        "Rottumeroog",
+        "Rottumerplaat",
+        "Simonszand"
     ],
     "53": [
         "Islam",
@@ -379,31 +386,30 @@
     ],
     "60": [
         "Europe",
-        "Asia",
-        "Africa"
+        "Africa",
+        "Asia"
     ],
     "61": [
-        "Spain",
-        "Mexico",
         "Argentina",
-        "Colombia",
-        "Venezuela",
-        "Peru",
-        "Chile",
-        "Ecuador",
-        "Guatemala",
-        "Cuba",
         "Bolivia",
-        "Dominican Republic",
-        "Honduras",
-        "Paraguay",
-        "El Salvador",
-        "Nicaragua",
+        "Chile",
+        "Colombia",
         "Costa Rica",
-        "Puerto Rico",
+        "Cuba",
+        "Dominican Republic",
+        "Ecuador",
+        "El Salvador",
+        "Equatorial Guinea",
+        "Guatemala",
+        "Honduras",
+        "Mexico",
+        "Nicaragua",
         "Panama",
+        "Paraguay",
+        "Peru",
+        "Spain",
         "Uruguay",
-        "Equatorial Guinea"
+        "Venezuela"
     ],
     "62": [
         "idk"
@@ -415,62 +421,52 @@
         "Portugal",
         "France",
         "Andorra",
+        "Gibraltar",
         "Morocco",
-        "Algeria",
         "Italy",
+        "Algeria",
         "United Kingdom"
     ],
     "65": [
         "idk"
     ],
     "66": [
-        "Poetic Justice",
         "Juice",
+        "Poetic Justice",
         "Above the Rim",
+        "Bullet",
         "Gridlock'd",
-        "Gang Related",
-        "Bullet"
+        "Gang Related"
     ],
     "67": [
-        "Gene Hackman",
-        "Kevin Spacey",
-        "Jesse Eisenberg",
-        "Michael Rosenbaum",
-        "Clancy Brown",
-        "Lyle Talbot",
-        "John Shea",
-        "Sherman Howard",
-        "Scott James Wells",
-        "Jon Cryer",
-        "Rainn Wilson",
-        "Giancarlo Esposito"
+        "idk"
     ],
     "68": [
-        "Mary Tudor",
-        "Elizabeth Tudor",
-        "Edward Tudor",
+        "Mary",
+        "Elizabeth",
+        "Edward",
         "Henry FitzRoy"
     ],
     "69": [
         "Australia",
         "New Zealand",
         "Papua New Guinea",
+        "Indonesia",
+        "United States of America",
+        "France",
+        "United Kingdom",
+        "Chile",
         "Fiji",
         "Solomon Islands",
         "Vanuatu",
         "Samoa",
-        "Tonga",
         "Kiribati",
-        "Micronesia (Federated States of Micronesia)",
-        "Marshall Islands",
+        "Tonga",
+        "Micronesia",
         "Palau",
+        "Marshall Islands",
         "Nauru",
-        "Tuvalu",
-        "France",
-        "United States of America",
-        "United Kingdom",
-        "Chile",
-        "Indonesia"
+        "Tuvalu"
     ],
     "70": [
         "California",
@@ -483,8 +479,8 @@
         "idk"
     ],
     "73": [
-        "Canada",
         "United States of America",
+        "Canada",
         "Mexico"
     ],
     "74": [
@@ -492,10 +488,11 @@
         "Sideways Stories from Wayside School",
         "There's a Boy in the Girls' Bathroom",
         "Small Steps",
-        "Marvin Redpost series",
-        "Dogs Do Not Tell Jokes",
         "The Cardturner",
         "Fuzzy Mud",
+        "Wayside School is Falling Down",
+        "Wayside School Gets a Little Stranger",
+        "Marvin Redpost series",
         "Someday Angeline",
         "Johnny's in the Basement",
         "Pig City"
@@ -514,14 +511,15 @@
         "idk"
     ],
     "77": [
-        "The Hunger Games",
-        "Catching Fire",
-        "Mockingjay",
-        "Gregor the Overlander",
-        "Gregor and the Prophecy of Bane",
-        "Gregor and the Curse of the Warmbloods",
-        "Gregor and the Marks of Secret",
-        "Gregor and the Code of Claw"
+        "\"The Hunger Games\"",
+        "\"Catching Fire\"",
+        "\"Mockingjay\"",
+        "\"The Ballad of Songbirds and Snakes\"",
+        "\"Gregor the Overlander\"",
+        "\"Gregor and the Prophecy of Bane\"",
+        "\"Gregor and the Curse of the Warmbloods\"",
+        "\"Gregor and the Marks of Secret\"",
+        "\"Gregor and the Code of Claw\""
     ],
     "78": [
         "Arthur, Prince of Wales",
@@ -547,33 +545,7 @@
         "idk"
     ],
     "82": [
-        "Austria",
-        "Belgium",
-        "Bulgaria",
-        "Croatia",
-        "Cyprus",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
-        "Finland",
-        "France",
-        "Germany",
-        "Greece",
-        "Hungary",
-        "Ireland",
-        "Italy",
-        "Latvia",
-        "Lithuania",
-        "Luxembourg",
-        "Malta",
-        "Netherlands",
-        "Poland",
-        "Portugal",
-        "Romania",
-        "Slovakia",
-        "Slovenia",
-        "Spain",
-        "Sweden"
+        "idk"
     ],
     "83": [
         "idk"
@@ -590,30 +562,23 @@
         "idk"
     ],
     "87": [
-        "Attina",
-        "Alana",
-        "Adella",
         "Aquata",
+        "Andrina",
         "Arista",
-        "Andrina"
+        "Attina",
+        "Adella",
+        "Alana"
     ],
     "88": [
         "Peter Griffin",
         "Stewie Griffin",
         "Brian Griffin",
         "Glenn Quagmire",
-        "Tom Tucker",
-        "Carter Pewterschmidt",
-        "Dr. Elmer Hartman",
-        "God",
-        "Seamus",
-        "Jake Tucker",
-        "Jesus Christ",
-        "Various other minor characters"
+        "Tom Tucker"
     ],
     "89": [
         "Prince Michael Jackson I",
-        "Paris-Michael Katherine Jackson",
+        "Paris Jackson",
         "Prince Michael Jackson II"
     ],
     "90": [
@@ -651,10 +616,10 @@
     ],
     "99": [
         "Iowa",
+        "Wisconsin",
         "Indiana",
         "Kentucky",
-        "Missouri",
-        "Wisconsin"
+        "Missouri"
     ],
     "100": [
         "idk"
@@ -723,22 +688,7 @@
         "idk"
     ],
     "116": [
-        "Air France",
-        "KLM Royal Dutch Airlines",
-        "Czech Airlines",
-        "Alitalia",
-        "Aeroflot Russian Airlines",
-        "Delta Air Lines",
-        "Korean Air",
-        "China Eastern Airlines",
-        "China Southern Airlines",
-        "Vietnam Airlines",
-        "Garuda Indonesia",
-        "Saudia",
-        "Middle East Airlines",
-        "Tarom",
-        "Kenya Airways",
-        "Xiamen Airlines"
+        "idk"
     ],
     "117": [
         "idk"
@@ -808,7 +758,9 @@
     "136": [
         "Roger Waters",
         "David Gilmour",
-        "Bob Ezrin"
+        "Bob Ezrin",
+        "Michael Kamen",
+        "James Guthrie"
     ],
     "137": [
         "idk"

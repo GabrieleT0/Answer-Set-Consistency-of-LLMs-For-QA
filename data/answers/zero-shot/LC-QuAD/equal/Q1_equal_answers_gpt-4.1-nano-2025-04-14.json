@@ -722,7 +722,11 @@
         "Black Canary",
         "Cyborg"
     ],
-    "57": [],
+    "57": [
+        "Pershing County Fair and Rodeo",
+        "Pershing County Fair Parade",
+        "Pershing County Historical Society Annual Meeting"
+    ],
     "58": [
         "kasbahs",
         "fortified structures",
@@ -732,7 +736,9 @@
         "watchtowers",
         "gates"
     ],
-    "59": [],
+    "59": [
+        "idk"
+    ],
     "60": [
         "The statue of Louis XIV in the Place de la Mairie",
         "The statue of Général Georges Lefèvre in the Parc du Thabor",
@@ -1040,7 +1046,9 @@
         "William Joseph Lancaster",
         "William Joseph Lancaster"
     ],
-    "99": [],
+    "99": [
+        "idk"
+    ],
     "100": [
         "Other Voices, Other Rooms",
         "Breakfast at Tiffany's",
@@ -1418,7 +1426,15 @@
         "Gwangju",
         "Ulsan"
     ],
-    "134": [],
+    "134": [
+        "United States dollar",
+        "Euro",
+        "Japanese yen",
+        "British pound sterling",
+        "Chinese renminbi",
+        "Canadian dollar",
+        "Australian dollar"
+    ],
     "135": [
         "Tribune Publishing Company",
         "Chicago Tribune",
@@ -1553,5 +1569,25 @@
         "Pichu",
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Paris",
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Vienna",
+        "Budapest",
+        "Warsaw",
+        "Barcelona",
+        "Munich",
+        "Hamburg"
+    ],
+    "138": [
+        "Baku",
+        "Ganja",
+        "Sumqayit",
+        "Makhachkala",
+        "Aktau",
+        "Turkmenbashi"
     ]
 }

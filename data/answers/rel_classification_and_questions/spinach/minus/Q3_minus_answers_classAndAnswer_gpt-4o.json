@@ -1,15 +1,12 @@
 {
     "0": [
-        "Fawlty Towers",
-        "Monty Python's Flying Circus",
-        "Doctor at Large",
-        "The Strange Case of the End of Civilization as We Know It",
-        "Whoops Apocalypse"
+        "idk"
     ],
     "1": [
         "China",
         "Laos",
-        "Vietnam"
+        "Vietnam",
+        "North Korea"
     ],
     "2": [
         "idk"
@@ -41,10 +38,10 @@
         "Musician"
     ],
     "10": [
-        "Star Wars Episode IV A New Hope",
-        "Star Wars Episode V The Empire Strikes Back",
-        "Star Wars Episode VI Return of the Jedi",
-        "Star Wars Episode I The Phantom Menace"
+        "Star Wars: Episode IV - A New Hope",
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Star Wars: Episode I - The Phantom Menace"
     ],
     "11": [
         "Trumpet",
@@ -60,10 +57,9 @@
         "idk"
     ],
     "15": [
-        "John Quincy Adams"
+        "George W. Bush"
     ],
     "16": [
-        "Cubism",
         "Proto-Cubism"
     ],
     "17": [
@@ -77,7 +73,8 @@
     ],
     "20": [
         "Noémie Merlant",
-        "Adèle Haenel"
+        "Adèle Haenel",
+        "Valeria Golino"
     ],
     "21": [
         "Austria",
@@ -88,22 +85,12 @@
         "idk"
     ],
     "23": [
-        "Mali",
-        "Niger",
         "Burkina Faso",
-        "Chad"
+        "Mali",
+        "Niger"
     ],
     "24": [
-        "Halo: Combat Evolved",
-        "Halo 2",
-        "Halo 3",
-        "Halo 3: ODST",
-        "Halo: Reach",
-        "Destiny",
-        "Destiny 2",
-        "Marathon",
-        "Marathon 2: Durandal",
-        "Marathon Infinity"
+        "idk"
     ],
     "25": [
         "idk"
@@ -125,7 +112,8 @@
         "Montenegro",
         "Albania",
         "Greece",
-        "Turkey"
+        "Turkey",
+        "Cyprus"
     ],
     "29": [
         "idk"
@@ -156,7 +144,9 @@
     ],
     "36": [
         "Libya",
-        "Sudan"
+        "Sudan",
+        "Palestine",
+        "Jordan"
     ],
     "37": [
         "Denmark",
@@ -172,8 +162,10 @@
         "Cantonese"
     ],
     "39": [
-        "John Fitzgerald Kennedy",
-        "Lyndon Baines Johnson"
+        "Dwight D. Eisenhower",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
+        "Richard Nixon"
     ],
     "40": [
         "United Kingdom",
@@ -186,7 +178,8 @@
         "Luxembourg",
         "Liechtenstein",
         "Monaco",
-        "Andorra"
+        "Andorra",
+        "Vatican City"
     ],
     "41": [
         "idk"
@@ -210,7 +203,7 @@
         "idk"
     ],
     "48": [
-        "Buzz Aldrin"
+        "idk"
     ],
     "49": [
         "idk"
@@ -249,9 +242,12 @@
         "Cleveland Cavaliers",
         "Boston Celtics"
     ],
-    "57": [],
+    "57": [
+        "idk"
+    ],
     "58": [
-        "New Hampshire"
+        "New Hampshire",
+        "New York"
     ],
     "59": [
         "Colorado",
@@ -263,25 +259,25 @@
         "Europe"
     ],
     "61": [
-        "Spain",
-        "Mexico",
         "Argentina",
-        "Colombia",
-        "Venezuela",
-        "Peru",
-        "Chile",
-        "Ecuador",
-        "Guatemala",
-        "Cuba",
         "Bolivia",
-        "Dominican Republic",
-        "Honduras",
-        "Paraguay",
-        "El Salvador",
-        "Nicaragua",
+        "Chile",
+        "Colombia",
         "Costa Rica",
+        "Cuba",
+        "Dominican Republic",
+        "Ecuador",
+        "El Salvador",
+        "Guatemala",
+        "Honduras",
+        "Mexico",
+        "Nicaragua",
         "Panama",
-        "Uruguay"
+        "Paraguay",
+        "Peru",
+        "Spain",
+        "Uruguay",
+        "Venezuela"
     ],
     "62": [
         "idk"
@@ -291,32 +287,26 @@
     ],
     "64": [
         "Portugal",
+        "Andorra",
+        "Gibraltar",
         "Morocco",
-        "Algeria",
         "Italy",
+        "Algeria",
         "United Kingdom"
     ],
     "65": [
         "idk"
     ],
     "66": [
-        "Poetic Justice",
-        "Juice",
-        "Above the Rim"
+        "idk"
     ],
     "67": [
-        "Gene Hackman",
-        "Kevin Spacey",
-        "Jesse Eisenberg",
-        "Lyle Talbot",
-        "John Shea",
-        "Scott James Wells",
-        "Jon Cryer"
+        "idk"
     ],
     "68": [
-        "Mary Tudor",
-        "Elizabeth Tudor",
-        "Edward Tudor"
+        "Mary",
+        "Elizabeth",
+        "Edward"
     ],
     "69": [
         "Australia",
@@ -326,11 +316,11 @@
         "Solomon Islands",
         "Vanuatu",
         "Samoa",
-        "Tonga",
         "Kiribati",
-        "Micronesia (Federated States of Micronesia)",
-        "Marshall Islands",
+        "Tonga",
+        "Micronesia",
         "Palau",
+        "Marshall Islands",
         "Nauru",
         "Tuvalu"
     ],
@@ -347,26 +337,27 @@
         "Mexico"
     ],
     "74": [
-        "Holes",
-        "There's a Boy in the Girls' Bathroom"
+        "Holes"
     ],
     "75": [
-        "Kentucky",
         "Virginia",
         "North Carolina",
         "Georgia",
         "Alabama",
-        "Mississippi"
+        "Mississippi",
+        "Arkansas"
     ],
     "76": [
         "University of Cambridge"
     ],
     "77": [
-        "The Hunger Games",
-        "Catching Fire",
-        "Mockingjay"
+        "\"The Hunger Games\"",
+        "\"Catching Fire\"",
+        "\"Mockingjay\"",
+        "\"The Ballad of Songbirds and Snakes\""
     ],
     "78": [
+        "Arthur, Prince of Wales",
         "Margaret Tudor",
         "Henry VIII",
         "Mary Tudor"
@@ -383,12 +374,7 @@
         "idk"
     ],
     "82": [
-        "Belgium",
-        "France",
-        "Germany",
-        "Italy",
-        "Luxembourg",
-        "Netherlands"
+        "idk"
     ],
     "83": [
         "idk"
@@ -403,23 +389,21 @@
         "idk"
     ],
     "87": [
+        "Aquata",
+        "Andrina",
+        "Arista",
         "Attina",
-        "Alana",
-        "Andrina"
+        "Adella",
+        "Alana"
     ],
     "88": [
         "Peter Griffin",
         "Glenn Quagmire",
-        "Tom Tucker",
-        "Carter Pewterschmidt",
-        "Dr. Elmer Hartman",
-        "Seamus",
-        "Jake Tucker",
-        "Various other minor human characters"
+        "Tom Tucker"
     ],
     "89": [
         "Prince Michael Jackson I",
-        "Paris-Michael Katherine Jackson"
+        "Paris Jackson"
     ],
     "90": [
         "idk"
@@ -452,8 +436,8 @@
         "Colorado"
     ],
     "99": [
-        "Indiana",
-        "Wisconsin"
+        "Wisconsin",
+        "Indiana"
     ],
     "100": [
         "idk"
@@ -512,12 +496,7 @@
         "idk"
     ],
     "116": [
-        "Air France",
-        "KLM Royal Dutch Airlines",
-        "Czech Airlines",
-        "Alitalia",
-        "Aeroflot Russian Airlines",
-        "Tarom"
+        "idk"
     ],
     "117": [
         "idk"

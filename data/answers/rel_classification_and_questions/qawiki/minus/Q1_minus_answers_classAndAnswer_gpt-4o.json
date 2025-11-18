@@ -1,8 +1,8 @@
 {
     "0": [
         "Venezuela",
-        "Guyana",
-        "Brazil"
+        "Brazil",
+        "Guyana"
     ],
     "1": [
         "United States of America",
@@ -22,9 +22,12 @@
         "idk"
     ],
     "5": [
-        "The Breeders",
         "Pixies",
-        "The Amps"
+        "The Breeders",
+        "The Amps",
+        "The Kelley Deal 6000",
+        "The Last Splash",
+        "The Throwing Muses"
     ],
     "6": [
         "idk"
@@ -69,11 +72,11 @@
         "Italy",
         "Japan",
         "Mexico",
-        "Republic of Korea",
-        "Russian Federation",
+        "Russia",
         "Saudi Arabia",
         "South Africa",
-        "Türkiye",
+        "South Korea",
+        "Turkey",
         "United Kingdom",
         "United States of America",
         "European Union"
@@ -174,6 +177,7 @@
         "Poland",
         "Portugal",
         "Romania",
+        "Russia",
         "San Marino",
         "Serbia",
         "Slovakia",
@@ -181,7 +185,6 @@
         "Spain",
         "Sweden",
         "Switzerland",
-        "Turkey",
         "Ukraine",
         "United Kingdom",
         "Vatican City"
@@ -190,7 +193,7 @@
         "idk"
     ],
     "22": [
-        "Ivory Coast",
+        "Côte d'Ivoire",
         "Burkina Faso",
         "Togo"
     ],
@@ -204,9 +207,7 @@
         "idk"
     ],
     "26": [
-        "Protons",
-        "Neutrons",
-        "Quarks"
+        "idk"
     ],
     "27": [
         "idk"
@@ -221,10 +222,9 @@
         "idk"
     ],
     "31": [
-        "Olympus Mons",
-        "Ascraeus Mons",
+        "Arsia Mons",
         "Pavonis Mons",
-        "Arsia Mons"
+        "Ascraeus Mons"
     ],
     "32": [
         "The Matrix",
@@ -242,21 +242,22 @@
     "35": [
         "Ceres",
         "Pluto",
-        "Eris",
         "Haumea",
-        "Makemake"
+        "Makemake",
+        "Eris"
     ],
     "36": [
         "idk"
     ],
     "37": [
-        "- Boris Godunov",
         "Eugene Onegin",
         "The Queen of Spades",
-        "Mozart and Salieri",
-        "Ruslan and Lyudmila",
+        "Boris Godunov",
         "The Stone Guest",
-        "Mlada"
+        "Mavra",
+        "The Golden Cockerel",
+        "The Captain's Daughter",
+        "Ruslan and Lyudmila"
     ],
     "38": [
         "idk"
@@ -280,8 +281,7 @@
         "Hinduism",
         "Buddhism",
         "Jainism",
-        "Seventh-day Adventism",
-        "Rastafarianism"
+        "Seventh-day Adventism"
     ],
     "45": [
         "idk"
@@ -293,22 +293,22 @@
         "idk"
     ],
     "48": [
-        "Ice hockey",
         "Field hockey",
+        "Ice hockey",
         "Lacrosse",
-        "Bandy",
         "Polo",
-        "Curling"
+        "Floorball",
+        "Hurling",
+        "Shinty"
     ],
     "49": [
         "League of Legends",
         "Teamfight Tactics",
         "Legends of Runeterra",
         "Valorant",
-        "Hextech Mayhem",
-        "Song of Nunu",
-        "Convergence",
-        "Ruined King"
+        "Wild Rift",
+        "Project L",
+        "Project F"
     ],
     "50": [
         "idk"
@@ -320,12 +320,13 @@
         "idk"
     ],
     "53": [
+        "European Organization for Nuclear Research",
         "Massachusetts Institute of Technology",
-        "CERN",
-        "Oxford University",
         "World Wide Web Consortium",
-        "National Center for Supercomputing Applications",
-        "Leicester Grammar School"
+        "University of Southampton",
+        "Oxford University",
+        "National Physical Laboratory",
+        "Defense Advanced Research Projects Agency"
     ],
     "54": [
         "idk"
@@ -349,15 +350,26 @@
         "idk"
     ],
     "61": [
-        "Accelerated Dragon",
-        "Alapin Variation",
-        "Closed Sicilian",
+        "Sicilian Defence",
         "Dragon Variation",
-        "Grand Prix Attack",
-        "Kan Variation",
         "Najdorf Variation",
         "Scheveningen Variation",
-        "Sveshnikov Variation"
+        "Accelerated Dragon",
+        "Sveshnikov Variation",
+        "Alapin Variation",
+        "Kan Variation",
+        "Taimanov Variation",
+        "Classical Variation",
+        "Rossolimo Variation",
+        "Moscow Variation",
+        "Four Knights Variation",
+        "Smith-Morra Gambit",
+        "Closed Sicilian",
+        "Grand Prix Attack",
+        "Wing Gambit",
+        "Bowdler Attack",
+        "O'Kelly Variation",
+        "Lasker-Pelikan Variation"
     ],
     "62": [
         "idk"
@@ -376,12 +388,15 @@
     ],
     "67": [
         "Orange",
-        "Lime",
-        "Lemon",
-        "Plum",
         "Peach",
+        "Lime",
         "Cherry",
-        "Apricot"
+        "Plum",
+        "Apricot",
+        "Banana",
+        "Raspberry",
+        "Blueberry",
+        "Lemon"
     ],
     "68": [
         "idk"
@@ -444,21 +459,21 @@
         "Italy",
         "Japan",
         "Mexico",
-        "Russia",
+        "Republic of Korea",
+        "Russian Federation",
         "Saudi Arabia",
         "South Africa",
-        "South Korea",
         "Turkey",
         "United Kingdom",
         "United States of America",
         "European Union"
     ],
     "75": [
-        "Ethiopia",
-        "Kenya",
         "Uganda",
+        "Kenya",
         "Democratic Republic of the Congo",
         "Central African Republic",
+        "Ethiopia",
         "Sudan"
     ],
     "76": [
@@ -473,14 +488,16 @@
     "78": [
         "Australia",
         "Bangladesh",
-        "Barbados",
         "Bhutan",
         "Botswana",
         "Brunei",
         "Cyprus",
+        "Dominica",
+        "East Timor",
+        "Eswatini",
         "Fiji",
-        "Grenada",
         "Guyana",
+        "Hong Kong",
         "India",
         "Indonesia",
         "Ireland",
@@ -489,6 +506,7 @@
         "Kenya",
         "Kiribati",
         "Lesotho",
+        "Macau",
         "Malawi",
         "Malaysia",
         "Maldives",
@@ -496,6 +514,7 @@
         "Mauritius",
         "Mozambique",
         "Namibia",
+        "Nauru",
         "Nepal",
         "New Zealand",
         "Pakistan",
@@ -509,7 +528,6 @@
         "South Africa",
         "Sri Lanka",
         "Suriname",
-        "Swaziland",
         "Tanzania",
         "Thailand",
         "Tonga",
@@ -531,27 +549,27 @@
     "82": [
         "Australia",
         "India",
-        "West Indies",
         "Pakistan",
         "Sri Lanka",
         "England",
-        "South Africa"
+        "West Indies"
     ],
     "83": [
         "Uruguay",
-        "Brazil",
-        "Argentina",
-        "Germany",
         "Italy",
+        "Germany",
+        "Brazil",
+        "England",
+        "Argentina",
         "France",
-        "Spain",
-        "England"
+        "Spain"
     ],
     "84": [
-        "South Africa",
         "New Zealand",
+        "South Africa",
         "Australia",
-        "England"
+        "England",
+        "France"
     ],
     "85": [
         "idk"
@@ -561,7 +579,28 @@
         "Mexico",
         "Japan",
         "Philippines",
-        "Taiwan"
+        "Taiwan",
+        "Saudi Arabia",
+        "Colombia",
+        "Venezuela",
+        "Ecuador",
+        "Peru",
+        "Bolivia",
+        "Guatemala",
+        "El Salvador",
+        "Honduras",
+        "Nicaragua",
+        "Costa Rica",
+        "Panama",
+        "Jamaica",
+        "Trinidad and Tobago",
+        "Barbados",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Saint Kitts and Nevis",
+        "Antigua and Barbuda",
+        "Dominica",
+        "Bahamas"
     ],
     "87": [
         "Czechoslovakia",
@@ -637,13 +676,21 @@
         "Fruit flies",
         "Mice",
         "Rats",
+        "Rabbits",
         "Dogs",
         "Monkeys",
         "Chimpanzees",
-        "Cats",
+        "Guinea pigs",
         "Frogs",
-        "Turtles",
-        "Fish"
+        "Tortoises",
+        "Cats",
+        "Fish",
+        "Spiders",
+        "Newts",
+        "Wasps",
+        "Beetles",
+        "Cockroaches",
+        "Snails"
     ],
     "111": [
         "idk"
@@ -668,7 +715,8 @@
         "6",
         "12",
         "30",
-        "56"
+        "56",
+        "90"
     ],
     "118": [
         "idk"
@@ -770,12 +818,18 @@
     ],
     "149": [
         "Richard Nixon",
-        "George McGovern"
+        "George McGovern",
+        "John G. Schmitz",
+        "Benjamin Spock",
+        "Gus Hall",
+        "Linda Jenness",
+        "Louis Fisher"
     ],
     "91": [
         "Pekingese",
         "Shih Tzu",
-        "Chinese Shar-Pei",
-        "Chow Chow"
+        "Chow Chow",
+        "Shar Pei",
+        "Tibetan Mastiff"
     ]
 }

@@ -1,7 +1,7 @@
 {
     "0": [
-        "Guyana",
-        "Brazil"
+        "Brazil",
+        "Guyana"
     ],
     "1": [
         "United States of America",
@@ -78,9 +78,6 @@
         "idk"
     ],
     "13": [
-        "K2",
-        "Lhotse",
-        "Makalu",
         "Dhaulagiri",
         "Manaslu",
         "Nanga Parbat",
@@ -119,9 +116,9 @@
         "Montenegro",
         "North Macedonia",
         "Romania",
+        "Russia",
         "San Marino",
         "Serbia",
-        "Turkey",
         "Ukraine",
         "United Kingdom",
         "Vatican City"
@@ -130,6 +127,7 @@
         "idk"
     ],
     "22": [
+        "Burkina Faso",
         "Togo"
     ],
     "23": [
@@ -142,8 +140,7 @@
         "idk"
     ],
     "26": [
-        "Protons",
-        "Neutrons"
+        "idk"
     ],
     "27": [
         "idk"
@@ -157,7 +154,9 @@
     "30": [
         "idk"
     ],
-    "31": [],
+    "31": [
+        "idk"
+    ],
     "32": [
         "The Matrix",
         "The Matrix Resurrections"
@@ -169,16 +168,18 @@
         "Go Set a Watchman"
     ],
     "35": [
-        "Ceres"
+        "Ceres",
+        "Makemake"
     ],
     "36": [
         "idk"
     ],
     "37": [
-        "Eugene Onegin",
-        "Mozart and Salieri",
-        "Ruslan and Lyudmila",
-        "The Stone Guest"
+        "Boris Godunov",
+        "The Stone Guest",
+        "Mavra",
+        "The Captain's Daughter",
+        "Ruslan and Lyudmila"
     ],
     "38": [
         "idk"
@@ -201,8 +202,7 @@
     "44": [
         "Hinduism",
         "Buddhism",
-        "Seventh-day Adventism",
-        "Rastafarianism"
+        "Seventh-day Adventism"
     ],
     "45": [
         "idk"
@@ -216,11 +216,13 @@
     "48": [
         "Field hockey",
         "Lacrosse",
-        "Polo"
+        "Polo",
+        "Floorball",
+        "Hurling",
+        "Shinty"
     ],
     "49": [
-        "League of Legends",
-        "Teamfight Tactics"
+        "League of Legends"
     ],
     "50": [
         "idk"
@@ -232,10 +234,13 @@
         "idk"
     ],
     "53": [
-        "CERN",
+        "European Organization for Nuclear Research",
+        "Massachusetts Institute of Technology",
+        "World Wide Web Consortium",
+        "University of Southampton",
         "Oxford University",
-        "National Center for Supercomputing Applications",
-        "Leicester Grammar School"
+        "National Physical Laboratory",
+        "Defense Advanced Research Projects Agency"
     ],
     "54": [
         "idk"
@@ -260,9 +265,12 @@
     ],
     "61": [
         "Alapin Variation",
+        "Rossolimo Variation",
+        "Moscow Variation",
         "Closed Sicilian",
         "Grand Prix Attack",
-        "Kan Variation"
+        "Wing Gambit",
+        "Bowdler Attack"
     ],
     "62": [
         "idk"
@@ -281,12 +289,15 @@
     ],
     "67": [
         "Orange",
-        "Lime",
-        "Lemon",
-        "Plum",
         "Peach",
+        "Lime",
         "Cherry",
-        "Apricot"
+        "Plum",
+        "Apricot",
+        "Banana",
+        "Raspberry",
+        "Blueberry",
+        "Lemon"
     ],
     "68": [
         "idk"
@@ -325,19 +336,19 @@
         "Italy",
         "Japan",
         "Mexico",
-        "Russia",
+        "Republic of Korea",
+        "Russian Federation",
         "South Africa",
-        "South Korea",
         "Turkey",
         "United Kingdom",
         "United States of America",
         "European Union"
     ],
     "75": [
-        "Ethiopia",
-        "Kenya",
         "Uganda",
+        "Kenya",
         "Central African Republic",
+        "Ethiopia",
         "Sudan"
     ],
     "76": [
@@ -349,13 +360,15 @@
     "78": [
         "Australia",
         "Bangladesh",
-        "Barbados",
         "Bhutan",
         "Botswana",
         "Brunei",
+        "Dominica",
+        "East Timor",
+        "Eswatini",
         "Fiji",
-        "Grenada",
         "Guyana",
+        "Hong Kong",
         "India",
         "Indonesia",
         "Jamaica",
@@ -363,12 +376,14 @@
         "Kenya",
         "Kiribati",
         "Lesotho",
+        "Macau",
         "Malawi",
         "Malaysia",
         "Maldives",
         "Mauritius",
         "Mozambique",
         "Namibia",
+        "Nauru",
         "Nepal",
         "New Zealand",
         "Pakistan",
@@ -382,7 +397,6 @@
         "South Africa",
         "Sri Lanka",
         "Suriname",
-        "Swaziland",
         "Tanzania",
         "Thailand",
         "Tonga",
@@ -402,9 +416,8 @@
     ],
     "82": [
         "Australia",
-        "West Indies",
         "England",
-        "South Africa"
+        "West Indies"
     ],
     "83": [
         "Uruguay",
@@ -412,7 +425,8 @@
         "Argentina"
     ],
     "84": [
-        "England"
+        "England",
+        "France"
     ],
     "85": [
         "idk"
@@ -421,7 +435,28 @@
         "Mexico",
         "Japan",
         "Philippines",
-        "Taiwan"
+        "Taiwan",
+        "Saudi Arabia",
+        "Colombia",
+        "Venezuela",
+        "Ecuador",
+        "Peru",
+        "Bolivia",
+        "Guatemala",
+        "El Salvador",
+        "Honduras",
+        "Nicaragua",
+        "Costa Rica",
+        "Panama",
+        "Jamaica",
+        "Trinidad and Tobago",
+        "Barbados",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Saint Kitts and Nevis",
+        "Antigua and Barbuda",
+        "Dominica",
+        "Bahamas"
     ],
     "87": [
         "Zaire"
@@ -493,11 +528,19 @@
         "Fruit flies",
         "Mice",
         "Rats",
+        "Rabbits",
         "Dogs",
-        "Cats",
+        "Guinea pigs",
         "Frogs",
-        "Turtles",
-        "Fish"
+        "Tortoises",
+        "Cats",
+        "Fish",
+        "Spiders",
+        "Newts",
+        "Wasps",
+        "Beetles",
+        "Cockroaches",
+        "Snails"
     ],
     "111": [
         "idk"
@@ -518,7 +561,8 @@
         "idk"
     ],
     "117": [
-        "56"
+        "56",
+        "90"
     ],
     "118": [
         "idk"
@@ -598,7 +642,9 @@
     "143": [
         "idk"
     ],
-    "144": [],
+    "144": [
+        "idk"
+    ],
     "145": [
         "Norman H. Nie",
         "C. Hadlai Hull",
@@ -614,10 +660,16 @@
         "Marie Curie"
     ],
     "149": [
-        "Richard Nixon"
+        "Richard Nixon",
+        "John G. Schmitz",
+        "Benjamin Spock",
+        "Gus Hall",
+        "Linda Jenness",
+        "Louis Fisher"
     ],
     "91": [
-        "Chinese Shar-Pei",
-        "Chow Chow"
+        "Chow Chow",
+        "Shar Pei",
+        "Tibetan Mastiff"
     ]
 }

@@ -16,7 +16,10 @@
     ],
     "5": [
         "The Breeders",
-        "The Amps"
+        "The Amps",
+        "The Kelley Deal 6000",
+        "The Last Splash",
+        "The Throwing Muses"
     ],
     "6": [
         "idk"
@@ -43,11 +46,11 @@
         "Italy",
         "Japan",
         "Mexico",
-        "Republic of Korea",
-        "Russian Federation",
+        "Russia",
         "Saudi Arabia",
         "South Africa",
-        "Türkiye",
+        "South Korea",
+        "Turkey",
         "United Kingdom",
         "United States of America",
         "European Union"
@@ -63,7 +66,10 @@
     ],
     "13": [
         "Mount Everest",
+        "K2",
         "Kangchenjunga",
+        "Lhotse",
+        "Makalu",
         "Cho Oyu"
     ],
     "14": [
@@ -117,8 +123,7 @@
         "idk"
     ],
     "22": [
-        "Ivory Coast",
-        "Burkina Faso"
+        "Côte d'Ivoire"
     ],
     "23": [
         "idk"
@@ -129,7 +134,9 @@
     "25": [
         "idk"
     ],
-    "26": [],
+    "26": [
+        "idk"
+    ],
     "27": [
         "idk"
     ],
@@ -143,7 +150,7 @@
         "idk"
     ],
     "31": [
-        "Olympus Mons",
+        "Arsia Mons",
         "Ascraeus Mons"
     ],
     "32": [
@@ -158,17 +165,16 @@
     ],
     "35": [
         "Pluto",
-        "Eris",
         "Haumea",
-        "Makemake"
+        "Eris"
     ],
     "36": [
         "idk"
     ],
     "37": [
-        "Boris Godunov",
+        "Eugene Onegin",
         "The Queen of Spades",
-        "Mlada"
+        "The Golden Cockerel"
     ],
     "38": [
         "idk"
@@ -203,15 +209,13 @@
     "48": [
         "Ice hockey",
         "Bandy",
-        "Curling"
+        "Broomball"
     ],
     "49": [
-        "Legends of Runeterra",
         "Valorant",
-        "Hextech Mayhem",
-        "Song of Nunu",
-        "Convergence",
-        "Ruined King"
+        "Wild Rift",
+        "Teamfight Tactics",
+        "Legends of Runeterra"
     ],
     "50": [
         "idk"
@@ -223,8 +227,7 @@
         "idk"
     ],
     "53": [
-        "Massachusetts Institute of Technology",
-        "World Wide Web Consortium"
+        "idk"
     ],
     "54": [
         "idk"
@@ -249,10 +252,17 @@
     ],
     "61": [
         "Dragon Variation",
+        "Najdorf Variation",
+        "Scheveningen Variation",
         "Accelerated Dragon",
         "Sveshnikov Variation",
-        "Scheveningen Variation",
-        "Najdorf Variation"
+        "Kan Variation",
+        "Taimanov Variation",
+        "Classical Variation",
+        "Four Knights Variation",
+        "Smith-Morra Gambit",
+        "O'Kelly Variation",
+        "Lasker-Pelikan Variation"
     ],
     "62": [
         "idk"
@@ -271,12 +281,16 @@
         "Football Club Barcelona"
     ],
     "67": [
+        "Dragonfruit",
         "Mango",
         "Papaya",
-        "Guava",
-        "Dragonfruit",
         "Passionfruit",
-        "Acai"
+        "Guava",
+        "Lychee",
+        "Kiwi",
+        "Starfruit",
+        "Pomegranate",
+        "Durian"
     ],
     "68": [
         "idk"
@@ -331,8 +345,8 @@
         "idk"
     ],
     "78": [
-        "Ireland",
         "Cyprus",
+        "Ireland",
         "Malta",
         "United Kingdom"
     ],
@@ -351,15 +365,15 @@
         "Sri Lanka"
     ],
     "83": [
-        "Germany",
         "Italy",
+        "Germany",
+        "England",
         "France",
-        "Spain",
-        "England"
+        "Spain"
     ],
     "84": [
-        "South Africa",
         "New Zealand",
+        "South Africa",
         "Australia"
     ],
     "85": [
@@ -543,7 +557,9 @@
     "143": [
         "idk"
     ],
-    "144": [],
+    "144": [
+        "idk"
+    ],
     "145": [
         "idk"
     ],

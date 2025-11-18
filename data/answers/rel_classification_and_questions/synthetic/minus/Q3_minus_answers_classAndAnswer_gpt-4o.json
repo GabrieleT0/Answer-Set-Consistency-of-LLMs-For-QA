@@ -6,11 +6,11 @@
         "idk"
     ],
     "2": [
-        "Victoria Adelaide Mary Louisa",
-        "Alice Maud Mary",
-        "Helena Augusta Victoria",
-        "Louise Caroline Alberta",
-        "Beatrice Mary Victoria Feodore"
+        "Victoria, Princess Royal",
+        "Alice, Princess of Hesse",
+        "Helena, Princess Christian of Schleswig-Holstein",
+        "Louise, Duchess of Argyll",
+        "Beatrice, Princess Henry of Battenberg"
     ],
     "3": [
         "French",
@@ -34,7 +34,9 @@
     "6": [
         "idk"
     ],
-    "7": [],
+    "7": [
+        "idk"
+    ],
     "8": [
         "2001: A Space Odyssey"
     ],
@@ -51,42 +53,35 @@
     ],
     "11": [
         "Emperor Penguin",
+        "King Penguin",
         "Adelie Penguin",
         "Chinstrap Penguin",
         "Gentoo Penguin"
     ],
     "12": [
         "Woodrow Wilson",
-        "Franklin Delano Roosevelt",
+        "Franklin D. Roosevelt",
         "Harry S. Truman",
-        "John Fitzgerald Kennedy",
-        "Lyndon Baines Johnson",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
         "Jimmy Carter",
-        "William Jefferson Clinton"
+        "Bill Clinton"
     ],
     "13": [
         "idk"
     ],
     "14": [
-        "My Neighbor Totoro",
-        "Kiki's Delivery Service",
-        "The Wind Rises",
-        "Porco Rosso",
-        "The Tale of the Princess Kaguya",
-        "My Neighbors the Yamadas",
-        "When Marnie Was There",
-        "Ocean Waves",
-        "Whisper of the Heart"
+        "idk"
     ],
     "15": [
-        "The Hobbit",
-        "The Lord of the Rings",
-        "The Silmarillion",
-        "Unfinished Tales",
-        "The History of Middle-earth",
-        "The Fall of Gondolin",
-        "Beren and Lúthien",
-        "The Children of Húrin"
+        "\"The Hobbit\"",
+        "\"The Lord of the Rings\"",
+        "\"The Silmarillion\"",
+        "\"Unfinished Tales\"",
+        "\"The History of Middle-earth\"",
+        "\"The Children of Húrin\"",
+        "\"Beren and Lúthien\"",
+        "\"The Fall of Gondolin\""
     ],
     "16": [
         "Buenos Aires",
@@ -109,50 +104,59 @@
         "Jane Seymour"
     ],
     "19": [
+        "United Kingdom",
         "India",
         "Australia",
         "Canada",
         "New Zealand",
         "South Africa",
-        "Pakistan",
-        "Bangladesh",
         "Malaysia",
         "Singapore",
-        "Kenya",
         "Nigeria",
-        "Ghana",
+        "Kenya",
         "Jamaica",
-        "Trinidad and Tobago",
-        "Barbados",
-        "Zimbabwe",
+        "Pakistan",
+        "Bangladesh",
+        "Sri Lanka",
         "Cyprus",
         "Malta",
-        "Sri Lanka",
         "Fiji",
-        "Papua New Guinea",
-        "Belize",
+        "Trinidad and Tobago",
+        "Barbados",
         "Bahamas",
-        "Saint Kitts and Nevis",
-        "Antigua and Barbuda",
+        "Belize",
+        "Guyana",
+        "Mauritius",
+        "Seychelles",
+        "Brunei",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu",
         "Saint Lucia",
         "Saint Vincent and the Grenadines",
         "Grenada",
-        "Seychelles",
-        "Maldives",
-        "Solomon Islands",
-        "Nauru",
-        "Tonga",
-        "Vanuatu",
-        "Samoa",
-        "Mauritius",
+        "Saint Kitts and Nevis",
+        "Antigua and Barbuda",
+        "Dominica",
+        "Botswana",
         "Lesotho",
         "Swaziland",
-        "Botswana",
-        "Uganda",
         "Zambia",
-        "Tanzania",
         "Malawi",
-        "Rwanda"
+        "Tanzania",
+        "Uganda",
+        "Sierra Leone",
+        "Gambia",
+        "Cameroon",
+        "Namibia",
+        "Mozambique",
+        "Rwanda",
+        "Samoa",
+        "Tonga",
+        "Tuvalu",
+        "Kiribati",
+        "Nauru",
+        "Maldives"
     ],
     "20": [
         "Stuart Sutcliffe",
@@ -171,10 +175,10 @@
         "idk"
     ],
     "24": [
-        "Dances with Wolves",
+        "Unforgiven",
+        "Schindler's List",
         "Braveheart",
-        "The English Patient",
-        "Titanic"
+        "The English Patient"
     ],
     "25": [
         "idk"
@@ -189,7 +193,7 @@
         "idk"
     ],
     "29": [
-        "Holy See"
+        "idk"
     ],
     "30": [
         "Euro"
@@ -201,60 +205,45 @@
         "Hinduism"
     ],
     "33": [
-        "London",
-        "Berlin",
-        "Paris",
-        "Rome",
-        "Madrid",
-        "Athens",
-        "Warsaw",
-        "Amsterdam",
-        "Brussels",
-        "Vienna",
-        "Lisbon",
-        "Prague",
-        "Budapest",
-        "Stockholm",
-        "Copenhagen",
-        "Tallinn",
-        "Riga",
-        "Vilnius",
-        "Bratislava",
-        "Ljubljana",
-        "Zagreb",
-        "Nicosia",
-        "Luxembourg City",
-        "Dublin",
-        "Valletta",
-        "Sofia"
+        "idk"
     ],
     "34": [
         "Green"
     ],
     "35": [
         "Nigeria",
+        "South Africa",
         "Kenya",
         "Uganda",
-        "South Africa",
+        "Ghana",
         "Zimbabwe",
         "Zambia",
-        "Ghana",
-        "Botswana",
         "Malawi",
+        "Botswana",
         "Namibia",
-        "Eswatini",
         "Lesotho",
+        "Swaziland",
         "Tanzania",
+        "Rwanda",
+        "Sierra Leone",
         "Liberia",
-        "Sierra Leone"
+        "Cameroon",
+        "Mauritius",
+        "Seychelles"
     ],
     "36": [
         "Africa",
         "Asia",
-        "Europe"
+        "Europe",
+        "North America",
+        "South America"
     ],
     "37": [
-        "The Cuckoo's Calling"
+        "The Cuckoo's Calling",
+        "The Silkworm",
+        "Career of Evil",
+        "Lethal White",
+        "Troubled Blood"
     ],
     "38": [
         "Nitrogen",
@@ -265,10 +254,10 @@
         "Greenland shark"
     ],
     "40": [
-        "Grand Theft Auto Four",
-        "Grand Theft Auto Chinatown Wars",
-        "Grand Theft Auto Five",
-        "Grand Theft Auto Online"
+        "Grand Theft Auto IV",
+        "Grand Theft Auto: The Lost and Damned",
+        "Grand Theft Auto: The Ballad of Gay Tony",
+        "Grand Theft Auto V"
     ],
     "41": [
         "idk"
@@ -290,9 +279,8 @@
     ],
     "46": [
         "Honshu",
-        "Kyushu",
         "Hokkaido",
-        "Shikoku"
+        "Kyushu"
     ],
     "47": [
         "idk"
@@ -301,37 +289,37 @@
         "George Washington",
         "Thomas Jefferson",
         "James Madison",
-        "James Monroe"
+        "James Monroe",
+        "William Henry Harrison"
     ],
     "49": [
-        "Albania",
-        "Belgium",
-        "Bulgaria",
-        "Croatia",
-        "Czech Republic",
-        "Denmark",
-        "Estonia",
+        "United Kingdom",
         "France",
         "Germany",
-        "Greece",
-        "Hungary",
-        "Iceland",
         "Italy",
+        "Belgium",
+        "Netherlands",
+        "Luxembourg",
+        "Norway",
+        "Denmark",
+        "Iceland",
+        "Portugal",
+        "Greece",
+        "Spain",
+        "Czech Republic",
+        "Hungary",
+        "Poland",
+        "Bulgaria",
+        "Estonia",
         "Latvia",
         "Lithuania",
-        "Luxembourg",
-        "Montenegro",
-        "Netherlands",
-        "North Macedonia",
-        "Norway",
-        "Poland",
-        "Portugal",
         "Romania",
         "Slovakia",
         "Slovenia",
-        "Spain",
-        "Turkey",
-        "United Kingdom"
+        "Albania",
+        "Croatia",
+        "Montenegro",
+        "North Macedonia"
     ],
     "50": [
         "Cirrus",
@@ -376,38 +364,34 @@
         "Yellow"
     ],
     "61": [
-        "Uruguay",
+        "Brazil",
         "Argentina",
-        "Brazil"
+        "Uruguay"
     ],
     "62": [
         "United Kingdom",
-        "Spain",
         "Sweden",
-        "Denmark",
         "Norway",
-        "Belgium",
+        "Denmark",
         "Netherlands",
-        "Luxembourg",
-        "Monaco",
+        "Belgium",
+        "Spain",
         "Liechtenstein",
-        "Andorra",
+        "Monaco",
+        "Luxembourg",
         "Vatican City"
     ],
     "63": [
         "United States of America",
-        "El Salvador",
         "Ecuador",
-        "Zimbabwe",
-        "Federated States of Micronesia",
-        "Republic of the Marshall Islands",
-        "Republic of Palau"
+        "El Salvador",
+        "Zimbabwe"
     ],
     "64": [
         "idk"
     ],
     "65": [
-        "O"
+        "O negative"
     ],
     "66": [
         "idk"
@@ -427,11 +411,11 @@
         "idk"
     ],
     "69": [
-        "Physics",
-        "Chemistry",
-        "Medicine or Physiology",
+        "Peace",
         "Literature",
-        "Peace"
+        "Chemistry",
+        "Physics",
+        "Medicine"
     ],
     "70": [
         "Orange",
@@ -440,17 +424,17 @@
         "Violet"
     ],
     "71": [
-        "5 Euros",
-        "10 Euros",
-        "20 Euros",
-        "50 Euros",
-        "100 Euros",
-        "200 Euros",
-        "500 Euros"
+        "5 euros",
+        "10 euros",
+        "20 euros",
+        "50 euros",
+        "100 euros",
+        "200 euros",
+        "500 euros"
     ],
     "72": [
-        "Atlantic Ocean",
         "Pacific Ocean",
+        "Atlantic Ocean",
         "Southern Ocean"
     ],
     "73": [
@@ -474,7 +458,8 @@
         "Peru"
     ],
     "77": [
-        "Homo neanderthalensis"
+        "Homo neanderthalensis",
+        "Homo heidelbergensis"
     ],
     "78": [
         "England",
@@ -512,9 +497,9 @@
     ],
     "87": [
         "Italy",
-        "Finland",
         "Romania",
-        "Bulgaria"
+        "Bulgaria",
+        "Finland"
     ],
     "88": [
         "idk"
@@ -541,7 +526,7 @@
         "idk"
     ],
     "96": [
-        "Russia"
+        "Moscow, Russia"
     ],
     "97": [
         "idk"
@@ -549,7 +534,9 @@
     "98": [
         "Marie Curie"
     ],
-    "99": [],
+    "99": [
+        "idk"
+    ],
     "100": [
         "idk"
     ],
@@ -587,15 +574,14 @@
         "idk"
     ],
     "111": [
-        "Armenia",
-        "Azerbaijan",
-        "Belarus",
         "Estonia",
-        "Georgia",
-        "Kazakhstan",
         "Latvia",
         "Lithuania",
-        "Ukraine"
+        "Belarus",
+        "Ukraine",
+        "Georgia",
+        "Azerbaijan",
+        "Kazakhstan"
     ],
     "112": [
         "idk"
@@ -666,7 +652,7 @@
         "Albert the Second"
     ],
     "124": [
-        "- Obtuse-angled triangle"
+        "Obtuse triangle"
     ],
     "125": [
         "idk"
@@ -674,7 +660,7 @@
     "126": [
         "New Year's Day",
         "Martin Luther King Jr. Day",
-        "Presidents' Day",
+        "Washington's Birthday",
         "Juneteenth National Independence Day",
         "Independence Day",
         "Columbus Day",
@@ -689,25 +675,23 @@
         "Aranese"
     ],
     "128": [
-        "India",
         "China",
+        "India",
         "Indonesia",
         "Pakistan",
-        "Bangladesh"
+        "Bangladesh",
+        "Japan",
+        "Philippines"
     ],
     "129": [
         "Great Pyramid of Giza"
     ],
     "130": [
-        "Bahrain",
         "Iraq",
         "Jordan",
-        "Kuwait",
         "Lebanon",
-        "Oman",
-        "Qatar",
-        "Syria",
-        "United Arab Emirates"
+        "Palestine",
+        "Syria"
     ],
     "131": [
         "idk"
@@ -717,8 +701,8 @@
     ],
     "133": [
         "Italy",
-        "Spain",
         "France",
+        "Spain",
         "Portugal",
         "Romania",
         "Belgium",
@@ -740,14 +724,17 @@
         "Right ventricle"
     ],
     "138": [
-        "Mercury",
-        "Bromine"
+        "idk"
     ],
     "139": [
-        "2"
+        "Two"
     ],
-    "140": [],
-    "141": [],
+    "140": [
+        "James A. Garfield"
+    ],
+    "141": [
+        "E"
+    ],
     "142": [
         "idk"
     ],
@@ -759,16 +746,17 @@
     "144": [
         "Cuba",
         "Dominican Republic",
-        "Haiti",
         "Jamaica",
+        "Haiti",
+        "Bahamas",
+        "Barbados",
         "Trinidad and Tobago",
-        "Saint Kitts and Nevis",
-        "Antigua and Barbuda",
         "Saint Lucia",
         "Saint Vincent and the Grenadines",
-        "Barbados",
         "Grenada",
-        "Bahamas"
+        "Antigua and Barbuda",
+        "Saint Kitts and Nevis",
+        "Dominica"
     ],
     "145": [
         "idk"

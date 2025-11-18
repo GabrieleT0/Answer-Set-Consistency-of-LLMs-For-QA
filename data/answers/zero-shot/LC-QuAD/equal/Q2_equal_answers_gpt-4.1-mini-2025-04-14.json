@@ -1550,7 +1550,13 @@
         "The Love Guru",
         "Shrek Forever After"
     ],
-    "119": [],
+    "119": [
+        "La Espero",
+        "Antaŭ la Milito",
+        "La Eta Princo",
+        "Kanto pri la Vivo",
+        "La Verda Stelo"
+    ],
     "121": [
         "Comoros",
         "Madagascar",
@@ -1982,5 +1988,37 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Bucharest",
+        "Vienna",
+        "Hamburg",
+        "Warsaw",
+        "Budapest",
+        "Barcelona"
+    ],
+    "138": [
+        "Baku",
+        "Makhachkala",
+        "Aktau",
+        "Atyrau",
+        "Astrakhan",
+        "Gorgan",
+        "Bandar-e Anzali",
+        "Rasht",
+        "Noshahr",
+        "Babolsar",
+        "Sari",
+        "Gonbad-e Kavus",
+        "Mahshahr",
+        "Khorramshahr",
+        "Nowshahr",
+        "Anzali",
+        "Derbent",
+        "Sumqayit"
     ]
 }

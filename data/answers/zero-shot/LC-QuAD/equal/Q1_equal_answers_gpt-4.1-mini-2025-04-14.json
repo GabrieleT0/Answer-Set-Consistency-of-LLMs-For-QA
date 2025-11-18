@@ -1039,7 +1039,9 @@
         "harp",
         "strings"
     ],
-    "85": [],
+    "85": [
+        "idk"
+    ],
     "86": [
         "Aci Bonaccorsi",
         "Aci Castello",
@@ -1149,7 +1151,9 @@
         "Locus Award for Best Novel",
         "World Fantasy Award for Best Short Fiction"
     ],
-    "89": [],
+    "89": [
+        "idk"
+    ],
     "90": [
         "James Brown",
         "The Stylers"
@@ -1964,5 +1968,29 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Bucharest",
+        "Vienna",
+        "Hamburg",
+        "Warsaw",
+        "Budapest",
+        "Barcelona"
+    ],
+    "138": [
+        "Baku",
+        "Aktau",
+        "Makhachkala",
+        "Astrakhan",
+        "Gorgan",
+        "Bandar-e Anzali",
+        "Rasht",
+        "Atyrau",
+        "Derbent",
+        "Sumqayit"
     ]
 }
