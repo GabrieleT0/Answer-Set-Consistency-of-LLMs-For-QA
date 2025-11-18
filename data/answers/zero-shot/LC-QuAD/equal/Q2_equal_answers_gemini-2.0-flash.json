@@ -4642,7 +4642,9 @@
         "Diamond DA42",
         "Beechcraft King Air C-12"
     ],
-    "83": [],
+    "83": [
+        "no answer"
+    ],
     "84": [
         "3 flutes",
         "2 oboes",
@@ -5118,7 +5120,62 @@
         "Johann Caspar Goethe",
         "Cornelia Walther"
     ],
-    "107": [],
+    "107": [
+        "Amur Oblast",
+        "Arkhangelsk Oblast",
+        "Astrakhan Oblast",
+        "Belgorod Oblast",
+        "Briansk Oblast",
+        "Cheliabinsk Oblast",
+        "Chita Oblast",
+        "Irkutsk Oblast",
+        "Ivanovo Oblast",
+        "Kaliningrad Oblast",
+        "Kaluga Oblast",
+        "Kamchatka Oblast",
+        "Kemerovo Oblast",
+        "Kirov Oblast",
+        "Kostroma Oblast",
+        "Kurgan Oblast",
+        "Kursk Oblast",
+        "Leningrad Oblast",
+        "Lipetsk Oblast",
+        "Magadan Oblast",
+        "Moscow Oblast",
+        "Murmansk Oblast",
+        "Nizhny Novgorod Oblast",
+        "Novgorod Oblast",
+        "Novosibirsk Oblast",
+        "Omsk Oblast",
+        "Orel Oblast",
+        "Orenburg Oblast",
+        "Penza Oblast",
+        "Perm Oblast",
+        "Pskov Oblast",
+        "Rostov Oblast",
+        "Riazan Oblast",
+        "Sakhalin Oblast",
+        "Samara Oblast",
+        "Saratov Oblast",
+        "Smolensk Oblast",
+        "Sverdlovsk Oblast",
+        "Tambov Oblast",
+        "Tomsk Oblast",
+        "Tula Oblast",
+        "Tver Oblast",
+        "Tiumen Oblast",
+        "Ulianovsk Oblast",
+        "Vladimir Oblast",
+        "Volgograd Oblast",
+        "Vologda Oblast",
+        "Voronezh Oblast",
+        "Iaroslavl Oblast",
+        "Gorno-Altai Autonomous Oblast",
+        "Jewish Autonomous Oblast",
+        "Adygea Autonomous Oblast",
+        "Karachai-Cherkess Autonomous Oblast",
+        "Khakass Autonomous Oblast"
+    ],
     "108": [
         "Kublai Khan",
         "Emperor Chengzong",
@@ -8166,7 +8223,9 @@
         "Rheinisch-Deutscher Dachsbracke",
         "Deutscher Boxer"
     ],
-    "131": [],
+    "131": [
+        "no answer"
+    ],
     "132": [
         "Alabama",
         "Alaska",
@@ -8229,7 +8288,15 @@
         "Ulsan Metropolitan City",
         "Sejong Special Self-Governing City"
     ],
-    "134": [],
+    "134": [
+        "United States of America dollar",
+        "Euro",
+        "Japanese yen",
+        "British pound",
+        "Chinese renminbi",
+        "Australian dollar",
+        "Canadian dollar"
+    ],
     "135": [
         "Chicago Tribune",
         "Minneapolis Star Tribune",
@@ -10394,5 +10461,32 @@
         "Pikachu",
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Paris",
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Warsaw",
+        "Vienna",
+        "Hamburg",
+        "Bucharest",
+        "Budapest",
+        "Sofia"
+    ],
+    "138": [
+        "Astrakhan",
+        "Makhachkala",
+        "Aktau",
+        "Baku",
+        "Sumqayit",
+        "Lankaran",
+        "Rasht",
+        "Bandar-e Anzali",
+        "Amol",
+        "Babol",
+        "Sari",
+        "Gorgan",
+        "Türkmenbaşy"
     ]
 }

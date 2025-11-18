@@ -1672,7 +1672,9 @@
         "The Shirelles"
     ],
     "91": [],
-    "92": [],
+    "92": [
+        "Nikki Fritz"
+    ],
     "93": [
         "Hasdrubal Barca",
         "Mago Barca",
@@ -2494,7 +2496,20 @@
         "Archostemata",
         "Polyphaga"
     ],
-    "142": [],
+    "142": [
+        "Colonel Paul Warfield Tibbets Junior, Pilot",
+        "Captain Robert Alton Lewis, Co-pilot",
+        "Major Thomas Wilson Ferebee, Bombardier",
+        "Captain Theodore Van Kirk, Navigator",
+        "Captain William Sterling Parsons, United States Navy Ordnance Expert",
+        "Second Lieutenant Jacob Beser, Radar Countermeasures Officer",
+        "Technical Sergeant Wyatt Edward Duzenbury, Flight Engineer",
+        "Staff Sergeant Joseph Stiborik, Radar Operator",
+        "Staff Sergeant George Robert Caron, Tail Gunner",
+        "Private First Class Richard Nelson, Radio Operator",
+        "Sergeant Robert Richard Shumard, Assistant Flight Engineer",
+        "Technical Sergeant John David Kuharek, Assistant Flight Engineer"
+    ],
     "143": [
         "2000",
         "2001",
@@ -2629,5 +2644,35 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin, Germany",
+        "Madrid, Spain",
+        "Rome, Italy",
+        "Paris, France",
+        "Vienna, Austria",
+        "Hamburg, Germany",
+        "Warsaw, Poland",
+        "Bucharest, Romania",
+        "Budapest, Hungary",
+        "Barcelona, Spain"
+    ],
+    "138": [
+        "Aktau",
+        "Amol",
+        "Astrakhan",
+        "Atyrau",
+        "Babol",
+        "Baku",
+        "Bandar-e Anzali",
+        "Derbent",
+        "Gorgan",
+        "Kaspiysk",
+        "Lahijan",
+        "Makhachkala",
+        "Qaem Shahr",
+        "Rasht",
+        "Sari",
+        "Sumqayit"
     ]
 }

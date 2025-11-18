@@ -1917,7 +1917,10 @@
         "Harp",
         "Strings"
     ],
-    "85": [],
+    "85": [
+        "Anders Behring Breivik",
+        "no answer"
+    ],
     "86": [
         "Aci Bonaccorsi",
         "Aci Castello",
@@ -2034,7 +2037,9 @@
         "Inchtavannach",
         "Inchconnachan"
     ],
-    "92": [],
+    "92": [
+        "no answer"
+    ],
     "93": [
         "Hasdrubal Barca",
         "Mago Barca",
@@ -2578,7 +2583,23 @@
         "Johanna Maria Textor. His maternal grandparents were Johann Wolfgang Textor",
         "Anna Margaretha Lindheimer."
     ],
-    "107": [],
+    "107": [
+        "Russian Federation",
+        "Ukraine",
+        "Belarus",
+        "Kazakhstan",
+        "Uzbekistan",
+        "Kyrgyzstan",
+        "Turkmenistan",
+        "Tajikistan",
+        "Georgia",
+        "Azerbaijan",
+        "Armenia",
+        "Moldova",
+        "Latvia",
+        "Estonia",
+        "Lithuania"
+    ],
     "108": [
         "Kublai Khan",
         "Emperor Chengzong",
@@ -3677,7 +3698,9 @@
         "Old German Shepherd Dog",
         "Drentsche Patrijshond"
     ],
-    "131": [],
+    "131": [
+        "no answer"
+    ],
     "132": [
         "Alabama",
         "Alaska",
@@ -3993,5 +4016,30 @@
         "Pikachu",
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Paris",
+        "Madrid",
+        "Berlin",
+        "Warsaw",
+        "Vienna",
+        "Rome",
+        "Bucharest",
+        "Hamburg",
+        "Budapest",
+        "Sofia"
+    ],
+    "138": [
+        "Astrakhan",
+        "Makhachkala",
+        "Aktau",
+        "Baku",
+        "Sumqayit",
+        "Lankaran",
+        "Rasht",
+        "Bandar-e Anzali",
+        "Amol",
+        "Babol",
+        "Sari"
     ]
 }

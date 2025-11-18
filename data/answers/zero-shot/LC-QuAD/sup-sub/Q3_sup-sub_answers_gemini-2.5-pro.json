@@ -1362,7 +1362,12 @@
         "German Hound",
         "German Hunt Terrier"
     ],
-    "131": [],
+    "131": [
+        "Nyamwezi",
+        "Sumbwa",
+        "Konongo",
+        "Kimbu"
+    ],
     "132": [
         "Alabama",
         "Alaska",
@@ -1598,5 +1603,26 @@
     ],
     "149": [
         "Pikachu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Vienna",
+        "Bucharest",
+        "Warsaw",
+        "Budapest"
+    ],
+    "138": [
+        "Baku",
+        "Sumqayit",
+        "Makhachkala",
+        "Kaspiysk",
+        "Derbent",
+        "Astrakhan",
+        "Aktau",
+        "Atyrau",
+        "Bandar-e Anzali"
     ]
 }

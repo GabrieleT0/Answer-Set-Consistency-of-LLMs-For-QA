@@ -1034,5 +1034,19 @@
         "Overlap",
         "Disjoint",
         "Equivalence"
+    ],
+    "9": [
+        "Equivalence\n",
+        "Contains\n",
+        "Overlap\n",
+        "Disjoint\n",
+        "Equivalence\n"
+    ],
+    "24": [
+        "Equivalence\n",
+        "ContainedBy\n",
+        "ContainedBy\n",
+        "Disjoint\n",
+        "Disjoint\n"
     ]
 }

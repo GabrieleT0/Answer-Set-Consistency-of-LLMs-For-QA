@@ -57,7 +57,10 @@
     "7": [
         "Indiana"
     ],
-    "8": [],
+    "8": [
+        "Nikolai Hubert",
+        "Nikolai Klenovsky"
+    ],
     "9": [
         "Sima Gui",
         "Sima Jian",
@@ -122,7 +125,10 @@
         "Manjula Nahasapeemapetilon",
         "Snake Jailbird"
     ],
-    "13": [],
+    "13": [
+        "APOEL Nicosia",
+        "América de Cali"
+    ],
     "14": [
         "Hansel and Gretel",
         "Boo",
@@ -797,7 +803,36 @@
         "O'Higgins: el hombre de la historia by Walterio Millar",
         "Bernardo O'Higgins: el libertador de Chile by Julio Alemparte"
     ],
-    "60": [],
+    "60": [
+        "La Nymphe de la Source",
+        "Le Printemps",
+        "L'Automne",
+        "La Chasse",
+        "La Pêche",
+        "Le Lion et le Serpent",
+        "Le Cerf et le Chien",
+        "Le Faune",
+        "La Baigneuse",
+        "Le Jeune Homme à la Tortue",
+        "Diane",
+        "Apollon",
+        "Le Grand Plongeur",
+        "Les Lices",
+        "Le Passe-Muraille",
+        "Le Pêcheur",
+        "La Source",
+        "La République",
+        "L'Ours",
+        "Le Sanglier",
+        "Le Grand Homme",
+        "Le Coq",
+        "Le Cheval",
+        "La Femme au Miroir",
+        "La Justice (Parlement de Bretagne)",
+        "La Prudence (Parlement de Bretagne)",
+        "La Force (Parlement de Bretagne)",
+        "La Loi (Parlement de Bretagne)"
+    ],
     "61": [
         "Rodrigue et Chimène",
         "La Chute de la Maison Usher",
@@ -1376,7 +1411,25 @@
         "Ellen's Really Big Show",
         "Ellen's Next Great Designer"
     ],
-    "97": [],
+    "97": [
+        "Leung Sheung",
+        "Lok Yiu",
+        "Chu Shong-tin",
+        "Wong Shun Leung",
+        "Bruce Lee",
+        "Lo Man Kam",
+        "William Cheung",
+        "Hawkins Cheung",
+        "Moy Yat",
+        "Ip Chun",
+        "Ip Ching",
+        "Ho Kam Ming",
+        "Victor Kan Wah Chit",
+        "Duncan Leung",
+        "Siu Yuk Man",
+        "Wong Chok",
+        "Lee Cheong"
+    ],
     "98": [
         "James Lancaster",
         "William Lancaster",
@@ -1535,7 +1588,10 @@
         "Cytochrome P450 1A2",
         "Cytochrome P450 3A5"
     ],
-    "110": [],
+    "110": [
+        "Schleswig-Holstein",
+        "Mecklenburg-Vorpommern"
+    ],
     "111": [
         "European Council",
         "European Commission",
@@ -2019,5 +2075,22 @@
     "149": [
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Hamburg",
+        "Barcelona"
+    ],
+    "138": [
+        "Amol",
+        "Astrakhan",
+        "Atyrau",
+        "Babol",
+        "Balkanabat",
+        "Gorgan",
+        "Khasavyurt",
+        "Lahijan",
+        "Qaem Shahr",
+        "Rasht",
+        "Sari"
     ]
 }

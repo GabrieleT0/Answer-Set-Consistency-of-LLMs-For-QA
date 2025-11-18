@@ -547,7 +547,9 @@
         "Cleveland Cavaliers",
         "Boston Celtics"
     ],
-    "57": [],
+    "57": [
+        "Belarus"
+    ],
     "58": [
         "New Hampshire"
     ],
@@ -604,7 +606,10 @@
         "Andorra",
         "Algeria"
     ],
-    "66": [],
+    "66": [
+        "Above the Rim",
+        "Juice"
+    ],
     "67": [
         "Lyle Talbot",
         "Gene Hackman",
@@ -1238,7 +1243,12 @@
         "The Devil Wears Prada",
         "Tammy Faye"
     ],
-    "132": [],
+    "132": [
+        "Universal Hovercraft",
+        "Futurecraft",
+        "Hovercraft Technologies Incorporated",
+        "AirLift Hovercraft"
+    ],
     "133": [
         "Lenovo Group",
         "Founder Group",
@@ -1414,5 +1424,104 @@
         "Krombacher Brauerei",
         "Warsteiner Brauerei",
         "Brauerei C. & A. Veltins"
+    ],
+    "3": [
+        "Real Madrid",
+        "Barcelona"
+    ],
+    "7": [
+        "Crunchyroll",
+        "Hulu",
+        "Netflix",
+        "Funimation",
+        "HBO Max",
+        "Max"
+    ],
+    "44": [
+        "Frankfurt am Main",
+        "Stuttgart",
+        "Düsseldorf",
+        "Leipzig",
+        "Dortmund",
+        "Essen",
+        "Dresden",
+        "Hannover",
+        "Nürnberg",
+        "Duisburg",
+        "Bochum",
+        "Wuppertal",
+        "Bielefeld",
+        "Bonn",
+        "Münster",
+        "Karlsruhe",
+        "Mannheim",
+        "Augsburg",
+        "Wiesbaden",
+        "Gelsenkirchen",
+        "Mönchengladbach",
+        "Braunschweig",
+        "Aachen"
+    ],
+    "65": [
+        "30 Rock",
+        "And Just Like That...",
+        "At Home with Amy Sedaris",
+        "Awkwafina Is Nora from Queens",
+        "Bored to Death",
+        "Broad City",
+        "Crashing",
+        "Difficult People",
+        "Flight of the Conchords",
+        "Girls",
+        "Harlem",
+        "High Maintenance",
+        "The Honeymooners",
+        "Inside Amy Schumer",
+        "The Jim Gaffigan Show",
+        "Jon Glaser Loves Gear",
+        "Kate & Allie",
+        "Kevin Can Wait",
+        "Life & Beth",
+        "Louie",
+        "Mad About You",
+        "Manhattan Love Story",
+        "The Marvelous Mrs. Maisel",
+        "Master of None",
+        "Nurse Jackie",
+        "Only Murders in the Building",
+        "The Other Two",
+        "Ramy",
+        "Russian Doll",
+        "Saturday Night Live",
+        "Search Party",
+        "Seinfeld",
+        "Sex and the City",
+        "Spin City",
+        "The Detour",
+        "The Cosby Show",
+        "The Tracey Morgan Show",
+        "Ugly Betty",
+        "Unbreakable Kimmy Schmidt",
+        "Younger"
+    ],
+    "91": [
+        "Newark",
+        "Elizabeth"
+    ],
+    "105": [
+        "Arsenal",
+        "Emirates Stadium",
+        "Brentford",
+        "Gtech Community Stadium",
+        "Chelsea",
+        "Stamford Bridge",
+        "Crystal Palace",
+        "Selhurst Park",
+        "Fulham",
+        "Craven Cottage",
+        "Tottenham Hotspur",
+        "Tottenham Hotspur Stadium",
+        "West Ham United",
+        "London Stadium"
     ]
 }

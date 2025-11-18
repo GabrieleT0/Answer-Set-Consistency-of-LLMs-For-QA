@@ -2612,7 +2612,11 @@
         "Weimaraner",
         "Westphalian Dachsbracke"
     ],
-    "131": [],
+    "131": [
+        "Toro Tegu",
+        "Tomo Kan",
+        "Bankan Tey"
+    ],
     "132": [
         "Alabama",
         "Alaska",
@@ -2956,5 +2960,36 @@
         "Pikachu",
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Paris",
+        "Madrid",
+        "Barcelona",
+        "Berlin",
+        "Milan",
+        "Rome",
+        "Athens",
+        "Naples",
+        "Lisbon",
+        "Hamburg"
+    ],
+    "138": [
+        "Aktau",
+        "Amol",
+        "Astrakhan",
+        "Atyrau",
+        "Babol",
+        "Baku",
+        "Bandar-e Anzali",
+        "Derbent",
+        "Gonbad-e Kavus",
+        "Gorgan",
+        "Kaspiysk",
+        "Lahijan",
+        "Makhachkala",
+        "Qaem Shahr",
+        "Rasht",
+        "Sari",
+        "Sumqayit"
     ]
 }

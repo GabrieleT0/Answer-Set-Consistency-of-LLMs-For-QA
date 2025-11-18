@@ -6710,7 +6710,12 @@
     "90": [
         "The Shirelles"
     ],
-    "91": [],
+    "91": [
+        "Inchmurrin",
+        "Inchtavannach",
+        "Inchcailloch",
+        "Inchfad"
+    ],
     "92": [
         "Kira Reed",
         "Nikki Tyler",
@@ -6762,7 +6767,31 @@
         "Finding Dory",
         "Ellen's Energy Adventure"
     ],
-    "97": [],
+    "97": [
+        "Leung Sheung",
+        "Lok Yiu",
+        "Chu Shong-tin",
+        "Wong Shun Leung",
+        "Bruce Lee",
+        "Lo Man Kam",
+        "Ip Chun",
+        "Ip Ching",
+        "William Cheung",
+        "Hawkins Cheung",
+        "Moy Yat",
+        "Ho Kam Ming",
+        "Victor Kan Wah Chit",
+        "Siu Yuk Man",
+        "Lee Cheong",
+        "Ng Chan",
+        "Wong Kiu",
+        "Wong Pui",
+        "Chan Chee Man",
+        "Kwok Keung",
+        "Lee Wai Chi",
+        "Ng Wah Sum",
+        "Leung Ting"
+    ],
     "98": [
         "James Lancaster",
         "William Lancaster",
@@ -7079,7 +7108,15 @@
         "Austin Powers in Goldmember",
         "The Love Guru"
     ],
-    "119": [],
+    "119": [
+        "La Ŝtona Gasto",
+        "Ifigenio en Taŭrido",
+        "La Traviata",
+        "Carmen",
+        "Faŭsto",
+        "La Vesperto",
+        "La graveco de l' fideliĝo"
+    ],
     "121": [
         "Cabo Verde",
         "Comoros",
@@ -7234,7 +7271,9 @@
         "Weimaraner",
         "Westphalian Dachsbracke"
     ],
-    "131": [],
+    "131": [
+        "idk"
+    ],
     "132": [
         "Alabama",
         "Alaska",
@@ -7580,5 +7619,35 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Vienna",
+        "Hamburg",
+        "Warsaw",
+        "Bucharest",
+        "Budapest",
+        "Barcelona"
+    ],
+    "138": [
+        "Baku",
+        "Sumqayit",
+        "Rasht",
+        "Sari",
+        "Gorgan",
+        "Babol",
+        "Amol",
+        "Qaem Shahr",
+        "Bandar-e Anzali",
+        "Lahijan",
+        "Atyrau",
+        "Aktau",
+        "Astrakhan",
+        "Makhachkala",
+        "Derbent",
+        "Kaspiysk"
     ]
 }
