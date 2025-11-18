@@ -62,13 +62,6 @@
         "Contains",
         "Disjoint"
     ],
-    "9": [
-        "Equivalence",
-        "ContainedBy",
-        "Contains",
-        "ContainedBy",
-        "Disjoint"
-    ],
     "10": [
         "Overlap",
         "Equivalence",
@@ -165,13 +158,6 @@
         "Contains",
         "Contains",
         "ContainedBy",
-        "Disjoint"
-    ],
-    "24": [
-        "Overlap",
-        "Contains",
-        "Disjoint",
-        "Disjoint",
         "Disjoint"
     ],
     "25": [

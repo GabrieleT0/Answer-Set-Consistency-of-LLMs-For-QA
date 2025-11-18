@@ -20,13 +20,6 @@
         "Disjoint",
         "Equivalence"
     ],
-    "3": [
-        "Equivalence",
-        "ContainedBy",
-        "Overlap",
-        "Disjoint",
-        "Equivalence"
-    ],
     "4": [
         "Equivalence",
         "ContainedBy",
@@ -44,13 +37,6 @@
     "6": [
         "Equivalence",
         "ContainedBy",
-        "ContainedBy",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "7": [
-        "Equivalence",
-        "Contains",
         "ContainedBy",
         "Disjoint",
         "Equivalence"
@@ -307,13 +293,6 @@
         "Disjoint",
         "Equivalence"
     ],
-    "44": [
-        "Equivalence",
-        "Contains",
-        "Contains",
-        "Disjoint",
-        "Equivalence"
-    ],
     "45": [
         "Equivalence",
         "ContainedBy",
@@ -451,13 +430,6 @@
         "Equivalence",
         "Overlap",
         "ContainedBy",
-        "Disjoint",
-        "Equivalence"
-    ],
-    "65": [
-        "Equivalence",
-        "ContainedBy",
-        "Overlap",
         "Disjoint",
         "Equivalence"
     ],
@@ -636,13 +608,6 @@
         "Disjoint",
         "Equivalence"
     ],
-    "91": [
-        "Equivalence",
-        "ContainedBy",
-        "Overlap",
-        "Disjoint",
-        "Equivalence"
-    ],
     "92": [
         "Equivalence",
         "Contains",
@@ -733,13 +698,6 @@
         "Overlap",
         "Overlap",
         "Overlap"
-    ],
-    "105": [
-        "Equivalence",
-        "ContainedBy",
-        "Overlap",
-        "Disjoint",
-        "Equivalence"
     ],
     "106": [
         "Equivalence",

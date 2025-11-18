@@ -62,13 +62,6 @@
         "ContainedBy",
         "Disjoint \ns1 contains answers that are not among the top 10, while s2 is a subset of those in q1 and q2. Comparing s1 to s2, since s2 has no values in common with s1, they must be disjoint."
     ],
-    "9": [
-        "Overlap",
-        "Disjoint",
-        "ContainedBy",
-        "ContainedBy",
-        "Equivalence"
-    ],
     "10": [
         "Overlap",
         "Equivalence",
@@ -166,13 +159,6 @@
         "Overlap",
         "Contains",
         "Disjoint"
-    ],
-    "24": [
-        "Overlap",
-        "ContainedBy",
-        "Overlap",
-        "Disjoint",
-        "Overlap"
     ],
     "25": [
         "Overlap",
