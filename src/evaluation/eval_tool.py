@@ -2,7 +2,7 @@ import os
 import json
 import pandas as pd
 import numpy as np
-from statsmodels.stats.contingency_tables import mcnemar
+# from statsmodels.stats.contingency_tables import mcnemar
 
 
 def jaccard_similarity(list1, list2):
@@ -290,41 +290,120 @@ def summary(df_analysis):
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
     return df_summary
 
-# if __name__ == "__main__":
-#     root_dir = os.path.dirname(os.path.abspath(__name__))
-#     datasets=["spinach", "qawiki",'synthetic']
-#     llms = ['gpt-4.1-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-nano-2025-04-14', 
-#             'gpt-4o','o3','gpt-5-nano',"gpt-5-mini","gpt-5",
-#             "gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-pro",
-#             "grok-3-mini","deepseek-chat","deepseek-reasoner","llama3.1:8b","llama3.3:70b"]
-#     actions = ["fixing", "classification", "wikidata"]
-#     tasks = ['equal', 'sup-sub', "minus"]
-#     languages = ['en']
+def summary_xidk(df_analysis):
+    group_cols = ["dataset", "action", "llm"]
+    consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
+    jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A3-A4)","J(A4-A1|3)","J(A1-A1*)", "J(A1-A1**)" ,"J(A1*-A1**)"]
+    self_contradition_cols = ["?SC(A1=A2)","?SC(A1>A3)","?SC(A1>A4)","?SC(A3∅A4)","?SC(A4=A1|3)"]
+    pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
+    metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
-#     df_questions = load_all_questions(root_dir, datasets, languages)
-#     df_answers = load_answers(
-#         folder=root_dir + "/data/answers/",
-#         datasets = datasets,
-#         llms=llms,
-#         actions=actions,
-#         tasks=tasks,
-#         languages=languages,
-#         questions=["Q1", "Q2", "Q3", "Q4"]
-#     )
+    # for a in ["A1", "A2", "A3", "A4"]:
+    #     df_analysis[f"idk_{a}"] = df_analysis[a].apply(lambda x: int(
+    #     (isinstance(x, list) and len(x) == 0)       # []
+    #     or (x == "idk")                             # "idk"
+    #     or (isinstance(x, list) and x == ["idk"])   # ["idk"]
+    # ))
 
-#     df_answers = enrich_answers(df_answers, df_questions)
-#     df_analysis = analysis(df_answers)
-#     df_summary = summary(df_analysis)
+    empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
 
-#     # Define output folder path
-#     output_folder = os.path.join(root_dir, "data", "Analysis")
-#     os.makedirs(output_folder, exist_ok=True)
+    # Define which idk columns to use for each metric
+    metric_idk_map = {
+        "?A1=A2": ["idk_A1", "idk_A2"],
+        "J(A1-A2)": ["idk_A1", "idk_A2"],
+        "?A1=A3+A4": ["idk_A1", "idk_A3", "idk_A4"],
+        "J(A1-A34)": ["idk_A1", "idk_A3", "idk_A4"],
+        "?A1>A3": ["idk_A1", "idk_A3"],
+        "?A1>A4": ["idk_A1", "idk_A4"],
+        "?A3∅A4": ["idk_A3", "idk_A4"],
+        "J(A3-A4)": ["idk_A3", "idk_A4"],
+        "J(A4-A1|3)": ["idk_A4", "idk_A1", "idk_A3"],
+        "?A4=A1|3": ["idk_A4", "idk_A1", "idk_A3"],
+        "?A1=A1*": ["idk_A1", "idk_A1*"],
+        "J(A1-A1*)": ["idk_A1", "idk_A1*"],
+        "?A1=A1**": ["idk_A1", "idk_A1**"],
+        "J(A1-A1**)": ["idk_A1", "idk_A1**"],
+        "?A1*=A1**": ["idk_A1*", "idk_A1**"],
+        "J(A1*-A1**)": ["idk_A1*", "idk_A1**"],
+    }
 
-#     # Save results
-#     analysis_file_format = datetime.datetime.now().strftime("analysis_%Y-%m-%d_%H-%M.csv")
-#     summary_file_format = datetime.datetime.now().strftime("summary_%Y-%m-%d_%H-%M.csv")
-#     df_analysis.to_csv(os.path.join(output_folder, analysis_file_format), index=False)
-#     df_summary.to_csv(os.path.join(output_folder, summary_file_format), index=False)
+    # Compute summary per metric, filtering rows where all relevant idk columns are 1
+    summary_dict = {col: [] for col in metric_cols + empty_cols}
+    grouped = df_analysis.groupby(group_cols)
+    for name, group in grouped:
+        for col in metric_cols:
+            idk_cols = metric_idk_map.get(col, [])
+            # Only use idk columns that exist in the group
+            idk_cols_existing = [c for c in idk_cols if c in group.columns]
+            if idk_cols_existing:
+                mask = ~(group[idk_cols_existing].all(axis=1))
+                # if len(mask[mask==False]) > 0:
+                #     print(f"Computing {col} for group {name} with {len(mask[mask==False])} idk rows filtered out.")
+                filtered = group.loc[mask, col]
+            else:
+                filtered = group[col]
+            summary_dict[col].append(filtered.mean())
+        for col in empty_cols:
+            summary_dict[col].append(group[col].mean())
+    df_summary = pd.DataFrame({"dataset": [x[0] for x in grouped.groups.keys()],
+                              "action": [x[1] for x in grouped.groups.keys()],
+                              "llm": [x[2] for x in grouped.groups.keys()]})
+    for col in metric_cols + empty_cols:
+        df_summary[col] = summary_dict[col]
+    df_summary = df_summary.round(4)
 
-#     print("Analysis and summary saved to:", output_folder)
+    # Overall summary
+    group_cols_overall = ["action", "llm"]
+    summary_dict_overall = {col: [] for col in metric_cols + empty_cols}
+    grouped_overall = df_analysis.groupby(group_cols_overall)
+    for name, group in grouped_overall:
+        for col in metric_cols:
+            idk_cols = metric_idk_map.get(col, [])
+            idk_cols_existing = [c for c in idk_cols if c in group.columns]
+            if idk_cols_existing:
+                mask = ~(group[idk_cols_existing].all(axis=1))
+                filtered = group.loc[mask, col]
+            else:
+                filtered = group[col]
+            summary_dict_overall[col].append(filtered.mean())
+        for col in empty_cols:
+            summary_dict_overall[col].append(group[col].mean())
+    df_summary_extend = pd.DataFrame({"action": [x[0] for x in grouped_overall.groups.keys()],
+                                     "llm": [x[1] for x in grouped_overall.groups.keys()],
+                                     "dataset": "overall"})
+    for col in metric_cols + empty_cols:
+        df_summary_extend[col] = summary_dict_overall[col]
+    df_summary_extend = df_summary_extend.round(4)
 
+    df_summary = pd.concat([df_summary, df_summary_extend], ignore_index=True)
+    df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
+    df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
+
+    col = ["?A1=A1*","J(A1-A1*)"]
+    mask1 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
+    mask2 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "classification")
+    a = df_summary.loc[mask1, col].copy()
+    b = df_summary.loc[mask2, col]
+
+    for column in col:
+        a[column] = np.where(a[column].isna(), 
+                            b[column].values, 
+                            (a[column] + b[column].values) / 2)
+
+    df_summary.loc[mask1, col] = a
+
+    idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
+    df_summary["idk"] = df_summary[idk_col].mean(axis=1)
+    return df_summary
+
+if __name__ == "__main__":
+    # load dfanalysis 
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    analysis_path = os.path.join(root_dir, "output", "analysis.csv")
+    df_analysis = pd.read_csv(analysis_path)
+    # get summary_xidk
+    df_summary_xidk = summary_xidk(df_analysis)
+    # save
+    output_folder = os.path.join(root_dir, "output")
+    os.makedirs(output_folder, exist_ok=True)
+    df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
