@@ -1,4 +1,4 @@
-from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary
+from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk
 from eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 from eval_pvalue import compute_pvals, p_value_matrixs
 from split_heatmap import dataframe_to_heatmap_csvs
@@ -58,29 +58,31 @@ if __name__ == "__main__":
     
     
     # Save results
-    analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
+    # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
     # p-values
     df_pval = compute_pvals(df_analysis)
 
     df_summary = summary(df_analysis)
-
+    df_summary_xidk = summary_xidk(df_analysis)
     
 
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
     df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
+    
 
-    summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
-    summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
+    # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
+    # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
 
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
+    df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
     split(df_summary, "summary")
-    
+    split(df_summary_xidk, "summary_xidk")
     df_pvalue = p_value_matrixs(df_analysis, actions)
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)

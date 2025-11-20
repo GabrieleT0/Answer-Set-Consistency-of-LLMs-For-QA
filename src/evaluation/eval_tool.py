@@ -376,8 +376,13 @@ def summary_xidk(df_analysis):
     df_summary_extend = df_summary_extend.round(4)
 
     df_summary = pd.concat([df_summary, df_summary_extend], ignore_index=True)
-    df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
-    df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
+    # Ensure columns are numeric before mean/round to avoid TypeError
+    for col_group, new_col in [
+        (["?A1=A1*", "?A1=A1**","?A1*=A1**"], "?A1=A1(ave)"),
+        (["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"], "J_A1_ave")
+    ]:
+        numeric_cols = df_summary[col_group].apply(pd.to_numeric, errors='coerce')
+        df_summary[new_col] = numeric_cols.mean(axis=1).round(4)
 
     col = ["?A1=A1*","J(A1-A1*)"]
     mask1 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
