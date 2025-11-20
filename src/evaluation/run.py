@@ -65,19 +65,21 @@ if __name__ == "__main__":
     df_pval = compute_pvals(df_analysis)
 
     df_summary = summary(df_analysis)
-    df_summary_xidk = summary_xidk(df_analysis)
     
-
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
     df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
-    
+    df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
 
     # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
     # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
 
-    df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
+    df_summary_xidk = summary_xidk(df_analysis)
+    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
+    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary, task="classification")
+    df_summary_xidk = df_summary_xidk.merge(df_pval, on=["dataset","llm","action"], how="left")
+    
     df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
