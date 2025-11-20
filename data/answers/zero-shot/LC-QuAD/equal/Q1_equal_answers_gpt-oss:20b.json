@@ -982,7 +982,9 @@
         "Inchcailloch",
         "Inchmurrin"
     ],
-    "92": [],
+    "92": [
+        "idk"
+    ],
     "93": [
         "Hannibal Barca",
         "Hasdrubal Barca",
@@ -1243,7 +1245,9 @@
         "Dante in the Seventh Circle (John Martin)",
         "Dante (Francesco Hayez)"
     ],
-    "117": [],
+    "117": [
+        "Walther Rathenau"
+    ],
     "118": [
         "The Cat in the Hat",
         "The Love Guru"
@@ -1615,5 +1619,32 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Hamburg",
+        "Bucharest",
+        "Warsaw",
+        "Barcelona",
+        "Munich",
+        "Milan"
+    ],
+    "138": [
+        "Baku",
+        "Sumgayit",
+        "Lankaran",
+        "Turkmenbashi",
+        "Makhachkala",
+        "Derbent",
+        "Aktau",
+        "Atyrau",
+        "Rasht",
+        "Sari",
+        "Gorgan",
+        "Amol",
+        "Bandar-e Torkaman"
     ]
 }

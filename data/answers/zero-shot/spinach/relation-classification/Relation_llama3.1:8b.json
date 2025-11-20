@@ -1006,5 +1006,47 @@
         "Disjoint",
         "Overlap",
         "Overlap"
+    ],
+    "3": [
+        "Overlap",
+        "Disjoint",
+        "Overlap",
+        "ContainedBy",
+        "Contains"
+    ],
+    "7": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Disjoint \ns1 ⊆ s2 \n\n(The answer set for q3 is a subset of the answer set for q1 but not q2, implying that all answers in s2 are in s1.)"
+    ],
+    "44": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "ContainedBy",
+        "Overlap"
+    ],
+    "65": [
+        "Overlap",
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Disjoint"
+    ],
+    "91": [
+        "Contains",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Overlap"
+    ],
+    "105": [
+        "Overlap",
+        "Contains",
+        "Overlap",
+        "Contains",
+        "Disjoint"
     ]
 }

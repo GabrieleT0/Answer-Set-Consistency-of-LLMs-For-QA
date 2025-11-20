@@ -52,14 +52,19 @@
     "13": [
         "Brit Marling"
     ],
-    "14": [],
+    "14": [
+        "Jal Pari"
+    ],
     "15": [
         "George H. W. Bush"
     ],
     "16": [
         "Cubism"
     ],
-    "17": [],
+    "17": [
+        "Shaun of the Dead",
+        "Hot Fuzz"
+    ],
     "18": [
         "Festen",
         "The Hunt",
@@ -130,7 +135,10 @@
         "Surprise",
         "Peoria"
     ],
-    "30": [],
+    "30": [
+        "Young Bucky",
+        "Bobby"
+    ],
     "31": [
         "To Record a Live Session",
         "Smile from the Streets You Live On",
@@ -213,7 +221,9 @@
         "Liechtenstein",
         "Andorra"
     ],
-    "41": [],
+    "41": [
+        "idk"
+    ],
     "42": [
         "idk"
     ],
@@ -272,7 +282,9 @@
     "49": [
         "idk"
     ],
-    "50": [],
+    "50": [
+        "Marine Le Pen"
+    ],
     "51": [
         "Sanshiro Sugata",
         "Sanshiro Sugata Part II",
@@ -417,7 +429,10 @@
         "Leicester City",
         "Huddersfield Town"
     ],
-    "72": [],
+    "72": [
+        "Selena Gomez",
+        "Sofia Richie"
+    ],
     "73": [
         "Mexico"
     ],
@@ -487,7 +502,9 @@
         "Uppsala University",
         "University of Göttingen"
     ],
-    "87": [],
+    "87": [
+        "none"
+    ],
     "88": [
         "Peter Griffin",
         "Cleveland Brown"
@@ -516,7 +533,9 @@
         "Wilhelmina",
         "Juliana"
     ],
-    "95": [],
+    "95": [
+        "International Union of Microbiological Societies"
+    ],
     "96": [
         "Alan Shepard",
         "Stuart Roosa"
@@ -826,7 +845,11 @@
         "Billy Elliot",
         "The Lion King"
     ],
-    "132": [],
+    "132": [
+        "Mara",
+        "Hovertronic",
+        "SeaBreeze"
+    ],
     "133": [
         "Lenovo",
         "China Electronics Technology Group Corporation",
@@ -932,5 +955,51 @@
     ],
     "149": [
         "Warsteiner Brauerei"
+    ],
+    "3": [
+        "Real Madrid",
+        "Barcelona"
+    ],
+    "7": [
+        "Crunchyroll",
+        "Funimation"
+    ],
+    "44": [
+        "Frankfurt am Main",
+        "Stuttgart",
+        "Düsseldorf",
+        "Dortmund",
+        "Essen",
+        "Bremen",
+        "Leipzig",
+        "Dresden",
+        "Hannover",
+        "Nürnberg",
+        "Duisburg",
+        "Bochum",
+        "Wuppertal",
+        "Bielefeld",
+        "Bonn",
+        "Mannheim",
+        "Karlsruhe",
+        "Wiesbaden",
+        "Gelsenkirchen",
+        "Braunschweig",
+        "Augsburg",
+        "Mönchengladbach"
+    ],
+    "65": [
+        "idk"
+    ],
+    "91": [
+        "Newark"
+    ],
+    "105": [
+        "Arsenal",
+        "Chelsea",
+        "Crystal Palace",
+        "Tottenham Hotspur",
+        "West Ham United",
+        "Brentford"
     ]
 }

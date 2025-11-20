@@ -186,7 +186,15 @@
     "27": [
         "Malta"
     ],
-    "28": [],
+    "28": [
+        "Harry Potter and the Philosopher's Stone",
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Order of the Phoenix",
+        "Harry Potter and the Half‑Blood Prince",
+        "Harry Potter and the Deathly Hallows"
+    ],
     "29": [
         "Sanshiro Sugata",
         "Sanshiro Sugata Part II",
@@ -297,7 +305,23 @@
         "Player Queen",
         "Player Hamlet"
     ],
-    "42": [],
+    "42": [
+        "Nausicaä of the Valley of the Wind",
+        "My Neighbour Totoro",
+        "Kiki's Delivery Service",
+        "Porco Rosso",
+        "Princess Mononoke",
+        "The Cat Returns",
+        "Whisper of the Heart",
+        "Spirited Away",
+        "Howl's Moving Castle",
+        "Ponyo",
+        "The Secret World of Arrietty",
+        "The Wind Rises",
+        "The Tale of the Princess Kaguya",
+        "When Marnie Was There",
+        "The Boy and the Heron"
+    ],
     "43": [
         "M33",
         "Andromeda I",
@@ -341,7 +365,9 @@
         "The Subtle Knife",
         "The Amber Spyglass"
     ],
-    "47": [],
+    "47": [
+        "idk"
+    ],
     "48": [
         "idk"
     ],
@@ -512,8 +538,12 @@
         "Blue & Lonesome",
         "No. 4"
     ],
-    "73": [],
-    "74": [],
+    "73": [
+        "There Will Be Blood"
+    ],
+    "74": [
+        "idk"
+    ],
     "75": [
         "idk"
     ],
@@ -526,7 +556,9 @@
     "78": [
         "trident"
     ],
-    "79": [],
+    "79": [
+        "idk"
+    ],
     "80": [
         "Lieutenant General",
         "Air Marshal"
@@ -565,7 +597,9 @@
     "85": [
         "idk"
     ],
-    "86": [],
+    "86": [
+        "idk"
+    ],
     "87": [
         "idk"
     ],
@@ -634,7 +668,10 @@
     "103": [
         "E.T."
     ],
-    "104": [],
+    "104": [
+        "We Didn't Have to Be",
+        "I'm Not That Easy to Forget"
+    ],
     "105": [
         "Owen Davidson",
         "Bob Hewitt"
@@ -694,7 +731,10 @@
         "CYP3A7",
         "UGT2B7"
     ],
-    "110": [],
+    "110": [
+        "Lower Saxony",
+        "Hamburg"
+    ],
     "111": [
         "European Commission",
         "European Council",
@@ -708,7 +748,9 @@
         "European Ombudsman",
         "European Data Protection Supervisor"
     ],
-    "112": [],
+    "112": [
+        "Portsmouth Harbour railway station"
+    ],
     "113": [
         "idk"
     ],
@@ -734,7 +776,9 @@
     "116": [
         "idk"
     ],
-    "117": [],
+    "117": [
+        "Walther Rathenau"
+    ],
     "118": [
         "Shrek",
         "Shrek 2",
@@ -837,7 +881,9 @@
         "Miniature Poodle",
         "Toy Poodle"
     ],
-    "131": [],
+    "131": [
+        "idk"
+    ],
     "132": [
         "New York",
         "New Mexico",
@@ -978,5 +1024,16 @@
     "149": [
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Milan",
+        "Barcelona",
+        "Munich"
+    ],
+    "138": [
+        "Astrakhan",
+        "Sari",
+        "Amol",
+        "Gorgan"
     ]
 }

@@ -798,7 +798,10 @@
         "Best Original Score",
         "Best Film Editing"
     ],
-    "70": [],
+    "70": [
+        "no answer",
+        "The Silence of the Lambs was actually nominated for and won several awards at the Sixty-fourth Academy Awards"
+    ],
     "71": [
         "FlixBus",
         "FlixTrain",
@@ -1896,5 +1899,27 @@
     "149": [
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin, Germany",
+        "Madrid, Spain",
+        "Rome, Italy",
+        "Paris, France",
+        "Bucharest, Romania",
+        "Vienna, Austria",
+        "Hamburg, Germany",
+        "Budapest, Hungary",
+        "Warsaw, Poland",
+        "Barcelona, Spain"
+    ],
+    "138": [
+        "Astrakhan",
+        "Baku",
+        "Derbent",
+        "Lankaran",
+        "Makhachkala",
+        "Rasht",
+        "Sari",
+        "Sumgayit"
     ]
 }

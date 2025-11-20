@@ -373,7 +373,9 @@
         "Boston Celtics",
         "Cleveland Cavaliers"
     ],
-    "57": [],
+    "57": [
+        "Belarus"
+    ],
     "58": [
         "New Hampshire"
     ],
@@ -1021,5 +1023,58 @@
         "Krombacher Brauerei",
         "Warsteiner Brauerei",
         "Heineken International"
+    ],
+    "3": [
+        "Futbol Club Barcelona",
+        "Real Madrid Club de Futbol",
+        "Club Atletico de Madrid"
+    ],
+    "7": [
+        "Crunchyroll",
+        "Funimation",
+        "Hulu",
+        "HiDive",
+        "Netflix"
+    ],
+    "44": [
+        "Frankfurt am Main",
+        "Stuttgart",
+        "Düsseldorf",
+        "Dortmund",
+        "Essen",
+        "Bremen",
+        "Dresden",
+        "Leipzig",
+        "Hanover",
+        "Nuremberg",
+        "Duisburg",
+        "Bochum",
+        "Wuppertal",
+        "Bielefeld",
+        "Bonn",
+        "Mannheim",
+        "Karlsruhe",
+        "Wiesbaden",
+        "Münster",
+        "Augsburg",
+        "Gelsenkirchen",
+        "Mönchengladbach",
+        "Braunschweig"
+    ],
+    "65": [
+        "Will & Grace",
+        "Brooklyn Nine‑Nine"
+    ],
+    "91": [
+        "Newark"
+    ],
+    "105": [
+        "Arsenal Football Club – Emirates Stadium",
+        "Brentford Football Club – Brentford Community Stadium",
+        "Chelsea Football Club – Stamford Bridge",
+        "Crystal Palace Football Club – Selhurst Park",
+        "Fulham Football Club – Craven Cottage",
+        "Tottenham Hotspur Football Club – Tottenham Hotspur Stadium",
+        "West Ham United Football Club – London Stadium"
     ]
 }

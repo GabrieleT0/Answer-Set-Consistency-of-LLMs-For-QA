@@ -753,7 +753,10 @@
         "University of Oxford",
         "World Wide Web Consortium"
     ],
-    "54": [],
+    "54": [
+        "David Hasselhoff",
+        "Mickey Rourke"
+    ],
     "55": [
         "idk"
     ],
@@ -880,7 +883,9 @@
         "Serbia",
         "Turkey"
     ],
-    "73": [],
+    "73": [
+        "Brazil"
+    ],
     "74": [
         "Argentina",
         "Australia",
@@ -913,7 +918,9 @@
         "Spain",
         "Sweden"
     ],
-    "77": [],
+    "77": [
+        "State of Palestine"
+    ],
     "78": [
         "Afghanistan, Australia, Brunei Darussalam, Cambodia, Fiji, India, Japan, Kiribati, Laos, Malaysia, Maldives, Mauritius, Mongolia, Myanmar, New Zealand, North Korea, Pakistan, Palau, Papua New Guinea, Seychelles, Solomon Islands, Sri Lanka, Thailand, Trinidad and Tobago, Vanuatu, Vietnam, Belize, Barbados, Bahamas, Cuba, Dominica, Dominican Republic, Grenada, Guyana, Haiti, Jamaica, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Antigua and Barbuda, Singapore, Tonga, Tuvalu, Nauru, Federated States of Micronesia, Marshall Islands, Samoa"
     ],
@@ -1198,7 +1205,11 @@
     "95": [
         "Moussa Saïd"
     ],
-    "96": [],
+    "96": [
+        "Jerry John Rawlings",
+        "F.W. de Klerk",
+        "Ahmet Necdet Sezer"
+    ],
     "97": [
         "idk"
     ],
@@ -1385,7 +1396,12 @@
         "The Matrix Revolutions"
     ],
     "127": [],
-    "128": [],
+    "128": [
+        "Apu Nahasapeemapetilon",
+        "Luigi",
+        "Grampa Simpson",
+        "Mr. Burns"
+    ],
     "129": [
         "Vivo",
         "Realme"
@@ -1495,5 +1511,19 @@
         "John Hospers",
         "Victor Berger",
         "Gordon Smith"
+    ],
+    "9": [
+        "Ethiopia",
+        "Egypt",
+        "Democratic Republic of the Congo",
+        "Tanzania",
+        "South Africa",
+        "Kenya",
+        "Uganda",
+        "Sudan",
+        "Algeria"
+    ],
+    "24": [
+        "Whale Wars"
     ]
 }

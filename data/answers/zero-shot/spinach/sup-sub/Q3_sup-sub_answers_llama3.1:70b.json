@@ -1032,7 +1032,11 @@
         "Pretty Woman",
         "Runaway Bride"
     ],
-    "140": [],
+    "140": [
+        "Nemesis Records",
+        "Sonic Unyon Records",
+        "Mint Records"
+    ],
     "141": [
         "Arnold Schwarzenegger",
         "F Murray Abraham",
@@ -1096,5 +1100,51 @@
         "Warsteiner",
         "Bitburger",
         "Krombacher"
+    ],
+    "3": [
+        "Real Madrid",
+        "Barcelona",
+        "Atlético de Madrid"
+    ],
+    "7": [
+        "Hulu",
+        "Crunchyroll",
+        "Funimation"
+    ],
+    "44": [
+        "Dresden",
+        "Leipzig",
+        "Dortmund",
+        "Essen",
+        "Stuttgart",
+        "Düsseldorf",
+        "Bremen",
+        "Hannover"
+    ],
+    "65": [
+        "Seinfeld",
+        "Friends",
+        "How I Met Your Mother",
+        "30 Rock",
+        "Spin City",
+        "The Marvelous Mrs. Maisel",
+        "Broad City",
+        "Master of None",
+        "Unbreakable Kimmy Schmidt",
+        "Younger",
+        "Sex and the City"
+    ],
+    "91": [
+        "Newark"
+    ],
+    "105": [
+        "Arsenal Football Club",
+        "Emirates Stadium \nAston Villa Football Club is not located in London\nBrentford Football Club",
+        "Brentford Community Stadium \nChelsea Football Club",
+        "Stamford Bridge \nCrystal Palace Football Club",
+        "Selhurst Park \nFulham Football Club",
+        "Craven Cottage \nLiverpool Football Club is not located in London\nManchester City Football Club is not located in London\nManchester United Football Club is not located in London\nNewcastle United Football Club is not located in London\nTottenham Hotspur Football Club",
+        "Tottenham Hotspur Stadium \nWest Ham United Football Club",
+        "London Stadium"
     ]
 }

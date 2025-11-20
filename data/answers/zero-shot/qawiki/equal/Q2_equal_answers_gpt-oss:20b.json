@@ -1130,7 +1130,21 @@
         "Recoverin-like protein",
         "Retinaldehyde-binding protein"
     ],
-    "43": [],
+    "43": [
+        "WBOS (1230 amplitude modulation)",
+        "WEEI (590 amplitude modulation)",
+        "WGBH (1560 amplitude modulation)",
+        "WNAC (580 amplitude modulation)",
+        "WHDH (700 amplitude modulation)",
+        "WBZ (1030 amplitude modulation)",
+        "WCRB (101.5 frequency modulation)",
+        "WEEI (93.7 frequency modulation)",
+        "WFNX (103.5 frequency modulation)",
+        "WODS (93.1 frequency modulation)",
+        "WJMN (102.5 frequency modulation)",
+        "WCLH (90.7 frequency modulation)",
+        "WGBH (89.7 frequency modulation)"
+    ],
     "44": [
         "Hinduism",
         "Buddhism",
@@ -2767,7 +2781,9 @@
         "Pig",
         "Fish"
     ],
-    "111": [],
+    "111": [
+        "Shroud"
+    ],
     "112": [
         "idk"
     ],
@@ -2889,7 +2905,9 @@
         "The Matrix Reloaded",
         "The Matrix Revolutions"
     ],
-    "127": [],
+    "127": [
+        "idk"
+    ],
     "128": [
         "none"
     ],
@@ -3065,5 +3083,20 @@
         "George McGovern",
         "John G. McHugh",
         "Robert W. Jones"
+    ],
+    "9": [
+        "Nigeria",
+        "Ethiopia",
+        "Egypt",
+        "Democratic Republic of the Congo",
+        "Tanzania",
+        "South Africa",
+        "Kenya",
+        "Algeria",
+        "Sudan",
+        "Morocco"
+    ],
+    "24": [
+        "idk"
     ]
 }

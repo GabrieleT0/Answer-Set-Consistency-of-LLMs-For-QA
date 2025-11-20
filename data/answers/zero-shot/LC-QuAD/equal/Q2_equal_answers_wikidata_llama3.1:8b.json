@@ -2100,5 +2100,27 @@
     ],
     "149": [
         "Pichu evolves into Raichu directly and Rockruff evolves from Rookidee which in turn evolves from Toxel (transitively) or Lillipup which in turn evolves from Purrloin which is evolvable from Pancham which in turn evolves from Sandile which is also evolvable from Pansear which in turn evolves from Simisage which is evolvable from Panpour which in turn evolves from Purrloin's other ancestor (transitively) Oshawott which in turn evolves from Dewott and further into Samurott which are all ancestors of Hawlucha but directly evolve into Hawlucha"
+    ],
+    "120": [
+        "London",
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Amsterdam",
+        "Bucharest",
+        "Hamburg",
+        "Barcelona",
+        "Vienna"
+    ],
+    "138": [
+        "Makhachkala",
+        "Baku",
+        "Astrakhan",
+        "Mahaçkal",
+        "Lankaran",
+        "Anzali",
+        "Rasht",
+        "(only cities with population > 100,000 are listed)\n\nSources:\n- https://www.wikidata.org/wiki/Q216: Makhachkala\n- https://www.wikidata.org/wiki/Q1399: Baku\n- https://www.wikidata.org/wiki/Q22594: Astrakhan\n- https://www.wikidata.org/wiki/Q2122: Mahaçkal\n- https://www.wikidata.org/wiki/Q2134: Lankaran\n- https://www.wikidata.org/wiki/Q2143: Anzali\n- https://www.wikidata.org/wiki/Q2149: Rasht"
     ]
 }

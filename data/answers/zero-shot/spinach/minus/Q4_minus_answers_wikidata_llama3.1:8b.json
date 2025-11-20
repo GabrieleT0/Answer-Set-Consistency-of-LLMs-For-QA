@@ -1552,5 +1552,71 @@
         "\") AS ?brewingCompanies ) \n WHERE {\n    ?item wdt:P112 ?brewingCompany .\n  } }\n FILTER(?! regex (?brewingCompanies, \"Brauerei\"))\n BIND(REPLACE(str(?brewingCompanies), \"",
         "\", \"",
         "\") AS ?brewingCompanies)\n GROUP BY ?id\n}"
+    ],
+    "3": [
+        "Real Madrid won the Champions League several times. The list of Spanish football clubs that competed in La Liga during the 2023-24 season and never won the Champions League is:\n\nAthletic Bilbao",
+        "Cádiz CF",
+        "Celta Vigo",
+        "Elche CF",
+        "Girona FC",
+        "Las Palmas",
+        "Mallorca",
+        "Rayo Vallecano",
+        "Sevilla FC"
+    ],
+    "7": [
+        "HIDIVE",
+        "VRV",
+        "Tubi",
+        "Funimation (now a part of Crunchyroll)",
+        "Funimation Now (now rebranded as Crunchyroll)"
+    ],
+    "44": [
+        "Berlin",
+        "Hamburg",
+        "Munich (München)",
+        "Cologne (Köln)",
+        "Stuttgart"
+    ],
+    "65": [
+        "Law & Order",
+        "Law & Order: Special Victims Unit",
+        "30 Rock isn't a correct example because it's a comedy.",
+        "The Good Wife",
+        "Madam Secretary",
+        "Person of Interest",
+        "Elementary"
+    ],
+    "91": [
+        "Jersey City",
+        "Newark",
+        "Elizabeth",
+        "Paterson",
+        "Clifton",
+        "Camden",
+        "Passaic",
+        "Union",
+        "Irvington",
+        "East Orange",
+        "Bayonne",
+        "West New York",
+        "Hoboken",
+        "Bergenfield",
+        "Edgewater",
+        "Fort Lee",
+        "Fair Lawn",
+        "Paramus",
+        "Hackensack",
+        "North Bergen",
+        "Englewood",
+        "Teaneck",
+        "Wayne",
+        "Woodbridge",
+        "Vineland",
+        "Piscataway",
+        "Newark"
+    ],
+    "105": [
+        "Bournemouth - Vitality Stadium \nSheffield United - Bramall Lane \nWest Ham United - London Stadium \nBurnley - Turf Moor \nFulham - Craven Cottage \nNewcastle United - St. James' Park \nCrystal Palace - Selhurst Park \nAston Villa - Villa Park \nBrighton & Hove Albion - Falmer Stadium \nNottingham Forest - City Ground \nLeeds United - Elland Road"
     ]
 }

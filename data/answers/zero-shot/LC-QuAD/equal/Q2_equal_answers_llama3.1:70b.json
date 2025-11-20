@@ -1546,7 +1546,9 @@
         "Star Sports Asia",
         "The History Channel Asia"
     ],
-    "116": [],
+    "116": [
+        "No answer"
+    ],
     "117": [
         "Walter Rathenau",
         "Matthias Erzberger"
@@ -1911,5 +1913,33 @@
         "Pichu",
         "Pikachu",
         "Raichu"
+    ],
+    "120": [
+        "Berlin, Germany - 6,785,717",
+        "Madrid, Spain - 3,223,792",
+        "Rome, Italy - 2,877,215",
+        "Paris, France - 2,165,245",
+        "Bucharest, Romania - 2,102,151",
+        "Vienna, Austria - 1,926,664",
+        "Hamburg, Germany - 1,852,478",
+        "Budapest, Hungary - 1,759,407",
+        "Warsaw, Poland - 1,764,615",
+        "Barcelona, Spain - 1,636,810"
+    ],
+    "138": [
+        "Baku",
+        "Sumgayit",
+        "Makhachkala",
+        "Derbent",
+        "Astrakhan",
+        "Rasht",
+        "Sari",
+        "Gorgan",
+        "Anzali",
+        "Aktau",
+        "Atyrau",
+        "Oral",
+        "Aktobe",
+        "Zhanaozen"
     ]
 }

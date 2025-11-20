@@ -11,7 +11,9 @@
         "Canadian",
         "United States"
     ],
-    "2": [],
+    "2": [
+        "idk"
+    ],
     "3": [
         "Heat",
         "Righteous Kill"
@@ -43,7 +45,9 @@
         "Richard C. Truly",
         "Robert L. Crippen"
     ],
-    "7": [],
+    "7": [
+        "idk"
+    ],
     "8": [
         "Algeria",
         "Democratic Republic of the Congo",
@@ -153,7 +157,10 @@
         "Nestlé Crunch",
         "Nestlé Crunch Dark"
     ],
-    "17": [],
+    "17": [
+        "Baton Rouge",
+        "Bucharest"
+    ],
     "18": [
         "idk"
     ],
@@ -276,7 +283,9 @@
         "Monsoon Wedding",
         "The Namesake"
     ],
-    "29": [],
+    "29": [
+        "idk"
+    ],
     "30": [
         "English",
         "French"
@@ -310,7 +319,9 @@
         "Makemake",
         "Pluto"
     ],
-    "36": [],
+    "36": [
+        "idk"
+    ],
     "37": [
         "Boris Godunov",
         "Ruslan and Ludmila",
@@ -514,7 +525,11 @@
         "Clover Distillery",
         "Lough Ree Distillery"
     ],
-    "53": [],
+    "53": [
+        "CERN",
+        "World Wide Web Consortium",
+        "University of Oxford"
+    ],
     "54": [
         "Tom Cruise",
         "John Travolta",
@@ -684,7 +699,9 @@
         "EMNLP",
         "NAACL"
     ],
-    "69": [],
+    "69": [
+        "idk"
+    ],
     "70": [
         "Australia, Bahamas, Bahrain, Belize, Bhutan, Brunei, Cambodia, Canada, Dominica, Eswatini, Fiji, Grenada, Jamaica, Japan, Jordan, Kuwait, Lesotho, Liechtenstein, Luxembourg, Malaysia, Monaco, Morocco, Netherlands, New Zealand, Oman, Papua New Guinea, Qatar, Saudi Arabia, Solomon Islands, Spain, Sweden, Thailand, Tonga, Tuvalu, United Arab Emirates, United Kingdom, Vatican City"
     ],
@@ -940,7 +957,9 @@
         "pine nut",
         "Brazil nut"
     ],
-    "89": [],
+    "89": [
+        "Gary Gilmore"
+    ],
     "90": [
         "idk"
     ],
@@ -1042,11 +1061,16 @@
         "Minority Report",
         "A Scanner Darkly"
     ],
-    "103": [],
+    "103": [
+        "The Rider",
+        "Nomadland"
+    ],
     "104": [
         "idk"
     ],
-    "105": [],
+    "105": [
+        "The Kingdom"
+    ],
     "106": [
         "The Smiths"
     ],
@@ -1062,7 +1086,11 @@
     "110": [
         "idk"
     ],
-    "111": [],
+    "111": [
+        "Pokimane",
+        "Shroud",
+        "xQc"
+    ],
     "112": [
         "idk"
     ],
@@ -1089,7 +1117,11 @@
         "Nicolas Copernicus",
         "Yuri Oganessian"
     ],
-    "115": [],
+    "115": [
+        "Volcarona",
+        "Sizzlipede",
+        "Centiskorch"
+    ],
     "116": [
         "Whig Party",
         "Republican Party"
@@ -1155,9 +1187,15 @@
         "Garlic and onion sauce",
         "Chili sauce"
     ],
-    "126": [],
+    "126": [
+        "The 13th Floor"
+    ],
     "127": [],
-    "128": [],
+    "128": [
+        "Apu Nahasapeemapetilon",
+        "Ned Flanders",
+        "Abraham Simpson"
+    ],
     "129": [
         "OPPO",
         "VIVO"
@@ -1320,5 +1358,20 @@
         "John Schmitz",
         "John Hospers",
         "Paul G. O'Rourke"
+    ],
+    "9": [
+        "Nigeria",
+        "Ethiopia",
+        "Egypt",
+        "Democratic Republic of the Congo",
+        "Tanzania",
+        "South Africa",
+        "Kenya",
+        "Uganda",
+        "Sudan",
+        "Algeria"
+    ],
+    "24": [
+        "idk"
     ]
 }

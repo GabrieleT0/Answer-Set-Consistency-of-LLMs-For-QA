@@ -463,7 +463,12 @@
     "76": [
         "King's School, Grantham"
     ],
-    "77": [],
+    "77": [
+        "The Last Kids on Earth and the Doomsday Dungeon",
+        "The Last Kids on Earth and the Underworld Invasion",
+        "The Last Kids on Earth and the Secret of the Haunted Castle",
+        "The Last Kids on Earth and the Final Showdown"
+    ],
     "78": [
         "Arthur, Prince of Wales",
         "Margaret",
@@ -724,7 +729,11 @@
         "Marisa Baldwin",
         "Rebecca Baldwin"
     ],
-    "120": [],
+    "120": [
+        "Canterbury Guildhall",
+        "Dover Castle",
+        "Hastings Castle"
+    ],
     "121": [
         "Benin",
         "Burkina Faso",
@@ -734,7 +743,9 @@
         "Senegal",
         "Togo"
     ],
-    "122": [],
+    "122": [
+        "none"
+    ],
     "123": [
         "The Last Frontier",
         "The Night Riders",
@@ -1720,5 +1731,80 @@
     ],
     "149": [
         "idk"
+    ],
+    "3": [
+        "Athletic Bilbao",
+        "Alavés",
+        "Cádiz CF",
+        "Celta de Vigo",
+        "Elche CF",
+        "Getafe CF",
+        "Granada CF",
+        "Real Betis",
+        "Real Sociedad",
+        "Rayo Vallecano",
+        "Sevilla FC",
+        "Real Valladolid",
+        "Villarreal CF",
+        "Espanyol",
+        "Girona FC",
+        "Osasuna",
+        "Levante UD"
+    ],
+    "7": [
+        "Crunchyroll",
+        "Funimation",
+        "Tubi",
+        "HiDive",
+        "Hulu",
+        "RetroCrush"
+    ],
+    "44": [
+        "Berlin",
+        "Hamburg",
+        "Munich",
+        "Cologne"
+    ],
+    "65": [
+        "Law and Order",
+        "Law and Order: Special Victims Unit",
+        "Law and Order: Criminal Intent",
+        "Law and Order: Organized Crime",
+        "The Sopranos",
+        "Blue Bloods",
+        "Person of Interest",
+        "House",
+        "House of Cards",
+        "The Night Of",
+        "The Big C",
+        "Succession",
+        "The Blacklist",
+        "New Amsterdam",
+        "Mr. Robot",
+        "West Wing",
+        "Billions",
+        "The Good Wife",
+        "The Good Fight",
+        "The Deuce",
+        "American Crime Story: The Assassination of Gianni Versace"
+    ],
+    "91": [
+        "Jersey City",
+        "Paterson",
+        "Elizabeth"
+    ],
+    "105": [
+        "Aston Villa – Villa Park",
+        "Brighton & Hove Albion – Amex Stadium",
+        "Burnley – Turf Moor",
+        "Everton – Goodison Park",
+        "Liverpool – Anfield",
+        "Manchester City – Etihad Stadium",
+        "Manchester United – Old Trafford",
+        "Newcastle United – St James' Park",
+        "Norwich City – Carrow Road",
+        "Sheffield United – Perth Road Stadium",
+        "Southampton – St Mary's Stadium",
+        "Wolverhampton Wanderers – Molineux Stadium"
     ]
 }

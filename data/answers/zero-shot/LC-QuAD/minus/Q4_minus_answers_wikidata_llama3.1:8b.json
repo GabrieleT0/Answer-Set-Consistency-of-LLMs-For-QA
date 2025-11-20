@@ -1712,5 +1712,25 @@
         "Pidgeot",
         "Eevee",
         "Mareep"
+    ],
+    "120": [
+        "London",
+        "Berlin",
+        "Madrid",
+        "Bucharest",
+        "Rome",
+        "Paris",
+        "Vienna",
+        "Moscow",
+        "Helsinki",
+        "Warsaw",
+        "I removed Moscow because it's not in EU and added Bucharest."
+    ],
+    "138": [
+        "Karaj (population: 1,976,098)",
+        "Mashhad (population: 3,001,184)",
+        "Sari (population: 529,687)",
+        "Qazvin (population: 1,144,533)",
+        "Arak (population: 478,890)"
     ]
 }

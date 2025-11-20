@@ -589,7 +589,9 @@
         "Antonov An-26B",
         "Antonov An-30B"
     ],
-    "83": [],
+    "83": [
+        "none"
+    ],
     "84": [
         "idk"
     ],
@@ -982,5 +984,25 @@
     ],
     "149": [
         "Pikachu"
+    ],
+    "120": [
+        "Berlin",
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Vienna",
+        "Bucharest",
+        "Warsaw",
+        "Budapest",
+        "Brussels",
+        "Athens"
+    ],
+    "138": [
+        "Baku",
+        "Sumgait",
+        "Aktau",
+        "Astrakhan",
+        "Makhachkala",
+        "Bandar-e Anzali"
     ]
 }

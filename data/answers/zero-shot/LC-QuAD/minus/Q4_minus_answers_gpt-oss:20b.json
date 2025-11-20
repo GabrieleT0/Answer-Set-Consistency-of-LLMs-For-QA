@@ -35,7 +35,11 @@
         "Abigaille",
         "La Regina"
     ],
-    "7": [],
+    "7": [
+        "New York",
+        "New Hampshire",
+        "South Dakota"
+    ],
     "8": [
         "Sergei Taneyev",
         "Mikhail Ippolitov‑Ivanov",
@@ -190,7 +194,14 @@
     "27": [
         "Malta"
     ],
-    "28": [],
+    "28": [
+        "Harry Potter and the Philosopher's Stone",
+        "Harry Potter and the Chamber of Secrets",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Order of the Phoenix",
+        "Harry Potter and the Half-Blood Prince"
+    ],
     "29": [
         "The Bad Sleep Well",
         "High and Low",
@@ -449,7 +460,9 @@
         "The Flash (Jay Garrick)",
         "Zatanna"
     ],
-    "57": [],
+    "57": [
+        "Pershing County Fair"
+    ],
     "58": [
         "Residential houses",
         "Granaries",
@@ -494,7 +507,10 @@
     "66": [
         "Rent"
     ],
-    "67": [],
+    "67": [
+        "Dunn",
+        "Golden Valley"
+    ],
     "68": [
         "French Open 2002",
         "French Open 2013"
@@ -635,7 +651,9 @@
         "tambourine",
         "harp"
     ],
-    "85": [],
+    "85": [
+        "idk"
+    ],
     "86": [
         "idk"
     ],
@@ -824,7 +842,9 @@
         "Court of Auditors",
         "European Central Bank"
     ],
-    "112": [],
+    "112": [
+        "London Waterloo"
+    ],
     "113": [
         "A Touch of Country",
         "The Rock 'n' Roll King",
@@ -872,7 +892,9 @@
         "Dante in Paradise",
         "Dante with the Virgin"
     ],
-    "117": [],
+    "117": [
+        "Eugen Gerstenberg"
+    ],
     "118": [
         "Austin Powers: International Man of Mystery",
         "Austin Powers: The Spy Who Shagged Me",
@@ -1112,5 +1134,16 @@
     "149": [
         "Raichu",
         "Alolan Raichu"
+    ],
+    "120": [
+        "Hamburg",
+        "Barcelona",
+        "Munich",
+        "Milan"
+    ],
+    "138": [
+        "Oral",
+        "Astrakhan",
+        "Gorgan"
     ]
 }

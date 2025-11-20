@@ -276,7 +276,9 @@
         "Burkina Faso",
         "Togo"
     ],
-    "23": [],
+    "23": [
+        "Spinocerebellar ataxia 27"
+    ],
     "25": [
         "idk"
     ],
@@ -372,7 +374,9 @@
     "38": [
         "idk"
     ],
-    "39": [],
+    "39": [
+        "idk"
+    ],
     "40": [
         "idk"
     ],
@@ -611,7 +615,9 @@
     "57": [
         "idk"
     ],
-    "58": [],
+    "58": [
+        "idk"
+    ],
     "59": [
         "9C",
         "10C",
@@ -1251,8 +1257,16 @@
         "Moussa Sissoko"
     ],
     "96": [],
-    "97": [],
-    "98": [],
+    "97": [
+        "Lily",
+        "Buster",
+        "Mickey",
+        "Boo"
+    ],
+    "98": [
+        "The Bunker",
+        "The Lost"
+    ],
     "99": [
         "Spanish",
         "Italian",
@@ -1302,7 +1316,9 @@
     "104": [
         "idk"
     ],
-    "105": [],
+    "105": [
+        "The Kingdom"
+    ],
     "106": [
         "idk"
     ],
@@ -1403,7 +1419,9 @@
         "Peter",
         "Andrew"
     ],
-    "122": [],
+    "122": [
+        "St. Tadeo"
+    ],
     "123": [
         "idk"
     ],
@@ -1433,7 +1451,12 @@
         "Mole sauce",
         "Ragù"
     ],
-    "126": [],
+    "126": [
+        "The Matrix",
+        "The Matrix Reloaded",
+        "The Matrix Revolutions",
+        "The Matrix Resurrections"
+    ],
     "127": [],
     "128": [
         "Apu",
@@ -1443,7 +1466,10 @@
         "Mona Simpson",
         "Mr. Burns"
     ],
-    "129": [],
+    "129": [
+        "OPPO",
+        "VIVO"
+    ],
     "130": [
         "idk"
     ],
@@ -1566,7 +1592,9 @@
         "Justine Wilson",
         "Talulah Riley"
     ],
-    "143": [],
+    "143": [
+        "idk"
+    ],
     "144": [
         "idk"
     ],
@@ -1593,5 +1621,21 @@
     "149": [
         "Richard Nixon",
         "George McGovern"
+    ],
+    "9": [
+        "Nigeria",
+        "Ethiopia",
+        "Egypt",
+        "DR Congo",
+        "Tanzania",
+        "South Africa",
+        "Kenya",
+        "Uganda",
+        "Algeria",
+        "Sudan"
+    ],
+    "24": [
+        "Whale Wars",
+        "The Whale Hunters"
     ]
 }
