@@ -1,9 +1,7 @@
 {
     "0": [
         "Brazil",
-        "Guyana",
-        "Suriname",
-        "France"
+        "Guyana"
     ],
     "1": [
         "South Africa",
@@ -13,31 +11,23 @@
         "idk"
     ],
     "3": [
-        "The Godfather Part 2",
+        "The Godfather Part II",
         "Heat",
-        "Righteous Kill",
-        "Jack and Jill",
-        "The Audition"
+        "Righteous Kill"
     ],
     "4": [
         "idk"
     ],
     "5": [
-        "Pixies"
+        "idk"
     ],
     "6": [
-        "Minus"
+        "Buzz Aldrin",
+        "Edgar Mitchell",
+        "Ronald McNair"
     ],
     "7": [
-        "Elon Musk",
-        "Jeff Bezos",
-        "Larry Ellison",
-        "Warren Buffett",
-        "Bill Gates",
-        "Michael Bloomberg",
-        "Carlos Slim Helu & family",
-        "Mukesh Ambani",
-        "Steve Ballmer"
+        "idk"
     ],
     "8": [
         "Democratic Republic of the Congo",
@@ -58,8 +48,8 @@
         "South Africa",
         "Kenya",
         "Uganda",
-        "Sudan",
-        "Algeria"
+        "Algeria",
+        "Sudan"
     ],
     "10": [
         "European Union"
@@ -87,13 +77,16 @@
         "Swedish"
     ],
     "12": [
-        "idk"
+        "Instagram",
+        "WhatsApp",
+        "Oculus"
     ],
     "13": [
-        "Dhaulagiri 1",
+        "Makalu",
+        "Dhaulagiri I",
         "Manaslu",
         "Nanga Parbat",
-        "Annapurna 1"
+        "Annapurna I"
     ],
     "14": [
         "idk"
@@ -102,11 +95,10 @@
         "idk"
     ],
     "16": [
-        "idk"
+        "Equivalence"
     ],
     "17": [
-        "Lyon, France",
-        "Caracas, Venezuela"
+        "Dakar, Senegal"
     ],
     "18": [
         "idk"
@@ -120,18 +112,20 @@
         "Belarus",
         "Bosnia and Herzegovina",
         "Bulgaria",
+        "Cyprus",
         "Ireland",
+        "Kosovo",
         "Moldova",
         "Monaco",
         "Montenegro",
         "North Macedonia",
         "Romania",
-        "Russian Federation",
+        "Russia",
         "San Marino",
         "Serbia",
-        "Turkey",
         "Ukraine",
-        "United Kingdom of Great Britain and Northern Ireland"
+        "United Kingdom",
+        "Vatican City"
     ],
     "21": [
         "Austria",
@@ -158,11 +152,11 @@
     ],
     "22": [
         "Burkina Faso",
-        "Côte d'Ivoire",
+        "Ivory Coast",
         "Togo"
     ],
     "23": [
-        "spinocerebellar ataxia type 27"
+        "idk"
     ],
     "24": [
         "idk"
@@ -173,31 +167,28 @@
     "26": [
         "up quark",
         "charm quark",
-        "top quark",
-        "down antiquark",
-        "strange antiquark",
-        "bottom antiquark"
+        "top quark"
     ],
     "27": [
         "electron",
-        "muon",
-        "tau",
         "electron neutrino",
+        "muon",
         "muon neutrino",
+        "tau",
         "tau neutrino",
-        "positron",
-        "anti-muon",
-        "anti-tau",
-        "electron antineutrino",
-        "muon antineutrino",
-        "tau antineutrino",
-        "W plus boson",
-        "W minus boson",
+        "W positive boson",
+        "W negative boson",
         "Z boson",
         "Higgs boson"
     ],
     "28": [
-        "idk"
+        "Mississippi Masala",
+        "The Perez Family",
+        "Vanity Fair",
+        "The Namesake",
+        "Amelia",
+        "The Reluctant Fundamentalist",
+        "Queen of Katwe"
     ],
     "29": [
         "idk"
@@ -206,15 +197,10 @@
         "English",
         "French"
     ],
-    "31": [
-        "Ascraeus Mons",
-        "Pavonis Mons",
-        "Arsia Mons"
-    ],
+    "31": [],
     "32": [
         "The Matrix",
-        "The Matrix Resurrections",
-        "The Animatrix"
+        "The Matrix Resurrections"
     ],
     "33": [
         "idk"
@@ -255,38 +241,25 @@
     "45": [
         "Obdurodon dicksoni",
         "Obdurodon insignis",
-        "Obdurodon tharalkooschild",
         "Monotrematum sudamericanum",
-        "Megalibgwilia ramsayi",
-        "Megalibgwilia robusta",
         "Teinolophos trusleri",
         "Steropodon galmani",
-        "Kollikodon ritchiei",
-        "Kryoryctes cadburyi",
-        "Dharragarra aurora"
+        "Kollikodon ritchiei"
     ],
     "46": [
-        "idk"
+        "Australopithecus afarensis",
+        "Australopithecus africanus",
+        "Paranthropus boisei",
+        "Homo habilis",
+        "Homo erectus",
+        "Homo neanderthalensis"
     ],
     "47": [
-        "Camelpox virus",
-        "Ectromelia virus",
-        "Raccoonpox virus",
-        "Skunkpox virus",
-        "Taterapox virus",
-        "Volepox virus"
+        "idk"
     ],
     "48": [
-        "Field Hockey",
-        "Lacrosse",
-        "Floorball",
-        "Hurling",
-        "Shinty",
-        "Underwater Hockey",
-        "Inline Hockey",
-        "Rink Hockey",
-        "Polo",
-        "Ball Hockey"
+        "Field hockey",
+        "Lacrosse"
     ],
     "49": [
         "League of Legends",
@@ -299,30 +272,10 @@
         "idk"
     ],
     "52": [
-        "Old Bushmills Distillery",
-        "Kilbeggan Distillery",
-        "Tullamore Distillery",
-        "Cooley Distillery",
-        "Dingle Distillery",
-        "Waterford Distillery",
-        "Pearse Lyons Distillery",
-        "Teeling Distillery",
-        "The Shed Distillery",
-        "Powerscourt Distillery",
-        "Lough Gill Distillery",
-        "Echlinville Distillery",
-        "Rademon Estate Distillery",
-        "Roe and Company Distillery",
-        "Walsh Whiskey Distillery",
-        "Boann Distillery",
-        "Great Northern Distillery",
-        "Listoke Distillery"
+        "idk"
     ],
     "53": [
-        "Plessey Telecommunications",
-        "D.G. Nash Limited",
         "European Organization for Nuclear Research",
-        "Image Computer Systems",
         "University of Southampton"
     ],
     "54": [
@@ -341,22 +294,13 @@
         "idk"
     ],
     "59": [
-        "Carbon-10",
-        "Carbon-11"
+        "idk"
     ],
     "60": [
-        "Carbon-9"
+        "idk"
     ],
     "61": [
-        "Alapin Variation",
-        "Closed Sicilian",
-        "Grand Prix Attack",
-        "Moscow Variation",
-        "Pin Variation",
-        "Rossolimo Variation",
-        "Wing Gambit",
-        "Delayed Alapin",
-        "Sicilian Defence Modern Variations"
+        "idk"
     ],
     "62": [
         "idk"
@@ -365,39 +309,17 @@
         "idk"
     ],
     "64": [
-        "idk"
+        "American Civil War",
+        "Taiping Rebellion"
     ],
     "65": [
-        "Paraguayan Civil War of 1947",
-        "Bolivian Civil War of 1949"
+        "idk"
     ],
     "66": [
         "Club Internacional de Fútbol Miami"
     ],
     "67": [
-        "Orange",
-        "Lemon",
-        "Lime",
-        "Apricot",
-        "Peach",
-        "Raspberry",
-        "Strawberry",
-        "Grape",
-        "Cherry",
-        "Plum",
-        "Olive",
-        "Tangerine",
-        "Cranberry",
-        "Melon",
-        "Mulberry",
-        "Tomato",
-        "Pumpkin",
-        "Eggplant",
-        "Pear",
-        "Fig",
-        "Cantaloupe",
-        "Honeydew",
-        "Chestnut"
+        "idk"
     ],
     "68": [
         "idk"
@@ -406,32 +328,22 @@
         "idk"
     ],
     "70": [
-        "Brunei",
-        "Eswatini",
-        "Oman",
-        "Qatar",
-        "Saudi Arabia",
-        "United Arab Emirates",
-        "Vatican City"
+        "idk"
     ],
     "71": [
-        "Belize",
         "Brazil",
-        "Guyana",
-        "Haiti",
-        "Suriname"
+        "Haiti"
     ],
     "72": [
         "Albania",
         "Bosnia and Herzegovina",
-        "Kosovo",
         "Montenegro",
         "North Macedonia",
-        "Serbia",
-        "Turkey"
+        "Serbia"
     ],
     "73": [
-        "Brazil"
+        "Brazil",
+        "Guatemala"
     ],
     "74": [
         "Argentina",
@@ -446,97 +358,68 @@
         "Italy",
         "Japan",
         "Mexico",
-        "Republic of Korea",
         "Russia",
         "South Africa",
-        "Türkiye",
+        "South Korea",
+        "Turkey",
         "United Kingdom",
         "United States of America"
     ],
     "75": [
-        "Central African Republic",
         "Ethiopia",
         "Kenya",
-        "Sudan",
-        "Uganda"
+        "Uganda",
+        "Democratic Republic of the Congo",
+        "Central African Republic"
     ],
     "76": [
         "idk"
     ],
     "77": [
-        "idk"
+        "Equivalence"
     ],
     "78": [
-        "Antigua and Barbuda",
         "Australia",
-        "Bahamas",
-        "Bangladesh",
-        "Barbados",
-        "Bhutan",
-        "Botswana",
-        "Brunei",
-        "Dominica",
-        "Timor-Leste",
-        "Fiji",
-        "Grenada",
-        "Guyana",
-        "India",
-        "Indonesia",
-        "Jamaica",
-        "Japan",
-        "Kenya",
-        "Kiribati",
-        "Lesotho",
-        "Malawi",
-        "Malaysia",
-        "Maldives",
-        "Mauritius",
-        "Mozambique",
-        "Namibia",
-        "Nepal",
         "New Zealand",
+        "India",
         "Pakistan",
-        "Papua New Guinea",
-        "Saint Kitts and Nevis",
-        "Saint Lucia",
-        "Saint Vincent and the Grenadines",
-        "Samoa",
-        "Seychelles",
-        "Singapore",
-        "Solomon Islands",
-        "South Africa",
+        "Bangladesh",
         "Sri Lanka",
-        "Suriname",
-        "Eswatini",
-        "Tanzania",
+        "Nepal",
+        "Bhutan",
+        "Malaysia",
+        "Singapore",
+        "Indonesia",
         "Thailand",
-        "Tonga",
-        "Trinidad and Tobago",
+        "Japan",
+        "South Africa",
+        "Kenya",
+        "Tanzania",
         "Uganda",
-        "Vanuatu",
         "Zambia",
-        "Zimbabwe"
+        "Zimbabwe",
+        "Botswana",
+        "Namibia",
+        "Lesotho",
+        "Eswatini",
+        "Malawi",
+        "Mozambique",
+        "Madagascar",
+        "Mauritius",
+        "Seychelles",
+        "Barbados",
+        "Jamaica",
+        "Trinidad and Tobago",
+        "Bahamas",
+        "Guyana",
+        "Suriname",
+        "Fiji",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu"
     ],
     "79": [
-        "Barbados",
-        "Bahamas",
-        "Belize",
-        "Canada",
-        "Denmark",
-        "Ethiopia",
-        "Greece",
-        "Grenada",
-        "Honduras",
-        "Hungary",
-        "Moldova",
-        "New Zealand",
-        "Peru",
-        "Saint Kitts and Nevis",
-        "Saint Vincent and the Grenadines",
-        "Slovakia",
-        "Slovenia",
-        "Tanzania",
-        "Trinidad and Tobago"
+        "idk"
     ],
     "80": [
         "idk"
@@ -554,14 +437,14 @@
         "Tunisia"
     ],
     "82": [
-        "West Indies",
         "Australia",
-        "England"
+        "England",
+        "West Indies"
     ],
     "83": [
-        "Oriental Republic of Uruguay",
-        "Federative Republic of Brazil",
-        "Argentine Republic"
+        "Uruguay",
+        "Brazil",
+        "Argentina"
     ],
     "84": [
         "England"
@@ -570,33 +453,10 @@
         "idk"
     ],
     "86": [
-        "Bolivia",
-        "Cambodia",
-        "China",
-        "Colombia",
-        "Costa Rica",
-        "Cuba",
-        "Dominican Republic",
-        "Ecuador",
-        "El Salvador",
-        "Guatemala",
-        "Honduras",
-        "Japan",
-        "Laos",
-        "Lebanon",
-        "Mexico",
-        "Nicaragua",
-        "Panama",
-        "Peru",
-        "Taiwan",
-        "Thailand",
-        "United States of America",
-        "Venezuela",
-        "Vietnam"
+        "idk"
     ],
     "87": [
-        "Yemen Arab Republic",
-        "People's Democratic Republic of Yemen"
+        "idk"
     ],
     "88": [
         "idk"
@@ -609,19 +469,10 @@
     ],
     "91": [
         "Chow Chow",
-        "Formosan Mountain Dog",
-        "Kunming Wolfdog",
-        "Lhasa Apso",
-        "Shar-Pei",
-        "Tibetan Mastiff",
-        "Tibetan Spaniel",
-        "Tibetan Terrier",
-        "Xiasi Quan",
-        "Chongqing Dog"
+        "Shar-Pei"
     ],
     "92": [
-        "Amiodarone",
-        "Dronedarone"
+        "idk"
     ],
     "93": [
         "idk"
@@ -633,9 +484,7 @@
         "idk"
     ],
     "96": [
-        "Valéry Giscard d'Estaing",
-        "Pranab Mukherjee",
-        "Jacques Joachim Yhombi-Opango"
+        "idk"
     ],
     "97": [
         "idk"
@@ -653,19 +502,10 @@
         "idk"
     ],
     "102": [
-        "Total Recall (1990)",
-        "Total Recall (2012)",
-        "Minority Report (2002)",
-        "A Scanner Darkly (2006)",
-        "Paycheck (2003)",
-        "Next (2007)",
-        "The Adjustment Bureau (2011)",
-        "Radio Free Albemuth (2010)",
-        "Barjo (1992)"
+        "idk"
     ],
     "103": [
-        "Songs My Brothers Taught Me",
-        "Eternals"
+        "idk"
     ],
     "104": [
         "idk"
@@ -686,38 +526,16 @@
         "idk"
     ],
     "110": [
-        "Fruit flies",
-        "Dogs",
-        "Mice",
-        "Rats",
-        "Rabbits",
-        "Cats",
-        "Tortoises",
-        "Frogs",
+        "Fruit fly",
+        "Dog",
+        "Mouse",
+        "Rat",
+        "Rabbit",
+        "Frog",
         "Fish",
-        "Spiders",
-        "Jellyfish",
-        "Tardigrades",
-        "Newts",
-        "Guinea pigs",
-        "Salamanders",
-        "Snails",
-        "Nematodes",
-        "Butterflies",
-        "Bees",
-        "Ants",
-        "Quail",
-        "Brine shrimp",
-        "Moths",
-        "Beetles",
-        "Crickets",
-        "Stick insects",
-        "Cockroaches",
-        "Geckos",
-        "Sea urchins",
-        "Squid",
-        "Planarians",
-        "Tunicates"
+        "Spider",
+        "Tardigrade",
+        "Cat"
     ],
     "111": [
         "idk"
@@ -726,24 +544,10 @@
         "idk"
     ],
     "113": [
-        "Equivalence"
+        "idk"
     ],
     "114": [
-        "Niels Bohr",
-        "Nicolaus Copernicus",
-        "Marie Curie",
-        "Pierre Curie",
-        "Albert Einstein",
-        "Enrico Fermi",
-        "Georgy Flerov",
-        "Johan Gadolin",
-        "Ernest Lawrence",
-        "Lise Meitner",
-        "Dmitri Mendeleev",
-        "Alfred Nobel",
-        "Wilhelm Roentgen",
-        "Ernest Rutherford",
-        "Vasili Samarsky-Bykhovets"
+        "idk"
     ],
     "115": [
         "Larvesta",
@@ -759,28 +563,11 @@
         "90"
     ],
     "118": [
-        "Pope Peter",
-        "Pope Felix 3",
-        "Pope Hormisdas",
-        "Pope Adrian 2",
-        "Pope John 17",
-        "Pope Clement 4"
+        "idk"
     ],
     "119": [
-        "H2",
-        "HyperSQL Database Engine",
-        "Apache Derby",
-        "VoltDB",
-        "CockroachDB",
-        "TiDB",
-        "Materialize",
-        "SurrealDB",
-        "CrateDB",
-        "Apache Ignite",
-        "Dolt",
-        "Apache Hive",
-        "Apache Tajo",
-        "LucidDB"
+        "H2 Database",
+        "Apache Derby"
     ],
     "120": [
         "idk"
@@ -792,13 +579,13 @@
         "idk"
     ],
     "123": [
-        "Germaine Cousin"
+        "idk"
     ],
     "124": [
         "idk"
     ],
     "125": [
-        "idk"
+        "Equivalence"
     ],
     "126": [
         "idk"
@@ -810,7 +597,7 @@
         "idk"
     ],
     "129": [
-        "Vivo"
+        "idk"
     ],
     "130": [
         "idk"
@@ -822,7 +609,16 @@
         "idk"
     ],
     "133": [
-        "idk"
+        "Edsger W. Dijkstra",
+        "Michael O. Rabin",
+        "Niklaus Wirth",
+        "Juris Hartmanis",
+        "Ole-Johan Dahl",
+        "Kristen Nygaard",
+        "Peter Naur",
+        "Joseph Sifakis",
+        "Leslie Valiant",
+        "Yann LeCun"
     ],
     "134": [
         "idk"
@@ -837,11 +633,13 @@
         "idk"
     ],
     "138": [
-        "League of Legends",
-        "Valorant"
+        "Counter-Strike: Global Offensive",
+        "League of Legends"
     ],
     "139": [
-        "idk"
+        "War of the Pacific",
+        "War of the Triple Alliance",
+        "Chaco War"
     ],
     "140": [
         "idk"
@@ -850,7 +648,7 @@
         "idk"
     ],
     "142": [
-        "Justine Wilson"
+        "Justine Musk"
     ],
     "143": [
         "idk"
@@ -865,35 +663,15 @@
         "Luiz Inácio Lula da Silva",
         "Simone Tebet",
         "Soraya Thronicke",
-        "Luiz Felipe d'Avila",
-        "Kelmon Souza",
-        "Sofia Manzano",
-        "Léo Péricles"
+        "Felipe d'Avila"
     ],
     "147": [
-        "Goh Kun",
-        "Lee Hae-chan",
-        "Han Myeong-sook",
-        "Chung Un-chan",
-        "Kim Hwang-sik",
-        "Chung Hong-won",
-        "Lee Wan-koo",
-        "Hwang Kyo-ahn",
-        "Lee Nak-yeon",
-        "Chung Sye-kyun",
-        "Kim Boo-kyum"
+        "Equivalence"
     ],
     "148": [
         "Marie Curie"
     ],
     "149": [
-        "Richard Nixon",
-        "John G. Schmitz",
-        "Linda Jenness",
-        "Benjamin Spock",
-        "John Hospers",
-        "Gus Hall",
-        "Louis Fisher",
-        "E. Harold Munn"
+        "Richard Nixon"
     ]
 }

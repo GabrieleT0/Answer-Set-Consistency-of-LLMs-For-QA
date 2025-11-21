@@ -1,20 +1,19 @@
 {
     "0": [
-        "Monty Python's Flying Circus",
-        "Fawlty Towers"
+        "idk"
     ],
     "1": [
         "People's Republic of China",
+        "Democratic People's Republic of Korea",
         "Lao People's Democratic Republic",
-        "Socialist Republic of Vietnam",
-        "Democratic People's Republic of Korea"
+        "Socialist Republic of Vietnam"
     ],
     "2": [
         "idk"
     ],
     "3": [
-        "Real Madrid",
-        "Barcelona"
+        "Real Madrid CF",
+        "FC Barcelona"
     ],
     "4": [
         "idk"
@@ -23,42 +22,37 @@
         "idk"
     ],
     "6": [
-        "China",
-        "India",
-        "Nepal",
-        "Pakistan"
+        "Bhutan"
     ],
     "7": [
         "Netflix",
         "Hulu",
-        "Amazon Prime Video",
-        "HBO Max"
+        "Crunchyroll",
+        "Funimation"
     ],
     "8": [
-        "Federal Republic of Germany",
-        "Republic of Austria",
-        "Slovak Republic",
+        "Germany",
+        "Austria",
+        "Slovakia",
         "Hungary",
-        "Republic of Croatia",
-        "Republic of Serbia"
+        "Croatia",
+        "Serbia"
     ],
     "9": [
-        "Musician",
-        "Singer",
-        "Songwriter",
-        "Multi-instrumentalist",
-        "Producer"
+        "musician",
+        "singer",
+        "songwriter",
+        "composer"
     ],
     "10": [
-        "Star Wars: Episode 4 - A New Hope",
-        "Star Wars: Episode 5 - The Empire Strikes Back",
-        "Star Wars: Episode 6 - Return of the Jedi",
-        "Star Wars: Episode 1 - The Phantom Menace"
+        "Star Wars: Episode I – The Phantom Menace",
+        "Star Wars: Episode IV – A New Hope",
+        "Star Wars: Episode V – The Empire Strikes Back",
+        "Star Wars: Episode VI – Return of the Jedi"
     ],
     "11": [
-        "Trumpet",
-        "Cornet",
-        "Bugle"
+        "trumpet",
+        "cornet"
     ],
     "12": [
         "C"
@@ -67,12 +61,10 @@
         "Brit Marling"
     ],
     "14": [
-        "Jal Pari (2004)",
-        "Doorie (2006)",
-        "Meri Kahani (2008)"
+        "idk"
     ],
     "15": [
-        "George Walker Bush"
+        "George W. Bush"
     ],
     "16": [
         "Cubism"
@@ -81,11 +73,8 @@
         "Shaun of the Dead"
     ],
     "18": [
-        "It's All About Love (2003)",
-        "Submarino (2010)",
-        "The Hunt (2012)",
-        "Kursk (2018)",
-        "Another Round (2020)"
+        "The Hunt",
+        "Another Round"
     ],
     "19": [
         "Bayern Munich"
@@ -93,7 +82,6 @@
     "20": [
         "Noémie Merlant",
         "Adèle Haenel",
-        "Valeria Golino",
         "Luàna Bajrami"
     ],
     "21": [
@@ -110,7 +98,6 @@
         "Niger"
     ],
     "24": [
-        "Pathways into Darkness",
         "Marathon",
         "Marathon 2: Durandal",
         "Marathon Infinity",
@@ -123,21 +110,9 @@
         "Destiny 2"
     ],
     "25": [
-        "Arthur Brown",
-        "Thomas Kearns",
-        "Reed Smoot",
-        "George Sutherland",
-        "Arthur Vivian Watkins",
-        "Wallace Foster Bennett",
-        "Jake Garn",
-        "Orrin Grant Hatch",
-        "Robert Foster Bennett",
-        "Mike Lee",
-        "Mitt Romney"
-    ],
-    "26": [
         "idk"
     ],
+    "26": [],
     "27": [
         "idk"
     ],
@@ -153,7 +128,8 @@
         "Monaco",
         "Montenegro",
         "Slovenia",
-        "Spain"
+        "Spain",
+        "Turkey"
     ],
     "29": [
         "idk"
@@ -162,46 +138,34 @@
         "idk"
     ],
     "31": [
-        "John Frusciante: Niandra Lades and Usually Just a T-Shirt",
-        "John Frusciante: Smile from the Streets You Hold",
-        "John Frusciante: To Record Only Water for Ten Days",
-        "John Frusciante: From the Sounds Inside",
-        "John Frusciante: Shadows Collide with People",
-        "John Frusciante: The Will to Death",
-        "John Frusciante: Inside of Emptiness",
-        "John Frusciante: A Sphere in the Heart of Silence",
-        "John Frusciante: Curtains",
-        "John Frusciante: The Empyrean",
-        "John Frusciante: PBX Funicular Intaglio Zone",
-        "John Frusciante: Enclosure",
-        "John Frusciante: Maya",
-        "John Frusciante: .I:"
+        "idk"
     ],
     "32": [
         "idk"
     ],
     "33": [
-        "Antigua and Barbuda",
-        "Bahamas",
+        "United Kingdom",
+        "United States of America",
+        "Australia",
+        "Nigeria",
+        "Ghana",
+        "Jamaica",
+        "Trinidad and Tobago",
+        "Guyana",
         "Barbados",
+        "Bahamas",
         "Belize",
         "Dominica",
-        "Gambia",
-        "Ghana",
         "Grenada",
-        "Guyana",
-        "Jamaica",
-        "Liberia",
-        "Namibia",
-        "Nigeria",
-        "Saint Kitts and Nevis",
         "Saint Lucia",
         "Saint Vincent and the Grenadines",
-        "Sierra Leone",
+        "Saint Kitts and Nevis",
+        "Antigua and Barbuda",
         "Solomon Islands",
-        "South Sudan",
-        "Trinidad and Tobago",
-        "Uganda",
+        "Liberia",
+        "Sierra Leone",
+        "Gambia",
+        "Namibia",
         "Zambia"
     ],
     "34": [
@@ -211,21 +175,21 @@
         "Hannibal Hamlin"
     ],
     "36": [
-        "Libya",
-        "Sudan"
+        "Sudan",
+        "Libya"
     ],
     "37": [
         "Denmark",
-        "Estonia",
+        "Sweden",
         "Finland",
-        "Germany",
+        "Estonia",
         "Latvia",
         "Lithuania",
-        "Poland",
-        "Sweden"
+        "Germany",
+        "Poland"
     ],
     "38": [
-        "Yue"
+        "Cantonese"
     ],
     "39": [
         "Dwight D. Eisenhower",
@@ -234,7 +198,6 @@
         "Richard Nixon"
     ],
     "40": [
-        "Andorra",
         "Belgium",
         "Denmark",
         "Liechtenstein",
@@ -253,18 +216,22 @@
         "idk"
     ],
     "43": [
-        "Solar and Heliospheric Observatory",
-        "Advanced Composition Explorer",
-        "Wind",
-        "Solar Terrestrial Relations Observatory Ahead",
-        "Parker Solar Probe",
-        "Solar Orbiter"
+        "idk"
     ],
     "44": [
         "idk"
     ],
     "45": [
-        "idk"
+        "Viking 1 Lander",
+        "Viking 2 Lander",
+        "Mars Pathfinder",
+        "Mars Exploration Rover Spirit",
+        "Mars Exploration Rover Opportunity",
+        "Phoenix Mars Lander",
+        "Mars Science Laboratory Curiosity",
+        "InSight",
+        "Mars 2020 Perseverance",
+        "Tianwen-1 Lander"
     ],
     "46": [
         "idk"
@@ -273,7 +240,7 @@
         "idk"
     ],
     "48": [
-        "idk"
+        "Buzz Aldrin"
     ],
     "49": [
         "idk"
@@ -297,12 +264,24 @@
         "Catholicism"
     ],
     "54": [
-        "idk"
+        "First Battle of Bull Run",
+        "Battle of Kernstown",
+        "Battle of McDowell",
+        "Battle of Front Royal",
+        "First Battle of Winchester",
+        "Battle of Cross Keys",
+        "Battle of Port Republic",
+        "Battle of Gaines' Mill",
+        "Battle of Malvern Hill",
+        "Second Battle of Bull Run",
+        "Battle of Antietam",
+        "Battle of Fredericksburg",
+        "Battle of Chancellorsville"
     ],
     "55": [
-        "Germany",
-        "Austria",
-        "Liechtenstein"
+        "Federal Republic of Germany",
+        "Republic of Austria",
+        "Principality of Liechtenstein"
     ],
     "56": [
         "Orlando Magic",
@@ -313,15 +292,14 @@
         "Boston Celtics"
     ],
     "57": [
-        "idk"
+        "AI:"
     ],
     "58": [
         "New Hampshire"
     ],
     "59": [
         "Colorado",
-        "Utah",
-        "Arizona"
+        "Utah"
     ],
     "60": [
         "Europe"
@@ -329,67 +307,71 @@
     "61": [
         "Argentina",
         "Chile",
+        "Colombia",
         "Costa Rica",
         "Cuba",
         "Dominican Republic",
         "El Salvador",
         "Equatorial Guinea",
+        "Guatemala",
         "Honduras",
-        "Uruguay"
+        "Mexico",
+        "Nicaragua",
+        "Panama",
+        "Uruguay",
+        "Venezuela"
     ],
     "62": [
         "University of Zurich",
         "Charles University in Prague",
-        "Swiss Federal Institute of Technology in Zurich",
         "University of Berlin"
     ],
     "63": [
-        "idk"
+        "The X-Files",
+        "CSI: Crime Scene Investigation",
+        "Nip/Tuck",
+        "Las Vegas"
     ],
     "64": [
-        "Algeria",
         "Andorra",
-        "Italy"
+        "Algeria"
     ],
     "65": [
         "idk"
     ],
     "66": [
-        "Nothing But Trouble"
+        "Juice",
+        "Poetic Justice",
+        "Above the Rim"
     ],
     "67": [
-        "Lyle Talbot",
         "Gene Hackman",
-        "Sherman Howard",
-        "John Shea",
-        "Scott Wells",
-        "Michael Rosenbaum",
         "Kevin Spacey",
         "Jesse Eisenberg",
-        "Titus Welliver",
-        "Jon Cryer",
-        "Rainn Wilson",
-        "Michael Cudlitz"
+        "Michael Rosenbaum",
+        "John Shea",
+        "Jon Cryer"
     ],
     "68": [
-        "Mary 1",
-        "Elizabeth 1",
-        "Edward 6"
+        "Mary I",
+        "Elizabeth I",
+        "Edward VI"
     ],
     "69": [
         "Australia",
-        "New Zealand",
         "Fiji",
-        "Solomon Islands",
-        "Vanuatu",
-        "Samoa",
         "Kiribati",
-        "Tonga",
-        "Federated States of Micronesia",
         "Marshall Islands",
-        "Palau",
+        "Federated States of Micronesia",
         "Nauru",
-        "Tuvalu"
+        "New Zealand",
+        "Palau",
+        "Papua New Guinea",
+        "Samoa",
+        "Solomon Islands",
+        "Tonga",
+        "Tuvalu",
+        "Vanuatu"
     ],
     "70": [
         "California"
@@ -418,13 +400,12 @@
         "Virginia"
     ],
     "76": [
-        "Trinity College, University of Cambridge"
+        "Trinity College, Cambridge"
     ],
     "77": [
         "The Hunger Games",
         "Catching Fire",
-        "Mockingjay",
-        "The Ballad of Songbirds and Snakes"
+        "Mockingjay"
     ],
     "78": [
         "Margaret Tudor",
@@ -432,25 +413,16 @@
         "Mary Tudor"
     ],
     "79": [
-        "Hades",
+        "Zeus",
         "Poseidon",
-        "Zeus"
+        "Hades"
     ],
     "80": [
-        "Robert Casey Junior",
+        "Bob Casey Junior",
         "John Fetterman"
     ],
     "81": [
-        "Dom Capers",
-        "George Seifert",
-        "John Fox",
-        "Ron Rivera",
-        "Perry Fewell",
-        "Matt Rhule",
-        "Steve Wilks",
-        "Frank Reich",
-        "Chris Tabor",
-        "Dave Canales"
+        "idk"
     ],
     "82": [
         "Belgium",
@@ -461,16 +433,7 @@
         "Netherlands"
     ],
     "83": [
-        "Mary, Mother of God",
-        "Epiphany",
-        "Ascension of the Lord",
-        "The Most Holy Body and Blood of Christ",
-        "Saints Peter and Paul, Apostles",
-        "Assumption of the Blessed Virgin Mary",
-        "All Saints",
-        "Immaculate Conception of the Blessed Virgin Mary",
-        "Nativity of the Lord",
-        "Saint Joseph, Husband of the Blessed Virgin Mary"
+        "idk"
     ],
     "84": [
         "Nigeria"
@@ -483,24 +446,27 @@
     ],
     "87": [
         "Attina",
-        "Andrina"
+        "Alana",
+        "Arista"
     ],
     "88": [
-        "idk"
+        "Peter Griffin",
+        "Stewie Griffin",
+        "Glenn Quagmire",
+        "Tom Tucker"
     ],
     "89": [
-        "Prince Michael Jackson",
-        "Paris Jackson"
+        "Prince Michael Jackson I",
+        "Paris-Michael Katherine Jackson"
     ],
     "90": [
         "Bachelor of Arts in English"
     ],
     "91": [
-        "Elizabeth",
         "Newark"
     ],
     "92": [
-        "idk"
+        "Juliette Binoche"
     ],
     "93": [
         "idk"
@@ -521,29 +487,19 @@
     "98": [
         "Arizona",
         "Colorado",
-        "Idaho",
-        "Nevada",
         "Wyoming"
     ],
     "99": [
         "Indiana",
+        "Michigan",
         "Wisconsin"
     ],
     "100": [
         "idk"
     ],
-    "101": [
-        "George Herbert Walker Bush",
-        "William Jefferson Clinton"
-    ],
+    "101": [],
     "102": [
-        "1. FC Köln",
-        "FC Bayern Munich",
-        "Borussia Dortmund",
-        "Borussia Mönchengladbach",
-        "VfB Stuttgart",
-        "VfL Wolfsburg",
-        "SV Werder Bremen"
+        "idk"
     ],
     "103": [
         "idk"
@@ -553,12 +509,19 @@
     ],
     "105": [
         "Arsenal",
+        "Emirates Stadium",
         "Brentford",
+        "Gtech Community Stadium",
         "Chelsea",
+        "Stamford Bridge",
         "Crystal Palace",
+        "Selhurst Park",
         "Fulham",
+        "Craven Cottage",
         "Tottenham Hotspur",
-        "West Ham United"
+        "Tottenham Hotspur Stadium",
+        "West Ham United",
+        "London Stadium"
     ],
     "106": [
         "idk"
@@ -582,8 +545,8 @@
         "idk"
     ],
     "112": [
-        "Bulimia Nervosa",
-        "Binge Eating Disorder"
+        "Bulimia nervosa",
+        "Binge eating disorder"
     ],
     "113": [
         "Arizona",
@@ -597,32 +560,47 @@
         "idk"
     ],
     "115": [
+        "Python",
         "Ruby",
         "PHP",
-        "Python",
-        "JavaScript",
-        "Raku",
-        "Groovy",
-        "CoffeeScript",
-        "PowerShell"
+        "JavaScript"
     ],
     "116": [
         "Air Europa",
         "Air France",
         "Czech Airlines",
         "ITA Airways",
-        "KLM Royal Dutch Airlines",
+        "KLM",
         "TAROM"
     ],
     "117": [
         "Looking for Alaska",
         "An Abundance of Katherines",
         "Paper Towns",
-        "Will Grayson, Will Grayson (co-authored with David Levithan)",
+        "Let It Snow: Three Holiday Romances",
+        "Will Grayson, Will Grayson",
         "Turtles All the Way Down"
     ],
     "118": [
-        "idk"
+        "High Plains Drifter",
+        "The Eiger Sanction",
+        "The Outlaw Josey Wales",
+        "The Gauntlet",
+        "Bronco Billy",
+        "Firefox",
+        "Honkytonk Man",
+        "Sudden Impact",
+        "Pale Rider",
+        "Heartbreak Ridge",
+        "White Hunter Black Heart",
+        "The Rookie",
+        "Unforgiven",
+        "True Crime",
+        "Space Cowboys",
+        "Blood Work",
+        "Gran Torino",
+        "The Mule",
+        "Cry Macho"
     ],
     "119": [
         "idk"
@@ -634,17 +612,13 @@
         "Guinea-Bissau"
     ],
     "122": [
-        "idk"
+        "idk\n\nidk"
     ],
     "123": [
         "idk"
     ],
     "124": [
-        "Louis Armstrong",
-        "Wynton Marsalis",
-        "Terence Blanchard",
-        "Nicholas Payton",
-        "Irvin Mayfield"
+        "idk"
     ],
     "125": [
         "idk"
@@ -653,28 +627,21 @@
         "idk"
     ],
     "127": [
-        "West German Working Line",
-        "East German Working Line",
-        "Czech Working Line"
+        "Working Line German Shepherd"
     ],
     "128": [
         "idk"
     ],
     "129": [
-        "Pulitzer Prize for General Nonfiction",
-        "National Book Award for Science (Hardcover)",
-        "MacArthur Fellowship",
-        "Richard Dawkins Award"
+        "Pulitzer Prize for General Non-Fiction"
     ],
     "130": [
         "idk"
     ],
     "131": [
+        "The Lion King",
         "Aida",
-        "Billy Elliot the Musical",
-        "Lestat",
-        "The Devil Wears Prada",
-        "Tammy Faye"
+        "Billy Elliot the Musical"
     ],
     "132": [
         "idk"
@@ -690,23 +657,30 @@
         "Maxim Reality"
     ],
     "136": [
-        "Roger Waters",
-        "David Gilmour"
+        "Roger Waters"
     ],
     "137": [
         "idk"
     ],
     "138": [
-        "Tristessa"
+        "idk"
     ],
     "139": [
-        "Pretty Woman (1990)"
+        "Pretty Woman"
     ],
     "140": [
         "idk"
     ],
     "141": [
-        "idk"
+        "Arnold Schwarzenegger",
+        "Austin O'Brien",
+        "Charles Dance",
+        "Frank McRae",
+        "Tom Noonan",
+        "Robert Prosky",
+        "Anthony Quinn",
+        "F. Murray Abraham",
+        "Art Carney"
     ],
     "142": [
         "idk"
@@ -718,30 +692,31 @@
         "idk"
     ],
     "145": [
-        "George 1",
-        "George 2",
-        "George 3",
-        "George 4",
-        "William 4",
-        "George 5"
+        "George I",
+        "George II",
+        "George III",
+        "George IV",
+        "William IV",
+        "George V"
     ],
     "146": [
-        "Rabindranath Tagore",
-        "Shmuel Yosef Agnon",
-        "Yasunari Kawabata",
-        "Kenzaburō Ōe",
-        "Gao Xingjian",
-        "Orhan Pamuk",
-        "Mo Yan"
+        "idk"
     ],
     "147": [
         "Johnny Flynn",
         "Daniel Ings",
         "Joshua McGuire",
-        "Paul Bazely"
+        "Richard Riddell"
     ],
     "148": [
-        "idk"
+        "River Thames",
+        "River Humber",
+        "River Tyne",
+        "River Tees",
+        "River Forth",
+        "River Tay",
+        "River Spey",
+        "River Dee"
     ],
     "149": [
         "idk"
