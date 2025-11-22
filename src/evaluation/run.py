@@ -10,7 +10,7 @@ import datetime
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.abspath(__name__))
     print("Root directory:", root_dir)
-    datasets=["spinach", "qawiki",'synthetic','lc-quad']
+    datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
 
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
