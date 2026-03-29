@@ -93,9 +93,10 @@ def process_row_cot(row_questions, llm_model, language, logger):
         )
         messages = [HumanMessage(content=formatted)]
         response = chat.invoke(messages)
-
-        logger.debug(f"CoT response: {response.content[:300]}...")
-        return parse_cot_response(response.content)
+        # unwrap response if necessary. The selfhosted LLM does not return a structured response but rather a string.
+        response = response.content if not isinstance(response,str) else response
+        logger.info(f"CoT response: {response}...")
+        return parse_cot_response(response)
 
     except ValueError as e:
         logger.info(f"Content filter triggered for questions: {row_questions}")
@@ -181,7 +182,7 @@ def main(config=None, logger=None):
     if config is None:
         config = {
             "languages": ['en'],
-            "llm_models": ['o3'],
+            "llm_models": ['llama3.1:8b'],
             "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv'],
         }
 

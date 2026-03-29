@@ -1,0 +1,934 @@
+{
+    "0": [
+        "Inglourious Basterds",
+        "Django Unchained"
+    ],
+    "1": [
+        "guitar",
+        "bass guitar",
+        "violin"
+    ],
+    "2": [
+        "Princess Alice",
+        "Princess Helena",
+        "Princess Louise",
+        "Princess Beatrice"
+    ],
+    "3": [
+        "French",
+        "Italian"
+    ],
+    "4": [
+        "Io",
+        "Europa",
+        "Ganymede",
+        "Callisto"
+    ],
+    "6": [
+        "PillPack",
+        "MGM",
+        "Health Navigator"
+    ],
+    "7": [
+        "idk"
+    ],
+    "8": [
+        "2001: A Space Odyssey",
+        "A Clockwork Orange"
+    ],
+    "9": [
+        "The French writers who have been awarded the Nobel Prize in Literature for works in poetry are:"
+    ],
+    "10": [
+        "Sydney",
+        "Athens",
+        "Beijing",
+        "London",
+        "Rio de Janeiro",
+        "Tokyo"
+    ],
+    "11": [
+        "Adelie Penguin",
+        "Chinstrap Penguin",
+        "Gentoo Penguin",
+        "Emperor Penguin",
+        "Rockhopper Penguin",
+        "Macaroni Penguin"
+    ],
+    "12": [
+        "Grover Cleveland",
+        "Franklin D. Roosevelt",
+        "John F. Kennedy",
+        "Lyndon B. Johnson",
+        "Jimmy Carter",
+        "Bill Clinton",
+        "Barack Obama"
+    ],
+    "13": [
+        "1. Wings (1927-1928)",
+        "2. The Broadway Melody (1928-1929)",
+        "3. All Quiet on the Western Front (1929-1930)",
+        "4. Cimarron (1930-1931)",
+        "5. Grand Hotel (1931-1932)",
+        "6. Cavalcade (1932-1933)",
+        "7. It Happened One Night (1934)",
+        "8. Mutiny on the Bounty (1935)",
+        "9. The Great Ziegfeld (1936)",
+        "10. The Life of Emile Zola (1937)",
+        "11. You Can't Take It with You (1938)",
+        "12. Gone with the Wind (1939)",
+        "13. Rebecca (1940)",
+        "14. How Green Was My Valley (1941)",
+        "15. Mrs. Miniver (1942)",
+        "16. Casablanca (1943)",
+        "17. Going My Way (1944)",
+        "18. The Lost Weekend (1945)",
+        "19. The Best Years of Our Lives (1946)",
+        "20. Gentleman's Agreement (1947)",
+        "21. Hamlet (1948)",
+        "22. All the King's Men (1949)",
+        "23. All About Eve (1950)",
+        "24. An American in Paris (1951)",
+        "25. The Greatest Show on Earth (1952)",
+        "26. From Here to Eternity (1953)",
+        "27. On the Waterfront (1954)",
+        "28. Marty (1955)",
+        "29. Around the World in 80 Days (1956)",
+        "30. The Bridge on the River Kwai (1957)",
+        "31. Gigi (1958)",
+        "32. Ben-Hur (1959)",
+        "33. The Apartment (1960)",
+        "34. West Side Story (1961)",
+        "35. Lawrence of Arabia (1962)",
+        "36. Tom Jones (1963)",
+        "37. My Fair Lady (1964)",
+        "38. The Sound of Music (1965)",
+        "39. A Man for All Seasons (1966)",
+        "40. In the Heat of the Night (1967)",
+        "41. Oliver! (1968)",
+        "42. Midnight Cowboy (1969)",
+        "43. Patton (1970)",
+        "44. The French Connection (1971)",
+        "45. The Godfather (1972)",
+        "46. The Sting (1973)",
+        "47. The Godfather Part II (1974)",
+        "48. One Flew Over the Cuckoo's Nest (1975)",
+        "49. Annie Hall (1976)",
+        "50. The Deer Hunter (1977)",
+        "51. Kramer vs. Kramer (1979)",
+        "52. Ordinary People (1980)",
+        "53. Chariots of Fire (1981)",
+        "54. Gandhi (1982)",
+        "55. Terms of Endearment (1983)",
+        "56. Amadeus (1984)",
+        "57. Out of Africa (1985)",
+        "58. Platoon (1986)",
+        "59. The Last Emperor (1987)",
+        "60. Rain Man (1988)",
+        "61. Driving Miss Daisy (1989)",
+        "62. Dances with Wolves (1990)",
+        "63. The Silence of the Lambs (1991)",
+        "64. Unforgiven (1992)",
+        "65. Schindler's List (1993)",
+        "66. Forrest Gump (1994)",
+        "67. Braveheart (1995)",
+        "68. The English Patient (1996)",
+        "69. Titanic (1997)",
+        "70. Shakespeare in Love (1998)",
+        "71. American Beauty (1999)",
+        "72. Gladiator (2000)",
+        "73. A Beautiful Mind (2001)",
+        "74. Chicago (2002)",
+        "75. The Lord of the Rings: The Return of the King (2003)",
+        "76. Million Dollar Baby (2004)",
+        "77. Crash (2005)",
+        "78. The Departed (2006)",
+        "79. No Country for Old Men (2007)",
+        "80. Slumdog Millionaire (2008)",
+        "81. The Hurt Locker (2009)",
+        "82. The King's Speech (2010)",
+        "83. The Artist (2011)",
+        "84. Argo (2012)",
+        "85. 12 Years a Slave (2013)",
+        "86. Birdman or (The Unexpected Virtue of Ignorance) (2014)",
+        "87. Spotlight (2015)",
+        "88. Moonlight (2016)",
+        "89. The Shape of Water (2017)",
+        "90. Green Book (2018)",
+        "91. Parasite (2019)"
+    ],
+    "14": [
+        "Spirited Away",
+        "My Neighbor Totoro",
+        "Howl's Moving Castle",
+        "Kiki's Delivery Service",
+        "Ponyo",
+        "The Wind Rises",
+        "The Secret World of Arrietty",
+        "The Tale of The Princess Kaguya",
+        "When Marnie Was There",
+        "Porco Rosso",
+        "The Red Turtle",
+        "Ocean Waves",
+        "Tales from Earthsea",
+        "The Cat Returns"
+    ],
+    "15": [
+        "The Hobbit",
+        "The Lord of the Rings trilogy",
+        "The Silmarillion",
+        "The Adventures of Tom Bombadil",
+        "Smith of Wootton Major"
+    ],
+    "16": [
+        "Buenos Aires",
+        "Santiago",
+        "Lima",
+        "Montevideo",
+        "idk",
+        "idk",
+        "idk",
+        "idk",
+        "idk",
+        "idk"
+    ],
+    "17": [
+        "Audi",
+        "Bentley",
+        "Lamborghini",
+        "Bugatti"
+    ],
+    "18": [
+        "Catherine of Aragon",
+        "Anne Boleyn",
+        "Jane Seymour"
+    ],
+    "19": [
+        "Canada",
+        "Australia",
+        "New Zealand",
+        "South Africa",
+        "India",
+        "Pakistan",
+        "Bangladesh",
+        "Sri Lanka",
+        "Malaysia",
+        "Singapore",
+        "Namibia",
+        "Botswana",
+        "Lesotho",
+        "Swaziland",
+        "Ghana",
+        "Kenya",
+        "Uganda",
+        "Tanzania",
+        "Zambia",
+        "Zimbabwe",
+        "Malawi",
+        "Mozambique"
+    ],
+    "21": [
+        "The Vatican City",
+        "idk"
+    ],
+    "22": [
+        "Paris",
+        "London"
+    ],
+    "23": [
+        "Bulgari",
+        "TAG Heuer",
+        "Hublot",
+        "Zenith"
+    ],
+    "24": [
+        "Dances with Wolves",
+        "Unforgiven",
+        "Schindler's List",
+        "Braveheart",
+        "The English Patient"
+    ],
+    "25": [
+        "Panthera leo",
+        "Panthera tigris",
+        "Panthera pardus",
+        "Panthera onca",
+        "Panthera uncia"
+    ],
+    "5": [
+        "helium",
+        "neon",
+        "argon",
+        "krypton",
+        "xenon",
+        "radon"
+    ],
+    "20": [
+        "Pete Best"
+    ],
+    "27": [
+        "Suriname"
+    ],
+    "28": [
+        "idk"
+    ],
+    "29": [
+        "Vatican City"
+    ],
+    "30": [
+        "EUR"
+    ],
+    "31": [
+        "India",
+        "Papua New Guinea"
+    ],
+    "32": [
+        "Hinduism"
+    ],
+    "33": [
+        "Amsterdam",
+        "Athens",
+        "Berlin",
+        "Brussels",
+        "Copenhagen",
+        "Dublin",
+        "Helsinki",
+        "Lisbon",
+        "Ljubljana",
+        "London",
+        "Luxembourg",
+        "Madrid",
+        "Oslo",
+        "Paris",
+        "Prague",
+        "Riga",
+        "Stockholm",
+        "Tallinn",
+        "Valletta",
+        "Vienna",
+        "Zagreb"
+    ],
+    "34": [
+        "blue"
+    ],
+    "35": [
+        "Botswana",
+        "Cameroon",
+        "Eswatini",
+        "Gambia",
+        "Ghana",
+        "Kenya",
+        "Lesotho",
+        "Liberia",
+        "Malawi",
+        "Mauritius",
+        "Namibia",
+        "Nigeria",
+        "Rwanda",
+        "Seychelles",
+        "Sierra Leone",
+        "South Africa",
+        "South Sudan",
+        "Tanzania",
+        "Uganda",
+        "Zambia",
+        "Zimbabwe"
+    ],
+    "36": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America",
+        "South America"
+    ],
+    "37": [
+        "idk"
+    ],
+    "38": [
+        "Nitrogen",
+        "Oxygen",
+        "Argon",
+        "Carbon dioxide"
+    ],
+    "39": [
+        "Greenland Shark,"
+    ],
+    "40": [
+        "Grand Theft Auto IV",
+        "Grand Theft Auto: The Lost and Damned",
+        "Grand Theft Auto: The Ballad of Gay Tony",
+        "Grand Theft Auto V",
+        "Grand Theft Auto Online"
+    ],
+    "41": [
+        "Chile",
+        "Peru"
+    ],
+    "42": [
+        "Jupiter",
+        "Saturn"
+    ],
+    "43": [
+        "Roman Colosseum",
+        "Roman Forum",
+        "Pantheon",
+        "Vatican City"
+    ],
+    "44": [
+        "Nigerian naira",
+        "Ghanaian cedi",
+        "Senegalese franc",
+        "CFA franc",
+        "..."
+    ],
+    "45": [
+        "idk"
+    ],
+    "46": [
+        "idk"
+    ],
+    "47": [
+        "idk"
+    ],
+    "49": [
+        "Albania",
+        "Belgium",
+        "Bulgaria",
+        "Croatia",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Iceland",
+        "Italy",
+        "Latvia",
+        "Lithuania",
+        "Luxembourg",
+        "Montenegro",
+        "Netherlands",
+        "North Macedonia",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain"
+    ],
+    "50": [
+        "Cirrus, Cumulus, Stratus"
+    ],
+    "51": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "49",
+        "50"
+    ],
+    "52": [
+        "Sri Lanka",
+        "Bhutan"
+    ],
+    "53": [
+        "Tokyo",
+        "Delhi",
+        "Shanghai",
+        "Sao Paulo",
+        "Mexico City"
+    ],
+    "54": [
+        "Nova Scotia",
+        "New Brunswick",
+        "Prince Edward Island",
+        "Newfoundland and Labrador"
+    ],
+    "55": [
+        "Earth",
+        "Mars"
+    ],
+    "56": [
+        "Brazil"
+    ],
+    "57": [
+        "Pineapple"
+    ],
+    "58": [
+        "Violins"
+    ],
+    "26": [
+        "idk"
+    ],
+    "48": [
+        "George Washington",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe"
+    ],
+    "59": [
+        "The Mote in God's Eye"
+    ],
+    "61": [
+        "Brazil",
+        "Argentina",
+        "Uruguay"
+    ],
+    "62": [
+        "Belgium, Denmark, Eswatini, Liechtenstein, Luxembourg, Monaco, Netherlands, Norway, Spain, Sweden, United Kingdom"
+    ],
+    "63": [
+        "Marshall Islands",
+        "Palau",
+        "Micronesia"
+    ],
+    "64": [
+        "idk"
+    ],
+    "65": [
+        "O"
+    ],
+    "66": [
+        "Bach",
+        "Handel",
+        "Vivaldi"
+    ],
+    "67": [
+        "Italy, France, Switzerland, Sweden, Spain, England, West Germany, Germany"
+    ],
+    "68": [
+        "China",
+        "Syria",
+        "Afghanistan",
+        "Chad",
+        "Equatorial Guinea",
+        "Mali",
+        "Nicaragua"
+    ],
+    "69": [
+        "Physics",
+        "Chemistry",
+        "Medicine",
+        "Literature",
+        "Peace"
+    ],
+    "70": [
+        "Orange",
+        "Green",
+        "Blue",
+        "Indigo",
+        "Violet"
+    ],
+    "71": [
+        "5",
+        "10",
+        "20",
+        "50",
+        "100",
+        "200",
+        "500"
+    ],
+    "72": [
+        "Pacific Ocean",
+        "Atlantic Ocean"
+    ],
+    "73": [
+        "Polar bear, Brown bear, Black bear, Asiatic black bear, Sloth bear"
+    ],
+    "74": [
+        "Islam"
+    ],
+    "75": [
+        "figure skating, speed skating, short track speed skating"
+    ],
+    "76": [
+        "Chile",
+        "Peru"
+    ],
+    "77": [
+        "Homo heidelbergensis",
+        "Homo neanderthalensis"
+    ],
+    "78": [
+        "England",
+        "Scotland",
+        "Wales"
+    ],
+    "79": [
+        "The Pyramids of Giza, The Valley of the Kings, The temples of Luxor, Abu Mena"
+    ],
+    "80": [
+        "Homo habilis",
+        "Homo erectus",
+        "Homo heidelbergensis",
+        "Homo neanderthalensis",
+        "Others"
+    ],
+    "81": [
+        "idk"
+    ],
+    "83": [
+        "painter",
+        "sculptor",
+        "musician"
+    ],
+    "84": [
+        "Academy Awards (3): Best Actress for Sophie's Choice (1982), Best Actress for The Iron Lady (2011), Best Supporting Actress for Kramer vs. Kramer (1979)"
+    ],
+    "85": [
+        "Argus Filch",
+        "Minerva McGonagall",
+        "Rubeus Hagrid"
+    ],
+    "86": [
+        "Steve Wozniak"
+    ],
+    "87": [
+        "Finland",
+        "Romania",
+        "Bulgaria",
+        "Thailand"
+    ],
+    "88": [
+        "Swiss Federal Polytechnic University"
+    ],
+    "89": [
+        "Tug of War",
+        "Pipes of Peace",
+        "Press to Play",
+        "Flowers in the Dirt",
+        "Choba B CCCP",
+        "Off the Ground",
+        "Flaming Pie",
+        "Run Devil Run",
+        "Driving Rain",
+        "Egypt Station"
+    ],
+    "90": [
+        "Jagiellonian University"
+    ],
+    "91": [
+        "Mario Puzo"
+    ],
+    "92": [
+        "Germany",
+        "United Kingdom",
+        "France",
+        "Italy",
+        "Belgium",
+        "Portugal",
+        "Romania",
+        "Serbia"
+    ],
+    "93": [
+        "Bachelor of Arts"
+    ],
+    "94": [
+        "Sao Tome and Principe",
+        "East Timor",
+        "Portugal"
+    ],
+    "95": [
+        "Emilia-Romagna",
+        "Lazio",
+        "Lombardy",
+        "Piedmont"
+    ],
+    "96": [
+        "Moscow, Russia"
+    ],
+    "97": [
+        "Julián Reyes",
+        "Luis Daniel Ramírez"
+    ],
+    "98": [
+        "Marie Curie"
+    ],
+    "99": [
+        "red",
+        "yellow"
+    ],
+    "100": [
+        "Keith Richards",
+        "Ronnie Wood"
+    ],
+    "101": [
+        "Bill Gates",
+        "Paul Allen"
+    ],
+    "102": [
+        "Catalonia",
+        "Balearic Islands",
+        "Valencia"
+    ],
+    "103": [
+        "Jonathan Nolan",
+        "Christopher Nolan"
+    ],
+    "104": [
+        "India",
+        "Pakistan"
+    ],
+    "105": [
+        "Marie Curie"
+    ],
+    "106": [
+        "Majel Barrett, Nichelle Nichols"
+    ],
+    "107": [
+        "The Walt Disney Studios Motion Pictures",
+        "Walt Disney Pictures",
+        "Walt Disney Animation Studios",
+        "Pixar Animation Studios",
+        "Marvel Studios",
+        "Lucasfilm Ltd.",
+        "20th Century Studios",
+        "Searchlight Pictures",
+        "Disney Music Group",
+        "Disney Theatrical Productions",
+        "Disney Publishing Worldwide",
+        "Disney Digital Network",
+        "Disney Consumer Products",
+        "ESPN Inc.",
+        "FX Networks"
+    ],
+    "108": [
+        "Leonardo DiCaprio",
+        "Marion Cotillard"
+    ],
+    "109": [
+        "Grammy Lifetime Achievement Award, Grammy Award for Album of the Year, Grammy Award for Best Contemporary Folk Album, Grammy Award for Best Male Rock Vocal Performance, Grammy Award for Best Music Film, Grammy Award for Best Traditional Folk Album, Grammy Award for Best Historical Album, Grammy Award for Best Contemporary Folk Album, Grammy Award for Best American Roots Performance, Grammy Award for Best Roots Gospel Album"
+    ],
+    "110": [
+        "Jeremy Zuckerman"
+    ],
+    "111": [
+        "Armenia",
+        "Azerbaijan",
+        "Belarus",
+        "Estonia",
+        "Georgia",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Lithuania",
+        "Moldova",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
+    ],
+    "112": [
+        "Tuscany, Lazio"
+    ],
+    "113": [
+        "Amazon Israel Ltd."
+    ],
+    "114": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+    ],
+    "115": [
+        "Berlin",
+        "Brandenburg",
+        "Mecklenburg-Vorpommern",
+        "Saxony",
+        "Saxony-Anhalt"
+    ],
+    "116": [
+        "idk"
+    ],
+    "117": [
+        "Kurt Cobain",
+        "Krist Novoselic",
+        "Chad Channing"
+    ],
+    "118": [
+        "3, 22, 32, 36, 44"
+    ],
+    "119": [
+        "Tamil Nadu"
+    ],
+    "120": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+    ],
+    "121": [
+        "Freetown, Accra, Lagos"
+    ],
+    "122": [
+        "1. Mount Everest",
+        "2. Kangchenjunga",
+        "3. Lhotse",
+        "4. Makalu",
+        "5. Cho Oyu",
+        "6. Dhaulagiri",
+        "7. Manaslu",
+        "8. Annapurna"
+    ],
+    "123": [
+        "Leopold I",
+        "Leopold II",
+        "Albert I",
+        "Leopold III",
+        "Baudouin",
+        "Albert II",
+        "Philippe"
+    ],
+    "124": [
+        "right",
+        "obtuse"
+    ],
+    "125": [
+        "idk"
+    ],
+    "126": [
+        "Christmas Day, Thanksgiving Day"
+    ],
+    "127": [
+        "Aranese, Asturian, Valencian"
+    ],
+    "128": [
+        "China",
+        "India",
+        "Indonesia",
+        "Pakistan",
+        "Bangladesh"
+    ],
+    "129": [
+        "The Great Pyramid of Giza."
+    ],
+    "130": [
+        "idk"
+    ],
+    "131": [
+        "New Zealand"
+    ],
+    "132": [
+        "Metamorphic"
+    ],
+    "133": [
+        "France",
+        "Spain",
+        "Portugal",
+        "Italy",
+        "Romania"
+    ],
+    "134": [
+        "Uttar Pradesh"
+    ],
+    "135": [
+        "C",
+        "E"
+    ],
+    "136": [
+        "Axew",
+        "Heatmor",
+        "Volcarona",
+        "Simisage",
+        "Simipour",
+        "Simisear",
+        "Volcarona"
+    ],
+    "137": [
+        "right atrium",
+        "right ventricle"
+    ],
+    "138": [
+        "Ne"
+    ],
+    "139": [
+        "2"
+    ],
+    "140": [
+        "James A. Garfield"
+    ],
+    "142": [
+        "1912"
+    ],
+    "143": [
+        "idk"
+    ],
+    "144": [
+        "Antigua and Barbuda",
+        "Bahamas",
+        "Barbados",
+        "Cuba",
+        "Dominica",
+        "Dominican Republic",
+        "Grenada",
+        "Haiti",
+        "Jamaica",
+        "Martinique",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Trinidad and Tobago"
+    ],
+    "145": [
+        "University of Cambridge",
+        "University of Oxford",
+        "Massachusetts Institute of Technology (MIT)",
+        "Stanford University",
+        "Harvard University"
+    ],
+    "146": [
+        "Pakistan",
+        "China"
+    ],
+    "147": [
+        "Saudi Arabia",
+        "Yemen",
+        "United Arab Emirates",
+        "Kuwait"
+    ],
+    "149": [
+        "Democratic Party",
+        "New Centre-Right"
+    ],
+    "60": [
+        "idk"
+    ],
+    "82": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+    ],
+    "141": [
+        "E"
+    ],
+    "148": [
+        "Don River",
+        "Kuban River"
+    ]
+}
