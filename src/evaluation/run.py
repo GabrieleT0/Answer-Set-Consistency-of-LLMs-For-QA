@@ -15,7 +15,7 @@ if __name__ == "__main__":
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
         llms = json.load(f).keys()
-    actions = ["wikidata", "fixing", "classification","star","zero-shot"]
+    actions = ["fixing", "classification","star","zero-shot","chain-of-thought"]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
 
