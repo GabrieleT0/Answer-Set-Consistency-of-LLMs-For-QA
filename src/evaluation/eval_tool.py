@@ -79,7 +79,8 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
         question = next((q for q in questions if q in elements), None)
         action = next((a for a in actions if a in elements), "zero-shot")
         task = next((t for t in tasks if t in elements), None)
-        dataset = next((d for d in datasets if d in elements), None)
+        elements_lower = [e.lower() for e in elements]
+        dataset = next((d for d in datasets if d.lower() in elements_lower), None)
         lang = next((l for l in languages if l in elements), None)
         llm = next((l for l in llms if l in elements), None)
 
@@ -130,7 +131,7 @@ def analysis(df):
             llm = group["llm"].values[0]
             dataset = group["dataset"].values[0]
             qid = group["Q_ID"].values[0]
-            if action in ["zero-shot", "wikidata"]:
+            if action in ["zero-shot", "chain-of-thought"]:
                 A1 = get_answer_set(group, "Q1", "equal")
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
@@ -171,6 +172,8 @@ def analysis(df):
                 A2_equal = get_answer_set(group, "Q2", "equal")
                 A3_contain = get_answer_set(group, "Q3", "sup-sub")
                 A3_minus = get_answer_set(group, "Q3", "minus")
+                if not A3_contain:
+                    A3_contain = A3_minus
                 A4_minus = get_answer_set(group, "Q4", "minus")
                 similarities = {
                     "J(A1-A2)": round(jaccard_similarity(A1_equal, A2_equal), 4),
