@@ -8,7 +8,6 @@ from get_answers.single_question_benchmark import main as zeroshot_main
 from get_answers.relation_classification_and_questions import main as classify_main
 from get_answers.try_fix_llm_response import main as fix_main
 from get_answers.relation_classification import main as relation_main
-from get_answers.chain_of_thought_benchmark import main as cot_main
 from get_answers.logging_utils import setup_logging
 
 # Step 1: Set up logging for the whole pipeline
