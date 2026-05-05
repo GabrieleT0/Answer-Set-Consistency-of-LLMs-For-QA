@@ -18,6 +18,9 @@ import os
 import numpy as np
 import pandas as pd
 
+from eval_pvalue import compute_pvals
+from split import split
+
 
 
 # ── Worst-case values per metric ─────────────────────────────────────────────
@@ -231,9 +234,17 @@ def main():
     print("Imputing worst-case values for idk answers …")
     df_summary = summary_idk_worst(df_analysis)
 
+    # Compute and merge p-values
+    print("Computing p-values …")
+    df_pval = compute_pvals(df_analysis)
+    df_summary = df_summary.merge(df_pval, on=["dataset", "llm", "action"], how="left")
+
     out_path = os.path.join(output_dir, "summary_idk_worst.csv")
     df_summary.to_csv(out_path, index=False)
     print(f"Saved → {out_path}")
+
+    # Split by action (generates summary_idk_worst_zero-shot.csv, etc.)
+    split(df_summary, "summary_idk_worst", folder=output_dir)
 
     # Quick console preview: overall rows only
     print("\n=== Overall averages per model (dataset=overall) ===")
