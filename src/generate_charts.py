@@ -248,9 +248,9 @@ def plot_square_heatmaps(csv_file, out_dir="heatmaps", cmap="Reds_r", exclude_ll
 # Example usage
 if __name__ == "__main__":
 
-    df = pd.read_csv("../output/summary_2025-09-10_22-14.csv")
+    df = pd.read_csv("../output/summary_idk_worst.csv")
     create_action_barcharts(df, output_folder="../charts", exclude_action="wikidata", metrics=['J(A1-A2)', 'J(A1-A34)', 'J(A4-A1|3)', 'J(A3-A4)'], exclude_llms=["deepseek-r1:1.5b", "deepseek-r1:70b"])
 
-    plot_pvalue_heatmaps_by_dataset_action("../output/summary_2025-09-10_22-14.csv",exclude_llms=["deepseek-r1:1.5b", "deepseek-r1:70b"])
-
-    plot_square_heatmaps("../output/p_value_matrices_2025-09-10_22-14.csv", out_dir="../charts/llms_pvalue_heatmaps", exclude_llms=["deepseek-r1:1.5b", "deepseek-r1:70b"])
+    plot_pvalue_heatmaps_by_dataset_action("../output/summary_idk_worst.csv",exclude_llms=["deepseek-r1:1.5b", "deepseek-r1:70b"])
+ 
+    plot_square_heatmaps("../output/p_value_matrices.csv", out_dir="../charts/llms_pvalue_heatmaps", exclude_llms=["deepseek-r1:1.5b", "deepseek-r1:70b"])

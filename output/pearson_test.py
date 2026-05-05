@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 from scipy.stats import pearsonr
 
-root_dir = os.path.dirname(os.path.abspath(__name__))
+root_dir = '../'
 llm_path = f"{root_dir}/data/llm_info.json"
 with open(llm_path, "r", encoding="utf-8") as f:
     llms_info = json.load(f)
 
-df_summery_zs = pd.read_csv(f"{root_dir}/output/summary_xidk_zero-shot.csv")
+df_summery_zs = pd.read_csv(f"{root_dir}/output/summary_idk_worst_zero-shot.csv")
 
 # Your existing code for data preparation
 IDs = [] 

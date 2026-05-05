@@ -12,7 +12,7 @@ from langchain_anthropic import ChatAnthropic
 # from openai import AzureOpenAI
 from langchain_openai import AzureChatOpenAI
 from langchain_core.language_models.llms import LLM
-# from langchain_deepseek import ChatDeepSeek
+from langchain_deepseek import ChatDeepSeek
 
 import time
 import requests
@@ -31,8 +31,8 @@ azure_api_version= os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 # azure_models = ['gpt-5',"gpt-5-mini","gpt-5-nano","gpt-4o","o3"]
 azure_models = []
 # azure_models = ['gpt-5',"gpt-5-mini","o3","gpt-4o","gpt-4.1",]
-openai_models_notemperature = ['gpt-5',"gpt-5-mini","o3","gpt-5-nano"]
-openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14',"gpt-4o"]
+openai_models_notemperature = ["gpt-5-mini","o3","gpt-5-nano"]
+openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14',"gpt-4o",'gpt-5']
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro","gemini-2.5-flash"]
 xai_models = ['grok-3-mini','grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
@@ -119,7 +119,7 @@ def return_chat_model(model_name, temperature=0, max_tokens = 20000):
         return ChatAnthropic(model=model_name, anthropic_api_key=ANTHROPIC_API_KEY, temperature=temperature)
     elif model_name in self_hosted_models:
         return SelfHostedAPIWrapper(model=model_name, url="http://warhol.informatik.rwth-aachen.de:11434/api/generate")
-    # elif model_name in deepseek_models:
-    #     return ChatDeepSeek(model=model_name,temperature=temperature,max_tokens=None)
+    elif model_name in deepseek_models:
+        return ChatDeepSeek(model=model_name,temperature=temperature,max_tokens=None)
     else:
         raise ValueError(f"Model {model_name} is not supported.")
