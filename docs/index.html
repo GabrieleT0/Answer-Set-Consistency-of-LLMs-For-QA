@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCB Question Sets</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 24px;
+            background: #f4f6f8;
+            color: #1f2937;
+            font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #d9e0e8;
+            border-radius: 8px;
+            box-shadow: 0 18px 45px rgba(31, 41, 55, 0.10);
+            overflow: hidden;
+        }
+
+        header {
+            padding: 28px 32px 22px;
+            background: #17324d;
+            color: #ffffff;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 2rem;
+            font-weight: 720;
+            letter-spacing: 0;
+        }
+
+        header p {
+            max-width: 900px;
+            color: #dbe7f3;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .toolbar {
+            display: grid;
+            grid-template-columns: minmax(240px, 1fr) auto auto;
+            gap: 18px;
+            align-items: center;
+            padding: 18px 24px;
+            background: #f8fafc;
+            border-bottom: 1px solid #d9e0e8;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            min-height: 44px;
+            padding: 10px 42px 10px 14px;
+            border: 1px solid #c8d2dc;
+            border-radius: 6px;
+            color: #111827;
+            font-size: 0.98rem;
+            background: #ffffff;
+        }
+
+        .search-box input:focus {
+            outline: 3px solid rgba(37, 99, 235, 0.16);
+            border-color: #2563eb;
+        }
+
+        .search-box svg {
+            position: absolute;
+            top: 50%;
+            right: 13px;
+            width: 19px;
+            height: 19px;
+            transform: translateY(-50%);
+            color: #64748b;
+            pointer-events: none;
+        }
+
+        .stat {
+            display: grid;
+            gap: 3px;
+            min-width: 118px;
+            padding: 7px 12px;
+            border-left: 1px solid #d9e0e8;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+        }
+
+        .stat-value {
+            color: #17324d;
+            font-size: 1.35rem;
+            font-weight: 720;
+            line-height: 1;
+        }
+
+        .content {
+            max-height: 72vh;
+            overflow: auto;
+            background: #ffffff;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1080px;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            padding: 12px 14px;
+            background: #e9eef4;
+            border-bottom: 1px solid #c8d2dc;
+            color: #334155;
+            font-size: 0.78rem;
+            font-weight: 720;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        tbody td {
+            padding: 14px;
+            border-bottom: 1px solid #e5eaf0;
+            vertical-align: top;
+            font-size: 0.94rem;
+            line-height: 1.45;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #fbfcfe;
+        }
+
+        tbody tr:hover {
+            background: #f1f6fb;
+        }
+
+        .row-index {
+            width: 76px;
+            color: #475569;
+            font-variant-numeric: tabular-nums;
+            font-weight: 650;
+            white-space: nowrap;
+        }
+
+        .question-cell {
+            width: 25%;
+        }
+
+        .question-label {
+            display: inline-block;
+            margin-bottom: 6px;
+            padding: 2px 7px;
+            border: 1px solid #c8d2dc;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #17324d;
+            font-size: 0.73rem;
+            font-weight: 720;
+        }
+
+        .empty-state {
+            padding: 58px 24px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        .empty-state h2 {
+            margin-bottom: 8px;
+            color: #334155;
+            font-size: 1.25rem;
+        }
+
+        footer {
+            padding: 14px 24px;
+            background: #f8fafc;
+            border-top: 1px solid #d9e0e8;
+            color: #64748b;
+            font-size: 0.88rem;
+        }
+
+        @media (max-width: 860px) {
+            body {
+                padding: 12px;
+            }
+
+            header {
+                padding: 22px 18px;
+            }
+
+            header h1 {
+                font-size: 1.55rem;
+            }
+
+            .toolbar {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .search-box {
+                grid-column: 1 / -1;
+            }
+
+            .stat {
+                border-left: 0;
+                border-top: 1px solid #d9e0e8;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Answer Set Consistency Benchmark</h1>
+            <p>Each row contains one related four-question set used to evaluate answer-set consistency: an original question, an equivalent paraphrase, a subset, and its complementary restriction.</p>
+        </header>
+
+        <div class="toolbar">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search across Q1, Q2, Q3, and Q4..."
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Total Sets</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Showing</span>
+                <span class="stat-value" id="showingCount">0</span>
+            </div>
+        </div>
+
+        <main class="content" id="content">
+            <div class="empty-state">
+                <h2>No question sets loaded</h2>
+                <p>Generate docs/questions.json from data/ASCB/ and refresh this page.</p>
+            </div>
+        </main>
+
+        <footer>
+            Answer Set Consistency Benchmark question browser for related Q1-Q4 benchmark items. 
+            We acknowledge LC-QuAD 2.0, QALD, and QA Wiki as source resources used in constructing parts of ASCB. In particular, some Q1 questions are derived from LC-QuAD 2.0 and QALD, and some Q1-Q3 question sets are derived from QA Wiki.
+        </footer>
+    </div>
+
+    <script>
+        const embeddedQuestions = [];
+        const questionOrder = ["Q1", "Q2", "Q3", "Q4"];
+
+        let questions = [...embeddedQuestions];
+        let questionSets = [];
+        let filteredSets = [];
+
+        const contentEl = document.getElementById("content");
+        const searchInput = document.getElementById("searchInput");
+        const totalCountEl = document.getElementById("totalCount");
+        const showingCountEl = document.getElementById("showingCount");
+
+        function init() {
+            questionSets = buildQuestionSets(questions);
+            filteredSets = [...questionSets];
+            updateStats();
+            render();
+            searchInput.addEventListener("input", handleSearch);
+        }
+
+        function buildQuestionSets(items) {
+            const groups = new Map();
+
+            for (const item of items) {
+                const groupKey = item.group_id || stripQuestionSuffix(item.id);
+                if (!groups.has(groupKey)) {
+                    groups.set(groupKey, {
+                        groupKey,
+                        sourceId: item.source_id || "",
+                        questions: {}
+                    });
+                }
+
+                const type = item.question_type || inferQuestionType(item.id);
+                if (questionOrder.includes(type)) {
+                    groups.get(groupKey).questions[type] = item.text || "";
+                }
+            }
+
+            return Array.from(groups.values())
+                .filter(row => questionOrder.some(type => row.questions[type]))
+                .sort((a, b) => compareGroupKeys(a.groupKey, b.groupKey));
+        }
+
+        function stripQuestionSuffix(id = "") {
+            return String(id).replace(/_Q[1-4]$/, "");
+        }
+
+        function inferQuestionType(id = "") {
+            const match = String(id).match(/_(Q[1-4])$/);
+            return match ? match[1] : "";
+        }
+
+        function compareGroupKeys(a, b) {
+            return String(a).localeCompare(String(b), undefined, {
+                numeric: true,
+                sensitivity: "base"
+            });
+        }
+
+        function handleSearch(event) {
+            const query = event.target.value.trim().toLowerCase();
+            if (!query) {
+                filteredSets = [...questionSets];
+            } else {
+                filteredSets = questionSets.filter(row => {
+                    return questionOrder.some(type => {
+                        return (row.questions[type] || "").toLowerCase().includes(query);
+                    });
+                });
+            }
+
+            updateStats();
+            render();
+        }
+
+        function updateStats() {
+            totalCountEl.textContent = questionSets.length * 4;
+            showingCountEl.textContent = filteredSets.length * 4;
+        }
+
+        function render() {
+            if (filteredSets.length === 0) {
+                contentEl.innerHTML = `
+                    <div class="empty-state">
+                        <h2>No matching question sets</h2>
+                        <p>Try a different search term.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            contentEl.innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Q1</th>
+                            <th>Q2</th>
+                            <th>Q3</th>
+                            <th>Q4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${filteredSets.map((row, index) => createQuestionSetRow(row, index)).join("")}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        function createQuestionSetRow(row, index) {
+            const cells = questionOrder.map(type => {
+                const text = row.questions[type] || "";
+                return `
+                    <td class="question-cell">
+                        <div>${escapeHtml(text)}</div>
+                    </td>
+                `;
+            }).join("");
+
+            return `
+                <tr>
+                    <td class="row-index">${index + 1}</td>
+                    ${cells}
+                </tr>
+            `;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement("div");
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function loadQuestions() {
+            try {
+                const response = await fetch("questions.json", { cache: "no-store" });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                const data = await response.json();
+                if (Array.isArray(data)) {
+                    questions = data;
+                }
+            } catch (error) {
+                questions = [...embeddedQuestions];
+                console.warn("Using embedded questions; questions.json could not be loaded.", error);
+            }
+        }
+
+        loadQuestions().then(init);
+    </script>
+</body>
+</html>
