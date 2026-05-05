@@ -1,6 +1,6 @@
 # Answer Set Consistency of LLMs for Question Answering
 
-Code, datasets, model outputs, evaluation files, and figures supporting a NeurIPS submission on answer-set consistency in large language models.
+Code, datasets, model outputs, evaluation files, and figures supporting a submission on answer-set consistency in large language models.
 
 The repository studies whether LLM answers respect simple logical relations between related natural-language questions. Each benchmark item contains four questions:
 
@@ -65,6 +65,7 @@ The main aggregate analysis files are in `data/evaluation_results/`, including:
 ## Answer Set Consistency Benchmark Website Table
 
 The repository includes a static website table in `docs/index.html`. It displays ASCB as grouped question sets: each table row contains the related `Q1`, `Q2`, `Q3`, and `Q4` questions.
+You can see the table at the following link: [https://anonymous.4open.science/w/Answer-Set-Consistency-of-LLMs-For-QA-5FE6/](https://anonymous.4open.science/w/Answer-Set-Consistency-of-LLMs-For-QA-5FE6/)
 
 ## Setup
 
