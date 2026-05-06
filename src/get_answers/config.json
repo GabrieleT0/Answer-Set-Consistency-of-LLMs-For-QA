@@ -1,7 +1,7 @@
 {
   "languages": ["en"],
   "llm_models": ["gpt-4.1-2025-04-14"],
-  "datasets": ["lc-quad.tsv","qawiki.tsv","spinach.tsv","synthetic.tsv"],
-  "prompt_types": ["chain-of-thoughts"],
+  "datasets": ["LC-QuAD.tsv","qawiki.tsv","spinach.tsv","synthetic.tsv"],
+  "prompt_types": ["standard"],
   "relations": ["Equivalence", "Containment", "Minus"]
 }
