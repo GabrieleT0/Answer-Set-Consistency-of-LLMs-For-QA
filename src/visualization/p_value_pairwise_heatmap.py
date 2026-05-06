@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from visualization.io_utils import default_charts_dir, default_results_dir, load_llm_names, read_pvalue_matrices
 
 
 def build_square_matrix_for_pred(df, action, dataset, predicate, llms):
@@ -241,22 +242,20 @@ def main(config = None):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     if config == None: 
         config = {
-            "folder": os.path.join(root_dir, "output"),
-            "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-22_00-41",
+            "folder": default_results_dir(),
+            "out_dir": default_charts_dir(),
+            "time": None,
             "llms": None
         }   
-    folder = config.get("folder", os.path.join(root_dir, "output"))
-    out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-22_00-41")
+    folder = config.get("folder", default_results_dir())
+    out_dir = config.get("out_dir", default_charts_dir())
+    time = config.get("time")
     
         
-    df_p_value = pd.read_csv(f"{folder}/p_value_matrices_{time}.csv")
+    df_p_value = read_pvalue_matrices(folder, time)
     llms_name = config.get("llms", None)
     if llms_name is None:
-        llm_path = f"{root_dir}/data/llm_info.json"
-        with open(llm_path, "r", encoding="utf-8") as f:
-            llms_name = list(json.load(f).keys())
+        llms_name = load_llm_names()
 
     summery_llms = df_p_value["llm"].unique()
     llms = []

@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import json
 from matplotlib.gridspec import GridSpec
+from visualization.io_utils import default_charts_dir, default_results_dir, load_llm_info, read_summary
 
 
 def draw_llm_bubble_grid(
@@ -331,9 +332,13 @@ def save_all_bubble_grids(
     if datasets is None:
         datasets = sorted(df["dataset"].dropna().unique().tolist())
 
+    saved_paths = []
     for ds in datasets:
         for act in actions:
-           
+            subset = df[(df["dataset"] == ds) & (df["action"] == act)]
+            if subset.empty:
+                continue
+
             # Draw
             fig, axes = draw_llm_bubble_grid(
                 df=df,
@@ -351,10 +356,14 @@ def save_all_bubble_grids(
 
             folder = Path(outdir)
             folder.mkdir(parents=True, exist_ok=True) 
-            fig.savefig(f"{folder}/{ds}_{act}.png", dpi=dpi, bbox_inches="tight")
+            path = folder / f"{ds}_{act}.png"
+            fig.savefig(path, dpi=dpi, bbox_inches="tight")
             plt.close(fig)
+            saved_paths.append(path)
 
-            
+    if not saved_paths:
+        raise ValueError("No bubble charts were generated. Check dataset/actions filters.")
+    return saved_paths
 
 
 def main(config =None):
@@ -362,9 +371,9 @@ def main(config =None):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     if config == None: 
         config = {
-            "folder": os.path.join(root_dir, "output"),
-            "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-22_00-41",
+            "folder": default_results_dir(),
+            "out_dir": default_charts_dir(),
+            "time": None,
             "llms": None,
             "datasets":["overall", "spinach", "qawiki","synthetic"],
             "actions":["zero-shot","wikidata", "fixing","classification"],
@@ -376,19 +385,19 @@ def main(config =None):
     predicates = config.get("predicates",["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"])
     actions = config.get("actions",["zero-shot","wikidata", "fixing","classification"])
     jccards_col = config.get("jccards", ["J(A1-A2)","J(A1-A34)","J(A3-A4)","J(A4-A1|3)"])
-    folder = config.get("folder", os.path.join(root_dir, "output"))
-    out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-22_00-41")
+    folder = config.get("folder", default_results_dir())
+    out_dir = config.get("out_dir", default_charts_dir())
+    time = config.get("time")
   
     llms_name = config.get("llms", None)
     llm_info = config.get("llm_info", None)
     if llms_name is None:
-        llm_path = f"{root_dir}/data/llm_info.json"
-        with open(llm_path, "r", encoding="utf-8") as f:
-            llm_info = json.load(f)
-            llms_name = list(llm_info.keys())
+        llm_info = load_llm_info()
+        llms_name = list(llm_info.keys())
+    elif llm_info is None:
+        llm_info = load_llm_info()
 
-    df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
+    df_summery = read_summary(folder, time)
     summery_llms = df_summery["llm"].unique()
     llms = []
     for llm in llms_name:
@@ -397,7 +406,7 @@ def main(config =None):
 
     paths = save_all_bubble_grids(
         df=df_summery,
-        predicates=predicates,
+        predicates=jccards_col,
         llms=llms,
         llm_info=llm_info,
         datasets=datasets,       # or None to infer from df

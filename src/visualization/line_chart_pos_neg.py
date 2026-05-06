@@ -1,12 +1,14 @@
 import math
 import os
 import json
+from pathlib import Path
 from typing import Sequence, Optional, Tuple
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from matplotlib.lines import Line2D
+from visualization.io_utils import default_charts_dir, default_results_dir, load_llm_names, read_summary
 
 def plot_triplet_lines_for_predicates_explicit(
     df: pd.DataFrame,
@@ -237,26 +239,36 @@ def main(config =None):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     if config == None: 
         config = {
-            "folder": os.path.join(root_dir, "output"),
-            "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-22_00-41",
+            "folder": default_results_dir(),
+            "out_dir": default_charts_dir(),
+            "time": None,
             "llms": None,
             "actions": ["zero-shot","wikidata", "fixing","classification"],
             "predicates": ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"],
             "jccards":["J(A1-A2)","J(A1-A34)","J(A3-A4)","J(A4-A1|3)"]
         }   
 
-    folder = config.get("folder", os.path.join(root_dir, "output"))
-    out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-22_00-41")
+    folder = config.get("folder", default_results_dir())
+    out_dir = config.get("out_dir", default_charts_dir())
+    time = config.get("time")
 
     llms_name = config.get("llms", None)
     if llms_name is None:
-        llm_path = f"{root_dir}/data/llm_info.json"
-        with open(llm_path, "r", encoding="utf-8") as f:
-            llms_name = list(json.load(f).keys())
+        llms_name = load_llm_names()
 
-    df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
+    df_summery = read_summary(folder, time)
+    required_split_cols = [
+        "?A1=A2(+)", "?A1>A3(+)", "?A3∅A4(+)", "?A1=A3+A4(+)",
+        "?A1=A2(-)", "?A1>A3(-)", "?A3∅A4(-)", "?A1=A3+A4(-)",
+    ]
+    if any(col not in df_summery.columns for col in required_split_cols):
+        split_summary = Path(folder) / "summary_filtered_idk.csv"
+        if split_summary.exists():
+            df_summery = pd.read_csv(split_summary)
+        else:
+            missing = [col for col in required_split_cols if col not in df_summery.columns]
+            print(f"Skipping positive/negative line charts; missing columns: {missing}")
+            return
     summery_llms = df_summery["llm"].unique()
     llms = []
     for llm in llms_name:
@@ -278,22 +290,6 @@ def main(config =None):
             ylim=(0,1),
             out_dir=f"{out_dir}/pos_neg"
         )
-        
-        paths = save_triplet_plots_for_all_datasets(
-            df=df_summery,
-            pos_predicates=["?A1=A2(+)","?A1>A3(+)","?A3∅A4(+)","?A1=A3+A4(+)"],
-            neu_predicates=['?A1=A2','?A1>A3','?A3∅A4','?A1=A3+A4'],
-            neg_predicates=["?A1=A2(-)","?A1>A3(-)","?A3∅A4(-)","?A1=A3+A4(-)"],
-            base_labels=['?A1=A2','?A1>A3','?A3∅A4','?A1=A3+A4'],
-            actions=[action],
-            llms=llms,
-            ncols=2,
-            figsize=(14, 8),
-            show_values=False,
-            ylim=(0,1),
-            out_dir=f"{out_dir}/pos_neg"
-        )
-
 
 if __name__== "__main__":
     main()

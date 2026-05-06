@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import itertools, matplotlib as mpl
 from matplotlib.gridspec import GridSpec
 from typing import Sequence, Optional, Tuple, List
+from visualization.io_utils import default_charts_dir, default_results_dir, load_llm_names, read_summary
 
 
 def save_all_line_plots(
@@ -270,9 +271,9 @@ def main(config =None):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     if config == None: 
         config = {
-            "folder": os.path.join(root_dir, "output"),
-            "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-22_00-41",
+            "folder": default_results_dir(),
+            "out_dir": default_charts_dir(),
+            "time": None,
             "llms": None,
             "actions": ["zero-shot","wikidata", "fixing","classification"],
             "predicates": ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"],
@@ -281,18 +282,16 @@ def main(config =None):
     predicates = config.get("predicates",["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"])
     actions = config.get("actions",["zero-shot","wikidata", "fixing","classification"])
     jccards_col = config.get("jccards", ["J(A1-A2)","J(A1-A34)","J(A3-A4)","J(A4-A1|3)"])
-    folder = config.get("folder", os.path.join(root_dir, "output"))
-    out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-22_00-41")
+    folder = config.get("folder", default_results_dir())
+    out_dir = config.get("out_dir", default_charts_dir())
+    time = config.get("time")
 
    
     llms_name = config.get("llms", None)
     if llms_name is None:
-        llm_path = f"{root_dir}/data/llm_info.json"
-        with open(llm_path, "r", encoding="utf-8") as f:
-            llms_name = list(json.load(f).keys())
+        llms_name = load_llm_names()
 
-    df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
+    df_summery = read_summary(folder, time)
     summery_llms = df_summery["llm"].unique()
     llms = []
     for llm in llms_name:

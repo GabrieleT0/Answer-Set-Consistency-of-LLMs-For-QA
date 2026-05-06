@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from matplotlib.colors import Normalize
+from visualization.io_utils import default_charts_dir, default_results_dir, load_llm_names, read_summary
 
 def plot_heatmap_actions_1X2_vertical(
     p_value_matrix: pd.DataFrame,   # df with ['llm','action'] + columns (p-values)
@@ -364,15 +365,15 @@ def main(config = None):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     if config == None: 
         config = {
-            "folder": os.path.join(root_dir, "output"),
-            "out_dir": os.path.join(root_dir, "new_charts"),
-            "time": "2025-09-22_00-41",
+            "folder": default_results_dir(),
+            "out_dir": default_charts_dir(),
+            "time": None,
             "llms": None
         }   
         
-    folder = config.get("folder", os.path.join(root_dir, "output"))
-    out_dir = config.get("out_dir", os.path.join(root_dir, "new_charts"))
-    time = config.get("time", "2025-09-22_00-41")
+    folder = config.get("folder", default_results_dir())
+    out_dir = config.get("out_dir", default_charts_dir())
+    time = config.get("time")
 
     actions = ["fixing","classification","wikidata"]
     predicates = ["?A1=A2","?A1>A3","?A1>A4","?A1=A3+A4","?A3∅A4","?A4=A1|3"]
@@ -380,11 +381,9 @@ def main(config = None):
     
     llms_name = config.get("llms", None)
     if llms_name is None:
-        llm_path = f"{root_dir}/data/llm_info.json"
-        with open(llm_path, "r", encoding="utf-8") as f:
-            llms_name = list(json.load(f).keys())
+        llms_name = load_llm_names()
 
-    df_summery = pd.read_csv(f"{folder}/summary_{time}.csv")
+    df_summery = read_summary(folder, time)
     summery_llms = df_summery["llm"].unique()
     llms = []
     for llm in llms_name:
@@ -426,4 +425,3 @@ def main(config = None):
 
 if __name__ == "__main__":
     main()
-
