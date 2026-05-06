@@ -1,87 +1,105 @@
 # Answer Set Consistency of LLMs for Question Answering
 
-Code, datasets, model outputs, evaluation files, and figures supporting a submission on answer-set consistency in large language models.
+This repository contains the code, ASCB benchmark data, model outputs, evaluation scripts, aggregate results, and figures supporting a NeurIPS submission on answer-set consistency in large language models.
 
-The repository studies whether LLM answers respect simple logical relations between related natural-language questions. Each benchmark item contains four questions:
+The project evaluates whether an LLM gives mutually consistent answer sets for groups of related natural-language questions. Each ASCB item contains four questions:
 
-- `Q1`: the original question, with answer set `A1`.
-- `Q2`: a paraphrase of `Q1`, expected to have the same answer set `A2 = A1`.
-- `Q3`: a more restrictive version of `Q1`, expected to satisfy `A3 ⊆ A1`.
+- `Q1`: the base question, with answer set `A1`.
+- `Q2`: a paraphrase of `Q1`, expected to have the same answer set, `A2 = A1`.
+- `Q3`: a restricted version of `Q1`, expected to satisfy `A3 ⊆ A1`.
 - `Q4`: the complementary restriction, expected to satisfy `A4 ⊆ A1`, `A3 ∩ A4 = ∅`, and `A1 = A3 ∪ A4`.
 
-The evaluation computes exact set-consistency indicators, Jaccard similarities, relation-classification summaries, IDK/empty-answer rates, pairwise p-values, and the visualizations used in the paper.
+The evaluation reports exact set-consistency predicates, Jaccard similarities, IDK/empty-answer rates, relation-classification summaries, pairwise p-values, and the figures used in the paper.
 
 ## Repository Layout
 
 ```text
 .
 ├── data/
-│   ├── ASCB/                     # Benchmark question sets, one TSV per source dataset
-│   ├── Spinach/                  # Intermediate/generated SPINACH-derived question files
-│   ├── answers/                  # Raw model answer JSON files
-│   ├── evaluation_results/       # Aggregated CSV outputs used for analysis
-│   ├── question_analysis/        # Golden-answer metadata and question-level figures
-│   ├── llm_info.json             # Model metadata and plotting order
-│   └── wikidata_cache.json       # Cached Wikidata lookups
+│   ├── ASCB/
+│   │   └── en/                         # ASCB benchmark TSV files and Croissant metadata
+│   ├── Spinach/                        # Intermediate SPINACH-derived generation files
+│   ├── answers/                        # Raw model answer JSON files
+│   ├── evaluation_results/             # Committed paper-facing aggregate CSV results
+│   ├── llm_info.json                   # Model metadata used by evaluation and plots
+│   └── wikidata_cache.json             # Cached Wikidata lookups
 ├── src/
-│   ├── question_pipeline/        # Pipeline for generating Q2/Q3/Q4 from seed questions
-│   ├── get_answers/              # LLM prompting, answer extraction, fixing, and classification
-│   ├── evaluation/               # Consistency metrics, relation analysis, p-values
-│   └── visualization/            # Plot generation scripts
-├── charts/                       # Generated charts used by the paper
-├── docs/                         # Static ASCB question-set table for GitHub Pages
-├── requirements.txt              # Python dependencies
-└── LICENSE
+│   ├── question_pipeline/              # Scripts for deriving related questions
+│   ├── get_answers/                    # LLM prompting and answer-generation scripts
+│   ├── evaluation/                     # Metrics, summaries, p-values, and heatmap CSVs
+│   └── visualization/                  # Figure-generation scripts
+├── charts/                             # Generated figures
+├── docs/                               # Static GitHub Pages table of ASCB questions
+├── output/                             # Regenerated local evaluation outputs, if produced
+├── requirements.txt
+├── LICENSE
+└── README.md
 ```
 
-## Data
+## ASCB Data
 
-The benchmark question files are in `data/ASCB/`.
+The ASCB question files are under `data/ASCB/en/`.
 
-| File | Examples | Description |
-| --- | ---: | --- |
-| `LC-QuAD.tsv` | 150 | Questions derived from LC-QuAD-style knowledge-base queries. |
-| `qawiki.tsv` | 150 | Questions derived from QA-Wiki items. |
-| `spinach.tsv` | 150 | Questions derived from SPINACH items. |
-| `synthetic.tsv` | 150 | Synthetic question sets created for controlled logical relations. |
+| File | Description |
+| --- | --- |
+| `LC-QuAD.tsv` | ASCB question groups derived from LC-QuAD-style knowledge-base questions. |
+| `qawiki.tsv` | ASCB question groups derived from QA-Wiki items. |
+| `spinach.tsv` | ASCB question groups derived from SPINACH items. |
+| `synthetic.tsv` | Synthetic ASCB question groups created for controlled logical relations. |
+| `unified-dataset.tsv` | Unified ASCB table combining the benchmark sources. |
+| `croissant_unified_ASCB_hf.json` | Croissant metadata for the unified ASCB dataset. |
 
-Each row contains at least `ID`, `Q1`, `Q2`, `Q3`, and `Q4`. Some source files include additional provenance or type columns.
+Each TSV row contains a related question group with at least `ID`, `Q1`, `Q2`, `Q3`, and `Q4`. Some files also include provenance or type columns.
 
-The committed model-answer files are under `data/answers/`:
-
-- `zero-shot/`: direct answering prompts, and `A1*` variants where present (same question but asked in a different context window).
-- `CtE/`: classification-then-enumerate outputs, named with `classAndAnswer` in the JSON filenames.
-- `Oracle/`: In the prompt, we show the actual relationship linking the questions, labeled fixing in the JSON filenames.
-
-The main aggregate analysis files are in `data/evaluation_results/`, including:
-
-- `analysis.csv`: per-question, per-model, per-action consistency and answer-set details.
-- `summary_filtered_idk.csv`: summary metrics with IDK/empty-answer filtered out in the evaluation metrics.
-- `summary_idk_worst*.csv`: summaries where IDK/empty answers are treated as completly 
-- `p_value_matrices.csv`: Pairwise model-comparison p-values. This is used to verify H2 of the paper: whether an LLM with generally better performance performs significantly better than an LLM with generally worse performance.
-- `heatmaps/`: Heatmap CSV files created from p_value_matrices.csv, used to generate the heatmaps under charts/p_value_heatmap*.*
+The static website table in `docs/index.html` displays ASCB as grouped rows: each row contains the related `Q1`, `Q2`, `Q3`, and `Q4`. The table data is stored in `docs/questions.json` and can be regenerated with:
 
 
-## Answer Set Consistency Benchmark Website Table
+## Model Answers and Results
 
-The repository includes a static website table in `docs/index.html`. It displays ASCB as grouped question sets: each table row contains the related `Q1`, `Q2`, `Q3`, and `Q4` questions.
-You can see the table at the following link: [https://anonymous.4open.science/w/Answer-Set-Consistency-of-LLMs-For-QA-5FE6/](https://anonymous.4open.science/w/Answer-Set-Consistency-of-LLMs-For-QA-5FE6/)
+Raw model outputs are committed under `data/answers/`.
+
+```text
+data/answers/
+├── zero-shot/      # Direct answer generation and relation-classification outputs
+├── CtE/            # Classification-then-enumerate outputs
+└── Oracle/         # Relation-aware fixing/oracle outputs
+```
+
+The committed aggregate results used for analysis are under `data/evaluation_results/`.
+
+Important files include:
+
+- `analysis.csv`: per-question, per-model, per-action answer-set metrics.
+- `analysis_idk_filtered.csv`: per-question metrics after filtering IDK/empty answers.
+- `summary_filtered_idk.csv`: summary metrics with IDK/empty answers filtered from consistency scores.
+- `summary_idk_worst.csv`: summary metrics where IDK/empty answers are treated pessimistically.
+- `summary_*_{zero-shot,classification,fixing}.csv`: per-action summary splits.
+- `p_value_matrices.csv`: pairwise model-comparison p-values.
+- `heatmaps/heatmap_*.csv`: heatmap-ready CSV files derived from `p_value_matrices.csv`.
+- `tradeoff/*.csv`: IDK/consistency trade-off summaries.
+
+Local reproduction scripts write fresh outputs to `output/`. These files may differ from the committed `data/evaluation_results/` if the raw answers, loaders, model list, or filtering policy have changed.
 
 ## Setup
 
-Python 3.10 or newer is required; Python 3.11 is recommended.
+Python 3.10 or newer is required. The repository has been smoke-tested with the local virtual environment in this workspace.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Live model generation requires the relevant provider credentials. The code reads keys from environment variables in `src/get_answers/llms.py`, including:
+Run commands from the repository.
+
+Live model generation requires provider credentials. The answer-generation code reads credentials from environment variables and/or `.env` files used by `src/get_answers/llms.py`.
+
+Common variables include:
 
 ```bash
 export OPENAI_API_KEY=...
 export GOOGLE_API_KEY=...
+export DEEPSEEK_API_KEY=...
 export XAI_API_KEY=...
 export ANTHROPIC_API_KEY=...
 export AZURE_OPENAI_API_KEY=...
@@ -89,15 +107,29 @@ export AZURE_OPENAI_ENDPOINT=...
 export AZURE_API_VERSION=...
 ```
 
-Self-hosted models are configured in `src/get_answers/llms.py` through `SelfHostedAPIWrapper`.
+See `src/env.example` for the minimal example used by this repository.
 
-## Running the Questions Pipelines
+## Reproducing the Experiment
 
-### 1. Generate LLM Answers
+The complete experiment has three stages: answer generation, evaluation, and visualization. If you only need the paper aggregate results, start from the committed CSV files in `data/evaluation_results/`. If you want to regenerate results from raw model JSON files, run the evaluation stage.
 
-The answer-generation code is in `src/get_answers/`.
+### 1. Generate or Update Model Answers
 
-The main configuration file is `src/get_answers/config.json`; prompts are in `src/get_answers/prompts.yaml`. The individual entry points are:
+The answer-generation scripts are in `src/get_answers/`. The main configuration file is:
+
+```text
+src/get_answers/config.json
+```
+
+It specifies the language, datasets, model list, prompt types, and relation labels. The current dataset entries correspond to the ASCB TSV files in `data/ASCB/en/`.
+
+The top-level runner is:
+
+```bash
+python src/get_answers/run.py
+```
+
+The individual generation entry points are:
 
 ```bash
 python src/get_answers/single_question_benchmark.py
@@ -107,50 +139,81 @@ python src/get_answers/relation_classification_and_questions.py
 python src/get_answers/try_fix_llm_response.py
 ```
 
-### 2. Evaluate Consistency
+These scripts call external LLM APIs and require valid credentials. They write JSON outputs under `data/answers/` using the folder and filename conventions expected by the evaluation loaders.
+
+### 2. Regenerate Evaluation CSV Files
+
+To recompute answer-set consistency metrics from `data/answers/` and `data/ASCB/en/`, run:
 
 ```bash
 python src/evaluation/run.py
 ```
 
-This script loads questions and model answers, computes consistency metrics, merges relation-classification results, computes p-values, and writes CSV outputs to `output/`.
+This command:
 
-The committed, paper-facing aggregate results are already available in `data/evaluation_results/`. If regenerating them from raw JSON files, keep the expected action tokens in the filenames or adapt the loaders in `src/evaluation/eval_tool.py` and `src/evaluation/eval_relation.py`.
+- loads ASCB questions from `data/ASCB/en/`;
+- loads raw model answers from `data/answers/`;
+- computes per-question consistency metrics and Jaccard similarities;
+- merges relation-classification information when available;
+- computes pairwise p-values;
+- writes regenerated CSV files to `output/`.
 
-The core evaluated predicates are:
+Main regenerated files:
 
-- `?A1=A2`
-- `?A1=A3+A4`
-- `?A1>A3`
-- `?A1>A4`
-- `?A3∅A4`
-- `?A4=A1|3`
-- Classification/fixing-specific variants comparing `A1`, `A1*`, and `A1**`
+```text
+output/analysis.csv
+output/summary.csv
+output/summary_xidk.csv
+output/summary_zero-shot.csv
+output/summary_classification.csv
+output/summary_fixing.csv
+output/p_value_matrices.csv
+output/heatmap_*.csv
+```
 
-### 4. Generate Figures
+To recompute only the p-value matrix from an existing `analysis.csv`, run:
+
+```bash
+python src/evaluation/eval_pvalue.py
+```
+
+The script uses `output/analysis.csv` when it exists; otherwise it falls back to `data/evaluation_results/analysis.csv`.
+
+### 3. Regenerate Figures
+
+To regenerate the charts from the available aggregate CSV files, run:
 
 ```bash
 python src/visualization/run.py
 ```
 
-The visualization scripts generate line charts, p-value heatmaps, positive/negative split plots, and bubble scatter plots. The generated paper figures are already committed in `charts/`.
+The visualization runner uses:
 
-Several plotting scripts expect timestamped filenames such as `summary_<time>.csv` and `p_value_matrices_<time>.csv`. Update the `time`, `folder`, and `out_dir` values in `src/visualization/run.py` or call the individual plotting modules with an explicit config.
+- `output/` if regenerated summaries are present;
+- otherwise `data/evaluation_results/`.
+
+It writes figures under `charts/`, including line charts, p-value heatmaps, positive/negative split plots, and bubble scatter plots.
 
 ## Metrics
 
-For each model/action/dataset, the evaluation reports:
+For each dataset, model, and action, the evaluation reports:
 
-- Binary consistency predicates over answer sets.
-- Jaccard similarities, for example `J(A1-A2)` and `J(A1-A34)`.
-- IDK/empty-answer indicators for `A1`, `A2`, `A3`, and `A4`.
-- Self-contradiction indicators derived from predicted question relations.
-- Pairwise model p-values for each predicate/action/dataset combination.
+- binary set predicates such as `?A1=A2`, `?A1=A3+A4`, `?A1>A3`, `?A1>A4`, `?A3∅A4`, and `?A4=A1|3`;
+- Jaccard similarities such as `J(A1-A2)`, `J(A1-A34)`, `J(A3-A4)`, and `J(A4-A1|3)`;
+- IDK and empty-answer indicators for `A1`, `A2`, `A3`, and `A4`;
+- relation-classification summaries for predicted logical relations;
+- pairwise model p-values for each predicate/action/dataset combination.
 
-Answers are parsed as sets from pipe-separated model outputs. Empty outputs and `idk` are tracked explicitly and summarized separately.
+Answers are parsed as sets from the committed JSON outputs. Empty outputs and `idk` answers are tracked explicitly so that filtered and pessimistic summaries can both be reported.
+
+## Notes on Reproducibility
+
+- Run scripts from the repository root unless a script explicitly says otherwise.
+- The evaluation expects dataset names matching the ASCB sources: `LC-QuAD`, `qawiki`, `spinach`, and `synthetic`.
+- Re-running evaluation or visualization may overwrite files in `output/` and `charts/`.
 
 ## License
 
 The code in this repository is released under the MIT License. See `LICENSE`.
 
-The ASCB dataset files under `data/ASCB/` are released under the GNU General Public License v3.0 (GPL-3.0).
+The ASCB dataset is released under the GNU General Public License v3.0 (GPL-3.0).
