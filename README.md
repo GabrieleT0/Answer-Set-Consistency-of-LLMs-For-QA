@@ -151,4 +151,6 @@ Answers are parsed as sets from pipe-separated model outputs. Empty outputs and 
 
 ## License
 
-This repository is released under the MIT License. See `LICENSE`.
+The code in this repository is released under the MIT License. See `LICENSE`.
+
+The ASCB dataset files under `data/ASCB/` are released under the GNU General Public License v3.0 (GPL-3.0).
