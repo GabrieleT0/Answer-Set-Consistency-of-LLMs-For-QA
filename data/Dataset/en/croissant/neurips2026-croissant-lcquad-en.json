@@ -1,0 +1,189 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "LC-QuAD-derived English Answer-Set Consistency Benchmark",
+  "description": "English benchmark subset derived from LC-QuAD-style question materials. The file contains 150 benchmark items, each with four semantically related natural-language questions (Q1-Q4) designed to probe equivalence, subset, and complement relations between answer sets.",
+  "url": "TODO_REPLACE_WITH_ANON_DATASET_URL_LCQUAD_EN",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "version": "2026-05-06",
+  "inLanguage": "en",
+  "keywords": [
+    "question answering",
+    "LLM evaluation",
+    "answer set consistency",
+    "LC-QuAD",
+    "English",
+    "TSV"
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "lcquad-en-tsv",
+      "name": "LC-QuAD English benchmark TSV",
+      "description": "150 benchmark items adapted from LC-QuAD-style question pairs and decompositions.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_LCQUAD_EN",
+      "encodingFormat": "text/tab-separated-values",
+      "prov:wasDerivedFrom": "https://github.com/AskNowQA/LC-QuAD"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "lcquad_en",
+      "name": "lcquad_en",
+      "description": "Rows from LC-QuAD.tsv. Each row contains one benchmark item with four related natural-language questions.",
+      "key": [
+        {
+          "@id": "lcquad_en/ID"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/ID",
+          "name": "lcquad_en/ID",
+          "description": "Integer row identifier.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q1",
+          "name": "lcquad_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q2",
+          "name": "lcquad_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q3",
+          "name": "lcquad_en/Q3",
+          "description": "Question expected to target a subset or constrained variant of Q1's answers.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q4",
+          "name": "lcquad_en/Q4",
+          "description": "Complementary question paired with Q3 so that Q3 and Q4 partition or complete Q1 depending on the benchmark item.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataUseCases": [
+    "Evaluation of large language models for consistency across semantically related question variants.",
+    "Analysis of answer-set equivalence, containment, and decomposition behavior in question answering.",
+    "Not recommended as a standalone training corpus for open-domain QA because it is small and evaluation-oriented."
+  ],
+  "rai:dataBiases": [
+    "Coverage is inherited in part from LC-QuAD-style knowledge-base QA examples and may over-represent entities and relations that are well documented in Wikidata-like resources.",
+    "The English-only phrasing may favor models and prompting strategies optimized for English."
+  ],
+  "rai:dataLimitations": [
+    "The dataset is intended for consistency analysis, not comprehensive factual QA evaluation.",
+    "Some intended semantic relations remain approximate because natural-language questions can be pragmatically ambiguous.",
+    "The subset is small, which limits fine-grained subgroup analysis."
+  ],
+  "rai:personalSensitiveInformation": "The released file contains benchmark questions only and is not intended to include personal or sensitive user data.",
+  "rai:dataSocialImpact": "This subset can support more reliable QA evaluation by exposing inconsistency under paraphrases and constrained rewrites. It should not be treated as a comprehensive measure of truthfulness, safety, or fairness.",
+  "rai:hasSyntheticData": false,
+  "prov:wasDerivedFrom": [
+    "https://github.com/AskNowQA/LC-QuAD"
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "@id": "activity/lcquad-curation",
+      "name": "LC-QuAD subset curation",
+      "description": "Source question materials were selected and normalized into Q1-Q4 columns for answer-set consistency evaluation.",
+      "prov:used": [
+        "https://github.com/AskNowQA/LC-QuAD"
+      ]
+    }
+  ]
+}

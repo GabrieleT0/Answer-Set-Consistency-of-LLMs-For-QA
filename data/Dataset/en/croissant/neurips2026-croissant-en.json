@@ -1,0 +1,602 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Answer-Set Consistency QA Benchmark Collection (English)",
+  "description": "English benchmark collection used in the Answer-Set Consistency of LLMs for Question Answering study. The collection contains four TSV files with tuples of semantically related questions (Q1-Q4) designed to test set-equivalence, containment, and partition-style consistency in question answering. The English release under data/Dataset/en contains 596 benchmark items in total, with 150 data rows in each source file. For NeurIPS 2026 ED submission, this file is a collection-level reference only; individual datasets should be submitted with the per-dataset Croissant files.",
+  "url": "TODO_REPLACE_WITH_ANON_COLLECTION_URL",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "version": "2026-05-04",
+  "inLanguage": "en",
+  "keywords": [
+    "question answering",
+    "LLM evaluation",
+    "answer set consistency",
+    "benchmark",
+    "English",
+    "TSV"
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "lcquad-en-tsv",
+      "name": "LC-QuAD English benchmark TSV",
+      "description": "150 benchmark items adapted from LC-QuAD-style question pairs and decompositions.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_LCQUAD_EN",
+      "encodingFormat": "text/tab-separated-values",
+      "prov:wasDerivedFrom": "https://github.com/AskNowQA/LC-QuAD"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "qawiki-en-tsv",
+      "name": "QAWiki English benchmark TSV",
+      "description": "150 benchmark items constructed from QAWiki-style entities and relation-preserving question rewrites.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_QAWIKI_EN",
+      "encodingFormat": "text/tab-separated-values",
+      "prov:wasDerivedFrom": "http://qawiki.org/"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "spinach-en-tsv",
+      "name": "SPINACH English benchmark TSV",
+      "description": "150 benchmark items derived from SPINACH-style SPARQL question seeds and rewritten into four related queries.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_SPINACH_EN",
+      "encodingFormat": "text/tab-separated-values"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "synthetic-en-tsv",
+      "name": "Synthetic English benchmark TSV",
+      "description": "150 synthetic benchmark items created to exercise controlled set-theoretic relations among answer sets.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_SYNTHETIC_EN",
+      "encodingFormat": "text/tab-separated-values"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "lcquad_en",
+      "name": "lcquad_en",
+      "description": "Rows from LC-QuAD.tsv. Each row contains one benchmark item with four related natural-language questions.",
+      "key": [
+        {
+          "@id": "lcquad_en/ID"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/ID",
+          "name": "lcquad_en/ID",
+          "description": "Integer row identifier.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q1",
+          "name": "lcquad_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q2",
+          "name": "lcquad_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q3",
+          "name": "lcquad_en/Q3",
+          "description": "Question expected to target a subset or constrained variant of Q1's answers.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "lcquad_en/Q4",
+          "name": "lcquad_en/Q4",
+          "description": "Complementary question paired with Q3 so that Q3 and Q4 partition or complete Q1 depending on the benchmark item.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "lcquad-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "qawiki_en",
+      "name": "qawiki_en",
+      "description": "Rows from qawiki.tsv. Each row links one or two source entities to four related questions and a relation type label.",
+      "key": [
+        {
+          "@id": "qawiki_en/ID"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/q1",
+          "name": "qawiki_en/q1",
+          "description": "Optional URI-like anchor for the first seed entity.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/q2",
+          "name": "qawiki_en/q2",
+          "description": "Optional URI-like anchor for the second seed entity.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/ID",
+          "name": "qawiki_en/ID",
+          "description": "Integer row identifier.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/Q1",
+          "name": "qawiki_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/Q2",
+          "name": "qawiki_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/Q3",
+          "name": "qawiki_en/Q3",
+          "description": "Question targeting a constrained subset of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/Q4",
+          "name": "qawiki_en/Q4",
+          "description": "Complementary question paired with Q3.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/Type",
+          "name": "qawiki_en/Type",
+          "description": "Relation type code used by the benchmark authors.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "Type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "qawiki_en/type_legend_note",
+          "name": "qawiki_en/type_legend_note",
+          "description": "Auxiliary note column whose header and first rows encode the legend for the Type labels.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "qawiki-en-tsv"
+            },
+            "extract": {
+              "column": "0: fully containment"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "spinach_en",
+      "name": "spinach_en",
+      "description": "Rows from spinach.tsv. Each row includes a source SPARQL identifier plus four related questions and an optional type label.",
+      "key": [
+        {
+          "@id": "spinach_en/ID"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/usparql",
+          "name": "spinach_en/usparql",
+          "description": "Identifier for the SPARQL seed query or source example.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "usparql"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/ID",
+          "name": "spinach_en/ID",
+          "description": "Integer row identifier.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/Q1",
+          "name": "spinach_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/Q2",
+          "name": "spinach_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/Q3",
+          "name": "spinach_en/Q3",
+          "description": "Question targeting a constrained subset of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/Q4",
+          "name": "spinach_en/Q4",
+          "description": "Complementary question paired with Q3.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "spinach_en/type",
+          "name": "spinach_en/type",
+          "description": "Optional relation type label as stored in the TSV.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "spinach-en-tsv"
+            },
+            "extract": {
+              "column": "type"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "synthetic_en",
+      "name": "synthetic_en",
+      "description": "Rows from synthetic.tsv. Each row is a synthetic benchmark item with four related questions.",
+      "key": [
+        {
+          "@id": "synthetic_en/ID"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic_en/ID",
+          "name": "synthetic_en/ID",
+          "description": "Integer row identifier.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "synthetic-en-tsv"
+            },
+            "extract": {
+              "column": "ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic_en/Q1",
+          "name": "synthetic_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "synthetic-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic_en/Q2",
+          "name": "synthetic_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "synthetic-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic_en/Q3",
+          "name": "synthetic_en/Q3",
+          "description": "Question targeting a constrained subset of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "synthetic-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "synthetic_en/Q4",
+          "name": "synthetic_en/Q4",
+          "description": "Complementary question paired with Q3.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "synthetic-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataCollection": "The English benchmark was assembled as a small collection of question-answering evaluation tables. Items were curated from benchmark-style sources such as LC-QuAD, QAWiki-related materials, SPARQL-based question seeds, and author-created synthetic prompts. Each item was normalized into a four-question template (Q1-Q4) designed to probe equivalence, containment, and complement relations between answer sets.",
+  "rai:dataCollectionType": [
+    "Secondary Data Analysis",
+    "Manual Human Curation",
+    "Synthetic Data Generation"
+  ],
+  "rai:dataCollectionRawData": "The raw inputs are natural-language questions and, for some subsets, entity or SPARQL identifiers used as anchors during curation.",
+  "rai:dataPreprocessingProtocol": [
+    "Source materials were converted into tab-separated files with a consistent Q1-Q4 layout.",
+    "Question sets were manually or programmatically rewritten so that Q2 is intended as an equivalent reformulation of Q1, while Q3 and Q4 express constrained or complementary variants.",
+    "Auxiliary source-specific metadata was retained only when needed for traceability, such as entity anchors or SPARQL identifiers."
+  ],
+  "rai:dataAnnotationProtocol": "The benchmark does not provide per-item human preference labels. Instead, its supervision signal is structural: each item encodes intended semantic relations among question answer sets, such as equivalence between Q1 and Q2 or subset/complement relations involving Q3 and Q4.",
+  "rai:dataUseCases": [
+    "Evaluation of large language models for consistency across semantically related question variants.",
+    "Analysis of answer-set equivalence, containment, and decomposition behavior in question answering.",
+    "Benchmarking prompting, retrieval, or post-processing methods that aim to improve semantic consistency.",
+    "Not recommended as a standalone training corpus for open-domain QA because it is small, purpose-built, and relation-focused rather than coverage-focused."
+  ],
+  "rai:dataBiases": [
+    "Because part of the benchmark is derived from existing knowledge-base QA resources, topic coverage is likely skewed toward entities, relations, and domains that are well represented in Wikidata-style sources.",
+    "The English-only release may favor models and prompting strategies that perform better on English phrasing and on Western or highly documented entities.",
+    "Synthetic items may encode author assumptions about what constitutes a clean subset or complement relation, which can make them easier or more regular than naturally occurring user queries."
+  ],
+  "rai:dataLimitations": [
+    "The dataset is designed for consistency analysis, not for measuring broad factual QA quality or real-user utility.",
+    "Some semantic relations are approximate and depend on pragmatic interpretation of natural-language questions, so benchmark items may still contain ambiguity.",
+    "The small size of each source file limits fine-grained subgroup analysis and makes the dataset sensitive to a few difficult or noisy items.",
+    "The benchmark should not be used to make claims about demographic fairness because it does not contain the coverage or annotations needed for that purpose."
+  ],
+  "rai:personalSensitiveInformation": "The released TSV files are question-only benchmark items and are not intended to contain personal or sensitive user data. Some questions may refer to public figures or public entities drawn from knowledge bases.",
+  "rai:dataSocialImpact": "A positive use of this dataset is improving the reliability of QA systems by testing whether they behave consistently under semantically related prompts. A negative use would be over-claiming that success on this benchmark implies general truthfulness, safety, or fairness. The dataset should therefore be treated as a targeted diagnostic benchmark rather than a comprehensive certification tool.",
+  "rai:hasSyntheticData": true,
+  "rai:dataReleaseMaintenancePlan": "This release is a static benchmark snapshot tied to the submission package dated 2026-05-04. Future changes should be versioned by publishing a new Croissant file and updating the dataset URL to the corresponding anonymous archival or hosting location.",
+  "prov:wasDerivedFrom": [
+    "https://github.com/AskNowQA/LC-QuAD",
+    "http://qawiki.org/",
+    "TODO_REPLACE_WITH_ANON_SPINACH_SOURCE_URL_IF_APPLICABLE"
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "@id": "activity/source-curation",
+      "name": "Source curation and benchmark assembly",
+      "description": "Authors selected source question materials and reorganized them into a unified English benchmark collection under data/Dataset/en.",
+      "prov:used": [
+        "https://github.com/AskNowQA/LC-QuAD",
+        "http://qawiki.org/",
+        "TODO_REPLACE_WITH_ANON_SPINACH_SOURCE_URL_IF_APPLICABLE"
+      ]
+    },
+    {
+      "@type": "prov:Activity",
+      "@id": "activity/question-normalization",
+      "name": "Question normalization",
+      "description": "Each benchmark item was normalized into Q1-Q4 columns so that related questions expose expected answer-set relations such as equivalence, subset, and complement."
+    },
+    {
+      "@type": "prov:Activity",
+      "@id": "activity/synthetic-generation",
+      "name": "Synthetic benchmark generation",
+      "description": "A subset of the English benchmark was author-generated to create controlled question sets with intended set-theoretic relations.",
+      "prov:used": "TODO_REPLACE_WITH_ANON_CODE_URL_GENERATE_SYNTHETIC"
+    }
+  ]
+}
