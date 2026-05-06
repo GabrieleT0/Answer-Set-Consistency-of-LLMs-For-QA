@@ -20,8 +20,12 @@ import datetime
 from dotenv import load_dotenv
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
-import utils
-import llms
+try:
+    from . import utils
+    from . import llms
+except ImportError:
+    import utils
+    import llms
 
 
 # === Logging ===

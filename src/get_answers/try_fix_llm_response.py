@@ -8,8 +8,12 @@ import datetime
 from dotenv import load_dotenv
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
-import utils
-import llms
+try:
+    from . import utils
+    from . import llms
+except ImportError:
+    import utils
+    import llms
 
 # === Setup ===
 
@@ -50,7 +54,7 @@ def equal_test(config, prompts, llm_model, dataset_name, language='en', logger=s
     fix_prompt = prompts[language]['equal_fix']
     root_dir = config["root_dir"]
 
-    tsv_path = os.path.join(root_dir, f'data/Dataset/{language}/{dataset_name}')
+    tsv_path = os.path.join(root_dir, f'data/ASCB/{language}/{dataset_name}')
     questions = [(row['Q1'], row['Q2']) for row in csv.DictReader(open(tsv_path, encoding='utf-8'), delimiter='\t')]
 
     results_q1 = load_answers(config, dataset_name, 'equal', 'Q1', llm_model, language)
@@ -86,7 +90,7 @@ def sup_sub_test(config, prompts, llm_model, dataset_name, language='en', logger
     fix_prompt = prompts[language]['sup_sub_fix']
     root_dir = config["root_dir"]
 
-    tsv_path = os.path.join(root_dir, f'data/Dataset/{language}/{dataset_name}')
+    tsv_path = os.path.join(root_dir, f'data/ASCB/{language}/{dataset_name}')
     questions = [(row['Q1'], row['Q3']) for row in csv.DictReader(open(tsv_path, encoding='utf-8'), delimiter='\t')]
 
     results_q1 = load_answers(config, dataset_name, 'sup-sub', 'Q1', llm_model, language)
@@ -122,7 +126,7 @@ def minus_test(config, prompts, llm_model, dataset_name, language='en', start_in
     fix_prompt = prompts[language]['minus_fix']
     root_dir = config["root_dir"]
 
-    tsv_path = os.path.join(root_dir, f'data/Dataset/{language}/{dataset_name}')
+    tsv_path = os.path.join(root_dir, f'data/ASCB/{language}/{dataset_name}')
     questions = [(row['Q1'], row['Q3'], row['Q4']) for row in csv.DictReader(open(tsv_path, encoding='utf-8'), delimiter='\t')]
     end_index = min(end_index or len(questions), len(questions))
 

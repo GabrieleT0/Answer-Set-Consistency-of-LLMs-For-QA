@@ -21,6 +21,7 @@ def setup_logging(name: str, log_prefix: str = "pipeline"):
         return logger  # Already configured
 
     logger.setLevel(logging.INFO)
+    logger.propagate = False
 
     log_dir = os.path.join(os.path.dirname(__file__), "logs")
     os.makedirs(log_dir, exist_ok=True)

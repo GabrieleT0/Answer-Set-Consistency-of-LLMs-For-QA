@@ -2,8 +2,12 @@ import os
 import csv
 import json
 from langchain_core.prompts import PromptTemplate
-from llms import PromptLLMS
-import utils 
+try:
+    from .llms import PromptLLMS
+    from . import utils
+except ImportError:
+    from llms import PromptLLMS
+    import utils
 import yaml
 import datetime
 import logging
@@ -111,7 +115,7 @@ def run_benchmark_equal(prompt_type, config, logger):
         for llm_model in config["llm_models"]:
             for dataset in config["datasets"]:
                 logger.info(f"Processing dataset: {dataset} for model: {llm_model} and language: {language}")
-                tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
+                tsv_file = os.path.join(root_dir, f'data/ASCB/{language}/{dataset}')
 
                 for column in ['Q1', 'Q2', 'Q3', 'Q4']:
                     logger.info(f"Processing column: {column}")

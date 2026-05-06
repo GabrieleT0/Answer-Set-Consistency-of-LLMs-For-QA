@@ -1,9 +1,14 @@
 from langchain_core.prompts import PromptTemplate
-from llms import PromptLLMS
-import llms
+try:
+    from .llms import PromptLLMS
+    from . import llms
+    from . import utils
+except ImportError:
+    from llms import PromptLLMS
+    import llms
+    import utils
 import os
 import csv
-import utils
 import json
 import yaml
 import datetime
@@ -45,7 +50,7 @@ with open(PROMPT_PATH, "r", encoding="utf-8") as f:
 
 def relation_identification(llm_model, language, dataset, logger):
     dataset_name = dataset.split('.')[0]
-    tsv_file = root_dir + f"/data/Dataset/{language}/{dataset}"
+    tsv_file = root_dir + f"/data/ASCB/{language}/{dataset}"
     PROMPTS_equal = PROMPTS["relation_classification"][language]["template_classification"]
     PROMPTS_minus = PROMPTS["relation_classification_minus"][language]["template_classification"]
     # PROMPTS_all = PROMPTS["relation_classification_all"][language]["template_classification"]

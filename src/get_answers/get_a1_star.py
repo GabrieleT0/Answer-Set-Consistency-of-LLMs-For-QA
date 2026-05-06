@@ -2,8 +2,12 @@ import os
 import csv
 import json
 from langchain_core.prompts import PromptTemplate
-from llms import PromptLLMS
-import utils 
+try:
+    from .llms import PromptLLMS
+    from . import utils
+except ImportError:
+    from llms import PromptLLMS
+    import utils
 import yaml
 import datetime
 import logging

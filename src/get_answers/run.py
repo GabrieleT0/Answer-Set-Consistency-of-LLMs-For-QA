@@ -27,13 +27,12 @@ def main():
     logger.info("Loaded config from config.json")
     logger.info(f"{config}")
     # Inject root_dir dynamically
-    config["root_dir"] = os.path.dirname(os.path.abspath(__name__))
+    config["root_dir"] = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     # classify_main(config=None, logger=logger)
 
     llms = config["llm_models"]
     for llm in llms:
-        config["llm_models"] = [llm]
-        """         
+        config["llm_models"] = [llm]        
         logger.info("=== Starting unified LLM benchmark pipeline ===")
         
         logger.info("Step 0: Identify Relations")
@@ -46,12 +45,9 @@ def main():
 
         logger.info("Step 3: Running relation classification and question generation")
         classify_main(config, logger)
-        """
-        logger.info("=== Step 4: Running benchmark with CoT  ===")
-
-        logger.info("All tasks completed successfully.")
-        cot_main(config, logger)
+        logger.info("No generation step is enabled in src/get_answers/run.py by default.")
+        logger.info("Run the individual scripts directly after configuring API keys, or uncomment the desired pipeline steps.")
+        logger.info("All configured tasks completed successfully.")
 
 if __name__ == "__main__":
     main()
-

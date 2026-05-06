@@ -8,8 +8,12 @@ import datetime
 from dotenv import load_dotenv
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
-import utils
-import llms
+try:
+    from . import utils
+    from . import llms
+except ImportError:
+    import utils
+    import llms
 
 # Conditional logging
 def setup_logger():
@@ -46,7 +50,7 @@ def load_prompts():
 def run_benchmark(config, prompts, llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     root_dir = config["root_dir"]
-    tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
+    tsv_file = os.path.join(root_dir, f'data/ASCB/{language}/{dataset}')
     
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
