@@ -2,6 +2,9 @@ import os
 import pandas as pd
 from scipy.stats import binomtest
 import json
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Extended predicates and column names
 PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4', '?A4=A1|3']
@@ -124,14 +127,13 @@ def compute_pval_matrix(df: pd.DataFrame, llms, action_filter="zero-shot"):
     return results
 
 
-def p_value_matrixs(df_analysis: pd.DataFrame, actions):
+def p_value_matrixs(df_analysis: pd.DataFrame, actions, llm_info_path=None):
     """
     Wrapper to compute p-value matrices for all datasets and predicates.
     Saves results in wide format CSV.
     """
     rows_wide = []
-    root_dir = os.path.dirname(os.path.abspath(__name__))
-    llm_path = f"{root_dir}/data/llm_info.json"
+    llm_path = Path(llm_info_path) if llm_info_path else REPO_ROOT / "data" / "llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
         llm_info = json.load(f)
     llms = list(llm_info.keys())
@@ -153,12 +155,15 @@ def p_value_matrixs(df_analysis: pd.DataFrame, actions):
     return df_pvalue
 
 if __name__ == "__main__":
-    # Example usage
-    root_dir = os.path.dirname(os.path.abspath(__name__))
-    folder = root_dir + "/output/"
-    df_analysis = pd.read_csv(folder + "analysis.csv")
+    output_folder = REPO_ROOT / "output"
+    fallback_folder = REPO_ROOT / "data" / "evaluation_results"
+    folder = output_folder if (output_folder / "analysis.csv").exists() else fallback_folder
+
+    df_analysis = pd.read_csv(folder / "analysis.csv")
     actions = ["zero-shot", "fixing", "classification"]
-    # df_pvalue = p_value_matrixs(df_analysis, actions)
-    # df_pvalue.to_csv(os.path.join(folder, "p_value_matrices.csv"), index=False)
+    df_pvalue = p_value_matrixs(df_analysis, actions)
+    df_pvalue.to_csv(folder / "p_value_matrices.csv", index=False)
     df_pval = compute_pvals(df_analysis)
+    print(f"Read analysis from {folder / 'analysis.csv'}")
+    print(f"Wrote p-value matrices to {folder / 'p_value_matrices.csv'}")
     print(df_pval.shape)

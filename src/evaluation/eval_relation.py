@@ -193,7 +193,8 @@ def load_relations(root_dir, datasets, llms):
 
     for file in json_files:
         elements = file.replace("_", "/").replace(".json", "").split("/")
-        dataset = next((d for d in datasets if d in elements), None)
+        elements_lower = [e.lower() for e in elements]
+        dataset = next((d for d in datasets if d.lower() in elements_lower), None)
         llm = next((l for l in llms if l in elements), None)
 
         if all([dataset, llm]):
@@ -400,6 +401,10 @@ def load_relation_clf(root_dir, datasets, llms, tasks) -> pd.DataFrame:
 
     # Materialize dataframe
     df = pd.DataFrame(rows_map.values())
+    if df.empty:
+        return pd.DataFrame(
+            columns=["Q_ID", "dataset", "llm", "R(1-2)", "R(1-3)", "R(1-34)", "action"]
+        )
     for c in ["R(1-2)", "R(1-3)", "R(1-34)"]:
         if c not in df.columns:
             df[c] = pd.NA
@@ -419,12 +424,17 @@ def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
             df_analysis[c] = pd.NA
 
     # Deduplicate right tables on keys
-    df_rel = df_relation[keys + rel_cols].drop_duplicates(subset=keys)
+    df_rel = (
+        df_relation.reindex(columns=keys + rel_cols)
+        .dropna(subset=keys, how="any")
+        .drop_duplicates(subset=keys)
+    )
 
     # df_relation_clf may have only a subset of rel_cols; align to full set
     clf_cols = [c for c in rel_cols if c in df_relation_clf.columns]
     df_rel_clf_aligned = (
-        df_relation_clf[keys + clf_cols]
+        df_relation_clf.reindex(columns=keys + clf_cols)
+        .dropna(subset=keys, how="any")
         .drop_duplicates(subset=keys)
         .reindex(columns=keys + rel_cols)  # add missing relation cols as NaN
     )
@@ -562,4 +572,3 @@ def update_summary_by_relations(
             set_means(mask_overall, group, rel_col, truth_label)
 
     return out
-

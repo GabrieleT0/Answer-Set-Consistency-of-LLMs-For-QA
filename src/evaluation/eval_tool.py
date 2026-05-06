@@ -43,15 +43,25 @@ def load_all_questions(root_dir, datasets, languages):
     all_dfs = []
 
     for dataset in datasets:
+        dataset_stem = os.path.splitext(dataset)[0]
         for lang in languages:
-            question_path = os.path.join(root_dir, "data", "Dataset", lang, f"{dataset}.tsv")
-            if not os.path.exists(question_path):
-                print(f"File not found: {question_path}")
+            candidates = [
+                os.path.join(root_dir, "data", "ASCB", lang, f"{dataset_stem}.tsv"),
+                os.path.join(root_dir, "data", "ASCB", lang, f"{dataset_stem.lower()}.tsv"),
+                os.path.join(root_dir, "data", "ASCB", f"{dataset_stem}.tsv"),
+                os.path.join(root_dir, "data", "ASCB", f"{dataset_stem.lower()}.tsv"),
+                os.path.join(root_dir, "data", "Dataset", lang, f"{dataset_stem}.tsv"),
+                os.path.join(root_dir, "data", "Dataset", f"{dataset_stem}.tsv"),
+            ]
+            candidates = list(dict.fromkeys(candidates))
+            question_path = next((path for path in candidates if os.path.exists(path)), None)
+            if question_path is None:
+                print(f"File not found. Tried: {candidates}")
                 continue
 
             df = load_question(question_path)
             df = df.copy()
-            df["q_index"] = df.index
+            df["q_index"] = df["ID"].astype(int) if "ID" in df.columns else df.index
             df["dataset"] = dataset
             df["lang"] = lang
 
@@ -62,7 +72,7 @@ def load_all_questions(root_dir, datasets, languages):
 
 ########Answer Analysis ########
 def load_answers(folder: str, datasets, llms, actions, tasks, languages, questions) -> pd.DataFrame:
-    df_answers = pd.DataFrame(columns=["Q_ID", "Q_serie", "action", "task", "dataset", "lang","llm"])
+    answer_frames = []
 
     json_files = [
         os.path.join(root, file)
@@ -76,10 +86,10 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
         if not file.split("/")[-1].startswith("Q"):
             continue
         elements = file.replace("_", "/").replace(".json", "").split("/")
-        question = next((q for q in questions if q in elements), None)
-        action = next((a for a in actions if a in elements), "zero-shot")
-        task = next((t for t in tasks if t in elements), None)
         elements_lower = [e.lower() for e in elements]
+        question = next((q for q in questions if q in elements), None)
+        action = _infer_action(elements_lower, actions)
+        task = next((t for t in tasks if t in elements), None)
         dataset = next((d for d in datasets if d.lower() in elements_lower), None)
         lang = next((l for l in languages if l in elements), None)
         llm = next((l for l in llms if l in elements), None)
@@ -94,21 +104,51 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
             df["dataset"] = dataset
             df["llm"] = llm
             df["lang"] = lang
-            df_answers = pd.concat([df_answers, df], ignore_index=True)
+            answer_frames.append(df)
 
-    return df_answers
+    columns = ["Q_ID", "Answer", "Q_serie", "action", "task", "dataset", "llm", "lang"]
+    if not answer_frames:
+        return pd.DataFrame(columns=columns)
+    return pd.concat(answer_frames, ignore_index=True)
+
+
+def _infer_action(elements_lower, actions):
+    actions_lower = {a.lower(): a for a in actions}
+    if "oracle" in elements_lower or "fixing" in elements_lower:
+        return actions_lower.get("fixing", "fixing")
+    if "cte" in elements_lower or "classandanswer" in elements_lower or "classification" in elements_lower:
+        return actions_lower.get("classification", "classification")
+    if "chain-of-thought" in elements_lower or "chain" in elements_lower:
+        return actions_lower.get("chain-of-thought", "chain-of-thought")
+    if "star" in elements_lower:
+        return actions_lower.get("star", "star")
+    if "wikidata" in elements_lower:
+        return actions_lower.get("wikidata", actions_lower.get("zero-shot", "zero-shot"))
+    return actions_lower.get("zero-shot", "zero-shot")
 
 def enrich_answers(df_answers, df_questions):
-    df_answers["Question"] = df_answers.apply(
-        lambda x: df_questions.loc[
-            (df_questions["q_index"] == int(x["Q_ID"])) &
-            (df_questions["dataset"] == x["dataset"])
-        ][x["Q_serie"]].values[0]
-        if not df_questions.loc[
-            (df_questions["q_index"] == int(x["Q_ID"])) &
-            (df_questions["dataset"] == x["dataset"]) 
-        ].empty else None,
-        axis=1
+    required_question_cols = {"q_index", "dataset", "Q1", "Q2", "Q3", "Q4"}
+    missing_question_cols = required_question_cols - set(df_questions.columns)
+    if missing_question_cols:
+        raise ValueError(
+            "Question files were not loaded correctly. "
+            f"Missing columns: {sorted(missing_question_cols)}"
+        )
+
+    question_lookup = df_questions.melt(
+        id_vars=["q_index", "dataset"],
+        value_vars=["Q1", "Q2", "Q3", "Q4"],
+        var_name="Q_serie",
+        value_name="Question",
+    )
+    question_lookup["Q_ID"] = question_lookup["q_index"].astype(int)
+
+    df_answers = df_answers.copy()
+    df_answers["Q_ID"] = pd.to_numeric(df_answers["Q_ID"], errors="coerce").astype("Int64")
+    df_answers = df_answers.merge(
+        question_lookup[["Q_ID", "dataset", "Q_serie", "Question"]],
+        on=["Q_ID", "dataset", "Q_serie"],
+        how="left",
     )
 
     df_answers.drop_duplicates(
