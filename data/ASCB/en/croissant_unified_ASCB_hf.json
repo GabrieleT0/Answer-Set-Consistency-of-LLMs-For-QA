@@ -44,7 +44,7 @@
   "description": "Unified English benchmark file created by merging the LC-QuAD, QAWiki, SPINACH, and synthetic subsets into one TSV. The unified release contains 600 benchmark items with columns index, source_id, Q1, Q2, Q3, Q4, and source. It is intended for evaluating answer-set consistency across semantically related question variants while preserving the origin of each item.",
   "url": "TODO_REPLACE_WITH_ANON_DATASET_URL_UNIFIED_EN",
   "citeAs": "Anonymous. Unified English Answer-Set Consistency Benchmark. Version 1.0.0. NeurIPS 2026 Evaluations and Datasets Track submission.",
-  "license": "https://spdx.org/licenses/MIT.html",
+  "license": "GPL-3.0",
   "version": "1.0.0",
   "datePublished": "2026-05-06",
   "inLanguage": "en",
@@ -64,7 +64,7 @@
       "@id": "unified-benchmark-en-tsv",
       "name": "Unified English benchmark TSV",
       "description": "600 benchmark items merged from the four English source subsets.",
-      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_UNIFIED_EN",
+      "contentUrl": "https://huggingface.co/datasets/anonymous2026nips/llm-answer-set-qa/resolve/main/unified_benchmark.tsv",
       "sha256": "670af75f03ce4ffeebcf1298e2ef076eda82dd7fec1e4930b296810ac260124a",
       "encodingFormat": "text/tab-separated-values"
     }
@@ -205,10 +205,11 @@
   "prov:wasGeneratedBy": [
     {
       "@type": "prov:Activity",
-      "@id": "activity/unified-merge",
-      "name": "Unified benchmark merge",
-      "description": "The four English source benchmark files were merged into one TSV with a global index and preserved source-local identifiers.",
-      "prov:used": "TODO_REPLACE_WITH_ANON_CODE_URL_PREPARE_DATASET_SCRIPT"
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "Review of questions",
+      "sc:description": "Manual review of every questions to see if they matches our inclusion criteria to asses the Answer Set Consistency."
     }
   ]
 }
