@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "citeAs": "cr:citeAs",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Unified English Answer-Set Consistency Benchmark",
+  "description": "Unified English benchmark file created by merging the LC-QuAD, QAWiki, SPINACH, and synthetic subsets into one TSV. The unified release contains 600 benchmark items with columns index, source_id, Q1, Q2, Q3, Q4, and source. It is intended for evaluating answer-set consistency across semantically related question variants while preserving the origin of each item.",
+  "url": "TODO_REPLACE_WITH_ANON_DATASET_URL_UNIFIED_EN",
+  "citeAs": "Anonymous. Unified English Answer-Set Consistency Benchmark. Version 1.0.0. NeurIPS 2026 Evaluations and Datasets Track submission.",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "version": "1.0.0",
+  "datePublished": "2026-05-06",
+  "inLanguage": "en",
+  "keywords": [
+    "question answering",
+    "LLM evaluation",
+    "answer set consistency",
+    "benchmark",
+    "English",
+    "TSV",
+    "unified dataset"
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "unified-benchmark-en-tsv",
+      "name": "Unified English benchmark TSV",
+      "description": "600 benchmark items merged from the four English source subsets.",
+      "contentUrl": "TODO_REPLACE_WITH_ANON_FILE_URL_UNIFIED_EN",
+      "sha256": "670af75f03ce4ffeebcf1298e2ef076eda82dd7fec1e4930b296810ac260124a",
+      "encodingFormat": "text/tab-separated-values"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "unified_benchmark_en",
+      "name": "unified_benchmark_en",
+      "description": "Rows from unified_benchmark.tsv. Each row contains one benchmark item with a global index, original source-local identifier, four related natural-language questions, and a source label.",
+      "key": [
+        {
+          "@id": "unified_benchmark_en/index"
+        }
+      ],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/index",
+          "name": "unified_benchmark_en/index",
+          "description": "Globally unique row index within the unified benchmark file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/source_id",
+          "name": "unified_benchmark_en/source_id",
+          "description": "Original row identifier inside the source dataset before merging.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "source_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/Q1",
+          "name": "unified_benchmark_en/Q1",
+          "description": "Primary question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "Q1"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/Q2",
+          "name": "unified_benchmark_en/Q2",
+          "description": "Semantically equivalent reformulation of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "Q2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/Q3",
+          "name": "unified_benchmark_en/Q3",
+          "description": "Question targeting a constrained subset of Q1.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "Q3"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/Q4",
+          "name": "unified_benchmark_en/Q4",
+          "description": "Complementary or paired question relative to Q3.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "Q4"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "unified_benchmark_en/source",
+          "name": "unified_benchmark_en/source",
+          "description": "Source subset label for the benchmark item. Values are one of LC-QuAD, qawiki, spinach, or synthetic.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "unified-benchmark-en-tsv"
+            },
+            "extract": {
+              "column": "source"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataUseCases": "[\"Evaluation of large language models for consistency across semantically related question variants using one merged benchmark file.\", \"Analysis of answer-set equivalence, containment, and decomposition behavior while preserving the source subset of each item.\", \"Not recommended as a standalone training corpus for open-domain QA because it is a small, evaluation-oriented benchmark.\"]",
+  "rai:dataBiases": "[\"Coverage inherits biases from the underlying LC-QuAD, QAWiki, SPARQL-derived, and synthetic source subsets.\", \"The English-only release may favor models and prompting strategies optimized for English.\", \"Synthetic items may be cleaner and more regular than naturally occurring user queries.\"]",
+  "rai:dataLimitations": "[\"This unified file is designed for consistency analysis rather than comprehensive factual QA evaluation.\", \"Some intended semantic relations remain approximate because natural-language questions can be pragmatically ambiguous.\", \"The benchmark should not be used to make claims about demographic fairness because it lacks the necessary coverage and annotations.\"]",
+  "rai:personalSensitiveInformation": "The released file contains benchmark questions only and is not intended to include personal or sensitive user data.",
+  "rai:dataSocialImpact": "A positive use of this dataset is improving the reliability of QA systems by testing whether they behave consistently under semantically related prompts. A negative use would be over-claiming that success on this benchmark implies general truthfulness, safety, or fairness.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://huggingface.co/datasets/anonymous2026nips/llm-answer-set-qa",
+      "prov:label": "Answer Set Consistency Benchmark",
+      "sc:license": "GPL-3.0"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "@id": "activity/unified-merge",
+      "name": "Unified benchmark merge",
+      "description": "The four English source benchmark files were merged into one TSV with a global index and preserved source-local identifiers.",
+      "prov:used": "TODO_REPLACE_WITH_ANON_CODE_URL_PREPARE_DATASET_SCRIPT"
+    }
+  ]
+}
