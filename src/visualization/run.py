@@ -7,17 +7,19 @@ from visualization.p_value_pairwise_heatmap import main as p_value_pairwise_heat
 from visualization.bubble_scatter import main as bubble_scatter_main
 from visualization.line_chart import main as line_chart_main
 from visualization.line_chart_pos_neg import main as line_chart_pos_neg_main
+from visualization.io_utils import default_charts_dir, default_results_dir
 
 
 if __name__ == "__main__":
-    root_dir = os.path.dirname(os.path.abspath(__name__))
     config = {
-            "time": "2025-09-22_00-41",
-        } 
+        "folder": default_results_dir(),
+        "out_dir": default_charts_dir(),
+        "time": None,
+        "actions": ["zero-shot", "fixing", "classification", "chain-of-thought"],
+    }
     p_value_action_heatmap_main(config)
     p_value_pairwise_heatmap_main(config)
     line_chart_main(config)
     line_chart_pos_neg_main(config)
     bubble_scatter_main(config)
     
-
