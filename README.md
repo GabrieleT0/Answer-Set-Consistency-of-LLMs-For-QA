@@ -194,6 +194,18 @@ The visualization runner uses:
 
 It writes figures under `charts/`, including line charts, p-value heatmaps, positive/negative split plots, and bubble scatter plots.
 
+For the older standalone chart set, including `charts/action_pvalue_heatmaps/` and
+`charts/llms_pvalue_heatmaps/`, run:
+
+```bash
+python src/visualization/generate_charts.py
+```
+
+This script reads `output/summary_idk_worst.csv` and
+`output/p_value_matrices.csv` when present. If those regenerated files do not
+exist, it falls back to the committed results in `data/evaluation_results/`. It
+writes bar charts and p-value heatmaps under `charts/`.
+
 ## Metrics
 
 For each dataset, model, and action, the evaluation reports:
