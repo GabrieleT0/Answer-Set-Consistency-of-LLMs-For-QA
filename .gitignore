@@ -3,8 +3,10 @@ __pycache__
 *.log
 .*
 !.gitignore
+.DS_Store
 # Ignore a specific config file in your pipeline
 src/question_pipeline/config.json
 src/get_answers/config.json
-
+prepare-dataset/*
+temp/*
 
