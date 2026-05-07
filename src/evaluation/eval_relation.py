@@ -417,6 +417,16 @@ def load_relation_clf(root_dir, datasets, llms, tasks) -> pd.DataFrame:
 def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
     keys = ["Q_ID", "dataset", "llm"]
     rel_cols = ["R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
+    df_analysis = df_analysis.copy()
+    df_relation = df_relation.copy()
+    df_relation_clf = df_relation_clf.copy()
+
+    # Q_ID is read as a JSON key in relation files, but analysis may infer it
+    # as an integer. Normalize merge keys so pandas does not reject the join.
+    for df in (df_analysis, df_relation, df_relation_clf):
+        for key in keys:
+            if key in df.columns:
+                df[key] = df[key].astype("string")
 
     # Ensure target columns exist in df_analysis
     for c in rel_cols:
