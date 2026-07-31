@@ -1,7 +1,7 @@
 import os
 import csv
 import json
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 try:
     from .llms import PromptLLMS
     from . import utils
@@ -59,9 +59,13 @@ def load_questions(tsv_file, column):
     return questions
 
 def get_prompt(prompt_type, language):
-    return PromptTemplate(
-        input_variables=["question"],
-        template=PROMPTS[prompt_type][language]
+    template = PROMPTS[prompt_type][language]
+    instructions = template.replace("{question}", "").strip()
+    return ChatPromptTemplate.from_messages(
+        [
+            ("system", instructions),
+            ("human", "{question}"),
+        ]
     )
 
 def process_question(question, llm_model, prompt_template, language, logger):

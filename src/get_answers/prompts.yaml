@@ -29,6 +29,17 @@ standard:
     Si no puedes responder, devuelve "no sé".
     Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.
 
+standard_no_idk:
+  en: |
+    {question}
+    If the question has no answer, return 'no answer'.
+    In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+    If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+    Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+  es: |
+    {question}
+    Devuélveme la respuesta en forma de lista separada por el símbolo '|' no añadas ningún otro texto.
+
 wikidata:
   en: |
     {question} \n
@@ -66,7 +77,31 @@ fix:
       In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
       If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
       Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
-    
+
+fix_no_idk:
+  en:
+    template: |
+      If the question has no answer, return 'no answer'.
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+    equal_fix: |
+     Pay attention, the two questions I asked you before are logically equivalent, but you returned me different values.
+     In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+     If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+     Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+    sup_sub_fix: |
+      Pay attention, the first question I asked is a more general question than the second question, so the answer of the second question must be a subset of the answer of the first, but the result of the second answer is not contained in the first.
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+    minus_fix: |
+      Pay attention, I asked you 3 different questions, the third question should contain the elements of the answer to the first question I asked you, but removing the elements in the answer to the second question I asked you.
+      So the answer to the third question should contain the results that are in the first answer but are not in the answer to the second question.
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      If the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).
+      Please, Return me an exhaustive list separated by the symbol '|' don't add any other text.
+
 relation_classification:
   en:
     template: |
@@ -95,6 +130,49 @@ relation_classification:
   es:
     template: |
       Si no puedes responder, devuelve "idk".
+      Devuélveme la respuesta como una lista separada por el símbolo '|', sin añadir ningún otro texto
+    template_classification: |
+      Te planteo dos preguntas, q1, q2. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1 y q2:
+
+      - Equivalencia
+      - Contención
+      - Disjunto
+      - Solapamiento
+      - Complemento
+      - Desconocido
+
+      Estas son las dos preguntas:
+
+      q1: {q1}
+      q2: {q2}
+
+      Devuélveme solo la relación lógica entre las dos preguntas. Devuélveme solo la primera relación que se cumple. No añadas ningún otro texto.
+    hint_prompt: "Recuerda que {relation} se mantiene entre las respuestas de esta pregunta y la anterior."
+
+relation_classification_no_idk:
+  en:
+    template: |
+      In the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. "United States of America" instead of "USA".
+      Return me all answers as a list separated by the symbol '|' don' add any other text.
+    template_classification: |
+      You are given two questions, q1 and q2.
+      Your task is to determine the logical relationship between their respective sets of correct answers.
+      Choose only one of the following relations:
+      - Equivalence: The answer sets of q1 and q2 are exactly the same.
+      - Contains: All answers to q2 are also answers to q1, but q1 includes additional answers. (q1 ⊃ q2)
+      - ContainedBy: All answers to q1 are also answers to q2, but q2 includes additional answers. (q1 ⊂ q2)
+      - Overlap: q1 and q2 share some, but not all, answers. Neither fully contains the other.
+      - Disjoint: q1 and q2 have no answers in common.
+      - Unknown: The relation between the answer sets cannot be confidently determined based on the given questions.
+      Here are the two questions:
+      q1: {q1}
+      q2: {q2}
+
+      Return **only** the name of the most appropriate relation from the list above.
+      Do **not** provide any explanation or commentary.
+    hint_prompt: "Remember that {relation} holds between the answers for this question and the previous question."
+  es:
+    template: |
       Devuélveme la respuesta como una lista separada por el símbolo '|', sin añadir ningún otro texto
     template_classification: |
       Te planteo dos preguntas, q1, q2. Debes identificar cuál de las siguientes relaciones lógicas se cumple entre los conjuntos de respuestas de q1 y q2:
@@ -201,4 +279,3 @@ relation_classification_all:
       Now Answer only 'a' or 'b': 
       a) the results of q1 are contained in q2 
       b) the results of q2 are contained in q1.
-      

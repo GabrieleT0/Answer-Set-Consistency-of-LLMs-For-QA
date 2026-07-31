@@ -15,7 +15,16 @@ if __name__ == "__main__":
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
         llms = json.load(f).keys()
-    actions = ["fixing", "classification","star","zero-shot","chain-of-thought"]
+    actions = [
+        "fixing",
+        "classification",
+        "star",
+        "zero-shot",
+        "chain-of-thought",
+        "zero-shot-no-idk",
+        "fixing-no-idk",
+        "classification-no-idk",
+    ]
     tasks = ['equal', 'sup-sub', "minus"]
     languages = ['en']
 
@@ -83,8 +92,9 @@ if __name__ == "__main__":
     df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
-    split(df_summary, "summary")
-    split(df_summary_xidk, "summary_xidk")
+    summary_actions = [action for action in actions if action != "star"]
+    split(df_summary, "summary", actions=summary_actions)
+    split(df_summary_xidk, "summary_xidk", actions=summary_actions)
     df_pvalue = p_value_matrixs(df_analysis, actions)
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)

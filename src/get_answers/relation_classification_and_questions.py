@@ -37,12 +37,23 @@ def setup_logger():
     logger = logging.getLogger("relation_classification_and_question")
     return logger
 
-def load_prompts():
+def load_prompts(no_idk=False):
     here = os.path.dirname(os.path.abspath(__file__))
     prompt_path = os.path.join(here, "prompts.yaml")
     with open(prompt_path, "r", encoding="utf-8") as f:
         prompts = yaml.safe_load(f)
-    return prompts["relation_classification"], prompts["relation_classification_minus"]
+    answer_prompt_key = (
+        "relation_classification_no_idk" if no_idk else "relation_classification"
+    )
+    return prompts[answer_prompt_key], prompts["relation_classification_minus"]
+
+
+def _answer_action_dir(config):
+    return (
+        "classification-no-idk"
+        if config.get("no_idk_ablation", False)
+        else "rel_classification_and_questions"
+    )
 
 
 # === Core Functions ===
@@ -63,13 +74,21 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
 
     end_index = min(end_index or len(questions), len(questions))
     output_prefix = '' if language == 'en' else '*'
+    output_model = utils.output_model_name(llm_model)
     folder_name = 'equal' if logical_relation == 'Equivalence' else 'sup-sub'
-    base_output_dir = os.path.join(root_dir, 'data', 'answers', 'rel_classification_and_questions', dataset.split(".")[0], folder_name)
+    base_output_dir = os.path.join(
+        root_dir,
+        "data",
+        "answers",
+        _answer_action_dir(config),
+        dataset.split(".")[0],
+        folder_name,
+    )
     os.makedirs(base_output_dir, exist_ok=True)
 
-    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{llm_model}.json')
-    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{llm_model}.json')
-    relation_path = os.path.join(base_output_dir, f'{output_prefix}{logical_relation}_{folder_name}_relation_{llm_model}.json')
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_{folder_name}_answers_classAndAnswer_{output_model}.json')
+    q2_path = os.path.join(base_output_dir, f'{output_prefix}Q2_{folder_name}_answers_classAndAnswer_{output_model}.json')
+    relation_path = os.path.join(base_output_dir, f'{output_prefix}{logical_relation}_{folder_name}_relation_{output_model}.json')
 
     def load_json(path):
         return json.load(open(path, 'r', encoding='utf-8')) if os.path.exists(path) else {}
@@ -118,7 +137,7 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
 def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
     chat = llms.return_chat_model(llm_model)
     root_dir = config["root_dir"]
-    tsv_file = os.path.join(root_dir, f'data/Dataset/{language}/{dataset}')
+    tsv_file = os.path.join(root_dir, "data", "ASCB", language, dataset)
 
     questions = []
     with open(tsv_file, newline='', encoding='utf-8') as tsvfile:
@@ -128,13 +147,21 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
 
     end_index = min(end_index or len(questions), len(questions))
     output_prefix = '' if language == 'en' else '*'
-    base_output_dir = os.path.join(root_dir, 'data', 'answers', 'rel_classification_and_questions', dataset.split(".")[0], 'minus')
+    output_model = utils.output_model_name(llm_model)
+    base_output_dir = os.path.join(
+        root_dir,
+        "data",
+        "answers",
+        _answer_action_dir(config),
+        dataset.split(".")[0],
+        "minus",
+    )
     os.makedirs(base_output_dir, exist_ok=True)
 
-    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_minus_answers_classAndAnswer_{llm_model}.json')
-    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_classAndAnswer_{llm_model}.json')
-    q4_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_classAndAnswer_{llm_model}.json')
-    relation_path = os.path.join(base_output_dir, f'{output_prefix}Relation_minus_answers_classAndAnswer_{llm_model}.json')
+    q1_path = os.path.join(base_output_dir, f'{output_prefix}Q1_minus_answers_classAndAnswer_{output_model}.json')
+    q3_path = os.path.join(base_output_dir, f'{output_prefix}Q3_minus_answers_classAndAnswer_{output_model}.json')
+    q4_path = os.path.join(base_output_dir, f'{output_prefix}Q4_minus_answers_classAndAnswer_{output_model}.json')
+    relation_path = os.path.join(base_output_dir, f'{output_prefix}Relation_minus_answers_classAndAnswer_{output_model}.json')
 
     def load_json(path):
         return json.load(open(path, 'r', encoding='utf-8')) if os.path.exists(path) else {}
@@ -191,7 +218,6 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
 
 def main(config = None, logger = setup_logger()):
     load_dotenv()
-    prompts, prompts_minus = load_prompts()
     if config == None:
         config = {
             "root_dir": os.path.dirname(os.path.abspath(__name__)),
@@ -200,6 +226,10 @@ def main(config = None, logger = setup_logger()):
             "datasets": ["spinach.tsv", "qawiki.tsv", "synthetic.tsv"],
             "relations": ["Equivalence", "Containment", "Minus"]
         }
+
+    prompts, prompts_minus = load_prompts(
+        config.get("no_idk_ablation", False)
+    )
 
     for language in config["languages"]:
         for llm_model in config["llm_models"]:

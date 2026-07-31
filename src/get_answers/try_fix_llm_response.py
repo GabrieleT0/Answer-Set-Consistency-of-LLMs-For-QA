@@ -39,11 +39,12 @@ def setup_logger():
     logger = logging.getLogger("try_fix_llm_response")
     return logger
 
-def load_prompts():
+def load_prompts(no_idk=False):
     here = os.path.dirname(os.path.abspath(__file__))
     prompt_path = os.path.join(here, "prompts.yaml")
     with open(prompt_path, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)["fix"]
+        prompt_key = "fix_no_idk" if no_idk else "fix"
+        return yaml.safe_load(f)[prompt_key]
 
 
 # === Core Fixing Functions ===
@@ -169,9 +170,22 @@ def minus_test(config, prompts, llm_model, dataset_name, language='en', start_in
 def save_answers(config, data, dataset_name, relation, column, llm_model, language):
     root_dir = config["root_dir"]
     prefix = '' if language == 'en' else '*'
-    base_dir = os.path.join(root_dir, f'data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/{relation}')
+    output_model = utils.output_model_name(llm_model)
+    action_dir = (
+        "fixing-no-idk"
+        if config.get("no_idk_ablation", False)
+        else "follow_up_fixing"
+    )
+    base_dir = os.path.join(
+        root_dir,
+        "data",
+        "answers",
+        action_dir,
+        dataset_name.split(".")[0],
+        relation,
+    )
     os.makedirs(base_dir, exist_ok=True)
-    path = os.path.join(base_dir, f"{prefix}{column}_{relation}_answers_fixing_{llm_model}.json")
+    path = os.path.join(base_dir, f"{prefix}{column}_{relation}_answers_fixing_{output_model}.json")
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     # logger.info(f"Saved: {path}")
@@ -180,8 +194,21 @@ def save_answers(config, data, dataset_name, relation, column, llm_model, langua
 def load_answers(config, dataset_name, relation, column, llm_model, language):
     root_dir = config["root_dir"]
     prefix = '' if language == 'en' else '*'
-    path = os.path.join(root_dir, f'data/answers/follow_up_fixing/{dataset_name.split(".")[0]}/{relation}',
-                        f"{prefix}{column}_{relation}_answers_fixing_{llm_model}.json")
+    output_model = utils.output_model_name(llm_model)
+    action_dir = (
+        "fixing-no-idk"
+        if config.get("no_idk_ablation", False)
+        else "follow_up_fixing"
+    )
+    path = os.path.join(
+        root_dir,
+        "data",
+        "answers",
+        action_dir,
+        dataset_name.split(".")[0],
+        relation,
+        f"{prefix}{column}_{relation}_answers_fixing_{output_model}.json",
+    )
     return json.load(open(path, 'r', encoding='utf-8')) if os.path.exists(path) else {}
 
 
@@ -189,7 +216,6 @@ def load_answers(config, dataset_name, relation, column, llm_model, language):
 
 def main(config = None, logger = setup_logger()):
     load_dotenv()
-    prompts = load_prompts()
     
     if not config:
         config = {
@@ -198,6 +224,8 @@ def main(config = None, logger = setup_logger()):
             "languages": ['en'],
             "datasets": ['spinach.tsv', 'qawiki.tsv', 'synthetic.tsv']
         }
+
+    prompts = load_prompts(config.get("no_idk_ablation", False))
 
     for language in config["languages"]:
         for llm_model in config["llm_models"]:
