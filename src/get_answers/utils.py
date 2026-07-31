@@ -2,7 +2,6 @@ import os
 import re
 import csv
 
-<<<<<<< HEAD
 
 def output_model_name(model_name):
     """Return the filesystem name used for a configured model.
@@ -19,10 +18,6 @@ def output_model_name(model_name):
         model_name = model_name.removeprefix("openrouter:")
     return re.sub(r"[\\/]+", "-", model_name)
 
-=======
-def output_model_name(model_name):
-    return model_name
->>>>>>> f154b86f97f17912c06659290f0e32330f0f4348
 
 def convert_response_to_set(response):
     """
