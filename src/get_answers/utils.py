@@ -2,6 +2,23 @@ import os
 import re
 import csv
 
+
+def output_model_name(model_name):
+    """Return the filesystem name used for a configured model.
+
+    Provider-selection prefixes are not part of the model's result filename.
+    Any remaining path separators are flattened so a model ID always occupies
+    one filename component.
+    """
+    if model_name.startswith("lightning-ai/"):
+        model_name = model_name.removeprefix("lightning-ai/")
+    elif model_name.startswith("lightning:"):
+        model_name = model_name.removeprefix("lightning:")
+    elif model_name.startswith("openrouter:"):
+        model_name = model_name.removeprefix("openrouter:")
+    return re.sub(r"[\\/]+", "-", model_name)
+
+
 def convert_response_to_set(response):
     """
     Convert the response from LLM.
