@@ -1,0 +1,603 @@
+{
+    "0": [
+        "Equivalence"
+    ],
+    "1": [
+        "guitar",
+        "piano",
+        "keyboards",
+        "drums",
+        "bass guitar",
+        "synthesizer"
+    ],
+    "2": [
+        "Equivalence"
+    ],
+    "3": [
+        "Equivalence"
+    ],
+    "4": [
+        "Equivalence"
+    ],
+    "5": [
+        "Helium",
+        "Neon",
+        "Argon",
+        "Krypton",
+        "Xenon",
+        "Radon",
+        "Oganesson"
+    ],
+    "6": [
+        "Contains"
+    ],
+    "7": [
+        "Equivalence"
+    ],
+    "8": [
+        "Equivalence"
+    ],
+    "9": [
+        "Equivalence"
+    ],
+    "10": [
+        "Equivalence"
+    ],
+    "11": [
+        "Equivalence"
+    ],
+    "12": [
+        "Andrew Jackson",
+        "Martin Van Buren",
+        "James Knox Polk",
+        "Franklin Pierce",
+        "James Buchanan",
+        "Andrew Johnson",
+        "Grover Cleveland",
+        "Woodrow Wilson",
+        "Franklin Delano Roosevelt",
+        "Harry S. Truman",
+        "John Fitzgerald Kennedy",
+        "Lyndon Baines Johnson",
+        "James Earl Carter Jr.",
+        "William Jefferson Clinton",
+        "Barack Hussein Obama II",
+        "Joseph Robinette Biden Jr."
+    ],
+    "13": [
+        "Equivalence"
+    ],
+    "14": [
+        "Equivalence"
+    ],
+    "15": [
+        "Equivalence"
+    ],
+    "16": [
+        "Buenos Aires",
+        "Sucre",
+        "Brasilia",
+        "Santiago",
+        "Bogota",
+        "Quito",
+        "Georgetown",
+        "Asuncion",
+        "Lima",
+        "Paramaribo",
+        "Montevideo",
+        "Caracas"
+    ],
+    "17": [
+        "Equivalence"
+    ],
+    "18": [
+        "Equivalence"
+    ],
+    "19": [
+        "Equivalence"
+    ],
+    "20": [
+        "John Lennon",
+        "Paul McCartney",
+        "George Harrison",
+        "Ringo Starr"
+    ],
+    "21": [
+        "Equivalence"
+    ],
+    "22": [
+        "Equivalence"
+    ],
+    "23": [
+        "Equivalence"
+    ],
+    "24": [
+        "Driving Miss Daisy",
+        "Dances with Wolves",
+        "The Silence of the Lambs",
+        "Unforgiven",
+        "Schindler's List",
+        "Forrest Gump",
+        "Braveheart",
+        "The English Patient",
+        "Titanic",
+        "Shakespeare in Love"
+    ],
+    "25": [
+        "Acinonyx",
+        "Caracal",
+        "Catopuma",
+        "Felis",
+        "Leopardus",
+        "Leptailurus",
+        "Lynx",
+        "Neofelis",
+        "Panthera",
+        "Puma",
+        "Prionailurus",
+        "Otocolobus",
+        "Herpailurus"
+    ],
+    "26": [
+        "Equivalence"
+    ],
+    "27": [
+        "Equivalence"
+    ],
+    "28": [
+        "Equivalence"
+    ],
+    "29": [
+        "Holy See",
+        "State of Palestine"
+    ],
+    "30": [
+        "Equivalence"
+    ],
+    "31": [
+        "Disjoint"
+    ],
+    "32": [
+        "Equivalence"
+    ],
+    "33": [
+        "Equivalence"
+    ],
+    "34": [
+        "Equivalence"
+    ],
+    "35": [
+        "Equivalence"
+    ],
+    "36": [
+        "Equivalence"
+    ],
+    "37": [
+        "The Cuckoo's Calling",
+        "The Silkworm",
+        "Career of Evil",
+        "Lethal White",
+        "Troubled Blood",
+        "The Ink Black Heart"
+    ],
+    "38": [
+        "Equivalence"
+    ],
+    "39": [
+        "Equivalence"
+    ],
+    "40": [
+        "Equivalence"
+    ],
+    "41": [
+        "Contains"
+    ],
+    "42": [
+        "Equivalence"
+    ],
+    "43": [
+        "Equivalence"
+    ],
+    "44": [
+        "Contains"
+    ],
+    "45": [
+        "Equivalence"
+    ],
+    "46": [
+        "Equivalence"
+    ],
+    "47": [
+        "Equivalence"
+    ],
+    "48": [
+        "George Washington",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe",
+        "William Henry Harrison",
+        "Zachary Taylor",
+        "John Tyler",
+        "Woodrow Wilson"
+    ],
+    "49": [
+        "Equivalence"
+    ],
+    "50": [
+        "Cirrus",
+        "Cirrostratus",
+        "Cirrocumulus",
+        "Altostratus",
+        "Altocumulus",
+        "Stratus",
+        "Stratocumulus",
+        "Nimbostratus",
+        "Cumulus",
+        "Cumulonimbus"
+    ],
+    "51": [
+        "Equivalence"
+    ],
+    "52": [
+        "Equivalence"
+    ],
+    "53": [
+        "Overlap"
+    ],
+    "54": [
+        "Equivalence"
+    ],
+    "55": [
+        "Equivalence"
+    ],
+    "56": [
+        "Unknown"
+    ],
+    "57": [
+        "Equivalence"
+    ],
+    "58": [
+        "Equivalence"
+    ],
+    "59": [
+        "Equivalence"
+    ],
+    "60": [
+        "Equivalence"
+    ],
+    "61": [
+        "Equivalence"
+    ],
+    "62": [
+        "Equivalence"
+    ],
+    "63": [
+        "Equivalence"
+    ],
+    "64": [
+        "Equivalence"
+    ],
+    "65": [
+        "blood type A positive",
+        "blood type A negative",
+        "blood type B positive",
+        "blood type B negative",
+        "blood type AB positive",
+        "blood type AB negative",
+        "blood type O positive",
+        "blood type O negative"
+    ],
+    "66": [
+        "Equivalence"
+    ],
+    "67": [
+        "Equivalence"
+    ],
+    "68": [
+        "Contains"
+    ],
+    "69": [
+        "Equivalence"
+    ],
+    "70": [
+        "Equivalence"
+    ],
+    "71": [
+        "Equivalence"
+    ],
+    "72": [
+        "Equivalence"
+    ],
+    "73": [
+        "Equivalence"
+    ],
+    "74": [
+        "Equivalence"
+    ],
+    "75": [
+        "Equivalence"
+    ],
+    "76": [
+        "Unknown"
+    ],
+    "77": [
+        "Equivalence"
+    ],
+    "78": [
+        "Equivalence"
+    ],
+    "79": [
+        "Equivalence"
+    ],
+    "80": [
+        "Equivalence"
+    ],
+    "81": [
+        "Equivalence"
+    ],
+    "82": [
+        "Equivalence"
+    ],
+    "83": [
+        "Equivalence"
+    ],
+    "84": [
+        "Contains"
+    ],
+    "85": [
+        "Equivalence"
+    ],
+    "86": [
+        "Equivalence"
+    ],
+    "87": [
+        "Equivalence"
+    ],
+    "88": [
+        "Swiss Federal Institute of Technology in Zurich",
+        "University of Zurich"
+    ],
+    "89": [
+        "McCartney",
+        "Ram",
+        "Thrillington",
+        "McCartney II",
+        "Tug of War",
+        "Pipes of Peace",
+        "Flowers in the Dirt",
+        "Off the Ground",
+        "Flaming Pie",
+        "Run Devil Run",
+        "Driving Rain",
+        "Chaos and Creation in the Backyard",
+        "Ecce Cor Meum",
+        "Liverpool Oratorio",
+        "Memory Almost Full",
+        "Kisses on the Bottom",
+        "New",
+        "Egypt Station",
+        "McCartney III"
+    ],
+    "90": [
+        "Equivalence"
+    ],
+    "91": [
+        "Equivalence"
+    ],
+    "92": [
+        "Germany",
+        "United States of America",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "French Republic",
+        "Kingdom of Italy",
+        "Empire of Japan",
+        "Kingdom of Belgium",
+        "Kingdom of Serbia",
+        "Portuguese Republic",
+        "Republic of China",
+        "Kingdom of Romania",
+        "Hellenic Kingdom"
+    ],
+    "93": [
+        "Equivalence"
+    ],
+    "94": [
+        "Equivalence"
+    ],
+    "95": [
+        "Equivalence"
+    ],
+    "96": [
+        "Equivalence"
+    ],
+    "97": [
+        "Equivalence"
+    ],
+    "98": [
+        "Equivalence"
+    ],
+    "99": [
+        "Equivalence"
+    ],
+    "100": [
+        "Equivalence"
+    ],
+    "101": [
+        "Equivalence"
+    ],
+    "102": [
+        "Equivalence"
+    ],
+    "103": [
+        "Equivalence"
+    ],
+    "104": [
+        "Equivalence"
+    ],
+    "105": [
+        "Equivalence"
+    ],
+    "106": [
+        "Equivalence"
+    ],
+    "107": [
+        "Equivalence"
+    ],
+    "108": [
+        "Leonardo DiCaprio",
+        "Marion Cotillard",
+        "Michael Caine"
+    ],
+    "109": [
+        "Equivalence"
+    ],
+    "110": [
+        "Equivalence"
+    ],
+    "111": [
+        "Equivalence"
+    ],
+    "112": [
+        "Equivalence"
+    ],
+    "113": [
+        "I do not know."
+    ],
+    "114": [
+        "Equivalence"
+    ],
+    "115": [
+        "Equivalence"
+    ],
+    "116": [
+        "Unknown"
+    ],
+    "117": [
+        "Contains"
+    ],
+    "118": [
+        "Equivalence"
+    ],
+    "119": [
+        "Equivalence"
+    ],
+    "120": [
+        "Equivalence"
+    ],
+    "121": [
+        "Monrovia",
+        "Windhoek",
+        "Pretoria",
+        "Dakar",
+        "Kinshasa",
+        "Brazzaville",
+        "Addis Ababa",
+        "Khartoum",
+        "Yaounde",
+        "Libreville",
+        "Lome",
+        "Nairobi",
+        "Kampala"
+    ],
+    "122": [
+        "Equivalence"
+    ],
+    "123": [
+        "Equivalence"
+    ],
+    "124": [
+        "Equivalence"
+    ],
+    "125": [
+        "Equivalence"
+    ],
+    "126": [
+        "Equivalence"
+    ],
+    "127": [
+        "Equivalence"
+    ],
+    "128": [
+        "China",
+        "India",
+        "United States of America",
+        "Indonesia",
+        "Pakistan",
+        "Brazil",
+        "Nigeria",
+        "Bangladesh",
+        "Russia",
+        "Mexico",
+        "Japan",
+        "Ethiopia",
+        "Philippines",
+        "Egypt",
+        "Vietnam",
+        "Democratic Republic of the Congo"
+    ],
+    "129": [
+        "Equivalence"
+    ],
+    "130": [
+        "Disjoint"
+    ],
+    "131": [
+        "Equivalence"
+    ],
+    "132": [
+        "Equivalence"
+    ],
+    "133": [
+        "Equivalence"
+    ],
+    "134": [
+        "Equivalence"
+    ],
+    "135": [
+        "Equivalence"
+    ],
+    "136": [
+        "Equivalence"
+    ],
+    "137": [
+        "Equivalence"
+    ],
+    "138": [
+        "Equivalence"
+    ],
+    "139": [
+        "Equivalence"
+    ],
+    "140": [
+        "Equivalence"
+    ],
+    "141": [
+        "Equivalence"
+    ],
+    "142": [
+        "Equivalence"
+    ],
+    "143": [
+        "Equivalence"
+    ],
+    "144": [
+        "ContainedBy"
+    ],
+    "145": [
+        "Equivalence"
+    ],
+    "146": [
+        "Equivalence"
+    ],
+    "147": [
+        "Equivalence"
+    ],
+    "148": [
+        "Equivalence"
+    ],
+    "149": [
+        "Fratelli d'Italia",
+        "Lega",
+        "Forza Italia"
+    ]
+}

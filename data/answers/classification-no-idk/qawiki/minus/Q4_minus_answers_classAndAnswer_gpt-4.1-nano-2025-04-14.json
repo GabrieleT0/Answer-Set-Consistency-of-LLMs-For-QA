@@ -1,0 +1,733 @@
+{
+    "0": [
+        "Venezuela",
+        "Brazil",
+        "Guyana",
+        "Peru",
+        "Colombia",
+        "Suriname",
+        "French Guiana"
+    ],
+    "1": [
+        "United States of America"
+    ],
+    "2": [
+        "Overlap"
+    ],
+    "3": [
+        "ContainedBy"
+    ],
+    "4": [
+        "Contains"
+    ],
+    "5": [
+        "The Breeders",
+        "Pixies"
+    ],
+    "6": [
+        "Disjoint"
+    ],
+    "7": [
+        "Bernard Arnault",
+        "Warren Buffett"
+    ],
+    "8": [
+        "Algeria",
+        "Democratic Republic of the Congo",
+        "Sudan",
+        "Libya",
+        "Chad",
+        "Niger",
+        "Angola",
+        "Mali",
+        "South Africa"
+    ],
+    "9": [
+        "Disjoint"
+    ],
+    "10": [
+        "ContainedBy"
+    ],
+    "11": [
+        "Contain"
+    ],
+    "12": [
+        "Meta Platforms Ireland Limited",
+        "Meta Platforms Australia Pty Ltd",
+        "Meta Platforms Canada Limited",
+        "Meta Platforms UK Limited",
+        "Meta Platforms Germany GmbH",
+        "Meta Platforms France SAS",
+        "Meta Platforms Japan KK",
+        "Meta Platforms India Private Limited",
+        "Meta Platforms Brazil Ltda",
+        "Meta Platforms Mexico S.A. de C.V."
+    ],
+    "13": [
+        "Contains"
+    ],
+    "14": [
+        "disjoint"
+    ],
+    "15": [
+        "Overlap"
+    ],
+    "16": [
+        "theoblerone",
+        "kitkat",
+        "crunch",
+        "twix",
+        "hershey's",
+        "dove",
+        "reeses",
+        "milky way",
+        "almond chocolate bar",
+        "almond cluster",
+        "almond chocolate"
+    ],
+    "17": [
+        "Disjoint"
+    ],
+    "18": [
+        "Disjoint"
+    ],
+    "19": [
+        "Disjoint"
+    ],
+    "20": [
+        "Contain"
+    ],
+    "21": [
+        "Disjoint"
+    ],
+    "22": [
+        "Ghana",
+        "Togo",
+        "Benin",
+        "Disjoint"
+    ],
+    "23": [
+        "Contains"
+    ],
+    "24": [
+        "disjoint"
+    ],
+    "25": [
+        "Overlap"
+    ],
+    "26": [
+        "Disjoint"
+    ],
+    "27": [
+        "quarks and leptons"
+    ],
+    "28": [
+        "Overlap"
+    ],
+    "29": [
+        "Disjoint"
+    ],
+    "30": [
+        "disjoint"
+    ],
+    "31": [
+        "thetharsismontes",
+        "olympusmons",
+        "ascraeus",
+        "pavonis",
+        "arsia",
+        "disjoint"
+    ],
+    "32": [
+        "the matrix",
+        "the animatrix"
+    ],
+    "33": [
+        "the set of answers for q1 that are not answers for q2",
+        "the set of answers for q3",
+        "Contains"
+    ],
+    "34": [
+        "Overlap"
+    ],
+    "35": [
+        "ContainedBy"
+    ],
+    "36": [
+        "Contains"
+    ],
+    "37": [
+        "ContainedBy"
+    ],
+    "38": [
+        "Disjoint"
+    ],
+    "39": [
+        "Overlap"
+    ],
+    "40": [
+        "the set of answers for q1 that are not answers for q2",
+        "the set of answers for q3",
+        "Disjoint"
+    ],
+    "41": [
+        "Overlap"
+    ],
+    "42": [
+        "disjoint"
+    ],
+    "43": [
+        "the set of all answers for q1 that are not answers for q2",
+        "the set of answers for q3",
+        "ContainedBy"
+    ],
+    "44": [
+        "Overlap"
+    ],
+    "45": [
+        "the extinct platypus",
+        "the extinct echidna",
+        "the extinct monotremes"
+    ],
+    "46": [
+        "Contains"
+    ],
+    "47": [
+        "Overlap"
+    ],
+    "48": [
+        "ContainedBy"
+    ],
+    "49": [
+        "Disjoint"
+    ],
+    "50": [
+        "Contains"
+    ],
+    "51": [
+        "Overlap"
+    ],
+    "52": [
+        "Overlap"
+    ],
+    "53": [
+        "United Kingdom",
+        "European Organization for Nuclear Research",
+        "Massachusetts Institute of Technology",
+        "World Wide Web Consortium",
+        "CERN"
+    ],
+    "54": [
+        "Overlap"
+    ],
+    "55": [
+        "ContainedBy"
+    ],
+    "56": [
+        "ContainedBy"
+    ],
+    "57": [
+        "s1: the set of all answers for q1 that are not answers for q2",
+        "s2: the set of answers for q3",
+        "Disjoint"
+    ],
+    "58": [
+        "Disjoint"
+    ],
+    "59": [
+        "Disjoint"
+    ],
+    "60": [
+        "Overlap"
+    ],
+    "61": [
+        "Overlap"
+    ],
+    "62": [
+        "the set of all answers for q1 that are not answers for q2",
+        "the set of answers for q3",
+        "Disjoint"
+    ],
+    "63": [
+        "ContainedBy"
+    ],
+    "64": [
+        "Overlap"
+    ],
+    "65": [
+        "Overlap"
+    ],
+    "66": [
+        "Disjoint"
+    ],
+    "67": [
+        "ContainedBy"
+    ],
+    "68": [
+        "Disjoint"
+    ],
+    "69": [
+        "ContainedBy"
+    ],
+    "70": [
+        "Vatican City",
+        "Brunei",
+        "Saudi Arabia",
+        "Morocco",
+        "Lesotho",
+        "Thailand",
+        "Japan",
+        "Malaysia",
+        "Qatar",
+        "Kuwait",
+        "Oman",
+        "Bahrain",
+        "Jordan",
+        "United Arab Emirates",
+        "Bhutan",
+        "Liechtenstein",
+        "Monaco",
+        "Andorra",
+        "San Marino"
+    ],
+    "71": [
+        "Belize",
+        "French Guiana",
+        "Guyana",
+        "Suriname",
+        "Vanuatu"
+    ],
+    "72": [
+        "Disjoint"
+    ],
+    "73": [
+        "Disjoint"
+    ],
+    "74": [
+        "ContainedBy"
+    ],
+    "75": [
+        "Eritrea",
+        "Kenya",
+        "Uganda",
+        "Democratic Republic of the Congo",
+        "Central African Republic",
+        "Chad",
+        "Ethiopia"
+    ],
+    "76": [
+        "Disjoint"
+    ],
+    "77": [
+        "Contains"
+    ],
+    "78": [
+        "United Kingdom",
+        "Japan",
+        "Australia",
+        "India",
+        "South Africa",
+        "Kenya",
+        "Malaysia",
+        "Singapore",
+        "New Zealand",
+        "Thailand",
+        "Sri Lanka",
+        "Pakistan",
+        "Bangladesh",
+        "Mauritius",
+        "Fiji",
+        "Papua New Guinea",
+        "Brunei",
+        "Hong Kong",
+        "Macau",
+        "Timor-Leste",
+        "Lesotho",
+        "Eswatini",
+        "Botswana",
+        "Namibia",
+        "Zambia",
+        "Zimbabwe",
+        "Malawi",
+        "Tanzania",
+        "Uganda",
+        "Rwanda",
+        "Burundi",
+        "Cote d'Ivoire",
+        "Seychelles",
+        "Saint Helena",
+        "Saint Kitts and Nevis",
+        "Saint Vincent and the Grenadines",
+        "Grenada",
+        "Barbados",
+        "Jamaica",
+        "Bahamas",
+        "Cayman Islands",
+        "Bermuda",
+        "British Virgin Islands",
+        "Cocos Islands",
+        "Christmas Island",
+        "Norfolk Island",
+        "Falkland Islands",
+        "South Georgia and the South Sandwich Islands",
+        "Saint Helena",
+        "Ascension Island",
+        "Tristan da Cunha",
+        "Cook Islands",
+        "Niue",
+        "Tokelau",
+        "Wallis and Futuna",
+        "French Polynesia",
+        "New Caledonia",
+        "Vanuatu",
+        "Solomon Islands",
+        "Papua New Guinea"
+    ],
+    "79": [
+        "United States of America",
+        "United Kingdom",
+        "France",
+        "Brazil",
+        "South Africa"
+    ],
+    "80": [
+        "United States of America",
+        "Canada",
+        "Mexico",
+        "Brazil",
+        "Argentina",
+        "Peru",
+        "Venezuela",
+        "Colombia",
+        "Ecuador",
+        "Bolivia",
+        "Paraguay",
+        "Uruguay",
+        "Guyana",
+        "Suriname",
+        "French Guiana",
+        "Jamaica",
+        "Haiti",
+        "Cuba",
+        "Dominican Republic",
+        "Trinidad and Tobago",
+        "Barbados",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Grenada",
+        "Antigua and Barbuda",
+        "Saint Kitts and Nevis",
+        "Bahamas",
+        "Bermuda"
+    ],
+    "81": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Iran",
+        "Pakistan",
+        "Afghanistan",
+        "Indonesia",
+        "Malaysia",
+        "Brunei",
+        "Comoros",
+        "Chad",
+        "Niger",
+        "Sudan",
+        "Somalia",
+        "Mauritania",
+        "Gambia",
+        "Senegal",
+        "Mali",
+        "Niger",
+        "Burkina Faso",
+        "Gabon",
+        "Equatorial Guinea",
+        "Cameroon",
+        "Central African Republic",
+        "Togo",
+        "Benin",
+        "Nigeria"
+    ],
+    "82": [
+        "Australia",
+        "England"
+    ],
+    "83": [
+        "Brazil",
+        "Argentina",
+        "Uruguay"
+    ],
+    "84": [
+        "England",
+        "France",
+        "Japan",
+        "Canada",
+        "United States of America",
+        "Italy",
+        "Russia",
+        "Romania",
+        "Portugal",
+        "Georgia",
+        "Uruguay"
+    ],
+    "85": [
+        "United Kingdom",
+        "Norway",
+        "Iceland",
+        "Albania",
+        "Montenegro",
+        "North Macedonia",
+        "Serbia",
+        "Bosnia and Herzegovina",
+        "Kosovo",
+        "Turkey",
+        "Armenia",
+        "Azerbaijan",
+        "Georgia",
+        "Moldova",
+        "Ukraine",
+        "Belarus",
+        "Russia",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
+    ],
+    "86": [
+        "Mexico",
+        "Guatemala",
+        "Costa Rica",
+        "Panama",
+        "Colombia",
+        "Venezuela",
+        "Ecuador",
+        "Peru",
+        "Brazil",
+        "Chile",
+        "Argentina",
+        "Uruguay",
+        "Paraguay",
+        "Bolivia",
+        "French Guiana",
+        "Suriname",
+        "Guyana"
+    ],
+    "87": [
+        "Yugoslavia",
+        "Zaire",
+        "South Sudan"
+    ],
+    "88": [
+        "Disjoint"
+    ],
+    "89": [
+        "Disjoint"
+    ],
+    "90": [
+        "Disjoint"
+    ],
+    "91": [
+        "the Shar Pei",
+        "the Tibetan Mastiff",
+        "the Chow Chow",
+        "the Chinese Shar Pei",
+        "the Chinese Imperial Dog",
+        "the Chinese Foo Dog",
+        "the Chinese Lion Dog",
+        "the Chinese Fighting Dog",
+        "the Chinese Hairless Dog"
+    ],
+    "92": [
+        "ContainedBy"
+    ],
+    "93": [
+        "disjoint"
+    ],
+    "94": [
+        "ContainedBy"
+    ],
+    "95": [
+        "Disjoint"
+    ],
+    "96": [
+        "[all answers for q1 that are not answers for q2]",
+        "[all answers for q3]"
+    ],
+    "97": [
+        "ContainedBy"
+    ],
+    "98": [
+        "Overlap"
+    ],
+    "99": [
+        "I do not know"
+    ],
+    "100": [
+        "Contains"
+    ],
+    "101": [
+        "Overlap"
+    ],
+    "102": [
+        "Overlap"
+    ],
+    "103": [
+        "Overlap"
+    ],
+    "104": [
+        "Disjoint"
+    ],
+    "105": [
+        "disjoint"
+    ],
+    "106": [
+        "ContainedBy"
+    ],
+    "107": [
+        "Disjoint"
+    ],
+    "108": [
+        "ContainedBy"
+    ],
+    "109": [
+        "ContainedBy"
+    ],
+    "110": [
+        "Disjoint"
+    ],
+    "111": [
+        "ContainedBy"
+    ],
+    "112": [
+        "ContainedBy"
+    ],
+    "113": [
+        "Overlap"
+    ],
+    "114": [
+        "Unknown"
+    ],
+    "115": [
+        "Disjoint"
+    ],
+    "116": [
+        "The National Union Party",
+        "The Whig Party",
+        "The Know Nothing Party"
+    ],
+    "117": [
+        "Overlap"
+    ],
+    "118": [
+        "disjoint"
+    ],
+    "119": [
+        "PostgreSQL",
+        "Cassandra",
+        "CouchDB",
+        "MongoDB",
+        "Redis",
+        "Neo4j",
+        "ArangoDB",
+        "OrientDB",
+        "RethinkDB",
+        "VoltDB"
+    ],
+    "120": [
+        "Chilean rugby union teams",
+        "Non-European rugby union teams with Chilean players"
+    ],
+    "121": [
+        "Disjoint"
+    ],
+    "122": [
+        "ContainedBy"
+    ],
+    "123": [
+        "ContainedBy"
+    ],
+    "124": [
+        "Disjoint"
+    ],
+    "125": [
+        "ContainedBy"
+    ],
+    "126": [
+        "ContainedBy"
+    ],
+    "127": [
+        "ContainedBy"
+    ],
+    "128": [
+        "Disjoint"
+    ],
+    "129": [
+        "Overlap"
+    ],
+    "130": [
+        "Overlap"
+    ],
+    "131": [
+        "Peru",
+        "Bolivia",
+        "Argentina",
+        "Chile"
+    ],
+    "132": [
+        "Disjoint"
+    ],
+    "133": [
+        "Europe",
+        "United Kingdom",
+        "Ireland"
+    ],
+    "134": [
+        "Disjoint"
+    ],
+    "135": [
+        "Overlap"
+    ],
+    "136": [
+        "Overlap"
+    ],
+    "137": [
+        "Contains"
+    ],
+    "138": [
+        "ContainedBy"
+    ],
+    "139": [
+        "Disjoint"
+    ],
+    "140": [
+        "Overlap"
+    ],
+    "141": [
+        "ContainedBy"
+    ],
+    "142": [
+        "disjoint"
+    ],
+    "143": [
+        "the editors of EMMA excluding the editors-in-chief",
+        "the editors of EMMA excluding the editors-in-chief",
+        "ContainedBy"
+    ],
+    "144": [
+        "ContainedBy"
+    ],
+    "145": [],
+    "146": [
+        "Disjoint"
+    ],
+    "147": [
+        "ContainedBy"
+    ],
+    "148": [
+        "Contains"
+    ],
+    "149": [
+        "ContainedBy"
+    ]
+}

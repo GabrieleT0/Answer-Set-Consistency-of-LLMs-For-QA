@@ -1,0 +1,659 @@
+{
+    "0": [
+        "ContainedBy"
+    ],
+    "1": [
+        "People's Republic of Cuba"
+    ],
+    "2": [
+        "disjoint"
+    ],
+    "3": [
+        "Real Sociedad",
+        "Villarreal CF",
+        "Atlético Madrid",
+        "Getafe CF",
+        "Cádiz CF",
+        "Almería",
+        "Mallorca",
+        "Girona FC",
+        "Valladolid",
+        "Celta de Vigo",
+        "Deportivo Alavés",
+        "Elche CF",
+        "Real Valladolid",
+        "Levante UD",
+        "SD Eibar",
+        "RCD Mallorca",
+        "Real Zaragoza",
+        "RCD Espanyol",
+        "UD Las Palmas",
+        "CD Tenerife"
+    ],
+    "4": [
+        "Disjoint"
+    ],
+    "5": [
+        "s1",
+        "s2",
+        "relation"
+    ],
+    "6": [
+        "India",
+        "Nepal",
+        "Bhutan",
+        "China",
+        "Pakistan",
+        "Afghanistan",
+        "Myanmar"
+    ],
+    "7": [
+        "disjoint"
+    ],
+    "8": [
+        "Austria",
+        "Germany",
+        "Hungary",
+        "Serbia",
+        "Romania",
+        "Bulgaria",
+        "Croatia",
+        "Ukraine",
+        "Moldova",
+        "Montenegro",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Serbia",
+        "Bulgaria",
+        "Romania",
+        "Hungary",
+        "Ukraine",
+        "Moldova",
+        "Montenegro",
+        "Bosnia and Herzegovina"
+    ],
+    "9": [
+        "ContainedBy"
+    ],
+    "10": [
+        "disjoint"
+    ],
+    "11": [
+        "trumpet",
+        "cornet",
+        "flugelhorn"
+    ],
+    "12": [
+        "E, G"
+    ],
+    "13": [
+        "disjoint"
+    ],
+    "14": [
+        "Overlap"
+    ],
+    "15": [
+        "disjoint"
+    ],
+    "16": [
+        "ContainedBy"
+    ],
+    "17": [
+        "s1: movies in the Cornetto trilogy that do not star Lucy Davis",
+        "s2: movies in the Cornetto trilogy do not star Lucy Davis",
+        "Equivalence"
+    ],
+    "18": [
+        "Overlap"
+    ],
+    "19": [
+        "disjoint"
+    ],
+    "20": [
+        "ContainedBy"
+    ],
+    "21": [
+        "Albania",
+        "Czech Republic",
+        "Denmark",
+        "France",
+        "Netherlands",
+        "Poland",
+        "Slovakia",
+        "Slovenia",
+        "Croatia",
+        "Bosnia and Herzegovina",
+        "Serbia",
+        "North Macedonia",
+        "Montenegro",
+        "Italy"
+    ],
+    "22": [
+        "ContainedBy"
+    ],
+    "23": [
+        "Gabon",
+        "Nigeria",
+        "Benin",
+        "Côte d'Ivoire",
+        "Togo",
+        "Ghana",
+        "Sierra Leone",
+        "Liberia",
+        "Guinea",
+        "Equatorial Guinea",
+        "Sao Tome and Principe"
+    ],
+    "24": [
+        "Halo: Combat Evolved",
+        "Destiny",
+        "Marathon",
+        "Myth",
+        "Oni"
+    ],
+    "25": [
+        "Disjoint"
+    ],
+    "26": [
+        "Disjoint"
+    ],
+    "27": [
+        "disjoint"
+    ],
+    "28": [
+        "Lebanon",
+        "Syria",
+        "Turkey"
+    ],
+    "29": [
+        "disjoint"
+    ],
+    "30": [
+        "Disjoint"
+    ],
+    "31": [
+        "Contains"
+    ],
+    "32": [
+        "ContainedBy"
+    ],
+    "33": [
+        "Overlap"
+    ],
+    "34": [
+        "English",
+        "French"
+    ],
+    "35": [
+        "Andrew Johnson"
+    ],
+    "36": [
+        "Greece",
+        "Cyprus"
+    ],
+    "37": [
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Russia",
+        "Poland",
+        "Sweden",
+        "Denmark",
+        "Germany",
+        "Finland",
+        "Norway"
+    ],
+    "38": [
+        "disjoint"
+    ],
+    "39": [
+        "Richard Nixon"
+    ],
+    "40": [
+        "Disjoint"
+    ],
+    "41": [
+        "Overlap"
+    ],
+    "42": [
+        "Overlap"
+    ],
+    "43": [
+        "Disjoint"
+    ],
+    "44": [
+        "Contained"
+    ],
+    "45": [
+        "Overlap"
+    ],
+    "46": [
+        "Overlap"
+    ],
+    "47": [
+        "Contains"
+    ],
+    "48": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Michael Collins",
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Michael Collins",
+        "Disjoint"
+    ],
+    "49": [
+        "Disjoint"
+    ],
+    "50": [
+        "Contains"
+    ],
+    "51": [
+        "Overlap"
+    ],
+    "52": [
+        "Schiermonnikoog"
+    ],
+    "53": [
+        "Disjoint"
+    ],
+    "54": [
+        "Disjoint"
+    ],
+    "55": [
+        "Luxembourg",
+        "Belgium"
+    ],
+    "56": [
+        "Disjoint"
+    ],
+    "57": [
+        "Estonia",
+        "Latvia",
+        "Lithuania",
+        "Sweden",
+        "Denmark",
+        "Germany",
+        "Poland",
+        "Russia"
+    ],
+    "58": [
+        "Vermont",
+        "Rhode Island"
+    ],
+    "59": [
+        "disjoint"
+    ],
+    "60": [
+        "Overlap"
+    ],
+    "61": [
+        "ContainedBy"
+    ],
+    "62": [
+        "I do not know"
+    ],
+    "63": [
+        "disjoint"
+    ],
+    "64": [
+        "Andorra",
+        "France",
+        "Gibraltar",
+        "Portugal"
+    ],
+    "65": [
+        "Disjoint"
+    ],
+    "66": [
+        "Disjoint"
+    ],
+    "67": [
+        "Disjoint"
+    ],
+    "68": [
+        "disjoint"
+    ],
+    "69": [
+        "Australia",
+        "Fiji",
+        "New Zealand",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu",
+        "Samoa",
+        "Tonga",
+        "Tuvalu",
+        "Kiribati",
+        "Marshall Islands",
+        "Palau",
+        "Micronesia",
+        "Nauru",
+        "Federated States of Micronesia"
+    ],
+    "70": [
+        "Disjoint"
+    ],
+    "71": [
+        "Birmingham City",
+        "Celtic",
+        "Nottingham Forest",
+        "Republic of Ireland"
+    ],
+    "72": [
+        "Disjoint"
+    ],
+    "73": [
+        "United States of America",
+        "Canada"
+    ],
+    "74": [
+        "ContainedBy"
+    ],
+    "75": [
+        "Alabama",
+        "Missouri"
+    ],
+    "76": [
+        "Disjoint"
+    ],
+    "77": [
+        "ContainedBy"
+    ],
+    "78": [
+        "Disjoint"
+    ],
+    "79": [
+        "Contains"
+    ],
+    "80": [
+        "Disjoint"
+    ],
+    "81": [
+        "Disjoint"
+    ],
+    "82": [
+        "United Kingdom",
+        "Denmark",
+        "Sweden",
+        "Finland",
+        "Ireland",
+        "Austria",
+        "Spain",
+        "Portugal",
+        "Greece",
+        "Croatia",
+        "Romania",
+        "Bulgaria",
+        "Cyprus",
+        "Malta",
+        "Czech Republic",
+        "Estonia",
+        "Hungary",
+        "Latvia",
+        "Lithuania",
+        "Poland",
+        "Slovakia",
+        "Slovenia"
+    ],
+    "83": [
+        "Disjoint"
+    ],
+    "84": [
+        "Burkina Faso"
+    ],
+    "85": [
+        "Contains"
+    ],
+    "86": [
+        "Disjoint"
+    ],
+    "87": [
+        "Disjoint"
+    ],
+    "88": [
+        "Disjoint"
+    ],
+    "89": [
+        "None"
+    ],
+    "90": [
+        "Disjoint"
+    ],
+    "91": [
+        "Elizabeth",
+        "Clifton",
+        "Trenton",
+        "Camden",
+        "Passaic",
+        "Union City",
+        "Bayonne",
+        "East Orange",
+        "Vineland",
+        "New Brunswick",
+        "Hoboken",
+        "Middletown",
+        "Old Bridge",
+        "Lakewood",
+        "Toms River",
+        "Edison",
+        "Brick",
+        "Cherry Hill"
+    ],
+    "92": [
+        "Disjoint"
+    ],
+    "93": [
+        "Overlap"
+    ],
+    "94": [
+        "Unknown"
+    ],
+    "95": [
+        "Disjoint"
+    ],
+    "96": [
+        "Neil Armstrong",
+        "Alan Shepard",
+        "Edgar Mitchell",
+        "Stuart Roosa",
+        "Alfred Worden"
+    ],
+    "97": [
+        "Disjoint"
+    ],
+    "98": [
+        "Montana",
+        "parts of New Mexico"
+    ],
+    "99": [
+        "Alabama",
+        "Arkansas",
+        "Kentucky",
+        "Missouri",
+        "Nebraska",
+        "Tennessee",
+        "Virginia",
+        "North Carolina",
+        "Mississippi",
+        "Louisiana",
+        "Oklahoma",
+        "Texas"
+    ],
+    "100": [
+        "Russia"
+    ],
+    "101": [
+        "Overlap"
+    ],
+    "102": [
+        "Disjoint"
+    ],
+    "103": [
+        "Disjoint"
+    ],
+    "104": [
+        "Honshu",
+        "Hokkaido",
+        "Kyushu",
+        "Shikoku",
+        "Okinawa"
+    ],
+    "105": [
+        "Manchester United",
+        "Liverpool",
+        "Manchester City",
+        "Newcastle United",
+        "Brighton & Hove Albion",
+        "Bournemouth",
+        "Wolverhampton Wanderers",
+        "Leeds United",
+        "Southampton",
+        "Everton",
+        "Leicester City",
+        "Nottingham Forest",
+        "Burnley"
+    ],
+    "106": [
+        "Disjoint"
+    ],
+    "107": [
+        "Disjoint"
+    ],
+    "108": [
+        "Contains"
+    ],
+    "109": [
+        "ContainedBy"
+    ],
+    "110": [
+        "ContainedBy"
+    ],
+    "111": [
+        "Make Them Suffer",
+        "Thornhill",
+        "Ocean Grove"
+    ],
+    "112": [
+        "Anorexia nervosa",
+        "Bulimia nervosa",
+        "Pica",
+        "Rumination disorder",
+        "Avoidant/restrictive food intake disorder"
+    ],
+    "113": [
+        "Contains"
+    ],
+    "114": [
+        "Disjoint"
+    ],
+    "115": [
+        "Unknown"
+    ],
+    "116": [
+        "I do not know"
+    ],
+    "117": [
+        "Disjoint"
+    ],
+    "118": [
+        "Disjoint"
+    ],
+    "119": [
+        "Ireland Baldwin",
+        "Hailey Baldwin"
+    ],
+    "120": [
+        "Overlap"
+    ],
+    "121": [
+        "Disjoint"
+    ],
+    "122": [
+        "All non-firearm weapons developed by Heckler & Koch",
+        "All non-firearm weapons developed by Heckler & Koch"
+    ],
+    "123": [
+        "the films produced by Hal Roach that are not comedies",
+        "the films produced by Hal Roach"
+    ],
+    "124": [
+        "ContainedBy"
+    ],
+    "125": [
+        "ContainedBy"
+    ],
+    "126": [
+        "Disjoint"
+    ],
+    "127": [
+        "Overlap"
+    ],
+    "128": [
+        "Disjoint"
+    ],
+    "129": [
+        "Disjoint"
+    ],
+    "130": [
+        "launch pads used by NASA in countries outside the United States of America"
+    ],
+    "131": [
+        "Overlap"
+    ],
+    "132": [
+        "Disjoint"
+    ],
+    "133": [
+        "Disjoint"
+    ],
+    "134": [
+        "Carol Thatcher"
+    ],
+    "135": [
+        "Disjoint"
+    ],
+    "136": [
+        "Disjoint"
+    ],
+    "137": [
+        "Overlap"
+    ],
+    "138": [
+        "ContainedBy"
+    ],
+    "139": [
+        "Disjoint"
+    ],
+    "140": [
+        "ContainedBy"
+    ],
+    "141": [
+        "Bruce Willis",
+        "Denzel Washington"
+    ],
+    "142": [
+        "ContainedBy"
+    ],
+    "143": [
+        "Contained"
+    ],
+    "144": [
+        "Disjoint"
+    ],
+    "145": [
+        "Overlap"
+    ],
+    "146": [
+        "Disjoint"
+    ],
+    "147": [
+        "Overlap"
+    ],
+    "148": [
+        "Contains"
+    ],
+    "149": [
+        "Contains"
+    ]
+}
