@@ -1,6 +1,6 @@
 {
   "languages": ["en"],
-  "llm_models": ["google/gemini-2.5-pro"],
+  "llm_models": ["grok-3-mini"],
   "datasets": ["LC-QuAD.tsv", "qawiki.tsv", "spinach.tsv", "synthetic.tsv"],
   "prompt_types": ["standard_no_idk"],
   "relations": ["Equivalence", "Containment", "Minus"],

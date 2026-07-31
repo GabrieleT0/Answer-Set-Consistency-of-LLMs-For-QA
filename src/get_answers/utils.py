@@ -2,6 +2,9 @@ import os
 import re
 import csv
 
+def output_model_name(model_name):
+    return model_name
+
 def convert_response_to_set(response):
     """
     Convert the response from LLM.

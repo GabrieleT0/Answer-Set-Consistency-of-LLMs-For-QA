@@ -6,5 +6,6 @@ __pycache__
 # Ignore a specific config file in your pipeline
 src/question_pipeline/config.json
 src/get_answers/config.json
+temp/
 .DS_Store
 
