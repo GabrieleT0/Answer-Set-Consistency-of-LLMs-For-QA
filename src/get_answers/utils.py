@@ -88,6 +88,10 @@ def is_minus(set1,set2,set3):
     set3 = set(set3)
     return set1.difference(set2) == set3
 
+def output_model_name(llm_model):
+    """Return a filesystem-safe model name for output paths."""
+    return llm_model.replace('/', '-').replace(':', '-')
+
 def get_dataset_path(filename, language='en'):
     root_dir = os.path.dirname(os.path.abspath(__name__))
     return os.path.join(root_dir, f'/data/Dataset/{language}/{filename}')
