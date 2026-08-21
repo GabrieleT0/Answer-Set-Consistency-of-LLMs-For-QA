@@ -1,0 +1,22 @@
+{
+  "models_in_priority_order": [
+    "GPT-5",
+    "GPT-o3",
+    "GPT-5-mini",
+    "Gemini-2.5-pro",
+    "DeepSeek-R"
+  ],
+  "normalization": "Unicode NFKC, trim/collapse whitespace, case-insensitive exact set equality",
+  "total_quadruples": 600,
+  "accepted_quadruples": 132,
+  "rejected_quadruples": 468,
+  "gold_questions": 528,
+  "confidence_distribution": {
+    "1": 19,
+    "2": 63,
+    "3": 113,
+    "4": 134,
+    "5": 199
+  },
+  "missing_input_files": []
+}
