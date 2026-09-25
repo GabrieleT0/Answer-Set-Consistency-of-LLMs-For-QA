@@ -1,0 +1,12 @@
+marker,regex,Q1_question_groups,Q2_question_groups,Q3_question_groups,Q4_question_groups
+not,\bnot\b,11,9,23,194
+never,\bnever\b,0,0,0,14
+excluding,\bexcluding\b,1,1,6,60
+except,\bexcept\b,0,0,0,0
+without,\bwithout\b,0,1,1,6
+outside,\boutside\b,2,2,2,34
+no longer,\bno\s+longer\b,0,0,0,4
+n't,\b\w+n['’]t\b,1,1,1,2
+non-*,\bnon[-‐‑‒–—]\w+,1,0,6,70
+other than,\bother\s+than\b,0,1,0,17
+aside from,\baside\s+from\b,0,0,0,4

@@ -1,0 +1,31 @@
+{
+  "questions_path": "/workspaces/ISWS-RP/data/ASCB/en/unified-dataset.tsv",
+  "analysis_path": "/workspaces/ISWS-RP/data/evaluation_results/analysis.csv",
+  "action": "zero-shot",
+  "n_question_groups": 600,
+  "marker_counts": {
+    "Q1": 16,
+    "Q2": 15,
+    "Q3": 38,
+    "Q4": 399
+  },
+  "marker_rates": {
+    "Q1": 0.02666666666666667,
+    "Q2": 0.025,
+    "Q3": 0.06333333333333334,
+    "Q4": 0.665
+  },
+  "marker_patterns": {
+    "not": "\\bnot\\b",
+    "never": "\\bnever\\b",
+    "excluding": "\\bexcluding\\b",
+    "except": "\\bexcept\\b",
+    "without": "\\bwithout\\b",
+    "outside": "\\boutside\\b",
+    "no longer": "\\bno\\s+longer\\b",
+    "n't": "\\b\\w+n['’]t\\b",
+    "non-*": "\\bnon[-‐‑‒–—]\\w+",
+    "other than": "\\bother\\s+than\\b",
+    "aside from": "\\baside\\s+from\\b"
+  }
+}
