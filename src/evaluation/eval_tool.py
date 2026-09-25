@@ -114,6 +114,15 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
 
 def _infer_action(elements_lower, actions):
     actions_lower = {a.lower(): a for a in actions}
+    # Check ablation directories before filename tokens such as "fixing" or
+    # "classAndAnswer" can map them back to the original action.
+    for ablation_action in [
+        "zero-shot-no-idk",
+        "fixing-no-idk",
+        "classification-no-idk",
+    ]:
+        if ablation_action in elements_lower:
+            return actions_lower.get(ablation_action, ablation_action)
     if "oracle" in elements_lower or "fixing" in elements_lower:
         return actions_lower.get("fixing", "fixing")
     if "cte" in elements_lower or "classandanswer" in elements_lower or "classification" in elements_lower:
@@ -171,7 +180,7 @@ def analysis(df):
             llm = group["llm"].values[0]
             dataset = group["dataset"].values[0]
             qid = group["Q_ID"].values[0]
-            if action in ["zero-shot", "chain-of-thought"]:
+            if action in ["zero-shot", "zero-shot-no-idk", "chain-of-thought"]:
                 A1 = get_answer_set(group, "Q1", "equal")
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
@@ -204,7 +213,12 @@ def analysis(df):
                     "?A1=A1**": None,
                     "?A1*=A1**": None
                     }
-            elif action in ['classification','fixing']:
+            elif action in [
+                "classification",
+                "fixing",
+                "classification-no-idk",
+                "fixing-no-idk",
+            ]:
                 # Usage
                 A1_equal = get_answer_set(group, "Q1", "equal")
                 A1_contain = get_answer_set(group, "Q1", "sup-sub")
@@ -370,7 +384,8 @@ def summary_xidk(df_analysis):
         "J(A1*-A1**)": ["idk_A1*", "idk_A1**"],
     }
 
-    # Compute summary per metric, filtering rows where all relevant idk columns are 1
+    # Compute each metric only on rows where every required answer is present.
+    # If any answer used by that metric is IDK/empty, skip the row.
     summary_dict = {col: [] for col in metric_cols + empty_cols}
     grouped = df_analysis.groupby(group_cols)
     for name, group in grouped:
@@ -379,7 +394,7 @@ def summary_xidk(df_analysis):
             # Only use idk columns that exist in the group
             idk_cols_existing = [c for c in idk_cols if c in group.columns]
             if idk_cols_existing:
-                mask = ~(group[idk_cols_existing].all(axis=1))
+                mask = ~(group[idk_cols_existing].any(axis=1))
                 # if len(mask[mask==False]) > 0:
                 #     print(f"Computing {col} for group {name} with {len(mask[mask==False])} idk rows filtered out.")
                 filtered = group.loc[mask, col]
@@ -404,7 +419,7 @@ def summary_xidk(df_analysis):
             idk_cols = metric_idk_map.get(col, [])
             idk_cols_existing = [c for c in idk_cols if c in group.columns]
             if idk_cols_existing:
-                mask = ~(group[idk_cols_existing].all(axis=1))
+                mask = ~(group[idk_cols_existing].any(axis=1))
                 filtered = group.loc[mask, col]
             else:
                 filtered = group[col]
