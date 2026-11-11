@@ -1,0 +1,685 @@
+llm,action,metric,paper_percent,corrected_percent,delta_pp,paper_p_as_printed,corrected_p,paper_significant,corrected_significant,significance_changed,n_instances,n_repeat,corrected_available,metric_definition
+llama3.1:8b,zero-shot,?A1=A1*,3.26,0.6799999999999999,-2.58,,,,,,600,148,True,
+llama3.1:8b,zero-shot,J(A1-A1*),21.88,12.93,-8.95,,,,,,600,148,True,
+llama3.1:8b,zero-shot,?A1=A2,4.0,1.67,-2.33,,,,,,600,148,True,
+llama3.1:8b,zero-shot,?A1>A3,11.83,2.5,-9.33,,,,,,600,148,True,
+llama3.1:8b,zero-shot,?A1>A4,7.5,0.83,-6.67,,,,,,600,148,True,
+llama3.1:8b,zero-shot,?A3∅A4,67.67,77.17,9.5,,,,,,600,148,True,
+llama3.1:8b,zero-shot,?A4=A1|3,0.0,0.0,0.0,,,,,,600,148,True,joint partition (main score)
+llama3.1:8b,zero-shot,CON,18.2,16.434,-1.7659999999999982,,,,,,600,148,True,
+llama3.1:8b,zero-shot,J(A1-A2),25.71,16.669999999999998,-9.040000000000003,,,,,,600,148,True,
+llama3.1:8b,zero-shot,J(A3-A4),9.67,10.6,0.9299999999999997,,,,,,600,148,True,
+llama3.1:8b,zero-shot,J(A4-A1|3),10.12,6.23,-3.889999999999999,,,,,,600,148,True,Jaccard of difference component
+llama3.1:8b,zero-shot,idk,0.75,2.62,1.87,,,,,,600,148,True,
+llama3.1:8b,classification,?A1=A2,16.33,16.33,0.0,0.0,4.3791208705305357e-23,True,True,False,600,0,True,
+llama3.1:8b,classification,?A1>A3,9.83,31.669999999999998,21.839999999999996,0.93,2.023734186134146e-45,False,True,True,600,0,True,
+llama3.1:8b,classification,?A1>A4,33.83,33.83,0.0,0.0,5.5039264155815435e-56,True,True,False,600,0,True,
+llama3.1:8b,classification,?A3∅A4,68.17,68.0,-0.1700000000000017,0.66,0.9998858191840153,False,False,False,600,0,True,
+llama3.1:8b,classification,?A4=A1|3,5.0,5.0,0.0,0.0,9.313225746154785e-10,True,True,False,600,0,True,joint partition (main score)
+llama3.1:8b,classification,CON,26.63,30.965999999999998,4.3359999999999985,,,,,,600,0,True,
+llama3.1:8b,classification,J(A1-A2),56.03,55.669999999999995,-0.36000000000000654,,,,,,600,0,True,
+llama3.1:8b,classification,J(A3-A4),9.74,9.9,0.16000000000000014,,,,,,600,0,True,
+llama3.1:8b,classification,J(A4-A1|3),38.99,38.93,-0.060000000000002274,,,,,,600,0,True,Jaccard of difference component
+llama3.1:8b,classification,idk,0.08,0.42,0.33999999999999997,,,,,,600,0,True,
+llama3.1:8b,fixing,?A1=A2,12.67,12.67,0.0,0.0,2.1057239068741906e-18,True,True,False,600,0,True,
+llama3.1:8b,fixing,?A1>A3,15.5,15.5,0.0,0.04,3.0627013811006846e-16,True,True,False,600,0,True,
+llama3.1:8b,fixing,?A1>A4,12.33,12.17,-0.16000000000000014,0.005,1.794918401769026e-17,True,True,False,600,0,True,
+llama3.1:8b,fixing,?A3∅A4,61.33,57.17,-4.159999999999997,0.006,0.9999999999999921,True,False,True,600,0,True,
+llama3.1:8b,fixing,?A4=A1|3,1.83,1.83,0.0,0.0,0.00048828125,True,True,False,600,0,True,joint partition (main score)
+llama3.1:8b,fixing,CON,20.73,19.868,-0.8620000000000019,,,,,,600,0,True,
+llama3.1:8b,fixing,J(A1-A2),45.49,45.49,0.0,,,,,,600,0,True,
+llama3.1:8b,fixing,J(A3-A4),11.84,16.09,4.25,,,,,,600,0,True,
+llama3.1:8b,fixing,J(A4-A1|3),23.97,23.35,-0.6199999999999974,,,,,,600,0,True,Jaccard of difference component
+llama3.1:8b,fixing,idk,0.21,0.84,0.63,,,,,,600,0,True,
+gpt-oss:20b,zero-shot,?A1=A1*,13.32,10.14,-3.1799999999999997,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,J(A1-A1*),35.05,31.840000000000003,-3.2099999999999937,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,?A1=A2,14.33,14.330000000000002,1.7763568394002505e-15,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,?A1>A3,30.5,30.5,0.0,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,?A1>A4,21.67,23.830000000000002,2.16,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,?A3∅A4,64.33,67.83,3.5,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,?A4=A1|3,7.83,9.5,1.67,,,,,,600,148,True,joint partition (main score)
+gpt-oss:20b,zero-shot,CON,27.73,29.198,1.468,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,J(A1-A2),34.05,37.29,3.240000000000002,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,J(A3-A4),26.03,22.91,-3.120000000000001,,,,,,600,148,True,
+gpt-oss:20b,zero-shot,J(A4-A1|3),23.02,25.94,2.9200000000000017,,,,,,600,148,True,Jaccard of difference component
+gpt-oss:20b,zero-shot,idk,14.84,12.540000000000001,-2.299999999999999,,,,,,600,148,True,
+gpt-oss:20b,classification,?A1=A2,56.0,56.00000000000001,7.105427357601002e-15,0.0,2.9432833049266387e-61,True,True,False,600,0,True,
+gpt-oss:20b,classification,?A1>A3,30.33,56.169999999999995,25.839999999999996,0.28,3.7581276150635375e-29,False,True,True,600,0,True,
+gpt-oss:20b,classification,?A1>A4,57.83,60.83,3.0,0.0,2.393390062178689e-48,True,True,False,600,0,True,
+gpt-oss:20b,classification,?A3∅A4,67.33,67.33,0.0,0.15,0.6244046040233127,False,False,False,600,0,True,
+gpt-oss:20b,classification,?A4=A1|3,36.0,37.0,1.0,0.0,9.862424974414562e-40,True,True,False,600,0,True,joint partition (main score)
+gpt-oss:20b,classification,CON,49.5,55.465999999999994,5.965999999999994,,,,,,600,0,True,
+gpt-oss:20b,classification,J(A1-A2),68.23,68.23,0.0,,,,,,600,0,True,
+gpt-oss:20b,classification,J(A3-A4),28.06,28.060000000000002,3.552713678800501e-15,,,,,,600,0,True,
+gpt-oss:20b,classification,J(A4-A1|3),52.44,54.449999999999996,2.009999999999998,,,,,,600,0,True,Jaccard of difference component
+gpt-oss:20b,classification,idk,15.75,16.0,0.25,,,,,,600,0,True,
+gpt-oss:20b,fixing,?A1=A2,51.67,51.67,0.0,0.0,2.316681870803962e-29,True,True,False,300,0,True,
+gpt-oss:20b,fixing,?A1>A3,66.33,67.33,1.0,0.0,3.2019021806185117e-21,True,True,False,300,0,True,
+gpt-oss:20b,fixing,?A1>A4,72.67,73.67,1.0,0.0,3.0190249498757392e-34,True,True,False,300,0,True,
+gpt-oss:20b,fixing,?A3∅A4,75.33,73.67,-1.6599999999999966,0.0,0.41518650484287706,True,False,True,300,0,True,
+gpt-oss:20b,fixing,?A4=A1|3,52.33,51.67,-0.6599999999999966,0.0,2.3133728824182618e-35,True,True,False,300,0,True,joint partition (main score)
+gpt-oss:20b,fixing,CON,63.67,63.602000000000004,-0.06799999999999784,,,,,,300,0,True,
+gpt-oss:20b,fixing,J(A1-A2),69.84,69.84,0.0,,,,,,300,0,True,
+gpt-oss:20b,fixing,J(A3-A4),23.97,25.64,1.6700000000000017,,,,,,300,0,True,
+gpt-oss:20b,fixing,J(A4-A1|3),69.64,69.64,0.0,,,,,,300,0,True,Jaccard of difference component
+gpt-oss:20b,fixing,idk,11.92,13.34,1.42,,,,,,300,0,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A1=A1*,6.8,16.150000000000002,9.350000000000001,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,J(A1-A1*),17.27,36.85,19.580000000000002,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A1=A2,23.67,24.0,0.3299999999999983,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A1>A3,32.5,34.5,2.0,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A1>A4,30.33,28.83,-1.5,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A3∅A4,41.33,41.5,0.1700000000000017,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,?A4=A1|3,2.17,2.17,0.0,,,,,,600,551,True,joint partition (main score)
+gpt-4.1-nano-2025-04-14,zero-shot,CON,26.0,26.200000000000003,0.20000000000000284,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,J(A1-A2),48.83,47.910000000000004,-0.9199999999999946,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,J(A3-A4),39.59,39.65,0.05999999999999517,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,zero-shot,J(A4-A1|3),18.88,16.45,-2.4299999999999997,,,,,,600,551,True,Jaccard of difference component
+gpt-4.1-nano-2025-04-14,zero-shot,idk,13.79,13.08,-0.7099999999999991,,,,,,600,551,True,
+gpt-4.1-nano-2025-04-14,classification,?A1=A2,0.67,0.67,0.0,0.0,1.0,True,False,True,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,?A1>A3,0.0,1.0,1.0,0.0,1.0,True,False,True,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,?A1>A4,0.0,0.5,0.5,0.0,1.0,True,False,True,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,?A3∅A4,10.0,5.33,-4.67,0.0,1.0,True,False,True,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,?A4=A1|3,0.0,0.0,0.0,1.0,1.0,False,False,False,600,0,True,joint partition (main score)
+gpt-4.1-nano-2025-04-14,classification,CON,2.13,1.5,-0.6299999999999999,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,J(A1-A2),0.82,0.8200000000000001,1.1102230246251565e-16,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,J(A3-A4),89.66,94.55,4.890000000000001,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,classification,J(A4-A1|3),0.0,0.16999999999999998,0.16999999999999998,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-nano-2025-04-14,classification,idk,79.83,80.96,1.1299999999999955,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,?A1=A2,43.33,43.169999999999995,-0.1600000000000037,0.0,1.2956404071988186e-16,True,True,False,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,?A1>A3,40.33,39.5,-0.8299999999999983,0.0,0.01853095702391309,True,True,False,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,?A1>A4,48.0,48.0,0.0,0.0,1.5557350700243944e-14,True,True,False,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,?A3∅A4,36.17,31.169999999999998,-5.0000000000000036,0.73,0.9999814203193022,False,False,False,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,?A4=A1|3,12.5,10.67,-1.83,0.0,2.1450896614538803e-13,True,True,False,600,0,True,joint partition (main score)
+gpt-4.1-nano-2025-04-14,fixing,CON,36.07,34.502,-1.5679999999999978,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,J(A1-A2),55.21,53.92,-1.2899999999999991,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,J(A3-A4),48.6,53.459999999999994,4.859999999999992,,,,,,600,0,True,
+gpt-4.1-nano-2025-04-14,fixing,J(A4-A1|3),26.77,25.080000000000002,-1.6899999999999977,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-nano-2025-04-14,fixing,idk,18.58,20.419999999999998,1.8399999999999999,,,,,,600,0,True,
+mistral-small:24b,zero-shot,?A1=A1*,19.06,26.35,7.290000000000003,,,,,,590,148,True,
+mistral-small:24b,zero-shot,J(A1-A1*),35.29,43.99,8.700000000000003,,,,,,590,148,True,
+mistral-small:24b,zero-shot,?A1=A2,12.88,25.419999999999998,12.539999999999997,,,,,,590,148,True,
+mistral-small:24b,zero-shot,?A1>A3,13.39,30.680000000000003,17.290000000000003,,,,,,590,148,True,
+mistral-small:24b,zero-shot,?A1>A4,13.05,25.080000000000002,12.030000000000001,,,,,,590,148,True,
+mistral-small:24b,zero-shot,?A3∅A4,22.37,19.15,-3.2200000000000024,,,,,,590,148,True,
+mistral-small:24b,zero-shot,?A4=A1|3,0.51,0.8500000000000001,0.3400000000000001,,,,,,590,148,True,joint partition (main score)
+mistral-small:24b,zero-shot,CON,12.44,20.235999999999997,7.795999999999998,,,,,,590,148,True,
+mistral-small:24b,zero-shot,J(A1-A2),23.68,45.69,22.009999999999998,,,,,,590,148,True,
+mistral-small:24b,zero-shot,J(A3-A4),62.94,66.16,3.219999999999999,,,,,,590,148,True,
+mistral-small:24b,zero-shot,J(A4-A1|3),7.85,12.29,4.4399999999999995,,,,,,590,148,True,Jaccard of difference component
+mistral-small:24b,zero-shot,idk,38.69,33.56,-5.1299999999999955,,,,,,590,148,True,
+mistral-small:24b,classification,?A1=A2,73.67,71.0,-2.6700000000000017,0.0,1.3484727532060093e-64,True,True,False,600,0,True,
+mistral-small:24b,classification,?A1>A3,41.17,69.83,28.659999999999997,0.07,8.006729163557551e-57,False,True,True,600,0,True,
+mistral-small:24b,classification,?A1>A4,70.17,76.5,6.329999999999998,0.0,1.550288995529812e-72,True,True,False,600,0,True,
+mistral-small:24b,classification,?A3∅A4,68.0,66.5,-1.5,0.0,2.043175874731666e-64,True,True,False,600,0,True,
+mistral-small:24b,classification,?A4=A1|3,41.17,42.33,1.1599999999999966,0.0,3.5373746401666845e-74,True,True,False,600,0,True,joint partition (main score)
+mistral-small:24b,classification,CON,58.84,65.23200000000001,6.39200000000001,,,,,,600,0,True,
+mistral-small:24b,classification,J(A1-A2),81.73,78.91,-2.8200000000000074,,,,,,600,0,True,
+mistral-small:24b,classification,J(A3-A4),29.58,31.080000000000002,1.5000000000000036,,,,,,600,0,True,
+mistral-small:24b,classification,J(A4-A1|3),56.68,58.79,2.1099999999999994,,,,,,600,0,True,Jaccard of difference component
+mistral-small:24b,classification,idk,11.42,15.75,4.33,,,,,,600,0,True,
+mistral-small:24b,fixing,?A1=A2,62.17,62.17,0.0,0.0,3.62045457134773e-49,True,True,False,600,0,True,
+mistral-small:24b,fixing,?A1>A3,60.17,60.67,0.5,0.0,2.8220017489190102e-37,True,True,False,600,0,True,
+mistral-small:24b,fixing,?A1>A4,73.67,75.0,1.3299999999999983,0.0,8.486003964449007e-78,True,True,False,600,0,True,
+mistral-small:24b,fixing,?A3∅A4,68.0,50.83,-17.17,0.0,1.8531408270831147e-39,True,True,False,600,0,True,
+mistral-small:24b,fixing,?A4=A1|3,35.17,35.67,0.5,0.0,1.9446922743316068e-62,True,True,False,600,0,True,joint partition (main score)
+mistral-small:24b,fixing,CON,59.84,56.867999999999995,-2.9720000000000084,,,,,,600,0,True,
+mistral-small:24b,fixing,J(A1-A2),73.13,73.13,0.0,,,,,,600,0,True,
+mistral-small:24b,fixing,J(A3-A4),29.43,46.48,17.049999999999997,,,,,,600,0,True,
+mistral-small:24b,fixing,J(A4-A1|3),54.31,47.199999999999996,-7.1100000000000065,,,,,,600,0,True,Jaccard of difference component
+mistral-small:24b,fixing,idk,15.33,15.67,0.33999999999999986,,,,,,600,0,True,
+llama3.1:70b,zero-shot,?A1=A1*,20.33,,,,,,,,600,0,False,
+llama3.1:70b,zero-shot,J(A1-A1*),48.82,,,,,,,,600,0,False,
+llama3.1:70b,zero-shot,?A1=A2,16.33,19.17,2.8400000000000034,,,,,,600,0,True,
+llama3.1:70b,zero-shot,?A1>A3,26.5,27.67,1.1700000000000017,,,,,,600,0,True,
+llama3.1:70b,zero-shot,?A1>A4,21.83,21.83,0.0,,,,,,600,0,True,
+llama3.1:70b,zero-shot,?A3∅A4,64.83,64.33,-0.5,,,,,,600,0,True,
+llama3.1:70b,zero-shot,?A4=A1|3,2.17,2.67,0.5,,,,,,600,0,True,joint partition (main score)
+llama3.1:70b,zero-shot,CON,26.33,27.134000000000004,0.8040000000000056,,,,,,600,0,True,
+llama3.1:70b,zero-shot,J(A1-A2),40.57,45.61,5.039999999999999,,,,,,600,0,True,
+llama3.1:70b,zero-shot,J(A3-A4),15.95,17.080000000000002,1.1300000000000026,,,,,,600,0,True,
+llama3.1:70b,zero-shot,J(A4-A1|3),18.39,19.88,1.4899999999999984,,,,,,600,0,True,Jaccard of difference component
+llama3.1:70b,zero-shot,idk,2.75,4.04,1.29,,,,,,600,0,True,
+llama3.1:70b,classification,?A1=A2,79.17,78.5,-0.6700000000000017,0.0,8.960884772312533e-97,True,True,False,600,0,True,
+llama3.1:70b,classification,?A1>A3,37.67,78.5,40.83,0.0,6.150080286266147e-82,True,True,False,600,0,True,
+llama3.1:70b,classification,?A1>A4,85.5,86.0,0.5,0.0,2.388984683519453e-106,True,True,False,600,0,True,
+llama3.1:70b,classification,?A3∅A4,90.0,89.33,-0.6700000000000017,0.0,1.591842935101974e-28,True,True,False,600,0,True,
+llama3.1:70b,classification,?A4=A1|3,55.83,56.169999999999995,0.3399999999999963,0.0,1.8960789236503403e-95,True,True,False,600,0,True,joint partition (main score)
+llama3.1:70b,classification,CON,69.63,77.7,8.070000000000007,,,,,,600,0,True,
+llama3.1:70b,classification,J(A1-A2),89.54,88.53,-1.0100000000000051,,,,,,600,0,True,
+llama3.1:70b,classification,J(A3-A4),6.45,7.12,0.6699999999999999,,,,,,600,0,True,
+llama3.1:70b,classification,J(A4-A1|3),79.78,79.93,0.15000000000000568,,,,,,600,0,True,Jaccard of difference component
+llama3.1:70b,classification,idk,2.37,3.42,1.0499999999999998,,,,,,600,0,True,
+llama3.1:70b,fixing,?A1=A2,60.33,60.33,0.0,0.0,4.553665326773334e-59,True,True,False,600,0,True,
+llama3.1:70b,fixing,?A1>A3,69.0,68.83,-0.1700000000000017,0.0,8.410694547346834e-58,True,True,False,600,0,True,
+llama3.1:70b,fixing,?A1>A4,78.33,78.67,0.3400000000000034,0.0,9.798380172663062e-88,True,True,False,600,0,True,
+llama3.1:70b,fixing,?A3∅A4,83.33,86.5,3.1700000000000017,0.0,2.0066291369111053e-21,True,True,False,600,0,True,
+llama3.1:70b,fixing,?A4=A1|3,47.5,48.17,0.6700000000000017,0.0,4.546322863018163e-81,True,True,False,600,0,True,joint partition (main score)
+llama3.1:70b,fixing,CON,67.7,68.5,0.7999999999999972,,,,,,600,0,True,
+llama3.1:70b,fixing,J(A1-A2),74.62,74.51,-0.10999999999999943,,,,,,600,0,True,
+llama3.1:70b,fixing,J(A3-A4),13.76,10.37,-3.3900000000000006,,,,,,600,0,True,
+llama3.1:70b,fixing,J(A4-A1|3),71.01,74.26,3.25,,,,,,600,0,True,Jaccard of difference component
+llama3.1:70b,fixing,idk,4.54,5.79,1.25,,,,,,600,0,True,
+gemini-2.0-flash,zero-shot,?A1=A1*,42.86,53.05,10.189999999999998,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,J(A1-A1*),64.83,70.97,6.140000000000001,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,?A1=A2,32.67,31.669999999999998,-1.0000000000000036,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,?A1>A3,41.5,38.0,-3.5,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,?A1>A4,27.33,32.0,4.670000000000002,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,?A3∅A4,53.5,47.0,-6.5,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,?A4=A1|3,3.83,5.0,1.17,,,,,,600,590,True,joint partition (main score)
+gemini-2.0-flash,zero-shot,CON,31.77,30.734,-1.0359999999999978,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,J(A1-A2),60.08,57.07,-3.009999999999998,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,J(A3-A4),22.38,31.929999999999996,9.549999999999997,,,,,,600,590,True,
+gemini-2.0-flash,zero-shot,J(A4-A1|3),25.39,24.95,-0.4400000000000013,,,,,,600,590,True,Jaccard of difference component
+gemini-2.0-flash,zero-shot,idk,3.0,10.92,7.92,,,,,,600,590,True,
+gemini-2.0-flash,classification,?A1=A2,73.67,69.83,-3.8400000000000034,0.0,3.1425634891799996e-51,True,True,False,600,0,True,
+gemini-2.0-flash,classification,?A1>A3,39.17,70.0,30.83,0.0,1.3136873148199512e-36,True,True,False,600,0,True,
+gemini-2.0-flash,classification,?A1>A4,62.83,57.99999999999999,-4.830000000000005,0.0,1.0460861981267483e-25,True,True,False,600,0,True,
+gemini-2.0-flash,classification,?A3∅A4,57.17,56.67,-0.5,0.54,0.00015604606347280876,False,True,True,600,0,True,
+gemini-2.0-flash,classification,?A4=A1|3,48.17,49.5,1.3299999999999983,0.0,9.713844739841185e-78,True,True,False,600,0,True,joint partition (main score)
+gemini-2.0-flash,classification,CON,56.2,60.8,4.599999999999994,,,,,,600,0,True,
+gemini-2.0-flash,classification,J(A1-A2),80.17,74.17,-6.0,,,,,,600,0,True,
+gemini-2.0-flash,classification,J(A3-A4),35.97,41.63,5.660000000000004,,,,,,600,0,True,
+gemini-2.0-flash,classification,J(A4-A1|3),57.79,53.98,-3.8100000000000023,,,,,,600,0,True,Jaccard of difference component
+gemini-2.0-flash,classification,idk,22.46,25.71,3.25,,,,,,600,0,True,
+gemini-2.0-flash,fixing,?A1=A2,78.67,77.17,-1.5,0.0,1.090800811676733e-67,True,True,False,600,0,True,
+gemini-2.0-flash,fixing,?A1>A3,83.5,80.67,-2.8299999999999983,0.0,4.809908256189599e-59,True,True,False,600,0,True,
+gemini-2.0-flash,fixing,?A1>A4,84.33,80.0,-4.329999999999998,0.0,3.7036819012999486e-71,True,True,False,600,0,True,
+gemini-2.0-flash,fixing,?A3∅A4,87.67,81.0,-6.670000000000002,0.0,7.116389165864305e-42,True,True,False,600,0,True,
+gemini-2.0-flash,fixing,?A4=A1|3,68.33,65.67,-2.6599999999999966,0.0,2.441673845754674e-108,True,True,False,600,0,True,joint partition (main score)
+gemini-2.0-flash,fixing,CON,80.5,76.902,-3.597999999999999,,,,,,600,0,True,
+gemini-2.0-flash,fixing,J(A1-A2),82.0,79.62,-2.3799999999999955,,,,,,600,0,True,
+gemini-2.0-flash,fixing,J(A3-A4),10.45,18.360000000000003,7.910000000000004,,,,,,600,0,True,
+gemini-2.0-flash,fixing,J(A4-A1|3),83.21,76.14999999999999,-7.060000000000002,,,,,,600,0,True,Jaccard of difference component
+gemini-2.0-flash,fixing,idk,2.96,6.0,3.04,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A1=A1*,21.25,20.51,-0.7399999999999984,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,J(A1-A1*),47.09,47.21,0.11999999999999744,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A1=A2,16.33,32.0,15.670000000000002,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A1>A3,38.5,43.830000000000005,5.330000000000005,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A1>A4,14.17,32.33,18.159999999999997,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A3∅A4,56.0,45.0,-11.0,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,?A4=A1|3,2.0,4.33,2.33,,,,,,600,590,True,joint partition (main score)
+gpt-4.1-mini-2025-04-14,zero-shot,CON,25.4,31.497999999999994,6.097999999999995,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,J(A1-A2),34.56,61.629999999999995,27.069999999999993,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,J(A3-A4),26.98,27.07,0.08999999999999986,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,zero-shot,J(A4-A1|3),15.11,26.77,11.66,,,,,,600,590,True,Jaccard of difference component
+gpt-4.1-mini-2025-04-14,zero-shot,idk,8.21,4.88,-3.330000000000001,,,,,,600,590,True,
+gpt-4.1-mini-2025-04-14,classification,?A1=A2,74.17,74.0,-0.1700000000000017,0.0,1.9034264545648766e-60,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,?A1>A3,38.5,48.33,9.829999999999998,0.01,0.032522506678179054,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,?A1>A4,68.5,71.5,3.0,0.0,3.832828080560659e-55,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,?A3∅A4,71.17,71.0,-0.1700000000000017,0.26,2.3708918182112564e-21,False,True,True,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,?A4=A1|3,60.33,63.67,3.3400000000000034,0.0,2.7668648836356964e-104,True,True,False,600,0,True,joint partition (main score)
+gpt-4.1-mini-2025-04-14,classification,CON,62.53,65.7,3.1700000000000017,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,J(A1-A2),80.06,79.89,-0.1700000000000017,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,J(A3-A4),27.83,27.99,0.16000000000000014,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,classification,J(A4-A1|3),65.79,68.60000000000001,2.8100000000000023,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-mini-2025-04-14,classification,idk,18.54,18.59,0.05000000000000071,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,?A1=A2,73.83,73.67,-0.1599999999999966,0.0,2.9432833049266387e-61,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,?A1>A3,80.17,80.5,0.3299999999999983,0.0,7.723205105702814e-49,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,?A1>A4,85.83,85.83,0.0,0.0,3.1869332619585273e-81,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,?A3∅A4,73.5,73.5,0.0,0.0,6.967891762656182e-26,True,True,False,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,?A4=A1|3,58.67,58.67,0.0,0.0,6.97146757215624e-94,True,True,False,600,0,True,joint partition (main score)
+gpt-4.1-mini-2025-04-14,fixing,CON,74.4,74.434,0.033999999999991815,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,J(A1-A2),86.14,85.83,-0.3100000000000023,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,J(A3-A4),22.39,22.27,-0.120000000000001,,,,,,600,0,True,
+gpt-4.1-mini-2025-04-14,fixing,J(A4-A1|3),71.85,72.39999999999999,0.5499999999999972,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-mini-2025-04-14,fixing,idk,8.63,8.88,0.25,,,,,,600,0,True,
+gpt-4o,zero-shot,?A1=A1*,19.86,22.88,3.0199999999999996,,,,,,600,590,True,
+gpt-4o,zero-shot,J(A1-A1*),36.96,45.94,8.979999999999997,,,,,,600,590,True,
+gpt-4o,zero-shot,?A1=A2,7.67,25.0,17.33,,,,,,600,590,True,
+gpt-4o,zero-shot,?A1>A3,10.83,33.33,22.5,,,,,,600,590,True,
+gpt-4o,zero-shot,?A1>A4,6.5,23.669999999999998,17.169999999999998,,,,,,600,590,True,
+gpt-4o,zero-shot,?A3∅A4,4.5,34.83,30.33,,,,,,600,590,True,
+gpt-4o,zero-shot,?A4=A1|3,1.5,5.17,3.67,,,,,,600,590,True,joint partition (main score)
+gpt-4o,zero-shot,CON,6.2,24.4,18.2,,,,,,600,590,True,
+gpt-4o,zero-shot,J(A1-A2),9.32,44.98,35.66,,,,,,600,590,True,
+gpt-4o,zero-shot,J(A3-A4),93.93,54.769999999999996,-39.16000000000001,,,,,,600,590,True,
+gpt-4o,zero-shot,J(A4-A1|3),3.04,19.06,16.02,,,,,,600,590,True,Jaccard of difference component
+gpt-4o,zero-shot,idk,71.08,31.16,-39.92,,,,,,600,590,True,
+gpt-4o,classification,?A1=A2,40.67,40.5,-0.1700000000000017,0.0,2.5579767883245814e-13,True,True,False,600,0,True,
+gpt-4o,classification,?A1>A3,27.33,41.5,14.170000000000002,0.0,7.663147409875871e-05,True,True,False,600,0,True,
+gpt-4o,classification,?A1>A4,31.83,36.0,4.170000000000002,0.0,1.6441928681941775e-09,True,True,False,600,0,True,
+gpt-4o,classification,?A3∅A4,33.33,33.0,-0.3299999999999983,0.0,0.8293527540847498,True,False,True,600,0,True,
+gpt-4o,classification,?A4=A1|3,27.17,30.669999999999998,3.4999999999999964,0.0,9.169746825925522e-43,True,True,False,600,0,True,joint partition (main score)
+gpt-4o,classification,CON,32.07,36.334,4.264000000000003,,,,,,600,0,True,
+gpt-4o,classification,J(A1-A2),41.84,41.67,-0.1700000000000017,,,,,,600,0,True,
+gpt-4o,classification,J(A3-A4),65.79,66.13,0.3399999999999892,,,,,,600,0,True,
+gpt-4o,classification,J(A4-A1|3),29.22,32.83,3.6099999999999994,,,,,,600,0,True,Jaccard of difference component
+gpt-4o,classification,idk,59.83,58.17,-1.6599999999999966,,,,,,600,0,True,
+gpt-4o,fixing,?A1=A2,55.5,55.33,-0.1700000000000017,0.0,7.754021244368639e-40,True,True,False,600,0,True,
+gpt-4o,fixing,?A1>A3,54.67,57.17,2.5,0.0,3.2312612032327037e-28,True,True,False,600,0,True,
+gpt-4o,fixing,?A1>A4,58.0,60.67,2.6700000000000017,0.0,3.6618001664123455e-54,True,True,False,600,0,True,
+gpt-4o,fixing,?A3∅A4,57.0,54.83,-2.1700000000000017,0.0,1.6025570352817471e-19,True,True,False,600,0,True,
+gpt-4o,fixing,?A4=A1|3,43.83,45.67,1.8400000000000034,0.0,4.350970807405022e-72,True,True,False,600,0,True,joint partition (main score)
+gpt-4o,fixing,CON,53.8,54.734,0.9340000000000046,,,,,,600,0,True,
+gpt-4o,fixing,J(A1-A2),62.09,61.92999999999999,-0.1600000000000108,,,,,,600,0,True,
+gpt-4o,fixing,J(A3-A4),41.8,43.76,1.9600000000000009,,,,,,600,0,True,
+gpt-4o,fixing,J(A4-A1|3),51.54,52.800000000000004,1.2600000000000051,,,,,,600,0,True,Jaccard of difference component
+gpt-4o,fixing,idk,32.33,35.0,2.6700000000000017,,,,,,600,0,True,
+gpt-4.1-2025-04-14,zero-shot,?A1=A1*,25.46,26.27,0.8099999999999987,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,J(A1-A1*),56.3,55.7,-0.5999999999999943,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,?A1=A2,30.33,38.83,8.5,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,?A1>A3,47.67,47.33,-0.3400000000000034,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,?A1>A4,35.33,34.33,-1.0,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,?A3∅A4,54.17,54.83,0.6599999999999966,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,?A4=A1|3,9.0,8.33,-0.6699999999999999,,,,,,600,590,True,joint partition (main score)
+gpt-4.1-2025-04-14,zero-shot,CON,35.3,36.73,1.4299999999999997,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,J(A1-A2),60.38,66.88,6.499999999999993,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,J(A3-A4),20.43,19.68,-0.75,,,,,,600,590,True,
+gpt-4.1-2025-04-14,zero-shot,J(A4-A1|3),35.29,34.150000000000006,-1.1399999999999935,,,,,,600,590,True,Jaccard of difference component
+gpt-4.1-2025-04-14,zero-shot,idk,3.75,3.88,0.1299999999999999,,,,,,600,590,True,
+gpt-4.1-2025-04-14,classification,?A1=A2,86.67,86.5,-0.1700000000000017,0.0,1.7156403577734977e-75,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,classification,?A1>A3,52.5,61.17,8.670000000000002,0.0,2.737100923089459e-10,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,classification,?A1>A4,86.0,86.5,0.5,0.0,1.6883913752056755e-87,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,classification,?A3∅A4,82.83,82.17,-0.6599999999999966,0.0,3.0460522732329073e-30,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,classification,?A4=A1|3,74.17,74.83,0.6599999999999966,0.0,7.78390974884713e-119,True,True,False,600,0,True,joint partition (main score)
+gpt-4.1-2025-04-14,classification,CON,76.43,78.23400000000001,1.804000000000002,,,,,,600,0,True,
+gpt-4.1-2025-04-14,classification,J(A1-A2),92.38,92.21000000000001,-0.1699999999999875,,,,,,600,0,True,
+gpt-4.1-2025-04-14,classification,J(A3-A4),15.9,16.57,0.6699999999999999,,,,,,600,0,True,
+gpt-4.1-2025-04-14,classification,J(A4-A1|3),82.32,81.94,-0.37999999999999545,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-2025-04-14,classification,idk,8.16,8.37,0.20999999999999908,,,,,,600,0,True,
+gpt-4.1-2025-04-14,fixing,?A1=A2,78.33,78.17,-0.1599999999999966,0.0,2.3047377452965727e-57,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,fixing,?A1>A3,85.83,85.83,0.0,0.0,1.1473896541472173e-56,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,fixing,?A1>A4,84.5,84.33,-0.1700000000000017,0.0,1.5925858600212613e-74,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,fixing,?A3∅A4,84.67,84.17,-0.5,0.0,8.562533884372959e-38,True,True,False,600,0,True,
+gpt-4.1-2025-04-14,fixing,?A4=A1|3,67.0,66.67,-0.3299999999999983,0.0,1.1592764261418503e-99,True,True,False,600,0,True,joint partition (main score)
+gpt-4.1-2025-04-14,fixing,CON,80.07,79.83399999999999,-0.2360000000000042,,,,,,600,0,True,
+gpt-4.1-2025-04-14,fixing,J(A1-A2),89.24,89.07000000000001,-0.1699999999999875,,,,,,600,0,True,
+gpt-4.1-2025-04-14,fixing,J(A3-A4),13.76,14.26,0.5,,,,,,600,0,True,
+gpt-4.1-2025-04-14,fixing,J(A4-A1|3),81.23,80.86,-0.37000000000000455,,,,,,600,0,True,Jaccard of difference component
+gpt-4.1-2025-04-14,fixing,idk,6.42,6.79,0.3700000000000001,,,,,,600,0,True,
+grok-3-mini,zero-shot,?A1=A1*,30.0,,,,,,,,600,0,False,
+grok-3-mini,zero-shot,J(A1-A1*),55.43,,,,,,,,600,0,False,
+grok-3-mini,zero-shot,?A1=A2,26.17,30.830000000000002,4.66,,,,,,600,0,True,
+grok-3-mini,zero-shot,?A1>A3,47.33,47.33,0.0,,,,,,600,0,True,
+grok-3-mini,zero-shot,?A1>A4,34.17,37.5,3.3299999999999983,,,,,,600,0,True,
+grok-3-mini,zero-shot,?A3∅A4,73.0,74.67,1.6700000000000017,,,,,,600,0,True,
+grok-3-mini,zero-shot,?A4=A1|3,18.33,20.5,2.1700000000000017,,,,,,600,0,True,joint partition (main score)
+grok-3-mini,zero-shot,CON,39.8,42.166000000000004,2.3660000000000068,,,,,,600,0,True,
+grok-3-mini,zero-shot,J(A1-A2),52.42,60.3,7.8799999999999955,,,,,,600,0,True,
+grok-3-mini,zero-shot,J(A3-A4),19.84,18.77,-1.0700000000000003,,,,,,600,0,True,
+grok-3-mini,zero-shot,J(A4-A1|3),39.45,41.85,2.3999999999999986,,,,,,600,0,True,Jaccard of difference component
+grok-3-mini,zero-shot,idk,8.54,8.290000000000001,-0.24999999999999822,,,,,,600,0,True,
+grok-3-mini,classification,?A1=A2,79.67,79.67,0.0,0.0,1.8527703663932438e-78,True,True,False,600,0,True,
+grok-3-mini,classification,?A1>A3,49.17,78.83,29.659999999999997,0.01,1.6844627577826755e-38,True,True,False,600,0,True,
+grok-3-mini,classification,?A1>A4,75.83,78.33,2.5,0.0,1.414139684108015e-60,True,True,False,600,0,True,
+grok-3-mini,classification,?A3∅A4,78.17,78.17,0.0,0.91,0.030854304119612035,False,True,True,600,0,True,
+grok-3-mini,classification,?A4=A1|3,65.0,66.83,1.8299999999999983,0.0,3.2633952722906842e-77,True,True,False,600,0,True,joint partition (main score)
+grok-3-mini,classification,CON,69.57,76.366,6.7960000000000065,,,,,,600,0,True,
+grok-3-mini,classification,J(A1-A2),85.22,85.22,0.0,,,,,,600,0,True,
+grok-3-mini,classification,J(A3-A4),21.27,21.27,0.0,,,,,,600,0,True,
+grok-3-mini,classification,J(A4-A1|3),73.07,75.52,2.450000000000003,,,,,,600,0,True,Jaccard of difference component
+grok-3-mini,classification,idk,13.66,13.66,0.0,,,,,,600,0,True,
+grok-3-mini,fixing,?A1=A2,79.17,79.17,0.0,0.0,1.3700634632867143e-77,True,True,False,600,0,True,
+grok-3-mini,fixing,?A1>A3,80.5,82.17,1.6700000000000017,0.0,2.8075620130250206e-49,True,True,False,600,0,True,
+grok-3-mini,fixing,?A1>A4,77.17,78.5,1.3299999999999983,0.0,3.6130686032645594e-63,True,True,False,600,0,True,
+grok-3-mini,fixing,?A3∅A4,73.67,73.5,-0.1700000000000017,0.0,0.7663964489615168,True,False,True,600,0,True,
+grok-3-mini,fixing,?A4=A1|3,64.17,64.83,0.6599999999999966,0.0,7.681657396028364e-75,True,True,False,600,0,True,joint partition (main score)
+grok-3-mini,fixing,CON,74.94,75.634,0.6940000000000026,,,,,,600,0,True,
+grok-3-mini,fixing,J(A1-A2),85.47,85.47,0.0,,,,,,600,0,True,
+grok-3-mini,fixing,J(A3-A4),25.83,26.0,0.1700000000000017,,,,,,600,0,True,
+grok-3-mini,fixing,J(A4-A1|3),72.18,72.66,0.47999999999998977,,,,,,600,0,True,Jaccard of difference component
+grok-3-mini,fixing,idk,13.25,13.54,0.28999999999999915,,,,,,600,0,True,
+deepseek-chat,zero-shot,?A1=A1*,27.69,22.88,-4.810000000000002,,,,,,600,590,True,
+deepseek-chat,zero-shot,J(A1-A1*),49.86,48.199999999999996,-1.6600000000000037,,,,,,600,590,True,
+deepseek-chat,zero-shot,?A1=A2,28.83,28.83,0.0,,,,,,600,590,True,
+deepseek-chat,zero-shot,?A1>A3,29.5,35.0,5.5,,,,,,600,590,True,
+deepseek-chat,zero-shot,?A1>A4,27.17,27.169999999999998,-3.552713678800501e-15,,,,,,600,590,True,
+deepseek-chat,zero-shot,?A3∅A4,31.5,33.5,2.0,,,,,,600,590,True,
+deepseek-chat,zero-shot,?A4=A1|3,3.0,3.83,0.8300000000000001,,,,,,600,590,True,joint partition (main score)
+deepseek-chat,zero-shot,CON,24.0,25.666,1.6660000000000004,,,,,,600,590,True,
+deepseek-chat,zero-shot,J(A1-A2),54.03,54.03,0.0,,,,,,600,590,True,
+deepseek-chat,zero-shot,J(A3-A4),42.48,39.11,-3.3699999999999974,,,,,,600,590,True,
+deepseek-chat,zero-shot,J(A4-A1|3),20.13,21.27,1.1400000000000006,,,,,,600,590,True,Jaccard of difference component
+deepseek-chat,zero-shot,idk,12.67,11.5,-1.17,,,,,,600,590,True,
+deepseek-chat,classification,?A1=A2,72.83,72.83,0.0,0.0,4.491474336425295e-70,True,True,False,600,0,True,
+deepseek-chat,classification,?A1>A3,53.17,60.33,7.159999999999997,0.0,8.404069877920991e-26,True,True,False,600,0,True,
+deepseek-chat,classification,?A1>A4,61.67,64.33,2.6599999999999966,0.0,4.0525734231042436e-48,True,True,False,600,0,True,
+deepseek-chat,classification,?A3∅A4,58.5,60.33,1.8299999999999983,0.0,2.648795220817483e-23,True,True,False,600,0,True,
+deepseek-chat,classification,?A4=A1|3,51.33,54.169999999999995,2.8399999999999963,0.0,9.357959418223791e-90,True,True,False,600,0,True,joint partition (main score)
+deepseek-chat,classification,CON,59.5,62.397999999999996,2.897999999999996,,,,,,600,0,True,
+deepseek-chat,classification,J(A1-A2),75.55,75.55,0.0,,,,,,600,0,True,
+deepseek-chat,classification,J(A3-A4),39.85,38.01,-1.8400000000000034,,,,,,600,0,True,
+deepseek-chat,classification,J(A4-A1|3),56.94,60.31999999999999,3.3799999999999955,,,,,,600,0,True,Jaccard of difference component
+deepseek-chat,classification,idk,27.21,26.919999999999998,-0.2900000000000027,,,,,,600,0,True,
+deepseek-chat,fixing,?A1=A2,76.33,76.17,-0.1599999999999966,0.0,7.759166651640455e-77,True,True,False,600,0,True,
+deepseek-chat,fixing,?A1>A3,77.83,77.66999999999999,-0.1600000000000108,0.0,1.0389348054145679e-68,True,True,False,600,0,True,
+deepseek-chat,fixing,?A1>A4,81.5,81.5,0.0,0.0,7.552999659561705e-82,True,True,False,600,0,True,
+deepseek-chat,fixing,?A3∅A4,76.0,74.33,-1.6700000000000017,0.0,6.1586323660963326e-52,True,True,False,600,0,True,
+deepseek-chat,fixing,?A4=A1|3,59.0,58.17,-0.8299999999999983,0.0,6.016685627709896e-97,True,True,False,600,0,True,joint partition (main score)
+deepseek-chat,fixing,CON,74.13,73.568,-0.5619999999999976,,,,,,600,0,True,
+deepseek-chat,fixing,J(A1-A2),86.34,86.02,-0.3200000000000074,,,,,,600,0,True,
+deepseek-chat,fixing,J(A3-A4),22.63,24.29,1.6600000000000001,,,,,,600,0,True,
+deepseek-chat,fixing,J(A4-A1|3),72.99,71.41999999999999,-1.5700000000000074,,,,,,600,0,True,Jaccard of difference component
+deepseek-chat,fixing,idk,9.79,10.38,0.5900000000000016,,,,,,600,0,True,
+gemini-2.5-flash,zero-shot,?A1=A1*,34.66,39.83,5.170000000000002,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,J(A1-A1*),63.1,65.3,2.1999999999999957,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,?A1=A2,31.17,31.169999999999998,-3.552713678800501e-15,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,?A1>A3,44.5,44.5,0.0,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,?A1>A4,26.67,35.67,9.0,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,?A3∅A4,64.83,75.0,10.170000000000002,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,?A4=A1|3,14.83,19.67,4.840000000000002,,,,,,600,590,True,joint partition (main score)
+gemini-2.5-flash,zero-shot,CON,36.4,41.20199999999999,4.8019999999999925,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,J(A1-A2),59.68,59.68,0.0,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,J(A3-A4),25.72,13.100000000000001,-12.619999999999997,,,,,,600,590,True,
+gemini-2.5-flash,zero-shot,J(A4-A1|3),32.46,42.53,10.07,,,,,,600,590,True,Jaccard of difference component
+gemini-2.5-flash,zero-shot,idk,8.58,5.33,-3.25,,,,,,600,590,True,
+gemini-2.5-flash,classification,?A1=A2,84.33,84.33,0.0,0.0,3.562595408599111e-83,True,True,False,600,0,True,
+gemini-2.5-flash,classification,?A1>A3,50.33,86.83,36.5,0.0,3.429186592762434e-67,True,True,False,600,0,True,
+gemini-2.5-flash,classification,?A1>A4,82.17,84.17,2.0,0.0,6.4033339941958266e-80,True,True,False,600,0,True,
+gemini-2.5-flash,classification,?A3∅A4,81.67,81.67,0.0,0.09,0.000207927498197177,False,True,True,600,0,True,
+gemini-2.5-flash,classification,?A4=A1|3,76.0,77.66999999999999,1.6699999999999875,0.0,6.77229534463658e-102,True,True,False,600,0,True,joint partition (main score)
+gemini-2.5-flash,classification,CON,74.9,82.934,8.033999999999992,,,,,,600,0,True,
+gemini-2.5-flash,classification,J(A1-A2),89.0,89.0,0.0,,,,,,600,0,True,
+gemini-2.5-flash,classification,J(A3-A4),17.82,17.82,0.0,,,,,,600,0,True,
+gemini-2.5-flash,classification,J(A4-A1|3),78.56,80.54,1.980000000000004,,,,,,600,0,True,Jaccard of difference component
+gemini-2.5-flash,classification,idk,10.0,8.88,-1.1199999999999992,,,,,,600,0,True,
+gemini-2.5-flash,fixing,?A1=A2,85.17,85.17,0.0,0.0,1.7136258743984095e-88,True,True,False,600,0,True,
+gemini-2.5-flash,fixing,?A1>A3,83.0,83.83,0.8299999999999983,0.0,6.33047193775855e-63,True,True,False,600,0,True,
+gemini-2.5-flash,fixing,?A1>A4,82.5,83.0,0.5,0.0,7.474014019197497e-76,True,True,False,600,0,True,
+gemini-2.5-flash,fixing,?A3∅A4,84.5,81.83,-2.6700000000000017,0.0,0.00026366730287048995,True,True,False,600,0,True,
+gemini-2.5-flash,fixing,?A4=A1|3,76.0,74.33,-1.6700000000000017,0.0,1.7745536467407306e-94,True,True,False,600,0,True,joint partition (main score)
+gemini-2.5-flash,fixing,CON,82.23,81.63199999999999,-0.5980000000000132,,,,,,600,0,True,
+gemini-2.5-flash,fixing,J(A1-A2),89.06,89.05999999999999,-1.4210854715202004e-14,,,,,,600,0,True,
+gemini-2.5-flash,fixing,J(A3-A4),15.25,17.91,2.66,,,,,,600,0,True,
+gemini-2.5-flash,fixing,J(A4-A1|3),80.99,79.02,-1.9699999999999989,,,,,,600,0,True,Jaccard of difference component
+gemini-2.5-flash,fixing,idk,7.84,8.04,0.1999999999999993,,,,,,600,0,True,
+gpt-5-nano,zero-shot,?A1=A1*,14.09,21.86,7.77,,,,,,600,590,True,
+gpt-5-nano,zero-shot,J(A1-A1*),22.79,38.65,15.86,,,,,,600,590,True,
+gpt-5-nano,zero-shot,?A1=A2,23.67,23.669999999999998,-3.552713678800501e-15,,,,,,600,590,True,
+gpt-5-nano,zero-shot,?A1>A3,30.5,34.33,3.8299999999999983,,,,,,600,590,True,
+gpt-5-nano,zero-shot,?A1>A4,26.83,26.83,0.0,,,,,,600,590,True,
+gpt-5-nano,zero-shot,?A3∅A4,40.33,41.83,1.5,,,,,,600,590,True,
+gpt-5-nano,zero-shot,?A4=A1|3,15.17,16.5,1.33,,,,,,600,590,True,joint partition (main score)
+gpt-5-nano,zero-shot,CON,27.3,28.632,1.3320000000000007,,,,,,600,590,True,
+gpt-5-nano,zero-shot,J(A1-A2),37.12,37.12,0.0,,,,,,600,590,True,
+gpt-5-nano,zero-shot,J(A3-A4),57.62,55.71,-1.9099999999999966,,,,,,600,590,True,
+gpt-5-nano,zero-shot,J(A4-A1|3),26.3,26.840000000000003,0.5400000000000027,,,,,,600,590,True,Jaccard of difference component
+gpt-5-nano,zero-shot,idk,43.5,41.79,-1.7100000000000009,,,,,,600,590,True,
+gpt-5-nano,classification,?A1=A2,71.67,71.67,0.0,0.0,9.818091621936053e-61,True,True,False,600,0,True,
+gpt-5-nano,classification,?A1>A3,5.5,72.83,67.33,1.0,1.8100823873093987e-40,False,True,True,600,0,True,
+gpt-5-nano,classification,?A1>A4,67.67,75.33,7.659999999999997,0.0,4.976942237557516e-58,True,True,False,600,0,True,
+gpt-5-nano,classification,?A3∅A4,14.0,14.000000000000002,1.7763568394002505e-15,1.0,1.0,False,False,False,600,0,True,
+gpt-5-nano,classification,?A4=A1|3,0.5,0.5,0.0,1.0,1.0,False,False,False,600,0,True,joint partition (main score)
+gpt-5-nano,classification,CON,31.87,46.866,14.995999999999999,,,,,,600,0,True,
+gpt-5-nano,classification,J(A1-A2),72.0,72.0,0.0,,,,,,600,0,True,
+gpt-5-nano,classification,J(A3-A4),85.89,85.89,0.0,,,,,,600,0,True,
+gpt-5-nano,classification,J(A4-A1|3),5.68,6.32,0.6400000000000006,,,,,,600,0,True,Jaccard of difference component
+gpt-5-nano,classification,idk,7.17,7.539999999999999,0.3699999999999992,,,,,,600,0,True,
+gpt-5-nano,fixing,?A1=A2,47.5,47.5,0.0,0.0,5.925660639160257e-38,True,True,False,600,0,True,
+gpt-5-nano,fixing,?A1>A3,45.17,49.17,4.0,0.0,1.3273537702152205e-16,True,True,False,600,0,True,
+gpt-5-nano,fixing,?A1>A4,45.83,50.0,4.170000000000002,0.0,3.114434142505052e-35,True,True,False,600,0,True,
+gpt-5-nano,fixing,?A3∅A4,46.33,46.0,-0.3299999999999983,0.0,0.007716182253654504,True,True,False,600,0,True,
+gpt-5-nano,fixing,?A4=A1|3,35.83,38.17,2.3400000000000034,0.0,1.9184595192280364e-33,True,True,False,600,0,True,joint partition (main score)
+gpt-5-nano,fixing,CON,44.13,46.168,2.0379999999999967,,,,,,600,0,True,
+gpt-5-nano,fixing,J(A1-A2),53.31,53.31,0.0,,,,,,600,0,True,
+gpt-5-nano,fixing,J(A3-A4),52.9,53.239999999999995,0.3399999999999963,,,,,,600,0,True,
+gpt-5-nano,fixing,J(A4-A1|3),42.07,44.7,2.6300000000000026,,,,,,600,0,True,Jaccard of difference component
+gpt-5-nano,fixing,idk,41.12,41.25,0.13000000000000256,,,,,,600,0,True,
+deepseek-reasoner,zero-shot,?A1=A1*,22.27,15.879999999999999,-6.390000000000001,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,J(A1-A1*),44.59,40.04,-4.550000000000004,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,?A1=A2,17.5,17.5,0.0,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,?A1>A3,37.33,37.330000000000005,7.105427357601002e-15,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,?A1>A4,26.17,26.169999999999998,-3.552713678800501e-15,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,?A3∅A4,75.0,75.0,0.0,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,?A4=A1|3,10.0,10.0,0.0,,,,,,600,296,True,joint partition (main score)
+deepseek-reasoner,zero-shot,CON,33.2,33.2,0.0,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,J(A1-A2),45.77,45.769999999999996,-7.105427357601002e-15,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,J(A3-A4),10.96,10.96,0.0,,,,,,600,296,True,
+deepseek-reasoner,zero-shot,J(A4-A1|3),30.9,30.9,0.0,,,,,,600,296,True,Jaccard of difference component
+deepseek-reasoner,zero-shot,idk,4.21,4.21,0.0,,,,,,600,296,True,
+deepseek-reasoner,classification,?A1=A2,64.67,64.67,0.0,0.0,2.3765199847318084e-68,True,True,False,600,0,True,
+deepseek-reasoner,classification,?A1>A3,43.67,51.83,8.159999999999997,0.0,1.8837084647037222e-10,True,True,False,600,0,True,
+deepseek-reasoner,classification,?A1>A4,53.5,55.50000000000001,2.000000000000007,0.0,1.7241270520492809e-34,True,True,False,600,0,True,
+deepseek-reasoner,classification,?A3∅A4,57.5,58.5,1.0,1.0,0.9999999999926232,False,False,False,600,0,True,
+deepseek-reasoner,classification,?A4=A1|3,47.67,50.17,2.5,0.0,2.249550719567251e-66,True,True,False,600,0,True,joint partition (main score)
+deepseek-reasoner,classification,CON,53.4,56.13400000000001,2.734000000000009,,,,,,600,0,True,
+deepseek-reasoner,classification,J(A1-A2),68.57,68.57,0.0,,,,,,600,0,True,
+deepseek-reasoner,classification,J(A3-A4),41.95,40.82,-1.1300000000000026,,,,,,600,0,True,
+deepseek-reasoner,classification,J(A4-A1|3),50.58,53.72,3.1400000000000006,,,,,,600,0,True,Jaccard of difference component
+deepseek-reasoner,classification,idk,23.75,22.96,-0.7899999999999991,,,,,,600,0,True,
+deepseek-reasoner,fixing,?A1=A2,65.83,65.83,0.0,0.0,3.0650926591998314e-73,True,True,False,600,0,True,
+deepseek-reasoner,fixing,?A1>A3,69.33,70.33,1.0,0.0,2.1893295945672636e-36,True,True,False,600,0,True,
+deepseek-reasoner,fixing,?A1>A4,78.83,80.83,2.0,0.0,8.892868812816827e-79,True,True,False,600,0,True,
+deepseek-reasoner,fixing,?A3∅A4,83.17,82.17,-1.0,0.0,0.0003183034578521762,True,True,False,600,0,True,
+deepseek-reasoner,fixing,?A4=A1|3,53.33,53.169999999999995,-0.1600000000000037,0.0,1.2148312304127724e-71,True,True,False,600,0,True,joint partition (main score)
+deepseek-reasoner,fixing,CON,70.1,70.466,0.36599999999999966,,,,,,600,0,True,
+deepseek-reasoner,fixing,J(A1-A2),80.21,80.21000000000001,1.4210854715202004e-14,,,,,,600,0,True,
+deepseek-reasoner,fixing,J(A3-A4),15.31,16.2,0.8899999999999988,,,,,,600,0,True,
+deepseek-reasoner,fixing,J(A4-A1|3),74.54,74.22999999999999,-0.3100000000000165,,,,,,600,0,True,Jaccard of difference component
+deepseek-reasoner,fixing,idk,5.92,6.25,0.33000000000000007,,,,,,600,0,True,
+gemini-2.5-pro,zero-shot,?A1=A1*,29.72,34.75,5.030000000000001,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,J(A1-A1*),57.68,67.05,9.369999999999997,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,?A1=A2,29.5,29.5,0.0,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,?A1>A3,44.67,40.17,-4.5,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,?A1>A4,30.33,35.5,5.170000000000002,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,?A3∅A4,75.17,74.0,-1.1700000000000017,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,?A4=A1|3,16.33,17.83,1.5,,,,,,600,590,True,joint partition (main score)
+gemini-2.5-pro,zero-shot,CON,39.2,39.4,0.19999999999999574,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,J(A1-A2),62.86,62.480000000000004,-0.37999999999999545,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,J(A3-A4),11.21,10.75,-0.46000000000000085,,,,,,600,590,True,
+gemini-2.5-pro,zero-shot,J(A4-A1|3),39.95,45.4,5.449999999999996,,,,,,600,590,True,Jaccard of difference component
+gemini-2.5-pro,zero-shot,idk,3.29,3.3300000000000005,0.04000000000000048,,,,,,600,590,True,
+gemini-2.5-pro,classification,?A1=A2,80.0,80.0,0.0,0.0,2.285849921625676e-75,True,True,False,600,0,True,
+gemini-2.5-pro,classification,?A1>A3,49.0,85.17,36.17,0.0,3.5621271040837186e-69,True,True,False,600,0,True,
+gemini-2.5-pro,classification,?A1>A4,74.67,78.83,4.159999999999997,0.0,5.572495072171584e-54,True,True,False,600,0,True,
+gemini-2.5-pro,classification,?A3∅A4,80.17,80.17,0.0,0.0,0.0014287101263958234,True,True,False,600,0,True,
+gemini-2.5-pro,classification,?A4=A1|3,67.0,70.83,3.8299999999999983,0.0,1.3669234389919154e-79,True,True,False,600,0,True,joint partition (main score)
+gemini-2.5-pro,classification,CON,70.17,78.99999999999999,8.829999999999984,,,,,,600,0,True,
+gemini-2.5-pro,classification,J(A1-A2),84.94,84.94,0.0,,,,,,600,0,True,
+gemini-2.5-pro,classification,J(A3-A4),19.05,19.05,0.0,,,,,,600,0,True,
+gemini-2.5-pro,classification,J(A4-A1|3),71.58,75.41,3.8299999999999983,,,,,,600,0,True,Jaccard of difference component
+gemini-2.5-pro,classification,idk,11.08,9.75,-1.33,,,,,,600,0,True,
+gemini-2.5-pro,fixing,?A1=A2,72.83,72.83,0.0,0.0,2.3444461889332753e-55,True,True,False,600,0,True,
+gemini-2.5-pro,fixing,?A1>A3,67.33,69.33,2.0,0.0,6.51109349776723e-27,True,True,False,600,0,True,
+gemini-2.5-pro,fixing,?A1>A4,75.5,81.5,6.0,0.0,1.76045936698501e-64,True,True,False,600,0,True,
+gemini-2.5-pro,fixing,?A3∅A4,87.0,81.83,-5.170000000000002,0.0,0.00017120333561823295,True,True,False,600,0,True,
+gemini-2.5-pro,fixing,?A4=A1|3,62.67,66.33,3.6599999999999966,0.0,1.4315080965527028e-70,True,True,False,600,0,True,joint partition (main score)
+gemini-2.5-pro,fixing,CON,73.07,74.36399999999999,1.293999999999997,,,,,,600,0,True,
+gemini-2.5-pro,fixing,J(A1-A2),80.13,80.13,0.0,,,,,,600,0,True,
+gemini-2.5-pro,fixing,J(A3-A4),12.9,18.060000000000002,5.160000000000002,,,,,,600,0,True,
+gemini-2.5-pro,fixing,J(A4-A1|3),73.83,76.16000000000001,2.3300000000000125,,,,,,600,0,True,Jaccard of difference component
+gemini-2.5-pro,fixing,idk,8.25,10.5,2.25,,,,,,600,0,True,
+gpt-5-mini,zero-shot,?A1=A1*,20.14,23.05,2.91,,,,,,600,590,True,
+gpt-5-mini,zero-shot,J(A1-A1*),31.99,35.27,3.2800000000000047,,,,,,600,590,True,
+gpt-5-mini,zero-shot,?A1=A2,18.33,23.330000000000002,5.0000000000000036,,,,,,600,590,True,
+gpt-5-mini,zero-shot,?A1>A3,26.67,28.33,1.6599999999999966,,,,,,600,590,True,
+gpt-5-mini,zero-shot,?A1>A4,22.17,24.67,2.5,,,,,,600,590,True,
+gpt-5-mini,zero-shot,?A3∅A4,29.33,39.33,10.0,,,,,,600,590,True,
+gpt-5-mini,zero-shot,?A4=A1|3,14.5,13.5,-1.0,,,,,,600,590,True,joint partition (main score)
+gpt-5-mini,zero-shot,CON,22.2,25.832,3.6320000000000014,,,,,,600,590,True,
+gpt-5-mini,zero-shot,J(A1-A2),26.71,35.35,8.64,,,,,,600,590,True,
+gpt-5-mini,zero-shot,J(A3-A4),68.57,58.089999999999996,-10.479999999999997,,,,,,600,590,True,
+gpt-5-mini,zero-shot,J(A4-A1|3),21.09,25.669999999999998,4.579999999999998,,,,,,600,590,True,Jaccard of difference component
+gpt-5-mini,zero-shot,idk,55.12,47.17,-7.949999999999996,,,,,,600,590,True,
+gpt-5-mini,classification,?A1=A2,50.67,50.67,0.0,0.0,1.857146153214869e-39,True,True,False,600,0,True,
+gpt-5-mini,classification,?A1>A3,31.33,46.0,14.670000000000002,1.0,2.586590294702178e-21,False,True,True,600,0,True,
+gpt-5-mini,classification,?A1>A4,33.83,37.830000000000005,4.000000000000007,0.61,2.279948711284398e-10,False,True,True,600,0,True,
+gpt-5-mini,classification,?A3∅A4,53.17,53.169999999999995,-7.105427357601002e-15,0.0,4.2824908915065493e-16,True,True,False,600,0,True,
+gpt-5-mini,classification,?A4=A1|3,30.17,33.5,3.3299999999999983,0.0,1.90703697283363e-20,True,True,False,600,0,True,joint partition (main score)
+gpt-5-mini,classification,CON,39.83,44.234,4.4040000000000035,,,,,,600,0,True,
+gpt-5-mini,classification,J(A1-A2),55.24,55.24,0.0,,,,,,600,0,True,
+gpt-5-mini,classification,J(A3-A4),46.83,46.83,0.0,,,,,,600,0,True,
+gpt-5-mini,classification,J(A4-A1|3),31.76,35.17,3.41,,,,,,600,0,True,Jaccard of difference component
+gpt-5-mini,classification,idk,39.71,39.04,-0.6700000000000017,,,,,,600,0,True,
+gpt-5-mini,fixing,?A1=A2,40.5,40.5,0.0,0.0,1.5449108277317303e-23,True,True,False,600,0,True,
+gpt-5-mini,fixing,?A1>A3,38.67,42.83,4.159999999999997,0.0,1.3336468301471885e-15,True,True,False,600,0,True,
+gpt-5-mini,fixing,?A1>A4,42.33,46.5,4.170000000000002,0.0,5.4475212143585436e-33,True,True,False,600,0,True,
+gpt-5-mini,fixing,?A3∅A4,41.67,41.83,0.1599999999999966,0.0,0.0596368341558822,True,False,True,600,0,True,
+gpt-5-mini,fixing,?A4=A1|3,35.0,37.669999999999995,2.6699999999999946,0.0,1.9745090599215177e-39,True,True,False,600,0,True,joint partition (main score)
+gpt-5-mini,fixing,CON,39.63,41.866,2.235999999999997,,,,,,600,0,True,
+gpt-5-mini,fixing,J(A1-A2),45.04,45.04,0.0,,,,,,600,0,True,
+gpt-5-mini,fixing,J(A3-A4),58.25,58.01,-0.240000000000002,,,,,,600,0,True,
+gpt-5-mini,fixing,J(A4-A1|3),38.05,40.98,2.9299999999999997,,,,,,600,0,True,Jaccard of difference component
+gpt-5-mini,fixing,idk,49.38,50.03999999999999,0.6599999999999895,,,,,,600,0,True,
+o3,zero-shot,?A1=A1*,25.03,24.240000000000002,-0.7899999999999991,,,,,,590,590,True,
+o3,zero-shot,J(A1-A1*),52.78,51.9,-0.8800000000000026,,,,,,590,590,True,
+o3,zero-shot,?A1=A2,21.36,28.470000000000002,7.110000000000003,,,,,,590,590,True,
+o3,zero-shot,?A1>A3,40.85,45.25,4.399999999999999,,,,,,590,590,True,
+o3,zero-shot,?A1>A4,28.81,33.73,4.919999999999998,,,,,,590,590,True,
+o3,zero-shot,?A3∅A4,76.1,74.75,-1.3499999999999943,,,,,,590,590,True,
+o3,zero-shot,?A4=A1|3,15.93,18.64,2.710000000000001,,,,,,590,590,True,joint partition (main score)
+o3,zero-shot,CON,36.61,40.168,3.558,,,,,,590,590,True,
+o3,zero-shot,J(A1-A2),47.49,57.03,9.54,,,,,,590,590,True,
+o3,zero-shot,J(A3-A4),17.79,17.39,-0.3999999999999986,,,,,,590,590,True,
+o3,zero-shot,J(A4-A1|3),36.67,41.21,4.539999999999999,,,,,,590,590,True,Jaccard of difference component
+o3,zero-shot,idk,9.83,9.28,-0.5500000000000007,,,,,,590,590,True,
+o3,classification,?A1=A2,74.33,74.33,0.0,0.0,3.6920231171162456e-75,True,True,False,600,0,True,
+o3,classification,?A1>A3,45.5,69.5,24.0,0.0,7.135998159131113e-26,True,True,False,600,0,True,
+o3,classification,?A1>A4,79.83,82.33,2.5,0.0,3.782136006583189e-80,True,True,False,600,0,True,
+o3,classification,?A3∅A4,84.67,84.0,-0.6700000000000017,0.04,1.0829263085067321e-07,True,True,False,600,0,True,
+o3,classification,?A4=A1|3,70.83,72.83,2.0,0.0,1.5405933859431183e-93,True,True,False,600,0,True,joint partition (main score)
+o3,classification,CON,71.03,76.598,5.567999999999998,,,,,,600,0,True,
+o3,classification,J(A1-A2),85.57,85.57000000000001,1.4210854715202004e-14,,,,,,600,0,True,
+o3,classification,J(A3-A4),14.57,15.24,0.6699999999999999,,,,,,600,0,True,
+o3,classification,J(A4-A1|3),77.35,79.64,2.2900000000000063,,,,,,600,0,True,Jaccard of difference component
+o3,classification,idk,9.62,9.46,-0.15999999999999837,,,,,,600,0,True,
+o3,fixing,?A1=A2,60.67,60.5,-0.1700000000000017,0.0,2.0239443250000055e-45,True,True,False,600,0,True,
+o3,fixing,?A1>A3,77.5,80.83,3.3299999999999983,0.0,3.488098698720226e-53,True,True,False,600,0,True,
+o3,fixing,?A1>A4,76.0,79.0,3.0,0.0,1.3859697259312638e-68,True,True,False,600,0,True,
+o3,fixing,?A3∅A4,82.33,77.83,-4.5,0.0,0.06937658447151301,True,False,True,600,0,True,
+o3,fixing,?A4=A1|3,64.83,66.5,1.6700000000000017,0.0,9.169086956239927e-84,True,True,False,600,0,True,joint partition (main score)
+o3,fixing,CON,72.27,72.932,0.6620000000000061,,,,,,600,0,True,
+o3,fixing,J(A1-A2),78.18,78.02,-0.1600000000000108,,,,,,600,0,True,
+o3,fixing,J(A3-A4),17.44,21.94,4.5,,,,,,600,0,True,
+o3,fixing,J(A4-A1|3),75.12,77.05,1.9299999999999926,,,,,,600,0,True,Jaccard of difference component
+o3,fixing,idk,13.38,15.25,1.8699999999999992,,,,,,600,0,True,
+gpt-5,zero-shot,?A1=A1*,31.16,29.49,-1.6700000000000017,,,,,,600,590,True,
+gpt-5,zero-shot,J(A1-A1*),49.8,47.099999999999994,-2.700000000000003,,,,,,600,590,True,
+gpt-5,zero-shot,?A1=A2,21.0,29.67,8.670000000000002,,,,,,600,590,True,
+gpt-5,zero-shot,?A1>A3,40.33,40.33,0.0,,,,,,600,590,True,
+gpt-5,zero-shot,?A1>A4,28.67,35.33,6.659999999999997,,,,,,600,590,True,
+gpt-5,zero-shot,?A3∅A4,50.17,57.49999999999999,7.329999999999991,,,,,,600,590,True,
+gpt-5,zero-shot,?A4=A1|3,18.17,20.669999999999998,2.4999999999999964,,,,,,600,590,True,joint partition (main score)
+gpt-5,zero-shot,CON,31.67,36.7,5.030000000000001,,,,,,600,590,True,
+gpt-5,zero-shot,J(A1-A2),35.26,47.160000000000004,11.900000000000006,,,,,,600,590,True,
+gpt-5,zero-shot,J(A3-A4),46.2,38.11,-8.090000000000003,,,,,,600,590,True,
+gpt-5,zero-shot,J(A4-A1|3),32.6,38.64,6.039999999999999,,,,,,600,590,True,Jaccard of difference component
+gpt-5,zero-shot,idk,37.5,32.0,-5.5,,,,,,600,590,True,
+gpt-5,classification,?A1=A2,65.83,65.83,0.0,0.0,6.01742197518184e-55,True,True,False,600,0,True,
+gpt-5,classification,?A1>A3,44.33,64.17,19.840000000000003,0.06,1.2231640417980944e-35,False,True,True,600,0,True,
+gpt-5,classification,?A1>A4,60.33,62.67,2.3400000000000034,0.0,2.7116181092207554e-42,True,True,False,600,0,True,
+gpt-5,classification,?A3∅A4,61.83,61.83,0.0,0.96,0.0027179624387831404,False,True,True,600,0,True,
+gpt-5,classification,?A4=A1|3,56.5,58.17,1.6700000000000017,0.0,8.822034444704529e-63,True,True,False,600,0,True,joint partition (main score)
+gpt-5,classification,CON,57.76,62.534,4.774000000000001,,,,,,600,0,True,
+gpt-5,classification,J(A1-A2),70.13,70.13000000000001,1.4210854715202004e-14,,,,,,600,0,True,
+gpt-5,classification,J(A3-A4),38.03,38.03,0.0,,,,,,600,0,True,
+gpt-5,classification,J(A4-A1|3),58.28,60.58,2.299999999999997,,,,,,600,0,True,Jaccard of difference component
+gpt-5,classification,idk,30.29,28.38,-1.9100000000000001,,,,,,600,0,True,
+gpt-5,fixing,?A1=A2,57.67,57.67,0.0,0.0,2.9335704472326587e-44,True,True,False,600,0,True,
+gpt-5,fixing,?A1>A3,60.17,61.83,1.6599999999999966,0.0,4.121411452064656e-31,True,True,False,600,0,True,
+gpt-5,fixing,?A1>A4,59.0,60.67,1.6700000000000017,0.0,1.5429307312431288e-40,True,True,False,600,0,True,
+gpt-5,fixing,?A3∅A4,58.83,59.67,0.8400000000000034,0.0,0.07695638466322816,True,False,True,600,0,True,
+gpt-5,fixing,?A4=A1|3,53.83,55.00000000000001,1.1700000000000088,0.0,3.6364326654790637e-56,True,True,False,600,0,True,joint partition (main score)
+gpt-5,fixing,CON,57.9,58.96799999999999,1.0679999999999907,,,,,,600,0,True,
+gpt-5,fixing,J(A1-A2),63.61,63.61,0.0,,,,,,600,0,True,
+gpt-5,fixing,J(A3-A4),41.17,40.33,-0.8400000000000034,,,,,,600,0,True,
+gpt-5,fixing,J(A4-A1|3),57.11,59.07,1.9600000000000009,,,,,,600,0,True,Jaccard of difference component
+gpt-5,fixing,idk,34.54,34.62,0.0799999999999983,,,,,,600,0,True,
+deepseek-chat,classification,?A4=A1-A3,,55.83,,,,,,,600,0,True,pure difference (diagnostic)
+deepseek-reasoner,classification,?A4=A1-A3,,52.0,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.0-flash,classification,?A4=A1-A3,,51.0,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.5-flash,classification,?A4=A1-A3,,79.17,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.5-pro,classification,?A4=A1-A3,,73.33,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-2025-04-14,classification,?A4=A1-A3,,78.0,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-mini-2025-04-14,classification,?A4=A1-A3,,65.5,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-nano-2025-04-14,classification,?A4=A1-A3,,0.16999999999999998,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4o,classification,?A4=A1-A3,,31.5,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5,classification,?A4=A1-A3,,59.330000000000005,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5-mini,classification,?A4=A1-A3,,34.5,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5-nano,classification,?A4=A1-A3,,5.33,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-oss:20b,classification,?A4=A1-A3,,43.669999999999995,,,,,,,600,0,True,pure difference (diagnostic)
+grok-3-mini,classification,?A4=A1-A3,,71.33,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:70b,classification,?A4=A1-A3,,63.5,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:8b,classification,?A4=A1-A3,,7.5,,,,,,,600,0,True,pure difference (diagnostic)
+mistral-small:24b,classification,?A4=A1-A3,,50.0,,,,,,,600,0,True,pure difference (diagnostic)
+o3,classification,?A4=A1-A3,,76.67,,,,,,,600,0,True,pure difference (diagnostic)
+deepseek-chat,fixing,?A4=A1-A3,,63.33,,,,,,,600,0,True,pure difference (diagnostic)
+deepseek-reasoner,fixing,?A4=A1-A3,,62.0,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.0-flash,fixing,?A4=A1-A3,,69.17,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.5-flash,fixing,?A4=A1-A3,,77.83,,,,,,,600,0,True,pure difference (diagnostic)
+gemini-2.5-pro,fixing,?A4=A1-A3,,75.0,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-2025-04-14,fixing,?A4=A1-A3,,72.0,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-mini-2025-04-14,fixing,?A4=A1-A3,,64.83,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4.1-nano-2025-04-14,fixing,?A4=A1-A3,,13.0,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-4o,fixing,?A4=A1-A3,,49.0,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5,fixing,?A4=A1-A3,,57.830000000000005,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5-mini,fixing,?A4=A1-A3,,39.83,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-5-nano,fixing,?A4=A1-A3,,42.17,,,,,,,600,0,True,pure difference (diagnostic)
+gpt-oss:20b,fixing,?A4=A1-A3,,64.0,,,,,,,300,0,True,pure difference (diagnostic)
+grok-3-mini,fixing,?A4=A1-A3,,68.67,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:70b,fixing,?A4=A1-A3,,60.5,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:8b,fixing,?A4=A1-A3,,3.3300000000000005,,,,,,,600,0,True,pure difference (diagnostic)
+mistral-small:24b,fixing,?A4=A1-A3,,40.33,,,,,,,600,0,True,pure difference (diagnostic)
+o3,fixing,?A4=A1-A3,,75.0,,,,,,,600,0,True,pure difference (diagnostic)
+deepseek-chat,zero-shot,?A4=A1-A3,,5.0,,,,,,,600,590,True,pure difference (diagnostic)
+deepseek-reasoner,zero-shot,?A4=A1-A3,,11.0,,,,,,,600,296,True,pure difference (diagnostic)
+gemini-2.0-flash,zero-shot,?A4=A1-A3,,6.0,,,,,,,600,590,True,pure difference (diagnostic)
+gemini-2.5-flash,zero-shot,?A4=A1-A3,,20.830000000000002,,,,,,,600,590,True,pure difference (diagnostic)
+gemini-2.5-pro,zero-shot,?A4=A1-A3,,19.67,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-4.1-2025-04-14,zero-shot,?A4=A1-A3,,9.33,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-4.1-mini-2025-04-14,zero-shot,?A4=A1-A3,,5.83,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-4.1-nano-2025-04-14,zero-shot,?A4=A1-A3,,4.0,,,,,,,600,551,True,pure difference (diagnostic)
+gpt-4o,zero-shot,?A4=A1-A3,,5.5,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-5,zero-shot,?A4=A1-A3,,22.33,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-5-mini,zero-shot,?A4=A1-A3,,14.330000000000002,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-5-nano,zero-shot,?A4=A1-A3,,17.330000000000002,,,,,,,600,590,True,pure difference (diagnostic)
+gpt-oss:20b,zero-shot,?A4=A1-A3,,11.0,,,,,,,600,148,True,pure difference (diagnostic)
+grok-3-mini,zero-shot,?A4=A1-A3,,23.669999999999998,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:70b,zero-shot,?A4=A1-A3,,4.17,,,,,,,600,0,True,pure difference (diagnostic)
+llama3.1:8b,zero-shot,?A4=A1-A3,,0.0,,,,,,,600,148,True,pure difference (diagnostic)
+mistral-small:24b,zero-shot,?A4=A1-A3,,1.8599999999999999,,,,,,,590,148,True,pure difference (diagnostic)
+o3,zero-shot,?A4=A1-A3,,20.169999999999998,,,,,,,590,590,True,pure difference (diagnostic)
+deepseek-chat,classification,?A3<=A1(same-context),,63.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+deepseek-reasoner,classification,?A3<=A1(same-context),,57.99999999999999,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.0-flash,classification,?A3<=A1(same-context),,58.830000000000005,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.5-flash,classification,?A3<=A1(same-context),,84.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.5-pro,classification,?A3<=A1(same-context),,77.33,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-2025-04-14,classification,?A3<=A1(same-context),,81.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-mini-2025-04-14,classification,?A3<=A1(same-context),,70.0,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-nano-2025-04-14,classification,?A3<=A1(same-context),,0.67,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4o,classification,?A3<=A1(same-context),,34.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5,classification,?A3<=A1(same-context),,61.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5-mini,classification,?A3<=A1(same-context),,49.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5-nano,classification,?A3<=A1(same-context),,72.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-oss:20b,classification,?A3<=A1(same-context),,58.330000000000005,,,,,,,600,0,True,containment on same triple (diagnostic)
+grok-3-mini,classification,?A3<=A1(same-context),,78.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:70b,classification,?A3<=A1(same-context),,73.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:8b,classification,?A3<=A1(same-context),,25.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+mistral-small:24b,classification,?A3<=A1(same-context),,69.0,,,,,,,600,0,True,containment on same triple (diagnostic)
+o3,classification,?A3<=A1(same-context),,79.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+deepseek-chat,fixing,?A3<=A1(same-context),,74.0,,,,,,,600,0,True,containment on same triple (diagnostic)
+deepseek-reasoner,fixing,?A3<=A1(same-context),,62.67,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.0-flash,fixing,?A3<=A1(same-context),,78.67,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.5-flash,fixing,?A3<=A1(same-context),,81.17,,,,,,,600,0,True,containment on same triple (diagnostic)
+gemini-2.5-pro,fixing,?A3<=A1(same-context),,72.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-2025-04-14,fixing,?A3<=A1(same-context),,80.33,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-mini-2025-04-14,fixing,?A3<=A1(same-context),,73.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4.1-nano-2025-04-14,fixing,?A3<=A1(same-context),,35.33,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-4o,fixing,?A3<=A1(same-context),,56.330000000000005,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5,fixing,?A3<=A1(same-context),,58.5,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5-mini,fixing,?A3<=A1(same-context),,40.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-5-nano,fixing,?A3<=A1(same-context),,44.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+gpt-oss:20b,fixing,?A3<=A1(same-context),,59.330000000000005,,,,,,,300,0,True,containment on same triple (diagnostic)
+grok-3-mini,fixing,?A3<=A1(same-context),,78.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:70b,fixing,?A3<=A1(same-context),,61.67,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:8b,fixing,?A3<=A1(same-context),,8.83,,,,,,,600,0,True,containment on same triple (diagnostic)
+mistral-small:24b,fixing,?A3<=A1(same-context),,48.33,,,,,,,600,0,True,containment on same triple (diagnostic)
+o3,fixing,?A3<=A1(same-context),,71.0,,,,,,,600,0,True,containment on same triple (diagnostic)
+deepseek-chat,zero-shot,?A3<=A1(same-context),,35.0,,,,,,,600,590,True,containment on same triple (diagnostic)
+deepseek-reasoner,zero-shot,?A3<=A1(same-context),,37.330000000000005,,,,,,,600,296,True,containment on same triple (diagnostic)
+gemini-2.0-flash,zero-shot,?A3<=A1(same-context),,38.0,,,,,,,600,590,True,containment on same triple (diagnostic)
+gemini-2.5-flash,zero-shot,?A3<=A1(same-context),,44.5,,,,,,,600,590,True,containment on same triple (diagnostic)
+gemini-2.5-pro,zero-shot,?A3<=A1(same-context),,40.17,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-4.1-2025-04-14,zero-shot,?A3<=A1(same-context),,47.33,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-4.1-mini-2025-04-14,zero-shot,?A3<=A1(same-context),,43.830000000000005,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-4.1-nano-2025-04-14,zero-shot,?A3<=A1(same-context),,34.5,,,,,,,600,551,True,containment on same triple (diagnostic)
+gpt-4o,zero-shot,?A3<=A1(same-context),,33.33,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-5,zero-shot,?A3<=A1(same-context),,40.33,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-5-mini,zero-shot,?A3<=A1(same-context),,28.33,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-5-nano,zero-shot,?A3<=A1(same-context),,34.33,,,,,,,600,590,True,containment on same triple (diagnostic)
+gpt-oss:20b,zero-shot,?A3<=A1(same-context),,30.5,,,,,,,600,148,True,containment on same triple (diagnostic)
+grok-3-mini,zero-shot,?A3<=A1(same-context),,47.33,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:70b,zero-shot,?A3<=A1(same-context),,27.67,,,,,,,600,0,True,containment on same triple (diagnostic)
+llama3.1:8b,zero-shot,?A3<=A1(same-context),,2.5,,,,,,,600,148,True,containment on same triple (diagnostic)
+mistral-small:24b,zero-shot,?A3<=A1(same-context),,30.680000000000003,,,,,,,590,148,True,containment on same triple (diagnostic)
+o3,zero-shot,?A3<=A1(same-context),,45.25,,,,,,,590,590,True,containment on same triple (diagnostic)

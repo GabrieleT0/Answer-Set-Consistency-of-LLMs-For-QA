@@ -37,7 +37,7 @@ def _compare_group(g, dataset_label):
         merged = base.merge(
             g_act[['Q_ID',"dataset"] + PREDICATES], 
             on=['Q_ID',"dataset"], 
-            suffixes=('_zero', '_act')
+            suffixes=('_zero', '_act'), validate='one_to_one'
         )
         if merged.empty:
             continue
@@ -54,7 +54,7 @@ def _compare_group(g, dataset_label):
             n10 = ((z == 1) & (a == 0)).sum()  # i correct, j wrong
             n01 = ((z == 0) & (a == 1)).sum()  # j correct, i wrong
             pval= one_sided_mcnemar(n10, n01)
-            row[pcol] = round(pval,4)  # format to 4 decimals
+            row[pcol] = pval  # Preserve precision; round only for display.
           
         out_rows.append(row)
     return pd.DataFrame(out_rows)
@@ -101,26 +101,17 @@ def compute_pval_matrix(df: pd.DataFrame, llms, action_filter="zero-shot"):
         if g.empty:
             continue
 
-        # llms = sorted(g['llm'].unique())
         for pred in PREDICATES:
+            # A question ID is only unique within its dataset. Pivoting on
+            # both keys also rejects accidental duplicate model observations.
+            paired = g.pivot(index=["dataset", "Q_ID"], columns="llm", values=pred).reindex(columns=llms)
+            values = paired.to_numpy(dtype=float, na_value=float("nan"))
+            wins = ((values[:, :, None] == 1) & (values[:, None, :] == 0)).sum(axis=0)
             mat = pd.DataFrame(1.0, index=llms, columns=llms, dtype=float)
-
             for i, llm_i in enumerate(llms):
-                gi = g[g['llm'] == llm_i][['Q_ID', pred]]
                 for j, llm_j in enumerate(llms):
-                    if i == j:
-                        continue
-                    gj = g[g['llm'] == llm_j][['Q_ID', pred]]
-
-                    merged = gi.merge(gj, on='Q_ID', suffixes=('_i', '_j'))
-                    if merged.empty:
-                        pval = 1.0
-                    else:
-                        z, a = merged[f"{pred}_i"], merged[f"{pred}_j"]
-                        n10 = ((z == 1) & (a == 0)).sum()  # i correct, j wrong
-                        n01 = ((z == 0) & (a == 1)).sum()  # j correct, i wrong
-                        pval = one_sided_mcnemar(n10, n01)
-                    mat.loc[llm_i, llm_j] = round(pval, 4)
+                    if i != j:
+                        mat.loc[llm_i, llm_j] = one_sided_mcnemar(int(wins[i, j]), int(wins[j, i]))
 
             results[(dataset, pred)] = mat
 
@@ -143,7 +134,7 @@ def p_value_matrixs(df_analysis: pd.DataFrame, actions, llm_info_path=None):
         pval_matrices = compute_pval_matrix(df_analysis, llms, action_filter=action)
 
         for (dataset, pred), mat in pval_matrices.items():
-            mat  = mat.loc[llms, llms].astype(float).round(4)
+            mat  = mat.loc[llms, llms].astype(float)
         
             for row_llm in llms:
                 vals = mat.loc[row_llm, llms].tolist()
@@ -159,7 +150,8 @@ if __name__ == "__main__":
     fallback_folder = REPO_ROOT / "data" / "evaluation_results"
     folder = output_folder if (output_folder / "analysis.csv").exists() else fallback_folder
 
-    df_analysis = pd.read_csv(folder / "analysis.csv")
+    from summary_idk_worst import impute_worst_case
+    df_analysis = impute_worst_case(pd.read_csv(folder / "analysis.csv"))
     actions = ["zero-shot", "fixing", "classification"]
     df_pvalue = p_value_matrixs(df_analysis, actions)
     df_pvalue.to_csv(folder / "p_value_matrices.csv", index=False)

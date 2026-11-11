@@ -1,3 +1,4 @@
+import ast
 import re
 import math
 import unicodedata
@@ -180,8 +181,8 @@ def load_relations(root_dir, datasets, llms):
     # find JSON files
     json_files = [
         os.path.join(root, file)
-        for root, _, files in os.walk(root_dir)
-        for file in files
+        for root, _, files in sorted(os.walk(root_dir))
+        for file in sorted(files)
         if file.startswith("Relation") and file.endswith(".json")
     ]
     print(f"JSON files found: {len(json_files)}")
@@ -207,11 +208,11 @@ def load_relations(root_dir, datasets, llms):
                     "dataset": dataset,
                     "llm": llm,
                     "Q_ID": key,
-                    "R(1-2)": value[0],
-                    "R(1-3)": value[1],
-                    "R(1-4)": value[2],
-                    "R(3-4)": value[3],
-                    "R(1-34)": value[4],
+                    "R(1-2)": normalize_relation(value[0]),
+                    "R(1-3)": normalize_relation(value[1]),
+                    "R(1-4)": normalize_relation(value[2]),
+                    "R(3-4)": normalize_relation(value[3]),
+                    "R(1-34)": normalize_relation(value[4]),
                 }
                 for key, value in data.items()
             ]
@@ -372,16 +373,17 @@ def load_relation_clf(root_dir, datasets, llms, tasks) -> pd.DataFrame:
     # Find JSON files (exclude those starting with 'Q')
     json_files = [
         os.path.join(root, file)
-        for root, _, files in os.walk(root_dir)
-        for file in files
+        for root, _, files in sorted(os.walk(root_dir))
+        for file in sorted(files)
         if not file.startswith("Q") and file.endswith(".json")
     ]
     rows_map: dict[tuple[str, str, str], dict] = {}
 
     for file in json_files:
         parts = file.replace("_", "/").replace(".json", "").split("/")
-        dataset = next((d for d in datasets if d in parts), None)
-        llm     = next((l for l in llms     if l in parts), None)
+        parts_lower = [part.lower() for part in parts]
+        dataset = next((d for d in datasets if d.lower() in parts_lower), None)
+        llm     = next((l for l in llms if l in parts or l.replace(":", "-") in parts), None)
         task    = next((t for t in tasks    if t in parts), None)
         col     = task_to_col.get(task)
 
@@ -412,6 +414,75 @@ def load_relation_clf(root_dir, datasets, llms, tasks) -> pd.DataFrame:
     df = df[["Q_ID", "dataset", "llm", "R(1-2)", "R(1-3)", "R(1-34)"]]
     df["action"] = "classification"
     return df.sort_values(["llm", "dataset", "Q_ID"]).reset_index(drop=True)
+
+
+def predicted_relation_holds(left, right, relation):
+    """Evaluate the predicted relation itself, regardless of its gold label."""
+    checks = {
+        "Equivalence": lambda: left == right,
+        "Contains": lambda: right.issubset(left),
+        "ContainedBy": lambda: left.issubset(right),
+        "Disjoint": lambda: left.isdisjoint(right),
+        "Overlap": lambda: bool(left.intersection(right)),
+    }
+    return int(checks[relation]()) if relation in checks else 0
+
+
+def add_contradiction_free_scores(df):
+    """The legacy ?SC columns store contradiction-FREE outcomes (1 is good).
+
+    Missing classification observations stay unavailable. Explicit Unknown/
+    unrecognized labels and abstaining answers score 0. For the three-question
+    classification, compare A1 minus A3 to A4; the main joint partition metric is
+    reported separately in Tables 10/11.
+    """
+    try:
+        from .summary_idk_worst import is_null_answer
+    except ImportError:
+        from summary_idk_worst import is_null_answer
+    out = df.copy()
+    columns = ["?SC(A1=A2)", "?SC(A1>A3)", "?SC(A1>A4)",
+               "?SC(A3∅A4)", "?SC(A4=A1|3)"]
+    relations = ["R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
+    scores = {c: [] for c in columns}
+
+    def parse(cell):
+        if isinstance(cell, (list, tuple, set)):
+            return set(cell)
+        if isinstance(cell, str):
+            parsed = ast.literal_eval(cell)
+            if isinstance(parsed, (list, tuple, set)):
+                return set(parsed)
+        return None
+
+    for row in out.to_dict("records"):
+        contextual = row["action"] in ["classification", "fixing", "classification-no-idk", "fixing-no-idk"]
+        # The source dialogue matters for both the relation and its answers.
+        slots = [("A1", "A2"), ("A1*" if contextual else "A1", "A3"),
+                 ("A1**" if contextual else "A1", "A4"),
+                 ("A3_minus" if contextual else "A3", "A4"),
+                 ("A1**" if contextual else "A1", "A3_minus" if contextual else "A3", "A4")]
+        parsed = {}
+        for column, relation, names in zip(columns, relations, slots):
+            label = row.get(relation)
+            if label is None or (not isinstance(label, str) and pd.isna(label)):
+                scores[column].append(float("nan"))
+                continue
+            label = normalize_relation(label)
+            for name in names:
+                if name not in parsed:
+                    parsed[name] = parse(row.get(name))
+            answers = [parsed[name] for name in names]
+            if any(answer is None for answer in answers):
+                scores[column].append(float("nan"))
+            elif any(is_null_answer(answer) for answer in answers):
+                scores[column].append(0)
+            else:
+                left, right = (answers[0] - answers[1], answers[2]) if len(answers) == 3 else answers
+                scores[column].append(predicted_relation_holds(left, right, label))
+    for column in columns:
+        out[column] = scores[column]
+    return out
 
 
 def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
@@ -461,25 +532,7 @@ def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
         cls_merge = df_analysis.loc[m_cls, keys].merge(df_rel_clf_aligned, on=keys, how="left")
         df_analysis.loc[m_cls, rel_cols] = cls_merge[rel_cols].values
 
-    
-        # check self_contradition
-    
-
-    def _sc(df, pred_col, rcol, truth_value):
-        import numpy as np
-        # mask: only evaluate where R(*) is present (not NaN, not "None")
-        mask = df[rcol].notna() & (df[rcol].astype(str).str.lower() != "none")
-        # ground-truth as 1/0 for the specific relation value
-        truth = (df[rcol] == truth_value).astype(int)
-        # prediction coerced to 1/0
-        pred = pd.to_numeric(df[pred_col], errors="coerce").fillna(0).astype(int)
-        return np.where(mask, (pred == truth).astype(int), np.nan)
-
-    df_analysis["?SC(A1=A2)"]   = _sc(df_analysis, "?A1=A2",    "R(1-2)",  "Equivalence")
-    df_analysis["?SC(A1>A3)"]   = _sc(df_analysis, "?A1>A3",    "R(1-3)",  "Contains")
-    df_analysis["?SC(A1>A4)"]   = _sc(df_analysis, "?A1>A4",    "R(1-4)",  "Contains")
-    df_analysis["?SC(A3∅A4)"]   = _sc(df_analysis, "?A3∅A4",    "R(3-4)",  "Disjoint")
-    df_analysis["?SC(A4=A1|3)"] = _sc(df_analysis, "?A4=A1|3",  "R(1-34)", "Equivalence")
+    df_analysis = add_contradiction_free_scores(df_analysis)
 
     df_analysis =  df_analysis.replace({None: pd.NA}).convert_dtypes()
     return df_analysis
@@ -518,7 +571,9 @@ def update_summary_by_relations(
             "R(1-3)":  [("?A1>A3", None)],
             "R(1-4)":  [("?A1>A4", None), ("J(A1-A4)", "J(1-4)")],
             "R(3-4)":  [("?A3∅A4",None),("J(A3-A4)", "J(3-4)")],  # natural for Disjoint: J should be near 0
-            "R(1-34)": [("?A1=A3+A4", None), ("J(A1-A34)", "J(1-34)")],
+            "R(1-34)": [("?A4=A1|3", None), ("J(A4-A1|3)", "J(4-1|3)"),
+                        # Literal union diagnostics remain available to older plots.
+                        ("?A1=A3+A4", None), ("J(A1-A34)", "J(1-34)")],
         }
 
     # Work on a copy to avoid accidental view issues
@@ -527,8 +582,9 @@ def update_summary_by_relations(
 
     def set_means(mask, group, rel_col, truth_label):
         # Split pos/neg
-        pos = group[group[rel_col] == truth_label]
-        neg = group[group[rel_col] != truth_label]
+        observed = group[rel_col].notna()
+        pos = group[observed & group[rel_col].eq(truth_label)]
+        neg = group[observed & group[rel_col].ne(truth_label)]
 
         for metric_col, prefix in metric_spec.get(rel_col, []):
             if metric_col not in group.columns:

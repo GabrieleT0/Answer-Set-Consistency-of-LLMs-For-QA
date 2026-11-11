@@ -6,9 +6,10 @@ from split import split
 import os
 import json
 import datetime
+from summary_idk_worst import summary_idk_worst, impute_worst_case
 
 if __name__ == "__main__":
-    root_dir = os.path.dirname(os.path.abspath(__name__))
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
 
@@ -35,7 +36,7 @@ if __name__ == "__main__":
 
     # Relation Classification
     df_relation = load_relations(root_dir + "/data/answers/zero-shot/", datasets, llms)
-    df_relation_clf = load_relation_clf(root_dir + "/data/answers/rel_classification_and_questions/", datasets, llms, tasks)
+    df_relation_clf = load_relation_clf(root_dir + "/data/answers/CtE/", datasets, llms, tasks)
     # From your df_relation:
     df_relation_summery = relation_summary(df_relation, include_overall=True, round_digits=4)
 
@@ -71,13 +72,14 @@ if __name__ == "__main__":
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
     # p-values
-    df_pval = compute_pvals(df_analysis)
+    df_scored = impute_worst_case(df_analysis)
+    df_pval = compute_pvals(df_scored)
 
     df_summary = summary(df_analysis)
     
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
-    df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
+    df_summary = df_summary.merge(compute_pvals(df_analysis), on=["dataset","llm","action"], how="left")
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
 
     # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
@@ -86,8 +88,10 @@ if __name__ == "__main__":
 
     df_summary_xidk = summary_xidk(df_analysis)
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
-    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary, task="classification")
-    df_summary_xidk = df_summary_xidk.merge(df_pval, on=["dataset","llm","action"], how="left")
+    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="classification")
+    # Filtered summaries have metric-specific denominators; do not attach
+    # p-values computed under the pessimistic main-table policy.
+
     
     df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
     # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
@@ -95,8 +99,13 @@ if __name__ == "__main__":
     summary_actions = [action for action in actions if action != "star"]
     split(df_summary, "summary", actions=summary_actions)
     split(df_summary_xidk, "summary_xidk", actions=summary_actions)
-    df_pvalue = p_value_matrixs(df_analysis, actions)
+    df_worst = summary_idk_worst(df_analysis).merge(df_pval, on=["dataset", "llm", "action"], how="left")
+    df_worst.to_csv(os.path.join(output_folder, "summary_idk_worst.csv"), index=False)
+    split(df_worst, "summary_idk_worst", actions=summary_actions)
+    df_pvalue = p_value_matrixs(df_scored, summary_actions)
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
     dataframe_to_heatmap_csvs(df_pvalue, output_folder)
+    from export_supplementary_tables import build_tables, write_tables
+    write_tables(build_tables(df_analysis, llms), output_folder + "/tables_9_11", source="raw")
     print("Analysis and summary saved to:", output_folder)

@@ -5,7 +5,7 @@ For every test instance where any relevant prompt received "idk" (or no
 answer), the metric is set to the worst possible value before averaging:
 
   Consistency checks  (?A1=A2, ?A1>A3, …)      → 0   (not consistent)
-  Self-contradiction  (?SC(A1=A2), …)            → 1   (contradiction exists)
+  Contradiction-free (?SC(A1=A2), …)            → 0   (not contradiction-free)
   Jaccard equivalence (J(A1-A2), J(A1-A34), …)  → 0.0 (no overlap)
   Jaccard disjointness J(A3-A4)                  → 1.0 (fully overlapping)
 
@@ -18,9 +18,12 @@ import os
 import numpy as np
 import pandas as pd
 
-from eval_pvalue import compute_pvals
-from split import split
-
+try:
+    from .eval_pvalue import compute_pvals
+    from .split import split
+except ImportError:
+    from eval_pvalue import compute_pvals
+    from split import split
 
 
 # ── Worst-case values per metric ─────────────────────────────────────────────
@@ -32,16 +35,18 @@ WORST_CASE: dict[str, float] = {
     "?A1>A3":     0,
     "?A1>A4":     0,
     "?A3∅A4":     0,
-    "?A4=A1|3":   0,
+    "?A4=A1|3":   0,  # Joint partition consistency (legacy column name).
+    "?A4=A1-A3":  0,  # Pure difference, diagnostic only.
+    "?A3<=A1(same-context)": 0,
     "?A1=A1*":    0,
     "?A1=A1**":   0,
     "?A1*=A1**":  0,
-    # Self-contradiction (1 = contradiction, 0 = no contradiction)
-    "?SC(A1=A2)":   1,
-    "?SC(A1>A3)":   1,
-    "?SC(A1>A4)":   1,
-    "?SC(A3∅A4)":   1,
-    "?SC(A4=A1|3)": 1,
+    # Contradiction-free outcomes (legacy ?SC names; 1 = holds)
+    "?SC(A1=A2)":   0,
+    "?SC(A1>A3)":   0,
+    "?SC(A1>A4)":   0,
+    "?SC(A3∅A4)":   0,
+    "?SC(A4=A1|3)": 0,
     # Jaccard — equivalence (higher is better → worst = 0)
     "J(A1-A2)":    0.0,
     "J(A1-A34)":   0.0,
@@ -69,6 +74,8 @@ METRIC_IDK_MAP: dict[str, list[str]] = {
     "?SC(A3∅A4)":   ["idk_A3", "idk_A4"],
     "J(A4-A1|3)":   ["idk_A4", "idk_A1", "idk_A3"],
     "?A4=A1|3":     ["idk_A4", "idk_A1", "idk_A3"],
+    "?A4=A1-A3":    ["idk_A4", "idk_A1", "idk_A3"],
+    "?A3<=A1(same-context)": ["idk_A1", "idk_A3"],
     "?SC(A4=A1|3)": ["idk_A4", "idk_A1", "idk_A3"],
     "?A1=A1*":      ["idk_A1", "idk_A1*"],
     "J(A1-A1*)":    ["idk_A1", "idk_A1*"],
@@ -79,72 +86,73 @@ METRIC_IDK_MAP: dict[str, list[str]] = {
 }
 
 
-# ── idk flag helpers ──────────────────────────────────────────────────────────
 
-def _is_idk(cell) -> bool:
-    """
-    True if cell represents an answered-but-empty / idk answer set.
-    NaN means the answer column was not populated for this row (e.g. A1* is
-    never stored for zero-shot rows) — that is NOT the same as answering idk.
-    """
-    if cell is None:
+def is_null_answer(cell):
+    if cell is None or (isinstance(cell, float) and np.isnan(cell)):
         return False
-    if isinstance(cell, float) and np.isnan(cell):
-        return False   # NaN = not applicable / not stored, not an idk answer
     if isinstance(cell, str):
-        if cell.strip() == "" or cell.strip().lower() == "idk":
+        text = cell.strip()
+        if text.lower() in {"idk", "no answer"}:
             return True
-        # try to parse stringified list
         try:
-            parsed = ast.literal_eval(cell)
-            if isinstance(parsed, list):
-                return len(parsed) == 0 or parsed == ["idk"]
-        except Exception:
-            pass
-    if isinstance(cell, list):
-        return len(cell) == 0 or cell == ["idk"]
+            cell = ast.literal_eval(text)
+        except (ValueError, SyntaxError):
+            return False
+    if isinstance(cell, (list, tuple, set)):
+        return not cell or any(str(x).strip().lower() in {"idk", "no answer"} for x in cell)
     return False
 
 
-def _add_idk_flags(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Ensure idk_A1, idk_A2, idk_A3, idk_A4, idk_A1*, idk_A1** are present.
-    Re-computes from the answer columns so values are trustworthy even if
-    the CSV was produced by an older pipeline version.
-    """
-    df = df.copy()
-    for col, flag in [("A1", "idk_A1"), ("A2", "idk_A2"),
-                      ("A3", "idk_A3"), ("A4", "idk_A4"),
-                      ("A1*", "idk_A1*"), ("A1**", "idk_A1**")]:
-        if col in df.columns:
-            df[flag] = df[col].apply(_is_idk).astype(int)
-        else:
-            df[flag] = 0   # column absent → treat as non-idk
-    return df
+def add_idk_flags(df):
+    out = df.copy()
+    for answer in ["A1", "A2", "A3", "A4", "A1*", "A1**", "A3_minus"]:
+        flag = f"idk_{answer}"
+        if answer in out:
+            out[flag] = out[answer].map(is_null_answer).astype(int)
+        elif flag not in out:
+            out[flag] = 0
+    return out
 
 
-# ── Imputation ────────────────────────────────────────────────────────────────
+def metric_idk_mask(df, metric):
+    columns = METRIC_IDK_MAP.get(metric, [])
+    present = [c for c in columns if c in df]
+    mask = df[present].fillna(0).astype(bool).any(axis=1) if present else pd.Series(False, index=df.index)
+    if "action" not in df:
+        return mask
+    contextual = df["action"].isin(["classification", "fixing", "classification-no-idk", "fixing-no-idk"])
+    contextual_columns = {
+        "?A1>A3": ["idk_A1*", "idk_A3"],
+        "?SC(A1>A3)": ["idk_A1*", "idk_A3"],
+        "?A1>A4": ["idk_A1**", "idk_A4"],
+        "?SC(A1>A4)": ["idk_A1**", "idk_A4"],
+        "?A1=A3+A4": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+        "J(A1-A34)": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+        "?A3∅A4": ["idk_A3_minus", "idk_A4"],
+        "?SC(A3∅A4)": ["idk_A3_minus", "idk_A4"],
+        "J(A3-A4)": ["idk_A3_minus", "idk_A4"],
+        "?A4=A1|3": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+        "?A4=A1-A3": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+        "?A3<=A1(same-context)": ["idk_A1**", "idk_A3_minus"],
+        "?SC(A4=A1|3)": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+        "J(A4-A1|3)": ["idk_A1**", "idk_A3_minus", "idk_A4"],
+    }.get(metric)
+    # Legacy CSVs did not retain A3 from the minus task. Do not invent it.
+    if contextual_columns and all(c in df for c in contextual_columns) and "A3_minus" in df:
+        mask.loc[contextual] = df.loc[contextual, contextual_columns].fillna(0).astype(bool).any(axis=1)
+    return mask
 
-def impute_worst_case(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Return a copy of df where, for every metric column in WORST_CASE, rows
-    with ANY relevant idk answer are replaced by the worst-case value.
-    """
-    df = _add_idk_flags(df)
-    df = df.copy()
 
+def impute_worst_case(df):
+    out = add_idk_flags(df)
     for metric, worst in WORST_CASE.items():
-        if metric not in df.columns:
-            continue
-        idk_cols = [c for c in METRIC_IDK_MAP.get(metric, []) if c in df.columns]
-        if not idk_cols:
-            continue
-        applicable = df[metric].notna()          # metric was actually computed for this row
-        idk_mask   = df[idk_cols].any(axis=1)   # ANY relevant answer is idk
-        df.loc[applicable & idk_mask, metric] = worst
+        if metric in out:
+            out.loc[out[metric].notna() & metric_idk_mask(out, metric), metric] = worst
+    return out
 
-    return df
-
+# Backward-compatible helper names.
+_is_idk = is_null_answer
+_add_idk_flags = add_idk_flags
 
 # ── Summary ───────────────────────────────────────────────────────────────────
 
@@ -159,6 +167,11 @@ def _group_summary(df: pd.DataFrame, group_cols: list[str]) -> pd.DataFrame:
         .reset_index()
         .round(4)
     )
+    counts = df.groupby(group_cols).size().rename("n_instances")
+    repeats = (df.assign(_repeat_available=df["action"].eq("zero-shot") & df["?A1=A1*"].notna()).groupby(group_cols)["_repeat_available"].sum().rename("n_repeat")) if "?A1=A1*" in df else None
+    out = out.merge(counts, on=group_cols)
+    if repeats is not None:
+        out = out.merge(repeats, on=group_cols)
     return out
 
 
@@ -177,22 +190,6 @@ def summary_idk_worst(df_analysis: pd.DataFrame) -> pd.DataFrame:
     df_all["dataset"] = "overall"
 
     df_summary = pd.concat([df_per, df_all], ignore_index=True)
-
-    # Blend ?A1=A1* and J(A1-A1*) from classification into zero-shot overall row
-    # (mirrors the same logic in summary_xidk)
-    blend_cols = ["?A1=A1*", "J(A1-A1*)"]
-    mask_zs  = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
-    mask_clf = (df_summary["dataset"] == "overall") & (df_summary["action"] == "classification")
-    a = df_summary.loc[mask_zs,  blend_cols].copy()
-    b = df_summary.loc[mask_clf, blend_cols]
-    if not b.empty:
-        for col in blend_cols:
-            a[col] = np.where(
-                a[col].isna(),
-                b[col].values,
-                (a[col] + b[col].values) / 2,
-            )
-        df_summary.loc[mask_zs, blend_cols] = a
 
     # Aggregate "cross-classification" averages (same as existing summaries)
     for col_group, new_col in [
@@ -221,7 +218,7 @@ def summary_idk_worst(df_analysis: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     root_dir      = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    analysis_path = os.path.join(root_dir, "output", "analysis_old.csv")
+    analysis_path = os.path.join(root_dir, "output", "analysis.csv")
     output_dir    = os.path.join(root_dir, "output")
     os.makedirs(output_dir, exist_ok=True)
 
@@ -236,7 +233,7 @@ def main():
 
     # Compute and merge p-values
     print("Computing p-values …")
-    df_pval = compute_pvals(df_analysis)
+    df_pval = compute_pvals(impute_worst_case(df_analysis))
     df_summary = df_summary.merge(df_pval, on=["dataset", "llm", "action"], how="left")
 
     out_path = os.path.join(output_dir, "summary_idk_worst.csv")

@@ -1,0 +1,200 @@
+\begin{table}[!t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Contradiction-free rates for the relations predicted by each model. Values use a 0--100 scale; -- denotes no observations. Explicit classification abstentions and null answers score zero.}
+\begin{tabular}{llrrrrr}
+\toprule
+\textbf{Model} & \textbf{Str} & $\fcfr{\rone}$ & $\fcfr{\rtwo}$ & $\fcfr{\rthree}$ & $\fcfr{\rfour}$ & $\fcfr{\rfive}$ \\
+\midrule
+Llama-3.1-8b & Base & 37.67 & 28.67 & 32.17 & 19.83 & 22.17 \\
+Llama-3.1-8b & CtE & 80.67 & 64.67 & -- & -- & 43.00 \\
+\midrule
+GPT-oss-20b & Base & 14.67 & 29.50 & 23.00 & 66.17 & 12.33 \\
+GPT-oss-20b & CtE & 57.50 & 52.67 & -- & -- & 45.00 \\
+\midrule
+GPT-4.1-nano & Base & 39.67 & 39.33 & 28.83 & 28.50 & 30.83 \\
+GPT-4.1-nano & CtE & 0.67 & 1.00 & -- & -- & 1.00 \\
+\midrule
+Mistral-small:24b & Base & 27.63 & 7.12 & 14.58 & 19.15 & 13.22 \\
+Mistral-small:24b & CtE & 74.83 & 9.83 & -- & -- & 23.50 \\
+\midrule
+Llama-3.1-70b & Base & 20.00 & 9.50 & 40.50 & 64.50 & 4.83 \\
+Llama-3.1-70b & CtE & 79.50 & 18.67 & -- & -- & 67.33 \\
+\midrule
+Gemini-2.0-flash & Base & 30.83 & 33.17 & 53.17 & 47.17 & 10.83 \\
+Gemini-2.0-flash & CtE & 70.67 & 36.67 & -- & -- & 52.17 \\
+\midrule
+GPT-4.1-mini & Base & 33.33 & 19.33 & 55.83 & 45.50 & 7.33 \\
+GPT-4.1-mini & CtE & 76.33 & 17.50 & -- & -- & 64.00 \\
+\midrule
+GPT-4o & Base & 25.33 & 15.67 & 36.83 & 35.00 & 6.83 \\
+GPT-4o & CtE & 40.83 & 31.17 & -- & -- & 23.50 \\
+\midrule
+GPT-4.1 & Base & 39.33 & 47.67 & 47.17 & 55.17 & 9.83 \\
+GPT-4.1 & CtE & 88.50 & 60.67 & -- & -- & 77.67 \\
+\midrule
+Grok-3-mini & Base & 32.17 & 46.33 & 37.17 & 75.17 & 24.33 \\
+Grok-3-mini & CtE & 82.67 & 78.00 & -- & -- & 72.17 \\
+\midrule
+DeepSeek-V3.1 & Base & 31.00 & 21.50 & 46.83 & 33.50 & 8.17 \\
+DeepSeek-V3.1 & CtE & 70.00 & 21.33 & -- & -- & 46.00 \\
+\midrule
+Gemini-2.5-flash & Base & 32.83 & 44.67 & 35.67 & 75.00 & 21.83 \\
+Gemini-2.5-flash & CtE & 88.50 & 85.17 & -- & -- & 80.17 \\
+\midrule
+GPT-5-nano & Base & 24.50 & 31.67 & 26.83 & 38.83 & 17.83 \\
+GPT-5-nano & CtE & 70.83 & 69.67 & -- & -- & 7.67 \\
+\midrule
+DeepSeek-reasoner & Base & 18.83 & 37.33 & 26.33 & 73.83 & 12.33 \\
+DeepSeek-reasoner & CtE & 56.67 & 60.67 & -- & -- & 52.67 \\
+\midrule
+Gemini-2.5-pro & Base & 31.17 & 40.17 & 36.50 & 74.50 & 20.50 \\
+Gemini-2.5-pro & CtE & 83.83 & 83.67 & -- & -- & 73.17 \\
+\midrule
+GPT-5-mini & Base & 23.17 & 27.83 & 25.00 & 38.83 & 14.33 \\
+GPT-5-mini & CtE & 51.00 & 44.83 & -- & -- & 35.17 \\
+\midrule
+GPT-o3 & Base & 29.49 & 44.75 & 34.07 & 74.24 & 20.85 \\
+GPT-o3 & CtE & 77.00 & 69.33 & -- & -- & 78.17 \\
+\midrule
+GPT-5 & Base & 31.00 & 40.17 & 35.50 & 58.33 & 23.00 \\
+GPT-5 & CtE & 68.17 & 64.50 & -- & -- & 60.33 \\
+\bottomrule
+\end{tabular}
+\label{tab:cRi_by_id_act}
+\end{table}
+
+\begin{table}[!t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Consistency and similarity when the predicted relation is correct. Values use a 0--100 scale; -- denotes no observations. Missing classifications are excluded; explicit classification abstentions belong to the incorrect subset. Null answers receive the main-table worst score. The final binary score is joint partition consistency; its similarity diagnoses the difference component.}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\textbf{Model} & \textbf{Str} & $\fconr{\rone}$ & $\fconr{\rtwo}$ & $\fconr{\rthree}$ & $\fconr{\rfour}$ & $\fconr{\rfive}$ & $\fjacs{\rone}$ & $\fjacs{\rfour}$ & $\fjacs{\rfive}$ \\
+\midrule
+Llama-3.1-8b & Base & 11.43 & 0.00 & 0.00 & 73.04 & 0.00 & 27.31 & 14.08 & 8.01 \\
+Llama-3.1-8b & CtE & 19.23 & 30.12 & -- & -- & 2.56 & 71.14 & -- & 36.17 \\
+\midrule
+GPT-oss-20b & Base & 14.92 & 30.69 & 23.36 & 70.07 & 10.11 & 38.08 & 21.05 & 27.07 \\
+GPT-oss-20b & CtE & 56.71 & 56.16 & -- & -- & 37.63 & 68.56 & -- & 55.41 \\
+\midrule
+GPT-4.1-nano & Base & 26.92 & 32.23 & 31.23 & 39.30 & -- & 51.18 & 40.96 & -- \\
+GPT-4.1-nano & CtE & 0.70 & 1.32 & -- & -- & -- & 0.91 & -- & -- \\
+\midrule
+Mistral-small:24b & Base & 26.62 & 0.00 & 0.00 & 19.25 & 2.86 & 46.45 & 65.99 & 18.06 \\
+Mistral-small:24b & CtE & 75.64 & 100.00 & -- & -- & 41.86 & 80.73 & -- & 61.16 \\
+\midrule
+Llama-3.1-70b & Base & 19.52 & 30.43 & 22.84 & 64.71 & 2.71 & 46.13 & 16.91 & 19.98 \\
+Llama-3.1-70b & CtE & 80.41 & 88.89 & -- & -- & 56.60 & 89.85 & -- & 81.32 \\
+\midrule
+Gemini-2.0-flash & Base & 32.29 & 37.68 & 39.84 & 47.81 & 4.77 & 57.44 & 31.61 & 25.20 \\
+Gemini-2.0-flash & CtE & 70.82 & 70.11 & -- & -- & 47.75 & 74.95 & -- & 51.40 \\
+\midrule
+GPT-4.1-mini & Base & 33.15 & 37.20 & 40.00 & 45.45 & 4.17 & 62.91 & 26.46 & 27.39 \\
+GPT-4.1-mini & CtE & 78.24 & 49.13 & -- & -- & 64.17 & 81.99 & -- & 68.93 \\
+\midrule
+GPT-4o & Base & 25.75 & 32.11 & 32.88 & 35.07 & 6.12 & 46.41 & 54.47 & 22.53 \\
+GPT-4o & CtE & 41.51 & 44.50 & -- & -- & 57.14 & 42.31 & -- & 60.36 \\
+\midrule
+GPT-4.1 & Base & 39.86 & 47.47 & 38.04 & 55.11 & 8.39 & 68.29 & 19.44 & 34.35 \\
+GPT-4.1 & CtE & 89.42 & 61.19 & -- & -- & 75.47 & 93.54 & -- & 82.43 \\
+\midrule
+Grok-3-mini & Base & 32.00 & 47.45 & 37.82 & 75.94 & 21.17 & 61.62 & 17.99 & 42.96 \\
+Grok-3-mini & CtE & 85.35 & 78.98 & -- & -- & 68.67 & 88.59 & -- & 77.33 \\
+\midrule
+DeepSeek-V3.1 & Base & 29.34 & 34.27 & 29.60 & 33.56 & 3.68 & 54.71 & 39.11 & 21.54 \\
+DeepSeek-V3.1 & CtE & 72.66 & 60.00 & -- & -- & 42.86 & 75.83 & -- & 42.86 \\
+\midrule
+Gemini-2.5-flash & Base & 33.59 & 45.12 & 35.99 & 76.25 & 20.42 & 61.67 & 12.13 & 43.73 \\
+Gemini-2.5-flash & CtE & 89.58 & 88.05 & -- & -- & 79.86 & 91.16 & -- & 82.10 \\
+\midrule
+GPT-5-nano & Base & 25.05 & 35.29 & 27.64 & 43.50 & 17.18 & 38.64 & 53.98 & 27.61 \\
+GPT-5-nano & CtE & 74.13 & 74.25 & -- & -- & 0.55 & 74.39 & -- & 5.60 \\
+\midrule
+DeepSeek-reasoner & Base & 18.95 & 37.80 & 26.38 & 76.12 & 10.60 & 47.75 & 9.82 & 32.12 \\
+DeepSeek-reasoner & CtE & 56.83 & 65.94 & -- & -- & 51.41 & 59.02 & -- & 56.75 \\
+\midrule
+Gemini-2.5-pro & Base & 31.75 & 40.10 & 35.98 & 74.79 & 18.54 & 64.17 & 10.22 & 46.54 \\
+Gemini-2.5-pro & CtE & 86.89 & 85.57 & -- & -- & 74.46 & 87.82 & -- & 78.27 \\
+\midrule
+GPT-5-mini & Base & 24.91 & 28.30 & 25.21 & 40.88 & 14.19 & 36.95 & 56.46 & 26.54 \\
+GPT-5-mini & CtE & 52.35 & 46.27 & -- & -- & 34.79 & 56.71 & -- & 36.46 \\
+\midrule
+GPT-o3 & Base & 29.62 & 45.38 & 34.20 & 76.87 & 19.89 & 58.30 & 15.66 & 43.02 \\
+GPT-o3 & CtE & 77.50 & 70.24 & -- & -- & 75.66 & 86.96 & -- & 82.05 \\
+\midrule
+GPT-5 & Base & 31.49 & 40.44 & 35.76 & 59.38 & 21.87 & 48.70 & 36.51 & 40.56 \\
+GPT-5 & CtE & 69.02 & 64.35 & -- & -- & 60.25 & 71.76 & -- & 62.41 \\
+\bottomrule
+\end{tabular}
+\label{tab:cRi+}
+\end{table}
+
+\begin{table}[!t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{Consistency and similarity when the predicted relation is incorrect. Values use a 0--100 scale; -- denotes no observations. Missing classifications are excluded; explicit classification abstentions belong to the incorrect subset. Null answers receive the main-table worst score. The final binary score is joint partition consistency; its similarity diagnoses the difference component.}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\textbf{Model} & \textbf{Str} & $\fconr{\rone}$ & $\fconr{\rtwo}$ & $\fconr{\rthree}$ & $\fconr{\rfour}$ & $\fconr{\rfive}$ & $\fjacs{\rone}$ & $\fjacs{\rfour}$ & $\fjacs{\rfive}$ \\
+\midrule
+Llama-3.1-8b & Base & 1.06 & 2.84 & 0.94 & 78.14 & 0.00 & 16.01 & 9.77 & 6.15 \\
+Llama-3.1-8b & CtE & 16.20 & 31.91 & -- & -- & 5.36 & 54.97 & -- & 39.35 \\
+\midrule
+GPT-oss-20b & Base & 5.41 & 28.26 & 36.36 & 44.23 & 0.00 & 25.27 & 42.61 & 8.26 \\
+GPT-oss-20b & CtE & 44.12 & 56.25 & -- & -- & 23.08 & 62.74 & -- & 33.27 \\
+\midrule
+GPT-4.1-nano & Base & 17.39 & 36.03 & 27.09 & 45.13 & 2.17 & 40.51 & 37.47 & 16.45 \\
+GPT-4.1-nano & CtE & 0.59 & 0.89 & -- & -- & 0.00 & 0.59 & -- & 0.17 \\
+\midrule
+Mistral-small:24b & Base & 12.24 & 30.73 & 25.39 & 0.00 & 0.58 & 37.26 & 100.00 & 11.52 \\
+Mistral-small:24b & CtE & 20.00 & 69.78 & -- & -- & 42.37 & 58.90 & -- & 58.61 \\
+\midrule
+Llama-3.1-70b & Base & 6.25 & 27.44 & 21.46 & 20.00 & 0.00 & 26.46 & 37.00 & 13.75 \\
+Llama-3.1-70b & CtE & 16.67 & 77.47 & -- & -- & 54.90 & 46.07 & -- & 75.87 \\
+\midrule
+Gemini-2.0-flash & Base & 25.45 & 39.20 & 29.87 & 31.03 & 5.93 & 53.40 & 38.11 & 23.92 \\
+Gemini-2.0-flash & CtE & 28.57 & 69.91 & -- & -- & 52.05 & 41.38 & -- & 57.75 \\
+\midrule
+GPT-4.1-mini & Base & 20.37 & 47.33 & 30.32 & 0.00 & 8.00 & 48.73 & 87.72 & 12.56 \\
+GPT-4.1-mini & CtE & 30.19 & 48.01 & -- & -- & 58.49 & 58.22 & -- & 65.28 \\
+\midrule
+GPT-4o & Base & 12.12 & 33.90 & 22.39 & 0.00 & 3.37 & 20.41 & 100.00 & 12.53 \\
+GPT-4o & CtE & 5.88 & 35.50 & -- & -- & 19.76 & 19.84 & -- & 21.49 \\
+\midrule
+GPT-4.1 & Base & 21.21 & 37.50 & 25.82 & 0.00 & 0.00 & 42.59 & 68.06 & 4.50 \\
+GPT-4.1 & CtE & 36.36 & 60.00 & -- & -- & 52.94 & 69.41 & -- & 65.10 \\
+\midrule
+Grok-3-mini & Base & 18.00 & 45.16 & 28.57 & 21.43 & 0.00 & 45.73 & 51.18 & 7.98 \\
+Grok-3-mini & CtE & 22.22 & 75.86 & -- & -- & 10.53 & 51.13 & -- & 20.00 \\
+\midrule
+DeepSeek-V3.1 & Base & 16.67 & 35.40 & 26.53 & 25.00 & 5.26 & 37.81 & 39.06 & 18.66 \\
+DeepSeek-V3.1 & CtE & 9.09 & 57.04 & -- & -- & 47.55 & 28.64 & -- & 52.14 \\
+\midrule
+Gemini-2.5-flash & Base & 15.85 & 30.77 & 27.27 & 36.84 & 3.70 & 47.09 & 42.51 & 17.00 \\
+Gemini-2.5-flash & CtE & 51.22 & 64.52 & -- & -- & 34.48 & 75.34 & -- & 49.76 \\
+\midrule
+GPT-5-nano & Base & 8.16 & 28.89 & 18.00 & 28.99 & 9.43 & 19.96 & 69.00 & 18.99 \\
+GPT-5-nano & CtE & 47.27 & 60.94 & -- & -- & 0.00 & 48.28 & -- & 14.27 \\
+\midrule
+DeepSeek-reasoner & Base & 5.97 & 22.22 & 20.00 & 45.45 & 0.00 & 29.98 & 40.86 & 10.49 \\
+DeepSeek-reasoner & CtE & 18.18 & 8.33 & -- & -- & 0.00 & 37.27 & -- & 12.93 \\
+\midrule
+Gemini-2.5-pro & Base & 5.77 & 42.86 & 27.27 & 22.22 & 0.00 & 44.58 & 45.80 & 16.84 \\
+Gemini-2.5-pro & CtE & 24.24 & 76.00 & -- & -- & 25.00 & 61.65 & -- & 39.36 \\
+\midrule
+GPT-5-mini & Base & 8.62 & 29.41 & 0.00 & 10.00 & 0.00 & 20.38 & 89.17 & 8.52 \\
+GPT-5-mini & CtE & 30.43 & 39.13 & -- & -- & 7.14 & 37.59 & -- & 8.93 \\
+\midrule
+GPT-o3 & Base & 13.95 & 41.18 & 14.29 & 32.14 & 0.00 & 40.92 & 52.17 & 14.11 \\
+GPT-o3 & CtE & 30.00 & 50.00 & -- & -- & 17.24 & 66.16 & -- & 32.13 \\
+\midrule
+GPT-5 & Base & 12.28 & 35.71 & 10.00 & 0.00 & 0.00 & 32.42 & 87.10 & 5.69 \\
+GPT-5 & CtE & 29.17 & 54.55 & -- & -- & 17.24 & 51.40 & -- & 24.46 \\
+\bottomrule
+\end{tabular}
+\label{tab:cRi-}
+\end{table}

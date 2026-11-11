@@ -179,6 +179,48 @@ python src/evaluation/eval_pvalue.py
 
 The script uses `output/analysis.csv` when it exists; otherwise it falls back to `data/evaluation_results/analysis.csv`.
 
+### Reproduce Supplementary Tables 9–11
+
+Rebuild these tables directly from saved Base/CtE answers and classification
+outputs, without model calls or notebook setup:
+
+```bash
+python src/evaluation/export_supplementary_tables.py
+```
+
+This writes `output/tables_9_11.csv` (percent scores, source columns, and
+per-cell denominators) and `output/tables_9_11.tex` (the three complete tables).
+The regular evaluation runner also exports these tables. To replace only
+these tables in the local manuscript, use:
+
+```bash
+python src/evaluation/export_supplementary_tables.py --update-manuscript TEMP/appendix.tex
+```
+
+The corrected export reads CtE labels from `data/answers/CtE/`, uses joint
+partition consistency and difference-component Jaccard in Tables 10–11, and
+checks the actual predicted relation for Table 9. Null answers and explicit
+classification abstentions receive zero contradiction-free credit. Missing
+classification observations are excluded, not classified as incorrect; their
+coverage is visible in the CSV. In the current raw files, the two DeepSeek
+models have CtE classifications for only 150 of their 600 answer groups;
+missing labels are not filled from Base or inferred from aggregate scores.
+For Tables 10–11, explicit classification
+abstentions belong to the incorrect subset, and answer scores use the same
+worst-case null-answer policy as the main table.
+
+To recover the originally published numbers from the committed aggregate
+snapshot instead of recomputing them, explicitly select the archived mode:
+
+```bash
+python src/evaluation/export_supplementary_tables.py --source archived --output /tmp/ascb_archived_tables_9_11
+```
+
+Archived exports retain the historical Table 9 agreement scores and disclose
+the original union-column mapping for the final columns of Tables 10–11 and cannot overwrite the manuscript. They are for
+historical comparison, not corrected evaluation. The old `onboard.ipynb` is
+not required for either path.
+
 ### 3. Regenerate Figures
 
 To regenerate the charts from the available aggregate CSV files, run:

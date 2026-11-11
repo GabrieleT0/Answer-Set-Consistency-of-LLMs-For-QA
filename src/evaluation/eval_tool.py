@@ -2,6 +2,10 @@ import os
 import json
 import pandas as pd
 import numpy as np
+try:
+    from .summary_idk_worst import add_idk_flags, metric_idk_mask
+except ImportError:
+    from summary_idk_worst import add_idk_flags, metric_idk_mask
 # from statsmodels.stats.contingency_tables import mcnemar
 
 
@@ -76,10 +80,13 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
 
     json_files = [
         os.path.join(root, file)
-        for root, _, files in os.walk(folder)
-        for file in files if file.endswith(".json")
+        for root, _, files in sorted(os.walk(folder))
+        for file in sorted(files) if file.endswith(".json")
     ]
 
+    # Older CtE generators saved the answer to dataset Q3 as Q2 in the
+    # containment task. Prefer explicitly named Q3 files when both exist.
+    json_files.sort(key=lambda path: (os.path.basename(path).startswith("Q2_sup-sub"), path))
     print(f"JSON files found: {len(json_files)}")
 
     for file in json_files:
@@ -94,7 +101,9 @@ def load_answers(folder: str, datasets, llms, actions, tasks, languages, questio
         lang = next((l for l in languages if l in elements), None)
         llm = next((l for l in llms if l in elements), None)
 
-        if all([question, action, task, dataset, llm]):
+        if task == "sup-sub" and question == "Q2" and action in ["classification", "classification-no-idk"]:
+            question = "Q3"
+        if action in actions and all([question, action, task, dataset, llm]):
             with open(file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             df = pd.DataFrame([{"Q_ID": key, "Answer": value} for key, value in data.items()])
@@ -132,7 +141,7 @@ def _infer_action(elements_lower, actions):
     if "star" in elements_lower:
         return actions_lower.get("star", "star")
     if "wikidata" in elements_lower:
-        return actions_lower.get("wikidata", actions_lower.get("zero-shot", "zero-shot"))
+        return actions_lower.get("wikidata", "wikidata")
     return actions_lower.get("zero-shot", "zero-shot")
 
 def enrich_answers(df_answers, df_questions):
@@ -169,10 +178,25 @@ def enrich_answers(df_answers, df_questions):
     return df_answers
 
 
+def partition_metrics(a1, a3, a4):
+    """Joint partition score plus its two same-answer diagnostic components."""
+    difference = int(a4 == a1 - a3)
+    containment = int(a3.issubset(a1))
+    joint = int(a1 == a3.union(a4) and a3.isdisjoint(a4))
+    if joint != (difference & containment):
+        raise AssertionError("Partition identity failed")
+    return {"?A4=A1|3": joint, "?A4=A1-A3": difference,
+            "?A3<=A1(same-context)": containment}
+
+
 def analysis(df):
     rows = []
     group_keys = ["Q_ID", "action", "dataset", "llm"]
     grouped = df.groupby(group_keys)
+    repeat_answers = {
+        (r.Q_ID, r.dataset, r.llm): set(r.Answer)
+        for r in df[df["action"].eq("star")].itertuples()
+    }
 
     for keys, group in grouped: 
         if set(group["Q_serie"]) >= {"Q1", "Q2", "Q3", "Q4"}:
@@ -185,12 +209,8 @@ def analysis(df):
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
                 A4 = get_answer_set(group, "Q4", "minus")
-                A1_star = None
-                if action == "zero-shot":
-                    row = df[(df["action"]=="star") & (df["llm"]==llm)&(df["dataset"]==dataset)&(df["Q_ID"]==qid)]
-                    if not row.empty:
-                        A1_star = set(row["Answer"].values[0])
-                A1_prime = None
+                A1_star = repeat_answers.get((qid, dataset, llm)) if action == "zero-shot" else None
+                A1_prime = list(A1_star) if A1_star is not None else None
                 A1_double_prime = None
 
                 similarities = {
@@ -208,7 +228,7 @@ def analysis(df):
                     "?A1>A3": int(A3.issubset(A1)),
                     "?A1>A4": int(A4.issubset(A1)),
                     "?A3∅A4": int(A3.isdisjoint(A4)),
-                    "?A4=A1|3": int(A1 == A3.union(A4) and A3.isdisjoint(A4)),
+                    **partition_metrics(A1, A3, A4),
                     "?A1=A1*": int(A1 == A1_star) if A1_star is not None else None,
                     "?A1=A1**": None,
                     "?A1*=A1**": None
@@ -226,8 +246,6 @@ def analysis(df):
                 A2_equal = get_answer_set(group, "Q2", "equal")
                 A3_contain = get_answer_set(group, "Q3", "sup-sub")
                 A3_minus = get_answer_set(group, "Q3", "minus")
-                if not A3_contain:
-                    A3_contain = A3_minus
                 A4_minus = get_answer_set(group, "Q4", "minus")
                 similarities = {
                     "J(A1-A2)": round(jaccard_similarity(A1_equal, A2_equal), 4),
@@ -244,7 +262,7 @@ def analysis(df):
                     "?A1>A3": int(A3_contain.issubset(A1_contain)),
                     "?A1>A4": int(A4_minus.issubset(A1_minus)),
                     "?A3∅A4": int(A3_minus.isdisjoint(A4_minus)),
-                    "?A4=A1|3": int(A1_minus == A3_minus.union(A4_minus) and A3_minus.isdisjoint(A4_minus)),
+                    **partition_metrics(A1_minus, A3_minus, A4_minus),
                     "?A1=A1*": int(A1_equal == A1_contain),
                     "?A1=A1**": int(A1_equal == A1_minus),
                     "?A1*=A1**": int(A1_contain == A1_minus)
@@ -257,6 +275,9 @@ def analysis(df):
                 A1_prime = list(A1_contain)
                 A1_double_prime = list(A1_minus)
                 
+            else:
+                continue
+
             q_map = {
                 row["Q_serie"]: row["Question"]
                 for _, row in group.iterrows()
@@ -270,6 +291,7 @@ def analysis(df):
                 "Q3": q_map.get("Q3", ""), "Q4": q_map.get("Q4", ""),
                 "A1": list(A1), "A2": list(A2), "A3": list(A3), "A4": list(A4),
                 "A1*": A1_prime, "A1**": A1_double_prime,
+                "A3_minus": list(A3_minus) if action in ["classification", "fixing", "classification-no-idk", "fixing-no-idk"] else None,
                 "idk_A1": 1 if len(A1) == 0 or ("idk" in A1) else 0,
                 "idk_A2": 1 if len(A2) == 0 or ("idk" in A2) else 0,
                 "idk_A3": 1 if len(A3) == 0 or ("idk" in A3) else 0,
@@ -277,24 +299,20 @@ def analysis(df):
             }
             rows.append(row)
     df_analysis = pd.DataFrame(rows)
-    return df_analysis
+    return add_idk_flags(df_analysis)
 
 
 
 def summary(df_analysis):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
+    consistency_cols += [c for c in ["?A4=A1-A3", "?A3<=A1(same-context)"] if c in df_analysis]
     jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A3-A4)","J(A4-A1|3)","J(A1-A1*)", "J(A1-A1**)","J(A1*-A1**)"]
     self_contradition_cols = ["?SC(A1=A2)","?SC(A1>A3)","?SC(A1>A4)","?SC(A3∅A4)","?SC(A4=A1|3)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
-    for a in ["A1", "A2", "A3", "A4"]:
-        df_analysis[f"idk_{a}"] = df_analysis[a].apply(lambda x: int(
-        (isinstance(x, list) and len(x) == 0)       # []
-        or (x == "idk")                             # "idk"
-        or (isinstance(x, list) and x == ["idk"])   # ["idk"]
-    ))
+    df_analysis = add_idk_flags(df_analysis)
 
     empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
 
@@ -320,29 +338,6 @@ def summary(df_analysis):
     df_summary["?A1=A1(ave)"] = df_summary[["?A1=A1*", "?A1=A1**","?A1*=A1**"]].mean(axis=1).round(4)
     df_summary["J_A1_ave"] = df_summary[["J(A1-A1*)", "J(A1-A1**)", "J(A1*-A1**)"]].mean(axis=1).round(4)
     
-    col = ["?A1=A1*","J(A1-A1*)"]
-    # source values indexed by (llm, dataset) from classification rows
-    # src = df_summary.query('action == "classification"').set_index(['llm', 'dataset'])[col]
-
-    # # assign to matching zero-shot rows
-    # mask = df_summary['action'].eq('zero-shot')
-    # zero_idx = pd.MultiIndex.from_frame(df_summary.loc[mask, ['llm', 'dataset']])
-    # df_summary.loc[mask, col] = src.reindex(zero_idx).to_numpy()
-    mask1 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
-    mask2 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "classification")
-    a = df_summary.loc[mask1, col].copy()
-    b = df_summary.loc[mask2, col]
-
-    # Vectorized conditional assignment
-    for column in col:
-        # Where a[column] is NaN, use b[column], otherwise use (a[column] + b[column]) / 2
-        a[column] = np.where(a[column].isna(), 
-                            b[column].values, 
-                            (a[column] + b[column].values) / 2)
-
-    # Assign back to original dataframe
-    df_summary.loc[mask1, col] = a
-
     idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
     return df_summary
@@ -350,39 +345,15 @@ def summary(df_analysis):
 def summary_xidk(df_analysis):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
+    consistency_cols += [c for c in ["?A4=A1-A3", "?A3<=A1(same-context)"] if c in df_analysis]
     jaccard_cols = ["J(A1-A2)", "J(A1-A34)", "J(A3-A4)","J(A4-A1|3)","J(A1-A1*)", "J(A1-A1**)" ,"J(A1*-A1**)"]
     self_contradition_cols = ["?SC(A1=A2)","?SC(A1>A3)","?SC(A1>A4)","?SC(A3∅A4)","?SC(A4=A1|3)"]
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
-    # for a in ["A1", "A2", "A3", "A4"]:
-    #     df_analysis[f"idk_{a}"] = df_analysis[a].apply(lambda x: int(
-    #     (isinstance(x, list) and len(x) == 0)       # []
-    #     or (x == "idk")                             # "idk"
-    #     or (isinstance(x, list) and x == ["idk"])   # ["idk"]
-    # ))
+    df_analysis = add_idk_flags(df_analysis)
 
     empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
-
-    # Define which idk columns to use for each metric
-    metric_idk_map = {
-        "?A1=A2": ["idk_A1", "idk_A2"],
-        "J(A1-A2)": ["idk_A1", "idk_A2"],
-        "?A1=A3+A4": ["idk_A1", "idk_A3", "idk_A4"],
-        "J(A1-A34)": ["idk_A1", "idk_A3", "idk_A4"],
-        "?A1>A3": ["idk_A1", "idk_A3"],
-        "?A1>A4": ["idk_A1", "idk_A4"],
-        "?A3∅A4": ["idk_A3", "idk_A4"],
-        "J(A3-A4)": ["idk_A3", "idk_A4"],
-        "J(A4-A1|3)": ["idk_A4", "idk_A1", "idk_A3"],
-        "?A4=A1|3": ["idk_A4", "idk_A1", "idk_A3"],
-        "?A1=A1*": ["idk_A1", "idk_A1*"],
-        "J(A1-A1*)": ["idk_A1", "idk_A1*"],
-        "?A1=A1**": ["idk_A1", "idk_A1**"],
-        "J(A1-A1**)": ["idk_A1", "idk_A1**"],
-        "?A1*=A1**": ["idk_A1*", "idk_A1**"],
-        "J(A1*-A1**)": ["idk_A1*", "idk_A1**"],
-    }
 
     # Compute each metric only on rows where every required answer is present.
     # If any answer used by that metric is IDK/empty, skip the row.
@@ -390,16 +361,7 @@ def summary_xidk(df_analysis):
     grouped = df_analysis.groupby(group_cols)
     for name, group in grouped:
         for col in metric_cols:
-            idk_cols = metric_idk_map.get(col, [])
-            # Only use idk columns that exist in the group
-            idk_cols_existing = [c for c in idk_cols if c in group.columns]
-            if idk_cols_existing:
-                mask = ~(group[idk_cols_existing].any(axis=1))
-                # if len(mask[mask==False]) > 0:
-                #     print(f"Computing {col} for group {name} with {len(mask[mask==False])} idk rows filtered out.")
-                filtered = group.loc[mask, col]
-            else:
-                filtered = group[col]
+            filtered = group.loc[~metric_idk_mask(group, col), col]
             summary_dict[col].append(filtered.mean())
         for col in empty_cols:
             summary_dict[col].append(group[col].mean())
@@ -416,13 +378,7 @@ def summary_xidk(df_analysis):
     grouped_overall = df_analysis.groupby(group_cols_overall)
     for name, group in grouped_overall:
         for col in metric_cols:
-            idk_cols = metric_idk_map.get(col, [])
-            idk_cols_existing = [c for c in idk_cols if c in group.columns]
-            if idk_cols_existing:
-                mask = ~(group[idk_cols_existing].any(axis=1))
-                filtered = group.loc[mask, col]
-            else:
-                filtered = group[col]
+            filtered = group.loc[~metric_idk_mask(group, col), col]
             summary_dict_overall[col].append(filtered.mean())
         for col in empty_cols:
             summary_dict_overall[col].append(group[col].mean())
@@ -441,19 +397,6 @@ def summary_xidk(df_analysis):
     ]:
         numeric_cols = df_summary[col_group].apply(pd.to_numeric, errors='coerce')
         df_summary[new_col] = numeric_cols.mean(axis=1).round(4)
-
-    col = ["?A1=A1*","J(A1-A1*)"]
-    mask1 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "zero-shot")
-    mask2 = (df_summary["dataset"] == "overall") & (df_summary["action"] == "classification")
-    a = df_summary.loc[mask1, col].copy()
-    b = df_summary.loc[mask2, col]
-
-    for column in col:
-        a[column] = np.where(a[column].isna(), 
-                            b[column].values, 
-                            (a[column] + b[column].values) / 2)
-
-    df_summary.loc[mask1, col] = a
 
     idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
