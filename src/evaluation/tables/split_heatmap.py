@@ -1,3 +1,5 @@
+
+from src.evaluation.paths import REPO_ROOT
 import pandas as pd
 import json 
 import os
@@ -65,7 +67,7 @@ def dataframe_to_heatmap_csvs(df: pd.DataFrame, outdir: Path,
 
 
 def main():
-    root_dir = os.path.dirname(os.path.abspath(__name__))
+    root_dir = str(REPO_ROOT)
     folder = root_dir + "/output/"
     # file = "summary_2025-09-23_16-04.csv"
     file = "p_value_matrices_2025-09-24_08-48.csv"

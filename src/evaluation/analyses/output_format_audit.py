@@ -21,6 +21,8 @@ and repeated-Q1 files are excluded. Repeated-Q1 files can be included with
 
 from __future__ import annotations
 
+from src.evaluation.paths import REPO_ROOT
+
 import argparse
 import csv
 import json
@@ -31,7 +33,6 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 
 ACTION_DIRS = {
     "Base": Path("data/answers/zero-shot"),

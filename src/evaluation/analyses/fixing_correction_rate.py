@@ -7,6 +7,8 @@ For each (Q_ID, dataset, llm) pair that has both a zero-shot and a fixing row:
   - "corrected by fixing" : same metric == 1 for fixing AND == 0 for zero-shot
 """
 
+from src.evaluation.paths import REPO_ROOT
+
 import os
 import pandas as pd
 
@@ -77,7 +79,7 @@ def print_summary(df_detail: pd.DataFrame, df_overall: pd.DataFrame):
 
 
 def main():
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    root_dir = str(REPO_ROOT)
     analysis_path = os.path.join(root_dir, "output", "analysis_old.csv")
     output_folder = os.path.join(root_dir, "output")
     os.makedirs(output_folder, exist_ok=True)

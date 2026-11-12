@@ -1,17 +1,36 @@
-from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk
-from eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
-from eval_pvalue import compute_pvals, p_value_matrixs
-from split_heatmap import dataframe_to_heatmap_csvs
-from split import split
-import os
-import json
+"""Aggregate evaluation entry point (saved responses only)."""
+import argparse
 import datetime
+import json
+import os
+import sys
 from pathlib import Path
-from summary_idk_worst import summary_idk_worst, impute_worst_case
-from reviewer_abstention_audit import regenerate as regenerate_paper_tables
 
-if __name__ == "__main__":
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk
+from src.evaluation.core.eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
+from src.evaluation.statistics.eval_pvalue import compute_pvals, p_value_matrixs
+from src.evaluation.tables.split_heatmap import dataframe_to_heatmap_csvs
+from src.evaluation.tables.split import split
+from src.evaluation.paths import REPO_ROOT
+from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case
+
+def main():
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    # This dependency was already absent before the directory reorganization.
+    # Check before evaluating or writing outputs, rather than silently skipping it.
+    try:
+        from src.evaluation.reviewer_abstention_audit import regenerate as regenerate_paper_tables
+    except ModuleNotFoundError as exc:
+        if exc.name != "src.evaluation.reviewer_abstention_audit":
+            raise
+        raise RuntimeError(
+            "Aggregate evaluation requires the missing reviewer_abstention_audit module. "
+            "Restore it before running this pipeline; table exports remain available separately."
+        ) from exc
+    root_dir = str(REPO_ROOT)
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
 
@@ -115,6 +134,10 @@ if __name__ == "__main__":
     p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
     dataframe_to_heatmap_csvs(df_pvalue, output_folder)
-    from export_supplementary_tables import build_tables, write_tables
+    from src.evaluation.tables.export_supplementary_tables import build_tables, write_tables
     write_tables(build_tables(df_analysis, llms), output_folder + "/tables_9_11", source="raw")
     print("Analysis and summary saved to:", output_folder)
+
+
+if __name__ == "__main__":
+    main()

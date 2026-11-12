@@ -143,6 +143,12 @@ These scripts call external LLM APIs and require valid credentials. They write J
 
 ### 2. Regenerate Evaluation CSV Files
 
+Evaluation code is grouped into `core/`, `statistics/`, `tables/`, `analyses/`,
+`legacy/`, and `notebooks/`. Regression tests are outside `src/`, in
+`tests/evaluation/`. See the [evaluation package guide](src/evaluation/README.md)
+for the directory layout, current module paths, and regression-test command.
+The common table-export CLI entry points remain available.
+
 To recompute answer-set consistency metrics from `data/answers/` and `data/ASCB/en/`, run:
 
 ```bash
@@ -174,7 +180,7 @@ output/heatmap_*.csv
 To recompute only the p-value matrix from an existing `analysis.csv`, run:
 
 ```bash
-python src/evaluation/eval_pvalue.py
+python -m src.evaluation.statistics.eval_pvalue
 ```
 
 The script uses `output/analysis.csv` when it exists; otherwise it falls back to `data/evaluation_results/analysis.csv`.
@@ -218,7 +224,7 @@ python src/evaluation/export_supplementary_tables.py --source archived --output 
 
 Archived exports retain the historical Table 9 agreement scores and disclose
 the original union-column mapping for the final columns of Tables 10–11 and cannot overwrite the manuscript. They are for
-historical comparison, not corrected evaluation. The old `onboard.ipynb` is
+historical comparison, not corrected evaluation. The old `src/evaluation/notebooks/onboard.ipynb` is
 not required for either path.
 
 ### 3. Regenerate Figures
@@ -247,6 +253,79 @@ This script reads `output/summary_idk_worst.csv` and
 `output/p_value_matrices.csv` when present. If those regenerated files do not
 exist, it falls back to the committed results in `data/evaluation_results/`. It
 writes bar charts and p-value heatmaps under `charts/`.
+
+## Generate the updated paper tables
+
+Run these commands from the repository root using the existing `.venv` environment
+(or replace `.venv/bin/python` with the Python executable for your environment).
+They use saved results and do not call model APIs. Golden Answers and other
+separately managed new experiments are outside this workflow.
+
+### Recompute all eight result tables from raw answers
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results
+```
+
+Outputs go to `output/reproduced_tables/`, including CSVs, plain LaTeX tables,
+coverage counts, response provenance, and input SHA-256 hashes. This command
+recomputes results; it does not update the manuscript-formatted tables in
+`output/paper_tables/clean/`.
+
+### Generate manuscript-formatted clean and blue versions
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir path/to/current_tables
+```
+
+Replace `path/to/current_tables` with the directory containing the eight current
+`.tex` table inputs. This compares them against the frozen original-paper baseline in
+`output/paper_tables/base/` (which must already exist). It writes `clean/` and
+`blue/` tables, plus a
+`changes.json` report. Existing blue marks are removed before comparison; the
+baseline is never updated by a normal export. This step does not automatically
+insert the newly recomputed raw-mode results: update and check the current input
+tables before generating the two versions.
+
+### Regenerate charts from aggregate results
+
+```bash
+.venv/bin/python src/visualization/run.py
+```
+
+For the older standalone bar charts and heatmaps, also run:
+
+```bash
+.venv/bin/python src/visualization/generate_charts.py
+```
+
+Charts are written under `charts/`. These commands read aggregate evaluation CSVs,
+not `output/reproduced_tables/` or the manuscript table fragments. They may fall
+back to archived results in `data/evaluation_results/` when fresh aggregate files
+are absent; running them alone does not guarantee figures based on the latest
+raw answers.
+
+### Current full-refresh limitation
+
+There is currently no single verified command that refreshes raw evaluation,
+manuscript-formatted tables, both revision variants, and all figures together.
+The aggregate evaluation entry point is `python src/evaluation/run.py`, but it
+currently imports the missing `reviewer_abstention_audit` module. That dependency
+must be restored or the entry point repaired before using it for a full refresh.
+Simply chaining the commands above does not close the gaps between their inputs.
+
+### Can `output/reproduced_tables/` be deleted?
+
+Yes. It contains generated outputs, not required source inputs. Deleting it does
+not remove raw answers, the frozen baseline, current manuscript table inputs, or
+the clean/blue versions. The raw-mode command recreates it on the next run.
+Several existing outputs are tracked in Git, so deleting them appears as file
+deletions in `git status`. Keep or archive their provenance/hash files if you need
+to identify that exact past data snapshot; regenerating after inputs change may
+produce different values and hashes.
+
+For individual table commands, label mappings, and baseline initialization, see
+[the table generation instructions](output/table_generation_instructions.md).
 
 ## Metrics
 

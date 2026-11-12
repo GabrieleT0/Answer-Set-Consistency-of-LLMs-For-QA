@@ -4,6 +4,8 @@ Uses the committed per-item analysis and the saved CtE/Oracle Q3-minus answers.
 No network requests are made. Unmapped names retain their original spelling.
 """
 
+from src.evaluation.paths import REPO_ROOT
+
 import argparse
 import ast
 import json
@@ -11,10 +13,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from summary_idk_worst import METRIC_IDK_MAP, _add_idk_flags
+from src.evaluation.core.summary_idk_worst import METRIC_IDK_MAP, _add_idk_flags
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = REPO_ROOT
 RELATIONS = {
     "E1,2": "?A1=A2",
     "N3,1": "?A1>A3",
