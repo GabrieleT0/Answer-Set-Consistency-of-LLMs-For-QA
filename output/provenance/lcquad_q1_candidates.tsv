@@ -1,0 +1,745 @@
+ascb_source_id	ascb_Q1	rank	source_split	source_uid	source_field	source_question	token_cosine
+0	In which cities did Jan Brueghel the Elder live and work?	1	train	1500	paraphrased_question	Where did Jan Brueghel the Elder work?	0.8136
+0	In which cities did Jan Brueghel the Elder live and work?	2	train	1500	question	In which locations did Jan Brueghel the Elder work?	0.7578
+0	In which cities did Jan Brueghel the Elder live and work?	3	train	7153	question	When did Jan Brueghel the Elder work in Prague?	0.7243
+0	In which cities did Jan Brueghel the Elder live and work?	4	train	7153	paraphrased_question	Tell me when Prague was the city in which Jan Brueghel the Elder worked.	0.5833
+0	In which cities did Jan Brueghel the Elder live and work?	5	train	8583	paraphrased_question	What do Pieter Brueghel the Elder and Pieter III. Brueghel have in common?	0.4639
+1	What are the tributaries of the Rhône River?	1	train	5151	paraphrased_question	Where does the Rhone river begin?	0.6774
+1	What are the tributaries of the Rhône River?	2	train	5151	question	Where is the mouth of the Rhone river?	0.6268
+1	What are the tributaries of the Rhône River?	3	test	1251	question	How many tributaries does Arkansas River have ?	0.5532
+1	What are the tributaries of the Rhône River?	4	train	2094	paraphrased_question	How many tributaries does the Yukon River have?	0.5501
+1	What are the tributaries of the Rhône River?	5	test	1251	paraphrased_question	Which is the number of the tributaries that Arkansas river have?	0.5375
+2	What U.S. states does the Delaware River drain?	1	train	4744	question	What five U.S. states does the Delaware River drain from?	0.8924
+2	What U.S. states does the Delaware River drain?	2	train	28611	question	Who is the head of government of Delaware?	0.4188
+2	What U.S. states does the Delaware River drain?	3	train	16512	paraphrased_question	What is the chancellor's role in the history of Delaware?	0.3769
+2	What U.S. states does the Delaware River drain?	4	test	9859	paraphrased_question	What lake is formed by Hoover Dam, and which river does it drain into?	0.3605
+2	What U.S. states does the Delaware River drain?	5	train	4744	paraphrased_question	Delaware rivers drains from what 5 us states	0.3517
+3	During the 34th Academy Awards, for which awards was the film La Dolce Vita nominated?	1	train	4760	question	During the 34th Academy Awards, what awards was the film La Dolce Vita nominated for?	1.0000
+3	During the 34th Academy Awards, for which awards was the film La Dolce Vita nominated?	2	train	4760	paraphrased_question	La Dolce Vita was nominated for what categories at the 34th Academy Awards?	0.8496
+3	During the 34th Academy Awards, for which awards was the film La Dolce Vita nominated?	3	test	1465	question	How many original language of work was done by La Dolce Vita?	0.5360
+3	During the 34th Academy Awards, for which awards was the film La Dolce Vita nominated?	4	train	7895	paraphrased_question	At the 34th Academy Awards, in which category did Henry Mancini win?	0.3498
+3	During the 34th Academy Awards, for which awards was the film La Dolce Vita nominated?	5	train	7895	question	For which category did Henry Mancini win in the 34th Academy Awards?	0.3498
+4	What was NCIS nominated for in the year 2013?	1	train	6862	question	What was NCIS nominated for in the year 2013?	1.0000
+4	What was NCIS nominated for in the year 2013?	2	train	6862	paraphrased_question	Give me the name(s) of the award(s) NCIS was nominated for in 2013.	0.7887
+4	What was NCIS nominated for in the year 2013?	3	train	5417	question	For what One Direction was in nominated for in the year of 2013?	0.4822
+4	What was NCIS nominated for in the year 2013?	4	train	5417	paraphrased_question	One Direction was nominated for which award in 2013?	0.3830
+4	What was NCIS nominated for in the year 2013?	5	train	5429	paraphrased_question	what was the ending time of the year 2013-0-0?	0.3656
+5	For which awards were Gladys Knight & the Pips nominated in 1975?	1	train	7001	paraphrased_question	What awards were Gladys Knight & the Pips nominated for in 1975?	1.0000
+5	For which awards were Gladys Knight & the Pips nominated in 1975?	2	train	7001	question	In 1975, what awards were Gladys Knight & the Pips nominated for?	1.0000
+5	For which awards were Gladys Knight & the Pips nominated in 1975?	3	train	6274	question	What was the population of Egypt in 1975?	0.2667
+5	For which awards were Gladys Knight & the Pips nominated in 1975?	4	train	27996	question	What is a religious order of knight ?	0.2577
+5	For which awards were Gladys Knight & the Pips nominated in 1975?	5	train	6274	paraphrased_question	Which was the population number of Egypt in 1975?	0.2508
+6	What characters in Nabucco sing as sopranos?	1	train	8480	paraphrased_question	In Nabucco, which characters sing as sopranos?	1.0000
+6	What characters in Nabucco sing as sopranos?	2	train	8480	question	What characters in Nabucco sing as sopranos?	1.0000
+6	What characters in Nabucco sing as sopranos?	3	test	5044	question	"Which award did Martin Bruestle win for the ""The Sopranos?"""	0.2956
+6	What characters in Nabucco sing as sopranos?	4	test	5044	paraphrased_question	"Martin Bruestle won an award for ""The Sopranos,""; what was it?"	0.2942
+6	What characters in Nabucco sing as sopranos?	5	train	528	paraphrased_question	Does Kim Basinger model and sing?	0.2780
+7	In which U.S. states was the plot of North by Northwest set?	1	train	9087	question	Where was the plot of North by Northwest, filmed in California, set?	0.6867
+7	In which U.S. states was the plot of North by Northwest set?	2	train	18941	paraphrased_question	What is the position angle of northwest by north?	0.4693
+7	In which U.S. states was the plot of North by Northwest set?	3	train	3357	paraphrased_question	Which north-northwest position has the smallest angle?	0.4099
+7	In which U.S. states was the plot of North by Northwest set?	4	train	16747	question	What is the plot of Jacques?	0.3792
+7	In which U.S. states was the plot of North by Northwest set?	5	train	18941	question	Is the position angle of northwest by north equal to 391.5?	0.3542
+8	Who were the students under Tchaikovsky’s direct guidance?	1	train	1969	paraphrased_question	Which is the guidance system of Sonar?	0.3818
+8	Who were the students under Tchaikovsky’s direct guidance?	2	train	1969	question	What is the guidance system of the {Sonar} ?	0.3818
+8	Who were the students under Tchaikovsky’s direct guidance?	3	train	2353	question	How many guidance systems are to be at Global Positioning System?	0.3054
+8	Who were the students under Tchaikovsky’s direct guidance?	4	train	2353	paraphrased_question	What number of guidance systems are located at the Global Positioning System?	0.2933
+8	Who were the students under Tchaikovsky’s direct guidance?	5	test	2461	question	what is university has the highest students count?	0.2614
+9	What sons did Emperor Wu of Jin have?	1	train	11966	paraphrased_question	Who are rhe sons of Emperor Wu of Jin whose surname is Sima?	0.7100
+9	What sons did Emperor Wu of Jin have?	2	train	11966	question	Who are rhe sons of Emperor Wu of Jin whose surname is Sima?	0.7100
+9	What sons did Emperor Wu of Jin have?	3	train	28886	question	What is tample name for emperor wu of han ?	0.4190
+9	What sons did Emperor Wu of Jin have?	4	train	28632	question	Who was stepparent of Emperor Wu of Liu Song?	0.4136
+9	What sons did Emperor Wu of Jin have?	5	test	15083	paraphrased_question	what is sons of portrait	0.3464
+10	What countries border Senegal and are members of AFRISTAT?	1	train	12290	question	What borders Senegal and yet is a member of AFRISTAT?	0.5635
+10	What countries border Senegal and are members of AFRISTAT?	2	train	12290	paraphrased_question	What borders Senegal and however could be a part of AFRISTAT?	0.5365
+10	What countries border Senegal and are members of AFRISTAT?	3	train	16217	paraphrased_question	What countries border Malawi?	0.3605
+10	What countries border Senegal and are members of AFRISTAT?	4	test	7711	paraphrased_question	When did China and Japan become border countries?	0.3230
+10	What countries border Senegal and are members of AFRISTAT?	5	train	17137	question	WHICH IS THE TRIBUTARY OF OUTFLOW OF SENEGAL RIVER?	0.3211
+11	What districts of Lower Saxony are on the North Sea coast?	1	train	12574	question	What are the regions available on the coast of Lower Saxony?	0.5630
+11	What districts of Lower Saxony are on the North Sea coast?	2	train	12574	paraphrased_question	What are the locales accessible on the coast of Lower Saxony?	0.5187
+11	What districts of Lower Saxony are on the North Sea coast?	3	train	7997	question	Give the end time for lower Saxony has head of government as Christian Wulff?	0.3359
+11	What districts of Lower Saxony are on the North Sea coast?	4	train	7997	paraphrased_question	Give the conclusion time for lower Saxony has head of government as Christian Wulff?	0.3258
+11	What districts of Lower Saxony are on the North Sea coast?	5	test	19440	paraphrased_question	Is 3.4 the salinity of the North Sea?	0.3137
+12	"What characters are part of the Simpsons episode titled ""A Fish Called Selma""?"	1	train	14757	question	What characters are part of the series called A Fish Called Selma?	0.6944
+12	"What characters are part of the Simpsons episode titled ""A Fish Called Selma""?"	2	train	14757	paraphrased_question	What characters are portion of the arrangement called A Angle Called Selma?	0.4153
+12	"What characters are part of the Simpsons episode titled ""A Fish Called Selma""?"	3	train	9998	paraphrased_question	{The_Simpsons} is {nominated for} and received the {award}.	0.3200
+12	"What characters are part of the Simpsons episode titled ""A Fish Called Selma""?"	4	train	9998	question	Which is {nominated for} and the {award received} of {The_Simpsons} ?	0.3200
+12	"What characters are part of the Simpsons episode titled ""A Fish Called Selma""?"	5	train	26201	question	What shows after The Simpsons?	0.2792
+13	What clubs has Nestor de Vincente played for?	1	train	14832	question	What teams has Nestor de Vincente played for?	0.7941
+13	What clubs has Nestor de Vincente played for?	2	train	14832	paraphrased_question	What groups has Nestor de Vincente played for?	0.7865
+13	What clubs has Nestor de Vincente played for?	3	train	2430	paraphrased_question	WHICH  COUNTRY HAS THE HIGHEST NUMBER OF SPORTS CLUBS	0.3369
+13	What clubs has Nestor de Vincente played for?	4	train	2807	paraphrased_question	What sport has the most clubs in Australia?	0.3213
+13	What clubs has Nestor de Vincente played for?	5	train	7969	question	Where is Nestor Makhno buried?	0.3086
+14	What other movies did the director of Sharknado direct?	1	train	7484	paraphrased_question	Who was nominated for Best Director?	0.2901
+14	What other movies did the director of Sharknado direct?	2	train	22322	question	What movie did Jim Henson direct?	0.2794
+14	What other movies did the director of Sharknado direct?	3	train	26280	question	What type of electrification is direct current?	0.2792
+14	What other movies did the director of Sharknado direct?	4	train	21630	paraphrased_question	What are Hayao Miyazaki's movies?	0.2773
+14	What other movies did the director of Sharknado direct?	5	train	20687	paraphrased_question	Which movies is Mary Pickerford in?	0.2762
+15	Who were the actresses in Dumb and Dumberer?	1	train	15088	question	Who was the actress in Dumb and Dumberer?	0.7342
+15	Who were the actresses in Dumb and Dumberer?	2	train	15088	paraphrased_question	Give me the actress's name in Dumb and Dumberer.	0.6532
+15	Who were the actresses in Dumb and Dumberer?	3	train	17285	question	What voice  is actresses from work of Death the Kid ?	0.3836
+15	Who were the actresses in Dumb and Dumberer?	4	train	560	question	Is Paul the Apostle most significant event conversion of Paul the Apostle and Dumb Ways to Die?	0.2506
+16	Which U.S. Presidents were in power during the Cold War?	1	train	17101	question	What were the continents involved during the Cold War	0.4786
+16	Which U.S. Presidents were in power during the Cold War?	2	train	24614	paraphrased_question	"Which cold war starts with ""g""?"	0.4535
+16	Which U.S. Presidents were in power during the Cold War?	3	train	24614	question	what are the cold war which start with the letter g	0.4330
+16	Which U.S. Presidents were in power during the Cold War?	4	test	23832	question	Tell me cold war whose name has the word game in it.	0.4018
+16	Which U.S. Presidents were in power during the Cold War?	5	test	21812	question	Which organizations were involved in the Cold War ?	0.3853
+17	Who are the voice actors in season 9 of the television series American Dad?	1	train	17214	question	Who are the voice actors in season 9 of television series American Dad?	1.0000
+17	Who are the voice actors in season 9 of the television series American Dad?	2	train	17214	paraphrased_question	Who are the voice on-screen characters in season 9 of tv arrangement American Dad?	0.6023
+17	Who are the voice actors in season 9 of the television series American Dad?	3	train	17891	question	Who gave the{voice actors} of {part of series} of {The Butterjunk Effect} ?	0.3707
+17	Who are the voice actors in season 9 of the television series American Dad?	4	train	17944	paraphrased_question	List the voice actors in the series, She Swill Survive.	0.3569
+17	Who are the voice actors in season 9 of the television series American Dad?	5	train	17944	question	Which {voice actors} of {series} {She Swill Survive} ?	0.3569
+18	What infections are prevented with chlorhexidine?	1	train	17237	paraphrased_question	What infections are treated with chlorhexidine?	0.7301
+18	What infections are prevented with chlorhexidine?	2	train	28885	question	What may be prevented with aspirin?	0.4084
+18	What infections are prevented with chlorhexidine?	3	train	17237	question	What diseases are treated with chlorhexidine?	0.3701
+19	List all whiskeys made by the Glenfiddich Distillery.	1	train	17469	question	What is made by the Glenfiddich Distillery?	0.9181
+19	List all whiskeys made by the Glenfiddich Distillery.	2	train	17469	paraphrased_question	What's the Glenfiddich Distillery doing?	0.7034
+19	List all whiskeys made by the Glenfiddich Distillery.	3	test	15079	paraphrased_question	Who co-founded Jack Daniel's Distillery?	0.3289
+19	List all whiskeys made by the Glenfiddich Distillery.	4	test	15079	question	Who co-founded Jack Daniel's Distillery?	0.3289
+19	List all whiskeys made by the Glenfiddich Distillery.	5	train	9570	question	What is the name of All_in_the_Family ?	0.2721
+20	What medical conditions does amitriptyline treat?	1	train	17908	question	What medical conditions does amitriptyline treat?	1.0000
+20	What medical conditions does amitriptyline treat?	2	train	17908	paraphrased_question	What are the medical conditions that treat amitriptyline?	0.9824
+20	What medical conditions does amitriptyline treat?	3	train	874	paraphrased_question	Are dexmethylphenidate and amitriptyline used to treat ADHD?	0.4636
+20	What medical conditions does amitriptyline treat?	4	train	1345	question	How many medical conditions are treated by diazepam?	0.4431
+20	What medical conditions does amitriptyline treat?	5	train	1017	question	how many treated medical conditions are for acetic acid?	0.4165
+21	What Fortune 500 businesses are headquartered in Cleveland?	1	train	19737	question	What businesses are headquartered in Cleveland?	0.7458
+21	What Fortune 500 businesses are headquartered in Cleveland?	2	train	19737	paraphrased_question	Name businesses that have their headquarters in Cleveland.	0.5007
+21	What Fortune 500 businesses are headquartered in Cleveland?	3	train	20081	question	What businesses sponsor Oracle	0.2824
+21	What Fortune 500 businesses are headquartered in Cleveland?	4	train	20081	paraphrased_question	Oracle is sponsored by which businesses?	0.2788
+21	What Fortune 500 businesses are headquartered in Cleveland?	5	train	21264	question	Name someone born in Cleveland ?	0.2680
+22	Which carriers currently operate the Airbus A330-neo?	1	train	19862	question	Which carriers operate the Airbus A330?	0.8172
+22	Which carriers currently operate the Airbus A330-neo?	2	train	19862	paraphrased_question	What carriers use the Airbus A330?	0.6551
+22	Which carriers currently operate the Airbus A330-neo?	3	train	20430	question	Which airline uses Airbus A330	0.4220
+22	Which carriers currently operate the Airbus A330-neo?	4	train	22305	paraphrased_question	What is the name of the company running the Airbus A330?	0.4164
+22	Which carriers currently operate the Airbus A330-neo?	5	train	22305	question	What is the name of business which operates the Airbus A330?	0.4141
+23	What paintings show the Tower of Babel?	1	train	20480	question	What are the paintings that represent the Tower of Babel?	0.7927
+23	What paintings show the Tower of Babel?	2	train	20480	paraphrased_question	What are the compositions that speak to the Tower of Babel?	0.4905
+23	What paintings show the Tower of Babel?	3	train	25234	question	Tell me the tower that is depicted as Tower of Babel and contains the word babel in it's name?	0.4858
+23	What paintings show the Tower of Babel?	4	train	25234	paraphrased_question	Tell me the tower that is depicted as Tower of Babel and includes the word babel in it's name?	0.4677
+23	What paintings show the Tower of Babel?	5	train	22869	paraphrased_question	What woodcut print is presented on the Tower of Babel?	0.4316
+24	What books were illustrated by William Blake?	1	train	20537	question	What books were illustrated by William Blake?	1.0000
+24	What books were illustrated by William Blake?	2	train	20537	paraphrased_question	What books were outlined by William Blake?	0.6822
+24	What books were illustrated by William Blake?	3	test	9612	question	What was William Blake a student of and who was his student?	0.5182
+24	What books were illustrated by William Blake?	4	train	23027	question	Which anthem is William Blake known for?	0.4766
+24	What books were illustrated by William Blake?	5	train	8616	question	where were William Blake and Catherine Blake married?	0.4629
+25	What languages use the Arabic alphabet?	1	train	20574	question	What languages use the Arabic alphabet?	1.0000
+25	What languages use the Arabic alphabet?	2	test	22066	question	What alphabet does Arabic use?	0.8795
+25	What languages use the Arabic alphabet?	3	train	20574	paraphrased_question	Which languages are using the Arabic alphabet?	0.7779
+25	What languages use the Arabic alphabet?	4	test	22066	paraphrased_question	Arabic uses what alphabet?	0.6270
+25	What languages use the Arabic alphabet?	5	train	23044	question	What is the natural language for the Arabic alphabet?	0.5821
+26	Who were the members of the Grateful Dead?	1	train	20680	question	Who are the members of the Grateful Dead?	1.0000
+26	Who were the members of the Grateful Dead?	2	train	3699	question	When did the Grateful Dead receive the Grammy for Lifetime Achievement Award?	0.5807
+26	Who were the members of the Grateful Dead?	3	train	3699	paraphrased_question	When did the Grateful Dead get the Grammy for Lifetime Achievement Award?	0.5735
+26	Who were the members of the Grateful Dead?	4	test	26405	question	What is the volume of the Dead Sea?	0.3307
+26	Who were the members of the Grateful Dead?	5	train	21060	question	Which is the dead language that was replaced by Dutch?	0.3133
+27	What island states make up the European Union?	1	train	20829	question	What sovereign states make up the European Union?	0.8204
+27	What island states make up the European Union?	2	train	20829	paraphrased_question	What autonomous states make up the European Union?	0.7968
+27	What island states make up the European Union?	3	train	1434	question	How many subsidiary are European Union?	0.4230
+27	What island states make up the European Union?	4	train	22747	question	What countries are part of the European Union?	0.4054
+27	What island states make up the European Union?	5	test	20813	question	What countries are within the European Union?	0.3987
+28	What books are the Harry Potter movies based on?	1	train	20957	question	What books are the Harry Potter movies based on?	1.0000
+28	What books are the Harry Potter movies based on?	2	train	20957	paraphrased_question	What books are the Harry Potter motion pictures based on?	0.6964
+28	What books are the Harry Potter movies based on?	3	train	22299	paraphrased_question	In the Harry Potter movies, who played Harry himself?	0.6168
+28	What books are the Harry Potter movies based on?	4	test	7413	question	Which actor plays Harry Potter in the movies of the same name?	0.5940
+28	What books are the Harry Potter movies based on?	5	test	7413	paraphrased_question	What is the actor's name who portrays the main character in the Harry Potter movies?	0.5244
+29	Which movies directed by Kurosawa have scenes filmed in Tokyo?	1	train	20991	paraphrased_question	What movies were filmed in Yokohama?	0.4090
+29	Which movies directed by Kurosawa have scenes filmed in Tokyo?	2	train	9925	paraphrased_question	Which type of movies are filmed in Honolulu?	0.3981
+29	Which movies directed by Kurosawa have scenes filmed in Tokyo?	3	train	15932	question	Where where the rural scenes for the first Star Wars movie filmed?	0.3869
+29	Which movies directed by Kurosawa have scenes filmed in Tokyo?	4	train	15932	paraphrased_question	Where where the rustic scenes for the primary Star Wars motion picture filmed?	0.3395
+29	Which movies directed by Kurosawa have scenes filmed in Tokyo?	5	train	1859	paraphrased_question	Catherine Breillat directed how many movies?	0.3255
+30	Name the nation states who were belligerents in the Korean War.	1	train	234	paraphrased_question	Was Netherlands in the Korean War?	0.5107
+30	Name the nation states who were belligerents in the Korean War.	2	train	21082	question	Name a country involved in Korean War	0.5070
+30	Name the nation states who were belligerents in the Korean War.	3	train	23948	paraphrased_question	"What nation has the word ""States"" in its name?"	0.4801
+30	Name the nation states who were belligerents in the Korean War.	4	test	1923	question	How many conflicts were in the Korean War?	0.4462
+30	Name the nation states who were belligerents in the Korean War.	5	train	234	question	Did Netherlands participate in Korean War?	0.4342
+31	Who are Paul McCartney's children?	1	train	21231	paraphrased_question	What are the names of Paul McCartney's children?	0.8749
+31	Who are Paul McCartney's children?	2	train	25779	question	Which is the voice type of Paul McCartney?	0.6384
+31	Who are Paul McCartney's children?	3	train	21231	question	Who are Paul McCartney's sons and daughters.	0.6003
+31	Who are Paul McCartney's children?	4	train	29370	question	What is Paul McCartney's lifestyle like?	0.5914
+31	Who are Paul McCartney's children?	5	test	12360	question	What is Paul McCartney's language of expression which has англійська as an acronym?	0.5646
+32	What stage musicals were written by Andrew Lloyd Webber?	1	train	21341	question	What musicals were written by Andrew Lloyd Webber?	0.9259
+32	What stage musicals were written by Andrew Lloyd Webber?	2	train	21341	paraphrased_question	What musicals were composed by Andrew Lloyd Webber?	0.8126
+32	What stage musicals were written by Andrew Lloyd Webber?	3	train	20671	paraphrased_question	Andrew Lloyd Webber composed which musical?	0.5874
+32	What stage musicals were written by Andrew Lloyd Webber?	4	train	20671	question	Andrew Lloyd Webber composed which musical?	0.5874
+32	What stage musicals were written by Andrew Lloyd Webber?	5	train	22178	paraphrased_question	Andrew Lloyd Webber composed what song?	0.5864
+33	What people were signatories of the Paris Peace Accords?	1	train	4604	paraphrased_question	IN PARIS	0.3937
+33	What people were signatories of the Paris Peace Accords?	2	train	1121	paraphrased_question	How many people were signatories on the United States' Declaration of Independence?	0.3536
+33	What people were signatories of the Paris Peace Accords?	3	train	2167	question	how many signatories does south korea have?	0.3352
+33	What people were signatories of the Paris Peace Accords?	4	train	2167	paraphrased_question	South Korea has how many signatories?	0.3266
+33	What people were signatories of the Paris Peace Accords?	5	train	1629	question	What's the capital of Paris?	0.2854
+34	What libraries does Yale University have?	1	train	21698	question	What college libraries are at Yale University?	0.9100
+34	What libraries does Yale University have?	2	test	25763	question	Which is the authority for Yale University?	0.5637
+34	What libraries does Yale University have?	3	test	9891	paraphrased_question	Who's the chairperson of Yale University?	0.5610
+34	What libraries does Yale University have?	4	train	21015	question	Who is affiliated with Yale University?	0.5410
+34	What libraries does Yale University have?	5	test	9891	question	Who is the {chairperson} and the {member of} of {Yale_University} ?	0.5391
+35	Which international organizations have their headquarters located in Strasbourg?	1	train	21743	question	Which international organizations headquarters are located in Strasbourg?	0.9495
+35	Which international organizations have their headquarters located in Strasbourg?	2	train	30171	question	Which international court is located in Strasbourg?	0.5958
+35	Which international organizations have their headquarters located in Strasbourg?	3	train	21743	paraphrased_question	Which worldwide organizations central command are found in Strasbourg?	0.4804
+35	Which international organizations have their headquarters located in Strasbourg?	4	train	22542	paraphrased_question	Which international organizations are UN General Assembly subsidiaries?	0.3583
+35	Which international organizations have their headquarters located in Strasbourg?	5	train	22542	question	What international organizations are subsidiaries of the UN General Assembly?	0.3583
+36	What kinds of airplanes do American Airlines currently operate?	1	train	21876	question	What kinds of airplanes do American Airlines operate?	0.9142
+36	What kinds of airplanes do American Airlines currently operate?	2	train	21876	paraphrased_question	What sorts of airplanes do American Carriers operate?	0.5134
+36	What kinds of airplanes do American Airlines currently operate?	3	train	20296	question	Who is the owner of American Airlines	0.3900
+36	What kinds of airplanes do American Airlines currently operate?	4	train	20296	paraphrased_question	Who owns American Airlines?	0.3865
+36	What kinds of airplanes do American Airlines currently operate?	5	train	23057	question	Which company owns American Airlines ?	0.3515
+37	What songs are on the tracklist of Led Zeppelin IV?	1	train	22084	question	What songs are on the tracklist of Led Zeppelin IV?	1.0000
+37	What songs are on the tracklist of Led Zeppelin IV?	2	train	21204	question	Which Led Zeppelin single is in tracklist IV?	0.7968
+37	What songs are on the tracklist of Led Zeppelin IV?	3	train	22084	paraphrased_question	What melodies are on the tracklist of Led Zeppelin IV?	0.7443
+37	What songs are on the tracklist of Led Zeppelin IV?	4	train	21204	paraphrased_question	What is the name of Led Zeppelin's tracklist number 4?	0.6827
+37	What songs are on the tracklist of Led Zeppelin IV?	5	test	387	question	Did Led Zeppelin record with Stax?	0.4718
+38	What peace treaties have the Soviet Union signed?	1	train	22096	question	What peace treaties have the Soviet Union signed?	1.0000
+38	What peace treaties have the Soviet Union signed?	2	train	22096	paraphrased_question	What peace arrangements have the Soviet Union marked?	0.4218
+38	What peace treaties have the Soviet Union signed?	3	test	22945	question	What was and is the currency of the Soviet Union?	0.4078
+38	What peace treaties have the Soviet Union signed?	4	train	10204	paraphrased_question	What is the head of state of the Soviet Union?	0.4012
+38	What peace treaties have the Soviet Union signed?	5	test	22945	paraphrased_question	What was and is the cash of the Soviet Union?	0.3979
+39	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	1	train	22138	paraphrased_question	In Star Wars Episode V, which planets were portrayed: The Empire Strikes Back?	1.0000
+39	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	2	train	22138	question	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	1.0000
+39	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	3	train	22285	question	Which characters are in Star Wars Episode V: The Empire Strikes Back?	0.7899
+39	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	4	test	22374	question	Name a character from Star Wars Episode V: The Empire Strikes Back	0.7795
+39	Which planets were portrayed in Star Wars Episode V: The Empire Strikes Back?	5	train	11408	question	When did series of Star Wars Episode V: The Empire Strikes Back and follows?	0.7410
+40	What countries participated in the Battle of France?	1	train	22294	question	What countries participated in the Battle of France?	1.0000
+40	What countries participated in the Battle of France?	2	train	30183	question	Which is the battle that participated the Soviet Union?	0.5486
+40	What countries participated in the Battle of France?	3	train	21671	question	What countries participated in the Cuban Missile Crisis?	0.4303
+40	What countries participated in the Battle of France?	4	train	17527	paraphrased_question	Which is positioned and participated in the battle of Thomas Blamey?	0.4269
+40	What countries participated in the Battle of France?	5	test	21602	paraphrased_question	What is the human being for the conflict in the Battle of France?	0.4179
+41	Who are the characters in Hamlet?	1	train	22334	question	Who are the characters in Hamlet?	1.0000
+41	Who are the characters in Hamlet?	2	train	10025	question	What are the characters in Hamlet and what genre is it in?	0.8517
+41	Who are the characters in Hamlet?	3	train	10025	paraphrased_question	Give me the names of the characters and the genre in Hamlet?	0.6672
+41	Who are the characters in Hamlet?	4	train	991	paraphrased_question	Was it Hamlet that created the characters of Gertrude and The Ghost?	0.5659
+41	Who are the characters in Hamlet?	5	train	991	question	Did Hamlet create the characters Gertrude and The Ghost?	0.5594
+42	What animated films were produced or directed by Hayao Miyazaki?	1	train	22490	question	What animated films were produced by Hayao Miyazaki?	0.9140
+42	What animated films were produced or directed by Hayao Miyazaki?	2	train	21630	question	What are the films of Hayao Miyazaki?	0.7357
+42	What animated films were produced or directed by Hayao Miyazaki?	3	train	23018	question	Which is the short film that was produced by Hayao Miyazaki?	0.5989
+42	What animated films were produced or directed by Hayao Miyazaki?	4	train	29828	question	Which animated film did Hayao Miyazaki edit?	0.5790
+42	What animated films were produced or directed by Hayao Miyazaki?	5	train	20541	question	Name a movie from Hayao Miyazaki	0.5399
+43	What are the satellite galaxies of the Andromeda Galaxy?	1	train	20384	paraphrased_question	Andromeda is the parent of what galaxy?	0.7247
+43	What are the satellite galaxies of the Andromeda Galaxy?	2	train	20384	question	Andromeda is the parent of what galaxy?	0.7247
+43	What are the satellite galaxies of the Andromeda Galaxy?	3	train	22626	question	What are the associated  astronomical bodies of the Andromeda Galaxy?	0.5497
+43	What are the satellite galaxies of the Andromeda Galaxy?	4	train	9745	paraphrased_question	Who is the child astronomical body of Andromeda_Galaxy named after?	0.5288
+43	What are the satellite galaxies of the Andromeda Galaxy?	5	train	9745	question	What is the named after and the child astronomical body of Andromeda_Galaxy ?	0.5288
+44	What types of Academy Awards has Quentin Tarantino been nominated for?	1	train	22696	question	What Academy Awards has Quentin Tarantino been nominated for?	0.9154
+44	What types of Academy Awards has Quentin Tarantino been nominated for?	2	train	21796	paraphrased_question	Who is Quentin Tarantino's partner?	0.5936
+44	What types of Academy Awards has Quentin Tarantino been nominated for?	3	train	21796	question	Who is Quentin Tarantino's partner?	0.5936
+44	What types of Academy Awards has Quentin Tarantino been nominated for?	4	train	22696	paraphrased_question	What Institute Grants has Quentin Tarantino been assigned for?	0.5678
+44	What types of Academy Awards has Quentin Tarantino been nominated for?	5	train	21610	question	Quentin Tarantino is nominated for which Golden Globe Award ?	0.5593
+45	Which movies were produced by Jim Henson?	1	train	22718	question	Which movies were produced by Jim Henson?	1.0000
+45	Which movies were produced by Jim Henson?	2	train	22718	paraphrased_question	What are the movies that Jim Henson made?	0.8052
+45	Which movies were produced by Jim Henson?	3	test	19818	question	Which television film was produced by Jim Henson?	0.7253
+45	Which movies were produced by Jim Henson?	4	train	22840	question	Jim Henson was the director of which film?	0.6057
+45	Which movies were produced by Jim Henson?	5	train	22840	paraphrased_question	Jim Henson was the chief of which film?	0.5940
+46	Which books are in the His Dark Materials trilogy?	1	train	22759	question	Which books are in the His Dark Materials trilogy?	1.0000
+46	Which books are in the His Dark Materials trilogy?	2	train	22759	paraphrased_question	Which books are within the His Dull Materials set of three?	0.4389
+46	Which books are in the His Dark Materials trilogy?	3	train	6902	question	What position did the The Godfather hold in the Godfather trilogy?	0.3121
+46	Which books are in the His Dark Materials trilogy?	4	train	27855	question	What is in the category of The Lord of the Rings trilogy?	0.2755
+46	Which books are in the His Dark Materials trilogy?	5	train	15683	question	Which are famous books of Maurice?	0.2648
+47	What films has Francis Ford Coppola been the executive producer of?	1	train	22984	question	What films has Francis Ford Coppola been the executive producer of?	1.0000
+47	What films has Francis Ford Coppola been the executive producer of?	2	test	20227	question	Name a movie directed by Francis Ford Coppola	0.5619
+47	What films has Francis Ford Coppola been the executive producer of?	3	train	21261	paraphrased_question	Which TV series were produced by Francis Ford Coppola?	0.5462
+47	What films has Francis Ford Coppola been the executive producer of?	4	train	21261	question	Which television series did {Francis Ford Coppola produce?	0.5341
+47	What films has Francis Ford Coppola been the executive producer of?	5	train	5312	question	What was the work of Francis Ford Coppola nominated as Academy Award for Best Director?	0.5223
+48	Which high school(s) are located in Milwaukee?	1	train	23033	question	Which high school(s) are located in Milwaukee?	1.0000
+48	Which high school(s) are located in Milwaukee?	2	train	23033	paraphrased_question	Which secondary school(s) are in Milwaukee?	0.5932
+48	Which high school(s) are located in Milwaukee?	3	train	20969	paraphrased_question	Which university in the Milwaukee area is located.	0.5686
+48	Which high school(s) are located in Milwaukee?	4	train	20969	question	Which university is located in the Milwaukee area.	0.5686
+48	Which high school(s) are located in Milwaukee?	5	train	19856	paraphrased_question	What is the Milwaukee railway for?	0.4585
+49	List all top-tier national leagues in CONMEBOL for men or women.	1	train	1773	question	How many leagues are in the National Hockey League?	0.3346
+49	List all top-tier national leagues in CONMEBOL for men or women.	2	train	15733	question	Who received the X-Men top dog nomination?	0.3344
+49	List all top-tier national leagues in CONMEBOL for men or women.	3	train	2157	paraphrased_question	How many leagues are in series A?	0.3232
+49	List all top-tier national leagues in CONMEBOL for men or women.	4	train	2157	question	Series A has how many leagues?	0.3096
+49	List all top-tier national leagues in CONMEBOL for men or women.	5	train	1992	paraphrased_question	What is the population of women?	0.2885
+50	What are the moon phases?	1	train	10969	question	What are the three phases of water?	0.5421
+50	What are the moon phases?	2	train	10737	question	What are the three phases of water?	0.5421
+50	What are the moon phases?	3	train	10969	paraphrased_question	What are the water's three phases?	0.5269
+50	What are the moon phases?	4	train	21976	paraphrased_question	What is the moon of Neptune?	0.3894
+50	What are the moon phases?	5	train	21976	question	What is the moon of Neptune?	0.3894
+51	What are the annual public holidays of Denmark?	1	test	2278	paraphrased_question	Which is the number of the Pentecost public holidays?	0.4939
+51	What are the annual public holidays of Denmark?	2	test	21057	question	What public holidays are celebrated in Barcelona?	0.4739
+51	What are the annual public holidays of Denmark?	3	test	2278	question	How many Pentecost public holidays are there?	0.4674
+51	What are the annual public holidays of Denmark?	4	train	1894	question	How many public holidays are on Boxing Day?	0.4581
+51	What are the annual public holidays of Denmark?	5	train	1894	paraphrased_question	Which is the number of the public holidays that are on Boxing Day?	0.4474
+52	List all the states in India.	1	train	9570	question	What is the name of All_in_the_Family ?	0.4112
+52	List all the states in India.	2	test	17303	question	What is the official language of the Government of India?	0.3570
+52	List all the states in India.	3	train	24200	question	which state of india starts with letter u	0.3413
+52	List all the states in India.	4	train	9570	paraphrased_question	Give me the name of All in the Family.	0.3404
+52	List all the states in India.	5	test	17303	paraphrased_question	What is the official dialect of the Government of India?	0.3368
+53	What writing systems are in official use today by European countries?	1	train	22747	question	What countries are part of the European Union?	0.3900
+53	What writing systems are in official use today by European countries?	2	test	20813	question	What countries are within the European Union?	0.3835
+53	What writing systems are in official use today by European countries?	3	test	21281	paraphrased_question	Who is today's pope?	0.3757
+53	What writing systems are in official use today by European countries?	4	test	2300	question	How many writing systems are in runes?	0.3693
+53	What writing systems are in official use today by European countries?	5	train	1916	question	How many writing systems are by hiragana?	0.3612
+54	What countries have a public holiday to celebrate their constitution?	1	train	8932	question	What countries celebrate Christmas as a public holiday?	0.7332
+54	What countries have a public holiday to celebrate their constitution?	2	train	22779	paraphrased_question	What is the public holiday / festival in Belarus to celebrate Jesus ' resurrection.	0.4834
+54	What countries have a public holiday to celebrate their constitution?	3	train	22680	question	What countries celebrate Chinese New Year?	0.4689
+54	What countries have a public holiday to celebrate their constitution?	4	train	24148	question	which  public holiday that starts with s	0.4646
+54	What countries have a public holiday to celebrate their constitution?	5	train	22234	question	What holiday is used to celebrate the resurrection of Jesus?	0.4480
+55	What are the war deities from ancient mythology in Europe?	1	test	24469	question	What is a mythology that begins with the letter v?	0.2953
+55	What are the war deities from ancient mythology in Europe?	2	test	1296	paraphrased_question	Which is the domain of saint or deities for Santo Tomas de Aquinas?	0.2824
+55	What are the war deities from ancient mythology in Europe?	3	test	1296	question	Tell me the domain of saint or deities for Santo Tomas de Aquinas?	0.2722
+55	What are the war deities from ancient mythology in Europe?	4	train	23646	question	Tell me mythology  whose name has the word religion in it.	0.2694
+55	What are the war deities from ancient mythology in Europe?	5	test	2252	question	How many are inspired by Roman mythology?	0.2655
+56	What superheroes are in the Justice League?	1	train	22950	question	What is the parent organization of the International Court of Justice?	0.4276
+56	What superheroes are in the Justice League?	2	train	22791	question	What is the parent organization for the International Court of Justice?	0.4276
+56	What superheroes are in the Justice League?	3	train	22950	paraphrased_question	What is the parent organization of the Universal Court of Justice?	0.4095
+56	What superheroes are in the Justice League?	4	train	22791	paraphrased_question	What is the parent organization for the Universal Court of Justice?	0.4095
+56	What superheroes are in the Justice League?	5	test	28778	question	Which is the season start for the A-League?	0.3885
+57	Name all annual events happening in Pershing County.	1	train	25697	question	Name a recurring event happening in the Pershing County that starts with letter B	0.5395
+57	Name all annual events happening in Pershing County.	2	train	25697	paraphrased_question	Title a repeating occasion happening within the Pershing District that begins with letter B	0.3852
+57	Name all annual events happening in Pershing County.	3	test	25293	question	What recurring event with the word burning in its name takes place in the administrative territorial entity of Pershing County?	0.2925
+57	Name all annual events happening in Pershing County.	4	train	9570	question	What is the name of All_in_the_Family ?	0.2870
+57	Name all annual events happening in Pershing County.	5	train	14522	question	What geological events happen in the Inyo County in California?	0.2736
+58	What kinds of structures are found at Aït Benhaddou?	1	train	26379	question	What is the list of monument at the Aït Benhaddou?	0.6357
+58	What kinds of structures are found at Aït Benhaddou?	2	train	17532	paraphrased_question	What kinds of people live in Odoacer?	0.2478
+58	What kinds of structures are found at Aït Benhaddou?	3	train	22918	question	What kinds of symptoms does aspirin treat?	0.2419
+58	What kinds of structures are found at Aït Benhaddou?	4	test	1998	paraphrased_question	How many different kinds of iPhones are there?	0.2306
+58	What kinds of structures are found at Aït Benhaddou?	5	train	15799	question	Who written the prequel of The Structures of Everyday Life?	0.2303
+59	What biographical articles or books does the Library of Congress of Chile have about Bernardo O'Higgins?	1	train	27207	question	What biographical articles does the Library of Congress of Chile have about Bernardo O'Higgins?	0.9515
+59	What biographical articles or books does the Library of Congress of Chile have about Bernardo O'Higgins?	2	train	7898	question	What is the { population } method for { Libertador General Bernardo O'Higgins Region } as { 696369.0 }?	0.3429
+59	What biographical articles or books does the Library of Congress of Chile have about Bernardo O'Higgins?	3	train	15075	question	What is total fertility rate  in the principal area of Libertador General Bernardo O'Higgins Region	0.3354
+59	What biographical articles or books does the Library of Congress of Chile have about Bernardo O'Higgins?	4	train	7898	paraphrased_question	What population method was used to determine the population of Libertador General Bernardo O'Higgins Region as 696369.0?	0.3198
+59	What biographical articles or books does the Library of Congress of Chile have about Bernardo O'Higgins?	5	train	15075	paraphrased_question	What is add up to richness rate within the vital region of Libertador Common Bernardo O'Higgins Region	0.3035
+60	What public statues are found in Rennes today?	1	train	28864	question	What are list of monuments in Rennes?	0.3881
+60	What public statues are found in Rennes today?	2	test	21281	paraphrased_question	Who is today's pope?	0.3710
+60	What public statues are found in Rennes today?	3	train	27893	question	Which is the Gertrude identifier for Rennes?	0.3174
+60	What public statues are found in Rennes today?	4	train	11617	paraphrased_question	Who presents The Today Appear and when does it end?	0.2706
+60	What public statues are found in Rennes today?	5	train	4734	question	When did Henri Fréville become the head of government of Rennes?	0.2569
+61	What complete and incomplete operas has Claude Debussy composed?	1	train	30180	question	What operas has Claude Debussy composed?	0.9097
+61	What complete and incomplete operas has Claude Debussy composed?	2	train	20840	question	Name the piano composition composed by Claude Debussy?	0.5596
+61	What complete and incomplete operas has Claude Debussy composed?	3	train	21896	paraphrased_question	Who was the stepfather of Claude Debussy?	0.5003
+61	What complete and incomplete operas has Claude Debussy composed?	4	train	21896	question	Who was the stepfather of Claude Debussy?	0.5003
+61	What complete and incomplete operas has Claude Debussy composed?	5	train	22727	question	Which operas are in Russian?	0.4241
+62	Who are the publishers for Civilization video games?	1	train	1131	question	Who are the publishers for Civilization?	0.7834
+62	Who are the publishers for Civilization video games?	2	train	24077	paraphrased_question	What are the video games which start with the letter W?	0.4732
+62	Who are the publishers for Civilization video games?	3	test	19984	paraphrased_question	Nintendo published which video games?	0.4342
+62	Who are the publishers for Civilization video games?	4	train	1459	paraphrased_question	How many publishers does Wolfenstein Have?	0.4117
+62	Who are the publishers for Civilization video games?	5	train	1131	paraphrased_question	Civilization is published by who?	0.3859
+63	What generic drugs are Integrase Strand Transfer Inhibitors?	1	train	27710	question	Which is the name in native language for Paul Strand?	0.3543
+63	What generic drugs are Integrase Strand Transfer Inhibitors?	2	train	27337	question	Which is the strand orientation for RHO?	0.3315
+63	What generic drugs are Integrase Strand Transfer Inhibitors?	3	train	15344	question	In what species is the generic association of Hepatitis B found?	0.3183
+63	What generic drugs are Integrase Strand Transfer Inhibitors?	4	test	2067	question	what are the drugs used for the {ibuprofen} ?	0.2707
+63	What generic drugs are Integrase Strand Transfer Inhibitors?	5	train	8718	question	What generic association is Asperger syndrome to determine the method of TAS?	0.2660
+64	What cities are referenced in the Buddenbrooks?	1	train	1447	question	What cities are the Buddenbrooks set in?	0.6617
+64	What cities are referenced in the Buddenbrooks?	2	train	1447	paraphrased_question	What locations are the Buddenbrooks set in?	0.4322
+64	What cities are referenced in the Buddenbrooks?	3	train	6292	question	Where did Buddenbrooks play Bendix Grunlich?	0.3175
+64	What cities are referenced in the Buddenbrooks?	4	train	853	paraphrased_question	Is The Emperor's New Clothes and Eulalie referenced by Lolita?	0.3172
+64	What cities are referenced in the Buddenbrooks?	5	train	6292	paraphrased_question	Where did  Buddenbrooks vs Bendix Grunlich happen?	0.2768
+65	What runways are available in LAX?	1	train	3617	paraphrased_question	What runways in LAX are made of concrete?	0.6838
+65	What runways are available in LAX?	2	test	21448	paraphrased_question	Not available	0.3886
+65	What runways are available in LAX?	3	train	21449	paraphrased_question	Not available	0.3886
+65	What runways are available in LAX?	4	train	3617	question	Which runway in LAX are made of concrete?	0.3613
+65	What runways are available in LAX?	5	train	1638	paraphrased_question	Tokyo International Airport has how many runways?	0.3600
+66	List all the musicals for which Jonathan Larson received Drama Desk Award nominations.	1	train	3663	paraphrased_question	For which award was Jonathan Larson nominated in the year 2002?	0.4501
+66	List all the musicals for which Jonathan Larson received Drama Desk Award nominations.	2	train	3663	question	What was Jonathan Larson nominated for in 2002?	0.4411
+66	List all the musicals for which Jonathan Larson received Drama Desk Award nominations.	3	train	8778	paraphrased_question	Drama Desk Award nominations for Outstanding Play included August Wilson in what year?	0.4162
+66	List all the musicals for which Jonathan Larson received Drama Desk Award nominations.	4	test	21505	question	Which Drama Desk Award did Lena Horne win?	0.3197
+66	List all the musicals for which Jonathan Larson received Drama Desk Award nominations.	5	train	8778	question	When did August Wilson get nominated for the Drama Desk Award for Outstanding Play?	0.2993
+67	What counties of North Dakota are located, in whole or part, within the Mountain Time Zone?	1	train	5142	question	What part of North Dakota is located in the Mountain Time Zone?	0.7874
+67	What counties of North Dakota are located, in whole or part, within the Mountain Time Zone?	2	train	5142	paraphrased_question	Give me the part of North Dakota that is located in the Mountain Time Zone.	0.7261
+67	What counties of North Dakota are located, in whole or part, within the Mountain Time Zone?	3	test	28364	question	What is North Dakota's history?	0.4539
+67	What counties of North Dakota are located, in whole or part, within the Mountain Time Zone?	4	train	13225	question	Is Torreon in the Mountain Time Zone?	0.3558
+67	What counties of North Dakota are located, in whole or part, within the Mountain Time Zone?	5	train	9384	paraphrased_question	Does Minnesota share borders with North Dakota?	0.3246
+68	What major singles titles has Serena Williams won?	1	train	5999	question	What was Serena Williams nominated for in the time period of 2000-2009?	0.4109
+68	What major singles titles has Serena Williams won?	2	train	221	question	On the list, is Serena Williams the first African-American ethnic group?	0.3935
+68	What major singles titles has Serena Williams won?	3	train	5999	paraphrased_question	What was Serena Williams designated for in the time frame of 2000-2009?	0.3673
+68	What major singles titles has Serena Williams won?	4	train	221	paraphrased_question	On the African-American ethnic group list, does Serena Williams come in first?	0.3665
+68	What major singles titles has Serena Williams won?	5	train	28559	question	Tell me the Sports-Reference.com Olympic athlete ID of Serena Williams.	0.3521
+69	"For which categories was ""Crouching Tiger, Hidden Dragon"" nominated at the 73rd Academy Awards?"	1	train	6246	paraphrased_question	"nominated for the 73rd Academy Awards, what was the ""Crouching Tiger, Hidden Dragon""?"	0.9395
+69	"For which categories was ""Crouching Tiger, Hidden Dragon"" nominated at the 73rd Academy Awards?"	2	train	6246	question	"What was ""Crouching Tiger, Hidden Dragon"" nominated for on the 73rd Academy Awards?"	0.9395
+69	"For which categories was ""Crouching Tiger, Hidden Dragon"" nominated at the 73rd Academy Awards?"	3	train	29654	question	Which is the Netflix ID for Crouching Tiger, Hidden Dragon?	0.6547
+69	"For which categories was ""Crouching Tiger, Hidden Dragon"" nominated at the 73rd Academy Awards?"	4	train	4760	paraphrased_question	La Dolce Vita was nominated for what categories at the 34th Academy Awards?	0.2974
+69	"For which categories was ""Crouching Tiger, Hidden Dragon"" nominated at the 73rd Academy Awards?"	5	train	2050	question	How many categories are at the library?	0.2502
+70	For which of the 64th Academy Awards was Silence of the Lambs not nominated?	1	train	6254	paraphrased_question	What work by Silence of the Lambs was nominated for 64th Academy award?	0.8514
+70	For which of the 64th Academy Awards was Silence of the Lambs not nominated?	2	train	6254	question	What nominations did Silence of the Lambs receive for the 64th Academy Awards?	0.8010
+70	For which of the 64th Academy Awards was Silence of the Lambs not nominated?	3	train	29032	question	On FilmTv.it, what is the movie ID for The Silence of the Lambs?	0.5007
+70	For which of the 64th Academy Awards was Silence of the Lambs not nominated?	4	train	28177	question	Which is Elonet movie ID for The Silence of the Lambs?	0.4968
+70	For which of the 64th Academy Awards was Silence of the Lambs not nominated?	5	train	7068	paraphrased_question	Which award was Juliette Lewis nominated for at the 64th Academy Awards?	0.4707
+71	What transport brands does Flix SE operate?	1	train	2382	question	How many brands does Coca-Cola have?	0.3368
+71	What transport brands does Flix SE operate?	2	train	2382	paraphrased_question	There are how many brands of Coca-Cola?	0.3175
+71	What transport brands does Flix SE operate?	3	train	29693	question	Which is the net profit for SAP SE?	0.2914
+71	What transport brands does Flix SE operate?	4	train	1623	question	How many brands are there for Procter & Gamble?	0.2872
+71	What transport brands does Flix SE operate?	5	train	1295	question	How many brands are there for Procter & Gamble?	0.2872
+72	What studio albums did the Rolling Stones release?	1	train	7441	paraphrased_question	In 1989 the Rolling Stones were nominated for what awards?	0.4787
+72	What studio albums did the Rolling Stones release?	2	train	7441	question	What awards were the Rolling Stones nominated for in 1989?	0.4787
+72	What studio albums did the Rolling Stones release?	3	train	20028	paraphrased_question	Rolling Stones magazine published which article?	0.4461
+72	What studio albums did the Rolling Stones release?	4	train	20028	question	Which article was published in Rolling Stones magazine?	0.4461
+72	What studio albums did the Rolling Stones release?	5	test	44	question	is it true that the genre of the Rolling Stones is British blues?	0.4157
+73	For which movies did Daniel Day-Lewis win a BAFTA for acting?	1	train	205	paraphrased_question	Is Michael Balcon related to Daniel Day-Lewis?	0.4025
+73	For which movies did Daniel Day-Lewis win a BAFTA for acting?	2	train	205	question	Are Daniel Day-Lewis and Michael Balcon related?	0.4025
+73	For which movies did Daniel Day-Lewis win a BAFTA for acting?	3	train	20981	paraphrased_question	Which movies did Jerry Lewis appear in?	0.3601
+73	For which movies did Daniel Day-Lewis win a BAFTA for acting?	4	train	154	paraphrased_question	Did Cher win the BAFTA for Best Actress in a Leading Role?	0.2755
+73	For which movies did Daniel Day-Lewis win a BAFTA for acting?	5	test	22867	paraphrased_question	Which character of the film is Ben Afflect acting?	0.2523
+74	What episodes formed the first season of Adventure Time?	1	train	8152	question	What was Adventure Time nominated for in 2010?	0.4357
+74	What episodes formed the first season of Adventure Time?	2	test	6992	question	How many episodes are in Supernatural season 12.0?	0.3891
+74	What episodes formed the first season of Adventure Time?	3	train	1072	paraphrased_question	Adventure Time has what number of executive producers?	0.3682
+74	What episodes formed the first season of Adventure Time?	4	train	8152	paraphrased_question	For what did Adventure Time earn a 2010 nomination?	0.3662
+74	What episodes formed the first season of Adventure Time?	5	train	1072	question	How many executive producers work on Adventure Time?	0.3624
+75	What countries do not celebrate Christmas as a national public holiday?	1	train	8932	question	What countries celebrate Christmas as a public holiday?	0.8960
+75	What countries do not celebrate Christmas as a national public holiday?	2	train	8932	paraphrased_question	Which nations observe Christmas as a public holiday?	0.4998
+75	What countries do not celebrate Christmas as a national public holiday?	3	train	22779	paraphrased_question	What is the public holiday / festival in Belarus to celebrate Jesus ' resurrection.	0.4535
+75	What countries do not celebrate Christmas as a national public holiday?	4	train	22680	question	What countries celebrate Chinese New Year?	0.4400
+75	What countries do not celebrate Christmas as a national public holiday?	5	train	24148	question	which  public holiday that starts with s	0.4359
+76	Who has received the Major League Baseball Most Valuable Player Award after 2000?	1	train	9145	question	Who besides Hank Aaron has received the Major League Baseball Most Valuable Player Award?	0.7057
+76	Who has received the Major League Baseball Most Valuable Player Award after 2000?	2	train	6725	question	When did Bill Russell receive the NBA most valuable player award?	0.4339
+76	Who has received the Major League Baseball Most Valuable Player Award after 2000?	3	train	6725	paraphrased_question	In what year did the NBA Most Valuable Player Award go to Bill Russell?	0.4147
+76	Who has received the Major League Baseball Most Valuable Player Award after 2000?	4	train	4009	question	When did Kevin Garnett receive the NBA Most Valuable Player Award?	0.4133
+76	Who has received the Major League Baseball Most Valuable Player Award after 2000?	5	train	9145	paraphrased_question	Besides Hank Aaron, who has received the Major League Baseball MVP Award?	0.4084
+77	Who are the current members of the Board of Directors of BP?	1	train	9752	question	Who are the members of BP and their chairperson?	0.5111
+77	Who are the current members of the Board of Directors of BP?	2	train	14628	question	What is the cause of death of the member of the board of directors, A.C. Milan?	0.4032
+77	Who are the current members of the Board of Directors of BP?	3	test	20222	paraphrased_question	Who is the CEO of BP?	0.3970
+77	Who are the current members of the Board of Directors of BP?	4	test	20222	question	Who is the CEO of BP?	0.3970
+77	Who are the current members of the Board of Directors of BP?	5	train	15856	question	Who was member of the board of the directors and developer of Mac OS?	0.3783
+78	What are the weapons of Kālī?	1	train	9800	question	What are the weapons of the followers of Kali?	0.8446
+78	What are the weapons of Kālī?	2	train	10202	paraphrased_question	Kali is what armament and gender?	0.4542
+78	What are the weapons of Kālī?	3	train	9800	paraphrased_question	What do the followers of Kali use to fight?	0.4184
+78	What are the weapons of Kālī?	4	train	10202	question	What is {armament} and the {sex or gender} of {Kali} ?	0.4034
+78	What are the weapons of Kālī?	5	train	15200	question	Which is {official language} {is in the department of} {Kali Penjalin} ?	0.3811
+79	"What singles were released by Petula Clark besides ""Downtown""?"	1	train	12739	question	"What is a song played by Petula Clark, besides ""Downtown""?"	0.7483
+79	"What singles were released by Petula Clark besides ""Downtown""?"	2	train	12739	paraphrased_question	"What is a song played with the aid of Petula Clark, besides ""Downtown""?"	0.6974
+79	"What singles were released by Petula Clark besides ""Downtown""?"	3	train	11836	paraphrased_question	Who was the male actor in Downtown Abbey	0.2447
+79	"What singles were released by Petula Clark besides ""Downtown""?"	4	train	26776	question	Which is the singles record of Novak Djokovic?	0.2347
+79	"What singles were released by Petula Clark besides ""Downtown""?"	5	train	11836	question	What actor in Downtown Abbey is of male gender?	0.2245
+80	What military ranks have the NATO grade OF-8?	1	train	26371	question	Which is the NATO code for grade of lieutenant general?	0.4660
+80	What military ranks have the NATO grade OF-8?	2	train	13005	question	What is the equivalent of Vice Admiral that has the NATO code for grade OF-8?	0.4623
+80	What military ranks have the NATO grade OF-8?	3	train	1321	question	How many military ranks are for Alexander Suvorov?	0.4568
+80	What military ranks have the NATO grade OF-8?	4	train	2034	question	How many shogun military ranks are there?	0.4524
+80	What military ranks have the NATO grade OF-8?	5	train	1321	paraphrased_question	Alex Suvorov has how many military ranks?	0.4305
+81	What cantons are in the Hautes-Pyrenees district?	1	train	13700	question	What wards are in the Hautes-Pyrenees district?	0.8746
+81	What cantons are in the Hautes-Pyrenees district?	2	train	13700	paraphrased_question	What wards are within the Hautes-Pyrenees district?	0.8313
+81	What cantons are in the Hautes-Pyrenees district?	3	train	3538	paraphrased_question	Which region in Pyrenees-Orientales produces the least amount of wine?	0.2670
+81	What cantons are in the Hautes-Pyrenees district?	4	train	3538	question	Which Pyrénées-Orientales region produces the least amount of wine?	0.2670
+81	What cantons are in the Hautes-Pyrenees district?	5	train	11785	question	What location is Beauty and the Beast set in, that is a rural city in the Midi-Pyrenees?	0.2567
+82	What aircraft do the Kazakh Air and Air Defense Forces utilize?	1	train	14775	question	What aircraft do the Kazakh Air and Air Defense Forces utilize?	1.0000
+82	What aircraft do the Kazakh Air and Air Defense Forces utilize?	2	train	14775	paraphrased_question	What flying machine do the Kazakh Discuss and Discuss Defense Powers utilize?	0.4965
+82	What aircraft do the Kazakh Air and Air Defense Forces utilize?	3	train	20239	paraphrased_question	Air India operated which aircraft unit?	0.3026
+82	What aircraft do the Kazakh Air and Air Defense Forces utilize?	4	train	29876	question	Air India operates which aircraft model ?	0.2955
+82	What aircraft do the Kazakh Air and Air Defense Forces utilize?	5	train	20239	question	who aircraft family for item operated of Air India?	0.2736
+83	Who are the sons of Francis Daniel Crean?	1	train	15003	question	Who are the daughters of Frank Crean?	0.4194
+83	Who are the sons of Francis Daniel Crean?	2	train	15003	paraphrased_question	Who are the girls of Straight to the point Crean?	0.3824
+83	Who are the sons of Francis Daniel Crean?	3	test	15083	paraphrased_question	what is sons of portrait	0.3433
+83	Who are the sons of Francis Daniel Crean?	4	train	27810	question	What is Francis's religious name?	0.2930
+83	Who are the sons of Francis Daniel Crean?	5	train	27251	question	Which is the name of Francis given to him?	0.2626
+84	"What instruments are included in the original score for ""In questa reggia""?"	1	train	15227	question	"What instruments do the musicians use within ""In questa reggia""?"	0.6255
+84	"What instruments are included in the original score for ""In questa reggia""?"	2	train	15228	paraphrased_question	"What rebellious do the artists utilize inside ""In questa reggia""?"	0.4407
+84	"What instruments are included in the original score for ""In questa reggia""?"	3	train	15227	paraphrased_question	"What disobedient do the performers utilize inside ""In questa reggia""?"	0.4291
+84	"What instruments are included in the original score for ""In questa reggia""?"	4	train	1627	question	How many instruments are used in The Carnival of the Animals score?	0.2979
+84	"What instruments are included in the original score for ""In questa reggia""?"	5	train	1627	paraphrased_question	The Carnival of the Animals score uses how many instruments?	0.2890
+85	Who are the biological children of Jens Breivik's spouses?	1	train	15353	question	Who are the children of Jens Breivik's husband?	0.7326
+85	Who are the biological children of Jens Breivik's spouses?	2	train	15353	paraphrased_question	Tell me who Jens Breivik's spouse's children are?	0.7175
+85	Who are the biological children of Jens Breivik's spouses?	3	test	15797	paraphrased_question	Who are the children of the spouses of Philip II of France?	0.3731
+85	Who are the biological children of Jens Breivik's spouses?	4	train	1484	question	How many spouses does the Kangxi Emperor have?	0.2520
+85	Who are the biological children of Jens Breivik's spouses?	5	train	1156	question	How many spouses did Rezā Shāh have?	0.2424
+86	What municipalities are in the Province of Catania?	1	train	15396	question	The country of Catania has which cities?	0.4773
+86	What municipalities are in the Province of Catania?	2	train	15396	paraphrased_question	The nation of Catania has which cities?	0.4581
+86	What municipalities are in the Province of Catania?	3	train	4739	question	What was the population of Catania in 2017-1-1?	0.4552
+86	What municipalities are in the Province of Catania?	4	train	4739	paraphrased_question	What was Catania's population at the start of 2017?	0.4437
+86	What municipalities are in the Province of Catania?	5	train	15195	question	What are the municipalities in the History of Northern Ireland?	0.3706
+87	What mammal species are held by the Los Angeles Zoo?	1	train	15578	paraphrased_question	What species are held by the members of the More noteworthy Los Angeles Zoo Assocation?	0.6003
+87	What mammal species are held by the Los Angeles Zoo?	2	train	15578	question	What species are held by the affiliates of the Greater Los Angeles Zoo Assocation?	0.5986
+87	What mammal species are held by the Los Angeles Zoo?	3	train	22020	question	What airport is in Los Angeles?	0.4438
+87	What mammal species are held by the Los Angeles Zoo?	4	train	21072	question	Name a city next to LOS angeles	0.4134
+87	What mammal species are held by the Los Angeles Zoo?	5	train	26671	question	The Banglapedia ID for mammal is?	0.3821
+88	What awards has Gene Wolfe received?	1	train	15742	question	What awards has Gene Wolfe received?	1.0000
+88	What awards has Gene Wolfe received?	2	train	5199	question	What was Gene Wolfe nominated for in 1990?	0.6478
+88	What awards has Gene Wolfe received?	3	train	5199	paraphrased_question	Which award was Gene Wolfe nominated for in 1990?	0.6268
+88	What awards has Gene Wolfe received?	4	train	15742	paraphrased_question	What grants has Quality Wolfe received?	0.5461
+88	What awards has Gene Wolfe received?	5	train	22229	paraphrased_question	Which awards has John Steinbeck received?	0.3689
+89	Who were the spouses of Devora Ben-Yehuda's siblings?	1	train	15814	question	Who are the partners of Devora Ben-Yehuda's siblings?	0.8248
+89	Who were the spouses of Devora Ben-Yehuda's siblings?	2	train	15814	paraphrased_question	Who are the accomplices of Devora Ben-Yehuda's siblings?	0.8016
+89	Who were the spouses of Devora Ben-Yehuda's siblings?	3	test	15797	paraphrased_question	Who are the children of the spouses of Philip II of France?	0.2468
+89	Who were the spouses of Devora Ben-Yehuda's siblings?	4	train	1484	question	How many spouses does the Kangxi Emperor have?	0.2446
+89	Who were the spouses of Devora Ben-Yehuda's siblings?	5	train	9566	paraphrased_question	What are the names of Krishna's father and siblings?	0.2379
+90	What artists or bands have recorded a studio version of Please Don't Make My Cry?	1	train	15884	question	Who has played Please Don't Make My Cry?	0.7492
+90	What artists or bands have recorded a studio version of Please Don't Make My Cry?	2	train	15884	paraphrased_question	Give me the name of the person that has played Please Don't Make Me Cry.	0.6053
+90	What artists or bands have recorded a studio version of Please Don't Make My Cry?	3	train	15347	question	What did wives composed Please Don't Eat the Daisies?	0.2987
+90	What artists or bands have recorded a studio version of Please Don't Make My Cry?	4	train	23369	paraphrased_question	Studio of the film	0.2441
+90	What artists or bands have recorded a studio version of Please Don't Make My Cry?	5	train	23369	question	film studio	0.2441
+91	What islands greater than 40 hectares are found in Loch Lomond?	1	train	15977	paraphrased_question	What countries border Loch Lomond?	0.5636
+91	What islands greater than 40 hectares are found in Loch Lomond?	2	train	28702	question	Which is located in protected area for Loch Lomond?	0.5166
+91	What islands greater than 40 hectares are found in Loch Lomond?	3	train	15977	question	What basin counties border Loch Lomond?	0.4881
+91	What islands greater than 40 hectares are found in Loch Lomond?	4	train	18515	question	Is the atomic number of argon-40 greater than 21.6?	0.3038
+91	What islands greater than 40 hectares are found in Loch Lomond?	5	train	18754	question	Is it true that the Gini coefficient of France is greater than 40.02?	0.2912
+92	Which women voiced part of Naked to the Limit, One More Time?	1	train	16672	question	Who are the women who voiced part of Naked to the Limit, One More Time?	1.0000
+92	Which women voiced part of Naked to the Limit, One More Time?	2	train	16672	paraphrased_question	Who are the ladies who voiced portion of Bare to the Constrain, One More Time?	0.3893
+92	Which women voiced part of Naked to the Limit, One More Time?	3	train	17511	question	Who is voiced by in the part of series of Life with Feathers?	0.2932
+92	Which women voiced part of Naked to the Limit, One More Time?	4	train	1992	paraphrased_question	What is the population of women?	0.2782
+92	Which women voiced part of Naked to the Limit, One More Time?	5	train	2376	paraphrased_question	What is the population of women?	0.2782
+93	Which commanders did Scipio Africanus fight against while he was commander?	1	train	16800	paraphrased_question	Scipio Africanus fought against whom?	0.6042
+93	Which commanders did Scipio Africanus fight against while he was commander?	2	train	16800	question	Who fought against Scipio Africanus?	0.6042
+93	Which commanders did Scipio Africanus fight against while he was commander?	3	train	1430	question	How many commanders does Erich von Manstein have?	0.2373
+93	Which commanders did Scipio Africanus fight against while he was commander?	4	train	1430	paraphrased_question	Which is the number of the commanders that Erich von Manstein have?	0.2330
+93	Which commanders did Scipio Africanus fight against while he was commander?	5	train	26840	question	Who is the commander of the air force?	0.2206
+94	Which leaders are playable in Civilization V: Gods & Kings?	1	train	16955	question	Who are the characters of the series Civilization V: Gods & Kings?	0.6706
+94	Which leaders are playable in Civilization V: Gods & Kings?	2	train	16955	paraphrased_question	Who are the characters of the arrangement Civilization V: Divine beings & Kings?	0.3817
+94	Which leaders are playable in Civilization V: Gods & Kings?	3	train	1131	paraphrased_question	Civilization is published by who?	0.2754
+94	Which leaders are playable in Civilization V: Gods & Kings?	4	train	1589	question	How many Kings are for Louis the Pious?	0.2597
+94	Which leaders are playable in Civilization V: Gods & Kings?	5	train	1589	paraphrased_question	What is the number of kings for Louis the Pious?	0.2579
+95	What are the tributaries of the Madeira River?	1	train	17180	question	What is a tributary of the Madeira River:	0.6860
+95	What are the tributaries of the Madeira River?	2	train	17180	paraphrased_question	What could be a tributary of the Madeira River:	0.6011
+95	What are the tributaries of the Madeira River?	3	test	1251	question	How many tributaries does Arkansas River have ?	0.5532
+95	What are the tributaries of the Madeira River?	4	train	2094	paraphrased_question	How many tributaries does the Yukon River have?	0.5501
+95	What are the tributaries of the Madeira River?	5	test	1251	paraphrased_question	Which is the number of the tributaries that Arkansas river have?	0.5375
+96	What films has Ellen DeGeneres produced?	1	train	20096	question	What films has Ellen DeGeneres produced?	1.0000
+96	What films has Ellen DeGeneres produced?	2	train	22412	question	Which album has Ellen DeGeneres produced?	0.7846
+96	What films has Ellen DeGeneres produced?	3	train	22412	paraphrased_question	Which collection has Ellen DeGeneres produced?	0.7830
+96	What films has Ellen DeGeneres produced?	4	train	20096	paraphrased_question	Ellen DeGeneres is the producer of which films?	0.7799
+96	What films has Ellen DeGeneres produced?	5	train	30030	question	What television program is produced by Ellen DeGeneres?	0.6826
+97	Who were Ip Man's students?	1	train	20136	question	Who was Ip Man's student?	0.7437
+97	Who were Ip Man's students?	2	train	20136	paraphrased_question	Who was the student of Ip Man?	0.7089
+97	Who were Ip Man's students?	3	train	3753	paraphrased_question	Tell me Heidelberg University's IP address?	0.3952
+97	Who were Ip Man's students?	4	train	24688	question	Tell me the IP network which starts with the letter i!	0.3832
+97	Who were Ip Man's students?	5	train	3753	question	What was the IP address of Heidelberg University?	0.3820
+98	Who are Burt Lancaster's children?	1	train	20282	paraphrased_question	Who are Burt Lancaster's children?	1.0000
+98	Who are Burt Lancaster's children?	2	train	20282	question	Who are Burt Lancaster's children?	1.0000
+98	Who are Burt Lancaster's children?	3	train	3804	question	What was Burt Lancaster nominated for in 1953?	0.6964
+98	Who are Burt Lancaster's children?	4	train	3804	paraphrased_question	nominated in 1953, what was the title of Burt Lancaster?	0.6665
+98	Who are Burt Lancaster's children?	5	train	19134	paraphrased_question	What is the Lancaster's wing area?	0.4664
+99	What radio stations currently broadcast in Esperanto?	1	train	21769	paraphrased_question	Who made Esperanto?	0.3248
+99	What radio stations currently broadcast in Esperanto?	2	train	21769	question	Who created Esperanto?	0.3173
+99	What radio stations currently broadcast in Esperanto?	3	train	20014	question	Who discovered Esperanto?	0.3038
+99	What radio stations currently broadcast in Esperanto?	4	train	29073	question	Who is licensed to broadcast to CBS?	0.2868
+99	What radio stations currently broadcast in Esperanto?	5	train	29547	question	Which is the license to broadcast to Billings?	0.2775
+100	What novels did Truman Capote write?	1	train	20458	question	What books did author Truman Capote write?	0.8361
+100	What novels did Truman Capote write?	2	train	20390	question	Truman Capote wrote what famous writing??	0.6418
+100	What novels did Truman Capote write?	3	train	20390	paraphrased_question	Truman Capote composed what popular composing??	0.6143
+100	What novels did Truman Capote write?	4	train	28741	question	Which is the Movie Walker ID of The Truman Show?	0.3243
+100	What novels did Truman Capote write?	5	train	22215	question	How do you write in Korean?	0.2897
+101	What are the business divisions of Ford Motor Company?	1	train	29802	question	Which business is Ford Motor Company in?	0.8750
+101	What are the business divisions of Ford Motor Company?	2	train	20570	question	Name a business division owned by Ford Motor Company	0.7059
+101	What are the business divisions of Ford Motor Company?	3	train	22745	question	What is Ford Motor Company's car manufacturer for its business division?	0.6293
+101	What are the business divisions of Ford Motor Company?	4	train	29973	question	Which is the automobile marque for the business division of Ford Motor Company?	0.6163
+101	What are the business divisions of Ford Motor Company?	5	train	21434	question	Who is the {human} for {chief executive officer} of {Ford Motor Company}	0.5374
+102	What commanders fought in the Battle of Austerlitz?	1	train	20801	question	What armies fought in the Battle of Austerlitz?	0.6789
+102	What commanders fought in the Battle of Austerlitz?	2	train	21699	question	Who won the Battle of Austerlitz?	0.5823
+102	What commanders fought in the Battle of Austerlitz?	3	train	20801	paraphrased_question	What armies were fighting in the Austerlitz Battle?	0.4351
+102	What commanders fought in the Battle of Austerlitz?	4	train	21699	paraphrased_question	Who declared victory during the Battle of Austerlitz?	0.4247
+102	What commanders fought in the Battle of Austerlitz?	5	train	9535	question	Where was the location of the Battle of Gettysburg and who were the participation that fought in that war?	0.3527
+103	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	1	train	20854	question	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	1.0000
+103	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	2	train	22156	question	What are the names of the characters in E.T. the Extra-Terrestrial?	0.9436
+103	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	3	train	20854	paraphrased_question	What are the names of the characters from the motion picture E.T. The Extra-Terrestrial?	0.8216
+103	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	4	train	11445	paraphrased_question	What is the E.T. award? The Extra - Terrestrial received it, and when did he receive it?	0.6672
+103	What are the names of the characters from the movie E.T. The Extra-Terrestrial?	5	train	11445	question	which award E.T. the Extra-Terrestrial did receive and at what time he got it?	0.6390
+104	Which singles with Loretta Lynn reached No. 1 on the Billboard Hot Country Songs chart?	1	train	22385	paraphrased_question	What were Loretta Lynn's awards?	0.3882
+104	Which singles with Loretta Lynn reached No. 1 on the Billboard Hot Country Songs chart?	2	train	21240	question	Name the sibling of Loretta Lynn.	0.3687
+104	Which singles with Loretta Lynn reached No. 1 on the Billboard Hot Country Songs chart?	3	train	20859	question	What music from Loretta Lynn received an award?	0.3601
+104	Which singles with Loretta Lynn reached No. 1 on the Billboard Hot Country Songs chart?	4	train	22385	question	What awards has Loretta Lynn won?	0.3556
+104	Which singles with Loretta Lynn reached No. 1 on the Billboard Hot Country Songs chart?	5	train	21240	paraphrased_question	Title the kin of Loretta Lynn.	0.3432
+105	With which tennis players has Billie Jean King won Grand Slams in doubles or mixed doubles?	1	train	21018	question	What tennis awards has Billie Jean King won?	0.6442
+105	With which tennis players has Billie Jean King won Grand Slams in doubles or mixed doubles?	2	train	21018	paraphrased_question	What have Billie Jean King won tennis awards?	0.6295
+105	With which tennis players has Billie Jean King won Grand Slams in doubles or mixed doubles?	3	train	1933	question	How many won by Billie Jean King?	0.5611
+105	With which tennis players has Billie Jean King won Grand Slams in doubles or mixed doubles?	4	train	1933	paraphrased_question	Now many awards were won by Billie Jean King	0.4664
+105	With which tennis players has Billie Jean King won Grand Slams in doubles or mixed doubles?	5	test	1404	paraphrased_question	What is the number of victories by Billie Jean King?	0.4008
+106	Who were Johann Wolfgang von Goethe's grandparents?	1	train	20619	paraphrased_question	Who is Johann Wolfgang von Goethe's partner?	0.9355
+106	Who were Johann Wolfgang von Goethe's grandparents?	2	train	20619	question	Who is Johann Wolfgang von Goethe's partner?	0.9355
+106	Who were Johann Wolfgang von Goethe's grandparents?	3	train	21035	paraphrased_question	Who were Johann Wolfgang von Goethe's students?	0.9144
+106	Who were Johann Wolfgang von Goethe's grandparents?	4	train	21035	question	Who was the student of Johann Wolfgang von Goethe?	0.9091
+106	Who were Johann Wolfgang von Goethe's grandparents?	5	test	27590	question	What is Johann Wolfgang von Goethe's Biography ID?	0.8694
+107	Which oblasts formed the Soviet Union at the time of its dissolution?	1	train	21342	question	Who is the person in the significant event of the dissolution of the Soviet Union?	0.6268
+107	Which oblasts formed the Soviet Union at the time of its dissolution?	2	train	21085	question	Which countries were located within the Soviet Union prior to its dissolution?	0.5635
+107	Which oblasts formed the Soviet Union at the time of its dissolution?	3	train	21085	paraphrased_question	Which nations were found inside the Soviet Union earlier to its dissolution?	0.5329
+107	Which oblasts formed the Soviet Union at the time of its dissolution?	4	test	22945	question	What was and is the currency of the Soviet Union?	0.4451
+107	Which oblasts formed the Soviet Union at the time of its dissolution?	5	train	10204	paraphrased_question	What is the head of state of the Soviet Union?	0.4379
+108	Who were the emperors of the Yuan dynasty?	1	test	20421	question	What is the battle for Yuan dynasty's country ?	0.5697
+108	Who were the emperors of the Yuan dynasty?	2	train	21472	question	What Chinese dynasty replaced the Yuan dynasty?	0.5633
+108	Who were the emperors of the Yuan dynasty?	3	train	21316	question	What Chinese dynasty followed the Yuan dynasty?	0.5536
+108	Who were the emperors of the Yuan dynasty?	4	test	20421	paraphrased_question	What is the fight for Yuan dynasty's nation ?	0.5370
+108	Who were the emperors of the Yuan dynasty?	5	train	21316	paraphrased_question	What was the Chinese dynasty after the Yuan called?	0.5191
+109	By which enzymes is methadone metabolized?	1	train	26087	question	Which is the active ingredient for methadone?	0.6499
+109	By which enzymes is methadone metabolized?	2	train	20313	question	What disease does RS-methadone treat	0.5626
+109	By which enzymes is methadone metabolized?	3	train	20313	paraphrased_question	RS-methadone treats what disease?	0.5429
+109	By which enzymes is methadone metabolized?	4	train	21554	question	(RS)-methadone physically interacts with which protein?	0.4855
+109	By which enzymes is methadone metabolized?	5	train	29525	question	What drugs react significantly with methadone?	0.4717
+110	Which states contain or border Lüneburg?	1	train	25018	paraphrased_question	"Name a University that contain the word ""virginia "" in its name"	0.3254
+110	Which states contain or border Lüneburg?	2	train	25018	question	"Name a University that contain the word ""virginia "" in its name"	0.3254
+110	Which states contain or border Lüneburg?	3	test	23391	paraphrased_question	"What painting does the word ""young"" contain in its name?"	0.3170
+110	Which states contain or border Lüneburg?	4	train	24462	question	tell me border whose name has the starts with I in it	0.3146
+110	Which states contain or border Lüneburg?	5	train	23724	paraphrased_question	Which border in its name contains the word line	0.3141
+111	What are the institutions of the European Union?	1	train	1434	question	How many subsidiary are European Union?	0.5376
+111	What are the institutions of the European Union?	2	train	22747	question	What countries are part of the European Union?	0.5152
+111	What are the institutions of the European Union?	3	test	20813	question	What countries are within the European Union?	0.5066
+111	What are the institutions of the European Union?	4	train	22686	question	Where is the European Union headquarters located?	0.4977
+111	What are the institutions of the European Union?	5	train	21624	question	Who is the {national anthem} for {anthem} of {European Union}	0.4946
+112	For what railway stations is Isambard Kingdom Brunel the architect?	1	train	21731	question	For what railway stations is Isambard Kingdom Brunel the architect?	1.0000
+112	For what railway stations is Isambard Kingdom Brunel the architect?	2	train	21731	paraphrased_question	For what railroad stations is Isambard Kingdom Brunel the architect?	0.8415
+112	For what railway stations is Isambard Kingdom Brunel the architect?	3	test	29762	question	Which is the railway bridge completed by architect Isambard Kingdom Brunel?	0.7503
+112	For what railway stations is Isambard Kingdom Brunel the architect?	4	test	22891	question	who bridge for architect of Isambard Kingdom Brunel?	0.7236
+112	For what railway stations is Isambard Kingdom Brunel the architect?	5	test	22891	paraphrased_question	Who bridges Isambard Kingdom Brunel's architect?	0.6615
+113	What solo studio albums were released by Jerry Lee Lewis?	1	train	21845	question	What is the complete list of records released by Jerry Lee Lewis?	0.5953
+113	What solo studio albums were released by Jerry Lee Lewis?	2	train	21845	paraphrased_question	What is the total list of records discharged by Jerry Lee Lewis?	0.4349
+113	What solo studio albums were released by Jerry Lee Lewis?	3	train	22492	question	What record label released the albums of Eminem ?	0.3925
+113	What solo studio albums were released by Jerry Lee Lewis?	4	train	21874	question	Who owns the label that released Korn albums ?	0.3720
+113	What solo studio albums were released by Jerry Lee Lewis?	5	train	861	question	Was Jerry Lee Lewis' record label from Philips and Smash Records?	0.3694
+114	What are the YouTube Play Buttons that are conferred by YouTube?	1	train	21983	paraphrased_question	Which are the YouTube Play Buttons that are conferred by YouTube?	1.0000
+114	What are the YouTube Play Buttons that are conferred by YouTube?	2	train	21983	question	Which are the YouTube Play Buttons that are conferred by YouTube?	1.0000
+114	What are the YouTube Play Buttons that are conferred by YouTube?	3	test	29870	question	Which is the Wikidata property for authority control conferred by YouTube?	0.4339
+114	What are the YouTube Play Buttons that are conferred by YouTube?	4	train	29520	question	Which is conferred by of Tony Award?	0.3812
+114	What are the YouTube Play Buttons that are conferred by YouTube?	5	test	25910	question	Which is conferred by WWE?	0.3652
+115	What Asian television channels have English as their primary language?	1	train	22010	question	What Japanese language television station broadcasts in English?	0.3297
+115	What Asian television channels have English as their primary language?	2	train	30045	question	Which is the language that is influenced by English?	0.2907
+115	What Asian television channels have English as their primary language?	3	train	22730	question	Which is the written work which has English as a language of work?	0.2812
+115	What Asian television channels have English as their primary language?	4	test	13258	question	Who are the creators, who have English as their language created Prince Hamlet?	0.2670
+115	What Asian television channels have English as their primary language?	5	train	20223	question	What language replaced Middle English?	0.2653
+116	Which paintings depict Dante Alighieri?	1	train	21776	paraphrased_question	What does the statue of Dante Alighieri depict	0.7520
+116	Which paintings depict Dante Alighieri?	2	train	21776	question	What does the statue of Dante Alighieri depict	0.7520
+116	Which paintings depict Dante Alighieri?	3	train	20391	paraphrased_question	Dante Alighieri is the author of what article??	0.5404
+116	Which paintings depict Dante Alighieri?	4	train	20391	question	Dante Alighieri is the writer of what article??	0.5300
+116	Which paintings depict Dante Alighieri?	5	train	22404	paraphrased_question	Which is the scholarly work of the author Dante Alighieri?	0.5163
+117	Which ministers of the Weimar Republic were assassinated?	1	train	20922	question	Who was the leader of the Weimar republic ?	0.4917
+117	Which ministers of the Weimar Republic were assassinated?	2	train	21233	question	What is the currency for the Weimar Republic?	0.4895
+117	Which ministers of the Weimar Republic were assassinated?	3	train	21233	paraphrased_question	What is the cash for the Weimar Republic?	0.4796
+117	Which ministers of the Weimar Republic were assassinated?	4	train	20922	paraphrased_question	Who was the pioneer of the Weimar republic ?	0.4756
+117	Which ministers of the Weimar Republic were assassinated?	5	train	22384	paraphrased_question	Name a Weimar Republic Principality	0.4359
+118	Which films did Mike Myers write or co-write?	1	train	22555	question	Which films did Mike Myers write?	0.9231
+118	Which films did Mike Myers write or co-write?	2	train	22555	paraphrased_question	Which movies did Mike Myers write?	0.7215
+118	Which films did Mike Myers write or co-write?	3	test	22304	question	What series of films was produced by Mike Myers	0.6862
+118	Which films did Mike Myers write or co-write?	4	test	22304	paraphrased_question	What film series Mike Myers produced	0.5249
+118	Which films did Mike Myers write or co-write?	5	train	21525	question	What unfinished/abandoned film project does screenwriter Mike Myers have?	0.3831
+119	Which operas have been performed in Esperanto?	1	train	22727	question	Which operas are in Russian?	0.5052
+119	Which operas have been performed in Esperanto?	2	train	22727	paraphrased_question	Can you name the Russian operas?	0.3958
+119	Which operas have been performed in Esperanto?	3	train	21769	paraphrased_question	Who made Esperanto?	0.3940
+119	Which operas have been performed in Esperanto?	4	train	21769	question	Who created Esperanto?	0.3849
+119	Which operas have been performed in Esperanto?	5	train	20014	question	Who discovered Esperanto?	0.3684
+120	What are the top 10 largest cities by population in the European Union currently?	1	train	1434	question	How many subsidiary are European Union?	0.3522
+120	What are the top 10 largest cities by population in the European Union currently?	2	train	20321	paraphrased_question	Currently, which country is leading the African Union ?	0.3456
+120	What are the top 10 largest cities by population in the European Union currently?	3	train	22747	question	What countries are part of the European Union?	0.3375
+120	What are the top 10 largest cities by population in the European Union currently?	4	test	20813	question	What countries are within the European Union?	0.3319
+120	What are the top 10 largest cities by population in the European Union currently?	5	train	22686	question	Where is the European Union headquarters located?	0.3261
+121	What island nations are members of the African Union?	1	train	23001	paraphrased_question	What nations are included within the African Union?	0.6025
+121	What island nations are members of the African Union?	2	train	20924	question	What is the highest position in the African Union ?	0.5112
+121	What island nations are members of the African Union?	3	train	20924	paraphrased_question	What is the African Union's highest position?	0.4931
+121	What island nations are members of the African Union?	4	train	22091	question	What is the diplomatic relation of the African Union?	0.4662
+121	What island nations are members of the African Union?	5	train	19896	paraphrased_question	What country leads the African Union?	0.4354
+122	"What sports have an event called a ""world cup""?"	1	train	10146	paraphrased_question	Who organized the Rugby World Cup?	0.4305
+122	"What sports have an event called a ""world cup""?"	2	test	128	question	Is FIFA the organizer of FIFA World Cup?	0.4155
+122	"What sports have an event called a ""world cup""?"	3	train	28174	question	Who is the organizer of FIFA World Cup?	0.4155
+122	"What sports have an event called a ""world cup""?"	4	train	15099	question	What is the governing body of the FIFA World Cup?	0.3962
+122	"What sports have an event called a ""world cup""?"	5	train	10146	question	who was the  organizer and  the sport of rugby _world _cup?	0.3893
+123	"What fictional detectives are called ""Sam""?"	1	train	23140	paraphrased_question	What is a fictional detective whose name contains the word sam?	0.5902
+123	"What fictional detectives are called ""Sam""?"	2	train	23416	question	Tell me fictional detective whose name has the word sam in it.	0.5634
+123	"What fictional detectives are called ""Sam""?"	3	train	23120	question	Tell me fictional detective whose name has the word sam in it.	0.5634
+123	"What fictional detectives are called ""Sam""?"	4	train	23623	question	Tell me fictional detective whose name has the word sam in it.	0.5634
+123	"What fictional detectives are called ""Sam""?"	5	train	23602	question	Tell me fictional detective whose name has the word sam in it.	0.5634
+124	What are the capital cities of countries in North America?	1	train	16313	paraphrased_question	North America	0.6406
+124	What are the capital cities of countries in North America?	2	test	1450	paraphrased_question	How many capital cities exist in the Federal Republic of Central America?	0.4621
+124	What are the capital cities of countries in North America?	3	train	26041	question	What is located on the astronomical body of North America?	0.4367
+124	What are the capital cities of countries in North America?	4	train	24288	question	What are the capital cities that start with letter W ?	0.4331
+124	What are the capital cities of countries in North America?	5	train	24288	paraphrased_question	Name the capital cities beginning with letter W.	0.4036
+125	What sports were featured in the Summer Olympics for the first or second time in 2024?	1	test	412	paraphrased_question	Was Neymar a participant in the 2004 Summer Olympics?	0.3653
+125	What sports were featured in the Summer Olympics for the first or second time in 2024?	2	test	412	question	Did Neymar participate in the 2004 Summer Olympics?	0.3601
+125	What sports were featured in the Summer Olympics for the first or second time in 2024?	3	train	17159	question	Who gave the {item used} of {sports} of {Tug of war at the 1904 Summer Olympics} ?	0.3582
+125	What sports were featured in the Summer Olympics for the first or second time in 2024?	4	test	15072	question	What are the different sports that make up the Women's Triathlon at the 2008 Summer Olympics?	0.3484
+125	What sports were featured in the Summer Olympics for the first or second time in 2024?	5	test	15072	paraphrased_question	Which three sports made up the events in the 2008 Summer Olympics Women's Triathalon?	0.3305
+126	With which U.N. member states does France have territorial disputes?	1	test	21850	paraphrased_question	N / A N / A	0.3633
+126	With which U.N. member states does France have territorial disputes?	2	test	21850	question	n/a	0.3633
+126	With which U.N. member states does France have territorial disputes?	3	test	22146	paraphrased_question	n/a	0.3633
+126	With which U.N. member states does France have territorial disputes?	4	test	22146	question	n/a	0.3633
+126	With which U.N. member states does France have territorial disputes?	5	test	22205	paraphrased_question	n/a	0.3633
+127	What are the classes of heads of mission defined by the Vienna Convention on Diplomatic Relations?	1	train	15133	question	What are the diplomatic relations of Sweden?	0.3042
+127	What are the classes of heads of mission defined by the Vienna Convention on Diplomatic Relations?	2	train	26917	question	What is Morocco's diplomatic mission?	0.2950
+127	What are the classes of heads of mission defined by the Vienna Convention on Diplomatic Relations?	3	train	15062	question	Who has diplomatic relations with Journey?	0.2870
+127	What are the classes of heads of mission defined by the Vienna Convention on Diplomatic Relations?	4	train	20060	question	/Who heads the Empire of Japan's diplomatic relationships?	0.2843
+127	What are the classes of heads of mission defined by the Vienna Convention on Diplomatic Relations?	5	test	1320	question	How many diplomatic relations are for Serbia?	0.2838
+128	What are the stars within 10 light years of the Earth?	1	train	16377	question	How long is a light-year?	0.3302
+128	What are the stars within 10 light years of the Earth?	2	train	14937	paraphrased_question	Who stars with Ian Carlyle within the generation?	0.2860
+128	What are the stars within 10 light years of the Earth?	3	train	26838	question	What is notation of Earth ?	0.2828
+128	What are the stars within 10 light years of the Earth?	4	train	16377	paraphrased_question	How long could be a light-year?	0.2823
+128	What are the stars within 10 light years of the Earth?	5	train	29565	question	Which is the radius of Earth?	0.2766
+129	Which cryptocurrencies had a market capitalization above USD$5 billion as of December 31st, 2024?	1	train	1304	question	What is the market capitalization of Nokia?	0.4280
+129	Which cryptocurrencies had a market capitalization above USD$5 billion as of December 31st, 2024?	2	test	29312	question	what is the market capitalization of the Alibaba Group	0.3872
+129	Which cryptocurrencies had a market capitalization above USD$5 billion as of December 31st, 2024?	3	train	2785	question	which conglomerate has the highest market capitalization?	0.3837
+129	Which cryptocurrencies had a market capitalization above USD$5 billion as of December 31st, 2024?	4	train	1632	paraphrased_question	What is the number of market capitalization for JPMorgan Chase?	0.3497
+129	Which cryptocurrencies had a market capitalization above USD$5 billion as of December 31st, 2024?	5	train	18517	question	262570000000 is the market capitalization of the Nokia?	0.3496
+130	What breeds of dog originated in Germany?	1	train	2237	paraphrased_question	Which is the number of the breeds that are for Arabian horse?	0.3809
+130	What breeds of dog originated in Germany?	2	train	2237	question	How many breeds of Arabian horse are there?	0.3699
+130	What breeds of dog originated in Germany?	3	train	25624	question	Tell me the dog breed that has Germany as country of origin and starts with the letter w?	0.3179
+130	What breeds of dog originated in Germany?	4	train	15129	question	Tell me the inhabitants that originated in the Bachelor.	0.2950
+130	What breeds of dog originated in Germany?	5	train	30179	question	Which is the sauce that originated in Korea?	0.2851
+131	What are the Takama languages?	1	train	1049	question	How many languages are used in Australia?	0.5828
+131	What are the Takama languages?	2	train	1049	paraphrased_question	How many Australian languages are there?	0.5783
+131	What are the Takama languages?	3	train	14932	paraphrased_question	What languages are spoken in the United Kingdom?	0.5369
+131	What are the Takama languages?	4	train	1793	paraphrased_question	How many official languages does Denmark have?	0.5304
+131	What are the Takama languages?	5	test	2100	question	How many languages are spoken by the Chinese?	0.5294
+132	What are the federal states of the United States?	1	train	24137	question	what is federal holidays in the united states that starts with t	0.6843
+132	What are the federal states of the United States?	2	train	24422	question	What are the united states federal executive department which start with the letter d	0.6348
+132	What are the federal states of the United States?	3	train	23628	question	What are the federal holidays in the United States which start with the letter thanksgiving	0.6162
+132	What are the federal states of the United States?	4	train	25375	question	What is the federal holidays in the the United States of America that starts with the letter T	0.6144
+132	What are the federal states of the United States?	5	train	24745	question	Tell me the federal states that starts with the letter s	0.6091
+133	What are the metropolitan cities of South Korea, including special cities?	1	train	24748	question	TELL ME METROPOLITAN CITY OF SOUTH KOREA WHICH START WITH THE LETTER U.	0.5023
+133	What are the metropolitan cities of South Korea, including special cities?	2	train	24748	paraphrased_question	Let Me know METROPOLITAN CITY OF SOUTH KOREA WHICH Begin WITH THE LETTER U.	0.4668
+133	What are the metropolitan cities of South Korea, including special cities?	3	train	23979	question	Tell me metropolitan city of South Korea whose name has the word ulsan in it.	0.4602
+133	What are the metropolitan cities of South Korea, including special cities?	4	test	27854	question	"What is in the category of South Korea} ?
+?"	0.4511
+133	What are the metropolitan cities of South Korea, including special cities?	5	train	23979	paraphrased_question	Let me know metropolitan city of South Korea whose title has the word ulsan in it.	0.4296
+134	What reserve currencies held a share above 1% of the worldwide official foreign exchange reserves in 2024?	1	train	14989	question	What is the translation of the above?	0.2522
+134	What reserve currencies held a share above 1% of the worldwide official foreign exchange reserves in 2024?	2	train	14989	paraphrased_question	What is the interpretation of the above?	0.2360
+134	What reserve currencies held a share above 1% of the worldwide official foreign exchange reserves in 2024?	3	train	28264	question	Which is the league level above the Ligue 1?	0.2286
+134	What reserve currencies held a share above 1% of the worldwide official foreign exchange reserves in 2024?	4	train	7742	paraphrased_question	In 2014, how many reserves did Singapore have?	0.2237
+134	What reserve currencies held a share above 1% of the worldwide official foreign exchange reserves in 2024?	5	train	4425	paraphrased_question	On the stock exchange, what is the official symbol for Novartis?	0.2211
+135	"What active U.S. newspapers have ""Tribune"" in their name?"	1	train	25009	question	Tell me the newspaper that has English as language of work and contains the word tribune in it's name?	0.3609
+135	"What active U.S. newspapers have ""Tribune"" in their name?"	2	train	24177	paraphrased_question	Name the weekly newspapers whose first alphabet is e.	0.3149
+135	"What active U.S. newspapers have ""Tribune"" in their name?"	3	train	25009	paraphrased_question	Tell me the newspaper that has English as language of work and consists of the phrase tribune in it is name?	0.3082
+135	"What active U.S. newspapers have ""Tribune"" in their name?"	4	train	14288	question	What episode preceded Opie's Newspapers?	0.3020
+135	"What active U.S. newspapers have ""Tribune"" in their name?"	5	train	14288	paraphrased_question	What scene gone before Opie's Newspapers?	0.2773
+136	Which operas of Giuseppe Verdi debuted at Teatro La Fenice?	1	train	25168	question	"Name an Italian Opera played for the first time at Teatro La Fenice that contains the word ""la"" in its name"	0.4808
+136	Which operas of Giuseppe Verdi debuted at Teatro La Fenice?	2	train	25168	paraphrased_question	"Name an Italian Opera played for the first time at Teatro La Fenice that contains the phrase ""la"" in its name"	0.4674
+136	Which operas of Giuseppe Verdi debuted at Teatro La Fenice?	3	test	6197	question	When did Giuseppe Verdi divorce Margherita Barezzi?	0.3647
+136	Which operas of Giuseppe Verdi debuted at Teatro La Fenice?	4	train	22727	question	Which operas are in Russian?	0.3531
+136	Which operas of Giuseppe Verdi debuted at Teatro La Fenice?	5	test	6197	paraphrased_question	At which point in time did Giuseppe Verdi divorce Margherita Barezzi?	0.3506
+137	What are the National Historic Trails of the United States?	1	train	25292	question	What national historic trails in the country of the USA have the word trail in their name?	0.5924
+137	What are the National Historic Trails of the United States?	2	test	25595	question	"What is a National Historic Trail in the United States that begins with the letter ""t"" ?"	0.5243
+137	What are the National Historic Trails of the United States?	3	test	24343	paraphrased_question	WHAT IS THE CITY OF UNITED STATES WITH WHERE	0.3828
+137	What are the National Historic Trails of the United States?	4	train	24447	paraphrased_question	ON WHICH NATIONAL HISTORIC TRAIL STARTS WITH THE LETTER T	0.3524
+137	What are the National Historic Trails of the United States?	5	train	24447	question	"What National Historic Trail starts with the letter ""t""?"	0.3524
+138	What cities with a current population over one hundred thousand are located within 100 km of the Caspian Sea?	1	train	25350	question	What şəhər beginning with b is located in or next to the body of water the Caspian Sea?	0.3065
+138	What cities with a current population over one hundred thousand are located within 100 km of the Caspian Sea?	2	train	18455	question	Does 100 equal 100?	0.2459
+138	What cities with a current population over one hundred thousand are located within 100 km of the Caspian Sea?	3	train	20042	question	Who translated One Hundred Years of Solitude	0.2384
+138	What cities with a current population over one hundred thousand are located within 100 km of the Caspian Sea?	4	train	25350	paraphrased_question	What şəhər starting with b is placed in or next to the physique of water the Caspian Sea?	0.2377
+138	What cities with a current population over one hundred thousand are located within 100 km of the Caspian Sea?	5	train	5997	question	Which institution has over nineteen thousand students?	0.2337
+139	What are the federal holidays of the United States of America?	1	train	25375	question	What is the federal holidays in the the United States of America that starts with the letter T	0.8653
+139	What are the federal holidays of the United States of America?	2	train	24137	question	what is federal holidays in the united states that starts with t	0.7793
+139	What are the federal holidays of the United States of America?	3	train	23628	question	What are the federal holidays in the United States which start with the letter thanksgiving	0.7018
+139	What are the federal holidays of the United States of America?	4	train	25375	paraphrased_question	What is the federal vacation trips in the the United States of America that starts with the letter T	0.5057
+139	What are the federal holidays of the United States of America?	5	test	279	paraphrased_question	The Chainsmokers are from the United States of America.	0.4798
+140	What are the crystal classes?	1	test	2145	paraphrased_question	Which is the number of competition classes for the 100 metres?	0.4334
+140	What are the crystal classes?	2	train	9541	question	Who is nominated for the award of Bill Crystal?	0.4009
+140	What are the crystal classes?	3	train	9092	paraphrased_question	On January 1, 1988, at which school was Barack Obama attending classes?	0.3523
+140	What are the crystal classes?	4	train	9092	question	At which school was Barack Obama attending classes on January 1, 1988?	0.3523
+140	What are the crystal classes?	5	train	9541	paraphrased_question	Who has been nominated for Bill Crystal's award?	0.3412
+141	What are the suborders of Coleoptera?	1	train	26174	question	What is pollinated by Coleoptera ?	0.7200
+142	Who were the crew members of the Enola Gay that dropped an atomic bomb on Hiroshima?	1	train	2086	question	how many crew members does enola gay have?	0.6371
+142	Who were the crew members of the Enola Gay that dropped an atomic bomb on Hiroshima?	2	train	1702	question	how many crew members does enola gay have?	0.6371
+142	Who were the crew members of the Enola Gay that dropped an atomic bomb on Hiroshima?	3	train	2086	paraphrased_question	How many crew members work for Enola Gay?	0.6140
+142	Who were the crew members of the Enola Gay that dropped an atomic bomb on Hiroshima?	4	train	1702	paraphrased_question	How many crew members work for Enola Gay?	0.6140
+142	Who were the crew members of the Enola Gay that dropped an atomic bomb on Hiroshima?	5	train	27319	question	Who is a member of the crew of Enola Gay?	0.5725
+143	In which years between 2000 and 2020 (inclusive) did Western Easter Sunday fall in March or April?	1	train	3554	question	What day does Easter fall on?	0.3856
+143	In which years between 2000 and 2020 (inclusive) did Western Easter Sunday fall in March or April?	2	train	13345	paraphrased_question	Who made cricket in 2020?	0.2719
+143	In which years between 2000 and 2020 (inclusive) did Western Easter Sunday fall in March or April?	3	train	13345	question	Who created cricket in 2020?	0.2688
+143	In which years between 2000 and 2020 (inclusive) did Western Easter Sunday fall in March or April?	4	train	22141	question	BEtween what years was ancient Rome active?	0.2313
+143	In which years between 2000 and 2020 (inclusive) did Western Easter Sunday fall in March or April?	5	train	10233	paraphrased_question	The reign of Charles I in England was between which years?	0.2255
+144	What are the named islands of Yellowstone National Park?	1	train	6738	paraphrased_question	In 2015 what was the attendance at Yellowstone National Park?	0.6303
+144	What are the named islands of Yellowstone National Park?	2	train	6738	question	How many people visited Yellowstone National Park in 2015?	0.5730
+144	What are the named islands of Yellowstone National Park?	3	train	29081	question	Which are the lake inflows for Yellowstone River?	0.3847
+144	What are the named islands of Yellowstone National Park?	4	train	27982	question	World Heritage of Yosemite National Park is?	0.2960
+144	What are the named islands of Yellowstone National Park?	5	train	26048	question	Where are the Channel Islands?	0.2879
+145	Vancouver has which sister cities?	1	test	22631	paraphrased_question	What is the Brazilian sister city of Vancouver?	0.5636
+145	Vancouver has which sister cities?	2	test	22631	question	What is the Brazilian sister city of Vancouver?	0.5636
+145	Vancouver has which sister cities?	3	test	20401	paraphrased_question	Which two cities in Vancouver are consider its capitals?	0.5069
+145	Vancouver has which sister cities?	4	test	20401	question	Which two cities in Vancouver are consider its capitals?	0.5069
+145	Vancouver has which sister cities?	5	train	20832	paraphrased_question	who is the head of government of Vancouver?	0.4703
+146	What commanders fought in the North African Campaign?	1	train	21942	question	What country is the North African Campaign a part of?	0.6060
+146	What commanders fought in the North African Campaign?	2	train	21942	paraphrased_question	What nation is the North African Campaign a portion of?	0.5587
+146	What commanders fought in the North African Campaign?	3	train	22261	question	WHO was the commonwealth participant of the north african campaign?	0.5334
+146	What commanders fought in the North African Campaign?	4	train	30213	question	Which sovereign state participated in the North African Campaign?	0.5201
+146	What commanders fought in the North African Campaign?	5	train	21418	question	Who is the {island nation} for {participant} of {North African Campaign}	0.5149
+147	What nuclear power plants are currently in France?	1	train	2389	question	How many power plants use two-stroke engines?	0.3864
+147	What nuclear power plants are currently in France?	2	train	2389	paraphrased_question	What is the number of power plants that use two-stroke engines?	0.3805
+147	What nuclear power plants are currently in France?	3	train	19750	paraphrased_question	What is Hamlet currently translated as?	0.2813
+147	What nuclear power plants are currently in France?	4	train	18535	paraphrased_question	Is there energy output at Kashiwazaki-Kariwa Nuclear Power Plant?	0.2749
+147	What nuclear power plants are currently in France?	5	test	2386	question	How many minor plants are there in the Jupiter trojan} ?	0.2681
+148	Which Cameroonian football players have more than 50 senior caps for their men's or women's national team?	1	train	2457	paraphrased_question	Who has the most national team caps?	0.4136
+148	Which Cameroonian football players have more than 50 senior caps for their men's or women's national team?	2	test	3211	paraphrased_question	Who has the lowest national team caps?	0.4106
+148	Which Cameroonian football players have more than 50 senior caps for their men's or women's national team?	3	train	2457	question	Who is the person with most national team caps?	0.3899
+148	Which Cameroonian football players have more than 50 senior caps for their men's or women's national team?	4	train	2834	question	Which man has the most national team caps ?	0.3662
+148	Which Cameroonian football players have more than 50 senior caps for their men's or women's national team?	5	test	3211	question	What is the human with the lowest national team caps whose instance of is human?	0.3461
+149	Which Pokémon can evolve directly or indirectly from Pichu?	1	train	12327	question	What can indirectly cause a lock to sound like a shout?	0.3592
+149	Which Pokémon can evolve directly or indirectly from Pichu?	2	train	1253	question	How many creators are with the Pokémon?	0.3424
+149	Which Pokémon can evolve directly or indirectly from Pichu?	3	train	1253	paraphrased_question	Pokemon has how many creators?	0.3319
+149	Which Pokémon can evolve directly or indirectly from Pichu?	4	train	17718	question	Which is indirectly caused by the disease treatment with phentolamine?	0.3163
+149	Which Pokémon can evolve directly or indirectly from Pichu?	5	test	27375	question	What is  in the Pokémon browser number of Pikachu ?	0.2653

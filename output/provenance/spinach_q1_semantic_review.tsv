@@ -1,0 +1,151 @@
+source_id	source_pool_index	origin	source_file	original_question	ascb_Q1	Q1_status	provisional_semantic_label
+0	13	QALD-7	spinach_output_test (1).json	Which television shows were created by John Cleese?	Which television shows were created by John Cleese?	literal	copy_or_formatting
+1	17	QALD-7	spinach_output_test (1).json	Give me all communist countries.	Give me all current communist countries.	changed	uncertain
+2	26	QALD-7	spinach_output_test (1).json	Which politicians were married to a German?	Which politicians were married to a German person?	changed	paraphrase
+3	29	QALD-7	spinach_output_test (1).json	Give me all soccer clubs in Spain.	List all Spanish football clubs that competed in La Liga during the 2023–24 season.	changed	adapted_answer_condition
+4	32	QALD-7	spinach_output_test (1).json	Which telecommunications organizations are located in Belgium?	Which telecommunications organizations are located in Belgium?	literal	copy_or_formatting
+5	40	QALD-7	spinach_output_test (1).json	Which actors were born in Germany?	Which actors were born in Germany?	literal	copy_or_formatting
+6	170	QALD-10	spinach_output_test.json	In which countries is the Himalayas located?	In which countries are the Himalayas located?	changed	paraphrase
+7	207	QALD-10	spinach_output_test.json	on which video streaming services can i watch hunter x hunter anime series?	What are the major legal streaming platforms that have offered the Hunter × Hunter anime series in the United States?	changed	adapted_answer_condition
+8	214	QALD-10	spinach_output_test.json	Through which countries does the Danube go?	Through which countries does the Danube flow?	changed	paraphrase
+9	230	QALD-10	spinach_output_test.json	What are the professions of John Lennon’s sons?	What are the professions of John Lennon’s sons?	literal	copy_or_formatting
+10	231	QALD-10	spinach_output_test.json	What are the titles of the Star Wars series movies?	What movies are in the Star Wars series?	changed	paraphrase
+11	237	QALD-10	spinach_output_test.json	What instruments did Louis Armstrong play?	What instruments did Louis Armstrong play?	literal	copy_or_formatting
+12	263	QALD-10	spinach_output_test.json	What notes does a C major chord consist of?	What notes make up a C major chord?	changed	paraphrase
+13	269	QALD-10	spinach_output_test.json	Which creator of The OA also acted in it?	Who created the OA?	changed	adapted_answer_condition
+14	270	QALD-10	spinach_output_test.json	What albums has Atif Aslam been on?	What albums has Atif Aslam appeared in?	changed	paraphrase
+15	328	QALD-10	spinach_output_test.json	Which American presidents followed in their father‘s step and also became the president?	Which American presidents had fathers who were also American presidents?	changed	paraphrase
+16	345	QALD-10	spinach_output_test.json	Which movements is the painting “Les Demoiselles d'Avignon” assigned to?	To which art movements is the painting “Les Demoiselles d'Avignon” assigned?	changed	paraphrase
+17	346	QALD-10	spinach_output_test.json	Which movies belong to the Cornetto trilogy ?	Which movies belong to the Cornetto trilogy?	changed	paraphrase
+18	350	QALD-10	spinach_output_test.json	Which other movies by the director of Another Round also starred Mads Mikkelsen ?	Which movies were directed by Thomas Vinterberg?	changed	adapted_answer_condition
+19	358	QALD-10	spinach_output_test.json	Which teams participated in the 2020 UEFA Champions League Final ?	Which teams participated in the 2020 UEFA Champions League Final ?	literal	copy_or_formatting
+20	362	QALD-10	spinach_output_test.json	Who are the actresses in Portrait of a Lady on Fire?	Who are the actresses in Portrait of a Lady on Fire?	literal	copy_or_formatting
+21	462	WikiWebQuestions	dev.json	what countries does germany share borders with?	What countries does Germany share borders with?	normalized	copy_or_formatting
+22	493	WikiWebQuestions	dev.json	what movies did taylor lautner star in?	What movies did Taylor Lautner star in?	normalized	copy_or_formatting
+23	512	WikiWebQuestions	dev.json	what countries does the niger river flow through?	What countries does the Niger river flow through?	normalized	copy_or_formatting
+24	514	WikiWebQuestions	dev.json	what games did bungie make?	What games did Bungie make?	normalized	copy_or_formatting
+25	544	WikiWebQuestions	dev.json	who are senators from utah?	Who has been a senator from Utah?	changed	adapted_answer_condition
+26	547	WikiWebQuestions	dev.json	who are the current senators from illinois?	Who are the current senators from Illinois?	normalized	copy_or_formatting
+27	553	WikiWebQuestions	dev.json	what car models does gm make?	What car models does GM make?	normalized	copy_or_formatting
+28	563	WikiWebQuestions	dev.json	what countries are on the mediterranean sea?	What countries are on the Mediterranean Sea?	normalized	copy_or_formatting
+29	576	WikiWebQuestions	dev.json	what cities are included in maricopa county?	What cities are included in Maricopa County?	normalized	copy_or_formatting
+30	580	WikiWebQuestions	dev.json	what characters does todd haberkorn voice?	What characters does Todd Haberkorn voice in movies?	changed	adapted_answer_condition
+31	587	WikiWebQuestions	dev.json	what albums did john frusciante play on?	What albums did John Frusciante play on in any capacity?	changed	paraphrase
+32	645	WikiWebQuestions	dev.json	what dialects are spoken in the uk?	What dialects are spoken in the U.K.?	changed	paraphrase
+33	682	WikiWebQuestions	dev.json	what present day countries use english as their national language?	Which present-day countries use English as an official language?	changed	adapted_answer_condition
+34	692	WikiWebQuestions	dev.json	what are the official languages of jamaica?	What are the official languages of Canada?	changed	adapted_answer_condition
+35	701	WikiWebQuestions	dev.json	who was vice president under lincoln?	Who were the Vice Presidents under Lincoln?	changed	paraphrase
+36	753	WikiWebQuestions	dev.json	what countries are around egypt?	Which countries does Egypt border?	changed	uncertain
+37	788	WikiWebQuestions	dev.json	which countries border the baltic sea?	Which countries border the Baltic sea?	normalized	copy_or_formatting
+38	814	WikiWebQuestions	dev.json	what are the different dialects of chinese?	What are the different dialects of Chinese?	normalized	copy_or_formatting
+39	889	QALD-9-plus	spinach_output_test (2).json	Which American presidents were in office during the Vietnam War?	Which American presidents were in office during the Vietnam War?	literal	copy_or_formatting
+40	894	QALD-9-plus	spinach_output_test (2).json	Which European countries have a constitutional monarchy?	Which European countries have had a constitutional monarchy at some point in history?	changed	adapted_answer_condition
+41	901	QALD-9-plus	spinach_output_test (2).json	Give me all professional skateboarders from Sweden.	Give me all professional skateboarders from Sweden.	literal	copy_or_formatting
+42	921	QALD-9-plus	spinach_output_test (2).json	Which professional surfers were born in Australia?	Which professional surfers were born in Australia?	literal	copy_or_formatting
+43	930	QALD-9-plus	spinach_output_test (2).json	Which space probes were sent into orbit around the sun?	Which space probes were sent into orbit around the sun?	literal	copy_or_formatting
+44	931	QALD-9-plus	spinach_output_test (2).json	Which German cities have more than 250000 inhabitants?	Which German cities currently have more than 250000 inhabitants?	changed	uncertain
+45	943	QALD-9-plus	spinach_output_test (2).json	Give me all spacecrafts that flew to Mars.	Give me all spacecraft that flew to Mars.	changed	paraphrase
+46	945	QALD-9-plus	spinach_output_test (2).json	Give me all taikonauts.	Give me all taikonauts.	literal	copy_or_formatting
+47	946	QALD-9-plus	spinach_output_test (2).json	Which countries have more than ten volcanoes?	Which countries have more than ten volcanoes in total?	changed	paraphrase
+48	966	QALD-9-plus	spinach_output_test (2).json	Who was on the Apollo 11 mission?	Who were the crew members on the Apollo 11 mission?	changed	paraphrase
+49	967	QALD-9-plus	spinach_output_test (2).json	Give me all B-sides of the Ramones.	Give me all B-sides of the Ramones.	literal	copy_or_formatting
+50	983	QALD-9-plus	spinach_output_test (2).json	Which politicians were married to a German?	Which French politicians were married to a German?	changed	adapted_answer_condition
+51	989	QALD-9-plus	spinach_output_test (2).json	Which movies did Kurosawa direct?	Which movies did Kurosawa direct?	literal	copy_or_formatting
+52	993	QALD-9-plus	spinach_output_test (2).json	Give me all Frisian islands that belong to the Netherlands.	Give me all Frisian islands that belong to the Netherlands.	literal	copy_or_formatting
+53	1051	WikiWebQuestions	test (4).json	what are the religions practiced in indonesia?	Which officially recognized religions are present in Indonesia?	changed	adapted_answer_condition
+54	1061	WikiWebQuestions	test (4).json	what battles did stonewall jackson fight in?	What battles did Stonewall Jackson fight in during his military career?	changed	paraphrase
+55	1071	WikiWebQuestions	test (4).json	which countries speak german officially?	Which countries speak German officially?	normalized	copy_or_formatting
+56	1089	WikiWebQuestions	test (4).json	what basketball teams has shaq played for?	What basketball teams has Shaq played for?	normalized	copy_or_formatting
+57	1142	WikiWebQuestions	test (4).json	what countries are part of the baltic?	What countries are considered part of the Baltic region?	changed	paraphrase
+58	1159	WikiWebQuestions	test (4).json	what places make up new england?	What states make up New England?	changed	adapted_answer_condition
+59	1170	WikiWebQuestions	test (4).json	which states does the colorado river run through?	Which U.S. states does the Colorado River run through?	changed	paraphrase
+60	1172	WikiWebQuestions	test (4).json	which continents were part of the roman empire?	Which continents did the Roman Empire span?	changed	paraphrase
+61	1183	WikiWebQuestions	test (4).json	what countries have spanish as the national language?	What countries have Spanish as a national language?	changed	uncertain
+62	1188	WikiWebQuestions	test (4).json	what colleges did albert einstein teach at?	In what colleges did Albert Einstein teach professionally?	changed	uncertain
+63	1206	WikiWebQuestions	test (4).json	what tv shows did shawnee smith play in?	What TV shows did Shawnee Smith appear in?	changed	paraphrase
+64	1252	WikiWebQuestions	test (4).json	what countries share borders with spain?	What countries share a land or maritime border with Spain?	changed	adapted_answer_condition
+65	1275	WikiWebQuestions	test (4).json	what shows are shot in new york?	Which television productions have been filmed in New York City?	changed	adapted_answer_condition
+66	1294	WikiWebQuestions	test (4).json	what movies did tupac star in?	What movies did Tupac star in?	normalized	copy_or_formatting
+67	1309	WikiWebQuestions	test (4).json	who has played lex luthor?	Who has played Lex Luthor?	normalized	copy_or_formatting
+68	1429	WikiWebQuestions	test (4).json	what were the names of henry viii's three children?	What were the names of Henry VIII's confirmed children?	changed	adapted_answer_condition
+69	1501	WikiWebQuestions	test (4).json	what countries have territories in oceania?	Which countries have territories in Oceania?	changed	paraphrase
+70	1511	WikiWebQuestions	test (4).json	what states does the sierra nevada run through?	What states does the Sierra Nevada run through in the United States?	changed	adapted_answer_condition
+71	1540	WikiWebQuestions	test (4).json	who has stephen ireland played for?	Who has Stephen Ireland played for?	normalized	copy_or_formatting
+72	1542	WikiWebQuestions	test (4).json	what celebrities has brody jenner dated?	Which celebrities has Brody Jenner been confirmed to have dated or rumored to have dated?	changed	adapted_answer_condition
+73	1554	WikiWebQuestions	test (4).json	what countries does nafta include?	What countries are members of NAFTA?	changed	paraphrase
+74	1562	WikiWebQuestions	test (4).json	what other books did louis sachar write?	What books did Louis Sachar write?	changed	adapted_answer_condition
+75	1566	WikiWebQuestions	test (4).json	what states share a border with tennessee?	What states share a border with Tennessee?	normalized	copy_or_formatting
+76	1649	WikiWebQuestions	test (4).json	what schools did sir isaac newton go to?	What educational institutions did Sir Isaac Newton attend?	changed	adapted_answer_condition
+77	1651	WikiWebQuestions	test (4).json	what books are written by suzanne collins?	What books are written by Suzanne Collins?	normalized	copy_or_formatting
+78	1744	WikiWebQuestions	test (4).json	who were king henry vii children?	Who were King Henry VII's children?	changed	paraphrase
+79	1923	WikiWebQuestions	test (4).json	who were demeter's siblings?	Who were Demeter's siblings?	normalized	copy_or_formatting
+80	1947	WikiWebQuestions	test (4).json	who are the u s senators of pennsylvania?	Who are the U.S. senators of Pennsylvania?	changed	paraphrase
+81	1979	WikiWebQuestions	test (4).json	who has coached the carolina panthers?	Who has been a coach for the Carolina Panthers?	changed	paraphrase
+82	2105	WikiWebQuestions	test (4).json	what countries constitute the eu?	Which countries constitute the European Union?	changed	paraphrase
+83	2164	WikiWebQuestions	test (4).json	what are the catholic holy days?	What are the Catholic holy days of obligation and other holy days?	changed	uncertain
+84	2247	WikiWebQuestions	test (4).json	through which countries of the sahel does the niger river flow?	Through which countries of the Sahel does the Niger River flow?	normalized	copy_or_formatting
+85	2258	WikiWebQuestions	test (4).json	who are the st louis cardinals coaches?	Who has been a coach of the St. Louis Cardinals?	changed	adapted_answer_condition
+86	2304	WikiWebQuestions	test (4).json	what schools did anders celsius attend?	Which educational institutions has Anders Celsius attend?	changed	paraphrase
+87	2351	WikiWebQuestions	test (4).json	what are the names of ariel's six sisters?	Who are Ariel's sisters?	changed	paraphrase
+88	2352	WikiWebQuestions	test (4).json	what voices does seth macfarlane play on family guy?	Which characters does Seth MacFarlane voice on Family Guy?	changed	paraphrase
+89	2422	WikiWebQuestions	test (4).json	what are the names of michael jackson's kids?	What are the names of Michael Jackson's kids?	normalized	copy_or_formatting
+90	2429	WikiWebQuestions	test (4).json	what degrees does romney have?	What degrees does Romney have?	normalized	copy_or_formatting
+91	2455	QALD-7	test (2).json	Give me all cities in New Jersey with more than 100000 inhabitants.	Give me all cities in New Jersey with more than 100,000 inhabitants at present.	changed	uncertain
+92	2488	QALD-7	test (2).json	Which actors were born in Germany?	Which actors born in France have won an Oscar?	changed	adapted_answer_condition
+93	2494	QALD-9-plus	train.json	List all boardgames by GMT.	Which historical wargames are published by GMT Games?	changed	adapted_answer_condition
+94	2509	QALD-9-plus	train.json	Which monarchs were married to a German?	Which monarchs were married to a German spouse?	changed	paraphrase
+95	2510	QALD-9-plus	train.json	Which organizations were founded in 1950?	Which international organizations were founded in 1950?	changed	adapted_answer_condition
+96	2512	QALD-9-plus	train.json	Give me the Apollo 14 astronauts.	Give me the Apollo 14 astronauts.	literal	copy_or_formatting
+97	2515	QALD-9-plus	train.json	Which spaceflights were launched from Baikonur?	Which spaceflights were launched from Baikonur?	literal	copy_or_formatting
+98	2517	QALD-9-plus	train.json	Which U.S. states are in the same timezone as Utah?	Which U.S. states are in the same timezone as Utah?	literal	copy_or_formatting
+99	2524	QALD-9-plus	train.json	Which states border Illinois?	Which states border Illinois?	literal	copy_or_formatting
+100	2528	QALD-9-plus	train.json	Give all swimmers that were born in Moscow.	Give all Olympic swimmers that were born in Moscow.	changed	adapted_answer_condition
+101	2531	QALD-9-plus	train.json	Which presidents were born in 1945?	Which US presidents were born in 1945?	changed	adapted_answer_condition
+102	2534	QALD-9-plus	train.json	Show a list of soccer clubs that play in the Bundesliga.	Show a list of soccer clubs that play in the Bundesliga.	literal	copy_or_formatting
+103	2543	QALD-9-plus	train.json	Which rivers flow into a German lake?	Which rivers flow into lakes located in Germany?	changed	paraphrase
+104	2545	QALD-9-plus	train.json	Give me all islands that belong to Japan.	Give me all inhabited islands that belong to Japan.	changed	adapted_answer_condition
+105	2550	QALD-9-plus	train.json	Give me all soccer clubs in the Premier League.	Give me all soccer clubs in the Premier League for the 2023–2024 season.	changed	adapted_answer_condition
+106	2556	QALD-9-plus	train.json	Which movies star both Liz Taylor and Richard Burton?	Which movies star both Liz Taylor and Richard Burton?	literal	copy_or_formatting
+107	2571	QALD-9-plus	train.json	Which music albums contain the song Last Christmas?	Which music albums contain the song Last Christmas?	literal	copy_or_formatting
+108	2577	QALD-9-plus	train.json	Give me all Swedish holidays.	Give me all Swedish holidays (including public, regional, and unofficial holidays).	changed	uncertain
+109	2579	QALD-9-plus	train.json	List all the musicals with music by Leonard Bernstein.	List all the musicals with music by Leonard Bernstein.	literal	copy_or_formatting
+110	2582	QALD-9-plus	train.json	Which writers studied in Istanbul?	Which writers studied in Istanbul?	literal	copy_or_formatting
+111	2583	QALD-9-plus	train.json	Give me all Australian metalcore bands.	Give me all Australian metalcore bands.	literal	copy_or_formatting
+112	2585	QALD-9-plus	train.json	Give me all types of eating disorders.	List all recognized types of eating disorders.	changed	adapted_answer_condition
+113	2590	QALD-9-plus	train.json	Which U.S. states are in the same time zone as Utah?	Which U.S. states are entirely or partially in the Mountain Time Zone?	changed	uncertain
+114	2591	QALD-9-plus	train.json	Give me all books written by Danielle Steel.	Give me all children's books written by Danielle Steel.	changed	adapted_answer_condition
+115	2595	QALD-9-plus	train.json	Which programming languages were influenced by Perl?	Which programming languages have been influenced by Perl?	changed	paraphrase
+116	2597	QALD-9-plus	train.json	What airlines are part of the SkyTeam alliance?	What airlines are part of the SkyTeam alliance currently?	changed	uncertain
+117	2599	QALD-9-plus	train.json	What other books have been written by the author of The Fault in Our Stars?	Could you please list other books have been written by the author of The Fault in Our Stars?	changed	paraphrase
+118	2604	QALD-9-plus	train.json	Which films starring Clint Eastwood did he direct himself?	Which films starring Clint Eastwood did he direct himself?	literal	copy_or_formatting
+119	2608	QALD-9-plus	train.json	Give me all actors called Baldwin.	Give me all actors with the last name Baldwin.	changed	uncertain
+120	2624	QALD-9-plus	train.json	Show me all English Gothic buildings in Kent.	List all English Gothic buildings in Kent.	changed	paraphrase
+121	2625	QALD-9-plus	train.json	In which countries can you pay using the West African CFA franc?	In which countries can you pay using the West African CFA franc?	literal	copy_or_formatting
+122	2631	QALD-9-plus	train.json	Which weapons did Heckler & Koch develop?	Which weapons did Heckler & Koch develop?	literal	copy_or_formatting
+123	2638	QALD-9-plus	train.json	Give me all films produced by Hal Roach.	Give me all films produced by Hal Roach.	literal	copy_or_formatting
+124	2641	QALD-9-plus	train.json	Give me a list of all bandleaders that play trumpet.	Give me a list of all bandleaders that play trumpet and have won a Grammy.	changed	adapted_answer_condition
+125	2655	QALD-9-plus	train.json	Give me all people that were born in Vienna and died in Berlin.	Give me all people that were born in Vienna and died in Berlin.	literal	copy_or_formatting
+126	2658	QALD-9-plus	train.json	Give me all films produced by Steven Spielberg with a budget of at least $80 million.	Give me all films produced by Steven Spielberg with a budget of at least $80 million.	literal	copy_or_formatting
+127	2661	QALD-9-plus	train.json	Give me all breeds of the German Shepherd dog.	Give me all types or lines of the German Shepherd dog.	changed	adapted_answer_condition
+128	2672	QALD-9-plus	train.json	Which airports does Yeti Airlines serve?	Which airports does Yeti Airlines currently serve?	changed	uncertain
+129	2696	QALD-9-plus	train.json	Which awards did Douglas Hofstadter win?	Which awards did Douglas Hofstadter win?	literal	copy_or_formatting
+130	2705	QALD-9-plus	train.json	Give me all launch pads operated by NASA.	Give me all launch pads used by NASA.	changed	adapted_answer_condition
+131	2720	QALD-9-plus	train.json	List all the musicals with music by Elton John.	List all the musicals with music composed by Elton John.	changed	paraphrase
+132	2723	QALD-9-plus	train.json	Which companies produce hovercrafts?	Which companies produce hovercrafts?	literal	copy_or_formatting
+133	2732	QALD-9-plus	train.json	Which electronics companies were founded in Beijing?	Which electronics companies were founded in Beijing?	literal	copy_or_formatting
+134	2743	QALD-9-plus	train.json	List the children of Margaret Thatcher.	List the children of Margaret Thatcher.	literal	copy_or_formatting
+135	2761	QALD-9-plus	train.json	Give me all members of Prodigy.	Give me all members of Prodigy.	literal	copy_or_formatting
+136	2763	QALD-9-plus	train.json	Who are the writers of the Wall album of Pink Floyd?	Who are the writers of the Wall album of Pink Floyd?	literal	copy_or_formatting
+137	2783	QALD-9-plus	train.json	Which television shows were created by Walt Disney?	Which television shows were created by Walt Disney?	literal	copy_or_formatting
+138	2832	QALD-9-plus	train.json	Which books by Kerouac were published by Viking Press?	Which books by Kerouac were published by Viking Press?	literal	copy_or_formatting
+139	2843	QALD-9-plus	train.json	In which films did Julia Roberts as well as Richard Gere play?	In which films did both Julia Roberts and Richard Gere play?	changed	paraphrase
+140	2847	QALD-9-plus	train.json	Give me all Canadian Grunge record labels.	Give me a list of all Canadian record labels associated with Grunge music.	changed	paraphrase
+141	2863	QALD-9-plus	train.json	Give me all actors starring in Last Action Hero.	Give me all actors starring in Last Action Hero.	literal	copy_or_formatting
+142	3633	QALD-10	test (1).json	Which shows aired for the first time the same year as Saturday Night Live ?	Which shows aired for the first time in the same year as Saturday Night Live?	changed	paraphrase
+143	3717	QALD-9-plus	test (3).json	Which artists were born on the same date as Rachel Stevens?	Which artists have the same birthday as Rachel Stevens?	changed	uncertain
+144	3723	QALD-9-plus	test (3).json	Which airports are located in California, USA?	Which airports are located in California, USA?	literal	copy_or_formatting
+145	3730	QALD-9-plus	test (3).json	Which monarchs of the United Kingdom were married to a German?	Which monarchs of the United Kingdom were married to a German spouse?	changed	paraphrase
+146	3743	QALD-9-plus	test (3).json	Give me all writers that won the Nobel Prize in literature.	Give me all writers that won the Nobel Prize in literature.	literal	copy_or_formatting
+147	3744	QALD-9-plus	test (3).json	Give me English actors starring in Lovesick.	Give me English actors starring in Lovesick.	literal	copy_or_formatting
+148	3802	QALD-9-plus	test (3).json	Which rivers flow into the North Sea?	Which rivers flow into the North Sea?	literal	copy_or_formatting
+149	3834	QALD-9-plus	test (3).json	Which beer brewing companies are located in North-Rhine Westphalia?	Which beer brewing companies are located in North-Rhine Westphalia?	literal	copy_or_formatting
