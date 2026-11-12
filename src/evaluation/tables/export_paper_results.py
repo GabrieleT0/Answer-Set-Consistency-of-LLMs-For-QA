@@ -15,9 +15,9 @@ from pathlib import Path
 import pandas as pd
 from scipy.stats import pearsonr
 
-from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary_xidk
+from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary_empty_answers, summary_xidk
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, merge_relations_by_action
-from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case
+from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case, metric_idk_mask
 from src.evaluation.statistics.eval_pvalue import compute_pvals
 from src.evaluation.tables.export_supplementary_tables import build_tables, render_table
 
@@ -82,9 +82,27 @@ def rebuild(root, models):
     return merge_relations_by_action(frame, relations, labels), relations
 
 
-def percent_summary(frame, filtered=False):
-    out = (summary_xidk if filtered else summary_idk_worst)(frame)
+def percent_summary(frame, filtered=False, *, table4_policy='empty_set'):
+    # Keep the historical CLI key "filtered"; Table 4 now retains null answers
+    # as individual empty sets, rather than excluding metric instances.
+    if filtered and table4_policy not in {'empty_set', 'exclude_instances'}:
+        raise ValueError(f'Unknown Table 4 policy: {table4_policy}')
+    summarize = (summary_xidk if table4_policy == 'exclude_instances' else summary_empty_answers) if filtered else summary_idk_worst
+    out = summarize(frame)
     out = out[out.dataset.eq('overall') & out.action.isin(STRATEGIES)].copy()
+    if filtered and table4_policy == 'exclude_instances':
+        coverage = []
+        for row in out.itertuples():
+            group = frame[frame.llm.eq(row.llm) & frame.action.eq(row.action)]
+            counts = {'n_instances': len(group)}
+            for metric in BINARY + SIM + DISPLAY[:2]:
+                counts['n_scored_' + metric] = int(
+                    group.loc[~metric_idk_mask(group, metric), metric].notna().sum())
+            counts['n_repeat'] = counts['n_scored_?A1=A1*'] if row.action == 'zero-shot' else 0
+            coverage.append(counts)
+        counts = pd.DataFrame(coverage, index=out.index)
+        out[counts.columns] = counts
+        out['abstention_policy'] = 'exclude_metric_instances'
     out['CON'] = out[BINARY].mean(axis=1)
     # The repeated-question control is displayed in Base rows only.
     out.loc[~out.action.eq('zero-shot'), DISPLAY[:2]] = float('nan')
@@ -109,7 +127,33 @@ def simple_tex(data, label):
     lines += [' & '.join(map(cell, row)) + r' \\' for row in data.itertuples(index=False, name=None)]
     lines += [r'\bottomrule', r'\end{tabular}', r'\caption{Recomputed results.}',
               r'\label{' + label + '}', r'\end{table*}']
+    if label == TABLES['filtered'] + '_exclusion':
+        lines[-3] = (r'\caption{Legacy Table 4 exclusion analysis: each metric excludes instances '
+                     r'with any required abstaining or empty response. Effective denominators '
+                     r'vary by model, strategy, and metric; no empty-set replacement is applied.}')
+    elif label == TABLES['filtered']:
+        lines[-3] = (r'\caption{Table 4 sensitivity analysis: each observed abstention or empty answer '
+                     r'is replaced individually by $\varnothing$, retaining other answers and all observed '
+                     r'instances. Denominators are not reduced for abstentions; missing observations remain '
+                     r'unavailable. Empty-set Jaccard is defined as zero when both sets are empty.}')
     return '\n'.join(lines) + '\n'
+
+
+def table4_policy_comparison(frame, current=None, legacy=None):
+    """Compare policies on identical answers; do not mix data-version effects."""
+    current = percent_summary(frame, filtered=True) if current is None else current
+    current = current.set_index(['llm', 'action'])
+    legacy = percent_summary(frame, filtered=True, table4_policy='exclude_instances') if legacy is None else legacy
+    legacy = legacy.set_index(['llm', 'action'])
+    rows = []
+    for (model, action), row in current.iterrows():
+        for metric in BINARY + SIM + ['CON']:
+            before, after = legacy.loc[(model, action), metric], row[metric]
+            rows.append(dict(llm=model, action=action, metric=metric,
+                exclusion_percent=before, empty_set_percent=after, delta_pp=after-before,
+                n_exclusion=None if metric == 'CON' else int(legacy.loc[(model, action), 'n_scored_' + metric]),
+                n_empty_set=None if metric == 'CON' else int(row['n_scored_' + metric])))
+    return pd.DataFrame(rows)
 
 
 def export(root, outdir, selected):
@@ -149,6 +193,8 @@ def export(root, outdir, selected):
     supplementary = build_tables(frame, models)
     for key, number in [('cfr', 9), ('correct', 10), ('incorrect', 11)]:
         results[key] = supplementary[supplementary.table.eq(number)].copy()
+    exclusion = percent_summary(frame, filtered=True, table4_policy='exclude_instances') if 'filtered' in selected else None
+    comparison = table4_policy_comparison(frame, results['filtered'], exclusion) if exclusion is not None else None
     current_inputs = sorted(p for p in (root / 'data').rglob('*')
                             if p.is_file() and p.suffix in {'.json', '.csv'})
     if inputs != current_inputs or manifest != fingerprints():
@@ -158,6 +204,12 @@ def export(root, outdir, selected):
     base_rows = frame[frame.action.eq('zero-shot')]
     base_rows[['llm', 'dataset', 'Q_ID', 'repeat_source', '?A1=A1*', 'J(A1-A1*)']].to_csv(outdir / 'repeat_provenance.csv', index=False)
     frame.groupby(['llm', 'action']).size().rename('n_instances').to_csv(outdir / 'coverage.csv')
+    if comparison is not None:
+        comparison.to_csv(outdir / 'policy_comparison.csv', index=False)
+        exclusion.to_csv(outdir / 'filtered_exclusion.csv', index=False)
+        (outdir / 'filtered_exclusion.tex').write_text(simple_tex(
+            exclusion[['llm', 'action'] + DISPLAY], TABLES['filtered'] + '_exclusion'))
+        print('Table 4 exclusion reference ->', outdir / 'filtered_exclusion.csv', '/', 'filtered_exclusion.tex')
     for key in selected:
         data = results[key]
         data.to_csv(outdir / (key + '.csv'), index=False)

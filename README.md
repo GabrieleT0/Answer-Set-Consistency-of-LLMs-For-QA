@@ -312,6 +312,32 @@ coverage counts, response provenance, and input SHA-256 hashes. This command
 recomputes results; it does not update the manuscript-formatted tables in
 `output/paper_tables/clean/`.
 
+To regenerate both Table 4 policies together, run:
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results --table filtered --output-dir output/table4_versions
+```
+
+Despite the historical key `filtered`, Table 4 now replaces each observed
+abstention or empty answer individually with the empty set and retains the
+instance. It preserves companion answers, uses each task's own context, and
+retains original abstention flags. This is a sensitivity analysis: empty sets
+can create trivial consistency. Missing observations are not filled, and
+Jaccard similarity of two empty sets remains zero. Per-metric denominators are
+included in the CSV; 600 is valid only when all 600 observations are available.
+Table 3 continues to use worst-case scores for abstentions. The old exclusion
+policy remains available through `core.eval_tool.summary_xidk` for comparison.
+Both policies are exported on the same data snapshot, with independent files:
+
+- `filtered.csv` / `filtered.tex`: individual empty-set replacement (current Table 4).
+- `filtered_exclusion.csv` / `filtered_exclusion.tex`: the previous metric-instance exclusion method.
+- `policy_comparison.csv`: paired score changes and denominators for both methods.
+
+Each CSV includes an explicit `abstention_policy`. The exclusion reference uses
+a distinct LaTeX label so both tables can be included in the same document.
+The shared `source_manifest.json` identifies the input snapshot for both versions.
+Generating all eight tables also produces the Table 4 exclusion reference.
+
 ### Generate manuscript-formatted clean and blue versions
 
 ```bash
@@ -349,9 +375,11 @@ raw answers.
 
 There is currently no single verified command that refreshes raw evaluation,
 manuscript-formatted tables, both revision variants, and all figures together.
-The aggregate evaluation entry point is `python src/evaluation/run.py`, but it
-currently imports the missing `reviewer_abstention_audit` module. That dependency
-must be restored or the entry point repaired before using it for a full refresh.
+The aggregate evaluation entry point is `python src/evaluation/run.py`. It now
+uses the shared `summary_empty_answers` implementation for Table 4, saving
+`output/summary_empty_answers.csv`, rather than depending on the missing
+`reviewer_abstention_audit` module. The legacy `summary_xidk.csv` remains a separate
+metric-instance exclusion diagnostic.
 Simply chaining the commands above does not close the gaps between their inputs.
 
 ### Can `output/reproduced_tables/` be deleted?

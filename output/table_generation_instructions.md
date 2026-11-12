@@ -15,7 +15,7 @@ Use the project's existing Python environment. Required dependencies are pandas,
 .venv/bin/python -m src.evaluation.export_paper_results
 ```
 
-This generates all eight tables in `output/reproduced_tables/`, with one CSV and one LaTeX file per table. To specify a different directory:
+This generates all eight tables in `output/reproduced_tables/`, with one CSV and one LaTeX file per current table, plus a separate Table 4 exclusion reference. To specify a different directory:
 
 ```bash
 .venv/bin/python -m src.evaluation.export_paper_results --output-dir /tmp/paper-tables
@@ -40,7 +40,7 @@ Label: `tab:consistency_per_action_by_id`
 
 Repeated-question pairing prioritizes genuine `star` responses matched by model, dataset, and question ID. Under the currently specified rule, missing repeats for Llama-3.1-70B and Grok-3-mini use the CtE equality-task Q1 response as a fallback; this rule does not apply to other models. It does not use the consistency score between two CtE responses or average that score with the Base control score. Response provenance is saved in `repeat_provenance.csv` and is not added to the manuscript tables.
 
-## 2. Results Excluding Abstentions (Table 4)
+## 2. Individual Empty-Set Sensitivity Analysis (Table 4)
 
 Label: `tab:consistency_per_action_filtering`
 
@@ -49,8 +49,15 @@ Label: `tab:consistency_per_action_filtering`
 ```
 
 - Inputs: the same as the main table.
-- Calculation: `core.eval_tool.summary_xidk`, selecting `dataset=overall`. Each metric excludes instances with an abstention in any response required by that metric. Denominators can therefore differ across metrics; filtering does not remove an entire model or apply a single question-level exclusion to all metrics. CON remains the mean of the five relation scores.
-- Outputs: `filtered.csv` and `filtered.tex`.
+- Calculation: `core.eval_tool.summary_empty_answers`, selecting `dataset=overall`. Replace each observed abstention or empty answer individually with the empty set, retain its companion answers, and recompute each metric. Observed instances remain in the denominator; missing responses and missing repeat observations are not filled. Thus the denominator is 600 only when 600 required observations are actually available. The existing Jaccard convention is retained: J(empty, empty) = 0. CON remains the mean of the five relation scores. Original IDK flags are retained for reporting the abstention rate.
+- This is a sensitivity analysis: empty sets can produce trivial equality, containment, or disjointness, so Table 4 is not evidence of improved QA. The historical metric-instance exclusion implementation remains available as `core.eval_tool.summary_xidk`, but no longer generates Table 4. The CLI key `filtered` is retained for compatibility. The CSV includes per-metric `n_scored_...` counts and `abstention_policy=individual_empty_set`.
+- Outputs: `filtered.csv` and `filtered.tex` for individual empty-set replacement; `filtered_exclusion.csv` and `filtered_exclusion.tex` for the previous metric-instance exclusion policy. Both are regenerated together on the same input snapshot, retain per-metric counts, and have explicit `abstention_policy` identifiers. The exclusion reference uses a separate LaTeX label. `policy_comparison.csv` records score changes and effective denominators between the two methods.
+
+To keep both versions in a dedicated folder:
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results --table filtered --output-dir output/table4_versions
+```
 
 ## 3. Relation Classification Accuracy
 

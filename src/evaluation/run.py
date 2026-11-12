@@ -9,7 +9,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk
+from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk, summary_empty_answers
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 from src.evaluation.statistics.eval_pvalue import compute_pvals, p_value_matrixs
 from src.evaluation.tables.split_heatmap import dataframe_to_heatmap_csvs
@@ -19,17 +19,6 @@ from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_wors
 
 def main():
     argparse.ArgumentParser(description=__doc__).parse_args()
-    # This dependency was already absent before the directory reorganization.
-    # Check before evaluating or writing outputs, rather than silently skipping it.
-    try:
-        from src.evaluation.reviewer_abstention_audit import regenerate as regenerate_paper_tables
-    except ModuleNotFoundError as exc:
-        if exc.name != "src.evaluation.reviewer_abstention_audit":
-            raise
-        raise RuntimeError(
-            "Aggregate evaluation requires the missing reviewer_abstention_audit module. "
-            "Restore it before running this pipeline; table exports remain available separately."
-        ) from exc
     root_dir = str(REPO_ROOT)
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
@@ -92,12 +81,10 @@ def main():
     # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
-    regenerate_paper_tables(
-        Path(root_dir) / "data" / "answers",
-        Path(llm_path),
-        Path(output_folder) / "reviewer_abstention",
-        questions_root=Path(root_dir) / "data" / "ASCB" / "en",
-    )
+    # Table 4 retains instances and replaces individual null answers by empty
+    # sets. Keep the old exclusion-based diagnostic as summary_xidk below.
+    df_summary_empty = summary_empty_answers(df_analysis)
+    df_summary_empty.to_csv(os.path.join(output_folder, "summary_empty_answers.csv"), index=False)
 
     # p-values
     df_scored = impute_worst_case(df_analysis)
@@ -117,8 +104,7 @@ def main():
     df_summary_xidk = summary_xidk(df_analysis)
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="classification")
-    # This legacy diagnostic excludes metric instances and is not paper
-    # Table 4. Paper Table 4 is regenerated above from individual answers.
+    # Legacy exclusion diagnostic, distinct from summary_empty_answers (Table 4).
 
     
     df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)

@@ -1,10 +1,11 @@
 
 from src.evaluation.paths import REPO_ROOT
+import ast
 import os
 import json
 import pandas as pd
 import numpy as np
-from src.evaluation.core.summary_idk_worst import add_idk_flags, metric_idk_mask
+from src.evaluation.core.summary_idk_worst import add_idk_flags, is_null_answer, metric_idk_mask
 # from statsmodels.stats.contingency_tables import mcnemar
 
 
@@ -357,6 +358,83 @@ def summary(df_analysis):
     idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
     return df_summary
+
+def summary_empty_answers(df_analysis):
+    """Table 4: replace each observed null answer with an empty set, then score.
+
+    Retain all observed instances, including null answers. Missing observations
+    remain unavailable; this does not invent 600 records or missing repeats.
+    Use each task's own answer sets and the existing J(empty, empty) = 0 rule.
+    Original abstention flags are retained for reporting the IDK rate.
+    """
+    def answer(cell):
+        if is_null_answer(cell):
+            return set()
+        if isinstance(cell, str):
+            if not cell.strip():
+                return None
+            cell = ast.literal_eval(cell)
+        if isinstance(cell, (list, tuple, set)):
+            return set(cell)
+        if cell is None or pd.isna(cell):
+            return None
+        raise ValueError(f'Unsupported answer-set cell type: {type(cell).__name__}')
+
+    frame = add_idk_flags(df_analysis[df_analysis.action.ne('wikidata')].copy())
+    scores = []
+    contextual_actions = {'classification', 'fixing', 'classification-no-idk', 'fixing-no-idk'}
+    for row in frame.to_dict('records'):
+        a1, a2, a3, a4, repeat, minus_a1, minus_a3 = [
+            answer(row.get(name)) for name in ['A1', 'A2', 'A3', 'A4', 'A1*', 'A1**', 'A3_minus']]
+        contextual = row['action'] in contextual_actions
+        contain_a1 = repeat if contextual else a1
+        diff_a1 = minus_a1 if contextual else a1
+        diff_a3 = minus_a3 if contextual else a3
+        values = {}
+        pairs = [
+            ('?A1=A2', 'J(A1-A2)', a1, a2, lambda left, right: left == right),
+            ('?A1>A3', None, contain_a1, a3, lambda left, right: right.issubset(left)),
+            ('?A1>A4', None, diff_a1, a4, lambda left, right: right.issubset(left)),
+            ('?A3∅A4', 'J(A3-A4)', diff_a3, a4, lambda left, right: left.isdisjoint(right)),
+            ('?A1=A1*', 'J(A1-A1*)', a1, repeat, lambda left, right: left == right),
+        ]
+        for binary, similarity, left, right, predicate in pairs:
+            available = left is not None and right is not None
+            values[binary] = int(predicate(left, right)) if available else float('nan')
+            if similarity:
+                values[similarity] = round(jaccard_similarity(left, right), 4) if available else float('nan')
+        if all(a is not None for a in [diff_a1, diff_a3, a4]):
+            values.update(partition_metrics(diff_a1, diff_a3, a4))
+            values['J(A4-A1|3)'] = round(jaccard_similarity(a4, diff_a1 - diff_a3), 4)
+        else:
+            for metric in ['?A4=A1|3', '?A4=A1-A3', '?A3<=A1(same-context)', 'J(A4-A1|3)']:
+                values[metric] = float('nan')
+        scores.append(values)
+    if frame.empty:
+        raise ValueError('No observed instances available for Table 4')
+    scored = pd.DataFrame(scores, index=frame.index)
+    frame[scored.columns] = scored
+    metrics = list(scored.columns)
+    flags = ['idk_A1', 'idk_A2', 'idk_A3', 'idk_A4']
+
+    def aggregate(keys):
+        grouped = frame.groupby(keys)
+        result = grouped[metrics + flags].mean().round(4)
+        result['n_instances'] = grouped.size()
+        counts = grouped[metrics].count().rename(columns=lambda name: 'n_scored_' + name)
+        result = result.join(counts)
+        result['n_repeat'] = grouped['?A1=A1*'].count()
+        result = result.reset_index()
+        result.loc[result.action.ne('zero-shot'), 'n_repeat'] = 0
+        result['idk'] = result[flags].mean(axis=1)
+        result['abstention_policy'] = 'individual_empty_set'
+        return result
+
+    per_dataset = aggregate(['dataset', 'action', 'llm'])
+    overall = aggregate(['action', 'llm'])
+    overall['dataset'] = 'overall'
+    return pd.concat([per_dataset, overall], ignore_index=True)
+
 
 def summary_xidk(df_analysis):
     group_cols = ["dataset", "action", "llm"]

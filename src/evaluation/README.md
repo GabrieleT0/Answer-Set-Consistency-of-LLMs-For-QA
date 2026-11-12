@@ -24,6 +24,7 @@ Automated regression tests are stored outside the runtime source tree, in
 - `core/eval_tool.py`: load answers, align question groups, compute set predicates and Jaccard scores.
 - `core/eval_relation.py`: normalize and evaluate relation predictions.
 - `core/summary_idk_worst.py`: shared abstention policy and pessimistic summaries.
+- `core/eval_tool.summary_empty_answers`: Table 4 sensitivity analysis, replacing individual observed null answers with empty sets while retaining instances. `summary_xidk` remains the separate historical exclusion diagnostic. Exporting Table 4 writes both the current `filtered` table and a separate `filtered_exclusion` reference, along with a paired comparison on identical inputs.
 - `statistics/eval_pvalue.py`: paired significance tests and model comparison matrices.
 - `tables/export_paper_results.py`: export all eight result tables.
 - `tables/export_supplementary_tables.py`: raw or archived supplementary table exports.
