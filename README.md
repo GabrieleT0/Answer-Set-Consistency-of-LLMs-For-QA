@@ -141,6 +141,40 @@ python src/get_answers/try_fix_llm_response.py
 
 These scripts call external LLM APIs and require valid credentials. They write JSON outputs under `data/answers/` using the folder and filename conventions expected by the evaluation loaders.
 
+#### Run the paired relation-aware controls with multiple workers
+
+The `relation_aware_ablation` generator supports parallel question groups:
+
+```bash
+.venv/bin/python -m src.get_answers.relation_aware_ablation --model gpt-5-mini --workers 8
+```
+
+With the virtual environment activated, `python` can replace `.venv/bin/python`.
+`--workers` defaults to 8, processing up to eight independent question groups
+concurrently. Use `--workers 1` for serial execution. Turns within each dialogue remain sequential,
+and the two correction arms replay the same saved initial dialogue. Each worker
+has its own model client and conversation history. Dataset/task batches retain
+their existing order; this option applies to this generator, not all generation
+scripts.
+
+Results are saved under `output/relation_aware_ablation/`. Checkpoint writes are
+serialized and atomic. Rerunning with the same model, output directory, and
+compatible prompts skips saved fields and retries missing fields; the worker
+count can change between runs. If an earlier serial process is still using that
+directory, stop it before restarting with multiple workers. On interruption or
+an unhandled request error, pending jobs are cancelled and in-flight work is
+allowed to finish its current stage and save progress.
+
+Parallelism can reduce time spent waiting for API responses; it does not guarantee
+an eightfold speedup. Reduce `--workers` if the provider's rate limits become the
+bottleneck. No live API benchmark is included in the offline regression tests.
+
+Run the generation and evaluation regression tests without model calls:
+
+```bash
+.venv/bin/python -m unittest discover -s tests -t .
+```
+
 ### 2. Regenerate Evaluation CSV Files
 
 Evaluation code is grouped into `core/`, `statistics/`, `tables/`, `analyses/`,

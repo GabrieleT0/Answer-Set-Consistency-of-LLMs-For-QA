@@ -2,8 +2,8 @@
 
 Run from the repository root, for example::
 
-    venv/bin/python -m src.get_answers.relation_aware_ablation \
-        --model gpt-4.1-mini-2025-04-14 --max-items 10
+    .venv/bin/python -m src.get_answers.relation_aware_ablation \
+        --model gpt-4.1-mini-2025-04-14 --max-items 10 --workers 8
 
 Each task has an independent conversation, matching the original CtE/Oracle
 scripts. Checkpoints retain the *raw* initial dialogue so the two correction
@@ -18,7 +18,10 @@ import hashlib
 import json
 import os
 import time
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
+from copy import deepcopy
 from pathlib import Path
+from threading import Event, Lock, local
 
 import yaml
 from dotenv import load_dotenv
@@ -206,13 +209,120 @@ def save_checkpoint(path: Path, checkpoint: dict) -> None:
     temporary.replace(path)
 
 
-def run(args, *, chat=None) -> None:
+def _process_record(job, *, dataset, task, prompts, get_chat, publish,
+                    attempts, retry_delay, stop):
+    offset, record = job
+    key = str(offset)
+    questions = record["questions"]
+
+    def complete(field: str, value: dict) -> None:
+        record[field] = value
+        record.get("unusable_responses", {}).pop(field, None)
+        publish(record)
+
+    def try_complete(field: str, generate) -> bool:
+        if stop.is_set():
+            return False
+        if field in record:
+            return True
+        try:
+            value = generate()
+        except UnusableModelResponse as error:
+            record.setdefault("unusable_responses", {})[field] = str(error)
+            publish(record)
+            print(f"{dataset} {task} {key} {field}: {error}; continuing", flush=True)
+            return False
+        complete(field, value)
+        return True
+
+    try_complete("sequential", lambda: run_enumeration(
+        get_chat(), task, questions, prompts, classify=False,
+        attempts=attempts, retry_delay=retry_delay,
+    ))
+    try_complete("cte", lambda: run_enumeration(
+        get_chat(), task, questions, prompts, classify=True,
+        attempts=attempts, retry_delay=retry_delay,
+    ))
+    try_complete("initial", lambda: run_initial(
+        get_chat(), task, questions, prompts,
+        attempts=attempts, retry_delay=retry_delay,
+    ))
+    if "initial" in record and record["initial"]["eligible_for_revision"]:
+        if "branch_order" not in record:
+            record["branch_order"] = (
+                ["recheck", "relation"] if offset % 2 == 0
+                else ["relation", "recheck"]
+            )
+            publish(record)
+        for branch in record["branch_order"]:
+            prompt = RECHECK_PROMPT if branch == "recheck" else relation_prompt(task)
+            try_complete(branch, lambda prompt=prompt: run_branch(
+                get_chat(), record["initial"], prompt,
+                attempts=attempts, retry_delay=retry_delay,
+            ))
+    required = {"sequential", "cte", "initial"}
+    if record.get("initial", {}).get("eligible_for_revision"):
+        required.update(("recheck", "relation"))
+    missing = sorted(required - record.keys())
+    status = "complete" if not missing else f"incomplete ({', '.join(missing)})"
+    print(f"{dataset} {task} {key}: {status}", flush=True)
+
+
+def _run_jobs(jobs, process, workers, stop):
+    """Keep at most workers records in flight, including after an interruption."""
+    if workers == 1:
+        for job in jobs:
+            process(job)
+        return
+    executor = ThreadPoolExecutor(max_workers=workers, thread_name_prefix="qa")
+    pending = set()
+    remaining = iter(jobs)
+    try:
+        for _ in range(workers):
+            job = next(remaining, None)
+            if job is None:
+                break
+            pending.add(executor.submit(process, job))
+        while pending:
+            done, pending = wait(pending, return_when=FIRST_COMPLETED)
+            for future in done:
+                future.result()
+            for _ in done:
+                job = next(remaining, None)
+                if job is not None:
+                    pending.add(executor.submit(process, job))
+    except BaseException:
+        stop.set()
+        for future in pending:
+            future.cancel()
+        raise
+    finally:
+        executor.shutdown(wait=True, cancel_futures=True)
+
+
+def run(args, *, chat=None, chat_factory=None) -> None:
+    workers = getattr(args, "workers", 8)
+    if workers < 1:
+        raise ValueError("workers must be positive")
+    if chat is not None and workers != 1:
+        raise ValueError("For multiple workers use chat_factory, not a shared chat instance")
     load_dotenv(ROOT / "src" / ".env")
     prompts_bytes = PROMPTS_PATH.read_bytes()
     prompts = yaml.safe_load(prompts_bytes)
-    chat = chat or llms.return_chat_model(args.model, temperature=0)
     attempts = getattr(args, "response_attempts", 3)
     retry_delay = getattr(args, "retry_delay", 1.0)
+    clients = local()
+
+    def get_chat():
+        if not hasattr(clients, "chat"):
+            if chat is not None:
+                clients.chat = chat
+            elif chat_factory is not None:
+                clients.chat = chat_factory()
+            else:
+                clients.chat = llms.return_chat_model(args.model, temperature=0)
+        return clients.chat
+
     output_dir = Path(args.output_dir)
     for dataset in args.datasets:
         path = ROOT / "data" / "ASCB" / "en" / dataset
@@ -235,66 +345,35 @@ def run(args, *, chat=None) -> None:
             }
             checkpoint_path = output_dir / utils.output_model_name(args.model) / dataset.replace(".tsv", "") / f"{task}.json"
             checkpoint = load_checkpoint(checkpoint_path, metadata)
+            jobs = []
             for offset, row in enumerate(rows, start=args.start):
                 key = str(offset)
                 questions = {q: row[q] for q in TASKS[task]}
-                record = checkpoint["records"].setdefault(key, {
+                record = deepcopy(checkpoint["records"].get(key, {
                     "row_index": offset,
                     "question_id": row.get("ID", key),
                     "questions": questions,
-                })
+                }))
                 if record["questions"] != questions:
                     raise ValueError(f"Questions changed for {dataset} row {key}")
+                jobs.append((offset, record))
 
-                def complete(field: str, value: dict) -> None:
-                    record[field] = value
-                    record.get("unusable_responses", {}).pop(field, None)
+            checkpoint_lock = Lock()
+            stop = Event()
+
+            def publish(record):
+                # Workers own their local records. Only this locked section may
+                # update the shared checkpoint or replace its temporary file.
+                with checkpoint_lock:
+                    checkpoint["records"][str(record["row_index"])] = deepcopy(record)
                     save_checkpoint(checkpoint_path, checkpoint)
 
-                def try_complete(field: str, generate) -> bool:
-                    if field in record:
-                        return True
-                    try:
-                        value = generate()
-                    except UnusableModelResponse as error:
-                        record.setdefault("unusable_responses", {})[field] = str(error)
-                        save_checkpoint(checkpoint_path, checkpoint)
-                        print(f"{dataset} {task} {key} {field}: {error}; continuing", flush=True)
-                        return False
-                    complete(field, value)
-                    return True
+            def process(job):
+                _process_record(job, dataset=dataset, task=task, prompts=prompts,
+                                get_chat=get_chat, publish=publish, attempts=attempts,
+                                retry_delay=retry_delay, stop=stop)
 
-                try_complete("sequential", lambda: run_enumeration(
-                    chat, task, questions, prompts, classify=False,
-                    attempts=attempts, retry_delay=retry_delay,
-                ))
-                try_complete("cte", lambda: run_enumeration(
-                    chat, task, questions, prompts, classify=True,
-                    attempts=attempts, retry_delay=retry_delay,
-                ))
-                try_complete("initial", lambda: run_initial(
-                    chat, task, questions, prompts,
-                    attempts=attempts, retry_delay=retry_delay,
-                ))
-                if "initial" in record and record["initial"]["eligible_for_revision"]:
-                    if "branch_order" not in record:
-                        record["branch_order"] = (
-                            ["recheck", "relation"] if offset % 2 == 0
-                            else ["relation", "recheck"]
-                        )
-                        save_checkpoint(checkpoint_path, checkpoint)
-                    for branch in record["branch_order"]:
-                        prompt = RECHECK_PROMPT if branch == "recheck" else relation_prompt(task)
-                        try_complete(branch, lambda prompt=prompt: run_branch(
-                            chat, record["initial"], prompt,
-                            attempts=attempts, retry_delay=retry_delay,
-                        ))
-                required = {"sequential", "cte", "initial"}
-                if record.get("initial", {}).get("eligible_for_revision"):
-                    required.update(("recheck", "relation"))
-                missing = sorted(required - record.keys())
-                status = "complete" if not missing else f"incomplete ({', '.join(missing)})"
-                print(f"{dataset} {task} {key}: {status}", flush=True)
+            _run_jobs(jobs, process, workers, stop)
 
 
 def parse_args(argv=None):
@@ -302,6 +381,8 @@ def parse_args(argv=None):
     parser.add_argument("--model", default="gpt-4.1-mini-2025-04-14")
     parser.add_argument("--datasets", nargs="+", choices=DATASETS, default=list(DATASETS))
     parser.add_argument("--tasks", nargs="+", choices=TASKS, default=list(TASKS))
+    parser.add_argument("--workers", type=int, default=8,
+                        help="Independent question groups processed concurrently (default: 8)")
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--max-items", type=int, default=None, help="Rows per dataset; omit for all 600 groups")
     parser.add_argument("--response-attempts", type=int, default=3,
@@ -310,6 +391,8 @@ def parse_args(argv=None):
                         help="Seconds between retries of an unusable completion")
     parser.add_argument("--output-dir", default=str(ROOT / "output" / "relation_aware_ablation"))
     args = parser.parse_args(argv)
+    if args.workers < 1:
+        parser.error("--workers must be positive")
     if args.start < 0 or (args.max_items is not None and args.max_items < 1):
         parser.error("--start must be nonnegative and --max-items must be positive")
     if args.response_attempts < 1 or args.retry_delay < 0:
