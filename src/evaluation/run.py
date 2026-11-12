@@ -6,7 +6,9 @@ from split import split
 import os
 import json
 import datetime
+from pathlib import Path
 from summary_idk_worst import summary_idk_worst, impute_worst_case
+from reviewer_abstention_audit import regenerate as regenerate_paper_tables
 
 if __name__ == "__main__":
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -71,6 +73,13 @@ if __name__ == "__main__":
     # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
+    regenerate_paper_tables(
+        Path(root_dir) / "data" / "answers",
+        Path(llm_path),
+        Path(output_folder) / "reviewer_abstention",
+        questions_root=Path(root_dir) / "data" / "ASCB" / "en",
+    )
+
     # p-values
     df_scored = impute_worst_case(df_analysis)
     df_pval = compute_pvals(df_scored)
@@ -89,8 +98,8 @@ if __name__ == "__main__":
     df_summary_xidk = summary_xidk(df_analysis)
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="classification")
-    # Filtered summaries have metric-specific denominators; do not attach
-    # p-values computed under the pessimistic main-table policy.
+    # This legacy diagnostic excludes metric instances and is not paper
+    # Table 4. Paper Table 4 is regenerated above from individual answers.
 
     
     df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
