@@ -1,10 +1,11 @@
+
+from src.evaluation.paths import REPO_ROOT
 import os
 import pandas as pd
 from scipy.stats import binomtest
 import json
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 
 # Extended predicates and column names
 PREDICATES = ['?A1=A2', '?A1=A3+A4', '?A1>A3', '?A1>A4', '?A3∅A4', '?A4=A1|3']
@@ -150,7 +151,7 @@ if __name__ == "__main__":
     fallback_folder = REPO_ROOT / "data" / "evaluation_results"
     folder = output_folder if (output_folder / "analysis.csv").exists() else fallback_folder
 
-    from summary_idk_worst import impute_worst_case
+    from src.evaluation.core.summary_idk_worst import impute_worst_case
     df_analysis = impute_worst_case(pd.read_csv(folder / "analysis.csv"))
     actions = ["zero-shot", "fixing", "classification"]
     df_pvalue = p_value_matrixs(df_analysis, actions)

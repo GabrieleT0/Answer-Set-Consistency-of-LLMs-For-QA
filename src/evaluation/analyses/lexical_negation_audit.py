@@ -13,12 +13,14 @@ The inferential analysis uses the question group as the statistical unit:
 
 Example
 -------
-python src/evaluation/lexical_negation_audit.py
+python -m src.evaluation.analyses.lexical_negation_audit
 
 By default, artifacts are written to ``output/lexical_negation_audit``.
 """
 
 from __future__ import annotations
+
+from src.evaluation.paths import REPO_ROOT
 
 import argparse
 import json
@@ -32,7 +34,6 @@ import pandas as pd
 from scipy.stats import ttest_ind
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_QUESTIONS = REPO_ROOT / "data" / "ASCB" / "en" / "unified-dataset.tsv"
 REGENERATED_ANALYSIS = REPO_ROOT / "output" / "analysis.csv"
 COMMITTED_ANALYSIS = REPO_ROOT / "data" / "evaluation_results" / "analysis.csv"

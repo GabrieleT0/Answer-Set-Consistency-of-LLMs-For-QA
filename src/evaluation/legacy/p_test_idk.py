@@ -1,3 +1,5 @@
+
+from src.evaluation.paths import REPO_ROOT
 import os
 import json
 import pandas as pd
@@ -5,12 +7,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr, ttest_1samp
 
-root_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = str(REPO_ROOT)
 
 # Load all three datasets and combine them
-df_zs = pd.read_csv(f"{root_dir}/../../output/summary_zero-shot.csv")
-df_cte = pd.read_csv(f"{root_dir}/../../output/summary_classification.csv")
-df_ora = pd.read_csv(f"{root_dir}/../../output/summary_fixing.csv")
+df_zs = pd.read_csv(f"{root_dir}/output/summary_zero-shot.csv")
+df_cte = pd.read_csv(f"{root_dir}/output/summary_classification.csv")
+df_ora = pd.read_csv(f"{root_dir}/output/summary_fixing.csv")
 combined_df = pd.concat([df_zs, df_cte, df_ora], ignore_index=True)
 
 def analyze_idk_consistency_tradeoff(df, consistency_col, visualize=True, verbose=True):
@@ -146,7 +148,7 @@ def analyze_idk_consistency_tradeoff(df, consistency_col, visualize=True, verbos
         
         # Save with sanitized filename
         safe_metric_name = consistency_col.replace('?', '').replace('∅', 'empty').replace('=', 'eq').replace('>', 'gt').replace('+', 'plus')
-        output_file = f"{root_dir}/../../output/tradeoff/idk_consistency_tradeoff_{safe_metric_name}.png"
+        output_file = f"{root_dir}/output/tradeoff/idk_consistency_tradeoff_{safe_metric_name}.png"
         plt.savefig(output_file, dpi=300, bbox_inches='tight')
         if verbose:
             print(f"\n💾 Plot saved to: {output_file}")
@@ -236,7 +238,7 @@ if __name__ == "__main__":
             })
         
         csv_summary_df = pd.DataFrame(csv_summary_data)
-        csv_output_path = f"{root_dir}/../../output/tradeoff/idk_consistency_tradeoff_summary.csv"
+        csv_output_path = f"{root_dir}/output/tradeoff/idk_consistency_tradeoff_summary.csv"
         csv_summary_df.to_csv(csv_output_path, index=False)
         print(f"\n💾 Summary table saved to: {csv_output_path}")
         
@@ -252,7 +254,7 @@ if __name__ == "__main__":
                 })
         
         correlations_df = pd.DataFrame(all_correlations)
-        correlations_csv_path = f"{root_dir}/../../output/tradeoff/idk_consistency_tradeoff_per_model.csv"
+        correlations_csv_path = f"{root_dir}/output/tradeoff/idk_consistency_tradeoff_per_model.csv"
         correlations_df.to_csv(correlations_csv_path, index=False)
         print(f"💾 Per-model correlations saved to: {correlations_csv_path}")
         

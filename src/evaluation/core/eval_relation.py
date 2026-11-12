@@ -436,10 +436,7 @@ def add_contradiction_free_scores(df):
     classification, compare A1 minus A3 to A4; the main joint partition metric is
     reported separately in Tables 10/11.
     """
-    try:
-        from .summary_idk_worst import is_null_answer
-    except ImportError:
-        from summary_idk_worst import is_null_answer
+    from src.evaluation.core.summary_idk_worst import is_null_answer
     out = df.copy()
     columns = ["?SC(A1=A2)", "?SC(A1>A3)", "?SC(A1>A4)",
                "?SC(A3∅A4)", "?SC(A4=A1|3)"]

@@ -1,11 +1,10 @@
+
+from src.evaluation.paths import REPO_ROOT
 import os
 import json
 import pandas as pd
 import numpy as np
-try:
-    from .summary_idk_worst import add_idk_flags, metric_idk_mask
-except ImportError:
-    from summary_idk_worst import add_idk_flags, metric_idk_mask
+from src.evaluation.core.summary_idk_worst import add_idk_flags, metric_idk_mask
 # from statsmodels.stats.contingency_tables import mcnemar
 
 
@@ -421,7 +420,7 @@ def summary_xidk(df_analysis):
 
 if __name__ == "__main__":
     # load dfanalysis 
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    root_dir = str(REPO_ROOT)
     analysis_path = os.path.join(root_dir, "output", "analysis.csv")
     df_analysis = pd.read_csv(analysis_path)
     # get summary_xidk

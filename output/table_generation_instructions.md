@@ -34,7 +34,7 @@ Label: `tab:consistency_per_action_by_id`
 ```
 
 - Inputs: Base, CtE, Oracle (action `fixing` in the code), and `star` responses under `data/answers/`; the four question datasets under `data/`; and `data/llm_info.json`.
-- Calculation: `eval_tool.analysis` → `summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
+- Calculation: `core.eval_tool.analysis` → `core.summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
 - The main score retains the joint partition definition: `A1 = A3 ∪ A4` and `A3 ∩ A4 = ∅`. The final Jaccard metric compares `A4` with `A1 − A3`.
 - Outputs: `main.csv` and `main.tex`. Repeated-question results are displayed only in Base rows.
 
@@ -49,7 +49,7 @@ Label: `tab:consistency_per_action_filtering`
 ```
 
 - Inputs: the same as the main table.
-- Calculation: `eval_tool.summary_xidk`, selecting `dataset=overall`. Each metric excludes instances with an abstention in any response required by that metric. Denominators can therefore differ across metrics; filtering does not remove an entire model or apply a single question-level exclusion to all metrics. CON remains the mean of the five relation scores.
+- Calculation: `core.eval_tool.summary_xidk`, selecting `dataset=overall`. Each metric excludes instances with an abstention in any response required by that metric. Denominators can therefore differ across metrics; filtering does not remove an entire model or apply a single question-level exclusion to all metrics. CON remains the mean of the five relation scores.
 - Outputs: `filtered.csv` and `filtered.tex`.
 
 ## 3. Relation Classification Accuracy
@@ -61,7 +61,7 @@ Label: `tab:classification`
 ```
 
 - Inputs: `Relation*.json` files under `data/answers/zero-shot/`, with the model list from `data/llm_info.json`.
-- Calculation: `eval_relation.load_relations` normalizes relation labels. Predictions for the five relations are compared with the expected labels `Equivalence / Contains / Contains / Disjoint / Equivalence`, respectively. Average is the mean of the five accuracies.
+- Calculation: `core.eval_relation.load_relations` normalizes relation labels. Predictions for the five relations are compared with the expected labels `Equivalence / Contains / Contains / Disjoint / Equivalence`, respectively. Average is the mean of the five accuracies.
 - Outputs: `classification.csv` and `classification.tex`. The CSV includes `n_items` and per-relation `_n` columns for checking coverage. Scores use a 0–100 scale.
 
 ## 4. Significance of CtE / Oracle Improvements over Base
@@ -73,7 +73,7 @@ Label: `tab:p-value_prompting`
 ```
 
 - Inputs: per-question binary scores for Base, CtE, and Oracle in the shared analysis data.
-- Calculation: apply `impute_worst_case` to align abstention handling with the main table, then call `eval_pvalue.compute_pvals`. Pair observations by model, dataset, and question ID. Test CtE and Oracle improvements over Base separately using a one-sided exact McNemar test.
+- Calculation: apply `impute_worst_case` to align abstention handling with the main table, then call `statistics.eval_pvalue.compute_pvals`. Pair observations by model, dataset, and question ID. Test CtE and Oracle improvements over Base separately using a one-sided exact McNemar test.
 - Outputs: `significance.csv` retains full p-values. `significance.tex` displays `* p<0.05`, `** p<0.01`, and `*** p<0.001`; other entries are `--`.
 - Tests use neither rounded table percentages nor the denominators from the table excluding abstentions.
 
@@ -99,7 +99,7 @@ Label: `tab:cRi_by_id_act`
 ```
 
 - Inputs: Base / CtE relation predictions and their corresponding generated answers.
-- Calculation: `eval_relation.add_contradiction_free_scores` checks whether the model's predicted relation holds between its answer sets. `export_supplementary_tables.build_tables` then aggregates these scores. A score of 1 means contradiction-free; explicit abstentions receive 0; missing classification records are excluded from the denominator.
+- Calculation: `core.eval_relation.add_contradiction_free_scores` checks whether the model's predicted relation holds between its answer sets. `tables.export_supplementary_tables.build_tables` then aggregates these scores. A score of 1 means contradiction-free; explicit abstentions receive 0; missing classification records are excluded from the denominator.
 - Outputs: `cfr.csv` and `cfr.tex`. The CSV includes `n_total`, `n_classified`, `n_selected`, and `n_scored`.
 
 ## 7. Consistency and Similarity Given Correct Classification (Historical Supplementary Table 10)
@@ -135,7 +135,7 @@ Each run also produces `coverage.csv` (sample counts by model and strategy), `re
 Run the regression tests with:
 
 ```bash
-.venv/bin/python -m unittest src.evaluation.test_scoring_regressions
+.venv/bin/python -m unittest tests.evaluation.test_scoring_regressions
 ```
 
 To generate only the three historical supplementary tables independently, the existing entry point is also available:
@@ -145,3 +145,7 @@ To generate only the three historical supplementary tables independently, the ex
 ```
 
 `--source archived` exports historical summary values rather than recomputing the corrected metrics from raw responses. Outputs from these two sources represent different evaluation versions and should be distinguished.
+
+## Evaluation package organization
+
+Implementation modules are grouped into `core/`, `statistics/`, `tables/`, and `analyses/`; regression tests live outside `src/`, in `tests/evaluation/`. The common export commands above remain available as compatibility CLI entry points. See [the evaluation package guide](../src/evaluation/README.md) for the complete layout and canonical module commands.

@@ -25,6 +25,8 @@ table as additional model/strategy outputs become available.
 
 from __future__ import annotations
 
+from src.evaluation.paths import REPO_ROOT
+
 import argparse
 import ast
 from pathlib import Path
@@ -34,7 +36,6 @@ import pandas as pd
 from scipy.stats import binomtest, wilcoxon
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 
 ACTION_PAIRS = [
     ("zero-shot", "zero-shot-no-idk"),

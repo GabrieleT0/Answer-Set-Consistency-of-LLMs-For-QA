@@ -1,15 +1,17 @@
-from eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary_xidk
-from eval_relation import load_relations, load_relation_clf, merge_relations_by_action, update_summary_by_relations
-from eval_pvalue import compute_pvals, p_value_matrixs
-from split_heatmap import dataframe_to_heatmap_csvs
-from split import split
+
+from src.evaluation.paths import REPO_ROOT
+from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary_xidk
+from src.evaluation.core.eval_relation import load_relations, load_relation_clf, merge_relations_by_action, update_summary_by_relations
+from src.evaluation.statistics.eval_pvalue import compute_pvals, p_value_matrixs
+from src.evaluation.tables.split_heatmap import dataframe_to_heatmap_csvs
+from src.evaluation.tables.split import split
 import os
 import json
 import datetime
 import pandas as pd
 
 if __name__ == "__main__":
-    root_dir = os.path.dirname(os.path.abspath(__name__))
+    root_dir = str(REPO_ROOT)
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic','lc-quad']
 

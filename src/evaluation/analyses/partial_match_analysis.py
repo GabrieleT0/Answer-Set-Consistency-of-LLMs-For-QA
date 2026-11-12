@@ -15,6 +15,8 @@ Outputs (in output/):
   partial_match_by_dataset.csv — counts per (llm, dataset)
 """
 
+from src.evaluation.paths import REPO_ROOT
+
 import ast
 import json
 import os
@@ -328,7 +330,7 @@ def main():
     )
     args = parser.parse_args()
 
-    root_dir      = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    root_dir      = str(REPO_ROOT)
     analysis_path = os.path.join(root_dir, "output", "analysis.csv")
     output_dir    = os.path.join(root_dir, "output")
     os.makedirs(output_dir, exist_ok=True)

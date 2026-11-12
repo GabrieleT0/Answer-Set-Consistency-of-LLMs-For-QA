@@ -1,10 +1,12 @@
+
+from src.evaluation.paths import REPO_ROOT
 import os
 import json
 import numpy as np
 import pandas as pd
 from scipy.stats import pearsonr
 
-root_dir = '../'
+root_dir = str(REPO_ROOT)
 llm_path = f"{root_dir}/data/llm_info.json"
 with open(llm_path, "r", encoding="utf-8") as f:
     llms_info = json.load(f)

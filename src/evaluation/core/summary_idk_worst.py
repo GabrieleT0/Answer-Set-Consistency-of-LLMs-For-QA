@@ -12,18 +12,16 @@ answer), the metric is set to the worst possible value before averaging:
 Output: output/summary_idk_worst.csv
 """
 
+from src.evaluation.paths import REPO_ROOT
+
 import ast
 import os
 
 import numpy as np
 import pandas as pd
 
-try:
-    from .eval_pvalue import compute_pvals
-    from .split import split
-except ImportError:
-    from eval_pvalue import compute_pvals
-    from split import split
+from src.evaluation.statistics.eval_pvalue import compute_pvals
+from src.evaluation.tables.split import split
 
 
 # ── Worst-case values per metric ─────────────────────────────────────────────
@@ -217,7 +215,7 @@ def summary_idk_worst(df_analysis: pd.DataFrame) -> pd.DataFrame:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    root_dir      = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    root_dir      = str(REPO_ROOT)
     analysis_path = os.path.join(root_dir, "output", "analysis.csv")
     output_dir    = os.path.join(root_dir, "output")
     os.makedirs(output_dir, exist_ok=True)

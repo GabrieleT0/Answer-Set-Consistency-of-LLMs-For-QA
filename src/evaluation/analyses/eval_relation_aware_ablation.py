@@ -1,6 +1,6 @@
 """Score paired relation-aware ablation experiments.
 
-    venv/bin/python -m src.evaluation.eval_relation_aware_ablation
+    venv/bin/python -m src.evaluation.analyses.eval_relation_aware_ablation
 
 Writes per_item.csv and summary.csv beside the generation checkpoints. A
 relevant idk/empty answer is scored as inconsistent, as in the paper's

@@ -1,3 +1,5 @@
+
+from src.evaluation.paths import REPO_ROOT
 import pandas as pd
 import json 
 import os
@@ -7,7 +9,7 @@ def split(df, prefix, actions = None, llm_info = None, folder = None):
         actions = ["zero-shot", "classification", "fixing"]
     # Create the name-to-ID mapping
     if llm_info is None:
-        root_dir = os.path.dirname(os.path.abspath(__name__))
+        root_dir = str(REPO_ROOT)
         folder = root_dir + "/output/"
         llm_path = f"{root_dir}/data/llm_info.json"
         with open(llm_path, "r", encoding="utf-8") as f:
@@ -27,7 +29,7 @@ def split(df, prefix, actions = None, llm_info = None, folder = None):
         print(f"Saved: {prefix}_{act}.csv")
 
 def main():
-    root_dir = os.path.dirname(os.path.abspath(__name__))
+    root_dir = str(REPO_ROOT)
     folder = root_dir + "/output/"
     # file = "summary_2025-09-23_16-04.csv"
     file = "p_value_matrices.csv"
