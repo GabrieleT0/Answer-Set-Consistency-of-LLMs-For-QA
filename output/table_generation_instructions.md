@@ -1,57 +1,5 @@
-# Instructions for Generating the Updated Tables
-
-Run the commands below from the repository root. They use saved experimental responses in `data/`, make no model API calls, and do not modify manuscript files. These instructions cover the eight updated result tables, stored as current LaTeX inputs in `output/paper_tables/` (also exportable from `updated_paper_tables.md` when that file is available). New experiments managed by other authors, including Golden Answers, are outside this scope.
-
-The main results table corresponds to Table 3, and the filtered results table in the appendix corresponds to Table 4. Other table numbers may change as experiments are added, so identify tables by their LaTeX labels below. Supplementary table numbers 9/10/11 in the code are historical identifiers and may differ from the revised manuscript's table numbers.
-
-## Fixed Original-Paper Baseline and Two Export Versions
-
-The frozen baseline is taken from the **original manuscript tables before the evaluation corrections**, not from the updated tables. The eight baseline tables are stored in `output/paper_tables/base/`. They were extracted by LaTeX label from `TEMP/ICLR.tex` (main results) and `TEMP/appendix.tex` (the other seven tables). The baseline has already been initialized for this project.
-
-For normal exports, run:
-
-```bash
-.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables
-```
-
-The input directory contains the eight current table files (`main.tex`, `filtered.tex`, `classification.tex`, `significance.tex`, `correlation.tex`, `cfr.tex`, `correct.tex`, and `incorrect.tex`). Update these input files when revising table results. Each export writes two versions:
-
-- `output/paper_tables/clean/`: current tables with revision coloring removed, retaining manuscript formatting, boldface, and significance shading.
-- `output/paper_tables/blue/`: the same current results, with changes relative to the frozen original-paper baseline marked blue.
-
-The existing input files and the baseline are never overwritten by a normal export. `output/paper_tables/changes.json` records changed cells, caption changes, and table hashes for the export. Existing blue marks in the current inputs are discarded before comparison, so they cannot cause unchanged values to remain blue.
-
-Comparison rules:
-
-- Compare numerical values as displayed in each cell; changes hidden by the displayed rounding precision are not marked.
-- Ignore changes to boldface, whitespace, and equivalent decimal spellings such as `1.0` and `1.00`.
-- Compare displayed significance levels (`*`, `**`, `***`, or no significance), rather than the numeric argument passed to `\shadeA`.
-- Include correlation stars and inequality signs in comparisons.
-- Mark changed caption words or complete LaTeX/math tokens individually, preserving unchanged wording.
-- Match rows by identifiers/model and strategy, rather than their physical order. Added, removed, or renamed data rows require review and cause the export to stop.
-
-The source must retain the supported table layouts. These exports compare reviewed table content; they do not rerun model evaluation or automatically insert newer raw results.
-
-If a Markdown input is available, it can be used instead:
-
-```bash
-.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --markdown output/updated_paper_tables.md
-```
-
-To select a different destination or a single table:
-
-```bash
-.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables --output-dir output/paper_table_versions
-.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables --table main
-```
-
 ### Initialize a baseline once on a fresh checkout
 
-Only run the following when no baseline exists, using manuscript files that still contain the original paper tables:
-
-```bash
-.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables --init-base --base-main TEMP/ICLR.tex --base-appendix TEMP/appendix.tex
-```
 
 Initialization refuses to overwrite an existing baseline. `base/manifest.json` records original source and baseline-table SHA-256 hashes; subsequent exports verify that the frozen baseline has not been edited. To create a deliberately different baseline, use a new `--base-dir` rather than changing the existing files.
 
