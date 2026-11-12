@@ -197,6 +197,15 @@ def analysis(df):
         (r.Q_ID, r.dataset, r.llm): set(r.Answer)
         for r in df[df["action"].eq("star")].itertuples()
     }
+    # Explicit fallback for the two models without isolated Q1 repeats.
+    # Use the CtE equality-task Q1, never an aggregate CtE consistency score.
+    fallback_models = {"llama3.1:70b", "grok-3-mini"}
+    cte_q1_answers = {
+        (r.Q_ID, r.dataset, r.llm): set(r.Answer)
+        for r in df.loc[df["action"].eq("classification")
+                        & df["Q_serie"].eq("Q1") & df["task"].eq("equal")
+                        & df["llm"].isin(fallback_models)].itertuples()
+    }
 
     for keys, group in grouped: 
         if set(group["Q_serie"]) >= {"Q1", "Q2", "Q3", "Q4"}:
@@ -204,12 +213,19 @@ def analysis(df):
             llm = group["llm"].values[0]
             dataset = group["dataset"].values[0]
             qid = group["Q_ID"].values[0]
+            repeat_source = None
             if action in ["zero-shot", "zero-shot-no-idk", "chain-of-thought"]:
                 A1 = get_answer_set(group, "Q1", "equal")
                 A2 = get_answer_set(group, "Q2", "equal")
                 A3 = get_answer_set(group, "Q3", "sup-sub")
                 A4 = get_answer_set(group, "Q4", "minus")
                 A1_star = repeat_answers.get((qid, dataset, llm)) if action == "zero-shot" else None
+                if A1_star is not None:
+                    repeat_source = "Base repeat"
+                elif action == "zero-shot":
+                    A1_star = cte_q1_answers.get((qid, dataset, llm))
+                    if A1_star is not None:
+                        repeat_source = "CtE Q1 (equal) fallback"
                 A1_prime = list(A1_star) if A1_star is not None else None
                 A1_double_prime = None
 
@@ -291,6 +307,7 @@ def analysis(df):
                 "Q3": q_map.get("Q3", ""), "Q4": q_map.get("Q4", ""),
                 "A1": list(A1), "A2": list(A2), "A3": list(A3), "A4": list(A4),
                 "A1*": A1_prime, "A1**": A1_double_prime,
+                "repeat_source": repeat_source,
                 "A3_minus": list(A3_minus) if action in ["classification", "fixing", "classification-no-idk", "fixing-no-idk"] else None,
                 "idk_A1": 1 if len(A1) == 0 or ("idk" in A1) else 0,
                 "idk_A2": 1 if len(A2) == 0 or ("idk" in A2) else 0,

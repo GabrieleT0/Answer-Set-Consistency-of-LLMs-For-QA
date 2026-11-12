@@ -248,6 +248,21 @@ This script reads `output/summary_idk_worst.csv` and
 exist, it falls back to the committed results in `data/evaluation_results/`. It
 writes bar charts and p-value heatmaps under `charts/`.
 
+## Generate the updated paper tables
+
+Run `python -m src.evaluation.export_paper_results` from the repository root to
+recompute all eight updated tables from saved answers. Outputs go to
+`output/reproduced_tables/`, including CSVs, plain LaTeX tables, coverage counts,
+and input SHA-256 hashes. For individual table commands and label mappings, see
+[the table generation instructions](output/table_generation_instructions.md).
+For manuscript-formatted versions, run
+`python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables`.
+This compares the current tables against the frozen original-paper baseline in
+`output/paper_tables/base/` and writes `clean/` and `blue/` versions, plus a
+`changes.json` report. Existing blue marks are removed before comparison; the
+baseline is never updated by a normal export. See the table generation
+instructions for baseline initialization and input options.
+
 ## Metrics
 
 For each dataset, model, and action, the evaluation reports:

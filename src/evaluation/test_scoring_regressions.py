@@ -112,6 +112,23 @@ class ScoringRegressionTests(unittest.TestCase):
         df = pd.DataFrame({"A1": [["no answer"], ["a", "IDK"]], "A2": [["no answer"], ["a", "IDK"]], "?A1=A2": [1, 1]})
         self.assertEqual(impute_worst_case(df)["?A1=A2"].tolist(), [0, 0])
 
+    def test_cte_q1_fallback_matches_question_and_preserves_real_repeats(self):
+        base = answers("zero-shot", {("Q1", "equal"): ["a"],
+            ("Q2", "equal"): ["a"], ("Q3", "sup-sub"): ["a"],
+            ("Q4", "minus"): ["b"]})
+        cte = answers("classification", {("Q1", "equal"): ["a"]})
+        base["llm"] = cte["llm"] = "grok-3-mini"
+        row = analysis(pd.concat([base, cte], ignore_index=True)).iloc[0]
+        self.assertEqual(row["?A1=A1*"], 1)
+        self.assertEqual(row["repeat_source"], "CtE Q1 (equal) fallback")
+        wrong_dataset = cte.copy(); wrong_dataset["dataset"] = "other"
+        self.assertIsNone(analysis(pd.concat([base, wrong_dataset])).iloc[0]["A1*"])
+        repeat = answers("star", {("Q1", "equal"): ["idk"]})
+        repeat["llm"] = "grok-3-mini"
+        row = analysis(pd.concat([base, cte, repeat], ignore_index=True)).iloc[0]
+        self.assertEqual(row["A1*"], ["idk"])
+        self.assertEqual(row["repeat_source"], "Base repeat")
+
     def test_overall_pairing_includes_dataset(self):
         rows = []
         for dataset in ["x", "y"]:

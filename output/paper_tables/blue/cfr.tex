@@ -1,0 +1,50 @@
+\begin{table}[!t]
+\caption{Per-relation contradiction-free rates $\fcfr{R}$ (0--100 scale). \textcolor{blue!60!black}{Missing} \textcolor{blue!60!black}{classifications} \textcolor{blue!60!black}{are} \textcolor{blue!60!black}{excluded}\textcolor{blue!60!black}{;} \textcolor{blue!60!black}{explicit} \textcolor{blue!60!black}{classification} \textcolor{blue!60!black}{abstentions} \textcolor{blue!60!black}{and} \textcolor{blue!60!black}{null} \textcolor{blue!60!black}{answers} \textcolor{blue!60!black}{receive} \textcolor{blue!60!black}{zero} \textcolor{blue!60!black}{credit}\textcolor{blue!60!black}{.}}
+\centering
+\rowcolors{3}{gray!10}{white}
+
+\footnotesize
+\begin{tabular}{r r !{\color{white!80!black} \vline} r r r r r}
+\toprule
+\textbf{LLM} & \textbf{Str} & $\fcfr{\rone}$ & $\fcfr{\rtwo}$ & $\fcfr{\rthree}$ & $\fcfr{\rfour}$ & $\fcfr{\rfive}$ \\
+\midrule
+\sf Llama-3.1-8b  & Base & \textcolor{blue!60!black}{37.67} & \textcolor{blue!60!black}{28.67} & \textcolor{blue!60!black}{32.17} & \textcolor{blue!60!black}{19.83} & \textcolor{blue!60!black}{22.17} \\
+& CtE & \textcolor{blue!60!black}{80.67} & \textcolor{blue!60!black}{64.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{43.00} \\ \midrule
+\sf GPT-oss-20b  & Base & \textcolor{blue!60!black}{14.67} & \textcolor{blue!60!black}{29.50} & \textcolor{blue!60!black}{23.00} & \textcolor{blue!60!black}{66.17} & \textcolor{blue!60!black}{12.33} \\
+& CtE & \textcolor{blue!60!black}{57.50} & \textcolor{blue!60!black}{52.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{45.00} \\ \midrule
+\sf GPT-4.1-nano  & Base & \textcolor{blue!60!black}{39.67} & \textcolor{blue!60!black}{39.33} & \textcolor{blue!60!black}{28.83} & \textcolor{blue!60!black}{28.50} & \textcolor{blue!60!black}{30.83} \\
+& CtE & \textcolor{blue!60!black}{0.67} & \textcolor{blue!60!black}{1.00} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{1.00} \\ \midrule
+\sf Mistral-small:24b  & Base & \textcolor{blue!60!black}{27.63} & \textcolor{blue!60!black}{7.12} & \textcolor{blue!60!black}{14.58} & \textcolor{blue!60!black}{19.15} & \textcolor{blue!60!black}{13.22} \\
+& CtE & \textcolor{blue!60!black}{74.83} & \textcolor{blue!60!black}{9.83} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{23.50} \\ \midrule
+\sf Llama-3.1-70b  & Base & \textcolor{blue!60!black}{20.00} & \textcolor{blue!60!black}{9.50} & \textcolor{blue!60!black}{40.50} & \textcolor{blue!60!black}{64.50} & \textcolor{blue!60!black}{4.83} \\
+& CtE & \textcolor{blue!60!black}{79.50} & \textcolor{blue!60!black}{18.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{67.33} \\ \midrule
+\sf Gemini-2.0-flash  & Base & \textcolor{blue!60!black}{30.83} & \textcolor{blue!60!black}{33.17} & \textcolor{blue!60!black}{53.17} & \textcolor{blue!60!black}{47.17} & \textcolor{blue!60!black}{10.83} \\
+& CtE & \textcolor{blue!60!black}{70.67} & \textcolor{blue!60!black}{36.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{52.17} \\ \midrule
+\sf GPT-4.1-mini  & Base & \textcolor{blue!60!black}{33.33} & \textcolor{blue!60!black}{19.33} & \textcolor{blue!60!black}{55.83} & \textcolor{blue!60!black}{45.50} & \textcolor{blue!60!black}{7.33} \\
+& CtE & \textcolor{blue!60!black}{76.33} & \textcolor{blue!60!black}{17.50} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{64.00} \\ \midrule
+\sf GPT-4o  & Base & \textcolor{blue!60!black}{25.33} & \textcolor{blue!60!black}{15.67} & \textcolor{blue!60!black}{36.83} & \textcolor{blue!60!black}{35.00} & \textcolor{blue!60!black}{6.83} \\
+& CtE & \textcolor{blue!60!black}{40.83} & \textcolor{blue!60!black}{31.17} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{23.50} \\ \midrule
+\sf GPT-4.1  & Base & \textcolor{blue!60!black}{39.33} & \textcolor{blue!60!black}{47.67} & \textcolor{blue!60!black}{47.17} & \textcolor{blue!60!black}{55.17} & \textcolor{blue!60!black}{9.83} \\
+& CtE & \textcolor{blue!60!black}{88.50} & \textcolor{blue!60!black}{60.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{77.67} \\ \midrule
+\sf Grok-3-mini  & Base & \textcolor{blue!60!black}{32.17} & \textcolor{blue!60!black}{46.33} & \textcolor{blue!60!black}{37.17} & \textcolor{blue!60!black}{75.17} & \textcolor{blue!60!black}{24.33} \\
+& CtE & \textcolor{blue!60!black}{82.67} & \textcolor{blue!60!black}{78.00} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{72.17} \\ \midrule
+\sf DeepSeek-V3.1  & Base & \textcolor{blue!60!black}{31.00} & \textcolor{blue!60!black}{21.50} & \textcolor{blue!60!black}{46.83} & \textcolor{blue!60!black}{33.50} & \textcolor{blue!60!black}{8.17} \\
+& CtE & \textcolor{blue!60!black}{70.00} & \textcolor{blue!60!black}{21.33} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{46.00} \\ \midrule
+\sf Gemini-2.5-flash  & Base & \textcolor{blue!60!black}{32.83} & \textcolor{blue!60!black}{44.67} & \textcolor{blue!60!black}{35.67} & \textcolor{blue!60!black}{75.00} & \textcolor{blue!60!black}{21.83} \\
+& CtE & \textcolor{blue!60!black}{88.50} & \textcolor{blue!60!black}{85.17} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{80.17} \\ \midrule
+\sf GPT-5-nano  & Base & \textcolor{blue!60!black}{24.50} & \textcolor{blue!60!black}{31.67} & \textcolor{blue!60!black}{26.83} & \textcolor{blue!60!black}{38.83} & \textcolor{blue!60!black}{17.83} \\
+& CtE & \textcolor{blue!60!black}{70.83} & \textcolor{blue!60!black}{69.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{7.67} \\ \midrule
+\sf DeepSeek-reasoner  & Base & \textcolor{blue!60!black}{18.83} & \textcolor{blue!60!black}{37.33} & \textcolor{blue!60!black}{26.33} & \textcolor{blue!60!black}{73.83} & \textcolor{blue!60!black}{12.33} \\
+& CtE & \textcolor{blue!60!black}{56.67} & \textcolor{blue!60!black}{60.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{52.67} \\ \midrule
+\sf Gemini-2.5-pro  & Base & \textcolor{blue!60!black}{31.17} & \textcolor{blue!60!black}{40.17} & \textcolor{blue!60!black}{36.50} & \textcolor{blue!60!black}{74.50} & \textcolor{blue!60!black}{20.50} \\
+& CtE & \textcolor{blue!60!black}{83.83} & \textcolor{blue!60!black}{83.67} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{73.17} \\ \midrule
+\sf GPT-5-mini  & Base & \textcolor{blue!60!black}{23.17} & \textcolor{blue!60!black}{27.83} & \textcolor{blue!60!black}{25.00} & \textcolor{blue!60!black}{38.83} & \textcolor{blue!60!black}{14.33} \\
+& CtE & \textcolor{blue!60!black}{51.00} & \textcolor{blue!60!black}{44.83} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{35.17} \\ \midrule
+\sf GPT-o3  & Base & \textcolor{blue!60!black}{29.49} & \textcolor{blue!60!black}{44.75} & \textcolor{blue!60!black}{34.07} & \textcolor{blue!60!black}{74.24} & \textcolor{blue!60!black}{20.85} \\
+& CtE & \textcolor{blue!60!black}{77.00} & \textcolor{blue!60!black}{69.33} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{78.17} \\ \midrule
+\sf GPT-5  & Base & \textcolor{blue!60!black}{31.00} & \textcolor{blue!60!black}{40.17} & \textcolor{blue!60!black}{35.50} & \textcolor{blue!60!black}{58.33} & \textcolor{blue!60!black}{23.00} \\
+& CtE & \textcolor{blue!60!black}{68.17} & \textcolor{blue!60!black}{64.50} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{--} & \textcolor{blue!60!black}{60.33} \\ 
+\bottomrule
+\end{tabular}
+\label{tab:cRi_by_id_act}
+\end{table}
