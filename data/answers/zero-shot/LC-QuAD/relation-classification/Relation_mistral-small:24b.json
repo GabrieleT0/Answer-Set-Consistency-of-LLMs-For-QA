@@ -1034,5 +1034,19 @@
         "Disjoint",
         "Disjoint",
         "Equivalence"
+    ],
+    "120": [
+        "Equivalence",
+        "ContainedBy",
+        "ContainedBy",
+        "Disjoint",
+        "Equivalence"
+    ],
+    "138": [
+        "Equivalence",
+        "ContainedBy",
+        "ContainedBy",
+        "Disjoint",
+        "Equivalence"
     ]
 }

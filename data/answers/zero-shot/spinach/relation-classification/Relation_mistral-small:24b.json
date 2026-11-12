@@ -1006,5 +1006,47 @@
         "Overlap",
         "Disjoint",
         "Unknown"
+    ],
+    "7": [
+        "Overlap",
+        "Overlap",
+        "Disjoint",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "3": [
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "44": [
+        "Equivalence",
+        "ContainedBy",
+        "Disjoint",
+        "Disjoint",
+        "Disjoint"
+    ],
+    "91": [
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Unknown"
+    ],
+    "65": [
+        "Contains",
+        "Overlap",
+        "Unknown",
+        "Disjoint",
+        "Unknown"
+    ],
+    "105": [
+        "Equivalence",
+        "ContainedBy",
+        "Overlap",
+        "Disjoint",
+        "Unknown"
     ]
 }
