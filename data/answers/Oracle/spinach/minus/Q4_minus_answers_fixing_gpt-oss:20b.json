@@ -1,1 +1,629 @@
-{}
+{
+    "1": [
+        "Cuba"
+    ],
+    "0": [
+        "Monty Python's Flying Circus",
+        "Fawlty Towers"
+    ],
+    "2": [],
+    "6": [
+        "India",
+        "China",
+        "Pakistan",
+        "India?"
+    ],
+    "8": [
+        "Romania",
+        "Bulgaria",
+        "Moldova",
+        "Ukraine"
+    ],
+    "10": [
+        "Star Wars Episode 2: Attack of the Clones",
+        "Star Wars Episode 3: Revenge of the Sith",
+        "Star Wars Episode 7: The Force Awakens",
+        "Star Wars Episode 8: The Last Jedi",
+        "Star Wars Episode 9: The Rise of Skywalker",
+        "Rogue One: A Star Wars Story",
+        "Solo: A Star Wars Story"
+    ],
+    "9": [],
+    "12": [
+        "E",
+        "G"
+    ],
+    "13": [
+        "Budapest Open Access Initiative",
+        "Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities",
+        "Open Access Initiative (group of scholars and institutions)"
+    ],
+    "11": [],
+    "15": [
+        "John Quincy Adams"
+    ],
+    "14": [],
+    "17": [
+        "Shaun of the Dead",
+        "Hot Fuzz",
+        "The World's End"
+    ],
+    "16": [
+        "Cubism",
+        "Modernism"
+    ],
+    "19": [
+        "Paris Saint-Germain"
+    ],
+    "21": [
+        "Denmark",
+        "Poland",
+        "Czech Republic",
+        "France",
+        "Netherlands"
+    ],
+    "20": [],
+    "23": [
+        "Guinea",
+        "Nigeria"
+    ],
+    "26": [
+        "Dick Durbin",
+        "Tammy Duckworth"
+    ],
+    "7": [
+        "idk"
+    ],
+    "28": [
+        "Turkey",
+        "Syria",
+        "Lebanon",
+        "Israel",
+        "Egypt",
+        "Libya",
+        "Tunisia",
+        "Algeria",
+        "Morocco"
+    ],
+    "22": [
+        "Eclipse",
+        "The Last Song",
+        "Breaking Dawn Part 1",
+        "Breaking Dawn Part 2"
+    ],
+    "30": [
+        "King",
+        "Kira",
+        "Zoro"
+    ],
+    "3": [
+        "Sevilla",
+        "Real Sociedad",
+        "Real Betis",
+        "Villarreal",
+        "Athletic Club",
+        "Real Valladolid",
+        "Celta Vigo",
+        "Getafe",
+        "Espanyol",
+        "Granada",
+        "Alavés",
+        "Levante",
+        "Rayo Vallecano",
+        "Cádiz",
+        "Elche",
+        "Almería",
+        "Mallorca"
+    ],
+    "24": [
+        "idk"
+    ],
+    "34": [
+        "French"
+    ],
+    "35": [
+        "Andrew Johnson"
+    ],
+    "36": [
+        "Israel"
+    ],
+    "37": [
+        "Norway",
+        "Russia"
+    ],
+    "25": [],
+    "39": [
+        "Gerald Ford"
+    ],
+    "5": [],
+    "38": [
+        "Mandarin Chinese",
+        "Wu Chinese",
+        "Min Chinese",
+        "Hakka Chinese",
+        "Gan Chinese",
+        "Xiang Chinese",
+        "Jin Chinese",
+        "Pinghua Chinese",
+        "Huizhou Chinese",
+        "Chaozhou Chinese",
+        "Shanghainese Chinese",
+        "Suzhou Chinese",
+        "Hangzhou Chinese",
+        "Ningbo Chinese",
+        "Wenzhou Chinese",
+        "Ningde Chinese",
+        "Zhangzhou Chinese",
+        "Quanzhou Chinese",
+        "Fuzhou Chinese",
+        "Xiamen Chinese",
+        "Hokkien Chinese",
+        "Hainanese Chinese",
+        "Taiwanese Chinese",
+        "Sichuanese Chinese",
+        "Shenzhen Mandarin Chinese",
+        "Chongqing Mandarin Chinese",
+        "Nanjing Mandarin Chinese",
+        "Beijing Mandarin Chinese"
+    ],
+    "31": [],
+    "44": [
+        "Berlin",
+        "Hamburg",
+        "Munich",
+        "Cologne",
+        "Aachen"
+    ],
+    "27": [],
+    "46": [
+        "idk"
+    ],
+    "33": [
+        "United States of America",
+        "Australia",
+        "Nigeria",
+        "Ghana",
+        "Sierra Leone",
+        "Liberia",
+        "Namibia",
+        "Zambia",
+        "Bahamas",
+        "Barbados",
+        "Jamaica",
+        "Trinidad and Tobago",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Grenada",
+        "Dominica",
+        "Antigua and Barbuda",
+        "Guyana"
+    ],
+    "43": [
+        "Helios 1",
+        "Helios 2"
+    ],
+    "47": [
+        "Canada",
+        "Taiwan",
+        "Turkey",
+        "Greece",
+        "Colombia",
+        "Ecuador",
+        "Peru",
+        "Bolivia",
+        "Argentina",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu",
+        "Tonga",
+        "Fiji",
+        "Samoa",
+        "New Caledonia"
+    ],
+    "48": [
+        "Neil Armstrong",
+        "Michael Collins",
+        "Edwin Eugene Aldrin Junior"
+    ],
+    "32": [
+        "Standard English (England)",
+        "Received Pronunciation",
+        "Cockney",
+        "Estuary English",
+        "Brummie",
+        "Scouse",
+        "Geordie",
+        "Mancunian",
+        "West Country English",
+        "South West English",
+        "South East English",
+        "East Midlands English",
+        "West Midlands English",
+        "Northumbrian English",
+        "Yorkshire English",
+        "Lancashire English",
+        "Norfolk English",
+        "Suffolk English",
+        "Essex English",
+        "Kentish English",
+        "Sussex English",
+        "Hampshire English",
+        "Dorset English",
+        "Devon English",
+        "Cornwall English",
+        "Somerset English",
+        "Bristol English",
+        "Gloucester English",
+        "Oxford English",
+        "Cambridge English",
+        "York English",
+        "Sheffield English",
+        "Leeds English",
+        "Manchester English",
+        "Liverpool English",
+        "Newcastle English",
+        "Birmingham English",
+        "London English"
+    ],
+    "51": [
+        "idk"
+    ],
+    "53": [
+        "Hinduism",
+        "Buddhism",
+        "Confucianism"
+    ],
+    "52": [
+        "Rottumerplaat",
+        "Rottumeroog"
+    ],
+    "55": [
+        "Belgium",
+        "Switzerland",
+        "Luxembourg"
+    ],
+    "56": [],
+    "57": [
+        "Estonia",
+        "Latvia",
+        "Lithuania"
+    ],
+    "58": [
+        "Maine",
+        "Vermont",
+        "Massachusetts",
+        "Rhode Island",
+        "Connecticut"
+    ],
+    "59": [
+        "Arizona",
+        "Nevada",
+        "California"
+    ],
+    "60": [
+        "Asia",
+        "Africa"
+    ],
+    "29": [],
+    "61": [
+        "Spain",
+        "Bolivia",
+        "Ecuador",
+        "Guatemala",
+        "Paraguay",
+        "Peru",
+        "Puerto Rico"
+    ],
+    "62": [
+        "University of Bern",
+        "German University in Prague",
+        "Institute for Advanced Study in Princeton"
+    ],
+    "41": [],
+    "64": [
+        "Portugal",
+        "France",
+        "United Kingdom",
+        "Morocco"
+    ],
+    "66": [],
+    "42": [],
+    "68": [
+        "Edward",
+        "Henry FitzRoy"
+    ],
+    "45": [],
+    "70": [
+        "Nevada"
+    ],
+    "49": [
+        "idk"
+    ],
+    "67": [],
+    "73": [
+        "United States of America",
+        "Canada"
+    ],
+    "71": [],
+    "18": [],
+    "76": [
+        "Westminster School",
+        "King's College, Cambridge"
+    ],
+    "77": [],
+    "78": [
+        "Arthur",
+        "Mary",
+        "Margaret"
+    ],
+    "79": [
+        "Hera",
+        "Hestia"
+    ],
+    "63": [],
+    "75": [
+        "Kentucky",
+        "Missouri"
+    ],
+    "80": [],
+    "50": [],
+    "82": [
+        "Austria",
+        "Bulgaria",
+        "Croatia",
+        "Cyprus",
+        "Czech Republic",
+        "Denmark",
+        "Estonia",
+        "Finland",
+        "Greece",
+        "Hungary",
+        "Ireland",
+        "Latvia",
+        "Lithuania",
+        "Malta",
+        "Poland",
+        "Portugal",
+        "Romania",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Sweden"
+    ],
+    "54": [
+        "Battle of Monterrey",
+        "Battle of Buena Vista",
+        "Battle of Cerro Gordo",
+        "Battle of Contreras",
+        "Battle of Churubusco",
+        "Battle of Chapultepec"
+    ],
+    "84": [
+        "Mali",
+        "Niger",
+        "Nigeria"
+    ],
+    "87": [],
+    "65": [],
+    "40": [],
+    "89": [
+        "Prince Michael Jackson"
+    ],
+    "86": [],
+    "69": [],
+    "90": [
+        "Juris Doctor from Harvard Law School"
+    ],
+    "85": [
+        "idk"
+    ],
+    "74": [
+        "idk"
+    ],
+    "96": [
+        "Stuart Roosa"
+    ],
+    "95": [],
+    "98": [
+        "Montana",
+        "New Mexico",
+        "Utah",
+        "Oregon",
+        "Washington",
+        "Texas",
+        "Kansas",
+        "Oklahoma"
+    ],
+    "99": [
+        "Kentucky",
+        "Missouri",
+        "Iowa"
+    ],
+    "100": [
+        "idk"
+    ],
+    "81": [],
+    "101": [],
+    "91": [
+        "Jersey City",
+        "Paterson",
+        "Elizabeth"
+    ],
+    "104": [
+        "idk"
+    ],
+    "83": [
+        "Christmas Day",
+        "Good Friday",
+        "Assumption of the Blessed Virgin Mary",
+        "Immaculate Conception of the Blessed Virgin Mary",
+        "Sacred Heart of Jesus",
+        "Holy Trinity",
+        "Exaltation of the Holy Cross",
+        "Annunciation of the Blessed Virgin Mary",
+        "Nativity of the Blessed Virgin Mary"
+    ],
+    "105": [
+        "Aston Villa – Villa Park",
+        "Brighton and Hove Albion – Falmer Stadium",
+        "Burnley – Turf Moor",
+        "Everton – Goodison Park",
+        "Liverpool – Anfield",
+        "Luton Town – Kenilworth Road",
+        "Manchester City – Etihad Stadium",
+        "Manchester United – Old Trafford",
+        "Newcastle United – St. James Park",
+        "Norwich City – Carrow Road",
+        "Sheffield United – Bramall Lane",
+        "Wolverhampton Wanderers – Molineux Stadium"
+    ],
+    "107": [
+        "Christmas with Ariana"
+    ],
+    "92": [],
+    "97": [],
+    "72": [],
+    "106": [
+        "The Love Machine",
+        "The Ruling Class"
+    ],
+    "112": [
+        "Anorexia nervosa, restricting type",
+        "Avoidant/restrictive food intake disorder",
+        "Pica",
+        "Rumination disorder",
+        "Unspecified feeding or eating disorder"
+    ],
+    "93": [],
+    "103": [
+        "idk"
+    ],
+    "114": [
+        "The Secret of the Blue Rose"
+    ],
+    "109": [],
+    "113": [
+        "Idaho",
+        "Nevada",
+        "Oklahoma",
+        "Oregon",
+        "Washington",
+        "Kansas",
+        "Texas"
+    ],
+    "88": [],
+    "118": [
+        "Play Misty for Me"
+    ],
+    "119": [],
+    "121": [
+        "Benin",
+        "Burkina Faso",
+        "Côte d'Ivoire",
+        "Mali",
+        "Niger",
+        "Senegal",
+        "Togo"
+    ],
+    "102": [
+        "1. Football Club Union Berlin",
+        "1. Football and Sports Club Mainz 05",
+        "1. Football Club Köln",
+        "1. Football Club Kaiserslautern",
+        "1. Football Club Augsburg",
+        "Sports Club Freiburg",
+        "Turn and Sports Community 1899 Hoffenheim",
+        "Bayer Leverkusen",
+        "Rasenball Leipzig"
+    ],
+    "115": [],
+    "94": [],
+    "117": [],
+    "120": [],
+    "122": [
+        "none"
+    ],
+    "108": [],
+    "128": [],
+    "129": [
+        "Pulitzer Prize for General Nonfiction (1979)",
+        "National Book Award for Nonfiction (1979)",
+        "MacArthur Fellowship (1981)",
+        "American Academy of Arts and Letters Award (1990)"
+    ],
+    "116": [],
+    "111": [
+        "idk"
+    ],
+    "133": [],
+    "134": [
+        "Carol Thatcher"
+    ],
+    "127": [
+        "German Shepherd Dog (German line)",
+        "German Shepherd Dog (American line)"
+    ],
+    "136": [
+        "Richard Wright",
+        "Nick Mason"
+    ],
+    "137": [
+        "The Mickey Mouse Club",
+        "The Mickey Mouse Show"
+    ],
+    "110": [],
+    "131": [],
+    "125": [
+        "idk"
+    ],
+    "141": [],
+    "126": [
+        "The Lost World: Jurassic Park",
+        "War of the Worlds"
+    ],
+    "132": [],
+    "144": [
+        "idk"
+    ],
+    "143": [
+        "idk"
+    ],
+    "145": [
+        "Victoria"
+    ],
+    "138": [
+        "On the Road",
+        "The Subterraneans",
+        "The Dharma Bums",
+        "Visions of Cody",
+        "Big Sur"
+    ],
+    "123": [],
+    "135": [],
+    "149": [
+        "idk"
+    ],
+    "140": [],
+    "124": [],
+    "130": [],
+    "142": [],
+    "147": [],
+    "146": [],
+    "148": [
+        "Rhine",
+        "Meuse",
+        "Scheldt",
+        "Elbe",
+        "Weser",
+        "Ems",
+        "Göta älv",
+        "Glomma",
+        "Drammen",
+        "Gudenå",
+        "Skjern",
+        "Yser"
+    ],
+    "139": [],
+    "4": []
+}
