@@ -250,18 +250,75 @@ writes bar charts and p-value heatmaps under `charts/`.
 
 ## Generate the updated paper tables
 
-Run `python -m src.evaluation.export_paper_results` from the repository root to
-recompute all eight updated tables from saved answers. Outputs go to
-`output/reproduced_tables/`, including CSVs, plain LaTeX tables, coverage counts,
-and input SHA-256 hashes. For individual table commands and label mappings, see
-[the table generation instructions](output/table_generation_instructions.md).
-For manuscript-formatted versions, run
-`python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables`.
-This compares the current tables against the frozen original-paper baseline in
-`output/paper_tables/base/` and writes `clean/` and `blue/` versions, plus a
+Run these commands from the repository root using the existing `.venv` environment
+(or replace `.venv/bin/python` with the Python executable for your environment).
+They use saved results and do not call model APIs. Golden Answers and other
+separately managed new experiments are outside this workflow.
+
+### Recompute all eight result tables from raw answers
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results
+```
+
+Outputs go to `output/reproduced_tables/`, including CSVs, plain LaTeX tables,
+coverage counts, response provenance, and input SHA-256 hashes. This command
+recomputes results; it does not update the manuscript-formatted input tables in
+`output/paper_tables/`.
+
+### Generate manuscript-formatted clean and blue versions
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir output/paper_tables
+```
+
+This reads the current eight `.tex` input tables directly in `output/paper_tables/`
+and compares them against the frozen original-paper baseline in
+`output/paper_tables/base/`. It writes `clean/` and `blue/` versions, plus a
 `changes.json` report. Existing blue marks are removed before comparison; the
-baseline is never updated by a normal export. See the table generation
-instructions for baseline initialization and input options.
+baseline is never updated by a normal export. This step does not automatically
+insert the newly recomputed raw-mode results: update and check the current input
+tables before generating the two versions.
+
+### Regenerate charts from aggregate results
+
+```bash
+.venv/bin/python src/visualization/run.py
+```
+
+For the older standalone bar charts and heatmaps, also run:
+
+```bash
+.venv/bin/python src/visualization/generate_charts.py
+```
+
+Charts are written under `charts/`. These commands read aggregate evaluation CSVs,
+not `output/reproduced_tables/` or the manuscript table fragments. They may fall
+back to archived results in `data/evaluation_results/` when fresh aggregate files
+are absent; running them alone does not guarantee figures based on the latest
+raw answers.
+
+### Current full-refresh limitation
+
+There is currently no single verified command that refreshes raw evaluation,
+manuscript-formatted tables, both revision variants, and all figures together.
+The aggregate evaluation entry point is `python src/evaluation/run.py`, but it
+currently imports the missing `reviewer_abstention_audit` module. That dependency
+must be restored or the entry point repaired before using it for a full refresh.
+Simply chaining the commands above does not close the gaps between their inputs.
+
+### Can `output/reproduced_tables/` be deleted?
+
+Yes. It contains generated outputs, not required source inputs. Deleting it does
+not remove raw answers, the frozen baseline, current manuscript table inputs, or
+the clean/blue versions. The raw-mode command recreates it on the next run.
+Several existing outputs are tracked in Git, so deleting them appears as file
+deletions in `git status`. Keep or archive their provenance/hash files if you need
+to identify that exact past data snapshot; regenerating after inputs change may
+produce different values and hashes.
+
+For individual table commands, label mappings, and baseline initialization, see
+[the table generation instructions](output/table_generation_instructions.md).
 
 ## Metrics
 
