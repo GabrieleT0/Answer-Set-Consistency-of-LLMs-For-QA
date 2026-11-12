@@ -52,6 +52,31 @@ class UnusableModelResponse(RuntimeError):
     """A response could not be used after retrying the same dialogue turn."""
 
 
+class ContentFilteredResponse(RuntimeError):
+    """The provider blocked a request; no answer is available for this stage."""
+
+
+def _content_filtered(error: Exception) -> bool:
+    # Azure's LangChain adapter raises this ValueError for filtered completions.
+    if isinstance(error, ValueError) and (
+        "Azure has not provided the response due to a content filter being triggered"
+        in str(error)
+    ):
+        return True
+    # Prompt filtering can instead arrive as a structured provider API error.
+    body = getattr(error, "body", None)
+    if isinstance(body, dict):
+        details = body.get("error", body)
+        if isinstance(details, dict):
+            codes = [details.get("code")]
+            inner = details.get("innererror")
+            if isinstance(inner, dict):
+                codes.append(inner.get("code"))
+            return any(str(code).lower() in {"content_filter", "responsibleaipolicyviolation"}
+                       for code in codes)
+    return False
+
+
 def _empty_provider_response(error: Exception) -> bool:
     """Recognize providers that fail while converting null content to text."""
     get_errors = getattr(error, "errors", None)
@@ -113,6 +138,8 @@ def ask(chat, turns: list[dict[str, str]], prompt: str, *,
         try:
             raw = conversation.predict(input=prompt)
         except Exception as error:
+            if _content_filtered(error):
+                raise ContentFilteredResponse("Provider content filter blocked this request") from error
             if not _empty_provider_response(error):
                 raise
             raw = None
@@ -218,6 +245,7 @@ def _process_record(job, *, dataset, task, prompts, get_chat, publish,
     def complete(field: str, value: dict) -> None:
         record[field] = value
         record.get("unusable_responses", {}).pop(field, None)
+        record.get("blocked_responses", {}).pop(field, None)
         publish(record)
 
     def try_complete(field: str, generate) -> bool:
@@ -227,8 +255,15 @@ def _process_record(job, *, dataset, task, prompts, get_chat, publish,
             return True
         try:
             value = generate()
+        except ContentFilteredResponse as error:
+            record.setdefault("blocked_responses", {})[field] = str(error)
+            record.get("unusable_responses", {}).pop(field, None)
+            publish(record)
+            print(f"{dataset} {task} {key} {field}: content-filtered; continuing", flush=True)
+            return False
         except UnusableModelResponse as error:
             record.setdefault("unusable_responses", {})[field] = str(error)
+            record.get("blocked_responses", {}).pop(field, None)
             publish(record)
             print(f"{dataset} {task} {key} {field}: {error}; continuing", flush=True)
             return False
@@ -265,6 +300,9 @@ def _process_record(job, *, dataset, task, prompts, get_chat, publish,
         required.update(("recheck", "relation"))
     missing = sorted(required - record.keys())
     status = "complete" if not missing else f"incomplete ({', '.join(missing)})"
+    blocked = sorted(set(missing) & record.get("blocked_responses", {}).keys())
+    if blocked:
+        status += f"; content-filtered: {', '.join(blocked)}"
     print(f"{dataset} {task} {key}: {status}", flush=True)
 
 

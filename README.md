@@ -165,6 +165,12 @@ directory, stop it before restarting with multiple workers. On interruption or
 an unhandled request error, pending jobs are cancelled and in-flight work is
 allowed to finish its current stage and save progress.
 
+Provider content-filter blocks are recorded separately under `blocked_responses`.
+The affected stage remains incomplete, and the other stages and question groups
+continue. Filtered responses are not converted into answers or IDK observations.
+Rerunning retries missing stages using the original prompts and preserves saved
+complete stages. LangChain deprecation warnings are distinct from provider errors.
+
 Parallelism can reduce time spent waiting for API responses; it does not guarantee
 an eightfold speedup. Reduce `--workers` if the provider's rate limits become the
 bottleneck. No live API benchmark is included in the offline regression tests.
