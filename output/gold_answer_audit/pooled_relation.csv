@@ -1,0 +1,6 @@
+relation,n_pairs,n_available,n_holds,n_holds_with_omission,n_holds_with_omission_no_extras,n_fails_due_to_different_gold_facts
+containment_Q3_in_Q1,1654,1475,985,348,84,0
+containment_Q4_in_Q1,1654,1464,888,300,76,0
+disjoint_Q3_Q4,1654,1433,1098,590,72,0
+paraphrase_Q1_Q2,1654,1534,890,190,39,437
+repeat_Q1_Q1star,1228,1118,696,165,26,270
