@@ -1,0 +1,290 @@
+{
+  "schema_version": 2,
+  "model": "mistralai/mistral-small-3.2-24b-instruct",
+  "dataset": "LC-QuAD.tsv",
+  "task": "equal",
+  "prompts_sha256": "c07251d7b73835b681ff1330683be53d2ef712df2602fc011eb70a4d7a8ad035",
+  "feedback_sha256": "20d84e056b1c9d4a395d0ae2d578e4079866568fa3229fc39cfb948dfee03eaa",
+  "records": {
+    "0": {
+      "row_index": 0,
+      "question_id": "0",
+      "questions": {
+        "Q1": "In which cities did Jan Brueghel the Elder live and work?",
+        "Q2": "In what cities did Jan Brueghel the Elder live and carry out his work?"
+      },
+      "sequential": {
+        "turns": [
+          {
+            "user": "In which cities did Jan Brueghel the Elder live and work?If you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.\n",
+            "assistant": "Antwerp|Brussels|Court of Rudolf II in Prague|Court of Archduke Albert and Archduchess Isabella in Brussels"
+          },
+          {
+            "user": "In what cities did Jan Brueghel the Elder live and carry out his work?If you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.\n",
+            "assistant": "Antwerp|Brussels|Prague|Brussels"
+          }
+        ],
+        "classification": null,
+        "raw_answers": {
+          "Q1": "Antwerp|Brussels|Court of Rudolf II in Prague|Court of Archduke Albert and Archduchess Isabella in Brussels",
+          "Q2": "Antwerp|Brussels|Prague|Brussels"
+        },
+        "answers": {
+          "Q1": [
+            "Antwerp",
+            "Brussels",
+            "Court of Rudolf II in Prague",
+            "Court of Archduke Albert and Archduchess Isabella in Brussels"
+          ],
+          "Q2": [
+            "Antwerp",
+            "Brussels",
+            "Prague",
+            "Brussels"
+          ]
+        }
+      },
+      "cte": {
+        "turns": [
+          {
+            "user": "You are given two questions, q1 and q2. \nYour task is to determine the logical relationship between their respective sets of correct answers. \nChoose only one of the following relations:\n- Equivalence: The answer sets of q1 and q2 are exactly the same.\n- Contains: All answers to q2 are also answers to q1, but q1 includes additional answers. (q1 ⊃ q2)\n- ContainedBy: All answers to q1 are also answers to q2, but q2 includes additional answers. (q1 ⊂ q2)\n- Overlap: q1 and q2 share some, but not all, answers. Neither fully contains the other.\n- Disjoint: q1 and q2 have no answers in common.\n- Unknown: The relation between the answer sets cannot be confidently determined based on the given questions.\nHere are the two questions:\nq1: In which cities did Jan Brueghel the Elder live and work?  \nq2: In what cities did Jan Brueghel the Elder live and carry out his work?  \n\nReturn **only** the name of the most appropriate relation from the list above. \nDo **not** provide any explanation or commentary.\n",
+            "assistant": "Equivalence"
+          },
+          {
+            "user": "In which cities did Jan Brueghel the Elder live and work?If you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.\n",
+            "assistant": "Antwerp|Brussels|Courtrai|Paris|Munich|Vienna|Prague|Madrid|Seville|Naples|Rome|Milan|Venice|Florence|Geneva|Lyon|Lille|Bruges|Ghent|Mechelen|Leuven|Tournai|Valenciennes|Arras|Douai|Louvain|Amsterdam|The Hague|Utrecht|Delft|Haarlem|Leiden|Rotterdam|Dordrecht|Groningen|Breda|Nijmegen|Maastricht|'s-Hertogenbosch|Enkhuizen|Hoorn|Medemblik|Alkmaar|Haarlemmermeer|Zaanstad|Purmerend|Volendam|Marken|Texel|Vlissingen|Middelburg|Breda|Tilburg|Eindhoven|'s-Hertogenbosch|Utrecht|Amersfoort|Apeldoorn|Arnhem|Nijmegen|Ede|Wageningen|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal"
+          },
+          {
+            "user": "In what cities did Jan Brueghel the Elder live and carry out his work?If you cannot answer, return \"idk\".\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nReturn me all answers as a list separated by the symbol '|' don' add any other text.\n",
+            "assistant": "Antwerp|Brussels|Courtrai|Paris|Munich|Vienna|Prague|Madrid|Seville|Naples|Rome|Milan|Venice|Florence|Geneva|Lyon|Lille|Bruges|Ghent|Mechelen|Leuven|Tournai|Valenciennes|Arras|Douai|Louvain|Amsterdam|The Hague|Utrecht|Delft|Haarlem|Leiden|Rotterdam|Dordrecht|Groningen|Breda|Nijmegen|Maastricht|'s-Hertogenbosch|Enkhuizen|Hoorn|Medemblik|Alkmaar|Haarlemmermeer|Zaanstad|Purmerend|Volendam|Marken|Texel|Vlissingen|Middelburg|Breda|Tilburg|Eindhoven|'s-Hertogenbosch|Utrecht|Amersfoort|Apeldoorn|Arnhem|Nijmegen|Ede|Wageningen|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal"
+          }
+        ],
+        "classification": "Equivalence",
+        "raw_answers": {
+          "Q1": "Antwerp|Brussels|Courtrai|Paris|Munich|Vienna|Prague|Madrid|Seville|Naples|Rome|Milan|Venice|Florence|Geneva|Lyon|Lille|Bruges|Ghent|Mechelen|Leuven|Tournai|Valenciennes|Arras|Douai|Louvain|Amsterdam|The Hague|Utrecht|Delft|Haarlem|Leiden|Rotterdam|Dordrecht|Groningen|Breda|Nijmegen|Maastricht|'s-Hertogenbosch|Enkhuizen|Hoorn|Medemblik|Alkmaar|Haarlemmermeer|Zaanstad|Purmerend|Volendam|Marken|Texel|Vlissingen|Middelburg|Breda|Tilburg|Eindhoven|'s-Hertogenbosch|Utrecht|Amersfoort|Apeldoorn|Arnhem|Nijmegen|Ede|Wageningen|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal",
+          "Q2": "Antwerp|Brussels|Courtrai|Paris|Munich|Vienna|Prague|Madrid|Seville|Naples|Rome|Milan|Venice|Florence|Geneva|Lyon|Lille|Bruges|Ghent|Mechelen|Leuven|Tournai|Valenciennes|Arras|Douai|Louvain|Amsterdam|The Hague|Utrecht|Delft|Haarlem|Leiden|Rotterdam|Dordrecht|Groningen|Breda|Nijmegen|Maastricht|'s-Hertogenbosch|Enkhuizen|Hoorn|Medemblik|Alkmaar|Haarlemmermeer|Zaanstad|Purmerend|Volendam|Marken|Texel|Vlissingen|Middelburg|Breda|Tilburg|Eindhoven|'s-Hertogenbosch|Utrecht|Amersfoort|Apeldoorn|Arnhem|Nijmegen|Ede|Wageningen|Zwolle|Deventer|Zutphen|Groningen|Assen|Leeuwarden|Heerenveen|Sneek|Drachten|Emmen|Enschede|Almelo|Hengelo|Oldenzaal"
+        },
+        "answers": {
+          "Q1": [
+            "Antwerp",
+            "Brussels",
+            "Courtrai",
+            "Paris",
+            "Munich",
+            "Vienna",
+            "Prague",
+            "Madrid",
+            "Seville",
+            "Naples",
+            "Rome",
+            "Milan",
+            "Venice",
+            "Florence",
+            "Geneva",
+            "Lyon",
+            "Lille",
+            "Bruges",
+            "Ghent",
+            "Mechelen",
+            "Leuven",
+            "Tournai",
+            "Valenciennes",
+            "Arras",
+            "Douai",
+            "Louvain",
+            "Amsterdam",
+            "The Hague",
+            "Utrecht",
+            "Delft",
+            "Haarlem",
+            "Leiden",
+            "Rotterdam",
+            "Dordrecht",
+            "Groningen",
+            "Breda",
+            "Nijmegen",
+            "Maastricht",
+            "'s-Hertogenbosch",
+            "Enkhuizen",
+            "Hoorn",
+            "Medemblik",
+            "Alkmaar",
+            "Haarlemmermeer",
+            "Zaanstad",
+            "Purmerend",
+            "Volendam",
+            "Marken",
+            "Texel",
+            "Vlissingen",
+            "Middelburg",
+            "Breda",
+            "Tilburg",
+            "Eindhoven",
+            "'s-Hertogenbosch",
+            "Utrecht",
+            "Amersfoort",
+            "Apeldoorn",
+            "Arnhem",
+            "Nijmegen",
+            "Ede",
+            "Wageningen",
+            "Zwolle",
+            "Deventer",
+            "Zutphen",
+            "Groningen",
+            "Assen",
+            "Leeuwarden",
+            "Heerenveen",
+            "Sneek",
+            "Drachten",
+            "Emmen",
+            "Enschede",
+            "Almelo",
+            "Hengelo",
+            "Oldenzaal",
+            "Zwolle",
+            "Deventer",
+            "Zutphen",
+            "Groningen",
+            "Assen",
+            "Leeuwarden",
+            "Heerenveen",
+            "Sneek",
+            "Drachten",
+            "Emmen",
+            "Enschede",
+            "Almelo",
+            "Hengelo",
+            "Oldenzaal",
+            "Zwolle",
+            "Deventer",
+            "Zutphen",
+            "Groningen",
+            "Assen",
+            "Leeuwarden",
+            "Heerenveen",
+            "Sneek",
+            "Drachten",
+            "Emmen",
+            "Enschede",
+            "Almelo",
+            "Hengelo",
+            "Oldenzaal"
+          ],
+          "Q2": [
+            "Antwerp",
+            "Brussels",
+            "Courtrai",
+            "Paris",
+            "Munich",
+            "Vienna",
+            "Prague",
+            "Madrid",
+            "Seville",
+            "Naples",
+            "Rome",
+            "Milan",
+            "Venice",
+            "Florence",
+            "Geneva",
+            "Lyon",
+            "Lille",
+            "Bruges",
+            "Ghent",
+            "Mechelen",
+            "Leuven",
+            "Tournai",
+            "Valenciennes",
+            "Arras",
+            "Douai",
+            "Louvain",
+            "Amsterdam",
+            "The Hague",
+            "Utrecht",
+            "Delft",
+            "Haarlem",
+            "Leiden",
+            "Rotterdam",
+            "Dordrecht",
+            "Groningen",
+            "Breda",
+            "Nijmegen",
+            "Maastricht",
+            "'s-Hertogenbosch",
+            "Enkhuizen",
+            "Hoorn",
+            "Medemblik",
+            "Alkmaar",
+            "Haarlemmermeer",
+            "Zaanstad",
+            "Purmerend",
+            "Volendam",
+            "Marken",
+            "Texel",
+            "Vlissingen",
+            "Middelburg",
+            "Breda",
+            "Tilburg",
+            "Eindhoven",
+            "'s-Hertogenbosch",
+            "Utrecht",
+            "Amersfoort",
+            "Apeldoorn",
+            "Arnhem",
+            "Nijmegen",
+            "Ede",
+            "Wageningen",
+            "Zwolle",
+            "Deventer",
+            "Zutphen",
+            "Groningen",
+            "Assen",
+            "Leeuwarden",
+            "Heerenveen",
+            "Sneek",
+            "Drachten",
+            "Emmen",
+            "Enschede",
+            "Almelo",
+            "Hengelo",
+            "Oldenzaal"
+          ]
+        }
+      },
+      "initial": {
+        "turns": [
+          {
+            "user": "In which cities did Jan Brueghel the Elder live and work?\nIf you cannot answer, return \"idk\".\nIf the question has no answer, return 'no answer'.\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nIf the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).\nPlease, Return me an exhaustive list separated by the symbol '|' don't add any other text. \n",
+            "assistant": "Antwerp|Brussels|Courtrai|Munich|Vienna"
+          },
+          {
+            "user": "In what cities did Jan Brueghel the Elder live and carry out his work?\nIf you cannot answer, return \"idk\".\nIf the question has no answer, return 'no answer'.\nIn the response, do not use abbreviations or acronyms, but spell out the full terms, i.e. \"United States of America\" instead of \"USA\".\nIf the response contains numbers or digits, use Arabic numerals. For example, if the answer contains Star Wars V, indicate it with Star Wars 5. Do not use Roman numerals (such as V) or text (such as five).\nPlease, Return me an exhaustive list separated by the symbol '|' don't add any other text. \n",
+            "assistant": "Antwerp|Brussels|Courtrai|Munich|Vienna"
+          }
+        ],
+        "raw_answers": {
+          "Q1": "Antwerp|Brussels|Courtrai|Munich|Vienna",
+          "Q2": "Antwerp|Brussels|Courtrai|Munich|Vienna"
+        },
+        "answers": {
+          "Q1": [
+            "Antwerp",
+            "Brussels",
+            "Courtrai",
+            "Munich",
+            "Vienna"
+          ],
+          "Q2": [
+            "Antwerp",
+            "Brussels",
+            "Courtrai",
+            "Munich",
+            "Vienna"
+          ]
+        },
+        "consistent": true,
+        "eligible_for_revision": false
+      }
+    }
+  }
+}
