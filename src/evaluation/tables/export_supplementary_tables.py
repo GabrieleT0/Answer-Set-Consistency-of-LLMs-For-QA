@@ -3,14 +3,18 @@
 No model/API calls. See --help for the two explicit data sources.
 """
 
-from src.evaluation.paths import REPO_ROOT
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 
 import pandas as pd
 
+from src.evaluation.paths import REPO_ROOT
 from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, merge_relations_by_action, GT
 from src.evaluation.core.summary_idk_worst import impute_worst_case
@@ -31,6 +35,32 @@ ACTION_NAMES = {"zero-shot": "Base", "classification": "CtE"}
 DISPLAY = {"deepseek-chat": "DeepSeek-V3.1", "deepseek-reasoner": "DeepSeek-reasoner",
            "o3": "GPT-o3", "gpt-oss:20b": "GPT-oss-20b", "llama3.1:8b": "Llama-3.1-8b",
            "llama3.1:70b": "Llama-3.1-70b", "mistral-small:24b": "Mistral-small:24b"}
+
+# Keep related model families adjacent in every newly exported results table.
+PRESENTATION_ORDER = [
+    "llama3.1:8b", "llama3.1:70b", "mistral-small:24b",
+    "deepseek-chat", "deepseek-reasoner",
+    "gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.5-pro",
+    "gpt-oss:20b", "gpt-4o", "gpt-4.1-nano-2025-04-14",
+    "gpt-4.1-mini-2025-04-14", "gpt-4.1-2025-04-14",
+    "o3", "gpt-5-nano", "gpt-5-mini", "gpt-5", "grok-3-mini",
+]
+
+# Preserve the order in the manuscript's Tables 12-14.
+MANUSCRIPT_ORDER = [
+    "llama3.1:8b", "llama3.1:70b", "mistral-small:24b",
+    "deepseek-reasoner", "deepseek-chat",
+    "gemini-2.0-flash", "gemini-2.5-pro", "gemini-2.5-flash",
+    "gpt-oss:20b", "gpt-4o", "gpt-4.1-nano-2025-04-14",
+    "gpt-4.1-mini-2025-04-14", "gpt-4.1-2025-04-14",
+    "o3", "gpt-5-nano", "gpt-5-mini", "gpt-5", "grok-3-mini",
+]
+
+
+def presentation_models(info):
+    return [model for model in PRESENTATION_ORDER if model in info] + [
+        model for model in info if model not in PRESENTATION_ORDER
+    ]
 
 
 def rebuild_analysis(root, models):
@@ -93,7 +123,98 @@ def archived_tables(summary, models):
     return pd.DataFrame(rows)
 
 
+def _display_name(model):
+    name = DISPLAY.get(model, re.sub(r"-\d{4}-\d{2}-\d{2}$", "", model))
+    for prefix, brand in [("gpt-", "GPT-"), ("gemini-", "Gemini-"), ("grok-", "Grok-")]:
+        if name.startswith(prefix):
+            return brand + name[len(prefix):]
+    return name
+
+
+def _render_table12(frame, models):
+    """Use the manuscript's Table 12 typography and model order."""
+    metrics = [spec[3] for spec in SPECS]
+    lookup = frame[frame.table.eq(9)].set_index(["llm", "action", "metric"])
+    order = {model: position for position, model in enumerate(MANUSCRIPT_ORDER)}
+    models = sorted(models, key=lambda model: order.get(model, len(order)))
+    headers = [r"\fcfr{" + relation + "}" for relation in
+               [r"\rone", r"\rtwo", r"\rthree", r"\rfour", r"\rfive"]]
+    lines = [
+        r"\begin{table}[!t]",
+        r"\caption{Per-relation contradiction-free rates $\fcfr{R}$ (0--100 scale). }",
+        r"\centering",
+        r"\rowcolors{3}{gray!10}{white}",
+        "",
+        r"\footnotesize",
+        r"\begin{tabular}{r r !{\color{white!80!black} \vline} r r r r r}",
+        r"\toprule",
+        r"\textbf{LLM} & \textbf{Str} & " + " & ".join("$" + header + "$" for header in headers) + r" \\",
+        r"\midrule",
+    ]
+    for index, model in enumerate(models):
+        for action, label in (("zero-shot", "Base"), ("classification", "CtE")):
+            values = [lookup.loc[(model, action, metric), "score_percent"] for metric in metrics]
+            cells = ["--" if pd.isna(value) else f"{value:.2f}" for value in values]
+            model_cell = r"\sf " + _display_name(model) if action == "zero-shot" else ""
+            lines.append(model_cell + " & " + label + " & " + " & ".join(cells) + r" \\")
+        if index < len(models) - 1:
+            lines.append(r"\midrule")
+    lines.extend([r"\bottomrule", r"\end{tabular}",
+                  r"\label{tab:cRi_by_id_act}", r"\end{table}"])
+    return "\n".join(lines)
+
+
+def _render_conditioned_table(frame, number, models):
+    """Use the manuscript's Table 13/14 layout with recalculated scores."""
+    if number not in (10, 11):
+        raise ValueError(number)
+    lookup = frame[frame.table.eq(number)].set_index(["llm", "action", "metric"])
+    order = {model: position for position, model in enumerate(MANUSCRIPT_ORDER)}
+    models = sorted(models, key=lambda model: order.get(model, len(order)))
+    headers = ([r"\fconr{" + relation + "}" for relation in
+                [r"\rone", r"\rtwo", r"\rthree", r"\rfour", r"\rfive"]] +
+               [r"\fjacs{" + relation + "}" for relation in
+                [r"\rone", r"\rfour", r"\rfive"]])
+    caption = ("Per-relation consistency rate and similarity when predicted relation "
+               "is " + ("correct" if number == 10 else "incorrect") +
+               " according to ground-truth (0--100 scale).")
+    lines = [
+        r"\begin{table}[!t]",
+        r"\setlength{\tabcolsep}{3pt}",
+        r"\centering",
+        r"\caption{" + caption + "}",
+        r"\footnotesize",
+        r"\rowcolors{3}{gray!10}{white}",
+        r"\begin{tabular}{r r !{\color{white!80!black} \vline} r r r r r !{\color{white!80!black} \vline} r r r}",
+        r"\toprule",
+        r"\textbf{LLM} & \textbf{Act} & " +
+        " & ".join("$" + header + "$" for header in headers) + r" \\",
+        r"\midrule",
+    ]
+    metrics = BINARY + SIMILARITIES
+    for index, model in enumerate(models):
+        for action, label in (("zero-shot", "Base"), ("classification", "CtE")):
+            values = [lookup.loc[(model, action, metric), "score_percent"] for metric in metrics]
+            cells = ["--" if pd.isna(value) else f"{value:.2f}" for value in values]
+            # The supplied Table 13 template emphasizes this exact 100.00 cell.
+            if (number == 10 and model == "mistral-small:24b" and
+                    action == "classification" and cells[1] == "100.00"):
+                cells[1] = r"\textbf{100.00}"
+            model_cell = r"\sf " + _display_name(model) if action == "zero-shot" else ""
+            lines.append(model_cell + " & " + label + " & " + " & ".join(cells) + r" \\")
+        if index < len(models) - 1:
+            lines.append(r"\midrule")
+    lines.extend([r"\bottomrule", r"\end{tabular}",
+                  r"\label{" + LABELS[number] + "}", r"\end{table}"])
+    return "\n".join(lines)
+
+
 def render_table(frame, number, models, source):
+    if source == "raw":
+        if number == 9:
+            return _render_table12(frame, models)
+        if number in (10, 11):
+            return _render_conditioned_table(frame, number, models)
     metrics = [s[3] for s in SPECS] if number == 9 else BINARY + SIMILARITIES
     headers = [r"\fcfr{"+r+"}" for r in [r"\rone",r"\rtwo",r"\rthree",r"\rfour",r"\rfive"]] if number == 9 else [r"\fconr{"+r+"}" for r in [r"\rone",r"\rtwo",r"\rthree",r"\rfour",r"\rfive"]]+[r"\fjacs{"+r+"}" for r in [r"\rone",r"\rfour",r"\rfive"]]
     caption = ("Contradiction-free rates for the relations predicted by each model." if number == 9 else
@@ -110,11 +231,7 @@ def render_table(frame, number, models, source):
              r"\textbf{Model} & \textbf{Str} & "+" & ".join("$"+h+"$" for h in headers)+r" \\", r"\midrule"]
     lookup = frame[frame.table.eq(number)].set_index(["llm", "action", "metric"])
     for model in models:
-        name = DISPLAY.get(model, re.sub(r"-\d{4}-\d{2}-\d{2}$", "", model))
-        for prefix, brand in [("gpt-", "GPT-"), ("gemini-", "Gemini-"), ("grok-", "Grok-")]:
-            if name.startswith(prefix):
-                name = brand + name[len(prefix):]
-                break
+        name = _display_name(model)
         for action in ACTION_NAMES:
             values = [lookup.loc[(model, action, metric), "score_percent"] for metric in metrics]
             lines.append(name+" & "+ACTION_NAMES[action]+" & "+" & ".join("--" if pd.isna(v) else f"{v:.2f}" for v in values)+r" \\")
@@ -147,7 +264,8 @@ def write_tables(frame, output, source="raw", models=None, manuscript=None):
             if text.count(marker) != 1:
                 raise ValueError(f"Expected one {marker}")
             position = text.index(marker)
-            start = text.rfind(r"\begin{table}", 0, position)
+            openings = list(re.finditer(r"\\begin\{table\}(?:\[[^\]]*\])?", text[:position]))
+            start = openings[-1].start() if openings else -1
             end = text.index(r"\end{table}", position)+len(r"\end{table}")
             if start < 0:
                 raise ValueError(f"Missing table environment for {label}")
@@ -167,7 +285,7 @@ def main():
     if args.source == "archived" and args.update_manuscript:
         parser.error("Archived exports cannot update the manuscript")
     info = json.loads((ROOT/"data/llm_info.json").read_text())
-    models = sorted(info, key=lambda model: info[model]["ID"])
+    models = presentation_models(info)
     if args.source == "raw":
         tables = build_tables(rebuild_analysis(ROOT, models), models)
     else:

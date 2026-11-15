@@ -19,7 +19,7 @@ from src.evaluation.core.eval_tool import load_all_questions, load_answers, enri
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, merge_relations_by_action
 from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case, metric_idk_mask
 from src.evaluation.statistics.eval_pvalue import compute_pvals
-from src.evaluation.tables.export_supplementary_tables import build_tables, render_table
+from src.evaluation.tables.export_supplementary_tables import build_tables, render_table, presentation_models
 
 ROOT = REPO_ROOT
 BINARY = ['?A1=A2', '?A1>A3', '?A1>A4', '?A3∅A4', '?A4=A1|3']
@@ -164,7 +164,7 @@ def export(root, outdir, selected):
                 for p in inputs}
     manifest = fingerprints()
     info = json.loads((root / 'data/llm_info.json').read_text())
-    models = sorted(info, key=lambda model: info[model]['ID'])
+    models = presentation_models(info)
     frame, relations = rebuild(root, models)
     outdir.mkdir(parents=True, exist_ok=True)
     main = percent_summary(frame)
@@ -212,6 +212,16 @@ def export(root, outdir, selected):
         print('Table 4 exclusion reference ->', outdir / 'filtered_exclusion.csv', '/', 'filtered_exclusion.tex')
     for key in selected:
         data = results[key]
+        if 'llm' in data.columns:
+            order = {model: rank for rank, model in enumerate(models)}
+            action_order = {action: rank for rank, action in enumerate(STRATEGIES)}
+            data = data.assign(
+                _model_order=data['llm'].map(order),
+                _action_order=data['action'].map(action_order) if 'action' in data.columns else 0,
+            ).sort_values(
+                ['_model_order', '_action_order'],
+                kind='stable',
+            ).drop(columns=['_model_order', '_action_order'])
         data.to_csv(outdir / (key + '.csv'), index=False)
         if key in ['cfr', 'correct', 'incorrect']:
             number = {'cfr': 9, 'correct': 10, 'incorrect': 11}[key]
