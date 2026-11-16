@@ -11,9 +11,11 @@ from langchain.memory import ConversationBufferMemory
 try:
     from . import utils
     from . import llms
+    from .concurrent_requests import completed_requests, chat_model_per_worker
 except ImportError:
     import utils
     import llms
+    from concurrent_requests import completed_requests, chat_model_per_worker
 
 # Conditional logging
 def setup_logger():
@@ -49,7 +51,7 @@ def load_prompts(no_idk=False):
 
 
 def _answer_action_dir(config):
-    return (
+    return config.get("answer_action_dir") or (
         "classification-no-idk"
         if config.get("no_idk_ablation", False)
         else "rel_classification_and_questions"
@@ -59,7 +61,8 @@ def _answer_action_dir(config):
 # === Core Functions ===
 
 def run_benchmark(config, prompts, llm_model, language, logical_relation, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
-    chat = llms.return_chat_model(llm_model)
+    workers = config.get("workers", 1)
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
     root_dir = config["root_dir"]
     tsv_file = os.path.join(root_dir, f'data/ASCB/{language}/{dataset}')
     
@@ -74,7 +77,7 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
 
     end_index = min(end_index or len(questions), len(questions))
     output_prefix = '' if language == 'en' else '*'
-    output_model = utils.output_model_name(llm_model)
+    output_model = config.get("output_model", utils.output_model_name(llm_model))
     folder_name = 'equal' if logical_relation == 'Equivalence' else 'sup-sub'
     base_output_dir = os.path.join(
         root_dir,
@@ -97,13 +100,15 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
     answers_ql2 = load_json(q2_path)
     q12_relation = load_json(relation_path)
 
-    for index in range(start_index, end_index):
-        if str(index) in answers_ql1 and str(index) in answers_ql2 and str(index) in q12_relation:
-            continue
+    pending = [index for index in range(start_index, end_index)
+               if str(index) not in answers_ql1 or str(index) not in answers_ql2
+               or str(index) not in q12_relation]
+
+    def request(index):
         question = questions[index]
         memory = ConversationBufferMemory()
         try:
-            conversation = ConversationChain(llm=chat, memory=memory)
+            conversation = ConversationChain(llm=get_chat(), memory=memory)
             relation_predicted = conversation.predict(
                 input=prompts[language]['template_classification'].format(q1=question[0], q2=question[1])
             ).strip().lower()
@@ -120,22 +125,27 @@ def run_benchmark(config, prompts, llm_model, language, logical_relation, datase
             answer1 = utils.convert_response_to_set(answer1)
             answer2 = utils.convert_response_to_set(answer2)
 
-            answers_ql1[str(index)] = list(answer1)
-            answers_ql2[str(index)] = list(answer2)
-            q12_relation[str(index)] = relation_predicted
+            return list(answer1), list(answer2), relation_predicted
+        except Exception as e:
+            return e
 
+    for index, result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"Error at index {index}: {result}")
+        else:
+            question = questions[index]
+            answers_ql1[str(index)], answers_ql2[str(index)], q12_relation[str(index)] = result
             for path, data in zip([q1_path, q2_path, relation_path], [answers_ql1, answers_ql2, q12_relation]):
                 with open(path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=4)
-
-            logger.info(f"Index {index}: Q1: {question[0]} Q2: {question[1]} Rel: {relation_predicted}")
-        except Exception as e:
-            logger.error(f"Error at index {index}: {e}")
-        time.sleep(1.5)
+            logger.info(f"Index {index}: Q1: {question[0]} Q2: {question[1]} Rel: {result[2]}")
+        if workers == 1:
+            time.sleep(1.5)
 
 
 def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, test_type, dataset, use_hint=False, start_index=0, end_index=None, logger = setup_logger()):
-    chat = llms.return_chat_model(llm_model)
+    workers = config.get("workers", 1)
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
     root_dir = config["root_dir"]
     tsv_file = os.path.join(root_dir, "data", "ASCB", language, dataset)
 
@@ -147,7 +157,7 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
 
     end_index = min(end_index or len(questions), len(questions))
     output_prefix = '' if language == 'en' else '*'
-    output_model = utils.output_model_name(llm_model)
+    output_model = config.get("output_model", utils.output_model_name(llm_model))
     base_output_dir = os.path.join(
         root_dir,
         "data",
@@ -171,14 +181,15 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
     answers_ql4 = load_json(q4_path)
     answer_relation = load_json(relation_path)
 
-    for index in range(start_index, end_index):
-        if str(index) in answers_ql1 and str(index) in answers_ql3 and str(index) in answers_ql4 and str(index) in answer_relation:
-        # if str(index) in answers_ql1 and len(answers_ql1[str(index)])>0:
-            continue
+    pending = [index for index in range(start_index, end_index)
+               if str(index) not in answers_ql1 or str(index) not in answers_ql3
+               or str(index) not in answers_ql4 or str(index) not in answer_relation]
+
+    def request(index):
         question = questions[index]
         memory = ConversationBufferMemory()
         try:
-            conversation = ConversationChain(llm=chat, memory=memory)
+            conversation = ConversationChain(llm=get_chat(), memory=memory)
 
             relation_predicted = conversation.predict(
                 input=prompts_minus[language]['template_classification'].format(q1=question[0], q2=question[1], q3=question[2])
@@ -198,20 +209,23 @@ def run_minus_benchmark(config, prompts, prompts_minus, llm_model, language, tes
             answer3 = utils.convert_response_to_set(answer3)
             relation_set = utils.convert_response_to_set(relation_predicted)
 
-            answers_ql1[str(index)] = list(answer1)
-            answers_ql3[str(index)] = list(answer2)
-            answers_ql4[str(index)] = list(answer3)
-            answer_relation[str(index)] = list(relation_set)
+            return list(answer1), list(answer2), list(answer3), list(relation_set), relation_predicted
+        except Exception as e:
+            return e
 
+    for index, result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"Error at index {index}: {result}")
+        else:
+            question = questions[index]
+            answers_ql1[str(index)], answers_ql3[str(index)], answers_ql4[str(index)], answer_relation[str(index)] = result[:4]
             for path, data in zip([q1_path, q3_path, q4_path, relation_path],
                                   [answers_ql1, answers_ql3, answers_ql4, answer_relation]):
                 with open(path, 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=4)
-
-            logger.info(f"Index {index}: Q1: {question[0]} Q2: {question[1]} Q3: {question[2]} Relation: {relation_predicted}")
-        except Exception as e:
-            logger.error(f"Error at index {index}: {e}")
-        time.sleep(1.5)
+            logger.info(f"Index {index}: Q1: {question[0]} Q2: {question[1]} Q3: {question[2]} Relation: {result[4]}")
+        if workers == 1:
+            time.sleep(1.5)
 
 
 # === Entrypoint ===

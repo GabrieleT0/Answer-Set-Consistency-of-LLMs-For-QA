@@ -3,10 +3,12 @@ try:
     from .llms import PromptLLMS
     from . import llms
     from . import utils
+    from .concurrent_requests import completed_requests, chat_model_per_worker
 except ImportError:
     from llms import PromptLLMS
     import llms
     import utils
+    from concurrent_requests import completed_requests, chat_model_per_worker
 import os
 import csv
 import json
@@ -48,9 +50,19 @@ with open(PROMPT_PATH, "r", encoding="utf-8") as f:
     PROMPTS = yaml.safe_load(f)
 
 
-def relation_identification(llm_model, language, dataset, logger):
-    dataset_name = dataset.split('.')[0]
-    tsv_file = root_dir + f"/data/ASCB/{language}/{dataset}"
+def _relation_output_path(config, dataset, llm_model):
+    project_root = config.get("root_dir", root_dir)
+    output_model = config.get("output_model", utils.output_model_name(llm_model))
+    return os.path.join(
+        project_root, "data", "answers", "zero-shot", dataset.split('.')[0],
+        "relation-classification", f"Relation_{output_model}.json",
+    )
+
+
+def relation_identification(llm_model, language, dataset, logger, config=None):
+    config = config or {}
+    project_root = config.get("root_dir", root_dir)
+    tsv_file = os.path.join(project_root, "data", "ASCB", language, dataset)
     PROMPTS_equal = PROMPTS["relation_classification"][language]["template_classification"]
     PROMPTS_minus = PROMPTS["relation_classification_minus"][language]["template_classification"]
     # PROMPTS_all = PROMPTS["relation_classification_all"][language]["template_classification"]
@@ -60,21 +72,23 @@ def relation_identification(llm_model, language, dataset, logger):
         reader = csv.DictReader(tsvfile, delimiter='\t')
         for row in reader:
             question_pairs.append((row['Q1'], row['Q2'],row['Q3'], row['Q4']))
-    output_filename = root_dir + f'/data/answers/zero-shot/{dataset_name}/relation-classification/Relation_{llm_model}.json'
+    output_filename = _relation_output_path(config, dataset, llm_model)
     answers = {}
     if os.path.exists(output_filename):
         with open(output_filename, 'r', encoding='utf-8') as f:
             print(output_filename)
             answers = json.load(f)
 
-    for index, (q1, q2, q3, q4) in enumerate(question_pairs):
-        if str(index) in answers and len(answers[str(index)]) > 0:
-            logger.info("Answer found. Skip prompting.")
-            continue
+    workers = config.get("workers", 1)
+    pending = [(index, questions) for index, questions in enumerate(question_pairs)
+               if str(index) not in answers or not answers[str(index)]]
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
+
+    def request(item):
+        _, (q1, q2, q3, q4) = item
         try:
-            chat = llms.return_chat_model(llm_model)
             memory = ConversationBufferMemory()
-            conversation = ConversationChain(llm=chat, memory=memory)
+            conversation = ConversationChain(llm=get_chat(), memory=memory)
             # ?q1=q2
             q1_q2 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q2))
             q1_q3 = conversation.predict(input=PROMPTS_equal.format(q1=q1, q2=q3))
@@ -82,17 +96,16 @@ def relation_identification(llm_model, language, dataset, logger):
             q3_q4 = conversation.predict(input=PROMPTS_equal.format(q1=q3, q2=q4))
             q1_q34 = conversation.predict(input=PROMPTS_minus.format(q1=q1, q2=q3, q3 = q4))
 
-            answers[index] = [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
-            logger.info(f"Question {index + 1}")
-            #logger.info(f"Q1: {q1}")
-            #logger.info(f"Q2: {q2}")
-            #logger.info(f"Q3: {q3}")
-            #logger.info(f"Q4: {q4}")
-            #logger.info(f"LLM Response: {answers[index]}")
+            return [q1_q2, q1_q3, q1_q4, q3_q4, q1_q34]
         except Exception as e:
-            logging.error(f"Error while performing relation identification: {e}")
+            return e
+
+    for (index, _), result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"Error while performing relation identification at {index}: {result}")
             continue
-        
+        answers[str(index)] = result
+        logger.info(f"Question {index + 1}")
         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
         with open(output_filename, 'w', encoding='utf-8') as f:
             json.dump(answers, f, ensure_ascii=False, indent=4)
@@ -115,7 +128,7 @@ def main(config = None, logger = setup_logger()):
             for dataset in datasets:
                 # Run equivalence test
                 logger.info(f"Processing model: {llm_model} for language: {language}")
-                relation_identification(llm_model, language, dataset, logger=logger)
+                relation_identification(llm_model, language, dataset, logger=logger, config=config)
                 logger.info(f"Finished processing model: {llm_model} for language: {language}")
 
 if __name__ == "__main__":
