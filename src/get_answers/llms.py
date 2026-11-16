@@ -32,7 +32,7 @@ azure_openai_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
 azure_api_version= os.getenv('AZURE_API_VERSION', '2024-12-01-preview')
 
-azure_models = ['gpt-5',"gpt-5-mini","gpt-5-nano","gpt-4o","o3"]
+azure_models = ["gpt-5.6-luna"]
 # Self-hosted (Ollama) settings. All of them are overridable from the environment
 # so a run can be pointed at a different host without touching the code.
 OLLAMA_BASE_URL = os.getenv('OLLAMA_BASE_URL', 'http://warhol.informatik.rwth-aachen.de:11434')
@@ -53,13 +53,22 @@ OLLAMA_RETRY_BACKOFF = float(os.getenv('OLLAMA_RETRY_BACKOFF', '5'))
 
 logger = logging.getLogger(__name__)
 
-openai_models_notemperature = ["gpt-5-mini","o3","gpt-5-nano"]
-openai_models = ['gpt-4.1-nano-2025-04-14', 'gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14',"gpt-4o",'gpt-5']
+openai_models_notemperature = ["o3","gpt-5-nano","gpt-5-mini"]
+openai_models = ['gpt-4.1-mini-2025-04-14', 'gpt-4.1-2025-04-14',"gpt-4o",'gpt-5',"gpt-4.1"]
 gemini_models = ["gemini-2.0-flash","gemini-2.5-pro","gemini-2.5-flash"]
-xai_models = ['grok-3-mini','grok-4-0709']
+xai_models = ['grok-4-0709']
 claude_models = ['claude-3-5-sonnet-20240620','claude-3-haiku']
 self_hosted_models = ['llama3.1:8b','llama3.1:70b', 'deepseek-r1:1.5b', 'deepseek-r1:70b', 'gpt-oss:20b', 'mistral-small:24b']
 deepseek_models = ['deepseek-chat','deepseek-reasoner']
+openrouter_models = [
+    'mistralai/mistral-small-3.1-24b-instruct',
+    'openai/gpt-oss-20b:floor',
+    'openai/gpt-oss-20b:nitro',
+    'openai/gpt-4.1-nano',
+    'google/gemini-2.5-flash:nitro',
+    'google/gemini-2.5-pro:nitro',
+    'meta-llama/llama-3.1-70b-instruct'
+]
 
 class SelfHostedAPIError(RuntimeError):
     """Raised when the self-hosted endpoint fails after all retries."""
@@ -236,5 +245,24 @@ def return_chat_model(model_name, temperature=0, max_tokens = 20000):
         return SelfHostedAPIWrapper(model=model_name, temperature=temperature)
     elif model_name in deepseek_models:
         return ChatDeepSeek(model=model_name,temperature=temperature,max_tokens=None)
+    elif model_name.startswith('openrouter:') or model_name in openrouter_models:
+        provider_model = model_name.removeprefix('openrouter:')
+        if not provider_model:
+            raise ValueError('An OpenRouter model ID is required after openrouter:')
+        api_key = os.getenv('OPENROUTER_API_KEY')
+        if not api_key:
+            raise ValueError('OPENROUTER_API_KEY is required for OpenRouter models')
+        headers = {}
+        if referer := os.getenv('OPENROUTER_HTTP_REFERER'):
+            headers['HTTP-Referer'] = referer
+        if title := os.getenv('OPENROUTER_APP_TITLE'):
+            headers['X-OpenRouter-Title'] = title
+        return ChatOpenAI(
+            model=provider_model,
+            api_key=api_key,
+            base_url=os.getenv('OPENROUTER_API_BASE_URL', 'https://openrouter.ai/api/v1'),
+            temperature=temperature,
+            default_headers=headers or None,
+        )
     else:
         raise ValueError(f"Model {model_name} is not supported.")
