@@ -1,11 +1,17 @@
-"""Reproduce the eight updated result tables from saved answers (no API calls).
+"""Reproduce selected paper tables from saved answers (no API calls).
 
 Run from the repository root: python -m src.evaluation.tables.export_paper_results
 The CSVs retain full numeric precision; the plain LaTeX exports are for numeric
 reproduction. The reviewed manuscript layout/coloring lives in updated_paper_tables.md.
 """
 
-from src.evaluation.paths import REPO_ROOT
+from src.evaluation.paths import (
+    REPO_ROOT,
+    create_run_directory,
+    display_path,
+    finish_run_manifest,
+    start_run_manifest,
+)
 import argparse
 import hashlib
 import json
@@ -17,7 +23,12 @@ from scipy.stats import pearsonr
 
 from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary_empty_answers, summary_xidk
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, merge_relations_by_action
-from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case, metric_idk_mask
+from src.evaluation.core.summary_idk_worst import (
+    ABSTENTION_RECOGNITIONS,
+    summary_idk_worst,
+    impute_worst_case,
+    metric_idk_mask,
+)
 from src.evaluation.statistics.eval_pvalue import compute_pvals
 from src.evaluation.tables.export_supplementary_tables import build_tables, render_table, presentation_models
 
@@ -33,6 +44,8 @@ TABLES = {
     'correlation': 'tab:Pearson',
     'cfr': 'tab:cRi_by_id_act', 'correct': 'tab:cRi+', 'incorrect': 'tab:cRi-',
 }
+DEFAULT_TABLES = ['main', 'filtered']
+SUPPLEMENTARY_TABLES = {'cfr': 9, 'correct': 10, 'incorrect': 11}
 STRATEGIES = ['zero-shot', 'classification', 'fixing']
 
 
@@ -41,13 +54,13 @@ def export_reviewed_tables(markdown, outdir, selected, base_dir, init_base=False
     """Compare reviewed tables with a frozen original-paper baseline."""
     from src.evaluation.tables.table_revisions import freeze_base, export_versions
     if current_dir is not None:
-        blocks = [(current_dir / (key + '.tex')).read_text() for key in TABLES]
+        blocks = [(current_dir / (key + '.tex')).read_text() for key in selected]
     elif markdown.exists():
         text = markdown.read_text()
         blocks = re.findall(r'^```latex[ \t]*\n(.*?)^```[ \t]*$', text, re.M | re.S)
     else:
         source_dir = ROOT / 'output/paper_tables'
-        blocks = [(source_dir / (key + '.tex')).read_text() for key in TABLES]
+        blocks = [(source_dir / (key + '.tex')).read_text() for key in selected]
     by_label = {}
     for block in blocks:
         labels = re.findall(r'\\label\{([^}]+)\}', block)
@@ -59,36 +72,37 @@ def export_reviewed_tables(markdown, outdir, selected, base_dir, init_base=False
         if not re.fullmatch(r'\\begin\{(table\*?)\}[\s\S]*\\end\{\1\}\s*', block):
             raise ValueError(f'Incomplete table environment: {label}')
         by_label[label] = block
-    missing = set(TABLES.values()) - by_label.keys()
+    selected_tables = {key: TABLES[key] for key in selected}
+    missing = set(selected_tables.values()) - by_label.keys()
     if missing:
         raise ValueError(f'Missing table labels: {sorted(missing)}')
     if init_base:
-        freeze_base(base_dir, main_tex, appendix_tex, TABLES)
+        freeze_base(base_dir, main_tex, appendix_tex, selected_tables)
     elif not (base_dir / 'manifest.json').exists():
         raise ValueError('No frozen baseline found. Initialize it once using --source reviewed --init-base')
-    export_versions({key: by_label[label] for key, label in TABLES.items()},
-                    base_dir, outdir, selected, TABLES)
+    export_versions({key: by_label[label] for key, label in selected_tables.items()},
+                    base_dir, outdir, selected, selected_tables)
 
 
-def rebuild(root, models):
+def rebuild(root, models, recognition="standard"):
     datasets = ['LC-QuAD', 'qawiki', 'spinach', 'synthetic']
     tasks = ['equal', 'sup-sub', 'minus']
     questions = load_all_questions(str(root), datasets, ['en'])
     answers = load_answers(str(root / 'data/answers'), datasets, models,
         STRATEGIES + ['star'], tasks, ['en'], ['Q1', 'Q2', 'Q3', 'Q4'])
-    frame = analysis(enrich_answers(answers, questions))
+    frame = analysis(enrich_answers(answers, questions), recognition)
     relations = load_relations(str(root / 'data/answers/zero-shot'), datasets, models)
     labels = load_relation_clf(str(root / 'data/answers/CtE'), datasets, models, tasks)
-    return merge_relations_by_action(frame, relations, labels), relations
+    return merge_relations_by_action(frame, relations, labels, recognition), relations
 
 
-def percent_summary(frame, filtered=False, *, table4_policy='empty_set'):
+def percent_summary(frame, filtered=False, *, table4_policy='empty_set', recognition="standard"):
     # Keep the historical CLI key "filtered"; Table 4 now retains null answers
     # as individual empty sets, rather than excluding metric instances.
     if filtered and table4_policy not in {'empty_set', 'exclude_instances'}:
         raise ValueError(f'Unknown Table 4 policy: {table4_policy}')
     summarize = (summary_xidk if table4_policy == 'exclude_instances' else summary_empty_answers) if filtered else summary_idk_worst
-    out = summarize(frame)
+    out = summarize(frame, recognition)
     out = out[out.dataset.eq('overall') & out.action.isin(STRATEGIES)].copy()
     if filtered and table4_policy == 'exclude_instances':
         coverage = []
@@ -97,7 +111,7 @@ def percent_summary(frame, filtered=False, *, table4_policy='empty_set'):
             counts = {'n_instances': len(group)}
             for metric in BINARY + SIM + DISPLAY[:2]:
                 counts['n_scored_' + metric] = int(
-                    group.loc[~metric_idk_mask(group, metric), metric].notna().sum())
+                    group.loc[~metric_idk_mask(group, metric, recognition), metric].notna().sum())
             counts['n_repeat'] = counts['n_scored_?A1=A1*'] if row.action == 'zero-shot' else 0
             coverage.append(counts)
         counts = pd.DataFrame(coverage, index=out.index)
@@ -106,9 +120,43 @@ def percent_summary(frame, filtered=False, *, table4_policy='empty_set'):
     out['CON'] = out[BINARY].mean(axis=1)
     # The repeated-question control is displayed in Base rows only.
     out.loc[~out.action.eq('zero-shot'), DISPLAY[:2]] = float('nan')
+    # Follow the upstream publication rule: do not report E_1,* unless all
+    # 600 independent Base repetitions are available for that model.
+    out.loc[out.action.eq('zero-shot') & out.n_repeat.lt(600), DISPLAY[:2]] = float('nan')
     for col in DISPLAY:
         out[col] *= 100
     return out
+
+
+def scoring_sensitivity(frame):
+    """Compare IDK-recognition modes and both repeated-control aggregations."""
+    keys = ['llm', 'action']
+    merged = None
+    for recognition in ABSTENTION_RECOGNITIONS:
+        condition = percent_summary(frame, recognition=recognition)
+        condition = condition[condition.dataset.eq('overall')].copy()
+        paired = summary_idk_worst(
+            frame, recognition, repeat_aggregation='per_question',
+        )
+        paired = paired[paired.dataset.eq('overall')].copy()
+        view = condition[keys].copy()
+        view[f'CON_{recognition}'] = condition['CON'].to_numpy()
+        view[f'idk_{recognition}'] = condition['idk'].to_numpy()
+        view[f'condition_mean_CON_{recognition}'] = condition['?A1=A1*'].to_numpy()
+        view[f'condition_mean_SIM_{recognition}'] = condition['J(A1-A1*)'].to_numpy()
+        paired_view = paired[keys].copy()
+        paired_view[f'paired_repeat_CON_{recognition}'] = 100 * paired['?A1=A1*']
+        paired_view[f'paired_repeat_SIM_{recognition}'] = 100 * paired['J(A1-A1*)']
+        paired_view['n_paired_repeat'] = paired['n_repeat']
+        view = view.merge(paired_view, on=keys, validate='one_to_one')
+        if merged is None:
+            view['n_repeat'] = condition['n_repeat'].to_numpy()
+            view['n_repeat_cte'] = condition.get('n_repeat_cte', pd.Series(index=condition.index, dtype=float)).to_numpy()
+            merged = view
+        else:
+            view = view.drop(columns=['n_paired_repeat'])
+            merged = merged.merge(view, on=keys, validate='one_to_one')
+    return merged
 
 
 def simple_tex(data, label):
@@ -139,11 +187,13 @@ def simple_tex(data, label):
     return '\n'.join(lines) + '\n'
 
 
-def table4_policy_comparison(frame, current=None, legacy=None):
+def table4_policy_comparison(frame, current=None, legacy=None, recognition="standard"):
     """Compare policies on identical answers; do not mix data-version effects."""
-    current = percent_summary(frame, filtered=True) if current is None else current
+    current = percent_summary(frame, filtered=True, recognition=recognition) if current is None else current
     current = current.set_index(['llm', 'action'])
-    legacy = percent_summary(frame, filtered=True, table4_policy='exclude_instances') if legacy is None else legacy
+    legacy = percent_summary(
+        frame, filtered=True, table4_policy='exclude_instances', recognition=recognition,
+    ) if legacy is None else legacy
     legacy = legacy.set_index(['llm', 'action'])
     rows = []
     for (model, action), row in current.iterrows():
@@ -156,60 +206,104 @@ def table4_policy_comparison(frame, current=None, legacy=None):
     return pd.DataFrame(rows)
 
 
-def export(root, outdir, selected):
-    inputs = sorted(p for p in (root / 'data').rglob('*')
-                    if p.is_file() and p.suffix in {'.json', '.csv'})
+def export(root, outdir, selected, recognition="standard", *,
+           include_idk_sensitivity=False, include_table4_comparison=False,
+           include_audit_details=False, frame=None, relations=None, info=None,
+           models=None):
+    inputs = None
     def fingerprints():
         return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                 for p in inputs}
-    manifest = fingerprints()
-    info = json.loads((root / 'data/llm_info.json').read_text())
-    models = presentation_models(info)
-    frame, relations = rebuild(root, models)
+    input_fingerprints = None
+    if frame is None:
+        inputs = sorted(p for p in (root / 'data').rglob('*')
+                        if p.is_file() and p.suffix in {'.json', '.csv'})
+        input_fingerprints = fingerprints()
+        info = json.loads((root / 'data/llm_info.json').read_text())
+        models = presentation_models(info)
+        frame, relations = rebuild(root, models, recognition)
+    else:
+        if info is None or relations is None:
+            raise ValueError('Precomputed frame export requires model info and relations')
+        models = presentation_models(info) if models is None else list(models)
     outdir.mkdir(parents=True, exist_ok=True)
-    main = percent_summary(frame)
-    results = {'main': main, 'filtered': percent_summary(frame, filtered=True)}
-    truths = ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+    if include_idk_sensitivity and 'main' in selected:
+        scoring_sensitivity(frame).to_csv(outdir / 'scoring_sensitivity.csv', index=False)
+    results = {}
+    main = None
+    if 'main' in selected or 'correlation' in selected:
+        main = percent_summary(frame, recognition=recognition)
+        if 'main' in selected:
+            results['main'] = main
+    if 'filtered' in selected:
+        results['filtered'] = percent_summary(
+            frame, filtered=True, recognition=recognition,
+        )
+
     relcols = ['R(1-2)', 'R(1-3)', 'R(1-4)', 'R(3-4)', 'R(1-34)']
-    rows = []
-    for model, group in relations.groupby('llm'):
-        row = {'llm': model, 'n_items': len(group)}
-        for col, truth in zip(relcols, truths):
-            row[col] = 100 * group[col].eq(truth).mean()
-            row[col + '_n'] = int(group[col].notna().sum())
-        row['average'] = sum(row[col] for col in relcols) / 5
-        rows.append(row)
-    results['classification'] = pd.DataFrame(rows)
-    pvals = compute_pvals(impute_worst_case(frame))
-    results['significance'] = pvals[pvals.dataset.eq('overall')
-        & pvals.action.isin(['classification', 'fixing'])].copy()
-    base = main[main.action.eq('zero-shot')].set_index('llm')
-    eligible = [m for m in models if info[m].get('score') is not None]
-    rows = []
-    for metric in BINARY + ['CON'] + SIM:
-        r, p = pearsonr([info[m]['score'] for m in eligible], base.loc[eligible, metric])
-        rows.append({'metric': metric, 'r': r, 'p': p, 'n_models': len(eligible)})
-    results['correlation'] = pd.DataFrame(rows)
-    supplementary = build_tables(frame, models)
-    for key, number in [('cfr', 9), ('correct', 10), ('incorrect', 11)]:
-        results[key] = supplementary[supplementary.table.eq(number)].copy()
-    exclusion = percent_summary(frame, filtered=True, table4_policy='exclude_instances') if 'filtered' in selected else None
-    comparison = table4_policy_comparison(frame, results['filtered'], exclusion) if exclusion is not None else None
-    current_inputs = sorted(p for p in (root / 'data').rglob('*')
-                            if p.is_file() and p.suffix in {'.json', '.csv'})
-    if inputs != current_inputs or manifest != fingerprints():
-        raise RuntimeError('Input data changed during evaluation; rerun after data updates finish.')
-    (outdir / 'source_manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    # Per-item sources and denominators support auditing the two repeated-Q1 columns.
-    base_rows = frame[frame.action.eq('zero-shot')]
-    base_rows[['llm', 'dataset', 'Q_ID', 'repeat_source', '?A1=A1*', 'J(A1-A1*)']].to_csv(outdir / 'repeat_provenance.csv', index=False)
-    frame.groupby(['llm', 'action']).size().rename('n_instances').to_csv(outdir / 'coverage.csv')
+    if 'classification' in selected:
+        truths = ['Equivalence', 'Contains', 'Contains', 'Disjoint', 'Equivalence']
+        rows = []
+        for model, group in relations.groupby('llm'):
+            row = {'llm': model, 'n_items': len(group)}
+            for col, truth in zip(relcols, truths):
+                row[col] = 100 * group[col].eq(truth).mean()
+                row[col + '_n'] = int(group[col].notna().sum())
+            row['average'] = sum(row[col] for col in relcols) / 5
+            rows.append(row)
+        results['classification'] = pd.DataFrame(rows)
+    if 'significance' in selected:
+        pvals = compute_pvals(impute_worst_case(frame, recognition))
+        results['significance'] = pvals[pvals.dataset.eq('overall')
+            & pvals.action.isin(['classification', 'fixing'])].copy()
+    if 'correlation' in selected:
+        base = main[main.action.eq('zero-shot')].set_index('llm')
+        eligible = [m for m in models if info[m].get('score') is not None]
+        rows = []
+        for metric in BINARY + ['CON'] + SIM:
+            r, p = pearsonr(
+                [info[m]['score'] for m in eligible], base.loc[eligible, metric],
+            )
+            rows.append({'metric': metric, 'r': r, 'p': p, 'n_models': len(eligible)})
+        results['correlation'] = pd.DataFrame(rows)
+    supplementary = None
+    if any(key in SUPPLEMENTARY_TABLES for key in selected):
+        supplementary = build_tables(frame, models, recognition)
+        for key, number in SUPPLEMENTARY_TABLES.items():
+            if key in selected:
+                results[key] = supplementary[supplementary.table.eq(number)].copy()
+    exclusion = percent_summary(
+        frame, filtered=True, table4_policy='exclude_instances', recognition=recognition,
+    ) if include_table4_comparison and 'filtered' in selected else None
+    comparison = table4_policy_comparison(
+        frame, results['filtered'], exclusion, recognition,
+    ) if exclusion is not None else None
+    if inputs is not None:
+        current_inputs = sorted(p for p in (root / 'data').rglob('*')
+                                if p.is_file() and p.suffix in {'.json', '.csv'})
+        if inputs != current_inputs or input_fingerprints != fingerprints():
+            raise RuntimeError(
+                'Input data changed during evaluation; rerun after data updates finish.',
+            )
+    if include_audit_details:
+        if input_fingerprints is not None:
+            (outdir / 'source_manifest.json').write_text(
+                json.dumps(input_fingerprints, indent=2) + '\n',
+            )
+        # Per-item sources and denominators support auditing repeated Q1.
+        base_rows = frame[frame.action.eq('zero-shot')]
+        base_rows[[
+            'llm', 'dataset', 'Q_ID', 'repeat_source', '?A1=A1*', 'J(A1-A1*)',
+        ]].to_csv(outdir / 'repeat_provenance.csv', index=False)
+        frame.groupby(['llm', 'action']).size().rename('n_instances').to_csv(
+            outdir / 'coverage.csv',
+        )
     if comparison is not None:
         comparison.to_csv(outdir / 'policy_comparison.csv', index=False)
         exclusion.to_csv(outdir / 'filtered_exclusion.csv', index=False)
         (outdir / 'filtered_exclusion.tex').write_text(simple_tex(
             exclusion[['llm', 'action'] + DISPLAY], TABLES['filtered'] + '_exclusion'))
-        print('Table 4 exclusion reference ->', outdir / 'filtered_exclusion.csv', '/', 'filtered_exclusion.tex')
+        print('Table 4 exclusion reference ->', display_path(outdir / 'filtered_exclusion.csv'), '/', 'filtered_exclusion.tex')
     for key in selected:
         data = results[key]
         if 'llm' in data.columns:
@@ -223,8 +317,8 @@ def export(root, outdir, selected):
                 kind='stable',
             ).drop(columns=['_model_order', '_action_order'])
         data.to_csv(outdir / (key + '.csv'), index=False)
-        if key in ['cfr', 'correct', 'incorrect']:
-            number = {'cfr': 9, 'correct': 10, 'incorrect': 11}[key]
+        if key in SUPPLEMENTARY_TABLES:
+            number = SUPPLEMENTARY_TABLES[key]
             tex = render_table(supplementary, number, models, 'raw')
         else:
             if key in ['main', 'filtered']:
@@ -239,14 +333,19 @@ def export(root, outdir, selected):
                 view = data
             tex = simple_tex(view, TABLES[key])
         (outdir / (key + '.tex')).write_text(tex)
-        print(key, '->', outdir / (key + '.csv'), '/', key + '.tex')
+        print(key, '->', display_path(outdir / (key + '.csv')), '/', key + '.tex')
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--table', choices=['all'] + list(TABLES), default='all')
+    parser.add_argument(
+        '--table', choices=['core'] + list(TABLES), default='core',
+        help='core exports only Tables 3 and 4; all other tables require explicit selection',
+    )
     parser.add_argument('--source', choices=['raw', 'reviewed'], default='raw',
                         help='raw: recompute scores; reviewed: generate clean/blue tables against the original-paper baseline')
+    parser.add_argument('--recognition', choices=ABSTENTION_RECOGNITIONS, default='robust',
+                        help='IDK/empty-answer recognition used by raw evaluation')
     parser.add_argument('--markdown', type=Path, default=ROOT / 'output/updated_paper_tables.md',
                         help='Reviewed Markdown input for --source reviewed')
     parser.add_argument('--current-dir', type=Path,
@@ -258,18 +357,89 @@ def main():
     parser.add_argument('--base-main', type=Path, default=ROOT / 'TEMP/ICLR.tex')
     parser.add_argument('--base-appendix', type=Path, default=ROOT / 'TEMP/appendix.tex')
     parser.add_argument('--output-dir', type=Path,
-                        help='Default: output/reproduced_tables (raw) or output/paper_tables (reviewed)')
+                        help='Exact run directory. The default is a timestamped directory under output/evaluation_runs')
+    parser.add_argument(
+        '--include-idk-sensitivity', action='store_true',
+        help='Also compare all IDK-recognition modes in scoring_sensitivity.csv',
+    )
+    parser.add_argument(
+        '--include-table4-comparison', action='store_true',
+        help='Also export the legacy exclusion policy and its Table 4 comparison',
+    )
+    parser.add_argument(
+        '--include-audit-details', action='store_true',
+        help='Also export coverage, repeat provenance, and a separate source manifest',
+    )
     args = parser.parse_args()
     if args.source != 'reviewed' and (args.init_base or args.current_dir):
         parser.error('--init-base and --current-dir require --source reviewed')
-    selected = list(TABLES) if args.table == 'all' else [args.table]
-    outdir = args.output_dir or ROOT / 'output' / (
-        'paper_tables' if args.source == 'reviewed' else 'reproduced_tables')
-    if args.source == 'reviewed':
-        export_reviewed_tables(args.markdown, outdir, selected, args.base_dir,
-                               args.init_base, args.current_dir, args.base_main, args.base_appendix)
+    if args.source == 'reviewed' and (
+        args.include_idk_sensitivity or args.include_table4_comparison
+        or args.include_audit_details
+    ):
+        parser.error('sensitivity/comparison flags apply only to raw scoring')
+    selected = DEFAULT_TABLES if args.table == 'core' else [args.table]
+    run_type = 'reviewed-paper-tables' if args.source == 'reviewed' else 'paper-results'
+    effective_recognition = (
+        'not-applicable' if args.source == 'reviewed' else args.recognition
+    )
+    if args.output_dir is None:
+        outdir, run_id = create_run_directory(
+            ROOT / 'output' / 'evaluation_runs' / run_type,
+            run_type, effective_recognition, args.table,
+        )
     else:
-        export(ROOT, outdir, selected)
+        outdir = args.output_dir
+        outdir.mkdir(parents=True, exist_ok=True)
+        run_id = outdir.name
+    config = {
+        'table': args.table,
+        'selected_tables': selected,
+        'source': args.source,
+        'recognition': effective_recognition,
+        'markdown': args.markdown,
+        'current_dir': args.current_dir,
+        'base_dir': args.base_dir,
+        'init_base': args.init_base,
+        'base_main': args.base_main,
+        'base_appendix': args.base_appendix,
+        'include_idk_sensitivity': args.include_idk_sensitivity,
+        'include_table4_comparison': args.include_table4_comparison,
+        'include_audit_details': args.include_audit_details,
+    }
+    if args.source == 'raw':
+        input_files = [path for path in (ROOT / 'data').rglob('*')
+                       if path.is_file() and path.suffix in {'.json', '.csv'}]
+    else:
+        candidates = [args.markdown, args.base_main, args.base_appendix]
+        if args.current_dir:
+            candidates.extend(args.current_dir.glob('*.tex'))
+        input_files = [path for path in candidates if path and path.is_file()]
+    manifest = start_run_manifest(
+        outdir, run_id=run_id, run_type=run_type, config=config,
+        recognition=effective_recognition, input_files=input_files, input_root=ROOT,
+        entity_normalization='none',
+        evaluation_policies={
+            'selected_table4_policy': 'individual_empty_set',
+            'legacy_table4_reference': 'exclude_metric_instances',
+        },
+    )
+    try:
+        if args.source == 'reviewed':
+            export_reviewed_tables(args.markdown, outdir, selected, args.base_dir,
+                                   args.init_base, args.current_dir, args.base_main, args.base_appendix)
+        else:
+            export(
+                ROOT, outdir, selected, args.recognition,
+                include_idk_sensitivity=args.include_idk_sensitivity,
+                include_table4_comparison=args.include_table4_comparison,
+                include_audit_details=args.include_audit_details,
+            )
+    except Exception as error:
+        finish_run_manifest(outdir, manifest, status='failed', error=repr(error))
+        raise
+    finish_run_manifest(outdir, manifest)
+    print('Run manifest ->', display_path(outdir / 'manifest.json'))
 
 
 if __name__ == '__main__':

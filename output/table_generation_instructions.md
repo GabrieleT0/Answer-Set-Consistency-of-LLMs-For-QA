@@ -33,9 +33,15 @@ Label: `tab:consistency_per_action_by_id`
 ```
 
 - Inputs: Base, CtE, Oracle (action `fixing` in the code), and `star` responses under `data/answers/`; the four question datasets under `data/`; and `data/llm_info.json`.
-- Calculation: `core.eval_tool.analysis` → `core.summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. The default `recognition="standard"` preserves the paper's empty-set/sole-standardized-idk rule (ignoring case and whitespace). `--recognition robust` is a separate sensitivity analysis recognizing whole-answer empty strings, blank-only lists, `no answer`, and `I don't know` / `I do not know`, with case, whitespace, quote, and terminal-punctuation normalization. `--recognition extended` also flags explicit null phrases mixed with valid entities. Missing `None`/`NaN` observations remain distinct from observed abstentions in every mode. All entry points pass the selected mode to scoring and significance tests. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
+- Calculation: `core.eval_tool.analysis` → `core.summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. The default `recognition="robust"` recognizes whole-answer empty strings, blank-only lists, `no answer`, and `I don't know` / `I do not know`, with case, whitespace, quote, and terminal-punctuation normalization. `--recognition standard` restores the paper's narrower empty-set/sole-standardized-idk rule; `--recognition extended` also flags explicit null phrases mixed with valid entities. Missing `None`/`NaN` observations remain distinct from observed abstentions in every mode. All entry points pass the selected mode to scoring and significance tests. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
 - The main score retains the joint partition definition: `A1 = A3 ∪ A4` and `A3 ∩ A4 = ∅`. The final Jaccard metric compares `A4` with `A1 − A3`.
 - Outputs: `main.csv` and `main.tex`. Repeated-question results are displayed only in Base rows.
+
+The repeated-question columns use the equal-weight model-level mean of the
+isolated Base-repeat condition and the CtE `Q1` control condition. The current
+upstream rule does not fill missing Base repetitions with CtE responses on a
+per-question basis. These columns are exported only when all 600 isolated Base
+repetitions are present; otherwise they are displayed as `--`.
 
 
 ## 2. Individual Empty-Set Sensitivity Analysis (Table 4)

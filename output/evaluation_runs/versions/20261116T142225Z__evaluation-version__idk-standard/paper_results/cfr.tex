@@ -1,0 +1,67 @@
+\begin{table}[!t]
+\caption{Per-relation contradiction-free rates $\fcfr{R}$ (0--100 scale). }
+\centering
+\rowcolors{3}{gray!10}{white}
+
+\footnotesize
+\begin{tabular}{r r !{\color{white!80!black} \vline} r r r r r}
+\toprule
+\textbf{LLM} & \textbf{Str} & $\fcfr{\rone}$ & $\fcfr{\rtwo}$ & $\fcfr{\rthree}$ & $\fcfr{\rfour}$ & $\fcfr{\rfive}$ \\
+\midrule
+\sf Llama-3.1-8b & Base & 37.67 & 29.17 & 32.67 & 20.33 & 23.00 \\
+ & CtE & 81.00 & 64.67 & -- & -- & 43.17 \\
+\midrule
+\sf Llama-3.1-70b & Base & 20.00 & 9.50 & 41.17 & 65.83 & 5.00 \\
+ & CtE & 80.17 & 18.67 & -- & -- & 67.50 \\
+\midrule
+\sf Mistral-small:24b & Base & 27.50 & 7.50 & 15.00 & 19.17 & 13.17 \\
+ & CtE & 74.83 & 9.83 & -- & -- & 23.50 \\
+\midrule
+\sf DeepSeek-reasoner & Base & 18.83 & 37.33 & 26.33 & 73.83 & 12.33 \\
+ & CtE & 56.67 & 60.67 & -- & -- & 52.67 \\
+\midrule
+\sf DeepSeek-V3.1 & Base & 31.00 & 21.50 & 46.83 & 33.83 & 8.33 \\
+ & CtE & 70.00 & 21.33 & -- & -- & 46.00 \\
+\midrule
+\sf Gemini-2.0-flash & Base & 32.67 & 36.67 & 60.83 & 61.50 & 14.83 \\
+ & CtE & 74.50 & 39.67 & -- & -- & 53.83 \\
+\midrule
+\sf Gemini-2.5-pro & Base & 31.17 & 40.17 & 36.50 & 74.50 & 20.50 \\
+ & CtE & 83.83 & 83.67 & -- & -- & 73.17 \\
+\midrule
+\sf Gemini-2.5-flash & Base & 32.83 & 44.67 & 35.67 & 75.00 & 21.83 \\
+ & CtE & 88.50 & 85.17 & -- & -- & 80.17 \\
+\midrule
+\sf GPT-oss-20b & Base & 14.67 & 29.50 & 23.00 & 66.17 & 12.33 \\
+ & CtE & 57.50 & 52.67 & -- & -- & 45.00 \\
+\midrule
+\sf GPT-4o & Base & 25.33 & 15.67 & 37.50 & 38.67 & 7.83 \\
+ & CtE & 40.83 & 31.17 & -- & -- & 23.50 \\
+\midrule
+\sf GPT-4.1-nano & Base & 39.67 & 39.33 & 29.00 & 28.83 & 31.17 \\
+ & CtE & 0.67 & 1.00 & -- & -- & 1.00 \\
+\midrule
+\sf GPT-4.1-mini & Base & 33.33 & 19.33 & 55.83 & 45.50 & 7.33 \\
+ & CtE & 76.33 & 17.50 & -- & -- & 64.00 \\
+\midrule
+\sf GPT-4.1 & Base & 39.33 & 47.67 & 47.17 & 55.17 & 9.83 \\
+ & CtE & 88.50 & 60.67 & -- & -- & 77.67 \\
+\midrule
+\sf GPT-o3 & Base & 29.49 & 44.75 & 34.07 & 74.92 & 20.85 \\
+ & CtE & 77.00 & 69.33 & -- & -- & 78.17 \\
+\midrule
+\sf GPT-5-nano & Base & 24.50 & 31.67 & 26.83 & 38.83 & 17.83 \\
+ & CtE & 70.83 & 69.67 & -- & -- & 7.67 \\
+\midrule
+\sf GPT-5-mini & Base & 23.17 & 27.83 & 25.00 & 38.83 & 14.33 \\
+ & CtE & 51.00 & 44.83 & -- & -- & 35.17 \\
+\midrule
+\sf GPT-5 & Base & 31.00 & 40.17 & 35.50 & 58.33 & 23.00 \\
+ & CtE & 68.17 & 64.50 & -- & -- & 60.33 \\
+\midrule
+\sf Grok-3-mini & Base & 32.17 & 46.33 & 37.17 & 75.17 & 24.33 \\
+ & CtE & 82.67 & 78.00 & -- & -- & 72.17 \\
+\bottomrule
+\end{tabular}
+\label{tab:cRi_by_id_act}
+\end{table}

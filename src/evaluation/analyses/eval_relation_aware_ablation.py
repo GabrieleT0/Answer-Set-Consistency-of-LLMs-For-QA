@@ -2,11 +2,13 @@
 
     venv/bin/python -m src.evaluation.analyses.eval_relation_aware_ablation
 
-Writes per_item.csv and summary.csv beside the generation checkpoints. A
-relevant idk/empty answer is scored as inconsistent, as in the paper's
-worst-case summary. The correction comparison is reported both on initially
-inconsistent dialogues and on all dialogues (unchanged initial answers for
-the latter's initially consistent cases).
+Writes per_item.csv, summary.csv, and manifest.json to one timestamped run
+directory by default. A relevant idk/empty answer is scored as inconsistent
+under the selected recognition rule. The primary partition score jointly
+requires the difference identity and same-context containment; both components
+are also reported as diagnostics. The correction comparison is reported both
+on initially inconsistent dialogues and on all dialogues (unchanged initial
+answers for the latter's initially consistent cases).
 """
 
 from __future__ import annotations
@@ -19,30 +21,53 @@ import random
 from collections import defaultdict
 from pathlib import Path
 
-from src.get_answers.relation_aware_ablation import ROOT, TASKS, is_abstention
+from src.evaluation.core.summary_idk_worst import ABSTENTION_RECOGNITIONS, is_null_answer
+from src.evaluation.paths import (
+    create_run_directory,
+    display_path,
+    finish_run_manifest,
+    start_run_manifest,
+)
+from src.get_answers.relation_aware_ablation import ROOT, TASKS
 
 
-METRICS = {
+PRIMARY_METRICS = {
     "equal": ("E1,2",),
     "sup-sub": ("N3,1",),
     "minus": ("N4,1", "D3,4", "E4,1\\3"),
 }
+DIAGNOSTIC_METRICS = {
+    "equal": (),
+    "sup-sub": (),
+    "minus": ("E4_difference_only", "N3,1_same_context"),
+}
+METRICS = {
+    task: PRIMARY_METRICS[task] + DIAGNOSTIC_METRICS[task]
+    for task in PRIMARY_METRICS
+}
 
 
-def scores(task: str, answers: dict[str, list[str]]) -> dict[str, int]:
+def scores(task: str, answers: dict[str, list[str]], recognition: str = "standard") -> dict[str, int]:
     a = {q: set(answers[q]) for q in TASKS[task]}
 
     def valid(*questions: str) -> bool:
-        return not any(is_abstention(answers[q]) for q in questions)
+        return not any(is_null_answer(answers[q], recognition) for q in questions)
 
     if task == "equal":
         return {"E1,2": int(valid("Q1", "Q2") and a["Q1"] == a["Q2"])}
     if task == "sup-sub":
         return {"N3,1": int(valid("Q1", "Q3") and a["Q3"].issubset(a["Q1"]))}
+    available = valid("Q1", "Q3", "Q4")
+    difference = available and a["Q4"] == a["Q1"] - a["Q3"]
+    containment = available and a["Q3"].issubset(a["Q1"])
     return {
         "N4,1": int(valid("Q1", "Q4") and a["Q4"].issubset(a["Q1"])),
         "D3,4": int(valid("Q3", "Q4") and a["Q3"].isdisjoint(a["Q4"])),
-        "E4,1\\3": int(valid("Q1", "Q3", "Q4") and a["Q4"] == a["Q1"] - a["Q3"]),
+        # The paper's primary partition score is joint: the difference
+        # identity and same-context containment must both hold.
+        "E4,1\\3": int(difference and containment),
+        "E4_difference_only": int(difference),
+        "N3,1_same_context": int(containment),
     }
 
 
@@ -53,21 +78,25 @@ def updated_answers(task: str, initial: dict, branch: dict | None) -> dict[str, 
     return answers
 
 
-def metric_abstention(task: str, metric: str, answers: dict[str, list[str]]) -> int:
+def metric_abstention(task: str, metric: str, answers: dict[str, list[str]],
+                      recognition: str = "standard") -> int:
     relevant = {
         "E1,2": ("Q1", "Q2"),
         "N3,1": ("Q1", "Q3"),
         "N4,1": ("Q1", "Q4"),
         "D3,4": ("Q3", "Q4"),
         "E4,1\\3": ("Q1", "Q3", "Q4"),
+        "E4_difference_only": ("Q1", "Q3", "Q4"),
+        "N3,1_same_context": ("Q1", "Q3"),
     }[metric]
-    return int(any(is_abstention(answers[q]) for q in relevant))
+    return int(any(is_null_answer(answers[q], recognition) for q in relevant))
 
 
 def pair_rows(comparison: str, dataset: str, qid: str, task: str,
               left: dict[str, list[str]], right: dict[str, list[str]],
-              initial_inconsistent: bool) -> list[dict]:
-    left_scores, right_scores = scores(task, left), scores(task, right)
+              initial_inconsistent: bool, recognition: str = "standard") -> list[dict]:
+    left_scores = scores(task, left, recognition)
+    right_scores = scores(task, right, recognition)
     return [
         {
             "comparison": comparison,
@@ -78,14 +107,15 @@ def pair_rows(comparison: str, dataset: str, qid: str, task: str,
             "initial_inconsistent": int(initial_inconsistent),
             "left": left_scores[metric],
             "right": right_scores[metric],
-            "left_abstention": metric_abstention(task, metric, left),
-            "right_abstention": metric_abstention(task, metric, right),
+            "left_abstention": metric_abstention(task, metric, left, recognition),
+            "right_abstention": metric_abstention(task, metric, right, recognition),
         }
         for metric in METRICS[task]
     ]
 
 
-def read_rows(input_dir: Path, model: str | None = None) -> tuple[list[dict], int]:
+def read_rows(input_dir: Path, model: str | None = None,
+              recognition: str = "standard") -> tuple[list[dict], int]:
     rows: list[dict] = []
     skipped = 0
     paths = sorted(input_dir.glob("**/*.json"))
@@ -109,6 +139,7 @@ def read_rows(input_dir: Path, model: str | None = None) -> tuple[list[dict], in
                     "sequential_vs_cte", dataset, qid, task,
                     record["sequential"]["answers"], record["cte"]["answers"],
                     bool(initial and initial["eligible_for_revision"]),
+                    recognition,
                 ))
             else:
                 skipped += 1
@@ -124,11 +155,13 @@ def read_rows(input_dir: Path, model: str | None = None) -> tuple[list[dict], in
             rows.extend(pair_rows(
                 "recheck_vs_relation_all", dataset, qid, task,
                 recheck, relation, eligible,
+                recognition,
             ))
             if eligible:
                 rows.extend(pair_rows(
                     "recheck_vs_relation_failed", dataset, qid, task,
                     recheck, relation, True,
+                    recognition,
                 ))
     if not rows:
         raise ValueError("No complete paired records found")
@@ -186,12 +219,12 @@ def summarize(rows: list[dict]) -> list[dict]:
             "right_abstention_rate": sum(int(r["right_abstention"]) for r in group) / len(group),
         })
     by_setting: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    primary = {metric for metrics in PRIMARY_METRICS.values() for metric in metrics}
     for entry in summaries:
-        by_setting[(entry["comparison"], entry["dataset"])].append(entry)
+        if entry["metric"] in primary:
+            by_setting[(entry["comparison"], entry["dataset"])].append(entry)
     for (comparison, dataset), entries in sorted(by_setting.items()):
-        if {entry["metric"] for entry in entries} != {
-            metric for metrics in METRICS.values() for metric in metrics
-        }:
+        if {entry["metric"] for entry in entries} != primary:
             continue
         summaries.append({
             "comparison": comparison,
@@ -224,18 +257,61 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input-dir", type=Path, default=ROOT / "output" / "relation_aware_ablation")
     parser.add_argument("--model", help="Required if input-dir contains multiple models")
-    parser.add_argument("--output-dir", type=Path, help="Defaults to input-dir")
+    parser.add_argument("--recognition", choices=ABSTENTION_RECOGNITIONS, default="robust")
+    parser.add_argument(
+        "--output-dir", type=Path,
+        help="Exact run directory. By default a timestamped directory is created under output/evaluation_runs/relation_aware_ablation",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
-    rows, skipped = read_rows(args.input_dir, args.model)
-    output_dir = args.output_dir or args.input_dir
-    write_csv(output_dir / "per_item.csv", rows)
-    write_csv(output_dir / "summary.csv", summarize(rows))
+    input_paths = sorted(args.input_dir.glob("**/*.json"))
+    if args.output_dir is None:
+        label = args.model or args.input_dir.name
+        output_dir, run_id = create_run_directory(
+            ROOT / "output" / "evaluation_runs" / "relation_aware_ablation",
+            "relation-aware-ablation", args.recognition, label,
+        )
+    else:
+        output_dir = args.output_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
+        run_id = output_dir.name
+    config = {
+        "input_dir": args.input_dir,
+        "model": args.model,
+        "recognition": args.recognition,
+        "primary_partition_metric": "A4 = A1 - A3 AND A3 subseteq A1",
+        "diagnostic_partition_metrics": ["A4 = A1 - A3", "A3 subseteq A1"],
+    }
+    manifest = start_run_manifest(
+        output_dir, run_id=run_id, run_type="relation-aware-ablation",
+        config=config, recognition=args.recognition,
+        input_files=input_paths, input_root=args.input_dir,
+        entity_normalization="none",
+        evaluation_policies={
+            "repeat_aggregation": "macro mean of five primary relation rates",
+            "pairing_policy": "complete left-right pairs only",
+            "correction_selection": "historical generation trigger used difference-only failure",
+            "table4_abstention_scoring": "not applicable",
+        },
+    )
+    try:
+        rows, skipped = read_rows(args.input_dir, args.model, args.recognition)
+        write_csv(output_dir / "per_item.csv", rows)
+        write_csv(output_dir / "summary.csv", summarize(rows))
+        manifest["result_counts"] = {
+            "paired_metric_rows": len(rows),
+            "skipped_incomplete_task_records": skipped,
+        }
+    except Exception as error:
+        finish_run_manifest(output_dir, manifest, status="failed", error=repr(error))
+        raise
+    finish_run_manifest(output_dir, manifest)
     print(f"Scored {len(rows)} paired metric rows; skipped {skipped} incomplete task records")
-    print(f"Results: {output_dir / 'summary.csv'}")
+    print(f"Run manifest: {display_path(output_dir / 'manifest.json')}")
+    print(f"Results: {display_path(output_dir / 'summary.csv')}")
 
 
 if __name__ == "__main__":

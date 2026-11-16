@@ -4,7 +4,13 @@ Uses the committed per-item analysis and the saved CtE/Oracle Q3-minus answers.
 No network requests are made. Unmapped names retain their original spelling.
 """
 
-from src.evaluation.paths import REPO_ROOT
+from src.evaluation.paths import (
+    REPO_ROOT,
+    create_run_directory,
+    display_path,
+    finish_run_manifest,
+    start_run_manifest,
+)
 
 import argparse
 import ast
@@ -13,7 +19,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.evaluation.core.summary_idk_worst import METRIC_IDK_MAP, _add_idk_flags
+from src.evaluation.core.summary_idk_worst import (
+    ABSTENTION_RECOGNITIONS,
+    METRIC_IDK_MAP,
+    add_idk_flags,
+)
 
 
 ROOT = REPO_ROOT
@@ -55,7 +65,7 @@ def load_extra_answers(rows):
         dataset_dir = "lc-quad" if dataset == "LC-QuAD" else dataset
         path = ROOT / "data" / "answers" / folder / dataset_dir / "minus" / f"Q3_minus_answers_{suffix}_{llm}.json"
         if not path.exists():
-            missing.append(str(path))
+            missing.append(display_path(path))
             continue
         with path.open(encoding="utf-8") as fh:
             extra[(dataset, action, llm)] = json.load(fh)
@@ -150,10 +160,10 @@ def scores(sets, action):
     }
 
 
-def run(analysis_path, cache_path, out_dir):
+def run(analysis_path, cache_path, out_dir, recognition="robust"):
     df = pd.read_csv(analysis_path)
     df = df[df.action.isin(ACTIONS)].copy()
-    df = _add_idk_flags(df)
+    df = add_idk_flags(df, recognition)
     with cache_path.open(encoding="utf-8") as fh:
         cache = json.load(fh)
     extra = load_extra_answers(df)
@@ -322,7 +332,10 @@ def run(analysis_path, cache_path, out_dir):
         lines.append(f"| {r['llm']} | {alias} | {score('Base')} | {score('CtE')} | {score('Oracle')} | "
                      f"{r['CtE_normalized_gain_pp']:+.2f} | {r['Oracle_normalized_gain_pp']:+.2f} |")
     (out_dir / "proposed_table5.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    metadata = {"source_analysis": str(analysis_path), "source_cache": str(cache_path),
+    metadata = {"source_analysis": display_path(analysis_path),
+                "source_cache": display_path(cache_path),
+                "recognition": recognition,
+                "entity_normalization": "wikidata_alias_cached",
                 "n_rows": len(items), "observed_unique_names": len(observed),
                 "cached_names": sum(s in cache for s in observed),
                 "mapped_names": sum(bool(cache.get(s)) for s in observed),
@@ -330,12 +343,51 @@ def run(analysis_path, cache_path, out_dir):
                 "missing_q3": missing_q3}
     (out_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n")
     print(json.dumps(metadata, indent=2))
+    return metadata
 
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--analysis", type=Path, default=ROOT / "data/evaluation_results/analysis.csv")
     p.add_argument("--cache", type=Path, default=ROOT / "data/wikidata_cache.json")
-    p.add_argument("--output", type=Path, default=ROOT / "output/entity_normalization")
+    p.add_argument("--recognition", choices=ABSTENTION_RECOGNITIONS, default="robust")
+    p.add_argument(
+        "--output", type=Path,
+        help="Exact run directory. The default is a timestamped directory under output/evaluation_runs/entity-normalization",
+    )
     args = p.parse_args()
-    run(args.analysis, args.cache, args.output)
+    if args.output is None:
+        output_dir, run_id = create_run_directory(
+            ROOT / "output" / "evaluation_runs" / "entity-normalization",
+            "entity-normalization", args.recognition, "wikidata-alias",
+        )
+    else:
+        output_dir = args.output
+        output_dir.mkdir(parents=True, exist_ok=True)
+        run_id = output_dir.name
+    answer_inputs = [path for path in (ROOT / "data" / "answers").rglob("*.json")]
+    manifest = start_run_manifest(
+        output_dir, run_id=run_id, run_type="entity-normalization-sensitivity",
+        config={
+            "analysis": args.analysis,
+            "cache": args.cache,
+            "recognition": args.recognition,
+            "entity_normalization": "wikidata_alias_cached",
+            "baseline_alignment": "paired normalization delta anchored to committed analysis scores",
+        },
+        recognition=args.recognition,
+        input_files=[args.analysis, args.cache, *answer_inputs], input_root=ROOT,
+        entity_normalization="wikidata_alias_cached",
+        evaluation_policies={
+            "answer_representation": "cached Wikidata entity IDs merge cross-set aliases; unmapped strings are preserved",
+            "baseline_alignment": "paired normalization delta anchored to committed analysis scores",
+        },
+    )
+    try:
+        metadata = run(args.analysis, args.cache, output_dir, args.recognition)
+        manifest["result_counts"] = metadata
+    except Exception as error:
+        finish_run_manifest(output_dir, manifest, status="failed", error=repr(error))
+        raise
+    finish_run_manifest(output_dir, manifest)
+    print("Run manifest:", display_path(output_dir / "manifest.json"))
