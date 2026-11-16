@@ -1,0 +1,148 @@
+{
+  "manifest_schema": "ascb-evaluation-run/v1",
+  "run_id": "20261116T172327Z__relation-aware-ablation__gpt-5-mini__idk-robust",
+  "run_type": "relation-aware-ablation",
+  "status": "completed",
+  "created_at": "2026-11-16T18:23:27+01:00",
+  "created_at_utc": "2026-11-16T17:23:27+00:00",
+  "command": [
+    ".venv/bin/python",
+    "src/evaluation/analyses/eval_relation_aware_ablation.py",
+    "--input-dir",
+    "output/relation_aware_ablation/gpt-5-mini",
+    "--recognition",
+    "robust"
+  ],
+  "working_directory": ".",
+  "runtime": {
+    "python": "3.12.3"
+  },
+  "config": {
+    "input_dir": "output/relation_aware_ablation/gpt-5-mini",
+    "model": null,
+    "recognition": "robust",
+    "primary_partition_metric": "A4 = A1 - A3 AND A3 subseteq A1",
+    "diagnostic_partition_metrics": [
+      "A4 = A1 - A3",
+      "A3 subseteq A1"
+    ]
+  },
+  "idk_handling": {
+    "recognition": "robust",
+    "definition": "whole answer is empty or consists only of recognized null phrases",
+    "missing_observations_are_abstentions": false,
+    "primary_binary_metric_policy": "recognized abstentions receive zero",
+    "primary_similarity_policy": {
+      "equivalence_and_partition": "recognized abstentions receive zero",
+      "disjointness": "recognized abstentions receive one"
+    }
+  },
+  "entity_normalization": {
+    "mode": "none",
+    "unmapped_entity_policy": "preserve original string"
+  },
+  "evaluation_policies": {
+    "answer_representation": "trimmed exact-string sets parsed from pipe-delimited responses",
+    "partition_metric": "A4 = A1 - A3 AND A3 subseteq A1",
+    "difference_only_metric": "diagnostic only; excluded from the five-relation CON mean",
+    "repeat_control_role": "auxiliary same-question stability control; excluded from CON",
+    "repeat_aggregation": "macro mean of five primary relation rates",
+    "repeat_source_policy": "condition-level mean of isolated Base repeats and the CtE Q1 control; unpublished when isolated Base coverage is below 600",
+    "main_abstention_scoring": "worst_case",
+    "table4_abstention_scoring": "not applicable",
+    "missing_record_policy": "remain missing; never converted to abstentions or imputed",
+    "denominator_policy": "use observed records; report 600 only when coverage is complete",
+    "pairing_policy": "complete left-right pairs only",
+    "correction_selection": "historical generation trigger used difference-only failure"
+  },
+  "inputs": {
+    "root": "output/relation_aware_ablation/gpt-5-mini",
+    "count": 12,
+    "aggregate_sha256": "ae1c4e394bd7268ab333bf70291f479542850231af69279af9f4a0b326bf04fb",
+    "files": [
+      {
+        "path": "LC-QuAD/equal.json",
+        "sha256": "b37d6742bde6a7241463198a7ae79697b21da1c618ab9512c3881ba8f2cb1f07",
+        "bytes": 1114244
+      },
+      {
+        "path": "LC-QuAD/minus.json",
+        "sha256": "6ffecbfaf6783882767f5ff90d264bfd2419fba4dbc6f39f753b21b2c918cd51",
+        "bytes": 1359230
+      },
+      {
+        "path": "LC-QuAD/sup-sub.json",
+        "sha256": "552b76ca9216c58598613e98d556001458971cb1622fbc1bb2e1ae3574700dd1",
+        "bytes": 1019064
+      },
+      {
+        "path": "qawiki/equal.json",
+        "sha256": "0361335c5e7f21929c273d53834c80b2a8b64d5adc4f6fb643b5c1fa112d4685",
+        "bytes": 1149708
+      },
+      {
+        "path": "qawiki/minus.json",
+        "sha256": "5f14f399bd7a8a3d7c17b35e3e7cff90a833cd2b5757b54a9a5aa277d1685652",
+        "bytes": 1421490
+      },
+      {
+        "path": "qawiki/sup-sub.json",
+        "sha256": "3ceb807a8353134414312cd2f707f06b7efc9ee31ffb8628aa3024d82759bebb",
+        "bytes": 1075007
+      },
+      {
+        "path": "spinach/equal.json",
+        "sha256": "0696beed6562daacfa560cad908ff48a70b7712e3e12be8bf34e1364fa813c67",
+        "bytes": 1089661
+      },
+      {
+        "path": "spinach/minus.json",
+        "sha256": "d9ecd134dcc564dbaa514e117995a8e82d91bddb06baf662f5cdc64d439eef4c",
+        "bytes": 1354666
+      },
+      {
+        "path": "spinach/sup-sub.json",
+        "sha256": "b37ba1aebbf2eab9d4d1f0e8e474f5deb06a329cdb8b639487173c8c5f9e40b6",
+        "bytes": 1021250
+      },
+      {
+        "path": "synthetic/equal.json",
+        "sha256": "cd1923071517256801520cbd94bb11bc055c48cdd3c600be45ca0ea00abb8b60",
+        "bytes": 1288419
+      },
+      {
+        "path": "synthetic/minus.json",
+        "sha256": "896890beb5d8b414e8cd640cadb4e8c3fc42ac4d50c8c2191b9568132d23412d",
+        "bytes": 1562975
+      },
+      {
+        "path": "synthetic/sup-sub.json",
+        "sha256": "f087695a2ef7d6e82ea9aa830cf078bc3660fa24c1560fac14a67750b1dc596b",
+        "bytes": 1133446
+      }
+    ]
+  },
+  "outputs": {
+    "root": ".",
+    "count": 2,
+    "aggregate_sha256": "5129f74852cbd69a80ef54210e3a9e25ee1b0540450247a1fafd28c149f8c823",
+    "files": [
+      {
+        "path": "per_item.csv",
+        "sha256": "3d873ece73de490986655b34160722391a19dfcdcc43f7cd11eef0901d249ca6",
+        "bytes": 565054
+      },
+      {
+        "path": "summary.csv",
+        "sha256": "d368aa046af135feec4b0dc8f91ad9aa7e37632fa83c222e5f4f15dd3b612a26",
+        "bytes": 20585
+      }
+    ]
+  },
+  "result_counts": {
+    "paired_metric_rows": 8704,
+    "skipped_incomplete_task_records": 15
+  },
+  "completed_at": "2026-11-16T18:23:38+01:00",
+  "completed_at_utc": "2026-11-16T17:23:38+00:00"
+}
