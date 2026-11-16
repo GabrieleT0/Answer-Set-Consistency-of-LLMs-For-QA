@@ -1,6 +1,6 @@
 # Answer Set Consistency of LLMs for Question Answering
 
-This repository contains the code, ASCB benchmark data, model outputs, evaluation scripts, aggregate results, and figures supporting a NeurIPS submission on answer-set consistency in large language models.
+This repository contains the code, ASCB benchmark data, model outputs, evaluation scripts, aggregate results, and figures supporting a ICLR submission on answer-set consistency in large language models.
 
 The project evaluates whether an LLM gives mutually consistent answer sets for groups of related natural-language questions. Each ASCB item contains four questions:
 
