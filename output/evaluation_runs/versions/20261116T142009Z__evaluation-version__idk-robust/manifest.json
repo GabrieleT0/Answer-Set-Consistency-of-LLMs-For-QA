@@ -1,0 +1,206 @@
+{
+  "manifest_schema": "ascb-evaluation-run/v1",
+  "run_id": "20261116T142009Z__evaluation-version__idk-robust",
+  "run_type": "evaluation-version",
+  "status": "completed",
+  "created_at": "2026-11-16T15:20:09+01:00",
+  "created_at_utc": "2026-11-16T14:20:09+00:00",
+  "command": [
+    ".venv/bin/python",
+    "src/evaluation/run.py",
+    "--recognition",
+    "robust"
+  ],
+  "working_directory": ".",
+  "runtime": {
+    "python": "3.12.3"
+  },
+  "config": {
+    "recognition": "robust",
+    "datasets": [
+      "spinach",
+      "qawiki",
+      "synthetic",
+      "LC-QuAD"
+    ],
+    "actions": [
+      "fixing",
+      "classification",
+      "star",
+      "zero-shot",
+      "chain-of-thought",
+      "zero-shot-no-idk",
+      "fixing-no-idk",
+      "classification-no-idk"
+    ],
+    "tasks": [
+      "equal",
+      "sup-sub",
+      "minus"
+    ],
+    "languages": [
+      "en"
+    ],
+    "paper_results": [
+      "main",
+      "filtered",
+      "classification",
+      "significance",
+      "correlation",
+      "cfr",
+      "correct",
+      "incorrect"
+    ],
+    "paper_results_directory": "paper_results"
+  },
+  "idk_handling": {
+    "recognition": "robust",
+    "definition": "whole answer is empty or consists only of recognized null phrases",
+    "missing_observations_are_abstentions": false,
+    "primary_binary_metric_policy": "recognized abstentions receive zero",
+    "primary_similarity_policy": {
+      "equivalence_and_partition": "recognized abstentions receive zero",
+      "disjointness": "recognized abstentions receive one"
+    }
+  },
+  "entity_normalization": {
+    "mode": "none",
+    "unmapped_entity_policy": "preserve original string"
+  },
+  "evaluation_policies": {
+    "answer_representation": "trimmed exact-string sets parsed from pipe-delimited responses",
+    "partition_metric": "A4 = A1 - A3 AND A3 subseteq A1",
+    "difference_only_metric": "diagnostic only; excluded from the five-relation CON mean",
+    "repeat_control_role": "auxiliary same-question stability control; excluded from CON",
+    "repeat_aggregation": "condition_mean",
+    "repeat_source_policy": "condition-level mean of isolated Base repeats and the CtE Q1 control; unpublished when isolated Base coverage is below 600",
+    "main_abstention_scoring": "worst_case",
+    "table4_abstention_scoring": "individual_empty_set",
+    "missing_record_policy": "remain missing; never converted to abstentions or imputed",
+    "denominator_policy": "use observed records; report 600 only when coverage is complete"
+  },
+  "inputs": {
+    "root": ".",
+    "count": 3452,
+    "aggregate_sha256": "b2240e27c362615b8999244739328207885626da76bf67228779708919535902"
+  },
+  "outputs": {
+    "root": ".",
+    "count": 22,
+    "aggregate_sha256": "577e2ce182aaee0840980843a0952240632131e4b0f6fc0593f1fbe25dac791d",
+    "files": [
+      {
+        "path": "analysis.csv",
+        "sha256": "7631fc3ecb26013b7cc9671ac70b25d5cc265daa7618e1793ab7158b23fb7a0d",
+        "bytes": 116482395
+      },
+      {
+        "path": "p_value_matrices.csv",
+        "sha256": "53f0904347359e706c6aa346eab513916fb0e62abbaf9c152c079c3cf293b034",
+        "bytes": 912550
+      },
+      {
+        "path": "paper_results/cfr.csv",
+        "sha256": "36e42aff36dde5c4cfeea4acfcedb6dc65bd68fb190485ec6d57c5ca9584f7f3",
+        "bytes": 14237
+      },
+      {
+        "path": "paper_results/cfr.tex",
+        "sha256": "1e8ce9ca8dfbd55b7a4be95c87f25e0d3c105000415a2dec70ef6989dd22afa2",
+        "bytes": 2546
+      },
+      {
+        "path": "paper_results/classification.csv",
+        "sha256": "e8828b01b30dda28d2a87e7ebfea2dca013aac0e9f82cc42630630af3b555990",
+        "bytes": 2377
+      },
+      {
+        "path": "paper_results/classification.tex",
+        "sha256": "546d4d3fb37697b673f125d14d89ea319f20acae61980024ebcbca7196194412",
+        "bytes": 1408
+      },
+      {
+        "path": "paper_results/correct.csv",
+        "sha256": "6a9e05b4b86e6fb938551dc9e2835c987a38453172c61a8c5fcc79acde6cf56b",
+        "bytes": 21808
+      },
+      {
+        "path": "paper_results/correct.tex",
+        "sha256": "837638a3c98162e230c30ac380444ea00a2675ae9833f317d5084ac95d9c4f3f",
+        "bytes": 3520
+      },
+      {
+        "path": "paper_results/correlation.csv",
+        "sha256": "2fffcf51c69dcc40f7357a7caa9c204008329174c4a8f874f413848e9d923ff0",
+        "bytes": 477
+      },
+      {
+        "path": "paper_results/correlation.tex",
+        "sha256": "af9126693f8cc1a950a315c50ae8e6f9672b7808b64ced8f389d06e6476f840d",
+        "bytes": 497
+      },
+      {
+        "path": "paper_results/filtered.csv",
+        "sha256": "00617994229b6c66f4bd8eae0520c803bbb583ac16e28429ce9bf1c48e7813ba",
+        "bytes": 14131
+      },
+      {
+        "path": "paper_results/filtered.tex",
+        "sha256": "ecb7336c3868bbf52a71171286ef5fd344e6daba3d9bb7249bd684a2086f15f0",
+        "bytes": 7111
+      },
+      {
+        "path": "paper_results/incorrect.csv",
+        "sha256": "cf31922c121729a9129108e8dd615849a962365deaf5f6d8fe488e882f5339b4",
+        "bytes": 21129
+      },
+      {
+        "path": "paper_results/incorrect.tex",
+        "sha256": "0aa0d19ebd702b16f988aa65e6dfbf63e54a5e4826cd69587a887cd8b1bba36f",
+        "bytes": 3494
+      },
+      {
+        "path": "paper_results/main.csv",
+        "sha256": "f304761ffd4585fbaad87ecf72d7164cd09cb5ae7690ca8c7405ee14ea81457d",
+        "bytes": 15078
+      },
+      {
+        "path": "paper_results/main.tex",
+        "sha256": "d15435ab1733fd2c0f7dac61c0b9699d82cd377fd9a1b8a524c13d280a58cb47",
+        "bytes": 6843
+      },
+      {
+        "path": "paper_results/significance.csv",
+        "sha256": "4c57a813eb71d6acdf638a9d41f85849fc5e2301722074f7db9488671b2fd125",
+        "bytes": 5916
+      },
+      {
+        "path": "paper_results/significance.tex",
+        "sha256": "c7d01c222b6dfaff4dd82f7d136a16d2bf7859aafc508562258b21732d0a09b1",
+        "bytes": 2391
+      },
+      {
+        "path": "relation_summery.csv",
+        "sha256": "5c5a49a519423b79973f9e5ce8ac953c381e29a06de75d7747ffeb3e5ac5de95",
+        "bytes": 57751
+      },
+      {
+        "path": "summary.csv",
+        "sha256": "5d2a49523f81d12da394b9270c4dfd0f414a4ac3e115a728b96ef89fa323bc1d",
+        "bytes": 187741
+      },
+      {
+        "path": "summary_empty_answers.csv",
+        "sha256": "47c19a4a732a3b8b54ee7aa2ca343e62daf4f04a843fb6c78fe0093d9cdff2a4",
+        "bytes": 103922
+      },
+      {
+        "path": "summary_idk_worst.csv",
+        "sha256": "2f085b6418b51877c8951beb42de570b49156d40869a36001190674d25c2b4a5",
+        "bytes": 150230
+      }
+    ]
+  },
+  "completed_at": "2026-11-16T15:22:23+01:00",
+  "completed_at_utc": "2026-11-16T14:22:23+00:00"
+}

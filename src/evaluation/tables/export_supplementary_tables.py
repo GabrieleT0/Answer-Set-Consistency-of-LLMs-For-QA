@@ -78,9 +78,9 @@ def rebuild_analysis(root, models):
     return merge_relations_by_action(frame, base_relations, cte_relations)
 
 
-def build_tables(frame, models):
+def build_tables(frame, models, recognition="standard"):
     """Long-form percent scores, with denominators for every table cell."""
-    frame = impute_worst_case(frame)
+    frame = impute_worst_case(frame, recognition)
     rows = []
     for model in models:
         for action in ACTION_NAMES:

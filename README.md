@@ -26,7 +26,7 @@ The evaluation reports exact set-consistency predicates, Jaccard similarities, I
 ├── src/
 │   ├── question_pipeline/              # Scripts for deriving related questions
 │   ├── get_answers/                    # LLM prompting and answer-generation scripts
-│   ├── evaluation/                     # Metrics, summaries, p-values, and heatmap CSVs
+│   ├── evaluation/                     # Metrics, summaries, p-values, and paper tables
 │   └── visualization/                  # Figure-generation scripts
 ├── charts/                             # Generated figures
 ├── docs/                               # Static GitHub Pages table of ASCB questions
@@ -75,7 +75,6 @@ Important files include:
 - `summary_idk_worst.csv`: summary metrics where IDK/empty answers are treated pessimistically.
 - `summary_*_{zero-shot,classification,fixing}.csv`: per-action summary splits.
 - `p_value_matrices.csv`: pairwise model-comparison p-values.
-- `heatmaps/heatmap_*.csv`: heatmap-ready CSV files derived from `p_value_matrices.csv`.
 - `tradeoff/*.csv`: IDK/consistency trade-off summaries.
 
 Local reproduction scripts write fresh outputs to `output/`. These files may differ from the committed `data/evaluation_results/` if the raw answers, loaders, model list, or filtering policy have changed.
@@ -165,6 +164,51 @@ directory, stop it before restarting with multiple workers. On interruption or
 an unhandled request error, pending jobs are cancelled and in-flight work is
 allowed to finish its current stage and save progress.
 
+Score one model directory at a time with
+`python -m src.evaluation.analyses.eval_relation_aware_ablation --input-dir output/relation_aware_ablation/<model>`.
+By default, each evaluation is written to its own UTC-timestamped directory under
+`output/evaluation_runs/relation_aware_ablation/`. Pass `--output-dir` only when
+an exact destination is required. Every run includes `manifest.json` with the
+manifest schema version, command and configuration, IDK-recognition rule,
+entity-normalization mode, evaluation policies, input hashes, completion
+status, and output hashes. Git metadata is deliberately excluded to avoid
+linking anonymous artifacts to a development repository.
+Paths stored in manifests and printed by evaluation entry points are
+repository-relative. External locations use anonymous `<external>/...` labels,
+so run artifacts do not disclose usernames or home directories.
+The primary set-partition score jointly requires `A4 = A1 - A3` and `A3 <= A1`;
+the two components are also exported as diagnostics. The root-level
+`per_item.csv` and `summary.csv` are the initial GPT-4.1-mini snapshot that used
+the difference-only ablation score and are retained only for run provenance.
+
+### Standardized evaluation factors
+
+The default evaluation configuration uses `recognition=robust` and
+`entity_normalization=none`. Use `--recognition standard` to reproduce the
+original narrower IDK rule. Cached Wikidata alias normalization is a separate
+sensitivity run:
+
+```bash
+.venv/bin/python -m src.evaluation.analyses.entity_normalization_sensitivity
+```
+
+Its default output is a timestamped directory under
+`output/evaluation_runs/entity-normalization/`. In addition to IDK recognition
+and entity normalization, every run manifest records the answer representation,
+joint partition criterion, repeated-control aggregation, main and Table 4
+abstention policies, missing-record policy, denominator policy, pairing policy
+where applicable, and all input hashes. Compare these fields before treating
+numbers from different runs as directly comparable.
+
+The repeated question result is an auxiliary stability control only. It asks
+the same `Q1` again to separate variability under identical wording from the
+effect of the equivalent rephrasing (Q_2). It is excluded from the five primary
+relations and from `CON`. The default manifest records the upstream publication
+rule. The control is the model-level equal-weight mean of the isolated
+Base-repeat condition and the CtE `Q1` control condition. Missing Base
+repetitions are not filled from CtE on a per-question basis, and the control is
+not published unless all 600 isolated Base repetitions are available.
+
 Provider content-filter blocks are recorded separately under `blocked_responses`.
 The affected stage remains incomplete, and the other stages and question groups
 continue. Filtered responses are not converted into answers or IDK observations.
@@ -202,19 +246,18 @@ This command:
 - computes per-question consistency metrics and Jaccard similarities;
 - merges relation-classification information when available;
 - computes pairwise p-values;
-- writes regenerated CSV files to `output/`.
+- writes a self-contained version under `output/evaluation_runs/versions/`.
 
 Main regenerated files:
 
 ```text
-output/analysis.csv
-output/summary.csv
-output/summary_xidk.csv
-output/summary_zero-shot.csv
-output/summary_classification.csv
-output/summary_fixing.csv
-output/p_value_matrices.csv
-output/heatmap_*.csv
+<version>/analysis.csv
+<version>/summary.csv
+<version>/summary_empty_answers.csv
+<version>/summary_idk_worst.csv
+<version>/p_value_matrices.csv
+<version>/paper_results/*.csv
+<version>/paper_results/*.tex
 ```
 
 To recompute only the p-value matrix from an existing `analysis.csv`, run:
@@ -225,7 +268,7 @@ python -m src.evaluation.statistics.eval_pvalue
 
 The script uses `output/analysis.csv` when it exists; otherwise it falls back to `data/evaluation_results/analysis.csv`.
 
-### Reproduce Supplementary Tables 9–11
+### Optional historical Supplementary Tables 9–11
 
 Rebuild these tables directly from saved Base/CtE answers and classification
 outputs, without model calls or notebook setup:
@@ -236,8 +279,10 @@ python src/evaluation/export_supplementary_tables.py
 
 This writes `output/tables_9_11.csv` (percent scores, source columns, and
 per-cell denominators) and `output/tables_9_11.tex` (the three complete tables).
-The regular evaluation runner also exports these tables. To replace only
-these tables in the local manuscript, use:
+These tables are not generated by the regular evaluation runner or the default
+paper-table export. To rebuild them explicitly for historical comparison, use
+the standalone command above. To replace only these tables in a local
+manuscript, use:
 
 ```bash
 python src/evaluation/export_supplementary_tables.py --update-manuscript TEMP/appendix.tex
@@ -301,42 +346,74 @@ Run these commands from the repository root using the existing `.venv` environme
 They use saved results and do not call model APIs. Golden Answers and other
 separately managed new experiments are outside this workflow.
 
-### Recompute all eight result tables from raw answers
+For a single entry point, use:
+
+```bash
+./run_evaluation.sh
+```
+
+The default `core` scope creates one timestamped evaluation version with the
+shared analysis and all manuscript result tables under its `paper_results/`
+subdirectory. Use `--scope aggregate` for the same version build,
+`--scope paper` for a standalone Tables 3–4 export,
+`--scope entity` for entity normalization, or `--scope ablation --model gpt-5`
+for one saved ablation model. Run `./run_evaluation.sh --help` for all options.
+
+Recommended workflow: create the canonical complete version once with
+`./run_evaluation.sh --scope core` (robust by default). For IDK sensitivity,
+use `--scope paper --recognition standard` or `extended`; those standalone runs
+generate only Tables 3 and 4 and therefore do not duplicate the IDK-independent
+paper tables.
+
+### Standalone Tables 3 and 4 export
 
 ```bash
 .venv/bin/python -m src.evaluation.export_paper_results
 ```
 
-Outputs go to `output/reproduced_tables/`, including CSVs, plain LaTeX tables,
-coverage counts, response provenance, and input SHA-256 hashes. This command
+Outputs go to a new UTC-timestamped directory under
+`output/evaluation_runs/paper-results/`, including CSVs, plain LaTeX tables,
+and `manifest.json`. Add `--include-audit-details` only when separate coverage,
+repeat provenance, and source-fingerprint files are needed.
+For a complete self-contained evaluation version, use `./run_evaluation.sh`.
+That command writes the shared `analysis.csv` and summaries once, then derives
+all paper tables into the sibling `paper_results/` folder without rebuilding
+the answer analysis.
+This command
 recomputes results; it does not update the manuscript-formatted tables in
 `output/paper_tables/clean/`.
 
-Paper tables default to `--recognition standard`, preserving the paper's
-standardized-idk/empty-set rule: an empty answer set or a sole `idk` token
-(ignoring case and whitespace) is unavailable. The original model-level,
-equal-weight Base/CtE aggregation is retained for both repeated-control columns.
+Paper-table exports use the `robust` recognition rule by default: empty strings,
+blank-only lists, `no answer`, and `I don't know` / `I do not know` are treated
+as unavailable after normalization. Use `--recognition standard` to preserve
+the original empty-set/sole-`idk` rule. The model-level equal-weight Base/CtE
+aggregation is retained for both repeated-control columns, but the columns are
+published only for models with all 600 isolated Base repetitions.
 Verified implementation and input-selection corrections remain applied.
 
-Enhanced whole-answer recognition is available separately as a sensitivity analysis:
+The robust default can be selected explicitly as follows:
 
 ```bash
-.venv/bin/python -m src.evaluation.export_paper_results --recognition robust --output-dir output/reproduced_tables_robust
+.venv/bin/python -m src.evaluation.run --recognition robust
 ```
 
 `robust` also recognizes empty strings, blank-only lists, `no answer`, and
 `I don't know` / `I do not know`, normalizing surrounding quotes and terminal
 punctuation. Valid-entity lists are retained; `None` and `NaN` remain missing.
 `extended` additionally flags explicit null phrases mixed with valid entities.
-The aggregate entry point and supplementary exporter accept the same option.
-`scoring_sensitivity.csv` compares all three modes on the same responses.
+The paper-table exporter also accepts `--recognition robust` or
+`--recognition extended`. Each invocation produces only Tables 3 and 4 for the
+selected rule in a distinct timestamped run directory. This avoids duplicating
+unrelated tables across IDK modes. To explicitly compare all three modes in one
+diagnostic file, add `--include-idk-sensitivity`.
 Keeping the original protocol does not retain incorrect source mixing or imply
 that corrected results must exactly equal the submitted numbers.
 
 To regenerate both Table 4 policies together, run:
 
 ```bash
-.venv/bin/python -m src.evaluation.export_paper_results --table filtered --output-dir output/table4_versions
+.venv/bin/python -m src.evaluation.export_paper_results --table filtered \
+  --include-table4-comparison --output-dir output/table4_versions
 ```
 
 Despite the historical key `filtered`, Table 4 now replaces each observed
@@ -348,7 +425,8 @@ Jaccard similarity of two empty sets remains zero. Per-metric denominators are
 included in the CSV; 600 is valid only when all 600 observations are available.
 Table 3 continues to use worst-case scores for abstentions. The old exclusion
 policy remains available through `core.eval_tool.summary_xidk` for comparison.
-Both policies are exported on the same data snapshot, with independent files:
+With `--include-table4-comparison`, both policies are exported on the same data
+snapshot, with independent files:
 
 - `filtered.csv` / `filtered.tex`: individual empty-set replacement (current Table 4).
 - `filtered_exclusion.csv` / `filtered_exclusion.tex`: the previous metric-instance exclusion method.
@@ -356,8 +434,8 @@ Both policies are exported on the same data snapshot, with independent files:
 
 Each CSV includes an explicit `abstention_policy`. The exclusion reference uses
 a distinct LaTeX label so both tables can be included in the same document.
-The shared `source_manifest.json` identifies the input snapshot for both versions.
-Generating all eight tables also produces the Table 4 exclusion reference.
+With `--include-audit-details`, `source_manifest.json` identifies the input snapshot.
+The default core export does not generate the legacy Table 4 exclusion reference.
 
 ### Generate manuscript-formatted clean and blue versions
 
@@ -365,7 +443,7 @@ Generating all eight tables also produces the Table 4 exclusion reference.
 .venv/bin/python -m src.evaluation.export_paper_results --source reviewed --current-dir path/to/current_tables
 ```
 
-Replace `path/to/current_tables` with the directory containing the eight current
+Replace `path/to/current_tables` with the directory containing the two current
 `.tex` table inputs. This compares them against the frozen original-paper baseline in
 `output/paper_tables/base/` (which must already exist). It writes `clean/` and
 `blue/` tables, plus a
@@ -387,31 +465,25 @@ For the older standalone bar charts and heatmaps, also run:
 ```
 
 Charts are written under `charts/`. These commands read aggregate evaluation CSVs,
-not `output/reproduced_tables/` or the manuscript table fragments. They may fall
+not timestamped paper-result runs or the manuscript table fragments. They may fall
 back to archived results in `data/evaluation_results/` when fresh aggregate files
 are absent; running them alone does not guarantee figures based on the latest
 raw answers.
 
 ### Current full-refresh limitation
 
-There is currently no single verified command that refreshes raw evaluation,
-manuscript-formatted tables, both revision variants, and all figures together.
-The aggregate evaluation entry point is `python src/evaluation/run.py`. It now
-uses the shared `summary_empty_answers` implementation for Table 4, saving
-`output/summary_empty_answers.csv`, rather than depending on the missing
-`reviewer_abstention_audit` module. The legacy `summary_xidk.csv` remains a separate
-metric-instance exclusion diagnostic.
-Simply chaining the commands above does not close the gaps between their inputs.
+The aggregate evaluation entry point `python src/evaluation/run.py` now refreshes
+the shared analysis and all numerical paper tables in one version directory.
+It does not update manuscript source files, clean/blue revision variants, or
+figures automatically; those remain deliberate follow-up steps.
 
-### Can `output/reproduced_tables/` be deleted?
+### Can generated evaluation-run directories be deleted?
 
-Yes. It contains generated outputs, not required source inputs. Deleting it does
+Yes. They contain generated outputs, not required source inputs. Deleting them does
 not remove raw answers, the frozen baseline, current manuscript table inputs, or
-the clean/blue versions. The raw-mode command recreates it on the next run.
-Several existing outputs are tracked in Git, so deleting them appears as file
-deletions in `git status`. Keep or archive their provenance/hash files if you need
-to identify that exact past data snapshot; regenerating after inputs change may
-produce different values and hashes.
+the clean/blue versions. The raw-mode command creates a new timestamped directory
+on the next run. Preserve `manifest.json` with any result snapshot that must remain
+auditable; regenerating after inputs or code change may produce different values.
 
 For individual table commands, label mappings, and baseline initialization, see
 [the table generation instructions](output/table_generation_instructions.md).

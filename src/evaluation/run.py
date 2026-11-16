@@ -1,6 +1,5 @@
 """Aggregate evaluation entry point (saved responses only)."""
 import argparse
-import datetime
 import json
 import os
 import sys
@@ -9,26 +8,28 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_xidk, summary_empty_answers
+from src.evaluation.core.eval_tool import load_all_questions, load_answers, enrich_answers, analysis, summary, summary_empty_answers
 from src.evaluation.core.eval_relation import load_relations, load_relation_clf, relation_summary, merge_relations_by_action, update_summary_by_relations
 from src.evaluation.statistics.eval_pvalue import compute_pvals, p_value_matrixs
-from src.evaluation.tables.split_heatmap import dataframe_to_heatmap_csvs
-from src.evaluation.tables.split import split
-from src.evaluation.paths import REPO_ROOT
+from src.evaluation.paths import (
+    REPO_ROOT,
+    create_run_directory,
+    display_path,
+    finish_run_manifest,
+    start_run_manifest,
+)
 from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case, ABSTENTION_RECOGNITIONS
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--recognition', choices=ABSTENTION_RECOGNITIONS, default='standard')
-    args = parser.parse_args()
+def _run(args, output_folder):
     recognition = args.recognition
     root_dir = str(REPO_ROOT)
-    print("Root directory:", root_dir)
+    print("Repository root: .")
     datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
 
     llm_path = f"{root_dir}/data/llm_info.json"
     with open(llm_path, "r", encoding="utf-8") as f:
-        llms = json.load(f).keys()
+        llm_info = json.load(f)
+    llms = llm_info.keys()
     actions = [
         "fixing",
         "classification",
@@ -43,8 +44,6 @@ def main():
     languages = ['en']
 
 
-    # Define output folder path
-    output_folder = os.path.join(root_dir, "output")
     os.makedirs(output_folder, exist_ok=True)
 
     # Relation Classification
@@ -53,15 +52,7 @@ def main():
     # From your df_relation:
     df_relation_summery = relation_summary(df_relation, include_overall=True, round_digits=4)
 
-    # Save if you want:
-    time = datetime.datetime.now()
-    relation_file_format = time.strftime("relations_%Y-%m-%d_%H-%M.csv")
-    summary_file_format = time.strftime("relation_summary_%Y-%m-%d_%H-%M.csv")
-    summary_file_format_excel = time.strftime("relation_summary_%Y-%m-%d_%H-%M.xlsx")
-
-    # df_relation.to_csv(os.path.join(output_folder, relation_file_format), index=False)
     df_relation_summery.to_csv(os.path.join(output_folder, "relation_summery.csv"), index=False)
-    # df_relation_summery.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
 
 
     df_questions = load_all_questions(root_dir, datasets, languages)
@@ -80,8 +71,6 @@ def main():
     df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf, recognition)
     
     
-    # Save results
-    # analysis_file_format = time.strftime("analysis_%Y-%m-%d_%H-%M.csv")
     df_analysis.to_csv(os.path.join(output_folder, "analysis.csv"), index=False)
 
     # Table 4 retains instances and replaces individual null answers by empty
@@ -100,32 +89,74 @@ def main():
     df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
 
-    # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
-    # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
-
-
-    df_summary_xidk = summary_xidk(df_analysis, recognition)
-    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
-    df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="classification")
-    # Legacy exclusion diagnostic, distinct from summary_empty_answers (Table 4).
-
-    
-    df_summary_xidk.to_csv(os.path.join(output_folder, "summary_xidk.csv"), index=False)
-    # df_summary.to_excel(os.path.join(output_folder, summary_file_format_excel), index=False)
-
     summary_actions = [action for action in actions if action != "star"]
-    split(df_summary, "summary", actions=summary_actions)
-    split(df_summary_xidk, "summary_xidk", actions=summary_actions)
     df_worst = summary_idk_worst(df_analysis, recognition).merge(df_pval, on=["dataset", "llm", "action"], how="left")
     df_worst.to_csv(os.path.join(output_folder, "summary_idk_worst.csv"), index=False)
-    split(df_worst, "summary_idk_worst", actions=summary_actions)
     df_pvalue = p_value_matrixs(df_scored, summary_actions)
-    p_value_matrixs_file_format = time.strftime("p_value_matrices_%Y-%m-%d_%H-%M.csv")
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
-    dataframe_to_heatmap_csvs(df_pvalue, output_folder)
-    from src.evaluation.tables.export_supplementary_tables import build_tables, write_tables
-    write_tables(build_tables(df_analysis, llms, recognition), output_folder + "/tables_9_11", source="raw")
-    print("Analysis and summary saved to:", output_folder)
+
+    # Export all manuscript tables from this exact in-memory analysis snapshot.
+    # Keeping them in one subdirectory avoids duplicate standalone runs and
+    # makes the data/configuration version unambiguous.
+    from src.evaluation.tables.export_paper_results import TABLES, export
+    export(
+        REPO_ROOT,
+        Path(output_folder) / "paper_results",
+        list(TABLES),
+        recognition,
+        frame=df_analysis,
+        relations=df_relation,
+        info=llm_info,
+    )
+    print("Analysis and summary saved to:", display_path(output_folder))
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--recognition', choices=ABSTENTION_RECOGNITIONS, default='robust')
+    parser.add_argument(
+        '--output-dir', type=Path,
+        help='Exact version directory. The default is timestamped under output/evaluation_runs/versions',
+    )
+    args = parser.parse_args()
+    if args.output_dir is None:
+        output_dir, run_id = create_run_directory(
+            REPO_ROOT / 'output' / 'evaluation_runs' / 'versions',
+            'evaluation-version', args.recognition,
+        )
+    else:
+        output_dir = args.output_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
+        run_id = output_dir.name
+    input_files = [path for path in (REPO_ROOT / 'data').rglob('*')
+                   if path.is_file() and path.suffix in {'.json', '.csv'}]
+    manifest = start_run_manifest(
+        output_dir, run_id=run_id, run_type='evaluation-version',
+        config={
+            'recognition': args.recognition,
+            'datasets': ['spinach', 'qawiki', 'synthetic', 'LC-QuAD'],
+            'actions': [
+                'fixing', 'classification', 'star', 'zero-shot', 'chain-of-thought',
+                'zero-shot-no-idk', 'fixing-no-idk', 'classification-no-idk',
+            ],
+            'tasks': ['equal', 'sup-sub', 'minus'],
+            'languages': ['en'],
+            'paper_results': [
+                'main', 'filtered', 'classification', 'significance',
+                'correlation', 'cfr', 'correct', 'incorrect',
+            ],
+            'paper_results_directory': 'paper_results',
+        }, recognition=args.recognition,
+        input_files=input_files, input_root=REPO_ROOT,
+        entity_normalization='none',
+    )
+    try:
+        _run(args, str(output_dir))
+    except Exception as error:
+        finish_run_manifest(output_dir, manifest, status='failed', error=repr(error))
+        raise
+    finish_run_manifest(output_dir, manifest)
+    print('Run manifest:', display_path(output_dir / 'manifest.json'))
 
 
 if __name__ == "__main__":
