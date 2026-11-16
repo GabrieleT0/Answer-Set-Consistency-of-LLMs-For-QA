@@ -428,7 +428,7 @@ def predicted_relation_holds(left, right, relation):
     return int(checks[relation]()) if relation in checks else 0
 
 
-def add_contradiction_free_scores(df):
+def add_contradiction_free_scores(df, recognition="standard"):
     """The legacy ?SC columns store contradiction-FREE outcomes (1 is good).
 
     Missing classification observations stay unavailable. Explicit Unknown/
@@ -444,10 +444,15 @@ def add_contradiction_free_scores(df):
     scores = {c: [] for c in columns}
 
     def parse(cell):
+        if is_null_answer(cell, recognition):
+            return set()
         if isinstance(cell, (list, tuple, set)):
             return set(cell)
         if isinstance(cell, str):
-            parsed = ast.literal_eval(cell)
+            try:
+                parsed = ast.literal_eval(cell)
+            except (ValueError, SyntaxError):
+                return None
             if isinstance(parsed, (list, tuple, set)):
                 return set(parsed)
         return None
@@ -472,7 +477,7 @@ def add_contradiction_free_scores(df):
             answers = [parsed[name] for name in names]
             if any(answer is None for answer in answers):
                 scores[column].append(float("nan"))
-            elif any(is_null_answer(answer) for answer in answers):
+            elif any(is_null_answer(answer, recognition) for answer in answers):
                 scores[column].append(0)
             else:
                 left, right = (answers[0] - answers[1], answers[2]) if len(answers) == 3 else answers
@@ -482,7 +487,7 @@ def add_contradiction_free_scores(df):
     return out
 
 
-def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
+def merge_relations_by_action(df_analysis, df_relation, df_relation_clf, recognition="standard"):
     keys = ["Q_ID", "dataset", "llm"]
     rel_cols = ["R(1-2)", "R(1-3)", "R(1-4)", "R(3-4)", "R(1-34)"]
     df_analysis = df_analysis.copy()
@@ -529,7 +534,7 @@ def merge_relations_by_action(df_analysis, df_relation, df_relation_clf):
         cls_merge = df_analysis.loc[m_cls, keys].merge(df_rel_clf_aligned, on=keys, how="left")
         df_analysis.loc[m_cls, rel_cols] = cls_merge[rel_cols].values
 
-    df_analysis = add_contradiction_free_scores(df_analysis)
+    df_analysis = add_contradiction_free_scores(df_analysis, recognition)
 
     df_analysis =  df_analysis.replace({None: pd.NA}).convert_dtypes()
     return df_analysis

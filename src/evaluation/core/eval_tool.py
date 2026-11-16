@@ -5,7 +5,7 @@ import os
 import json
 import pandas as pd
 import numpy as np
-from src.evaluation.core.summary_idk_worst import add_idk_flags, is_null_answer, metric_idk_mask
+from src.evaluation.core.summary_idk_worst import add_idk_flags, is_null_answer, metric_idk_mask, apply_repeat_aggregation
 # from statsmodels.stats.contingency_tables import mcnemar
 
 
@@ -189,7 +189,7 @@ def partition_metrics(a1, a3, a4):
             "?A3<=A1(same-context)": containment}
 
 
-def analysis(df):
+def analysis(df, recognition="standard"):
     rows = []
     group_keys = ["Q_ID", "action", "dataset", "llm"]
     grouped = df.groupby(group_keys)
@@ -302,11 +302,11 @@ def analysis(df):
             }
             rows.append(row)
     df_analysis = pd.DataFrame(rows)
-    return add_idk_flags(df_analysis)
+    return add_idk_flags(df_analysis, recognition)
 
 
 
-def summary(df_analysis):
+def summary(df_analysis, recognition="standard"):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
     consistency_cols += [c for c in ["?A4=A1-A3", "?A3<=A1(same-context)"] if c in df_analysis]
@@ -315,7 +315,7 @@ def summary(df_analysis):
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
-    df_analysis = add_idk_flags(df_analysis)
+    df_analysis = add_idk_flags(df_analysis, recognition)
 
     empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
 
@@ -345,7 +345,7 @@ def summary(df_analysis):
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
     return df_summary
 
-def summary_empty_answers(df_analysis):
+def summary_empty_answers(df_analysis, recognition="standard", repeat_aggregation="condition_mean"):
     """Table 4: replace each observed null answer with an empty set, then score.
 
     Retain all observed instances, including null answers. Missing observations
@@ -354,7 +354,7 @@ def summary_empty_answers(df_analysis):
     Original abstention flags are retained for reporting the IDK rate.
     """
     def answer(cell):
-        if is_null_answer(cell):
+        if is_null_answer(cell, recognition):
             return set()
         if isinstance(cell, str):
             if not cell.strip():
@@ -366,7 +366,7 @@ def summary_empty_answers(df_analysis):
             return None
         raise ValueError(f'Unsupported answer-set cell type: {type(cell).__name__}')
 
-    frame = add_idk_flags(df_analysis[df_analysis.action.ne('wikidata')].copy())
+    frame = add_idk_flags(df_analysis[df_analysis.action.ne('wikidata')].copy(), recognition)
     scores = []
     contextual_actions = {'classification', 'fixing', 'classification-no-idk', 'fixing-no-idk'}
     for row in frame.to_dict('records'):
@@ -419,10 +419,13 @@ def summary_empty_answers(df_analysis):
     per_dataset = aggregate(['dataset', 'action', 'llm'])
     overall = aggregate(['action', 'llm'])
     overall['dataset'] = 'overall'
-    return pd.concat([per_dataset, overall], ignore_index=True)
+    result = pd.concat([per_dataset, overall], ignore_index=True)
+    return apply_repeat_aggregation(result, df_analysis,
+        lambda frame: summary_empty_answers(frame, recognition, "per_question"),
+        repeat_aggregation, recognition)
 
 
-def summary_xidk(df_analysis):
+def summary_xidk(df_analysis, recognition="standard", repeat_aggregation="condition_mean"):
     group_cols = ["dataset", "action", "llm"]
     consistency_cols = ["?A1=A2", "?A1=A3+A4", "?A1>A3", "?A1>A4", "?A3∅A4", "?A4=A1|3", "?A1=A1*", "?A1=A1**","?A1*=A1**"]
     consistency_cols += [c for c in ["?A4=A1-A3", "?A3<=A1(same-context)"] if c in df_analysis]
@@ -431,7 +434,7 @@ def summary_xidk(df_analysis):
     pval_cols = [col for col in df_analysis.columns if col.startswith("p_value_")]
     metric_cols = consistency_cols + jaccard_cols + pval_cols + self_contradition_cols
 
-    df_analysis = add_idk_flags(df_analysis)
+    df_analysis = add_idk_flags(df_analysis, recognition)
 
     empty_cols = [f"idk_{a}" for a in ["A1", "A2", "A3", "A4"]]
 
@@ -480,7 +483,9 @@ def summary_xidk(df_analysis):
 
     idk_col = ["idk_A1","idk_A2","idk_A3","idk_A4"]
     df_summary["idk"] = df_summary[idk_col].mean(axis=1)
-    return df_summary
+    return apply_repeat_aggregation(df_summary, df_analysis,
+        lambda frame: summary_xidk(frame, recognition, "per_question"),
+        repeat_aggregation, recognition, exclude_nulls=True)
 
 if __name__ == "__main__":
     # load dfanalysis 

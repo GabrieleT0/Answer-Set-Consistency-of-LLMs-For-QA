@@ -104,7 +104,7 @@ def cell_value(cell, significance=False):
     text = re.sub(r'[\s${}]', '', text)
     if text in {'', '--'}:
         return ('missing',)
-    match = re.fullmatch(r'(<|>)?([+-]?\d+(?:\.\d+)?)(\*{0,3})', text)
+    match = re.fullmatch(r'(<|>)?([+-]?(?:\d+(?:\.\d+)?|\.\d+))(\*{0,3})', text)
     if not match:
         raise ValueError(f'Unrecognized numerical cell: {cell}')
     return (match.group(1), Decimal(match.group(2)), match.group(3))
@@ -127,7 +127,9 @@ def rows(text, key):
         elif key == 'classification':
             if len(cells) != 8 or not re.fullmatch('[A-Z]', cells[0].strip()):
                 continue
-            identity, prefix = (cells[0].strip(),), 2
+            # The leading letter is only a display ID and may change when the
+            # model ordering changes.  The model name is the stable row key.
+            identity, prefix = (re.sub(r'\s+', '', cells[1]),), 2
         elif key == 'correlation':
             if len(cells) != 10 or cells[0].strip() not in {'$r$', '$p$'}:
                 continue

@@ -1,6 +1,5 @@
 ### Initialize a baseline once on a fresh checkout
 
-
 Initialization refuses to overwrite an existing baseline. `base/manifest.json` records original source and baseline-table SHA-256 hashes; subsequent exports verify that the frozen baseline has not been edited. To create a deliberately different baseline, use a new `--base-dir` rather than changing the existing files.
 
 The generated files are manuscript fragments, not standalone documents. They use the manuscript's existing packages and metric macros. For example, when compiling from the repository root, use `\input{output/paper_tables/blue/main.tex}` for the marked version or `\input{output/paper_tables/clean/main.tex}` for the clean version. Adjust paths when compiling from another directory.
@@ -34,7 +33,7 @@ Label: `tab:consistency_per_action_by_id`
 ```
 
 - Inputs: Base, CtE, Oracle (action `fixing` in the code), and `star` responses under `data/answers/`; the four question datasets under `data/`; and `data/llm_info.json`.
-- Calculation: `core.eval_tool.analysis` → `core.summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
+- Calculation: `core.eval_tool.analysis` → `core.summary_idk_worst.summary_idk_worst`, selecting `dataset=overall`. The default `recognition="standard"` preserves the paper's empty-set/sole-standardized-idk rule (ignoring case and whitespace). `--recognition robust` is a separate sensitivity analysis recognizing whole-answer empty strings, blank-only lists, `no answer`, and `I don't know` / `I do not know`, with case, whitespace, quote, and terminal-punctuation normalization. `--recognition extended` also flags explicit null phrases mixed with valid entities. Missing `None`/`NaN` observations remain distinct from observed abstentions in every mode. All entry points pass the selected mode to scoring and significance tests. Displayed scores are multiplied by 100. CON is the arithmetic mean of the five binary relation-consistency scores and excludes the repeated-question columns.
 - The main score retains the joint partition definition: `A1 = A3 ∪ A4` and `A3 ∩ A4 = ∅`. The final Jaccard metric compares `A4` with `A1 − A3`.
 - Outputs: `main.csv` and `main.tex`. Repeated-question results are displayed only in Base rows.
 
@@ -48,7 +47,7 @@ Label: `tab:consistency_per_action_filtering`
 ```
 
 - Inputs: the same as the main table.
-- Calculation: `core.eval_tool.summary_empty_answers`, selecting `dataset=overall`. Replace each observed abstention or empty answer individually with the empty set, retain its companion answers, and recompute each metric. Observed instances remain in the denominator; missing responses and missing repeat observations are not filled. Thus the denominator is 600 only when 600 required observations are actually available. The existing Jaccard convention is retained: J(empty, empty) = 0. CON remains the mean of the five relation scores. Original IDK flags are retained for reporting the abstention rate.
+- Calculation: `core.eval_tool.summary_empty_answers`, selecting `dataset=overall`. Replace each observed abstention or empty answer individually with the empty set, retain its companion answers, and recompute each metric. Observed instances remain in the denominator; observations absent from both eligible response sources remain unavailable. The primary repeated-question columns use the equal-condition aggregation above; the per-question recovery is retained separately. Thus the denominator is 600 only when 600 required observations are actually available. The existing Jaccard convention is retained: J(empty, empty) = 0. CON remains the mean of the five relation scores. Original IDK flags are retained for reporting the abstention rate.
 - This is a sensitivity analysis: empty sets can produce trivial equality, containment, or disjointness, so Table 4 is not evidence of improved QA. The historical metric-instance exclusion implementation remains available as `core.eval_tool.summary_xidk`, but no longer generates Table 4. The CLI key `filtered` is retained for compatibility. The CSV includes per-metric `n_scored_...` counts and `abstention_policy=individual_empty_set`.
 - Outputs: `filtered.csv` and `filtered.tex` for individual empty-set replacement; `filtered_exclusion.csv` and `filtered_exclusion.tex` for the previous metric-instance exclusion policy. Both are regenerated together on the same input snapshot, retain per-metric counts, and have explicit `abstention_policy` identifiers. The exclusion reference uses a separate LaTeX label. `policy_comparison.csv` records score changes and effective denominators between the two methods.
 
