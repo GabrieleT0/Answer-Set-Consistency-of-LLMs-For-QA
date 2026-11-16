@@ -1,0 +1,206 @@
+{
+  "manifest_schema": "ascb-evaluation-run/v1",
+  "run_id": "20261116T142225Z__evaluation-version__idk-standard",
+  "run_type": "evaluation-version",
+  "status": "completed",
+  "created_at": "2026-11-16T15:22:25+01:00",
+  "created_at_utc": "2026-11-16T14:22:25+00:00",
+  "command": [
+    ".venv/bin/python",
+    "src/evaluation/run.py",
+    "--recognition",
+    "standard"
+  ],
+  "working_directory": ".",
+  "runtime": {
+    "python": "3.12.3"
+  },
+  "config": {
+    "recognition": "standard",
+    "datasets": [
+      "spinach",
+      "qawiki",
+      "synthetic",
+      "LC-QuAD"
+    ],
+    "actions": [
+      "fixing",
+      "classification",
+      "star",
+      "zero-shot",
+      "chain-of-thought",
+      "zero-shot-no-idk",
+      "fixing-no-idk",
+      "classification-no-idk"
+    ],
+    "tasks": [
+      "equal",
+      "sup-sub",
+      "minus"
+    ],
+    "languages": [
+      "en"
+    ],
+    "paper_results": [
+      "main",
+      "filtered",
+      "classification",
+      "significance",
+      "correlation",
+      "cfr",
+      "correct",
+      "incorrect"
+    ],
+    "paper_results_directory": "paper_results"
+  },
+  "idk_handling": {
+    "recognition": "standard",
+    "definition": "empty answer set or a sole case-insensitive idk token",
+    "missing_observations_are_abstentions": false,
+    "primary_binary_metric_policy": "recognized abstentions receive zero",
+    "primary_similarity_policy": {
+      "equivalence_and_partition": "recognized abstentions receive zero",
+      "disjointness": "recognized abstentions receive one"
+    }
+  },
+  "entity_normalization": {
+    "mode": "none",
+    "unmapped_entity_policy": "preserve original string"
+  },
+  "evaluation_policies": {
+    "answer_representation": "trimmed exact-string sets parsed from pipe-delimited responses",
+    "partition_metric": "A4 = A1 - A3 AND A3 subseteq A1",
+    "difference_only_metric": "diagnostic only; excluded from the five-relation CON mean",
+    "repeat_control_role": "auxiliary same-question stability control; excluded from CON",
+    "repeat_aggregation": "condition_mean",
+    "repeat_source_policy": "condition-level mean of isolated Base repeats and the CtE Q1 control; unpublished when isolated Base coverage is below 600",
+    "main_abstention_scoring": "worst_case",
+    "table4_abstention_scoring": "individual_empty_set",
+    "missing_record_policy": "remain missing; never converted to abstentions or imputed",
+    "denominator_policy": "use observed records; report 600 only when coverage is complete"
+  },
+  "inputs": {
+    "root": ".",
+    "count": 3452,
+    "aggregate_sha256": "b2240e27c362615b8999244739328207885626da76bf67228779708919535902"
+  },
+  "outputs": {
+    "root": ".",
+    "count": 22,
+    "aggregate_sha256": "ce9b24c0540934199420fc35d68ed6bf887be903e3ef2daf3da2c74cf58eec7e",
+    "files": [
+      {
+        "path": "analysis.csv",
+        "sha256": "05c76212a7e73531e22290f66f2ae42cecda93273b97744d9ad8acd9876efc55",
+        "bytes": 116482395
+      },
+      {
+        "path": "p_value_matrices.csv",
+        "sha256": "8497bc8c3101e934d41fa1ff35b95ede56eb3f6b250bc73adf61ce76b5221db0",
+        "bytes": 912347
+      },
+      {
+        "path": "paper_results/cfr.csv",
+        "sha256": "7eec6b430068fbdcb4d8df5b4f8ce9ae035abf8d934982285ec606525ed4622c",
+        "bytes": 14305
+      },
+      {
+        "path": "paper_results/cfr.tex",
+        "sha256": "7ecfde3076d1579484df620a26abf7a0e2787fdfd59259f8c5d9d263b5099c9c",
+        "bytes": 2546
+      },
+      {
+        "path": "paper_results/classification.csv",
+        "sha256": "e8828b01b30dda28d2a87e7ebfea2dca013aac0e9f82cc42630630af3b555990",
+        "bytes": 2377
+      },
+      {
+        "path": "paper_results/classification.tex",
+        "sha256": "546d4d3fb37697b673f125d14d89ea319f20acae61980024ebcbca7196194412",
+        "bytes": 1408
+      },
+      {
+        "path": "paper_results/correct.csv",
+        "sha256": "11146b76d07deaf0c64eeb2e0c82b1dd160ab1274643343ac7909ada77db1c87",
+        "bytes": 21813
+      },
+      {
+        "path": "paper_results/correct.tex",
+        "sha256": "4f1413efc5e853b20c6e7b210ed0cf9b78bc03a289fcaca797732a27760fa83a",
+        "bytes": 3520
+      },
+      {
+        "path": "paper_results/correlation.csv",
+        "sha256": "14c73999f7a2e5e890b14e0afd09c22af7a9c01dda8cce229c047e84d3f26997",
+        "bytes": 477
+      },
+      {
+        "path": "paper_results/correlation.tex",
+        "sha256": "032dcff41a950121920a4f0eb77e13b018a77ecf842f4142008af2ef5163cb6b",
+        "bytes": 494
+      },
+      {
+        "path": "paper_results/filtered.csv",
+        "sha256": "01ded60b59893ad2631deff609a309229e7213e86b259e764a675a0f3171aefa",
+        "bytes": 14100
+      },
+      {
+        "path": "paper_results/filtered.tex",
+        "sha256": "6bfdc44da48744d2e3b0d3e65a7837e0154dac3baff3becbce7502f09379b9fb",
+        "bytes": 7112
+      },
+      {
+        "path": "paper_results/incorrect.csv",
+        "sha256": "30ff785fa3741a809fc186061db7493f48dd79bca6a2ac924e1e60aac9472ec6",
+        "bytes": 21129
+      },
+      {
+        "path": "paper_results/incorrect.tex",
+        "sha256": "cd60e2800f96ff284931ee830158362d8a2a9ee0826c3be5f38bb9386c3c3e32",
+        "bytes": 3494
+      },
+      {
+        "path": "paper_results/main.csv",
+        "sha256": "409323f4f507c8bd3fd6a14245cb8c6b1fd10beb4b2448c2e8aad274ac5f1b46",
+        "bytes": 15041
+      },
+      {
+        "path": "paper_results/main.tex",
+        "sha256": "003ea54383a4bdf5822a7dbdcb52df6ec490cab09165446c489675fb270520a3",
+        "bytes": 6840
+      },
+      {
+        "path": "paper_results/significance.csv",
+        "sha256": "5b1c48a9522b25ecb81107505f5d1ba46aa8e57a4ae9b0722e7788fd85ffdbe7",
+        "bytes": 5922
+      },
+      {
+        "path": "paper_results/significance.tex",
+        "sha256": "4a3729362e2f17d4aa4483aaf2cbd8f2c242f1f2bea996332f43b0e5d4494093",
+        "bytes": 2394
+      },
+      {
+        "path": "relation_summery.csv",
+        "sha256": "5c5a49a519423b79973f9e5ce8ac953c381e29a06de75d7747ffeb3e5ac5de95",
+        "bytes": 57751
+      },
+      {
+        "path": "summary.csv",
+        "sha256": "35a4fb41ad2cbe3a392543b85bdb901833f767f3abb04cefe86e80d8c1489fd9",
+        "bytes": 187368
+      },
+      {
+        "path": "summary_empty_answers.csv",
+        "sha256": "c732b63bf8d0531404f7c6b9b24e1627678fa5fe1eb741e3855d1042d3484c8f",
+        "bytes": 103613
+      },
+      {
+        "path": "summary_idk_worst.csv",
+        "sha256": "7eafcd6365d4168474b02b59fbf2144713054c62a2a48e693edda94601b51936",
+        "bytes": 149578
+      }
+    ]
+  },
+  "completed_at": "2026-11-16T15:24:18+01:00",
+  "completed_at_utc": "2026-11-16T14:24:18+00:00"
+}

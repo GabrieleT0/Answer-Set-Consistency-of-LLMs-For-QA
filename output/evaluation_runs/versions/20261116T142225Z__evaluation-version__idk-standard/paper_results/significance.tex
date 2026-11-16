@@ -1,0 +1,47 @@
+\begin{table*}[!t]
+\centering\scriptsize
+\begin{tabular}{lllllll}
+\toprule
+llm & action & p(A1=A2) & p(A1>A3) & p(A1>A4) & p(A3∅A4) & p(A4=A1|3) \\
+\midrule
+llama3.1:8b & classification & *** & *** & *** & -- & *** \\
+llama3.1:8b & fixing & *** & *** & *** & -- & *** \\
+llama3.1:70b & classification & *** & *** & *** & *** & *** \\
+llama3.1:70b & fixing & *** & *** & *** & *** & *** \\
+mistral-small:24b & classification & *** & *** & *** & *** & *** \\
+mistral-small:24b & fixing & *** & *** & *** & *** & *** \\
+deepseek-chat & classification & *** & *** & *** & *** & *** \\
+deepseek-chat & fixing & *** & *** & *** & *** & *** \\
+deepseek-reasoner & classification & *** & *** & *** & -- & *** \\
+deepseek-reasoner & fixing & *** & *** & *** & *** & *** \\
+gemini-2.0-flash & classification & *** & *** & *** & -- & *** \\
+gemini-2.0-flash & fixing & *** & *** & *** & *** & *** \\
+gemini-2.5-flash & classification & *** & *** & *** & *** & *** \\
+gemini-2.5-flash & fixing & *** & *** & *** & *** & *** \\
+gemini-2.5-pro & classification & *** & *** & *** & ** & *** \\
+gemini-2.5-pro & fixing & *** & *** & *** & *** & *** \\
+gpt-oss:20b & classification & *** & *** & *** & -- & *** \\
+gpt-oss:20b & fixing & *** & *** & *** & -- & *** \\
+gpt-4o & classification & *** & *** & *** & -- & *** \\
+gpt-4o & fixing & *** & *** & *** & *** & *** \\
+gpt-4.1-nano-2025-04-14 & classification & -- & -- & -- & -- & -- \\
+gpt-4.1-nano-2025-04-14 & fixing & *** & ** & *** & -- & *** \\
+gpt-4.1-mini-2025-04-14 & classification & *** & * & *** & *** & *** \\
+gpt-4.1-mini-2025-04-14 & fixing & *** & *** & *** & *** & *** \\
+gpt-4.1-2025-04-14 & classification & *** & *** & *** & *** & *** \\
+gpt-4.1-2025-04-14 & fixing & *** & *** & *** & *** & *** \\
+o3 & classification & *** & *** & *** & *** & *** \\
+o3 & fixing & *** & *** & *** & *** & *** \\
+gpt-5-nano & classification & *** & *** & *** & -- & -- \\
+gpt-5-nano & fixing & *** & *** & *** & ** & *** \\
+gpt-5-mini & classification & *** & *** & *** & *** & *** \\
+gpt-5-mini & fixing & *** & *** & *** & -- & *** \\
+gpt-5 & classification & *** & *** & *** & ** & *** \\
+gpt-5 & fixing & *** & *** & *** & -- & *** \\
+grok-3-mini & classification & *** & *** & *** & * & *** \\
+grok-3-mini & fixing & *** & *** & *** & -- & *** \\
+\bottomrule
+\end{tabular}
+\caption{Recomputed results.}
+\label{tab:p-value_prompting}
+\end{table*}
