@@ -38,7 +38,6 @@ Label: `tab:consistency_per_action_by_id`
 - The main score retains the joint partition definition: `A1 = A3 ∪ A4` and `A3 ∩ A4 = ∅`. The final Jaccard metric compares `A4` with `A1 − A3`.
 - Outputs: `main.csv` and `main.tex`. Repeated-question results are displayed only in Base rows.
 
-Repeated-question pairing prioritizes genuine `star` responses matched by model, dataset, and question ID. Under the currently specified rule, missing repeats for Llama-3.1-70B and Grok-3-mini use the CtE equality-task Q1 response as a fallback; this rule does not apply to other models. It does not use the consistency score between two CtE responses or average that score with the Base control score. Response provenance is saved in `repeat_provenance.csv` and is not added to the manuscript tables.
 
 ## 2. Individual Empty-Set Sensitivity Analysis (Table 4)
 
@@ -97,7 +96,7 @@ Label: `tab:Pearson`
 - Outputs: `correlation.csv` and `correlation.tex`, including `r`, the two-sided Pearson test `p`, and `n_models` (currently 14).
 - This entry point does not depend on the working-directory-relative paths in the older `pearson_test.py` script.
 
-## 6. Contradiction-Free Rates (Historical Supplementary Table 9)
+## 6. Contradiction-Free Rates (Current Table 12)
 
 Label: `tab:cRi_by_id_act`
 
@@ -109,7 +108,7 @@ Label: `tab:cRi_by_id_act`
 - Calculation: `core.eval_relation.add_contradiction_free_scores` checks whether the model's predicted relation holds between its answer sets. `tables.export_supplementary_tables.build_tables` then aggregates these scores. A score of 1 means contradiction-free; explicit abstentions receive 0; missing classification records are excluded from the denominator.
 - Outputs: `cfr.csv` and `cfr.tex`. The CSV includes `n_total`, `n_classified`, `n_selected`, and `n_scored`.
 
-## 7. Consistency and Similarity Given Correct Classification (Historical Supplementary Table 10)
+## 7. Consistency and Similarity Given Correct Classification (Current Table 13; Historical Table 10)
 
 Label: `tab:cRi+`
 
@@ -121,7 +120,7 @@ Label: `tab:cRi+`
 - Calculation: for each relation, select instances where the predicted relation matches the expected label, then calculate the corresponding consistency and Jaccard scores. The final binary column uses joint partition consistency; the final Jaccard column evaluates the difference component. Apply the main-table worst-case abstention policy.
 - Outputs: `correct.csv` and `correct.tex`. Entries with no eligible observations are displayed as `--`, not zero.
 
-## 8. Consistency and Similarity Given Incorrect Classification (Historical Supplementary Table 11)
+## 8. Consistency and Similarity Given Incorrect Classification (Current Table 14)
 
 Label: `tab:cRi-`
 
