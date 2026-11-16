@@ -312,6 +312,27 @@ coverage counts, response provenance, and input SHA-256 hashes. This command
 recomputes results; it does not update the manuscript-formatted tables in
 `output/paper_tables/clean/`.
 
+Paper tables default to `--recognition standard`, preserving the paper's
+standardized-idk/empty-set rule: an empty answer set or a sole `idk` token
+(ignoring case and whitespace) is unavailable. The original model-level,
+equal-weight Base/CtE aggregation is retained for both repeated-control columns.
+Verified implementation and input-selection corrections remain applied.
+
+Enhanced whole-answer recognition is available separately as a sensitivity analysis:
+
+```bash
+.venv/bin/python -m src.evaluation.export_paper_results --recognition robust --output-dir output/reproduced_tables_robust
+```
+
+`robust` also recognizes empty strings, blank-only lists, `no answer`, and
+`I don't know` / `I do not know`, normalizing surrounding quotes and terminal
+punctuation. Valid-entity lists are retained; `None` and `NaN` remain missing.
+`extended` additionally flags explicit null phrases mixed with valid entities.
+The aggregate entry point and supplementary exporter accept the same option.
+`scoring_sensitivity.csv` compares all three modes on the same responses.
+Keeping the original protocol does not retain incorrect source mixing or imply
+that corrected results must exactly equal the submitted numbers.
+
 To regenerate both Table 4 policies together, run:
 
 ```bash

@@ -15,10 +15,13 @@ from src.evaluation.statistics.eval_pvalue import compute_pvals, p_value_matrixs
 from src.evaluation.tables.split_heatmap import dataframe_to_heatmap_csvs
 from src.evaluation.tables.split import split
 from src.evaluation.paths import REPO_ROOT
-from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case
+from src.evaluation.core.summary_idk_worst import summary_idk_worst, impute_worst_case, ABSTENTION_RECOGNITIONS
 
 def main():
-    argparse.ArgumentParser(description=__doc__).parse_args()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--recognition', choices=ABSTENTION_RECOGNITIONS, default='standard')
+    args = parser.parse_args()
+    recognition = args.recognition
     root_dir = str(REPO_ROOT)
     print("Root directory:", root_dir)
     datasets=["spinach", "qawiki",'synthetic','LC-QuAD']
@@ -73,8 +76,8 @@ def main():
     )
 
     df_answers = enrich_answers(df_answers, df_questions)
-    df_analysis = analysis(df_answers)
-    df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf)
+    df_analysis = analysis(df_answers, recognition)
+    df_analysis = merge_relations_by_action(df_analysis, df_relation, df_relation_clf, recognition)
     
     
     # Save results
@@ -83,25 +86,25 @@ def main():
 
     # Table 4 retains instances and replaces individual null answers by empty
     # sets. Keep the old exclusion-based diagnostic as summary_xidk below.
-    df_summary_empty = summary_empty_answers(df_analysis)
+    df_summary_empty = summary_empty_answers(df_analysis, recognition)
     df_summary_empty.to_csv(os.path.join(output_folder, "summary_empty_answers.csv"), index=False)
 
     # p-values
-    df_scored = impute_worst_case(df_analysis)
+    df_scored = impute_worst_case(df_analysis, recognition)
     df_pval = compute_pvals(df_scored)
 
-    df_summary = summary(df_analysis)
+    df_summary = summary(df_analysis, recognition)
     
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="zero-shot")
     df_summary = update_summary_by_relations(df_analysis, df_summary, task="classification")
-    df_summary = df_summary.merge(compute_pvals(df_analysis), on=["dataset","llm","action"], how="left")
+    df_summary = df_summary.merge(df_pval, on=["dataset","llm","action"], how="left")
     df_summary.to_csv(os.path.join(output_folder, "summary.csv"), index=False)
 
     # summary_file_format = time.strftime("summary_%Y-%m-%d_%H-%M.csv")
     # summary_file_format_excel = time.strftime("summary_%Y-%m-%d_%H-%M.xlsx")
 
 
-    df_summary_xidk = summary_xidk(df_analysis)
+    df_summary_xidk = summary_xidk(df_analysis, recognition)
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="zero-shot")
     df_summary_xidk = update_summary_by_relations(df_analysis, df_summary_xidk, task="classification")
     # Legacy exclusion diagnostic, distinct from summary_empty_answers (Table 4).
@@ -113,7 +116,7 @@ def main():
     summary_actions = [action for action in actions if action != "star"]
     split(df_summary, "summary", actions=summary_actions)
     split(df_summary_xidk, "summary_xidk", actions=summary_actions)
-    df_worst = summary_idk_worst(df_analysis).merge(df_pval, on=["dataset", "llm", "action"], how="left")
+    df_worst = summary_idk_worst(df_analysis, recognition).merge(df_pval, on=["dataset", "llm", "action"], how="left")
     df_worst.to_csv(os.path.join(output_folder, "summary_idk_worst.csv"), index=False)
     split(df_worst, "summary_idk_worst", actions=summary_actions)
     df_pvalue = p_value_matrixs(df_scored, summary_actions)
@@ -121,7 +124,7 @@ def main():
     df_pvalue.to_csv(os.path.join(output_folder, "p_value_matrices.csv"), index=False)
     dataframe_to_heatmap_csvs(df_pvalue, output_folder)
     from src.evaluation.tables.export_supplementary_tables import build_tables, write_tables
-    write_tables(build_tables(df_analysis, llms), output_folder + "/tables_9_11", source="raw")
+    write_tables(build_tables(df_analysis, llms, recognition), output_folder + "/tables_9_11", source="raw")
     print("Analysis and summary saved to:", output_folder)
 
 

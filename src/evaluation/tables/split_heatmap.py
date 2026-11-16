@@ -1,11 +1,12 @@
+"""Convert pairwise p-value matrices to heatmap-ready CSV files."""
+
+import re
+from pathlib import Path
+
+import pandas as pd
 
 from src.evaluation.paths import REPO_ROOT
-import pandas as pd
-import json 
-import os
 
-import pandas as pd, re
-from pathlib import Path
 
 def _sanitize_predicate(pred: str) -> str:
     s = pred
@@ -13,6 +14,7 @@ def _sanitize_predicate(pred: str) -> str:
     s = s.replace("=", "eq").replace(">", "gt").replace("<", "lt").replace("+", "plus")
     s = s.replace("∅", "disj").replace("|", "or")
     return re.sub(r"[^\w]+", "_", s).strip("_")
+
 
 def dataframe_to_heatmap_csvs(df: pd.DataFrame, outdir: Path,
                               action: str | None = None,
@@ -25,8 +27,9 @@ def dataframe_to_heatmap_csvs(df: pd.DataFrame, outdir: Path,
     Also writes model_index_map.csv (idx, letter, llm).
     Returns the index map DataFrame.
     """
-    outdir = Path(outdir); outdir.mkdir(parents=True, exist_ok=True)
-    known = ["ID","action","dataset","predicate","llm"]
+    outdir = Path(outdir)
+    outdir.mkdir(parents=True, exist_ok=True)
+    known = ["ID", "action", "dataset", "predicate", "llm"]
     model_cols = [c for c in df.columns if c not in known]
 
     if action is not None:
@@ -60,24 +63,19 @@ def dataframe_to_heatmap_csvs(df: pd.DataFrame, outdir: Path,
         long["i"] = long["llm"].map(idx_map)
         long["j"] = long["col_model"].map(idx_map)
         long["val"] = pd.to_numeric(long["val"], errors="coerce")
-        out = long.dropna(subset=["i","j","val"])[["i","j","val"]].sort_values(["i","j"])
+        out = long.dropna(subset=["i", "j", "val"])[["i", "j", "val"]].sort_values(["i", "j"])
         out.to_csv(outdir / f"heatmap_{_sanitize_predicate(pred)}.csv", index=False)
 
     return index_map_df
 
 
 def main():
-    root_dir = str(REPO_ROOT)
-    folder = root_dir + "/output/"
-    # file = "summary_2025-09-23_16-04.csv"
-    file = "p_value_matrices_2025-09-24_08-48.csv"
-    prefix = "p_value"
-    df = pd.read_csv(folder + file)
-    # split(df, prefix)
-    dataframe_to_heatmap_csvs(df, folder + "/heatmaps", action="zero-shot", dataset="overall")
+    output_dir = REPO_ROOT / "output"
+    df = pd.read_csv(output_dir / "p_value_matrices.csv")
+    dataframe_to_heatmap_csvs(
+        df, output_dir / "heatmaps", action="zero-shot", dataset="overall"
+    )
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
-
-# Now split_dfs['action_value'] gives you the DataFrame for that action

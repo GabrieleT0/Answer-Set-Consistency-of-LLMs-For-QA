@@ -1,8 +1,10 @@
 """
 Summary with idk-as-worst-case imputation.
 
-For every test instance where any relevant prompt received "idk" (or no
-answer), the metric is set to the worst possible value before averaging:
+For every test instance where any relevant prompt received an unavailable
+answer under the selected recognition rule, the metric is set to the worst
+possible value before averaging. The paper-default rule is sole standardized
+"idk" or an empty answer set; broader recognition is opt-in:
 
   Consistency checks  (?A1=A2, ?A1>A3, …)      → 0   (not consistent)
   Contradiction-free (?SC(A1=A2), …)            → 0   (not contradiction-free)
@@ -16,6 +18,8 @@ from src.evaluation.paths import REPO_ROOT
 
 import ast
 import os
+import unicodedata
+from functools import lru_cache
 
 import numpy as np
 import pandas as pd
@@ -85,34 +89,77 @@ METRIC_IDK_MAP: dict[str, list[str]] = {
 
 
 
-def is_null_answer(cell):
-    if cell is None or (isinstance(cell, float) and np.isnan(cell)):
+ABSTENTION_RECOGNITIONS = ("standard", "robust", "extended")
+_NULL_PHRASES = {"", "idk", "no answer", "i don't know", "i do not know"}
+_NULL_TRANSLATION = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "`": "'"})
+
+
+def _null_phrase(cell):
+    if not isinstance(cell, str):
+        return None
+    return _normalize_null_text(cell)
+
+
+@lru_cache(maxsize=8192)
+def _normalize_null_text(cell):
+    text = unicodedata.normalize("NFKC", cell).translate(_NULL_TRANSLATION)
+    text = " ".join(text.casefold().split())
+    while True:
+        previous = text
+        text = text.rstrip(".!?").strip()
+        if len(text) >= 2 and text[0] == text[-1] and text[0] in "\"'":
+            text = text[1:-1].strip()
+        if text == previous:
+            return text
+
+
+def is_null_answer(cell, recognition="standard"):
+    """Recognize observed abstentions without inventing missing responses.
+
+    Robust requires the whole answer to be empty or contain only null phrases.
+    Standard preserves the previous empty-set/sole-idk rule. Extended also
+    flags explicit null phrases mixed with entities, for sensitivity analysis.
+    None/NaN remain missing observations in every mode.
+    """
+    if recognition not in ABSTENTION_RECOGNITIONS:
+        raise ValueError(f"Unknown abstention recognition: {recognition}")
+    if cell is None or cell is pd.NA or (isinstance(cell, (float, np.floating)) and np.isnan(cell)):
         return False
     if isinstance(cell, str):
         text = cell.strip()
-        if text.lower() in {"idk", "no answer"}:
+        if (text.lower() == "idk" if recognition == "standard" else _null_phrase(text) in _NULL_PHRASES):
             return True
         try:
             cell = ast.literal_eval(text)
         except (ValueError, SyntaxError):
             return False
     if isinstance(cell, (list, tuple, set)):
-        return not cell or any(str(x).strip().lower() in {"idk", "no answer"} for x in cell)
+        if not cell:
+            return True
+        if recognition == "standard":
+            return len(cell) == 1 and str(next(iter(cell))).strip().lower() == "idk"
+        if recognition == "robust":
+            return all(_null_phrase(value) in _NULL_PHRASES for value in cell)
+        phrases = [_null_phrase(value) for value in cell]
+        return all(phrase == "" for phrase in phrases) or any(
+            phrase in _NULL_PHRASES - {""} for phrase in phrases)
     return False
 
 
-def add_idk_flags(df):
+def add_idk_flags(df, recognition="standard"):
     out = df.copy()
     for answer in ["A1", "A2", "A3", "A4", "A1*", "A1**", "A3_minus"]:
         flag = f"idk_{answer}"
         if answer in out:
-            out[flag] = out[answer].map(is_null_answer).astype(int)
+            out[flag] = out[answer].map(lambda cell: is_null_answer(cell, recognition)).astype(int)
         elif flag not in out:
             out[flag] = 0
     return out
 
 
-def metric_idk_mask(df, metric):
+def metric_idk_mask(df, metric, recognition=None):
+    if recognition is not None:
+        df = add_idk_flags(df, recognition)
     columns = METRIC_IDK_MAP.get(metric, [])
     present = [c for c in columns if c in df]
     mask = df[present].fillna(0).astype(bool).any(axis=1) if present else pd.Series(False, index=df.index)
@@ -141,8 +188,8 @@ def metric_idk_mask(df, metric):
     return mask
 
 
-def impute_worst_case(df):
-    out = add_idk_flags(df)
+def impute_worst_case(df, recognition="standard"):
+    out = add_idk_flags(df, recognition)
     for metric, worst in WORST_CASE.items():
         if metric in out:
             out.loc[out[metric].notna() & metric_idk_mask(out, metric), metric] = worst
@@ -173,12 +220,56 @@ def _group_summary(df: pd.DataFrame, group_cols: list[str]) -> pd.DataFrame:
     return out
 
 
-def summary_idk_worst(df_analysis: pd.DataFrame) -> pd.DataFrame:
+def apply_repeat_aggregation(summary, frame, summarize, aggregation="condition_mean",
+                             recognition="standard", exclude_nulls=False):
+    """Retain the paper's overall equal-condition mean, or paired diagnostics."""
+    if aggregation not in {"condition_mean", "per_question"}:
+        raise ValueError(f"Unknown repeat aggregation: {aggregation}")
+    out = summary.copy()
+    out["repeat_aggregation"] = "per_question"
+    metrics = [c for c in ["?A1=A1*", "J(A1-A1*)"] if c in out]
+    if aggregation == "per_question" or not metrics:
+        return out
+    isolated = frame.copy()
+    missing = isolated.action.eq("zero-shot") & (
+        isolated.repeat_source.ne("Base repeat") if "repeat_source" in isolated
+        else isolated[metrics[0]].isna())
+    isolated.loc[missing, metrics] = float("nan")
+    if "A1*" in isolated:
+        isolated.loc[missing, "A1*"] = None
+    controls = summarize(isolated)
+    controls = controls[controls.dataset.eq("overall")]
+    flagged = add_idk_flags(isolated, recognition)
+    for index, row in out[out.dataset.eq("overall") & out.action.eq("zero-shot")].iterrows():
+        model = row.llm
+        for metric in metrics:
+            values = controls.loc[controls.llm.eq(model) & controls.action.isin(
+                ["zero-shot", "classification"]), metric]
+            out.at[index, metric] = values.mean()
+        for action, column in [("zero-shot", "n_repeat"), ("classification", "n_repeat_cte")]:
+            group = flagged[flagged.llm.eq(model) & flagged.action.eq(action)]
+            available = group[metrics[0]].notna()
+            if exclude_nulls:
+                available &= ~metric_idk_mask(group, metrics[0])
+            out.at[index, column] = int(available.sum())
+        out.at[index, "repeat_aggregation"] = "condition_mean"
+        for metric, aggregate in [("?A1=A1*", "?A1=A1(ave)"), ("J(A1-A1*)", "J_A1_ave")]:
+            if aggregate in out and metric in out:
+                out.at[index, aggregate] = out.at[index, metric]
+        for metric in metrics:
+            count = "n_scored_" + metric
+            if count in out:
+                out.at[index, count] = out.at[index, "n_repeat"]
+    return out
+
+
+def summary_idk_worst(df_analysis: pd.DataFrame, recognition="standard",
+                      repeat_aggregation="condition_mean") -> pd.DataFrame:
     """
     Compute per-(dataset, action, llm) and overall-(action, llm) averages
     after imputing worst-case values for idk answers.
     """
-    df = impute_worst_case(df_analysis[df_analysis["action"] != "wikidata"].copy())
+    df = impute_worst_case(df_analysis[df_analysis["action"] != "wikidata"].copy(), recognition)
 
     group_cols = ["dataset", "action", "llm"]
     df_per = _group_summary(df, group_cols)
@@ -209,7 +300,9 @@ def summary_idk_worst(df_analysis: pd.DataFrame) -> pd.DataFrame:
     if idk_base:
         df_summary["idk"] = df_summary[idk_base].mean(axis=1).round(4)
 
-    return df_summary
+    return apply_repeat_aggregation(df_summary, df_analysis,
+        lambda frame: summary_idk_worst(frame, recognition, "per_question"),
+        repeat_aggregation, recognition)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
