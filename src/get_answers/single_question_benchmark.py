@@ -5,9 +5,11 @@ from langchain_core.prompts import ChatPromptTemplate
 try:
     from .llms import PromptLLMS
     from . import utils
+    from .concurrent_requests import completed_requests
 except ImportError:
     from llms import PromptLLMS
     import utils
+    from concurrent_requests import completed_requests
 import yaml
 import datetime
 import logging
@@ -120,7 +122,7 @@ def _answer_path(
     output_model = (
         llm_model
         if legacy_model_name
-        else utils.output_model_name(llm_model)
+        else config.get("output_model", utils.output_model_name(llm_model))
     )
     suffix = f"_answers_{prompt_prefix}{output_model}.json"
     project_root = config.get("root_dir", root_dir)
@@ -255,6 +257,7 @@ def run_benchmark_equal(prompt_type, config, logger):
                         "retry_content_filtered", False
                     )
 
+                    pending = []
                     for index, question in enumerate(questions):
                         # An empty list is a valid "no answer" result, so key
                         # presence—not answer length—determines resumability.
@@ -271,7 +274,15 @@ def run_benchmark_equal(prompt_type, config, logger):
                             )
                             continue
 
-                        response_set = process_question(question, llm_model, prompt_template, language, logger)
+                        pending.append((index, question))
+
+                    def request(item):
+                        _, question = item
+                        return process_question(question, llm_model, prompt_template, language, logger)
+
+                    for (index, question), response_set in completed_requests(
+                        pending, request, config.get("workers", 1)
+                    ):
                         if response_set is None:
                             filtered_questions[str(index)] = {
                                 "question": question,

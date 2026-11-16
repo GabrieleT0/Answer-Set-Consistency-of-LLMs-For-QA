@@ -11,9 +11,11 @@ from langchain.memory import ConversationBufferMemory
 try:
     from . import utils
     from . import llms
+    from .concurrent_requests import completed_requests, chat_model_per_worker
 except ImportError:
     import utils
     import llms
+    from concurrent_requests import completed_requests, chat_model_per_worker
 
 # === Setup ===
 
@@ -50,7 +52,8 @@ def load_prompts(no_idk=False):
 # === Core Fixing Functions ===
 
 def equal_test(config, prompts, llm_model, dataset_name, language='en', logger=setup_logger()):
-    chat = llms.return_chat_model(llm_model)
+    workers = config.get("workers", 1)
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['equal_fix']
     root_dir = config["root_dir"]
@@ -61,23 +64,28 @@ def equal_test(config, prompts, llm_model, dataset_name, language='en', logger=s
     results_q1 = load_answers(config, dataset_name, 'equal', 'Q1', llm_model, language)
     results_q2 = load_answers(config, dataset_name, 'equal', 'Q2', llm_model, language)
 
-    for i, (q1, q2) in enumerate(questions):
-        if str(i) in results_q1 and str(i) in results_q2:
-            continue
-        logger.info(f"[Equal {i}] {q1} | {q2}")
-        convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
+    pending = [(i, pair) for i, pair in enumerate(questions)
+               if str(i) not in results_q1 or str(i) not in results_q2]
+
+    def request(item):
+        _, (q1, q2) = item
+        convo = ConversationChain(llm=get_chat(), memory=ConversationBufferMemory())
         try:
             a1 = utils.convert_response_to_set(convo.predict(input=q1 + "\n" + template))
             a2 = utils.convert_response_to_set(convo.predict(input=q2 + "\n" + template))
             if utils.jaccard_similarity(a1, a2) < 1:
                 a2 = utils.convert_response_to_set(convo.predict(input=fix_prompt))
         except Exception as e:
-            logger.error(f"[Equal {i}] Error: {e}")
-            continue
+            return e
+        return list(a1), list(a2)
 
-        results_q1[str(i)] = list(a1)
-        results_q2[str(i)] = list(a2)
-        if i % 10 == 0:
+    for (i, (q1, q2)), result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"[Equal {i}] Error: {result}")
+            continue
+        logger.info(f"[Equal {i}] {q1} | {q2}")
+        results_q1[str(i)], results_q2[str(i)] = result
+        if i % config.get("checkpoint_every", 10) == 0:
             save_answers(config, results_q1, dataset_name, 'equal', 'Q1', llm_model, language)
             save_answers(config, results_q2, dataset_name, 'equal', 'Q2', llm_model, language)
 
@@ -86,7 +94,8 @@ def equal_test(config, prompts, llm_model, dataset_name, language='en', logger=s
 
 
 def sup_sub_test(config, prompts, llm_model, dataset_name, language='en', logger = setup_logger()):
-    chat = llms.return_chat_model(llm_model)
+    workers = config.get("workers", 1)
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['sup_sub_fix']
     root_dir = config["root_dir"]
@@ -97,23 +106,28 @@ def sup_sub_test(config, prompts, llm_model, dataset_name, language='en', logger
     results_q1 = load_answers(config, dataset_name, 'sup-sub', 'Q1', llm_model, language)
     results_q3 = load_answers(config, dataset_name, 'sup-sub', 'Q3', llm_model, language)
 
-    for i, (q1, q3) in enumerate(questions):
-        if str(i) in results_q1 and str(i) in results_q3:
-            continue
-        logger.info(f"[SupSub {i}] {q1} | {q3}")
-        convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
+    pending = [(i, pair) for i, pair in enumerate(questions)
+               if str(i) not in results_q1 or str(i) not in results_q3]
+
+    def request(item):
+        _, (q1, q3) = item
+        convo = ConversationChain(llm=get_chat(), memory=ConversationBufferMemory())
         try:
             a1 = utils.convert_response_to_set(convo.predict(input=q1 + "\n" + template))
             a3 = utils.convert_response_to_set(convo.predict(input=q3 + "\n" + template))
             if not utils.is_subset(a3, a1) or len(a3) == 0:
                 a3 = utils.convert_response_to_set(convo.predict(input=fix_prompt))
         except Exception as e:
-            logger.error(f"[SupSub {i}] Error: {e}")
-            continue
+            return e
+        return list(a1), list(a3)
 
-        results_q1[str(i)] = list(a1)
-        results_q3[str(i)] = list(a3)
-        if i % 10 == 0:
+    for (i, (q1, q3)), result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"[SupSub {i}] Error: {result}")
+            continue
+        logger.info(f"[SupSub {i}] {q1} | {q3}")
+        results_q1[str(i)], results_q3[str(i)] = result
+        if i % config.get("checkpoint_every", 10) == 0:
             save_answers(config, results_q1, dataset_name, 'sup-sub', 'Q1', llm_model, language)
             save_answers(config, results_q3, dataset_name, 'sup-sub', 'Q3', llm_model, language)
 
@@ -122,7 +136,8 @@ def sup_sub_test(config, prompts, llm_model, dataset_name, language='en', logger
 
 
 def minus_test(config, prompts, llm_model, dataset_name, language='en', start_index=0, end_index=None, logger = setup_logger()):
-    chat = llms.return_chat_model(llm_model)
+    workers = config.get("workers", 1)
+    get_chat = chat_model_per_worker(llm_model, llms.return_chat_model, workers)
     template = prompts[language]['template']
     fix_prompt = prompts[language]['minus_fix']
     root_dir = config["root_dir"]
@@ -135,12 +150,12 @@ def minus_test(config, prompts, llm_model, dataset_name, language='en', start_in
     results_q3 = load_answers(config, dataset_name, 'minus', 'Q3', llm_model, language)
     results_q4 = load_answers(config, dataset_name, 'minus', 'Q4', llm_model, language)
 
-    for i in range(start_index, end_index):
-        if str(i) in results_q1 and str(i) in results_q3 and str(i) in results_q4:
-            continue
+    pending = [i for i in range(start_index, end_index)
+               if str(i) not in results_q1 or str(i) not in results_q3 or str(i) not in results_q4]
+
+    def request(i):
         q1, q3, q4 = questions[i]
-        logger.info(f"[Minus {i}] {q1} | {q3} | {q4}")
-        convo = ConversationChain(llm=chat, memory=ConversationBufferMemory())
+        convo = ConversationChain(llm=get_chat(), memory=ConversationBufferMemory())
         try:
             a1 = utils.convert_response_to_set(convo.predict(input=q1 + "\n" + template))
             a2 = utils.convert_response_to_set(convo.predict(input=q3 + "\n" + template))
@@ -148,14 +163,18 @@ def minus_test(config, prompts, llm_model, dataset_name, language='en', start_in
             if not utils.is_minus(a1, a2, a3):
                 a3 = utils.convert_response_to_set(convo.predict(input=fix_prompt))
         except Exception as e:
-            logger.error(f"[Minus {i}] Error: {e}")
+            return e
+        return list(a1), list(a2), list(a3)
+
+    for i, result in completed_requests(pending, request, workers):
+        if isinstance(result, Exception):
+            logger.error(f"[Minus {i}] Error: {result}")
             continue
+        q1, q3, q4 = questions[i]
+        logger.info(f"[Minus {i}] {q1} | {q3} | {q4}")
+        results_q1[str(i)], results_q3[str(i)], results_q4[str(i)] = result
 
-        results_q1[str(i)] = list(a1)
-        results_q3[str(i)] = list(a2)
-        results_q4[str(i)] = list(a3)
-
-        if i % 10 == 0:
+        if i % config.get("checkpoint_every", 10) == 0:
             save_answers(config, results_q1, dataset_name, 'minus', 'Q1', llm_model, language)
             save_answers(config, results_q3, dataset_name, 'minus', 'Q3', llm_model, language)
             save_answers(config, results_q4, dataset_name, 'minus', 'Q4', llm_model, language)
@@ -167,15 +186,27 @@ def minus_test(config, prompts, llm_model, dataset_name, language='en', start_in
 
 # === I/O Functions ===
 
+def _output_location(config, llm_model):
+    """Store OpenRouter completions in the original GPT-OSS Oracle checkpoints."""
+    if config.get("resume_original_answers", False):
+        if llm_model not in {"openai/gpt-oss-20b:floor", "openai/gpt-oss-20b:nitro"}:
+            raise ValueError(
+                "resume_original_answers requires openai/gpt-oss-20b:floor "
+                "or openai/gpt-oss-20b:nitro")
+        return "Oracle", "gpt-oss:20b"
+    return (
+        config.get("answer_action_dir") or (
+            "fixing-no-idk" if config.get("no_idk_ablation", False)
+            else "follow_up_fixing"
+        ),
+        config.get("output_model", utils.output_model_name(llm_model)),
+    )
+
+
 def save_answers(config, data, dataset_name, relation, column, llm_model, language):
     root_dir = config["root_dir"]
     prefix = '' if language == 'en' else '*'
-    output_model = utils.output_model_name(llm_model)
-    action_dir = (
-        "fixing-no-idk"
-        if config.get("no_idk_ablation", False)
-        else "follow_up_fixing"
-    )
+    action_dir, output_model = _output_location(config, llm_model)
     base_dir = os.path.join(
         root_dir,
         "data",
@@ -194,12 +225,7 @@ def save_answers(config, data, dataset_name, relation, column, llm_model, langua
 def load_answers(config, dataset_name, relation, column, llm_model, language):
     root_dir = config["root_dir"]
     prefix = '' if language == 'en' else '*'
-    output_model = utils.output_model_name(llm_model)
-    action_dir = (
-        "fixing-no-idk"
-        if config.get("no_idk_ablation", False)
-        else "follow_up_fixing"
-    )
+    action_dir, output_model = _output_location(config, llm_model)
     path = os.path.join(
         root_dir,
         "data",

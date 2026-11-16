@@ -18,11 +18,15 @@ import hashlib
 import itertools
 import json
 import random
+import re
 import statistics
 import sys
+import unicodedata
 from collections import defaultdict
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from datetime import datetime, timezone
 from pathlib import Path
+from threading import local
 from typing import Any
 
 import pandas as pd
@@ -31,10 +35,6 @@ HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parents[1]
 DEFAULT_CANDIDATES = REPO_ROOT / "data/ASCB/en/unified_dataset_w_candidate_answer.tsv"
 DEFAULT_QUESTIONS = REPO_ROOT / "data/ASCB/en/unified-dataset.tsv"
-sys.path.insert(0, str(REPO_ROOT / "src/evaluation"))
-from gold_answer_reviewer_audit import answer_set, gold_groups, normalize  # noqa: E402
-from reviewer_abstention_audit import PRIMARY, _score  # noqa: E402
-
 QUESTIONS = ("Q1", "Q2", "Q3", "Q4")
 RELATION_QUESTIONS = {
     "E_CON_1_2": ("Q1", "Q2"),
@@ -43,7 +43,90 @@ RELATION_QUESTIONS = {
     "D_CON_3_4": ("Q3", "Q4"),
     "E_CON_4_1_minus_3": ("Q1", "Q3", "Q4"),
 }
-assert tuple(RELATION_QUESTIONS) == PRIMARY
+DEFAULT_PROVIDER_MODELS = {
+    "gpt-4.1-nano-2025-04-14": "openrouter:openai/gpt-4.1-nano",
+    "gemini-2.5-flash": "openrouter:google/gemini-2.5-flash:nitro",
+}
+
+def normalize(value: str) -> str:
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", value).casefold()).strip()
+
+
+def answer_set(value: object) -> set[str] | None:
+    if not isinstance(value, list) or not value or not all(
+            isinstance(item, str) for item in value):
+        return None
+    result = {normalize(item) for item in value}
+    return None if not result or "" in result or result & {"idk", "no answer"} else result
+
+
+def _score(metric: str, answers: list[set[str]]) -> bool:
+    if metric == "E_CON_1_2":
+        return answers[0] == answers[1]
+    if metric in {"N_CON_3_1", "N_CON_4_1"}:
+        return answers[1] <= answers[0]
+    if metric == "D_CON_3_4":
+        return answers[0].isdisjoint(answers[1])
+    if metric == "E_CON_4_1_minus_3":
+        return answers[2] == answers[0] - answers[1]
+    raise ValueError(f"Unknown relation: {metric}")
+
+
+def gold_groups(path: Path, questions_path: Path) -> tuple[
+        dict[tuple[str, int], dict[str, set[str]]], pd.DataFrame]:
+    """Read candidate groups without relying on removed audit modules."""
+    candidates = pd.read_csv(path, sep="\t", dtype=str, keep_default_na=False)
+    questions = pd.read_csv(questions_path, sep="\t", dtype=str, keep_default_na=False)
+    required = {"dataset", "source_id", "task_id", "question_id",
+                "question", "candidate_answer"}
+    if not required <= set(candidates):
+        raise ValueError(f"Candidate TSV lacks columns: {sorted(required - set(candidates))}")
+    if candidates.duplicated(["dataset", "source_id", "question_id"]).any():
+        raise ValueError("Duplicate candidate question rows")
+    lookup = {(row.source.casefold(), row.source_id): row
+              for row in questions.itertuples(index=False)}
+    names = {"lc-quad": "LC-QuAD", "qawiki": "QAWiki",
+             "spinach": "SPINACH", "synthetic": "Synthetic"}
+    valid, audit = {}, []
+    for (dataset, source_id), frame in candidates.groupby(
+            ["dataset", "source_id"], sort=True):
+        reasons = []
+        source = lookup.get((dataset.casefold(), source_id))
+        if source is None:
+            reasons.append("missing_benchmark_group")
+        if set(frame.question_id) != set(QUESTIONS):
+            reasons.append("incomplete_candidate_group")
+        gold = {}
+        for row in frame.itertuples(index=False):
+            if row.question_id not in QUESTIONS:
+                reasons.append("unknown_question_id")
+                continue
+            if source is not None and normalize(row.question) != normalize(
+                    getattr(source, row.question_id)):
+                reasons.append("question_text_mismatch")
+            try:
+                values = json.loads(row.candidate_answer)
+                if not isinstance(values, list) or not all(
+                        isinstance(item, str) for item in values):
+                    raise ValueError("Candidate answer must be a list of strings")
+                gold[row.question_id] = {normalize(item) for item in values}
+                if "" in gold[row.question_id]:
+                    raise ValueError("Empty candidate entity")
+            except (ValueError, json.JSONDecodeError):
+                reasons.append("invalid_candidate_answer")
+        if set(gold) == set(QUESTIONS):
+            if gold["Q1"] != gold["Q2"]:
+                reasons.append("gold_equivalence_fails")
+            if gold["Q1"] != gold["Q3"] | gold["Q4"]:
+                reasons.append("gold_partition_fails")
+            if not gold["Q3"].isdisjoint(gold["Q4"]):
+                reasons.append("gold_disjointness_fails")
+        key = names[dataset.casefold()], int(source_id)
+        audit.append({"dataset": key[0], "source_id": key[1],
+                      "included": not reasons, "reason": ";".join(sorted(set(reasons)))})
+        if not reasons:
+            valid[key] = gold
+    return valid, pd.DataFrame(audit)
 
 
 def size_bin(n: int) -> str:
@@ -211,7 +294,13 @@ def run_experiment(args: argparse.Namespace) -> None:
             groups=None, min_per_dataset=3, seed=2027,
             output_dir=args.output_dir, force=False))
     plan = _read_json(plan_path)
-    models = list(dict.fromkeys(args.models))
+    listed_models = json.loads(
+        (REPO_ROOT / "data/llm_info.json").read_text(encoding="utf-8"))
+    existing_config_path = args.output_dir / "run_config.json"
+    previously_selected = (_read_json(existing_config_path).get("models", [])
+                           if existing_config_path.exists() else [])
+    models = list(dict.fromkeys(
+        [*previously_selected, *listed_models] if args.all_models else args.models))
     tasks = planned_calls(plan, models, args.repeats, args.seed)
     prompt_path = REPO_ROOT / "src/get_answers/prompts.yaml"
     requested_config = {
@@ -221,7 +310,7 @@ def run_experiment(args: argparse.Namespace) -> None:
         "plan_sha256": hashlib.sha256(plan_path.read_bytes()).hexdigest(),
         "prompts_yaml_sha256": hashlib.sha256(prompt_path.read_bytes()).hexdigest(),
     }
-    config_path = args.output_dir / "run_config.json"
+    config_path = existing_config_path
     if not config_path.exists() and (args.output_dir / "responses.jsonl").exists():
         raise FileNotFoundError(
             f"{config_path} is missing, but responses.jsonl exists. "
@@ -234,6 +323,10 @@ def run_experiment(args: argparse.Namespace) -> None:
                or (args.retry_errors and latest[call_key(task)]["status"] != "ok")]
     print(f"Plan: {len(plan['question_groups'])} groups, {len(models)} models, "
           f"{args.repeats} repeats, {len(tasks)} total calls; {len(pending)} pending")
+    for model in models:
+        if model in DEFAULT_PROVIDER_MODELS:
+            print(f"Saving as {model}; calling provider model "
+                  f"{DEFAULT_PROVIDER_MODELS[model]}")
     if not args.execute:
         print("Preview only. Add --execute to call model providers.")
         return
@@ -244,39 +337,78 @@ def run_experiment(args: argparse.Namespace) -> None:
     from get_answers.utils import convert_response_to_set  # noqa: E402
 
     prompt = get_prompt("standard", "en")
-    chains = {}
+    state = local()
     journal = args.output_dir / "responses.jsonl"
     attempted = 0
-    consecutive_errors = 0
+    pending = pending[:args.max_calls]
+    print(f"Executing at most {len(pending)} calls with {args.workers} workers per model.")
+
+    def request(task: dict[str, Any]) -> dict[str, Any]:
+        model = task["model"]
+        provider_model = DEFAULT_PROVIDER_MODELS.get(model, model)
+        row = {k: task[k] for k in
+               ("model", "dataset", "source_id", "question_id", "replicate")}
+        row["provider_model"] = provider_model
+        row["timestamp_utc"] = datetime.now(timezone.utc).isoformat()
+        try:
+            if not hasattr(state, "chains"):
+                state.chains = {}
+            if model not in state.chains:
+                state.chains[model] = prompt | return_chat_model(
+                    provider_model, temperature=args.temperature)
+            response = state.chains[model].invoke({"question": task["question"]})
+            raw = response.content if hasattr(response, "content") else str(response)
+            if not isinstance(raw, str):
+                raise TypeError("Model returned non-text content")
+            row.update(status="ok", raw_answer=raw,
+                       parsed_answer=convert_response_to_set(raw))
+        except Exception as error:
+            row.update(status="error", error_type=type(error).__name__,
+                       error_message=str(error)[:500])
+        return row
+
     with journal.open("a", encoding="utf-8") as handle:
-        for task in pending:
-            if args.max_calls is not None and attempted >= args.max_calls:
-                break
-            model = task["model"]
-            row = {k: task[k] for k in ("model", "dataset", "source_id", "question_id", "replicate")}
-            row["timestamp_utc"] = datetime.now(timezone.utc).isoformat()
-            try:
-                if model not in chains:
-                    chains[model] = prompt | return_chat_model(model, temperature=args.temperature)
-                response = chains[model].invoke({"question": task["question"]})
-                raw = response.content if hasattr(response, "content") else str(response)
-                if not isinstance(raw, str):
-                    raw = str(raw)
-                row.update(status="ok", raw_answer=raw,
-                           parsed_answer=convert_response_to_set(raw))
-            except Exception as error:
-                row.update(status="error", error_type=type(error).__name__,
-                           error_message=str(error)[:500])
-            handle.write(json.dumps(row, ensure_ascii=False) + "\n")
-            handle.flush()
-            attempted += 1
-            consecutive_errors = consecutive_errors + 1 if row["status"] == "error" else 0
-            print(f"{attempted}: {model} {task['dataset']}:{task['source_id']} "
-                  f"{task['question_id']} repeat {task['replicate']} -> {row['status']}")
-            if args.max_consecutive_errors and consecutive_errors >= args.max_consecutive_errors:
-                print("Stopped after consecutive provider failures; inspect the journal "
-                      "and use --retry-errors after correcting the issue.")
-                break
+        for model in models:
+            model_pending = [task for task in pending if task["model"] == model]
+            if not model_pending:
+                continue
+            consecutive_errors = 0
+            remaining = iter(model_pending)
+            with ThreadPoolExecutor(max_workers=args.workers) as pool:
+                active = {}
+
+                def submit_next() -> None:
+                    try:
+                        task = next(remaining)
+                    except StopIteration:
+                        return
+                    active[pool.submit(request, task)] = task
+
+                for _ in range(min(args.workers, len(model_pending))):
+                    submit_next()
+                stopping = False
+                while active:
+                    done, _ = wait(active, return_when=FIRST_COMPLETED)
+                    for future in done:
+                        task = active.pop(future)
+                        row = future.result()
+                        handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+                        handle.flush()
+                        attempted += 1
+                        consecutive_errors = (consecutive_errors + 1
+                                              if row["status"] == "error" else 0)
+                        print(f"{attempted}: {model} {task['dataset']}:"
+                              f"{task['source_id']} {task['question_id']} repeat "
+                              f"{task['replicate']} -> {row['status']}", flush=True)
+                        if args.max_consecutive_errors and (
+                                consecutive_errors >= args.max_consecutive_errors):
+                            stopping = True
+                        if not stopping:
+                            submit_next()
+                if stopping:
+                    print(f"Stopped submitting {model} after provider failures. "
+                          "Continuing to the next model; use --retry-errors after "
+                          "correcting the issue.", flush=True)
     print(f"Recorded {attempted} new calls in {journal}")
 
 
@@ -561,11 +693,16 @@ def parser() -> argparse.ArgumentParser:
     plan.add_argument("--seed", type=int, default=2027)
     plan.add_argument("--force", action="store_true")
     run = sub.add_parser("run", parents=[common], help="Preview or execute model calls")
-    run.add_argument("--models", nargs="+", required=True)
+    model_choice = run.add_mutually_exclusive_group(required=True)
+    model_choice.add_argument("--models", nargs="+")
+    model_choice.add_argument("--all-models", action="store_true",
+                              help="Use saved-run models plus data/llm_info.json; saved calls are skipped")
     run.add_argument("--repeats", type=int, default=10)
     run.add_argument("--temperature", type=float, default=0.0)
     run.add_argument("--seed", type=int, default=2027)
     run.add_argument("--max-calls", type=int)
+    run.add_argument("--workers", type=int, default=1,
+                     help="Maximum concurrent independent questions (default: 1)")
     run.add_argument("--max-consecutive-errors", type=int, default=5)
     run.add_argument("--retry-errors", action="store_true")
     run.add_argument("--execute", action="store_true")
@@ -575,6 +712,9 @@ def parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = parser().parse_args()
+    if args.command == "run" and (
+            args.workers < 1 or (args.max_calls is not None and args.max_calls < 1)):
+        parser().error("--workers and --max-calls must be positive")
     if args.command == "plan":
         make_plan(args)
     elif args.command == "run":
