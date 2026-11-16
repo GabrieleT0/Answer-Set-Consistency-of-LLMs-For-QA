@@ -106,6 +106,8 @@ def percent_summary(frame, filtered=False, *, table4_policy='empty_set'):
     out['CON'] = out[BINARY].mean(axis=1)
     # The repeated-question control is displayed in Base rows only.
     out.loc[~out.action.eq('zero-shot'), DISPLAY[:2]] = float('nan')
+    # Publish the control only when every one of the 600 independent Q1
+    out.loc[out.action.eq('zero-shot') & out.n_repeat.lt(600), DISPLAY[:2]] = float('nan')
     for col in DISPLAY:
         out[col] *= 100
     return out
